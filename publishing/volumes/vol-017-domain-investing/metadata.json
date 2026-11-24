@@ -8,49 +8,49 @@
       "INVESTING"
     ],
     "deck": [
-      "UNDERWRITE SELL-THROUGH. CLEAR TESS.",
-      "PRICE FOR END USERS."
+      "192 PRACTITIONERS TEST BUY-LOW, SELL-HIGH FLIPS AGAINST NAMEBIO COMPS, AI APPRAISALS, AND RENEWAL MATH",
+      "THEY BUILD PORTFOLIOS FROM EXPIRED-DOMAIN HUNTS, DEDICATED REGISTRARS, MARKETPLACE LISTINGS, OUTBOUND SALES, AND ESCROW-CLOSED DEALS"
     ],
-    "lead": "Disciplined 1-to-2 Person Domain Portfolio Management Across Exact-Match Category Killers, Aged Authority Drops & Lease-to-Own Rails",
-    "summary": "Model renewal carry against historical sell-through rates, clear USPTO trademarks pre-bid, and close five-figure upgrades via Escrow.com.",
+    "lead": "Domain Investing distills 192 practitioners on how to source cheap names, vet them against comparable sales, list them across Afternic, Sedo, and Atom, and close safely through escrow without letting renewal fees eat the margin.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, spanning beginner flips, registrar and DNS setup, expired-domain auctions, valuation, negotiation, parking, trademarks, and capital. Every claim carries timestamped inline attribution to the channel and video it came from, so each tactic, price point, and warning traces back to its source.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Domain Flipping from Zero: The Beginner's Buy-Low, Sell-High Playbook",
+      "Registrars and DNS Infrastructure for the Domain Portfolio",
+      "Hunting Expired Domains: Auctions, Backorders, and Drop Catching",
+      "Due Diligence on Aged Domains: Backlink Audits and Wayback History",
+      "Exact-Match and One-Word Domains: SEO Power and Generic Valuation",
+      "The DomainSherpa Valuation Room: Portfolio Reviews and Pricing Strategy",
+      "Outbound Sales, Brokers, and Negotiation",
+      "Marketplace Listings: Afternic, Sedo, and Atom",
+      "Closing the Deal: Escrow, Lease-to-Own, and Seller Safety",
+      "Domain Parking and Traffic Monetization",
+      "Trademarks, Disputes, and the TLD Landscape",
+      "Investor Journeys, Challenges, and Capital"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "HUNT",
+        "Hand-register or snipe cheap names via ExpiredDomains.net, auctions, backorders, and drop catching, treating AI-generated name lists as raw ore"
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "FILTER",
+        "Reject dashes, misspellings, numbers, and dates; favor short, memorable .com first with .ai and .io as alternates, and audit backlinks and Wayback history on aged names"
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "VALUE",
+        "Pair GoDaddy appraisals with NameBio comparable sales, discount highball AI estimates, and cap beginner buys around $20 to $50 per name"
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "REGISTER",
+        "Hold names at a dedicated registrar with free WHOIS privacy priced on renewal rate, and point nameservers to Afternic to cut commission from 25% to 15%"
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "SELL",
+        "List wide on Afternic, Sedo, Atom, and Namecheap, pitch niche businesses directly, and relist at a new price after 90 days unsold"
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "CLOSE",
+        "Refuse pay-later buyers and close through escrow or lease-to-own before transfer, then auto-renew keepers and drop dead weight before the renewal bill hits"
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "DOMAIN INVESTING",
-  "subtitle": "The Complete Playbook for Domain Investing: $20,000–$300,000 USD in Annual Gross Sales, a 1 FT + 1 C Core Pod, and a Four-Person Scaling Plan",
+  "subtitle": "Buy Low on Comps, Vet Expired Names on Links and Archive History, List Wide on Afternic and Atom, Close Through Escrow or Lease-to-Own, Defend Against UDRP, and Survive the Renewal Bill",
   "chapter_count": 12,
-  "total_word_count": 76861,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 71909,
+  "expert_youtube_link_count": 210,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

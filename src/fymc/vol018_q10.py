@@ -1,611 +1,829 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) land flipping team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Parcel Queues, GIS Evidence, Comparable-Sale Monitoring, Title Exceptions, and Buyer Distribution Under TCPA and CAN-SPAM Rules",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, holds Rank #15 with a 86/100 Money-to-Manpower "
-        "Score. This chapter maps six operator plays: owner-source intake, parcel "
-        "screening, comparable-sale tracking, underwriting and title routing, sale-packet "
-        "fulfillment, and buyer distribution with referral recirculation. A 1 FT + 3 C "
-        "pod automates repeatable evidence handling while retaining human decisions over "
-        "access, environmental constraints, acquisition prices, and published claims. "
-        "Python queues, authenticated webhooks, constrained LLM extraction, and "
-        "source-linked GIS records provide the infrastructure. Annual owner net profit "
-        "remains $24,000 Conservative, $157,250 Base, and $375,000 Scaled; gross parcel "
-        "sale proceeds remain the revenue basis. The 70%+ objective measures verified "
-        "routine labor removed, not unattended acquisitions or invented operating savings."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Give six operator plays one evidence spine and four accountable people",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with six bounded plays rather than a collection of unrelated automations. "
-                    "Play one captures owner leads and source permissions; play two screens parcels; "
-                    "play three tracks comparable sales; play four assembles underwriting and routes "
-                    "title questions; play five fulfills sale packets; play six distributes inventory "
-                    "and recirculates buyer referrals. These are this chapter's execution mapping for "
-                    "Candidate #6, not six independent businesses. The full-time principal owns capital "
-                    "allocation, acquisition offers, final representations, and contractor priorities. "
-                    "Contractor one maintains GIS evidence and comparable-sale quality. Contractor two "
-                    "coordinates documents with title, escrow, surveyors, and local planning staff. "
-                    "Contractor three operates listings, buyer qualification, and permitted outreach. "
-                    "Professional firms remain external transaction providers; do not disguise additional "
-                    "full-time operating roles as software capacity. Each parcel receives an internal "
-                    "identifier separate from its assessor parcel number because county numbering formats "
-                    "can change after splits. Store county jurisdiction, original identifier, normalized "
-                    "identifier, source date, and geometry version together. An acquisition cannot advance "
-                    "because a model likes the neighborhood: it advances because the responsible person "
-                    "can inspect the evidence bundle and explain the price, exit path, and unresolved "
-                    "exceptions without reopening twenty browser tabs."
-                ),
-                (
-                    "Use Python's sqlite3 for a single-worker pilot, then move persistent records into "
-                    "a managed database when concurrent writers justify it. Separate parcels, source "
-                    "documents, comparable transactions, workflow events, and publication records. An "
-                    "authenticated webhook carries an event identifier, timestamp, payload hash, and "
-                    "parcel identifier; verify its signature before accepting work. Python hmac and "
-                    "hashlib support signature checking, while json, urllib.request, and concurrent.futures "
-                    "cover straightforward integrations without a sprawling framework. A unique event key "
-                    "makes retries harmless. A transaction inserts the event and pending job together, "
-                    "preventing an acknowledged request from disappearing before processing. Treat county "
-                    "PDFs, seller emails, and scraped descriptions as untrusted content, never as "
-                    "instructions for the extraction model. Request bounded fields with cited page "
-                    "references, reject extra fields, validate types, and require null plus a reason "
-                    "when evidence is absent. Keep absent values out of public claims. The model cannot "
-                    "send offers, alter bank details, publish listings, or mark title exceptions resolved. "
-                    "Those privileges belong to separate workflows with named human authority. Restrict "
-                    "service accounts to necessary records, rotate secrets outside source code, and "
-                    "retain an audit trail showing which evidence supported each consequential change."
-                ),
-                (
-                    "Define the 70%+ target against measured repetitive work, not against every hour "
-                    "the business consumes. For an illustrative weekly cohort, record 1,000 baseline "
-                    "minutes spent copying identifiers, downloading permitted records, normalizing "
-                    "comparables, assembling packets, and updating distribution lists. If automation "
-                    "removes 800 minutes but creates 80 minutes of exception handling and routine "
-                    "sample review, net removal is 720 minutes, or 72%. Keep acquisition judgment, "
-                    "seller negotiation, access interpretation, and closing authorization outside both "
-                    "sides of that routine-work comparison. Report their hours separately so a growing "
-                    "exception queue cannot masquerade as leverage. Time the same task definitions "
-                    "before and after deployment, and include failed runs, duplicate cleanup, and "
-                    "contractor supervision. Review the metric weekly by play and county. A strong "
-                    "screening script in one county may collapse when another publishes scanned "
-                    "ownership rolls or changes its coordinate reference system. Set workload limits "
-                    "by reviewer capacity: when unresolved high-risk cases exceed two working days, "
-                    "pause new campaign batches rather than letting automation manufacture unfinished "
-                    "inventory. The principal receives a short daily digest of blocked parcels, "
-                    "capital exposure, stale comparables, and publication changes instead of hundreds "
-                    "of individual success notifications."
-                ),
-            ],
-            "table": {
-                "caption": "Six Mapped Plays, Pod Ownership, and Consequential Human Decisions",
-                "headers": [
-                    "Mapped operator play",
-                    "Automated work product",
-                    "Accountable pod owner",
-                    "Decision retained by a person",
-                ],
-                "rows": [
-                    [
-                        "Play one captures owner leads with source provenance",
-                        "Normalize identifiers and suppress duplicate owner contact records",
-                        "Distribution contractor maintains permissions and source quality records",
-                        "Principal authorizes campaign scope before any outbound transmission",
-                    ],
-                    [
-                        "Play two screens vacant and infill parcel constraints",
-                        "Intersect parcel geometry with dated hazard and zoning layers",
-                        "GIS contractor checks geometry alignment and source freshness",
-                        "Principal rejects parcels with unresolved access or use constraints",
-                    ],
-                    [
-                        "Play three tracks closed comparable transactions by submarket",
-                        "Normalize acreage and flag unusual deed consideration patterns",
-                        "GIS contractor verifies transaction evidence and adjustment rationale",
-                        "Principal chooses underwriting comparables and defensible acquisition limits",
-                    ],
-                    [
-                        "Play four routes underwriting evidence and title exceptions",
-                        "Assemble document references and assign unresolved exception tasks",
-                        "Transaction contractor coordinates title professionals and planning responses",
-                        "Principal decides whether remaining exceptions justify committing capital",
-                    ],
-                    [
-                        "Play five fulfills reviewed buyer and closing packets",
-                        "Render versioned documents using approved parcel facts only",
-                        "Transaction contractor maintains document completeness and revision history",
-                        "Principal approves factual representations before public packet release",
-                    ],
-                    [
-                        "Play six distributes inventory and recirculates qualified referrals",
-                        "Match buyer preferences and attribute inquiries to campaigns",
-                        "Distribution contractor maintains channel quality and suppression controls",
-                        "Principal approves new channels and material listing changes",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that prevent fast research from becoming expensive inventory",
-                "body": (
-                    "Experienced land operators automate evidence retrieval aggressively while "
-                    "keeping source interpretation visible to the person risking capital."
-                ),
-                "items": [
-                    "Preserve leading zeros in assessor identifiers; store the raw county value beside the normalized search key.",
-                    "Keep access evidence separate from road proximity; a visible track can cross private property without an enforceable easement.",
-                    "Save the complete recorded instrument for unusual comparables; nominal deed consideration often signals an unusable price observation.",
-                    "Ask the title provider which survey and access exceptions would remain in the issued policy before treating insurance as resolution.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build parcel screening and comparable tracking around evidence, not model confidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Parcel screening begins with identity and geometry, then advances through constraints "
-                    "in order of their ability to destroy the exit. Query authorized ArcGIS REST "
-                    "services or licensed data exports, retaining service identifiers, retrieval times, "
-                    "coordinate systems, and permitted reuse terms. Geometry should be checked for "
-                    "self-intersection, implausible acreage, and obvious displacement before any spatial "
-                    "join is trusted. Use FEMA's National Flood Hazard Layer as a screening input, "
-                    "USFWS wetland mapping as an indicator, and county zoning maps as a route to "
-                    "the controlling ordinance. None independently establishes buildability. Road frontage "
-                    "does not establish legal access, a mapped wetland absence does not establish "
-                    "jurisdictional absence, and an assessor's land-use code does not establish permitted "
-                    "use. Route suspected contamination, dumping, or prior industrial activity for "
-                    "qualified environmental review. When an acquisition strategy relies on federal "
-                    "landowner liability protections, evaluate the applicable all appropriate inquiries "
-                    "requirements under 40 CFR Part 312 and other required conditions before closing. "
-                    "For infill sites, collect setbacks, utility connection evidence, minimum dimensions, "
-                    "and parking requirements. For minor subdivisions, request the actual local process, "
-                    "infrastructure obligations, and timing rather than assuming that a small lot count "
-                    "eliminates subdivision review."
-                ),
-                (
-                    "Comparable-sale tracking should distinguish recorded transfers, verified market sales, "
-                    "active asking prices, and withdrawn listings. Ingest only records covered by the "
-                    "provider's access and reuse permissions; a public search interface is not an "
-                    "unlimited redistribution license. Preserve sale date, recording date, acreage, "
-                    "transaction type, location, utility condition, access condition, and verification "
-                    "source. Python can calculate price per acre, distance, age, and acreage ratios, "
-                    "but the GIS contractor decides whether those ratios describe genuinely comparable "
-                    "parcels. Exclude family transfers, assemblages, bundled improvements, and nominal "
-                    "consideration unless a documented adjustment makes them usable. Record a reason "
-                    "for every exclusion so the model cannot quietly select only supportive evidence. "
-                    "Set alerts for new verified sales and material listing changes within a defined "
-                    "submarket, not an arbitrary statewide radius. Refresh the underwriting packet "
-                    "before an offer and again before repricing inventory. A ninety-day-old observation "
-                    "can be useful in a thin market, but its age must remain visible. Use an LLM "
-                    "to extract stated utility or access claims from documents, never to manufacture "
-                    "missing sale prices or adjustment percentages. Show the principal the selected "
-                    "evidence and sensitivity range rather than a deceptively precise valuation."
-                ),
-                (
-                    "Design failure recovery before connecting the pipeline to a live seller campaign. "
-                    "A county service returning an empty response is an ingestion exception, not "
-                    "proof that the parcel has no restrictions. Distinguish successful retrieval with "
-                    "zero matching features from authentication failure, timeout, schema drift, and "
-                    "invalid geometry. Retry transient failures with exponential backoff and jitter; "
-                    "respect rate limits and stop retries on permanent authorization errors. After "
-                    "the retry ceiling, move the job to an exception queue with the last valid "
-                    "response and a plain-language recovery task. Cache dated source snapshots so "
-                    "reviewers can compare revisions, but prohibit stale snapshots from silently "
-                    "replacing current evidence. A manual fallback should produce the same structured "
-                    "record and provenance fields as the automated path. Test fixtures should include "
-                    "a landlocked parcel, a boundary-crossing parcel, a seller name mismatch, a split "
-                    "parcel, and a recorded easement that benefits another tract. Compare outcomes "
-                    "against reviewed examples before changing extraction prompts or scoring weights. "
-                    "A model update that improves average extraction accuracy but misses one critical "
-                    "access exception should not reach consequential workflows until the defect is "
-                    "understood and corrected. Retain the previous model configuration for rapid rollback."
-                ),
-            ],
-            "table": {
-                "caption": "Parcel and Comparable Evidence Matrix With Explicit Failure Recovery",
-                "headers": [
-                    "Evidence stream and source",
-                    "Deterministic screening operation",
-                    "Human interpretation requirement",
-                    "Recovery when evidence fails",
-                ],
-                "rows": [
-                    [
-                        "County assessor exports establish parcel identifiers and acreage",
-                        "Compare raw identifiers against normalized keys and geometry",
-                        "GIS contractor investigates mismatched boundaries before further scoring",
-                        "Retrieve the county record manually and preserve provenance",
-                    ],
-                    [
-                        "Recorded deeds and easements describe claimed access rights",
-                        "Extract recording references and link complete source documents",
-                        "Title professionals evaluate benefited tracts and policy exceptions",
-                        "Hold acquisition progression until access questions receive resolution",
-                    ],
-                    [
-                        "FEMA flood layers identify mapped flood hazard intersections",
-                        "Calculate overlap using verified geometry and matching projections",
-                        "Reviewer evaluates usable area alongside local development requirements",
-                        "Request current mapping and local floodplain administrator guidance",
-                    ],
-                    [
-                        "USFWS mapping and site history indicate environmental concerns",
-                        "Flag mapped features and documented prior industrial activities",
-                        "Qualified specialists assess concerns beyond desktop screening capability",
-                        "Suspend buildability claims while obtaining appropriate field evidence",
-                    ],
-                    [
-                        "County ordinances establish zoning and subdivision process requirements",
-                        "Extract dimensional standards with ordinance section references attached",
-                        "Planning responses resolve interpretation and proposed subdivision feasibility",
-                        "Record written clarification before underwriting the proposed exit",
-                    ],
-                    [
-                        "Recorded sales and licensed listings support comparable selection",
-                        "Separate closed evidence from asking prices and transfers",
-                        "GIS contractor verifies market relevance and adjustment support",
-                        "Widen the documented search without inventing missing prices",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before capital or public claims move",
-                "body": (
-                    "A completed automation run creates a reviewable packet. It does not "
-                    "authorize an offer, a closing instruction, or a new representation."
-                ),
-                "items": [
-                    "Verify parcel identity, seller authority, legal description, and the exact property covered by the proposed purchase agreement.",
-                    "Resolve legal access and material title exceptions with the title provider; identify exclusions that would survive policy issuance.",
-                    "Confirm the proposed use against current zoning, subdivision requirements, utility evidence, and material environmental findings.",
-                    "Approve acquisition limits and public claims against dated sources; confirm recipient permissions and suppression checks before distribution.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Turn reviewed inventory into repeatable buyer distribution and referral loops",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Programmatic distribution starts with a reviewed fact registry, not a content "
-                    "generator allowed to improvise buildability. Maintain approved fields for acreage, "
-                    "jurisdiction, asking price, access description, utility evidence, zoning reference, "
-                    "and packet version. Python renders parcel pages and buyer PDFs from that registry; "
-                    "an LLM may draft concise explanations using only approved facts. Publish through "
-                    "an explicit human action, and require renewed review when a material fact changes. "
-                    "Use original photography, licensed imagery, and maps whose redistribution terms "
-                    "permit the intended use. Pages should answer actual buyer questions about the "
-                    "specific parcel, not repeat interchangeable county prose across hundreds of empty "
-                    "locations. Include a dated evidence packet, a clear inquiry route, and an accurate "
-                    "inventory status. When a parcel sells, remove the active offer promptly while "
-                    "retaining useful historical information only where rights and privacy practices "
-                    "allow. This creates a search loop: useful parcel evidence attracts qualified "
-                    "questions, those questions reveal missing explanations, and improved packets reduce "
-                    "repetitive sales work. Measure qualified inquiries and completed sales by source; "
-                    "page counts and raw impressions cannot tell the principal whether the loop "
-                    "is releasing trapped inventory."
-                ),
-                (
-                    "Outbound acquisition and buyer remarketing need different recipient logic. Seller "
-                    "campaigns begin with permitted owner records and careful identity matching; buyer "
-                    "campaigns begin with stated geography, budget, intended use, and channel preferences. "
-                    "Use Postmark or Amazon SES for appropriate email workflows, subject to their "
-                    "policies, and Twilio only where the communication method and permission records "
-                    "support the proposed use. For commercial email, 15 U.S.C. 7704 establishes concrete "
-                    "requirements including accurate routing information, a physical postal address, "
-                    "and a functioning opt-out mechanism. Apply opt-outs across every connected campaign, "
-                    "not merely the vendor that received them. For calling and texting, evaluate "
-                    "47 U.S.C. 227 and applicable FCC rules, including technology, purpose, recipient, "
-                    "permission, and do-not-call requirements. Do not equate a purchased phone number "
-                    "with permission. The distribution contractor reviews audience selection and message "
-                    "claims before launch; software performs suppression checks again at send time. "
-                    "Cap initial batches so replies fit the pod's working capacity. A campaign "
-                    "producing forty seller responses that nobody can investigate is not scalable "
-                    "acquisition. Route responses into the same parcel evidence spine, then score "
-                    "relevance without allowing automated negotiation or binding offer acceptance."
-                ),
-                (
-                    "Build the referral loop around useful sharing rather than exaggerated incentives. "
-                    "Offer a parcel packet link that a buyer can forward without exposing their "
-                    "identity or other buyers' contact details. Let the recipient choose whether to "
-                    "join an inventory list, and record that choice independently. Tag links with "
-                    "campaign and parcel identifiers, but keep personal data out of URLs. After "
-                    "a successful disposition, ask which property criteria would justify another "
-                    "introduction; use that answer to improve matching rather than blasting the "
-                    "entire database. Maintain distinct relationships with builders, adjacent owners, "
-                    "recreational buyers, and local brokers because their exit criteria differ. Before "
-                    "paying referral compensation or marketing property for another owner, assess "
-                    "the applicable state's broker licensing rules. California Business and Professions "
-                    "Code section 10131 illustrates why compensated activity on behalf of others "
-                    "requires separate analysis from selling the operator's own inventory. Track "
-                    "time to first qualified inquiry, qualified-inquiry-to-offer conversion, packet "
-                    "revision requests, and days from signed contract to closing. These measures "
-                    "reveal whether better information is accelerating the cycle. Reuse successful "
-                    "channel patterns only within markets where the evidence, buyer demand, and "
-                    "contractor response capacity remain comparable."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheels With Attribution and Stop Conditions",
-                "headers": [
-                    "Distribution loop and audience",
-                    "Useful asset delivered repeatedly",
-                    "Outcome measured against operating effort",
-                    "Condition that stops further distribution",
-                ],
-                "rows": [
-                    [
-                        "Search discovery reaches buyers investigating specific local parcels",
-                        "Reviewed parcel pages provide dated evidence and inquiry routes",
-                        "Track qualified inquiries against page maintenance labor hours",
-                        "Withdraw claims when source evidence becomes materially outdated",
-                    ],
-                    [
-                        "Buyer matching serves subscribers with documented purchase criteria",
-                        "Send relevant inventory packets matching geography and intended use",
-                        "Track qualified offers per correctly matched inventory message",
-                        "Suppress recipients immediately after their recorded opt-out request",
-                    ],
-                    [
-                        "Owner outreach reaches carefully verified prospective parcel sellers",
-                        "Deliver accurate purchase interest with a manageable response route",
-                        "Track investigated seller replies against total campaign expense",
-                        "Pause batches when unresolved responses exceed reviewer capacity",
-                    ],
-                    [
-                        "Builder relationships surface infill demand and usable specifications",
-                        "Provide dimensional evidence and documented utility connection findings",
-                        "Track repeat inquiries and actual closed parcel dispositions",
-                        "Stop suitability claims when intended development remains unresolved",
-                    ],
-                    [
-                        "Buyer sharing introduces peers through permission-respecting packet links",
-                        "Provide useful public packets without revealing recipient identities",
-                        "Track self-selected subscribers and attributable qualified buyer inquiries",
-                        "Disable links exposing private documents or superseded representations",
-                    ],
-                    [
-                        "Broker relationships connect inventory with established local demand",
-                        "Provide approved listing facts and documented compensation arrangements",
-                        "Track completed transactions against commissions and coordination hours",
-                        "Suspend arrangements when licensing or authority questions remain",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the reviewed parcel facts",
-                    "action": "Create an immutable packet version from approved source-linked fields.",
-                    "detail": "Record the reviewer, source dates, material exceptions, and release timestamp before generating channel assets.",
-                },
-                {
-                    "step": 2,
-                    "title": "Render and inspect channel assets",
-                    "action": "Generate the parcel page, buyer PDF, and audience-specific message draft.",
-                    "detail": "Compare claims against the frozen registry and check imagery rights, document visibility, links, and inventory status.",
-                },
-                {
-                    "step": 3,
-                    "title": "Authorize a capacity-limited release",
-                    "action": "Have the principal approve material claims and the contractor verify audience controls.",
-                    "detail": "Recheck suppression at transmission, cap the batch, and attach parcel and campaign identifiers to resulting inquiries.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile outcomes and repair assets",
-                    "action": "Review replies, packet defects, qualified offers, and closed-sale attribution.",
-                    "detail": "Correct the central fact registry first, replace affected assets, and stop active promotion immediately when inventory status changes.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Price every run, preserve the scorecard, and scale only the working loop",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Price automation at the unit that creates work: one parcel through one defined "
-                    "research pass. In an illustrative batch of 100 parcels, licensed data retrieval "
-                    "costs $0.14 per parcel, bounded model extraction costs $0.025, and job execution "
-                    "plus storage costs $0.005. The initial batch therefore costs $17.00. Five "
-                    "incremental retry attempts at $0.03 add $0.15, producing $17.15 per batch "
-                    "or $0.1715 per parcel. These are planning assumptions, not vendor quotations. "
-                    "A routine quality sample of twenty records at three minutes each consumes "
-                    "one hour; at an illustrative $45 hourly contractor rate, the combined batch "
-                    "cost becomes $62.15, or $0.6215 per parcel. That sample is a pipeline "
-                    "control, not a substitute for reviewing every consequential offer or public "
-                    "claim. Excluded costs include subscriptions, professional diligence, acquisition "
-                    "review, seller negotiation, and closing work; allocate them separately before "
-                    "judging profitability. Log tokens, provider charges, retries, reviewer minutes, "
-                    "and exception type with the batch identifier. Put hard spending ceilings on "
-                    "jobs so a changed PDF format cannot trigger an expensive retry spiral. "
-                    "Compare cost per reviewed opportunity and per completed sale, not merely "
-                    "the cheapest extraction response."
-                ),
-                (
-                    "Keep the canonical scorecard intact when translating throughput into operating plans. "
-                    "Conservative gross parcel sale proceeds are $200,000 at a 12% net margin, "
-                    "yielding $24,000 annual owner net profit with 1 FT + 3 C. Base proceeds "
-                    "are $850,000 at 18.5%, yielding $157,250 with the same pod. Scaled "
-                    "proceeds are $1,500,000 at 25%, yielding $375,000 with 2 FT + 4 C. "
-                    "For a simple reconciliation, assume each completed parcel sale produces $50,000: "
-                    "four sales support Conservative, seventeen support Base, and thirty support "
-                    "Scaled. These illustrative counts explain revenue arithmetic, not expected "
-                    "market pricing. The corresponding total expense envelopes are $176,000, "
-                    "$692,750, and $1,125,000, including acquisition costs and all other costs "
-                    "captured by the scorecard. Do not subtract those acquisition costs again, "
-                    "and do not add modeled automation savings on top of the stated profits. "
-                    "The $15,000–$75,000 startup capital range and $3,000–$15,000 monthly "
-                    "operating expense range describe funding requirements, not extra revenue. "
-                    "Model the cash calendar separately because purchase deposits, diligence, "
-                    "carrying costs, and selling expenses precede many receipts. A profitable "
-                    "annual scenario can still run out of cash while inventory waits for buyers."
-                ),
-                (
-                    "Scale the proven loop by increasing reviewed throughput, not by removing reviewers. "
-                    "Maintain a weekly control sheet showing parcels ingested, usable evidence bundles, "
-                    "offers authorized, contracts signed, purchases closed, inventory age, and completed "
-                    "dispositions. Attribute each transition to its originating batch and channel. "
-                    "Separate pipeline counts from recognized gross sale proceeds; an inquiry, signed "
-                    "purchase contract, or buyer deposit is not automatically a completed parcel sale. "
-                    "Ask the accounting provider to apply the appropriate recognition treatment to "
-                    "the transaction structure. Expansion into another county should begin with a "
-                    "small reviewed cohort and a source-contract checklist, not a cloned scoring "
-                    "threshold. For California subdivisions, Government Code section 66424 supplies "
-                    "a statutory definition, while local ordinances and applicable map requirements "
-                    "determine the actual process. If failure rates rise, disable the affected "
-                    "connector, preserve queued work, and continue only the manual tasks that "
-                    "reviewers can safely absorb. Restore from a tested backup and replay events "
-                    "using their original idempotency keys. Add the second full-time person and "
-                    "fourth contractor only when the Scaled workload and cash plan support them. "
-                    "The durable advantage is faster evidence-backed turnover without accumulating "
-                    "unreviewed liabilities or overstating available capital."
-                ),
-            ],
-            "table": {
-                "caption": "Run Economics, Canonical Scenario Reconciliation, and Scaling Controls",
-                "headers": [
-                    "Economic or operational control",
-                    "Explicit arithmetic or measurement basis",
-                    "What the number actually represents",
-                    "Required operator response or boundary",
-                ],
-                "rows": [
-                    [
-                        "Initial automated batch processes one hundred parcel records",
-                        "100 times $0.17 produces $17.00 before incremental retries",
-                        "Variable retrieval extraction and execution costs for initial attempts",
-                        "Track actual charges separately from subscription and diligence expense",
-                    ],
-                    [
-                        "Retry allowance covers five additional bounded processing attempts",
-                        "Five times $0.03 raises batch spending to $17.15",
-                        "Incremental processing cost after initial attempts already counted",
-                        "Stop permanent failures and investigate repeated source format changes",
-                    ],
-                    [
-                        "Routine sample review inspects twenty of one hundred records",
-                        "Sixty minutes at $45 adds $45 to batch costs",
-                        "Combined sampled batch costs $62.15 before excluded work",
-                        "Review every consequential output regardless of routine sample selection",
-                    ],
-                    [
-                        "Conservative case retains one full-time principal and three contractors",
-                        "$200,000 less $176,000 total expenses equals $24,000 profit",
-                        "Four illustrative $50,000 sales reconcile the 12% margin",
-                        "Keep acquisition costs inside the stated total expense envelope",
-                    ],
-                    [
-                        "Base case retains one full-time principal and three contractors",
-                        "$850,000 less $692,750 total expenses equals $157,250 profit",
-                        "Seventeen illustrative $50,000 sales reconcile the 18.5% margin",
-                        "Do not add hypothetical savings beyond canonical owner profit",
-                    ],
-                    [
-                        "Scaled case uses two full-time people and four contractors",
-                        "$1,500,000 less $1,125,000 total expenses equals $375,000 profit",
-                        "Thirty illustrative $50,000 sales reconcile the 25% margin",
-                        "Fund expanded review capacity before increasing county campaign volume",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the movement of evidence, never the invention of certainty.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Assign all six plays to the principal and three contractors, then record baseline repetitive-task minutes for a representative cohort.",
-        "Build source-linked parcel records with authenticated event intake, idempotent jobs, immutable evidence snapshots, and separate publication authority.",
-        "Test parcel screening and comparable extraction against reviewed access, geometry, environmental, transfer-type, and subdivision edge cases.",
-        "Require documented human decisions before offers, material public claims, closing instructions, or new outbound campaign releases.",
-        "Launch one reviewed distribution loop with recipient controls, channel attribution, response-capacity limits, and automatic inventory-status suppression.",
-        "Reconcile per-run charges, reviewer labor, cash timing, and completed sale proceeds against the three canonical profit and staffing scenarios.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Commercial email workflows must implement accurate transmission information, "
-                "required sender identification and postal address information, functional "
-                "opt-outs, and timely suppression of recipients who opt out."
-            ),
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Calling and texting designs require analysis of the equipment, message "
-                "purpose, recipients, permission requirements, and applicable calling restrictions."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "FCC rules supply operational requirements for covered calls and messages, "
-                "including applicable permission and do-not-call procedures."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Innocent landowners, standards for conducting all appropriate inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Where applicable federal landowner liability protections are part of the "
-                "acquisition strategy, environmental inquiry procedures and timing require "
-                "qualified review beyond automated map screening."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code section 10131 — Real estate broker activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10131.&lawCode=BPC",
-            "relevance": (
-                "Compensated real estate activities performed for another party require "
-                "licensing analysis distinct from the operator's own-inventory sales workflow."
-            ),
-        },
-        {
-            "title": "California Government Code section 66424 — Definition of subdivision",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=66424.&lawCode=GOV",
-            "relevance": (
-                "Proposed parcel divisions require analysis under the statutory definition "
-                "and applicable local subdivision and map requirements before pricing a split exit."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'offers-double-closing-and-title',
+ 'question_prompt': 'How do I take a land deal from offer to closing, including double closes and title?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Offers, Double Closing, and Title',
+ 'subtitle': 'Making offers to landowners, double closing vs. assignment vs. novation, pitching double '
+             'closes to sellers, why double closes fail and workarounds in restricted states, '
+             "transactional funding, the regulatory squeeze on land investors, and owner's vs. lender's "
+             'title insurance',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land operators converge on a volume-driven offer engine and a narrow lane for '
+                      "double closing. Joe McCall's baseline is five seller conversations a day, with "
+                      'mailed offers re-sent every 30 days. Sumner Healey and Clay Hepler pitch two offers '
+                      'on every lead: a fast cash number and a higher 90-to-120-day number. They reserve '
+                      'double closes for questionable property, questionable markets, or compressed '
+                      'margins. Michael Bull cash-closes anything at 50% of market value or under. The '
+                      'street numbers are a $15,000 minimum spread and $500 to $1,000 in non-refundable '
+                      'buyer earnest money. Doubled closing costs of $5K-6K shrink a $10K spread to about '
+                      "$4K. Land Academy calls the double-close pattern 'tainted and bad and slimy' and "
+                      'buys outright instead. Seth Williams and Hepler report state restrictions '
+                      "tightening. Title practitioners push owner's policies on cash and vacant purchases.",
+ 'key_metrics': [{'label': 'Daily Seller Conversations',
+                  'metric': 'Daily Seller Conversations',
+                  'value': '5 sellers a day (or 3 sellers plus 2 Realtors)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Joe McCall says five offers a day nearly guarantees a deal within a month, '
+                             'with every offer mailed in writing and re-sent every 30 days.',
+                  'source': 'Flipping Mastery TV ([YPqUHvSAZrU @ 00:02:26])'},
+                 {'label': 'Minimum Double-Close Spread',
+                  'metric': 'Minimum Double-Close Spread',
+                  'value': '$15,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Sumner Advanced's floor for taking a land deal through a double close "
+                             'without killing profit.',
+                  'source': 'Sumner Advanced ([zyoO3FxrTDQ @ 00:00:49])'},
+                 {'label': 'Double-Close Cost Drag',
+                  'metric': 'Double-Close Cost Drag',
+                  'value': '$5K-6K in doubled closing costs; a $10K spread nets about $4K',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Flip With Rick prices the cost of paying closing costs twice and tells '
+                             'operators to assign any deal under $10K instead.',
+                  'source': 'Flip With Rick ([4Ueirfxr5Ww @ 00:05:40])'},
+                 {'label': 'Cash-Close Threshold',
+                  'metric': 'Cash-Close Threshold',
+                  'value': '50% of market value or under; wholesale at 60%-80%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Michael Bull's decision rule for choosing between buying outright and double "
+                             'closing or assigning, with 95% of the business done as cash closes.',
+                  'source': 'Michael Bull ([V4qnHYV6EVo @ 00:11:38])'}],
+ 'sections': [{'heading': 'The Practitioner Consensus',
+               'paragraphs': ["Offers run on volume and paper. Joe McCall's rule on Flipping Mastery TV is "
+                              'blunt: talk to five sellers a day, or three sellers plus two Realtors. Five '
+                              'offers a day nearly guarantees a deal inside a month [YPqUHvSAZrU @ '
+                              '00:02:26]. Every seller gets a written offer by physical mail, and the same '
+                              "offer goes back out every 30 days, because 'an email gets lost text message "
+                              "gets blocked' [YPqUHvSAZrU @ 00:27:07]. The double-closing operators add a "
+                              'second lever to that cadence: never send just one number. Sumner Healey '
+                              'always makes two offers, a quick cash number and a longer, higher one, '
+                              "after first finding the seller's real problem [GsUpcKZrJAQ @ 00:00:49]. "
+                              "Clay Hepler's 'I have two offers' script frames the choice as $30K in 30 "
+                              'days as-is or $50K-plus in 90 to 120 days. Hepler credits the script with '
+                              'adding two deals and about $20K a month for Marcus, who had been walking '
+                              'away from 40% of leads because sellers wanted 45 when Marcus needed 30 '
+                              '[IRJeZQijnxU @ 00:05:27]. The Apke Brothers run the same fork from the flip '
+                              'side. They offer 50% for a straight flip. If the seller wants more, they '
+                              'pivot to a double close with an attorney-in-fact and 120 days to sell '
+                              '[LDjHRRkWVYE @ 00:09:28].',
+                              'Across camps, the rule for when to double close is the same: never on the '
+                              "obvious winners. Healey cash-closes any 'obvious no-brainer deal.' The "
+                              'double close is reserved for question marks on access, topography, flood '
+                              'zones, or wetlands, or for an unfamiliar market. Healey notes that a '
+                              'property that sold in 90 days two years ago no longer moves that fast '
+                              "[GsUpcKZrJAQ @ 00:02:40]. Hepler's use cases line up almost word for word: "
+                              'questionable property, questionable market, or compressed margins '
+                              "[IRJeZQijnxU @ 00:04:50]. Hepler's no-go list adds slam-dunk deals, "
+                              'uncomfortable sellers, self-listing, and $3K-5K margins, with the '
+                              "instruction to 'save this for deals where you're going to make 10, 15, 20K "
+                              "at least' [IRJeZQijnxU @ 00:15:28]. Michael Bull puts a hard number on the "
+                              'split. At 50% of market value or under, Bull cash closes; at 60% to 80%, '
+                              'Bull wholesales through a double close or assignment. That is why 95% of '
+                              'the operation runs on cash closes [V4qnHYV6EVo @ 00:11:38]. The other '
+                              "shared point is that money is not the excuse. Healey says capital is 'not "
+                              "the reason you should double close' [GsUpcKZrJAQ @ 00:03:52]. Land Academy "
+                              "puts it harder: 'The only reason you're doing this is because you don't "
+                              "have the money or you don't believe in the deal' [fTJxXxQQQGs @ 00:08:04].",
+                              'Everyone also agrees the window is narrowing. Seth Williams told REtipster '
+                              "in August 2024 that finding deals is 'harder than it's ever been.' Texting, "
+                              'ringless voicemail, cold calling, and even direct mail are under regulatory '
+                              "pressure, and 'a lot of states are making that hard' on assignments and "
+                              "double closings [k24QX2JK1ps @ 00:02:53]. Williams' answer is to double "
+                              'down now on whatever will be harder in two to five years [k24QX2JK1ps @ '
+                              '00:03:22]. Land Academy reports municipalities and states restricting '
+                              'double closes. Title companies are pushing back on operators who look like '
+                              "unlicensed agents, which Jill calls 'the gray area' [fTJxXxQQQGs @ "
+                              '00:10:07]. On title, the consensus is that cash land buyers are exposed. '
+                              "Clause Gate stresses that a lender policy 'provides zero direct legal "
+                              "protection' to the buyer. It covers only the loan balance and expires at "
+                              'payoff. The owner policy covers the full purchase price for a one-time fee '
+                              'and passes to heirs [cPrVIwbUYrs @ 00:02:15]. House Cashers LLC is blunter: '
+                              "'Cash buyers have no lender's policy at all.' Their list of cases that call "
+                              'for an owner policy includes estate homes, recent family quitclaims, cash '
+                              'purchases, vacant property, foreclosures, tax sales, and FSBO deals '
+                              '[Up2OF5KmfcU @ 00:01:56].'],
+               'table': {'caption': 'Where land operators agree on offers, double closing, and title',
+                         'headers': ['Consensus Point',
+                                     'What Operators Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Daily offer volume and mailed paper cadence',
+                                   'Talk to five sellers daily, mail each a written offer, and re-send it '
+                                   'every 30 days',
+                                   'Five offers a day nearly guarantees a deal within one month',
+                                   'Flipping Mastery TV ([YPqUHvSAZrU @ 00:02:26])'],
+                                  ['Two-offer structure on every single lead',
+                                   'Present a quick cash number plus a longer, higher double-close number',
+                                   'Captures sellers who reject the cash price instead of letting them '
+                                   'walk',
+                                   'Sumner Healey ([GsUpcKZrJAQ @ 00:00:49])'],
+                                  ['Double close only on question-mark deals',
+                                   'Reserve it for questionable property, questionable market, or '
+                                   'compressed margins',
+                                   'Slam dunks get cash closed, and $3K-5K margins are not worth the '
+                                   'hassle',
+                                   'Clay Hepler ([IRJeZQijnxU @ 00:04:50])'],
+                                  ['Hard cash-close threshold by percentage of value',
+                                   'At 50% of market value or under, buy the parcel outright with cash',
+                                   'Wholesale structures only fit the 60% to 80% of market value band',
+                                   'Michael Bull ([V4qnHYV6EVo @ 00:11:38])'],
+                                  ['Capital is never the reason to double close',
+                                   'Line up funders for good deals rather than double closing to dodge '
+                                   'capital needs',
+                                   'Double closing for lack of money signals you do not believe in the '
+                                   'deal',
+                                   'Land Academy ([fTJxXxQQQGs @ 00:12:08])'],
+                                  ['Non-refundable earnest money paid to the seller',
+                                   'Pay the seller $500 to $1,500 in non-refundable earnest money on '
+                                   'signing',
+                                   'Pays sellers for their time while the long back-end sale is marketed',
+                                   'Clay Hepler ([IRJeZQijnxU @ 00:10:21])'],
+                                  ["Owner's title policy on cash and vacant land",
+                                   'Buy owner coverage on cash, vacant, tax-sale, foreclosure, and FSBO '
+                                   'purchases',
+                                   "Cash buyers have no lender's policy, so nothing else protects their "
+                                   'equity',
+                                   'House Cashers LLC ([Up2OF5KmfcU @ 00:01:56])']]}},
+              {'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On the phone, McCall wants a verdict inside five minutes [YPqUHvSAZrU @ '
+                              '00:25:53]. The posture is the reluctant buyer or a doctor running a '
+                              'diagnosis. The caller fires 20 to 30 questions per call, because whoever '
+                              'asks the most questions stays in control [YPqUHvSAZrU @ 00:11:43]. Land '
+                              'facts come first: county, size, utilities, flood plain, whether the parcel '
+                              "is listed, and other lots. Then comes motivation, asking 'why do you even "
+                              "want to sell it' and rating the answer 1 to 10 [YPqUHvSAZrU @ 00:14:42]. "
+                              "Price tactics are street-grade. Drop a $5,000 anchor and follow with 'good "
+                              "thing I didn't offer…'. Tell agents 'he who names the price first loses.' "
+                              "Probe with 'is that the lowest' or 'close in seven days… five grand less' "
+                              "[YPqUHvSAZrU @ 00:17:42]. The host's version trades speed for discount, "
+                              'offering 15 days instead of 30 for a bigger cut [YPqUHvSAZrU @ 00:19:54]. '
+                              "When the seller balks, the takeaway line is 'I'm probably not the best "
+                              "buyer for you,' and the rule is never to sell the concept [YPqUHvSAZrU @ "
+                              '00:21:18]. The Apke Brothers say to state upfront that closing takes about '
+                              '90 days, not 14 [LDjHRRkWVYE @ 00:18:23]. Healey warns never to tie up a '
+                              'seller who needs money tomorrow for three to twelve months [GsUpcKZrJAQ @ '
+                              '00:01:42].',
+                              'The double close itself is two standard contracts and two escrows. Each '
+                              "side is blind to the other's price, and escrow gets paid twice [V4qnHYV6EVo "
+                              '@ 00:02:27]. Bull splits the funding two ways. Transactional funding buys '
+                              'the parcel and resells it one to 24 hours later. Pass-through funding lets '
+                              "title use the end buyer's money: buy at 20, sell at 40, keep $20K "
+                              '[V4qnHYV6EVo @ 00:05:22]. Flip With Rick prices the drag. Double closing '
+                              'means twice the closing costs, roughly $5K-6K, so a $10K spread nets about '
+                              '$4K, and anything under $10K should be an assignment [4Ueirfxr5Ww @ '
+                              "00:05:40]. Rick's 'reverse double closing' sidesteps the $3K-6K "
+                              'transactional funding fee in four moves. Sign PSA #1 with the seller at '
+                              '$110K and PSA #2 with the buyer at $150K. Have the buyer open escrow at '
+                              'your title company. The buyer funds $145K three days before closing. A '
+                              'title-prepared directive then releases $110K to the seller and $40K to the '
+                              "wholesaler [4Ueirfxr5Ww @ 00:10:54]. Hepler's Alabama deal shows the land "
+                              'math: 15 acres bought at $50K, $3.2K in costs, sold at $80K with a '
+                              'seven-day gap, for $24.8K net [IRJeZQijnxU @ 00:12:50]. In Georgia, a '
+                              '38-acre deal at $140K hit a seven-day cooling-off rule. Of eleven title '
+                              'companies called, the ninth took it, saving a $28K spread [IRJeZQijnxU @ '
+                              '00:08:08].',
+                              'Sumner Advanced sets the floor at a $15,000 minimum spread and starts every '
+                              'contract at 120 days. There is no conversion difference between 90 and 120 '
+                              "days, and 'you probably need 90 days to get a buyer and then 30 days to "
+                              "close' [zyoO3FxrTDQ @ 00:03:23]. Buyer earnest money is always "
+                              "non-refundable: 'at least 500 bucks,' typically about $1,000. About nine of "
+                              'ten disposition offers get negotiated by conceding on price while pushing '
+                              'expenses onto the buyer [zyoO3FxrTDQ @ 00:02:25]. For resales inside about '
+                              'a year, the team buys an open title insurance policy to avoid paying for '
+                              'two new ones [zyoO3FxrTDQ @ 00:01:06]. The Apke Brothers pull Land Portal '
+                              'parcels that are not landlocked and carry a market value over $250K, then '
+                              'offer about 75%. They flag the costs that never disappear: earnest money, '
+                              'photos, and marketing [LDjHRRkWVYE @ 00:15:04]. On premiums, House Cashers '
+                              'LLC shows how the loan estimate misleads. Take an $1,800 owner premium and '
+                              'a lender premium of $350 bundled or $1,400 standalone. The estimate '
+                              'displays $1,400 plus $750, so the real add-on for the owner policy is $750 '
+                              '[Up2OF5KmfcU @ 00:01:21]. Clause Gate adds three cost levers: the '
+                              'simultaneous-issue discount, local custom on who pays, and state-set rates '
+                              'in Texas and Florida, with shopping allowed elsewhere [cPrVIwbUYrs @ '
+                              '00:07:25].'],
+               'table': {'caption': 'Street numbers for offers, double-close structures, and title costs',
+                         'headers': ['Mechanic', 'Exact Numbers', 'Execution Detail', 'Expert Source'],
+                         'rows': [['Call length and question load per seller',
+                                   'Five-minute verdict window with 20 to 30 questions per call',
+                                   'Ask land facts first, then rate seller motivation from 1 to 10',
+                                   'Flipping Mastery TV ([YPqUHvSAZrU @ 00:11:43])'],
+                                  ['Double-close closing cost drag on thin spreads',
+                                   '$5K-6K doubled closing costs, so a $10K spread nets about $4K',
+                                   'Under a $10K spread, use an assignment of contract instead',
+                                   'Flip With Rick ([4Ueirfxr5Ww @ 00:05:40])'],
+                                  ['Reverse double closing without transactional funding',
+                                   '$110K to the seller, $150K from the buyer, $40K to the wholesaler',
+                                   'Buyer funds escrow early and a title-prepared directive splits the '
+                                   'proceeds',
+                                   'Flip With Rick ([4Ueirfxr5Ww @ 00:10:54])'],
+                                  ['Pass-through funding on the front leg',
+                                   'Buy at 20, sell at 40, and keep the $20K spread',
+                                   "Title company uses the end buyer's funds to close the purchase",
+                                   'Michael Bull ([V4qnHYV6EVo @ 00:05:22])'],
+                                  ['Minimum spread and default contract timeline',
+                                   '$15,000 minimum spread with every contract starting at 120 days',
+                                   'Allow 90 days to find a buyer plus 30 days to close',
+                                   'Sumner Advanced ([zyoO3FxrTDQ @ 00:00:49])'],
+                                  ['End-buyer earnest money on disposition contracts',
+                                   '$500 minimum, typically about $1,000, always non-refundable',
+                                   'Legitimate buyers will pay it, so never make it refundable',
+                                   'Sumner Advanced ([zyoO3FxrTDQ @ 00:02:25])'],
+                                  ['Alabama 15-acre double close unit economics',
+                                   '$50K buy, $3.2K costs, $80K sale, $24.8K net profit',
+                                   'Seven-day gap between the front and back closings',
+                                   'Clay Hepler ([IRJeZQijnxU @ 00:12:50])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Title, Realtor, and Buyer Plays the Operators Actually Run',
+                           'body': 'These are tactical edges the double-closing operators use to keep '
+                                   'spreads alive when title companies, cooling-off rules, or difficult '
+                                   'buyers get in the way.',
+                           'items': ["When a state rule like Georgia's seven-day cooling-off period blocks "
+                                     "the back close, keep dialing title companies. Hepler's ninth call "
+                                     'out of eleven saved a $28K spread on a 38-acre deal [Clay Hepler — '
+                                     'IRJeZQijnxU @ 00:08:08].',
+                                     'Build a land-agent bench: search land listings sitting 60+ days on '
+                                     'market, call 5 to 7 agents, test each with a small deal, and keep 8 '
+                                     'to 10 who perform [Clay Hepler — IRJeZQijnxU @ 00:09:00].',
+                                     'On resales inside about a year, buy an open title insurance policy '
+                                     'so the deal does not pay for two new policies [Sumner Advanced — '
+                                     'zyoO3FxrTDQ @ 00:01:06].',
+                                     'Never switch a deal to a double close to satisfy a difficult buyer; '
+                                     'replace the buyer instead. Ask which title companies offer blind or '
+                                     'split HUDs, sometimes for an added fee [Flip With Rick — 4Ueirfxr5Ww '
+                                     '@ 00:13:39].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify the seller inside five minutes',
+                              'action': 'Run 20 to 30 rapid questions on land facts and motivation, rate '
+                                        'motivation 1 to 10, and decide whether it is a deal before minute '
+                                        'five.',
+                              'detail': 'Ask about county, size, utilities, flood plain, listing status, '
+                                        "and other lots, then ask 'why do you even want to sell it' "
+                                        '[Flipping Mastery TV — YPqUHvSAZrU @ 00:11:43].'},
+                             {'step': 2,
+                              'title': 'Present the two-offer fork',
+                              'action': 'Give a quick as-is cash number and a higher number on a '
+                                        '90-to-120-day close, and state the longer timeline upfront.',
+                              'detail': "Hepler's script is $30K in 30 days as-is or $50K-plus in 90 to "
+                                        '120 days, credited with adding two deals and about $20K a month '
+                                        '[Clay Hepler — IRJeZQijnxU @ 00:05:27].'},
+                             {'step': 3,
+                              'title': 'Lock the contract with non-refundable earnest money',
+                              'action': 'Pay the seller non-refundable earnest money and set the contract '
+                                        'term at 120 days, or 120 plus a 30-day extension.',
+                              'detail': 'Healey pays a non-refundable earnest money deposit on every '
+                                        "double close as fair payment for the seller's time [Sumner Healey "
+                                        '— GsUpcKZrJAQ @ 00:02:17].'},
+                             {'step': 4,
+                              'title': 'Line up title and the funding path before marketing',
+                              'action': 'Confirm the title company will handle both legs, choose '
+                                        'pass-through or transactional funding, and have title prepare the '
+                                        'disbursement directive.',
+                              'detail': "Rick's rule is that 'the directive comes from your title "
+                                        "company'; the title company prepares it and the wholesaler never "
+                                        'does [Flip With Rick — 4Ueirfxr5Ww @ 00:09:12].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in land double closing is whether the play deserves to '
+                              "exist at all. Land Academy's Steven says operators blast mass offers with "
+                              'six-month closes and "let 5% close," calls the pattern lying to sellers, '
+                              'and Land Academy brands it plainly: "this business model from start to '
+                              'finish is tainted and bad and slimy" [fTJxXxQQQGs @ 00:06:19] [5U1h-yosUoE '
+                              '@ 00:13:31]. Their alternative is blunt: own the dirt, keep full control, '
+                              'and when access turns out bad, renegotiate honestly to a number like $12K '
+                              'and close in days. Sumner Healey runs the opposite playbook on a narrow '
+                              'trigger, double closing only when the deal or market carries question marks '
+                              'such as access, topography, flood zones, wetlands, or an unfamiliar market, '
+                              'and cash closing every no-brainer [GsUpcKZrJAQ @ 00:03:52]. Clay Hepler '
+                              'widens that trigger to questionable property, questionable market, and '
+                              'compressed margins, and reports the "I have two offers" script adding 2 '
+                              'deals and about $20K per month, later 4-6 deals and $30-40K per month '
+                              '[IRJeZQijnxU @ 00:04:50]. The one point both camps share is that capital '
+                              'shortage is never a valid reason: Healey calls funding "really easy" to '
+                              'find, and when students say "I don\'t have the money," Land Academy\'s Jill '
+                              'answers, "Well, I do."',
+                              'The second split is over which exit structure should be the default. Flip '
+                              'With Rick says every contract "should 100% be assignable," pushes any '
+                              'spread under $10K into an assignment because a double close doubles closing '
+                              'costs, to $5-6K, and can shrink a $10K spread to about $4K net, and only '
+                              'double closes "when the seller freaks out" [4Ueirfxr5Ww @ 00:11:45]. '
+                              'Michael Bull anchors the choice to price instead: at or under 50% of market '
+                              'value the team cash closes, which is 95% of their business, and only the '
+                              '60-80% band gets wholesaled through a double close or an assignment, with '
+                              'assignments suited to $2-6K deals because the fee is visible to the buyer '
+                              '[V4qnHYV6EVo @ 00:11:38]. The Apke Brothers push double closing upmarket, '
+                              'hunting $200-300K-plus parcels on the Land Portal at roughly 75% offers, '
+                              'averaging a buy at 200 and a sale at 280-300, finding end buyers on the MLS '
+                              'rather than an investor list, and pivoting to a double close only after a '
+                              'seller rejects a 50% flip offer [LDjHRRkWVYE @ 00:09:28]. Land Academy '
+                              'rejects every one of these as a substitute for ownership, arguing that '
+                              '10-20 owned deals a year at $20-30K each beats a pipeline of contracts that '
+                              'rarely resell [5U1h-yosUoE @ 00:16:34].',
+                              'Timeline, disclosure, and title-policy norms diverge just as hard. Sumner '
+                              'Advanced sees no conversion difference between 90 and 120 days, so the team '
+                              'opens at 120, with variants of 90/120 business days or 120 plus a 30-day '
+                              'extension, because "you probably need 90 days to get a buyer and then 30 '
+                              'days to close" [zyoO3FxrTDQ @ 00:03:23]. Clay Hepler takes the open-book '
+                              'route on the spread, disclosing the profit to sellers and reporting that '
+                              '90% of them do not care, which cuts directly against the Land Academy '
+                              'charge that double closers keep sellers in the dark about what is happening '
+                              "[IRJeZQijnxU @ 00:14:09]. On title protection for the flipper's own "
+                              'position, Kirby Williams of Shoreline Title states that a cash purchase '
+                              'does not require a policy and that it is lenders who demand one, while '
+                              'noting a title company cannot close without issuing a policy, so skipping '
+                              'it means closing through a law firm [z_2D2D6Cusc @ 00:03:55]. House Cashers '
+                              'lands on the other side for this exact buyer profile, naming cash '
+                              'purchases, vacant property, tax-sale, foreclosure, and FSBO deals as the '
+                              'moments to buy an owner policy, because cash buyers carry no lender policy '
+                              'at all and the title search only catches most problems [Up2OF5KmfcU @ '
+                              '00:01:56].'],
+               'table': {'caption': 'Competing double-close, assignment, and ownership playbooks taught by '
+                                    'land practitioners',
+                         'headers': ['Playbook',
+                                     'Practitioner Position',
+                                     'Trigger, Numbers, or Trade-off',
+                                     'Expert Source'],
+                         'rows': [['Own it instead of double closing the deal',
+                                   'Buy the land outright with own or member funds, keep full control, and '
+                                   'renegotiate honestly when diligence surfaces problems.',
+                                   'A no-access parcel gets renegotiated to $12K and closed in days; they '
+                                   'win deals double closers abandoned.',
+                                   'Land Academy ([5U1h-yosUoE @ 00:14:07])'],
+                                  ['Double close only when the deal has question marks',
+                                   'Cash close every no-brainer deal and reserve double closing for deals '
+                                   'or markets carrying real uncertainty.',
+                                   'Triggers are access, topography, flood zones, wetlands, or a new '
+                                   'market; capital is never the reason.',
+                                   'Sumner Healey ([GsUpcKZrJAQ @ 00:02:40])'],
+                                  ['Assign by default, double close on seller pushback',
+                                   'Make every contract assignable and double close only when the seller '
+                                   'freaks out about the visible fee.',
+                                   'Spreads under $10K go to assignment because doubled closing costs of '
+                                   '$5-6K eat the margin.',
+                                   'Flip With Rick ([4Ueirfxr5Ww @ 00:04:21])'],
+                                  ['Price-band decision rule for choosing the exit',
+                                   'Cash close at or under 50% of market value, which covers 95% of their '
+                                   'business.',
+                                   'The 60-80% band gets wholesaled through a double close or assignment; '
+                                   'buy 20, list 40 weekly.',
+                                   'Michael Bull ([V4qnHYV6EVo @ 00:11:38])'],
+                                  ['High-ticket double close on bigger land parcels',
+                                   'Target $200-300K-plus parcels, offer around 75% of value, and sell to '
+                                   'end buyers found on the MLS.',
+                                   'Average buy 200 and sell 280-300; the trade-off is a longer timeline '
+                                   'with 120 days to sell.',
+                                   'Apke Brothers ([LDjHRRkWVYE @ 00:02:39])'],
+                                  ['Two-offer script instead of walking away from leads',
+                                   'Present $30K in 30 days as-is or $50K-plus in 90-120 days on the same '
+                                   'seller call.',
+                                   'Recovers leads where the operator needs 30 and the seller wants 45 '
+                                   'instead of walking away.',
+                                   'Clay Hepler ([IRJeZQijnxU @ 00:05:27])'],
+                                  ['Options agreement with full upfront seller disclosure',
+                                   'If an operator insists on controlling land without buying it, use an '
+                                   'options agreement and be upfront.',
+                                   'Jill pairs this with the point that funders are available for good '
+                                   'deals anyway.',
+                                   'Land Academy ([fTJxXxQQQGs @ 00:08:31])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure practitioners report is a contract that never '
+                              'converts. Land Academy says only "a very small percentage get resold" from '
+                              'the contract-at-$20K, remarket-at-$30K pattern, that the operators running '
+                              'it are "almost always out of business a year later," and that escrow '
+                              'companies are clamping down; even when a buyer appears, the seller can '
+                              'vanish or sell elsewhere, and suing them is not worth it [5U1h-yosUoE @ '
+                              "00:10:12]. Land Academy's Jill adds that escrow gets strung along and that "
+                              'end buyers can skip-trace the seller and cut the middle operator out '
+                              'entirely, which is exactly the exposure ownership removes [fTJxXxQQQGs @ '
+                              '00:12:55]. The Apke Brothers report a leak further upstream: land '
+                              'wholesalers sending deals with no APN, and beginners who cannot evaluate '
+                              'land walking straight into new laws and the "brokering" label [LDjHRRkWVYE '
+                              '@ 00:13:22]. Flip With Rick flags the assignment-side version of the same '
+                              'blow-up, where a realtor, lawyer, title company, or the seller can kill the '
+                              'deal once the fee is exposed, and title underwriters increasingly require '
+                              "that fee disclosed to the seller; Rick's fix is disclosing investor status "
+                              'up front so nobody is surprised at the closing table [4Ueirfxr5Ww @ '
+                              '00:03:52].',
+                              'Regulatory and title-company friction is the second trap. Seth Williams '
+                              'says states are restricting assignments and double closings and that "even '
+                              'direct mail seems like it\'s under attack in some places now," so the '
+                              'squeeze runs from lead generation all the way through closing [k24QX2JK1ps '
+                              '@ 00:02:53]. Clay Hepler hit it head-on in Georgia: a 38-acre deal at $140K '
+                              'ran into a 7-day cooling-off rule, and out of eleven title companies '
+                              'called, the ninth agreed to close it, preserving a $28K spread [IRJeZQijnxU '
+                              '@ 00:08:08]. Clay also dates North and South Carolina restrictions to '
+                              'October 2025 and lists three workarounds: novation so end buyers can use '
+                              'FHA, conventional, or USDA financing, 7-14-day closing windows, and '
+                              'creative attorneys [IRJeZQijnxU @ 00:11:26]. Jill frames the licensing '
+                              'exposure as "the gray area," warning that operators risk being seen as '
+                              'unlicensed agents while title companies and states push back on the model '
+                              "[fTJxXxQQQGs @ 00:10:07]. Sumner Healey's answer is pure avoidance: skip "
+                              'any state with a 7-day re-close wait or no pass-through funding, because '
+                              'the deal structure simply does not survive there, and fall back on cash '
+                              'closing the slam dunks.',
+                              "The economics check is where thin double closes die. Rick's math shows "
+                              'doubled closing costs of $5-6K turning a $10K spread into roughly $4K net, '
+                              'while a reverse double closing with the end buyer funding three days early '
+                              'sidesteps the $3-6K transactional funding fee [4Ueirfxr5Ww @ 00:05:40]. '
+                              'Sumner Advanced sets a hard floor of at least a $15,000 spread, calls a '
+                              'double close as a first deal "hard mode," and only negotiates a flat agent '
+                              'rate on compressed small deals like buy 25 / sell 40 [zyoO3FxrTDQ @ '
+                              '00:00:49]. Clay Hepler tells operators to avoid $3-5K margins, slam dunks, '
+                              'uncomfortable sellers, and self-listing, which fails, and to "save this for '
+                              'deals where you\'re going to make 10, 15, 20K at least" [IRJeZQijnxU @ '
+                              "00:15:28]. On the funding side, Steve Hodgdon's worst case shows what "
+                              'skipped diligence costs: 29 acres near Houston bought at $200K against a '
+                              'partner estimate of $450K turned out landlocked after a bridge and road '
+                              'washed out, a $600K reassessment pushed taxes to $1,000 a month, and a '
+                              'seller-family lawsuit pulled a $360K sale. Hodgdon\'s verdict: "the people '
+                              'that lie in these transactions are the sellers" [8qUfThwrzAw @ 00:14:02].'],
+               'table': {'caption': 'Firsthand double-close and title failure modes with practitioner '
+                                    'countermoves',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Reported',
+                                     'Operator Countermove',
+                                     'Expert Source'],
+                         'rows': [['Contracted land that never resells to anyone',
+                                   'Contract at $20K, remarket at $30K; a very small percentage get resold '
+                                   'and operators fold within a year.',
+                                   'Own the deal outright and build real valuation and due-diligence '
+                                   'confidence before contracting.',
+                                   'Land Academy ([5U1h-yosUoE @ 00:09:53])'],
+                                  ['Exposed assignment fee blows up the closing',
+                                   'A realtor, lawyer, title company, or seller can blow it up once the '
+                                   'fee shows.',
+                                   'Disclose investor status up front and keep every contract assignable '
+                                   'from day one.',
+                                   'Flip With Rick ([4Ueirfxr5Ww @ 00:03:52])'],
+                                  ['State re-close waits or no pass-through funding',
+                                   'States with a 7-day re-close wait or no pass-through funding break the '
+                                   'double close.',
+                                   'Avoid those states for double closing and cash close the obvious '
+                                   'no-brainer deals instead.',
+                                   'Sumner Healey ([GsUpcKZrJAQ @ 00:04:15])'],
+                                  ['End buyer skip-traces the seller and cuts you out',
+                                   'End buyers can find the seller directly while escrow is strung along '
+                                   'for months.',
+                                   'Take title yourself or use an options agreement and stay upfront with '
+                                   'the seller.',
+                                   'Land Academy ([fTJxXxQQQGs @ 00:12:55])'],
+                                  ["Landlocked parcel bought on a partner's estimate",
+                                   '29 acres bought at $200K versus a $450K estimate; taxes hit $1,000 '
+                                   'monthly after reassessment.',
+                                   'Run Street View checks yourself and demand an agent walkthrough by '
+                                   'phone above $100K.',
+                                   'REtipster ([8qUfThwrzAw @ 00:14:17])'],
+                                  ['Self-listing and razor-thin double-close margins',
+                                   'Self-listing fails and $3-5K margins do not justify the double-close '
+                                   'structure at all.',
+                                   'Call 5-7 agents on land listed 60-plus days, test small, and keep 8-10 '
+                                   'agents.',
+                                   'Clay Hepler ([IRJeZQijnxU @ 00:15:03])'],
+                                  ['Seller impersonation on vacant and cash deals',
+                                   'ALTA found 59% of surveyed firms saw seller-impersonation attempts in '
+                                   '2025, up from 28%.',
+                                   'Read the Schedule B exceptions and buy an owner policy on cash or '
+                                   'vacant purchases.',
+                                   'House Cashers LLC ([Up2OF5KmfcU @ 00:00:47])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Signing a Double Close',
+                           'body': 'Every gate below comes from a practitioner who lost margin, lost a '
+                                   'deal, or watched others fold. Clear all four before the seller signs.',
+                           'items': ['Spread floor: no double close under a $15,000 spread, because '
+                                     'doubled closing costs and agent fees compress everything below it '
+                                     '[Sumner Advanced — zyoO3FxrTDQ @ 00:00:49].',
+                                     'Title company first: call title companies before contracting until '
+                                     'one confirms it will close both sides, as Clay did when the ninth of '
+                                     'eleven calls saved a $28K Georgia spread [Clay Hepler — IRJeZQijnxU '
+                                     '@ 00:08:08].',
+                                     'Buyer skin in the game: collect non-refundable buyer earnest money '
+                                     'of at least $500, typically about $1,000, because legitimate buyers '
+                                     'will pay it [Sumner Advanced — zyoO3FxrTDQ @ 00:02:25].',
+                                     'Access and seller-disclosure check: verify access before committing, '
+                                     'since sellers do not disclose their problems and a landlocked '
+                                     'Houston parcel tied up capital in taxes and litigation [REtipster — '
+                                     '8qUfThwrzAw @ 00:14:17].']}}],
+ 'pull_quote': '"Capital is not the reason you should double close it\'s question marks on the deal or the '
+               'market." — Sumner Healey (GsUpcKZrJAQ @ 00:03:52).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Talk to 5 sellers a day, send every seller a written offer by physical mail, and '
+                      're-send the same offer every 30 days [Flipping Mastery TV — YPqUHvSAZrU @ '
+                      '00:26:21].',
+                      'Present two offers on every borderline lead: $30K in 30 days as-is, or $50K-plus in '
+                      '90-120 days [Clay Hepler — IRJeZQijnxU @ 00:05:27].',
+                      'Pay the seller a non-refundable earnest money deposit on every double close to '
+                      'compensate them for their time [Sumner Healey — GsUpcKZrJAQ @ 00:02:17].',
+                      'Build a land-agent bench by searching land listings on market 60-plus days, calling '
+                      '5-7 agents, and testing each with a small deal [Clay Hepler — IRJeZQijnxU @ '
+                      '00:09:00].',
+                      "Have the title company prepare the closing directive that splits the end buyer's "
+                      'funds between seller and wholesaler; never prepare it yourself [Flip With Rick — '
+                      '4Ueirfxr5Ww @ 00:09:12].',
+                      'Request the open title insurance policy on land resold within about a year to avoid '
+                      'paying for two new policies [Sumner Advanced — zyoO3FxrTDQ @ 00:01:06].'],
+ 'statutory_citations': [{'title': 'Land Academy — Why Double Closing Land Deals Fail Most Of The Time '
+                                   '(And What Smart Investors Do Instead) [00:13:31]',
+                          'url': 'https://www.youtube.com/watch?v=5U1h-yosUoE&t=811s',
+                          'relevance': 'Primary practitioner testimony on why most double-closed land '
+                                       'contracts never resell and why owning the deal replaces the '
+                                       'model.'},
+                         {'title': 'Sumner Healey — Double Closing Strategies for Land Investors: Complete '
+                                   'Guide | Sumner Healey [00:03:52]',
+                          'url': 'https://www.youtube.com/watch?v=GsUpcKZrJAQ&t=232s',
+                          'relevance': 'Primary practitioner testimony on reserving double closes for '
+                                       'deals with question marks and cash closing no-brainers.'},
+                         {'title': 'Clay Hepler — Double Closing for Land Investors 2026 | Ultimate Guide '
+                                   'for Beginners (Even in Restricted States) [00:08:08]',
+                          'url': 'https://www.youtube.com/watch?v=IRJeZQijnxU&t=488s',
+                          'relevance': 'Primary practitioner testimony on finding a willing title company '
+                                       'through a 7-day cooling-off rule and closing a $28K spread.'},
+                         {'title': 'Clause Gate — Closing Costs Explained: Lender Policy vs Owner Policy '
+                                   '[00:02:15]',
+                          'url': 'https://www.youtube.com/watch?v=cPrVIwbUYrs&t=135s',
+                          'relevance': 'Primary practitioner testimony on lender versus owner title '
+                                       'policies and what each protects at closing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'YPqUHvSAZrU',
+                       'title': 'How To Make Offers To Land Owners - Masterclass Video 5 w/ Joe McCall',
+                       'channel': 'Flipping Mastery TV',
+                       'author': 'Flipping Mastery TV',
+                       'text': "It's real simple talk to five sellers a day that is the fastest way.",
+                       'tip': "It's real simple talk to five sellers a day that is the fastest way.",
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=YPqUHvSAZrU&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=YPqUHvSAZrU&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'k24QX2JK1ps',
+                       'title': 'The Regulatory Squeeze on Land Investors with Seth Williams',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "Even direct mail seems like it's under attack in some places now.",
+                       'tip': "Even direct mail seems like it's under attack in some places now.",
+                       'timestamp': 173,
+                       'timestamp_seconds': 173,
+                       'timestamp_label': '[00:02:53]',
+                       'url': 'https://www.youtube.com/watch?v=k24QX2JK1ps&t=173s',
+                       'markdown': '[00:02:53](https://www.youtube.com/watch?v=k24QX2JK1ps&t=173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8qUfThwrzAw',
+                       'title': 'Land Funding Expert Steve Hodgdon Breaks Down What Really Matters | '
+                                'REtipster Podcast 181',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'The people that lie in these transactions are the sellers sellers do not '
+                               'disclose their their problems.',
+                       'tip': 'The people that lie in these transactions are the sellers sellers do not '
+                              'disclose their their problems.',
+                       'timestamp': 842,
+                       'timestamp_seconds': 842,
+                       'timestamp_label': '[00:14:02]',
+                       'url': 'https://www.youtube.com/watch?v=8qUfThwrzAw&t=842s',
+                       'markdown': '[00:14:02](https://www.youtube.com/watch?v=8qUfThwrzAw&t=842s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GsUpcKZrJAQ',
+                       'title': 'Double Closing Strategies for Land Investors: Complete Guide | Sumner '
+                                'Healey',
+                       'channel': 'Sumner Healey',
+                       'author': 'Sumner Healey',
+                       'text': "Capital is not the reason you should double close it's question marks on "
+                               'the deal or the market.',
+                       'tip': "Capital is not the reason you should double close it's question marks on "
+                              'the deal or the market.',
+                       'timestamp': 232,
+                       'timestamp_seconds': 232,
+                       'timestamp_label': '[00:03:52]',
+                       'url': 'https://www.youtube.com/watch?v=GsUpcKZrJAQ&t=232s',
+                       'markdown': '[00:03:52](https://www.youtube.com/watch?v=GsUpcKZrJAQ&t=232s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5U1h-yosUoE',
+                       'title': 'Why Double Closing Land Deals Fail Most Of The Time (And What Smart '
+                                'Investors Do Instead)',
+                       'channel': 'Land Academy',
+                       'author': 'Land Academy',
+                       'text': 'A very small percentage get resold.',
+                       'tip': 'A very small percentage get resold.',
+                       'timestamp': 593,
+                       'timestamp_seconds': 593,
+                       'timestamp_label': '[00:09:53]',
+                       'url': 'https://www.youtube.com/watch?v=5U1h-yosUoE&t=593s',
+                       'markdown': '[00:09:53](https://www.youtube.com/watch?v=5U1h-yosUoE&t=593s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5U1h-yosUoE',
+                       'title': 'Why Double Closing Land Deals Fail Most Of The Time (And What Smart '
+                                'Investors Do Instead)',
+                       'channel': 'Land Academy',
+                       'author': 'Land Academy',
+                       'text': 'You are circumventing all the stuff that makes good real estate investment '
+                               'profitable.',
+                       'tip': 'You are circumventing all the stuff that makes good real estate investment '
+                              'profitable.',
+                       'timestamp': 811,
+                       'timestamp_seconds': 811,
+                       'timestamp_label': '[00:13:31]',
+                       'url': 'https://www.youtube.com/watch?v=5U1h-yosUoE&t=811s',
+                       'markdown': '[00:13:31](https://www.youtube.com/watch?v=5U1h-yosUoE&t=811s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cPrVIwbUYrs',
+                       'title': 'Closing Costs Explained: Lender Policy vs Owner Policy',
+                       'channel': 'Clause Gate',
+                       'author': 'Clause Gate',
+                       'text': 'It is crucial to understand that a lender title insurance policy provides '
+                               'zero direct legal protection for you as the actual home buyer.',
+                       'tip': 'It is crucial to understand that a lender title insurance policy provides '
+                              'zero direct legal protection for you as the actual home buyer.',
+                       'timestamp': 135,
+                       'timestamp_seconds': 135,
+                       'timestamp_label': '[00:02:15]',
+                       'url': 'https://www.youtube.com/watch?v=cPrVIwbUYrs&t=135s',
+                       'markdown': '[00:02:15](https://www.youtube.com/watch?v=cPrVIwbUYrs&t=135s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Up2OF5KmfcU',
+                       'title': "Owner's Title Insurance: What It Covers, What It Costs, and What Changed",
+                       'channel': 'House Cashers LLC',
+                       'author': 'House Cashers LLC',
+                       'text': "Cash buyers have no lender's policy at all.",
+                       'tip': "Cash buyers have no lender's policy at all.",
+                       'timestamp': 31,
+                       'timestamp_seconds': 31,
+                       'timestamp_label': '[00:00:31]',
+                       'url': 'https://www.youtube.com/watch?v=Up2OF5KmfcU&t=31s',
+                       'markdown': '[00:00:31](https://www.youtube.com/watch?v=Up2OF5KmfcU&t=31s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4Ueirfxr5Ww',
+                       'title': 'How to Do a Double Closing Wholesaling Deal with No Money Needed!',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': "If you have a deal that's less than 10K you really really want to do an "
+                               "assignment of contract because closing costs they're expensive.",
+                       'tip': "If you have a deal that's less than 10K you really really want to do an "
+                              "assignment of contract because closing costs they're expensive.",
+                       'timestamp': 261,
+                       'timestamp_seconds': 261,
+                       'timestamp_label': '[00:04:21]',
+                       'url': 'https://www.youtube.com/watch?v=4Ueirfxr5Ww&t=261s',
+                       'markdown': '[00:04:21](https://www.youtube.com/watch?v=4Ueirfxr5Ww&t=261s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4Ueirfxr5Ww',
+                       'title': 'How to Do a Double Closing Wholesaling Deal with No Money Needed!',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': 'They prepare it you never prepare it.',
+                       'tip': 'They prepare it you never prepare it.',
+                       'timestamp': 569,
+                       'timestamp_seconds': 569,
+                       'timestamp_label': '[00:09:29]',
+                       'url': 'https://www.youtube.com/watch?v=4Ueirfxr5Ww&t=569s',
+                       'markdown': '[00:09:29](https://www.youtube.com/watch?v=4Ueirfxr5Ww&t=569s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LDjHRRkWVYE',
+                       'title': 'How to Use Double Closing to Dominate Land Investing with Zero Money Down',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': 'On average a high ticket double close is buying at 200 and selling at 280 '
+                               'to 300, which is about 70% of market value.',
+                       'tip': 'On average a high ticket double close is buying at 200 and selling at 280 '
+                              'to 300, which is about 70% of market value.',
+                       'timestamp': 159,
+                       'timestamp_seconds': 159,
+                       'timestamp_label': '[00:02:39]',
+                       'url': 'https://www.youtube.com/watch?v=LDjHRRkWVYE&t=159s',
+                       'markdown': '[00:02:39](https://www.youtube.com/watch?v=LDjHRRkWVYE&t=159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zyoO3FxrTDQ',
+                       'title': 'How We Double Close Land Deals Without Killing Our Profit',
+                       'channel': 'Sumner Advanced',
+                       'author': 'Sumner Advanced',
+                       'text': "At least 500 bucks, it's more typically about $1,000 for us.",
+                       'tip': "At least 500 bucks, it's more typically about $1,000 for us.",
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=zyoO3FxrTDQ&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=zyoO3FxrTDQ&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HubgOyQ00K4',
+                       'title': 'Title Insurance Explained In Under 4 Minutes!',
+                       'channel': 'Get Rich Education',
+                       'author': 'Get Rich Education',
+                       'text': "The buyer typically pays for the lender's policy, and the seller often "
+                               "pays for the buyer's owner's policy.",
+                       'tip': "The buyer typically pays for the lender's policy, and the seller often pays "
+                              "for the buyer's owner's policy.",
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=HubgOyQ00K4&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=HubgOyQ00K4&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V4qnHYV6EVo',
+                       'title': 'What Is Wholesaling in Real Estate? Assignment vs Double Close vs '
+                                'Novation',
+                       'channel': 'Michael Bull',
+                       'author': 'Michael Bull',
+                       'text': "So, if we are at 50% of market value or under, we're going to cash close "
+                               'the property.',
+                       'tip': "So, if we are at 50% of market value or under, we're going to cash close "
+                              'the property.',
+                       'timestamp': 698,
+                       'timestamp_seconds': 698,
+                       'timestamp_label': '[00:11:38]',
+                       'url': 'https://www.youtube.com/watch?v=V4qnHYV6EVo&t=698s',
+                       'markdown': '[00:11:38](https://www.youtube.com/watch?v=V4qnHYV6EVo&t=698s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fTJxXxQQQGs',
+                       'title': 'Why Double Closing May Be Dead In 2025 | Real Estate Strategies That '
+                                'Still Work',
+                       'channel': 'Land Academy',
+                       'author': 'Land Academy',
+                       'text': "The only reason you're doing this is because you don't have the money or "
+                               "you don't believe in the deal.",
+                       'tip': "The only reason you're doing this is because you don't have the money or "
+                              "you don't believe in the deal.",
+                       'timestamp': 484,
+                       'timestamp_seconds': 484,
+                       'timestamp_label': '[00:08:04]',
+                       'url': 'https://www.youtube.com/watch?v=fTJxXxQQQGs&t=484s',
+                       'markdown': '[00:08:04](https://www.youtube.com/watch?v=fTJxXxQQQGs&t=484s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z_2D2D6Cusc',
+                       'title': 'Florida Title Insurance Explained - What Buyers MUST Know Before Closing',
+                       'channel': 'Casey Joiner',
+                       'author': 'Casey Joiner',
+                       'text': 'A title company cannot close a transaction without issuing a title policy, '
+                               'so closing without one requires a law firm.',
+                       'tip': 'A title company cannot close a transaction without issuing a title policy, '
+                              'so closing without one requires a law firm.',
+                       'timestamp': 1310,
+                       'timestamp_seconds': 1310,
+                       'timestamp_label': '[00:21:50]',
+                       'url': 'https://www.youtube.com/watch?v=z_2D2D6Cusc&t=1310s',
+                       'markdown': '[00:21:50](https://www.youtube.com/watch?v=z_2D2D6Cusc&t=1310s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'svuRdMOkJF4',
+                       'title': 'What is Title Insurance and Do I Need It?',
+                       'channel': 'The Ramsey Show Highlights',
+                       'author': 'The Ramsey Show Highlights',
+                       'text': 'Title lock is a gimmick, because liens can only be filed at the '
+                               'courthouse.',
+                       'tip': 'Title lock is a gimmick, because liens can only be filed at the courthouse.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=svuRdMOkJF4&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=svuRdMOkJF4&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IRJeZQijnxU',
+                       'title': 'Double Closing for Land Investors 2026 | Ultimate Guide for Beginners '
+                                '(Even in Restricted States)',
+                       'channel': 'Clay Hepler',
+                       'author': 'Clay Hepler',
+                       'text': "Save this for deals where you're going to make 10, 15, 20K at least.",
+                       'tip': "Save this for deals where you're going to make 10, 15, 20K at least.",
+                       'timestamp': 928,
+                       'timestamp_seconds': 928,
+                       'timestamp_label': '[00:15:28]',
+                       'url': 'https://www.youtube.com/watch?v=IRJeZQijnxU&t=928s',
+                       'markdown': '[00:15:28](https://www.youtube.com/watch?v=IRJeZQijnxU&t=928s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

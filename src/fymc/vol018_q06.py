@@ -1,657 +1,830 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in land flipping, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "County GIS, Recorder Triggers, Builder Buy Boxes, Title-Insured Closings, and TCPA-Aware Owner Outreach",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
-        "The sourcing advantage is a documented mismatch between an owner's holding burden "
-        "and a buyer's buildable-land requirements, not a cheap parcel list. This chapter "
-        "maps six plays: builder buy-box reversal, absentee-owner trigger mining, stale-listing "
-        "re-underwriting, adjacent-owner assembly, minor-subdivision feasibility, and "
-        "tcpa_litigator_scrub_honeypot_arbitrage as defensive contact screening. Start with "
-        "verified demand, reject access and environmental defects early, and measure owner "
-        "replies through completed purchases and resales. Canonical annual owner profits "
-        "are $24,000 Conservative, $157,250 Base, and $375,000 Scaled. Gross parcel sale "
-        "proceeds are revenue; acquisition spending remains a cost. The first three to ten "
-        "wins require disciplined outreach, funded diligence, and title-insured exits over "
-        "three to twelve months."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reverse the search from funded buyers to six sourcing plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Begin with demand that can survive a purchase contract. Select two adjoining "
-                    "counties where recorded vacant-land transfers, building permits, and active builders "
-                    "show repeat activity. Use county assessor exports and QGIS for parcel geometry, "
-                    "the recorder for deeds, and the planning department for zoning text and adopted "
-                    "maps. Interview fifteen builders, manufactured-home dealers, neighboring owners, "
-                    "and land brokers; ask for their last three purchases, required frontage, utility "
-                    "conditions, target purchase price, and funding timeline. A builder saying they "
-                    "want inexpensive lots is not a buy box. A builder seeking six sewer-served "
-                    "lots with sixty feet of frontage, outside mapped floodways, below $85,000 "
-                    "each is actionable. Record whether that price assumes installed taps, impact "
-                    "fees, grading, or only legal availability. Confirm closed consideration through "
-                    "permitted records or a licensed broker where public records omit prices. Reject "
-                    "automated valuations built from improved-home sales. Maintain separate comparable "
-                    "sets for finished lots, raw acreage, and entitled parcels because their prices "
-                    "encode different infrastructure and execution burdens. Demand mining ends with "
-                    "two plausible buyers per target parcel class, not a spreadsheet of optimistic "
-                    "asking prices. Those buyers remain prospects until their funding and parcel "
-                    "requirements are verified."
-                ),
-                (
-                    "Use six explicitly defined plays rather than one undifferentiated owner list. "
-                    "Builder buy-box reversal targets parcels meeting an existing acquisition mandate: "
-                    "an $85,000 supported exit less $7,000 selling costs, $8,000 diligence and "
-                    "holding allocation, and $20,000 target contribution leaves a $50,000 purchase "
-                    "ceiling. Absentee-owner trigger mining combines mailing-address separation with "
-                    "long tenure, returned tax mail where lawfully available, or a newly recorded "
-                    "estate representative; none independently proves distress or authority to sell. "
-                    "Stale-listing re-underwriting finds incorrect acreage, weak photographs, or "
-                    "unanswered utility questions, but routes contact through the listing broker "
-                    "when representation applies. Adjacent-owner assembly seeks incremental value "
-                    "from frontage, access, or usable width without assuming a neighbor must buy. "
-                    "Minor-subdivision feasibility identifies parcels where an approved lot split "
-                    "could produce several marketable lots, while retaining a profitable whole-parcel "
-                    "exit if feasible. The sixth play, tcpa_litigator_scrub_honeypot_arbitrage, is "
-                    "implemented solely as defensive contact screening. These are chapter-level "
-                    "operating plays; only the screening play carries the supplied registry identifier. "
-                    "Keep each parcel attached to one primary thesis and one fallback so the "
-                    "team can explain its value without combining incompatible assumptions. Document "
-                    "each assumption before contacting the owner or paying for technical studies."
-                ),
-                (
-                    "Apply unit economics before celebrating a trigger. If adjacent parcels cost "
-                    "$35,000 each, combined sale proceeds of $100,000 leave $30,000 before "
-                    "survey, title, transfer, selling, and holding costs; allocating $14,000 to "
-                    "those expenses leaves $16,000 contribution before shared overhead. Without "
-                    "both signed acquisitions and documented assemblage value, buy neither on "
-                    "that thesis. For a possible two-lot split, $180,000 combined proceeds less "
-                    "$100,000 acquisition, $25,000 survey and improvement work, and $15,000 other "
-                    "direct costs leaves $40,000 before shared overhead. If the unsplit exit "
-                    "cannot support acquisition and carrying costs, use a feasibility contingency "
-                    "or decline instead of treating future approval as present value. An absentee "
-                    "campaign costing $1,500 that produces one completed acquisition has a $1,500 "
-                    "sourcing cost, not a free deal because the owner replied. A stale listing "
-                    "bought for $45,000 and sold for $70,000 with $10,000 direct expenses "
-                    "contributes $15,000 before overhead. These examples are underwriting exercises, "
-                    "not additional annual revenue cases. Record failed studies, expired contracts, "
-                    "and unsuccessful mail campaigns in operating costs rather than hiding them "
-                    "inside the successful parcel's attractive spread. Review the fallback price "
-                    "with a buyer who has actually purchased similar land."
-                ),
-            ],
-            "table": {
-                "caption": "Six Sourcing Plays With Observable Signals, Unit Math, and Downside Exits",
-                "headers": [
-                    "Operating play and precise acquisition thesis",
-                    "Observable evidence required before owner contact",
-                    "Illustrative unit economics before shared overhead",
-                    "Fallback when the original thesis fails",
-                ],
-                "rows": [
-                    [
-                        "Builder buy-box reversal targets already requested lot specifications",
-                        "Obtain dated buyer requirements and two relevant closed transfers",
-                        "$85,000 exit less $35,000 allowances supports $50,000 acquisition",
-                        "Reprice against another verified buyer or reject the parcel",
-                    ],
-                    [
-                        "Absentee-owner trigger mining prioritizes documented holding friction",
-                        "Combine owner mailing separation with tenure and verified authority",
-                        "$1,500 campaign divided by one acquisition equals sourcing cost",
-                        "Use respectful mail only when digital contact eligibility fails",
-                    ],
-                    [
-                        "Stale-listing re-underwriting corrects measurable information or presentation gaps",
-                        "Compare listing claims against recorder, utility, and zoning evidence",
-                        "$70,000 proceeds less $45,000 purchase and $10,000 costs",
-                        "Require broker coordination and retain an unchanged-use exit",
-                    ],
-                    [
-                        "Adjacent-owner assembly purchases independently defensible parcels with synergy",
-                        "Confirm both sellers, boundary geometry, and buyer assembly value",
-                        "$100,000 proceeds less $70,000 purchases and $14,000 costs",
-                        "Use simultaneous conditional closings or abandon dependent acquisitions",
-                    ],
-                    [
-                        "Minor-subdivision feasibility prices only documented potential lot creation",
-                        "Obtain local process requirements and surveyor infrastructure assumptions",
-                        "$180,000 proceeds less $100,000 purchase and $40,000 costs",
-                        "Preserve a viable whole-parcel exit or decline acquisition",
-                    ],
-                    [
-                        "tcpa_litigator_scrub_honeypot_arbitrage operates only as defensive contact screening",
-                        "Verify lawful docket provenance alongside consent and suppression records",
-                        "A $300 batch across 300 records costs $1 each",
-                        "Disable uncertain enrichment and require authoritative contact eligibility",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the missing fact that a real buyer will pay for",
-                "body": (
-                    "Veteran land operators earn an information advantage by resolving specific "
-                    "uncertainties, not by describing every unbuilt parcel as undervalued."
-                ),
-                "items": [
-                    "Ask the utility provider for a parcel-specific written service response; a nearby main does not establish capacity, connection rights, or installed cost.",
-                    "Compare recorded deeds with assessor acreage before mailing; separate tax parcel numbers can still describe interests that cannot be conveyed independently.",
-                    "Ask builders which recently rejected lots nearly qualified, then source the missing frontage, sewer availability, or price characteristic.",
-                    "Request the recorder instrument establishing access before ordering attractive listing photography; a visible road is not evidence of a transferable easement.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build a parcel evidence file and reject defects before bidding",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Construct the lead file around county identifier, parcel identifier, recorded owner, "
-                    "legal description reference, mailing address, source date, and primary sourcing "
-                    "thesis. Deduplicate by ownership group as well as parcel because one owner "
-                    "with twelve parcels should not receive twelve introductions. Preserve original "
-                    "exports and normalize copies; assessor updates can lag deeds, and GIS outlines "
-                    "are not boundary surveys. Join parcels to FEMA flood layers, National Wetlands "
-                    "Inventory screening, road centerlines, slope data, and available utility service "
-                    "areas. Treat every overlay as triage, not a conclusive buildability opinion. "
-                    "FEMA mapping does not resolve local drainage, and an unmapped wetland can "
-                    "still require investigation. Track the layer date and coordinate reference "
-                    "system to prevent shifted polygons from creating false access or flood "
-                    "conclusions. Request title work early on the best prospects, including vesting, "
-                    "taxes, recorded easements, restrictions, and exceptions. A title commitment "
-                    "does not establish zoning compliance or erase an excluded access defect. "
-                    "Commission a survey when boundary location, frontage, encroachment, or a split "
-                    "drives value. Give each unresolved item a named professional, expected cost, "
-                    "and contractual deadline rather than a reassuring color in the dashboard. "
-                    "Keep seller statements distinguishable from independently obtained evidence throughout."
-                ),
-                (
-                    "Score qualified parcels out of one hundred using buyer fit worth twenty-five "
-                    "points, legal access twenty, utility and buildability evidence twenty, conservative "
-                    "price spread twenty, and seller authority plus timing fifteen. Award full "
-                    "points only for documented evidence; assertions receive partial credit under "
-                    "a written rubric. A score of eighty is a review threshold, not permission "
-                    "to overlook a fatal defect. Unresolved legal access, disputed ownership, or "
-                    "environmental exposure beyond the team's capability stops the acquisition "
-                    "regardless of total. Distinguish physical access, recorded access rights, "
-                    "maintenance obligations, and lender or buyer acceptance. Ask the planning "
-                    "department about permitted uses, setbacks, minimum lot dimensions, legal "
-                    "nonconforming status, and subdivision procedures using the actual parcel "
-                    "and proposed use. Obtain a written response where available, while recognizing "
-                    "that staff correspondence is not a permit. Under CERCLA, 42 U.S.C. "
-                    "9607, ownership can carry environmental liability; where a liability defense "
-                    "is being evaluated, investigate the applicable elements and all-appropriate-inquiries "
-                    "requirements under 40 CFR Part 312 before purchase. A desktop map is "
-                    "not that inquiry. Use a qualified environmental professional for relevant "
-                    "historical industrial, dumping, storage, or agricultural chemical concerns. "
-                    "Price uncertainty only when its possible loss is bounded and supportable."
-                ),
-                (
-                    "Run price discovery as an evidence sequence rather than an argument with "
-                    "the owner. Establish three comparable closed sales, adjust explicitly for "
-                    "utilities and usable acreage, then test the proposed exit with two buyers. "
-                    "Keep listed prices in a separate field because exposure without closing "
-                    "is evidence of competition, not realized value. For an $85,000 expected "
-                    "sale, test a fifteen-percent price reduction to $72,250. With a $50,000 "
-                    "purchase and $15,000 other direct costs, contribution falls from $20,000 "
-                    "to $7,250 before shared overhead; a modest surprise can consume the "
-                    "remaining cushion. Then add six months of incremental taxes, interest, "
-                    "insurance, and maintenance using actual quotes. If combined downside is "
-                    "unacceptable, reduce the offer or secure a contract structure that permits "
-                    "investigation before committing the acquisition balance. Have local counsel "
-                    "prepare or review feasibility, title-objection, extension, and deposit provisions "
-                    "for the jurisdiction. Minor subdivisions require the actual state and local "
-                    "process; for example, California Government Code Section 66424 supplies a "
-                    "subdivision definition, not automatic permission to split. Do not advertise "
-                    "future lots as separately saleable before the required approvals and recording "
-                    "are complete. Retain the evidence supporting each advertised property claim."
-                ),
-            ],
-            "table": {
-                "caption": "Parcel Qualification Matrix: Evidence, Scoring, and Acquisition Stops",
-                "headers": [
-                    "Qualification dimension and maximum available points",
-                    "Evidence needed for a defensible assessment",
-                    "Practical verification action and accountable professional",
-                    "Condition requiring rejection or additional investigation",
-                ],
-                "rows": [
-                    [
-                        "Buyer fit contributes twenty-five points toward parcel qualification",
-                        "Two buyers confirm dimensions, location, funding, and purchase range",
-                        "Acquisitions lead records dated requirements and comparable transactions",
-                        "Only speculative buyers exist or requirements contradict parcel facts",
-                    ],
-                    [
-                        "Legal access contributes twenty points but remains independently decisive",
-                        "Recorded access instruments connect the parcel to lawful ingress",
-                        "Title professional and surveyor examine exceptions and physical alignment",
-                        "Visible road lacks enforceable rights acceptable to intended buyers",
-                    ],
-                    [
-                        "Utilities and buildability contribute twenty documented qualification points",
-                        "Provider responses and local rules support the intended use",
-                        "Planner and utility contacts identify capacity and improvement requirements",
-                        "Connection costs or use restrictions defeat supported exit economics",
-                    ],
-                    [
-                        "Conservative spread contributes twenty points after full direct costs",
-                        "Closed comparables support price after documented condition adjustments",
-                        "Operator stress-tests price, holding period, and quoted transaction expenses",
-                        "Combined downside consumes the approved acquisition risk budget",
-                    ],
-                    [
-                        "Seller authority and timing contribute fifteen documented qualification points",
-                        "Vesting records align with authorized signers and realistic deadlines",
-                        "Closing counsel verifies entity, estate, trust, or individual authority",
-                        "Unresolved ownership dispute prevents a reliable conveyance pathway",
-                    ],
-                    [
-                        "Environmental history remains a separate acquisition stop assessment",
-                        "Historical use and professional findings address material contamination concerns",
-                        "Qualified environmental professional scopes investigation before contractual deadlines",
-                        "Potential liability exceeds expertise, available capital, or acceptable exposure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before acquisition funds become committed",
-                "body": (
-                    "A high score prioritizes work. These independent checks determine whether "
-                    "the parcel can proceed under the approved purchase structure."
-                ),
-                "items": [
-                    "Verify recorded seller authority, the legal description, conveyable interests, and a title-insurance path with material exceptions reviewed.",
-                    "Verify enforceable access, survey-dependent dimensions, utility assumptions, and the permitted use supporting the proposed exit.",
-                    "Verify environmental investigation scope and completion timing; do not substitute GIS screening for required professional inquiry.",
-                    "Verify cash availability, downside pricing, carrying reserves, deposit exposure, and every contractual diligence deadline before releasing funds.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run consent-aware outreach with measurable conversion and direct answers",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a channel-specific contact record before outreach. Record how an address, "
-                    "email, or number was obtained, the intended message, consent evidence where "
-                    "required, suppression status, and any revocation. A public tax record does "
-                    "not establish permission for automated calls or texts. Have counsel classify "
-                    "the actual campaign under 47 U.S.C. 227, 47 CFR 64.1200, applicable "
-                    "state calling laws, and the Telemarketing Sales Rule when applicable; offers "
-                    "to buy property should not be assumed categorically included or excluded "
-                    "from every solicitation rule. Where National Do Not Call requirements apply, "
-                    "use registry data obtained within the applicable thirty-one-day interval, "
-                    "maintain entity-specific suppression, and honor applicable contact-hour rules. "
-                    "Implement the mapped docket-screening play through lawful public docket access "
-                    "or a licensed provider, respecting access restrictions and data terms. Store "
-                    "source and match confidence, restrict access, and send ambiguous matches "
-                    "to review. Plaintiff matching neither authorizes contact nor replaces TCPA "
-                    "requirements. Its useful outcome is reducing mistaken or disputed outreach, "
-                    "not identifying people whose rights can be ignored. If enrichment is "
-                    "uncertain, disable it and require independently verified consent plus authoritative "
-                    "suppression checks before using a channel requiring those controls. Never "
-                    "resell docket-derived identities as a prospect list."
-                ),
-                (
-                    "Use a restrained twenty-eight-day cadence with eligibility checked before every "
-                    "touch. Day one is a personalized postal letter identifying the actual "
-                    "purchaser, parcel, and reason for interest without a fabricated government "
-                    "appearance. Day eight is one follow-up by a separately eligible channel, "
-                    "or postal mail if electronic eligibility is absent. Day eighteen answers "
-                    "one parcel-specific issue, such as purchase timing or responsibility for "
-                    "survey costs. Day twenty-eight closes the sequence politely; silence moves "
-                    "the owner into a cooling period, not an escalating dialer campaign. "
-                    "Inbound pages should collect parcel identifiers, preferred contact methods, "
-                    "and clear channel-specific permission when needed, without preselected choices. "
-                    "Commercial email must meet applicable CAN-SPAM requirements, including truthful "
-                    "headers and working opt-out handling. Process revocations promptly across "
-                    "connected systems and stop incompatible outreach rather than changing vendors. "
-                    "For the screening play, a $300 review cost across 300 records equals "
-                    "$1 per record; ten hours saved at $40 per hour creates $100 "
-                    "of illustrative operating benefit after that charge. This is a cost "
-                    "comparison, not recognized parcel revenue or proof of legal eligibility. "
-                    "Only offer screening to another operator under a separately scoped service "
-                    "with validated data rights, measurable controls, and independently priced delivery."
-                ),
-                (
-                    "Measure unique owners through the entire conversion chain. An illustrative cohort "
-                    "of 3,000 mailed owners yields 120 substantive replies, forty-two qualified "
-                    "conversations, twenty-one written offers, four signed purchase agreements, and "
-                    "three completed acquisitions. Those planning assumptions imply four-percent response, "
-                    "thirty-five-percent qualification of replies, fifty-percent offer conversion, roughly "
-                    "nineteen-percent offer acceptance, and seventy-five-percent contract completion. They "
-                    "are hypotheses to replace with cohort results, not market benchmarks presented "
-                    "as established facts. At $0.85 per initial letter, $2,550 buys the "
-                    "first touch; add follow-ups, research, labor, and screening before computing "
-                    "cost per acquisition. Approximately 10,000 similar owners could support ten "
-                    "acquisitions at that modeled rate, but capacity and buyer absorption must "
-                    "justify expansion. Answer objections with evidence: for 'your price is low,' "
-                    "show the actual condition-adjusted comparable and cash timeline; for 'my "
-                    "neighbor sold for more,' distinguish installed improvements and closing dates; "
-                    "for 'I will not sign online,' offer the closing office's supported "
-                    "paper process. When an owner says stop, suppress rather than rebut. "
-                    "Track signed acquisitions separately from buyer contracts and completed resales "
-                    "so three purchased parcels never masquerade as three realized profit wins. "
-                    "Review objections weekly to improve underwriting, not simply pressure reluctant owners."
-                ),
-            ],
-            "table": {
-                "caption": "Owner Contact Cadence, Objection Responses, and Conversion Evidence",
-                "headers": [
-                    "Channel or objection requiring operator action",
-                    "Specific message or response to deliver",
-                    "Evidence recorded for conversion and control",
-                    "Stop condition or next permitted action",
-                ],
-                "rows": [
-                    [
-                        "Day-one postal introduction to a verified ownership group",
-                        "Identify purchaser, parcel, purchase interest, and realistic response options",
-                        "Record mailing date, address source, campaign cost, and cohort",
-                        "Suppress returned addresses until ownership and delivery details resolve",
-                    ],
-                    [
-                        "Day-eight follow-up through an independently eligible contact channel",
-                        "Ask whether sale timing or parcel questions deserve discussion",
-                        "Retain channel eligibility, suppression checks, and actual response outcome",
-                        "Use postal mail when electronic contact requirements remain unresolved",
-                    ],
-                    [
-                        "Day-eighteen clarification addressing one documented parcel-specific transaction issue",
-                        "Explain responsibility for survey costs and proposed closing timing",
-                        "Record the owner's concern and supporting transaction assumptions",
-                        "Stop incompatible outreach immediately when the owner revokes permission",
-                    ],
-                    [
-                        "Day-twenty-eight final message ending the current outreach sequence",
-                        "Provide a direct reply option without pressure or urgency",
-                        "Close campaign status and preserve preferences across connected systems",
-                        "Resume only under a justified policy respecting suppression instructions",
-                    ],
-                    [
-                        "Price objection comparing the offer with neighboring property sales",
-                        "Separate installed infrastructure, usable acreage, and verified closing dates",
-                        "Attach relevant comparable evidence and revised cost assumptions",
-                        "Increase price only when documented economics support the change",
-                    ],
-                    [
-                        "Signing objection involving online documents or unfamiliar closing arrangements",
-                        "Offer the closing office's supported identity and paper-signing process",
-                        "Document authorized signers and independently verified closing-office contact details",
-                        "Decline payment redirection until the closing office independently confirms",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Assemble a verified owner cohort",
-                    "action": "Select 300 ownership groups matching two documented buyer buy boxes.",
-                    "detail": (
-                        "Preserve source exports, deduplicate related parcels, verify ownership, "
-                        "and remove parcels failing initial access or buildability screens."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Establish channel eligibility",
-                    "action": "Check source rights, applicable consent, suppression, and message classification.",
-                    "detail": (
-                        "Use lawful docket signals only as supplementary risk review; uncertain "
-                        "enrichment stays disabled and never supplies contact permission."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Execute and classify the cadence",
-                    "action": "Run the four-touch sequence while recording replies and stopping on revocation.",
-                    "detail": (
-                        "Separate delivery failures, refusals, future sellers, qualified discussions, "
-                        "written offers, and signed agreements using dated CRM events."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile acquisitions with actual resales",
-                    "action": "Track each signed purchase through diligence, closing, disposition, and collected proceeds.",
-                    "detail": (
-                        "Calculate acquisition cost from all cohort expenses and report realized "
-                        "parcel contribution separately from allocated annual owner profit."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Land the first three to ten wins without breaking the scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Stage execution across three to twelve months according to diligence and local "
-                    "liquidity, not the calendar alone. During month one, finish buyer interviews, "
-                    "choose two parcel classes, engage a title or closing provider, and test "
-                    "300 ownership groups. During months two and three, expand only the "
-                    "cohort producing qualified conversations, order targeted studies, and negotiate "
-                    "purchase agreements with realistic investigation periods. Months three through "
-                    "six should emphasize the first clean closings and buyer-facing evidence "
-                    "packages: legal description, survey when available, access documents, utility "
-                    "responses, zoning facts, taxes, restrictions, and factual photographs. Months "
-                    "six through twelve extend the proven thesis rather than adding distant "
-                    "counties and unfamiliar entitlement work simultaneously. A signed seller "
-                    "agreement is a sourcing milestone, a purchase closing is an inventory "
-                    "event, and a completed resale is the revenue event for this operating "
-                    "scorecard. Use a licensed broker where appropriate for dispositions and "
-                    "review licensing requirements before representing other owners, negotiating "
-                    "for others, or marketing interests beyond owned property. Keep brokerage "
-                    "fees, referral arrangements, and settlement-provider selection explicit. Where "
-                    "a transaction falls within RESPA, 12 U.S.C. 2607 restricts settlement-service "
-                    "kickbacks; do not assume every raw-land transaction has identical coverage. "
-                    "Avoid volume-based expansion until the first resale validates the cost model."
-                ),
-                (
-                    "Reconcile every annual plan to the canonical scorecard. Conservative revenue is "
-                    "$200,000 in gross parcel sale proceeds, with $176,000 total modeled "
-                    "costs and $24,000 owner net profit at twelve percent. Base revenue "
-                    "is $850,000, costs are $692,750, and owner net profit is $157,250 "
-                    "at eighteen-point-five percent. Scaled revenue is $1,500,000, costs are "
-                    "$1,125,000, and owner net profit is $375,000 at twenty-five percent. "
-                    "Illustrative transaction counts of four sales averaging $50,000, ten averaging "
-                    "$85,000, and fifteen averaging $100,000 reproduce those revenue totals; "
-                    "they are not additional scorecard assumptions about required volume. Total "
-                    "costs must encompass acquisition basis, transaction expenses, diligence, carrying "
-                    "costs, marketing, contractors, and applicable operating overhead without double "
-                    "counting. Conservative and Base use one full-time person plus three "
-                    "contractors; Scaled uses two full-time people plus four contractors. Do "
-                    "not convert those contractor counts into unsupported full-time payroll assumptions. "
-                    "No screening-service receipts are added to these parcel-sale cases. The "
-                    "first three to ten wins are an execution objective, whereas fifteen "
-                    "sales illustrate a later scaled annual run rate. Unsold inventory, "
-                    "buyer inquiries, refundable deposits, and hypothetical subdivision value are "
-                    "not completed-sale revenue in this operating reconciliation."
-                ),
-                (
-                    "Protect liquidity with a rolling thirteen-week cash forecast that separates "
-                    "contract deposits, diligence commitments, purchase balances, carrying reserves, and "
-                    "expected resale receipts. The canonical startup capital range is $50,000 "
-                    "to $400,000, while monthly operating expense ranges from $3,000 to "
-                    "$15,000; parcel acquisition capital is a separate deployment requirement "
-                    "rather than routine monthly overhead. At the low end, a $50,000 "
-                    "purchase can exhaust available capital before title fees or reserves, "
-                    "so pursue a smaller parcel, obtain clearly priced authorized funding, "
-                    "or wait. Three concurrent $50,000 acquisitions plus $5,000 diligence "
-                    "per parcel and $30,000 reserves require $195,000 cash before disposition "
-                    "receipts. Compare that commitment with actual available funds, not a "
-                    "broker's estimate of future sales. Hold a weekly review covering "
-                    "qualified-owner cost, offer acceptance, contract fall-through, days in inventory, "
-                    "price reductions, and realized contribution after allocated costs. Stop a "
-                    "campaign if the acquisition cost exceeds the written budget or the "
-                    "buyer thesis fails; do not compensate by relaxing access standards. "
-                    "Increase cohort size only after documented closings show that title "
-                    "work, buyer absorption, and contractor capacity keep pace. Reliable first "
-                    "wins come from repeatable evidence and controlled exposure, not maximum "
-                    "letters sent. Preserve enough liquidity to refuse the next weak parcel."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Reconciliation and First-Win Capital Controls",
-                "headers": [
-                    "Scenario or operating control being reconciled",
-                    "Revenue basis or explicit cash requirement",
-                    "Cost and profit calculation requiring reconciliation",
-                    "Staffing or decision rule supporting execution",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical annual case with acquisition costs included",
-                        "$200,000 gross proceeds; illustrative four sales averaging $50,000",
-                        "$176,000 total costs leave $24,000 profit at 12%",
-                        "One full-time person plus three contractors supports this case",
-                    ],
-                    [
-                        "Base canonical annual case with acquisition costs included",
-                        "$850,000 gross proceeds; illustrative ten sales averaging $85,000",
-                        "$692,750 total costs leave $157,250 profit at 18.5%",
-                        "One full-time person plus three contractors supports this case",
-                    ],
-                    [
-                        "Scaled canonical annual case with acquisition costs included",
-                        "$1,500,000 gross proceeds; illustrative fifteen sales averaging $100,000",
-                        "$1,125,000 total costs leave $375,000 profit at 25%",
-                        "Two full-time people plus four contractors total six people",
-                    ],
-                    [
-                        "Three concurrent parcel purchases require a dedicated liquidity check",
-                        "$150,000 acquisitions plus $15,000 diligence and $30,000 reserves",
-                        "$195,000 cash requirement precedes any assumed resale receipts",
-                        "Reduce simultaneous purchases when available funds cannot cover commitments",
-                    ],
-                    [
-                        "Initial owner cohort measures sourcing rather than realized revenue",
-                        "3,000 owners produce three illustrative acquisitions before any resales",
-                        "$2,550 initial postage budget excludes research and follow-up costs",
-                        "Replace planning conversion assumptions with observed dated cohort outcomes",
-                    ],
-                    [
-                        "First three to ten wins remain distinct from annual scaling",
-                        "Count completed resales separately from purchases and signed agreements",
-                        "Allocate failed diligence and unsuccessful campaigns into actual costs",
-                        "Expand only after liquidity and buyer absorption support repetition",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Buy the parcel whose access, buyer, and downside you can prove, not the discount you can advertise."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Interview fifteen active land buyers and document two parcel-specific buy boxes supported by actual closed transactions.",
-        "Build a deduplicated 300-owner pilot with recorder references, GIS screening dates, primary sourcing theses, and explicit fallback exits.",
-        "Apply the one-hundred-point qualification rubric while treating unresolved access, seller authority, and material environmental exposure as independent stops.",
-        "Configure channel-specific eligibility, authoritative suppression, revocation handling, and lawful supplementary docket review before any electronic outreach.",
-        "Run the twenty-eight-day cadence and report unique-owner conversion through replies, qualified discussions, offers, contracts, acquisitions, and completed resales.",
-        "Reconcile the thirteen-week cash forecast and annual parcel-sale ledger to the exact Conservative, Base, and Scaled revenue, cost, profit, and staffing cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Evaluate the actual calling or texting technology, message, recipient, and "
-                "applicable consent requirements before deploying owner outreach."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Implement applicable calling restrictions, do-not-call procedures, consent controls, "
-                "and revocation handling; supplementary docket matching supplies no contact authority."
-            ),
-        },
-        {
-            "title": "16 CFR 310.4 — Abusive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
-            "relevance": (
-                "Assess campaign coverage and apply relevant calling-hour, suppression, and "
-                "National Do Not Call requirements, including applicable registry refresh conditions."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Structure covered commercial email with accurate transmission information, required "
-                "sender identification, and functioning opt-out processing."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 9607 — CERCLA liability",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Evaluate potential owner liability and the elements of any relevant defense "
-                "before acquiring parcels with concerning environmental histories."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Scope and time professional environmental inquiry where required for the "
-                "liability protections being evaluated; desktop parcel screening is insufficient."
-            ),
-        },
-        {
-            "title": "California Government Code Section 66424 — Subdivision definition",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=66424.",
-            "relevance": (
-                "Recognize that proposed parcel divisions can fall within the Subdivision Map "
-                "Act and require the applicable state and local approval process."
-            ),
-        },
-        {
-            "title": "12 U.S.C. 2607 — Prohibition against kickbacks and unearned fees",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": (
-                "Review settlement-provider referral arrangements for transactions within RESPA "
-                "coverage rather than assuming uniform treatment across all land purchases."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'due-diligence-perc-tests-septic-site-checks',
+ 'question_prompt': 'What due diligence must I run to confirm a parcel can support a septic system and a '
+                    'home?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Due Diligence: Perc Tests, Septic, and Site Checks',
+ 'subtitle': 'Perc test walkthroughs and Title 5 measurements, what a failed perc test means and '
+             'alternative septic options, health department soil review, slope and water-table concerns, '
+             'Florida wetlands and deal-killing checks, and 15-point due diligence checklists',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land operators and septic pros agree that on any parcel without sewer, the soil '
+                      'decides whether a house can go there, so the perc or site evaluation has to run '
+                      'inside the due diligence window, never after closing. Apke Brothers screen overlays '
+                      'for slope, access, wetlands and flood in five to ten minutes, buy at 40 to 45% of '
+                      'market value, and cap standard diligence at 48 hours. The tests are timed water '
+                      'drops or soil-morphology reads, and the money spread is wide: $150 to $1,500 for a '
+                      'county perc, roughly $5,000 to $20,000 for conventional systems, and $15,000 to '
+                      '$60,000 for mounds, treatment units and drip. Practitioners split on risk: '
+                      "REtipster's Seth has skipped perc on sub-$1,000 lots and has never been burnt, "
+                      'while Mason Dixon Acres skipped it and hit car-sized rock.',
+ 'key_metrics': [{'label': 'Standard land due diligence window',
+                  'metric': 'Standard land due diligence window',
+                  'value': '48 hours max',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Apke Brothers say standard post-contract diligence on cash land buys at '
+                             'about 40% of market value should take 48 hours max, because slow diligence '
+                             'lets sellers back out.',
+                  'source': 'Apke Brothers ([j3-xqUjgb7k @ 00:29:06])'},
+                 {'label': 'County perc test cost range',
+                  'metric': 'County perc test cost range',
+                  'value': '$150 to $1,500',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Seth at REtipster reports the county health department typically charges '
+                             '$150 to $1,500, depending on what the county charges and how many people and '
+                             'machines are involved.',
+                  'source': 'REtipster ([yp6qPMTkjgE @ 00:02:04])'},
+                 {'label': 'Florida conventional septic install',
+                  'metric': 'Florida conventional septic install',
+                  'value': '$10,000 to $15,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Florida Land Facts says conventional systems run $3,600 to $12,500 '
+                             'nationally but Florida installs usually land at $10,000 to $15,000, often '
+                             'more than an $8,000 lot.',
+                  'source': 'Florida Land Facts ([zWTn3NY8wqc @ 00:02:34])'},
+                 {'label': 'Survey boundary mismatch rate',
+                  'metric': 'Survey boundary mismatch rate',
+                  'value': '25 to 30% of the time',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Neil Clements reports surveys come back with boundaries different from GIS '
+                             'and mapping programs roughly 25 to 30% of the time, which is why the team '
+                             'orders a survey on every purchase.',
+                  'source': 'REtipster ([w08yc3MEaGE @ 00:10:54])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who touched septic lands on the same baseline: if the '
+                              'parcel has no sewer line, buildability lives or dies in the dirt. Seth at '
+                              'REtipster frames the perc test as the issue that can make or break a land '
+                              'deal, because a lot that cannot drain wastewater cannot carry a house, and '
+                              'a lot that cannot carry a house loses its highest and best use [yp6qPMTkjgE '
+                              '@ 00:01:51]. Builder Roy Hunter, on site with Virginia agent Ben Quann, '
+                              'puts it bluntly: the purpose of the test is to make sure the property is '
+                              'buildable, and the way you prove buildable is whether a septic system fits '
+                              '[uvqvdLjMBL0 @ 00:01:47]. Acrewell Land Company adds that roughly 25% of US '
+                              'households rely on septic, and once you leave town your ability to build '
+                              'depends on it [AYim3zSksEs @ 00:01:03]. Groundwork, a civil engineer in '
+                              'water utilities, explains why the soil matters more than the hardware: the '
+                              'buried tank only separates solids from liquid, while the soil in the drain '
+                              'field does the real cleaning every day for the 15 to 40 years the system is '
+                              'supposed to last [dSAQlt9llvM @ 00:01:03]. The operator takeaway is '
+                              'consistent across all four: on rural paper, the soil report is the real '
+                              'valuation document.',
+                              'The second point of agreement is sequencing: test while you can still walk. '
+                              'Florida Land Facts, a Sebring-area operator, says never close first and '
+                              'test later; run the soil evaluation inside the due diligence period and '
+                              'start early, because in a busy building season scheduling the evaluator and '
+                              'getting results back can take weeks [zWTn3NY8wqc @ 00:02:14]. Groundwork '
+                              'spells out why the clock matters: if the lot fails after closing, the '
+                              'seller pays nothing and the unbuildable lot is yours, while the three outs, '
+                              'paying for a different system, moving the field, or renegotiating and '
+                              'walking, are all cheaper before you close [dSAQlt9llvM @ 00:01:20]. The '
+                              'installer behind Wells, Septic & More closes the same loop from the '
+                              'contractor side, telling buyers to make sure a property perks before '
+                              'purchasing a home or land so they know a proper system can go in '
+                              '[F-UdA3MqSzw @ 00:10:22]. Mason Dixon Acres is the live counterexample: the '
+                              'couple skipped the test because the price was good and the timber had '
+                              'value, then pulled a rock the footprint of a small car out of the second '
+                              'pit and admitted that without septic the property is essentially rendered '
+                              'useless [8h9gMkksdD8 @ 00:02:22]. The test is cheap; the surprise is not.',
+                              'Practitioners also agree that a failed perc is a cost problem before it is '
+                              'a death sentence. Jack Bosch calls the belief that a failed test means you '
+                              'cannot build one of the most misunderstood factors in real estate, because '
+                              'sand-filter, hydraulic, and self-contained toilet systems can still let you '
+                              'build at a higher price [nVJMPjUWdZw @ 00:07:25]. Liberty Acres says the '
+                              'same in one line: a failure usually means the soil cannot take a '
+                              'conventional drain field, not that the land can never hold a home, and the '
+                              'state and local health department decide which alternatives are allowed '
+                              '[Mio31c7ePlc @ 00:00:00]. The flip side of that consensus is that nobody '
+                              'trusts the neighbors. Acrewell warns that soil characteristics can change '
+                              'within 10 feet in any direction, so septic on both adjoining houses does '
+                              'not mean the vacant lot in the middle qualifies [AYim3zSksEs @ 00:06:00]. '
+                              'Seth at REtipster uses adjoining houses only as a vague signal when speed '
+                              'matters, stressing that neighbors pulling it off does not mean you will '
+                              '[yp6qPMTkjgE @ 00:04:51]. Net consensus: price the alternative system, '
+                              'check local approvals, and treat the house next door as a clue rather than '
+                              'proof.'],
+               'table': {'caption': 'Where the practitioners line up on perc, septic, and site risk',
+                         'headers': ['Consensus Point',
+                                     'Practitioner Position',
+                                     'Operator Move',
+                                     'Expert Source'],
+                         'rows': [['No sewer means septic decides whether the lot is buildable',
+                                   'Roy Hunter says you prove a lot buildable by proving a septic system '
+                                   'fits on it',
+                                   'Treat the soil result as the core valuation input on any rural parcel',
+                                   'Living in Virginia With Ben Quann ([uvqvdLjMBL0 @ 00:01:47])'],
+                                  ['Test before closing, never after the money is gone',
+                                   'Florida Land Facts says never close first and test later, and book the '
+                                   'evaluator early',
+                                   'Run the soil evaluation inside the due diligence window while you can '
+                                   'still walk',
+                                   'Florida Land Facts ([zWTn3NY8wqc @ 00:02:14])'],
+                                  ['A failure after closing shifts every dollar of cost to the buyer',
+                                   'Groundwork says once you close the seller pays nothing and an '
+                                   'unbuildable lot is yours',
+                                   'Make the purchase contingent on a passing soil evaluation before money '
+                                   'goes hard',
+                                   'Groundwork ([dSAQlt9llvM @ 00:06:49])'],
+                                  ['A failed perc is not automatically an unbuildable lot',
+                                   'Jack Bosch says sand filter, hydraulic, and self-contained systems '
+                                   'still allow building at higher cost',
+                                   'Compare alternative-system cost against the planned build value before '
+                                   'killing the deal',
+                                   'Jack Bosch ([nVJMPjUWdZw @ 00:09:31])'],
+                                  ['Neighboring septic systems are a clue, never proof of your soil',
+                                   'Acrewell says soil characteristics can change within ten feet in any '
+                                   'direction across a tract',
+                                   'Never price a lot as buildable just because adjoining houses run '
+                                   'septic',
+                                   'Acrewell Land Company ([AYim3zSksEs @ 00:06:00])'],
+                                  ['Slope and access get screened on the computer before anything else',
+                                   'Apke Brothers call slope and road access the biggest checks in the '
+                                   'desktop review stage',
+                                   'Kill or renegotiate on overlays before paying for any '
+                                   'boots-on-the-ground work',
+                                   'Apke Brothers ([j3-xqUjgb7k @ 00:07:15])'],
+                                  ['Wet-season timing can flip a passing soil result',
+                                   'Groundwork says a perc in a dry August can give a number that March '
+                                   'will not honor',
+                                   'Ask whether the county requires wet weather testing and budget '
+                                   'calendar time for it',
+                                   'Groundwork ([dSAQlt9llvM @ 00:02:49])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Apke Brothers run a four-stage acquisition screen after the purchase '
+                              'agreement is signed. Stage one is a computer check in The Land Portal: '
+                              'toggle contour lines, flood zones, wetlands, and water features, mark '
+                              'problems on paper, and confirm road access and slope, which they call the '
+                              'two biggest items; the pink contour lines sit 20 feet apart, the 3D button '
+                              'exposes valleys where water collects, and a KML export drops the parcel '
+                              'into Google Earth street view [j3-xqUjgb7k @ 00:06:08]. A rookie takes an '
+                              'hour, a veteran five to ten minutes. Stage two is the price check: they '
+                              'average buying at 40 to 45% of market value, like to double their money, '
+                              'grade every deal A to F on price, property, and location, and renegotiate '
+                              'with the seller when land and price do not line up [j3-xqUjgb7k @ '
+                              '00:07:40]. Stage three moves to the county for deed, zoning, setbacks, and '
+                              'any perc record at the health department. Stage four is boots on the '
+                              'ground, roughly $200 for a drone photographer, done while the file sits in '
+                              'title so they can still back out and list immediately [j3-xqUjgb7k @ '
+                              '00:23:39]. Neil Clements adds a survey on every single purchase, calling a '
+                              'skipped $1,000 survey ludicrous [w08yc3MEaGE @ 00:10:38].',
+                              'The test itself is a timed drop. MassDEP walks through the Title 5 version: '
+                              'measure the shelf so the test sits in the most restrictive layer, dig the '
+                              'hole at least 12 inches wide and 18 inches deep, hold water at the 12-inch '
+                              'mark for 15 minutes to swell the soil, then time the drop from 9 inches to '
+                              '6 inches and divide by three to get minutes per inch [Q3kV6OiudSU @ '
+                              '00:00:34]. Groundwork cites Alabama extension guidance of at least six '
+                              'holes 24 to 42 inches deep, soaked at least four hours, read every 5 to 30 '
+                              'minutes, with 60 minutes per inch or slower failing a standard field and '
+                              'the water table or bedrock needing to sit at least 4 feet below the '
+                              'trenches [dSAQlt9llvM @ 00:01:40]. In the field, Mason Dixon Acres ran a '
+                              'probe stage first, two 7-foot holes about 70 feet apart for the sewage '
+                              'enforcement officer to read the limiting zone, before six post holes get '
+                              "the actual water [8h9gMkksdD8 @ 00:00:20]. Roy Hunter's crew no longer "
+                              'pours water at all; they read soil morphology, color, texture, and '
+                              'consistency, looking for 36 inches of good soil under trenches at least 18 '
+                              'inches deep [uvqvdLjMBL0 @ 00:02:33].',
+                              'The money side is where operators get blindsided. Seth at REtipster pays '
+                              'the county anywhere from $150 to $1,500 for a perc test, and on lots bought '
+                              'free and clear for well under $1,000 has skipped it entirely when the deal '
+                              'had to close that week, reporting they have never been burnt [yp6qPMTkjgE @ '
+                              "00:02:04]. Groundwork's cost guide runs $150 to $500 for the soil "
+                              'evaluation, $1,000 to $5,000 for a designer, about $5,000 for a '
+                              'conventional system, $15,000 to $25,000 for a mound, and $15,000 to $30,000 '
+                              'or more for an aerobic treatment unit, warning that two identical-looking '
+                              'lots can differ by $10,000 or more [dSAQlt9llvM @ 00:05:35]. Ben Quann '
+                              'calls $20,000 the going rate for a conventional system in Virginia, '
+                              "estimates about $30,000 for the treatment-unit design on their buyer's lot, "
+                              'and puts drip systems at $45,000 to $60,000 [uvqvdLjMBL0 @ 00:06:08]. Jack '
+                              'Bosch frames the decision as a ratio: a roughly $10,000 normal system '
+                              'versus $30,000 to $50,000 for an alternative kills a $5,000 lot carrying a '
+                              '$30,000 mobile home, yet barely registers on a $250,000 lot under a '
+                              'million-dollar custom home [nVJMPjUWdZw @ 00:09:46].'],
+               'table': {'caption': 'Test specs, tools, and septic price points operators actually quoted',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Spec or Number',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['The Land Portal desktop overlay check',
+                                   'Contour lines 20 feet apart plus flood, wetland, and water feature '
+                                   'layers',
+                                   'Five to ten minute screen for slope and access before the price check',
+                                   'Apke Brothers ([j3-xqUjgb7k @ 00:10:14])'],
+                                  ['Title 5 percolation hole measured by the health inspector',
+                                   'At least 12 inches wide and 18 inches deep, 15-minute presoak at 12 '
+                                   'inches',
+                                   'Time the drop from nine to six inches, then divide by three for '
+                                   'minutes per inch',
+                                   'MassDEP ([Q3kV6OiudSU @ 00:00:34])'],
+                                  ['Two-pit field test run with the county inspector',
+                                   'Two test pits at the top and bottom of the laid-out bed, about one day',
+                                   'Presoak one day, then run the perc with the inspector the following '
+                                   'day',
+                                   'Delaware Valley Septic, Sewer, & Storm ([F5XXV-dhw1Q @ 00:00:26])'],
+                                  ['Florida septic pricing against cheap lot prices',
+                                   'Florida conventional installs usually $10,000 to $15,000, engineered '
+                                   'mound $15,000 to $25,000',
+                                   'On an $8,000 lot septic can run two or three times the land, so price '
+                                   'it into the offer',
+                                   'Florida Land Facts ([zWTn3NY8wqc @ 00:02:56])'],
+                                  ['Wet-season perc window in Anne Arundel County',
+                                   'Bill Bower says the season runs from mid-February to about mid-April',
+                                   'File applications in time on wet-season lots or wait until the next '
+                                   'season to design',
+                                   'The Jen Holden Group of Compass ([3ppoErpmGfs @ 00:02:43])'],
+                                  ['Holding tank fallback when the perc fails on an existing house',
+                                   'Typically 3,000 gallons of capacity, roughly 10 days of water by their '
+                                   'math',
+                                   'Budget a couple hundred to nearly $1,000 a month in pump-outs and a '
+                                   'lower resale price',
+                                   'Wells, Septic & More ([F-UdA3MqSzw @ 00:04:02])'],
+                                  ['Tennessee mound and alternative permit thresholds',
+                                   '24 inches of soil over a restrictive layer, 20 for a modified mound, '
+                                   '$500 state permit fee',
+                                   'Ask the permitting office for its approved-system list before paying '
+                                   'for any design',
+                                   'Liberty Acres ([Mio31c7ePlc @ 00:01:23])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Squeezing more signal out of every pit, drone flight, and soil map',
+                           'body': 'These are the small operational moves practitioners use to catch soil '
+                                   'and site problems early and turn diligence spend into marketing and '
+                                   'pricing leverage.',
+                           'items': ['Give your drone pilot or realtor exact orders, such as walking the '
+                                     'first couple hundred feet back to check how wet it gets, and reuse '
+                                     'the shots as listing photos [Apke Brothers — j3-xqUjgb7k @ 00:21:01]',
+                                     "Copy the health department reviewer's habit: John Dixon skips the "
+                                     "consultant's existing pits and digs where nobody has studied yet to "
+                                     'catch bedrock, ledge, or a perched water table [Soils Inc. & VA '
+                                     'Septic — vTDxU1jKGSI @ 00:02:40]',
+                                     'On a big parcel, one failed hole is not the verdict: Seth had a '
+                                     '12-acre tract fail in several spots and pass in one corner '
+                                     '[REtipster — yp6qPMTkjgE @ 00:05:17]',
+                                     "Commission a soil scientist's mapped evaluation before you list, "
+                                     'because sellers who have it in hand get way more leverage and '
+                                     'pricing power with buyers [Acrewell Land Company — AYim3zSksEs @ '
+                                     '00:07:50]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Run the desktop overlay screen',
+                              'action': 'Pull contours, flood zones, wetlands, water features, and road '
+                                        'access on the parcel before spending money.',
+                              'detail': 'Apke Brothers flag every wetland, slope, and access issue on '
+                                        'paper, cross-check with the 3D view and a KML export to Google '
+                                        'Earth, and expect a veteran to finish in five to ten minutes '
+                                        '[Apke Brothers — j3-xqUjgb7k @ 00:12:45].'},
+                             {'step': 2,
+                              'title': 'Call the health department before the offer',
+                              'action': 'Ask whether the lot was ever tested, approved, or turned down, '
+                                        'whether a permit exists, and how old any soil report is.',
+                              'detail': 'Groundwork calls the county health department before making an '
+                                        'offer [Groundwork — dSAQlt9llvM @ 00:07:05] and warns that in '
+                                        "Wayne County a soil report is valid for two years, so a seller's "
+                                        'old report can be stale [Groundwork — dSAQlt9llvM @ 00:04:29].'},
+                             {'step': 3,
+                              'title': 'Lock the contingency and the calendar',
+                              'action': 'Make the purchase contingent on a passing soil evaluation with '
+                                        'enough time for wet-season testing.',
+                              'detail': 'Groundwork writes the soil contingency with room for wet weather '
+                                        'testing [Groundwork — dSAQlt9llvM @ 00:06:49], and Bill Bower '
+                                        'notes wet-season lots must test from mid-February to mid-April or '
+                                        'wait for the next season [The Jen Holden Group of Compass — '
+                                        '3ppoErpmGfs @ 00:02:43].'},
+                             {'step': 4,
+                              'title': 'Read the written result and reprice',
+                              'action': 'Get the failure condition in writing, retest other spots, and '
+                                        'fold the required system cost into the offer.',
+                              'detail': 'Liberty Acres asks which condition failed, whether another spot '
+                                        'can be tested, and gets a written estimate for the system and '
+                                        'upkeep [Liberty Acres — Mio31c7ePlc @ 00:01:08]; Florida Land '
+                                        'Facts says that septic bill belongs in your offer price [Florida '
+                                        'Land Facts — zWTn3NY8wqc @ 00:03:18].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether a land flipper pays for a perc test before '
+                              'closing at all. Seth of REtipster buys many vacant lots for well under '
+                              '$1,000 free and clear, and when a deal has to close that week, Seth says it '
+                              'may be worth rolling the dice rather than paying more for the test than for '
+                              'the property itself, adding that the approach has never burned the business '
+                              'to date [yp6qPMTkjgE @ 00:03:14]. Mason Dixon Acres ran the same logic as '
+                              'owner-builders: they got such a good price and saw enough money in logs '
+                              'that they skipped the perc test, then hit rock big enough that the '
+                              'inspector ruled the site unsuitable for any septic system, a result they '
+                              'say essentially renders the property useless [8h9gMkksdD8 @ 00:02:22]. '
+                              'Florida Land Facts takes the hard line the other way, telling buyers never '
+                              'to close first and test later, and to start the soil evaluation early '
+                              'because a busy building season can push evaluator scheduling and results '
+                              'out by weeks [zWTn3NY8wqc @ 00:02:14]. Groundwork frames it as sequence: if '
+                              'a lot fails, paying for a different system, moving the field, or '
+                              'renegotiating are all cheaper before closing, so the rule is test first, '
+                              'buy second [dSAQlt9llvM @ 00:06:32]. The practical divide comes down to the '
+                              'price paid versus how much of the resale value depends on a house going in.',
+                              'Practitioners also clash on how fast diligence can move. The Apke Brothers '
+                              'run a four-step process on cash land buys and argue standard diligence '
+                              'should take 48 hours max, because sellers back out when a deal bought near '
+                              '40% of market value sits too long [j3-xqUjgb7k @ 00:29:06]. Bill Bower, '
+                              'speaking with The Jen Holden Group of Compass, describes a calendar no '
+                              'investor can compress: in parts of Anne Arundel County, wet season perc '
+                              'lots must be tested from roughly mid-February to mid-April, and missing '
+                              'that window means waiting until the next season to design the system '
+                              '[3ppoErpmGfs @ 00:03:01]. Even the test itself is disputed. Roy Hunter, '
+                              'appearing on Living in Virginia With Ben Quann, says the '
+                              'dig-a-hole-and-time-the-water method was dropped probably 20 to 25 years '
+                              'ago, replaced by soil morphology that reads color, texture, and '
+                              'consistency, even though everybody still calls it a perc test [uvqvdLjMBL0 '
+                              '@ 00:02:21]. MassDEP still walks through a timed water test: hold the water '
+                              'at the 12-inch mark for 15 minutes, then time the drop from 9 inches to 6 '
+                              'inches and divide by three for minutes per inch [Q3kV6OiudSU @ 00:01:52]. '
+                              'An operator promising a seller a fast close has to know which regime the '
+                              'county runs, and which season it demands, before quoting any timeline.',
+                              'What a failed perc actually means divides the field. Jack Bosch calls it '
+                              'one of the most misunderstood factors in real estate, insisting land that '
+                              'fails can still carry a house through sand filter, hydraulic, or '
+                              'self-contained toilet systems, just at a much higher price [nVJMPjUWdZw @ '
+                              '00:07:25]. Wells, Septic & More reports a harsher local reality: most of '
+                              'the time in that area, a lot that does not perc will not be allowed to '
+                              'develop at all, and existing homes with failed systems get pushed onto '
+                              'holding tanks [F-UdA3MqSzw @ 00:02:56]. The neighbor shortcut splits '
+                              'operators too. When rushing a cheap deal, Seth of REtipster checks '
+                              'adjoining parcels for houses as a vague signal that the septic question has '
+                              'been solved nearby, while warning that neighbors passing does not mean the '
+                              'lot will [yp6qPMTkjgE @ 00:04:37]. Acrewell Land Company goes further, '
+                              'saying soil characteristics can change 10 feet in any direction, so septic '
+                              'systems on both sides prove nothing about the vacant lot in the middle. '
+                              "Acrewell's alternative is paying a soil scientist for a mapped evaluation "
+                              'across the whole property, which costs more than the county route but '
+                              'samples far more ground and gives the seller more pricing power and '
+                              'confidence with buyers [AYim3zSksEs @ 00:06:00].'],
+               'table': {'caption': 'Contested perc and site-check playbooks, side by side',
+                         'headers': ['Contested Question', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Running a perc test before closing on cheap lots',
+                                   'Seth skips the test on sub-$1,000 lots that must close this week',
+                                   'Mason Dixon Acres skipped it for a good price, then failed on rock',
+                                   'REtipster ([yp6qPMTkjgE @ 00:03:29]); Mason Dixon Acres ([8h9gMkksdD8 '
+                                   '@ 00:02:22])'],
+                                  ['How long the diligence window should run',
+                                   'Apke Brothers cap standard diligence at 48 hours to keep sellers '
+                                   'committed',
+                                   'Florida Land Facts warns evaluator scheduling alone can take several '
+                                   'weeks',
+                                   'Apke Brothers ([j3-xqUjgb7k @ 00:29:06]); Florida Land Facts '
+                                   '([zWTn3NY8wqc @ 00:02:14])'],
+                                  ['Which method the soil test actually uses',
+                                   'Roy Hunter reads soil morphology: color, texture, and consistency in '
+                                   'open pits',
+                                   'MassDEP times a presoaked hole as water drops from nine to six inches',
+                                   'Living in Virginia With Ben Quann ([uvqvdLjMBL0 @ 00:02:33]); MassDEP '
+                                   '([Q3kV6OiudSU @ 00:02:25])'],
+                                  ['What a failed perc means for buildability',
+                                   'Jack Bosch says you can still build with costlier alternative septic '
+                                   'systems',
+                                   'Wells, Septic & More says that area usually will not let you develop',
+                                   'Jack Bosch ([nVJMPjUWdZw @ 00:07:25]); Wells, Septic & More '
+                                   '([F-UdA3MqSzw @ 00:02:56])'],
+                                  ['How much weight utilities deserve in underwriting',
+                                   'Apke Brothers barely care because rural buyers expect to drill wells '
+                                   'and install septic',
+                                   'Neil Clements calls utilities the biggest reason properties sold below '
+                                   'expectations',
+                                   'Apke Brothers ([j3-xqUjgb7k @ 00:18:54]); REtipster ([w08yc3MEaGE @ '
+                                   '00:07:13])'],
+                                  ['Using neighboring septic systems as a proxy',
+                                   'Seth treats built adjoining parcels as a vague signal on rushed deals',
+                                   'Acrewell says soil changes within 10 feet, so neighbors prove nothing',
+                                   'REtipster ([yp6qPMTkjgE @ 00:04:37]); Acrewell Land Company '
+                                   '([AYim3zSksEs @ 00:06:00])'],
+                                  ['Who should map the soil on the parcel',
+                                   'Seth calls the county health department at roughly $150 to $1,500 per '
+                                   'test',
+                                   'Acrewell hires a soil scientist for a mapped whole-property evaluation '
+                                   'report',
+                                   'REtipster ([yp6qPMTkjgE @ 00:02:04]); Acrewell Land Company '
+                                   '([AYim3zSksEs @ 00:06:55])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is learning the soil after the money is gone. Mason '
+                              'Dixon Acres closed without a perc, then the first probe pit hit rock about '
+                              'three feet down for a 36-inch limiting zone, good enough only for a sand '
+                              'mound they describe as roughly twice the cost of conventional and up to '
+                              'five feet tall out of the ground [8h9gMkksdD8 @ 00:00:53]. The second pit, '
+                              '70 feet away on the contour, produced a boulder roughly the footprint of a '
+                              'small car, the site was ruled out for any septic system, and the team ended '
+                              'up dragging a big excavator into dense woods to dig five more pits, filling '
+                              'one in immediately when it hit rock again [8h9gMkksdD8 @ 00:04:58]. Seth of '
+                              'REtipster saw the same pattern on a 12-acre parcel that failed the perc in '
+                              'several spots before one corner passed, which is why one bad hole should '
+                              'never end the search on a larger tract [yp6qPMTkjgE @ 00:05:17]. On the '
+                              'reviewer side, John Dixon, filmed at a health department review by Soils '
+                              'Inc. & VA Septic, deliberately digs where no consultant dug and explores '
+                              'deeper than the minimum to catch bedrock, ledge, or a perched water table '
+                              'that varies across the site [vTDxU1jKGSI @ 00:02:40].',
+                              'Septic math routinely swallows the land price. Florida Land Facts points to '
+                              'Highlands County lots near Sebring trading around $8,000 an acre, then '
+                              'prices Florida conventional installs at $10,000 to $15,000 and engineered '
+                              'mounds at $15,000 to $25,000, meaning the septic can cost two or three '
+                              'times the dirt [zWTn3NY8wqc @ 00:02:56]. Jack Bosch runs the same check on '
+                              "an end buyer's budget: a $5,000 lot carrying a $30,000 mobile home cannot "
+                              'absorb a $30,000 to $50,000 alternative system, while a $250,000 '
+                              'custom-home lot under a million-dollar house can [nVJMPjUWdZw @ 00:09:46]. '
+                              'On Living in Virginia With Ben Quann, the team estimates about $30,000 for '
+                              'an alternative treatment unit against roughly $20,000 for conventional, '
+                              'with drip systems running $45,000 to $60,000, and warns a budget gets blown '
+                              'by having a lot perced for the wrong thing [uvqvdLjMBL0 @ 00:06:08]. Wells, '
+                              'Septic & More shows the worst branch: a holding tank, usually around 3,000 '
+                              'gallons giving roughly 10 days of water, at a couple hundred to nearly '
+                              '$1,000 a month in pumping, which drags resale value down [F-UdA3MqSzw @ '
+                              '00:04:02]. Every one of those numbers belongs in the offer price before '
+                              'signing.',
+                              'The quieter traps sit in paperwork and calendars. Neil Clements of '
+                              'REtipster orders a survey on every deal because roughly 25 to 30% of the '
+                              'time the boundaries come back different from what the GIS program showed, '
+                              'and a survey can expose an easement that makes the whole parcel unbuildable '
+                              '[w08yc3MEaGE @ 00:10:54]. Neil also leaned on title insurance on a $200,000 '
+                              'purchase where a wrong legal description meant buying the neighboring '
+                              'property, forcing a PI and 20 signatures gathered across five or six states '
+                              'to clear it [w08yc3MEaGE @ 00:12:08]. Bill Bower tells The Jen Holden Group '
+                              'of Compass about clients who never walked their whole site and had no idea '
+                              'a steep slope and floodplain sat out back until the tight survey contours '
+                              'exposed them [3ppoErpmGfs @ 00:04:35]. Groundwork flags the stale-paper '
+                              "trap: in Indiana's Wayne County a soil report is valid two years and the "
+                              'permit one, so an old report from the seller may be stale by the time you '
+                              'buy, and a dry August test can show a number March will not honor '
+                              '[dSAQlt9llvM @ 00:04:29]. The closing reminder from Neil is blunt: before '
+                              'the wire goes out you can always say no, because once you own it, there are '
+                              'no takebacks.'],
+               'table': {'caption': 'Firsthand failures and the economics behind them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Skipping the perc on a bargain purchase',
+                                   'Mason Dixon Acres bought for price and log value, then hit car-sized '
+                                   'rock',
+                                   'Sand mound at roughly twice conventional cost, or no septic site at '
+                                   'all',
+                                   'Mason Dixon Acres ([8h9gMkksdD8 @ 00:01:47])'],
+                                  ['Holding tank forced by a failed perc',
+                                   'Roughly 3,000 gallons of capacity gives about 10 days of water use',
+                                   'A couple hundred to nearly $1,000 monthly, plus a lower resale price',
+                                   'Wells, Septic & More ([F-UdA3MqSzw @ 00:04:02])'],
+                                  ['Rerouting wastewater into the woods',
+                                   'Owners reroute laundry, kitchen, and utility sinks to sump pumps '
+                                   'outside',
+                                   'A finable offense every single day the discharge keeps existing',
+                                   'Wells, Septic & More ([F-UdA3MqSzw @ 00:08:37])'],
+                                  ['Skipping boots on the ground before listing',
+                                   'The first buyer walks the land and immediately finds it wet',
+                                   'Apke Brothers peg that miss at losing $20,000 on a single deal',
+                                   'Apke Brothers ([j3-xqUjgb7k @ 00:23:24])'],
+                                  ['Trusting GIS boundaries without a survey',
+                                   'Survey boundaries differ from mapping programs 25 to 30% of the time',
+                                   'A roughly $1,000 survey versus a hidden easement across the parcel',
+                                   'REtipster ([w08yc3MEaGE @ 00:10:54])'],
+                                  ['Lot too small for a required water well',
+                                   'A water well rule required two acres on a one-acre lot',
+                                   'Neil Clements calls that land worthless for anyone planning to build',
+                                   'REtipster ([w08yc3MEaGE @ 00:18:11])'],
+                                  ['Abandoned well inside a tight septic site',
+                                   'Roy Hunter found an old well where the drain field had to go',
+                                   'A second permit to abandon it, or stay at least 50 feet away',
+                                   'Living in Virginia With Ben Quann ([uvqvdLjMBL0 @ 00:03:14])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Soil and Septic Kill Switches Before Money Goes Hard',
+                           'body': 'Kill, reprice, or retest the deal if any of these checks comes back '
+                                   'wrong before closing.',
+                           'items': ['Do not close until the soil evaluation is back while you can still '
+                                     'walk away, and start it early because evaluator scheduling can eat '
+                                     'weeks [Florida Land Facts — zWTn3NY8wqc @ 00:02:14].',
+                                     "Price the system the soil actually demands against the end buyer's "
+                                     'build budget; a $30,000 to $50,000 alternative system kills a $5,000 '
+                                     'lot meant for a $30,000 mobile home [Jack Bosch — nVJMPjUWdZw @ '
+                                     '00:09:46].',
+                                     'If one spot fails, test other areas before declaring the parcel '
+                                     'dead; a 12-acre tract failed several spots and still passed in one '
+                                     'corner [REtipster — yp6qPMTkjgE @ 00:05:17].',
+                                     'Ask the county how old any seller-supplied soil report is and '
+                                     'whether it is still accepted, since reports and permits expire '
+                                     '[Groundwork — dSAQlt9llvM @ 00:04:29].']}}],
+ 'pull_quote': '"The test is cheap, the surprise is not." — Groundwork (dSAQlt9llvM @ 00:09:38).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Run the computer check first on wetlands, flood zone, slope, and road access '
+                      'overlays, a five-to-ten-minute pass once practiced [Apke Brothers — j3-xqUjgb7k @ '
+                      '00:06:58].',
+                      'Make the purchase contingent on a passing soil evaluation with enough time for wet '
+                      'weather testing if the county requires it [Groundwork — dSAQlt9llvM @ 00:06:49].',
+                      'Call the county health department before making an offer and ask whether the lot '
+                      'was ever tested, approved, or turned down, and whether a permit exists [Groundwork '
+                      '— dSAQlt9llvM @ 00:07:05].',
+                      'After any failure, get the written result, ask which condition failed, ask whether '
+                      'another spot can be tested, and request the list of approved alternative systems '
+                      '[Liberty Acres — Mio31c7ePlc @ 00:01:08].',
+                      'Pull the FEMA flood map for the parcel yourself rather than trusting the seller, '
+                      'and budget an elevation certificate if the lot sits near a zone boundary [Florida '
+                      'Land Facts — zWTn3NY8wqc @ 00:03:18].',
+                      'Send a drone pilot or realtor with specific questions about wet or sloped areas '
+                      'while the deal sits in title, so you can still back out and have listing photos '
+                      'ready [Apke Brothers — j3-xqUjgb7k @ 00:23:52].'],
+ 'statutory_citations': [{'title': "Groundwork — Don't Buy Land Until It Passes This Test (Perc Test "
+                                   'Explained)! [00:06:32]',
+                          'url': 'https://www.youtube.com/watch?v=dSAQlt9llvM&t=392s',
+                          'relevance': 'Primary practitioner testimony on testing before buying and the '
+                                       'three choices after a failed perc.'},
+                         {'title': 'Mason Dixon Acres — We Failed Our Septic Test. Now What? [00:02:22]',
+                          'url': 'https://www.youtube.com/watch?v=8h9gMkksdD8&t=142s',
+                          'relevance': 'Primary practitioner testimony on skipping the perc before '
+                                       'purchase and failing on rock afterward.'},
+                         {'title': 'Jack Bosch — What To Do If Your Land Fails A Perc Test (Before You '
+                                   'Panic) [00:09:46]',
+                          'url': 'https://www.youtube.com/watch?v=nVJMPjUWdZw&t=586s',
+                          'relevance': 'Primary practitioner testimony on alternative septic costs versus '
+                                       'build budget feasibility.'},
+                         {'title': 'REtipster — The 15-Point Due Diligence Checklist Every Land Investor '
+                                   'Needs | Real Deal w/ Neil Clements 42 [00:10:54]',
+                          'url': 'https://www.youtube.com/watch?v=w08yc3MEaGE&t=654s',
+                          'relevance': 'Primary practitioner testimony on survey boundary discrepancies '
+                                       'and hidden easements.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'j3-xqUjgb7k',
+                       'title': 'How to Do Proper Due Diligence on Any Land Deal',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': "If you're just doing standard due diligence it should be 48 hours max.",
+                       'tip': "If you're just doing standard due diligence it should be 48 hours max.",
+                       'timestamp': 1746,
+                       'timestamp_seconds': 1746,
+                       'timestamp_label': '[00:29:06]',
+                       'url': 'https://www.youtube.com/watch?v=j3-xqUjgb7k&t=1746s',
+                       'markdown': '[00:29:06](https://www.youtube.com/watch?v=j3-xqUjgb7k&t=1746s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3ppoErpmGfs',
+                       'title': 'Perc testing, flood plains, slope, septic - oh my! Bill Bower explains it '
+                                'all to us!',
+                       'channel': 'The Jen Holden Group of Compass',
+                       'author': 'The Jen Holden Group of Compass',
+                       'text': 'Certain sections of the county are required to test during the season when '
+                               'ground water elevations are the highest because they want to design the '
+                               'system based on the most restrictive water elevation.',
+                       'tip': 'Certain sections of the county are required to test during the season when '
+                              'ground water elevations are the highest because they want to design the '
+                              'system based on the most restrictive water elevation.',
+                       'timestamp': 163,
+                       'timestamp_seconds': 163,
+                       'timestamp_label': '[00:02:43]',
+                       'url': 'https://www.youtube.com/watch?v=3ppoErpmGfs&t=163s',
+                       'markdown': '[00:02:43](https://www.youtube.com/watch?v=3ppoErpmGfs&t=163s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_Nxxv3hxz1w',
+                       'title': 'Buying Land in Florida? Check wetlands, flood zones & water tables '
+                                '#buyland #floridaland #wetlands',
+                       'channel': 'Discount Lots',
+                       'author': 'Discount Lots',
+                       'text': "Wetlands don't automatically mean you can't build; in some cases a raised "
+                               'foundation can work to get a structure above the water table.',
+                       'tip': "Wetlands don't automatically mean you can't build; in some cases a raised "
+                              'foundation can work to get a structure above the water table.',
+                       'timestamp': 45,
+                       'timestamp_seconds': 45,
+                       'timestamp_label': '[00:00:45]',
+                       'url': 'https://www.youtube.com/watch?v=_Nxxv3hxz1w&t=45s',
+                       'markdown': '[00:00:45](https://www.youtube.com/watch?v=_Nxxv3hxz1w&t=45s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zWTn3NY8wqc',
+                       'title': 'Before You Buy Cheap Florida Land: 7 Checks That Kill Deals (Perc, '
+                                'Septic, Flood, Access)',
+                       'channel': 'Florida Land Facts',
+                       'author': 'Florida Land Facts',
+                       'text': 'Never close first and test later; get the soil evaluation done during your '
+                               'due diligence period while you can still walk away.',
+                       'tip': 'Never close first and test later; get the soil evaluation done during your '
+                              'due diligence period while you can still walk away.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=zWTn3NY8wqc&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=zWTn3NY8wqc&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dSAQlt9llvM',
+                       'title': "Don't Buy Land Until It Passes This Test (Perc Test Explained)!",
+                       'channel': 'Groundwork',
+                       'author': 'Groundwork',
+                       'text': 'That is why the order matters. Test first, buy second.',
+                       'tip': 'That is why the order matters. Test first, buy second.',
+                       'timestamp': 392,
+                       'timestamp_seconds': 392,
+                       'timestamp_label': '[00:06:32]',
+                       'url': 'https://www.youtube.com/watch?v=dSAQlt9llvM&t=392s',
+                       'markdown': '[00:06:32](https://www.youtube.com/watch?v=dSAQlt9llvM&t=392s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'F-UdA3MqSzw',
+                       'title': 'What Happens When You Fail a Perc Test For A Septic System',
+                       'channel': 'Wells, Septic & More',
+                       'author': 'Wells, Septic & More',
+                       'text': "It's going to reduce the value of your home; when you go to sell, nobody's "
+                               "going to want to purchase that home that has a holding tank, so you're "
+                               'going to have to lower the price.',
+                       'tip': "It's going to reduce the value of your home; when you go to sell, nobody's "
+                              "going to want to purchase that home that has a holding tank, so you're "
+                              'going to have to lower the price.',
+                       'timestamp': 596,
+                       'timestamp_seconds': 596,
+                       'timestamp_label': '[00:09:56]',
+                       'url': 'https://www.youtube.com/watch?v=F-UdA3MqSzw&t=596s',
+                       'markdown': '[00:09:56](https://www.youtube.com/watch?v=F-UdA3MqSzw&t=596s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'F5XXV-dhw1Q',
+                       'title': 'Perc Test Walkthrough',
+                       'channel': 'Delaware Valley Septic, Sewer, & Storm',
+                       'author': 'Delaware Valley Septic, Sewer, & Storm',
+                       'text': 'We just want a good perk rate because the better the perk rate the better '
+                               'that sewage is going to be able to pass through the soil.',
+                       'tip': 'We just want a good perk rate because the better the perk rate the better '
+                              'that sewage is going to be able to pass through the soil.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=F5XXV-dhw1Q&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=F5XXV-dhw1Q&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q3kV6OiudSU',
+                       'title': 'Perc Tests',
+                       'channel': 'MassDEP',
+                       'author': 'MassDEP',
+                       'text': 'You divide that by three and that is the percolation rate in minutes per '
+                               'inch.',
+                       'tip': 'You divide that by three and that is the percolation rate in minutes per '
+                              'inch.',
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=Q3kV6OiudSU&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=Q3kV6OiudSU&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nVJMPjUWdZw',
+                       'title': 'What To Do If Your Land Fails A Perc Test (Before You Panic)',
+                       'channel': 'Jack Bosch',
+                       'author': 'Jack Bosch',
+                       'text': 'If you buy a piece of land for $5,000 and you want to put a $30,000 mobile '
+                               'home on there, a hydraulic or sand filter system could cost 30 to $50,000, '
+                               'and in that case the financial feasibility of building is gone.',
+                       'tip': 'If you buy a piece of land for $5,000 and you want to put a $30,000 mobile '
+                              'home on there, a hydraulic or sand filter system could cost 30 to $50,000, '
+                              'and in that case the financial feasibility of building is gone.',
+                       'timestamp': 586,
+                       'timestamp_seconds': 586,
+                       'timestamp_label': '[00:09:46]',
+                       'url': 'https://www.youtube.com/watch?v=nVJMPjUWdZw&t=586s',
+                       'markdown': '[00:09:46](https://www.youtube.com/watch?v=nVJMPjUWdZw&t=586s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yp6qPMTkjgE',
+                       'title': 'What the Heck is a "Perc Test" (and How Much Does it Really Matter)?',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'If you have to get that deal closed this week, then honestly, it may be '
+                               'worth rolling the dice and taking a risk.',
+                       'tip': 'If you have to get that deal closed this week, then honestly, it may be '
+                              'worth rolling the dice and taking a risk.',
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=yp6qPMTkjgE&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=yp6qPMTkjgE&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Mio31c7ePlc',
+                       'title': 'Failed Perc Test? What It Means and Your Septic Options',
+                       'channel': 'Liberty Acres',
+                       'author': 'Liberty Acres',
+                       'text': "A failed perc test usually means the soil can't take a conventional septic "
+                               'drain field, not that the land can never hold a home.',
+                       'tip': "A failed perc test usually means the soil can't take a conventional septic "
+                              'drain field, not that the land can never hold a home.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=Mio31c7ePlc&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=Mio31c7ePlc&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uvqvdLjMBL0',
+                       'title': 'Perc Test Explained: Why It’s Crucial Before Buying Land to Build a House',
+                       'channel': 'Living in Virginia With Ben Quann',
+                       'author': 'Living in Virginia With Ben Quann',
+                       'text': 'Some of these alternatives like the drip systems can be 45 to 60 grand, so '
+                               'if you have a budget, you could absolutely blow it by not getting a perk '
+                               'test or having it perked for the wrong thing.',
+                       'tip': 'Some of these alternatives like the drip systems can be 45 to 60 grand, so '
+                              'if you have a budget, you could absolutely blow it by not getting a perk '
+                              'test or having it perked for the wrong thing.',
+                       'timestamp': 368,
+                       'timestamp_seconds': 368,
+                       'timestamp_label': '[00:06:08]',
+                       'url': 'https://www.youtube.com/watch?v=uvqvdLjMBL0&t=368s',
+                       'markdown': '[00:06:08](https://www.youtube.com/watch?v=uvqvdLjMBL0&t=368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8h9gMkksdD8',
+                       'title': 'We Failed Our Septic Test. Now What?',
+                       'channel': 'Mason Dixon Acres',
+                       'author': 'Mason Dixon Acres',
+                       'text': "If you can't have a septic system you can't have a house, so it "
+                               'essentially renders the property useless.',
+                       'tip': "If you can't have a septic system you can't have a house, so it essentially "
+                              'renders the property useless.',
+                       'timestamp': 142,
+                       'timestamp_seconds': 142,
+                       'timestamp_label': '[00:02:22]',
+                       'url': 'https://www.youtube.com/watch?v=8h9gMkksdD8&t=142s',
+                       'markdown': '[00:02:22](https://www.youtube.com/watch?v=8h9gMkksdD8&t=142s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AYim3zSksEs',
+                       'title': 'The "Perc Test": Soil and Septic Basics',
+                       'channel': 'Acrewell Land Company',
+                       'author': 'Acrewell Land Company',
+                       'text': 'Just because the house next door has a septic system and the house on the '
+                               "other side has one too doesn't mean that your vacant lot in the middle is "
+                               'necessarily going to qualify.',
+                       'tip': 'Just because the house next door has a septic system and the house on the '
+                              "other side has one too doesn't mean that your vacant lot in the middle is "
+                              'necessarily going to qualify.',
+                       'timestamp': 360,
+                       'timestamp_seconds': 360,
+                       'timestamp_label': '[00:06:00]',
+                       'url': 'https://www.youtube.com/watch?v=AYim3zSksEs&t=360s',
+                       'markdown': '[00:06:00](https://www.youtube.com/watch?v=AYim3zSksEs&t=360s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vTDxU1jKGSI',
+                       'title': 'Septic System Safety: Soil Testing and Health Dept. Review on Unique Land',
+                       'channel': 'Soils Inc. & VA Septic',
+                       'author': 'Soils Inc. & VA Septic',
+                       'text': "I don't check where they already dug, I already have their logs; I check "
+                               "where it wasn't studied.",
+                       'tip': "I don't check where they already dug, I already have their logs; I check "
+                              "where it wasn't studied.",
+                       'timestamp': 160,
+                       'timestamp_seconds': 160,
+                       'timestamp_label': '[00:02:40]',
+                       'url': 'https://www.youtube.com/watch?v=vTDxU1jKGSI&t=160s',
+                       'markdown': '[00:02:40](https://www.youtube.com/watch?v=vTDxU1jKGSI&t=160s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w08yc3MEaGE',
+                       'title': 'The 15-Point Due Diligence Checklist Every Land Investor Needs | Real '
+                                'Deal w/ Neil Clements 42',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'Before the wire goes out, before you get a lender involved, before you '
+                               "close on it, you can always say no, because once you own it, there's no "
+                               'takebacks.',
+                       'tip': 'Before the wire goes out, before you get a lender involved, before you '
+                              "close on it, you can always say no, because once you own it, there's no "
+                              'takebacks.',
+                       'timestamp': 1195,
+                       'timestamp_seconds': 1195,
+                       'timestamp_label': '[00:19:55]',
+                       'url': 'https://www.youtube.com/watch?v=w08yc3MEaGE&t=1195s',
+                       'markdown': '[00:19:55](https://www.youtube.com/watch?v=w08yc3MEaGE&t=1195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w08yc3MEaGE',
+                       'title': 'The 15-Point Due Diligence Checklist Every Land Investor Needs | Real '
+                                'Deal w/ Neil Clements 42',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "I'd say 25, 30% of the time, the survey comes back and the boundaries are "
+                               'not the same as what it showed on one of those programs.',
+                       'tip': "I'd say 25, 30% of the time, the survey comes back and the boundaries are "
+                              'not the same as what it showed on one of those programs.',
+                       'timestamp': 654,
+                       'timestamp_seconds': 654,
+                       'timestamp_label': '[00:10:54]',
+                       'url': 'https://www.youtube.com/watch?v=w08yc3MEaGE&t=654s',
+                       'markdown': '[00:10:54](https://www.youtube.com/watch?v=w08yc3MEaGE&t=654s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

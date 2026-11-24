@@ -1,643 +1,852 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-probate-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching probate real estate, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Five-Person Probate Pod: County Dockets, Executor Authority, California Probate Code Sale Paths, Retained Commissions, and Cash-Control Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower Score. "
-        "This sprint operationalizes 11 mapped plays through docket intelligence, authority verification, "
-        "executor service, attorney relationships, property preparation, brokerage execution, and separately "
-        "controlled acquisition screening. Two full-time operators and three contractors establish one county, "
-        "one documented sale pathway, and one measurable service promise before expanding. The canonical "
-        "annual owner-profit cases are $24,000 Conservative, $140,250 Base, and $315,000 Scaled; retained "
-        "brokerage commissions, not property values, fund those outcomes. Days 1–30 establish evidence and "
-        "appointments rather than promise closings. Day 30/60/90 decisions combine verified demand, authority "
-        "defects, contribution economics, pod capacity, and funded runway against a first-month cash-burn "
-        "ceiling of $9,000."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained brokerage commissions after brokerage splits; excludes home sale values.",
-            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$510,000",
-            "context": "Annual retained brokerage commissions after brokerage splits; excludes acquisition principal.",
-            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained brokerage commissions after brokerage splits; excludes merchant or client proceeds.",
-            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Establish the Licensed Pod, County Scope, and Eleven-Play Operating Map",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Launch in one county where the supervising broker already understands probate sales and can obtain "
-                    "current court procedures. California supplies the worked legal example here; substitute the actual "
-                    "state's licensing, fiduciary, notice, and confirmation requirements before operating elsewhere. Assign "
-                    "FT1 as the licensed broker or properly supervised licensed agent responsible for representation, pricing, "
-                    "negotiation, and attorney relationships. Assign FT2 as operations lead responsible for docket review, "
-                    "evidence capture, scheduling, and transaction checklists; restrict any unlicensed activity to permitted "
-                    "administrative work. The three contractors are C1, a brokerage-supervised transaction coordinator; C2, "
-                    "a properly licensed property-services coordinator where required; and C3, an independent probate attorney "
-                    "engaged for defined business questions. Estate counsel remains separately engaged by the estate. These "
-                    "are five people, not five unlimited service departments. Start with a weekly capacity ledger of 40 hours "
-                    "per full-time seat, eight hours for C1, eight for C2, and four for C3. Those hours describe proposed "
-                    "capacity, not prepaid labor. Obtain written rates, licensing boundaries, insurance evidence, and escalation "
-                    "rules before assigning work. If quoted labor breaks the cash ceiling, reduce purchased hours and active "
-                    "files rather than silently assuming free professional services or adding another person."
-                ),
-                (
-                    "Translate the volume's 11 mapped plays into an explicit sprint work map: P1 county docket intelligence; "
-                    "P2 decedent-to-property matching; P3 representative-authority verification; P4 permitted executor outreach; "
-                    "P5 probate-attorney relationships; P6 executor concierge coordination; P7 property access and condition "
-                    "triage; P8 title, occupancy, and lien triage; P9 licensed listing and disposition; P10 notice, court, and "
-                    "closing coordination; and P11 separately controlled acquisition screening. These are this chapter's "
-                    "operational labels, not eleven separately forecast revenue streams. FT2 owns P1–P3, FT1 owns P4–P5 "
-                    "and P9, C2 supports P6–P7, C1 supports P8 and P10, and FT1 reviews P11 with independent counsel "
-                    "when a genuine conflict question arises. Each play receives one checklist, one accountable owner, one "
-                    "completion artifact, and one defect code in Airtable or an equivalent access-controlled CRM. Store "
-                    "letters of administration, orders, and sensitive correspondence in a restricted document repository, "
-                    "not a broadly shared prospect spreadsheet. Record court source, retrieval date, case number, property "
-                    "identifier, and review status. Docket alerts may identify a changed filing, but they cannot establish "
-                    "sale authority automatically. A public probate filing also does not establish permission to enter "
-                    "property, contact every relative, or market an estate asset."
-                ),
-                (
-                    "Commit $60,000 of available launch capital for this illustrative pilot, within the canonical "
-                    "$15,000–$100,000 startup range. Limit Days 1–30 cash outflow to $9,000: $1,200 for licensing, "
-                    "insurance, and onboarding; $900 for docket, CRM, and communications tools; $1,500 for scoped counsel; "
-                    "$1,800 for administrative and transaction support; $600 for permitted outreach; $600 for travel and "
-                    "property triage; $1,800 for founder draw or other operator cash compensation; and $600 contingency. "
-                    "Replace these envelopes with binding quotes before spending. They are cash limits, not assertions that "
-                    "two market-rate salaries fit inside $9,000. Track unpaid founder labor separately when evaluating "
-                    "sustainable economics. Authorize no property purchase, earnest-money deposit, estate repair advance, or "
-                    "speculative contractor mobilization from this budget. Keep estate-paid work on separate authorizations "
-                    "and invoices without counting reimbursements as commission revenue. Set Days 31–60 and 61–90 ceilings "
-                    "at $6,000 each, making cumulative burn limits $15,000 and $21,000. At Day 90, $39,000 remains if "
-                    "nothing closes, covering 6.5 additional months at $6,000 monthly burn. That does not cover the "
-                    "longest 18-month first-deal case; longer delays require committed funding, lower burn, or suspension."
-                ),
-            ],
-            "table": {
-                "caption": "Days 1–7: County Setup, Five-Person Ownership, and Funded Work Boundaries",
-                "headers": [
-                    "Daily execution assignment",
-                    "Accountable owner and mapped plays",
-                    "Required completion evidence",
-                    "Release condition and failure response",
-                ],
-                "rows": [
-                    [
-                        "Day 1: Select one county and brokerage",
-                        "FT1 owns brokerage supervision and the P9 disposition pathway.",
-                        "Record active license status, brokerage agreement, county choice, and insurance.",
-                        "Stop client solicitation until required licensing and supervision are verified.",
-                    ],
-                    [
-                        "Day 2: Contract the five-person delivery pod",
-                        "FT1 defines assignments for FT2 and all three contractors.",
-                        "File signed scopes, hourly rates, access permissions, and escalation contacts.",
-                        "Reduce purchased hours when written quotes exceed approved cash envelopes.",
-                    ],
-                    [
-                        "Day 3: Build eleven checklists and permissions",
-                        "FT2 configures P1–P11 ownership with FT1 reviewing licensed activities.",
-                        "Create eleven named checklists and a restricted document-storage structure.",
-                        "Block sensitive uploads until role permissions pass a dummy-file test.",
-                    ],
-                    [
-                        "Day 4: Document the local sale pathway",
-                        "C3 reviews P3 authority and P10 court-process questions.",
-                        "Create a jurisdiction-specific authority, notice, objection, and confirmation decision tree.",
-                        "Escalate uncertain authority instead of labeling every estate independently administered.",
-                    ],
-                    [
-                        "Day 5: Validate twenty source docket records",
-                        "FT2 executes P1 docket review and P2 property matching.",
-                        "Retain twenty source citations with retrieval dates and match explanations.",
-                        "Require at least eighteen correct records before expanding collection volume.",
-                    ],
-                    [
-                        "Day 6: Approve outreach and concierge boundaries",
-                        "FT1 owns P4 messaging while C2 scopes P6 services.",
-                        "File approved scripts, suppression rules, pricing sheets, and estate-work authorizations.",
-                        "Exclude coercive language, unsupported authority claims, and unauthorized property access.",
-                    ],
-                    [
-                        "Day 7: Reconcile budget and rehearse handoffs",
-                        "FT2 reconciles spending while FT1 tests all pod handoffs.",
-                        "Produce a cash ledger, capacity calendar, and completed fictional-file rehearsal.",
-                        "Require all eleven checklist owners and no unresolved authority-routing defects.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Conditions Before the First Live Executor Engagement",
-                "body": "Release only the activity actually supported by verified evidence; a completed intake does not authorize a listing or property entry.",
-                "items": [
-                    "Verify FT1's active license, supervising brokerage, permitted territory, and insurance before offering brokerage representation.",
-                    "Inspect current representative appointment documents and relevant restrictions before accepting estate instructions; resolve stale or conflicting records with estate counsel.",
-                    "Test outreach suppression, internal do-not-contact handling, and channel-specific legal requirements before any live campaign.",
-                    "Approve written contractor scopes and the $9,000 first-month ceiling; exclude acquisition deposits and estate repair advances from sprint spending.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Build a Verified Docket Cohort and Permission-Based Referral Flywheel",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a cohort of 60 eligible estate-property opportunities by Day 30, beginning with 30 by Day 14. "
-                    "Eligibility requires a relevant county case, a defensible property match, an identifiable appointed "
-                    "representative or a clearly documented appointment-pending status, and an allowed contact route. Pending "
-                    "appointments remain research records rather than qualified representation opportunities. Deduplicate by "
-                    "estate case and parcel, because several heirs or multiple docket entries do not create several leads. "
-                    "Count a substantive conversation only when the representative or their authorized adviser discusses "
-                    "property status, timing, or a service need; voicemail, mail delivery, and an email open do not count. "
-                    "A qualified opportunity additionally requires verified representative authority, plausible sale intent "
-                    "within twelve months, a known decision process, and permission for a specific next step. FT2 logs "
-                    "both the cohort entry date and event dates so later conversion rates have stable denominators. Sample "
-                    "20 records weekly against original court and assessor sources; require at least 90% accuracy during "
-                    "setup and 95% before expansion. A mismatch involving identity or authority is a critical defect "
-                    "regardless of the aggregate percentage. Correct the source rule and recheck all similarly generated "
-                    "records before resuming that workflow."
-                ),
-                (
-                    "Use P4 and P5 as separate, attributable channels rather than treating every attorney name as an "
-                    "endorsement. For direct outreach, FT1 approves a restrained letter explaining the brokerage's county "
-                    "experience, property-preparation process, and optional next step. Respect known representation, address "
-                    "accuracy, suppression requests, and applicable solicitation restrictions. Do not launch autodialed or "
-                    "prerecorded campaigns merely because a number appears in a public filing; 47 CFR 64.1200 imposes "
-                    "channel-specific restrictions. For attorney relationships, identify twelve local probate practices, "
-                    "seek six substantive introductory discussions during the first month, and offer a useful artifact: "
-                    "an anonymized property-readiness checklist showing access, occupancy, title, repair, and court-path "
-                    "dependencies. Ask how the practice prefers brokerage updates and who may authorize property work. "
-                    "Do not pay attorneys for settlement-service referrals. Apply a no-paid-referral pilot policy and "
-                    "have counsel assess any proposed arrangement under 12 U.S.C. 2607 and applicable professional rules. "
-                    "The flywheel is reliable execution followed by permission to remain useful, not purchased influence. "
-                    "Record introductions, meetings, permissioned follow-ups, and actual referred opportunities separately. "
-                    "One friendly lunch is relationship activity; it becomes pipeline evidence only when a specific estate "
-                    "requests a defined service through an authorized decision-maker."
-                ),
-                (
-                    "Give executor concierge work a narrow operating promise: organize the property decision, expose "
-                    "dependencies, and coordinate approved vendors without taking over the representative's fiduciary role. "
-                    "During intake, ask about occupancy, keys, insurance, utilities, personal property, family disagreement, "
-                    "existing counsel, mortgages, and anticipated timing. Record answers as reported facts until corroborated. "
-                    "C2 may obtain repair estimates after lawful access is arranged, but cannot authorize a cleanout simply "
-                    "because a beneficiary wants speed. C1 requests a preliminary title review through an appropriate "
-                    "provider and routes ownership, vesting, lien, and transfer questions to qualified professionals. FT1 "
-                    "then supplies a brokerage scope with separately stated commission terms and a documented pricing "
-                    "process. Keep P11 acquisition screening outside the brokerage pitch: disclose any ownership interest, "
-                    "separate the estate's representation decision, obtain independent review where appropriate, and "
-                    "exclude acquisition returns from the canonical commission forecast. The first sprint does not buy "
-                    "houses. Its deliverables are two completed property-readiness reviews and at least one qualified "
-                    "opportunity with a dated next action by Day 30. If families request services outside the pod's "
-                    "scope, make a transparent introduction without promising court outcomes, accelerating statutory "
-                    "timelines, or treating personal relationships as a substitute for representative authority."
-                ),
-            ],
-            "table": {
-                "caption": "Days 8–14: Verified Cohorts, Lawful Contact Routes, and Attorney Service Artifacts",
-                "headers": [
-                    "Daily execution assignment",
-                    "Accountable owner and mapped plays",
-                    "Required completion evidence",
-                    "Measurement and corrective action",
-                ],
-                "rows": [
-                    [
-                        "Day 8: Expand verified estate-property source coverage",
-                        "FT2 operates P1 alerts and P2 parcel matching.",
-                        "Add ten source-supported records without duplicate estates or parcels.",
-                        "Reject address-only matches when ownership evidence contradicts the probate record.",
-                    ],
-                    [
-                        "Day 9: Verify representative status and restrictions",
-                        "FT2 assembles P3 evidence; C3 resolves scoped interpretation questions.",
-                        "Record appointment status, document dates, restrictions, and unresolved authority questions.",
-                        "Keep pending appointments outside qualified opportunities and representation commitments.",
-                    ],
-                    [
-                        "Day 10: Start the first permitted outreach batch",
-                        "FT1 authorizes P4 communications after suppression and address checks.",
-                        "Log delivery route, message version, contact date, and next permitted action.",
-                        "Stop the affected channel immediately after any critical contact-rule defect.",
-                    ],
-                    [
-                        "Day 11: Approach six selected probate practices",
-                        "FT1 runs P5 introductions using the property-readiness service artifact.",
-                        "Document six personalized approaches and each practice's preferred follow-up method.",
-                        "Count replies and meetings separately from actual referred estate opportunities.",
-                    ],
-                    [
-                        "Day 12: Conduct the first executor needs interviews",
-                        "FT1 leads P4 discovery while FT2 records authorized next steps.",
-                        "Capture sale timing, decision process, property condition, and counsel involvement.",
-                        "Do not classify voicemail or general family interest as substantive discovery.",
-                    ],
-                    [
-                        "Day 13: Scope concierge vendors without committing estates",
-                        "C2 develops P6 coordination and P7 condition-triage options.",
-                        "Collect written vendor scopes, insurance evidence, availability, and payment responsibilities.",
-                        "Require representative authorization before site entry, cleanout, or paid work.",
-                    ],
-                    [
-                        "Day 14: Audit thirty eligible cohort records",
-                        "FT2 reviews P1–P4 evidence while FT1 inspects exceptions.",
-                        "Produce thirty eligible records and a twenty-record source-accuracy sample.",
-                        "Repair source rules if fewer than eighteen sampled records are correct.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the Attorney's File Easier Without Becoming Estate Counsel",
-                "body": "Veteran probate operators earn repeat introductions by reducing ambiguity and avoiding preventable estate friction.",
-                "items": [
-                    "Send a one-page status sheet separating verified documents, representative reports, unresolved questions, and the next responsible person.",
-                    "Check whether insurance remains suitable for vacancy before scheduling a long property-preparation cycle; route coverage decisions to the representative and insurer.",
-                    "Ask estate counsel for their preferred update cadence and court-document naming convention before the first listing package arrives.",
-                    "Photograph condition only after authorized access, preserve capture dates, and keep family personal-property decisions outside the cleanout vendor's discretion.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Rehearse Sale Execution and Reconcile Commission Economics",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Convert discovery into a controlled transaction rehearsal before accepting more files. For the California "
-                    "example, verify whether the representative has full or limited authority under the Independent "
-                    "Administration of Estates Act and whether the contemplated act falls within that authority. Probate "
-                    "Code section 10501 identifies actions requiring court supervision; section 10580 addresses notice of "
-                    "proposed action, with related provisions governing timing, recipients, and objections. A docket label "
-                    "saying independent administration is insufficient without the operative documents and restrictions. "
-                    "Where court confirmation applies, C1 builds a hearing, notice, deposit, and bidder-instruction checklist "
-                    "from current local requirements and estate counsel's direction. Section 10311 supplies the statutory "
-                    "increased-bid framework: for a $500,000 original bid, the first qualifying increase under its basic "
-                    "formula is $25,500, producing $525,500, subject to the statute's conditions and court process. Do not "
-                    "advertise an ordinary escrow timeline for that file. FT1 explains the applicable sale path to prospective "
-                    "buyers without promising confirmation or possession. Test the checklist against one fictional full-authority "
-                    "sale and one fictional court-confirmed sale, mark every deadline owner, and require a second-person "
-                    "review. An objection, changed order, or authority conflict returns the file to counsel rather than "
-                    "an automated closing sequence."
-                ),
-                (
-                    "Keep the scorecard's revenue basis intact when constructing the unit model. Conservative revenue "
-                    "$120,000 less $96,000 total modeled costs equals $24,000 owner profit at 20%; Base revenue $510,000 "
-                    "less $369,750 equals $140,250 at 27.5%; Scaled revenue $900,000 less $585,000 equals $315,000 at "
-                    "35%. These are annual operating scenarios, not first-quarter forecasts. A simple illustrative volume "
-                    "bridge is ten closings retaining $12,000 each, 34 retaining $15,000 each, and 50 retaining $18,000 "
-                    "each, respectively. Those retained amounts require actual commission agreements and brokerage splits; "
-                    "they are not standard rates. For example, a negotiated $20,000 brokerage commission with $5,000 "
-                    "paid under the brokerage split leaves $15,000 of operator revenue, regardless of the home's sale "
-                    "price. Do not subtract that split a second time. Track contribution as retained commission minus "
-                    "incremental file-specific costs, then separately deduct overhead and all other modeled costs when "
-                    "measuring net margin. The canonical $3,000–$18,000 monthly operating-expense range is a planning "
-                    "input, not a substitute for those complete annual cost totals. Explicitly classify compensation, "
-                    "contractor work, acquisition-channel expense, insurance, software, and file delivery so the model "
-                    "cannot create attractive margins by omitting difficult cost categories."
-                ),
-                (
-                    "Measure service capacity before using pipeline counts to justify growth. Reserve FT1's weekly 40 "
-                    "hours as twelve for relationships, twelve for consultations and pricing, eight for active negotiations, "
-                    "and eight for supervision and exceptions. Reserve FT2's 40 hours as twelve for research, ten for "
-                    "intake, ten for transaction administration, and eight for quality checks and reporting. Contractor "
-                    "hours remain limited to their purchased scopes. Begin with a ceiling of five active represented "
-                    "estate files across the pod and no more than two new property-readiness reviews weekly. An active "
-                    "file has a signed engagement and a currently assigned delivery obligation; dormant prospects do not "
-                    "consume the same capacity measure. Use a two-business-day target for acknowledging substantive estate "
-                    "requests and a 95% target for timely scheduled file milestones. Timeliness is measured against "
-                    "operator-controlled commitments, not the court's calendar. Track family disputes, court continuances, "
-                    "title defects, and housing-market repricing as distinct delay codes. If milestone performance falls "
-                    "below 95% for two consecutive weeks, pause new discretionary acquisition spending and fix workload "
-                    "allocation. The Scaled case permits three full-time people and four contractors, seven total; "
-                    "the initial five-person pod does not inherit that staffing capacity simply because a spreadsheet "
-                    "shows $900,000 of potential commissions."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15–21: Transaction Rehearsal, Retained-Commission Controls, and Capacity Tests",
-                "headers": [
-                    "Daily execution assignment",
-                    "Accountable owner and mapped plays",
-                    "Required completion evidence",
-                    "Quantitative test and failure response",
-                ],
-                "rows": [
-                    [
-                        "Day 15: Complete the first property-readiness review",
-                        "C2 supports P7 while FT1 controls brokerage recommendations.",
-                        "Deliver access evidence, condition findings, vendor estimates, and unresolved dependencies.",
-                        "Keep reviews within the two-per-week cap until delivery quality stabilizes.",
-                    ],
-                    [
-                        "Day 16: Map title and occupancy dependencies",
-                        "C1 coordinates P8 requests with authorized title and legal professionals.",
-                        "Document vesting questions, liens, occupant status, and responsible resolution contacts.",
-                        "Do not publish possession promises while occupancy rights remain unresolved.",
-                    ],
-                    [
-                        "Day 17: Rehearse independent-administration sale documentation",
-                        "C1 prepares P10 steps; FT1 verifies P9 client explanations.",
-                        "Complete a fictional file showing authority documents and applicable notice tasks.",
-                        "Require two-person review and correction of every critical authority defect.",
-                    ],
-                    [
-                        "Day 18: Rehearse court-confirmation and bidding mechanics",
-                        "C1 coordinates P10 hearing assumptions with scoped C3 review.",
-                        "Document local hearing requirements and the statutory increased-bid calculation.",
-                        "Use $525,500 for the illustrated $500,000 original-bid threshold calculation.",
-                    ],
-                    [
-                        "Day 19: Reconcile all three annual scorecard cases",
-                        "FT2 builds cost bridges while FT1 verifies retained commission assumptions.",
-                        "Show revenue, brokerage splits already excluded, total costs, and owner profit.",
-                        "Match $24,000, $140,250, and $315,000 without adding acquisition returns.",
-                    ],
-                    [
-                        "Day 20: Test acquisition conflicts without purchasing property",
-                        "FT1 screens P11 interests and seeks independent review when needed.",
-                        "Create a separate acquisition-interest register and client-disclosure escalation checklist.",
-                        "Commit zero purchase deposits or estate repair advances during this sprint.",
-                    ],
-                    [
-                        "Day 21: Audit capacity and controlled service deadlines",
-                        "FT2 reports workload across both employees and three contractors.",
-                        "Publish active-file count, purchased hours, milestone timeliness, and delay codes.",
-                        "Limit active files to five and require 95% milestone timeliness.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Open the evidence packet",
-                    "action": "Attach the current appointment documents, property match, and engagement status.",
-                    "detail": "FT2 records source dates and unresolved restrictions; FT1 confirms that requested brokerage activity falls within the verified authority.",
-                },
-                {
-                    "step": 2,
-                    "title": "Select the actual sale pathway",
-                    "action": "Assign the applicable notice, objection, confirmation, and closing checklist.",
-                    "detail": "C1 uses estate counsel's direction and current local procedures rather than copying a neighboring county's timeline.",
-                },
-                {
-                    "step": 3,
-                    "title": "Price the retained-commission contribution",
-                    "action": "Record negotiated commission, brokerage split, incremental delivery costs, and overhead treatment.",
-                    "detail": "FT1 approves the unit model; FT2 prevents home value, purchase principal, and expense reimbursements from inflating commission revenue.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release and monitor controlled work",
-                    "action": "Assign each milestone to one person with a dated evidence requirement.",
-                    "detail": "C1 logs completion; authority changes, missed critical deadlines, and unresolved conflicts suspend the affected task pending review.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Day 30/60/90: Decide Kill, Fix, or Scale from Evidence",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Close the sprint with one auditable cohort report, not a presentation assembled from disconnected "
-                    "activity totals. Days 22–24 finish the second readiness review, reconcile suppressed contacts, and "
-                    "audit source accuracy. Days 25–27 complete attorney follow-ups, validate each qualified opportunity's "
-                    "next step, and review signed engagement terms. Days 28–30 reconcile cash, test capacity, and hold "
-                    "the decision meeting. Use cumulative targets of 60 eligible opportunities, eight substantive "
-                    "conversations, and one qualified opportunity at Day 30; 100, sixteen, and three at Day 60; "
-                    "and 140, twenty-four, and five at Day 90. The targets are pilot hypotheses, not industry conversion "
-                    "benchmarks. The implied conversation rates are 13.3%, 16%, and 17.1%; examine cohort age before "
-                    "attributing improvement to messaging. Require two signed brokerage engagements by Day 90 for expansion, "
-                    "but do not require a closed sale: the canonical first-deal window is four to eighteen months. "
-                    "A signed engagement is backlog evidence, not recognized revenue or spendable cash. Record court-dependent "
-                    "dates separately from operator commitments, and remove opportunities whose representative withdraws "
-                    "permission or whose authority cannot be verified. Preserve the original denominator so deleting "
-                    "unpromising records cannot manufacture an improved conversion rate."
-                ),
-                (
-                    "Apply decision precedence consistently: critical authority, licensing, or material contact-rule defects "
-                    "stop the affected activity immediately; runway and cash limits come next; demand and efficiency "
-                    "determine the remaining choice. Kill means stop the tested acquisition channel and its discretionary "
-                    "spending, while preserving existing client duties and orderly handoffs. It does not mean abandon "
-                    "an estate. Day 30 Kill requires zero substantive conversations after 60 eligible opportunities have "
-                    "received the completed permitted contact sequence, or a cash-limit breach without replacement funding. "
-                    "Day 60 Kill requires zero qualified opportunities after at least sixteen substantive conversations "
-                    "and one documented repair cycle. Day 90 Kill applies when qualified opportunities remain below two "
-                    "after at least twenty-four substantive conversations and two repair cycles, or funded runway drops "
-                    "below six months. Insufficient sample completion is Fix, not evidence that demand is absent. Each "
-                    "Fix cycle lasts fourteen days, changes one bottleneck, names an owner, and caps incremental spending "
-                    "at $1,500 within the existing cumulative budget. Examples include correcting parcel matches, replacing "
-                    "a weak service artifact, or tightening intake questions. A failed contact route cannot be repaired "
-                    "by ignoring suppression requests, and an unresolved family dispute cannot be repaired by pressuring "
-                    "the representative into a sale."
-                ),
-                (
-                    "Scale means a bounded increase in evidence-producing activity, not a jump to the Scaled annual "
-                    "profit case. At Day 30, meeting the full target with at least 95% source accuracy, no critical "
-                    "defects, burn no greater than $9,000, and six months of funded forward runway permits a 25% "
-                    "increase in weekly research and outreach volume. Day 60 additionally requires the sixteen-conversation "
-                    "and three-qualified-opportunity targets, at least one signed brokerage engagement, cumulative burn "
-                    "no greater than $15,000, and 95% controlled-milestone timeliness. Day 90 additionally requires "
-                    "twenty-four conversations, five qualified opportunities, two signed engagements, cumulative burn "
-                    "no greater than $21,000, and positive projected file contribution on each signed engagement. Keep "
-                    "projected contribution separate from earned results and exclude unsigned prospects from its calculation. "
-                    "At every review, require available cash divided by approved forward monthly burn to equal at least "
-                    "six; include proposed incremental spending in that denominator. No gate authorizes hiring beyond "
-                    "the five-person pod. Add the third full-time seat and fourth contractor only under a separately "
-                    "funded staffing plan supported by sustained delivery demand. If all Kill conditions are absent "
-                    "but any Scale condition fails, choose Fix, preserve the cash ceiling, and document the next "
-                    "fourteen-day test before leaving the meeting."
-                ),
-            ],
-            "table": {
-                "caption": "Days 22–30 Deliverables and Quantitative Day 30/60/90 Kill, Fix, or Scale Decisions",
-                "headers": [
-                    "Execution day or decision checkpoint",
-                    "Required evidence or numeric threshold",
-                    "Owner action within existing pod",
-                    "Cash, authority, and capacity constraint",
-                ],
-                "rows": [
-                    [
-                        "Day 22: Finish the second property-readiness review",
-                        "Complete two reviews with access evidence and unresolved-dependency lists.",
-                        "C2 supplies findings while FT1 approves client-facing brokerage recommendations.",
-                        "Authorize no estate work without the representative's documented instruction.",
-                    ],
-                    [
-                        "Day 23: Reconcile outreach suppression and channel records",
-                        "Review every suppression request and confirm each affected route stopped.",
-                        "FT2 updates records; FT1 reviews any material communication defect.",
-                        "Suspend the affected channel until the specific defect is corrected.",
-                    ],
-                    [
-                        "Day 24: Audit source accuracy before any expansion",
-                        "Require nineteen correct records in the twenty-record expansion sample.",
-                        "FT2 compares original sources; FT1 reviews all identity exceptions.",
-                        "Any critical identity or authority defect blocks expansion despite averages.",
-                    ],
-                    [
-                        "Day 25: Complete six substantive attorney discussions",
-                        "Count actual service discussions rather than invitations or unanswered approaches.",
-                        "FT1 records preferences, requested artifacts, and permissioned next contact dates.",
-                        "Offer zero paid settlement-service referrals under the pilot channel policy.",
-                    ],
-                    [
-                        "Day 26: Validate qualified-opportunity authority and next steps",
-                        "Confirm at least one qualified opportunity with a dated next action.",
-                        "FT1 confirms intent while FT2 attaches supporting representative documents.",
-                        "Exclude pending appointments and unsupported beneficiary instructions from qualified counts.",
-                    ],
-                    [
-                        "Day 27: Review engagement economics and conflict boundaries",
-                        "Calculate retained commission and incremental cost for each proposed engagement.",
-                        "FT1 approves terms; C1 verifies checklist and document completeness.",
-                        "Exclude P11 purchase returns and estate reimbursements from commission projections.",
-                    ],
-                    [
-                        "Day 28: Reconcile cash and funded forward runway",
-                        "Show actual outflow, committed invoices, available cash, and monthly burn.",
-                        "FT2 prepares reconciliation; FT1 authorizes only remaining budgeted spending.",
-                        "Include unpaid commitments and proposed growth costs in runway analysis.",
-                    ],
-                    [
-                        "Day 29: Stress-test workload and transaction handoffs",
-                        "Check five-file capacity, purchased contractor hours, and milestone performance.",
-                        "Both full-time operators rehearse one authority-change escalation across contractors.",
-                        "Require 95% controlled-milestone timeliness before releasing any volume increase.",
-                    ],
-                    [
-                        "Day 30: Publish the signed decision record",
-                        "Report sixty eligible opportunities, eight conversations, and one qualified opportunity.",
-                        "FT1 selects Kill, Fix, or Scale using documented precedence.",
-                        "Keep first-month burn within $9,000 and fund six forward months.",
-                    ],
-                    [
-                        "Day 30 Kill: Stop the tested acquisition channel",
-                        "Zero conversations after sixty eligible opportunities complete permitted contact sequences.",
-                        "FT1 stops discretionary acquisition spending while preserving client service duties.",
-                        "Unfunded cash-limit breaches also trigger spending suspension and budget reset.",
-                    ],
-                    [
-                        "Day 30 Fix: Repair evidence or conversion weakness",
-                        "Choose Fix when no Kill trigger applies and Scale tests fail.",
-                        "Assign one fourteen-day repair hypothesis with one accountable pod owner.",
-                        "Cap incremental repair cost at $1,500 inside the $9,000 ceiling.",
-                    ],
-                    [
-                        "Day 30 Scale: Increase weekly activity by 25%",
-                        "Require sixty eligible opportunities, eight conversations, and one qualified opportunity.",
-                        "FT2 raises research throughput while FT1 preserves outreach quality controls.",
-                        "Also require 95% accuracy, zero critical defects, and six-month runway.",
-                    ],
-                    [
-                        "Day 60 Kill: Stop after verified demand failure",
-                        "Zero qualified opportunities after sixteen conversations and one completed repair cycle.",
-                        "FT1 closes the tested channel and documents client-preserving handoffs.",
-                        "Suspend spending for unfunded ceiling breaches or runway below six months.",
-                    ],
-                    [
-                        "Day 60 Fix: Resolve the remaining measurable bottleneck",
-                        "Choose Fix when no Kill trigger applies and any Scale condition fails.",
-                        "Run one fourteen-day test on sourcing, service proposition, or intake.",
-                        "Keep repair spending within $1,500 and cumulative burn within $15,000.",
-                    ],
-                    [
-                        "Day 60 Scale: Expand within existing delivery capacity",
-                        "Require one hundred eligible opportunities, sixteen conversations, three qualified opportunities.",
-                        "FT1 additionally verifies one signed engagement before increasing weekly activity 25%.",
-                        "Require 95% accuracy and timeliness, zero critical defects, six-month runway.",
-                    ],
-                    [
-                        "Day 90 Kill: Exit an unproductive channel responsibly",
-                        "Fewer than two qualified opportunities after twenty-four conversations and two repairs.",
-                        "FT1 stops the channel while maintaining or transferring existing obligations.",
-                        "Runway below six months or unfunded ceiling breaches also stop spending.",
-                    ],
-                    [
-                        "Day 90 Fix: Preserve cash while repairing remaining gaps",
-                        "Choose Fix when Kill is absent but any Scale requirement fails.",
-                        "Assign a fourteen-day test without adding people or forecasting unearned commissions.",
-                        "Keep repair spending within $1,500 and cumulative burn within $21,000.",
-                    ],
-                    [
-                        "Day 90 Scale: Increase activity without assuming annual success",
-                        "Require 140 eligible opportunities, twenty-four conversations, five qualified opportunities.",
-                        "Verify two signed engagements and positive projected contribution on each.",
-                        "Require 95% accuracy and timeliness, zero critical defects, six-month runway.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the evidence and the service capacity before you scale the promises.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Select one county, verify brokerage supervision, and assign all eleven plays across two full-time operators and three scoped contractors.",
-        "Approve the $60,000 illustrative funding plan, $9,000 first-month ceiling, and $15,000/$21,000 cumulative Day 60/90 limits using actual quotes.",
-        "Build sixty eligible estate-property records with source dates, representative-status evidence, deduplication, and channel-specific suppression controls by Day 30.",
-        "Complete two property-readiness reviews, six substantive attorney discussions, and both independent-administration and court-confirmation transaction rehearsals.",
-        "Reconcile $120,000/$510,000/$900,000 retained commission revenue to $24,000/$140,250/$315,000 annual owner profit without including property values or acquisition returns.",
-        "Sign Day 30/60/90 decision records using the stated cohort thresholds, critical-defect rules, contribution tests, capacity limits, and six-month funded-runway requirement.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Business and Professions Code § 10130 — Real estate license requirement",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": "Verify the required license and brokerage arrangement before performing regulated brokerage activities; keep unlicensed administrative assignments within permitted boundaries.",
-        },
-        {
-            "title": "California Probate Code § 9600 — Personal representative's management and control duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=9600.",
-            "relevance": "Structure concierge and property work around the representative's estate-management responsibilities rather than allowing vendors or beneficiaries to assume decision authority.",
-        },
-        {
-            "title": "California Probate Code § 10501 — Actions requiring court supervision",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10501.",
-            "relevance": "Distinguish full and limited independent-administration authority and identify acts requiring court supervision before choosing the sale checklist.",
-        },
-        {
-            "title": "California Probate Code § 10580 — Notice of proposed action",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10580.",
-            "relevance": "Identify when notice of proposed action is required and incorporate the related recipient, timing, waiver, and objection provisions into counsel-directed execution.",
-        },
-        {
-            "title": "California Probate Code § 10311 — Increased bids at confirmation",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10311.",
-            "relevance": "Apply the statutory increased-bid framework to court-confirmed sales and verify the illustrated $525,500 threshold for a $500,000 original bid against applicable conditions.",
-        },
-        {
-            "title": "12 U.S.C. § 2607 — Prohibition against kickbacks and unearned fees",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": "Evaluate covered settlement-service referral arrangements; the sprint uses a no-paid-referral policy for attorney relationships instead of assuming referral compensation is permitted.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions for telephone solicitations and related communications",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Assess channel-specific calling, prerecorded-message, consent, and do-not-call requirements before outreach; public docket availability does not itself authorize a campaign.",
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'senior-transitions-assisted-living-real-estate-economics',
+ 'question_prompt': 'Beyond the listing or wholesale fee, what other plays and economics apply to estate '
+                    'properties and senior transitions?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Senior Transitions, Assisted Living, and Real Estate Economics',
+ 'subtitle': "Guiding seniors into assisted living, selling a senior's home, starting residential assisted "
+             'living homes, rental property and real estate business economics, agent career basics, '
+             'expanding from probate into investing, developer case studies, and four options for selling '
+             'a home',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Senior-transition agents and assisted living operators converge on one sequence: '
+                      'secure legal authority first, then move the house, then put the capital to work. '
+                      'Florida agent Sheri Coleman reports the process can run as short as six weeks from '
+                      'family meeting to closing once a power of attorney and a single family contact are '
+                      'in place, while Dale Corpus prices Bay Area assisted living and memory care at '
+                      '$5,000 to $12,000-plus per month, often funded by the home sale. On the operator '
+                      'side, Ariana Jay targets $3,000 to $10,000 per client per month, Residential '
+                      'Assisted Living Academy puts salaries at 40% of expenses, and Brett Chotkevys '
+                      'clears zoning with a $240 rough site plan. The split: Jay calls property-first '
+                      'shopping a costly mistake, while Chotkevys tells beginners to walk properties '
+                      "before their ducks are in a row. Chad Corbett's coaching group adds credit-line "
+                      'tactics for redeploying commissions.',
+ 'key_metrics': [{'label': 'Residential Assisted Living Revenue Per Client',
+                  'metric': 'Residential Assisted Living Revenue Per Client',
+                  'value': '$3,000 to $10,000 per month per client',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Target monthly revenue per resident for a licensed residential assisted '
+                             'living home serving private pay or state funded clients, once licensing '
+                             'clears and marketing starts.',
+                  'source': 'Ariana Jay ([cxcqaoT1cxQ @ 00:01:55])'},
+                 {'label': 'Bay Area Assisted Living and Memory Care Monthly Cost',
+                  'metric': 'Bay Area Assisted Living and Memory Care Monthly Cost',
+                  'value': '$5,000 to $12,000-plus per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'What families in the San Francisco Bay Area pay for assisted living or '
+                             "memory care, frequently funded with proceeds from selling the senior's home.",
+                  'source': 'Simplify Senior Transitions with Dale Corpus ([S5zYm8kcrug @ 00:02:35])'},
+                 {'label': 'Family Meeting to Closing Timeline',
+                  'metric': 'Family Meeting to Closing Timeline',
+                  'value': 'As short as 6 weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fastest senior-transition sale cycle in Vero Beach, from the first family '
+                             'meeting to closing, depending on asking price and finding the right buyer.',
+                  'source': 'Florida Realtors YouTube ([yyvDp4R_T84 @ 00:01:01])'},
+                 {'label': 'Private Pay Runway Before Medicaid',
+                  'metric': 'Private Pay Runway Before Medicaid',
+                  'value': '2 years of private pay saved',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Savings a family needs for a senior community in order to stay under '
+                             'Medicaid, alongside financial and medical power of attorney and a will or '
+                             'trust.',
+                  'source': 'Discover Colorado - The Cobb Home Team ([1kkoh35VCho @ 00:00:36])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every senior-transition operator who spoke starts at the same choke point: '
+                              'legal authority. Sheri Coleman of Florida Realtors YouTube says loved ones '
+                              'moving into assisted living usually designate a family member as power of '
+                              "attorney, and if they don't, Coleman's team cannot do anything; many "
+                              'families call, have one conversation, then go silent for months while they '
+                              'handle the legal side [yyvDp4R_T84 @ 00:02:35]. Christine of All About '
+                              'Seniors, interviewed by Matthew Cobb, tells families to have a financial '
+                              'and medical power of attorney plus a will or trust in place before '
+                              'placement, and to have two years of private pay saved for a community in '
+                              'order to stay under Medicaid [1kkoh35VCho @ 00:00:36]. Dale Corpus splits '
+                              'the authority question into tiers: a senior still of sound mind can sell '
+                              'the home themselves, while dementia or cognitive decline can require a '
+                              'power of attorney or a court-appointed conservatorship to sell on their '
+                              'behalf; if the senior has passed away, the property may need to go through '
+                              'probate before it can be sold [S5zYm8kcrug @ 00:01:33]. Corpus also flags '
+                              'title status and outstanding liens, especially reverse mortgages, which '
+                              'many seniors take out to access home equity and which must be paid off at '
+                              'closing, so the amount owed has to be known early [S5zYm8kcrug @ 00:01:54].',
+                              'The second point of agreement is that the family, not the house, is the '
+                              "hard part. Christine describes first-time families hitting 'a tidal wave of "
+                              "decisions,' and the All About Seniors team tours communities in person with "
+                              'every family because pictures do not tell the whole story [1kkoh35VCho @ '
+                              "00:00:18]. Coleman's rule is that one person in the family must be the "
+                              'designated contact; the agents are outsiders with a job to do and cannot '
+                              'interact with every relative [yyvDp4R_T84 @ 00:02:16]. Coleman also says '
+                              'that if there is too much chaos, if the family or loved one is in denial, '
+                              'or if nobody has legal standing, there is nothing the team can do until the '
+                              'family finds a remedy [yyvDp4R_T84 @ 00:02:56]. Corpus reports the same '
+                              'friction from the Bay Area: some relatives want a quick sale while others '
+                              'resist the change, and packing up a lifetime of belongings stalls some '
+                              "families for months or even years because they don't know where to start "
+                              '[S5zYm8kcrug @ 00:04:48]. The fix both land on is an outside handler, '
+                              'whether a placement agent, senior move manager, or transition specialist, '
+                              'plus keeping the senior inside the process. In one recent Coleman deal, the '
+                              'family had their mother sign all paperwork and choose what she kept before '
+                              "the estate sale, and she said she didn't have to worry about anything "
+                              '[yyvDp4R_T84 @ 00:03:29].',
+                              'On the operator side, the people building residential assisted living homes '
+                              'agree on sequence: rules and rates first, zoning before you close, property '
+                              'last. Ariana Jay says to learn the rates and requirements for your local '
+                              "area before you buy or lease a home, because 'you can't hit a financial "
+                              "target that you cannot see,' and calls property-first shopping a costly "
+                              'mistake [cxcqaoT1cxQ @ 00:01:22]. Residential Assisted Living Academy says '
+                              'requirements vary state to state, so start with local law and your state '
+                              'health department guidelines to avoid costly delays or penalties during '
+                              'licensing, and confirm a single-family conversion can meet zoning and state '
+                              'rules for assisted living [l7Esttpxsx0 @ 00:01:25]. Serg Lupescu, who got '
+                              'into real estate and assisted living at 23, warns against buying first and '
+                              'trying to zone it later; going to zoning first avoids owning a property you '
+                              "can't run the business in, though Lupescu notes a failed zoning bet can "
+                              'still become an Airbnb or a long-term rental [JUTV80jUHSI @ 00:03:53]. '
+                              'Brett Chotkevys makes the city the second step, carrying one or two example '
+                              'parcels to planning and zoning and asking point blank whether the use fits: '
+                              'group home or assisted living category, commercial or residential, and if '
+                              'not, which zoning types do work [fFnH_VM4S48 @ 00:00:55].'],
+               'table': {'caption': 'Where senior-transition agents and assisted living operators line up',
+                         'headers': ['Consensus Point',
+                                     'Street-Level Execution',
+                                     'Operator Payoff',
+                                     'Expert Source'],
+                         'rows': [['Secure a power of attorney before any listing work begins',
+                                   'Family designates one member as POA; agent waits until standing exists',
+                                   'Prevents months of silence after the first family phone call',
+                                   'Florida Realtors YouTube ([yyvDp4R_T84 @ 00:02:35])'],
+                                  ['Plan the financial runway well before placement is actually needed',
+                                   'Hold financial and medical POA, a will or trust, two years private pay',
+                                   'Keeps the senior under Medicaid while staying in a chosen community',
+                                   'Discover Colorado - The Cobb Home Team ([1kkoh35VCho @ 00:00:36])'],
+                                  ['Name exactly one family member as the designated contact',
+                                   'Agent declines to field calls from every sibling and relative',
+                                   'Cuts the chaos so the agent can execute the actual sale',
+                                   'Florida Realtors YouTube ([yyvDp4R_T84 @ 00:02:16])'],
+                                  ['Verify title, liens, and reverse mortgage balances right up front',
+                                   'Check sole ownership, other parties on title, and payoff amounts owed',
+                                   'Reverse mortgages must be paid off at closing from the proceeds',
+                                   'Simplify Senior Transitions with Dale Corpus ([S5zYm8kcrug @ '
+                                   '00:01:54])'],
+                                  ['Learn local care rates and licensing rules before buying property',
+                                   'Map the private pay and state funded rate range in your area',
+                                   'Sets a revenue target before money gets locked into real estate',
+                                   'Ariana Jay ([cxcqaoT1cxQ @ 00:00:47])'],
+                                  ['Clear zoning before acquiring any assisted living property at all',
+                                   'Take sample addresses to planning and zoning and ask the use category',
+                                   'Avoids owning a house the business cannot legally operate inside',
+                                   'Serg Lupescu ([JUTV80jUHSI @ 00:03:53])'],
+                                  ['Build a home families would actually place their loved one in',
+                                   'Invest in safety features, comfort, and communal areas before opening',
+                                   'Walkthrough feel decides whether families choose you and fill beds',
+                                   'Residential Assisted Living Academy ([l7Esttpxsx0 @ 00:01:39])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["On the listing side, Coleman's timeline runs as short as six weeks from "
+                              'family meeting to closing, depending on asking price and finding the right '
+                              'buyer, and the main killer is families believing the house is worth more '
+                              'than the market will support; list too high and they get frustrated when it '
+                              "doesn't sell, so the team spends real time walking everyone through current "
+                              'market conditions [yyvDp4R_T84 @ 00:01:01]. Disposition is a menu: empty '
+                              'the house, sell it furnished, hire cleaners or repair crews, and bring in '
+                              'an estate sale company that prices everything, runs ads, hosts the sale, '
+                              'and donates unsold items to charity [yyvDp4R_T84 @ 00:01:54]. Corpus runs '
+                              'the numbers families actually use: a senior who lived in the home two of '
+                              'the last five years may qualify for a $250,000 single or $500,000 married '
+                              'capital gains exclusion, and as-is homes in San Mateo, Alameda, and Contra '
+                              'Costa still sell at competitive prices, so spending thousands on upgrades '
+                              'may not be necessary [S5zYm8kcrug @ 00:02:58]. Chad Corbett sorts every '
+                              'seller by two factors, equity and motivation, and routes inherited or '
+                              'vacant former rentals with deferred maintenance that would never pass '
+                              'inspection away from the conventional market, where the seller would get '
+                              'beat up, and toward a quick cash sale with companies the Corbett team has '
+                              'business relationships with [yWEojqmjuYY @ 00:01:02].',
+                              'Brett Chotkevys runs an acquisition loop that costs nothing but time: pull '
+                              'listings on Zillow, LoopNet, and realtor.com, call the agents, walk the '
+                              'property without a proof-of-funds letter, take addresses to planning and '
+                              'zoning, then on the second visit move to the building department and city '
+                              'utility engineer for setbacks, water, power, sewer, and impervious coverage '
+                              '[fFnH_VM4S48 @ 00:01:47]. Once a parcel survives those deal killers, '
+                              'Chotkevys pays contractors found online a couple hundred bucks for a rough '
+                              'draft site plan; one cost $240 and was used to press the fire marshal on '
+                              'hydrants, utility tie-ins, detention ponds, and parking before any offer '
+                              "went in [fFnH_VM4S48 @ 00:02:51]. Lupescu's market research is also free: "
+                              'target an area with income above the median so families can afford the '
+                              'service, then search your state DHS website by zip code under facilities or '
+                              "long-term facilities, which lists owners' emails and phone numbers. The "
+                              'play is to email those owners, ask how the industry is doing, request '
+                              'tours, and benchmark the going rates for their beds [JUTV80jUHSI @ '
+                              "00:01:48]. Ariana Jay's endgame is submitting the license application, "
+                              'starting marketing while licensing reviews it, and targeting $3,000 to '
+                              '$10,000 a month per client, private pay or state funded [cxcqaoT1cxQ @ '
+                              '00:01:55].',
+                              'Residential Assisted Living Academy budgets startup costs across real '
+                              'estate purchase, land and construction or renovation, licensing, hiring, '
+                              'carrying costs, and marketing, warns that employee salaries take up 40% of '
+                              'total expenses, and tells operators to finance through a bank or investor: '
+                              "'Do not use your own money for this' [l7Esttpxsx0 @ 00:01:09]. The staffing "
+                              'model puts state-trained caregivers and a licensed administrator in the '
+                              'home, not the owner, and the marketing stack is a professional website with '
+                              'photos and video, open houses and tours, and referral networking with '
+                              'geriatric doctors, elder law attorneys, senior centers, and placement '
+                              'agents, some of whom you may have to pay for leads [l7Esttpxsx0 @ '
+                              '00:03:32]. For redeploying transition and probate income, Rosie in Chad '
+                              "Corbett's Probate Mastery group acquired over four rentals in a year and "
+                              'converted a $4,500 commission into $60,000 of net worth equity plus a '
+                              "rental [u46B4m0SDCw @ 00:01:24]. Corbett's capital playbook is a blanket "
+                              'commercial lien across the portfolio with a bank that has a history of '
+                              'partial releases, a CD-secured line some banks lever five to one, and First '
+                              'Citizens requests kept below $50,000 to skip underwriting, which produced '
+                              'roughly a $49,000 commercial line and a $75,000 card at 3% cash back on an '
+                              'EIN about two hours old [u46B4m0SDCw @ 00:06:38].'],
+               'table': {'caption': 'Hard numbers and tools operators quoted for senior transitions, '
+                                    'assisted living, and rental capital',
+                         'headers': ['Mechanic', 'Exact Number or Tool', 'How It Is Used', 'Expert Source'],
+                         'rows': [['Rough draft site plan before making any offer',
+                                   '$240 paid to an online contractor for a rough site plan',
+                                   'Taken to the fire marshal and city to test hydrants and parking',
+                                   'Brett Chotkevys ([fFnH_VM4S48 @ 00:02:51])'],
+                                  ['Per-resident revenue target for a licensed home',
+                                   '$3,000 to $10,000 monthly per client, private pay or state funded',
+                                   'Sets the financial target before choosing or leasing the property',
+                                   'Ariana Jay ([cxcqaoT1cxQ @ 00:01:55])'],
+                                  ['Payroll load inside the assisted living business plan',
+                                   'Employee salaries take up 40 percent of total expenses',
+                                   'Built into projections used to win bank or investor financing',
+                                   'Residential Assisted Living Academy ([l7Esttpxsx0 @ 00:01:09])'],
+                                  ['Property management fee as recurring defensive income',
+                                   '8 to 12 percent of gross monthly rent collected from owners',
+                                   '100 doors at $2,000 rent and 10 percent yields $240,000 yearly',
+                                   'Wealth Pilot ([osCrPBaE5OY @ 00:05:32])'],
+                                  ['Lender coverage test on a leveraged rental purchase',
+                                   'Debt service coverage ratio of at least about 1.2 required',
+                                   'Sample $300,000 house at 7.75 percent hit only 0.84 coverage',
+                                   'Unit Math ([i8GDo8WTXWw @ 00:07:03])'],
+                                  ['Real cash needed for one $300,000 rental house',
+                                   '$90,000 to $110,000 after down payment, repairs, closing, reserves',
+                                   'Explains why most investors start with one property or partner up',
+                                   'Finance Brief ([LPs1XDGVnWs @ 00:03:21])'],
+                                  ['Unsecured business credit on a brand new entity',
+                                   'Requests kept under $50,000 skip underwriting at First Citizens',
+                                   'Holds strike-money liquidity without drawing down a single dollar',
+                                   'Probate Mastery ([u46B4m0SDCw @ 00:06:38])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street Shortcuts From the Field',
+                           'body': 'Small moves operators used to unstick heirs, surface motivated '
+                                   'sellers, and scout assisted living sites without risking capital.',
+                           'items': ['Ask an heir for the family Bible: Rosie learned the back pages often '
+                                     "carry everyone's birthdays and marriage dates, which she needed to "
+                                     'complete an affidavit of heirship [Probate Mastery — u46B4m0SDCw @ '
+                                     '00:15:34].',
+                                     "When an heir-held listing stalls, flip roles: Rosie couldn't sell it "
+                                     'as listing agent, re-approached the decision-making heir as a buyer, '
+                                     'and her investor put $20K on the table to flip it [Probate Mastery — '
+                                     'u46B4m0SDCw @ 00:15:01].',
+                                     'Sort custom MLS searches by price drops to surface motivated sellers '
+                                     'fast, then use the map view where most searchers spend their time '
+                                     '[CHAD CORBETT — melYPd428uA @ 00:03:50].',
+                                     'Walk properties before you have proof of funds; city zoning, '
+                                     'setback, and utility answers cost only time while you have risked no '
+                                     'money and made no deposit [Brett Chotkevys — fFnH_VM4S48 @ '
+                                     '00:02:00].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock Legal Authority and One Contact',
+                              'action': 'Confirm who can legally sell, then appoint a single family point '
+                                        'person before any pricing or prep work.',
+                              'detail': 'Verify sound mind, power of attorney, conservatorship, or probate '
+                                        'status and pull reverse mortgage payoffs [Simplify Senior '
+                                        'Transitions with Dale Corpus — S5zYm8kcrug @ 00:01:33]; refuse to '
+                                        'work through every relative and require one designated contact '
+                                        '[Florida Realtors YouTube — yyvDp4R_T84 @ 00:02:16].'},
+                             {'step': 2,
+                              'title': 'Price to Market and Clear the House',
+                              'action': 'Educate the family on current market conditions, then choose '
+                                        'empty, furnished, cleaned, or repaired, and schedule the estate '
+                                        'sale.',
+                              'detail': "Overpricing is what frustrates families when the house doesn't "
+                                        'sell; the estate sale company prices, advertises, hosts, and '
+                                        'donates leftovers, with the senior picking keepsakes first '
+                                        '[Florida Realtors YouTube — yyvDp4R_T84 @ 00:01:18].'},
+                             {'step': 3,
+                              'title': 'Route the Sale by Equity and Motivation',
+                              'action': 'Match the seller to conventional sale, cash sale, lease option, '
+                                        'or short sale based on equity position and urgency.',
+                              'detail': 'Equity plus clean condition goes conventional, inherited '
+                                        'deferred-maintenance homes go cash, neutral equity sellers who '
+                                        "can't afford commission use the Roanoke lease option program, and "
+                                        'owe-100-worth-80 sellers short sale to avoid foreclosure [CHAD '
+                                        'CORBETT — yWEojqmjuYY @ 00:01:31].'},
+                             {'step': 4,
+                              'title': 'Redeploy Into an Assisted Living Asset Zoning-First',
+                              'action': 'Learn local rates and rules, scout parcels, clear zoning and '
+                                        'building questions, then file the license application.',
+                              'detail': 'Rates and requirements come before the property [Ariana Jay — '
+                                        'cxcqaoT1cxQ @ 00:00:47]; a $240 rough draft site plan settles '
+                                        'fire marshal, utility, and parking questions before an offer '
+                                        '[Brett Chotkevys — fFnH_VM4S48 @ 00:02:51].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in the assisted-living conversion lane is sequencing: do '
+                              'you hunt property first, or lock the rate and rule sheet first? Brett '
+                              'Chotkevys tells beginners to get on Zillow, LoopNet and realtor.com, call '
+                              'the listing agents, and walk land or existing buildings before having any '
+                              'ducks in a row, with no proof-of-funds letter required, because the walk '
+                              'itself is the education [fFnH_VM4S48 @ 00:00:00]. Ariana Jay calls that '
+                              'exact move a costly mistake. Before you buy or lease the home, pull the '
+                              'local private-pay and state-funded rate range and the licensing '
+                              'requirements, because you cannot hit a financial target you cannot see, and '
+                              'only then go find the property [cxcqaoT1cxQ @ 00:01:22]. Serg Lupescu '
+                              'splits the difference with a research-heavy front end. Run market analysis '
+                              'for areas with income above the median so families can afford the service. '
+                              'Then pull the state DHS long-term facility list by zip code, which publicly '
+                              "lists owners' emails and phone numbers, cold-email those owners, and ask to "
+                              'tour their homes before acquiring anything [JUTV80jUHSI @ 00:01:33]. The '
+                              'reconciling detail is that the Chotkevys walking phase never involves an '
+                              'offer or a deposit. He stresses that everything up to that point costs only '
+                              'time and risks no money [fFnH_VM4S48 @ 00:02:00].',
+                              'Capital structure is the second fault line. Residential Assisted Living '
+                              'Academy is blunt: build a business plan covering real estate, licensing, '
+                              'staff, furnishings, carrying costs and marketing, then take it to a bank or '
+                              'an investor, because you should not use your own money for this '
+                              '[l7Esttpxsx0 @ 00:01:09]. Unit Math runs the counter-math on leverage at '
+                              'current pricing. A $300,000 rental bought with 25 percent down at a 7.75 '
+                              'percent investor rate produces a debt service coverage ratio of about 0.84. '
+                              'To hit the roughly 1.2 lenders want, the buyer has to put down about 48 '
+                              'percent, around $143,000, which is nearly twice the cash for the same house '
+                              '[i8GDo8WTXWw @ 00:07:03]. Finance Brief lands closer to Unit Math. It warns '
+                              'that taking the maximum debt a lender offers is not necessarily sound, and '
+                              'that liquidity to cover debt service, repairs and vacancies is the real '
+                              "survival variable [LPs1XDGVnWs @ 00:15:08]. Chad Corbett's coaching answer "
+                              'is to engineer liquidity rather than avoid debt. Put a blanket commercial '
+                              'lien across a rental portfolio with a bank that has a history of partial '
+                              'releases. Pledge a CD for up to five-to-one leverage. Keep First Citizens '
+                              'business line requests under $50,000 so they skip underwriting [u46B4m0SDCw '
+                              '@ 00:05:29].',
+                              "On the senior's own house, practitioners disagree on how much prep money "
+                              'goes in before the sale. Sheri Coleman of Florida Realtors runs a '
+                              'full-service retail playbook. The family chooses whether the house is '
+                              'emptied or sold furnished, her team can hire cleaners or repair crews, and '
+                              'an estate-sale company prices everything, runs ads, hosts the sale and '
+                              'donates the leftovers to charity [yyvDp4R_T84 @ 00:01:36]. Dale Corpus '
+                              'argues the opposite on spend. He reports that as-is homes in San Mateo, '
+                              'Alameda and Contra Costa counties still sell at competitive prices, so '
+                              'thousands in upgrades may be wasted, and he markets sales with no repairs '
+                              'and no cleanouts [S5zYm8kcrug @ 00:03:44]. Chad Corbett sorts the decision '
+                              'by two variables, equity and motivation. Equity plus a clean house goes '
+                              'conventional. An inherited or vacant rental with deferred maintenance that '
+                              'would never pass inspection goes to a quick cash buyer. Neutral equity goes '
+                              'to a commission-free lease option, and an underwater house goes short sale '
+                              "[yWEojqmjuYY @ 00:01:02]. Rosie, in Corbett's Probate Mastery group, argues "
+                              'that retail listings reach just 15 percent of the market, while 85 percent '
+                              'of investment transactions happen off it [u46B4m0SDCw @ 00:02:41].'],
+               'table': {'caption': 'Competing playbooks on senior-transition, assisted-living, and '
+                                    'distressed-house deals',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Property hunt timing for a residential assisted living conversion',
+                                   'Walk listings and call agents immediately with no proof of funds',
+                                   'Lock local rate range and licensing rules first, then shop property',
+                                   'Brett Chotkevys ([fFnH_VM4S48 @ 00:00:28]); Ariana Jay ([cxcqaoT1cxQ @ '
+                                   '00:01:22])'],
+                                  ['Market intelligence source before committing to any home',
+                                   'Google market analysis targeting areas above the local median income',
+                                   'Pull the state DHS facility list, email owners, and request tours',
+                                   'Serg Lupescu ([JUTV80jUHSI @ 00:01:48])'],
+                                  ['Funding the assisted living startup and property buildout',
+                                   'Bank or investor money backed by a written business plan, never your '
+                                   'own',
+                                   'Heavy cash down because a 0.84 coverage ratio forces about 48 percent '
+                                   'down',
+                                   'Residential Assisted Living Academy ([l7Esttpxsx0 @ 00:01:25]); Unit '
+                                   'Math ([i8GDo8WTXWw @ 00:07:23])'],
+                                  ["Prep spend on the senior's home before listing it",
+                                   'Cleaners, repairs, and an estate sale company that donates unsold '
+                                   'items',
+                                   'Sell as-is with no repairs and no cleanouts at competitive prices',
+                                   'Florida Realtors YouTube ([yyvDp4R_T84 @ 00:01:54]); Simplify Senior '
+                                   'Transitions with Dale Corpus ([S5zYm8kcrug @ 00:03:44])'],
+                                  ['Exit route when the inherited house is distressed',
+                                   'Quick cash sale for vacant homes with deferred maintenance that fail '
+                                   'inspection',
+                                   'Commission-free lease option at neutral equity, short sale when '
+                                   'underwater',
+                                   'CHAD CORBETT ([yWEojqmjuYY @ 00:01:02])'],
+                                  ['Fire-damaged duplex sitting idle for several months in the '
+                                   'neighborhood',
+                                   'Owner planned to bulldoze the house and put in a community garden',
+                                   'Neighbor bought it, rebuilt it down to the studs, and listed at '
+                                   '$139,000',
+                                   'CHAD CORBETT ([SMVm885zoB4 @ 00:00:36])'],
+                                  ['Commitment level for agents entering the senior transition niche',
+                                   'Part-time or full-time both work, but never treat it as sometime',
+                                   'Staff up because senior transitions are cumbersome and time-consuming '
+                                   'boots-on-the-ground work',
+                                   'Grow with Juan Polanco ([B4TEVmeFhLk @ 00:06:42]); Florida Realtors '
+                                   'YouTube ([yyvDp4R_T84 @ 00:03:49])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive assisted-living mistake operators flag is closing on a '
+                              'building before zoning clears it. Serg Lupescu warns that buying first and '
+                              'assuming you can rezone later will cost a ton and may leave you unable to '
+                              'open at all, forcing a fallback to an Airbnb or a long-term rental '
+                              '[JUTV80jUHSI @ 00:03:53]. Brett Chotkevys catches deal killers for free by '
+                              'taking a specific address to planning and zoning. He asks whether the use '
+                              'lands in the group home or assisted living category, and whether it is '
+                              'commercial or residential. He then moves to the building department for '
+                              'setbacks, utility hookups and impervious coverage. He spent $240 on a rough '
+                              'draft site plan so the fire marshal could answer hydrant, detention pond '
+                              'and parking questions before any offer [fFnH_VM4S48 @ 00:02:51]. '
+                              'Residential Assisted Living Academy adds the opening-day traps. Employee '
+                              'salaries take up 40 percent of total expenses, beds stay empty without '
+                              'marketing, and referral sources such as placement agents may charge for '
+                              'leads [l7Esttpxsx0 @ 00:03:49]. Lupescu also rejects the cheap-house '
+                              'shortcut outright. A crappy home will not fill, so ask whether you would '
+                              'move your own loved one in [JUTV80jUHSI @ 00:05:36].',
+                              'On the senior-sale side, the traps are legal standing and family friction. '
+                              'Sheri Coleman says the deal stalls cold if nobody holds power of attorney. '
+                              'Families call, then go silent for months while they sort legal paperwork. '
+                              'If the loved one is in denial and the family lacks standing, there is '
+                              'nothing her team can do. She also forces a single designated family '
+                              'contact, because agents cannot field every relative [yyvDp4R_T84 @ '
+                              '00:02:56]. Her other recurring loss is pricing. Families believe the house '
+                              'is worth more than the market supports, the listing sits, and frustration '
+                              'builds until the team re-educates everyone on current conditions '
+                              '[yyvDp4R_T84 @ 00:01:18]. Christine of All About Seniors, interviewed by '
+                              'Matthew Cobb, sets the financial floor families miss: financial and medical '
+                              'powers of attorney plus a will or trust in place, and two years of private '
+                              'pay saved for a community to stay under Medicaid [1kkoh35VCho @ 00:00:36]. '
+                              'Dale Corpus lists the title landmines: a co-owner on title, probate if the '
+                              'senior has died, and reverse mortgages that must be paid off at closing. '
+                              'Some families also postpone the sale for months or years because '
+                              'decluttering a lifetime feels impossible [S5zYm8kcrug @ 00:01:54].',
+                              'The economics checks expose how thin the margins run once real costs land. '
+                              "Unit Math's $300,000 rental at $2,400 a month shows a 10 percent gross "
+                              'yield collapsing to a 5.4 percent cap rate after vacancy, management, '
+                              'maintenance, capital reserves, taxes and insurance. It then loses about '
+                              '$3,100 a year against a 7.75 percent loan, and a single $12,000 roof equals '
+                              "roughly 80 percent of that house's annual NOI [i8GDo8WTXWw @ 00:13:12]. "
+                              "PROFITABLE's Michael scenario lands in the same ditch. $2,500 rent on a "
+                              '$350,000 house leaves $1,500 before a $1,863 mortgage, a loss of about $363 '
+                              'a month and a cash-on-cash return near negative 4.84 percent [Tsd1Ymoso1Q @ '
+                              '00:10:03]. Wealth Pilot traces a $500,000 sale down to roughly $4,431 in '
+                              "the listing agent's pocket. It notes that failed deals can hit 15 to 30 "
+                              'percent of contracts written, each one a net cash loss [osCrPBaE5OY @ '
+                              "00:13:48]. Rosie's probate foreclosure file shows delay as its own cost. A "
+                              'deal that could have closed in December dragged on with five months of late '
+                              'HOA dues, late payments, more interest, and more attorneys and trustees '
+                              'involved [u46B4m0SDCw @ 00:10:08].'],
+               'table': {'caption': 'Firsthand traps, reported damage, and the practitioner countermove',
+                         'headers': ['Trap', 'What Practitioners Reported', 'Countermove', 'Expert Source'],
+                         'rows': [['Buying an assisted living property before zoning clears it',
+                                   'Costs a ton, may never open, fallback becomes an Airbnb or long-term '
+                                   'rental',
+                                   'Clear zoning on the specific address before acquiring or leasing '
+                                   'anything',
+                                   'Serg Lupescu ([JUTV80jUHSI @ 00:03:53])'],
+                                  ['Overpriced senior listing driven by family expectations',
+                                   'Family believes house is worth more, listing sits and frustration '
+                                   'builds',
+                                   'Walk every decision maker through current market conditions before '
+                                   'listing',
+                                   'Florida Realtors YouTube ([yyvDp4R_T84 @ 00:01:18])'],
+                                  ['No power of attorney or legal standing in place',
+                                   'Initial call, then silence for months while legal aspects get handled',
+                                   'Confirm power of attorney or court conservatorship before taking the '
+                                   'listing',
+                                   'Florida Realtors YouTube ([yyvDp4R_T84 @ 00:02:56]); Simplify Senior '
+                                   'Transitions with Dale Corpus ([S5zYm8kcrug @ 00:01:33])'],
+                                  ["Reverse mortgage or liens hiding behind the senior's equity",
+                                   'Reverse mortgages must be paid off at closing out of sale proceeds',
+                                   'Pull the outstanding balance early so the family knows real net '
+                                   'proceeds',
+                                   'Simplify Senior Transitions with Dale Corpus ([S5zYm8kcrug @ '
+                                   '00:01:54])'],
+                                  ['Negative leverage on a financed rental at current investor rates',
+                                   'A $300,000 house at 7.75 percent loses about $3,100 every year',
+                                   'Compare cap rate against loan rate and demand real tax and insurance '
+                                   'quotes',
+                                   'Unit Math ([i8GDo8WTXWw @ 00:05:13])'],
+                                  ['Collapsed contracts after weeks of coordinated transaction work',
+                                   'Failed deals run 15 to 30 percent of contracts, each a net cash loss',
+                                   'Measure cost per closed transaction instead of celebrating raw lead '
+                                   'volume',
+                                   'Wealth Pilot ([osCrPBaE5OY @ 00:13:48])'],
+                                  ['Probate foreclosure drifting under repeated moratorium pushbacks',
+                                   'Late HOA dues, missed payments, interest, and trustees thin the deal',
+                                   'Use accruing interest and shrinking equity as the urgency lever with '
+                                   'heirs',
+                                   'Probate Mastery ([u46B4m0SDCw @ 00:10:08])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-switch checks before money moves',
+                           'body': 'Every item below is a loss the speakers took or watched someone take. '
+                                   'Clear all four before an offer, a listing agreement, or a loan '
+                                   'application goes out.',
+                           'items': ['No offer on an assisted living property until planning and zoning '
+                                     'confirms the use for that exact address [Serg Lupescu — JUTV80jUHSI '
+                                     '@ 00:03:53].',
+                                     'No senior listing without a power of attorney or the senior signing, '
+                                     'plus one designated family contact [Florida Realtors YouTube — '
+                                     'yyvDp4R_T84 @ 00:02:16].',
+                                     'No leveraged rental where the debt service coverage ratio sits below '
+                                     'the roughly 1.2 that investor lenders want [Unit Math — i8GDo8WTXWw '
+                                     '@ 00:07:03].',
+                                     'No RAL launch without a marketing plan to fill beds, including '
+                                     'budget for paid referral leads from placement agents [Residential '
+                                     'Assisted Living Academy — l7Esttpxsx0 @ 00:03:49].']}}],
+ 'pull_quote': '"In this business, the rent is the revenue. The margin is what you keep." Unit Math '
+               '(i8GDo8WTXWw @ 00:17:07).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Pull your local private-pay and state-funded rate range and the licensing '
+                      'requirements before you buy or lease any home [Ariana Jay — cxcqaoT1cxQ @ '
+                      '00:00:47].',
+                      'Search your state DHS long-term facility list by zip code, email the listed owners, '
+                      'and ask to tour their homes and learn their bed rates [Serg Lupescu — JUTV80jUHSI @ '
+                      '00:01:33].',
+                      'Take one or two real addresses to planning and zoning, then the building '
+                      'department, then commission a roughly $240 rough draft site plan for the fire '
+                      'marshal [Brett Chotkevys — fFnH_VM4S48 @ 00:02:51].',
+                      'In the first family meeting, set the timeframe (as short as six weeks to closing), '
+                      'confirm power of attorney, name one designated contact, and line up an estate sale '
+                      'company [Florida Realtors YouTube — yyvDp4R_T84 @ 00:01:01].',
+                      'Route every inherited or senior house by equity and motivation into conventional '
+                      'sale, cash sale, lease option, or short sale [CHAD CORBETT — yWEojqmjuYY @ '
+                      '00:00:00].',
+                      'Before buying any rental, check cap rate against loan rate, real tax and insurance '
+                      "bills, roof age, and the lender's coverage ratio [Unit Math — i8GDo8WTXWw @ "
+                      '00:15:29].'],
+ 'statutory_citations': [{'title': 'Florida Realtors YouTube — How Realtors Can Guide Clients '
+                                   'Transitioning to Senior Living [00:02:35]',
+                          'url': 'https://www.youtube.com/watch?v=yyvDp4R_T84&t=155s',
+                          'relevance': 'Primary practitioner testimony on power of attorney, family '
+                                       "dynamics, and estate-sale workflow when listing a senior's home."},
+                         {'title': 'Serg Lupescu — Starting an Assisted Living Home for beginners | '
+                                   'Residential Assisted Living [00:03:53]',
+                          'url': 'https://www.youtube.com/watch?v=JUTV80jUHSI&t=233s',
+                          'relevance': 'Primary practitioner testimony on clearing zoning before acquiring '
+                                       'an assisted living property and DHS-list competitor research.'},
+                         {'title': 'Unit Math — The Economics of Owning Rental Properties (The Hidden '
+                                   'Costs That Eat Your Profits!) [00:07:03]',
+                          'url': 'https://www.youtube.com/watch?v=i8GDo8WTXWw&t=423s',
+                          'relevance': 'Primary practitioner testimony on negative leverage, cap rate '
+                                       'versus loan rate, and debt service coverage ratio on rentals.'},
+                         {'title': 'CHAD CORBETT — 4 OPTIONS FOR SELLING A HOME | PORTFOLIO PROPERTIES | '
+                                   'CHAD CORBETT [00:01:02]',
+                          'url': 'https://www.youtube.com/watch?v=yWEojqmjuYY&t=62s',
+                          'relevance': 'Primary practitioner testimony on routing inherited and distressed '
+                                       'homes by equity and seller motivation.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'yyvDp4R_T84',
+                       'title': 'How Realtors Can Guide Clients Transitioning to Senior Living',
+                       'channel': 'Florida Realtors YouTube',
+                       'author': 'Florida Realtors YouTube',
+                       'text': 'Loved ones moving into an assisted living facility usually designate a '
+                               'family member as power of attorney to make legal decisions, and if they '
+                               "don't, we cannot do anything.",
+                       'tip': 'Loved ones moving into an assisted living facility usually designate a '
+                              'family member as power of attorney to make legal decisions, and if they '
+                              "don't, we cannot do anything.",
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=yyvDp4R_T84&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=yyvDp4R_T84&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yyvDp4R_T84',
+                       'title': 'How Realtors Can Guide Clients Transitioning to Senior Living',
+                       'channel': 'Florida Realtors YouTube',
+                       'author': 'Florida Realtors YouTube',
+                       'text': "If we list too high they get frustrated when it doesn't sell, so we've "
+                               'spent a lot of time going over current market conditions and educating '
+                               'everyone involved.',
+                       'tip': "If we list too high they get frustrated when it doesn't sell, so we've "
+                              'spent a lot of time going over current market conditions and educating '
+                              'everyone involved.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=yyvDp4R_T84&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=yyvDp4R_T84&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1kkoh35VCho',
+                       'title': 'Where to Start With Senior Placement',
+                       'channel': 'Discover Colorado - The Cobb Home Team',
+                       'author': 'Discover Colorado - The Cobb Home Team',
+                       'text': "It's important to have a financial and medical power of attorney as well "
+                               'as a will or a trust in place, and you need two years of private pay for a '
+                               'community saved to stay under Medicaid.',
+                       'tip': "It's important to have a financial and medical power of attorney as well as "
+                              'a will or a trust in place, and you need two years of private pay for a '
+                              'community saved to stay under Medicaid.',
+                       'timestamp': 36,
+                       'timestamp_seconds': 36,
+                       'timestamp_label': '[00:00:36]',
+                       'url': 'https://www.youtube.com/watch?v=1kkoh35VCho&t=36s',
+                       'markdown': '[00:00:36](https://www.youtube.com/watch?v=1kkoh35VCho&t=36s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fFnH_VM4S48',
+                       'title': 'How to Find & Prepare Property for Assisted Living | Step-by-Step Guide',
+                       'channel': 'Brett Chotkevys',
+                       'author': 'Brett Chotkevys',
+                       'text': "I spent 240 bucks to have a rough draft site plan done for me, and that's "
+                               "money well spent because I know exactly what I can do and what I can't do.",
+                       'tip': "I spent 240 bucks to have a rough draft site plan done for me, and that's "
+                              "money well spent because I know exactly what I can do and what I can't do.",
+                       'timestamp': 171,
+                       'timestamp_seconds': 171,
+                       'timestamp_label': '[00:02:51]',
+                       'url': 'https://www.youtube.com/watch?v=fFnH_VM4S48&t=171s',
+                       'markdown': '[00:02:51](https://www.youtube.com/watch?v=fFnH_VM4S48&t=171s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cxcqaoT1cxQ',
+                       'title': 'How to start a licensed residential assisted living, Step by Step.',
+                       'channel': 'Ariana Jay',
+                       'author': 'Ariana Jay',
+                       'text': 'People make the mistake of going out and trying to find the property '
+                               "first; don't do that, it's a costly mistake.",
+                       'tip': 'People make the mistake of going out and trying to find the property first; '
+                              "don't do that, it's a costly mistake.",
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=cxcqaoT1cxQ&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=cxcqaoT1cxQ&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S5zYm8kcrug',
+                       'title': 'What You Need to Know Before Selling a Senior’s Home (Legal, Financial & '
+                                'Emotional Considerations)',
+                       'channel': 'Simplify Senior Transitions with Dale Corpus',
+                       'author': 'Simplify Senior Transitions with Dale Corpus',
+                       'text': 'Many seniors take out reverse mortgages to access home equity; these must '
+                               "be paid off at closing, so you'll need to understand how much is owed.",
+                       'tip': 'Many seniors take out reverse mortgages to access home equity; these must '
+                              "be paid off at closing, so you'll need to understand how much is owed.",
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=S5zYm8kcrug&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=S5zYm8kcrug&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JUTV80jUHSI',
+                       'title': 'Starting an Assisted Living Home for beginners | Residential Assisted '
+                                'Living',
+                       'channel': 'Serg Lupescu',
+                       'author': 'Serg Lupescu',
+                       'text': "Don't make that mistake of just buying the property and thinking you can "
+                               'zone it without going to zoning first; it will cost you a ton and you '
+                               "won't even get to start a business in there.",
+                       'tip': "Don't make that mistake of just buying the property and thinking you can "
+                              "zone it without going to zoning first; it will cost you a ton and you won't "
+                              'even get to start a business in there.',
+                       'timestamp': 233,
+                       'timestamp_seconds': 233,
+                       'timestamp_label': '[00:03:53]',
+                       'url': 'https://www.youtube.com/watch?v=JUTV80jUHSI&t=233s',
+                       'markdown': '[00:03:53](https://www.youtube.com/watch?v=JUTV80jUHSI&t=233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l7Esttpxsx0',
+                       'title': 'How to Start a Residential Assisted Living Business',
+                       'channel': 'Residential Assisted Living Academy',
+                       'author': 'Residential Assisted Living Academy',
+                       'text': 'A clear business plan is essential if you plan to get financing from a '
+                               'bank or an investor, which I highly recommend you do; do not use your own '
+                               'money for this.',
+                       'tip': 'A clear business plan is essential if you plan to get financing from a bank '
+                              'or an investor, which I highly recommend you do; do not use your own money '
+                              'for this.',
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=l7Esttpxsx0&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=l7Esttpxsx0&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B4TEVmeFhLk',
+                       'title': 'How to Become a Real Estate Agent in 2026 | What Beginners Need to Know',
+                       'channel': 'Grow with Juan Polanco',
+                       'author': 'Grow with Juan Polanco',
+                       'text': 'You can do part-time or you can do full-time, but do not do sometime.',
+                       'tip': 'You can do part-time or you can do full-time, but do not do sometime.',
+                       'timestamp': 380,
+                       'timestamp_seconds': 380,
+                       'timestamp_label': '[00:06:20]',
+                       'url': 'https://www.youtube.com/watch?v=B4TEVmeFhLk&t=380s',
+                       'markdown': '[00:06:20](https://www.youtube.com/watch?v=B4TEVmeFhLk&t=380s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'osCrPBaE5OY',
+                       'title': 'The Economics of Owning a Real Estate Business',
+                       'channel': 'Wealth Pilot',
+                       'author': 'Wealth Pilot',
+                       'text': 'Every failed deal is a net cash loss, and in a busy brokerage failed '
+                               'transactions can account for 15 to 30 percent of all contracts written in '
+                               'a given year.',
+                       'tip': 'Every failed deal is a net cash loss, and in a busy brokerage failed '
+                              'transactions can account for 15 to 30 percent of all contracts written in a '
+                              'given year.',
+                       'timestamp': 828,
+                       'timestamp_seconds': 828,
+                       'timestamp_label': '[00:13:48]',
+                       'url': 'https://www.youtube.com/watch?v=osCrPBaE5OY&t=828s',
+                       'markdown': '[00:13:48](https://www.youtube.com/watch?v=osCrPBaE5OY&t=828s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LPs1XDGVnWs',
+                       'title': 'The Economics of Owning a Real Estate Business #usa',
+                       'channel': 'Finance Brief',
+                       'author': 'Finance Brief',
+                       'text': 'Owners need enough accessible money to cover debt service, repairs, '
+                               'vacancies, and insurance increases, and taking on the maximum debt a '
+                               'lender offers is not necessarily a sound strategy.',
+                       'tip': 'Owners need enough accessible money to cover debt service, repairs, '
+                              'vacancies, and insurance increases, and taking on the maximum debt a lender '
+                              'offers is not necessarily a sound strategy.',
+                       'timestamp': 908,
+                       'timestamp_seconds': 908,
+                       'timestamp_label': '[00:15:08]',
+                       'url': 'https://www.youtube.com/watch?v=LPs1XDGVnWs&t=908s',
+                       'markdown': '[00:15:08](https://www.youtube.com/watch?v=LPs1XDGVnWs&t=908s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Tsd1Ymoso1Q',
+                       'title': 'How Real Estate Investors Actually Make Money From Rentals',
+                       'channel': 'PROFITABLE',
+                       'author': 'PROFITABLE',
+                       'text': 'That leaves $1,500 before mortgage payments, then the mortgage takes '
+                               'another $1,863, and Michael is now losing approximately $363 per month on '
+                               'this investment.',
+                       'tip': 'That leaves $1,500 before mortgage payments, then the mortgage takes '
+                              'another $1,863, and Michael is now losing approximately $363 per month on '
+                              'this investment.',
+                       'timestamp': 603,
+                       'timestamp_seconds': 603,
+                       'timestamp_label': '[00:10:03]',
+                       'url': 'https://www.youtube.com/watch?v=Tsd1Ymoso1Q&t=603s',
+                       'markdown': '[00:10:03](https://www.youtube.com/watch?v=Tsd1Ymoso1Q&t=603s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i8GDo8WTXWw',
+                       'title': 'The Economics of Owning Rental Properties (The Hidden Costs That Eat Your '
+                                'Profits!)',
+                       'channel': 'Unit Math',
+                       'author': 'Unit Math',
+                       'text': 'Investor lenders look at the debt service coverage ratio and usually want '
+                               "it to be at least about 1.2, and ours is about 0.84, so the house doesn't "
+                               'cover its own loan.',
+                       'tip': 'Investor lenders look at the debt service coverage ratio and usually want '
+                              "it to be at least about 1.2, and ours is about 0.84, so the house doesn't "
+                              'cover its own loan.',
+                       'timestamp': 423,
+                       'timestamp_seconds': 423,
+                       'timestamp_label': '[00:07:03]',
+                       'url': 'https://www.youtube.com/watch?v=i8GDo8WTXWw&t=423s',
+                       'markdown': '[00:07:03](https://www.youtube.com/watch?v=i8GDo8WTXWw&t=423s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'u46B4m0SDCw',
+                       'title': 'How Rosie Is Scaling Her Net Worth By Expanding Into Investment - Group '
+                                'Coaching with Chad Corbett',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'Put a blanket commercial lien across all assets and draw a commercial line '
+                               'of credit against that, but make sure the bank is okay giving you a '
+                               'partial release.',
+                       'tip': 'Put a blanket commercial lien across all assets and draw a commercial line '
+                              'of credit against that, but make sure the bank is okay giving you a partial '
+                              'release.',
+                       'timestamp': 311,
+                       'timestamp_seconds': 311,
+                       'timestamp_label': '[00:05:11]',
+                       'url': 'https://www.youtube.com/watch?v=u46B4m0SDCw&t=311s',
+                       'markdown': '[00:05:11](https://www.youtube.com/watch?v=u46B4m0SDCw&t=311s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'u46B4m0SDCw',
+                       'title': 'How Rosie Is Scaling Her Net Worth By Expanding Into Investment - Group '
+                                'Coaching with Chad Corbett',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'I am selling to 15% of the market when I sell retail, but if I go '
+                               'investments, 85% of the transactions are happening off the market.',
+                       'tip': 'I am selling to 15% of the market when I sell retail, but if I go '
+                              'investments, 85% of the transactions are happening off the market.',
+                       'timestamp': 161,
+                       'timestamp_seconds': 161,
+                       'timestamp_label': '[00:02:41]',
+                       'url': 'https://www.youtube.com/watch?v=u46B4m0SDCw&t=161s',
+                       'markdown': '[00:02:41](https://www.youtube.com/watch?v=u46B4m0SDCw&t=161s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SMVm885zoB4',
+                       'title': '1210 CHAPMAN AVE SW | DEVELOPER INTERVIEW | CORBETT REAL ESTATE ADVISORS',
+                       'channel': 'CHAD CORBETT',
+                       'author': 'CHAD CORBETT',
+                       'text': 'The owner told me he was going to bulldoze it, so I contacted the owner '
+                               'and told him I wanted to purchase the home with the intent to rebuild it.',
+                       'tip': 'The owner told me he was going to bulldoze it, so I contacted the owner and '
+                              'told him I wanted to purchase the home with the intent to rebuild it.',
+                       'timestamp': 36,
+                       'timestamp_seconds': 36,
+                       'timestamp_label': '[00:00:36]',
+                       'url': 'https://www.youtube.com/watch?v=SMVm885zoB4&t=36s',
+                       'markdown': '[00:00:36](https://www.youtube.com/watch?v=SMVm885zoB4&t=36s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'melYPd428uA',
+                       'title': 'Using www.RoanokeHomeHub.com For Your Home Search',
+                       'channel': 'CHAD CORBETT',
+                       'author': 'CHAD CORBETT',
+                       'text': 'Sort by price drops; this is a good way to find motivated sellers.',
+                       'tip': 'Sort by price drops; this is a good way to find motivated sellers.',
+                       'timestamp': 230,
+                       'timestamp_seconds': 230,
+                       'timestamp_label': '[00:03:50]',
+                       'url': 'https://www.youtube.com/watch?v=melYPd428uA&t=230s',
+                       'markdown': '[00:03:50](https://www.youtube.com/watch?v=melYPd428uA&t=230s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yWEojqmjuYY',
+                       'title': '4 OPTIONS FOR SELLING A HOME | PORTFOLIO PROPERTIES | CHAD CORBETT',
+                       'channel': 'CHAD CORBETT',
+                       'author': 'CHAD CORBETT',
+                       'text': "If you have a home that you've inherited or a rental that's gone vacant "
+                               'with a lot of deferred maintenance that would never pass inspections, a '
+                               'lot of times your best option there is a quick cash sale.',
+                       'tip': "If you have a home that you've inherited or a rental that's gone vacant "
+                              'with a lot of deferred maintenance that would never pass inspections, a lot '
+                              'of times your best option there is a quick cash sale.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=yWEojqmjuYY&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=yWEojqmjuYY&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

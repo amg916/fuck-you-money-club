@@ -1,648 +1,891 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 2 FT + 3 C (5 people) -> 3 FT + 4 C (7 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Five-to-Seven-Person VAR Pods, AWS CPPO and Microsoft CSP Controls, Signed IP Assignments, Renewal Cohorts, and Buyer-Ready Earnings",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
-        "Money-to-Manpower Score. Its nine mapped operator plays become transferable "
-        "assets only when authorization, deal registration, CPPO, CSP, quoting, implementation, "
-        "license reconciliation, renewals, and collections have named owners and auditable "
-        "handoffs. Start with 2 FT + 3 C; add one employee and one contractor only "
-        "against measured workload and collected contribution. Canonical annual owner "
-        "profits are $24,000 Conservative, $196,000 Base, and $500,000 Scaled. "
-        "Protect those economics with milestone-based contractor compensation, weekly "
-        "exception reviews, customer and counterparty concentration limits of 25%, "
-        "cohort accounting, and signed intellectual-property assignments. Build the same "
-        "evidence whether selling or retaining the company: renewable gross profit, "
-        "replaceable owner labor, transferable agreements, and cash collections that "
-        "survive vendor policy changes."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$300,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "8% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,400,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "14.0% net margin; $196,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "20% net margin; $500,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign Nine Plays to Five Seats Before Expanding to Seven",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the starting pod around two accountable employees and three bounded "
-                    "contractor engagements, not five interchangeable generalists. For this chapter, "
-                    "the nine-play execution map is P1 reseller authorization, P2 deal registration, "
-                    "P3 AWS Marketplace channel partner private offers, P4 Microsoft CSP subscription "
-                    "operations, P5 quote generation, P6 implementation delivery, P7 license "
-                    "reconciliation, P8 renewal management, and P9 collections. FT1 is the owner-led "
-                    "commercial principal: they own P1, P2, pricing exceptions, vendor relationships, "
-                    "and material customer commitments. FT2 is the revenue-operations and customer "
-                    "success lead: they own P4, P5, P7, P8, and the collections queue under P9. "
-                    "Contractor C1 supplies certified solution architecture for P3 and technical "
-                    "scoping; C2 delivers P6 through accepted milestones; C3 maintains the accrual "
-                    "ledger and collection evidence supporting P9. No contractor independently "
-                    "changes payment instructions, reseller eligibility, or contract commitments. "
-                    "Use a HubSpot company record as the commercial index, Jira Service Management "
-                    "for delivery evidence, and QuickBooks Online or an equivalent accrual ledger "
-                    "for accounting. Store the vendor account identifier, customer tenant identifier, "
-                    "contract identifier, and renewal anniversary on every opportunity. Those "
-                    "identifiers connect all nine plays without making the founder the only "
-                    "person who can reconstruct a transaction."
-                ),
-                (
-                    "Separate ownership from execution so that absence does not become a service "
-                    "failure. FT1 approves a quote's commercial spread, while FT2 verifies the "
-                    "customer entity, quantity, term, billing frequency, and underlying authorization. "
-                    "C1 documents architecture assumptions before C2 commits implementation hours; "
-                    "C2 returns test evidence before FT2 marks delivery accepted. C3 reconciles "
-                    "the customer receivable, distributor payable, marketplace settlement, and "
-                    "bank receipt without possessing unilateral bank-release authority. Keep "
-                    "approval evidence in the deal record rather than an employee's mailbox. "
-                    "For AWS CPPO, record the selling authorization, permitted offer economics, "
-                    "expiration, and applicable seller-of-record arrangement; do not assume "
-                    "Microsoft CSP has the same money flow or transfer rules. In CSP, identify "
-                    "whether the business is an indirect reseller or direct-bill partner and "
-                    "which party owns provisioning, support, billing, and cancellation obligations. "
-                    "Escalate conflicting portal data before sending the customer an executable "
-                    "quote. Maintain two individually assigned administrators with least-privilege "
-                    "access and tested recovery procedures; never solve continuity by sharing "
-                    "credentials. A weekly absence drill should let the backup operator locate "
-                    "the signed order, accepted scope, next renewal action, and outstanding "
-                    "receivable within ten minutes. Record failures as specific missing artifacts "
-                    "and close them before another customer enters the same workflow."
-                ),
-                (
-                    "Expand to three employees and four contractors only when workload, service "
-                    "quality, and cash support the added capacity. The third employee becomes "
-                    "the dedicated renewals and customer-success manager, taking P8 and routine "
-                    "P7 follow-up from FT2. The fourth contractor supplies independently scoped "
-                    "integration or testing capacity for P6, rather than becoming an uncounted "
-                    "permanent support desk. Use a four-week trigger: more than thirty accepted "
-                    "renewal actions waiting beyond two business days, or implementation "
-                    "commitments exceeding eighty percent of contracted delivery capacity, "
-                    "combined with adequate cash for the signed vendor obligations and the "
-                    "incremental staffing commitment. These are operating triggers, not additions "
-                    "to the canonical profit forecast. The Conservative case still has two "
-                    "full-time seats and three contractors; its $24,000 annual owner profit "
-                    "leaves little room for rework, recruiting errors, or richer compensation. "
-                    "Model actual wages, payroll burden, contractor hours, and owner duties "
-                    "before treating that case as a viable launch budget. Full-time seats are "
-                    "real work commitments, not permission to omit labor costs. Contractor "
-                    "engagements need defined outputs and genuine independence; labels alone "
-                    "do not determine worker status. Review federal tax classification under "
-                    "26 U.S.C. section 3121(d), applicable wage rules, and relevant state tests "
-                    "before establishing recurring arrangements."
-                ),
-            ],
-            "table": {
-                "caption": "Nine-Play Seat Ownership and Five-to-Seven-Person Handoffs",
-                "headers": [
-                    "Seat and explicit scope of accountable work",
-                    "Weekly artifact required before work is accepted",
-                    "Authority boundary protecting customers and operating cash",
-                    "Backup arrangement and measured capacity expansion trigger",
-                ],
-                "rows": [
-                    [
-                        "FT1 commercial principal owns authorization and deal registration",
-                        "Publish vendor eligibility evidence and signed pricing exception decisions",
-                        "Approve material commitments without controlling every bookkeeping entry",
-                        "FT2 retrieves complete deal evidence during weekly absence drills",
-                    ],
-                    [
-                        "FT2 operations lead owns quotes subscriptions and reconciliations",
-                        "Publish renewal queues with quantities terms and accountable owners",
-                        "Prepare payment batches without independently releasing customer refunds",
-                        "Third employee absorbs renewals when documented backlog thresholds persist",
-                    ],
-                    [
-                        "C1 solution architect supports CPPO mechanics and technical scoping",
-                        "Deliver approved architecture assumptions and reproducible offer configuration checks",
-                        "Cannot promise unsupported features or alter signed commercial terms",
-                        "FT2 preserves runbooks while qualified replacement capacity remains documented",
-                    ],
-                    [
-                        "C2 implementation specialist delivers bounded customer acceptance milestones",
-                        "Attach test evidence rollback instructions and customer acceptance records",
-                        "Cannot expand production scope without documented customer change authorization",
-                        "C4 adds integration capacity when contracted delivery utilization warrants",
-                    ],
-                    [
-                        "C3 accounting specialist maintains accrual evidence and collections reconciliation",
-                        "Reconcile receivables vendor obligations settlements and actual bank receipts",
-                        "Cannot change bank instructions and release the corresponding payment",
-                        "FT1 reviews exceptions using ledger exports and source documents",
-                    ],
-                    [
-                        "Scaled additions comprise one employee and one delivery contractor",
-                        "Show renewal throughput improvements and accepted integration milestone outcomes",
-                        "Preserve seven total people rather than hiding extra support labor",
-                        "Fund incremental commitments from documented capacity needs and cash coverage",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make Vendor Knowledge Portable Before the Founder Takes Leave",
-                "body": (
-                    "The valuable asset is the documented operating relationship, not a "
-                    "founder's memory of which channel manager answers quickly."
-                ),
-                "items": [
-                    "Attach the actual CPPO selling authorization and offer expiration to the deal record; a saved price screenshot does not establish continuing resale rights.",
-                    "Export CSP subscription identifiers and scheduled renewal changes into the operating register before staff changes; portal access alone does not explain customer intent.",
-                    "Require C1 to document the rejected architecture alternative and its cost consequence, making replacement scoping faster and preventing repeated presales labor.",
-                    "Run one founder-absent renewal every month using named backup operators, then repair the missing permissions, contract evidence, or customer introductions it exposes.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Buy Accepted Contractor Outputs and Run a Weekly Exception Scorecard",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Compensate contractors for defined deliverables while retaining a transparent "
-                    "view of effective hourly cost. An illustrative architecture statement of "
-                    "work pays $1,200 for discovery, a written design, a license bill of "
-                    "materials, and one revision within an agreed scope. An illustrative "
-                    "implementation engagement pays $4,800 against three accepted milestones: "
-                    "twenty percent for the tested plan, fifty percent for configured staging "
-                    "and test evidence, and thirty percent for production acceptance and "
-                    "handover. Those amounts illustrate procurement mechanics; they do not "
-                    "replace the scorecard's expense envelope. The agreement must define the "
-                    "customer inputs, review window, objective acceptance tests, change pricing, "
-                    "and payment deadline. Pay undisputed accepted work on time, and separate "
-                    "a specific defect dispute from unrelated invoices. Use a five-business-day "
-                    "review window and document whether acceptance was granted or which "
-                    "contracted criterion failed. For architect scoping errors or implementation "
-                    "defects within the original scope, specify a correction obligation with "
-                    "an agreed response target. Do not make the contractor insure vendor "
-                    "outages, customer scope changes, or disputed sales promises. Track "
-                    "rework hours against the responsible cause so a seemingly cheap "
-                    "contractor cannot hide costs inside FT2's workload or the owner's "
-                    "unrecorded nights and weekends."
-                ),
-                (
-                    "Set service levels around business consequences rather than demanding "
-                    "constant availability from every contractor. A critical production defect "
-                    "requires acknowledgment within four contracted coverage hours, an incident "
-                    "owner, and a restoration plan; restoration time remains dependent on "
-                    "the failure and the agreed scope. A standard quote should reach "
-                    "internal review within two business days after complete inputs arrive. "
-                    "License reconciliation exceptions should have an owner within one "
-                    "business day and a documented resolution or vendor escalation within "
-                    "five. Define coverage calendars, time zones, escalation contacts, and "
-                    "customer dependencies explicitly. Measure first-pass acceptance as "
-                    "deliverables accepted without contractor-caused correction divided by "
-                    "deliverables reviewed; target at least ninety-five percent over a "
-                    "rolling quarter, displaying the denominator beside the percentage. "
-                    "Require every contractor creating code, scripts, templates, or "
-                    "documentation to sign an assignment covering the commissioned "
-                    "deliverables. Under 17 U.S.C. section 204(a), a copyright ownership "
-                    "transfer generally requires a writing signed by the owner or their "
-                    "authorized agent. Do not assume paying an invoice transfers copyright. "
-                    "Identify background tools, third-party components, and customer-owned "
-                    "materials separately, with sufficient licenses for continued operation "
-                    "and a permitted business transfer. Collect assignments before "
-                    "delivery begins and reconcile them to the repository and acceptance "
-                    "record at closeout."
-                ),
-                (
-                    "Run a forty-five-minute Monday scorecard using a locked Friday snapshot. "
-                    "FT2 publishes the dataset; FT1 chairs exception decisions; contractors "
-                    "attend only the portions covered by their engagements. Start with "
-                    "cash: overdue receivables, vendor payments due within thirty days, "
-                    "disputed settlements, and contribution remaining after direct vendor "
-                    "and contractor costs. Then inspect renewal coverage at 120, 90, "
-                    "60, and 30 days, quote cycle time, first-pass implementation "
-                    "acceptance, and unmatched licenses. Finish with concentration and "
-                    "missing transfer evidence. Never reward total license billings alone: "
-                    "a large discounted renewal can increase revenue while reducing "
-                    "cash and owner profit. Define gross-profit retention on a fixed "
-                    "opening renewal cohort, using retained gross profit before expansion; "
-                    "report expansion separately so a large new tenant cannot disguise "
-                    "customer losses. Measure days sales outstanding on the same gross "
-                    "or net accounting basis as the underlying receivable and credit "
-                    "sales. Assign each exception one owner, one next action, one "
-                    "deadline, and one economic exposure. Carry unresolved items "
-                    "forward visibly rather than rebuilding a cleaner-looking list. "
-                    "A red metric triggers an intervention, such as shortening credit "
-                    "terms or revising a scope template, not an automatic contractor "
-                    "penalty unsupported by the signed agreement."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Operator Scorecard With Defined Denominators and Responses",
-                "headers": [
-                    "Metric and explicit measurement basis for weekly review",
-                    "Operating target or escalation threshold requiring an owner",
-                    "Evidence source and accountable seat maintaining the record",
-                    "Required intervention when the operating threshold is missed",
-                ],
-                "rows": [
-                    [
-                        "Quote turnaround measures complete intake through internal review readiness",
-                        "Reach review within two business days for standard configurations",
-                        "FT2 compares HubSpot intake timestamps against completed quote records",
-                        "Separate missing customer inputs from internal pricing or authorization delays",
-                    ],
-                    [
-                        "Renewal coverage measures assigned actions across four dated horizons",
-                        "Assign every renewal owner by the 120 day horizon",
-                        "FT2 maintains subscription identifiers notices and documented customer decisions",
-                        "FT1 resolves commercial blockers before cancellation or repricing deadlines",
-                    ],
-                    [
-                        "First pass acceptance divides clean deliveries by reviewed deliveries",
-                        "Maintain at least ninety five percent across rolling quarter reviews",
-                        "C2 supplies test evidence while FT2 records acceptance decisions",
-                        "Correct repeated defect patterns before awarding another comparable milestone",
-                    ],
-                    [
-                        "License reconciliation measures unresolved entitlement and invoice matching exceptions",
-                        "Assign within one business day and resolve or escalate within five",
-                        "FT2 matches customer tenant records against distributor entitlement exports",
-                        "Contain provisioning errors and quantify credits before closing the exception",
-                    ],
-                    [
-                        "Collections aging compares overdue receivables with documented contract terms",
-                        "Escalate every material balance exceeding thirty days past due",
-                        "C3 reconciles invoice aging against settlement records and bank receipts",
-                        "FT1 agrees collection actions and revises future credit exposure",
-                    ],
-                    [
-                        "Concentration measures each customer and independent counterparty dependency share",
-                        "Keep each measured dependency at or below twenty five percent",
-                        "FT1 reviews trailing year revenue gross profit and vendor obligations",
-                        "Redirect acquisition effort and document remediation without disrupting existing contracts",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the Friday operating snapshot",
-                    "action": "Export opportunity, subscription, delivery, receivable, and vendor-payable records.",
-                    "detail": "FT2 records the extraction time, reporting period, source systems, and stable identifiers; C3 reconciles cash-related totals before publication.",
-                },
-                {
-                    "step": 2,
-                    "title": "Validate definitions and identify material exceptions",
-                    "action": "Recalculate denominators, inspect missing identifiers, and price each unresolved exception.",
-                    "detail": "Separate scope changes from contractor defects, customer collections from marketplace settlements, and renewal losses from expansion gains.",
-                },
-                {
-                    "step": 3,
-                    "title": "Assign corrective work in the Monday review",
-                    "action": "Give every exception one accountable owner, one deadline, and one next action.",
-                    "detail": "FT1 approves commercial decisions; FT2 records the decision and routes only contracted deliverables to external specialists.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close with source evidence and preserve history",
-                    "action": "Attach acceptance, settlement, correction, or escalation evidence before changing an item to closed.",
-                    "detail": "Retain the original snapshot and dated resolution so a buyer can reproduce the operating history without interviewing the founder.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile Accrual Cohorts and Cap Every Material Dependency",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Anchor the ledger to the canonical scenarios before adding operational "
-                    "detail. Conservative gross revenue is $300,000, with an eight percent "
-                    "net margin and $24,000 annual owner net profit; the implied total "
-                    "cost envelope is $276,000. Base gross revenue is $1,400,000, with "
-                    "a fourteen percent net margin and $196,000 owner net profit; "
-                    "the implied costs are $1,204,000. Scaled gross revenue is "
-                    "$2,500,000, with a twenty percent net margin and $500,000 "
-                    "owner net profit; the implied costs are $2,000,000. Vendor "
-                    "license costs sit inside those envelopes, together with delivery, "
-                    "labor, overhead, and other modeled expenses. Do not treat these "
-                    "gross billings as a commission-only revenue stream, and do not "
-                    "add a customer's wider cloud consumption or software estate to "
-                    "operator revenue. The scorecard uses gross license resale and "
-                    "service billings; actual reporting requires a contract-specific "
-                    "principal-versus-agent assessment under the applicable accounting "
-                    "framework. If a particular offer belongs on a net presentation, "
-                    "show a separate reconciliation rather than silently changing the "
-                    "canonical case. Keep customer cash advances, earned service "
-                    "revenue, vendor obligations, and marketplace receivables distinct. "
-                    "A bank balance boosted by prepaid subscriptions is not automatically "
-                    "distributable owner cash, especially when the related supplier "
-                    "payment or delivery obligation remains outstanding."
-                ),
-                (
-                    "Close each month by contract, customer, vendor, and renewal cohort. "
-                    "Preserve original booking date, service period, invoice date, cash "
-                    "date, vendor cost, marketplace deductions, implementation cost, and "
-                    "the evidence supporting recognition. Recognize implementation work "
-                    "according to the applicable performance obligations, not merely "
-                    "because C2 submitted an invoice. Record customer prepayments as "
-                    "liabilities until the relevant recognition conditions are met; "
-                    "record unpaid earned amounts and supplier accruals consistently. "
-                    "Match credits, cancellations, incentives, and disputed rebates to "
-                    "their originating contracts so a cleanup month does not appear "
-                    "to be a sudden margin collapse. Treat contingent vendor incentives "
-                    "separately until their contractual and accounting conditions are "
-                    "satisfied. For renewal analysis, freeze the opening customer "
-                    "cohort and calculate retained license gross profit, lost gross "
-                    "profit, pricing changes, and incremental implementation contribution "
-                    "as separate bridges. A $100,000 license invoice with $88,000 "
-                    "vendor cost creates $12,000 before delivery and overhead, not "
-                    "$100,000 of recurring contribution. If a related implementation "
-                    "sells for $15,000 and consumes $9,000 of direct delivery cost, "
-                    "its $6,000 contribution is a distinct service spread. These "
-                    "illustrative units explain the ledger; they are not additional "
-                    "revenue assumed in any canonical scenario. Reconcile all cohort "
-                    "totals back to the closed general ledger before circulating "
-                    "them to lenders, prospective buyers, or the operating team."
-                ),
-                (
-                    "Set a twenty-five percent maximum for any customer or common-control "
-                    "customer group on both trailing-twelve-month revenue and gross profit. "
-                    "Apply the same maximum to material independent counterparty dependencies: "
-                    "vendor-attributable gross profit, distributor purchase obligations, and "
-                    "marketplace settlement receivables. Calculate each category separately; "
-                    "averaging them conceals a single point of failure. Vendor groups "
-                    "under common control belong together, and two distributors selling "
-                    "the same indispensable publisher do not eliminate publisher risk. "
-                    "A young specialist may initially exceed a cap because the first "
-                    "few customers or one platform dominate. Report the actual breach, "
-                    "freeze discretionary increases in that dependency where commercially "
-                    "feasible, and assign a dated diversification plan rather than "
-                    "declaring the business diversified. Maintain existing contractual "
-                    "service commitments while redirecting new acquisition. Distinguish "
-                    "concentration from absolute cash exposure: a small overdue "
-                    "marketplace balance can threaten payroll even when its percentage "
-                    "looks acceptable. Stress-test a sixty-day collection delay, loss "
-                    "of the largest renewable gross-profit account, and a vendor "
-                    "discount reduction against signed payables and staffing commitments. "
-                    "Use those tests to size cash reserves and credit terms; do "
-                    "not quietly reduce the stated profit cases. A buyer should "
-                    "see historical breaches, corrective actions, and current exposure, "
-                    "not a chart that removes inconvenient accounts from the denominator."
-                ),
-            ],
-            "table": {
-                "caption": "Accrual, Cohort, and Concentration Evidence for a Transferable Book",
-                "headers": [
-                    "Control area and economic exposure requiring separate measurement",
-                    "Required source evidence preserved with the contract record",
-                    "Reconciliation or concentration test performed at monthly close",
-                    "Failure response protecting reliable earnings and collected cash",
-                ],
-                "rows": [
-                    [
-                        "Gross resale billings remain distinct from customer cloud consumption",
-                        "Retain executed orders vendor invoices and documented accounting conclusions",
-                        "Bridge statutory revenue presentation back to canonical gross billings",
-                        "Remove unrelated customer spend from operator revenue performance claims",
-                    ],
-                    [
-                        "Customer advances remain distinct from earned implementation service revenue",
-                        "Retain service periods acceptance evidence and customer payment receipts",
-                        "Reconcile contract liabilities against remaining obligations and recognition schedules",
-                        "Reserve cash for unperformed work and unpaid vendor commitments",
-                    ],
-                    [
-                        "License contribution remains distinct from implementation delivery contribution",
-                        "Retain license acquisition costs and direct contractor milestone expenses",
-                        "Bridge both contribution streams separately into total operating results",
-                        "Correct underpriced delivery scopes before renewing bundled customer commitments",
-                    ],
-                    [
-                        "Renewal cohorts preserve original customers before counting later expansion",
-                        "Retain opening cohort membership renewal outcomes and price changes",
-                        "Reconcile retained and lost gross profit against ledger postings",
-                        "Investigate apparent retention gains caused by unrelated new customer sales",
-                    ],
-                    [
-                        "Customer group concentration caps both revenue and gross profit",
-                        "Retain common control mappings and trailing twelve month customer totals",
-                        "Keep every customer group within twenty five percent maximum",
-                        "Record breaches and redirect acquisition toward independent customer groups",
-                    ],
-                    [
-                        "Counterparty dependency caps publisher distributor and marketplace exposures separately",
-                        "Retain vendor group mappings purchase obligations and settlement receivables",
-                        "Keep each dependency within twenty five percent of its category",
-                        "Document diversification milestones and cash coverage for unavoidable legacy exposure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Four Preconditions Before Hiring, Distribution, or Buyer Outreach",
-                "body": (
-                    "Proceed only with documented evidence. A missing record is an "
-                    "assigned remediation task, not a favorable assumption."
-                ),
-                "items": [
-                    "Confirm active reseller eligibility, applicable CPPO selling authorization or CSP role, customer license terms, and the actual change-of-control or assignment provisions.",
-                    "Reconcile the closed ledger to contract cohorts, unpaid vendor obligations, marketplace settlements, and the canonical gross-billings presentation without adding customer consumption.",
-                    "Verify signed contractor IP assignments, background-component licenses, customer acceptance evidence, and appropriate access rights for every material deliverable.",
-                    "Calculate customer and counterparty concentration against the 25% caps, document any breach, and confirm cash coverage under a sixty-day collection-delay stress test.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Price Transferable Earnings, Then Choose an Exit or Durable Distributions",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Value the business on transferable earnings rather than the face "
-                    "value of licenses passing through it. For initial negotiation "
-                    "planning, an owner-operated small reseller might be tested at "
-                    "two to three times verified seller's discretionary earnings; "
-                    "a more transferable operation with defensible recurring gross "
-                    "profit might justify testing three to four times. Treat these "
-                    "as illustrative screening bands, not observed transaction "
-                    "comparables or an entitlement. A strategic buyer may instead "
-                    "price adjusted EBITDA, customer contribution, or a portfolio "
-                    "of transferable renewals. Do not multiply the $196,000 Base "
-                    "owner net profit by an EBITDA multiple without reconciling "
-                    "the earnings definitions. Build the bridge from the closed "
-                    "ledger: identify owner compensation already expensed, genuine "
-                    "nonrecurring items, interest, depreciation, taxes under the "
-                    "chosen metric, and the recurring cost of replacing necessary "
-                    "owner work. Include contractor normalization if historical "
-                    "delivery depended on discounted introductory rates. For an "
-                    "owner-operator buyer, SDE typically adds back one working "
-                    "owner's compensation; for a manager-run valuation, replacement "
-                    "leadership cost remains a real expense. Explain which buyer "
-                    "and operating model each bridge serves. A documented "
-                    "renewal engine can support stronger pricing, but it cannot "
-                    "convert cancellable vendor permissions into perpetual assets "
-                    "or erase a concentration breach that threatens future "
-                    "contribution."
-                ),
-                (
-                    "Use explicit assumptions when translating a screening multiple into "
-                    "dollars. If diligence establishes that normalized SDE equals the "
-                    "Base case's $196,000 owner profit, a two-to-three-times range "
-                    "produces $392,000 to $588,000 of illustrative enterprise value. "
-                    "That equality is an assumption to verify, not an accounting "
-                    "identity. If the Scaled operation's $500,000 owner profit "
-                    "likewise equals verified SDE and its transfer evidence "
-                    "supports the stronger three-to-four-times screening band, "
-                    "the illustrative enterprise value is $1,500,000 to "
-                    "$2,000,000. Do not present either range as proceeds "
-                    "available at closing. Bridge enterprise value to equity "
-                    "proceeds using the agreed treatment of cash, debt, "
-                    "debt-like obligations, transaction expenses, escrow, and "
-                    "normalized working capital. Define whether distributor "
-                    "payables and customer prepayments belong in working "
-                    "capital or another purchase-price category, and prevent "
-                    "double counting. A renewal earnout should specify the "
-                    "opening cohort, measurement period, gross-profit definition, "
-                    "collection requirements, permitted pricing changes, and "
-                    "buyer obligations that affect retention. Prefer measures "
-                    "the seller can inspect over an unrestricted buyer-wide "
-                    "profit metric. Test how vendor repricing, customer "
-                    "cancellation, and delayed marketplace settlements change "
-                    "the payout before agreeing to a headline price that "
-                    "depends heavily on future contingent consideration."
-                ),
-                (
-                    "Build the transfer room while operating, not after signing an "
-                    "exclusive sale process. Index customer contracts, reseller and "
-                    "distributor agreements, authorization histories, renewal cohorts, "
-                    "signed assignments, delivery acceptance, incident history, "
-                    "employee responsibilities, and contractor replacement plans. "
-                    "Keep commercial diligence separate from production access: "
-                    "share redacted evidence under an executed confidentiality "
-                    "agreement and restrict customer data to the diligence "
-                    "purpose. Identify which contracts require assignment consent "
-                    "or notice and which vendor programs require fresh partner "
-                    "qualification. Selling shares does not automatically bypass "
-                    "change-of-control provisions. For United States federal "
-                    "contracts, examine 41 U.S.C. section 6305 and FAR "
-                    "42.1204 when evaluating whether recognition of a successor "
-                    "requires novation; do not assume commercial customer "
-                    "assignment rules apply. If retaining the company, use "
-                    "the same evidence to run a durable distribution policy: "
-                    "close the ledger, fund taxes and signed obligations, "
-                    "reserve for collection delays and delivery commitments, "
-                    "then distribute genuinely available cash. Review owner "
-                    "hours quarterly and charge replacement labor in the "
-                    "internal operating model even when the owner performs "
-                    "the work. The strongest cash cow and the strongest "
-                    "sale candidate share one characteristic: customers renew "
-                    "because the pod reliably delivers and reconciles value, "
-                    "not because the founder personally rescues every quote, "
-                    "invoice, implementation, and renewal."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Valuation Tests, Earnings Bridges, and Transfer Friction",
-                "headers": [
-                    "Buyer diligence issue affecting earnings quality or transferability",
-                    "Evidence required before claiming a stronger valuation position",
-                    "Illustrative pricing or transaction treatment with explicit assumptions",
-                    "Operator action improving durability without inventing valuation certainty",
-                ],
-                "rows": [
-                    [
-                        "Owner operated earnings require a clearly defined SDE bridge",
-                        "Provide ledger supported addbacks and a complete owner duty inventory",
-                        "Test two to three times verified SDE for initial screening",
-                        "Document necessary replacement labor separately from discretionary owner benefits",
-                    ],
-                    [
-                        "Transferable recurring contribution can support a stronger screening discussion",
-                        "Provide cohort gross profit retention and founder absent renewal evidence",
-                        "Test three to four times verified SDE with stronger transferability",
-                        "Reduce concentrated dependencies and prove repeatable execution through independent operators",
-                    ],
-                    [
-                        "Base illustration requires verified SDE equal to stated owner profit",
-                        "Reconcile the assumed $196,000 earnings basis before applying any multiple",
-                        "Two to three times produces $392,000 to $588,000 enterprise value",
-                        "Keep illustrative enterprise value separate from actual closing equity proceeds",
-                    ],
-                    [
-                        "Scaled illustration requires verified SDE and documented stronger transfer characteristics",
-                        "Reconcile the assumed $500,000 earnings basis and substantiate transfer evidence",
-                        "Three to four times produces $1,500,000 to $2,000,000 enterprise value",
-                        "Reject revenue multiple shortcuts that ignore vendor costs and replacement labor",
-                    ],
-                    [
-                        "Working capital and deferred obligations change the actual proceeds calculation",
-                        "Provide aging schedules customer advances distributor payables and settlement records",
-                        "Allocate each obligation once under the negotiated purchase price mechanics",
-                        "Model closing proceeds after debt adjustments escrow and transaction expenses",
-                    ],
-                    [
-                        "Assignment restrictions and renewal earnouts can limit realized transaction value",
-                        "Provide contract clauses vendor confirmations cohort definitions and payout examples",
-                        "Condition transfer mechanics on applicable consents and documented successor requirements",
-                        "Resolve permission dependencies and negotiate inspectable earnout calculation rights early",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A transferable reseller book is a renewable gross-profit engine with documented rights, replaceable labor, and cash that arrives without founder intervention.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign P1 through P9 to the two employees and three contractors, name backup operators, and document the workload triggers for the third employee and fourth contractor.",
-        "Execute contractor statements of work with objective acceptance tests, coverage calendars, milestone compensation, correction duties, and signed deliverable-specific IP assignments.",
-        "Publish a locked weekly scorecard covering quote turnaround, renewal horizons, first-pass acceptance, license exceptions, collections aging, and concentration with explicit denominators.",
-        "Close accrual books by contract and renewal cohort, reconcile vendor costs and settlement timing, and bridge every scenario back to its canonical revenue and owner-profit figures.",
-        "Measure customer groups and independent counterparty dependencies against the 25% caps, retain breach history, and fund cash coverage against delayed collections and signed obligations.",
-        "Assemble a permission-aware transfer room, reconcile SDE separately from manager-run earnings, and compare documented sale proceeds with sustainable cash distributions after reserves.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Obtain a written copyright transfer signed by the rights owner or authorized agent for contractor-created deliverables; payment and possession alone do not establish ownership.",
-        },
-        {
-            "title": "26 U.S.C. section 3121(d) — Employee definition for federal employment taxes",
-            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
-            "relevance": "Assess actual working relationships when designing contractor seats; a contractor label does not resolve federal employment-tax classification.",
-        },
-        {
-            "title": "29 U.S.C. section 207 — Maximum hours and overtime requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": "Budget employee coverage and overtime obligations for covered nonexempt workers rather than hiding additional labor inside an assumed lean staffing model.",
-        },
-        {
-            "title": "41 U.S.C. section 6305 — Prohibition on transfer of contract and certain allowable assignments",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6305",
-            "relevance": "Evaluate federal contract transfer restrictions and applicable exceptions separately from ordinary commercial assignment terms during transaction planning.",
-        },
-        {
-            "title": "48 CFR section 42.1204 — Applicability of novation agreements",
-            "url": "https://www.ecfr.gov/current/title-48/chapter-1/subchapter-G/part-42/subpart-42.12/section-42.1204",
-            "relevance": "Determine when the government may recognize a successor in interest through novation and what transaction-specific documentation supports that recognition.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'public-sector-reselling-vendor-risk-controls',
+ 'question_prompt': 'How do resellers sell software to government, and what vendor risk and compliance '
+                    'controls do buyers enforce?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Public Sector Reselling and Vendor Risk Controls',
+ 'subtitle': 'GSA Schedules and MAS contracts, Sales Tracking System reporting, Carahsoft and Clovity '
+             'Atlassian licensing, AWS public sector private offers, vendor payment fraud, contract '
+             'breakdowns, Reg S-P oversight, procurement circumvention, third-party monitoring, and '
+             'offboarding',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Public sector resellers win on contract vehicles, not relationships. Clovity and '
+                      'Carahsoft frame commercial selling as relationship-driven and public sector selling '
+                      "as efficiency-driven, with vehicles able to 'quadruple' efficiency. GSA trainers "
+                      'agree the MAS schedule is self-funded by a 0.75% Industrial Funding Fee embedded in '
+                      'price, and more than 60% of schedule holders log zero sales. The street mechanics '
+                      'include AWS Marketplace private partner offers with 1-60 month terms, up to 60 '
+                      "payments, and 'naso' or bid terms swapped in for commercial terms. They also "
+                      'include CALC rate benchmarking, tiered labor categories, and a $25,000 annual sales '
+                      'minimum. The disagreements are sharp. GovClose calls GSA optional and a 6-12 month '
+                      'pain. An exposé alleges Carahsoft bought at 40% discounts and sold at list. '
+                      'Vendor-risk practitioners insist you can outsource the function but never the risk.',
+ 'key_metrics': [{'label': 'GSA Industrial Funding Fee',
+                  'metric': 'GSA Industrial Funding Fee',
+                  'value': '0.75% of each transaction',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The customer pays the fee. It is embedded in contract pricing rather than '
+                             'shown as a separate line item, and the vendor collects and remits it to fund '
+                             '20,000+ MAS contracts.',
+                  'source': 'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:02:34])'},
+                 {'label': 'Schedule Holders With Zero Sales',
+                  'metric': 'Schedule Holders With Zero Sales',
+                  'value': '60%+ of roughly 18-20k holders',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'More than half of GSA schedule holders report zero sales through their '
+                             'schedule. The schedule is used in only about 10-15% of federal purchases.',
+                  'source': 'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ 00:10:31])'},
+                 {'label': 'Procurement Cycle Time GSA vs Open Market',
+                  'metric': 'Procurement Cycle Time GSA vs Open Market',
+                  'value': 'About 10 days vs about 270 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The GSA trainer compared buying through a GSA schedule with buying on the '
+                             'open market.',
+                  'source': 'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:08:51])'},
+                 {'label': 'AWS Private Partner Offer Payment Flexibility',
+                  'metric': 'AWS Private Partner Offer Payment Flexibility',
+                  'value': 'Up to 60 payments over 5 years; 1-60 month terms',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Payments can be all upfront on any date or split into varying amounts, '
+                             'including two payments in one month. This lets buyers fit payments around '
+                             'fiscal-year changes.',
+                  'source': 'AWS Public Sector ([F4gkR0s1Blw @ 00:02:10])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every reseller in this chapter agrees that the public sector buys through '
+                              "vehicles, not handshakes. Clovity's leadership, working alongside "
+                              "Carahsoft's Atlassian team, puts it bluntly: 'Commercial is all about "
+                              "relationship and public sector is all about efficiency.' Leveraging an "
+                              "existing contract vehicle can 'quadruple' that efficiency [fwAcWt5Q8oA @ "
+                              '00:06:37]. Mid-size firms struggle to hold vehicles themselves. That is why '
+                              'Carahsoft fields a dedicated contracts and redline team and absorbs '
+                              'co-terming, multi-year deals, and renewals so the solution partner never '
+                              'has to [fwAcWt5Q8oA @ 00:05:30]. AWS Public Sector shows the same logic '
+                              "inside Marketplace. A reseller's private partner offer runs through the "
+                              "same flow as buying direct from the vendor. The step the demo calls 'most "
+                              "important' is replacing commercial terms with the 'naso' contract, a "
+                              'university systemwide contract, or one-off bid terms [F4gkR0s1Blw @ '
+                              '00:03:26]. FEDSched adds the baseline vocabulary that operators keep '
+                              "fumbling. 'GSA schedule,' 'GSA number,' and 'GSA list' all mean the same "
+                              'Multiple Award Schedule contract. It is organized into categories and SINs, '
+                              'and vendors can propose at any time [FnZjjws-i_s @ 00:00:01]. The baseline '
+                              'prerequisite is simple: the contract paper carries the public sector deal, '
+                              "not the sales rep. The Atlassian 'triangle' of vendor AEs, distributor, and "
+                              'solution partner exists to keep that paper unified.',
+                              'Two independent GSA trainers land on the same money mechanics. Robin, a '
+                              '14-year GSA veteran in the Acquisition Workforce Training Branch, explains '
+                              'that GSA receives no congressional appropriation and runs on the Industrial '
+                              'Funding Fee. The fee is 0.75% of each transaction. The customer pays it, it '
+                              'is embedded in contract pricing rather than shown as a line item, and the '
+                              'vendor collects and remits it [NVfgGOTkm4Q @ 00:02:34]. Jennifer Shouse, '
+                              'teaching with the Virginia PTAP, repeats the 0.75% figure and tells vendors '
+                              "to treat GSA as a 'for-profit entity.' Then comes the hard truth. The "
+                              "schedule 'is absolutely absolutely not required to do business with the "
+                              "government' and is a 'marketing tool only.' It touches only about 10-15% of "
+                              'federal purchases, and more than 60% of the roughly 18-20k holders report '
+                              "zero schedule sales [p3DsAuDE32c @ 00:10:31]. GovClose's former Air Force "
+                              "procurement officer confirms the optional status from the buyer's chair: "
+                              'GSA is currently optional, and that officer never used it while in uniform '
+                              '[WZkYFEEekIk @ 00:03:34]. FEDSched reports that over $30B a year flows '
+                              'through MAS but warns that holding the contract does not hand anyone sales '
+                              '[FnZjjws-i_s @ 00:01:37]. The shared conclusion is that the schedule is a '
+                              'door, not a pipeline. Operators who win treat the award as permission to '
+                              'sell and then do the selling themselves.',
+                              'On the risk side, the practitioners converge on one rule: paper and records '
+                              'are the only controls that survive an exam. De Leon, after 32 years at the '
+                              "OCC, says regulators would tell institutions 'you can outsource the "
+                              "function, but you can't outsource the risk.' The Ncontracts panel adds that "
+                              'policies that are not enforced get cited [GsLnrTOe4bw @ 00:17:08]. '
+                              "Virtualization Options compresses the same idea into contract language: 'If "
+                              "it is not written in the contract, it simply does not exist.' Its fix list "
+                              'therefore includes SLA penalties as a percentage of monthly value and data '
+                              'export within 30 days of termination [jVnAwe2gfHg @ 00:06:31]. Rahul Tyagi '
+                              'extends the logic to the exit. Organizations obsess over onboarding '
+                              'questionnaires while rushing offboarding, yet the relationship only ends '
+                              "'when all access is removed and the risk is fully closed,' not when the "
+                              'contract expires [TjkI3hqYZJY @ 00:01:34]. devguard is candid about what '
+                              "tooling does and does not do. Its register 'is a record, not a gate,' it "
+                              'does not stop anyone from using a blocked supplier, and risk comes only '
+                              'from your own ratings [3j2StNSWzVs @ 00:08:01]. Every speaker places the '
+                              "judgement on the operator. Neither the software, the vendor's "
+                              'self-attestation, nor a bare certification carries the decision.'],
+               'table': {'caption': 'Where public sector resellers and vendor-risk operators agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Contract vehicles beat relationships in government deals',
+                                   'Commercial is relationship-driven while public sector is '
+                                   'efficiency-driven; vehicles can quadruple efficiency',
+                                   'Lead with the contract vehicle before pitching features, discounts, or '
+                                   'relationships',
+                                   'Clovity ([fwAcWt5Q8oA @ 00:06:37])'],
+                                  ['Commercial terms must be replaced before sending offers',
+                                   "Swapping commercial terms for the 'naso', systemwide, or bid terms is "
+                                   'called most important',
+                                   'Attach the governing agreement and award documents to every private '
+                                   'offer',
+                                   'AWS Public Sector ([F4gkR0s1Blw @ 00:03:26])'],
+                                  ['GSA funds itself through a fee inside price',
+                                   'The Industrial Funding Fee is 0.75% of each transaction, embedded and '
+                                   'remitted by the vendor',
+                                   'Build the fee into schedule pricing and track it on every reportable '
+                                   'sale',
+                                   'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:02:34])'],
+                                  ['The schedule is optional access, not guaranteed demand',
+                                   'It is a marketing tool only, used in 10-15% of purchases; 60%+ of '
+                                   'holders have zero sales',
+                                   'Treat the award as access, then fund real business development behind '
+                                   'it',
+                                   'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ '
+                                   '00:10:31])'],
+                                  ['Baseline MAS eligibility comes before any proposal work',
+                                   'Healthy financials, two years in business, past performance, and TAA '
+                                   'compliance are required',
+                                   'Confirm eligibility before spending months assembling administrative, '
+                                   'technical, and pricing sections',
+                                   'Federal Schedules, Inc. | FEDSched ([FnZjjws-i_s @ 00:00:55])'],
+                                  ['Outsourcing a function never transfers the underlying risk',
+                                   'Regulators say the risk cannot be outsourced, and unenforced written '
+                                   'policies get cited in exams',
+                                   'Document diligence on every vendor, including big providers that '
+                                   'refuse renegotiation',
+                                   'Ncontracts ([GsLnrTOe4bw @ 00:17:08])'],
+                                  ['Vendor relationships end at access removal, not contract expiry',
+                                   'Risk only closes once VPN, SSO, integrations, assets, and credentials '
+                                   'are revoked',
+                                   'Run a documented revocation checklist the day any vendor contract '
+                                   'terminates',
+                                   'Learn TPRM with Rahul Tyagi ([TjkI3hqYZJY @ 00:01:34])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The AWS Public Sector demo lays out the exact build for a private partner '
+                              'offer. The reseller creates an offer and selects the vendor and product; '
+                              "nationwide resellers are often authorized for 'thousands or tens of "
+                              "thousands' of items. The reseller then enters the customer's AWS account "
+                              'ID, sets a term from 1 to 60 months to match the outside agreement, and '
+                              'loads license counts and the negotiated discounted price, for example after '
+                              'winning a bid [F4gkR0s1Blw @ 00:01:34]. Payment scheduling is where the '
+                              'deal gets shaped to government budgets. The buyer can pay everything '
+                              'upfront on any date or spread up to 60 payments over five years. Amounts '
+                              'can vary, two payments can land in one month, and a buyer can pay a small '
+                              'amount now and push the remainder past the fiscal-year change [F4gkR0s1Blw '
+                              '@ 00:02:10]. On the buyer side, the agency verifies the term, dates, '
+                              'licenses, discount, and payment schedule, adds a PO, and confirms the T&Cs. '
+                              "It can attach the 'naso' agreement, award letter, winning bid from a "
+                              'three-bid competition, and PO. License keys then download immediately '
+                              'instead of arriving by email days or weeks later [F4gkR0s1Blw @ 00:06:51]. '
+                              'Clovity layers co-terming on top so that migrations and cutovers never drop '
+                              'service [fwAcWt5Q8oA @ 00:02:06].',
+                              "Jennifer Shouse's virtual class gives the most granular schedule build in "
+                              'the set. FEDSched frames the proposal as administrative, technical, and '
+                              'pricing sections [FnZjjws-i_s @ 00:00:38], and Shouse walks through each '
+                              'one. Pricing starts with research on CALC for services and GSA Advantage '
+                              'for products. A vendor billing a project manager at $200 against a CALC '
+                              'average of $100 may not fit the schedule, and one CALC screenshot showed a '
+                              'PM average of $140/hr [p3DsAuDE32c @ 00:24:08]. The workaround is tiered '
+                              'labor categories: PM1 at $75, PM2 at $100, and PM3 at $150. These are '
+                              'backed by a justification hierarchy of invoices first, contracts second, '
+                              'and proposals last [p3DsAuDE32c @ 00:41:39]. The administrative section '
+                              'needs 24 months of balance sheet and income statement, with no audit '
+                              'required, plus an SF 527 bank reference. It also needs the one-hour '
+                              'Readiness Assessment and the 30-minute Pathway to Success, each valid for '
+                              '12 months, and an IdenTrust certificate at $100-300; Shouse says to buy the '
+                              'three-year option. The technical section wants 3-5 references (aim for 5), '
+                              'and product resellers need a Letter of Supply. Shouse calls the Commercial '
+                              'Sales Practices disclosure the most important document [p3DsAuDE32c @ '
+                              '01:17:17].',
+                              "Post-award, the mechanics shift to tracking and controls. Robin's "
+                              'reportable-sale test has three conditions: contract items, an eligible '
+                              'user, and no evidence the customer intended to use another contract. On a '
+                              'mixed $1,000 order, the vendor reports the $500 table and never the $500 '
+                              'fish tank, because reporting open-market items means paying IFF out of the '
+                              "vendor's own pocket [NVfgGOTkm4Q @ 00:22:53]. Reporting runs through 72A "
+                              'for quarterly summary data or through the piloted FAS Sales Reporting/TDR '
+                              'for monthly line items. Assessors pull transactions two to three years old, '
+                              'so sales and admin staff both need training [NVfgGOTkm4Q @ 00:31:04]. Ayden '
+                              "Connor's payment-fraud routine is equally mechanical. Never use contact "
+                              'details from the change request itself, and call the vendor on a known '
+                              'number instead. Enforce dual approval and separation of duties. Refuse '
+                              'payment if the vendor denies the request, and delay if the vendor is '
+                              'unreachable [fOUGaSjlTBY @ 00:00:17]. devguard handles the evidence layer. '
+                              "Upload the ISO 27001 certificate and the DPA, and remember that 'Valid' "
+                              'only means the date has not passed. Documents surface under Deadlines 90 '
+                              "days before expiry. Check that the certificate's scope actually covers the "
+                              'service you buy [3j2StNSWzVs @ 00:05:11].'],
+               'table': {'caption': 'Street-level mechanics, tools, and hard numbers taught by the '
+                                    'speakers',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Numbers or Settings',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['AWS Marketplace private partner offer',
+                                   'Terms of 1 to 60 months; up to 60 payments over five years',
+                                   'Match the term to the outside agreement and split payments across '
+                                   'fiscal years',
+                                   'AWS Public Sector ([F4gkR0s1Blw @ 00:02:10])'],
+                                  ['GSA Industrial Funding Fee',
+                                   '0.75% per transaction, embedded in contract pricing rather than shown '
+                                   'as a line item',
+                                   'Collect the fee within price and remit it only on reportable schedule '
+                                   'sales',
+                                   'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:02:34])'],
+                                  ['CALC rate benchmarking',
+                                   'PM average of $140/hr; a $200 rate against a $100 average gets flagged',
+                                   "Export CALC data to vet your own rates and prime partners' rates "
+                                   'before subcontracting',
+                                   'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ '
+                                   '00:24:08])'],
+                                  ['Schedule minimum sales threshold',
+                                   '$25,000 per year through the schedule, with a first-year grace period',
+                                   'Report zero sales when you have none and build a pipeline to clear the '
+                                   'minimum',
+                                   'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ '
+                                   '00:55:45])'],
+                                  ['Schedule proposal and negotiation timeline',
+                                   'About two months to prepare; one to two clarification rounds; '
+                                   'negotiations take two weeks to one month',
+                                   'Budget the cash and staff time before the first schedule order can '
+                                   'arrive',
+                                   'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ '
+                                   '01:30:15])'],
+                                  ['Leegality clause rules and obligation module',
+                                   'Legal review takes 10-15 days; AI rules such as annual payment only',
+                                   'Define payment, indemnity, and liability checks, then assign renewal '
+                                   'owners with reminders',
+                                   'Leegality ([DeATzRK3azc @ 00:01:35])'],
+                                  ['Vendor report staleness flag',
+                                   "Anything over 365 days is flagged; Brightwage's report was 380 days "
+                                   'old and its assessment 423 days',
+                                   'Demand a current report or bridge letter, then audit, then log it in '
+                                   'the risk register',
+                                   'DevOps Simplified ([YF1T0fd9wPE @ 00:01:14])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the Operators Actually Use',
+                           'body': 'These tactics come straight from resellers, GSA trainers, and '
+                                   'negotiators. Each one shifts cash timing, pricing leverage, or '
+                                   "prospect targeting in the operator's favor.",
+                           'items': ['Structure an AWS private offer with a small payment now and push the '
+                                     'remainder past the fiscal-year change. Amounts can vary, and two '
+                                     'payments can land in the same month [AWS Public Sector — F4gkR0s1Blw '
+                                     '@ 00:02:49].',
+                                     'Mine ADM 4800.2I as a prospecting asset. Robin calls the '
+                                     'eligible-user list a marketing target list worth studying [GSA '
+                                     '(General Services Administration) — NVfgGOTkm4Q @ 00:12:48].',
+                                     'Treat GSA rates as a ceiling and bid lower on task orders. When GSA '
+                                     'counteroffers, never answer on the spot: say you need to run numbers '
+                                     'internally and will reply by close of business tomorrow [How To Sell '
+                                     'To & Win Federal Government Contracts — p3DsAuDE32c @ 01:35:42].',
+                                     "Never counter a vendor's anchor; reframe on your needs instead. "
+                                     'Demand the denominator behind 300% ROI claims, because a 15% '
+                                     'discount gets recouped through escalators, 90-day auto-renewal '
+                                     "windows, and volume commitments across '12 levers' [Virtualization "
+                                     'Options LLC Free Learning Portal — jVnAwe2gfHg @ 00:03:46].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Benchmark and Tier Your Pricing',
+                              'action': 'Pull CALC comparables for services and GSA Advantage comparables '
+                                        'for products. Then build tiered labor categories that sit inside '
+                                        'market averages.',
+                              'detail': 'Research rates on CALC and GSA Advantage, and flag any rate far '
+                                        'above the CALC average, such as $200 against $100. Use tiers like '
+                                        'PM1 $75 / PM2 $100 / PM3 $150, backed by invoices first and '
+                                        'contracts second [How To Sell To & Win Federal Government '
+                                        'Contracts — p3DsAuDE32c @ 00:19:16].'},
+                             {'step': 2,
+                              'title': 'Assemble the MAS Proposal Package',
+                              'action': 'Confirm eligibility, then compile the administrative, technical, '
+                                        'and pricing sections.',
+                              'detail': 'Confirm healthy financials, at least two years in business, past '
+                                        'performance, and TAA compliance. Then gather 24 months of '
+                                        'financials, an SF 527 bank reference, 3-5 references, and a '
+                                        'Letter of Supply for product resellers [Federal Schedules, Inc. | '
+                                        'FEDSched — FnZjjws-i_s @ 00:00:55].'},
+                             {'step': 3,
+                              'title': 'Build the Private Partner Offer on Public Terms',
+                              'action': 'Create the offer in AWS Marketplace and enter the customer '
+                                        'account ID, term, licenses, discount, and payment schedule. Then '
+                                        'replace the commercial terms.',
+                              'detail': "Swap the commercial terms for the 'naso' contract, a university "
+                                        'systemwide contract, or one-off bid terms. Reissue any offer that '
+                                        'expires, and let the buyer attach the award letter, winning bid, '
+                                        'and PO [AWS Public Sector — F4gkR0s1Blw @ 00:03:26].'},
+                             {'step': 4,
+                              'title': 'Track Reportable Sales and Lock Payment Controls',
+                              'action': 'Apply the three-part reportable-sale test to every order and '
+                                        'harden vendor payment changes.',
+                              'detail': 'Report only contract items sold to eligible users, never '
+                                        'open-market items [GSA (General Services Administration) — '
+                                        'NVfgGOTkm4Q @ 00:07:03]. Verify any bank-detail change by calling '
+                                        'a known number, with dual approval and separation of duties '
+                                        '[SecureOps with Ayden Connor — fOUGaSjlTBY @ 00:00:36].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether a reseller needs a GSA Multiple Award '
+                              'Schedule at all, and the answer depends on which practitioner is counting '
+                              'the money. Federal Schedules, Inc. sells the market size, with over $30 '
+                              'billion per year flowing through MAS, while admitting that sales are not '
+                              'guaranteed and that approval runs from months to over a year [FnZjjws-i_s @ '
+                              '00:01:37]. Jennifer Shouse of How To Sell To & Win Federal Government '
+                              'Contracts sizes the dead weight instead: roughly 18,000 to 20,000 schedule '
+                              'holders, with 60 percent or more logging zero sales through the schedule. '
+                              'That is why the class frames MAS as a marketing tool rather than a '
+                              'requirement [p3DsAuDE32c @ 00:10:31]. GovClose speaks as a former Air Force '
+                              'procurement officer who never used GSA. That speaker doubts the March 2025 '
+                              'executive order centralizing common procurement will land well given the '
+                              'layoffs. Their playbook is to get a schedule for simple services, IT, and '
+                              'office supplies, keep a backup plan, and use OTAs as the faster lane '
+                              "[WZkYFEEekIk @ 00:07:43]. GSA's own trainer Robin counters on speed, "
+                              'pegging procurement cycle time at about 10 days through GSA versus about '
+                              '270 days on the open market [NVfgGOTkm4Q @ 00:08:51].',
+                              'On routing public sector deals through a master distributor, the Atlassian '
+                              'sessions and the exposé channel describe the same machine in sharply '
+                              'opposite terms. Kevin Howard of Carahsoft and the Clovity team pitch the '
+                              'aggregator as the efficiency layer. In their account, Carahsoft absorbs '
+                              'co-terming, multi-year deals, and renewals, sometimes turns paperwork '
+                              'faster than going to Atlassian directly, and passes discounts down to the '
+                              'client [fwAcWt5Q8oA @ 00:03:36]. Boring, But Billions frames that same '
+                              'chokepoint as the problem. It describes the alleged scheme behind the '
+                              'September 2024 raid this way: Carahsoft bought software licenses at 40 '
+                              'percent wholesale discounts, then sold them to federal agencies at full '
+                              'catalog prices [ZFZMcTSC-0M @ 00:04:47]. The rule-of-three quoting setup it '
+                              'describes allegedly let favored sub-resellers win against inflated rival '
+                              'quotes. The AWS Public Sector demo offers a third lane that cuts the paper '
+                              'chase. A reseller builds a private partner offer, picks the vendor and '
+                              "product, and keys in the customer's AWS account ID and the negotiated "
+                              'price. Then comes the step the presenter calls most important: replacing '
+                              'commercial terms with the naso contract, a university systemwide contract, '
+                              'or one-off bid terms [F4gkR0s1Blw @ 00:03:26]. On the buyer side, license '
+                              'keys download immediately instead of arriving by email days or weeks later '
+                              '[F4gkR0s1Blw @ 00:06:51].',
+                              'Vendor oversight splits between trusting paper and verifying behavior. De '
+                              'Leon and Zurlin on the Ncontracts panel concede that big cloud, CRM, and '
+                              '365 providers will not renegotiate their contracts. A regulated firm '
+                              'therefore falls back on diligence and documentation instead of leverage it '
+                              'does not have [GsLnrTOe4bw @ 00:15:30]. DevOps Simplified runs a harder '
+                              'clock on that documentation: any report or assessment older than 365 days '
+                              'gets flagged. The fictional vendor Brightwage shows up with a report 380 '
+                              'days old and an assessment at 423 days, and Cloudnest has no right-to-audit '
+                              'clause at all [YF1T0fd9wPE @ 00:01:14]. devguard pushes the judgement back '
+                              'onto the buyer even harder. It warns that a certificate marked valid only '
+                              'means its date has not passed, and that the document surfaces under '
+                              'Deadlines 90 days before expiry. The operator still has to check that the '
+                              "certificate's scope covers the service actually being bought [3j2StNSWzVs @ "
+                              '00:05:11]. Virtualization Options takes a contract-first line over the '
+                              'documentation-first line, arguing that if it is not written in the '
+                              'contract, it simply does not exist. The channel builds the negotiating team '
+                              'around a TEAM framework in which nobody disagrees in front of the supplier '
+                              '[jVnAwe2gfHg @ 00:06:31].'],
+               'table': {'caption': 'Competing playbooks on schedules, distributors, order execution, and '
+                                    'vendor assurance',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether a reseller should pursue a GSA schedule at all',
+                                   'Treat MAS as a real channel moving over $30 billion per year',
+                                   'Treat it as a marketing tool only, since 60 percent or more of holders '
+                                   'log zero sales',
+                                   'Federal Schedules, Inc. | FEDSched ([FnZjjws-i_s @ 00:01:37]); How To '
+                                   'Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ 00:10:31])'],
+                                  ['How fast the schedule route actually moves money',
+                                   'Schedule orders close in about 10 days versus about 270 days on the '
+                                   'open market',
+                                   'Getting on a schedule takes 6 to 12 months and is a huge pain',
+                                   'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:08:51]); '
+                                   'GovClose | DoD Contract Academy ([WZkYFEEekIk @ 00:06:23])'],
+                                  ['Where to spend limited capture and proposal budget',
+                                   'Get a schedule for simple services, IT, and office supplies while '
+                                   'keeping a backup plan',
+                                   'If full-and-open is 50 percent of your market and the schedule is 3 '
+                                   'percent, hire a sales rep or proposal writer instead',
+                                   'GovClose | DoD Contract Academy ([WZkYFEEekIk @ 00:07:43]); How To '
+                                   'Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ 00:30:27])'],
+                                  ['Role of the master distributor in the deal chain',
+                                   'Carahsoft absorbs co-terming, multi-year deals, renewals, and '
+                                   'redlines, and passes discounts down to clients',
+                                   'The exposé alleges 40 percent wholesale discounts resold at full '
+                                   'catalog price, with rule-of-three cover quoting',
+                                   'Clovity ([fwAcWt5Q8oA @ 00:03:36]); Boring, But Billions ([ZFZMcTSC-0M '
+                                   '@ 00:05:09])'],
+                                  ['How the partner channel should present to the customer',
+                                   'Atlassian AEs, Carahsoft, and the solution partner present one unified '
+                                   'front in a triangle',
+                                   "Without that triangle, the customer falls back to Atlassian's ticket "
+                                   'system and plays the parties against each other',
+                                   'Clovity ([fwAcWt5Q8oA @ 00:10:52]); Clovity ([fwAcWt5Q8oA @ '
+                                   '00:11:55])'],
+                                  ['How SLED orders actually get executed and fulfilled',
+                                   'AWS Marketplace private partner offer with naso, systemwide, or bid '
+                                   'terms replacing commercial terms',
+                                   'Traditional fulfillment where license keys arrive by email after days '
+                                   'or even weeks',
+                                   'AWS Public Sector ([F4gkR0s1Blw @ 00:03:26]); AWS Public Sector '
+                                   '([F4gkR0s1Blw @ 00:06:51])'],
+                                  ['What counts as acceptable proof of vendor assurance',
+                                   'Accept diligence and documentation as the fallback when big cloud '
+                                   'providers refuse to renegotiate',
+                                   'Flag anything older than 365 days and treat a bridge letter as the '
+                                   "vendor's own word, not an auditor's",
+                                   'Ncontracts ([GsLnrTOe4bw @ 00:15:30]); DevOps Simplified ([YF1T0fd9wPE '
+                                   '@ 00:02:08])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The schedule's money traps are mechanical, and they hit after award. "
+                              'Jennifer Shouse warns about the price reduction rule: any non-schedule rate '
+                              'below the GSA rate forces the GSA rate down. In practice, you are not going '
+                              'to be allowed to offer anybody outside of GSA a rate lower than your GSA '
+                              'rate [p3DsAuDE32c @ 00:12:11]. Robin at GSA flags a self-inflicted loss on '
+                              'the reporting side. The 0.75 percent Industrial Funding Fee is embedded in '
+                              'contract pricing, so reporting open-market items or travel as schedule '
+                              "sales means paying that fee out of the vendor's own pocket [NVfgGOTkm4Q @ "
+                              '00:11:31]. Shouse also calls the Commercial Sales Practices disclosure the '
+                              'most important document in the pricing section. The warning is to separate '
+                              'standard from non-standard discounts. A one-time 15 to 20 percent Boeing '
+                              'discount is the kind of deal that must be broken out, and an 80 percent '
+                              'revenue concentration gets flagged as a problem [p3DsAuDE32c @ 01:22:00]. '
+                              'The bottleneck that catches small shops is time lag. Assessors review '
+                              'transactions two to three years old, which is why Robin says both sales and '
+                              'admin staff need training on what counts as a reportable sale [NVfgGOTkm4Q '
+                              '@ 00:29:52].',
+                              'Contract lifecycle failures carry hard dollar costs, and three '
+                              "practitioners put numbers on them. Leegality's cleanest economics check: "
+                              'one company missed a cancellation window, the agreement auto-renewed, and '
+                              'the company was held liable for 75 percent of the cost of the remaining '
+                              'contract. That loss is the predictable result of tracking renewals in an '
+                              'untracked Excel sheet with no assigned owner, which is the gap the '
+                              "obligation module's owner and reminders are meant to close [DeATzRK3azc @ "
+                              '00:03:22]. Virtualization Options shows how vendors claw back headline '
+                              'concessions. A 15 percent discount gets recovered through escalators, '
+                              '90-day auto-renewal windows, and volume commitments, so all 12 levers have '
+                              'to be treated as tradeable rather than celebrating the discount line '
+                              "[jVnAwe2gfHg @ 00:03:46]. The same channel's procurement-bypass session "
+                              'spells out the personal stakes once a vendor routes around procurement with '
+                              'executive briefings, pilots, internal champions, and false urgency. The '
+                              'exposure includes fraud claims and civil penalties, criminal exposure when '
+                              'kickbacks are involved, and personal liability for the unauthorized buyer '
+                              'who signed [rJtYtwh2Ees @ 00:02:32]. The threshold trap sits right behind '
+                              'it. Anything over $100,000 per year requires competitive bidding, and the '
+                              'speaker tells buyers to avoid single-source awards made to dodge that '
+                              'threshold [rJtYtwh2Ees @ 00:04:10].',
+                              'The back-office failure modes are where money and data walk out the door. '
+                              'SecureOps with Ayden Connor sets three rules for bank-detail change '
+                              'requests. Never use contact details from the change request itself, pause '
+                              'and call the vendor on a known number, and run dual approval with '
+                              'separation of duties [fOUGaSjlTBY @ 00:00:17]. If the vendor denies making '
+                              "the request, don't pay; if the vendor is unreachable, delay. Once the money "
+                              'has already gone, notify the bank, knowing that recovery is not guaranteed '
+                              '[fOUGaSjlTBY @ 00:01:10]. Rahul Tyagi flags the offboarding gap that most '
+                              'teams leave open after rushing through onboarding questionnaires and '
+                              'approvals. APIs and automated workflows can stay live even after user '
+                              'accounts are removed, so a terminated vendor can still be wired into '
+                              'production. Integrations therefore have to be killed explicitly alongside '
+                              'the VPN, SSO, and privileged-account revocations [TjkI3hqYZJY @ 00:01:01]. '
+                              'The Ncontracts panel closes the loop on the exam side. Examiners request '
+                              'the incident response program, MSP contracts, and risk assessments, and '
+                              'policies that exist on paper but are not enforced are what actually get '
+                              'cited [GsLnrTOe4bw @ 00:28:51].'],
+               'table': {'caption': 'Firsthand traps with the economics attached',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Mechanism',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Price reduction clause tripped by a cheaper commercial rate',
+                                   'Any non-schedule rate below the GSA rate forces the vendor to lower '
+                                   'the GSA rate',
+                                   'Every discount to an outside buyer can reprice the whole schedule '
+                                   'downward',
+                                   'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ '
+                                   '00:12:11])'],
+                                  ['Reporting open-market items as schedule sales',
+                                   'Vendor reports items or travel that were never awarded on the contract',
+                                   "The 0.75 percent IFF on those sales comes out of the vendor's own "
+                                   'pocket',
+                                   'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:11:31])'],
+                                  ['Mixed order reported at its full invoice value',
+                                   'A $1,000 order carried a $500 contract table and a $500 fish tank',
+                                   'Report only the $500 contract item, because open-market items are '
+                                   'never reported',
+                                   'GSA (General Services Administration) ([NVfgGOTkm4Q @ 00:23:11])'],
+                                  ['Dormant schedule sitting below the annual sales floor',
+                                   'Schedule must bring in $25,000 per year once the first-year grace '
+                                   'period ends',
+                                   'More than half of holders have zero schedule sales, so the floor bites '
+                                   'hard',
+                                   'How To Sell To & Win Federal Government Contracts ([p3DsAuDE32c @ '
+                                   '00:55:45])'],
+                                  ['Missed cancellation window on an untracked renewal',
+                                   'Renewal dates lived in an Excel sheet with no owner, and the agreement '
+                                   'auto-renewed',
+                                   'Company was held liable for 75 percent of the cost of the remaining '
+                                   'contract',
+                                   'Leegality ([DeATzRK3azc @ 00:03:22])'],
+                                  ['Headline discount clawed back through hidden contract levers',
+                                   'A 15 percent discount gets recovered through escalators, 90-day '
+                                   'auto-renewal windows, and volume commitments',
+                                   'Treat all 12 levers as tradeable instead of anchoring on the discount '
+                                   'alone',
+                                   'Virtualization Options LLC Free Learning Portal ([jVnAwe2gfHg @ '
+                                   '00:03:46])'],
+                                  ['Paying out on a spoofed bank-detail change request',
+                                   'Urgency and thread mimicry push accounts payable to pay before '
+                                   'verifying the vendor',
+                                   'Once the money is gone, notify the bank immediately, because recovery '
+                                   'is not guaranteed',
+                                   'SecureOps with Ayden Connor ([fOUGaSjlTBY @ 00:01:10]); SecureOps with '
+                                   'Ayden Connor ([fOUGaSjlTBY @ 00:02:05])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Before Money or Paper Moves',
+                           'body': 'Each check below comes from a trap the practitioners report firsthand. '
+                                   'Run all four before a schedule price, a renewal, a sales report, or a '
+                                   'vendor payment goes out.',
+                           'items': ['Before quoting any commercial buyer, confirm the rate does not sit '
+                                     'below your GSA rate, because the price reduction rule forces the GSA '
+                                     'rate down [How To Sell To & Win Federal Government Contracts — '
+                                     'p3DsAuDE32c @ 00:12:11].',
+                                     'Strip open-market items and travel out of IFF reporting and report '
+                                     'under the correct SIN, or the fee on misreported sales comes out of '
+                                     'your own pocket [GSA (General Services Administration) — NVfgGOTkm4Q '
+                                     '@ 00:10:16].',
+                                     'Load every cancellation window into an owned obligation tracker with '
+                                     'reminders, because one missed window left a company liable for 75 '
+                                     'percent of the remaining contract [Leegality — DeATzRK3azc @ '
+                                     '00:03:22].',
+                                     'Never pay on a bank-detail change until the vendor confirms it on a '
+                                     'known number, never one taken from the request itself [SecureOps '
+                                     'with Ayden Connor — fOUGaSjlTBY @ 00:00:17].']}}],
+ 'pull_quote': '"You can outsource the function, but you can\'t outsource the risk." — Ncontracts '
+               '(GsLnrTOe4bw @ 00:17:08).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Identify your GSA contracting officer today and treat it as homework if you do not '
+                      'know who it is [GSA (General Services Administration) — NVfgGOTkm4Q @ 00:34:10].',
+                      'Benchmark your labor rates on CALC before proposing, because a project manager '
+                      'billed at $200 against a CALC average of $100 may not fit the schedule [How To Sell '
+                      'To & Win Federal Government Contracts — p3DsAuDE32c @ 00:24:08].',
+                      "Build AWS Marketplace private partner offers with the customer's account ID, a 1 to "
+                      '60 month term, the negotiated price, and a payment schedule of up to 60 payments '
+                      "timed around the buyer's fiscal year [AWS Public Sector — F4gkR0s1Blw @ 00:02:10].",
+                      'Co-term Atlassian licenses around migrations and cutovers so the customer never '
+                      'suffers a service drop [Clovity — fwAcWt5Q8oA @ 00:02:06].',
+                      'Offboard every vendor by revoking VPN, SSO, shared drive, cloud, and privileged '
+                      'access, then demand a data destruction certificate or written confirmation [Learn '
+                      'TPRM with Rahul Tyagi — TjkI3hqYZJY @ 00:00:28].',
+                      'Record every supplier decision in the register, including a required note on '
+                      'Approved-with-conditions or Blocked, and let reassessment drafts open automatically '
+                      'when the review date passes [devguard — 3j2StNSWzVs @ 00:06:59].'],
+ 'statutory_citations': [{'title': "Ncontracts — You Can't Outsource the Risk: Reg S-P and Vendor "
+                                   'Oversight [00:17:08]',
+                          'url': 'https://www.youtube.com/watch?v=GsLnrTOe4bw&t=1028s',
+                          'relevance': 'Primary practitioner testimony on vendor oversight, 72-hour vendor '
+                                       'notice, and keeping risk ownership with the firm.'},
+                         {'title': 'GSA (General Services Administration) — Sales Tracking System Training '
+                                   'for GSA Schedule Industry Partners [00:02:34]',
+                          'url': 'https://www.youtube.com/watch?v=NVfgGOTkm4Q&t=154s',
+                          'relevance': 'Primary practitioner testimony on the 0.75 percent IFF, reportable '
+                                       'sales tests, and assessor record reviews.'},
+                         {'title': 'How To Sell To & Win Federal Government Contracts — Government '
+                                   "Contracting - VIRTUAL CLASS:  GSA Schedule: What's In It For You? - "
+                                   'Win Federal Contracts [00:08:58]',
+                          'url': 'https://www.youtube.com/watch?v=p3DsAuDE32c&t=538s',
+                          'relevance': 'Primary practitioner testimony on schedule economics, price '
+                                       'reduction exposure, and the $25,000 annual sales floor.'},
+                         {'title': 'AWS Public Sector — Creating a private partner offer on AWS '
+                                   'Marketplace for public sector customers - demo [00:03:26]',
+                          'url': 'https://www.youtube.com/watch?v=F4gkR0s1Blw&t=206s',
+                          'relevance': 'Primary practitioner testimony on reseller private offers that '
+                                       'swap commercial terms for public sector contract terms.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'F4gkR0s1Blw',
+                       'title': 'Creating a private partner offer on AWS Marketplace for public sector '
+                                'customers - demo',
+                       'channel': 'AWS Public Sector',
+                       'author': 'AWS Public Sector',
+                       'text': 'The most important step is replacing the commercial terms with the naso '
+                               'contract, a university systemwide contract, or one-off bid terms.',
+                       'tip': 'The most important step is replacing the commercial terms with the naso '
+                              'contract, a university systemwide contract, or one-off bid terms.',
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=F4gkR0s1Blw&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=F4gkR0s1Blw&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fwAcWt5Q8oA',
+                       'title': 'Streamline @Atlassian  Software Licensing & Procurement for Government | '
+                                'Clovity × Carahsoft',
+                       'channel': 'Clovity',
+                       'author': 'Clovity',
+                       'text': 'Commercial is all about relationship and public sector is all about '
+                               'efficiency.',
+                       'tip': 'Commercial is all about relationship and public sector is all about '
+                              'efficiency.',
+                       'timestamp': 397,
+                       'timestamp_seconds': 397,
+                       'timestamp_label': '[00:06:37]',
+                       'url': 'https://www.youtube.com/watch?v=fwAcWt5Q8oA&t=397s',
+                       'markdown': '[00:06:37](https://www.youtube.com/watch?v=fwAcWt5Q8oA&t=397s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZFZMcTSC-0M',
+                       'title': "The Government's Biggest Software Middleman Exposed",
+                       'channel': 'Boring, But Billions',
+                       'author': 'Boring, But Billions',
+                       'text': 'Carahsoft bought software licenses at 40% wholesale discounts, then sold '
+                               'them to federal agencies at full catalog prices.',
+                       'tip': 'Carahsoft bought software licenses at 40% wholesale discounts, then sold '
+                              'them to federal agencies at full catalog prices.',
+                       'timestamp': 287,
+                       'timestamp_seconds': 287,
+                       'timestamp_label': '[00:04:47]',
+                       'url': 'https://www.youtube.com/watch?v=ZFZMcTSC-0M&t=287s',
+                       'markdown': '[00:04:47](https://www.youtube.com/watch?v=ZFZMcTSC-0M&t=287s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7Vc9xJqVhSs',
+                       'title': 'Streamline Atlassian Software Licensing and Procurement with Clovity and '
+                                'Carahsoft (Preview)',
+                       'channel': 'Carahsoft',
+                       'author': 'Carahsoft',
+                       'text': 'AI is forcing agencies to rationalize from 400 systems down to five.',
+                       'tip': 'AI is forcing agencies to rationalize from 400 systems down to five.',
+                       'timestamp': 366,
+                       'timestamp_seconds': 366,
+                       'timestamp_label': '[00:06:06]',
+                       'url': 'https://www.youtube.com/watch?v=7Vc9xJqVhSs&t=366s',
+                       'markdown': '[00:06:06](https://www.youtube.com/watch?v=7Vc9xJqVhSs&t=366s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FnZjjws-i_s',
+                       'title': 'What is a GSA Schedule? Learn How to Get on the GSA Schedule, Multiple '
+                                'Award Schedule (MAS) Contract',
+                       'channel': 'Federal Schedules, Inc. | FEDSched',
+                       'author': 'Federal Schedules, Inc. | FEDSched',
+                       'text': 'Over $30 billion per year flows through the MAS program, but sales through '
+                               'the schedule are not guaranteed.',
+                       'tip': 'Over $30 billion per year flows through the MAS program, but sales through '
+                              'the schedule are not guaranteed.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=FnZjjws-i_s&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=FnZjjws-i_s&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WZkYFEEekIk',
+                       'title': 'Will You Need a GSA Schedule to Sell to the Government?',
+                       'channel': 'GovClose | DoD Contract Academy',
+                       'author': 'GovClose | DoD Contract Academy',
+                       'text': 'Getting on a GSA schedule takes six to twelve months and it is a huge '
+                               'pain.',
+                       'tip': 'Getting on a GSA schedule takes six to twelve months and it is a huge pain.',
+                       'timestamp': 383,
+                       'timestamp_seconds': 383,
+                       'timestamp_label': '[00:06:23]',
+                       'url': 'https://www.youtube.com/watch?v=WZkYFEEekIk&t=383s',
+                       'markdown': '[00:06:23](https://www.youtube.com/watch?v=WZkYFEEekIk&t=383s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fOUGaSjlTBY',
+                       'title': 'Prevent Vendor Payment Fraud: A Step-by-Step Guide',
+                       'channel': 'SecureOps with Ayden Connor',
+                       'author': 'SecureOps with Ayden Connor',
+                       'text': 'Pause and call your vendor using a known number before acting on any bank '
+                               'detail change request.',
+                       'tip': 'Pause and call your vendor using a known number before acting on any bank '
+                              'detail change request.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=fOUGaSjlTBY&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=fOUGaSjlTBY&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DeATzRK3azc',
+                       'title': 'Where vendor agreements break, and how to fix both | Leegality Digital '
+                                'Contracts',
+                       'channel': 'Leegality',
+                       'author': 'Leegality',
+                       'text': 'One company missed a cancellation window and their agreement got auto '
+                               'renewed and they got held liable for 75% of the cost of the remaining '
+                               'contract.',
+                       'tip': 'One company missed a cancellation window and their agreement got auto '
+                              'renewed and they got held liable for 75% of the cost of the remaining '
+                              'contract.',
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=DeATzRK3azc&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=DeATzRK3azc&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GsLnrTOe4bw',
+                       'title': "You Can't Outsource the Risk: Reg S-P and Vendor Oversight",
+                       'channel': 'Ncontracts',
+                       'author': 'Ncontracts',
+                       'text': 'We would often tell financial institutions that you can outsource the '
+                               "function, but you can't outsource the risk.",
+                       'tip': 'We would often tell financial institutions that you can outsource the '
+                              "function, but you can't outsource the risk.",
+                       'timestamp': 1028,
+                       'timestamp_seconds': 1028,
+                       'timestamp_label': '[00:17:08]',
+                       'url': 'https://www.youtube.com/watch?v=GsLnrTOe4bw&t=1028s',
+                       'markdown': '[00:17:08](https://www.youtube.com/watch?v=GsLnrTOe4bw&t=1028s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jVnAwe2gfHg',
+                       'title': 'Vendor Contracts Are Designed to Fail You — Here Is the Fix',
+                       'channel': 'Virtualization Options LLC Free Learning Portal',
+                       'author': 'Virtualization Options LLC Free Learning Portal',
+                       'text': 'If it is not written in the contract, it simply does not exist.',
+                       'tip': 'If it is not written in the contract, it simply does not exist.',
+                       'timestamp': 391,
+                       'timestamp_seconds': 391,
+                       'timestamp_label': '[00:06:31]',
+                       'url': 'https://www.youtube.com/watch?v=jVnAwe2gfHg&t=391s',
+                       'markdown': '[00:06:31](https://www.youtube.com/watch?v=jVnAwe2gfHg&t=391s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rJtYtwh2Ees',
+                       'title': 'There are Consequences if an Employee Aids a Vendor in Circumventing '
+                                'Official Procurement Processes',
+                       'channel': 'Virtualization Options LLC Free Learning Portal',
+                       'author': 'Virtualization Options LLC Free Learning Portal',
+                       'text': 'Anything over $100,000 per year requires competitive bidding.',
+                       'tip': 'Anything over $100,000 per year requires competitive bidding.',
+                       'timestamp': 250,
+                       'timestamp_seconds': 250,
+                       'timestamp_label': '[00:04:10]',
+                       'url': 'https://www.youtube.com/watch?v=rJtYtwh2Ees&t=250s',
+                       'markdown': '[00:04:10](https://www.youtube.com/watch?v=rJtYtwh2Ees&t=250s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YF1T0fd9wPE',
+                       'title': 'Third-Party Risk II: Vendor Monitoring and Rules of Engagement | CompTIA '
+                                'Security+ SY0-801',
+                       'channel': 'DevOps Simplified',
+                       'author': 'DevOps Simplified',
+                       'text': "A bridge letter is the vendor's own word, not an auditor's.",
+                       'tip': "A bridge letter is the vendor's own word, not an auditor's.",
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=YF1T0fd9wPE&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=YF1T0fd9wPE&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NVfgGOTkm4Q',
+                       'title': 'Sales Tracking System Training for GSA Schedule Industry Partners',
+                       'channel': 'GSA (General Services Administration)',
+                       'author': 'GSA (General Services Administration)',
+                       'text': "It's point seven five percent of each transaction, it's tracked and "
+                               "reported by vendors, and it's included in your contract pricing, meaning "
+                               "it isn't a separate line item.",
+                       'tip': "It's point seven five percent of each transaction, it's tracked and "
+                              "reported by vendors, and it's included in your contract pricing, meaning it "
+                              "isn't a separate line item.",
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=NVfgGOTkm4Q&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=NVfgGOTkm4Q&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NVfgGOTkm4Q',
+                       'title': 'Sales Tracking System Training for GSA Schedule Industry Partners',
+                       'channel': 'GSA (General Services Administration)',
+                       'author': 'GSA (General Services Administration)',
+                       'text': "You should know who your contracting officer is, so if you don't, take "
+                               "this as a piece of homework and figure that out today because that's "
+                               'pretty important.',
+                       'tip': "You should know who your contracting officer is, so if you don't, take this "
+                              "as a piece of homework and figure that out today because that's pretty "
+                              'important.',
+                       'timestamp': 2050,
+                       'timestamp_seconds': 2050,
+                       'timestamp_label': '[00:34:10]',
+                       'url': 'https://www.youtube.com/watch?v=NVfgGOTkm4Q&t=2050s',
+                       'markdown': '[00:34:10](https://www.youtube.com/watch?v=NVfgGOTkm4Q&t=2050s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p3DsAuDE32c',
+                       'title': "Government Contracting - VIRTUAL CLASS:  GSA Schedule: What's In It For "
+                                'You? - Win Federal Contracts',
+                       'channel': 'How To Sell To & Win Federal Government Contracts',
+                       'author': 'How To Sell To & Win Federal Government Contracts',
+                       'text': 'It is absolutely, absolutely not required to do business with the '
+                               'government; it is a marketing tool only.',
+                       'tip': 'It is absolutely, absolutely not required to do business with the '
+                              'government; it is a marketing tool only.',
+                       'timestamp': 538,
+                       'timestamp_seconds': 538,
+                       'timestamp_label': '[00:08:58]',
+                       'url': 'https://www.youtube.com/watch?v=p3DsAuDE32c&t=538s',
+                       'markdown': '[00:08:58](https://www.youtube.com/watch?v=p3DsAuDE32c&t=538s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p3DsAuDE32c',
+                       'title': "Government Contracting - VIRTUAL CLASS:  GSA Schedule: What's In It For "
+                                'You? - Win Federal Contracts',
+                       'channel': 'How To Sell To & Win Federal Government Contracts',
+                       'author': 'How To Sell To & Win Federal Government Contracts',
+                       'text': 'Your GSA rates are now only a price ceiling, meaning a not to exceed rate, '
+                               "so through your schedule you're actually encouraged to go lower than your "
+                               'GSA rates.',
+                       'tip': 'Your GSA rates are now only a price ceiling, meaning a not to exceed rate, '
+                              "so through your schedule you're actually encouraged to go lower than your "
+                              'GSA rates.',
+                       'timestamp': 5137,
+                       'timestamp_seconds': 5137,
+                       'timestamp_label': '[01:25:37]',
+                       'url': 'https://www.youtube.com/watch?v=p3DsAuDE32c&t=5137s',
+                       'markdown': '[01:25:37](https://www.youtube.com/watch?v=p3DsAuDE32c&t=5137s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TjkI3hqYZJY',
+                       'title': 'Vendor Offboarding Checklist: How to Safely Remove a Third Party',
+                       'channel': 'Learn TPRM with Rahul Tyagi',
+                       'author': 'Learn TPRM with Rahul Tyagi',
+                       'text': 'Even after user accounts are removed, those integrations might still be '
+                               'active.',
+                       'tip': 'Even after user accounts are removed, those integrations might still be '
+                              'active.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=TjkI3hqYZJY&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=TjkI3hqYZJY&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3j2StNSWzVs',
+                       'title': 'Vendors: supplier register, assessments by link, reviews that record '
+                                'decisions (devguard tutorial)',
+                       'channel': 'devguard',
+                       'author': 'devguard',
+                       'text': 'It is a record, not a gate: devguard does not stop anyone from using a '
+                               'blocked supplier.',
+                       'tip': 'It is a record, not a gate: devguard does not stop anyone from using a '
+                              'blocked supplier.',
+                       'timestamp': 481,
+                       'timestamp_seconds': 481,
+                       'timestamp_label': '[00:08:01]',
+                       'url': 'https://www.youtube.com/watch?v=3j2StNSWzVs&t=481s',
+                       'markdown': '[00:08:01](https://www.youtube.com/watch?v=3j2StNSWzVs&t=481s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

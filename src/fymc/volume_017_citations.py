@@ -1,4475 +1,3280 @@
-"""Curated 180-citation Domain Investing baseline (15 per chapter across Q1-Q12) mined strictly from verified Domain Investing YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 017 (Domain Investing)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'client',
-     'clients',
-     'cloudflare',
-     'com',
-     'comps',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'desk',
-     'dictionary',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'budget',
-     'business',
-     'buyer',
-     'buying',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'comps',
-     'contract',
-     'crunchbase',
-     'customer',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'decision',
-     'desk',
-     'dictionary',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'cash',
-     'cashflow',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'commission',
-     'comps',
-     'cost',
-     'costs',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'desk',
-     'dictionary',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'budget',
-     'business',
-     'buying',
-     'capital',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'comps',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'desk',
-     'dictionary',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoid',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'catching',
-     'check',
-     'clawback',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'comps',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'desk',
-     'dictionary',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'client',
-     'cloudflare',
-     'com',
-     'comps',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'data',
-     'deal',
-     'desk',
-     'dictionary',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'catching',
-     'check',
-     'checklist',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'comps',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'delivery',
-     'desk',
-     'dictionary',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'acpa',
-     'afternic',
-     'aged',
-     'andrew',
-     'api',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'comps',
-     'crm',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'data',
-     'database',
-     'desk',
-     'dictionary',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'acpa',
-     'afternic',
-     'aged',
-     'agreement',
-     'andrew',
-     'archive',
-     'atom',
-     'auction',
-     'auctions',
-     'audit',
-     'authority',
-     'avoiding',
-     'backlink',
-     'bin',
-     'bodis',
-     'brandables',
-     'business',
-     'buying',
-     'catching',
-     'check',
-     'clean',
-     'clearance',
-     'cloudflare',
-     'com',
-     'compliance',
-     'comps',
-     'contract',
-     'crunchbase',
-     'cybersquatting',
-     'cyger',
-     'dan',
-     'desk',
-     'dictionary',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'acpa',
-      'afternic',
-      'aged',
-      'agent',
-      'ai',
-      'andrew',
-      'archive',
-      'atom',
-      'auction',
-      'auctions',
-      'audit',
-      'authority',
-      'automate',
-      'automation',
-      'avoiding',
-      'backlink',
-      'bin',
-      'bodis',
-      'brandables',
-      'business',
-      'buying',
-      'catching',
-      'check',
-      'clean',
-      'clearance',
-      'cloudflare',
-      'com',
-      'comps',
-      'crunchbase',
-      'cybersquatting',
-      'cyger',
-      'dan',
-      'dashboard',
-      'desk',
-      'dictionary',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'acpa',
-      'afternic',
-      'aged',
-      'andrew',
-      'archive',
-      'atom',
-      'auction',
-      'auctions',
-      'audit',
-      'authority',
-      'avoiding',
-      'backlink',
-      'bin',
-      'bodis',
-      'brandables',
-      'business',
-      'buying',
-      'catching',
-      'check',
-      'clean',
-      'clearance',
-      'cloudflare',
-      'com',
-      'comps',
-      'contractor',
-      'crunchbase',
-      'cybersquatting',
-      'cyger',
-      'dan',
-      'desk',
-      'dictionary',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'acpa',
-      'action',
-      'afternic',
-      'aged',
-      'andrew',
-      'archive',
-      'atom',
-      'auction',
-      'auctions',
-      'audit',
-      'authority',
-      'avoiding',
-      'backlink',
-      'bin',
-      'bodis',
-      'brandables',
-      'business',
-      'buying',
-      'catching',
-      'check',
-      'clean',
-      'clearance',
-      'cloudflare',
-      'com',
-      'comps',
-      'crunchbase',
-      'cybersquatting',
-      'cyger',
-      'dan',
-      'day',
-      'days',
-      'desk',
-      'dictionary',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'sell', 'high', 'flipping', 'beginner', 'playbook', 'from', 'zero', 'domain'},
+ 2: {'registrars', 'domain', 'portfolio', 'infrastructure'},
+ 3: {'auctions', 'expired', 'backorders', 'catching', 'hunting', 'drop', 'domains'},
+ 4: {'audits', 'aged', 'diligence', 'wayback', 'backlink', 'history', 'domains'},
+ 5: {'match', 'exact', 'word', 'generic', 'power', 'valuation', 'domains'},
+ 6: {'portfolio', 'pricing', 'reviews', 'valuation', 'domainsherpa', 'strategy', 'room'},
+ 7: {'outbound', 'brokers', 'negotiation', 'sales'},
+ 8: {'marketplace', 'afternic', 'sedo', 'atom', 'listings'},
+ 9: {'lease', 'seller', 'safety', 'closing', 'escrow', 'deal'},
+ 10: {'traffic', 'domain', 'monetization', 'parking'},
+ 11: {'disputes', 'trademarks', 'landscape'},
+ 12: {'challenges', 'investor', 'capital', 'journeys'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'KT Blogger',
-      'channel': 'KT Blogger',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Thinking Blueprint',
+      'channel': 'Thinking Blueprint',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:46:29](https://www.youtube.com/watch?v=yz0jUQvunAI&t=2789s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
+      'markdown': '[00:05:29](https://www.youtube.com/watch?v=12ohlClK0g8&t=329s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'It is true that due to AI, service work has slowed down a bit on Fiverr and '
-              "Upwork, but it hasn't stopped or ended; in fact, you are getting even more "
-              'valuable clients, okay? You are getting high-value, high-margin clients.',
-      'timestamp': 2789,
-      'timestamp_label': '[00:46:29]',
-      'timestamp_seconds': 2789,
-      'tip': 'It is true that due to AI, service work has slowed down a bit on Fiverr and '
-             "Upwork, but it hasn't stopped or ended; in fact, you are getting even more "
-             'valuable clients, okay? You are getting high-value, high-margin clients.',
-      'title': 'How I Turned $10 into $1500 Selling a Domain | Domain Flipping Business '
-               'Explained (KT Blogger)',
-      'url': 'https://www.youtube.com/watch?v=yz0jUQvunAI&t=2789s',
-      'video_id': 'yz0jUQvunAI'},
-     {'author': 'Reza Taheri',
-      'channel': 'Reza Taheri',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:48](https://www.youtube.com/watch?v=2jfssBvnbfw&t=168s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Uh unfortunately Dan was closed last year. It was merged with after league you '
-              'know and uh it has no longer in service. So we had to move to after nick. But '
-              'after having this issue this experience with after nick I uh uh change the all '
-              'of my domain names name server to atom.',
-      'timestamp': 168,
-      'timestamp_label': '[00:02:48]',
-      'timestamp_seconds': 168,
-      'tip': 'Uh unfortunately Dan was closed last year. It was merged with after league you '
-             'know and uh it has no longer in service. So we had to move to after nick. But '
-             'after having this issue this experience with after nick I uh uh change the all '
-             'of my domain names name server to atom.',
-      'title': 'Afternic Review: Why It’s Killing Your Domain Sales (Reza Taheri)',
-      'url': 'https://www.youtube.com/watch?v=2jfssBvnbfw&t=168s',
-      'video_id': '2jfssBvnbfw'},
-     {'author': 'Craylor',
-      'channel': 'Craylor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:02](https://www.youtube.com/watch?v=IXpvUD5SDzA&t=122s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s no advantage to upgrading. Cloudflare's paid plans are for advanced and "
-              "enterprise users, so if you're a small business owner or individual, you can "
-              'get an insane value out of the free plan.',
-      'timestamp': 122,
-      'timestamp_label': '[00:02:02]',
-      'timestamp_seconds': 122,
-      'tip': "'s no advantage to upgrading. Cloudflare's paid plans are for advanced and "
-             "enterprise users, so if you're a small business owner or individual, you can get "
-             'an insane value out of the free plan.',
-      'title': '5 Things to Know BEFORE Using Cloudflare! (Craylor)',
-      'url': 'https://www.youtube.com/watch?v=IXpvUD5SDzA&t=122s',
-      'video_id': 'IXpvUD5SDzA'},
-     {'author': 'GoDaddy',
-      'channel': 'GoDaddy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:45](https://www.youtube.com/watch?v=qJ6o0aD4Msg&t=45s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Oh, so it's like buying and selling properties like a real estate agent? Yeah, "
-              "kind of more like an investor. So if you're investing in real estate, you look "
-              'for stuff that might be a little bit under the market value.',
-      'timestamp': 45,
-      'timestamp_label': '[00:00:45]',
-      'timestamp_seconds': 45,
-      'tip': "Oh, so it's like buying and selling properties like a real estate agent? Yeah, "
-             "kind of more like an investor. So if you're investing in real estate, you look "
-             'for stuff that might be a little bit under the market value.',
-      'title': 'What Is Domain Investing (& Why You Should Invest) | The Journey (GoDaddy)',
-      'url': 'https://www.youtube.com/watch?v=qJ6o0aD4Msg&t=45s',
-      'video_id': 'qJ6o0aD4Msg'},
-     {'author': 'Domain Value Estimator',
-      'channel': 'Domain Value Estimator',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:01](https://www.youtube.com/watch?v=nC0fLv5Q_PI&t=241s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Length scores 78 out of 100. Three characters, of course. SEO 72, brand 47, dot '
-              'co 81. The model saw three-letter domain and reached for the three-letter. But '
-              'dot co is not dot com, and the market said 17,000.',
-      'timestamp': 241,
-      'timestamp_label': '[00:04:01]',
-      'timestamp_seconds': 241,
-      'tip': 'Length scores 78 out of 100. Three characters, of course. SEO 72, brand 47, dot '
-             'co 81. The model saw three-letter domain and reached for the three-letter. But '
-             'dot co is not dot com, and the market said 17,000.',
-      'title': "You're Reading Domain Appraisals Wrong (Domain Value Estimator)",
-      'url': 'https://www.youtube.com/watch?v=nC0fLv5Q_PI&t=241s',
-      'video_id': 'nC0fLv5Q_PI'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:49:30](https://www.youtube.com/watch?v=KYAHTsYNIPI&t=2970s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '\'re like, "Well, I\'m thinking about auctioning it." Or it\'s like, "Look, my '
-              'personal motto is that auctions are for buying, not selling." Well, because '
-              "it's it's going to be wholesale. It's It's If you want liquidity, fine. You "
-              'know, sell it sell it to another.',
-      'timestamp': 2970,
-      'timestamp_label': '[00:49:30]',
-      'timestamp_seconds': 2970,
-      'tip': '\'re like, "Well, I\'m thinking about auctioning it." Or it\'s like, "Look, my '
-             'personal motto is that auctions are for buying, not selling." Well, because '
-             "it's it's going to be wholesale. It's It's If you want liquidity, fine. You "
-             'know, sell it sell it to another.',
-      'title': 'Navigating Appraised Value vs Market Value of Your Domain (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=KYAHTsYNIPI&t=2970s',
-      'video_id': 'KYAHTsYNIPI'},
-     {'author': 'GigaLaw - Doug Isenberg',
-      'channel': 'GigaLaw - Doug Isenberg',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:39](https://www.youtube.com/watch?v=GI9Us2WWsAo&t=219s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I do in any event I suspect the firm's decision to file an acpa complaint was "
-              'motivated in large part by the availability of injunctive relief according to '
-              'the magistrate judges report deba voice filed its complaint on December 13 2021 '
-              'and a U.',
-      'timestamp': 219,
-      'timestamp_label': '[00:03:39]',
-      'timestamp_seconds': 219,
-      'tip': "I do in any event I suspect the firm's decision to file an acpa complaint was "
-             'motivated in large part by the availability of injunctive relief according to '
-             'the magistrate judges report deba voice filed its complaint on December 13 2021 '
-             'and a U.',
-      'title': 'Lessons About UDRP v. ACPA from the Debevoise Cybersquatting Case (GigaLaw - '
-               'Doug Isenberg)',
-      'url': 'https://www.youtube.com/watch?v=GI9Us2WWsAo&t=219s',
-      'video_id': 'GI9Us2WWsAo'},
-     {'author': 'The Dividend Domain',
-      'channel': 'The Dividend Domain',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:58](https://www.youtube.com/watch?v=xVfENzSxmO0&t=178s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I have conviction in Bitcoin. And I say like so like I have a lot too much '
-              "exposure, but to me is like this is the best time if we're in a bear Bitcoin or "
-              "crypto bear market, it's in my best interest if I see value to buy at these "
-              'opportune times.',
-      'timestamp': 178,
-      'timestamp_label': '[00:02:58]',
-      'timestamp_seconds': 178,
-      'tip': 'I have conviction in Bitcoin. And I say like so like I have a lot too much '
-             "exposure, but to me is like this is the best time if we're in a bear Bitcoin or "
-             "crypto bear market, it's in my best interest if I see value to buy at these "
-             'opportune times.',
-      'title': "The Power of Margin: How I'm Supercharging My Investments| Robin Fire Ep 41 "
-               '(The Dividend Domain)',
-      'url': 'https://www.youtube.com/watch?v=xVfENzSxmO0&t=178s',
-      'video_id': 'xVfENzSxmO0'},
-     {'author': 'Unstoppable AI',
-      'channel': 'Unstoppable AI',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:30](https://www.youtube.com/watch?v=FRAPXUkvbv0&t=150s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Uh in 2016-17 that whole thing blew up and you know they all lost 60 plus of '
-              'the value that it had run up to now two number.com is still incredibly scarce '
-              "and it's still super valuable uh a three number.com is still super scarce and "
-              "it's still incredibly valuable.",
-      'timestamp': 150,
-      'timestamp_label': '[00:02:30]',
-      'timestamp_seconds': 150,
-      'tip': 'Uh in 2016-17 that whole thing blew up and you know they all lost 60 plus of the '
-             'value that it had run up to now two number.com is still incredibly scarce and '
-             "it's still super valuable uh a three number.com is still super scarce and it's "
-             'still incredibly valuable.',
-      'title': 'NFT Domain Investing Secrets From The #1 Domain Broker In The World | The '
-               'Unstoppable Podcast Clips (Unstoppable AI)',
-      'url': 'https://www.youtube.com/watch?v=FRAPXUkvbv0&t=150s',
-      'video_id': 'FRAPXUkvbv0'},
-     {'author': 'MediaOptions',
-      'channel': 'MediaOptions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=On67hq0XY6k&t=15s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Dollars in revenue or a publicly traded company how often is it that they '
-              'recognize the value before that has been built into a company like Michaels so.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Dollars in revenue or a publicly traded company how often is it that they '
-             'recognize the value before that has been built into a company like Michaels so.',
-      'title': 'Why Exact Match Domains Names Are Valuable (MediaOptions)',
-      'url': 'https://www.youtube.com/watch?v=On67hq0XY6k&t=15s',
-      'video_id': 'On67hq0XY6k'},
-     {'author': 'SkyInclude',
-      'channel': 'SkyInclude',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:27:32](https://www.youtube.com/watch?v=0-ax0cEcuZk&t=1652s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s say i've got a you know investment firm it's called black horse right and i "
-              "want to have black dot horse and uh uh that's great and i've got my home page "
-              'at black.',
-      'timestamp': 1652,
-      'timestamp_label': '[00:27:32]',
-      'timestamp_seconds': 1652,
-      'tip': "'s say i've got a you know investment firm it's called black horse right and i "
-             "want to have black dot horse and uh uh that's great and i've got my home page at "
-             'black.',
-      'title': 'The Future of Domains with Andrew Rosener | HANDYCON (SkyInclude)',
-      'url': 'https://www.youtube.com/watch?v=0-ax0cEcuZk&t=1652s',
-      'video_id': '0-ax0cEcuZk'},
-     {'author': 'Sedo.com, LLC',
-      'channel': 'Sedo.com, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:51](https://www.youtube.com/watch?v=XPj2Qjpi55Y&t=111s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "What the domain's value is this is because if you have a buy now price that's "
-              "too high you'll just put off any potential buyers.",
-      'timestamp': 111,
-      'timestamp_label': '[00:01:51]',
-      'timestamp_seconds': 111,
-      'tip': "What the domain's value is this is because if you have a buy now price that's "
-             "too high you'll just put off any potential buyers.",
-      'title': 'What Sales Settings to Choose When Selling Domains - Buy Now VS Make Offer '
-               '(Sedo.com, LLC)',
-      'url': 'https://www.youtube.com/watch?v=XPj2Qjpi55Y&t=111s',
-      'video_id': 'XPj2Qjpi55Y'},
-     {'author': 'Semantic Mastery',
-      'channel': 'Semantic Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:18](https://www.youtube.com/watch?v=eSTvHrvbZ-4&t=138s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "A parking page so like where does the revenue come from i'm not sure maybe i "
-              "don't know i i just i'm.",
-      'timestamp': 138,
-      'timestamp_label': '[00:02:18]',
-      'timestamp_seconds': 138,
-      'tip': "A parking page so like where does the revenue come from i'm not sure maybe i "
-             "don't know i i just i'm.",
-      'title': 'What Are Your Thoughts On Parked Domains For Monetizing Domains With Some '
-               'Amounts Of Traffic? (Semantic Mastery)',
-      'url': 'https://www.youtube.com/watch?v=eSTvHrvbZ-4&t=138s',
-      'video_id': 'eSTvHrvbZ-4'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=P7O7_GHUYb0&t=20s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Shane's recent re-entry into the ethereum market so we'll dive into that and "
-              "then we've got the name Jack gonna jet segment sponsored by namejet and we talk "
-              'about some domains coming up for auctions such as medical center.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "Shane's recent re-entry into the ethereum market so we'll dive into that and "
-             "then we've got the name Jack gonna jet segment sponsored by namejet and we talk "
-             'about some domains coming up for auctions such as medical center.',
-      'title': 'DomainSherpa Review – 10/27/22: Cyger Says “I’m Back”: RealInnovation, '
-               'Tradesman, Encrypto (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=P7O7_GHUYb0&t=20s',
-      'video_id': 'P7O7_GHUYb0'},
-     {'author': 'kickstartcommerce',
-      'channel': 'kickstartcommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:53](https://www.youtube.com/watch?v=IJ9lx010Yps&t=1073s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Appropriate so it's definitely something that's ass and it's definitely "
-              "something that's that's good to have if that's where your your your morals are "
-              'lying in that event.',
-      'timestamp': 1073,
-      'timestamp_label': '[00:17:53]',
-      'timestamp_seconds': 1073,
-      'tip': "Appropriate so it's definitely something that's ass and it's definitely "
-             "something that's that's good to have if that's where your your your morals are "
-             'lying in that event.',
-      'title': 'The Essentials of Domain Leasing with Escrow’s Brian Tharp (kickstartcommerce)',
-      'url': 'https://www.youtube.com/watch?v=IJ9lx010Yps&t=1073s',
-      'video_id': 'IJ9lx010Yps'}],
- 2: [{'author': '30MinuteDeal Global',
-      'channel': '30MinuteDeal Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:57](https://www.youtube.com/watch?v=wCiUhJTjJyo&t=117s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then I registered and found this thread in Escrow portal. It was showing the '
-              'transaction details. I had to pay $20 dollars as a disbursement fee. I agreed '
-              'to the terms, then the buyer agreed to the terms and escrow was waiting for the '
-              'buyer’s payment.',
-      'timestamp': 117,
-      'timestamp_label': '[00:01:57]',
-      'timestamp_seconds': 117,
-      'tip': 'Then I registered and found this thread in Escrow portal. It was showing the '
-             'transaction details. I had to pay $20 dollars as a disbursement fee. I agreed to '
-             'the terms, then the buyer agreed to the terms and escrow was waiting for the '
-             'buyer’s payment.',
-      'title': 'How I Sold a $10 Domain at $500 with DomainAgents & Escrow.com (30MinuteDeal '
-               'Global)',
-      'url': 'https://www.youtube.com/watch?v=wCiUhJTjJyo&t=117s',
-      'video_id': 'wCiUhJTjJyo'},
-     {'author': 'DomainRacer Hindi',
-      'channel': 'DomainRacer Hindi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:50](https://www.youtube.com/watch?v=eDmh_k07UEg&t=170s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "But all these tips won't work. There's a bonus tip you should know: If anyone "
-              "tells you they'll pay you later, it's a red flag. You should immediately avoid "
-              'that buyer , otherwise you could face significant losses. Step seven: Use an '
-              'escrow service to secure the payment.',
-      'timestamp': 170,
-      'timestamp_label': '[00:02:50]',
-      'timestamp_seconds': 170,
-      'tip': "But all these tips won't work. There's a bonus tip you should know: If anyone "
-             "tells you they'll pay you later, it's a red flag. You should immediately avoid "
-             'that buyer , otherwise you could face significant losses. Step seven: Use an '
-             'escrow service to secure the payment.',
-      'title': 'Domain Buy & Sell Detailed Guide | How to Buy and Sell Domain | Domain '
-               'Flipping Guide 2025 (DomainRacer Hindi)',
-      'url': 'https://www.youtube.com/watch?v=eDmh_k07UEg&t=170s',
-      'video_id': 'eDmh_k07UEg'},
-     {'author': 'Domain Value Estimator',
-      'channel': 'Domain Value Estimator',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:34](https://www.youtube.com/watch?v=zNcj1gwZsso&t=394s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And if a buyer will not use escrow you verify yourself, there is no deal. The '
-              '$50,000 was never real. The only real money in the whole conversation was the '
-              'fee they wanted you to pay. You never need to pay for an appraisal to answer a '
-              'buyer.',
-      'timestamp': 394,
-      'timestamp_label': '[00:06:34]',
-      'timestamp_seconds': 394,
-      'tip': 'And if a buyer will not use escrow you verify yourself, there is no deal. The '
-             '$50,000 was never real. The only real money in the whole conversation was the '
-             'fee they wanted you to pay. You never need to pay for an appraisal to answer a '
-             'buyer.',
-      'title': 'A Buyer Offered Me $50,000. It Was a Scam (Domain Value Estimator)',
-      'url': 'https://www.youtube.com/watch?v=zNcj1gwZsso&t=394s',
-      'video_id': 'zNcj1gwZsso'},
-     {'author': 'Sufian Twellman',
-      'channel': 'Sufian Twellman',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:27](https://www.youtube.com/watch?v=uxbVmXRdRtU&t=147s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "3 once you've agreed on the terms you'll create an escrow. 4 the buyer will "
-              "receive any mail from escrow. 'll need to provide their payment details such as "
-              'their credit card or bank account information step 5 once the buyer has '
-              'provided their payment details escrow.',
-      'timestamp': 147,
-      'timestamp_label': '[00:02:27]',
-      'timestamp_seconds': 147,
-      'tip': "3 once you've agreed on the terms you'll create an escrow. 4 the buyer will "
-             "receive any mail from escrow. 'll need to provide their payment details such as "
-             'their credit card or bank account information step 5 once the buyer has provided '
-             'their payment details escrow.',
-      'title': 'How to Buy a Website Online Using Escrow.com (Sufian Twellman)',
-      'url': 'https://www.youtube.com/watch?v=uxbVmXRdRtU&t=147s',
-      'video_id': 'uxbVmXRdRtU'},
-     {'author': 'Make Money Anthony',
-      'channel': 'Make Money Anthony',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:05](https://www.youtube.com/watch?v=-3yBZKLuJnU&t=65s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re going to be conducting they only go off of what the contract says so before "
-              "you go into a transaction on escrow. 're buying an item or whether you're "
-              'selling an item make sure that you have a really good contract set up before '
-              'you send it over to escrow.',
-      'timestamp': 65,
-      'timestamp_label': '[00:01:05]',
-      'timestamp_seconds': 65,
-      'tip': "'re going to be conducting they only go off of what the contract says so before "
-             "you go into a transaction on escrow. 're buying an item or whether you're "
-             'selling an item make sure that you have a really good contract set up before you '
-             'send it over to escrow.',
-      'title': '✅ Is Escrow.com Safe To Use 🔴 (Make Money Anthony)',
-      'url': 'https://www.youtube.com/watch?v=-3yBZKLuJnU&t=65s',
-      'video_id': '-3yBZKLuJnU'},
-     {'author': 'Domains No Broker',
-      'channel': 'Domains No Broker',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=FSQ0uJ1Ul9Q&t=56s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You initiate the transfer of the domain name to the buyer. Because the escrow '
-              'service is already holding the money, you can move forward knowing that your '
-              'payment is guaranteed as soon as the transfer is complete.',
-      'timestamp': 56,
-      'timestamp_label': '[00:00:56]',
-      'timestamp_seconds': 56,
-      'tip': 'You initiate the transfer of the domain name to the buyer. Because the escrow '
-             'service is already holding the money, you can move forward knowing that your '
-             'payment is guaranteed as soon as the transfer is complete.',
-      'title': 'Domain Escrow Explained: How to Sell Safely (Domains No Broker)',
-      'url': 'https://www.youtube.com/watch?v=FSQ0uJ1Ul9Q&t=56s',
-      'video_id': 'FSQ0uJ1Ul9Q'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[01:39:06](https://www.youtube.com/watch?v=CKvIo_PJEQI&t=5946s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Maybe you're getting a buyer that pays you 10 or 15 and that's that's kind of "
-              "the moonshot price I think on that name. So, >> you know, I'm wanting I want to "
-              'pay a few hundred bucks, you know, no more than a grand. And compare that to '
-              'the appraised.',
-      'timestamp': 5946,
-      'timestamp_label': '[01:39:06]',
-      'timestamp_seconds': 5946,
-      'tip': "Maybe you're getting a buyer that pays you 10 or 15 and that's that's kind of "
-             "the moonshot price I think on that name. So, >> you know, I'm wanting I want to "
-             'pay a few hundred bucks, you know, no more than a grand. And compare that to the '
-             'appraised.',
-      'title': 'How Domain Investors Pick Names for Moonshot Pricing | DomainSherpa Podcast '
-               '(September 3, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=CKvIo_PJEQI&t=5946s',
-      'video_id': 'CKvIo_PJEQI'},
+      'text': 'Remember, you make money when you buy, not when you sell. Buy a domain that could '
+              'be worth $4,000 for $80. The profit is already locked in.',
+      'timestamp': 329,
+      'timestamp_label': '[00:05:29]',
+      'timestamp_seconds': 329,
+      'tip': 'Remember, you make money when you buy, not when you sell. Buy a domain that could be '
+             'worth $4,000 for $80. The profit is already locked in.',
+      'title': 'Domain Flipping - The Art of Investing in Domains',
+      'url': 'https://www.youtube.com/watch?v=12ohlClK0g8&t=329s',
+      'video_id': '12ohlClK0g8'},
      {'author': 'Lanre Enlight',
       'channel': 'Lanre Enlight',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:29:16](https://www.youtube.com/watch?v=dEguqGldBcI&t=1756s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
+      'markdown': '[00:20:06](https://www.youtube.com/watch?v=dEguqGldBcI&t=1206s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Buyer wants to get it so this is another mustard view that's Trust okay this is "
-              'build um building dots this these are very nice names so like I said I want to '
-              'check Uber suggests.',
-      'timestamp': 1756,
-      'timestamp_label': '[00:29:16]',
-      'timestamp_seconds': 1756,
-      'tip': "Buyer wants to get it so this is another mustard view that's Trust okay this is "
-             'build um building dots this these are very nice names so like I said I want to '
-             'check Uber suggests.',
-      'title': 'Domain Flipping: The Ultimate Pro Step-by-Step Guide to Making $1000 Quickly '
-               '(Lanre Enlight)',
-      'url': 'https://www.youtube.com/watch?v=dEguqGldBcI&t=1756s',
+      'text': 'This domain name, where the person was trying to sell for hundred dollars, is now '
+              'sold for two thousand five hundred dollars.',
+      'timestamp': 1206,
+      'timestamp_label': '[00:20:06]',
+      'timestamp_seconds': 1206,
+      'tip': 'This domain name, where the person was trying to sell for hundred dollars, is now '
+             'sold for two thousand five hundred dollars.',
+      'title': 'Domain Flipping: The Ultimate Pro Step-by-Step Guide to Making $1000 Quickly',
+      'url': 'https://www.youtube.com/watch?v=dEguqGldBcI&t=1206s',
       'video_id': 'dEguqGldBcI'},
-     {'author': 'live NDDCamp',
-      'channel': 'live NDDCamp',
+     {'author': 'GoDaddy Domain Academy',
+      'channel': 'GoDaddy Domain Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[01:02:09](https://www.youtube.com/watch?v=PdwE4T9wmMo&t=3729s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=LcmoZJ33ZJ4&t=131s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Basically the my buyer was the biggest in one region. And the budget was 20 '
-              'million. And it was and it was not enough. So there are maybe this one is top '
-              'one in the world but another one maybe is top five.',
-      'timestamp': 3729,
-      'timestamp_label': '[01:02:09]',
-      'timestamp_seconds': 3729,
-      'tip': 'Basically the my buyer was the biggest in one region. And the budget was 20 '
-             'million. And it was and it was not enough. So there are maybe this one is top '
-             'one in the world but another one maybe is top five.',
-      'title': 'Domain investment in 2026: disputes, TLDs, marketplaces, and pricing '
-               'strategies (live NDDCamp)',
-      'url': 'https://www.youtube.com/watch?v=PdwE4T9wmMo&t=3729s',
-      'video_id': 'PdwE4T9wmMo'},
-     {'author': 'The Dividend Domain',
-      'channel': 'The Dividend Domain',
+      'text': 'The future domain investor will not spend their time searching. They will spend '
+              'their time teaching a system what opportunity looks like.',
+      'timestamp': 131,
+      'timestamp_label': '[00:02:11]',
+      'timestamp_seconds': 131,
+      'tip': 'The future domain investor will not spend their time searching. They will spend '
+             'their time teaching a system what opportunity looks like.',
+      'title': 'The AI Domain Investor: Find More. Bid More. Win More!',
+      'url': 'https://www.youtube.com/watch?v=LcmoZJ33ZJ4&t=131s',
+      'video_id': 'LcmoZJ33ZJ4'},
+     {'author': 'Tutorials by Manizha & Ryan',
+      'channel': 'Tutorials by Manizha & Ryan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=l5aojx7kWb8&t=157s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
+      'markdown': '[00:07:00](https://www.youtube.com/watch?v=Ji9xSr9WZnA&t=420s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "And that way I'm not pulling too much margin and that helps cuz my overhead can "
-              "be anywhere from 5 to 6,000. So, if I'm using one check of my base checks to "
-              'pay down or pay towards bills, that actually helps me maintain the margin.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': "And that way I'm not pulling too much margin and that helps cuz my overhead can "
-             "be anywhere from 5 to 6,000. So, if I'm using one check of my base checks to pay "
-             'down or pay towards bills, that actually helps me maintain the margin.',
-      'title': 'How My $55,000 Portfolio Generates $757 Every Month Using Margin (The Dividend '
-               'Domain)',
-      'url': 'https://www.youtube.com/watch?v=l5aojx7kWb8&t=157s',
-      'video_id': 'l5aojx7kWb8'},
-     {'author': 'Name Experts',
-      'channel': 'Name Experts',
+      'text': 'This website is called namebio.com; you enter in the keyword and you can see how '
+              'much those domains have been sold for.',
+      'timestamp': 420,
+      'timestamp_label': '[00:07:00]',
+      'timestamp_seconds': 420,
+      'tip': 'This website is called namebio.com; you enter in the keyword and you can see how '
+             'much those domains have been sold for.',
+      'title': 'Domain Flipping Guide (2026) | How To Make Money Flipping Domain Names',
+      'url': 'https://www.youtube.com/watch?v=Ji9xSr9WZnA&t=420s',
+      'video_id': 'Ji9xSr9WZnA'},
+     {'author': 'Tim Verdouw',
+      'channel': 'Tim Verdouw',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=VgeW1cO-RaE&t=104s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
+      'markdown': '[00:13:01](https://www.youtube.com/watch?v=ehERSgNWmRc&t=781s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Is completed in some instances paper contracts are then distributed to all '
-              'parties with the execution contract so that they have copies for their records '
-              "and the transaction is completed and we're ready to move on to the next one.",
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'Is completed in some instances paper contracts are then distributed to all '
-             'parties with the execution contract so that they have copies for their records '
-             "and the transaction is completed and we're ready to move on to the next one.",
-      'title': 'Finalizing a Domain Name Purchase with Escrow (Name Experts)',
-      'url': 'https://www.youtube.com/watch?v=VgeW1cO-RaE&t=104s',
-      'video_id': 'VgeW1cO-RaE'},
-     {'author': 'DaaZ Domain Name Marketplace',
-      'channel': 'DaaZ Domain Name Marketplace',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:06](https://www.youtube.com/watch?v=OpC53UvZ_Ss&t=126s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Payments then you have the option to select payments choose the months you are '
-              'looking to clear the payments from the drop-down and process the payment easily '
-              'once the first payment plan is done our agent can guide you to use the domain '
-              'name.',
-      'timestamp': 126,
-      'timestamp_label': '[00:02:06]',
-      'timestamp_seconds': 126,
-      'tip': 'Payments then you have the option to select payments choose the months you are '
-             'looking to clear the payments from the drop-down and process the payment easily '
-             'once the first payment plan is done our agent can guide you to use the domain '
-             'name.',
-      'title': 'Buy a domain name by using Lease to Own Option (DaaZ Domain Name Marketplace)',
-      'url': 'https://www.youtube.com/watch?v=OpC53UvZ_Ss&t=126s',
-      'video_id': 'OpC53UvZ_Ss'},
-     {'author': 'newnet',
-      'channel': 'newnet',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:45](https://www.youtube.com/watch?v=gDTGdxMNGZs&t=225s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Many other personalization options each website in the network contains highly '
-              'relevant advertisements that pay you when visitors click all righty I see our '
-              'site is embarked and ready to view.',
-      'timestamp': 225,
-      'timestamp_label': '[00:03:45]',
-      'timestamp_seconds': 225,
-      'tip': 'Many other personalization options each website in the network contains highly '
-             'relevant advertisements that pay you when visitors click all righty I see our '
-             'site is embarked and ready to view.',
-      'title': 'Domain Embarking - Introduction (newnet)',
-      'url': 'https://www.youtube.com/watch?v=gDTGdxMNGZs&t=225s',
-      'video_id': 'gDTGdxMNGZs'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:22:52](https://www.youtube.com/watch?v=KZqosumnXfg&t=1372s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t really regret that it fell through because i think i think the name "
-              'ultimately is worth more to the right buyer yeah um so how much did you pay for '
-              'oregano.',
-      'timestamp': 1372,
-      'timestamp_label': '[00:22:52]',
-      'timestamp_seconds': 1372,
-      'tip': "'t really regret that it fell through because i think i think the name "
-             'ultimately is worth more to the right buyer yeah um so how much did you pay for '
-             'oregano.',
-      'title': 'Making Money on the Buy -- With Andrew Rosener (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=KZqosumnXfg&t=1372s',
-      'video_id': 'KZqosumnXfg'},
+      'text': "I do trust AI recommendation, but when it says something like 5 to $10,000, I'm a "
+              'bit skeptical. I would say I can easily sell this for two and a half to $3,000.',
+      'timestamp': 781,
+      'timestamp_label': '[00:13:01]',
+      'timestamp_seconds': 781,
+      'tip': "I do trust AI recommendation, but when it says something like 5 to $10,000, I'm a "
+             'bit skeptical. I would say I can easily sell this for two and a half to $3,000.',
+      'title': 'How to Flip Domains in 2026 Using AI (AIFlipDomains Demo)',
+      'url': 'https://www.youtube.com/watch?v=ehERSgNWmRc&t=781s',
+      'video_id': 'ehERSgNWmRc'},
      {'author': 'GoDaddy',
       'channel': 'GoDaddy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:55](https://www.youtube.com/watch?v=OM_5VESPepY&t=1315s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q2 operational '
-                   'verification).',
+      'markdown': '[00:07:30](https://www.youtube.com/watch?v=qJ6o0aD4Msg&t=450s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Year um you know this year is running out soon but uh but it is on our plate '
-              "and it's a high priority for us to figure out for next year and we want we want "
-              "to get that going high page yeah it's good to hear.",
-      'timestamp': 1315,
-      'timestamp_label': '[00:21:55]',
-      'timestamp_seconds': 1315,
-      'tip': 'Year um you know this year is running out soon but uh but it is on our plate and '
-             "it's a high priority for us to figure out for next year and we want we want to "
-             "get that going high page yeah it's good to hear.",
-      'title': 'Time’s Up: Acquiring Expired Domains | GoDaddy Hangout (GoDaddy)',
-      'url': 'https://www.youtube.com/watch?v=OM_5VESPepY&t=1315s',
-      'video_id': 'OM_5VESPepY'}],
- 3: [{'author': 'Eunice Ajim',
-      'channel': 'Eunice Ajim',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:22](https://www.youtube.com/watch?v=WtkHxzirORM&t=382s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The business [clears throat] model is structurally sound, not just favorable '
-              'under ideal conditions. A company that has attractive unit economics only '
-              'because they have not yet had to deal with the full cost of operating at scale, '
-              'that is a risk I need to price carefully.',
-      'timestamp': 382,
-      'timestamp_label': '[00:06:22]',
-      'timestamp_seconds': 382,
-      'tip': 'The business [clears throat] model is structurally sound, not just favorable '
-             'under ideal conditions. A company that has attractive unit economics only '
-             'because they have not yet had to deal with the full cost of operating at scale, '
-             'that is a risk I need to price carefully.',
-      'title': "The Truth About Raising Capital In Africa (That Investors Won't Tell You) "
-               '(Eunice Ajim)',
-      'url': 'https://www.youtube.com/watch?v=WtkHxzirORM&t=382s',
-      'video_id': 'WtkHxzirORM'},
-     {'author': 'Make Money with Stacy La',
-      'channel': 'Make Money with Stacy La',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:22](https://www.youtube.com/watch?v=SuiwtFN2AO8&t=742s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'But one important thing I want to point out is once somebody places a bid, you '
-              "cannot cancel the auction. So make sure you're 100% sure about your starting "
-              "price before you list it. Now, at this point, we've covered the basics of "
-              'buying and selling domains for a profit.',
-      'timestamp': 742,
-      'timestamp_label': '[00:12:22]',
-      'timestamp_seconds': 742,
-      'tip': 'But one important thing I want to point out is once somebody places a bid, you '
-             "cannot cancel the auction. So make sure you're 100% sure about your starting "
-             "price before you list it. Now, at this point, we've covered the basics of buying "
-             'and selling domains for a profit.',
-      'title': 'Domain Flipping with AI in 2025 | Full Tutorial (Make Money with Stacy La)',
-      'url': 'https://www.youtube.com/watch?v=SuiwtFN2AO8&t=742s',
-      'video_id': 'SuiwtFN2AO8'},
-     {'author': 'GoDaddy Domain Academy',
-      'channel': 'GoDaddy Domain Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:44:28](https://www.youtube.com/watch?v=d1VjM9-Tyig&t=2668s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "One one thing I I learned too is on pricing. So maybe I'd be interested to hear "
-              'your your take on pricing if you had to do things over. But what I I made a '
-              'mistake of trying to price things too low. You know, I priced everything pretty '
-              'much at wholesale for bin.',
-      'timestamp': 2668,
-      'timestamp_label': '[00:44:28]',
-      'timestamp_seconds': 2668,
-      'tip': "One one thing I I learned too is on pricing. So maybe I'd be interested to hear "
-             'your your take on pricing if you had to do things over. But what I I made a '
-             'mistake of trying to price things too low. You know, I priced everything pretty '
-             'much at wholesale for bin.',
-      'title': 'S2 E8 The $500 Domain Investing Challenge: Who’s Winning & What We’ve Learned '
-               'So Far (GoDaddy Domain Academy)',
-      'url': 'https://www.youtube.com/watch?v=d1VjM9-Tyig&t=2668s',
-      'video_id': 'd1VjM9-Tyig'},
+      'text': "One thing that I tell people is start slow. That's one of the biggest mistakes I "
+              'see.',
+      'timestamp': 450,
+      'timestamp_label': '[00:07:30]',
+      'timestamp_seconds': 450,
+      'tip': "One thing that I tell people is start slow. That's one of the biggest mistakes I "
+             'see.',
+      'title': 'What Is Domain Investing (& Why You Should Invest) | The Journey',
+      'url': 'https://www.youtube.com/watch?v=qJ6o0aD4Msg&t=450s',
+      'video_id': 'qJ6o0aD4Msg'},
      {'author': 'Andrey Verevko',
       'channel': 'Andrey Verevko',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:33](https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=333s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
+      'markdown': '[00:07:32](https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=452s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'You could have a fixed price or an auction, and the auction every time you run '
-              'an auction, there is fees associated with it, regardless if you sell it or not, '
-              'or worst-case scenario, someone buys it at the minimum price. So, I tried a '
-              'couple auctions.',
-      'timestamp': 333,
-      'timestamp_label': '[00:05:33]',
-      'timestamp_seconds': 333,
-      'tip': 'You could have a fixed price or an auction, and the auction every time you run '
-             'an auction, there is fees associated with it, regardless if you sell it or not, '
-             'or worst-case scenario, someone buys it at the minimum price. So, I tried a '
-             'couple auctions.',
-      'title': 'How to Start Domain Flipping in 2026 (My Complete Experience) (Andrey Verevko)',
-      'url': 'https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=333s',
+      'text': 'When I bought them for $10 and they renewed for 15 and I sold them for 20, I was '
+              'five bucks in the hole.',
+      'timestamp': 452,
+      'timestamp_label': '[00:07:32]',
+      'timestamp_seconds': 452,
+      'tip': 'When I bought them for $10 and they renewed for 15 and I sold them for 20, I was '
+             'five bucks in the hole.',
+      'title': 'How to Start Domain Flipping in 2026 (My Complete Experience)',
+      'url': 'https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=452s',
       'video_id': 'bVQnMN-Qrd8'},
+     {'author': 'Andrey Verevko',
+      'channel': 'Andrey Verevko',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:36](https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=516s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "I kind of sat on it for a while and I didn't realize that I didn't have auto "
+              'renewals on that one.',
+      'timestamp': 516,
+      'timestamp_label': '[00:08:36]',
+      'timestamp_seconds': 516,
+      'tip': "I kind of sat on it for a while and I didn't realize that I didn't have auto "
+             'renewals on that one.',
+      'title': 'How to Start Domain Flipping in 2026 (My Complete Experience)',
+      'url': 'https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=516s',
+      'video_id': 'bVQnMN-Qrd8'},
+     {'author': 'Make Money with Stacy La',
+      'channel': 'Make Money with Stacy La',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:51](https://www.youtube.com/watch?v=SuiwtFN2AO8&t=591s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'If this estimated value is below the purchase price of the domain, do not buy it.',
+      'timestamp': 591,
+      'timestamp_label': '[00:09:51]',
+      'timestamp_seconds': 591,
+      'tip': 'If this estimated value is below the purchase price of the domain, do not buy it.',
+      'title': 'Domain Flipping with AI in 2025 | Full Tutorial',
+      'url': 'https://www.youtube.com/watch?v=SuiwtFN2AO8&t=591s',
+      'video_id': 'SuiwtFN2AO8'},
      {'author': 'David Utke',
       'channel': 'David Utke',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=UkMYRY9wDN0&t=20s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
+      'markdown': '[00:10:27](https://www.youtube.com/watch?v=A6-lVEeaHEs&t=627s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "The simple reason is that you'll just get a better price at a domain name "
-              "register for your com. 're in the mood for compared to a web host or a website "
-              'builder because that web host and website builder well they need to mark up the '
-              'domain name in order to make a profit.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "The simple reason is that you'll just get a better price at a domain name "
-             "register for your com. 're in the mood for compared to a web host or a website "
-             'builder because that web host and website builder well they need to mark up the '
-             'domain name in order to make a profit.',
-      'title': 'The 5 BEST Domain Registrars in 2026: Where to Buy Your Domain Name (David '
-               'Utke)',
-      'url': 'https://www.youtube.com/watch?v=UkMYRY9wDN0&t=20s',
-      'video_id': 'UkMYRY9wDN0'},
-     {'author': 'GoDaddy Help Center',
-      'channel': 'GoDaddy Help Center',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=9335u-6w_ZQ&t=59s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Check the box next to the domain you wanna sell, and on the action menu, choose '
-              "sell domain and then select get started. I'm gonna price mine a little under "
-              'the suggested price hoping it will sell faster.',
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': 'Check the box next to the domain you wanna sell, and on the action menu, choose '
-             "sell domain and then select get started. I'm gonna price mine a little under the "
-             'suggested price hoping it will sell faster.',
-      'title': 'How to Sell Your Godaddy Domain Step-By-Step on Afternic (GoDaddy Help Center)',
-      'url': 'https://www.youtube.com/watch?v=9335u-6w_ZQ&t=59s',
-      'video_id': '9335u-6w_ZQ'},
-     {'author': 'The Dividend Domain',
-      'channel': 'The Dividend Domain',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:37](https://www.youtube.com/watch?v=VV0hxi5TUu4&t=637s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So I put a stop order here because um I'm in profit right now and if this drops "
-              "to 109, then it's going to sell and I'm going to use that 2930 to probably cost "
-              'down, more than likely cost down on QQQM and just increase that position.',
-      'timestamp': 637,
-      'timestamp_label': '[00:10:37]',
-      'timestamp_seconds': 637,
-      'tip': "So I put a stop order here because um I'm in profit right now and if this drops "
-             "to 109, then it's going to sell and I'm going to use that 2930 to probably cost "
-             'down, more than likely cost down on QQQM and just increase that position.',
-      'title': "How I'm Balancing Growth, Income & Margin Risk to Retire Early (The Dividend "
-               'Domain)',
-      'url': 'https://www.youtube.com/watch?v=VV0hxi5TUu4&t=637s',
-      'video_id': 'VV0hxi5TUu4'},
-     {'author': 'Andrew Allemann',
-      'channel': 'Andrew Allemann',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:26:32](https://www.youtube.com/watch?v=memimdQC7MY&t=1592s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Instead of 24, setting them for 25. Uh we do see that a lot of people do check '
-              'out at that rate and it does reduce the commission amount for the seller. It is '
-              'a way of being able just to display it differently.',
-      'timestamp': 1592,
-      'timestamp_label': '[00:26:32]',
-      'timestamp_seconds': 1592,
-      'tip': 'Instead of 24, setting them for 25. Uh we do see that a lot of people do check '
-             'out at that rate and it does reduce the commission amount for the seller. It is '
-             'a way of being able just to display it differently.',
-      'title': 'Selling domains through Afternic - DNW Podcast #561 (Andrew Allemann)',
-      'url': 'https://www.youtube.com/watch?v=memimdQC7MY&t=1592s',
-      'video_id': 'memimdQC7MY'},
-     {'author': 'Chris Zuiker - Domain Name Broker',
-      'channel': 'Chris Zuiker - Domain Name Broker',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=DBqMibOXGo8&t=157s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If you try to price your domain and let's say it's like some derivative um you "
-              "know I don't even know. Like maybe you have Milwaukee quilt something, right? "
-              "You're like, I don't understand. This is a million-dollar business. Um you "
-              'understand who it attracts.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': "If you try to price your domain and let's say it's like some derivative um you "
-             "know I don't even know. Like maybe you have Milwaukee quilt something, right? "
-             "You're like, I don't understand. This is a million-dollar business. Um you "
-             'understand who it attracts.',
-      'title': 'Sell your domain name faster by understanding this one thing. (Chris Zuiker - '
-               'Domain Name Broker)',
-      'url': 'https://www.youtube.com/watch?v=DBqMibOXGo8&t=157s',
-      'video_id': 'DBqMibOXGo8'},
-     {'author': 'Brooks Conkle // Build Income Streams',
-      'channel': 'Brooks Conkle // Build Income Streams',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:41](https://www.youtube.com/watch?v=nOLgURAW0ns&t=41s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, big commission taken from Afterneck. But I'm going to share some thoughts "
-              "of what I think about that. I'm going to tell you my pricing strategy as we go "
-              "throughout the video. But here's the first thing to note is that $200 wasn't "
-              'going to get me there to this sale.',
-      'timestamp': 41,
-      'timestamp_label': '[00:00:41]',
-      'timestamp_seconds': 41,
-      'tip': "So, big commission taken from Afterneck. But I'm going to share some thoughts of "
-             "what I think about that. I'm going to tell you my pricing strategy as we go "
-             "throughout the video. But here's the first thing to note is that $200 wasn't "
-             'going to get me there to this sale.',
-      'title': '$2k Domain Flipping Update (Brooks Conkle // Build Income Streams)',
-      'url': 'https://www.youtube.com/watch?v=nOLgURAW0ns&t=41s',
-      'video_id': 'nOLgURAW0ns'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:50:37](https://www.youtube.com/watch?v=sekhN8zuNlU&t=3037s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Maybe another reason take the cash. You don't want to deal with that. Routine "
-              'service air after the auction, right? Like >> routine service is only 2500 a '
-              "year. Um when he's angling like it's like when he sees a name in auction that "
-              'he likes and he starts play on the show.',
-      'timestamp': 3037,
-      'timestamp_label': '[00:50:37]',
-      'timestamp_seconds': 3037,
-      'tip': "Maybe another reason take the cash. You don't want to deal with that. Routine "
-             'service air after the auction, right? Like >> routine service is only 2500 a '
-             "year. Um when he's angling like it's like when he sees a name in auction that he "
-             'likes and he starts play on the show.',
-      'title': '$175K for Techno.com?! Premium Domain Sales & Valuations | DomainSherpa '
-               'Podcast (November 12, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=sekhN8zuNlU&t=3037s',
-      'video_id': 'sekhN8zuNlU'},
-     {'author': 'Mere Mortals Podcasts',
-      'channel': 'Mere Mortals Podcasts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:16](https://www.youtube.com/watch?v=yowbJC4PEWE&t=16s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'How much it would cost to to be able to get a dot podcast how much uh about uh '
-              'james gridlin was mentioning this uh about half a mil.',
-      'timestamp': 16,
-      'timestamp_label': '[00:00:16]',
-      'timestamp_seconds': 16,
-      'tip': 'How much it would cost to to be able to get a dot podcast how much uh about uh '
-             'james gridlin was mentioning this uh about half a mil.',
-      'title': 'The ICANN Monopoly On Domain Names (Mere Mortals Podcasts)',
-      'url': 'https://www.youtube.com/watch?v=yowbJC4PEWE&t=16s',
-      'video_id': 'yowbJC4PEWE'},
-     {'author': 'ICANN',
-      'channel': 'ICANN',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:07](https://www.youtube.com/watch?v=AybZsS3NmFo&t=127s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Registrations at a price you choose or you could decide not to sell them at all '
-              'maybe you issue them only to your employees you could offer specialized '
-              'Security Services or perhaps you want all the web addresses in your TLD to work '
-              'in your native.',
-      'timestamp': 127,
-      'timestamp_label': '[00:02:07]',
-      'timestamp_seconds': 127,
-      'tip': 'Registrations at a price you choose or you could decide not to sell them at all '
-             'maybe you issue them only to your employees you could offer specialized Security '
-             'Services or perhaps you want all the web addresses in your TLD to work in your '
-             'native.',
-      'title': 'Overview : Get Ready for the Next Big .Thing - English (ICANN)',
-      'url': 'https://www.youtube.com/watch?v=AybZsS3NmFo&t=127s',
-      'video_id': 'AybZsS3NmFo'},
-     {'author': 'kickstartcommerce',
-      'channel': 'kickstartcommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:49:18](https://www.youtube.com/watch?v=yMsNlST-y9M&t=2958s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm gonna hold this domain for a while now and wait for the and your end users "
-              "to give me my price this is the domain which I'm holding right now.",
-      'timestamp': 2958,
-      'timestamp_label': '[00:49:18]',
-      'timestamp_seconds': 2958,
-      'tip': "I'm gonna hold this domain for a while now and wait for the and your end users "
-             "to give me my price this is the domain which I'm holding right now.",
-      'title': 'How Yogi Solanki Sold 15+ Domains in 60 Days (kickstartcommerce)',
-      'url': 'https://www.youtube.com/watch?v=yMsNlST-y9M&t=2958s',
-      'video_id': 'yMsNlST-y9M'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:38](https://www.youtube.com/watch?v=oeP4t891CPs&t=638s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So if the >> the cash the cash >> the cash from the auction. So if they took '
-              'the cash from the auction then the auction winner kept the car. If they took '
-              "the car then the auction didn't matter.",
-      'timestamp': 638,
-      'timestamp_label': '[00:10:38]',
-      'timestamp_seconds': 638,
-      'tip': 'So if the >> the cash the cash >> the cash from the auction. So if they took the '
-             'cash from the auction then the auction winner kept the car. If they took the car '
-             "then the auction didn't matter.",
-      'title': 'Inside the Domain Market: Valuations, NamesCon & What’s Next | DomainSherpa '
-               'Podcast (Nov. 19, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=oeP4t891CPs&t=638s',
-      'video_id': 'oeP4t891CPs'}],
- 4: [{'author': 'Ajit Sahane | AI SEO, Backlinks & Websites',
-      'channel': 'Ajit Sahane | AI SEO, Backlinks & Websites',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:18](https://www.youtube.com/watch?v=4HSXReKgl4o&t=258s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Pay with UPI or PayPal with no auto-renewal Stop paying for links you can't "
-              'prove Check every backlink the way Google sees it Start free at tools dot '
-              'webhostpune dot com.',
-      'timestamp': 258,
-      'timestamp_label': '[00:04:18]',
-      'timestamp_seconds': 258,
-      'tip': "Pay with UPI or PayPal with no auto-renewal Stop paying for links you can't "
-             'prove Check every backlink the way Google sees it Start free at tools dot '
-             'webhostpune dot com.',
-      'title': 'Backlink Checker Tool Demo: Check if Your Backlinks Are Live, Dofollow & '
-               'Indexed (Free) (Ajit Sahane | AI SEO, Backlinks & Websites)',
-      'url': 'https://www.youtube.com/watch?v=4HSXReKgl4o&t=258s',
-      'video_id': '4HSXReKgl4o'},
-     {'author': 'Thinking Blueprint',
-      'channel': 'Thinking Blueprint',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:30](https://www.youtube.com/watch?v=12ohlClK0g8&t=150s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'About 75% of all domain sales are com domains. IO is also trusted in the tech '
-              'and startup world. Country extensions likede for Germany or. United Kingdom '
-              'also sell but only to a business that wants customers in that specific country.',
-      'timestamp': 150,
-      'timestamp_label': '[00:02:30]',
-      'timestamp_seconds': 150,
-      'tip': 'About 75% of all domain sales are com domains. IO is also trusted in the tech '
-             'and startup world. Country extensions likede for Germany or. United Kingdom also '
-             'sell but only to a business that wants customers in that specific country.',
-      'title': 'Domain Flipping - The Art of Investing in Domains (Thinking Blueprint)',
-      'url': 'https://www.youtube.com/watch?v=12ohlClK0g8&t=150s',
-      'video_id': '12ohlClK0g8'},
-     {'author': 'Ninja Guides',
-      'channel': 'Ninja Guides',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:34](https://www.youtube.com/watch?v=dn3tXJXOypg&t=94s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "This can feel a bit daunting, but it's similar to changing the address on a "
-              'package to ensure it arrives at the right destination. Finally, complete the '
-              'setup and verify your changes. Return to your Cloudflare dashboard and click on '
-              'done, check name servers.',
-      'timestamp': 94,
-      'timestamp_label': '[00:01:34]',
-      'timestamp_seconds': 94,
-      'tip': "This can feel a bit daunting, but it's similar to changing the address on a "
-             'package to ensure it arrives at the right destination. Finally, complete the '
-             'setup and verify your changes. Return to your Cloudflare dashboard and click on '
-             'done, check name servers.',
-      'title': 'How to Set Up Cloudflare DNS to Your Domain - Full Guide (2026) (Ninja Guides)',
-      'url': 'https://www.youtube.com/watch?v=dn3tXJXOypg&t=94s',
-      'video_id': 'dn3tXJXOypg'},
-     {'author': 'Design Guy',
-      'channel': 'Design Guy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:56](https://www.youtube.com/watch?v=chataozFYGw&t=296s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Four dead heats out of five rounds, which means your real decision comes down '
-              "to that refund flexibility versus the rest of Cloudflare's ecosystem. So which "
-              'registrar actually belongs in your stack? Let us break it down into two clean '
-              'questions you can answer right now.',
-      'timestamp': 296,
-      'timestamp_label': '[00:04:56]',
-      'timestamp_seconds': 296,
-      'tip': 'Four dead heats out of five rounds, which means your real decision comes down to '
-             "that refund flexibility versus the rest of Cloudflare's ecosystem. So which "
-             'registrar actually belongs in your stack? Let us break it down into two clean '
-             'questions you can answer right now.',
-      'title': 'Cloudflare Registrar vs Dynadot — Which Wins for Domain Registration in 2026? '
-               '(Design Guy)',
-      'url': 'https://www.youtube.com/watch?v=chataozFYGw&t=296s',
-      'video_id': 'chataozFYGw'},
-     {'author': 'ThemeAtelier',
-      'channel': 'ThemeAtelier',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:33](https://www.youtube.com/watch?v=uSvTpFGqTaY&t=453s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'JavaScript for additional customization. You can manage backups and activate '
-              'your plug-in license here. Finally, inside the tools menu, you will find import '
-              'and export options. This allows you to easily migrate domains, offers, and '
-              'plug-in configurations.',
-      'timestamp': 453,
-      'timestamp_label': '[00:07:33]',
-      'timestamp_seconds': 453,
-      'tip': 'JavaScript for additional customization. You can manage backups and activate '
-             'your plug-in license here. Finally, inside the tools menu, you will find import '
-             'and export options. This allows you to easily migrate domains, offers, and '
-             'plug-in configurations.',
-      'title': 'Domain For Sale WordPress Plugin (Pro) – Complete Setup & Selling Domains with '
-               'Escrow.com (ThemeAtelier)',
-      'url': 'https://www.youtube.com/watch?v=uSvTpFGqTaY&t=453s',
-      'video_id': 'uSvTpFGqTaY'},
-     {'author': "Jake's Tech Lab",
-      'channel': "Jake's Tech Lab",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:10](https://www.youtube.com/watch?v=ul52eFQneY0&t=370s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Before we wrap up, let us run back through all five to see which one fits your '
-              'setup. Pick Cloudflare if you want free privacy protection and built-in '
-              'security certificates without spending extra.',
-      'timestamp': 370,
-      'timestamp_label': '[00:06:10]',
-      'timestamp_seconds': 370,
-      'tip': 'Before we wrap up, let us run back through all five to see which one fits your '
-             'setup. Pick Cloudflare if you want free privacy protection and built-in security '
-             'certificates without spending extra.',
-      'title': 'Best Domain Registrars for Free Extras: 5 Compared on the Specs That Matter '
-               "(Jake's Tech Lab)",
-      'url': 'https://www.youtube.com/watch?v=ul52eFQneY0&t=370s',
-      'video_id': 'ul52eFQneY0'},
-     {'author': 'Creed Explains - Hosting & Website Builders',
-      'channel': 'Creed Explains - Hosting & Website Builders',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=URhIR-ejFvA&t=57s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You'll see a status switch next to it, and all you need to do is toggle that "
-              'switch to on. Once you enable it, Namecheap will start applying the parking '
-              'setup to your domain, but there is one very important thing you need to check '
-              'before you finish.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': "You'll see a status switch next to it, and all you need to do is toggle that "
-             'switch to on. Once you enable it, Namecheap will start applying the parking '
-             'setup to your domain, but there is one very important thing you need to check '
-             'before you finish.',
-      'title': 'How To Park Domains In Namecheap Account (Step by Step Guide) (Creed Explains '
-               '- Hosting & Website Builders)',
-      'url': 'https://www.youtube.com/watch?v=URhIR-ejFvA&t=57s',
-      'video_id': 'URhIR-ejFvA'},
-     {'author': 'The How-To Learning Academy',
-      'channel': 'The How-To Learning Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=f5MBxWdYUPw&t=89s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Next, let's look at using Cloudflare DNS for your website. Go to Cloudflare and "
-              'sign up for a free account. After that, click add a site or add a domain and '
-              'enter your website URL. Cloudflare will guide you through the setup process. '
-              'When prompted, choose the free plan.',
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': "Next, let's look at using Cloudflare DNS for your website. Go to Cloudflare and "
-             'sign up for a free account. After that, click add a site or add a domain and '
-             'enter your website URL. Cloudflare will guide you through the setup process. '
-             'When prompted, choose the free plan.',
-      'title': 'How to Use Cloudflare DNS [Full Guide 2026] (The How-To Learning Academy)',
-      'url': 'https://www.youtube.com/watch?v=f5MBxWdYUPw&t=89s',
-      'video_id': 'f5MBxWdYUPw'},
-     {'author': 'Andrew Allemann',
-      'channel': 'Andrew Allemann',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:55](https://www.youtube.com/watch?v=jD02RIu6q3Q&t=175s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And there are other tools that'll allow you to see that as well. Uh that not on "
-              "DB, but other sites. So, it's kind of interesting. Don't know what that is, but "
-              'obviously not a commercial opportunity here. This is a software company, so '
-              "that's kind of interesting.",
-      'timestamp': 175,
-      'timestamp_label': '[00:02:55]',
-      'timestamp_seconds': 175,
-      'tip': "And there are other tools that'll allow you to see that as well. Uh that not on "
-             "DB, but other sites. So, it's kind of interesting. Don't know what that is, but "
-             'obviously not a commercial opportunity here. This is a software company, so '
-             "that's kind of interesting.",
-      'title': 'Domain investing: Using DotDB to find end users and value domains (Andrew '
-               'Allemann)',
-      'url': 'https://www.youtube.com/watch?v=jD02RIu6q3Q&t=175s',
-      'video_id': 'jD02RIu6q3Q'},
-     {'author': 'HostMaria',
-      'channel': 'HostMaria',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:00](https://www.youtube.com/watch?v=anQ8Zjhrg_M&t=1500s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "100 queries or something like that. I think I put $10 and it's lasted me almost "
-              'a year, so pretty good. Do you remember the your story about your bell? I know '
-              "it's in my desk here.",
-      'timestamp': 1500,
-      'timestamp_label': '[00:25:00]',
-      'timestamp_seconds': 1500,
-      'tip': "100 queries or something like that. I think I put $10 and it's lasted me almost "
-             'a year, so pretty good. Do you remember the your story about your bell? I know '
-             "it's in my desk here.",
-      'title': 'Adam Dicker: How to Value a Domain Name, Domain Valuation Tools & UK domain '
-               'portfolio review (HostMaria)',
-      'url': 'https://www.youtube.com/watch?v=anQ8Zjhrg_M&t=1500s',
-      'video_id': 'anQ8Zjhrg_M'},
-     {'author': 'GoDaddy Domain Academy',
-      'channel': 'GoDaddy Domain Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:38](https://www.youtube.com/watch?v=Osg5qiW8qYI&t=98s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I point my name servers there and automatically set it up for 14 months. If I '
-              'wanted to come in here to my portfolio and check on my settings, I could do '
-              "this several ways. I'm going to show you how to do it quickly.",
-      'timestamp': 98,
-      'timestamp_label': '[00:01:38]',
-      'timestamp_seconds': 98,
-      'tip': 'I point my name servers there and automatically set it up for 14 months. If I '
-             'wanted to come in here to my portfolio and check on my settings, I could do this '
-             "several ways. I'm going to show you how to do it quickly.",
-      'title': 'Boost Domain Sales: Easy 14-Month Lease to Own Setup (Afternic Tutorial) '
-               '(GoDaddy Domain Academy)',
-      'url': 'https://www.youtube.com/watch?v=Osg5qiW8qYI&t=98s',
-      'video_id': 'Osg5qiW8qYI'},
-     {'author': 'LLMrefs AI SEO',
-      'channel': 'LLMrefs AI SEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:04](https://www.youtube.com/watch?v=XEh3aA3iqtI&t=64s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Google's spam policy lists this exact setup as doorway abuse and since May that "
-              'policy also covers AI overviews too and one manual action could take out all 22 '
-              'sites at once and potentially Zeton themselves and even the links are fragile.',
-      'timestamp': 64,
-      'timestamp_label': '[00:01:04]',
-      'timestamp_seconds': 64,
-      'tip': "Google's spam policy lists this exact setup as doorway abuse and since May that "
-             'policy also covers AI overviews too and one manual action could take out all 22 '
-             'sites at once and potentially Zeton themselves and even the links are fragile.',
-      'title': 'Exact Match Domain Hack for AI Visibility (0 to $7M in 10 days) (LLMrefs AI '
-               'SEO)',
-      'url': 'https://www.youtube.com/watch?v=XEh3aA3iqtI&t=64s',
-      'video_id': 'XEh3aA3iqtI'},
-     {'author': 'Carter Law Firm',
-      'channel': 'Carter Law Firm',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:07](https://www.youtube.com/watch?v=JxPAjtHrSQo&t=127s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Include a couple of links below to a couple other articles on trademarks and I '
-              'think are really helpful and if you have any questions feel free to contact me '
-              'so I hope this has been helpful and I will catch up with you later take care.',
-      'timestamp': 127,
-      'timestamp_label': '[00:02:07]',
-      'timestamp_seconds': 127,
-      'tip': 'Include a couple of links below to a couple other articles on trademarks and I '
-             'think are really helpful and if you have any questions feel free to contact me '
-             'so I hope this has been helpful and I will catch up with you later take care.',
-      'title': 'Check the USPTO Before you Brand your Business or Product (Carter Law Firm)',
-      'url': 'https://www.youtube.com/watch?v=JxPAjtHrSQo&t=127s',
-      'video_id': 'JxPAjtHrSQo'},
-     {'author': 'Abbas Ravji',
-      'channel': 'Abbas Ravji',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:22](https://www.youtube.com/watch?v=gtVEsaXqXHo&t=982s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'React org from this timestamp to this timestamp now this timestamp here if I '
-              'actually copy this and I paste it inside of here oops.',
-      'timestamp': 982,
-      'timestamp_label': '[00:16:22]',
-      'timestamp_seconds': 982,
-      'tip': 'React org from this timestamp to this timestamp now this timestamp here if I '
-             'actually copy this and I paste it inside of here oops.',
-      'title': 'How To recreate Expired Domains For your PBN using Free Tools (wayback Machine '
-               'Restorer) (Abbas Ravji)',
-      'url': 'https://www.youtube.com/watch?v=gtVEsaXqXHo&t=982s',
-      'video_id': 'gtVEsaXqXHo'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=OzWsYhxMiCE&t=20s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Then we've got the name jack in the jet segment sponsored by name jet and we "
-              'talk about some domains coming up for auction including voso.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "Then we've got the name jack in the jet segment sponsored by name jet and we "
-             'talk about some domains coming up for auction including voso.',
-      'title': 'The Biggest Mistake Domain Investors Make And How to Fix It | DomainSherpa '
-               'Podcast (March 19, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=OzWsYhxMiCE&t=20s',
-      'video_id': 'OzWsYhxMiCE'}],
- 5: [{'author': 'Ownerly',
-      'channel': 'Ownerly',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:54](https://www.youtube.com/watch?v=xPtTNJU_OGE&t=354s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Skipping the trademark check is the single most expensive mistake a beginner '
-              "can make, because buying a name that infringes a registered mark doesn't just "
-              'leave you with a worthless asset.',
-      'timestamp': 354,
-      'timestamp_label': '[00:05:54]',
-      'timestamp_seconds': 354,
-      'tip': 'Skipping the trademark check is the single most expensive mistake a beginner can '
-             "make, because buying a name that infringes a registered mark doesn't just leave "
-             'you with a worthless asset.',
-      'title': 'The Reality of Owning a Domain Flipping Business (Ownerly)',
-      'url': 'https://www.youtube.com/watch?v=xPtTNJU_OGE&t=354s',
-      'video_id': 'xPtTNJU_OGE'},
-     {'author': 'SERPSUPPORT',
-      'channel': 'SERPSUPPORT',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:19](https://www.youtube.com/watch?v=_rpmkLdcJvc&t=319s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "No pressure and no fake flattery. You're solving a problem for them. The links "
-              'you earn this way are editorial. Nothing is hidden and they stay valuable for '
-              "years. There's one more legitimate case. Sometimes buying an expired domain is "
-              'simply a smart business move.',
-      'timestamp': 319,
-      'timestamp_label': '[00:05:19]',
-      'timestamp_seconds': 319,
-      'tip': "No pressure and no fake flattery. You're solving a problem for them. The links "
-             'you earn this way are editorial. Nothing is hidden and they stay valuable for '
-             "years. There's one more legitimate case. Sometimes buying an expired domain is "
-             'simply a smart business move.',
-      'title': 'Backlinks from Expired Domains: The Safe Way (and the Trap Most SEOs Fall '
-               'Into) (SERPSUPPORT)',
-      'url': 'https://www.youtube.com/watch?v=_rpmkLdcJvc&t=319s',
-      'video_id': '_rpmkLdcJvc'},
-     {'author': 'Expired Domains',
-      'channel': 'Expired Domains',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:00](https://www.youtube.com/watch?v=5nQIZvvcgfY&t=180s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Someone neglected it, business failure, spam, penalties, whatever. A great '
-              'example of this is spend. It was caught by Drop Catch and auction for $82,000. '
-              'This shows that even an excellent domain can drop sometimes by mistake.',
-      'timestamp': 180,
-      'timestamp_label': '[00:03:00]',
-      'timestamp_seconds': 180,
-      'tip': 'Someone neglected it, business failure, spam, penalties, whatever. A great '
-             'example of this is spend. It was caught by Drop Catch and auction for $82,000. '
-             'This shows that even an excellent domain can drop sometimes by mistake.',
-      'title': 'Archive Birth Year vs Whois Birth Year - Explained & Why They Matter For Your '
-               'Next Domain Investment (Expired Domains)',
-      'url': 'https://www.youtube.com/watch?v=5nQIZvvcgfY&t=180s',
-      'video_id': '5nQIZvvcgfY'},
-     {'author': 'Domains No Broker',
-      'channel': 'Domains No Broker',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:16](https://www.youtube.com/watch?v=LrpkfK_9XY0&t=16s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Transfer. Mistake one is buying or holding a domain without checking whether a '
-              'real audience or industry could want it.',
-      'timestamp': 16,
-      'timestamp_label': '[00:00:16]',
-      'timestamp_seconds': 16,
-      'tip': 'Transfer. Mistake one is buying or holding a domain without checking whether a '
-             'real audience or industry could want it.',
-      'title': 'Seven Mistakes Domain Sellers Should Avoid (Domains No Broker)',
-      'url': 'https://www.youtube.com/watch?v=LrpkfK_9XY0&t=16s',
-      'video_id': 'LrpkfK_9XY0'},
-     {'author': 'TheMaskedFreelancer😷',
-      'channel': 'TheMaskedFreelancer😷',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:48:24](https://www.youtube.com/watch?v=AiootzfgBRM&t=2904s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, after that, uh and and that is exactly why I created my domain academy to '
-              'assist you people, to guide you step by step so that you avoid this mistake and '
-              'focus only on what works. I focus only on what works. And uh uh The result of '
-              'my academy speaks for itself.',
-      'timestamp': 2904,
-      'timestamp_label': '[00:48:24]',
-      'timestamp_seconds': 2904,
-      'tip': 'So, after that, uh and and that is exactly why I created my domain academy to '
-             'assist you people, to guide you step by step so that you avoid this mistake and '
-             'focus only on what works. I focus only on what works. And uh uh The result of my '
-             'academy speaks for itself.',
-      'title': 'How to start a $1500 domain investment business in Nigeria | How to make money '
-               'online (TheMaskedFreelancer😷)',
-      'url': 'https://www.youtube.com/watch?v=AiootzfgBRM&t=2904s',
-      'video_id': 'AiootzfgBRM'},
-     {'author': 'HowToWebmaster',
-      'channel': 'HowToWebmaster',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:50](https://www.youtube.com/watch?v=nBNA5_Ty8Jc&t=50s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So my website how to webmaster.com Let's submit okay now it will give you the "
-              'backlink results just the poorest one or the worst ones and you can quickly.',
-      'timestamp': 50,
-      'timestamp_label': '[00:00:50]',
-      'timestamp_seconds': 50,
-      'tip': "So my website how to webmaster.com Let's submit okay now it will give you the "
-             'backlink results just the poorest one or the worst ones and you can quickly.',
-      'title': 'Detect Bad-Spam Backlinks to Your Website Hurting Your SEO (HowToWebmaster)',
-      'url': 'https://www.youtube.com/watch?v=nBNA5_Ty8Jc&t=50s',
-      'video_id': 'nBNA5_Ty8Jc'},
-     {'author': 'SOCDemystified',
-      'channel': 'SOCDemystified',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=GPScvA9fgcw&t=163s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Google with one O or Netflix without the I. They are specifically designed to '
-              'be traps to catch your typos and hijack your traffic before you even realize '
-              'you made a mistake. Your accidental click is actually a valuable commodity.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Google with one O or Netflix without the I. They are specifically designed to be '
-             'traps to catch your typos and hijack your traffic before you even realize you '
-             'made a mistake. Your accidental click is actually a valuable commodity.',
-      'title': 'Day 5 – Domain Parking Exposed: How It Became a Cybercrime Tool '
-               '(SOCDemystified)',
-      'url': 'https://www.youtube.com/watch?v=GPScvA9fgcw&t=163s',
-      'video_id': 'GPScvA9fgcw'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:36:27](https://www.youtube.com/watch?v=jwAIj8M8kPc&t=2187s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Mistake they would have been more successful if they'd search com you know it's "
-              'one of the most successful companies if not the most successful.',
-      'timestamp': 2187,
-      'timestamp_label': '[00:36:27]',
-      'timestamp_seconds': 2187,
-      'tip': "Mistake they would have been more successful if they'd search com you know it's "
-             'one of the most successful companies if not the most successful.',
-      'title': 'What Startups Need to Know About Acquiring a Killer Domain Name -- With Andrew '
-               'Rosener (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=jwAIj8M8kPc&t=2187s',
-      'video_id': 'jwAIj8M8kPc'},
-     {'author': 'Domainer Den',
-      'channel': 'Domainer Den',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:28:16](https://www.youtube.com/watch?v=n-fXqW1-lzo&t=1696s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Reliance.com होता तो अच्छा नाम होता देखो रेर कॉइन इन्वेस्टिंग भी ये 23 साल '
-              'पुराना नेम है मतलब ये कॉइन बिटकॉइन वाला नहीं होगा यह कॉइन जो हमारे रियल कॉइंस '
-              'होते.',
-      'timestamp': 1696,
-      'timestamp_label': '[00:28:16]',
-      'timestamp_seconds': 1696,
-      'tip': 'Reliance.com होता तो अच्छा नाम होता देखो रेर कॉइन इन्वेस्टिंग भी ये 23 साल '
-             'पुराना नेम है मतलब ये कॉइन बिटकॉइन वाला नहीं होगा यह कॉइन जो हमारे रियल कॉइंस '
-             'होते.',
-      'title': 'Domain Life Cycle and GoDaddy Expiry Auctions (Domainer Den)',
-      'url': 'https://www.youtube.com/watch?v=n-fXqW1-lzo&t=1696s',
-      'video_id': 'n-fXqW1-lzo'},
-     {'author': 'GigaLaw - Doug Isenberg',
-      'channel': 'GigaLaw - Doug Isenberg',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:44](https://www.youtube.com/watch?v=OfgGOACCYO0&t=284s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Trademark most sophisticated companies and smart business owners as well as '
-              'many individuals.',
-      'timestamp': 284,
-      'timestamp_label': '[00:04:44]',
-      'timestamp_seconds': 284,
-      'tip': 'Trademark most sophisticated companies and smart business owners as well as many '
-             'individuals.',
-      'title': 'Domain Dispute Masterclass (#5): What type of trademark is required to file a '
-               'UDRP complaint? (GigaLaw - Doug Isenberg)',
-      'url': 'https://www.youtube.com/watch?v=OfgGOACCYO0&t=284s',
-      'video_id': 'OfgGOACCYO0'},
-     {'author': 'Create a Pro Website',
-      'channel': 'Create a Pro Website',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:36](https://www.youtube.com/watch?v=08Ekqe45IH0&t=216s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You simply type in the domain name that you want, add it to your cart, and '
-              "check out. I'll put a link to it in the description. Or, number two, you're "
-              "someone who's actually ready to build a website after they get their domain.",
-      'timestamp': 216,
-      'timestamp_label': '[00:03:36]',
-      'timestamp_seconds': 216,
-      'tip': 'You simply type in the domain name that you want, add it to your cart, and check '
-             "out. I'll put a link to it in the description. Or, number two, you're someone "
-             "who's actually ready to build a website after they get their domain.",
-      'title': "Don't Buy a Domain Until You Watch This! (Best Domain Name Registrars 2026) "
-               '(Create a Pro Website)',
-      'url': 'https://www.youtube.com/watch?v=08Ekqe45IH0&t=216s',
-      'video_id': '08Ekqe45IH0'},
-     {'author': 'Chris Zuiker - Domain Name Broker',
-      'channel': 'Chris Zuiker - Domain Name Broker',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:17](https://www.youtube.com/watch?v=veILle9et0o&t=17s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Chrissecker.com and do the daily podcast a lot of good information over there '
-              'on both on both channels also domain sure if we did another domain trip of '
-              'this.',
-      'timestamp': 17,
-      'timestamp_label': '[00:00:17]',
-      'timestamp_seconds': 17,
-      'tip': 'Chrissecker.com and do the daily podcast a lot of good information over there on '
-             'both on both channels also domain sure if we did another domain trip of this.',
-      'title': 'Price your domain name using these three frames. (Chris Zuiker - Domain Name '
-               'Broker)',
-      'url': 'https://www.youtube.com/watch?v=veILle9et0o&t=17s',
-      'video_id': 'veILle9et0o'},
-     {'author': 'GoDaddy Domain Academy',
-      'channel': 'GoDaddy Domain Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:42](https://www.youtube.com/watch?v=n2nzWV5BL3M&t=162s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Of training I think at the time and they had one slide in that three weeks that '
-              'was for the auctions it said this you know this is the auctions we need to.',
-      'timestamp': 162,
-      'timestamp_label': '[00:02:42]',
-      'timestamp_seconds': 162,
-      'tip': 'Of training I think at the time and they had one slide in that three weeks that '
-             'was for the auctions it said this you know this is the auctions we need to.',
-      'title': "S1E6 A Chat with the Boss GoDaddy's VP of Domain Investing Paul Nicks (GoDaddy "
-               'Domain Academy)',
-      'url': 'https://www.youtube.com/watch?v=n2nzWV5BL3M&t=162s',
-      'video_id': 'n2nzWV5BL3M'},
-     {'author': 'theseogeek',
-      'channel': 'theseogeek',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:45](https://www.youtube.com/watch?v=13GEx8eLqzo&t=105s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Your link so usually from the home page but if there's an an inner page that's "
-              'really really powerful then you can go and you know put your link on that page.',
-      'timestamp': 105,
-      'timestamp_label': '[00:01:45]',
-      'timestamp_seconds': 105,
-      'tip': "Your link so usually from the home page but if there's an an inner page that's "
-             'really really powerful then you can go and you know put your link on that page.',
-      'title': 'Content When Rebuilding Expired and Auction Domains from Wayback Machine '
-               '(theseogeek)',
-      'url': 'https://www.youtube.com/watch?v=13GEx8eLqzo&t=105s',
-      'video_id': '13GEx8eLqzo'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:49](https://www.youtube.com/watch?v=35YUAM-dUn0&t=469s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'He\'s like, "We\'re now on that super intelligence." And now that of course has '
-              'all the people like a lot of these guys, you know, and big shout out to all '
-              'the, you know, our listeners and our friends who have been investing and buying '
-              'up some of these SI domain names.',
-      'timestamp': 469,
-      'timestamp_label': '[00:07:49]',
-      'timestamp_seconds': 469,
-      'tip': 'He\'s like, "We\'re now on that super intelligence." And now that of course has '
-             'all the people like a lot of these guys, you know, and big shout out to all the, '
-             'you know, our listeners and our friends who have been investing and buying up '
-             'some of these SI domain names.',
-      'title': '.AI Domains, .SI Hype & the Future of Domain Investing | DomainSherpa Podcast '
-               '(October 1, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=35YUAM-dUn0&t=469s',
-      'video_id': '35YUAM-dUn0'}],
- 6: [{'author': 'Affiliate Credo',
-      'channel': 'Affiliate Credo',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:43](https://www.youtube.com/watch?v=S8e33kDoWhQ&t=43s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First, I want to tell you how I do the initial analysis of the domain before '
-              'buying it at auction. I search in Spamzilla and, based on filters and sorting I '
-              'find domains according to the given parameters, I determine the most '
-              'trustworthy domains for myself 2.',
-      'timestamp': 43,
-      'timestamp_label': '[00:00:43]',
-      'timestamp_seconds': 43,
-      'tip': 'First, I want to tell you how I do the initial analysis of the domain before '
-             'buying it at auction. I search in Spamzilla and, based on filters and sorting I '
-             'find domains according to the given parameters, I determine the most trustworthy '
-             'domains for myself 2.',
-      'title': '📰How to Use Archive.Org to Analyze Expired Domains (Affiliate Credo)',
-      'url': 'https://www.youtube.com/watch?v=S8e33kDoWhQ&t=43s',
-      'video_id': 'S8e33kDoWhQ'},
+      'text': 'When using Afternic name servers, the commission rate will be reduced from 25% to '
+              '15%.',
+      'timestamp': 627,
+      'timestamp_label': '[00:10:27]',
+      'timestamp_seconds': 627,
+      'tip': 'When using Afternic name servers, the commission rate will be reduced from 25% to '
+             '15%.',
+      'title': 'How To Easily Sell Your Namcheap Domain Names! (Step by Step Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=A6-lVEeaHEs&t=627s',
+      'video_id': 'A6-lVEeaHEs'},
      {'author': 'Alex: SEO, Domains & Growth',
       'channel': 'Alex: SEO, Domains & Growth',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=HOn72gelh4s&t=20s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=HOn72gelh4s&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'And the first, my favorite tool is Gone Domains. It helps you find quality and '
-              'value domains quickly, especially if you want to find expired domains with '
-              'backlinks. It shows you a data like domain authority, niche, back links, and '
-              'age.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'And the first, my favorite tool is Gone Domains. It helps you find quality and '
-             'value domains quickly, especially if you want to find expired domains with '
-             'backlinks. It shows you a data like domain authority, niche, back links, and '
-             'age.',
-      'title': 'Domain Investing Is Easy If You Use These 10 FREE Tools (Alex: SEO, Domains & '
-               'Growth)',
-      'url': 'https://www.youtube.com/watch?v=HOn72gelh4s&t=20s',
+      'text': 'If it gets the domain, you pay $59. If not, you pay nothing. In domain investing '
+              'speed is everything.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'If it gets the domain, you pay $59. If not, you pay nothing. In domain investing '
+             'speed is everything.',
+      'title': 'Domain Investing Is Easy If You Use These 10 FREE Tools',
+      'url': 'https://www.youtube.com/watch?v=HOn72gelh4s&t=60s',
       'video_id': 'HOn72gelh4s'},
-     {'author': 'ReviewUP',
-      'channel': 'ReviewUP',
+     {'author': 'Nexustech',
+      'channel': 'Nexustech',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=LqUB5Dr0vrE&t=30s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
+      'markdown': '[00:01:32](https://www.youtube.com/watch?v=25Wr9hdEUCw&t=92s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Obviously, we don't want to dig through all that. So, let's set up the filters "
-              'used weekly on domaintoprofit. First, open the show filters panel. This is '
-              "where you'll clean up the massive list of expiring domains and make it much "
-              'easier to find quality names.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': "Obviously, we don't want to dig through all that. So, let's set up the filters "
-             'used weekly on domaintoprofit. First, open the show filters panel. This is where '
-             "you'll clean up the massive list of expiring domains and make it much easier to "
-             'find quality names.',
-      'title': 'How to Find Cheap and Good  Expired Domains on GoDaddy (Quick & Easy Domain '
-               'Flipping Tutorial) (ReviewUP)',
-      'url': 'https://www.youtube.com/watch?v=LqUB5Dr0vrE&t=30s',
-      'video_id': 'LqUB5Dr0vrE'},
-     {'author': 'Launch with Bryan',
-      'channel': 'Launch with Bryan',
+      'text': 'If you list a fintech domain under travel, serious investors in the finance space '
+              'might never see it.',
+      'timestamp': 92,
+      'timestamp_label': '[00:01:32]',
+      'timestamp_seconds': 92,
+      'tip': 'If you list a fintech domain under travel, serious investors in the finance space '
+             'might never see it.',
+      'title': 'How to Sell Your Domain on Flippa [2026 GUIDE]',
+      'url': 'https://www.youtube.com/watch?v=25Wr9hdEUCw&t=92s',
+      'video_id': '25Wr9hdEUCw'},
+     {'author': 'DomainRacer Hindi',
+      'channel': 'DomainRacer Hindi',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:23](https://www.youtube.com/watch?v=ASaM7hIMKVI&t=443s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
+      'markdown': '[00:03:00](https://www.youtube.com/watch?v=eDmh_k07UEg&t=180s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "An affiliate website or lead generation microsite doesn't automatically, you "
-              'know, qualify for a Google Business Profile. So, for those [clears throat] '
-              "projects, I'm primarily focusing on getting traffic through the regular organic "
-              'search results.',
-      'timestamp': 443,
-      'timestamp_label': '[00:07:23]',
-      'timestamp_seconds': 443,
-      'tip': "An affiliate website or lead generation microsite doesn't automatically, you "
-             'know, qualify for a Google Business Profile. So, for those [clears throat] '
-             "projects, I'm primarily focusing on getting traffic through the regular organic "
-             'search results.',
-      'title': 'Exact Match Domains In 2026: Do They Still Work For SEO? (Launch with Bryan)',
-      'url': 'https://www.youtube.com/watch?v=ASaM7hIMKVI&t=443s',
-      'video_id': 'ASaM7hIMKVI'},
+      'text': "If anyone tells you they'll pay you later, it's a red flag. You should immediately "
+              'avoid that buyer, otherwise you could face significant losses.',
+      'timestamp': 180,
+      'timestamp_label': '[00:03:00]',
+      'timestamp_seconds': 180,
+      'tip': "If anyone tells you they'll pay you later, it's a red flag. You should immediately "
+             'avoid that buyer, otherwise you could face significant losses.',
+      'title': 'Domain Buy & Sell Detailed Guide | How to Buy and Sell Domain | Domain Flipping '
+               'Guide 2025',
+      'url': 'https://www.youtube.com/watch?v=eDmh_k07UEg&t=180s',
+      'video_id': 'eDmh_k07UEg'},
+     {'author': 'KT Blogger',
+      'channel': 'KT Blogger',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:28:08](https://www.youtube.com/watch?v=yz0jUQvunAI&t=1688s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "I recommend that you don't pick up too many domains at the start. The best way is "
+              'to take just one domain, implement it, and see what results you get.',
+      'timestamp': 1688,
+      'timestamp_label': '[00:28:08]',
+      'timestamp_seconds': 1688,
+      'tip': "I recommend that you don't pick up too many domains at the start. The best way is to "
+             'take just one domain, implement it, and see what results you get.',
+      'title': 'How I Turned $10 into $1500 Selling a Domain | Domain Flipping Business Explained',
+      'url': 'https://www.youtube.com/watch?v=yz0jUQvunAI&t=1688s',
+      'video_id': 'yz0jUQvunAI'},
      {'author': 'GoDaddy Domain Academy',
       'channel': 'GoDaddy Domain Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:47](https://www.youtube.com/watch?v=n3Z47PI6nj0&t=287s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
+      'markdown': '[00:03:14](https://www.youtube.com/watch?v=EZU1Ld6SO_o&t=194s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'So, take take a look and make sure you check that out. Let me show you one last '
-              "tip. This time, we're going to do it on GoDaddy Auctions, and I'm going to do "
-              'that just to show you a different UI and and how you can reuse this list. Now, '
-              'remember, we had starts with, right?',
-      'timestamp': 287,
-      'timestamp_label': '[00:04:47]',
-      'timestamp_seconds': 287,
-      'tip': 'So, take take a look and make sure you check that out. Let me show you one last '
-             "tip. This time, we're going to do it on GoDaddy Auctions, and I'm going to do "
-             'that just to show you a different UI and and how you can reuse this list. Now, '
-             'remember, we had starts with, right?',
+      'text': 'Go to saved searches, manage saved searches, and you can search only new domains '
+              'from the last time you checked.',
+      'timestamp': 194,
+      'timestamp_label': '[00:03:14]',
+      'timestamp_seconds': 194,
+      'tip': 'Go to saved searches, manage saved searches, and you can search only new domains '
+             'from the last time you checked.',
+      'title': 'Turn Atom’s Top-Selling Keywords into a Daily Domain Deal Flow',
+      'url': 'https://www.youtube.com/watch?v=EZU1Ld6SO_o&t=194s',
+      'video_id': 'EZU1Ld6SO_o'},
+     {'author': 'The Money Matrix',
+      'channel': 'The Money Matrix',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:44](https://www.youtube.com/watch?v=k7NkpB1JgSk&t=104s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can also reach out directly to businesses in your niche. Sometimes private '
+              'deals pay more.',
+      'timestamp': 104,
+      'timestamp_label': '[00:01:44]',
+      'timestamp_seconds': 104,
+      'tip': 'You can also reach out directly to businesses in your niche. Sometimes private deals '
+             'pay more.',
+      'title': 'Domain Flipping: Profitable Niches to Watch in 2025 | Make Money Online',
+      'url': 'https://www.youtube.com/watch?v=k7NkpB1JgSk&t=104s',
+      'video_id': 'k7NkpB1JgSk'},
+     {'author': 'Rare Capital',
+      'channel': 'Rare Capital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:38](https://www.youtube.com/watch?v=MLCZYgIwlww&t=278s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most people list their domain on one platform and wait. Big mistake.',
+      'timestamp': 278,
+      'timestamp_label': '[00:04:38]',
+      'timestamp_seconds': 278,
+      'tip': 'Most people list their domain on one platform and wait. Big mistake.',
+      'title': 'Over $100K from Domain Flipping in 2025 (5 Steps Anyone Can Use)',
+      'url': 'https://www.youtube.com/watch?v=MLCZYgIwlww&t=278s',
+      'video_id': 'MLCZYgIwlww'}],
+ 2: [{'author': 'Craylor',
+      'channel': 'Craylor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:25](https://www.youtube.com/watch?v=IXpvUD5SDzA&t=85s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You still need a hosting account with a provider of your choice to get started with '
+              'Cloudflare.',
+      'timestamp': 85,
+      'timestamp_label': '[00:01:25]',
+      'timestamp_seconds': 85,
+      'tip': 'You still need a hosting account with a provider of your choice to get started with '
+             'Cloudflare.',
+      'title': '5 Things to Know BEFORE Using Cloudflare!',
+      'url': 'https://www.youtube.com/watch?v=IXpvUD5SDzA&t=85s',
+      'video_id': 'IXpvUD5SDzA'},
+     {'author': 'PMN Online',
+      'channel': 'PMN Online',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:54](https://www.youtube.com/watch?v=piq0yLKq_SE&t=174s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Here you decide whether to enable Cloudflare's proxy feature, which is denoted by "
+              'an orange cloud, or to set it as DNS only, indicated by a gray cloud.',
+      'timestamp': 174,
+      'timestamp_label': '[00:02:54]',
+      'timestamp_seconds': 174,
+      'tip': "Here you decide whether to enable Cloudflare's proxy feature, which is denoted by an "
+             'orange cloud, or to set it as DNS only, indicated by a gray cloud.',
+      'title': 'How to Add DNS Records on Cloudflare Easily 2026',
+      'url': 'https://www.youtube.com/watch?v=piq0yLKq_SE&t=174s',
+      'video_id': 'piq0yLKq_SE'},
+     {'author': 'SEARCHLIGHT HQ',
+      'channel': 'SEARCHLIGHT HQ',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:30](https://www.youtube.com/watch?v=RClpPcLHviU&t=30s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Instead of relying heavily on extremely cheap introductory offers followed by '
+              'expensive renewals, Porkbun aims to keep domain prices competitive and transparent.',
+      'timestamp': 30,
+      'timestamp_label': '[00:00:30]',
+      'timestamp_seconds': 30,
+      'tip': 'Instead of relying heavily on extremely cheap introductory offers followed by '
+             'expensive renewals, Porkbun aims to keep domain prices competitive and transparent.',
+      'title': 'Porkbun Review 2026 | Is Porkbun Worth It for Domain Registration?',
+      'url': 'https://www.youtube.com/watch?v=RClpPcLHviU&t=30s',
+      'video_id': 'RClpPcLHviU'},
+     {'author': "Jake's Tech Lab",
+      'channel': "Jake's Tech Lab",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:22](https://www.youtube.com/watch?v=ul52eFQneY0&t=82s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'At number one, your cleanest overall winner is Cloudflare Registrar.',
+      'timestamp': 82,
+      'timestamp_label': '[00:01:22]',
+      'timestamp_seconds': 82,
+      'tip': 'At number one, your cleanest overall winner is Cloudflare Registrar.',
+      'title': 'Best Domain Registrars for Free Extras: 5 Compared on the Specs That Matter',
+      'url': 'https://www.youtube.com/watch?v=ul52eFQneY0&t=82s',
+      'video_id': 'ul52eFQneY0'},
+     {'author': 'Easytorial',
+      'channel': 'Easytorial',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:23](https://www.youtube.com/watch?v=sx83eEm6nk4&t=203s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're setting up records for email like MX or verification values, switch to "
+              "DNS only grey cloud. Otherwise, those services won't work correctly.",
+      'timestamp': 203,
+      'timestamp_label': '[00:03:23]',
+      'timestamp_seconds': 203,
+      'tip': "If you're setting up records for email like MX or verification values, switch to DNS "
+             "only grey cloud. Otherwise, those services won't work correctly.",
+      'title': 'How to Set Up and Manage Domain and DNS on Cloudflare [In 3 steps]',
+      'url': 'https://www.youtube.com/watch?v=sx83eEm6nk4&t=203s',
+      'video_id': 'sx83eEm6nk4'},
+     {'author': 'Create a Pro Website',
+      'channel': 'Create a Pro Website',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:14](https://www.youtube.com/watch?v=08Ekqe45IH0&t=14s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'They say that the domain name costs 1 cent, but they secretly charge $40.',
+      'timestamp': 14,
+      'timestamp_label': '[00:00:14]',
+      'timestamp_seconds': 14,
+      'tip': 'They say that the domain name costs 1 cent, but they secretly charge $40.',
+      'title': "Don't Buy a Domain Until You Watch This! (Best Domain Name Registrars 2026)",
+      'url': 'https://www.youtube.com/watch?v=08Ekqe45IH0&t=14s',
+      'video_id': '08Ekqe45IH0'},
+     {'author': 'Luka Knows',
+      'channel': 'Luka Knows',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:37](https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=337s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The best practice in this space is always keep your web hosting and domain name '
+              'separate. It is cheaper and also safer.',
+      'timestamp': 337,
+      'timestamp_label': '[00:05:37]',
+      'timestamp_seconds': 337,
+      'tip': 'The best practice in this space is always keep your web hosting and domain name '
+             'separate. It is cheaper and also safer.',
+      'title': "Where to Buy a Domain in 2026? (Don't choose WRONG!)",
+      'url': 'https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=337s',
+      'video_id': 'oi-pZAGrrhQ'},
+     {'author': 'Domain Reseller',
+      'channel': 'Domain Reseller',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:47](https://www.youtube.com/watch?v=72rBKTbIECI&t=227s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'A program fee is something you pay every year, whatever your sales volume.',
+      'timestamp': 227,
+      'timestamp_label': '[00:03:47]',
+      'timestamp_seconds': 227,
+      'tip': 'A program fee is something you pay every year, whatever your sales volume.',
+      'title': 'Stop Overpaying for Domain Reselling! GoDaddy vs. Domain Name API',
+      'url': 'https://www.youtube.com/watch?v=72rBKTbIECI&t=227s',
+      'video_id': '72rBKTbIECI'},
+     {'author': 'Design Guy',
+      'channel': 'Design Guy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:01](https://www.youtube.com/watch?v=mMGvtO-bkPI&t=181s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Pork Bun officially gives you a refund window of 4 days, that is 96 hours on a new '
+              'registration.',
+      'timestamp': 181,
+      'timestamp_label': '[00:03:01]',
+      'timestamp_seconds': 181,
+      'tip': 'Pork Bun officially gives you a refund window of 4 days, that is 96 hours on a new '
+             'registration.',
+      'title': 'Porkbun or Cloudflare Registrar? Domain Registration Service Compared for 2026',
+      'url': 'https://www.youtube.com/watch?v=mMGvtO-bkPI&t=181s',
+      'video_id': 'mMGvtO-bkPI'},
+     {'author': 'PMN Online',
+      'channel': 'PMN Online',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=AKtcv_vFlSY&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You must ensure that DNSSEC, which stands for Domain Name System Security '
+              'Extensions, is turned off at your registrar.',
+      'timestamp': 73,
+      'timestamp_label': '[00:01:13]',
+      'timestamp_seconds': 73,
+      'tip': 'You must ensure that DNSSEC, which stands for Domain Name System Security '
+             'Extensions, is turned off at your registrar.',
+      'title': 'How to Set Cloudflare DNS Easily 2026',
+      'url': 'https://www.youtube.com/watch?v=AKtcv_vFlSY&t=73s',
+      'video_id': 'AKtcv_vFlSY'},
+     {'author': 'George Basics',
+      'channel': 'George Basics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=aeqNGnkQgbA&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Paste the first name server we just copied from Cloudflare. Then copy the second '
+              'one and paste it in the second row. Then click save name servers.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'Paste the first name server we just copied from Cloudflare. Then copy the second one '
+             'and paste it in the second row. Then click save name servers.',
+      'title': 'How To Setup Cloudflare With Dynadot Domain - Full Guide',
+      'url': 'https://www.youtube.com/watch?v=aeqNGnkQgbA&t=84s',
+      'video_id': 'aeqNGnkQgbA'},
+     {'author': 'George Basics',
+      'channel': 'George Basics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=OuQbsdwFTA0&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You need to click on it and we need to paste our name servers right here. First one '
+              "and then the second one. Click submit and that's all.",
+      'timestamp': 73,
+      'timestamp_label': '[00:01:13]',
+      'timestamp_seconds': 73,
+      'tip': 'You need to click on it and we need to paste our name servers right here. First one '
+             "and then the second one. Click submit and that's all.",
+      'title': 'How To Setup Cloudflare With Porkbun Domain (Step By Step)',
+      'url': 'https://www.youtube.com/watch?v=OuQbsdwFTA0&t=73s',
+      'video_id': 'OuQbsdwFTA0'},
+     {'author': 'The Lone Crater',
+      'channel': 'The Lone Crater',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=hdvK17zvRgk&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Opt for Porkbun if your main focus is cost-effective domain registration, a vast '
+              'array of unique domain extensions, and a straightforward, user-friendly management '
+              'experience.',
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': 'Opt for Porkbun if your main focus is cost-effective domain registration, a vast '
+             'array of unique domain extensions, and a straightforward, user-friendly management '
+             'experience.',
+      'title': 'Cloudflare vs Porkbun Domain - 2025 Comparison',
+      'url': 'https://www.youtube.com/watch?v=hdvK17zvRgk&t=122s',
+      'video_id': 'hdvK17zvRgk'},
+     {'author': 'David Utke',
+      'channel': 'David Utke',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:15](https://www.youtube.com/watch?v=UkMYRY9wDN0&t=795s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The catch is that you cannot change the name servers of a domain name registered '
+              'with Cloudflare.',
+      'timestamp': 795,
+      'timestamp_label': '[00:13:15]',
+      'timestamp_seconds': 795,
+      'tip': 'The catch is that you cannot change the name servers of a domain name registered '
+             'with Cloudflare.',
+      'title': 'The 5 BEST Domain Registrars in 2026: Where to Buy Your Domain Name',
+      'url': 'https://www.youtube.com/watch?v=UkMYRY9wDN0&t=795s',
+      'video_id': 'UkMYRY9wDN0'},
+     {'author': 'David Utke',
+      'channel': 'David Utke',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:17](https://www.youtube.com/watch?v=UkMYRY9wDN0&t=257s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Then you get domain name privacy included and it's free forever. And you need "
+              'domain name privacy. This is non-negotiable.',
+      'timestamp': 257,
+      'timestamp_label': '[00:04:17]',
+      'timestamp_seconds': 257,
+      'tip': "Then you get domain name privacy included and it's free forever. And you need domain "
+             'name privacy. This is non-negotiable.',
+      'title': 'The 5 BEST Domain Registrars in 2026: Where to Buy Your Domain Name',
+      'url': 'https://www.youtube.com/watch?v=UkMYRY9wDN0&t=257s',
+      'video_id': 'UkMYRY9wDN0'},
+     {'author': 'Design Guy',
+      'channel': 'Design Guy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=chataozFYGw&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'With Cloudflare registrar, the policy is absolute. Brand new domain registrations '
+              'are completely non-refundable.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'With Cloudflare registrar, the policy is absolute. Brand new domain registrations '
+             'are completely non-refundable.',
+      'title': 'Cloudflare Registrar vs Dynadot — Which Wins for Domain Registration in 2026?',
+      'url': 'https://www.youtube.com/watch?v=chataozFYGw&t=60s',
+      'video_id': 'chataozFYGw'},
+     {'author': 'PG Tech Help',
+      'channel': 'PG Tech Help',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=0QCYIFcFO7A&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Click on manage orders and then you need to click on fast transfer and click on opt '
+              'in option.',
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'Click on manage orders and then you need to click on fast transfer and click on opt '
+             'in option.',
+      'title': 'How To Enable Fast Transfer In BigRock and Sell Your Domain To Afternic or Sedo?',
+      'url': 'https://www.youtube.com/watch?v=0QCYIFcFO7A&t=16s',
+      'video_id': '0QCYIFcFO7A'}],
+ 3: [{'author': 'DomCop',
+      'channel': 'DomCop',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:42](https://www.youtube.com/watch?v=r5xkDG4-mvo&t=42s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Choose the minimum metrics that you want the domain to have; for this video we will '
+              'find domains with the minimum page rank of two, a domain authority of 30 and a '
+              'Majestic SEO trust flow of 15.',
+      'timestamp': 42,
+      'timestamp_label': '[00:00:42]',
+      'timestamp_seconds': 42,
+      'tip': 'Choose the minimum metrics that you want the domain to have; for this video we will '
+             'find domains with the minimum page rank of two, a domain authority of 30 and a '
+             'Majestic SEO trust flow of 15.',
+      'title': 'Find awesome expired domains at GoDaddy Auctions using DomCop',
+      'url': 'https://www.youtube.com/watch?v=r5xkDG4-mvo&t=42s',
+      'video_id': 'r5xkDG4-mvo'},
+     {'author': 'ReviewUP',
+      'channel': 'ReviewUP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:14](https://www.youtube.com/watch?v=LqUB5Dr0vrE&t=14s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "You'll see a massive list, usually over 400,000 expiring domains each week.",
+      'timestamp': 14,
+      'timestamp_label': '[00:00:14]',
+      'timestamp_seconds': 14,
+      'tip': "You'll see a massive list, usually over 400,000 expiring domains each week.",
+      'title': 'How to Find Cheap and Good  Expired Domains on GoDaddy (Quick & Easy Domain '
+               'Flipping Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=LqUB5Dr0vrE&t=14s',
+      'video_id': 'LqUB5Dr0vrE'},
+     {'author': 'GoDaddy',
+      'channel': 'GoDaddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:01](https://www.youtube.com/watch?v=OM_5VESPepY&t=1441s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'A $7,000 proxy bid sitting against bids of $10 and $15 only bids up to $20.',
+      'timestamp': 1441,
+      'timestamp_label': '[00:24:01]',
+      'timestamp_seconds': 1441,
+      'tip': 'A $7,000 proxy bid sitting against bids of $10 and $15 only bids up to $20.',
+      'title': 'Time’s Up: Acquiring Expired Domains | GoDaddy Hangout',
+      'url': 'https://www.youtube.com/watch?v=OM_5VESPepY&t=1441s',
+      'video_id': 'OM_5VESPepY'},
+     {'author': 'GoDaddy',
+      'channel': 'GoDaddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:17](https://www.youtube.com/watch?v=OM_5VESPepY&t=1337s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Check the Status tab for the drop date, and don't place a drop backorder less than "
+              '2 hours before the drop.',
+      'timestamp': 1337,
+      'timestamp_label': '[00:22:17]',
+      'timestamp_seconds': 1337,
+      'tip': "Check the Status tab for the drop date, and don't place a drop backorder less than 2 "
+             'hours before the drop.',
+      'title': 'Time’s Up: Acquiring Expired Domains | GoDaddy Hangout',
+      'url': 'https://www.youtube.com/watch?v=OM_5VESPepY&t=1337s',
+      'video_id': 'OM_5VESPepY'},
+     {'author': 'Ecommerce FM',
+      'channel': 'Ecommerce FM',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:42](https://www.youtube.com/watch?v=N8NOW92hCY4&t=522s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'A 301 redirect is fast but spammy if overdone; rebuilding on-topic and linking back '
+              'with brand mentions is better.',
+      'timestamp': 522,
+      'timestamp_label': '[00:08:42]',
+      'timestamp_seconds': 522,
+      'tip': 'A 301 redirect is fast but spammy if overdone; rebuilding on-topic and linking back '
+             'with brand mentions is better.',
+      'title': 'Expired Domains, SEO & Drop Catching',
+      'url': 'https://www.youtube.com/watch?v=N8NOW92hCY4&t=522s',
+      'video_id': 'N8NOW92hCY4'},
+     {'author': 'Scott Redgate',
+      'channel': 'Scott Redgate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=rzHCbB8_QqU&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'If done correctly, this can be a powerful tool in your toolkit to drive quicker '
+              'results in your digital marketing efforts.',
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'If done correctly, this can be a powerful tool in your toolkit to drive quicker '
+             'results in your digital marketing efforts.',
+      'title': 'How to Buy Expired Domains (but should you really?)',
+      'url': 'https://www.youtube.com/watch?v=rzHCbB8_QqU&t=16s',
+      'video_id': 'rzHCbB8_QqU'},
+     {'author': 'GoDaddy',
+      'channel': 'GoDaddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:23](https://www.youtube.com/watch?v=0f-o9p0h6u8&t=563s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The closeout buy-now starts at $11 and drops $1 a day, then $5 on the final day.',
+      'timestamp': 563,
+      'timestamp_label': '[00:09:23]',
+      'timestamp_seconds': 563,
+      'tip': 'The closeout buy-now starts at $11 and drops $1 a day, then $5 on the final day.',
+      'title': 'Learning the Basics of Buying Expired Domains | GoDaddy Hangout',
+      'url': 'https://www.youtube.com/watch?v=0f-o9p0h6u8&t=563s',
+      'video_id': '0f-o9p0h6u8'},
+     {'author': 'GoDaddy Domain Academy',
+      'channel': 'GoDaddy Domain Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:01](https://www.youtube.com/watch?v=n3Z47PI6nj0&t=61s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Right now, we've got 484,000 names for sale on GoDaddy's auctions.",
+      'timestamp': 61,
+      'timestamp_label': '[00:01:01]',
+      'timestamp_seconds': 61,
+      'tip': "Right now, we've got 484,000 names for sale on GoDaddy's auctions.",
       'title': 'The Best Way to Filter and Find Profitable Expired Domains (Keyword Data in '
-               'Action) (GoDaddy Domain Academy)',
-      'url': 'https://www.youtube.com/watch?v=n3Z47PI6nj0&t=287s',
+               'Action)',
+      'url': 'https://www.youtube.com/watch?v=n3Z47PI6nj0&t=61s',
       'video_id': 'n3Z47PI6nj0'},
      {'author': 'Jamie Lewis',
       'channel': 'Jamie Lewis',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=h0uYdy4XIdY&t=51s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
+      'markdown': '[00:14:56](https://www.youtube.com/watch?v=h0uYdy4XIdY&t=896s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'And you\'re like, "Well, shoot. You can\'t find any domains. And so then '
-              "you're like, heck, well, maybe I should try an expired drop list, right? So you "
-              'uh go to Estabbot and you sign up at Estabbot and you download your first drop '
-              'list.',
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': 'And you\'re like, "Well, shoot. You can\'t find any domains. And so then you\'re '
-             'like, heck, well, maybe I should try an expired drop list, right? So you uh go '
-             'to Estabbot and you sign up at Estabbot and you download your first drop list.',
-      'title': 'Expired Domains Are 99% Trash — Here’s How to Find the Gold #jamielewis (Jamie '
-               'Lewis)',
-      'url': 'https://www.youtube.com/watch?v=h0uYdy4XIdY&t=51s',
+      'text': 'So your total amount invested is $280 and you made $35,000.',
+      'timestamp': 896,
+      'timestamp_label': '[00:14:56]',
+      'timestamp_seconds': 896,
+      'tip': 'So your total amount invested is $280 and you made $35,000.',
+      'title': 'Expired Domains Are 99% Trash — Here’s How to Find the Gold #jamielewis',
+      'url': 'https://www.youtube.com/watch?v=h0uYdy4XIdY&t=896s',
       'video_id': 'h0uYdy4XIdY'},
-     {'author': 'George Basics',
-      'channel': 'George Basics',
+     {'author': 'Rookie Domainer',
+      'channel': 'Rookie Domainer',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=aeqNGnkQgbA&t=69s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
+      'markdown': '[00:03:42](https://www.youtube.com/watch?v=Bi-_Gko1m0g&t=222s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Then you need to scroll a little bit down and you will see DNS settings. You '
-              'need to click this button right here. And from this list, select name servers '
-              'and tick this enter new or existing name servers. Paste the first name server '
-              'we just copied from Cloudflare.',
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': 'Then you need to scroll a little bit down and you will see DNS settings. You '
-             'need to click this button right here. And from this list, select name servers '
-             'and tick this enter new or existing name servers. Paste the first name server we '
-             'just copied from Cloudflare.',
-      'title': 'How To Setup Cloudflare With Dynadot Domain - Full Guide (George Basics)',
-      'url': 'https://www.youtube.com/watch?v=aeqNGnkQgbA&t=69s',
-      'video_id': 'aeqNGnkQgbA'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:36:54](https://www.youtube.com/watch?v=4lvZ-LZJ3Sc&t=2214s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s more open uh to to tech or something something else. So >> what what are you "
-              "paying for that in auction when you out >> uh five grand? I'm probably not "
-              "buying it, but you know, maybe five 5k. James, let's talk to you, bro. What do "
-              "you like or don't like on the list?",
-      'timestamp': 2214,
-      'timestamp_label': '[00:36:54]',
-      'timestamp_seconds': 2214,
-      'tip': "'s more open uh to to tech or something something else. So >> what what are you "
-             "paying for that in auction when you out >> uh five grand? I'm probably not "
-             "buying it, but you know, maybe five 5k. James, let's talk to you, bro. What do "
-             "you like or don't like on the list?",
-      'title': 'AI Domains, .SI Hype & the Future of Domain Investing | Sherpa Snippets '
-               '(domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=4lvZ-LZJ3Sc&t=2214s',
-      'video_id': '4lvZ-LZJ3Sc'},
-     {'author': 'bytecash',
-      'channel': 'bytecash',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:27](https://www.youtube.com/watch?v=Hw6wg0dsANM&t=87s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "In um you're going to want to look for we can do three categories here and you "
-              "can search so you know we'll try to find something security wise let's see okay "
-              'we got to Direct Hit.',
-      'timestamp': 87,
-      'timestamp_label': '[00:01:27]',
-      'timestamp_seconds': 87,
-      'tip': "In um you're going to want to look for we can do three categories here and you "
-             "can search so you know we'll try to find something security wise let's see okay "
-             'we got to Direct Hit.',
-      'title': 'Selling Websites on SEDO and AFTERNIC (bytecash)',
-      'url': 'https://www.youtube.com/watch?v=Hw6wg0dsANM&t=87s',
-      'video_id': 'Hw6wg0dsANM'},
-     {'author': 'kickstartcommerce',
-      'channel': 'kickstartcommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=gQJxEyrhqec&t=15s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We share search marketing and domain investing strategies to help grow your '
-              "business in today's episode our guests are.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'We share search marketing and domain investing strategies to help grow your '
-             "business in today's episode our guests are.",
-      'title': 'Domain Outbound Strategies and Best Practices to Sell Domains with Jason '
-               'Eisler and Yogi Solanki (kickstartcommerce)',
-      'url': 'https://www.youtube.com/watch?v=gQJxEyrhqec&t=15s',
-      'video_id': 'gQJxEyrhqec'},
-     {'author': 'Scott Redgate',
-      'channel': 'Scott Redgate',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:13](https://www.youtube.com/watch?v=mRcM1Utk5hI&t=313s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Three remaining search GPT domains but I unlisted one of them so that I can '
-              "show you the process for how you can actually list this for sale so it's this "
-              'one right here search gppro.',
-      'timestamp': 313,
-      'timestamp_label': '[00:05:13]',
-      'timestamp_seconds': 313,
-      'tip': 'Three remaining search GPT domains but I unlisted one of them so that I can show '
-             "you the process for how you can actually list this for sale so it's this one "
-             'right here search gppro.',
-      'title': 'How to Buy & Sell Website Domains to Make Money (Scott Redgate)',
-      'url': 'https://www.youtube.com/watch?v=mRcM1Utk5hI&t=313s',
-      'video_id': 'mRcM1Utk5hI'},
-     {'author': 'DomainFestConference',
-      'channel': 'DomainFestConference',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:49](https://www.youtube.com/watch?v=ZMna4WBn7vc&t=1069s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'ll do search engine optimization we'll get the organic leads so what we found "
-              'out was that 40% of the people who are coming to the homepage of '
-              'insurancequotes.',
-      'timestamp': 1069,
-      'timestamp_label': '[00:17:49]',
-      'timestamp_seconds': 1069,
-      'tip': "'ll do search engine optimization we'll get the organic leads so what we found "
-             'out was that 40% of the people who are coming to the homepage of '
-             'insurancequotes.',
-      'title': 'Webfest Global 2013 Panel - Domain Monetization Options Beyond Domain Parking '
-               '(DomainFestConference)',
-      'url': 'https://www.youtube.com/watch?v=ZMna4WBn7vc&t=1069s',
-      'video_id': 'ZMna4WBn7vc'},
-     {'author': 'Brooks Conkle // Build Income Streams',
-      'channel': 'Brooks Conkle // Build Income Streams',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:12](https://www.youtube.com/watch?v=uIsWkqUglS4&t=972s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'About this and like have different strategies and some people you know do some '
-              'outbound and Outreach some people just like literally just list on um on.',
-      'timestamp': 972,
-      'timestamp_label': '[00:16:12]',
-      'timestamp_seconds': 972,
-      'tip': 'About this and like have different strategies and some people you know do some '
-             'outbound and Outreach some people just like literally just list on um on.',
-      'title': 'How This Broker Sells Domains for MILLIONS — Brian Harbin Interview (Brooks '
-               'Conkle // Build Income Streams)',
-      'url': 'https://www.youtube.com/watch?v=uIsWkqUglS4&t=972s',
-      'video_id': 'uIsWkqUglS4'},
-     {'author': 'GoDaddy Domain Academy',
-      'channel': 'GoDaddy Domain Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:22](https://www.youtube.com/watch?v=LcmoZJ33ZJ4&t=142s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They will spend their time teaching a system what opportunity looks like. And '
-              'then they will let it hunt while they sleep. The ones who learn this first will '
-              'win the names. The ones who do not will keep starting the list over. We are '
-              'going to show you exactly how it is done.',
-      'timestamp': 142,
-      'timestamp_label': '[00:02:22]',
-      'timestamp_seconds': 142,
-      'tip': 'They will spend their time teaching a system what opportunity looks like. And '
-             'then they will let it hunt while they sleep. The ones who learn this first will '
-             'win the names. The ones who do not will keep starting the list over. We are '
-             'going to show you exactly how it is done.',
-      'title': 'The AI Domain Investor: Find More. Bid More. Win More! (GoDaddy Domain '
-               'Academy)',
-      'url': 'https://www.youtube.com/watch?v=LcmoZJ33ZJ4&t=142s',
-      'video_id': 'LcmoZJ33ZJ4'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:38](https://www.youtube.com/watch?v=J6_UP-VNOco&t=938s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s primarily done through search engines but i mean in terms of even just like "
-              'display or offline advertising like vpn go to vpn.',
-      'timestamp': 938,
-      'timestamp_label': '[00:15:38]',
-      'timestamp_seconds': 938,
-      'tip': "'s primarily done through search engines but i mean in terms of even just like "
-             'display or offline advertising like vpn go to vpn.',
-      'title': 'Royal Rumble over Forbes Domain Valuation Method (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=J6_UP-VNOco&t=938s',
-      'video_id': 'J6_UP-VNOco'}],
- 7: [{'author': 'Tutorials With Trevor',
-      'channel': 'Tutorials With Trevor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:43](https://www.youtube.com/watch?v=w83CsN7RD1Y&t=103s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'However, having a natural mix that includes no follow links can also be '
-              'beneficial. The final and crucial step of your audit is to review the quality '
-              'of these links. Identify which links are beneficial, often coming from high '
-              'authority and relevant websites to your niche.',
-      'timestamp': 103,
-      'timestamp_label': '[00:01:43]',
-      'timestamp_seconds': 103,
-      'tip': 'However, having a natural mix that includes no follow links can also be '
-             'beneficial. The final and crucial step of your audit is to review the quality of '
-             'these links. Identify which links are beneficial, often coming from high '
-             'authority and relevant websites to your niche.',
-      'title': 'How To Do Backlink Audit With Ubersuggest (Tutorials With Trevor)',
-      'url': 'https://www.youtube.com/watch?v=w83CsN7RD1Y&t=103s',
-      'video_id': 'w83CsN7RD1Y'},
-     {'author': 'PMN Online',
-      'channel': 'PMN Online',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:28](https://www.youtube.com/watch?v=piq0yLKq_SE&t=28s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If your DNS settings are incorrect, it can lead to website downtime or '
-              "functionality issues. So, it's crucial to get these settings right. Now, let's "
-              'dive into the step-by-step process of adding DNS records on Cloudflare.',
-      'timestamp': 28,
-      'timestamp_label': '[00:00:28]',
-      'timestamp_seconds': 28,
-      'tip': 'If your DNS settings are incorrect, it can lead to website downtime or '
-             "functionality issues. So, it's crucial to get these settings right. Now, let's "
-             'dive into the step-by-step process of adding DNS records on Cloudflare.',
-      'title': 'How to Add DNS Records on Cloudflare Easily 2026 (PMN Online)',
-      'url': 'https://www.youtube.com/watch?v=piq0yLKq_SE&t=28s',
-      'video_id': 'piq0yLKq_SE'},
-     {'author': 'Luka Knows',
-      'channel': 'Luka Knows',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:06](https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=486s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Squarespace, also formerly known as Google Domains. Squarespace bought Google '
-              'Domains a while back and like most of the acquisition, they need to make that '
-              'money back. That said, the buying process is genuinely clean, very minimalistic '
-              'and straightforward.',
-      'timestamp': 486,
-      'timestamp_label': '[00:08:06]',
-      'timestamp_seconds': 486,
-      'tip': 'Squarespace, also formerly known as Google Domains. Squarespace bought Google '
-             'Domains a while back and like most of the acquisition, they need to make that '
-             'money back. That said, the buying process is genuinely clean, very minimalistic '
-             'and straightforward.',
-      'title': "Where to Buy a Domain in 2026? (Don't choose WRONG!) (Luka Knows)",
-      'url': 'https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=486s',
-      'video_id': 'oi-pZAGrrhQ'},
+      'text': 'The cost is a $5 buy-now plus about $8 renewal with a coupon, roughly $13 total.',
+      'timestamp': 222,
+      'timestamp_label': '[00:03:42]',
+      'timestamp_seconds': 222,
+      'tip': 'The cost is a $5 buy-now plus about $8 renewal with a coupon, roughly $13 total.',
+      'title': 'Salvage Domains from the GoDaddy Auctions Bargain Bin',
+      'url': 'https://www.youtube.com/watch?v=Bi-_Gko1m0g&t=222s',
+      'video_id': 'Bi-_Gko1m0g'},
      {'author': 'DomCop',
       'channel': 'DomCop',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=fVAMuCrwtUw&t=21s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:03:50](https://www.youtube.com/watch?v=fVAMuCrwtUw&t=230s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Steps to place a back order step one to place an order for a domain name you '
-              'would first search for the domain name using the search tool on the home page '
-              'so in this example we will be typing in domain buzz com.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'Steps to place a back order step one to place an order for a domain name you '
-             'would first search for the domain name using the search tool on the home page so '
-             'in this example we will be typing in domain buzz com.',
-      'title': 'Domcop - How to Backorder Domains w Namejet and SnapNames (DomCop)',
-      'url': 'https://www.youtube.com/watch?v=fVAMuCrwtUw&t=21s',
+      'text': 'On both, a single backorder wins at the minimum, and multiple backorders trigger an '
+              'auction.',
+      'timestamp': 230,
+      'timestamp_label': '[00:03:50]',
+      'timestamp_seconds': 230,
+      'tip': 'On both, a single backorder wins at the minimum, and multiple backorders trigger an '
+             'auction.',
+      'title': 'Domcop - How to Backorder Domains w Namejet and SnapNames',
+      'url': 'https://www.youtube.com/watch?v=fVAMuCrwtUw&t=230s',
       'video_id': 'fVAMuCrwtUw'},
+     {'author': 'cssfx',
+      'channel': 'cssfx',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=zN6FKHG-ORs&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "You have a 120 hour window in which you're given a grace period for deleting "
+              "domains that you've registered in case you no longer want them.",
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': "You have a 120 hour window in which you're given a grace period for deleting domains "
+             "that you've registered in case you no longer want them.",
+      'title': 'Dynadot: An Often Overlooked Player in the Expired Domain Name Aftermarket',
+      'url': 'https://www.youtube.com/watch?v=zN6FKHG-ORs&t=15s',
+      'video_id': 'zN6FKHG-ORs'},
+     {'author': 'NamesBrun',
+      'channel': 'NamesBrun',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:28:49](https://www.youtube.com/watch?v=tVPy99Y1MsA&t=1729s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is actually a good name going for very cheap.',
+      'timestamp': 1729,
+      'timestamp_label': '[00:28:49]',
+      'timestamp_seconds': 1729,
+      'tip': 'This is actually a good name going for very cheap.',
+      'title': 'Live Domain Name Hunt: Expired Ai Domains and Godaddy Auctions | Day-16',
+      'url': 'https://www.youtube.com/watch?v=tVPy99Y1MsA&t=1729s',
+      'video_id': 'tVPy99Y1MsA'},
+     {'author': 'Tutorialjake',
+      'channel': 'Tutorialjake',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:54](https://www.youtube.com/watch?v=P82q-S2X978&t=114s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Confirm the setting saved, and check that your phone and account info are current.',
+      'timestamp': 114,
+      'timestamp_label': '[00:01:54]',
+      'timestamp_seconds': 114,
+      'tip': 'Confirm the setting saved, and check that your phone and account info are current.',
+      'title': 'How To Get Sms Alert Auction Domains GoDaddy  (full guide 2026)',
+      'url': 'https://www.youtube.com/watch?v=P82q-S2X978&t=114s',
+      'video_id': 'P82q-S2X978'},
+     {'author': 'cssfx',
+      'channel': 'cssfx',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:14](https://www.youtube.com/watch?v=rtK9sQfQ5cc&t=14s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Imagine 5 years of business suddenly vanishing because of domain registry '
+              'expiration.',
+      'timestamp': 14,
+      'timestamp_label': '[00:00:14]',
+      'timestamp_seconds': 14,
+      'tip': 'Imagine 5 years of business suddenly vanishing because of domain registry '
+             'expiration.',
+      'title': 'Snatching With Sarah: Episode 1 - The Ethics of Expired Domain Dropcatching',
+      'url': 'https://www.youtube.com/watch?v=rtK9sQfQ5cc&t=14s',
+      'video_id': 'rtK9sQfQ5cc'},
+     {'author': 'Affiliate Credo',
+      'channel': 'Affiliate Credo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:11](https://www.youtube.com/watch?v=9vU7vtxcYuc&t=371s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't show your maximum and don't use auto-bids.",
+      'timestamp': 371,
+      'timestamp_label': '[00:06:11]',
+      'timestamp_seconds': 371,
+      'tip': "Don't show your maximum and don't use auto-bids.",
+      'title': '5 Winning Tactics at Expired Domain Auctions 📈',
+      'url': 'https://www.youtube.com/watch?v=9vU7vtxcYuc&t=371s',
+      'video_id': '9vU7vtxcYuc'},
      {'author': 'domainsherpa',
       'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=zCEoH4BHEDI&t=20s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:49:04](https://www.youtube.com/watch?v=iiHOxt6I0u0&t=2944s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "And then we've got the namejack in a jet segment sponsored by namejet. And we "
-              'talk about some domains coming up for auction including clack. And we also talk '
-              "about Dan's upcoming move to Portugal. We talk about where things stand in the "
-              'new GTLD process.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "And then we've got the namejack in a jet segment sponsored by namejet. And we "
-             'talk about some domains coming up for auction including clack. And we also talk '
-             "about Dan's upcoming move to Portugal. We talk about where things stand in the "
-             'new GTLD process.',
-      'title': 'What’s Next for Domain Names? .WEB, ICANN & Market Trends | DomainSherpa '
-               'Podcast (Sept. 17, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=zCEoH4BHEDI&t=20s',
-      'video_id': 'zCEoH4BHEDI'},
-     {'author': 'Nexustech',
-      'channel': 'Nexustech',
+      'text': 'The large majority of it has absolutely no liquid value of the new registration '
+              'stream.',
+      'timestamp': 2944,
+      'timestamp_label': '[00:49:04]',
+      'timestamp_seconds': 2944,
+      'tip': 'The large majority of it has absolutely no liquid value of the new registration '
+             'stream.',
+      'title': 'Expired Domain Auctions: What Drives Quality Inventory? | DomainSherpa Podcast '
+               '(March 5, 2026)',
+      'url': 'https://www.youtube.com/watch?v=iiHOxt6I0u0&t=2944s',
+      'video_id': 'iiHOxt6I0u0'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:33](https://www.youtube.com/watch?v=25Wr9hdEUCw&t=153s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:33:03](https://www.youtube.com/watch?v=iiHOxt6I0u0&t=1983s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "'s history helps verify its cleanliness, ensuring it hasn't been blacklisted. "
-              'The more details you provide here, the higher your listing quality score, which '
-              "helps Flippa's algorithm push your domain higher in the search results.",
-      'timestamp': 153,
-      'timestamp_label': '[00:02:33]',
-      'timestamp_seconds': 153,
-      'tip': "'s history helps verify its cleanliness, ensuring it hasn't been blacklisted. "
-             'The more details you provide here, the higher your listing quality score, which '
-             "helps Flippa's algorithm push your domain higher in the search results.",
-      'title': 'How to Sell Your Domain on Flippa [2026 GUIDE] (Nexustech)',
-      'url': 'https://www.youtube.com/watch?v=25Wr9hdEUCw&t=153s',
-      'video_id': '25Wr9hdEUCw'},
+      'text': "It's one that I had had priced higher, but over time after 5 years and no one was "
+              'buying, so lowered it to 495 and it sold.',
+      'timestamp': 1983,
+      'timestamp_label': '[00:33:03]',
+      'timestamp_seconds': 1983,
+      'tip': "It's one that I had had priced higher, but over time after 5 years and no one was "
+             'buying, so lowered it to 495 and it sold.',
+      'title': 'Expired Domain Auctions: What Drives Quality Inventory? | DomainSherpa Podcast '
+               '(March 5, 2026)',
+      'url': 'https://www.youtube.com/watch?v=iiHOxt6I0u0&t=1983s',
+      'video_id': 'iiHOxt6I0u0'}],
+ 4: [{'author': 'SearchGAPMethod',
+      'channel': 'SearchGAPMethod',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=UXycltw74Bw&t=93s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'It says nothing about the page your link lands on. The domain is strong. Your link '
+              "on it usually isn't.",
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': 'It says nothing about the page your link lands on. The domain is strong. Your link '
+             "on it usually isn't.",
+      'title': "I Audited Every Link on Google's #1 Free Backlinks List and You're Still Using It",
+      'url': 'https://www.youtube.com/watch?v=UXycltw74Bw&t=93s',
+      'video_id': 'UXycltw74Bw'},
+     {'author': 'Tutorials With Trevor',
+      'channel': 'Tutorials With Trevor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:12](https://www.youtube.com/watch?v=w83CsN7RD1Y&t=132s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "If you find any of these, it's advisable to consider disavowing them to protect "
+              "your site's ranking.",
+      'timestamp': 132,
+      'timestamp_label': '[00:02:12]',
+      'timestamp_seconds': 132,
+      'tip': "If you find any of these, it's advisable to consider disavowing them to protect your "
+             "site's ranking.",
+      'title': 'How To Do Backlink Audit With Ubersuggest',
+      'url': 'https://www.youtube.com/watch?v=w83CsN7RD1Y&t=132s',
+      'video_id': 'w83CsN7RD1Y'},
      {'author': 'MMX',
       'channel': 'MMX',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:27](https://www.youtube.com/watch?v=oSf_C1HUEVA&t=147s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
+      'markdown': '[00:01:01](https://www.youtube.com/watch?v=oSf_C1HUEVA&t=61s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'This is really effective and efficient way to clean up your toxic backlinks. If '
-              "the backlinking domain owners don't remove your link from their site, you can "
-              'also take steps to disavow that link where you provide Google with a text file '
-              'that says, "We don\'t know these guys.',
-      'timestamp': 147,
-      'timestamp_label': '[00:02:27]',
-      'timestamp_seconds': 147,
-      'tip': 'This is really effective and efficient way to clean up your toxic backlinks. If '
-             "the backlinking domain owners don't remove your link from their site, you can "
-             'also take steps to disavow that link where you provide Google with a text file '
-             'that says, "We don\'t know these guys.',
-      'title': 'How to Remove Toxic Backlinks in Semrush to Boost Your SEO (MMX)',
-      'url': 'https://www.youtube.com/watch?v=oSf_C1HUEVA&t=147s',
+      'text': 'You can see that the site has an authority score of two and a toxicity score of 79 '
+              'out of a possible score of 100.',
+      'timestamp': 61,
+      'timestamp_label': '[00:01:01]',
+      'timestamp_seconds': 61,
+      'tip': 'You can see that the site has an authority score of two and a toxicity score of 79 '
+             'out of a possible score of 100.',
+      'title': 'How to Remove Toxic Backlinks in Semrush to Boost Your SEO',
+      'url': 'https://www.youtube.com/watch?v=oSf_C1HUEVA&t=61s',
       'video_id': 'oSf_C1HUEVA'},
-     {'author': 'Efty',
-      'channel': 'Efty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:25](https://www.youtube.com/watch?v=i5aX4LKqSuI&t=85s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s a step-by-step tutorial it only takes a couple minutes to do it's super easy "
-              'so once done go back to settings preferences here you scroll down to '
-              'integration settings and check the use installments checkbox then click save '
-              "let's go back to heal.",
-      'timestamp': 85,
-      'timestamp_label': '[00:01:25]',
-      'timestamp_seconds': 85,
-      'tip': "'s a step-by-step tutorial it only takes a couple minutes to do it's super easy "
-             'so once done go back to settings preferences here you scroll down to integration '
-             "settings and check the use installments checkbox then click save let's go back "
-             'to heal.',
-      'title': 'Boost your domain name sales with Lease-To-Own (Efty)',
-      'url': 'https://www.youtube.com/watch?v=i5aX4LKqSuI&t=85s',
-      'video_id': 'i5aX4LKqSuI'},
-     {'author': 'David Utke',
-      'channel': 'David Utke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=ck1VMki_11Q&t=163s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Like always, make sure to check the description for links to namecheep '
-              'timestamps and any additional resources mentioned in this video. So, step one '
-              'with parking a domain name is to actually get a domain name.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Like always, make sure to check the description for links to namecheep '
-             'timestamps and any additional resources mentioned in this video. So, step one '
-             'with parking a domain name is to actually get a domain name.',
-      'title': 'How to Park a Domain & Make Money With Ads (Step-by-Step) (David Utke)',
-      'url': 'https://www.youtube.com/watch?v=ck1VMki_11Q&t=163s',
-      'video_id': 'ck1VMki_11Q'},
-     {'author': 'DomCop',
-      'channel': 'DomCop',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:31](https://www.youtube.com/watch?v=im4LjoyOxPE&t=31s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Voodoo okay so here's a step-by-step process that will better help you "
-              "understand how domain parking works okay so here's the first step step one it "
-              'visitor types in your Park domain name ENT the browser address.',
-      'timestamp': 31,
-      'timestamp_label': '[00:00:31]',
-      'timestamp_seconds': 31,
-      'tip': "Voodoo okay so here's a step-by-step process that will better help you "
-             "understand how domain parking works okay so here's the first step step one it "
-             'visitor types in your Park domain name ENT the browser address.',
-      'title': 'How to Domain Park with Voodoo and Bodis (DomCop)',
-      'url': 'https://www.youtube.com/watch?v=im4LjoyOxPE&t=31s',
-      'video_id': 'im4LjoyOxPE'},
-     {'author': 'Hannan Muhammad - Domain Flipping',
-      'channel': 'Hannan Muhammad - Domain Flipping',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:26](https://www.youtube.com/watch?v=ndpt66l5N1I&t=806s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'देखें जैसे vin.com वट की विडिंग $62 है तो इसे हम छोड़ देते हैं उसके बाद यह डन '
-              'भी कुछ बेहतर है g.com बट इसकी जो रजिस्ट्रेशंस है वो.',
-      'timestamp': 806,
-      'timestamp_label': '[00:13:26]',
-      'timestamp_seconds': 806,
-      'tip': 'देखें जैसे vin.com वट की विडिंग $62 है तो इसे हम छोड़ देते हैं उसके बाद यह डन भी '
-             'कुछ बेहतर है g.com बट इसकी जो रजिस्ट्रेशंस है वो.',
-      'title': 'Expired Domain Mastery - Step-by-Step Guide to ExpiredDomains.net | Domain '
-               'Investing (Hannan Muhammad - Domain Flipping)',
-      'url': 'https://www.youtube.com/watch?v=ndpt66l5N1I&t=806s',
-      'video_id': 'ndpt66l5N1I'},
-     {'author': 'USENIX',
-      'channel': 'USENIX',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:42](https://www.youtube.com/watch?v=XyzbG8sP8iA&t=882s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Classify traffic spam covers over 38 percent of the traffic so um the the the '
-              'traffic that was monetized through uh traffic monetization or through a traffic '
-              'exchange system was more than 38 but 38 of it was considered spam.',
-      'timestamp': 882,
-      'timestamp_label': '[00:14:42]',
-      'timestamp_seconds': 882,
-      'tip': 'Classify traffic spam covers over 38 percent of the traffic so um the the the '
-             'traffic that was monetized through uh traffic monetization or through a traffic '
-             'exchange system was more than 38 but 38 of it was considered spam.',
-      'title': "USENIX Security '14 - Understanding the Dark Side of Domain Parking (USENIX)",
-      'url': 'https://www.youtube.com/watch?v=XyzbG8sP8iA&t=882s',
-      'video_id': 'XyzbG8sP8iA'},
-     {'author': 'SoftSolvate Labs',
-      'channel': 'SoftSolvate Labs',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=qo5bNS_rl3I&t=15s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'वेबसाइट होती है पास डाटा होता है वह कैसे चेक कर सकते हैं तू वेबैक मशीन सो हेलो '
-              'दोस्तों देशभर में टावर हमें 10 साल से बिजली मार्केटिंग की फिल्म में काम कर रहा.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'वेबसाइट होती है पास डाटा होता है वह कैसे चेक कर सकते हैं तू वेबैक मशीन सो हेलो '
-             'दोस्तों देशभर में टावर हमें 10 साल से बिजली मार्केटिंग की फिल्म में काम कर रहा.',
-      'title': 'Check Wayback Machine(Internet Archive) Data for Past Website Data - Expired '
-               'Domain Series Part 5 (SoftSolvate Labs)',
-      'url': 'https://www.youtube.com/watch?v=qo5bNS_rl3I&t=15s',
-      'video_id': 'qo5bNS_rl3I'},
-     {'author': 'NetSpaceindia',
-      'channel': 'NetSpaceindia',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=_4JXw4pR9G8&t=15s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'लोग बोलेंगे यार तुक्का लग गया होगा। तो चलो उसी बंदे ने एक हफ्ते बाद यह डोमेन '
-              'बेचा और यह बेचा उसने ऑलमोस्ट 3 करोड़ का। यानी दोनों मिला के डोमेनस ऑलमोस्ट 4.5 '
-              'से.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'लोग बोलेंगे यार तुक्का लग गया होगा। तो चलो उसी बंदे ने एक हफ्ते बाद यह डोमेन '
-             'बेचा और यह बेचा उसने ऑलमोस्ट 3 करोड़ का। यानी दोनों मिला के डोमेनस ऑलमोस्ट 4.5 '
-             'से.',
-      'title': 'How to Make Money Flipping Domains in 2026 (AI Makes It EASY) (NetSpaceindia)',
-      'url': 'https://www.youtube.com/watch?v=_4JXw4pR9G8&t=15s',
-      'video_id': '_4JXw4pR9G8'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:39:06](https://www.youtube.com/watch?v=Yvi8ys0RQH8&t=2346s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Where I'm seeing that growth in in education is one step below that like what "
-              "do I need to be online like we're still you know you're still talking to "
-              'companies who who go out and buy domain names that are 75 characters long like '
-              'I was told at some point.',
-      'timestamp': 2346,
-      'timestamp_label': '[00:39:06]',
-      'timestamp_seconds': 2346,
-      'tip': "Where I'm seeing that growth in in education is one step below that like what do "
-             "I need to be online like we're still you know you're still talking to companies "
-             'who who go out and buy domain names that are 75 characters long like I was told '
-             'at some point.',
-      'title': 'GoDaddy’s Aftermarket Approach: Normalizing Premium Domain Acquisitions '
-               '(domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=Yvi8ys0RQH8&t=2346s',
-      'video_id': 'Yvi8ys0RQH8'}],
- 8: [{'author': 'DotOutbound',
-      'channel': 'DotOutbound',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:02](https://www.youtube.com/watch?v=6cANvHgSKgI&t=62s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To pull this off, the platform uses a super clean two-step workflow. Think of '
-              "it as a one-two punch. Step one is the radar tool. That's where you scan fast. "
-              'And step two is the hunter tool, where you go deep. Two tools, one seamless '
-              'workflow.',
-      'timestamp': 62,
-      'timestamp_label': '[00:01:02]',
-      'timestamp_seconds': 62,
-      'tip': 'To pull this off, the platform uses a super clean two-step workflow. Think of it '
-             "as a one-two punch. Step one is the radar tool. That's where you scan fast. And "
-             'step two is the hunter tool, where you go deep. Two tools, one seamless '
-             'workflow.',
-      'title': 'DotOutbound.com Walkthrough | How to Sell Domain Names via Outbound Fast '
-               '(DotOutbound)',
-      'url': 'https://www.youtube.com/watch?v=6cANvHgSKgI&t=62s',
-      'video_id': '6cANvHgSKgI'},
      {'author': 'Edvido',
       'channel': 'Edvido',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:40](https://www.youtube.com/watch?v=XjoQwN4FcDU&t=400s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:08:19](https://www.youtube.com/watch?v=XjoQwN4FcDU&t=499s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'SEO tools and SEO review tools are actually pulling their data straight from '
-              'the Seamrush API. So if Semrush ever hits you with a payw wall, you can '
-              'actually access their exact numbers for free just by hopping over to one of '
-              'these other sites.',
-      'timestamp': 400,
-      'timestamp_label': '[00:06:40]',
-      'timestamp_seconds': 400,
-      'tip': 'SEO tools and SEO review tools are actually pulling their data straight from the '
-             'Seamrush API. So if Semrush ever hits you with a payw wall, you can actually '
-             'access their exact numbers for free just by hopping over to one of these other '
-             'sites.',
-      'title': 'Best Free Backlink Checkers Tested (15K vs 65K Links?!) | Real SEO Case Study '
-               '| Edvido (Edvido)',
-      'url': 'https://www.youtube.com/watch?v=XjoQwN4FcDU&t=400s',
+      'text': 'Because when third party tools and Google disagree, Google always wins.',
+      'timestamp': 499,
+      'timestamp_label': '[00:08:19]',
+      'timestamp_seconds': 499,
+      'tip': 'Because when third party tools and Google disagree, Google always wins.',
+      'title': 'Best Free Backlink Checkers Tested (15K vs 65K Links?!) | Real SEO Case Study | '
+               'Edvido',
+      'url': 'https://www.youtube.com/watch?v=XjoQwN4FcDU&t=499s',
       'video_id': 'XjoQwN4FcDU'},
      {'author': 'OpenSEO',
       'channel': 'OpenSEO',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:15](https://www.youtube.com/watch?v=CDKhSTwWeN8&t=75s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=CDKhSTwWeN8&t=117s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'URL, the URL and its subpaths, the domain excluding subdomains, or the domain '
-              "including all subdomains. After clicking search, you'll see a number of helpful "
-              'graphs and lists containing backlink data for the domain.',
-      'timestamp': 75,
-      'timestamp_label': '[00:01:15]',
-      'timestamp_seconds': 75,
-      'tip': 'URL, the URL and its subpaths, the domain excluding subdomains, or the domain '
-             "including all subdomains. After clicking search, you'll see a number of helpful "
-             'graphs and lists containing backlink data for the domain.',
-      'title': 'How to Check Backlinks with OpenSEO (OpenSEO)',
-      'url': 'https://www.youtube.com/watch?v=CDKhSTwWeN8&t=75s',
+      'text': "Below that, you'll see the full list of backlinks from Open SEO's data provider "
+              "with the backlinks above the tool's spam score threshold filtered out "
+              'automatically.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': "Below that, you'll see the full list of backlinks from Open SEO's data provider with "
+             "the backlinks above the tool's spam score threshold filtered out automatically.",
+      'title': 'How to Check Backlinks with OpenSEO',
+      'url': 'https://www.youtube.com/watch?v=CDKhSTwWeN8&t=117s',
       'video_id': 'CDKhSTwWeN8'},
-     {'author': 'Craig Campbell SEO',
-      'channel': 'Craig Campbell SEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:32](https://www.youtube.com/watch?v=v_e7GOstIuc&t=32s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And and you know basically compare the data that they both give now i've done a "
-              'backlink audit on my website using the same rush and this is a really good.',
-      'timestamp': 32,
-      'timestamp_label': '[00:00:32]',
-      'timestamp_seconds': 32,
-      'tip': "And and you know basically compare the data that they both give now i've done a "
-             'backlink audit on my website using the same rush and this is a really good.',
-      'title': 'How to do a Link Audit, Auditing your Backlinks (Craig Campbell SEO)',
-      'url': 'https://www.youtube.com/watch?v=v_e7GOstIuc&t=32s',
-      'video_id': 'v_e7GOstIuc'},
-     {'author': 'ICANN',
-      'channel': 'ICANN',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:13](https://www.youtube.com/watch?v=ubAwLfPKk6s&t=73s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The NCO aggregates data daily from multiple sources. This includes several root '
-              'server operators, as well as publicly available data from two recursive DNS '
-              'resolvers, Cloudflare and QAx. To use the tool, enter a proposed string.',
-      'timestamp': 73,
-      'timestamp_label': '[00:01:13]',
-      'timestamp_seconds': 73,
-      'tip': 'The NCO aggregates data daily from multiple sources. This includes several root '
-             'server operators, as well as publicly available data from two recursive DNS '
-             'resolvers, Cloudflare and QAx. To use the tool, enter a proposed string.',
-      'title': '2026 Round | TAMS: Name Collision Observatory (ICANN)',
-      'url': 'https://www.youtube.com/watch?v=ubAwLfPKk6s&t=73s',
-      'video_id': 'ubAwLfPKk6s'},
-     {'author': 'Jazzy Domainz',
-      'channel': 'Jazzy Domainz',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:37](https://www.youtube.com/watch?v=7r4PuUv52Pw&t=397s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um, let's just mention the GoDaddy appraisal tool. Again, like I said, there "
-              'are other tools out there um, but this one is a good tool to use.',
-      'timestamp': 397,
-      'timestamp_label': '[00:06:37]',
-      'timestamp_seconds': 397,
-      'tip': "Um, let's just mention the GoDaddy appraisal tool. Again, like I said, there are "
-             'other tools out there um, but this one is a good tool to use.',
-      'title': 'How I List Domains for Sale on Afternic (Step-by-Step Example) (Jazzy Domainz)',
-      'url': 'https://www.youtube.com/watch?v=7r4PuUv52Pw&t=397s',
-      'video_id': '7r4PuUv52Pw'},
-     {'author': 'Tutorials by Manizha & Ryan',
-      'channel': 'Tutorials by Manizha & Ryan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:42](https://www.youtube.com/watch?v=Ji9xSr9WZnA&t=522s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Or something like that maybe like a service let's go ahead and search for "
-              "service okay madeservice.com that's 45 000 but.",
-      'timestamp': 522,
-      'timestamp_label': '[00:08:42]',
-      'timestamp_seconds': 522,
-      'tip': "Or something like that maybe like a service let's go ahead and search for "
-             "service okay madeservice.com that's 45 000 but.",
-      'title': 'Domain Flipping Guide (2026) | How To Make Money Flipping Domain Names '
-               '(Tutorials by Manizha & Ryan)',
-      'url': 'https://www.youtube.com/watch?v=Ji9xSr9WZnA&t=522s',
-      'video_id': 'Ji9xSr9WZnA'},
-     {'author': 'Chris Koerner on The Koerner Office Podcast',
-      'channel': 'Chris Koerner on The Koerner Office Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:10](https://www.youtube.com/watch?v=aba_NmtzK1I&t=670s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Things directly into the Google browser not Google search but into your Chrome '
-              'browser my friend Peter owns Vidalia onions.com and a ton of his traffic.',
-      'timestamp': 670,
-      'timestamp_label': '[00:11:10]',
-      'timestamp_seconds': 670,
-      'tip': 'Things directly into the Google browser not Google search but into your Chrome '
-             'browser my friend Peter owns Vidalia onions.com and a ton of his traffic.',
-      'title': '15 Years of Domain Name Investing Knowledge in 15 Mins (Chris Koerner on The '
-               'Koerner Office Podcast)',
-      'url': 'https://www.youtube.com/watch?v=aba_NmtzK1I&t=670s',
-      'video_id': 'aba_NmtzK1I'},
-     {'author': 'GoDaddy Domain Academy',
-      'channel': 'GoDaddy Domain Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:44](https://www.youtube.com/watch?v=EZU1Ld6SO_o&t=224s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "800 new ones if I click that, which is going to save me a ton of time. I don't "
-              'have to keep going back through the 5,000 I looked over. So this gives you a '
-              "couple practical ways to use that data that we saw. Let's convert it quickly "
-              'and easily into a save search.',
-      'timestamp': 224,
-      'timestamp_label': '[00:03:44]',
-      'timestamp_seconds': 224,
-      'tip': "800 new ones if I click that, which is going to save me a ton of time. I don't "
-             'have to keep going back through the 5,000 I looked over. So this gives you a '
-             "couple practical ways to use that data that we saw. Let's convert it quickly and "
-             'easily into a save search.',
-      'title': 'Turn Atom’s Top-Selling Keywords into a Daily Domain Deal Flow (GoDaddy Domain '
-               'Academy)',
-      'url': 'https://www.youtube.com/watch?v=EZU1Ld6SO_o&t=224s',
-      'video_id': 'EZU1Ld6SO_o'},
-     {'author': 'SpeedyIndex Link Indexing Service',
-      'channel': 'SpeedyIndex Link Indexing Service',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:40](https://www.youtube.com/watch?v=wqhZ_zZZgpk&t=40s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Search Console, Links report, top linking sites, and your most  linked pages. '
-              'Think of every backlink as a recommendation, but recommendations.',
-      'timestamp': 40,
-      'timestamp_label': '[00:00:40]',
-      'timestamp_seconds': 40,
-      'tip': 'Search Console, Links report, top linking sites, and your most  linked pages. '
-             'Think of every backlink as a recommendation, but recommendations.',
-      'title': 'What Are Backlinks in SEO? Good vs Bad Links (2026) (SpeedyIndex Link Indexing '
-               'Service)',
-      'url': 'https://www.youtube.com/watch?v=wqhZ_zZZgpk&t=40s',
-      'video_id': 'wqhZ_zZZgpk'},
-     {'author': 'PPC Better',
-      'channel': 'PPC Better',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:59](https://www.youtube.com/watch?v=raCnNNzO6po&t=479s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re tired of getting bad results from your Google ads campaigns it's time to "
-              'talk to PPC better so check out our website at ppcbetter.',
-      'timestamp': 479,
-      'timestamp_label': '[00:07:59]',
-      'timestamp_seconds': 479,
-      'tip': "'re tired of getting bad results from your Google ads campaigns it's time to "
-             'talk to PPC better so check out our website at ppcbetter.',
-      'title': 'Exact Match Domains and Website Search Engine Optimization (SEO) in 2023. (PPC '
-               'Better)',
-      'url': 'https://www.youtube.com/watch?v=raCnNNzO6po&t=479s',
-      'video_id': 'raCnNNzO6po'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=AnOYqTuITG4&t=21s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We also talk about what's the right measure for this information specifically "
-              'median versus mean and how to best provide and use the data. We also discuss '
-              'some of the geographic trends that are highlighted in the report and that '
-              'escrow is seeing on the platform.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "We also talk about what's the right measure for this information specifically "
-             'median versus mean and how to best provide and use the data. We also discuss '
-             'some of the geographic trends that are highlighted in the report and that escrow '
-             'is seeing on the platform.',
-      'title': 'Escrow.com Domain Report: .AI vs .COM Trends Explained | DomainSherpa Podcast '
-               '(March 12, 2026) (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=AnOYqTuITG4&t=21s',
-      'video_id': 'AnOYqTuITG4'},
-     {'author': 'OpenTalk',
-      'channel': 'OpenTalk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:50](https://www.youtube.com/watch?v=VIRXW2_q7xI&t=110s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '10 000 so dear friend how you can earn by domain parking earning by domain '
-              'parking is very easy all you have to do you have to buy a domain name from any '
-              'platform like godaddy namecheap epic.',
-      'timestamp': 110,
-      'timestamp_label': '[00:01:50]',
-      'timestamp_seconds': 110,
-      'tip': '10 000 so dear friend how you can earn by domain parking earning by domain '
-             'parking is very easy all you have to do you have to buy a domain name from any '
-             'platform like godaddy namecheap epic.',
-      'title': 'Earn $1000 for domain parking - Best way to make money online - BODIS '
-               '(OpenTalk)',
-      'url': 'https://www.youtube.com/watch?v=VIRXW2_q7xI&t=110s',
-      'video_id': 'VIRXW2_q7xI'},
-     {'author': 'NewMovementMedia',
-      'channel': 'NewMovementMedia',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=ptDjIj-5f0U&t=79s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I can is saying that they are allowing 500 applications this first round and '
-              '400 the next round the first application route will begin January 12 2012 and '
-              'in April 12 2012.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': 'I can is saying that they are allowing 500 applications this first round and 400 '
-             'the next round the first application route will begin January 12 2012 and in '
-             'April 12 2012.',
-      'title': "ICANN's New gTLD Program (NewMovementMedia)",
-      'url': 'https://www.youtube.com/watch?v=ptDjIj-5f0U&t=79s',
-      'video_id': 'ptDjIj-5f0U'},
-     {'author': 'domainsherpa',
-      'channel': 'domainsherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[01:13:10](https://www.youtube.com/watch?v=R695oEH1bvA&t=4390s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Cornstarch because somebody knows about it and then it's gonna sit in their "
-              'portfolio for the rest of their lives yeah yeah it is one it is one of those '
-              'names but I kind of want it now [Laughter].',
-      'timestamp': 4390,
-      'timestamp_label': '[01:13:10]',
-      'timestamp_seconds': 4390,
-      'tip': "Cornstarch because somebody knows about it and then it's gonna sit in their "
-             'portfolio for the rest of their lives yeah yeah it is one it is one of those '
-             'names but I kind of want it now [Laughter].',
-      'title': 'DomainSherpa Review – Dec 21: BainbridgeBuilders.com, Ziplet.com, Metaverse.io '
-               '(domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=R695oEH1bvA&t=4390s',
-      'video_id': 'R695oEH1bvA'}],
- 9: [{'author': 'VPN.com',
-      'channel': 'VPN.com',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=nwlWrMSMdUU&t=88s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Agreeance on both sides of the equation so I hope you've learned something "
-              'again Michael at VPN com if you need any help buying or selling your premium '
-              "domain names we'd love to help you out or check us out at VPN comm slash "
-              'domains hope you have a great day bye.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': "Agreeance on both sides of the equation so I hope you've learned something again "
-             'Michael at VPN com if you need any help buying or selling your premium domain '
-             "names we'd love to help you out or check us out at VPN comm slash domains hope "
-             'you have a great day bye.',
-      'title': 'Top 3 Tips for Acquiring 6-8 Figure Exact-Match Domains (VPN.com)',
-      'url': 'https://www.youtube.com/watch?v=nwlWrMSMdUU&t=88s',
-      'video_id': 'nwlWrMSMdUU'},
      {'author': "Arvow's AI SEO Tips",
       'channel': "Arvow's AI SEO Tips",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=zNPRVbbrEL0&t=100s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=zNPRVbbrEL0&t=91s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Before paying for any placement, ask for the exact page, the proposed '
-              'paragraph, the destination URL, and the link wording. Check that the '
-              'destination answers the promise made in the article. Also, confirm the '
-              'placement terms and what happens if if page or link is removed.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': 'Before paying for any placement, ask for the exact page, the proposed paragraph, '
-             'the destination URL, and the link wording. Check that the destination answers '
-             'the promise made in the article. Also, confirm the placement terms and what '
-             'happens if if page or link is removed.',
-      'title': "Backlink Audit: How to Check a Website Before Buying Backlinks (Arvow's AI SEO "
-               'Tips)',
-      'url': 'https://www.youtube.com/watch?v=zNPRVbbrEL0&t=100s',
+      'text': 'Before paying for any placement, ask for the exact page, the proposed paragraph, '
+              'the destination URL, and the link wording.',
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': 'Before paying for any placement, ask for the exact page, the proposed paragraph, the '
+             'destination URL, and the link wording.',
+      'title': 'Backlink Audit: How to Check a Website Before Buying Backlinks',
+      'url': 'https://www.youtube.com/watch?v=zNPRVbbrEL0&t=91s',
       'video_id': 'zNPRVbbrEL0'},
+     {'author': 'Ajit Sahane | AI SEO, Backlinks & Websites',
+      'channel': 'Ajit Sahane | AI SEO, Backlinks & Websites',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=4HSXReKgl4o&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'When we rechecked six hundred fifty of our own backlinks from Google Search Console '
+              'only fifty four percent were still live.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'When we rechecked six hundred fifty of our own backlinks from Google Search Console '
+             'only fifty four percent were still live.',
+      'title': 'Backlink Checker Tool Demo: Check if Your Backlinks Are Live, Dofollow & Indexed '
+               '(Free)',
+      'url': 'https://www.youtube.com/watch?v=4HSXReKgl4o&t=40s',
+      'video_id': '4HSXReKgl4o'},
+     {'author': 'HowToWebmaster',
+      'channel': 'HowToWebmaster',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=nBNA5_Ty8Jc&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Domain authority below five, so these are a lot of low quality backlinks to my '
+              'site, so what you can do is reach out to them and request to remove your links.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': 'Domain authority below five, so these are a lot of low quality backlinks to my site, '
+             'so what you can do is reach out to them and request to remove your links.',
+      'title': 'Detect Bad-Spam Backlinks to Your Website Hurting Your SEO',
+      'url': 'https://www.youtube.com/watch?v=nBNA5_Ty8Jc&t=94s',
+      'video_id': 'nBNA5_Ty8Jc'},
+     {'author': 'Craig Campbell SEO',
+      'channel': 'Craig Campbell SEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=v_e7GOstIuc&t=96s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "It's by no means set in stone that Semrush always gets this right; simply use it as "
+              'a guide.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': "It's by no means set in stone that Semrush always gets this right; simply use it as "
+             'a guide.',
+      'title': 'How to do a Link Audit, Auditing your Backlinks',
+      'url': 'https://www.youtube.com/watch?v=v_e7GOstIuc&t=96s',
+      'video_id': 'v_e7GOstIuc'},
+     {'author': 'SERPSUPPORT',
+      'channel': 'SERPSUPPORT',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:42](https://www.youtube.com/watch?v=_rpmkLdcJvc&t=282s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Open it in the Wayback Machine and look at what the site actually was. Check the '
+              'anchor text of its backlinks. If you see casino, pharma, or foreign language spam, '
+              'walk away.',
+      'timestamp': 282,
+      'timestamp_label': '[00:04:42]',
+      'timestamp_seconds': 282,
+      'tip': 'Open it in the Wayback Machine and look at what the site actually was. Check the '
+             'anchor text of its backlinks. If you see casino, pharma, or foreign language spam, '
+             'walk away.',
+      'title': 'Backlinks from Expired Domains: The Safe Way (and the Trap Most SEOs Fall Into)',
+      'url': 'https://www.youtube.com/watch?v=_rpmkLdcJvc&t=282s',
+      'video_id': '_rpmkLdcJvc'},
+     {'author': 'Abbas Ravji',
+      'channel': 'Abbas Ravji',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:15](https://www.youtube.com/watch?v=gtVEsaXqXHo&t=735s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'When working with 10 threads it seems to miss some pages sometimes; when working '
+              'with fewer threads it gets them all.',
+      'timestamp': 735,
+      'timestamp_label': '[00:12:15]',
+      'timestamp_seconds': 735,
+      'tip': 'When working with 10 threads it seems to miss some pages sometimes; when working '
+             'with fewer threads it gets them all.',
+      'title': 'How To recreate Expired Domains For your PBN using Free Tools (wayback Machine '
+               'Restorer)',
+      'url': 'https://www.youtube.com/watch?v=gtVEsaXqXHo&t=735s',
+      'video_id': 'gtVEsaXqXHo'},
+     {'author': 'Affiliate Credo',
+      'channel': 'Affiliate Credo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:54](https://www.youtube.com/watch?v=S8e33kDoWhQ&t=234s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'I never buy domains without any archive index, I never buy websites that expired a '
+              "few years ago because it loses links like crazy while it's expired.",
+      'timestamp': 234,
+      'timestamp_label': '[00:03:54]',
+      'timestamp_seconds': 234,
+      'tip': 'I never buy domains without any archive index, I never buy websites that expired a '
+             "few years ago because it loses links like crazy while it's expired.",
+      'title': '📰How to Use Archive.Org to Analyze Expired Domains',
+      'url': 'https://www.youtube.com/watch?v=S8e33kDoWhQ&t=234s',
+      'video_id': 'S8e33kDoWhQ'},
+     {'author': 'Expired Domains',
+      'channel': 'Expired Domains',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:46](https://www.youtube.com/watch?v=5nQIZvvcgfY&t=166s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Since it drops, you have to ask why. Good domains and great domains rarely ever '
+              'drop unless something went wrong.',
+      'timestamp': 166,
+      'timestamp_label': '[00:02:46]',
+      'timestamp_seconds': 166,
+      'tip': 'Since it drops, you have to ask why. Good domains and great domains rarely ever drop '
+             'unless something went wrong.',
+      'title': 'Archive Birth Year vs Whois Birth Year - Explained & Why They Matter For Your Next '
+               'Domain Investment',
+      'url': 'https://www.youtube.com/watch?v=5nQIZvvcgfY&t=166s',
+      'video_id': '5nQIZvvcgfY'},
+     {'author': 'Shawna Newman (Skipblast)',
+      'channel': 'Shawna Newman (Skipblast)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:58](https://www.youtube.com/watch?v=wkwOl5VePMM&t=178s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Just seeing that this domain was being redirected is enough for me to say I don't "
+              "want to buy this aged domain because it's probably a toxic domain.",
+      'timestamp': 178,
+      'timestamp_label': '[00:02:58]',
+      'timestamp_seconds': 178,
+      'tip': "Just seeing that this domain was being redirected is enough for me to say I don't "
+             "want to buy this aged domain because it's probably a toxic domain.",
+      'title': 'How To Use The Wayback Machine To Do Due Diligence On Aged Domains',
+      'url': 'https://www.youtube.com/watch?v=wkwOl5VePMM&t=178s',
+      'video_id': 'wkwOl5VePMM'},
+     {'author': 'theseogeek',
+      'channel': 'theseogeek',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:48](https://www.youtube.com/watch?v=13GEx8eLqzo&t=228s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Where I've totally rewritten the whole page that my link's going on, compared to "
+              'just a rebuild with just the link, that rewritten content expired domain is passing '
+              "more juice or it's having better results on my rankings.",
+      'timestamp': 228,
+      'timestamp_label': '[00:03:48]',
+      'timestamp_seconds': 228,
+      'tip': "Where I've totally rewritten the whole page that my link's going on, compared to "
+             'just a rebuild with just the link, that rewritten content expired domain is passing '
+             "more juice or it's having better results on my rankings.",
+      'title': 'Content When Rebuilding Expired and Auction Domains from Wayback Machine',
+      'url': 'https://www.youtube.com/watch?v=13GEx8eLqzo&t=228s',
+      'video_id': '13GEx8eLqzo'},
+     {'author': 'Frey Chu',
+      'channel': 'Frey Chu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:24](https://www.youtube.com/watch?v=mHkLfhpVYqc&t=564s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Getting 2,000 referring domains in the span of 9 to 10 months is incredibly fast '
+              'and not typical.',
+      'timestamp': 564,
+      'timestamp_label': '[00:09:24]',
+      'timestamp_seconds': 564,
+      'tip': 'Getting 2,000 referring domains in the span of 9 to 10 months is incredibly fast and '
+             'not typical.',
+      'title': 'How I Find Expired Domains with Backlink Goldmines (and When They’re Worth It)',
+      'url': 'https://www.youtube.com/watch?v=mHkLfhpVYqc&t=564s',
+      'video_id': 'mHkLfhpVYqc'},
+     {'author': 'Frey Chu',
+      'channel': 'Frey Chu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:34](https://www.youtube.com/watch?v=mHkLfhpVYqc&t=634s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'I personally would pass. I think the suspicious activity of having referring '
+              'domains grow very significantly in 2015 to 2016 is a red flag.',
+      'timestamp': 634,
+      'timestamp_label': '[00:10:34]',
+      'timestamp_seconds': 634,
+      'tip': 'I personally would pass. I think the suspicious activity of having referring domains '
+             'grow very significantly in 2015 to 2016 is a red flag.',
+      'title': 'How I Find Expired Domains with Backlink Goldmines (and When They’re Worth It)',
+      'url': 'https://www.youtube.com/watch?v=mHkLfhpVYqc&t=634s',
+      'video_id': 'mHkLfhpVYqc'}],
+ 5: [{'author': 'Chris Zuiker - Domain Name Broker',
+      'channel': 'Chris Zuiker - Domain Name Broker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=veILle9et0o&t=157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "You pass on the top offer, you're never going to get an offer like that again, you "
+              'will have to wait years and years and years.',
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': "You pass on the top offer, you're never going to get an offer like that again, you "
+             'will have to wait years and years and years.',
+      'title': 'Price your domain name using these three frames.',
+      'url': 'https://www.youtube.com/watch?v=veILle9et0o&t=157s',
+      'video_id': 'veILle9et0o'},
      {'author': 'domainsherpa',
       'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:58](https://www.youtube.com/watch?v=HfWOYwPZ1HU&t=58s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:07:40](https://www.youtube.com/watch?v=HfWOYwPZ1HU&t=460s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "David Weslo understands your needs and goals whether it's a cease and assist "
-              'letter a udrp case or buying or selling one or more domain names contact David '
-              'Weslo at new medip law.',
-      'timestamp': 58,
-      'timestamp_label': '[00:00:58]',
-      'timestamp_seconds': 58,
-      'tip': "David Weslo understands your needs and goals whether it's a cease and assist "
-             'letter a udrp case or buying or selling one or more domain names contact David '
-             'Weslo at new medip law.',
-      'title': 'How To Value Generic Domain Names -- with Andrew Rosener (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=HfWOYwPZ1HU&t=58s',
+      'text': 'Broad and phrase, for my purposes, have zero purpose, zero use; all I care about is '
+              'the exact match.',
+      'timestamp': 460,
+      'timestamp_label': '[00:07:40]',
+      'timestamp_seconds': 460,
+      'tip': 'Broad and phrase, for my purposes, have zero purpose, zero use; all I care about is '
+             'the exact match.',
+      'title': 'How To Value Generic Domain Names -- with Andrew Rosener',
+      'url': 'https://www.youtube.com/watch?v=HfWOYwPZ1HU&t=460s',
       'video_id': 'HfWOYwPZ1HU'},
-     {'author': 'Tutorials With Alen',
-      'channel': 'Tutorials With Alen',
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:04](https://www.youtube.com/watch?v=53UqsOGx89Q&t=124s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:56:33](https://www.youtube.com/watch?v=J6_UP-VNOco&t=3393s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Finally, it's time to publish your listing. Take a moment here to review all "
-              "the information you've entered. Double check your domain name, its price, and "
-              'the terms of sale to ensure everything appears just as you intend.',
-      'timestamp': 124,
-      'timestamp_label': '[00:02:04]',
-      'timestamp_seconds': 124,
-      'tip': "Finally, it's time to publish your listing. Take a moment here to review all the "
-             "information you've entered. Double check your domain name, its price, and the "
-             'terms of sale to ensure everything appears just as you intend.',
-      'title': '💸 How to Sell Your GoDaddy Domain Step-by-Step on Afternic (2025 Complete '
-               'Guide) (Tutorials With Alen)',
-      'url': 'https://www.youtube.com/watch?v=53UqsOGx89Q&t=124s',
-      'video_id': '53UqsOGx89Q'},
-     {'author': 'NameLifter',
-      'channel': 'NameLifter',
+      'text': 'One thing that I think you got wrong is, first off, assigning a one dollar CPC is '
+              'silly.',
+      'timestamp': 3393,
+      'timestamp_label': '[00:56:33]',
+      'timestamp_seconds': 3393,
+      'tip': 'One thing that I think you got wrong is, first off, assigning a one dollar CPC is '
+             'silly.',
+      'title': 'Royal Rumble over Forbes Domain Valuation Method',
+      'url': 'https://www.youtube.com/watch?v=J6_UP-VNOco&t=3393s',
+      'video_id': 'J6_UP-VNOco'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:27](https://www.youtube.com/watch?v=hBPJH2jIqJ0&t=27s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:39:14](https://www.youtube.com/watch?v=J6_UP-VNOco&t=2354s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'When a domain agreement is finalized, there are three general steps involved in '
-              'completing the transfer. First, the transaction terms are confirmed. We use an '
-              'independent third-party escrow provider, escrow.',
-      'timestamp': 27,
-      'timestamp_label': '[00:00:27]',
-      'timestamp_seconds': 27,
-      'tip': 'When a domain agreement is finalized, there are three general steps involved in '
-             'completing the transfer. First, the transaction terms are confirmed. We use an '
-             'independent third-party escrow provider, escrow.',
-      'title': 'NameLifter Escrow.com Domain Purchase Instructions (NameLifter)',
-      'url': 'https://www.youtube.com/watch?v=hBPJH2jIqJ0&t=27s',
-      'video_id': 'hBPJH2jIqJ0'},
-     {'author': 'David Utke',
-      'channel': 'David Utke',
+      'text': 'Nobody buys blue sky, okay, nobody buys blue sky.',
+      'timestamp': 2354,
+      'timestamp_label': '[00:39:14]',
+      'timestamp_seconds': 2354,
+      'tip': 'Nobody buys blue sky, okay, nobody buys blue sky.',
+      'title': 'Royal Rumble over Forbes Domain Valuation Method',
+      'url': 'https://www.youtube.com/watch?v=J6_UP-VNOco&t=2354s',
+      'video_id': 'J6_UP-VNOco'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:56](https://www.youtube.com/watch?v=A6-lVEeaHEs&t=116s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:49:00](https://www.youtube.com/watch?v=jwAIj8M8kPc&t=2940s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Then you have domain privacy which is free forever. Domain privacy is very '
-              'important. So part of I can rules whenever you register a domain name. You have '
-              'to enter in your legal name, address, phone number, email, like a lot of '
-              'personal information.',
-      'timestamp': 116,
-      'timestamp_label': '[00:01:56]',
-      'timestamp_seconds': 116,
-      'tip': 'Then you have domain privacy which is free forever. Domain privacy is very '
-             'important. So part of I can rules whenever you register a domain name. You have '
-             'to enter in your legal name, address, phone number, email, like a lot of '
-             'personal information.',
-      'title': 'How To Easily Sell Your Namcheap Domain Names! (Step by Step Tutorial) (David '
-               'Utke)',
-      'url': 'https://www.youtube.com/watch?v=A6-lVEeaHEs&t=116s',
-      'video_id': 'A6-lVEeaHEs'},
-     {'author': 'PMN Online',
-      'channel': 'PMN Online',
+      'text': "People were trying to go to the .com, which of course doesn't exist, and they lost "
+              'a lot of web traffic.',
+      'timestamp': 2940,
+      'timestamp_label': '[00:49:00]',
+      'timestamp_seconds': 2940,
+      'tip': "People were trying to go to the .com, which of course doesn't exist, and they lost a "
+             'lot of web traffic.',
+      'title': 'What Startups Need to Know About Acquiring a Killer Domain Name -- With Andrew '
+               'Rosener',
+      'url': 'https://www.youtube.com/watch?v=jwAIj8M8kPc&t=2940s',
+      'video_id': 'jwAIj8M8kPc'},
+     {'author': 'SpeedyIndex Link Indexing Service',
+      'channel': 'SpeedyIndex Link Indexing Service',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:03](https://www.youtube.com/watch?v=AKtcv_vFlSY&t=183s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:03:38](https://www.youtube.com/watch?v=wqhZ_zZZgpk&t=218s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Cloudflare DNS, significantly improving both performance and the resilience of '
-              'your website. Remember, DNS changes can take up to 48 hours to propagate '
-              "worldwide, so be patient and check back if you don't see immediate results.",
-      'timestamp': 183,
-      'timestamp_label': '[00:03:03]',
-      'timestamp_seconds': 183,
-      'tip': 'Cloudflare DNS, significantly improving both performance and the resilience of '
-             'your website. Remember, DNS changes can take up to 48 hours to propagate '
-             "worldwide, so be patient and check back if you don't see immediate results.",
-      'title': 'How to Set Cloudflare DNS Easily 2026 (PMN Online)',
-      'url': 'https://www.youtube.com/watch?v=AKtcv_vFlSY&t=183s',
-      'video_id': 'AKtcv_vFlSY'},
-     {'author': 'GoDaddy',
-      'channel': 'GoDaddy',
+      'text': 'Link schemes are what get you in trouble.',
+      'timestamp': 218,
+      'timestamp_label': '[00:03:38]',
+      'timestamp_seconds': 218,
+      'tip': 'Link schemes are what get you in trouble.',
+      'title': 'What Are Backlinks in SEO? Good vs Bad Links (2026)',
+      'url': 'https://www.youtube.com/watch?v=wqhZ_zZZgpk&t=218s',
+      'video_id': 'wqhZ_zZZgpk'},
+     {'author': 'Launch with Bryan',
+      'channel': 'Launch with Bryan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:03](https://www.youtube.com/watch?v=OKekYzcUFsg&t=183s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:04:23](https://www.youtube.com/watch?v=ASaM7hIMKVI&t=263s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "It's important to know what you're doing when you're getting into the domain "
-              'name trade. So if you need help buying or selling a good domain for your '
-              'business, a domain broker can be a great help.',
-      'timestamp': 183,
-      'timestamp_label': '[00:03:03]',
-      'timestamp_seconds': 183,
-      'tip': "It's important to know what you're doing when you're getting into the domain "
-             'name trade. So if you need help buying or selling a good domain for your '
-             'business, a domain broker can be a great help.',
-      'title': 'Building a Domain Portfolio - How to Invest in Domains | The Journey (GoDaddy)',
-      'url': 'https://www.youtube.com/watch?v=OKekYzcUFsg&t=183s',
-      'video_id': 'OKekYzcUFsg'},
-     {'author': 'Brooks Conkle // Build Income Streams',
-      'channel': 'Brooks Conkle // Build Income Streams',
+      'text': "I'd rather put that money toward building a better website.",
+      'timestamp': 263,
+      'timestamp_label': '[00:04:23]',
+      'timestamp_seconds': 263,
+      'tip': "I'd rather put that money toward building a better website.",
+      'title': 'Exact Match Domains In 2026: Do They Still Work For SEO?',
+      'url': 'https://www.youtube.com/watch?v=ASaM7hIMKVI&t=263s',
+      'video_id': 'ASaM7hIMKVI'},
+     {'author': 'VPN.com',
+      'channel': 'VPN.com',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:14](https://www.youtube.com/watch?v=USC2_VCPYbc&t=134s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=nwlWrMSMdUU&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Go to like this one I see Summit Nest I don't know like I don't I I don't even "
-              'know who I would reach out to or like or where that would go a Prosper bin.',
+      'text': 'It took nearly 4 years for us to acquire VPN.com, and this is not uncommon when '
+              "you're trying to acquire a very scarce asset.",
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'It took nearly 4 years for us to acquire VPN.com, and this is not uncommon when '
+             "you're trying to acquire a very scarce asset.",
+      'title': 'Top 3 Tips for Acquiring 6-8 Figure Exact-Match Domains',
+      'url': 'https://www.youtube.com/watch?v=nwlWrMSMdUU&t=16s',
+      'video_id': 'nwlWrMSMdUU'},
+     {'author': 'rulo digital',
+      'channel': 'rulo digital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:42](https://www.youtube.com/watch?v=M9xJJGeG1q8&t=822s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'But the average resale price for a .ai domain is $239,516.',
+      'timestamp': 822,
+      'timestamp_label': '[00:13:42]',
+      'timestamp_seconds': 822,
+      'tip': 'But the average resale price for a .ai domain is $239,516.',
+      'title': 'Prime Digital Real Estate: Why Exact-Match .com Domains Are the Ultimate Business '
+               'Weapon',
+      'url': 'https://www.youtube.com/watch?v=M9xJJGeG1q8&t=822s',
+      'video_id': 'M9xJJGeG1q8'},
+     {'author': 'Edward Sturm',
+      'channel': 'Edward Sturm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:54](https://www.youtube.com/watch?v=MvbVisdUAZ0&t=1554s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Dude, for the three years it was like $45.',
+      'timestamp': 1554,
+      'timestamp_label': '[00:25:54]',
+      'timestamp_seconds': 1554,
+      'tip': 'Dude, for the three years it was like $45.',
+      'title': 'Exact Match Domains Still Work (Most SEOs Are Wrong)',
+      'url': 'https://www.youtube.com/watch?v=MvbVisdUAZ0&t=1554s',
+      'video_id': 'MvbVisdUAZ0'},
+     {'author': 'MediaOptions',
+      'channel': 'MediaOptions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:54](https://www.youtube.com/watch?v=On67hq0XY6k&t=414s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'For every one dollar an exact match domain holder spends, another brand has to '
+              'spend ten dollars.',
+      'timestamp': 414,
+      'timestamp_label': '[00:06:54]',
+      'timestamp_seconds': 414,
+      'tip': 'For every one dollar an exact match domain holder spends, another brand has to spend '
+             'ten dollars.',
+      'title': 'Why Exact Match Domains Names Are Valuable',
+      'url': 'https://www.youtube.com/watch?v=On67hq0XY6k&t=414s',
+      'video_id': 'On67hq0XY6k'},
+     {'author': 'The AI Traffic Engine',
+      'channel': 'The AI Traffic Engine',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:29](https://www.youtube.com/watch?v=N4WntkgqqAg&t=389s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Brand mentioning is what is building trust.',
+      'timestamp': 389,
+      'timestamp_label': '[00:06:29]',
+      'timestamp_seconds': 389,
+      'tip': 'Brand mentioning is what is building trust.',
+      'title': 'Exact Match Domain (EMD) Loophole 2026: How I Ranked #1 on Google (Proof Inside) '
+               '#ai #seo #links',
+      'url': 'https://www.youtube.com/watch?v=N4WntkgqqAg&t=389s',
+      'video_id': 'N4WntkgqqAg'},
+     {'author': 'LLMrefs AI SEO',
+      'channel': 'LLMrefs AI SEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=XEh3aA3iqtI&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Match the question word for word on a site you'd be happy for Google to look at "
+              'closely.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': "Match the question word for word on a site you'd be happy for Google to look at "
+             'closely.',
+      'title': 'Exact Match Domain Hack for AI Visibility (0 to $7M in 10 days)',
+      'url': 'https://www.youtube.com/watch?v=XEh3aA3iqtI&t=94s',
+      'video_id': 'XEh3aA3iqtI'},
+     {'author': 'PPC Better',
+      'channel': 'PPC Better',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:36](https://www.youtube.com/watch?v=raCnNNzO6po&t=456s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't let friends buy exact match domains.",
+      'timestamp': 456,
+      'timestamp_label': '[00:07:36]',
+      'timestamp_seconds': 456,
+      'tip': "Don't let friends buy exact match domains.",
+      'title': 'Exact Match Domains and Website Search Engine Optimization (SEO) in 2023.',
+      'url': 'https://www.youtube.com/watch?v=raCnNNzO6po&t=456s',
+      'video_id': 'raCnNNzO6po'},
+     {'author': 'Domain Value Estimator',
+      'channel': 'Domain Value Estimator',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:28](https://www.youtube.com/watch?v=nC0fLv5Q_PI&t=388s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The headline number is a starting point.',
+      'timestamp': 388,
+      'timestamp_label': '[00:06:28]',
+      'timestamp_seconds': 388,
+      'tip': 'The headline number is a starting point.',
+      'title': "You're Reading Domain Appraisals Wrong",
+      'url': 'https://www.youtube.com/watch?v=nC0fLv5Q_PI&t=388s',
+      'video_id': 'nC0fLv5Q_PI'},
+     {'author': 'Chris Zuiker - Domain Name Broker',
+      'channel': 'Chris Zuiker - Domain Name Broker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=yhwbFofi-Q0&t=153s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The three pillars of domain evaluation are raw equity, brand equity and perceived '
+              'equity.',
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': 'The three pillars of domain evaluation are raw equity, brand equity and perceived '
+             'equity.',
+      'title': 'Why are one word domain names valuable?',
+      'url': 'https://www.youtube.com/watch?v=yhwbFofi-Q0&t=153s',
+      'video_id': 'yhwbFofi-Q0'},
+     {'author': 'MarkUpgrade',
+      'channel': 'MarkUpgrade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:24](https://www.youtube.com/watch?v=8mDbRg8x4DA&t=1524s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The number one mistake I see entrepreneurs make all the time is believing that the '
+              'domain will be there at some point in the future when they get around to it.',
+      'timestamp': 1524,
+      'timestamp_label': '[00:25:24]',
+      'timestamp_seconds': 1524,
+      'tip': 'The number one mistake I see entrepreneurs make all the time is believing that the '
+             'domain will be there at some point in the future when they get around to it.',
+      'title': 'Ep.78 | Digital Real Estate: The Power of Domains with Andrew Rosener',
+      'url': 'https://www.youtube.com/watch?v=8mDbRg8x4DA&t=1524s',
+      'video_id': '8mDbRg8x4DA'},
+     {'author': 'MarkUpgrade',
+      'channel': 'MarkUpgrade',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:57:06](https://www.youtube.com/watch?v=8mDbRg8x4DA&t=3426s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'I think that it is absolutely essential that you have an exclusive contract whether '
+              "you're buying or selling a domain.",
+      'timestamp': 3426,
+      'timestamp_label': '[00:57:06]',
+      'timestamp_seconds': 3426,
+      'tip': 'I think that it is absolutely essential that you have an exclusive contract whether '
+             "you're buying or selling a domain.",
+      'title': 'Ep.78 | Digital Real Estate: The Power of Domains with Andrew Rosener',
+      'url': 'https://www.youtube.com/watch?v=8mDbRg8x4DA&t=3426s',
+      'video_id': '8mDbRg8x4DA'}],
+ 6: [{'author': 'Andrew Allemann',
+      'channel': 'Andrew Allemann',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:14](https://www.youtube.com/watch?v=jD02RIu6q3Q&t=134s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "It's always going to overcount.",
       'timestamp': 134,
       'timestamp_label': '[00:02:14]',
       'timestamp_seconds': 134,
-      'tip': "Go to like this one I see Summit Nest I don't know like I don't I I don't even "
-             'know who I would reach out to or like or where that would go a Prosper bin.',
-      'title': 'Outbounding Domain Names (Sales Outreach Tutorial) (Brooks Conkle // Build '
-               'Income Streams)',
-      'url': 'https://www.youtube.com/watch?v=USC2_VCPYbc&t=134s',
-      'video_id': 'USC2_VCPYbc'},
-     {'author': 'Hannan Muhammad - Domain Flipping',
-      'channel': 'Hannan Muhammad - Domain Flipping',
+      'tip': "It's always going to overcount.",
+      'title': 'Domain investing: Using DotDB to find end users and value domains',
+      'url': 'https://www.youtube.com/watch?v=jD02RIu6q3Q&t=134s',
+      'video_id': 'jD02RIu6q3Q'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:18](https://www.youtube.com/watch?v=FoTuWS2OJes&t=498s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:53:30](https://www.youtube.com/watch?v=oeP4t891CPs&t=3210s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Like.com.net.org डीएचडी जो होती है टॉप लेवल डोमेन यह तू टाइप्स की होती है एक '
-              'होता है जीटीएल दी जेनेरिक टॉप लेवल डोमेन जेनेरिक टॉप लेवल जो होती है ये होती है '
-              'जो जनरल टर्म्स होती है like.com.',
-      'timestamp': 498,
-      'timestamp_label': '[00:08:18]',
-      'timestamp_seconds': 498,
-      'tip': 'Like.com.net.org डीएचडी जो होती है टॉप लेवल डोमेन यह तू टाइप्स की होती है एक '
-             'होता है जीटीएल दी जेनेरिक टॉप लेवल डोमेन जेनेरिक टॉप लेवल जो होती है ये होती है '
-             'जो जनरल टर्म्स होती है like.com.',
-      'title': 'Domaining 101 - Introduction to Domain Investing (Hannan Muhammad - Domain '
-               'Flipping)',
-      'url': 'https://www.youtube.com/watch?v=FoTuWS2OJes&t=498s',
-      'video_id': 'FoTuWS2OJes'},
-     {'author': 'cssfx',
-      'channel': 'cssfx',
+      'text': 'Every day you lose like 99% of the auctions.',
+      'timestamp': 3210,
+      'timestamp_label': '[00:53:30]',
+      'timestamp_seconds': 3210,
+      'tip': 'Every day you lose like 99% of the auctions.',
+      'title': 'Inside the Domain Market: Valuations, NamesCon & What’s Next | DomainSherpa '
+               'Podcast (Nov. 19, 2026)',
+      'url': 'https://www.youtube.com/watch?v=oeP4t891CPs&t=3210s',
+      'video_id': 'oeP4t891CPs'},
+     {'author': 'SkyInclude',
+      'channel': 'SkyInclude',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=zN6FKHG-ORs&t=78s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:21:39](https://www.youtube.com/watch?v=0-ax0cEcuZk&t=1299s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'So, Dino Dot also has the ability to add prepaid credits to your account via '
-              'credit card, PayPal, or other means. This is a great feature, especially for '
-              'drop catching utilities like Snatcher that allows you to do instant '
-              'registration when providing your login credentials.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': 'So, Dino Dot also has the ability to add prepaid credits to your account via '
-             'credit card, PayPal, or other means. This is a great feature, especially for '
-             'drop catching utilities like Snatcher that allows you to do instant registration '
-             'when providing your login credentials.',
-      'title': 'Dynadot: An Often Overlooked Player in the Expired Domain Name Aftermarket '
-               '(cssfx)',
-      'url': 'https://www.youtube.com/watch?v=zN6FKHG-ORs&t=78s',
-      'video_id': 'zN6FKHG-ORs'},
+      'text': 'My investment thesis in the legacy domain names has always been I want broad '
+              'appeal, the broader the appeal the better.',
+      'timestamp': 1299,
+      'timestamp_label': '[00:21:39]',
+      'timestamp_seconds': 1299,
+      'tip': 'My investment thesis in the legacy domain names has always been I want broad appeal, '
+             'the broader the appeal the better.',
+      'title': 'The Future of Domains with Andrew Rosener | HANDYCON',
+      'url': 'https://www.youtube.com/watch?v=0-ax0cEcuZk&t=1299s',
+      'video_id': '0-ax0cEcuZk'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:40:35](https://www.youtube.com/watch?v=R695oEH1bvA&t=2435s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You want to get the highest price possible, you gotta want to not sell your names.',
+      'timestamp': 2435,
+      'timestamp_label': '[00:40:35]',
+      'timestamp_seconds': 2435,
+      'tip': 'You want to get the highest price possible, you gotta want to not sell your names.',
+      'title': 'DomainSherpa Review – Dec 21: BainbridgeBuilders.com, Ziplet.com, Metaverse.io',
+      'url': 'https://www.youtube.com/watch?v=R695oEH1bvA&t=2435s',
+      'video_id': 'R695oEH1bvA'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:59:52](https://www.youtube.com/watch?v=sekhN8zuNlU&t=3592s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Timing is more important than price.',
+      'timestamp': 3592,
+      'timestamp_label': '[00:59:52]',
+      'timestamp_seconds': 3592,
+      'tip': 'Timing is more important than price.',
+      'title': '$175K for Techno.com?! Premium Domain Sales & Valuations | DomainSherpa Podcast '
+               '(November 12, 2026)',
+      'url': 'https://www.youtube.com/watch?v=sekhN8zuNlU&t=3592s',
+      'video_id': 'sekhN8zuNlU'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:11](https://www.youtube.com/watch?v=KYAHTsYNIPI&t=2531s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're just starting out, the chances that you identified a diamond in the rough "
+              'are real low.',
+      'timestamp': 2531,
+      'timestamp_label': '[00:42:11]',
+      'timestamp_seconds': 2531,
+      'tip': "If you're just starting out, the chances that you identified a diamond in the rough "
+             'are real low.',
+      'title': 'Navigating Appraised Value vs Market Value of Your Domain',
+      'url': 'https://www.youtube.com/watch?v=KYAHTsYNIPI&t=2531s',
+      'video_id': 'KYAHTsYNIPI'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:06](https://www.youtube.com/watch?v=KYAHTsYNIPI&t=1266s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The finish is the cost per click.',
+      'timestamp': 1266,
+      'timestamp_label': '[00:21:06]',
+      'timestamp_seconds': 1266,
+      'tip': 'The finish is the cost per click.',
+      'title': 'Navigating Appraised Value vs Market Value of Your Domain',
+      'url': 'https://www.youtube.com/watch?v=KYAHTsYNIPI&t=1266s',
+      'video_id': 'KYAHTsYNIPI'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:42:37](https://www.youtube.com/watch?v=OzWsYhxMiCE&t=6157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'There has to be an obvious end user for who this is an upgrade or it needs to be an '
+              'extremely strategic defensive or offensive acquisition for a large company with '
+              'significant proof.',
+      'timestamp': 6157,
+      'timestamp_label': '[01:42:37]',
+      'timestamp_seconds': 6157,
+      'tip': 'There has to be an obvious end user for who this is an upgrade or it needs to be an '
+             'extremely strategic defensive or offensive acquisition for a large company with '
+             'significant proof.',
+      'title': 'The Biggest Mistake Domain Investors Make And How to Fix It | DomainSherpa Podcast '
+               '(March 19, 2026)',
+      'url': 'https://www.youtube.com/watch?v=OzWsYhxMiCE&t=6157s',
+      'video_id': 'OzWsYhxMiCE'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:02:12](https://www.youtube.com/watch?v=P7O7_GHUYb0&t=3732s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "I tell everybody when you sell a name you've got to replace it if you're in this "
+              'game for the long term.',
+      'timestamp': 3732,
+      'timestamp_label': '[01:02:12]',
+      'timestamp_seconds': 3732,
+      'tip': "I tell everybody when you sell a name you've got to replace it if you're in this "
+             'game for the long term.',
+      'title': 'DomainSherpa Review – 10/27/22: Cyger Says “I’m Back”: RealInnovation, Tradesman, '
+               'Encrypto',
+      'url': 'https://www.youtube.com/watch?v=P7O7_GHUYb0&t=3732s',
+      'video_id': 'P7O7_GHUYb0'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:01:39](https://www.youtube.com/watch?v=CKvIo_PJEQI&t=3699s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'And I just feel like escrow companies need to understand that time kills deals and '
+              'they need to do what they need to do legally as soon as possible.',
+      'timestamp': 3699,
+      'timestamp_label': '[01:01:39]',
+      'timestamp_seconds': 3699,
+      'tip': 'And I just feel like escrow companies need to understand that time kills deals and '
+             'they need to do what they need to do legally as soon as possible.',
+      'title': 'How Domain Investors Pick Names for Moonshot Pricing | DomainSherpa Podcast '
+               '(September 3, 2026)',
+      'url': 'https://www.youtube.com/watch?v=CKvIo_PJEQI&t=3699s',
+      'video_id': 'CKvIo_PJEQI'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:09:57](https://www.youtube.com/watch?v=KZqosumnXfg&t=4197s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "If a name is illiquid, I'm looking to pay no more than 10% of what I think I could "
+              'sell it for.',
+      'timestamp': 4197,
+      'timestamp_label': '[01:09:57]',
+      'timestamp_seconds': 4197,
+      'tip': "If a name is illiquid, I'm looking to pay no more than 10% of what I think I could "
+             'sell it for.',
+      'title': 'Making Money on the Buy -- With Andrew Rosener',
+      'url': 'https://www.youtube.com/watch?v=KZqosumnXfg&t=4197s',
+      'video_id': 'KZqosumnXfg'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:18:00](https://www.youtube.com/watch?v=yT5y3iEQ96U&t=4680s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You just sort of have to hold until somebody really wants it from you.',
+      'timestamp': 4680,
+      'timestamp_label': '[01:18:00]',
+      'timestamp_seconds': 4680,
+      'tip': 'You just sort of have to hold until somebody really wants it from you.',
+      'title': 'Down the Domain & Crypto Rabbit Hole – with Bitcoin Developer Jimmy Song',
+      'url': 'https://www.youtube.com/watch?v=yT5y3iEQ96U&t=4680s',
+      'video_id': 'yT5y3iEQ96U'},
+     {'author': 'HostMaria',
+      'channel': 'HostMaria',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:02](https://www.youtube.com/watch?v=anQ8Zjhrg_M&t=362s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I put zero value into an online appraisal or even an appraisal that comes from a '
+              'company or corporation.',
+      'timestamp': 362,
+      'timestamp_label': '[00:06:02]',
+      'timestamp_seconds': 362,
+      'tip': 'I put zero value into an online appraisal or even an appraisal that comes from a '
+             'company or corporation.',
+      'title': 'Adam Dicker: How to Value a Domain Name, Domain Valuation Tools & UK domain '
+               'portfolio review',
+      'url': 'https://www.youtube.com/watch?v=anQ8Zjhrg_M&t=362s',
+      'video_id': 'anQ8Zjhrg_M'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:14](https://www.youtube.com/watch?v=RpOpttsk1qw&t=2534s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "NameJet's by far the best.",
+      'timestamp': 2534,
+      'timestamp_label': '[00:42:14]',
+      'timestamp_seconds': 2534,
+      'tip': "NameJet's by far the best.",
+      'title': 'DomainSherpa Review with @AdamDicker @MediaOptions @DomainShane – Jan 26, 2015',
+      'url': 'https://www.youtube.com/watch?v=RpOpttsk1qw&t=2534s',
+      'video_id': 'RpOpttsk1qw'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:49](https://www.youtube.com/watch?v=cb-n0okmiuw&t=1909s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "You've got a sunk cost that means nothing for what the value is today.",
+      'timestamp': 1909,
+      'timestamp_label': '[00:31:49]',
+      'timestamp_seconds': 1909,
+      'tip': "You've got a sunk cost that means nothing for what the value is today.",
+      'title': 'DomainSherpa Review with @AdamDicker @MediaOptions @DomainShane – Mar 16, 2015',
+      'url': 'https://www.youtube.com/watch?v=cb-n0okmiuw&t=1909s',
+      'video_id': 'cb-n0okmiuw'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:44:22](https://www.youtube.com/watch?v=4a5oAIneDaA&t=2662s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "2500 seems like a logical number considering that's what it would cost to take it.",
+      'timestamp': 2662,
+      'timestamp_label': '[00:44:22]',
+      'timestamp_seconds': 2662,
+      'tip': "2500 seems like a logical number considering that's what it would cost to take it.",
+      'title': 'DomainSherpa Review with @AdamDicker @MediaOptions @DomainShane – May 18, 2015',
+      'url': 'https://www.youtube.com/watch?v=4a5oAIneDaA&t=2662s',
+      'video_id': '4a5oAIneDaA'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:42](https://www.youtube.com/watch?v=DLZJeUWhf3I&t=3162s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I sold one name that I lowered the price and I sold three names that I raised the '
+              'price and that was over the course of less than a month.',
+      'timestamp': 3162,
+      'timestamp_label': '[00:52:42]',
+      'timestamp_seconds': 3162,
+      'tip': 'I sold one name that I lowered the price and I sold three names that I raised the '
+             'price and that was over the course of less than a month.',
+      'title': 'Do Domain Price Changes Trigger More Sales? | DomainSherpa Podcast (July 2, 2026)',
+      'url': 'https://www.youtube.com/watch?v=DLZJeUWhf3I&t=3162s',
+      'video_id': 'DLZJeUWhf3I'}],
+ 7: [{'author': 'kickstartcommerce',
+      'channel': 'kickstartcommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:10](https://www.youtube.com/watch?v=5UOGADHB0l0&t=3130s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "so don't drop your price increase activity level.",
+      'timestamp': 3130,
+      'timestamp_label': '[00:52:10]',
+      'timestamp_seconds': 3130,
+      'tip': "so don't drop your price increase activity level.",
+      'title': 'Selling Domains Using The Dan.com Outbound Method with Alex Verdea',
+      'url': 'https://www.youtube.com/watch?v=5UOGADHB0l0&t=3130s',
+      'video_id': '5UOGADHB0l0'},
+     {'author': 'kickstartcommerce',
+      'channel': 'kickstartcommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:05:22](https://www.youtube.com/watch?v=5UOGADHB0l0&t=3922s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "that's one way to blow a deal is is being dishonest and telling people you have "
+              "other offers when you actually don't.",
+      'timestamp': 3922,
+      'timestamp_label': '[01:05:22]',
+      'timestamp_seconds': 3922,
+      'tip': "that's one way to blow a deal is is being dishonest and telling people you have "
+             "other offers when you actually don't.",
+      'title': 'Selling Domains Using The Dan.com Outbound Method with Alex Verdea',
+      'url': 'https://www.youtube.com/watch?v=5UOGADHB0l0&t=3922s',
+      'video_id': '5UOGADHB0l0'},
+     {'author': 'kickstartcommerce',
+      'channel': 'kickstartcommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:39:01](https://www.youtube.com/watch?v=yMsNlST-y9M&t=2341s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'if you are thinking that you can send thousand emails a day and you can sell it '
+              "domain um I'm afraid it's not gonna work.",
+      'timestamp': 2341,
+      'timestamp_label': '[00:39:01]',
+      'timestamp_seconds': 2341,
+      'tip': 'if you are thinking that you can send thousand emails a day and you can sell it '
+             "domain um I'm afraid it's not gonna work.",
+      'title': 'How Yogi Solanki Sold 15+ Domains in 60 Days',
+      'url': 'https://www.youtube.com/watch?v=yMsNlST-y9M&t=2341s',
+      'video_id': 'yMsNlST-y9M'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:35:23](https://www.youtube.com/watch?v=3C8uYmkV_aE&t=2123s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'one sentence may not sell a domain but one sentence can certainly kill a domain.',
+      'timestamp': 2123,
+      'timestamp_label': '[00:35:23]',
+      'timestamp_seconds': 2123,
+      'tip': 'one sentence may not sell a domain but one sentence can certainly kill a domain.',
+      'title': 'Decoding End-User Mindset for Premium Domains | DomainSherpa Podcast | November 2, '
+               '2023',
+      'url': 'https://www.youtube.com/watch?v=3C8uYmkV_aE&t=2123s',
+      'video_id': '3C8uYmkV_aE'},
+     {'author': 'Brooks Conkle // Build Income Streams',
+      'channel': 'Brooks Conkle // Build Income Streams',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:28](https://www.youtube.com/watch?v=ciS3H3ANjuM&t=148s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Now, if your domain name sells for $1,000, you know, you could be paying $300 '
+              'commission.',
+      'timestamp': 148,
+      'timestamp_label': '[00:02:28]',
+      'timestamp_seconds': 148,
+      'tip': 'Now, if your domain name sells for $1,000, you know, you could be paying $300 '
+             'commission.',
+      'title': 'How to Make Money Selling Domain Names (3 Easy Methods)',
+      'url': 'https://www.youtube.com/watch?v=ciS3H3ANjuM&t=148s',
+      'video_id': 'ciS3H3ANjuM'},
      {'author': 'Scott Redgate',
       'channel': 'Scott Redgate',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:57](https://www.youtube.com/watch?v=rzHCbB8_QqU&t=237s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:05:46](https://www.youtube.com/watch?v=mRcM1Utk5hI&t=346s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'NameCheep or GoDaddy and you can purchase it usually for $12 or less per year. '
-              'But there are some other statuses like maybe that domain is up on the auction '
-              'websites and so you would actually have to bid. Sometimes that domain is '
-              'backorded.',
-      'timestamp': 237,
-      'timestamp_label': '[00:03:57]',
-      'timestamp_seconds': 237,
-      'tip': 'NameCheep or GoDaddy and you can purchase it usually for $12 or less per year. '
-             'But there are some other statuses like maybe that domain is up on the auction '
-             'websites and so you would actually have to bid. Sometimes that domain is '
-             'backorded.',
-      'title': 'How to Buy Expired Domains (but should you really?) (Scott Redgate)',
-      'url': 'https://www.youtube.com/watch?v=rzHCbB8_QqU&t=237s',
-      'video_id': 'rzHCbB8_QqU'},
+      'text': 'now no for name Che they do take a flat 10% commission and that is charged once the '
+              'domain is sold.',
+      'timestamp': 346,
+      'timestamp_label': '[00:05:46]',
+      'timestamp_seconds': 346,
+      'tip': 'now no for name Che they do take a flat 10% commission and that is charged once the '
+             'domain is sold.',
+      'title': 'How to Buy & Sell Website Domains to Make Money',
+      'url': 'https://www.youtube.com/watch?v=mRcM1Utk5hI&t=346s',
+      'video_id': 'mRcM1Utk5hI'},
+     {'author': 'Chris Zuiker - Domain Name Broker',
+      'channel': 'Chris Zuiker - Domain Name Broker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:38](https://www.youtube.com/watch?v=DBqMibOXGo8&t=218s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Like you have to understand who your buyer is.',
+      'timestamp': 218,
+      'timestamp_label': '[00:03:38]',
+      'timestamp_seconds': 218,
+      'tip': 'Like you have to understand who your buyer is.',
+      'title': 'Sell your domain name faster by understanding this one thing.',
+      'url': 'https://www.youtube.com/watch?v=DBqMibOXGo8&t=218s',
+      'video_id': 'DBqMibOXGo8'},
+     {'author': 'Brooks Conkle // Build Income Streams',
+      'channel': 'Brooks Conkle // Build Income Streams',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:07](https://www.youtube.com/watch?v=uIsWkqUglS4&t=727s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'if you got a thousand domains your overhead right there is 15 grand.',
+      'timestamp': 727,
+      'timestamp_label': '[00:12:07]',
+      'timestamp_seconds': 727,
+      'tip': 'if you got a thousand domains your overhead right there is 15 grand.',
+      'title': 'How This Broker Sells Domains for MILLIONS — Brian Harbin Interview',
+      'url': 'https://www.youtube.com/watch?v=uIsWkqUglS4&t=727s',
+      'video_id': 'uIsWkqUglS4'},
+     {'author': 'Brooks Conkle // Build Income Streams',
+      'channel': 'Brooks Conkle // Build Income Streams',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:48](https://www.youtube.com/watch?v=USC2_VCPYbc&t=108s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "use case like if it's an interesting name and you're like you can't think of who "
+              "would who would use the name it's going to be difficult to like to do Outreach to "
+              'that.',
+      'timestamp': 108,
+      'timestamp_label': '[00:01:48]',
+      'timestamp_seconds': 108,
+      'tip': "use case like if it's an interesting name and you're like you can't think of who "
+             "would who would use the name it's going to be difficult to like to do Outreach to "
+             'that.',
+      'title': 'Outbounding Domain Names (Sales Outreach Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=USC2_VCPYbc&t=108s',
+      'video_id': 'USC2_VCPYbc'},
      {'author': 'domainsherpa',
       'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:37:08](https://www.youtube.com/watch?v=ksUajnoey7I&t=2228s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:21:14](https://www.youtube.com/watch?v=ksUajnoey7I&t=1274s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "I could understand that you're trying to close the deal you need to be be able "
-              'to explain things in real people terms and explain why the domain is worth that '
-              "much and and close the deal but when you're buying something like 9g.",
-      'timestamp': 2228,
-      'timestamp_label': '[00:37:08]',
-      'timestamp_seconds': 2228,
-      'tip': "I could understand that you're trying to close the deal you need to be be able "
-             'to explain things in real people terms and explain why the domain is worth that '
-             "much and and close the deal but when you're buying something like 9g.",
-      'title': 'How a Fishmonger Lost $300K Learning the Domain Name Ropes - With Andrew '
-               'Rosener @MediaOptions (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=ksUajnoey7I&t=2228s',
+      'text': 'it took me you know it took me three years and and about 300 Grand uh you know in '
+              'education to learn what a good domain was.',
+      'timestamp': 1274,
+      'timestamp_label': '[00:21:14]',
+      'timestamp_seconds': 1274,
+      'tip': 'it took me you know it took me three years and and about 300 Grand uh you know in '
+             'education to learn what a good domain was.',
+      'title': 'How a Fishmonger Lost $300K Learning the Domain Name Ropes - With Andrew Rosener '
+               '@MediaOptions',
+      'url': 'https://www.youtube.com/watch?v=ksUajnoey7I&t=1274s',
       'video_id': 'ksUajnoey7I'},
-     {'author': 'Domain Notebook',
-      'channel': 'Domain Notebook',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=ntMgB1hXTa8&t=104s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Purchase best college road and you purchase through godaddy or whoever and you '
-              'want you want to park it on our site all you have to do is simply go to the '
-              'parking tab add the domain name.',
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'Purchase best college road and you purchase through godaddy or whoever and you '
-             'want you want to park it on our site all you have to do is simply go to the '
-             'parking tab add the domain name.',
-      'title': 'Domain Notebook Parking Tutorial (Domain Notebook)',
-      'url': 'https://www.youtube.com/watch?v=ntMgB1hXTa8&t=104s',
-      'video_id': 'ntMgB1hXTa8'},
      {'author': 'domainsherpa',
       'channel': 'domainsherpa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:50:45](https://www.youtube.com/watch?v=3C8uYmkV_aE&t=3045s)',
-      'relevance': 'Attributed practitioner commentary on '
-                   'brandable/exact-match/expired-authority domain investing, drop-catch '
-                   'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:13:35](https://www.youtube.com/watch?v=Yvi8ys0RQH8&t=815s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "'s a lot of value in there but yeah you know in fact probably possibly by the "
-              "time the show goes live we'll probably have a link to the book back up on the "
-              'website so go to the about us page on the media options.',
-      'timestamp': 3045,
-      'timestamp_label': '[00:50:45]',
-      'timestamp_seconds': 3045,
-      'tip': "'s a lot of value in there but yeah you know in fact probably possibly by the "
-             "time the show goes live we'll probably have a link to the book back up on the "
-             'website so go to the about us page on the media options.',
-      'title': 'Decoding End-User Mindset for Premium Domains | DomainSherpa Podcast | '
-               'November 2, 2023 (domainsherpa)',
-      'url': 'https://www.youtube.com/watch?v=3C8uYmkV_aE&t=3045s',
-      'video_id': '3C8uYmkV_aE'}],
- 10: [{'author': 'rulo digital',
-       'channel': 'rulo digital',
+      'text': "it's literally in my experience 99 of the people in this industry uh are not "
+              'qualified to be doing outbound sales number one.',
+      'timestamp': 815,
+      'timestamp_label': '[00:13:35]',
+      'timestamp_seconds': 815,
+      'tip': "it's literally in my experience 99 of the people in this industry uh are not "
+             'qualified to be doing outbound sales number one.',
+      'title': 'GoDaddy’s Aftermarket Approach: Normalizing Premium Domain Acquisitions',
+      'url': 'https://www.youtube.com/watch?v=Yvi8ys0RQH8&t=815s',
+      'video_id': 'Yvi8ys0RQH8'},
+     {'author': 'SawSells',
+      'channel': 'SawSells',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:21](https://www.youtube.com/watch?v=EA8QZJvkKP4&t=381s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "And this one is I don't see many targets, the name isn't great and the domain is "
+              'not priced right.',
+      'timestamp': 381,
+      'timestamp_label': '[00:06:21]',
+      'timestamp_seconds': 381,
+      'tip': "And this one is I don't see many targets, the name isn't great and the domain is not "
+             'priced right.',
+      'title': '3 Things Brokers Look for Before Taking On a Domain for Outbound',
+      'url': 'https://www.youtube.com/watch?v=EA8QZJvkKP4&t=381s',
+      'video_id': 'EA8QZJvkKP4'},
+     {'author': 'DotOutbound',
+      'channel': 'DotOutbound',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:31](https://www.youtube.com/watch?v=6cANvHgSKgI&t=151s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is absolutely crucial for protecting your sender reputation.',
+      'timestamp': 151,
+      'timestamp_label': '[00:02:31]',
+      'timestamp_seconds': 151,
+      'tip': 'This is absolutely crucial for protecting your sender reputation.',
+      'title': 'DotOutbound.com Walkthrough | How to Sell Domain Names via Outbound Fast',
+      'url': 'https://www.youtube.com/watch?v=6cANvHgSKgI&t=151s',
+      'video_id': '6cANvHgSKgI'},
+     {'author': 'kickstartcommerce',
+      'channel': 'kickstartcommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:07:33](https://www.youtube.com/watch?v=gQJxEyrhqec&t=4053s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "definitely try to let them bring up price you know don't negotiate against "
+              'yourself.',
+      'timestamp': 4053,
+      'timestamp_label': '[01:07:33]',
+      'timestamp_seconds': 4053,
+      'tip': "definitely try to let them bring up price you know don't negotiate against yourself.",
+      'title': 'Domain Outbound Strategies and Best Practices to Sell Domains with Jason Eisler '
+               'and Yogi Solanki',
+      'url': 'https://www.youtube.com/watch?v=gQJxEyrhqec&t=4053s',
+      'video_id': 'gQJxEyrhqec'},
+     {'author': 'kickstartcommerce',
+      'channel': 'kickstartcommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:49](https://www.youtube.com/watch?v=gQJxEyrhqec&t=1429s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'i never ever do give give them my pricing on my first email.',
+      'timestamp': 1429,
+      'timestamp_label': '[00:23:49]',
+      'timestamp_seconds': 1429,
+      'tip': 'i never ever do give give them my pricing on my first email.',
+      'title': 'Domain Outbound Strategies and Best Practices to Sell Domains with Jason Eisler '
+               'and Yogi Solanki',
+      'url': 'https://www.youtube.com/watch?v=gQJxEyrhqec&t=1429s',
+      'video_id': 'gQJxEyrhqec'},
+     {'author': 'GoDaddy',
+      'channel': 'GoDaddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:25](https://www.youtube.com/watch?v=SNukqlGstqs&t=445s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'I think if you wanna sell your names, the best place to go, is to try and talk to a '
+              'broker.',
+      'timestamp': 445,
+      'timestamp_label': '[00:07:25]',
+      'timestamp_seconds': 445,
+      'tip': 'I think if you wanna sell your names, the best place to go, is to try and talk to a '
+             'broker.',
+      'title': 'Domain Valuation - How to Price and Sell Domains',
+      'url': 'https://www.youtube.com/watch?v=SNukqlGstqs&t=445s',
+      'video_id': 'SNukqlGstqs'},
+     {'author': 'Chandler Bolt',
+      'channel': 'Chandler Bolt',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:08](https://www.youtube.com/watch?v=NheyTdmBlH0&t=248s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "do not hire domain broker and this is in almost all cases there's very few "
+              'exceptions.',
+      'timestamp': 248,
+      'timestamp_label': '[00:04:08]',
+      'timestamp_seconds': 248,
+      'tip': "do not hire domain broker and this is in almost all cases there's very few "
+             'exceptions.',
+      'title': 'How To Buy & Negotiate A Domain Purchase',
+      'url': 'https://www.youtube.com/watch?v=NheyTdmBlH0&t=248s',
+      'video_id': 'NheyTdmBlH0'},
+     {'author': 'Chris Zuiker - Domain Name Broker',
+      'channel': 'Chris Zuiker - Domain Name Broker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=dgnnNdyoENg&t=117s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Someone with a desire is going to keep coming back and maybe make a higher offer, '
+              'try to get a deal done.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': 'Someone with a desire is going to keep coming back and maybe make a higher offer, '
+             'try to get a deal done.',
+      'title': 'Negotiating domain names',
+      'url': 'https://www.youtube.com/watch?v=dgnnNdyoENg&t=117s',
+      'video_id': 'dgnnNdyoENg'}],
+ 8: [{'author': 'Jazzy Domainz',
+      'channel': 'Jazzy Domainz',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:44](https://www.youtube.com/watch?v=7r4PuUv52Pw&t=284s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Right now the default is request price, so somebody who comes to your page has to '
+              'contact GoDaddy Afternic to get the price, and this is just one more step in the '
+              'way of getting a sale, so I like to use a custom lander.',
+      'timestamp': 284,
+      'timestamp_label': '[00:04:44]',
+      'timestamp_seconds': 284,
+      'tip': 'Right now the default is request price, so somebody who comes to your page has to '
+             'contact GoDaddy Afternic to get the price, and this is just one more step in the way '
+             'of getting a sale, so I like to use a custom lander.',
+      'title': 'How I List Domains for Sale on Afternic (Step-by-Step Example)',
+      'url': 'https://www.youtube.com/watch?v=7r4PuUv52Pw&t=284s',
+      'video_id': '7r4PuUv52Pw'},
+     {'author': 'GoDaddy Help Center',
+      'channel': 'GoDaddy Help Center',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:03](https://www.youtube.com/watch?v=9335u-6w_ZQ&t=63s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Set your buy now price; I'm gonna price mine a little under the suggested price "
+              'hoping it will sell faster.',
+      'timestamp': 63,
+      'timestamp_label': '[00:01:03]',
+      'timestamp_seconds': 63,
+      'tip': "Set your buy now price; I'm gonna price mine a little under the suggested price "
+             'hoping it will sell faster.',
+      'title': 'How to Sell Your Godaddy Domain Step-By-Step on Afternic',
+      'url': 'https://www.youtube.com/watch?v=9335u-6w_ZQ&t=63s',
+      'video_id': '9335u-6w_ZQ'},
+     {'author': 'The How-To Learning Academy',
+      'channel': 'The How-To Learning Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:37](https://www.youtube.com/watch?v=r3zrQNCo_eU&t=97s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'When eligible and enrolled, fast transfer reduces commissions to 15% and enables an '
+              'automatic transfer to the buyer the moment a purchase is completed.',
+      'timestamp': 97,
+      'timestamp_label': '[00:01:37]',
+      'timestamp_seconds': 97,
+      'tip': 'When eligible and enrolled, fast transfer reduces commissions to 15% and enables an '
+             'automatic transfer to the buyer the moment a purchase is completed.',
+      'title': 'How to Sell Your GoDaddy Domain on Afternic [2026 Guide]',
+      'url': 'https://www.youtube.com/watch?v=r3zrQNCo_eU&t=97s',
+      'video_id': 'r3zrQNCo_eU'},
+     {'author': 'Tutorials With Alen',
+      'channel': 'Tutorials With Alen',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:10](https://www.youtube.com/watch?v=53UqsOGx89Q&t=70s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're looking for a quick sale, you might want to price competitively, and use "
+              "Afternic's pricing tools or consult other domains in your niche to see what similar "
+              'domains are going for.',
+      'timestamp': 70,
+      'timestamp_label': '[00:01:10]',
+      'timestamp_seconds': 70,
+      'tip': "If you're looking for a quick sale, you might want to price competitively, and use "
+             "Afternic's pricing tools or consult other domains in your niche to see what similar "
+             'domains are going for.',
+      'title': '💸 How to Sell Your GoDaddy Domain Step-by-Step on Afternic (2025 Complete Guide)',
+      'url': 'https://www.youtube.com/watch?v=53UqsOGx89Q&t=70s',
+      'video_id': '53UqsOGx89Q'},
+     {'author': 'Reza Taheri',
+      'channel': 'Reza Taheri',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:26](https://www.youtube.com/watch?v=2jfssBvnbfw&t=26s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'On Atom the process of transfer took about two days and two hours, but on the other '
+              'hand for Afternic it took almost two weeks.',
+      'timestamp': 26,
+      'timestamp_label': '[00:00:26]',
+      'timestamp_seconds': 26,
+      'tip': 'On Atom the process of transfer took about two days and two hours, but on the other '
+             'hand for Afternic it took almost two weeks.',
+      'title': 'Afternic Review: Why It’s Killing Your Domain Sales',
+      'url': 'https://www.youtube.com/watch?v=2jfssBvnbfw&t=26s',
+      'video_id': '2jfssBvnbfw'},
+     {'author': 'Reza Taheri',
+      'channel': 'Reza Taheri',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:33](https://www.youtube.com/watch?v=2jfssBvnbfw&t=213s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'I put a higher price, up to 20% higher, in Afternic because it will take around 20% '
+              'commission, and in Atom the standard commission is 7.5%, which is awesome.',
+      'timestamp': 213,
+      'timestamp_label': '[00:03:33]',
+      'timestamp_seconds': 213,
+      'tip': 'I put a higher price, up to 20% higher, in Afternic because it will take around 20% '
+             'commission, and in Atom the standard commission is 7.5%, which is awesome.',
+      'title': 'Afternic Review: Why It’s Killing Your Domain Sales',
+      'url': 'https://www.youtube.com/watch?v=2jfssBvnbfw&t=213s',
+      'video_id': '2jfssBvnbfw'},
+     {'author': 'bytecash',
+      'channel': 'bytecash',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:45](https://www.youtube.com/watch?v=Hw6wg0dsANM&t=525s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'On Afternic you have a minimum price of 250 for any domain name or website, so this '
+              "isn't going to be the best place to sell quick turnkey solutions.",
+      'timestamp': 525,
+      'timestamp_label': '[00:08:45]',
+      'timestamp_seconds': 525,
+      'tip': 'On Afternic you have a minimum price of 250 for any domain name or website, so this '
+             "isn't going to be the best place to sell quick turnkey solutions.",
+      'title': 'Selling Websites on SEDO and AFTERNIC',
+      'url': 'https://www.youtube.com/watch?v=Hw6wg0dsANM&t=525s',
+      'video_id': 'Hw6wg0dsANM'},
+     {'author': 'GoDaddy Domain Academy',
+      'channel': 'GoDaddy Domain Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:39](https://www.youtube.com/watch?v=I1_LrdnHVvo&t=99s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You may want to learn how you would set up a for sale lander or the best thing to '
+              'do with lease to own, and we have AI powered pricing insights.',
+      'timestamp': 99,
+      'timestamp_label': '[00:01:39]',
+      'timestamp_seconds': 99,
+      'tip': 'You may want to learn how you would set up a for sale lander or the best thing to do '
+             'with lease to own, and we have AI powered pricing insights.',
+      'title': 'Unlock More Domain Sales Today: Secrets from the Afternic Masterclass',
+      'url': 'https://www.youtube.com/watch?v=I1_LrdnHVvo&t=99s',
+      'video_id': 'I1_LrdnHVvo'},
+     {'author': 'Andrew Allemann',
+      'channel': 'Andrew Allemann',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:10](https://www.youtube.com/watch?v=memimdQC7MY&t=1390s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Anybody that has something that's 2500 or below is really a good fit for bin; those "
+              "could be impulse purchases, and you don't typically need human involvement to make "
+              'that sale happen.',
+      'timestamp': 1390,
+      'timestamp_label': '[00:23:10]',
+      'timestamp_seconds': 1390,
+      'tip': "Anybody that has something that's 2500 or below is really a good fit for bin; those "
+             "could be impulse purchases, and you don't typically need human involvement to make "
+             'that sale happen.',
+      'title': 'Selling domains through Afternic - DNW Podcast #561',
+      'url': 'https://www.youtube.com/watch?v=memimdQC7MY&t=1390s',
+      'video_id': 'memimdQC7MY'},
+     {'author': 'Andrew Allemann',
+      'channel': 'Andrew Allemann',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:22](https://www.youtube.com/watch?v=memimdQC7MY&t=1522s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "We've found with Namefind that the sweet spot is probably between 24 months and 36 "
+              "months, where you have enough investment from a buyer that they've got skin in the "
+              'game.',
+      'timestamp': 1522,
+      'timestamp_label': '[00:25:22]',
+      'timestamp_seconds': 1522,
+      'tip': "We've found with Namefind that the sweet spot is probably between 24 months and 36 "
+             "months, where you have enough investment from a buyer that they've got skin in the "
+             'game.',
+      'title': 'Selling domains through Afternic - DNW Podcast #561',
+      'url': 'https://www.youtube.com/watch?v=memimdQC7MY&t=1522s',
+      'video_id': 'memimdQC7MY'},
+     {'author': 'GoDaddy',
+      'channel': 'GoDaddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:11](https://www.youtube.com/watch?v=PPJ8y-pwY38&t=431s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The majority of our sales, over 60% of them on domains that are priced under '
+              '$10,000, are going to happen within 48 hours.',
+      'timestamp': 431,
+      'timestamp_label': '[00:07:11]',
+      'timestamp_seconds': 431,
+      'tip': 'The majority of our sales, over 60% of them on domains that are priced under '
+             '$10,000, are going to happen within 48 hours.',
+      'title': 'On The Dot! | Domain Aftermarket | Episode 1 - Afternic Integration with GoDaddy | '
+               'GoDaddy Hangout',
+      'url': 'https://www.youtube.com/watch?v=PPJ8y-pwY38&t=431s',
+      'video_id': 'PPJ8y-pwY38'},
+     {'author': 'Web Whizz',
+      'channel': 'Web Whizz',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:45](https://www.youtube.com/watch?v=UPcwro2bxDg&t=225s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'When you use Afternic name servers, the commission rate will be reduced from the '
+              'standard rate of 25% to 15%.',
+      'timestamp': 225,
+      'timestamp_label': '[00:03:45]',
+      'timestamp_seconds': 225,
+      'tip': 'When you use Afternic name servers, the commission rate will be reduced from the '
+             'standard rate of 25% to 15%.',
+      'title': 'How to Sell Domain on Afternic | Afternic Payment Setup Tutorial (2026)',
+      'url': 'https://www.youtube.com/watch?v=UPcwro2bxDg&t=225s',
+      'video_id': 'UPcwro2bxDg'},
+     {'author': 'Sedo.com, LLC',
+      'channel': 'Sedo.com, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=XPj2Qjpi55Y&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sedo recommends that you list your domains as buy now, as our research shows that '
+              'domains listed as buy now are three times more likely to sell than those listed as '
+              'a standard make offer listing.',
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': 'Sedo recommends that you list your domains as buy now, as our research shows that '
+             'domains listed as buy now are three times more likely to sell than those listed as a '
+             'standard make offer listing.',
+      'title': 'What Sales Settings to Choose When Selling Domains - Buy Now VS Make Offer',
+      'url': 'https://www.youtube.com/watch?v=XPj2Qjpi55Y&t=15s',
+      'video_id': 'XPj2Qjpi55Y'},
+     {'author': 'ReviewUP',
+      'channel': 'ReviewUP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:17](https://www.youtube.com/watch?v=S2dl3wpQtus&t=17s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Set the floor price, which is the minimum price Afternic brokers can negotiate and '
+              'sell the domain for.',
+      'timestamp': 17,
+      'timestamp_label': '[00:00:17]',
+      'timestamp_seconds': 17,
+      'tip': 'Set the floor price, which is the minimum price Afternic brokers can negotiate and '
+             'sell the domain for.',
+      'title': 'How to Sell a Domain Name On GoDaddy in 2026  Goddady & Afternic Domain Flipping '
+               'Tutorial',
+      'url': 'https://www.youtube.com/watch?v=S2dl3wpQtus&t=17s',
+      'video_id': 'S2dl3wpQtus'},
+     {'author': 'ReviewUP',
+      'channel': 'ReviewUP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=m0396LLUymU&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Since this domain isn't very strong, I'm going to set bin price $490.",
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': "Since this domain isn't very strong, I'm going to set bin price $490.",
+      'title': 'How to Sell Any Domain Name on GoDaddy in 2026 (Using DropCatch & NameBright with '
+               'Afternic Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=m0396LLUymU&t=51s',
+      'video_id': 'm0396LLUymU'},
+     {'author': 'Twoguysfinance',
+      'channel': 'Twoguysfinance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:12](https://www.youtube.com/watch?v=mj3WifuqDM8&t=72s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Gain wider exposure for your domain names by opting into Afternic's fast transfer "
+              'network.',
+      'timestamp': 72,
+      'timestamp_label': '[00:01:12]',
+      'timestamp_seconds': 72,
+      'tip': "Gain wider exposure for your domain names by opting into Afternic's fast transfer "
+             'network.',
+      'title': 'How to Sell Domain on Afternic | Afternic Payment Setup Tutorial (2025)',
+      'url': 'https://www.youtube.com/watch?v=mj3WifuqDM8&t=72s',
+      'video_id': 'mj3WifuqDM8'},
+     {'author': 'ReviewUP',
+      'channel': 'ReviewUP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=Tf5gRH1YWFE&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can choose to keep the listing standard or upgrade it to plus, but keep in mind '
+              'the commission increases to 15% instead of 7.5%.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'You can choose to keep the listing standard or upgrade it to plus, but keep in mind '
+             'the commission increases to 15% instead of 7.5%.',
+      'title': 'How to List a Domain for Sale on Atom (Atom Domain Flipping Step-by-Step Tutorial '
+               ')',
+      'url': 'https://www.youtube.com/watch?v=Tf5gRH1YWFE&t=31s',
+      'video_id': 'Tf5gRH1YWFE'},
+     {'author': 'CyberTech',
+      'channel': 'CyberTech',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:38](https://www.youtube.com/watch?v=YRldRVYasrU&t=38s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Choose your registration here, and from this option add your API token and import '
+              'your domains.',
+      'timestamp': 38,
+      'timestamp_label': '[00:00:38]',
+      'timestamp_seconds': 38,
+      'tip': 'Choose your registration here, and from this option add your API token and import '
+             'your domains.',
+      'title': 'How to Sell Domain on atom (atom.com) - Full Tutorial',
+      'url': 'https://www.youtube.com/watch?v=YRldRVYasrU&t=38s',
+      'video_id': 'YRldRVYasrU'}],
+ 9: [{'author': 'GoDaddy Domain Academy',
+      'channel': 'GoDaddy Domain Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=Osg5qiW8qYI&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "And I'm going to save my changes and you can see they've been updated.",
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': "And I'm going to save my changes and you can see they've been updated.",
+      'title': 'Boost Domain Sales: Easy 14-Month Lease to Own Setup (Afternic Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=Osg5qiW8qYI&t=84s',
+      'video_id': 'Osg5qiW8qYI'},
+     {'author': 'Efty',
+      'channel': 'Efty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=i5aX4LKqSuI&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Lease-to-own can significantly increase your sale through rate.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'Lease-to-own can significantly increase your sale through rate.',
+      'title': 'Boost your domain name sales with Lease-To-Own',
+      'url': 'https://www.youtube.com/watch?v=i5aX4LKqSuI&t=40s',
+      'video_id': 'i5aX4LKqSuI'},
+     {'author': 'Domains No Broker',
+      'channel': 'Domains No Broker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=FSQ0uJ1Ul9Q&t=86s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "It's the industry standard for a reason.",
+      'timestamp': 86,
+      'timestamp_label': '[00:01:26]',
+      'timestamp_seconds': 86,
+      'tip': "It's the industry standard for a reason.",
+      'title': 'Domain Escrow Explained: How to Sell Safely',
+      'url': 'https://www.youtube.com/watch?v=FSQ0uJ1Ul9Q&t=86s',
+      'video_id': 'FSQ0uJ1Ul9Q'},
+     {'author': 'NameLifter',
+      'channel': 'NameLifter',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:09](https://www.youtube.com/watch?v=hBPJH2jIqJ0&t=69s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Transfer timelines vary depending on registrar policies.',
+      'timestamp': 69,
+      'timestamp_label': '[00:01:09]',
+      'timestamp_seconds': 69,
+      'tip': 'Transfer timelines vary depending on registrar policies.',
+      'title': 'NameLifter Escrow.com Domain Purchase Instructions',
+      'url': 'https://www.youtube.com/watch?v=hBPJH2jIqJ0&t=69s',
+      'video_id': 'hBPJH2jIqJ0'},
+     {'author': 'kickstartcommerce',
+      'channel': 'kickstartcommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:36](https://www.youtube.com/watch?v=IJ9lx010Yps&t=1296s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Always use an outside agreement, because Escrow.com cannot enforce everything.',
+      'timestamp': 1296,
+      'timestamp_label': '[00:21:36]',
+      'timestamp_seconds': 1296,
+      'tip': 'Always use an outside agreement, because Escrow.com cannot enforce everything.',
+      'title': 'The Essentials of Domain Leasing with Escrow’s Brian Tharp',
+      'url': 'https://www.youtube.com/watch?v=IJ9lx010Yps&t=1296s',
+      'video_id': 'IJ9lx010Yps'},
+     {'author': 'Adam Dicker',
+      'channel': 'Adam Dicker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:44](https://www.youtube.com/watch?v=DnnSbpJm2ZI&t=464s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'A lease without an option to buy is even better.',
+      'timestamp': 464,
+      'timestamp_label': '[00:07:44]',
+      'timestamp_seconds': 464,
+      'tip': 'A lease without an option to buy is even better.',
+      'title': 'TheArtOfTheName.com - The Benefits of Domain Leasing and use eCop.com or '
+               'Escrow.comcom',
+      'url': 'https://www.youtube.com/watch?v=DnnSbpJm2ZI&t=464s',
+      'video_id': 'DnnSbpJm2ZI'},
+     {'author': 'Name Experts',
+      'channel': 'Name Experts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=VgeW1cO-RaE&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The escrow.com terms are enough on smaller deals, but above six digits a paper '
+              'contract is used.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'The escrow.com terms are enough on smaller deals, but above six digits a paper '
+             'contract is used.',
+      'title': 'Finalizing a Domain Name Purchase with Escrow',
+      'url': 'https://www.youtube.com/watch?v=VgeW1cO-RaE&t=0s',
+      'video_id': 'VgeW1cO-RaE'},
+     {'author': 'ThemeAtelier',
+      'channel': 'ThemeAtelier',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:01](https://www.youtube.com/watch?v=uSvTpFGqTaY&t=361s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Once verified, the offer will appear as verified in the admin dashboard.',
+      'timestamp': 361,
+      'timestamp_label': '[00:06:01]',
+      'timestamp_seconds': 361,
+      'tip': 'Once verified, the offer will appear as verified in the admin dashboard.',
+      'title': 'Domain For Sale WordPress Plugin (Pro) – Complete Setup & Selling Domains with '
+               'Escrow.com',
+      'url': 'https://www.youtube.com/watch?v=uSvTpFGqTaY&t=361s',
+      'video_id': 'uSvTpFGqTaY'},
+     {'author': 'Sufian Twellman',
+      'channel': 'Sufian Twellman',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=uxbVmXRdRtU&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Flippa is the most recommended marketplace, keep the transaction inside Flippa, and '
+              'Flippa recommends escrow.com.',
+      'timestamp': 54,
+      'timestamp_label': '[00:00:54]',
+      'timestamp_seconds': 54,
+      'tip': 'Flippa is the most recommended marketplace, keep the transaction inside Flippa, and '
+             'Flippa recommends escrow.com.',
+      'title': 'How to Buy a Website Online Using Escrow.com',
+      'url': 'https://www.youtube.com/watch?v=uxbVmXRdRtU&t=54s',
+      'video_id': 'uxbVmXRdRtU'},
+     {'author': 'Make Money Anthony',
+      'channel': 'Make Money Anthony',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=-3yBZKLuJnU&t=157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Add a clause that allows cancellation and a refund if the transfer does not happen '
+              'within about seven days.',
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': 'Add a clause that allows cancellation and a refund if the transfer does not happen '
+             'within about seven days.',
+      'title': '✅ Is Escrow.com Safe To Use 🔴',
+      'url': 'https://www.youtube.com/watch?v=-3yBZKLuJnU&t=157s',
+      'video_id': '-3yBZKLuJnU'},
+     {'author': '30MinuteDeal Global',
+      'channel': '30MinuteDeal Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:36](https://www.youtube.com/watch?v=wCiUhJTjJyo&t=156s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The entire process took only 3 days.',
+      'timestamp': 156,
+      'timestamp_label': '[00:02:36]',
+      'timestamp_seconds': 156,
+      'tip': 'The entire process took only 3 days.',
+      'title': 'How I Sold a $10 Domain at $500 with DomainAgents & Escrow.com',
+      'url': 'https://www.youtube.com/watch?v=wCiUhJTjJyo&t=156s',
+      'video_id': 'wCiUhJTjJyo'},
+     {'author': 'DaaZ Domain Name Marketplace',
+      'channel': 'DaaZ Domain Name Marketplace',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=OpC53UvZ_Ss&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Lease to own is for expensive domain names, and the domain can be used from the '
+              'first payment.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'Lease to own is for expensive domain names, and the domain can be used from the '
+             'first payment.',
+      'title': 'Buy a domain name by using Lease to Own Option',
+      'url': 'https://www.youtube.com/watch?v=OpC53UvZ_Ss&t=0s',
+      'video_id': 'OpC53UvZ_Ss'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:05:33](https://www.youtube.com/watch?v=Y1dwwAJKRdg&t=3933s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "But it looks like the default rate's only about 3.6%.",
+      'timestamp': 3933,
+      'timestamp_label': '[01:05:33]',
+      'timestamp_seconds': 3933,
+      'tip': "But it looks like the default rate's only about 3.6%.",
+      'title': 'Escrow.com Q4 Report: AI Domains, Market Trends & Insights | DomainSherpa Podcast '
+               '| March 20, 2025',
+      'url': 'https://www.youtube.com/watch?v=Y1dwwAJKRdg&t=3933s',
+      'video_id': 'Y1dwwAJKRdg'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:38:33](https://www.youtube.com/watch?v=AnOYqTuITG4&t=5913s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "But you can't double your price and decrease your service.",
+      'timestamp': 5913,
+      'timestamp_label': '[01:38:33]',
+      'timestamp_seconds': 5913,
+      'tip': "But you can't double your price and decrease your service.",
+      'title': 'Escrow.com Domain Report: .AI vs .COM Trends Explained | DomainSherpa Podcast '
+               '(March 12, 2026)',
+      'url': 'https://www.youtube.com/watch?v=AnOYqTuITG4&t=5913s',
+      'video_id': 'AnOYqTuITG4'},
+     {'author': 'Domain Value Estimator',
+      'channel': 'Domain Value Estimator',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:00](https://www.youtube.com/watch?v=zNcj1gwZsso&t=300s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The buyer pays first into escrow and the domain moves after the money is safe.',
+      'timestamp': 300,
+      'timestamp_label': '[00:05:00]',
+      'timestamp_seconds': 300,
+      'tip': 'The buyer pays first into escrow and the domain moves after the money is safe.',
+      'title': 'A Buyer Offered Me $50,000. It Was a Scam',
+      'url': 'https://www.youtube.com/watch?v=zNcj1gwZsso&t=300s',
+      'video_id': 'zNcj1gwZsso'},
+     {'author': 'Domains No Broker',
+      'channel': 'Domains No Broker',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:48](https://www.youtube.com/watch?v=LrpkfK_9XY0&t=108s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Direct negotiation can give the owner more control, but it also requires calm '
+              'communication and careful documentation.',
+      'timestamp': 108,
+      'timestamp_label': '[00:01:48]',
+      'timestamp_seconds': 108,
+      'tip': 'Direct negotiation can give the owner more control, but it also requires calm '
+             'communication and careful documentation.',
+      'title': 'Seven Mistakes Domain Sellers Should Avoid',
+      'url': 'https://www.youtube.com/watch?v=LrpkfK_9XY0&t=108s',
+      'video_id': 'LrpkfK_9XY0'},
+     {'author': 'domainsherpa',
+      'channel': 'domainsherpa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:24:06](https://www.youtube.com/watch?v=AnOYqTuITG4&t=5046s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'So those domains need to be returned.',
+      'timestamp': 5046,
+      'timestamp_label': '[01:24:06]',
+      'timestamp_seconds': 5046,
+      'tip': 'So those domains need to be returned.',
+      'title': 'Escrow.com Domain Report: .AI vs .COM Trends Explained | DomainSherpa Podcast '
+               '(March 12, 2026)',
+      'url': 'https://www.youtube.com/watch?v=AnOYqTuITG4&t=5046s',
+      'video_id': 'AnOYqTuITG4'},
+     {'author': 'Domain Value Estimator',
+      'channel': 'Domain Value Estimator',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:02](https://www.youtube.com/watch?v=zNcj1gwZsso&t=182s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'A seller never pays for an appraisal a buyer demands.',
+      'timestamp': 182,
+      'timestamp_label': '[00:03:02]',
+      'timestamp_seconds': 182,
+      'tip': 'A seller never pays for an appraisal a buyer demands.',
+      'title': 'A Buyer Offered Me $50,000. It Was a Scam',
+      'url': 'https://www.youtube.com/watch?v=zNcj1gwZsso&t=182s',
+      'video_id': 'zNcj1gwZsso'}],
+ 10: [{'author': 'DomCop',
+       'channel': 'DomCop',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:22](https://www.youtube.com/watch?v=M9xJJGeG1q8&t=682s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:02:35](https://www.youtube.com/watch?v=im4LjoyOxPE&t=155s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'That is the exact mechanism at play, yeah. Because to an AI agent that has '
-               'been trained on millions of data points to spot fishing attacks and malware, a '
-               'misspelled or overly complex domain looks like a security risk. It lacks '
-               'mathematical authority.',
-       'timestamp': 682,
-       'timestamp_label': '[00:11:22]',
-       'timestamp_seconds': 682,
-       'tip': 'That is the exact mechanism at play, yeah. Because to an AI agent that has been '
-              'trained on millions of data points to spot fishing attacks and malware, a '
-              'misspelled or overly complex domain looks like a security risk. It lacks '
-              'mathematical authority.',
-       'title': 'Prime Digital Real Estate: Why Exact-Match .com Domains Are the Ultimate '
-                'Business Weapon (rulo digital)',
-       'url': 'https://www.youtube.com/watch?v=M9xJJGeG1q8&t=682s',
-       'video_id': 'M9xJJGeG1q8'},
-      {'author': 'Manic Millionaire',
-       'channel': 'Manic Millionaire',
+       'text': 'Create an account, add your domains, and point them to the Bodis name servers at '
+               'your registrar, and the park page shows within 24 hours.',
+       'timestamp': 155,
+       'timestamp_label': '[00:02:35]',
+       'timestamp_seconds': 155,
+       'tip': 'Create an account, add your domains, and point them to the Bodis name servers at '
+              'your registrar, and the park page shows within 24 hours.',
+       'title': 'How to Domain Park with Voodoo and Bodis',
+       'url': 'https://www.youtube.com/watch?v=im4LjoyOxPE&t=155s',
+       'video_id': 'im4LjoyOxPE'},
+      {'author': 'David Utke',
+       'channel': 'David Utke',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:07](https://www.youtube.com/watch?v=rMXyBJCRlDQ&t=367s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:02:24](https://www.youtube.com/watch?v=ck1VMki_11Q&t=144s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "So when you get that right for a pound, it's you can do it on scale. And so "
-               "now it with AI as well, it's even easier to create the script to go and find "
-               'the soft uh to create the names to go and take advantage of the opportunity.',
-       'timestamp': 367,
-       'timestamp_label': '[00:06:07]',
-       'timestamp_seconds': 367,
-       'tip': "So when you get that right for a pound, it's you can do it on scale. And so now "
-              "it with AI as well, it's even easier to create the script to go and find the "
-              'soft uh to create the names to go and take advantage of the opportunity.',
-       'title': 'How I Made $10 Million Trading Domains (Manic Millionaire)',
-       'url': 'https://www.youtube.com/watch?v=rMXyBJCRlDQ&t=367s',
-       'video_id': 'rMXyBJCRlDQ'},
-      {'author': 'The How-To Learning Academy',
-       'channel': 'The How-To Learning Academy',
+       'text': 'Like, you have a 100 domains and each domain is earning at least $5 a month.',
+       'timestamp': 144,
+       'timestamp_label': '[00:02:24]',
+       'timestamp_seconds': 144,
+       'tip': 'Like, you have a 100 domains and each domain is earning at least $5 a month.',
+       'title': 'How to Park a Domain & Make Money With Ads (Step-by-Step)',
+       'url': 'https://www.youtube.com/watch?v=ck1VMki_11Q&t=144s',
+       'video_id': 'ck1VMki_11Q'},
+      {'author': 'RollerAds',
+       'channel': 'RollerAds',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:03](https://www.youtube.com/watch?v=r3zrQNCo_eU&t=123s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:00:41](https://www.youtube.com/watch?v=-i811Ip0HIo&t=41s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Afternic, verified and published, and confirmed fast transfer to speed up the '
-               'handoff and reduce fees. From here, monitor your Afternic dashboard for '
-               'offers, respond promptly to broker outreach, and fine-tune pricing as needed '
-               'to keep your listings competitive.',
-       'timestamp': 123,
-       'timestamp_label': '[00:02:03]',
-       'timestamp_seconds': 123,
-       'tip': 'Afternic, verified and published, and confirmed fast transfer to speed up the '
-              'handoff and reduce fees. From here, monitor your Afternic dashboard for offers, '
-              'respond promptly to broker outreach, and fine-tune pricing as needed to keep '
-              'your listings competitive.',
-       'title': 'How to Sell Your GoDaddy Domain on Afternic [2026 Guide] (The How-To Learning '
-                'Academy)',
-       'url': 'https://www.youtube.com/watch?v=r3zrQNCo_eU&t=123s',
-       'video_id': 'r3zrQNCo_eU'},
-      {'author': 'Web Whizz',
-       'channel': 'Web Whizz',
+       'text': 'At Roller Ads, you can add domains in bulk and connect them via API, DNS, or '
+               'CNAME.',
+       'timestamp': 41,
+       'timestamp_label': '[00:00:41]',
+       'timestamp_seconds': 41,
+       'tip': 'At Roller Ads, you can add domains in bulk and connect them via API, DNS, or CNAME.',
+       'title': '5 things you should know before parking your domains 🎯',
+       'url': 'https://www.youtube.com/watch?v=-i811Ip0HIo&t=41s',
+       'video_id': '-i811Ip0HIo'},
+      {'author': 'OpenTalk',
+       'channel': 'OpenTalk',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:26](https://www.youtube.com/watch?v=UPcwro2bxDg&t=146s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:01:37](https://www.youtube.com/watch?v=VIRXW2_q7xI&t=97s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Afternic.com and it will show you on the website bonus some of the option that '
-               'you caner navigating such as the dashboard portfolio sales offers and.',
-       'timestamp': 146,
-       'timestamp_label': '[00:02:26]',
-       'timestamp_seconds': 146,
-       'tip': 'Afternic.com and it will show you on the website bonus some of the option that '
-              'you caner navigating such as the dashboard portfolio sales offers and.',
-       'title': 'How to Sell Domain on Afternic | Afternic Payment Setup Tutorial (2026) (Web '
-                'Whizz)',
-       'url': 'https://www.youtube.com/watch?v=UPcwro2bxDg&t=146s',
-       'video_id': 'UPcwro2bxDg'},
-      {'author': 'Tim Verdouw',
-       'channel': 'Tim Verdouw',
+       'text': 'To earn from parking, the domain needs a good keyword and good marketplace value.',
+       'timestamp': 97,
+       'timestamp_label': '[00:01:37]',
+       'timestamp_seconds': 97,
+       'tip': 'To earn from parking, the domain needs a good keyword and good marketplace value.',
+       'title': 'Earn $1000 for domain parking - Best way to make money online - BODIS',
+       'url': 'https://www.youtube.com/watch?v=VIRXW2_q7xI&t=97s',
+       'video_id': 'VIRXW2_q7xI'},
+      {'author': 'SOCDemystified',
+       'channel': 'SOCDemystified',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:34](https://www.youtube.com/watch?v=ehERSgNWmRc&t=94s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:01:52](https://www.youtube.com/watch?v=GPScvA9fgcw&t=112s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'So figuring out what kind of domain to buy, when to buy, how to sell it, how '
-               "to negotiate, it's a lot of work, it's a full-time job. That's what domain "
-               'flippers do. So we wanted to build a solution uh using Agentic AI where AI '
-               'agent does all the work.',
-       'timestamp': 94,
-       'timestamp_label': '[00:01:34]',
-       'timestamp_seconds': 94,
-       'tip': 'So figuring out what kind of domain to buy, when to buy, how to sell it, how to '
-              "negotiate, it's a lot of work, it's a full-time job. That's what domain "
-              'flippers do. So we wanted to build a solution uh using Agentic AI where AI '
-              'agent does all the work.',
-       'title': 'How to Flip Domains in 2026 Using AI (AIFlipDomains Demo) (Tim Verdouw)',
-       'url': 'https://www.youtube.com/watch?v=ehERSgNWmRc&t=94s',
-       'video_id': 'ehERSgNWmRc'},
-      {'author': 'Edward Sturm',
-       'channel': 'Edward Sturm',
+       'text': 'A little over a decade ago, less than 5% of these parked domains were considered '
+               'malicious.',
+       'timestamp': 112,
+       'timestamp_label': '[00:01:52]',
+       'timestamp_seconds': 112,
+       'tip': 'A little over a decade ago, less than 5% of these parked domains were considered '
+              'malicious.',
+       'title': 'Day 5 – Domain Parking Exposed: How It Became a Cybercrime Tool',
+       'url': 'https://www.youtube.com/watch?v=GPScvA9fgcw&t=112s',
+       'video_id': 'GPScvA9fgcw'},
+      {'author': 'DomainFestConference',
+       'channel': 'DomainFestConference',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:41:03](https://www.youtube.com/watch?v=MvbVisdUAZ0&t=2463s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:35:19](https://www.youtube.com/watch?v=ZMna4WBn7vc&t=2119s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "'s as much training as people think. I think it's more QFO than training. Um, "
-               "Cloudflare came out and said we're going to by default block AI bots. Uh, so "
-               "that basically it's up to the publisher to say whether they want the AI bots.",
-       'timestamp': 2463,
-       'timestamp_label': '[00:41:03]',
-       'timestamp_seconds': 2463,
-       'tip': "'s as much training as people think. I think it's more QFO than training. Um, "
-              "Cloudflare came out and said we're going to by default block AI bots. Uh, so "
-              "that basically it's up to the publisher to say whether they want the AI bots.",
-       'title': 'Exact Match Domains Still Work (Most SEOs Are Wrong) (Edward Sturm)',
-       'url': 'https://www.youtube.com/watch?v=MvbVisdUAZ0&t=2463s',
-       'video_id': 'MvbVisdUAZ0'},
-      {'author': 'The AI Traffic Engine',
-       'channel': 'The AI Traffic Engine',
+       'text': 'Poor DNS handling causes 10 to 15 percent revenue leakage for parked domains.',
+       'timestamp': 2119,
+       'timestamp_label': '[00:35:19]',
+       'timestamp_seconds': 2119,
+       'tip': 'Poor DNS handling causes 10 to 15 percent revenue leakage for parked domains.',
+       'title': 'Webfest Global 2013 Panel - Domain Monetization Options Beyond Domain Parking',
+       'url': 'https://www.youtube.com/watch?v=ZMna4WBn7vc&t=2119s',
+       'video_id': 'ZMna4WBn7vc'},
+      {'author': 'Creed Explains - Hosting & Website Builders',
+       'channel': 'Creed Explains - Hosting & Website Builders',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:09](https://www.youtube.com/watch?v=N4WntkgqqAg&t=309s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:01:08](https://www.youtube.com/watch?v=URhIR-ejFvA&t=68s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'AI we create backlinks okay so our strategy the way we create our backlinks is '
-               'is we call it like double standard or double strategy. How we do it is one '
-               'backlinks. It comes with a backlink and it also comes with a brand mention.',
-       'timestamp': 309,
-       'timestamp_label': '[00:05:09]',
-       'timestamp_seconds': 309,
-       'tip': 'AI we create backlinks okay so our strategy the way we create our backlinks is '
-              'is we call it like double standard or double strategy. How we do it is one '
-              'backlinks. It comes with a backlink and it also comes with a brand mention.',
-       'title': 'Exact Match Domain (EMD) Loophole 2026: How I Ranked #1 on Google (Proof '
-                'Inside) #ai #seo #links (The AI Traffic Engine)',
-       'url': 'https://www.youtube.com/watch?v=N4WntkgqqAg&t=309s',
-       'video_id': 'N4WntkgqqAg'},
-      {'author': 'The Lone Crater',
-       'channel': 'The Lone Crater',
+       'text': 'For the free parked page to display correctly, this must be set to Namecheap basic '
+               'DNS.',
+       'timestamp': 68,
+       'timestamp_label': '[00:01:08]',
+       'timestamp_seconds': 68,
+       'tip': 'For the free parked page to display correctly, this must be set to Namecheap basic '
+              'DNS.',
+       'title': 'How To Park Domains In Namecheap Account (Step by Step Guide)',
+       'url': 'https://www.youtube.com/watch?v=URhIR-ejFvA&t=68s',
+       'video_id': 'URhIR-ejFvA'},
+      {'author': 'newnet',
+       'channel': 'newnet',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:44](https://www.youtube.com/watch?v=hdvK17zvRgk&t=44s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:02:08](https://www.youtube.com/watch?v=gDTGdxMNGZs&t=128s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Beyond just domain registration, Cloudflare provides a comprehensive suite of '
-               'integrated services, such as efficient DNS management and free SSL '
-               'certificates, making it a one-stop solution for many webmasters seeking '
-               'enhanced security and speed.',
-       'timestamp': 44,
-       'timestamp_label': '[00:00:44]',
-       'timestamp_seconds': 44,
-       'tip': 'Beyond just domain registration, Cloudflare provides a comprehensive suite of '
-              'integrated services, such as efficient DNS management and free SSL '
-              'certificates, making it a one-stop solution for many webmasters seeking '
-              'enhanced security and speed.',
-       'title': 'Cloudflare vs Porkbun Domain - 2025 Comparison (The Lone Crater)',
-       'url': 'https://www.youtube.com/watch?v=hdvK17zvRgk&t=44s',
-       'video_id': 'hdvK17zvRgk'},
-      {'author': 'PMN Online',
-       'channel': 'PMN Online',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=YwH_rctl2Kc&t=21s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "With Cloudflare, this task becomes straightforward, and I'm here to guide you "
-               "through each step. Let's kick things off by navigating to the DNS section of "
-               'your CloudFlare dashboard. After logging into your account, your first stop '
-               'should be the DNS area.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': "With Cloudflare, this task becomes straightforward, and I'm here to guide you "
-              "through each step. Let's kick things off by navigating to the DNS section of "
-              'your CloudFlare dashboard. After logging into your account, your first stop '
-              'should be the DNS area.',
-       'title': 'How to Change DNS in Cloudflare, Update & Setup Easily 2026 (PMN Online)',
-       'url': 'https://www.youtube.com/watch?v=YwH_rctl2Kc&t=21s',
-       'video_id': 'YwH_rctl2Kc'},
-      {'author': 'The Dividend Domain',
-       'channel': 'The Dividend Domain',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:16:06](https://www.youtube.com/watch?v=bdb3z0S5ybA&t=966s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "You get a diversity, my allocations. Um, and now I think yeah, let's get into "
-               "the last portion of it, and that's going to be uh the margin health dashboard. "
-               "So, I don't um keep a spreadsheet, but I regularly run the numbers through AI "
-               'and just kind of getting a general idea.',
-       'timestamp': 966,
-       'timestamp_label': '[00:16:06]',
-       'timestamp_seconds': 966,
-       'tip': "You get a diversity, my allocations. Um, and now I think yeah, let's get into "
-              "the last portion of it, and that's going to be uh the margin health dashboard. "
-              "So, I don't um keep a spreadsheet, but I regularly run the numbers through AI "
-              'and just kind of getting a general idea.',
-       'title': '$50K Portfolio While Using Margin to Pay My Bills (The Dividend Domain)',
-       'url': 'https://www.youtube.com/watch?v=bdb3z0S5ybA&t=966s',
-       'video_id': 'bdb3z0S5ybA'},
-      {'author': 'SawSells',
-       'channel': 'SawSells',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:13](https://www.youtube.com/watch?v=EA8QZJvkKP4&t=133s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "When I look through here, it's talking about other things. Are you looking for "
-               'something else? Some things have slightly changed in the AI AI world since '
-               'then. We got Council of Governmental Ethics Laws. Architecture of Cognitive '
-               'Representative Learner.',
-       'timestamp': 133,
-       'timestamp_label': '[00:02:13]',
-       'timestamp_seconds': 133,
-       'tip': "When I look through here, it's talking about other things. Are you looking for "
-              'something else? Some things have slightly changed in the AI AI world since '
-              'then. We got Council of Governmental Ethics Laws. Architecture of Cognitive '
-              'Representative Learner.',
-       'title': '3 Things Brokers Look for Before Taking On a Domain for Outbound (SawSells)',
-       'url': 'https://www.youtube.com/watch?v=EA8QZJvkKP4&t=133s',
-       'video_id': 'EA8QZJvkKP4'},
+       'text': 'Parking is internet pollution that earns from people clicking to leave the site '
+               'just as quick as possible.',
+       'timestamp': 128,
+       'timestamp_label': '[00:02:08]',
+       'timestamp_seconds': 128,
+       'tip': 'Parking is internet pollution that earns from people clicking to leave the site '
+              'just as quick as possible.',
+       'title': 'Domain Embarking - Introduction',
+       'url': 'https://www.youtube.com/watch?v=gDTGdxMNGZs&t=128s',
+       'video_id': 'gDTGdxMNGZs'},
       {'author': 'HostMaria',
        'channel': 'HostMaria',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:23:06](https://www.youtube.com/watch?v=SE1nkvW6rGw&t=1386s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:12:59](https://www.youtube.com/watch?v=SE1nkvW6rGw&t=779s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "What's the best way to scale things like that now on the flip side of the coin "
-               "if you have a hundred thousand pieces of traffic and you're wanting to "
-               'monetize that okay now let me answer that question.',
-       'timestamp': 1386,
-       'timestamp_label': '[00:23:06]',
-       'timestamp_seconds': 1386,
-       'tip': "What's the best way to scale things like that now on the flip side of the coin "
-              "if you have a hundred thousand pieces of traffic and you're wanting to monetize "
-              'that okay now let me answer that question.',
-       'title': 'Parking Domains with ParkLogic for a Newbie - Michael Gilmour (HostMaria)',
-       'url': 'https://www.youtube.com/watch?v=SE1nkvW6rGw&t=1386s',
+       'text': 'We know the best parking provider at the best point in time will only win 25 '
+               'percent of traffic.',
+       'timestamp': 779,
+       'timestamp_label': '[00:12:59]',
+       'timestamp_seconds': 779,
+       'tip': 'We know the best parking provider at the best point in time will only win 25 '
+              'percent of traffic.',
+       'title': 'Parking Domains with ParkLogic for a Newbie - Michael Gilmour',
+       'url': 'https://www.youtube.com/watch?v=SE1nkvW6rGw&t=779s',
        'video_id': 'SE1nkvW6rGw'},
-      {'author': 'GoDaddy Domain Academy',
-       'channel': 'GoDaddy Domain Academy',
+      {'author': 'HostMaria',
+       'channel': 'HostMaria',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:31](https://www.youtube.com/watch?v=I1_LrdnHVvo&t=91s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[01:15:28](https://www.youtube.com/watch?v=SE1nkvW6rGw&t=4528s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "So, you know, there's always something to learn. But if you want to just skip "
-               'past setting up your account, you maybe want to use uh how how you would set '
-               'up a for sale lander or the best thing to do with lease to own. Did you know '
-               'that we have AI powered pricing insights?',
-       'timestamp': 91,
-       'timestamp_label': '[00:01:31]',
-       'timestamp_seconds': 91,
-       'tip': "So, you know, there's always something to learn. But if you want to just skip "
-              'past setting up your account, you maybe want to use uh how how you would set up '
-              'a for sale lander or the best thing to do with lease to own. Did you know that '
-              'we have AI powered pricing insights?',
-       'title': 'Unlock More Domain Sales Today: Secrets from the Afternic Masterclass '
-                '(GoDaddy Domain Academy)',
-       'url': 'https://www.youtube.com/watch?v=I1_LrdnHVvo&t=91s',
-       'video_id': 'I1_LrdnHVvo'},
-      {'author': 'GoDaddy',
-       'channel': 'GoDaddy',
+       'text': "That's the only number we can rely upon is normalized RPM.",
+       'timestamp': 4528,
+       'timestamp_label': '[01:15:28]',
+       'timestamp_seconds': 4528,
+       'tip': "That's the only number we can rely upon is normalized RPM.",
+       'title': 'Parking Domains with ParkLogic for a Newbie - Michael Gilmour',
+       'url': 'https://www.youtube.com/watch?v=SE1nkvW6rGw&t=4528s',
+       'video_id': 'SE1nkvW6rGw'},
+      {'author': 'Domain Notebook',
+       'channel': 'Domain Notebook',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:38](https://www.youtube.com/watch?v=0f-o9p0h6u8&t=158s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:05:30](https://www.youtube.com/watch?v=ntMgB1hXTa8&t=330s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Important too if a names changes uh the bids and you're out bid you can get a "
-               "push notification things like that that are really important so we're going to "
-               'start by talking through what the name the life cycle is for the name so how '
-               'does a name actually expire.',
-       'timestamp': 158,
-       'timestamp_label': '[00:02:38]',
-       'timestamp_seconds': 158,
-       'tip': "Important too if a names changes uh the bids and you're out bid you can get a "
-              "push notification things like that that are really important so we're going to "
-              'start by talking through what the name the life cycle is for the name so how '
-              'does a name actually expire.',
-       'title': 'Learning the Basics of Buying Expired Domains | GoDaddy Hangout (GoDaddy)',
-       'url': 'https://www.youtube.com/watch?v=0f-o9p0h6u8&t=158s',
-       'video_id': '0f-o9p0h6u8'},
+       'text': 'We pay out on a monthly basis when your revenue is in excess of twenty five '
+               'dollars.',
+       'timestamp': 330,
+       'timestamp_label': '[00:05:30]',
+       'timestamp_seconds': 330,
+       'tip': 'We pay out on a monthly basis when your revenue is in excess of twenty five '
+              'dollars.',
+       'title': 'Domain Notebook Parking Tutorial',
+       'url': 'https://www.youtube.com/watch?v=ntMgB1hXTa8&t=330s',
+       'video_id': 'ntMgB1hXTa8'},
+      {'author': 'Semantic Mastery',
+       'channel': 'Semantic Mastery',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:35](https://www.youtube.com/watch?v=eSTvHrvbZ-4&t=155s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "I've had throughout the time that I've been on with thousands of domains and I've "
+               'never made a penny from a park domain.',
+       'timestamp': 155,
+       'timestamp_label': '[00:02:35]',
+       'timestamp_seconds': 155,
+       'tip': "I've had throughout the time that I've been on with thousands of domains and I've "
+              'never made a penny from a park domain.',
+       'title': 'What Are Your Thoughts On Parked Domains For Monetizing Domains With Some Amounts '
+                'Of Traffic?',
+       'url': 'https://www.youtube.com/watch?v=eSTvHrvbZ-4&t=155s',
+       'video_id': 'eSTvHrvbZ-4'},
+      {'author': 'USENIX',
+       'channel': 'USENIX',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:13](https://www.youtube.com/watch?v=XyzbG8sP8iA&t=553s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'These are definitely fraudulent clicks because our crawler never clicked on any '
+               'advertisements.',
+       'timestamp': 553,
+       'timestamp_label': '[00:09:13]',
+       'timestamp_seconds': 553,
+       'tip': 'These are definitely fraudulent clicks because our crawler never clicked on any '
+              'advertisements.',
+       'title': "USENIX Security '14 - Understanding the Dark Side of Domain Parking",
+       'url': 'https://www.youtube.com/watch?v=XyzbG8sP8iA&t=553s',
+       'video_id': 'XyzbG8sP8iA'},
+      {'author': 'Ninja Guides',
+       'channel': 'Ninja Guides',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:21](https://www.youtube.com/watch?v=dn3tXJXOypg&t=81s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "Now, it's time to change the name servers at your domain registrar.",
+       'timestamp': 81,
+       'timestamp_label': '[00:01:21]',
+       'timestamp_seconds': 81,
+       'tip': "Now, it's time to change the name servers at your domain registrar.",
+       'title': 'How to Set Up Cloudflare DNS to Your Domain - Full Guide (2026)',
+       'url': 'https://www.youtube.com/watch?v=dn3tXJXOypg&t=81s',
+       'video_id': 'dn3tXJXOypg'},
+      {'author': 'PMN Online',
+       'channel': 'PMN Online',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:33](https://www.youtube.com/watch?v=YwH_rctl2Kc&t=93s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'For example, an A record is used to point a domain to an IP address.',
+       'timestamp': 93,
+       'timestamp_label': '[00:01:33]',
+       'timestamp_seconds': 93,
+       'tip': 'For example, an A record is used to point a domain to an IP address.',
+       'title': 'How to Change DNS in Cloudflare, Update & Setup Easily 2026',
+       'url': 'https://www.youtube.com/watch?v=YwH_rctl2Kc&t=93s',
+       'video_id': 'YwH_rctl2Kc'},
+      {'author': 'The How-To Learning Academy',
+       'channel': 'The How-To Learning Academy',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:59](https://www.youtube.com/watch?v=f5MBxWdYUPw&t=119s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Replace the name servers at your registrar with the two Cloudflare name servers '
+               'exactly as provided.',
+       'timestamp': 119,
+       'timestamp_label': '[00:01:59]',
+       'timestamp_seconds': 119,
+       'tip': 'Replace the name servers at your registrar with the two Cloudflare name servers '
+              'exactly as provided.',
+       'title': 'How to Use Cloudflare DNS [Full Guide 2026]',
+       'url': 'https://www.youtube.com/watch?v=f5MBxWdYUPw&t=119s',
+       'video_id': 'f5MBxWdYUPw'},
+      {'author': 'Rick',
+       'channel': 'Rick',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=KJ61MrgDU6U&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'For verification records from third parties, make sure those are set to DNS only.',
+       'timestamp': 99,
+       'timestamp_label': '[00:01:39]',
+       'timestamp_seconds': 99,
+       'tip': 'For verification records from third parties, make sure those are set to DNS only.',
+       'title': 'How To Set Up Cloudflare DNS In Under 5 Minutes [Step By Step Guide]',
+       'url': 'https://www.youtube.com/watch?v=KJ61MrgDU6U&t=99s',
+       'video_id': 'KJ61MrgDU6U'}],
+ 11: [{'author': 'Unstoppable AI',
+       'channel': 'Unstoppable AI',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:24](https://www.youtube.com/watch?v=FRAPXUkvbv0&t=204s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'but obviously the more domain extensions there are the more dilutive the price '
+               'appreciation is going to be.',
+       'timestamp': 204,
+       'timestamp_label': '[00:03:24]',
+       'timestamp_seconds': 204,
+       'tip': 'but obviously the more domain extensions there are the more dilutive the price '
+              'appreciation is going to be.',
+       'title': 'NFT Domain Investing Secrets From The #1 Domain Broker In The World | The '
+                'Unstoppable Podcast Clips',
+       'url': 'https://www.youtube.com/watch?v=FRAPXUkvbv0&t=204s',
+       'video_id': 'FRAPXUkvbv0'},
       {'author': 'domainsherpa',
        'channel': 'domainsherpa',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:13:13](https://www.youtube.com/watch?v=yT5y3iEQ96U&t=4393s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q10 '
-                    'operational verification).',
+       'markdown': '[00:35:05](https://www.youtube.com/watch?v=cAguI2-CkwU&t=2105s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Organizations which are domain name Centric um do do you um I don't know if "
-               "you've heard of that project or if you want to talk about the viability of "
-               'that kind of structure as new companies are created.',
-       'timestamp': 4393,
-       'timestamp_label': '[01:13:13]',
-       'timestamp_seconds': 4393,
-       'tip': "Organizations which are domain name Centric um do do you um I don't know if "
-              "you've heard of that project or if you want to talk about the viability of that "
-              'kind of structure as new companies are created.',
-       'title': 'Down the Domain & Crypto Rabbit Hole – with Bitcoin Developer Jimmy Song '
-                '(domainsherpa)',
-       'url': 'https://www.youtube.com/watch?v=yT5y3iEQ96U&t=4393s',
-       'video_id': 'yT5y3iEQ96U'}],
- 11: [{'author': 'Design Guy',
-       'channel': 'Design Guy',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:44](https://www.youtube.com/watch?v=mMGvtO-bkPI&t=404s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Cloudflare Registar takes three of the six rounds. Now, treat that three of '
-               'six as a starting point, not gospel. You will want to check the current '
-               'figures on both pages before buying because prices and plans move. Pick '
-               'Cloudflare registar if every dollar on renewal counts.',
-       'timestamp': 404,
-       'timestamp_label': '[00:06:44]',
-       'timestamp_seconds': 404,
-       'tip': 'Cloudflare Registar takes three of the six rounds. Now, treat that three of six '
-              'as a starting point, not gospel. You will want to check the current figures on '
-              'both pages before buying because prices and plans move. Pick Cloudflare '
-              'registar if every dollar on renewal counts.',
-       'title': 'Porkbun or Cloudflare Registrar? Domain Registration Service Compared for '
-                '2026 (Design Guy)',
-       'url': 'https://www.youtube.com/watch?v=mMGvtO-bkPI&t=404s',
-       'video_id': 'mMGvtO-bkPI'},
-      {'author': 'NamesBrun',
-       'channel': 'NamesBrun',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:18](https://www.youtube.com/watch?v=tVPy99Y1MsA&t=798s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'But this is also you know securing their uh brand identity. If the person '
-               "cannot find you on the com, they can find you on the. I don't know why I "
-               "selected this sun temples. I don't know but I just wanted to check. Maybe "
-               "there's a sun temple in India.",
-       'timestamp': 798,
-       'timestamp_label': '[00:13:18]',
-       'timestamp_seconds': 798,
-       'tip': 'But this is also you know securing their uh brand identity. If the person '
-              "cannot find you on the com, they can find you on the. I don't know why I "
-              "selected this sun temples. I don't know but I just wanted to check. Maybe "
-              "there's a sun temple in India.",
-       'title': 'Live Domain Name Hunt: Expired Ai Domains and Godaddy Auctions | Day-16 '
-                '(NamesBrun)',
-       'url': 'https://www.youtube.com/watch?v=tVPy99Y1MsA&t=798s',
-       'video_id': 'tVPy99Y1MsA'},
-      {'author': 'GoDaddy',
-       'channel': 'GoDaddy',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:40](https://www.youtube.com/watch?v=SNukqlGstqs&t=520s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You might know what this would benefit, you know, another business, a '
-               'competitor, yourself, and then you can gauge the value a lot better than if '
-               "you're just buying random names that you think might be valuable.",
-       'timestamp': 520,
-       'timestamp_label': '[00:08:40]',
-       'timestamp_seconds': 520,
-       'tip': 'You might know what this would benefit, you know, another business, a '
-              'competitor, yourself, and then you can gauge the value a lot better than if '
-              "you're just buying random names that you think might be valuable.",
-       'title': 'Domain Valuation - How to Price and Sell Domains (GoDaddy)',
-       'url': 'https://www.youtube.com/watch?v=SNukqlGstqs&t=520s',
-       'video_id': 'SNukqlGstqs'},
-      {'author': 'Easytorial',
-       'channel': 'Easytorial',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:26](https://www.youtube.com/watch?v=sx83eEm6nk4&t=86s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You want it landing at the right place. Next up, Cloudflare will provide you '
-               "with two unique name servers. They'll look something like Alice NS Cloudflare "
-               "com and Bob NS Cloudflare com where you'll actually connect your domain to "
-               'Cloudflare.',
-       'timestamp': 86,
-       'timestamp_label': '[00:01:26]',
-       'timestamp_seconds': 86,
-       'tip': 'You want it landing at the right place. Next up, Cloudflare will provide you '
-              "with two unique name servers. They'll look something like Alice NS Cloudflare "
-              "com and Bob NS Cloudflare com where you'll actually connect your domain to "
-              'Cloudflare.',
-       'title': 'How to Set Up and Manage Domain and DNS on Cloudflare [In 3 steps] '
-                '(Easytorial)',
-       'url': 'https://www.youtube.com/watch?v=sx83eEm6nk4&t=86s',
-       'video_id': 'sx83eEm6nk4'},
-      {'author': 'Brooks Conkle // Build Income Streams',
-       'channel': 'Brooks Conkle // Build Income Streams',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:38](https://www.youtube.com/watch?v=ciS3H3ANjuM&t=38s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The biggest one in the industry is by far afternick. Used to be another '
-               'company called dan. So after nick by far by far is the largest. I know domain '
-               'name sellers that this is their full-time business.',
-       'timestamp': 38,
-       'timestamp_label': '[00:00:38]',
-       'timestamp_seconds': 38,
-       'tip': 'The biggest one in the industry is by far afternick. Used to be another company '
-              'called dan. So after nick by far by far is the largest. I know domain name '
-              'sellers that this is their full-time business.',
-       'title': 'How to Make Money Selling Domain Names (3 Easy Methods) (Brooks Conkle // '
-                'Build Income Streams)',
-       'url': 'https://www.youtube.com/watch?v=ciS3H3ANjuM&t=38s',
-       'video_id': 'ciS3H3ANjuM'},
-      {'author': 'Domain Reseller',
-       'channel': 'Domain Reseller',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:13](https://www.youtube.com/watch?v=72rBKTbIECI&t=193s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Register, and manage domains with every billable action waiting for your '
-               'approval. So your domain operations fit your  business, not the other way.',
-       'timestamp': 193,
-       'timestamp_label': '[00:03:13]',
-       'timestamp_seconds': 193,
-       'tip': 'Register, and manage domains with every billable action waiting for your '
-              'approval. So your domain operations fit your  business, not the other way.',
-       'title': 'Stop Overpaying for Domain Reselling! GoDaddy vs. Domain Name API (Domain '
-                'Reseller)',
-       'url': 'https://www.youtube.com/watch?v=72rBKTbIECI&t=193s',
-       'video_id': '72rBKTbIECI'},
-      {'author': 'Rookie Domainer',
-       'channel': 'Rookie Domainer',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:22](https://www.youtube.com/watch?v=Bi-_Gko1m0g&t=202s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Perspective so obviously this is interesting the guy who currently owns it and '
-               "hasn't renewed it yet has it up for sale for 100 uh well I don't know how much "
-               "he has it for esther bots appraising out a hundred let's check this out here.",
-       'timestamp': 202,
-       'timestamp_label': '[00:03:22]',
-       'timestamp_seconds': 202,
-       'tip': 'Perspective so obviously this is interesting the guy who currently owns it and '
-              "hasn't renewed it yet has it up for sale for 100 uh well I don't know how much "
-              "he has it for esther bots appraising out a hundred let's check this out here.",
-       'title': 'Salvage Domains from the GoDaddy Auctions Bargain Bin (Rookie Domainer)',
-       'url': 'https://www.youtube.com/watch?v=Bi-_Gko1m0g&t=202s',
-       'video_id': 'Bi-_Gko1m0g'},
-      {'author': 'Ecommerce FM',
-       'channel': 'Ecommerce FM',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:47](https://www.youtube.com/watch?v=N8NOW92hCY4&t=287s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Was originally registered through gets a cut of those profits from the auction '
-               'as well so nobody else really gets a chance to.',
-       'timestamp': 287,
-       'timestamp_label': '[00:04:47]',
-       'timestamp_seconds': 287,
-       'tip': 'Was originally registered through gets a cut of those profits from the auction '
-              'as well so nobody else really gets a chance to.',
-       'title': 'Expired Domains, SEO & Drop Catching (Ecommerce FM)',
-       'url': 'https://www.youtube.com/watch?v=N8NOW92hCY4&t=287s',
-       'video_id': 'N8NOW92hCY4'},
-      {'author': 'domainsherpa',
-       'channel': 'domainsherpa',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:29:59](https://www.youtube.com/watch?v=cAguI2-CkwU&t=5399s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "It's always like% >> picks and shovels business, baby. Like people ask me "
-               'whether I like SI. I love anything that sells. If I could participate better '
-               "on the other side, the auction side 100% I'd be doing. Am I holding it for "
-               'reinvestment down the road?',
-       'timestamp': 5399,
-       'timestamp_label': '[01:29:59]',
-       'timestamp_seconds': 5399,
-       'tip': "It's always like% >> picks and shovels business, baby. Like people ask me "
-              'whether I like SI. I love anything that sells. If I could participate better on '
-              "the other side, the auction side 100% I'd be doing. Am I holding it for "
-              'reinvestment down the road?',
+       'text': "Uh I think that there's an upper limit of probably 5% on the amount of sales "
+               'generated directly from discoverability.',
+       'timestamp': 2105,
+       'timestamp_label': '[00:35:05]',
+       'timestamp_seconds': 2105,
+       'tip': "Uh I think that there's an upper limit of probably 5% on the amount of sales "
+              'generated directly from discoverability.',
        'title': 'Premium Domains: .AI vs .SI, Marketplaces & Valuations | DomainSherpa Podcast '
-                '(October 29, 2026) (domainsherpa)',
-       'url': 'https://www.youtube.com/watch?v=cAguI2-CkwU&t=5399s',
+                '(October 29, 2026)',
+       'url': 'https://www.youtube.com/watch?v=cAguI2-CkwU&t=2105s',
        'video_id': 'cAguI2-CkwU'},
-      {'author': 'POWERS Pod',
-       'channel': 'POWERS Pod',
+      {'author': 'domainsherpa',
+       'channel': 'domainsherpa',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:00](https://www.youtube.com/watch?v=S9SNhuYObsA&t=540s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
+       'markdown': '[01:34:12](https://www.youtube.com/watch?v=cAguI2-CkwU&t=5652s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "What's stopping me from going directly to that person just offering them money "
-               'and buying their website from them this is why this is a good bit before or.',
-       'timestamp': 540,
-       'timestamp_label': '[00:09:00]',
-       'timestamp_seconds': 540,
-       'tip': "What's stopping me from going directly to that person just offering them money "
-              'and buying their website from them this is why this is a good bit before or.',
-       'title': 'Domain Name Investing 101 with Peter Askew - Founder of Deep South Ventures '
-                '(POWERS Pod)',
-       'url': 'https://www.youtube.com/watch?v=S9SNhuYObsA&t=540s',
-       'video_id': 'S9SNhuYObsA'},
-      {'author': 'Chandler Bolt',
-       'channel': 'Chandler Bolt',
+       'text': 'What you actually need to do is just get your.com because only way to get off the '
+               'ferris wheel is with a dot com.',
+       'timestamp': 5652,
+       'timestamp_label': '[01:34:12]',
+       'timestamp_seconds': 5652,
+       'tip': 'What you actually need to do is just get your.com because only way to get off the '
+              'ferris wheel is with a dot com.',
+       'title': 'Premium Domains: .AI vs .SI, Marketplaces & Valuations | DomainSherpa Podcast '
+                '(October 29, 2026)',
+       'url': 'https://www.youtube.com/watch?v=cAguI2-CkwU&t=5652s',
+       'video_id': 'cAguI2-CkwU'},
+      {'author': 'GigaLaw - Doug Isenberg',
+       'channel': 'GigaLaw - Doug Isenberg',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=NheyTdmBlH0&t=15s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
+       'markdown': '[00:02:56](https://www.youtube.com/watch?v=GI9Us2WWsAo&t=176s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "A domain now i've purchased a couple domains i've actually purchased a lot but "
-               'there are two big ones selfpublishingschool.com.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "A domain now i've purchased a couple domains i've actually purchased a lot but "
-              'there are two big ones selfpublishingschool.com.',
-       'title': 'How To Buy & Negotiate A Domain Purchase (Chandler Bolt)',
-       'url': 'https://www.youtube.com/watch?v=NheyTdmBlH0&t=15s',
-       'video_id': 'NheyTdmBlH0'},
-      {'author': 'Chris Zuiker - Domain Name Broker',
-       'channel': 'Chris Zuiker - Domain Name Broker',
+       'text': 'the udrp does not offer a trademark owner the ability to obtain injunctive relief.',
+       'timestamp': 176,
+       'timestamp_label': '[00:02:56]',
+       'timestamp_seconds': 176,
+       'tip': 'the udrp does not offer a trademark owner the ability to obtain injunctive relief.',
+       'title': 'Lessons About UDRP v. ACPA from the Debevoise Cybersquatting Case',
+       'url': 'https://www.youtube.com/watch?v=GI9Us2WWsAo&t=176s',
+       'video_id': 'GI9Us2WWsAo'},
+      {'author': 'Carter Law Firm',
+       'channel': 'Carter Law Firm',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=yhwbFofi-Q0&t=15s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
+       'markdown': '[00:01:12](https://www.youtube.com/watch?v=JxPAjtHrSQo&t=72s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Help companies to acquire the wrong version the brand brokens from the best '
-               'that means the planets check that out over at medium comm check out Dax comm.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Help companies to acquire the wrong version the brand brokens from the best '
-              'that means the planets check that out over at medium comm check out Dax comm.',
-       'title': 'Why are one word domain names valuable? (Chris Zuiker - Domain Name Broker)',
-       'url': 'https://www.youtube.com/watch?v=yhwbFofi-Q0&t=15s',
-       'video_id': 'yhwbFofi-Q0'},
-      {'author': 'Shawna Newman (Skipblast)',
-       'channel': 'Shawna Newman (Skipblast)',
+       'text': 'so i will give props to the USPTO for having a usable database at least for '
+               'trademarks.',
+       'timestamp': 72,
+       'timestamp_label': '[00:01:12]',
+       'timestamp_seconds': 72,
+       'tip': 'so i will give props to the USPTO for having a usable database at least for '
+              'trademarks.',
+       'title': 'Check the USPTO Before you Brand your Business or Product',
+       'url': 'https://www.youtube.com/watch?v=JxPAjtHrSQo&t=72s',
+       'video_id': 'JxPAjtHrSQo'},
+      {'author': 'GigaLaw - Doug Isenberg',
+       'channel': 'GigaLaw - Doug Isenberg',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:12](https://www.youtube.com/watch?v=wkwOl5VePMM&t=252s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
+       'markdown': '[00:06:47](https://www.youtube.com/watch?v=OfgGOACCYO0&t=407s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Any questions or anything or go ahead and give this video a like by doing this '
-               'it kind of lets me know if I should create more videos on topics like this or '
-               'if I should try something else to kind of help you build and grow your own '
-               'sites alright thanks for watching.',
-       'timestamp': 252,
-       'timestamp_label': '[00:04:12]',
-       'timestamp_seconds': 252,
-       'tip': 'Any questions or anything or go ahead and give this video a like by doing this '
-              'it kind of lets me know if I should create more videos on topics like this or '
-              'if I should try something else to kind of help you build and grow your own '
-              'sites alright thanks for watching.',
-       'title': 'How To Use The Wayback Machine To Do Due Diligence On Aged Domains (Shawna '
-                'Newman (Skipblast))',
-       'url': 'https://www.youtube.com/watch?v=wkwOl5VePMM&t=252s',
-       'video_id': 'wkwOl5VePMM'},
+       'text': 'in appropriate cases proofing trademark rights should not be a difficult task but '
+               'failing to do so will be fatal to a udrp case.',
+       'timestamp': 407,
+       'timestamp_label': '[00:06:47]',
+       'timestamp_seconds': 407,
+       'tip': 'in appropriate cases proofing trademark rights should not be a difficult task but '
+              'failing to do so will be fatal to a udrp case.',
+       'title': 'Domain Dispute Masterclass (#5): What type of trademark is required to file a '
+                'UDRP complaint?',
+       'url': 'https://www.youtube.com/watch?v=OfgGOACCYO0&t=407s',
+       'video_id': 'OfgGOACCYO0'},
+      {'author': 'domainsherpa',
+       'channel': 'domainsherpa',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:52:39](https://www.youtube.com/watch?v=35YUAM-dUn0&t=3159s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Because I I would rather the sale go through atom, but if someone really does want '
+               'to buy it through search, then they can pay 20% more.',
+       'timestamp': 3159,
+       'timestamp_label': '[00:52:39]',
+       'timestamp_seconds': 3159,
+       'tip': 'Because I I would rather the sale go through atom, but if someone really does want '
+              'to buy it through search, then they can pay 20% more.',
+       'title': '.AI Domains, .SI Hype & the Future of Domain Investing | DomainSherpa Podcast '
+                '(October 1, 2026)',
+       'url': 'https://www.youtube.com/watch?v=35YUAM-dUn0&t=3159s',
+       'video_id': '35YUAM-dUn0'},
+      {'author': 'live NDDCamp',
+       'channel': 'live NDDCamp',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:24](https://www.youtube.com/watch?v=PdwE4T9wmMo&t=264s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'But I think the lesson for this domain investor, look, for any domain investor '
+               'here in this room, if you register descriptive names, maybe brandable names, and '
+               'if you get a complaint, go and defend yourself.',
+       'timestamp': 264,
+       'timestamp_label': '[00:04:24]',
+       'timestamp_seconds': 264,
+       'tip': 'But I think the lesson for this domain investor, look, for any domain investor here '
+              'in this room, if you register descriptive names, maybe brandable names, and if you '
+              'get a complaint, go and defend yourself.',
+       'title': 'Domain investment in 2026: disputes, TLDs, marketplaces, and pricing strategies',
+       'url': 'https://www.youtube.com/watch?v=PdwE4T9wmMo&t=264s',
+       'video_id': 'PdwE4T9wmMo'},
+      {'author': 'live NDDCamp',
+       'channel': 'live NDDCamp',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:19:58](https://www.youtube.com/watch?v=PdwE4T9wmMo&t=1198s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Just a quick note before you jump into SIS, please do do due diligence.',
+       'timestamp': 1198,
+       'timestamp_label': '[00:19:58]',
+       'timestamp_seconds': 1198,
+       'tip': 'Just a quick note before you jump into SIS, please do do due diligence.',
+       'title': 'Domain investment in 2026: disputes, TLDs, marketplaces, and pricing strategies',
+       'url': 'https://www.youtube.com/watch?v=PdwE4T9wmMo&t=1198s',
+       'video_id': 'PdwE4T9wmMo'},
+      {'author': 'domainsherpa',
+       'channel': 'domainsherpa',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:31:14](https://www.youtube.com/watch?v=4lvZ-LZJ3Sc&t=1874s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You you you have to be able to step back and make a commercial decision.',
+       'timestamp': 1874,
+       'timestamp_label': '[00:31:14]',
+       'timestamp_seconds': 1874,
+       'tip': 'You you you have to be able to step back and make a commercial decision.',
+       'title': 'AI Domains, .SI Hype & the Future of Domain Investing | Sherpa Snippets',
+       'url': 'https://www.youtube.com/watch?v=4lvZ-LZJ3Sc&t=1874s',
+       'video_id': '4lvZ-LZJ3Sc'},
       {'author': 'ICANN',
        'channel': 'ICANN',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:42](https://www.youtube.com/watch?v=rod8ZJjpJO4&t=222s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
+       'markdown': '[00:02:10](https://www.youtube.com/watch?v=ubAwLfPKk6s&t=130s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "How these internationalized top level domains are working we're launching a "
-               "test and we're going to come with a video that will show you how you can "
-               'participate in that and help us evaluate if things are set up in the right '
-               'way.',
-       'timestamp': 222,
-       'timestamp_label': '[00:03:42]',
-       'timestamp_seconds': 222,
-       'tip': "How these internationalized top level domains are working we're launching a "
-              "test and we're going to come with a video that will show you how you can "
-              'participate in that and help us evaluate if things are set up in the right way.',
-       'title': 'Introduction to IDNs (ICANN)',
-       'url': 'https://www.youtube.com/watch?v=rod8ZJjpJO4&t=222s',
-       'video_id': 'rod8ZJjpJO4'},
-      {'author': 'Ajit Sahane | AI SEO, Backlinks & Websites',
-       'channel': 'Ajit Sahane | AI SEO, Backlinks & Websites',
+       'text': 'The magnitude score should not be interpreted as an absolute risk rating.',
+       'timestamp': 130,
+       'timestamp_label': '[00:02:10]',
+       'timestamp_seconds': 130,
+       'tip': 'The magnitude score should not be interpreted as an absolute risk rating.',
+       'title': '2026 Round | TAMS: Name Collision Observatory',
+       'url': 'https://www.youtube.com/watch?v=ubAwLfPKk6s&t=130s',
+       'video_id': 'ubAwLfPKk6s'},
+      {'author': 'Mere Mortals Podcasts',
+       'channel': 'Mere Mortals Podcasts',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:22](https://www.youtube.com/watch?v=4HSXReKgl4o&t=262s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q11 '
-                    'operational verification).',
+       'markdown': '[00:00:19](https://www.youtube.com/watch?v=yowbJC4PEWE&t=19s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Stop paying for links you can't prove Check every backlink the way Google sees "
-               'it Start free at tools dot webhostpune dot com.',
-       'timestamp': 262,
-       'timestamp_label': '[00:04:22]',
-       'timestamp_seconds': 262,
-       'tip': "Stop paying for links you can't prove Check every backlink the way Google sees "
-              'it Start free at tools dot webhostpune dot com.',
-       'title': 'Backlink Checker Tool Demo: Check if Your Backlinks Are Live, Dofollow & '
-                'Indexed (Free) (Ajit Sahane | AI SEO, Backlinks & Websites)',
-       'url': 'https://www.youtube.com/watch?v=4HSXReKgl4o&t=262s',
-       'video_id': '4HSXReKgl4o'}],
+       'text': 'about half a mil uh in british pounds i believe.',
+       'timestamp': 19,
+       'timestamp_label': '[00:00:19]',
+       'timestamp_seconds': 19,
+       'tip': 'about half a mil uh in british pounds i believe.',
+       'title': 'The ICANN Monopoly On Domain Names',
+       'url': 'https://www.youtube.com/watch?v=yowbJC4PEWE&t=19s',
+       'video_id': 'yowbJC4PEWE'},
+      {'author': 'NewMovementMedia',
+       'channel': 'NewMovementMedia',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:31](https://www.youtube.com/watch?v=ptDjIj-5f0U&t=151s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'by the gtld icann is charging so much for these new GT LDS to prevent spammers and '
+               'cyber squatters.',
+       'timestamp': 151,
+       'timestamp_label': '[00:02:31]',
+       'timestamp_seconds': 151,
+       'tip': 'by the gtld icann is charging so much for these new GT LDS to prevent spammers and '
+              'cyber squatters.',
+       'title': "ICANN's New gTLD Program",
+       'url': 'https://www.youtube.com/watch?v=ptDjIj-5f0U&t=151s',
+       'video_id': 'ptDjIj-5f0U'},
+      {'author': 'domainsherpa',
+       'channel': 'domainsherpa',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[01:08:48](https://www.youtube.com/watch?v=zCEoH4BHEDI&t=4128s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Distribution is the bottleneck of every business model on Earth.',
+       'timestamp': 4128,
+       'timestamp_label': '[01:08:48]',
+       'timestamp_seconds': 4128,
+       'tip': 'Distribution is the bottleneck of every business model on Earth.',
+       'title': 'What’s Next for Domain Names? .WEB, ICANN & Market Trends | DomainSherpa Podcast '
+                '(Sept. 17, 2026)',
+       'url': 'https://www.youtube.com/watch?v=zCEoH4BHEDI&t=4128s',
+       'video_id': 'zCEoH4BHEDI'},
+      {'author': 'Dotup ICANN Accreditation Consulting',
+       'channel': 'Dotup ICANN Accreditation Consulting',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:23](https://www.youtube.com/watch?v=UVaTuGEfJF8&t=323s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Broad generics may look glamorous, but niche ties often provide faster payback.',
+       'timestamp': 323,
+       'timestamp_label': '[00:05:23]',
+       'timestamp_seconds': 323,
+       'tip': 'Broad generics may look glamorous, but niche ties often provide faster payback.',
+       'title': 'How to Start A Top Level Domain Registry Business? Apply for New gTLD -2026 | '
+                'ICANN New gTLD Program',
+       'url': 'https://www.youtube.com/watch?v=UVaTuGEfJF8&t=323s',
+       'video_id': 'UVaTuGEfJF8'},
+      {'author': 'ICANN',
+       'channel': 'ICANN',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:32](https://www.youtube.com/watch?v=rod8ZJjpJO4&t=152s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'of them look alike um you get into problems with is this really a unique address.',
+       'timestamp': 152,
+       'timestamp_label': '[00:02:32]',
+       'timestamp_seconds': 152,
+       'tip': 'of them look alike um you get into problems with is this really a unique address.',
+       'title': 'Introduction to IDNs',
+       'url': 'https://www.youtube.com/watch?v=rod8ZJjpJO4&t=152s',
+       'video_id': 'rod8ZJjpJO4'},
+      {'author': 'ICANN',
+       'channel': 'ICANN',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:06](https://www.youtube.com/watch?v=AybZsS3NmFo&t=246s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'a generic top level domain cost $185,000 or more you need to be well capitalized '
+               'to start and operate a TLD business.',
+       'timestamp': 246,
+       'timestamp_label': '[00:04:06]',
+       'timestamp_seconds': 246,
+       'tip': 'a generic top level domain cost $185,000 or more you need to be well capitalized to '
+              'start and operate a TLD business.',
+       'title': 'Overview : Get Ready for the Next Big .Thing - English',
+       'url': 'https://www.youtube.com/watch?v=AybZsS3NmFo&t=246s',
+       'video_id': 'AybZsS3NmFo'},
+      {'author': 'Steven Rinehart',
+       'channel': 'Steven Rinehart',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:48](https://www.youtube.com/watch?v=BL9pY270FpM&t=228s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'you may have common law trademark rights which are efficient to satisfy the first '
+               'prong.',
+       'timestamp': 228,
+       'timestamp_label': '[00:03:48]',
+       'timestamp_seconds': 228,
+       'tip': 'you may have common law trademark rights which are efficient to satisfy the first '
+              'prong.',
+       'title': 'Introduction to Domain Name Disputes, the UDRP, and the ACPA | Part 1',
+       'url': 'https://www.youtube.com/watch?v=BL9pY270FpM&t=228s',
+       'video_id': 'BL9pY270FpM'}],
  12: [{'author': 'Tim Ferriss',
        'channel': 'Tim Ferriss',
        'epistemic_status': 'attributed_practitioner_claim',
        'markdown': '[00:51:21](https://www.youtube.com/watch?v=ApCGeST90RA&t=3081s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'But if I can make $250 every day minimum, then my business will survive. Tim '
-               'Ferriss: How did you arrive at that number? Andrew Rosener: I calculated what '
-               'my annual expenses were going to be in totality and divided by the number of '
-               'business days.',
+       'text': 'But if I can make $250 every day minimum, then my business will survive.',
        'timestamp': 3081,
        'timestamp_label': '[00:51:21]',
        'timestamp_seconds': 3081,
-       'tip': 'But if I can make $250 every day minimum, then my business will survive. Tim '
-              'Ferriss: How did you arrive at that number? Andrew Rosener: I calculated what '
-              'my annual expenses were going to be in totality and divided by the number of '
-              'business days.',
-       'title': 'From Scallop Kingpin to Selling 8-Figure Domains (4K) (Tim Ferriss)',
+       'tip': 'But if I can make $250 every day minimum, then my business will survive.',
+       'title': 'From Scallop Kingpin to Selling 8-Figure Domains (4K)',
        'url': 'https://www.youtube.com/watch?v=ApCGeST90RA&t=3081s',
        'video_id': 'ApCGeST90RA'},
+      {'author': 'Tim Ferriss',
+       'channel': 'Tim Ferriss',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[02:27:34](https://www.youtube.com/watch?v=ApCGeST90RA&t=8854s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Once these things sell, they're generally off the market forever.",
+       'timestamp': 8854,
+       'timestamp_label': '[02:27:34]',
+       'timestamp_seconds': 8854,
+       'tip': "Once these things sell, they're generally off the market forever.",
+       'title': 'From Scallop Kingpin to Selling 8-Figure Domains (4K)',
+       'url': 'https://www.youtube.com/watch?v=ApCGeST90RA&t=8854s',
+       'video_id': 'ApCGeST90RA'},
+      {'author': 'GoDaddy Domain Academy',
+       'channel': 'GoDaddy Domain Academy',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:45:09](https://www.youtube.com/watch?v=d1VjM9-Tyig&t=2709s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'And I think that I left money on the table by, you know, pricing everything too '
+               'low.',
+       'timestamp': 2709,
+       'timestamp_label': '[00:45:09]',
+       'timestamp_seconds': 2709,
+       'tip': 'And I think that I left money on the table by, you know, pricing everything too '
+              'low.',
+       'title': 'S2 E8 The $500 Domain Investing Challenge: Who’s Winning & What We’ve Learned So '
+                'Far',
+       'url': 'https://www.youtube.com/watch?v=d1VjM9-Tyig&t=2709s',
+       'video_id': 'd1VjM9-Tyig'},
+      {'author': 'TheMaskedFreelancer😷',
+       'channel': 'TheMaskedFreelancer😷',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:44:14](https://www.youtube.com/watch?v=AiootzfgBRM&t=2654s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So, I put my benchmark for at least 10 monthly search volume.',
+       'timestamp': 2654,
+       'timestamp_label': '[00:44:14]',
+       'timestamp_seconds': 2654,
+       'tip': 'So, I put my benchmark for at least 10 monthly search volume.',
+       'title': 'How to start a $1500 domain investment business in Nigeria | How to make money '
+                'online',
+       'url': 'https://www.youtube.com/watch?v=AiootzfgBRM&t=2654s',
+       'video_id': 'AiootzfgBRM'},
+      {'author': 'GoDaddy Domain Academy',
+       'channel': 'GoDaddy Domain Academy',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:28](https://www.youtube.com/watch?v=n2nzWV5BL3M&t=628s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'It gives them more of a steady revenue stream rather than a very spiky revenue '
+               'stream.',
+       'timestamp': 628,
+       'timestamp_label': '[00:10:28]',
+       'timestamp_seconds': 628,
+       'tip': 'It gives them more of a steady revenue stream rather than a very spiky revenue '
+              'stream.',
+       'title': "S1E6 A Chat with the Boss GoDaddy's VP of Domain Investing Paul Nicks",
+       'url': 'https://www.youtube.com/watch?v=n2nzWV5BL3M&t=628s',
+       'video_id': 'n2nzWV5BL3M'},
+      {'author': 'POWERS Pod',
+       'channel': 'POWERS Pod',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:43](https://www.youtube.com/watch?v=S9SNhuYObsA&t=643s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The first thing I need to do, I need your domain name, because if I own the domain '
+               'name I own everything.',
+       'timestamp': 643,
+       'timestamp_label': '[00:10:43]',
+       'timestamp_seconds': 643,
+       'tip': 'The first thing I need to do, I need your domain name, because if I own the domain '
+              'name I own everything.',
+       'title': 'Domain Name Investing 101 with Peter Askew - Founder of Deep South Ventures',
+       'url': 'https://www.youtube.com/watch?v=S9SNhuYObsA&t=643s',
+       'video_id': 'S9SNhuYObsA'},
+      {'author': 'Manic Millionaire',
+       'channel': 'Manic Millionaire',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:14:59](https://www.youtube.com/watch?v=rMXyBJCRlDQ&t=899s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you focus on the buyers, everything else takes care of itself.',
+       'timestamp': 899,
+       'timestamp_label': '[00:14:59]',
+       'timestamp_seconds': 899,
+       'tip': 'If you focus on the buyers, everything else takes care of itself.',
+       'title': 'How I Made $10 Million Trading Domains',
+       'url': 'https://www.youtube.com/watch?v=rMXyBJCRlDQ&t=899s',
+       'video_id': 'rMXyBJCRlDQ'},
       {'author': 'Andrew Allemann',
        'channel': 'Andrew Allemann',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:12:35](https://www.youtube.com/watch?v=E4jnQONuo6E&t=755s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:18:19](https://www.youtube.com/watch?v=E4jnQONuo6E&t=1099s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'I think I walk on water and I start buying a lot of aftermarket domains to '
-               "keep things going. I'd say if you catch me on the right day in a slow month, "
-               'you can also get a good deal.',
-       'timestamp': 755,
-       'timestamp_label': '[00:12:35]',
-       'timestamp_seconds': 755,
-       'tip': 'I think I walk on water and I start buying a lot of aftermarket domains to keep '
-              "things going. I'd say if you catch me on the right day in a slow month, you can "
-              'also get a good deal.',
-       'title': 'My domain investing year so far - DNW Podcast #602 (Andrew Allemann)',
-       'url': 'https://www.youtube.com/watch?v=E4jnQONuo6E&t=755s',
+       'text': "Eight of my 25 sales so far this year have been LTO's.",
+       'timestamp': 1099,
+       'timestamp_label': '[00:18:19]',
+       'timestamp_seconds': 1099,
+       'tip': "Eight of my 25 sales so far this year have been LTO's.",
+       'title': 'My domain investing year so far - DNW Podcast #602',
+       'url': 'https://www.youtube.com/watch?v=E4jnQONuo6E&t=1099s',
        'video_id': 'E4jnQONuo6E'},
-      {'author': 'SEARCHLIGHT HQ',
-       'channel': 'SEARCHLIGHT HQ',
+      {'author': 'Ownerly',
+       'channel': 'Ownerly',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:57](https://www.youtube.com/watch?v=RClpPcLHviU&t=117s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:01:22](https://www.youtube.com/watch?v=xPtTNJU_OGE&t=82s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'The Pro plan costs $24 per or $60 for the first year when billed annually. It '
-               'renews at $240 per year and includes 20 gigabytes of storage and five '
-               'dedicated PHP processes. Finally, the business plan costs $36 per month or $90 '
-               'for the first year with annual billing.',
-       'timestamp': 117,
-       'timestamp_label': '[00:01:57]',
-       'timestamp_seconds': 117,
-       'tip': 'The Pro plan costs $24 per or $60 for the first year when billed annually. It '
-              'renews at $240 per year and includes 20 gigabytes of storage and five dedicated '
-              'PHP processes. Finally, the business plan costs $36 per month or $90 for the '
-              'first year with annual billing.',
-       'title': 'Porkbun Review 2026 | Is Porkbun Worth It for Domain Registration? '
-                '(SEARCHLIGHT HQ)',
-       'url': 'https://www.youtube.com/watch?v=RClpPcLHviU&t=117s',
-       'video_id': 'RClpPcLHviU'},
-      {'author': 'SearchGAPMethod',
-       'channel': 'SearchGAPMethod',
+       'text': 'It is a lottery ticket business with a holding cost.',
+       'timestamp': 82,
+       'timestamp_label': '[00:01:22]',
+       'timestamp_seconds': 82,
+       'tip': 'It is a lottery ticket business with a holding cost.',
+       'title': 'The Reality of Owning a Domain Flipping Business',
+       'url': 'https://www.youtube.com/watch?v=xPtTNJU_OGE&t=82s',
+       'video_id': 'xPtTNJU_OGE'},
+      {'author': 'Eunice Ajim',
+       'channel': 'Eunice Ajim',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:01](https://www.youtube.com/watch?v=UXycltw74Bw&t=301s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:10:19](https://www.youtube.com/watch?v=WtkHxzirORM&t=619s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Cloudflare check I won't click through. That's a 31% pass rate on the number "
-               'one Google result for free backlinks. Three rows, start to finish. '
-               'ReverbNation, live DR90, a real band page with a website link and no nofollow, '
-               'around 840,000 estimated visits, pass.',
-       'timestamp': 301,
-       'timestamp_label': '[00:05:01]',
-       'timestamp_seconds': 301,
-       'tip': "Cloudflare check I won't click through. That's a 31% pass rate on the number "
-              'one Google result for free backlinks. Three rows, start to finish. '
-              'ReverbNation, live DR90, a real band page with a website link and no nofollow, '
-              'around 840,000 estimated visits, pass.',
-       'title': "I Audited Every Link on Google's #1 Free Backlinks List and You're Still "
-                'Using It (SearchGAPMethod)',
-       'url': 'https://www.youtube.com/watch?v=UXycltw74Bw&t=301s',
-       'video_id': 'UXycltw74Bw'},
-      {'author': 'Dotup ICANN Accreditation Consulting',
-       'channel': 'Dotup ICANN Accreditation Consulting',
+       'text': 'What I do not look past is dishonesty.',
+       'timestamp': 619,
+       'timestamp_label': '[00:10:19]',
+       'timestamp_seconds': 619,
+       'tip': 'What I do not look past is dishonesty.',
+       'title': "The Truth About Raising Capital In Africa (That Investors Won't Tell You)",
+       'url': 'https://www.youtube.com/watch?v=WtkHxzirORM&t=619s',
+       'video_id': 'WtkHxzirORM'},
+      {'author': 'Chris Koerner on The Koerner Office Podcast',
+       'channel': 'Chris Koerner on The Koerner Office Podcast',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:11](https://www.youtube.com/watch?v=UVaTuGEfJF8&t=71s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:08:07](https://www.youtube.com/watch?v=aba_NmtzK1I&t=487s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "TLD registry, what is the ICAN's new GTLD program 2026, how to invest and "
-               'start a TLD registry business, investment goals, business models, regulatory '
-               'modes, etc. At top level domain is the extension at the end of the web address '
-               'like com.',
-       'timestamp': 71,
-       'timestamp_label': '[00:01:11]',
-       'timestamp_seconds': 71,
-       'tip': "TLD registry, what is the ICAN's new GTLD program 2026, how to invest and start "
-              'a TLD registry business, investment goals, business models, regulatory modes, '
-              'etc. At top level domain is the extension at the end of the web address like '
-              'com.',
-       'title': 'How to Start A Top Level Domain Registry Business? Apply for New gTLD -2026 | '
-                'ICANN New gTLD Program (Dotup ICANN Accreditation Consulting)',
-       'url': 'https://www.youtube.com/watch?v=UVaTuGEfJF8&t=71s',
-       'video_id': 'UVaTuGEfJF8'},
-      {'author': 'kickstartcommerce',
-       'channel': 'kickstartcommerce',
+       'text': 'Ignore the Dynadot appraisal, because I have seen names sell at 99% below it.',
+       'timestamp': 487,
+       'timestamp_label': '[00:08:07]',
+       'timestamp_seconds': 487,
+       'tip': 'Ignore the Dynadot appraisal, because I have seen names sell at 99% below it.',
+       'title': '15 Years of Domain Name Investing Knowledge in 15 Mins',
+       'url': 'https://www.youtube.com/watch?v=aba_NmtzK1I&t=487s',
+       'video_id': 'aba_NmtzK1I'},
+      {'author': 'Brooks Conkle // Build Income Streams',
+       'channel': 'Brooks Conkle // Build Income Streams',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:46](https://www.youtube.com/watch?v=5UOGADHB0l0&t=886s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:07:14](https://www.youtube.com/watch?v=nOLgURAW0ns&t=434s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Um and I I have thick skin you can call me whatever you want to call me you're "
-               "having a bad day or I don't care so I will try again in a couple of days right "
-               "so so you know it doesn't matter to me you know you need a hug.",
-       'timestamp': 886,
-       'timestamp_label': '[00:14:46]',
-       'timestamp_seconds': 886,
-       'tip': "Um and I I have thick skin you can call me whatever you want to call me you're "
-              "having a bad day or I don't care so I will try again in a couple of days right "
-              "so so you know it doesn't matter to me you know you need a hug.",
-       'title': 'Selling Domains Using The Dan.com Outbound Method with Alex Verdea '
-                '(kickstartcommerce)',
-       'url': 'https://www.youtube.com/watch?v=5UOGADHB0l0&t=886s',
-       'video_id': '5UOGADHB0l0'},
-      {'author': 'DomCop',
-       'channel': 'DomCop',
+       'text': 'My renewal is about $1,500 for all of those names.',
+       'timestamp': 434,
+       'timestamp_label': '[00:07:14]',
+       'timestamp_seconds': 434,
+       'tip': 'My renewal is about $1,500 for all of those names.',
+       'title': '$2k Domain Flipping Update',
+       'url': 'https://www.youtube.com/watch?v=nOLgURAW0ns&t=434s',
+       'video_id': 'nOLgURAW0ns'},
+      {'author': 'The Dividend Domain',
+       'channel': 'The Dividend Domain',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:36](https://www.youtube.com/watch?v=r5xkDG4-mvo&t=96s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:12:32](https://www.youtube.com/watch?v=xVfENzSxmO0&t=752s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Here you can see all the metrics along with a list of backlinks to The Domain '
-               'the domain name links directly to the auction on the GoDaddy website you can '
-               "bid on the domain or buy it from there thank you for watching I'll see you "
-               'next week.',
-       'timestamp': 96,
-       'timestamp_label': '[00:01:36]',
-       'timestamp_seconds': 96,
-       'tip': 'Here you can see all the metrics along with a list of backlinks to The Domain '
-              'the domain name links directly to the auction on the GoDaddy website you can '
-              "bid on the domain or buy it from there thank you for watching I'll see you next "
-              'week.',
-       'title': 'Find awesome expired domains at GoDaddy Auctions using DomCop (DomCop)',
-       'url': 'https://www.youtube.com/watch?v=r5xkDG4-mvo&t=96s',
-       'video_id': 'r5xkDG4-mvo'},
-      {'author': 'RollerAds',
-       'channel': 'RollerAds',
+       'text': 'My margin buffer sits at 59%, and my target is 60 to 65%.',
+       'timestamp': 752,
+       'timestamp_label': '[00:12:32]',
+       'timestamp_seconds': 752,
+       'tip': 'My margin buffer sits at 59%, and my target is 60 to 65%.',
+       'title': "The Power of Margin: How I'm Supercharging My Investments| Robin Fire Ep 41",
+       'url': 'https://www.youtube.com/watch?v=xVfENzSxmO0&t=752s',
+       'video_id': 'xVfENzSxmO0'},
+      {'author': 'The Dividend Domain',
+       'channel': 'The Dividend Domain',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:56](https://www.youtube.com/watch?v=-i811Ip0HIo&t=176s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:01:17](https://www.youtube.com/watch?v=l5aojx7kWb8&t=77s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Want to see how your travel domains did last week? Pick the tag and there it '
-               "is. Five domains or 5,000, you can keep them organized. Who's there when you "
-               "need help? You shouldn't have to wait days for an answer. At Roller Ads, you "
-               'get a personal manager and fast support.',
-       'timestamp': 176,
-       'timestamp_label': '[00:02:56]',
-       'timestamp_seconds': 176,
-       'tip': 'Want to see how your travel domains did last week? Pick the tag and there it '
-              "is. Five domains or 5,000, you can keep them organized. Who's there when you "
-              "need help? You shouldn't have to wait days for an answer. At Roller Ads, you "
-              'get a personal manager and fast support.',
-       'title': '5 things you should know before parking your domains 🎯 (RollerAds)',
-       'url': 'https://www.youtube.com/watch?v=-i811Ip0HIo&t=176s',
-       'video_id': '-i811Ip0HIo'},
-      {'author': 'Rick',
-       'channel': 'Rick',
+       'text': 'I get concerned below a 55% buffer, and I avoid going under 50%.',
+       'timestamp': 77,
+       'timestamp_label': '[00:01:17]',
+       'timestamp_seconds': 77,
+       'tip': 'I get concerned below a 55% buffer, and I avoid going under 50%.',
+       'title': 'How My $55,000 Portfolio Generates $757 Every Month Using Margin',
+       'url': 'https://www.youtube.com/watch?v=l5aojx7kWb8&t=77s',
+       'video_id': 'l5aojx7kWb8'},
+      {'author': 'The Dividend Domain',
+       'channel': 'The Dividend Domain',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:58](https://www.youtube.com/watch?v=KJ61MrgDU6U&t=58s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:16:28](https://www.youtube.com/watch?v=bdb3z0S5ybA&t=988s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Let it load for a moment while Cloudflare processes your domain. A plan '
-               'selection screen now appears in front of you. Cloudflare offers different '
-               "plans depending on what you need. Take a look at what's available and pick the "
-               'plan that suits your needs.',
-       'timestamp': 58,
-       'timestamp_label': '[00:00:58]',
-       'timestamp_seconds': 58,
-       'tip': 'Let it load for a moment while Cloudflare processes your domain. A plan '
-              'selection screen now appears in front of you. Cloudflare offers different plans '
-              "depending on what you need. Take a look at what's available and pick the plan "
-              'that suits your needs.',
-       'title': 'How To Set Up Cloudflare DNS In Under 5 Minutes [Step By Step Guide] (Rick)',
-       'url': 'https://www.youtube.com/watch?v=KJ61MrgDU6U&t=58s',
-       'video_id': 'KJ61MrgDU6U'},
+       'text': 'My loan-to-value is 37%, and my max drawdown is 8%.',
+       'timestamp': 988,
+       'timestamp_label': '[00:16:28]',
+       'timestamp_seconds': 988,
+       'tip': 'My loan-to-value is 37%, and my max drawdown is 8%.',
+       'title': '$50K Portfolio While Using Margin to Pay My Bills',
+       'url': 'https://www.youtube.com/watch?v=bdb3z0S5ybA&t=988s',
+       'video_id': 'bdb3z0S5ybA'},
       {'author': 'GoDaddy',
        'channel': 'GoDaddy',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:44](https://www.youtube.com/watch?v=PPJ8y-pwY38&t=524s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:04:13](https://www.youtube.com/watch?v=OKekYzcUFsg&t=253s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'First two days of sales and how high the close percentage is um on day three '
-               "as Todd mentioned the close percentage significantly drops um that's due to "
-               'you.',
-       'timestamp': 524,
-       'timestamp_label': '[00:08:44]',
-       'timestamp_seconds': 524,
-       'tip': 'First two days of sales and how high the close percentage is um on day three as '
-              "Todd mentioned the close percentage significantly drops um that's due to you.",
-       'title': 'On The Dot! | Domain Aftermarket | Episode 1 - Afternic Integration with '
-                'GoDaddy | GoDaddy Hangout (GoDaddy)',
-       'url': 'https://www.youtube.com/watch?v=PPJ8y-pwY38&t=524s',
-       'video_id': 'PPJ8y-pwY38'},
-      {'author': 'George Basics',
-       'channel': 'George Basics',
+       'text': "Don't pay more for a domain than you think it's worth, and always keep an eye out "
+               'for domains that are undervalued.',
+       'timestamp': 253,
+       'timestamp_label': '[00:04:13]',
+       'timestamp_seconds': 253,
+       'tip': "Don't pay more for a domain than you think it's worth, and always keep an eye out "
+              'for domains that are undervalued.',
+       'title': 'Building a Domain Portfolio - How to Invest in Domains | The Journey',
+       'url': 'https://www.youtube.com/watch?v=OKekYzcUFsg&t=253s',
+       'video_id': 'OKekYzcUFsg'},
+      {'author': 'The Dividend Domain',
+       'channel': 'The Dividend Domain',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:20](https://www.youtube.com/watch?v=OuQbsdwFTA0&t=20s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
+       'markdown': '[00:04:57](https://www.youtube.com/watch?v=VV0hxi5TUu4&t=297s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'And now go to the Cloudflare. Sign in or register an account. Then click '
-               'account home in the menu. And from this page, you can start adding your domain '
-               'to Cloudflare. We need to enter our domain right here.',
-       'timestamp': 20,
-       'timestamp_label': '[00:00:20]',
-       'timestamp_seconds': 20,
-       'tip': 'And now go to the Cloudflare. Sign in or register an account. Then click '
-              'account home in the menu. And from this page, you can start adding your domain '
-              'to Cloudflare. We need to enter our domain right here.',
-       'title': 'How To Setup Cloudflare With Porkbun Domain (Step By Step) (George Basics)',
-       'url': 'https://www.youtube.com/watch?v=OuQbsdwFTA0&t=20s',
-       'video_id': 'OuQbsdwFTA0'},
-      {'author': 'Adam Dicker',
-       'channel': 'Adam Dicker',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:40](https://www.youtube.com/watch?v=DnnSbpJm2ZI&t=880s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Very much uh again you can reach me on Skype also at adam. Dicker and you have '
-               "my email you have my cell I've given it a numerous times and uh I hope you "
-               "enjoyed this video and I'm looking forward to doing the next one have a great "
-               'day bye-bye.',
-       'timestamp': 880,
-       'timestamp_label': '[00:14:40]',
-       'timestamp_seconds': 880,
-       'tip': 'Very much uh again you can reach me on Skype also at adam. Dicker and you have '
-              "my email you have my cell I've given it a numerous times and uh I hope you "
-              "enjoyed this video and I'm looking forward to doing the next one have a great "
-              'day bye-bye.',
-       'title': 'TheArtOfTheName.com - The Benefits of Domain Leasing and use eCop.com or '
-                'Escrow.comcom (Adam Dicker)',
-       'url': 'https://www.youtube.com/watch?v=DnnSbpJm2ZI&t=880s',
-       'video_id': 'DnnSbpJm2ZI'},
-      {'author': 'Chris Zuiker - Domain Name Broker',
-       'channel': 'Chris Zuiker - Domain Name Broker',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:27](https://www.youtube.com/watch?v=dgnnNdyoENg&t=27s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I guess one of the takeaways for me. Um you know, part of this is that we '
-               'negotiate with a lot of companies every single day and these are domain names '
-               'going from uh some maybe in the four figures, five figures, six figures, seven '
-               'figures, eight figures.',
-       'timestamp': 27,
-       'timestamp_label': '[00:00:27]',
-       'timestamp_seconds': 27,
-       'tip': 'I guess one of the takeaways for me. Um you know, part of this is that we '
-              'negotiate with a lot of companies every single day and these are domain names '
-              'going from uh some maybe in the four figures, five figures, six figures, seven '
-              'figures, eight figures.',
-       'title': 'Negotiating domain names (Chris Zuiker - Domain Name Broker)',
-       'url': 'https://www.youtube.com/watch?v=dgnnNdyoENg&t=27s',
-       'video_id': 'dgnnNdyoENg'},
-      {'author': 'domainsherpa',
-       'channel': 'domainsherpa',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:05](https://www.youtube.com/watch?v=Y1dwwAJKRdg&t=425s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Thursday Friday this week yeah y exactly so as this the one dictating the date '
-               "on this one let's go so as you are listening or watching the show and we'll "
-               'talk about some of the uh the data points but then uh you know definitely get '
-               'to escrow.',
-       'timestamp': 425,
-       'timestamp_label': '[00:07:05]',
-       'timestamp_seconds': 425,
-       'tip': 'Thursday Friday this week yeah y exactly so as this the one dictating the date '
-              "on this one let's go so as you are listening or watching the show and we'll "
-              'talk about some of the uh the data points but then uh you know definitely get '
-              'to escrow.',
-       'title': 'Escrow.com Q4 Report: AI Domains, Market Trends & Insights | DomainSherpa '
-                'Podcast | March 20, 2025 (domainsherpa)',
-       'url': 'https://www.youtube.com/watch?v=Y1dwwAJKRdg&t=425s',
-       'video_id': 'Y1dwwAJKRdg'},
-      {'author': 'VPN.com',
-       'channel': 'VPN.com',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:30](https://www.youtube.com/watch?v=nwlWrMSMdUU&t=90s)',
-       'relevance': 'Attributed practitioner commentary on '
-                    'brandable/exact-match/expired-authority domain investing, drop-catch '
-                    'auctions, UDRP/ACPA safety, and outbound upgrades (Chapter Q12 '
-                    'operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So I hope you've learned something again Michael at VPN com if you need any "
-               "help buying or selling your premium domain names we'd love to help you out or "
-               'check us out at VPN comm slash domains hope you have a great day bye.',
-       'timestamp': 90,
-       'timestamp_label': '[00:01:30]',
-       'timestamp_seconds': 90,
-       'tip': "So I hope you've learned something again Michael at VPN com if you need any "
-              "help buying or selling your premium domain names we'd love to help you out or "
-              'check us out at VPN comm slash domains hope you have a great day bye.',
-       'title': 'Top 3 Tips for Acquiring 6-8 Figure Exact-Match Domains (VPN.com)',
-       'url': 'https://www.youtube.com/watch?v=nwlWrMSMdUU&t=90s',
-       'video_id': 'nwlWrMSMdUU'}]}
+       'text': 'Understand your budget first.',
+       'timestamp': 297,
+       'timestamp_label': '[00:04:57]',
+       'timestamp_seconds': 297,
+       'tip': 'Understand your budget first.',
+       'title': "How I'm Balancing Growth, Income & Margin Risk to Retire Early",
+       'url': 'https://www.youtube.com/watch?v=VV0hxi5TUu4&t=297s',
+       'video_id': 'VV0hxi5TUu4'}]}

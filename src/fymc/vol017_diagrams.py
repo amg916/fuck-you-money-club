@@ -1,699 +1,514 @@
-from __future__ import annotations
+"""Diagram data for Volume 017: Domain Investing.
 
-VOLUME_017_SUBTITLE = (
-    "The Complete Playbook for Domain Investing: "
-    "$20,000–$300,000 USD in Annual Gross Sales, "
-    "a 1 FT + 1 C Core Pod, and a Four-Person Scaling Plan"
+Every figure below is an attributed practitioner claim drawn from Chapters
+Q1-Q12 practitioner testimony. Derived values are labeled in each
+diagram's assumptions_note.
+"""
+
+from typing import Any, Dict, List
+
+VOLUME_017_SUBTITLE: str = (
+    "Buy Low on Comps, Vet Expired Names on Links and Archive History, "
+    "List Wide on Afternic and Atom, Close Through Escrow or Lease-to-Own, "
+    "Defend Against UDRP, and Survive the Renewal Bill"
 )
 
-VOLUME_017_POSITIONING_ALTERNATIVES = [
+
+def build_volume_017_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 017."""
+    return [
+        {
+            "diagram_id": "diag-01-beginner-flip-loop",
+            "chapter_number": 1,
+            "title": "The Buy-Low, Sell-High Flip Loop",
+            "subtitle": "Register cheap, screen hard, price on comps, list wide, renew with intent",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Register Cheap, Cap the Spend",
+                    "value": "Step 1",
+                    "detail": (
+                        "Registrations cluster around $6 to $10 with $20 to $50 per-name caps; "
+                        ".com first, since about 75% of all domain sales are .com (Thinking Blueprint), "
+                        "with .ai and .io as the hot alternates."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Reject Flawed Candidates",
+                    "value": "Step 2",
+                    "detail": (
+                        "Any candidate with a dash, a creative misspelling, or a date is rejected "
+                        "before it reaches the cart (Make Money with Stacy La)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Price on Appraisal Plus Comps",
+                    "value": "Step 3",
+                    "detail": (
+                        "Pair the GoDaddy appraisal with NameBio comparable sales, and relist at a "
+                        "new price if 90 days pass without a sale (David Utke)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "List Wide on Afternic",
+                    "value": "Step 4",
+                    "detail": (
+                        "Point a Namecheap-registered name's nameservers to Afternic to cut the "
+                        "commission from 25% to 15% and unlock fast transfer plus a for-sale lander "
+                        "(David Utke)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Close in Escrow, Renew or Drop",
+                    "value": "Step 5",
+                    "detail": (
+                        "Refuse pay-later buyers and close only through escrow (DomainRacer Hindi); "
+                        "auto-renew keepers and drop unsold dead weight before renewal "
+                        "(Andrey Verevko)."
+                    ),
+                },
+            ],
+            "caption": (
+                "KT Blogger turned a fresh $10 hand-registration into a $1,500 sale, while Andrey "
+                "Verevko bought at $10, renewed at 15, sold at 20, and ended five bucks in the hole."
+            ),
+            "assumptions_note": (
+                "Step order follows the loop described across sixteen Q1 operators; all prices and "
+                "commission rates are as stated by the named practitioners, not independently verified."
+            ),
+            "note": (
+                "Sources Thinking Blueprint (12ohlClK0g8 @ 00:02:27), Make Money with Stacy La "
+                "(SuiwtFN2AO8 @ 00:04:48), David Utke (A6-lVEeaHEs @ 00:05:02 and 00:10:27), "
+                "DomainRacer Hindi (eDmh_k07UEg @ 00:03:18), Andrey Verevko (bVQnMN-Qrd8 @ 00:09:05)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-buy-ceiling-funnel",
+            "chapter_number": 6,
+            "title": "Making Money on the Buy",
+            "subtitle": "Rosener's liquidity-based buy ceilings applied to Diagnose.com",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Retail Value Estimate",
+                    "value": 150000,
+                    "display": "$100-150K retail",
+                    "conversion": "Starting point",
+                    "detail": "Rosener's retail range for Diagnose.com; top of range used for the ceilings below.",
+                },
+                {
+                    "label": "Liquid-Name Buy Ceiling",
+                    "value": 75000,
+                    "display": "Up to 50% of resale",
+                    "conversion": "50% of $150K",
+                    "detail": "Upper bound of the 30-50% Rosener pays for liquid names.",
+                },
+                {
+                    "label": "Liquid-Name Buy Floor",
+                    "value": 45000,
+                    "display": "30% of resale",
+                    "conversion": "30% of $150K",
+                    "detail": "Lower bound of the 30-50% liquid-name band.",
+                },
+                {
+                    "label": "Actual Media Options Bid",
+                    "value": 35000,
+                    "display": "About $30-35K",
+                    "conversion": "Stated bid on Diagnose.com",
+                    "detail": "The bid Rosener reported for Diagnose.com at Media Options.",
+                },
+                {
+                    "label": "Illiquid-Name Buy Ceiling",
+                    "value": 15000,
+                    "display": "No more than 10% of resale",
+                    "conversion": "10% of $150K",
+                    "detail": "Rosener's cap for illiquid names, set because only about 10% of a portfolio sells in a lifetime.",
+                },
+            ],
+            "caption": (
+                "Profit is set on the buy. Rosener pays at most 10% of expected resale for illiquid "
+                "names and 30-50% for liquid ones, and bid about $30-35K on a $100-150K retail name."
+            ),
+            "assumptions_note": (
+                "The $75K, $45K and $15K stages are arithmetic, applying Rosener's stated percentages "
+                "to the $150K top of his Diagnose.com range; the retail range and the $30-35K bid are "
+                "his reported figures."
+            ),
+            "note": (
+                "Sources domainsherpa Valuation Room with Drew Rosener (KZqosumnXfg @ 01:09:57) and the "
+                "10x ask rule (cb-n0okmiuw @ 00:17:23)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-closeout-price-decay",
+            "chapter_number": 3,
+            "title": "GoDaddy Closeout Buy-Now Price Decay",
+            "subtitle": "How the 5-day declining Closeout bottoms at $5",
+            "chart_type": "waterfall",
+            "bars": [
+                {"label": "Closeout Opening Buy-Now", "value": 11, "display": "$11", "kind": "total"},
+                {"label": "Day 2 Markdown", "value": -1, "display": "-$1", "kind": "deduction"},
+                {"label": "Day 3 Markdown", "value": -1, "display": "-$1", "kind": "deduction"},
+                {"label": "Day 4 Markdown", "value": -1, "display": "-$1", "kind": "deduction"},
+                {"label": "Final-Day Drop", "value": -3, "display": "-$3", "kind": "deduction"},
+                {"label": "Final-Day Price", "value": 5, "display": "$5", "kind": "result"},
+            ],
+            "caption": (
+                "GoDaddy's Closeout buy-now starts at $11, drops $1 a day, then sits at $5 on the "
+                "final day, after the 10-day auction that opens on day 26 of the expiry cycle."
+            ),
+            "assumptions_note": (
+                "Daily steps assume the 5-day Closeout window starting day 36 as mapped by the GoDaddy "
+                "panel; the $3 final-day drop is the gap between the day 4 price and the stated $5 floor."
+            ),
+            "note": (
+                "Sources GoDaddy (0f-o9p0h6u8 @ 00:09:23) for the closeout pricing and GoDaddy "
+                "(OM_5VESPepY @ 00:22:17) for the drop-cycle timing."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-com-registrar-pricing",
+            "chapter_number": 2,
+            "title": ".com Pricing Across Dedicated Registrars",
+            "subtitle": "Price every name on its renewal rate, not first-year bait",
+            "chart_type": "horizontal_bars",
+            "unit": "USD per .com year",
+            "bars": [
+                {
+                    "label": "Spaceship",
+                    "min": 8.88,
+                    "max": 9.98,
+                    "typical": 9.98,
+                    "display": "$8.88 register, $9.98 renew",
+                },
+                {
+                    "label": "Cloudflare Registrar",
+                    "min": 10.46,
+                    "max": 11.17,
+                    "typical": 11.17,
+                    "display": "$11.17 at cost; $10.46 in Utke's cart",
+                },
+                {
+                    "label": "Dynadot",
+                    "min": 10.88,
+                    "max": 10.88,
+                    "typical": 10.88,
+                    "display": "$10.88",
+                },
+                {
+                    "label": "Porkbun",
+                    "min": 11.81,
+                    "max": 11.81,
+                    "typical": 11.81,
+                    "display": "About $11.81 flat, register and renew",
+                },
+                {
+                    "label": "Bait-Priced Host Offer",
+                    "min": 0.01,
+                    "max": 40.0,
+                    "typical": 40.0,
+                    "display": "1 cent advertised, $40 charged",
+                },
+            ],
+            "caption": (
+                "The cheapest published .com figures sit within about three dollars of each other, "
+                "while a 1-cent host offer that secretly charges $40 shows why renewal price decides."
+            ),
+            "assumptions_note": (
+                "Typical values use the renewal or at-cost figure where a register-versus-renew split "
+                "was reported; prices are as quoted by each practitioner at recording time."
+            ),
+            "note": (
+                "Sources Design Guy (mMGvtO-bkPI @ 00:00:59), SEARCHLIGHT HQ (RClpPcLHviU @ 00:00:30), "
+                "David Utke (UkMYRY9wDN0 @ 00:10:42), Create a Pro Website (08Ekqe45IH0 @ 00:00:14)."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-emd-acquisition-gates",
+            "chapter_number": 5,
+            "title": "Exact-Match Domain Acquisition Gates",
+            "subtitle": "Volume, intent, footprint and deal readiness before the bid",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Does the exact phrase draw more than 1,000 exact-match searches per month?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Drop traffic-based valuation and price through buyer type, equity and "
+                        "industry trend phase (Chris Zuiker)."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Do the live Google results confirm the right booking or research intent?",
+                    "pass_next": "G3",
+                    "fail_action": "Put the money toward building a better website instead (Launch with Bryan).",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is the name a standalone asset rather than part of a same-day EMD batch?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Abort the batch; 22 sites with 19 registered within 35 seconds reads as "
+                        "doorway abuse (LLMrefs AI SEO)."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Are financing and a fill-in-the-number contract ready before the approach?",
+                    "pass_next": "Acquire, expecting any buy above $100K to get shopped around",
+                    "fail_action": (
+                        "Stage funds, paperwork and a broker first, or bridge the gap with an "
+                        "option-plus-lease carrying a $25-50K deposit on a $500K name (Rosener)."
+                    ),
+                },
+            ],
+            "caption": (
+                "Rosener values generic .coms from exact-match volume above 1,000 monthly searches and "
+                "an 85% top-organic click share; Gargiulo paid $1M for vpn.com after nearly 4 years."
+            ),
+            "assumptions_note": (
+                "Gate order is an organizing sequence across Q5 practitioners; whether EMDs still carry "
+                "SEO benefit is disputed, with PPC Better saying none since 2012."
+            ),
+            "note": (
+                "Sources domainsherpa with Andrew Rosener (HfWOYwPZ1HU @ 00:11:38), Launch with Bryan "
+                "(ASaM7hIMKVI @ 00:03:28), LLMrefs AI SEO (XEh3aA3iqtI @ 00:00:55), VPN.com "
+                "(nwlWrMSMdUU @ 00:01:14), domainsherpa with Michael Gargiulo (J6_UP-VNOco @ 00:31:50)."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-trademark-defense-architecture",
+            "chapter_number": 11,
+            "title": "Trademark and Dispute Defense Around the Portfolio",
+            "subtitle": "Screen before the buy, answer every complaint, read registry terms",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Domain Portfolio Holder",
+                "headcount": "Single portfolio holder",
+                "focus": "Hold generic and brandable names without inviting UDRP filings",
+            },
+            "spokes": [
+                {
+                    "role": "Pre-Buy Trademark Screen",
+                    "type": "Search check",
+                    "kpi": (
+                        "Google search, EU trademark and design view, and WIPO global brands database "
+                        "cleared, with no term tied to one major company (live NDDCamp)"
+                    ),
+                },
+                {
+                    "role": "Domain Dispute Counsel",
+                    "type": "External specialist",
+                    "kpi": (
+                        "A response filed on every complaint; kerosoft.co was lost by default to a "
+                        "$1,330 Forum filing (live NDDCamp, Steven Rinehart)"
+                    ),
+                },
+                {
+                    "role": "ccTLD Terms Review",
+                    "type": "Registry compliance",
+                    "kpi": (
+                        "Terms read before buying, including .si moral type clauses and Afnic's "
+                        "two-week reply deadline (domainsherpa)"
+                    ),
+                },
+                {
+                    "role": "gTLD String Vetting",
+                    "type": "Extension strategy",
+                    "kpi": (
+                        "String run through the Name Collision Observatory early, never relied on "
+                        "alone (ICANN)"
+                    ),
+                },
+            ],
+            "caption": (
+                "A typical UDRP lands in about 60 days versus 259 for an ACPA final judgment, and a "
+                "complainant's run costs about $5,000 in lawyer fees plus a $1,500 filing fee."
+            ),
+            "assumptions_note": (
+                "Timelines and costs are as reported by Doug Isenberg and NDDCamp panelists; Steven "
+                "Rinehart separately quotes 34 to 44 days for a UDRP."
+            ),
+            "note": (
+                "Sources GigaLaw with Doug Isenberg (GI9Us2WWsAo @ 00:06:31), live NDDCamp "
+                "(PdwE4T9wmMo @ 00:04:24 and 00:33:12), Steven Rinehart (BL9pY270FpM @ 00:02:37), "
+                "domainsherpa (4lvZ-LZJ3Sc @ 00:19:19), ICANN (ubAwLfPKk6s @ 00:02:48)."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-backlink-count-spread",
+            "chapter_number": 4,
+            "title": "One URL, Four Backlink Counts",
+            "subtitle": "Why domain scores mislead aged-domain due diligence",
+            "chart_type": "stacked_comparison",
+            "total_range": "14.9K to 65.62K backlinks reported for the identical URL",
+            "buckets": [
+                {
+                    "label": "SE Ranking",
+                    "low": 14900,
+                    "high": 14900,
+                    "notes": "Lowest count in the afternoon test.",
+                },
+                {
+                    "label": "Majestic",
+                    "low": 21800,
+                    "high": 21800,
+                    "notes": "About 21.8K for the same site.",
+                },
+                {
+                    "label": "Ahrefs",
+                    "low": 35000,
+                    "high": 35000,
+                    "notes": "35K for the same site.",
+                },
+                {
+                    "label": "SEO Review Tools",
+                    "low": 65620,
+                    "high": 65620,
+                    "notes": "Highest count, roughly a 4x multiplier over SE Ranking.",
+                },
+            ],
+            "caption": (
+                "Edvido ran one site through 11 free backlink checkers and got a roughly 4x spread; "
+                "when third party tools and Google disagree, Google always wins."
+            ),
+            "assumptions_note": (
+                "Four of the 11 tools are shown, as named by Edvido; low and high are equal because "
+                "each tool returned a single count."
+            ),
+            "note": (
+                "Source Edvido (XjoQwN4FcDU @ 00:01:32 and 00:08:19); page-level checks per "
+                "SearchGAPMethod (UXycltw74Bw @ 00:05:05), where only 15 of 49 entries passed all six."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-first-month-portfolio-roadmap",
+            "chapter_number": 12,
+            "title": "First-Month Portfolio Roadmap",
+            "subtitle": "Capital, cheap sourcing, theme gating and a capped listing engine",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Fund the Ledger and Model the Bad Year",
+                    "deliverable": (
+                        "Starting capital set on the GoDaddy Domain Academy $500 challenge model, with "
+                        "a downside case built from three sales totaling $9.4K that left $900 profit "
+                        "before a $4K trademark dispute (Ownerly)"
+                    ),
+                    "gate": "Generic terms only, since trademark terms invite UDRP filings (POWERS Pod)",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Source Closeouts Every Day",
+                    "deliverable": (
+                        "Mid-day searches of $1-$50 GoDaddy closeouts (Mike Zigger) and about $5 "
+                        "Dynadot closeouts versus $10-20 elsewhere (Chris Koerner)"
+                    ),
+                    "gate": (
+                        "Registrar appraisals ignored as an anchor; Koerner has seen names sell 99% "
+                        "below Dynadot's appraisal"
+                    ),
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Gate Hand-Registration Themes",
+                    "deliverable": (
+                        "365 days of exact-match godaddy.com search history pulled through Afternic "
+                        "for each theme (Andrew Allemann)"
+                    ),
+                    "gate": "Pause any theme where 50 names show no searches",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "List, Lease, and Cap Every Bid",
+                    "deliverable": (
+                        "Afternic listings, the venue for 21 of Allemann's 25 sales, plus lease terms "
+                        "at 0.5-1 point per month with a 5-10% option fee (Rosener on Tim Ferriss)"
+                    ),
+                    "gate": (
+                        "Late-bidding bot whose max bid cannot be raised later, and a renewal ceiling "
+                        "priced against cash after $100K into 260-270 names met three dry months"
+                    ),
+                },
+            ],
+            "caption": (
+                "Annual sell-through runs roughly 1-3% of a portfolio, so one or two names carry the "
+                "year; Allemann logged 8 of 25 sales as lease-to-own deals."
+            ),
+            "assumptions_note": (
+                "The four-week sequence is an organizing frame; the practitioners did not prescribe a "
+                "weekly schedule, and all dollar and rate figures are as they reported them."
+            ),
+            "note": (
+                "Sources Ownerly (xPtTNJU_OGE @ 00:17:49), POWERS Pod (S9SNhuYObsA @ 00:30:09), "
+                "GoDaddy Domain Academy (d1VjM9-Tyig @ 00:41:30), Chris Koerner on The Koerner Office "
+                "Podcast (aba_NmtzK1I @ 00:08:07), Andrew Allemann (E4jnQONuo6E @ 00:24:00), "
+                "Tim Ferriss (ApCGeST90RA @ 01:03:55)."
+            ),
+        },
+    ]
+
+
+VOLUME_017_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Disciplined Domain Inventory Desk",
-        "subtitle": (
-            "Price brandable and exact-match inventory around acquisition basis, "
-            "renewal exposure, and collected sale proceeds."
-        ),
-        "audience": (
-            "A full-time owner and contract researcher operating a "
-            "$8,000–$60,000 startup portfolio with patient capital."
-        ),
+        "title": "The Renewal-Proof Flip",
+        "subtitle": "Buy at $10, Price on NameBio Comps, List on Afternic, and Never Lose to the Renewal Bill",
+        "audience": "First-time domain flippers working with one or two starter names up to a 20-name portfolio",
         "research_basis": (
-            "15 U.S.C. 1125(d) makes bad-faith intent to profit from protected "
-            "marks central to cybersquatting exposure. Build mark screening, "
-            "documented acquisition rationale, and renewal discipline into "
-            "inventory selection rather than treating every available name "
-            "as a saleable asset."
+            "Thinking Blueprint's 2-3 winners out of 20 and .com share of about 75%, David Utke's "
+            "Afternic nameserver commission cut from 25% to 15%, Andrey Verevko's renewal loss, and "
+            "KT Blogger's $10-to-$1,500 fresh hand-registration flip."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/1125",
-            "https://www.law.cornell.edu/uscode/text/15/1114",
+            "https://www.youtube.com/watch?v=12ohlClK0g8&t=329s",
+            "https://www.youtube.com/watch?v=A6-lVEeaHEs&t=627s",
+            "https://www.youtube.com/watch?v=bVQnMN-Qrd8&t=452s",
+            "https://www.youtube.com/watch?v=yz0jUQvunAI&t=162s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 017 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Expired-Domain Acquisition Lab",
-        "subtitle": (
-            "Separate transferable domain value from historical traffic claims "
-            "before bidding in drop-catch auctions."
-        ),
-        "audience": (
-            "Specialist buyers who can inspect archived use, ownership history, "
-            "link quality, auction terms, and transfer restrictions."
-        ),
+        "title": "Profit Is Set on the Buy",
+        "subtitle": "Broker-Grade Buy Ceilings, Outbound Pitches, Buy Now Pricing, and Lease-to-Own Closes",
+        "audience": "Portfolio investors ready to move renewal money from hand-registrations into $1K-5K names",
         "research_basis": (
-            "15 U.S.C. 1125 addresses false designations and cybersquatting; "
-            "15 U.S.C. 45 prohibits unfair or deceptive acts or practices. "
-            "These sources support documented rights review and substantiation "
-            "of seller claims, not an assumption that expired links or rankings "
-            "will survive a transfer."
+            "Rosener's 10% illiquid and 30-50% liquid buy ceilings and 10x ask rule, Jason Eisler's "
+            "80% how-much reply share, Afternic's over-60% sub-$10,000 sales within 48 hours, "
+            "Brian Tharp's escrow holding terms, and DNH's 3.6% lease-to-own default rate."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/1125",
-            "https://www.law.cornell.edu/uscode/text/15/45",
+            "https://www.youtube.com/watch?v=KZqosumnXfg&t=4197s",
+            "https://www.youtube.com/watch?v=cb-n0okmiuw&t=1043s",
+            "https://www.youtube.com/watch?v=gQJxEyrhqec&t=3961s",
+            "https://www.youtube.com/watch?v=PPJ8y-pwY38&t=448s",
+            "https://www.youtube.com/watch?v=IJ9lx010Yps&t=900s",
+            "https://www.youtube.com/watch?v=Y1dwwAJKRdg&t=3933s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 017 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Buyer-Matched Domain Upgrade Desk",
-        "subtitle": (
-            "Sell clean domain upgrades through relevant outreach, verified "
-            "escrow instructions, and documented registrar handoffs."
-        ),
-        "audience": (
-            "Owner-led operators combining inbound inquiry routing with "
-            "carefully researched business-to-business upgrade offers."
-        ),
+        "title": "Expired Names, Clean Histories",
+        "subtitle": "Drop-Cycle Timing, Backorder Discipline, and Backlink and Wayback Audits Before Every Bid",
+        "audience": "Expired-domain hunters and SEO operators buying aged names at auction and closeout",
         "research_basis": (
-            "15 U.S.C. 7704 supplies concrete commercial-email requirements, "
-            "including accurate headers, nondeceptive subjects, a postal "
-            "address, and opt-out handling. 15 U.S.C. 1125(d) supports "
-            "screening acquisition intent before targeting a prospective buyer."
+            "GoDaddy's drop-cycle and 2-hour backorder rule, SearchGAPMethod's 31% live pass rate "
+            "on a free backlinks list, Frey Chu's pass on a DR59 name after referring domains jumped "
+            "from 1,900 to 4,000, and Affiliate Credo's archive-index and final-year 301 filters."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/7704",
-            "https://www.law.cornell.edu/uscode/text/15/1125",
+            "https://www.youtube.com/watch?v=OM_5VESPepY&t=1337s",
+            "https://www.youtube.com/watch?v=UXycltw74Bw&t=305s",
+            "https://www.youtube.com/watch?v=mHkLfhpVYqc&t=548s",
+            "https://www.youtube.com/watch?v=S8e33kDoWhQ&t=234s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 017 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_017_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-domain-inventory-to-cash",
-            "process_flow",
-            "Operate the Domain Inventory-to-Cash Loop",
-            "Five controlled handoffs from sourcing to renewal or exit.",
-            1,
-            "operating_framework",
-            (
-                "The core pod is one full-time owner plus one contractor. "
-                "First-deal timing is 2–9 months; a completed sourcing cycle "
-                "does not establish buyer demand or immediate liquidity."
-            ),
-            (
-                "Recognized operator revenue is gross domain sale proceeds. "
-                "Escrow balances awaiting release and unsold asking prices "
-                "are not completed-sale revenue."
-            ),
-            [
-                (
-                    "Source",
-                    "Build a comparable-backed candidate queue",
-                    1.0,
-                    (
-                        "Monitor NameBio comparables, expired-name lists, and "
-                        "drop-catch auctions; record extension, sale date, "
-                        "venue, buyer use case, and maximum bid."
-                    ),
-                ),
-                (
-                    "Screen",
-                    "Document rights and historical-use checks",
-                    2.0,
-                    (
-                        "Use USPTO Trademark Search, ICANN Lookup, RDAP, and "
-                        "Wayback Machine records; reject mark-targeting "
-                        "theses and investigate conflicting historical use."
-                    ),
-                ),
-                (
-                    "Acquire",
-                    "Cap bids against total carrying exposure",
-                    3.0,
-                    (
-                        "Include auction fees, transfer charges, premium "
-                        "renewals, and expected holding periods in the bid "
-                        "ceiling; record registrar access and ownership evidence."
-                    ),
-                ),
-                (
-                    "Market",
-                    "Route inquiries into a priced negotiation",
-                    4.0,
-                    (
-                        "Publish consistent marketplace and landing-page "
-                        "prices; route inquiries to one owner and record "
-                        "buyer identity, offer history, and net settlement math."
-                    ),
-                ),
-                (
-                    "Settle and recycle",
-                    "Verify payment, transfer, and renewal decisions",
-                    5.0,
-                    (
-                        "Verify escrow instructions independently, follow "
-                        "registrar transfer procedures, reconcile released "
-                        "proceeds, and reassess unsold names before renewal."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-annual-domain-cohort-funnel",
-            "funnel",
-            "Track Domains Through One Nested Annual Cohort",
-            "Count unique domains, not messages, leads, or auction impressions.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative annual cohort: 400 researched domains, 100 "
-                "screen-cleared domains, 40 owned and listed domains, 20 with "
-                "qualified inquiries, and eight completed sales. Each stage "
-                "is a subset of the preceding stage. Existing holdings may "
-                "enter the researched cohort; listing is not necessarily "
-                "a current-year acquisition."
-            ),
-            (
-                "Eight sales at an assumed $20,000 average produce the "
-                "$160,000 Base-Case gross revenue. The implied 20% annual "
-                "sell-through of 40 listed domains is a demanding modeling "
-                "assumption, not a market benchmark."
-            ),
-            [
-                (
-                    "Researched domains",
-                    "400 unique domains; complete cohort",
-                    400.0,
-                    (
-                        "Deduplicate by domain and retain a dated record "
-                        "of comparable sales, intended use, carrying cost, "
-                        "and seller or auction provenance."
-                    ),
-                ),
-                (
-                    "Screen-cleared domains",
-                    "100 domains; 25% of researched cohort",
-                    100.0,
-                    (
-                        "Retain only domains passing documented rights, "
-                        "historical-use, pricing, and transferability checks; "
-                        "screen clearance does not authorize an unlimited bid."
-                    ),
-                ),
-                (
-                    "Owned and listed domains",
-                    "40 domains; 40% of cleared subset",
-                    40.0,
-                    (
-                        "Confirm control of every listed name, synchronize "
-                        "prices across venues, and remove stale listings "
-                        "immediately after a sale or ownership change."
-                    ),
-                ),
-                (
-                    "Domains with qualified inquiries",
-                    "20 domains; 50% of listed subset",
-                    20.0,
-                    (
-                        "Count each domain once after a buyer demonstrates "
-                        "a credible use case and willingness to discuss "
-                        "price; exclude automated spam and duplicate contacts."
-                    ),
-                ),
-                (
-                    "Completed domain sales",
-                    "8 domains; 40% of inquiry subset",
-                    8.0,
-                    (
-                        "Count only completed transactions; eight multiplied "
-                        "by $20,000 equals $160,000 gross proceeds, with "
-                        "acquisition and operating costs deducted separately."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-profit-waterfall",
-            "waterfall",
-            "Reconcile $160,000 Gross Sales to $44,000 Owner Net",
-            "Six bars establish the Base-Case 27.5% annual net margin.",
-            3,
-            "illustrative_model",
-            (
-                "The canonical Base Case fixes gross revenue at $160,000 "
-                "and annual owner net profit at $44,000. The four expense "
-                "buckets below are an illustrative allocation of the "
-                "required $116,000 total cost, not additional scorecard facts. "
-                "Intermediate bars are signed deductions; the final bar "
-                "is an absolute total."
-            ),
-            (
-                "$160,000 - $60,000 - $12,000 - $24,000 - $20,000 = "
-                "$44,000; $44,000 / $160,000 = 27.5%. Conservative: "
-                "$20,000 at 15% yields $3,000 with 1 FT + 1 C. "
-                "Scaled: $300,000 at 40% yields $120,000 with 2 FT + 2 C."
-            ),
-            [
-                (
-                    "Gross domain sale proceeds",
-                    "$160,000 annual operator revenue",
-                    160000.0,
-                    (
-                        "Start with completed domain sales before selling "
-                        "fees; do not substitute portfolio asking prices, "
-                        "third-party merchant volume, or escrow deposits."
-                    ),
-                ),
-                (
-                    "Sold-domain acquisition basis",
-                    "-$60,000 allocated purchase costs",
-                    -60000.0,
-                    (
-                        "Assign purchase prices and acquisition fees to "
-                        "the domains sold; unsold inventory purchases "
-                        "remain a separate cash-use and inventory schedule."
-                    ),
-                ),
-                (
-                    "Portfolio renewals",
-                    "-$12,000 annual carrying expense",
-                    -12000.0,
-                    (
-                        "Include current-period renewal charges across "
-                        "retained and sold inventory; remove any amounts "
-                        "already included in acquisition basis."
-                    ),
-                ),
-                (
-                    "Selling and settlement costs",
-                    "-$24,000 combined transaction expense",
-                    -24000.0,
-                    (
-                        "Assume a blended 15% of gross proceeds covering "
-                        "marketplace commissions and settlement charges; "
-                        "replace this model rate with actual venue invoices."
-                    ),
-                ),
-                (
-                    "Other operating expense",
-                    "-$20,000 annual operating budget",
-                    -20000.0,
-                    (
-                        "Budget contractor support, research tools, outreach, "
-                        "and administration at approximately $1,667 monthly; "
-                        "exclude renewals and transaction fees counted above."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$44,000 retained operating result",
-                    44000.0,
-                    (
-                        "This absolute endpoint equals 27.5% of gross "
-                        "revenue; do not add it as another movement or "
-                        "describe gross sales as the owner's earnings."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-domain-route-contribution-yields",
-            "horizontal_bars",
-            "Compare Direct Contribution Across Domain Sale Routes",
-            "Five independent $10,000 sale examples; bar values are percentages.",
-            2,
-            "illustrative_model",
-            (
-                "All examples are hypothetical completed sales, not observed "
-                "market yields. Direct contribution equals sale proceeds "
-                "less acquisition, renewal, selling, and stated deal-specific "
-                "costs. Shared overhead, unsold inventory, and holding time "
-                "are excluded, so these percentages are not annual net margins."
-            ),
-            (
-                "Compare routes only after equalizing sale price and cost "
-                "definitions. These independent examples do not replace "
-                "the canonical 15%, 27.5%, and 40% annual net margins."
-            ),
-            [
-                (
-                    "Brandable via marketplace",
-                    "54% direct contribution; $5,400 retained",
-                    54.0,
-                    (
-                        "$10,000 proceeds less $3,000 acquisition, $1,500 "
-                        "selling costs, and $100 renewals leaves $5,400; "
-                        "invented-word appeal still requires mark screening."
-                    ),
-                ),
-                (
-                    "Exact-match via marketplace",
-                    "44% direct contribution; $4,400 retained",
-                    44.0,
-                    (
-                        "$10,000 proceeds less $4,000 acquisition, $1,500 "
-                        "selling costs, and $100 renewals leaves $4,400; "
-                        "descriptive wording does not eliminate rights conflicts."
-                    ),
-                ),
-                (
-                    "Expired-authority via marketplace",
-                    "30% direct contribution; $3,000 retained",
-                    30.0,
-                    (
-                        "$10,000 proceeds less $5,000 acquisition, $1,500 "
-                        "selling costs, $100 renewals, and $400 historical-use "
-                        "research leaves $3,000; rankings can disappear."
-                    ),
-                ),
-                (
-                    "Drop-catch resale via marketplace",
-                    "37% direct contribution; $3,700 retained",
-                    37.0,
-                    (
-                        "$10,000 proceeds less $4,500 acquisition including "
-                        "auction fees, $1,500 selling costs, $100 renewals, "
-                        "and $200 diligence leaves $3,700."
-                    ),
-                ),
-                (
-                    "Outbound upgrade via direct escrow",
-                    "55% direct contribution; $5,500 retained",
-                    55.0,
-                    (
-                        "$10,000 proceeds less $3,500 acquisition, $300 "
-                        "assumed settlement costs, $100 renewals, and $600 "
-                        "outreach leaves $5,500; verify actual escrow pricing."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-domain-preflight-risk-tree",
-            "decision_tree",
-            "Resolve Four Pre-Flight Rights and Execution Checks",
-            "Each checkpoint defines a proceed path and a stop-or-rework path.",
-            5,
-            "operating_framework",
-            (
-                "Apply rights checks before bidding and repeat relevant "
-                "checks before marketing and transfer. UDRP is a contractual "
-                "domain dispute policy, distinct from statutory ACPA claims; "
-                "registration availability does not establish lawful use."
-            ),
-            (
-                "Preserve dated evidence for acquisition intent, prior use, "
-                "ownership, and outreach. Automated screening flags cases "
-                "for review; it cannot establish the absence of disputes."
-            ),
-            [
-                (
-                    "Trademark and ACPA exposure",
-                    "Document clean rationale or reject acquisition",
-                    1.0,
-                    (
-                        "Review 15 U.S.C. 1114 and 1125, including 1125(d). "
-                        "Proceed with documented independent use rationale; "
-                        "reject a thesis built on bad-faith profit from "
-                        "another party's protected mark."
-                    ),
-                ),
-                (
-                    "Applicable domain dispute policy",
-                    "Check legitimate interests and adverse evidence",
-                    2.0,
-                    (
-                        "For UDRP-covered names, examine confusing similarity, "
-                        "rights or legitimate interests, and bad-faith "
-                        "registration and use under paragraph 4(a). "
-                        "Proceed after review; hold unresolved adverse facts."
-                    ),
-                ),
-                (
-                    "Control, transfer, and historical claims",
-                    "Verify deliverability or suspend the listing",
-                    3.0,
-                    (
-                        "Check registrar control, applicable transfer locks, "
-                        "expiration, and dispute status. Under 15 U.S.C. 45, "
-                        "substantiate traffic and authority claims; proceed "
-                        "with evidence or remove unsupported claims."
-                    ),
-                ),
-                (
-                    "Commercial-email execution",
-                    "Send compliant outreach or repair the campaign",
-                    4.0,
-                    (
-                        "Apply 15 U.S.C. 7704: accurate headers, nondeceptive "
-                        "subjects, required advertising identification, valid "
-                        "postal address, and working opt-out. Honor opt-outs "
-                        "within ten business days; suppress recipients before "
-                        "further campaigns."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-domain-investing-pod-seats",
-            "org_architecture",
-            "Keep the Core Pod Small and Add Two Seats Deliberately",
-            "Two core people; four people only in the scaled scenario.",
-            11,
-            "operating_framework",
-            (
-                "Conservative and Base use one full-time owner plus one "
-                "contractor. Scaled uses two full-time people plus two "
-                "contractors. Each stage represents one person; the last "
-                "two seats are additions, not hidden Base-Case staffing."
-            ),
-            (
-                "The owner retains bid limits, pricing authority, registrar "
-                "control, and payout verification. Contractors receive only "
-                "the access required for their assigned work."
-            ),
-            [
-                (
-                    "Core owner",
-                    "1 FT; acquisition and commercial authority",
-                    1.0,
-                    (
-                        "Set portfolio budgets and bid ceilings, review "
-                        "rights risks, negotiate sales, control registrar "
-                        "credentials, and reconcile escrow releases."
-                    ),
-                ),
-                (
-                    "Core research contractor",
-                    "1 C; evidence and inventory operations",
-                    1.0,
-                    (
-                        "Maintain comparable-sale records and renewal "
-                        "calendars; use spreadsheets or SQLite for inventory "
-                        "tracking without authority to transfer domains."
-                    ),
-                ),
-                (
-                    "Scaled sales operator",
-                    "Add 1 FT; buyer pipeline ownership",
-                    1.0,
-                    (
-                        "Handle inbound inquiry routing, qualification, "
-                        "documented offers, and lawful outbound upgrades "
-                        "within the owner's written pricing limits."
-                    ),
-                ),
-                (
-                    "Scaled operations contractor",
-                    "Add 1 C; monitoring and reconciliation support",
-                    1.0,
-                    (
-                        "Automate renewal reminders and comparable-sale "
-                        "monitoring; audit listing consistency and transaction "
-                        "records without unilateral payout or transfer access."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-30000-reference-allocation",
-            "stacked_comparison",
-            "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
-            "Compare $8,000 lean, $30,000 reference, and $60,000 expanded plans.",
-            4,
-            "illustrative_model",
-            (
-                "This illustrative $30,000 reference opening cash allocation "
-                "sits within the $8,000–$60,000 USD startup capital range; "
-                "it is not a required portfolio size or an annual expense "
-                "forecast. Numeric values are reference-plan dollars. "
-                "Each plan allocates 50% to acquisition inventory, 10% to "
-                "research and transaction setup, 10% to renewal and transfer "
-                "reserves, and 30% to operating runway. Lean and expanded "
-                "amounts are shown in each bucket. Do not add these buckets "
-                "to the annual waterfall as though all cash deployed were "
-                "current expense."
-            ),
-            (
-                "Lean: $4,000 + $800 + $800 + $2,400 = $8,000. "
-                "Reference: $15,000 + $3,000 + $3,000 + $9,000 = $30,000. "
-                "Expanded: $30,000 + $6,000 + $6,000 + $18,000 = $60,000. "
-                "At $500–$5,000 monthly operating expense, the reference "
-                "$9,000 operating reserve covers 1.8–18 months, excluding "
-                "inventory purchases and separately reserved renewals "
-                "and transfers."
-            ),
-            [
-                (
-                    "Acquisition inventory",
-                    "Lean $4,000; reference $15,000; expanded $30,000; 50%",
-                    15000.0,
-                    (
-                        "Allocate $4,000 of the $8,000 lean plan, $15,000 "
-                        "of the $30,000 reference plan, or $30,000 of the "
-                        "$60,000 expanded plan. Deploy gradually into "
-                        "researched names and capped auction bids; retain "
-                        "a per-domain basis ledger rather than marking "
-                        "unsold inventory to asking prices."
-                    ),
-                ),
-                (
-                    "Research and transaction setup",
-                    "Lean $800; reference $3,000; expanded $6,000; 10%",
-                    3000.0,
-                    (
-                        "Allocate $800 of the $8,000 lean plan, $3,000 "
-                        "of the $30,000 reference plan, or $6,000 of the "
-                        "$60,000 expanded plan. Reserve for comparable-sale "
-                        "tools, historical-use research, targeted rights "
-                        "review, and initial transaction setup; release "
-                        "funds against scoped work."
-                    ),
-                ),
-                (
-                    "Renewal and transfer reserve",
-                    "Lean $800; reference $3,000; expanded $6,000; 10%",
-                    3000.0,
-                    (
-                        "Allocate $800 of the $8,000 lean plan, $3,000 "
-                        "of the $30,000 reference plan, or $6,000 of the "
-                        "$60,000 expanded plan. Ring-fence cash against "
-                        "registrar renewal schedules, premium-name charges, "
-                        "and transfer costs; revise the reserve as holdings "
-                        "and renewal dates change."
-                    ),
-                ),
-                (
-                    "Operating runway reserve",
-                    "Lean $2,400; reference $9,000; expanded $18,000; 30%",
-                    9000.0,
-                    (
-                        "Allocate $2,400 of the $8,000 lean plan, $9,000 "
-                        "of the $30,000 reference plan, or $18,000 of the "
-                        "$60,000 expanded plan. Support contractor work, "
-                        "inquiry handling, and routine administration while "
-                        "sales remain uneven. First-deal timing is 2–9 "
-                        "months; the reference reserve covers nine months "
-                        "only at monthly operating expense of $1,000 or less. "
-                        "At $5,000 monthly, even the expanded operating "
-                        "reserve covers only 3.6 months."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-domain-launch",
-            "timeline_roadmap",
-            "Build an Auditable Domain Desk in Thirty Days",
-            "Four weekly milestones establish operations, not a promised sale.",
-            12,
-            "operating_framework",
-            (
-                "The launch sprint creates evidence, controls, and listings. "
-                "Canonical first-deal timing remains 2–9 months. Buying "
-                "inventory during the sprint is conditional on completed "
-                "diligence and available carrying reserves."
-            ),
-            (
-                "Exit day 30 with documented buy rules, controlled inventory, "
-                "working inquiry routing, and a renewal calendar; report "
-                "actual offers and settlements separately from asking prices."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define the thesis and capital limits",
-                    7.0,
-                    (
-                        "Choose one primary niche, document buyer use cases, "
-                        "build a comparable-sales worksheet, allocate startup "
-                        "cash, and set per-name and portfolio bid ceilings."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Complete diligence and secure operating accounts",
-                    14.0,
-                    (
-                        "Record trademark and historical-use checks, review "
-                        "auction terms, enable registrar multifactor "
-                        "authentication, and create dated acquisition "
-                        "decisions before placing authorized bids."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Publish controlled inventory and route inquiries",
-                    21.0,
-                    (
-                        "List only owned names, synchronize venue prices, "
-                        "test contact routing, maintain opt-out suppression, "
-                        "and verify escrow and transfer procedures without "
-                        "initiating a test ownership transfer."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Audit unit economics and the renewal runway",
-                    30.0,
-                    (
-                        "Reconcile actual spending, inspect qualified "
-                        "inquiries, calculate transaction-level contribution, "
-                        "schedule 90-, 60-, and 30-day renewal reminders, "
-                        "and define next-month retain-or-drop decisions."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

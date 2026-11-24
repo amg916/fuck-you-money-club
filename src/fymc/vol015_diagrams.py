@@ -1,733 +1,525 @@
-from __future__ import annotations
+"""Diagram data for Volume 015, Judgment Recovery."""
 
-VOLUME_015_SUBTITLE = (
-    "The Complete Playbook for Judgment Recovery: "
-    "$60,000–$500,000 USD in Annual Service Fees, "
-    "from a 1 FT + 3 C (4 People) Pod to a Six-Person Team"
+from typing import Any, Dict, List
+
+VOLUME_015_SUBTITLE: str = (
+    "Take the Assignment, Trace the Assets, Levy Every Bank, Record the Lien, "
+    "and Keep the Judgment Alive Without Breaking Collection Rules"
 )
 
-VOLUME_015_POSITIONING_ALTERNATIVES = [
+
+def build_volume_015_diagrams_data() -> List[Dict[str, Any]]:
+    return [
+        {
+            "diagram_id": "diag-01-judgment-assignment-intake-flow",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "From Unpaid Judgment to Monthly Payment Stream",
+            "subtitle": "Five intake and enforcement steps reported by judgment recovery operators",
+            "caption": (
+                "Operators screen out dead files first, confirm an attachable asset, rate collectibility, "
+                "open contact by hard-copy letter, then garnish the bank and trade writ dismissal for a "
+                "down payment plus monthly installments."
+            ),
+            "assumptions_note": (
+                "Step order combines the operator gates and pro-tips stated by each named practitioner; "
+                "dollar figures are Rich Meyer's reported terms, not guaranteed outcomes."
+            ),
+            "note": (
+                "Sources - TheJRInstitute (3p5TZGrk1og), Default Investor Association with Rich Meyer "
+                "(fjA8sRRh0ZI), Collect Back Rent Training Course with Cynthia Schmidt (5T2nU_IZTXs)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Screen Bankruptcy and Death Records",
+                    "value": "Step 1",
+                    "detail": (
+                        "TheJRInstitute checks bankruptcy filings and death records before preparing "
+                        "the assignment, so no work starts on a dead file."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Confirm an Attachable Asset",
+                    "value": "Step 2",
+                    "detail": (
+                        "Rich Meyer confirms an asset exists before signing the creditor, because "
+                        "exemptions such as head of household make wage and bank garnishment difficult."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Rate and Refuse the Uncollectible 30 Percent",
+                    "value": "Step 3",
+                    "detail": (
+                        "Cynthia Schmidt rates where the debtor moved, judgment size, and other judgments, "
+                        "and declines the roughly 30 percent she rates uncollectible."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Mail a PIN Letter Before Any Email",
+                    "value": "Step 4",
+                    "detail": (
+                        "TheJRInstitute mails a hard-copy letter with a PIN first, then uses that PIN to "
+                        "encrypt every later email to the debtor."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Garnish the Bank, Then Trade Dismissal for Payments",
+                    "value": "Step 5",
+                    "detail": (
+                        "Meyer garnishes for $188 and trades writ dismissal for $500 down plus $100 to $200 "
+                        "a month, reaching about $3,000 per month by the third month at ten files a month."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-judgment-lien-survival-funnel",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "Judgment Lien Survival Path on Real Property",
+            "subtitle": "Abstract, recording, interest, revival, and bankruptcy checkpoints",
+            "caption": (
+                "A money judgment becomes a lien on land only once abstracts are issued and recorded, then "
+                "must accrue, be revived on time, and clear the bankruptcy lookback to keep its place in line."
+            ),
+            "assumptions_note": (
+                "Each stage value is the figure the cited practitioner stated for that step, in its own "
+                "unit (originals, counties, percent, years, days); widths are not conversion counts."
+            ),
+            "note": (
+                "Sources - Bobby Benjy (hJmfkC9gu4c), David Babel (q6PjSqG-sF4), "
+                "Five Minute Legal Master Series (V5NrY_biljg)."
+            ),
+            "stages": [
+                {
+                    "label": "Abstract Issued by the Clerk",
+                    "value": 3,
+                    "display": "3 sealed originals",
+                    "conversion": "One original per target county",
+                    "detail": (
+                        "In Bobby Benjy's worked example the LA County Superior Court clerk issued 3 sealed "
+                        "abstracts from the one-page California form."
+                    ),
+                },
+                {
+                    "label": "Recorded in Each Target County",
+                    "value": 3,
+                    "display": "3 counties",
+                    "conversion": "Orange, San Francisco, and Contra Costa through an attorney service",
+                    "detail": (
+                        "Benjy records in major counties plus every county where research shows the debtor "
+                        "owns land; a recorded abstract attaches when the debtor buys later."
+                    ),
+                },
+                {
+                    "label": "Lien Accrues Interest Until Payoff",
+                    "value": 9,
+                    "display": "9 percent per year",
+                    "conversion": "Payoff required before sale or refinance",
+                    "detail": (
+                        "David Babel describes a Bronx Supreme Court judgment lien accruing 9 percent a year "
+                        "that must be paid off even after a Chapter 7 discharge."
+                    ),
+                },
+                {
+                    "label": "Revival Filed Inside the Window",
+                    "value": 5,
+                    "display": "5 years from entry of judgment",
+                    "conversion": "Late revival survives but goes to the end of the line",
+                    "detail": (
+                        "Five Minute Legal Master Series sets the Pennsylvania revival deadline that keeps "
+                        "lien priority against intervening liens."
+                    ),
+                },
+                {
+                    "label": "Bankruptcy Lookback Cleared",
+                    "value": 90,
+                    "display": "90 days before the bankruptcy filing",
+                    "conversion": "Liens filed inside the window can be avoided",
+                    "detail": (
+                        "Babel says a judgment lien filed within 90 days of filing can be avoided on a "
+                        "primary residence and on investment properties."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-contingency-settlement-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "Where a $10,000 Recovery Goes Under Contingency",
+            "subtitle": "Fee, expense, and lien deductions before the client is paid",
+            "caption": (
+                "A $10,000 settlement at a 33.33 percent contingency, a $250 expense reimbursement, and a "
+                "medical lien negotiated from $500 to $350 leave a $6,066.67 client disbursement."
+            ),
+            "assumptions_note": (
+                "Figures come from the LeanLaw SettleFlow demo; the $6,416.67 subtotal is arithmetic on "
+                "those figures. Delegation cost varies, with receivers typically taking 25 percent per "
+                "Hendershot Cowart and collection agencies taking a third per Private Investigator Videos."
+            ),
+            "note": (
+                "Sources - LeanLaw (pmUaXhIL3eA), Hendershot Cowart P.C. (-kyDpaMUqFY), "
+                "Private Investigator Videos (q-khGCaOPck)."
+            ),
+            "bars": [
+                {"label": "Gross Settlement", "value": 10000.00, "display": "$10,000", "kind": "total"},
+                {
+                    "label": "Contingency Fee at 33.33 Percent",
+                    "value": 3333.33,
+                    "display": "-$3,333.33",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Expense Reimbursement",
+                    "value": 250.00,
+                    "display": "-$250",
+                    "kind": "deduction",
+                },
+                {"label": "Net Before Lien", "value": 6416.67, "display": "$6,416.67", "kind": "total"},
+                {
+                    "label": "Medical Lien Negotiated From $500",
+                    "value": 350.00,
+                    "display": "-$350",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Client Disbursement",
+                    "value": 6066.67,
+                    "display": "$6,066.67",
+                    "kind": "result",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-assignment-deal-percentages",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "Deal Percentages on Assigned and Purchased Judgments",
+            "subtitle": "Splits, payback shares, fees, and garnishment ceilings quoted by practitioners",
+            "unit": "percent",
+            "caption": (
+                "Operators keep one-third to one-half of collections, Lance runs a straight 50/50 split, "
+                "Schmidt pays original creditors 15 to 20 percent on future-pay buys, and wage garnishment "
+                "tops out at 25 percent of gross pay per Greg."
+            ),
+            "assumptions_note": (
+                "Where a practitioner gave a range, typical is either the figure they called standard or "
+                "the arithmetic midpoint (17.5 for Schmidt's 15 to 20 percent). Single-figure claims show "
+                "the same min, max, and typical."
+            ),
+            "note": (
+                "Sources - Cross the River, Find the Treasure (TiGcICs90xE), Judgment Recovery Training "
+                "Online with Lance (L2dopNFjS6s), cynthia schmidt (t_Wf5tSZn4s), InfoUSA1 with Greg of "
+                "Ford Judgment Recovery (OjrZdehs8Xk), LeanLaw (pmUaXhIL3eA)."
+            ),
+            "bars": [
+                {
+                    "label": "Operator Share of Collections",
+                    "min": 33.33,
+                    "max": 50,
+                    "typical": 50,
+                    "display": "One-third to one-half, 50 percent standard on small claims",
+                },
+                {
+                    "label": "Lance Contingency Split",
+                    "min": 50,
+                    "max": 50,
+                    "typical": 50,
+                    "display": "50/50 with no fees to the creditor",
+                },
+                {
+                    "label": "Contingency Fee in Settlement Demo",
+                    "min": 33.33,
+                    "max": 33.33,
+                    "typical": 33.33,
+                    "display": "33.33 percent on a $10,000 settlement",
+                },
+                {
+                    "label": "Wage Garnishment Ceiling",
+                    "min": 25,
+                    "max": 25,
+                    "typical": 25,
+                    "display": "Up to 25 percent of gross pay per paycheck",
+                },
+                {
+                    "label": "Future-Pay Share to Original Creditor",
+                    "min": 15,
+                    "max": 20,
+                    "typical": 17.5,
+                    "display": "15 to 20 percent until satisfied",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-garnishment-and-levy-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Wage Garnishment and Bank Levy Go/No-Go Gates",
+            "subtitle": "Four checks before relying on the state's collection machinery",
+            "caption": (
+                "The creditor must locate a job or bank, run the interest math, anticipate exemption "
+                "fights, and stop cold on a bankruptcy notice; Mr. Grey's answer to thin accounts is a "
+                "four-bank levy."
+            ),
+            "assumptions_note": (
+                "Gate order is an organizing sequence built from the cited operator gates; exemption "
+                "amounts and caps are state-specific as reported for Arizona and Georgia."
+            ),
+            "note": (
+                "Sources - Consumer Warrior with John Skiba (YmCEqLCbD3s), Law Office of Jeffrey B. Kelly "
+                "(cHsptp1ujiI), Westgate Law (Nb1quOaLNWk), Mr. Grey Judgment Enforcement (CLxNTh8V1qQ), "
+                "Bobby Benjy (a13Ojjc6ruw)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Has a job or bank account been located for the debtor?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Mine the credit report for employment and the old check or auto-debit trail for "
+                        "the bank, including spouse-name and joint accounts."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Does the garnishment outpace 28 to 30 percent contract interest?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Do not rely on a 10 percent Arizona wage garnishment alone; add bank levies, "
+                        "and confirm a Georgia employer computes withholding correctly."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is the frozen money free of exemptions?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Expect fights over all-Social Security accounts, the roughly $5,600 Arizona "
+                        "account exemption that doubles for married couples, and adult-child money in joint accounts."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Is the file clear of any bankruptcy notice?",
+                    "pass_next": (
+                        "Fire a four-bank levy at once and let any overage flow back to the debtor."
+                    ),
+                    "fail_action": (
+                        "Stop enforcement, return money taken after the filing, and track the sheriff and the bank."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-collection-compliance-desk",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Collection Compliance Desk Under Regulation F",
+            "subtitle": "One accountable lead, four contact and evidence spokes",
+            "caption": (
+                "Regulation F turned contact limits into countable violations, so each channel gets a hard "
+                "metric and the evidence file is built before any dispute reaches court."
+            ),
+            "assumptions_note": (
+                "Role names are an organizing frame; every KPI is a limit or practice stated by the cited "
+                "attorneys and practitioners. Practitioners split on whether seven-in-seven is a hard cap or a presumption."
+            ),
+            "note": (
+                "Sources - SeniorLiving.Org with Kaiser Jansen (9RtU4rpS3pw), Night Ferry (7HVra7o-cZg), "
+                "Saul Ewing LLP (MM_dCPRf9LE), Meet Jermaine (XSfDS_s1URg), LawShelf (i6PAssklgJg), "
+                "Hard Hat Economics (-FdK6kbQiio)."
+            ),
+            "center": {
+                "role": "Collection Compliance Lead",
+                "headcount": "The operator plus any staff, trained before the first call",
+                "focus": "No abusive, unfair, or deceptive practices across every contact channel",
+            },
+            "spokes": [
+                {
+                    "role": "Phone Contact Desk",
+                    "type": "Outbound calls",
+                    "kpi": "No more than 7 call attempts per 7 days per account, none outside 8 a.m. to 9 p.m.",
+                },
+                {
+                    "role": "Text and Email Channel",
+                    "type": "Digital contact",
+                    "kpi": "Simple opt-out on every text and zero contact after a stop reply",
+                },
+                {
+                    "role": "Mail and Dispute Room",
+                    "type": "Notices and letters",
+                    "kpi": "Validation notice within five days and representation letters processed the day they arrive",
+                },
+                {
+                    "role": "Evidence and Litigation Desk",
+                    "type": "Risk control",
+                    "kpi": "Every letter copied with its 16-digit certified tracking number against up to $1,000 statutory damages plus fees",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-debtor-exam-cost-stack",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "Debtor Examination and Follow-Up Levy Cost Stack",
+            "subtitle": "California filing and levy costs reported by practitioners",
+            "total_range": (
+                "$60 exam order with a free writ, then $30 to $1,500 or more in levy deposits, "
+                "plus $300 per 8 hours if a keeper is used"
+            ),
+            "caption": (
+                "The examination itself is cheap; the spend lands on the levies that must be ready to fire "
+                "right after the exam, before the debtor moves money to a different bank."
+            ),
+            "assumptions_note": (
+                "Exam order and writ costs are Sacramento figures; levy deposit and keeper figures are "
+                "California writ-of-execution costs from a separate source. The levy deposit high end is "
+                "stated as $1,500 or more."
+            ),
+            "note": (
+                "Sources - Sacramento County Public Law Library (HrhPbWDRBVU), Lawyer Tips by The Sterling "
+                "Firm (UV-WyQ1-NC4)."
+            ),
+            "buckets": [
+                {
+                    "label": "Examination Order Filing",
+                    "low": 60,
+                    "high": 60,
+                    "notes": "Sacramento fee, with a court backlog of up to a month or more and a 150-mile reach",
+                },
+                {
+                    "label": "Writ of Execution Issued With the Order",
+                    "low": 0,
+                    "high": 0,
+                    "notes": "Issued at the same time for free in Sacramento",
+                },
+                {
+                    "label": "Levy Deposits",
+                    "low": 30,
+                    "high": 1500,
+                    "notes": "From bank and wage levies up to business and sale notices, $1,500 or more at the top",
+                },
+                {
+                    "label": "Keeper Per 8 Hours",
+                    "low": 300,
+                    "high": 300,
+                    "notes": "Keeper cost quoted per 8-hour block",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-judgment-lifespan-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Four-Week Judgment Lifespan Audit",
+            "subtitle": "Logging expiry, renewing, checking revival windows, and sizing defense risk",
+            "caption": (
+                "Judgments outlive the debts behind them only when renewal and revival deadlines are "
+                "tracked; collectors who miss the window face debtors who check it."
+            ),
+            "assumptions_note": (
+                "The four-week sequence is an organizing frame, not a practitioner-reported timeline; "
+                "lifespans, windows, and fees are as stated by the cited speakers and vary by state."
+            ),
+            "note": (
+                "Sources - The Business Guy (nbtlIEi4we0), Law Office of Richard Kistnen (bkM9l8fajkc), "
+                "The Credit Repair Shop (--FOsBTlu2E, 4Mctc4AuqWA), Consumer Warrior with John Skiba (fWHpyqQu_5M)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Lifespan Audit",
+                    "deliverable": (
+                        "Judgment date and state lifespan logged for every file, such as California "
+                        "10 plus 10 and Oklahoma 5-year renewals indefinitely"
+                    ),
+                    "gate": "No file is worked until its expiry and renewal dates are calendared",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Renewal Filing",
+                    "deliverable": "Renewals filed where due, a simple filing for another 10 years per Kistnen",
+                    "gate": "Renewal goes through when the debtor does not appear to challenge it",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Revival Window Check",
+                    "deliverable": "State revival window checked against the original judgment date on every dormant purchased judgment",
+                    "gate": "Drop any revival past the window; one Ohio collector filed two years past a 10-year window",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Lawsuit and Arbitration Posture",
+                    "deliverable": (
+                        "New suits sized against AAA fees of about $200 for the consumer versus "
+                        "$2,500 to $5,000 upfront for the creditor"
+                    ),
+                    "gate": (
+                        "About 95 percent of sued consumers default, but a $3,500 claim compelled into "
+                        "AAA arbitration usually ends in dismissal or a mutual walk-away"
+                    ),
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_015_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Commercial Judgment Recovery Desk",
-        "subtitle": (
-            "Build a four-person recovery pod around enforceable judgments, "
-            "documented authority, lawful asset research, and counsel-led execution."
-        ),
-        "audience": (
-            "Commercial recovery operators serving business creditors with entered "
-            "money judgments and sufficient records to establish enforcement authority."
-        ),
+        "title": "The Judgment Assignment Operator",
+        "subtitle": "Screen the File, Sign the Assignment, Split the Collection",
+        "audience": "New judgment recovery operators taking assignments or buying judgments on contingency",
         "research_basis": (
-            "Federal Rule of Civil Procedure 69 generally ties federal judgment "
-            "execution to state procedure unless a federal statute applies. "
-            "California Code of Civil Procedure section 683.020 illustrates why "
-            "judgment age and applicable renewal rules belong in initial screening. "
-            "A docket entry alone does not establish collectability."
+            "Cross the River, Find the Treasure's 100-letter batch yielding about $8,000, Rich Meyer's "
+            "$500 down plus monthly settlement stream, Evan Ross's one to two hours per judgment, "
+            "Cynthia Schmidt's 70 percent collectible screen, and Lance's notarized 50/50 assignment."
         ),
         "sources": [
-            "https://www.law.cornell.edu/rules/frcp/rule_69",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=683.020.",
+            "https://www.youtube.com/watch?v=TiGcICs90xE&t=118s",
+            "https://www.youtube.com/watch?v=fjA8sRRh0ZI&t=1333s",
+            "https://www.youtube.com/watch?v=YqjXCyNkUZ8&t=338s",
+            "https://www.youtube.com/watch?v=5T2nU_IZTXs&t=43s",
+            "https://www.youtube.com/watch?v=L2dopNFjS6s&t=199s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 015 YouTube practitioner transcripts.",
     },
     {
-        "title": "Priority Before Pursuit",
-        "subtitle": (
-            "Choose commercial enforcement files by reachable equity, competing "
-            "claims, bankruptcy status, and the cost of the next lawful step."
-        ),
-        "audience": (
-            "Attorney-supported recovery teams handling commercial judgments "
-            "against businesses or guarantors with identifiable assets."
-        ),
+        "title": "Hunt, Freeze, Collect",
+        "subtitle": "Asset Tracing, Debtor Exams, and Multi-Bank Levies That Turn Paper Into Cash",
+        "audience": "Judgment creditors, collection attorneys, and investigators enforcing against evasive debtors",
         "research_basis": (
-            "11 U.S.C. section 362 establishes the automatic stay framework; "
-            "11 U.S.C. section 522 addresses bankruptcy exemptions. UCC section "
-            "9-317 supplies a model priority rule involving security interests "
-            "and lien creditors, subject to its exceptions and state enactment. "
-            "These authorities support asset-specific screening rather than "
-            "equating judgment principal with realizable cash."
+            "Joe Dickerson's 24-to-36-month bank subpoena rule, Mr. Grey's four-bank levy, Haber Law's "
+            "machine gun writs across about 10 banks, and Sacramento's warning to levy right after the exam."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/11/362",
-            "https://www.law.cornell.edu/uscode/text/11/522",
-            "https://www.law.cornell.edu/ucc/9/9-317",
+            "https://www.youtube.com/watch?v=ha0J206Xt6k&t=808s",
+            "https://www.youtube.com/watch?v=CLxNTh8V1qQ&t=1s",
+            "https://www.youtube.com/watch?v=ZdVZvPMh4qM&t=1157s",
+            "https://www.youtube.com/watch?v=HrhPbWDRBVU&t=346s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 015 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Recovery Fee Ledger",
-        "subtitle": (
-            "Turn collected judgment payments into traceable creditor remittances, "
-            "earned service fees, and reconciled operator economics."
-        ),
-        "audience": (
-            "Small recovery firms and creditor-service teams that need reliable "
-            "payment allocation, deadline ownership, and commercial-file classification."
-        ),
+        "title": "Keep the Judgment Alive and Clean",
+        "subtitle": "Liens, Renewals, and Contact Rules That Protect Every Recovery",
+        "audience": "Collection agencies and judgment holders managing long-lived portfolios and compliance risk",
         "research_basis": (
-            "15 U.S.C. section 1692a defines covered debt by its primarily personal, "
-            "family, or household purpose; commercial labeling alone is insufficient. "
-            "12 CFR section 1006.38 supplies validation requirements where Regulation F "
-            "applies. 15 U.S.C. section 1681b limits consumer-report access to permissible "
-            "purposes. These rules support documented classification and controlled "
-            "research, while fee recognition follows the actual service agreement "
-            "and applicable accounting treatment."
+            "Bobby Benjy's multi-county abstract recording, The Business Guy's 10-to-20-year lifespan and "
+            "renewal rules, Kaiser Jansen's seven-in-seven call limit, and John Skiba's 95 percent default "
+            "rate and AAA fee asymmetry."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/1692a",
-            "https://www.ecfr.gov/current/title-12/chapter-X/part-1006/section-1006.38",
-            "https://www.law.cornell.edu/uscode/text/15/1681b",
+            "https://www.youtube.com/watch?v=hJmfkC9gu4c&t=335s",
+            "https://www.youtube.com/watch?v=nbtlIEi4we0&t=148s",
+            "https://www.youtube.com/watch?v=9RtU4rpS3pw&t=351s",
+            "https://www.youtube.com/watch?v=fWHpyqQu_5M&t=73s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 015 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_015_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-commercial-judgment-workflow",
-            "process_flow",
-            "From Entered Judgment to Earned Service Fee",
-            "Five controlled handoffs separate enforcement authority from collected cash.",
-            1,
-            "operating_framework",
-            (
-                "Designed for commercial post-judgment recovery. State procedure, "
-                "licensing, representation requirements, and the service agreement "
-                "determine permitted activity. Assignment does not automatically "
-                "authorize a nonlawyer to represent another party."
-            ),
-            (
-                "Court deadlines and payment reconciliation can be automated; "
-                "legal conclusions and enforcement selections remain assigned "
-                "to qualified people."
-            ),
-            [
-                (
-                    "Screen the docket",
-                    "Confirm entry, parties, balance, age, and enforceability before outreach",
-                    1.0,
-                    (
-                        "Use PACER for federal matters and the relevant state court "
-                        "portal for state judgments. Obtain the judgment and subsequent "
-                        "orders; record appeals, stays, service issues, payments, "
-                        "and renewal deadlines with source-document links."
-                    ),
-                ),
-                (
-                    "Establish lawful authority",
-                    "Document creditor instructions, assignment scope, and counsel responsibilities",
-                    2.0,
-                    (
-                        "Verify the creditor and any assignment chain. Execute a "
-                        "service agreement defining fees, expense responsibility, "
-                        "remittance timing, and termination. Confirm required licenses "
-                        "and use counsel for reserved legal work."
-                    ),
-                ),
-                (
-                    "Map reachable equity",
-                    "Identify assets, competing liens, exemptions, and current bankruptcy exposure",
-                    3.0,
-                    (
-                        "Search authorized court, recorder, and Secretary of State "
-                        "records. Distinguish ownership from possession, subtract "
-                        "senior claims, and record data provenance. Do not purchase "
-                        "a consumer report without a documented permissible purpose."
-                    ),
-                ),
-                (
-                    "Select the recovery route",
-                    "Compare voluntary payment against counsel-directed execution costs and timing",
-                    4.0,
-                    (
-                        "Prepare an asset-specific cost estimate and settlement "
-                        "authority limits. Federal Rule of Civil Procedure 69 "
-                        "generally uses state execution procedure. Calendar each "
-                        "required notice, writ, service event, and response deadline."
-                    ),
-                ),
-                (
-                    "Reconcile and remit",
-                    "Allocate cleared receipts, earned fees, expenses, and creditor remittances",
-                    5.0,
-                    (
-                        "Match bank transactions to the matter ledger, investigate "
-                        "returns, and follow applicable client-fund handling rules. "
-                        "Recognize only earned operator service fees as revenue; "
-                        "track satisfaction filings and remaining balances."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-mature-commercial-recovery-funnel",
-            "funnel",
-            "A Mature Cohort Supporting the Base Case",
-            "Five nested stages connect screening discipline to $280,000 in annual service fees.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative mature annual cohort, not an observed conversion "
-                "benchmark or a launch-year forecast. Counts are nested: "
-                "500 >= 200 >= 100 >= 40 >= 20. Each stage is a subset of "
-                "the preceding stage. First-deal planning remains 6–24 months."
-            ),
-            (
-                "Twenty collecting matters averaging $14,000 in earned fees "
-                "produce $280,000 recognized revenue. At an assumed 25% fee, "
-                "$1,120,000 collected for creditors underlies that revenue."
-            ),
-            [
-                (
-                    "Screened judgment records",
-                    "500 commercial judgment records receive initial document-based screening",
-                    500.0,
-                    (
-                        "Starting cohort equals 100% of screened records. Record "
-                        "court identifiers, judgment dates, creditor authority, "
-                        "balances, and review dates without treating face value "
-                        "as operator revenue."
-                    ),
-                ),
-                (
-                    "Qualified commercial files",
-                    "200 records satisfy documented authority, scope, and enforceability criteria",
-                    200.0,
-                    (
-                        "Forty percent of screened records survive initial review. "
-                        "Exclude files with unresolved authority, expired enforcement "
-                        "rights, unaddressed stays, or activity outside permitted scope."
-                    ),
-                ),
-                (
-                    "Creditor engagements",
-                    "100 qualified files become signed, document-complete creditor engagements",
-                    100.0,
-                    (
-                        "Fifty percent of qualified files convert to engagements. "
-                        "Each has fee terms, expense limits, communications authority, "
-                        "and a defined attorney role where required."
-                    ),
-                ),
-                (
-                    "Actionable asset cases",
-                    "40 engaged files support economically justified, lawful recovery action",
-                    40.0,
-                    (
-                        "Forty percent of engagements show a reachable asset or "
-                        "credible voluntary-payment route after priority, exemption, "
-                        "bankruptcy, and cost review."
-                    ),
-                ),
-                (
-                    "Collecting matters",
-                    "20 actionable matters generate cleared receipts and earned service fees",
-                    20.0,
-                    (
-                        "Fifty percent of actionable cases collect within the "
-                        "modeled annual measurement window: 4% of initial records. "
-                        "Average collections of $56,000 per collecting matter "
-                        "at 25% yield $14,000 in recognized fees."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-fee-to-owner-profit",
-            "waterfall",
-            "Base Case: $280,000 Fees to $84,000 Owner Net",
-            "Four expense deductions reconcile exactly to a 30.0% annual net margin.",
-            3,
-            "illustrative_model",
-            (
-                "Annual USD. First and last bars are absolute totals; intervening "
-                "bars are signed deductions. Expense allocation is illustrative; "
-                "the canonical totals are $280,000 revenue, $196,000 expenses, "
-                "and $84,000 owner net. Owner labor is supported by the residual "
-                "rather than a second salary deduction."
-            ),
-            (
-                "$280,000 - $100,000 - $48,000 - $24,000 - $24,000 = $84,000; "
-                "$84,000 / $280,000 = 30.0%. Client principal and creditor "
-                "remittances never enter the revenue bar."
-            ),
-            [
-                (
-                    "Recognized service fees",
-                    "Annual earned operator fee revenue totals exactly $280,000",
-                    280000.0,
-                    (
-                        "Opening total equals the canonical Base-Case revenue. "
-                        "Illustrative collections of $1,120,000 at a 25% service "
-                        "fee generate $280,000; the remaining creditor allocation "
-                        "is not operator revenue or an operator expense."
-                    ),
-                ),
-                (
-                    "Contract delivery labor",
-                    "Deduct $100,000 for nonowner research and recovery-administration delivery",
-                    -100000.0,
-                    (
-                        "Illustrative file-linked contractor expense covers research "
-                        "and administrative delivery, excluding separately budgeted "
-                        "outside counsel. Remaining contribution equals $180,000."
-                    ),
-                ),
-                (
-                    "Counsel and enforcement",
-                    "Deduct $48,000 for operator-borne legal work and execution expenses",
-                    -48000.0,
-                    (
-                        "Include only costs contractually borne by the operator. "
-                        "Do not duplicate creditor-funded advances as operator "
-                        "expenses. Remaining contribution equals $132,000."
-                    ),
-                ),
-                (
-                    "Research and systems",
-                    "Deduct $24,000 for lawful data, docket monitoring, and reconciliation systems",
-                    -24000.0,
-                    (
-                        "Illustrative recurring allocation equals $2,000 monthly. "
-                        "Maintain access permissions, source records, matter-level "
-                        "audit trails, and deadline alerts. Remaining contribution "
-                        "equals $108,000."
-                    ),
-                ),
-                (
-                    "Operating overhead",
-                    "Deduct $24,000 for insurance, bookkeeping, administration, and business overhead",
-                    -24000.0,
-                    (
-                        "Illustrative recurring allocation equals $2,000 monthly. "
-                        "Combined recurring systems and overhead equal $4,000 "
-                        "monthly, inside the $2,000–$12,000 planning range. "
-                        "File-linked delivery and enforcement costs remain additional."
-                    ),
-                ),
-                (
-                    "Annual owner net",
-                    "Closing annual owner net profit equals exactly $84,000",
-                    84000.0,
-                    (
-                        "Closing total is not another cash inflow. The four-person "
-                        "Base pod is 1 FT + 3 C. Canonical comparison: Conservative "
-                        "$60,000 at 20% yields $12,000 with 1 FT + 3 C; "
-                        "Scaled $500,000 at 40% yields $200,000 with 2 FT + 4 C."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-commercial-subniche-fee-yields",
-            "horizontal_bars",
-            "Five Commercial File Types, One Common Collection Base",
-            "Compare illustrative service-fee yield per $100,000 actually recovered.",
-            2,
-            "illustrative_model",
-            (
-                "All five bars assume $100,000 in cleared recoveries and show "
-                "gross operator fee yield before expenses. Rates are editorial "
-                "pricing hypotheses, not observed market rates or recovery "
-                "probabilities. Bars are alternatives, not additive revenue."
-            ),
-            (
-                "Use a common recovered-dollar denominator to compare pricing. "
-                "Neither the debtor's asset value nor the judgment balance "
-                "establishes earned revenue."
-            ),
-            [
-                (
-                    "Document-complete supplier judgments",
-                    "$100,000 recovered at 20% produces $20,000 service-fee revenue",
-                    20000.0,
-                    (
-                        "Assume an entered trade-credit judgment and voluntary "
-                        "payment using bank-supported business ACH or wire transfer. "
-                        "Confirm payment authority, return exposure, and ledger "
-                        "allocation; a convenient rail does not improve lien priority."
-                    ),
-                ),
-                (
-                    "Equipment lease deficiency judgments",
-                    "$100,000 recovered at 25% produces $25,000 service-fee revenue",
-                    25000.0,
-                    (
-                        "Assume a valid commercial deficiency judgment after "
-                        "credited disposition proceeds. Counsel reviews remaining "
-                        "liability and secured claims before selecting a recovery "
-                        "route; prevent double recovery."
-                    ),
-                ),
-                (
-                    "Commercial premises rent judgments",
-                    "$100,000 recovered at 25% produces $25,000 service-fee revenue",
-                    25000.0,
-                    (
-                        "Confirm the named tenant entity, judgment scope, credited "
-                        "deposits, and any adjudicated guarantor liability. Separate "
-                        "commercial obligations from household-purpose debts and "
-                        "verify assets belong to an actual judgment debtor."
-                    ),
-                ),
-                (
-                    "Adjudicated business guarantor obligations",
-                    "$100,000 recovered at 30% produces $30,000 service-fee revenue",
-                    30000.0,
-                    (
-                        "Assume judgment already reaches the guarantor. Classify "
-                        "the underlying obligation by purpose, not the person's "
-                        "name; counsel evaluates ownership, exemptions, and "
-                        "available execution procedure."
-                    ),
-                ),
-                (
-                    "Lien-constrained commercial judgments",
-                    "$100,000 recovered at 35% produces $35,000 service-fee revenue",
-                    35000.0,
-                    (
-                        "Higher assumed pricing reflects more intensive priority "
-                        "and asset analysis, not superior collectability. Senior "
-                        "claims can eliminate reachable equity; decline further "
-                        "spend when incremental recovery economics fail."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-authority-and-recoverability",
-            "decision_tree",
-            "Four Checks Before Enforcement Spend",
-            "Proceed only on documented facts; route unresolved issues to the responsible specialist.",
-            5,
-            "operating_framework",
-            (
-                "Read nodes in order. A supported answer advances to the next "
-                "check; an unresolved or adverse answer follows the stated "
-                "hold, referral, or decline path. These are jurisdiction-specific "
-                "reviews, not universal procedural instructions."
-            ),
-            (
-                "A valid judgment can still be uneconomic or temporarily "
-                "unenforceable. Verify authority, lawful scope, bankruptcy "
-                "constraints, and net reachable value before spending."
-            ),
-            [
-                (
-                    "Authority and judgment life",
-                    "Proceed with verified enforcement rights; otherwise hold for counsel review",
-                    1.0,
-                    (
-                        "Match creditor identity, assignment documents, judgment "
-                        "terms, payments, appeal status, and renewal deadlines. "
-                        "California CCP section 683.020 illustrates the ten-year "
-                        "enforcement limit absent applicable renewal or exception. "
-                        "Federal Rule 69 generally points execution to state procedure."
-                    ),
-                ),
-                (
-                    "Licensing, debt purpose, and data",
-                    "Proceed within authorized scope; otherwise suspend affected research or contact",
-                    2.0,
-                    (
-                        "Check applicable state and local collection licensing "
-                        "even for commercial files. Apply the purpose-based debt "
-                        "definition in 15 U.S.C. section 1692a and Regulation F "
-                        "where covered. Document any consumer-report permissible "
-                        "purpose under 15 U.S.C. section 1681b; judgment status "
-                        "alone does not supply one."
-                    ),
-                ),
-                (
-                    "Bankruptcy and protected property",
-                    "Proceed only with resolved stay exposure and an asset-specific exemption analysis",
-                    3.0,
-                    (
-                        "Refresh bankruptcy screening before enforcement. A "
-                        "potentially applicable 11 U.S.C. section 362 stay stops "
-                        "affected action pending counsel's determination or court "
-                        "relief. Review discharge effects under section 524, "
-                        "bankruptcy exemptions under section 522, and applicable "
-                        "state execution exemptions."
-                    ),
-                ),
-                (
-                    "Priority and incremental economics",
-                    "Proceed on positive expected contribution; otherwise defer or decline spending",
-                    4.0,
-                    (
-                        "Verify liens, perfection, timing, ownership, and likely "
-                        "sale or collection costs. State-enacted UCC section 9-317 "
-                        "may affect lien-creditor priority. An illustrative 40% "
-                        "chance of collecting $50,000 at a 25% fee produces "
-                        "$5,000 expected fees; subtracting $6,000 incremental "
-                        "operator costs produces a $1,000 expected loss."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-to-six-person-recovery-pod",
-            "org_architecture",
-            "A Four-Person Base Pod, Expanded to Six",
-            "One owner, three contractors, and two clearly triggered expansion seats.",
-            11,
-            "operating_framework",
-            (
-                "Each node represents one person, not one full-time equivalent. "
-                "Conservative and Base activate the first four seats: 1 FT + 3 C. "
-                "Scaled activates all six: 2 FT + 4 C. Contractor hours and "
-                "assignments vary with authorized workload."
-            ),
-            (
-                "The owner coordinates economics and client delivery; retained "
-                "counsel controls legal work within the agreed representation. "
-                "Separate payment preparation from release wherever feasible."
-            ),
-            [
-                (
-                    "Owner and portfolio lead",
-                    "One full-time owner leads intake, pricing, prioritization, and client accountability",
-                    1.0,
-                    (
-                        "Active in every scenario. Own engagement terms, spending "
-                        "limits, fee forecasts, and exception resolution. Review "
-                        "prepared remittances against bank evidence and matter "
-                        "ledgers; owner net is the scenario's residual profit."
-                    ),
-                ),
-                (
-                    "Lawful research contractor",
-                    "One contractor documents assets, docket facts, ownership, and competing claims",
-                    1.0,
-                    (
-                        "Active in every scenario. Use permitted public records "
-                        "and authorized databases, preserve source links, flag "
-                        "stale evidence, and escalate ambiguous identity matches. "
-                        "Do not select legal remedies or exceed data permissions."
-                    ),
-                ),
-                (
-                    "Retained enforcement attorney",
-                    "One contractor handles legal analysis, filings, and court-facing enforcement work",
-                    1.0,
-                    (
-                        "Active in every scenario, subject to the actual engagement "
-                        "and required jurisdictional qualifications. Determine the "
-                        "client and representation scope, evaluate stays and "
-                        "exemptions, and perform reserved legal work independently."
-                    ),
-                ),
-                (
-                    "Case and payment administrator",
-                    "One contractor maintains deadlines, document completeness, and receipt reconciliation",
-                    1.0,
-                    (
-                        "Active in every scenario. Maintain a shared matter "
-                        "register, monitor court notices, reconcile bank receipts, "
-                        "prepare creditor statements, and escalate missed events. "
-                        "Do not independently release funds that they prepared."
-                    ),
-                ),
-                (
-                    "Scaled operations lead",
-                    "One additional full-time employee coordinates the expanded active-file workload",
-                    1.0,
-                    (
-                        "Activate only in the Scaled six-person model. Own "
-                        "capacity planning, document handoffs, aging reviews, "
-                        "and operational quality checks while the owner retains "
-                        "pricing and portfolio accountability."
-                    ),
-                ),
-                (
-                    "Scaled data and quality contractor",
-                    "One additional contractor tests automation and independently reviews matter records",
-                    1.0,
-                    (
-                        "Activate only in the Scaled six-person model. Test "
-                        "deadline calculations against court rules, inspect "
-                        "duplicate payments and access logs, and sample lien "
-                        "evidence without replacing attorney review."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate Startup Cash Before Expanding the File Book",
-            "Four buckets support $10,000, $30,000, and $75,000 illustrative capital plans.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values encode the $30,000 central planning stack. "
-                "Bucket details also provide the $10,000 and $75,000 alternatives. "
-                "Capital plans are separate from the canonical operating scenarios; "
-                "startup cash is not recognized revenue or automatic annual expense."
-            ),
-            (
-                "Central allocation: $6,000 + $9,000 + $12,000 + $3,000 = $30,000. "
-                "Alternative stacks total exactly $10,000 and $75,000. "
-                "A 6–24 month first-deal window requires separate runway planning."
-            ),
-            [
-                (
-                    "Formation and operating readiness",
-                    "Reserve $6,000 centrally for licensing review, insurance, and engagement infrastructure",
-                    6000.0,
-                    (
-                        "Allocate $2,000 in the $10,000 plan and $15,000 in the "
-                        "$75,000 plan: 20% throughout. Budget jurisdiction-specific "
-                        "license and bond costs where required, insurance, entity "
-                        "setup, and counsel-reviewed service documents."
-                    ),
-                ),
-                (
-                    "Research and workflow systems",
-                    "Reserve $9,000 centrally for lawful data access and dependable case systems",
-                    9000.0,
-                    (
-                        "Allocate $3,000 in the $10,000 plan and $22,500 in the "
-                        "$75,000 plan: 30% throughout. Fund authorized record "
-                        "retrieval, docket tracking, secure document storage, "
-                        "access controls, and payment-ledger setup."
-                    ),
-                ),
-                (
-                    "Enforcement working cash",
-                    "Reserve $12,000 centrally for approved operator-borne file costs and delivery",
-                    12000.0,
-                    (
-                        "Allocate $4,000 in the $10,000 plan and $30,000 in the "
-                        "$75,000 plan: 40% throughout. Release cash against "
-                        "matter-level budgets for counsel, filing, service, "
-                        "and contractor delivery. Track creditor advances separately."
-                    ),
-                ),
-                (
-                    "Liquidity and error reserve",
-                    "Reserve $3,000 centrally for payment interruptions, corrections, and operating contingencies",
-                    3000.0,
-                    (
-                        "Allocate $1,000 in the $10,000 plan and $7,500 in the "
-                        "$75,000 plan: 10% throughout. This is not full launch "
-                        "runway: 6 months at $2,000 monthly consumes $12,000, "
-                        "while 24 months at $12,000 consumes $288,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-commercial-recovery-launch",
-            "timeline_roadmap",
-            "Thirty Days to an Auditable Recovery Operation",
-            "Four weekly milestones establish readiness without assuming first-month collections.",
-            12,
-            "operating_framework",
-            (
-                "The sprint establishes operating capability, not a collection "
-                "deadline. Canonical time to first deal remains 6–24 months. "
-                "Training files and synthetic payment records stay separate "
-                "from authorized live matters."
-            ),
-            (
-                "Finish the month with documented scope, a screened file queue, "
-                "tested controls, and a funded operating plan. Do not book "
-                "judgment principal, prospective recoveries, or unsigned fees as revenue."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define jurisdiction, commercial scope, representation roles, and operating economics",
-                    7.0,
-                    (
-                        "Select one initial jurisdiction and commercial file type. "
-                        "Document licensing research, counsel responsibilities, "
-                        "lawful data sources, fee terms, and expense ownership. "
-                        "Load canonical revenue, margin, and staffing scenarios "
-                        "into a spreadsheet without changing their totals."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build the source-linked screening register and test deadline ownership",
-                    14.0,
-                    (
-                        "Review 25 lawfully accessible judgment records as an "
-                        "internal process sample, not a sales forecast. Capture "
-                        "entry dates, balances, authority evidence, relevant "
-                        "orders, and review decisions. Have counsel verify "
-                        "jurisdiction-specific deadline logic."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Exercise bankruptcy checks, priority review, and payment-allocation controls",
-                    21.0,
-                    (
-                        "Run five training cases through the four pre-flight "
-                        "checks. Test synthetic partial payments, duplicate "
-                        "receipts, reversals, creditor advances, and fee splits. "
-                        "Confirm that deadline alerts reach a named owner and "
-                        "that system failures produce visible exceptions."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Launch bounded creditor outreach and review readiness, capacity, and runway",
-                    30.0,
-                    (
-                        "Contact an initial list of ten prospective commercial "
-                        "creditor organizations using permitted business channels. "
-                        "Accept live work only within established authority and "
-                        "capacity. Review cash runway, contractor commitments, "
-                        "record completeness, and unresolved legal questions "
-                        "before committing matter-specific expenditure."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

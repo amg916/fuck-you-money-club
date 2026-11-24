@@ -1,664 +1,843 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern land flipping?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Principal Purchases, Recorded Access, State Brokerage Boundaries, CERCLA Review, Plat Conditions & Permission-Based Seller Contact",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower "
-        "Score. This chapter maps six operator plays: vacant-parcel principal "
-        "purchases, infill repositioning, GIS parcel screening, comparable-sale "
-        "tracking, minor subdivisions, and title-insured dispositions. Each play "
-        "needs a defined legal capacity, documentary evidence, and a stop condition "
-        "before capital moves. Conservative, Base, and Scaled annual owner profits "
-        "are $24,000, $157,250, and $375,000, respectively; revenue means gross "
-        "parcel sale proceeds, with acquisition costs included in net margin. "
-        "The operating design keeps the four-person pod focused: one full-time "
-        "principal plus three contractors handling parcel research, licensed "
-        "market execution, and transaction coordination. Use the clauses, "
-        "statutory matrix, and exact scripts to protect access, enforce deadlines, "
-        "separate ownership from brokerage, and preserve an auditable contact history."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the legal capacity and statutory exposure of every parcel",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start each opportunity with a capacity statement: the acquisition entity buys "
-                    "for its own account, controls its own diligence, bears carrying costs, and "
-                    "expects to resell its own property. That statement describes actual conduct, "
-                    "not a substitute for licensing analysis. California Business and Professions "
-                    "Code sections 10130 and 10131 distinguish licensed activity involving another "
-                    "person's property for compensation; Texas Occupations Code section 1101.0045 "
-                    "addresses certain sales of options or contract interests and requires written "
-                    "disclosure. Do not assume an ownership exemption covers negotiating for a "
-                    "neighbor, collecting referral compensation, or advertising a parcel before "
-                    "acquiring the interest being advertised. For this chapter, the six mapped "
-                    "plays are vacant-parcel principal purchases, infill repositioning, GIS parcel "
-                    "screening, comparable-sale tracking, minor subdivisions, and title-insured "
-                    "dispositions. GIS research and comparable tracking support the other plays; "
-                    "they do not independently authorize brokerage. The full-time principal owns "
-                    "capacity decisions. The research contractor assembles evidence, the appropriately "
-                    "licensed market contractor handles assigned brokerage work, and the transaction "
-                    "coordinator tracks documents without independently negotiating restricted terms. "
-                    "Obtain jurisdiction-specific review before changing from owned inventory to "
-                    "assignments, seller representation, pooled investment, or installment-sale products."
-                ),
-                (
-                    "Build the land-use file from the recorded legal description outward. County "
-                    "GIS polygons and assessor acreage identify research targets, but neither "
-                    "establishes surveyed boundaries, legal access, or permission to create lots. "
-                    "Request the zoning district, dimensional standards, frontage requirement, "
-                    "overlay restrictions, utility service conditions, and the written subdivision "
-                    "determination from the responsible jurisdiction. Texas Local Government Code "
-                    "section 232.001 addresses platting in unincorporated areas, subject to statutory "
-                    "exceptions; municipal authority and additional county rules require separate "
-                    "review. California Government Code section 66424 supplies the subdivision "
-                    "definition, while Business and Professions Code section 11010 establishes a "
-                    "separate public-report filing framework for covered subdivided-land offerings. "
-                    "A local lot-split permission therefore does not settle state marketing duties. "
-                    "At the federal level, the Interstate Land Sales Full Disclosure Act, "
-                    "15 U.S.C. sections 1702 and 1703, can govern interstate offerings within a "
-                    "common promotional plan. The fewer-than-25-lot exemption and the fewer-than-100-lot "
-                    "registration exemption have different effects; the latter does not erase all "
-                    "antifraud obligations. Aggregate related development activity before selecting "
-                    "an exemption. Record who supplied each determination, its effective date, and "
-                    "whether a changed access route or lot count requires a fresh decision."
-                ),
-                (
-                    "Treat environmental and disclosure questions as acquisition economics, not "
-                    "closing decorations. CERCLA, 42 U.S.C. sections 9601(40) and 9607(r), "
-                    "provides a potential bona fide prospective purchaser defense only when the "
-                    "buyer satisfies the applicable acquisition and continuing-obligation conditions. "
-                    "All Appropriate Inquiries under 40 CFR Part 312 is a defined investigation "
-                    "process, not a county-map screenshot. Its timing rules include a one-year "
-                    "outside period and specific components requiring updates within 180 days "
-                    "before acquisition. An environmental professional should determine the "
-                    "appropriate scope when historical dumping, tanks, industrial uses, or fill "
-                    "appear. Separately, filling jurisdictional waters can require authorization "
-                    "under Clean Water Act section 404, 33 U.S.C. section 1344; a wetlands "
-                    "inventory layer is a screening lead, not a jurisdictional determination. "
-                    "For residential land marketing, the Fair Housing Act reaches vacant land "
-                    "offered for residential construction through 42 U.S.C. section 3602(b). "
-                    "Describe physical characteristics and permitted uses rather than preferred "
-                    "occupants. State seller disclosures, common-law misrepresentation duties, "
-                    "recorded restrictions, floodplain rules, and septic suitability remain separate "
-                    "checks. Preserve adverse findings alongside favorable reports so the resale "
-                    "packet cannot silently contradict the acquisition file."
-                ),
-            ],
-            "table": {
-                "caption": "Six Statutory Workstreams and the Evidence Required Before Commitment",
-                "headers": [
-                    "Authority and operating boundary",
-                    "Land-flipping application",
-                    "Required evidence package",
-                    "Stop condition and assigned owner",
-                ],
-                "rows": [
-                    [
-                        "California BPC sections 10130 and 10131 govern compensated brokerage activity",
-                        "Separate buying owned inventory from negotiating another owner's property",
-                        "Capacity memorandum identifies principal entity and any licensed representative",
-                        "Principal stops unlicensed representation before discussing compensation or agency",
-                    ],
-                    [
-                        "Texas Occupations Code section 1101.0045 addresses specified equitable-interest transactions",
-                        "Disclose the actual interest offered rather than implying ownership",
-                        "Reviewed assignment language and required written disclosures precede execution",
-                        "Principal stops marketing when advertised rights exceed contractual rights",
-                    ],
-                    [
-                        "Texas Local Government Code section 232.001 addresses county platting",
-                        "Test proposed rural splits against applicable exceptions and local requirements",
-                        "Written jurisdiction response identifies plat process and applicable infrastructure requirements",
-                        "Research contractor flags unresolved access or subdivision classification immediately",
-                    ],
-                    [
-                        "15 U.S.C. sections 1702 and 1703 distinguish federal subdivision obligations",
-                        "Aggregate related lots and analyze exemptions before interstate promotion",
-                        "Counsel records exemption rationale and remaining purchaser protection duties",
-                        "Principal pauses promotion when common-plan lot aggregation remains unresolved",
-                    ],
-                    [
-                        "42 U.S.C. sections 9601(40) and 9607(r) address purchaser defenses",
-                        "Investigate contamination before acquisition and plan required continuing obligations",
-                        "Environmental professional supplies timely investigation and recommended follow-up actions",
-                        "Principal reprices or terminates when contamination exceeds approved exposure",
-                    ],
-                    [
-                        "42 U.S.C. sections 3602(b) and 3604 cover residential-land discrimination",
-                        "Market residential building opportunities using property facts rather than preferences",
-                        "Licensed market contractor retains factual copy and consistent qualification criteria",
-                        "Coordinator removes discriminatory language before any listing is distributed",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before earnest money becomes exposed",
-                "body": (
-                    "The principal records an affirmative result or exercises a contractual "
-                    "extension or termination right before the applicable deadline."
-                ),
-                "items": [
-                    "Verify ownership capacity, signer authority, and any required brokerage license against the actual activity and property state.",
-                    "Match the deed description, survey, title commitment, and recorded access instruments; resolve gaps in legally enforceable access.",
-                    "Obtain written zoning and subdivision requirements, then identify separate state offering and federal land-sales obligations.",
-                    "Confirm environmental scope, disclosure delivery, and inspection deadlines before releasing diligence protections or making deposits nonrefundable.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Draft the purchase, contractor, and resale documents around actual failure modes",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a state-adapted purchase agreement that identifies the exact buying entity, "
-                    "seller capacity, legal description, purchase price, earnest-money holder, and "
-                    "closing mechanism. Attach the legal description instead of relying solely "
-                    "on an assessor number, which can change after a split. Specify when the "
-                    "inspection period begins, which missing documents delay commencement, how "
-                    "termination notice must be delivered, and who receives it. A deadline that "
-                    "depends on receipt should identify the delivery channel and controlling time "
-                    "zone. Require access for surveys and environmental work, with reasonable "
-                    "restoration and insurance provisions, but obtain separate permission before "
-                    "invasive sampling. Define satisfactory legal access through recorded rights "
-                    "benefiting the parcel; a visible road, permissive neighbor arrangement, or "
-                    "emergency-services route is insufficient evidence. Give the buyer explicit "
-                    "review rights over the title commitment, exception documents, survey, taxes, "
-                    "special assessments, mineral reservations, and restrictive covenants. State "
-                    "how objections are delivered, what the seller must cure, and what happens "
-                    "if cure fails. Keep closing extensions, deposit refunds, and dispute handling "
-                    "mechanically consistent so the escrow holder can act without interpreting "
-                    "conflicting provisions."
-                ),
-                (
-                    "For minor subdivisions and infill repositioning, distinguish feasibility from "
-                    "promised entitlement. A purchase condition can require an acceptable written "
-                    "planning determination, recorded plat, utility commitment, or specific permit, "
-                    "but the document must identify which event actually controls closing. If "
-                    "the buyer will perform entitlement work before ownership, address application "
-                    "authority, reimbursement, abandonment, document ownership, and restoration. "
-                    "Prohibit representations that staff comments equal final approval. Allocate "
-                    "rollback taxes, transfer charges, survey costs, association assessments, and "
-                    "special district obligations expressly. Include casualty and condemnation "
-                    "procedures appropriate to vacant land, including partial takings affecting "
-                    "frontage. Assignment language must reflect the intended transaction: prohibit "
-                    "assignment, allow identified affiliates, or permit broader transfers with "
-                    "required disclosures and any seller consent. Do not promise a double closing "
-                    "until the settlement provider confirms funding, timing, and documentary "
-                    "requirements. On resale, deliver known adverse facts and required state "
-                    "forms through a tracked channel; an as-is clause does not authorize "
-                    "concealment. Match advertising statements about acreage, buildability, "
-                    "utilities, and access to the evidence attached to the file. Preserve the "
-                    "buyer's receipt and the exact document version supplied."
-                ),
-                (
-                    "Keep contractor terms separate from purchase-price economics. Scope should "
-                    "name outputs: a GIS exception report, comparable-sale adjustment worksheet, "
-                    "listing engagement, or deadline register. Fee triggers must match lawful "
-                    "activity and measurable delivery; do not pay an unlicensed researcher a "
-                    "closing-contingent referral fee without resolving the state's compensation "
-                    "rules. A licensed broker's commission belongs in the applicable brokerage "
-                    "agreement with agency and payment terms. Draft any anti-circumvention "
-                    "provision narrowly around identified introductions, permitted activities, "
-                    "a stated duration, and preexisting relationships. It cannot convert "
-                    "unlicensed brokerage into a valid service. Liability caps require deliberate "
-                    "allocation: distinguish ordinary service errors from fraud, intentional "
-                    "misconduct, confidentiality breaches, and obligations that applicable law "
-                    "does not permit the parties to limit. Specify governing law, venue, notice, "
-                    "mediation timing, and whether arbitration applies, while preserving urgent "
-                    "relief where appropriate. Assign ownership of commissioned reports and "
-                    "workbooks, but preserve vendor license restrictions on underlying imagery "
-                    "and databases. Require exportable files, deletion or return procedures, "
-                    "access revocation, and confidentiality. The principal signs commercial "
-                    "changes; the coordinator may circulate documents and chase signatures, "
-                    "not rewrite negotiated risk allocations independently."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Clause Contractor and Transaction-Control Checklist",
-                "headers": [
-                    "Clause and document placement",
-                    "Specific drafting instruction",
-                    "Failure mode addressed",
-                    "Evidence retained by the coordinator",
-                ],
-                "rows": [
-                    [
-                        "Scope appears in every research and brokerage engagement",
-                        "Name deliverables, exclusions, authority limits, and parcel-specific acceptance criteria",
-                        "Research contractor starts negotiating prices without authorization or licensing",
-                        "Signed scope and delivered files show work stayed within boundaries",
-                    ],
-                    [
-                        "Fee trigger belongs in the applicable service agreement",
-                        "Tie payment to lawful services and objectively documented completion events",
-                        "Unlicensed closing-contingent compensation creates avoidable brokerage enforcement exposure",
-                        "Invoice matches the accepted deliverable and authorized compensation schedule",
-                    ],
-                    [
-                        "Anti-circumvention language covers only defined legitimate business introductions",
-                        "Identify protected contacts, duration, exclusions, and permitted direct communications",
-                        "Broad restrictions interfere with existing relationships and legitimate seller contact",
-                        "Dated introduction register distinguishes new contacts from documented existing relationships",
-                    ],
-                    [
-                        "Liability cap addresses contractor services rather than concealed parcel defects",
-                        "Define covered losses and preserve appropriate misconduct and statutory exceptions",
-                        "Blanket limitation conflicts with disclosure duties or leaves material exposure unallocated",
-                        "Reviewed risk schedule matches insurance evidence and signed contractual allocation",
-                    ],
-                    [
-                        "Dispute resolution coordinates notices, venue, and escrow instructions",
-                        "Specify governing law, escalation timing, forum, and available interim remedies",
-                        "Conflicting agreements prevent timely deposit release or deadline enforcement",
-                        "Executed documents use compatible dispute and earnest-money release procedures",
-                    ],
-                    [
-                        "IP and data ownership governs reports and licensed source material",
-                        "Assign commissioned outputs while respecting underlying database and imagery licenses",
-                        "Contractor departure strands underwriting files or exposes restricted vendor datasets",
-                        "Export test confirms usable files and documented third-party license limits",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Preserve options before paying to solve the parcel",
-                "body": (
-                    "Experienced land operators buy time and evidence before they buy "
-                    "survey revisions, engineering work, or speculative improvements."
-                ),
-                "items": [
-                    "Request every title exception instrument immediately; an exception number alone cannot reveal a maintenance burden or access restriction.",
-                    "Calendar a decision checkpoint several business days before contractual notice expires, including the delivery method and backup recipient.",
-                    "Ask the surveyor to reconcile the access easement's legal description with the purchased tract instead of merely depicting the visible road.",
-                    "Make preclosing entitlement reports exportable and transferable where permitted, so a terminated purchase does not strand essential work inside a contractor account.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fit legal review, title evidence, and capital exposure inside the four-person pod",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run the Base operation with one full-time principal and three contractors, "
-                    "not an invisible department behind the scorecard. Assign parcel research "
-                    "and GIS screening to one contractor, licensed market execution and "
-                    "comparable-sale interpretation to another, and transaction coordination to "
-                    "the third. The principal owns offers, capital exposure, final underwriting, "
-                    "and exception decisions. Lawyers, surveyors, environmental professionals, "
-                    "engineers, and title or escrow providers are transaction-specific outside "
-                    "services, not extra recurring pod seats; their charges still belong in "
-                    "deal costs. If workload requires dedicated additional staff, revise the "
-                    "staffing economics rather than hiding that labor. Use QGIS for screening, "
-                    "the county recorder for instruments, and a shared deadline register for "
-                    "contract events. Preserve source dates and parcel identifiers in every "
-                    "export. Comparable-sale tracking should distinguish recorded consideration, "
-                    "listing assertions, concessions, and verified closing evidence. Infill "
-                    "research needs utility availability and connection-cost evidence, not "
-                    "just a nearby line on a map. Minor subdivisions need a dependency "
-                    "schedule covering plat review, access construction, recording, and sale "
-                    "eligibility. Each handoff should name the unresolved issue, responsible "
-                    "person, required evidence, and next contractual deadline."
-                ),
-                (
-                    "Reconcile every decision to gross parcel sale proceeds, the canonical "
-                    "revenue basis for Candidate #6. Conservative revenue of $200,000 at a "
-                    "12% net margin produces $24,000 annual owner net profit and implies "
-                    "$176,000 of combined acquisition and operating costs. Base revenue of "
-                    "$850,000 at 18.5% produces $157,250 and implies $692,750 of costs. "
-                    "Scaled revenue of $1,500,000 at 25% produces $375,000 and implies "
-                    "$1,125,000 of costs. These are annual scenario identities, not budgets "
-                    "for any single parcel. Conservative and Base retain 1 FT + 3 C; "
-                    "Scaled uses 2 FT + 4 C, six people total. Purchase principal is "
-                    "an acquisition outflow, not revenue, and a refundable buyer deposit "
-                    "is not an additional parcel sale. Do not count gross sale proceeds "
-                    "and the same transaction's spread as separate revenue streams. The "
-                    "$15,000–$75,000 startup range and $3,000–$15,000 monthly operating "
-                    "range constrain liquidity; they are not additions to the stated profit "
-                    "cases. Reserve funding for diligence failures, property taxes, insurance, "
-                    "title cures, and extended holding periods. Track available cash separately "
-                    "from reported profit because unsold inventory can consume cash without "
-                    "producing a current disposition."
-                ),
-                (
-                    "Use a title-insured disposition as a documented endpoint, not a promise "
-                    "that every parcel risk disappears. Obtain the proposed policy form, "
-                    "commitment requirements, exceptions, and available endorsements from the "
-                    "issuing provider. Ask which access, survey, subdivision, and zoning matters "
-                    "remain outside coverage; policy availability and endorsements vary by "
-                    "jurisdiction and underwriting facts. Review Schedule B instruments rather "
-                    "than relying on the summary label. Require payoff information and "
-                    "release mechanics for liens, and establish how delinquent taxes and "
-                    "special assessments will be handled. For entity sellers, confirm signing "
-                    "authority and settlement-provider identity requirements early. Verify wire "
-                    "instructions using an independently established telephone number, with "
-                    "a second confirmation for any change; email alone is insufficient. "
-                    "After closing, reconcile the settlement statement, recorded deed, "
-                    "disbursement evidence, and issued policy against the approved transaction. "
-                    "Retain delivery records for disclosures and buyer questions. A contractor "
-                    "cannot mark an access problem resolved merely because escrow closed. "
-                    "Close the exception register only when the promised document, cure, or "
-                    "explicitly accepted residual risk is recorded. Feed actual cure costs "
-                    "and holding days back into GIS filters and comparable-sale adjustments."
-                ),
-            ],
-            "table": {
-                "caption": "Six Mapped Plays, Pod Ownership, and Documentary Exit Conditions",
-                "headers": [
-                    "Mapped operator play",
-                    "Accountable pod assignment",
-                    "Required parcel-level evidence",
-                    "Exit condition before further capital exposure",
-                ],
-                "rows": [
-                    [
-                        "Vacant-parcel principal purchases acquire inventory for the entity's account",
-                        "Principal approves price while coordinator controls contractual notice deadlines",
-                        "Executed purchase agreement matches seller authority and recorded legal description",
-                        "Terminate or renegotiate when ownership, access, or material disclosures fail",
-                    ],
-                    [
-                        "Infill repositioning tests practical residential or other permitted development",
-                        "Research contractor gathers utility evidence for principal underwriting decisions",
-                        "Written zoning standards and utility connection estimates support resale claims",
-                        "Reject buildability claims unsupported by feasible setbacks and service conditions",
-                    ],
-                    [
-                        "GIS parcel screening eliminates unsuitable targets before paid diligence",
-                        "Research contractor maintains dated layers and parcel exception reports",
-                        "Flood, slope, frontage, access, and neighboring-use flags link to sources",
-                        "Escalate conflicting layers instead of treating map overlays as determinations",
-                    ],
-                    [
-                        "Comparable-sale tracking calibrates pricing to verified parcel characteristics",
-                        "Licensed market contractor reviews evidence and explains material adjustments",
-                        "Closed-sale evidence distinguishes access, utilities, entitlement, and seller concessions",
-                        "Reject pricing supported only by unmatched asking prices or stale listings",
-                    ],
-                    [
-                        "Minor subdivisions create saleable lots through the required local process",
-                        "Principal authorizes professional work while coordinator tracks dependency deadlines",
-                        "Written plat requirements and recorded approvals support separate legal descriptions",
-                        "Stop separate-lot marketing until applicable offering and subdivision requirements permit",
-                    ],
-                    [
-                        "Title-insured dispositions transfer owned parcels with documented risk allocation",
-                        "Coordinator reconciles closing documents while principal accepts residual exceptions",
-                        "Recorded deed, issued policy, disclosures, and settlement statement reconcile",
-                        "Keep unresolved promises open until documentary completion or contractual resolution",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify capacity and jurisdiction",
-                    "action": "Open a parcel record naming the owner, buying entity, location, and intended transaction structure.",
-                    "detail": "Principal identifies ownership versus brokerage activity; coordinator records applicable state licensing and subdivision review assignments.",
-                },
-                {
-                    "step": 2,
-                    "title": "Collect evidence before pricing certainty",
-                    "action": "Assemble title instruments, access evidence, zoning requirements, utilities, and environmental screening.",
-                    "detail": "Research contractor labels unresolved findings; licensed market contractor adjusts comparable sales without converting assumptions into advertised facts.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute and monitor the negotiated protections",
-                    "action": "Use reviewed documents and calendar every inspection, objection, extension, and termination event.",
-                    "detail": "Coordinator prepares notices for authorized execution; principal decides whether evidence supports closing, repricing, extension, or termination.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile closing and recycle operating evidence",
-                    "action": "Match sale proceeds, acquisition costs, closing charges, recorded documents, and delivered disclosures.",
-                    "detail": "Principal updates deal results and cash availability; contractor reports feed actual access, entitlement, and holding-cost outcomes into future screening.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use exact outreach scripts that disclose capacity and preserve contact choices",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Select the contact channel before writing the pitch. The Telephone Consumer "
-                    "Protection Act, 47 U.S.C. section 227, and FCC rules at 47 CFR "
-                    "section 64.1200 impose requirements that depend on technology, destination, "
-                    "purpose, and consent. Artificial or prerecorded voices, automated dialing "
-                    "features, and text campaigns need specific review; a purchased owner list "
-                    "does not establish consent. Federal treatment of a pure offer to buy "
-                    "property can differ from a solicitation selling services, while state "
-                    "telephone-solicitation laws can reach additional conduct. Do not classify "
-                    "every land-acquisition call as automatically exempt. Before any campaign, "
-                    "document the applicable calling rules, suppression process, local-time "
-                    "windows, caller identification, and any registration requirements. For "
-                    "commercial email, CAN-SPAM, 15 U.S.C. section 7704, requires accurate "
-                    "headers, a nondeceptive subject, applicable advertising identification, "
-                    "a valid physical postal address, and an effective opt-out process; "
-                    "honor covered opt-outs within ten business days. Classify the message "
-                    "by its actual primary purpose. Start the four-person pod with truthful "
-                    "direct mail and individually reviewed responses rather than an unreviewed "
-                    "automated campaign. Keep contact-source provenance and a shared suppression "
-                    "record, even when a contractor supplies the list."
-                ),
-                (
-                    "Use this direct-mail opening only after inserting the real entity, parcel "
-                    "identifier, return address, and contact information: 'I represent the "
-                    "company named above. We buy land for our own account and may resell "
-                    "it for a profit. County records identify you as an owner of the "
-                    "parcel described above. Would you consider discussing a sale? This "
-                    "letter is an inquiry, not an appraisal or a statement that you must "
-                    "sell. If you prefer no further contact, reply using the contact "
-                    "details above and we will record that preference.' Do not mimic a "
-                    "tax notice, imply government affiliation, or fabricate a competing offer. "
-                    "For a permitted live call, say: 'My name is the name shown in "
-                    "my introduction, and I am calling for the purchasing company I "
-                    "identified. We are interested in buying your parcel for our own "
-                    "account. Is now a suitable time for two questions?' Then ask: "
-                    "'Are you authorized to discuss a sale, and are there other owners "
-                    "who must participate?' If the person declines further contact, stop "
-                    "the pitch and enter the request immediately. Never make refusal "
-                    "conditional on completing a survey or hearing the offer."
-                ),
-                (
-                    "Discovery should produce evidence, not pressure. Ask: 'What do you know "
-                    "about recorded access, boundary disagreements, utility commitments, dumping, "
-                    "prior industrial activity, and notices from the county? Which documents "
-                    "can you share so we can verify the details?' Follow with: 'What "
-                    "timing matters to you, and would you like your own adviser involved "
-                    "before reviewing terms?' Do not describe an elderly owner as confused, "
-                    "a distressed owner as an easy target, or a tax deadline as "
-                    "proof that immediate acceptance is necessary. For resale inquiries, "
-                    "say: 'We own the parcel described in the listing. The document "
-                    "packet identifies the recorded access evidence, current zoning information, "
-                    "and known restrictions. Please identify your intended use so we can "
-                    "direct you to the relevant records without promising a permit.' "
-                    "If the entity holds only a contractual interest, replace the ownership "
-                    "claim with the reviewed, jurisdiction-specific interest disclosure before "
-                    "marketing. Log the exact script version, response, authority question, "
-                    "promised follow-up, and suppression status. Avoid recording calls until "
-                    "the applicable state recording-consent requirements are resolved. The "
-                    "principal reviews complaints and exceptions weekly; contractors may "
-                    "not improvise investment-return claims or conceal the operator's role."
-                ),
-            ],
-            "table": {
-                "caption": "Six Verbatim Contact Modules and Their Required Operating Context",
-                "headers": [
-                    "Contact event and permitted context",
-                    "Verbatim operator language",
-                    "Required record or follow-through",
-                    "Boundary the contractor must preserve",
-                ],
-                "rows": [
-                    [
-                        "Initial inquiry after sender identity and parcel details appear",
-                        "We buy land for our own account and may resell it for a profit.",
-                        "Retain the mailed version with entity identity and contact information",
-                        "Do not imply government authority or act as the seller's adviser",
-                    ],
-                    [
-                        "Authority discovery during a permitted conversation with the respondent",
-                        "Are you authorized to discuss a sale, and are there other owners who must participate?",
-                        "Record claimed capacity and request appropriate authority evidence before execution",
-                        "Do not treat assessor mailing information as proof of signing authority",
-                    ],
-                    [
-                        "Access discovery before an offer becomes dependent on buildability",
-                        "Which recorded documents establish access, and has anyone disputed their use?",
-                        "Request instruments and compare their descriptions with the purchased tract",
-                        "Do not convert a seller's recollection into a verified access statement",
-                    ],
-                    [
-                        "Environmental discovery before selecting the professional diligence scope",
-                        "What do you know about dumping, tanks, fill, or prior industrial activity on this parcel?",
-                        "Retain the answer and route adverse facts for professional assessment",
-                        "Do not coach the seller to omit inconvenient historical information",
-                    ],
-                    [
-                        "Opt-out response after any request to stop acquisition contact",
-                        "I will record your request and stop our acquisition outreach to you.",
-                        "Update shared suppression records and notify every active outreach contractor",
-                        "Do not require additional conversation before processing the stated preference",
-                    ],
-                    [
-                        "Buyer inquiry concerning the practical feasibility of a proposed use",
-                        "Please identify your intended use so we can direct you to the relevant records without promising a permit.",
-                        "Supply dated zoning evidence and identify the responsible permitting jurisdiction",
-                        "Do not advertise guaranteed buildability based solely on neighboring construction",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Buy the recorded rights and verified facts, not the story attached to the parcel.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Write a capacity memorandum for each acquisition or disposition, identifying the actual interest held and any licensed representation.",
-        "Assemble the legal description, title exceptions, recorded access instruments, zoning evidence, and subdivision determination before waiving diligence rights.",
-        "Use reviewed purchase and contractor agreements that specify scope, lawful fee triggers, narrow anti-circumvention terms, risk allocation, dispute procedures, and data rights.",
-        "Assign every contractual deadline and evidence request to the principal or one of the three named contractor roles, with a documented escalation date.",
-        "Approve channel-specific outreach rules and exact scripts; retain source provenance, message versions, opt-out records, and contact-authority notes.",
-        "Reconcile closing proceeds and all acquisition and operating costs to the canonical scenario model, then update cash reserves and parcel-screening rules.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Business and Professions Code section 10130",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": "Establishes the licensing requirement for acting as a real estate broker or salesperson within the chapter's scope.",
-        },
-        {
-            "title": "California Business and Professions Code section 10131",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
-            "relevance": "Defines covered brokerage activities performed for another for compensation or expected compensation.",
-        },
-        {
-            "title": "Texas Occupations Code section 1101.0045",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm#1101.0045",
-            "relevance": "Addresses specified option and contract-interest transactions, including written disclosure of the interest being sold.",
-        },
-        {
-            "title": "Texas Local Government Code section 232.001",
-            "url": "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.232.htm#232.001",
-            "relevance": "Provides county platting requirements for covered divisions of land outside municipal limits, subject to applicable exceptions.",
-        },
-        {
-            "title": "California Government Code section 66424",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=66424.",
-            "relevance": "Defines subdivision for the Subdivision Map Act and informs analysis of proposed parcel divisions.",
-        },
-        {
-            "title": "California Business and Professions Code section 11010",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=11010.",
-            "relevance": "Establishes filing requirements for covered subdivided-land offerings, distinct from local subdivision permission.",
-        },
-        {
-            "title": "15 U.S.C. section 1702",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1702",
-            "relevance": "Distinguishes full and partial exemptions under the Interstate Land Sales Full Disclosure Act.",
-        },
-        {
-            "title": "15 U.S.C. section 1703",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1703",
-            "relevance": "States prohibited practices and applicable purchaser protections for covered land sales.",
-        },
-        {
-            "title": "42 U.S.C. section 9601(40)",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9601",
-            "relevance": "Defines bona fide prospective purchaser conditions, including pre-acquisition inquiry and continuing duties.",
-        },
-        {
-            "title": "42 U.S.C. section 9607(r)",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": "Addresses protection from specified CERCLA liability for qualifying bona fide prospective purchasers.",
-        },
-        {
-            "title": "40 CFR Part 312, including section 312.20",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": "Sets All Appropriate Inquiries standards, including investigation timing and components requiring recent updates.",
-        },
-        {
-            "title": "33 U.S.C. section 1344",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": "Provides the federal permitting framework for discharges of dredged or fill material into covered waters.",
-        },
-        {
-            "title": "42 U.S.C. section 3602(b)",
-            "url": "https://www.law.cornell.edu/uscode/text/42/3602",
-            "relevance": "Includes specified vacant land offered for residential construction within the Fair Housing Act dwelling definition.",
-        },
-        {
-            "title": "42 U.S.C. section 3604",
-            "url": "https://www.law.cornell.edu/uscode/text/42/3604",
-            "relevance": "Prohibits covered discriminatory housing practices and discriminatory advertising statements.",
-        },
-        {
-            "title": "47 U.S.C. section 227",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Establishes federal restrictions affecting specified calls, artificial or prerecorded voices, and telephone solicitations.",
-        },
-        {
-            "title": "47 CFR section 64.1200",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Supplies FCC calling and messaging requirements that must be evaluated against campaign technology, purpose, and recipient consent.",
-        },
-        {
-            "title": "15 U.S.C. section 7704",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes requirements for covered commercial email, including truthful identification and effective opt-out handling.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'vol018-q09-approvals-restrictions-encumbrances',
+ 'question_prompt': 'What approvals, restrictions, and encumbrances limit what can legally be done with a '
+                    'parcel?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Approvals, Restrictions, and Encumbrances',
+ 'subtitle': 'Minor partitions, subdivision approval steps and costs, road frontage requirements, backyard '
+             'subdivision mistakes, raw land traps on access and utility costs, wetland reserve easements, '
+             'coastal storm flowage zones, deed restrictions and how to remove them, HOA CC&Rs, and '
+             'mineral, timber, and grazing rights',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land flippers who survive approvals treat the recorded file and the county rulebook '
+                      'as the real product. Restriction specialists agree that deed restrictions and CC&Rs '
+                      "run with the land, that 'no HOA' still leaves recorded covenants able to bar "
+                      'livestock, RVs, or garages, and that only the original grantor or their heirs can '
+                      'lift a deed restriction. Subdivision operators agree every parcel needs real road '
+                      'frontage and a recorded plat before lots sell. The street numbers are hard: perc '
+                      'tests near $1,300, septic $5,000 to $30,000, utilities $9,000 to $34,500 or $40,000 '
+                      'to $80,000 with site work, Nashville plats at $1,375, and county roads demanding 20 '
+                      'feet of surface and 40 to 50 feet of right-of-way. Disagreement centers on scale: '
+                      'Cody Bjugan says partition paydays are not comparable to his 250-lot projects yet '
+                      'still backs them for beginners.',
+ 'key_metrics': [{'label': 'Average Perc Test Cost',
+                  'metric': 'Average Perc Test Cost',
+                  'value': 'About $1,300 (typical $750-$1,900; full range $250 to over $3,500)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Raw-land buyers should make offers contingent on the perc test and use a '
+                             'licensed local tester; results stay valid 2-5 years.',
+                  'source': 'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:02:13])'},
+                 {'label': 'County Approved Road Upgrade Spec',
+                  'metric': 'County Approved Road Upgrade Spec',
+                  'value': 'About 20 ft surface, 6-8 in base rock, 40-50 ft right-of-way, max 15% grade '
+                           '(more likely 12%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'What a driveway must be upgraded to so split parcels have frontage on a '
+                             'county approved road; described as very costly.',
+                  'source': 'Tim Howell ([rtRAjfGZ_nY @ 00:01:20])'},
+                 {'label': 'Nashville Final Plat Fee',
+                  'metric': 'Nashville Final Plat Fee',
+                  'value': '$1,375 final plat; $3,000 major concept plan',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Compared with Huntsville at $50 plus $1 per lot and Toledo at $150 per '
+                             'split; the government fee is often the smallest line.',
+                  'source': 'Liberty Acres ([qSoWEXftiCQ @ 00:01:00])'},
+                 {'label': 'Backyard Split Access Width',
+                  'metric': 'Backyard Split Access Width',
+                  'value': 'About 4 m clear width, not 3 m',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Minimum practical access to a rear lot, with 1 parking space for 2-bed and 2 '
+                             'for 3+ bed homes on both titles.',
+                  'source': 'Peter Kelly Property ([KmCwZ5I6BYU @ 00:03:49])'}],
+ 'sections': [{'section': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Across the restriction-focused operators, the baseline is blunt: whatever '
+                              'is recorded against the dirt travels with the dirt, and the buyer inherits '
+                              'it whether or not anyone mentioned it at the showing. Just Call Maggie '
+                              'frames deed restrictions as private controls written into the deed by the '
+                              'seller, enforced privately by the previous owner, a developer, or an HOA '
+                              'rather than by government, and binding every future owner; her example is a '
+                              "'No commercial businesses' clause that blocks a cafe or shop permanently "
+                              'unless it is legally lifted [sazxc_VdXOw @ 00:01:05]. The Real Estate '
+                              "Lawyer lands in the same spot, describing deed restrictions such as 'no "
+                              "livestock' as legal limits that run with the land [gP3fDaUu5Iw @ 00:00:15]. "
+                              'Danielle Dojcak attacks a common assumption in land deals: agents and '
+                              "buyers hear 'no HOA' and conclude there are no rules, yet recorded "
+                              'covenants can still bar chickens, livestock, horses, detached garages, or '
+                              'boat and RV parking [ieOUjD1jQXA @ 00:00:24]. Tyler Bobo sees the same '
+                              'pattern in the Alaska valley, where buyers move to escape rules but most '
+                              'subdivisions still carry CC&Rs that travel with the property and stay '
+                              'enforceable even when vague and ignored [zzxrwQSJnC4 @ 00:00:49].',
+                              'On the approval side, the subdivision operators agree that the county, not '
+                              'the seller, decides what a parcel can become. Tim Howell treats any new '
+                              'parcel, or even moving a line between two parcels, as a subdivision, and '
+                              'says each resulting parcel needs frontage on an actual road rather than an '
+                              'easement, though some counties accept a joint permanent easement '
+                              '[rtRAjfGZ_nY @ 00:00:14]. Liberty Acres runs the same front-end screen: '
+                              'check zoning, minimum lot size, frontage, and setbacks, then ask planning '
+                              'staff whether the split is minor or major and get the checklist; a minor '
+                              'split runs along an existing road, while a major one needs a new street, '
+                              'utilities, or engineering [qSoWEXftiCQ @ 00:00:20]. Cody Bjugan draws the '
+                              'line by count, saying a minor partition is about three parcels and that in '
+                              'a lot of jurisdictions four or more lots counts as a subdivision, and he '
+                              'concedes partitions are easier and quicker to push through [1B8q3q_Xt-s @ '
+                              '00:00:00]. Liberty Acres also flags the legal hook that kills shortcut '
+                              'flips: most states bar lot sales until the plat is recorded, and selling '
+                              'the whole parcel instead shifts the risk to the buyer [qSoWEXftiCQ @ '
+                              '00:01:22].',
+                              'The third point of agreement is timing: dig up every restriction and access '
+                              'instrument before money goes hard, not after the buyer has fallen in love. '
+                              'US Realty Training warns that buyers fall for a house without knowing its '
+                              'restrictions and tells agents to research before the buyer plans '
+                              'substantial changes, naming two lookups, a title search and the county '
+                              "clerk's deed abstract that lists all restrictions [B_XnC97BYF8 @ 00:03:38]. "
+                              'Dana Sparks of Real Estate Made Crystal Clear pins the window precisely: '
+                              'pull the CC&Rs during due diligence so the buyer can still terminate and '
+                              'protect earnest money [okIP6dYiTD4 @ 00:04:03]. Barndo And Tiny Homes '
+                              'Vision applies the same logic to raw land, where sellers usually are not '
+                              'required to disclose problems, and insists that physical access is not '
+                              'legal access; verbal access means nothing because lenders and title '
+                              'companies need a recorded easement [VIdzLB23cAw @ 00:04:05]. Danielle '
+                              'Dojcak turns it into a field rule for anyone representing land: when a '
+                              "buyer says 'I want land,' ask why, then hunt for recorded deed restrictions "
+                              'that conflict with that use, alongside zoning, easements, permits, and '
+                              'health-department requirements, and stop, verify, and ask before making '
+                              'representations [ieOUjD1jQXA @ 00:00:36].'],
+               'table': {'caption': 'Where the practitioners line up on approvals, restrictions, and '
+                                    'encumbrances',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioner Says',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Deed restrictions run with the land forever',
+                                   'Restrictions written into the deed by the seller bind every future '
+                                   'owner until legally lifted',
+                                   'Read the deed itself before pricing any change of use on the parcel',
+                                   'Just Call Maggie ([sazxc_VdXOw @ 00:01:05])'],
+                                  ['No HOA does not mean no rules',
+                                   'Recorded covenants can still bar chickens, livestock, horses, detached '
+                                   'garages, and boat or RV parking',
+                                   'Pull recorded land records even when the listing says there is no HOA',
+                                   'Danielle Dojcak ([ieOUjD1jQXA @ 00:00:24])'],
+                                  ['Vague, ignored CC&Rs remain fully enforceable',
+                                   'Valley subdivision covenants are often vague and unenforced but still '
+                                   'enforceable against owners',
+                                   'Drive the neighborhood and compare actual compliance against the '
+                                   'written covenants',
+                                   'Tyler Bobo Investor, Alaska Realtor ([zzxrwQSJnC4 @ 00:01:04])'],
+                                  ['Only the original grantor can lift restrictions',
+                                   'A later seller cannot remove them; heirs or successor entities of the '
+                                   'grantor must be traced',
+                                   'Assume removal is slow and that one holdout heir can block it entirely',
+                                   'The Real Estate Lawyer ([gP3fDaUu5Iw @ 00:01:01])'],
+                                  ['Every new parcel needs real road frontage',
+                                   'Frontage must be on an actual road, not an easement, though some '
+                                   'counties allow joint permanent easements',
+                                   'Confirm frontage rules with the county before modeling any split or '
+                                   'flag lot',
+                                   'Tim Howell ([rtRAjfGZ_nY @ 00:00:14])'],
+                                  ['The plat must record before lots sell',
+                                   'Most states bar selling lots until the plat is recorded; selling the '
+                                   'whole parcel shifts risk to the buyer',
+                                   'Sequence the flip so recording happens before any individual lot is '
+                                   'marketed',
+                                   'Liberty Acres ([qSoWEXftiCQ @ 00:01:22])'],
+                                  ['Legal access must be a recorded easement',
+                                   'Verbal access means nothing because lenders and title companies need a '
+                                   'recorded easement',
+                                   'Demand the recorded easement instrument before closing on back or '
+                                   'landlocked acreage',
+                                   'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:04:05])']]}},
+              {'section': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Liberty Acres lays out the approval run in five moves: check zoning, '
+                              'minimum lot size, frontage, and setbacks; get the minor-or-major call and '
+                              'checklist from planning staff; have a licensed surveyor draw the plat; do '
+                              'the septic soil work before the vote; then collect utility sign-offs, file, '
+                              'attend the hearing, and record the plat [qSoWEXftiCQ @ 00:00:00]. The '
+                              'thresholds and fees swing by jurisdiction: Washington allows four or fewer '
+                              'lots as a short subdivision, Toledo allows up to five as a lot split, '
+                              'Huntsville charges $50 plus $1 per lot, Toledo charges $150 per split, and '
+                              'Nashville charges $1,375 for a final plat and $3,000 for a major concept '
+                              'plan, with Toledo clearing in several weeks against roughly 120 days in '
+                              "Huntsville [qSoWEXftiCQ @ 00:01:00]. The channel's point is that the "
+                              'government application fee is often the smallest line in a stack that also '
+                              'carries surveyor, septic, engineering, road, bonds, and recording. Tim '
+                              'Howell shows where that stack explodes: upgrading a driveway to a county '
+                              'approved road means about 20 feet of surface, six to eight inches of base '
+                              'rock, a 40 to 50 foot right-of-way, and a grade no steeper than 15 percent, '
+                              'more likely 12, which he calls very costly [rtRAjfGZ_nY @ 00:01:20].',
+                              'Barndo And Tiny Homes Vision prices the hidden approval stack on raw land, '
+                              'opening with the warning that an $8,000 acre can turn into $60,000 more '
+                              '[VIdzLB23cAw @ 00:00:00]. A perc test averages about $1,300, typically $750 '
+                              'to $1,900 and anywhere from $250 to over $3,500, with survey at $370 to '
+                              '$770 and design and permitting at $500 to $1,200; septic then runs $5,000 '
+                              'to $25,000 for a standard system, $15,000 to $30,000 for a mound, $12,000 '
+                              'to $25,000 aerobic, and $15,000 to $25,000 for a sand filter [VIdzLB23cAw @ '
+                              '00:02:13]. The channel tells buyers to make the offer contingent on the '
+                              'perc test, use a licensed local tester, and remember results stay valid two '
+                              'to five years. Utilities total $9,000 to $34,500, or $40,000 to $80,000 and '
+                              'up with full site work: power at $5 to $25 per foot with some utilities '
+                              'charging $50 to $100, poles at $1,200 to $5,600 each, and wells at $25 to '
+                              '$65 per foot complete, typically 100 to 300 feet deep, with contractor bids '
+                              'varying 30 to 60 percent [VIdzLB23cAw @ 00:06:13]. Peter Kelly Property '
+                              'adds the backyard-split version: about four metres of clear access width, '
+                              'not three, plus compliant parking for both homes [KmCwZ5I6BYU @ 00:03:49].',
+                              'On recorded restrictions and mineral claims, the mechanics are records '
+                              'work. Dana Sparks hunts CC&Rs through the seller, the Georgia HOA '
+                              "directory, county deed books, the gsccca.org real estate index using 'view "
+                              "image' with printing costing extra, and the Secretary of State corporations "
+                              "search to pin down the HOA's legal name [okIP6dYiTD4 @ 00:07:16]. The Real "
+                              'Estate Lawyer warns that removing a deed restriction means tracing the '
+                              "original grantor's heirs or successor entities; in one case two children "
+                              'fanned out to ten grandchildren, and a single holdout makes removal '
+                              'challenging if not impossible [gP3fDaUu5Iw @ 00:01:53]. When an HOA claims '
+                              'minerals, HOA LAND WARS runs the chain parcel by parcel: a county parcel '
+                              'map showed the lease acreage exceeded HOA-owned parcels, five document '
+                              'requests went out for the lease, board resolution, legal description, '
+                              'recorded authority instrument, and the payee-determining company, and the '
+                              'recorder search turned up a reservation, assignment, and partial release, '
+                              'none naming the HOA [CnlqGcAGqOo @ 00:06:26]. In the HOA Insanity case, the '
+                              'owner spent two weeks tracing title back to the 1890s, found no severance '
+                              'in the chain, and defended a $50,000 signing bonus and 18 percent royalty '
+                              "offer against the HOA's common-assets claim [KuFkYy1kf7s @ 00:02:28]."],
+               'table': {'caption': 'Line-item costs and specs the practitioners quote for getting land '
+                                    'approved and buildable',
+                         'headers': ['Line Item', 'Stated Figure', 'Operator Use', 'Expert Source'],
+                         'rows': [['Perc test before any septic design',
+                                   'About $1,300 average, $750 to $1,900 typical, $250 to over $3,500 full '
+                                   'range',
+                                   'Make the offer contingent on results from a licensed local tester',
+                                   'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:02:13])'],
+                                  ['Septic system install by system type',
+                                   'Standard $5,000 to $25,000, mound $15,000 to $30,000, aerobic $12,000 '
+                                   'to $25,000',
+                                   'Price the worst-case system before setting your per-acre land offer',
+                                   'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:03:09])'],
+                                  ['Driveway and physical access build',
+                                   '$3,000 to $20,000; a 500 foot run costs $3,000 to $6,000 gravel or '
+                                   '$8,000 to $15,000 paved',
+                                   'Budget access length directly into the buy price on back acreage',
+                                   'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:05:35])'],
+                                  ['Plat and lot split application fees',
+                                   'Huntsville $50 plus $1 per lot, Toledo $150 per split, Nashville '
+                                   '$1,375 final plat',
+                                   'Treat the government fee as the smallest line in the cost stack',
+                                   'Liberty Acres ([qSoWEXftiCQ @ 00:01:00])'],
+                                  ['County approved road upgrade standard',
+                                   'About 20 feet of surface, 6 to 8 inches base rock, 40 to 50 foot '
+                                   'right-of-way',
+                                   'Check driveway grade against the 15 percent cap, more likely 12 '
+                                   'percent',
+                                   'Tim Howell ([rtRAjfGZ_nY @ 00:01:20])'],
+                                  ['Flag lot access strip to road',
+                                   'Rule of thumb is a 50 foot strip running all the way to the road',
+                                   'Confirm whether the county excludes the strip from minimum lot size',
+                                   'Tim Howell ([rtRAjfGZ_nY @ 00:01:53])'],
+                                  ['Backyard split access and parking',
+                                   'About 4 metres clear width, not 3 metres; 1 space for 2-bed, 2 for 3+ '
+                                   'bed',
+                                   'Walk away if cars cannot reach the back lot safely and comfortably',
+                                   'Peter Kelly Property ([KmCwZ5I6BYU @ 00:03:49])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': "Field Moves From The Recorder's Office And The County Counter",
+                           'body': "These are the small moves the operators use to read a parcel's real "
+                                   'constraints before they commit capital or make a promise to a buyer.',
+                           'items': ['Drive the neighborhood and compare actual compliance to the CC&Rs: '
+                                     "if there are no horses, don't get horses, and if farms are "
+                                     'everywhere, enforcement is less likely [Tyler Bobo Investor, Alaska '
+                                     'Realtor — zzxrwQSJnC4 @ 00:01:33].',
+                                     "Run the Secretary of State corporations search to find the HOA's "
+                                     'exact name, then pull the recorded covenants from the gsccca.org '
+                                     "index with 'view image'; the broker may pay for printing [Real "
+                                     'Estate Made Crystal Clear — okIP6dYiTD4 @ 00:08:27].',
+                                     'On coastal parcels, check the date of the coastal study rather than '
+                                     'the map date, because detailed FEMA analysis exists only at '
+                                     'transects that are interpolated between [MassDEP — lRc-2cEUn7U @ '
+                                     '00:08:36].',
+                                     'Ask your local planner, small-site designer, and experienced builder '
+                                     "'If this was your money, would you do it?' and be willing to walk "
+                                     'away [Peter Kelly Property — KmCwZ5I6BYU @ 00:11:48].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the split at the planning counter',
+                              'action': 'Check zoning, minimum lot size, frontage, and setbacks, then get '
+                                        'the minor-or-major call and checklist.',
+                              'detail': 'Ask planning staff whether the split runs along an existing road '
+                                        'as a minor split or needs a new street, utilities, or engineering '
+                                        'as a major one, and get the surveyor drawing the plat [Liberty '
+                                        'Acres — qSoWEXftiCQ @ 00:00:20].'},
+                             {'step': 2,
+                              'title': 'Lock legal access and road frontage',
+                              'action': 'Confirm a recorded easement and frontage on an actual road built '
+                                        'to county standards.',
+                              'detail': 'Physical access is not legal access, so demand the recorded '
+                                        'easement and watch for multi-owner roads, seasonal roads, and '
+                                        'maintenance agreements; each split parcel needs county-road '
+                                        'frontage [Barndo And Tiny Homes Vision — VIdzLB23cAw @ 00:04:05] '
+                                        '[Tim Howell — rtRAjfGZ_nY @ 00:00:43].'},
+                             {'step': 3,
+                              'title': 'Price the dirt-to-buildable stack',
+                              'action': 'Make the offer contingent on the perc test and load septic, '
+                                        'power, well, and driveway costs.',
+                              'detail': 'Add a 10 to 20 percent buffer to the utility and site budget and '
+                                        'keep every contingency in place until each check is done [Barndo '
+                                        'And Tiny Homes Vision — VIdzLB23cAw @ 00:10:09].'},
+                             {'step': 4,
+                              'title': 'Pull every recorded restriction and mineral link',
+                              'action': 'Run the title search and deed abstract, and chain any mineral '
+                                        'claim parcel by parcel.',
+                              'detail': "Use the title search and the county clerk's deed abstract to list "
+                                        'all restrictions, and when an HOA claims minerals, chart deeds, '
+                                        'reservations, assignments, and releases until a conveyance to the '
+                                        'HOA is proven or missing [US Realty Training — B_XnC97BYF8 @ '
+                                        '00:03:38] [HOA LAND WARS — CnlqGcAGqOo @ 00:22:46].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split among land operators is how big to cut. Cody Bjugan '
+                              "judges every deal on 'return on effort,' runs projects of 100 to 500 lots "
+                              "averaging around 250, and calls it 'highly unlikely' he would ever do "
+                              "another minor partition because 'paydays aren't even comparable'; matching "
+                              'one 240-lot project would take 80 partitions [1B8q3q_Xt-s @ 00:01:06]. Yet '
+                              "he refuses to trash the small play: 'I don't want to poo poo on minor "
+                              "partitions,' he says, ranking them above a lot of real estate strategies "
+                              'and pushing beginners to start there, then level up [1B8q3q_Xt-s @ '
+                              '00:01:56]. Liberty Acres draws the line on infrastructure instead of lot '
+                              'count: a minor split runs along an existing road, while a major one needs a '
+                              'new street, utilities or engineering, and the thresholds move by '
+                              'jurisdiction, with Washington capping short subdivisions at 4 lots and '
+                              'Toledo allowing up to 5 as a lot split [qSoWEXftiCQ @ 00:00:20]. Peter '
+                              'Kelly Property works the opposite end of the scale, a single backyard '
+                              'split, and argues the hurdle rate depends on motive: a pure investor needs '
+                              'margin after costs, interest, tax and a risk buffer, while an '
+                              'owner-occupier living in one home can accept a slimmer return [KmCwZ5I6BYU '
+                              '@ 00:01:24].',
+                              'Practitioners split on how hard a recorded restriction actually bites. '
+                              'Tyler Bobo, working Alaska valley deals, says most subdivisions still carry '
+                              'CC&Rs that are often vague and unenforced yet still enforceable, so his '
+                              'playbook is to drive the neighborhood and compare real compliance against '
+                              "the paper: if nobody keeps horses, don't get horses, but if farms are "
+                              'everywhere, enforcement is less likely [zzxrwQSJnC4 @ 00:01:33]. Just Call '
+                              'Maggie takes the hard line, teaching that deed restrictions run with the '
+                              "land, bind every future owner, and that a 'No commercial businesses' clause "
+                              'blocks a cafe or shop permanently unless it is legally lifted [sazxc_VdXOw '
+                              '@ 00:02:11]. The Real Estate Lawyer says lifting one is far narrower than '
+                              'buyers assume: only the original grantor can remove a deed restriction, not '
+                              'a later seller, and if the grantor is gone you trace heirs or successor '
+                              'entities, as in one case where 2 children branched into 10 grandchildren '
+                              "and a single holdout makes removal 'challenging if not impossible' "
+                              '[gP3fDaUu5Iw @ 00:01:53]. Danielle Dojcak attacks the comfort zone from the '
+                              "other side, warning that 'no HOA' does not mean no rules because recorded "
+                              'covenants can still ban chickens, horses, detached garages or boat and RV '
+                              'parking [ieOUjD1jQXA @ 00:00:24].',
+                              'On mineral fights, two owner war stories show different playbooks against '
+                              'an HOA claiming the rights. In the HOA Insanity case, a $50,000 signing '
+                              'bonus and 18% royalty offer triggered a two-week courthouse title trace '
+                              'back to the 1890s that found no severance; the owner then ignored $50 to '
+                              '$100 fines to build a harassment record, pursued fees, and leaned on the '
+                              "principle that a covenant 'cannot supersede a recorded deed' [KuFkYy1kf7s @ "
+                              '00:11:46]. The HOA LAND WARS narrator went quieter and more surgical: five '
+                              'document requests (lease, board resolution, legal description, recorded '
+                              'authority instrument, and payee-determining company), then a '
+                              'parcel-by-parcel chain chart sent with an attorney letter to the energy '
+                              "company's land department, which got private lots stripped out of the lease "
+                              'without a courtroom win [CnlqGcAGqOo @ 00:18:31]. The consolidation pitch '
+                              "also splits the room: the HOA Insanity board pitched a '$20M' pool with a "
+                              "10% management fee the owner tagged as a '$2 million' payday, countering "
+                              'that owners can negotiate collectively through their own transparent trust '
+                              'with minimal fees [KuFkYy1kf7s @ 00:18:22]. James Tanner frames the '
+                              'separate-estate logic: owners can lease mineral rights without leasing the '
+                              'land, and with wind turbines owners collect rent while still grazing cattle '
+                              '[potSOIxnw0E @ 00:10:54].'],
+               'table': {'caption': 'Competing Playbooks on Splits, Covenants and Mineral Claims',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How many lots to cut from one parent tract',
+                                   'Go big with 100 to 500 lots, averaging about 250, judged on return on '
+                                   'effort',
+                                   'Go small with minor partitions that are easier and quicker for '
+                                   'beginners',
+                                   'Cody Bjugan ([1B8q3q_Xt-s @ 00:00:47]) and Cody Bjugan ([1B8q3q_Xt-s @ '
+                                   '00:00:32])'],
+                                  ['Minor versus major split classification test at planning',
+                                   'Minor split runs along an existing road with no new street required',
+                                   'Major split needs a new street, utilities or engineering and longer '
+                                   'review',
+                                   'Liberty Acres ([qSoWEXftiCQ @ 00:00:20]) on minor and major split '
+                                   'thresholds'],
+                                  ['Frontage requirement for each new parcel in a split',
+                                   'Strict counties demand frontage on an actual county approved road, not '
+                                   'an easement',
+                                   'Some counties allow a joint permanent easement or a 50 ft flag-lot '
+                                   'strip',
+                                   'Tim Howell ([rtRAjfGZ_nY @ 00:00:29]) and Tim Howell ([rtRAjfGZ_nY @ '
+                                   '00:01:53])'],
+                                  ['Investor margin versus owner-occupier margin on a backyard split',
+                                   'Pure investment needs margin after costs, interest, tax and a risk '
+                                   'buffer',
+                                   'Owner-occupier living in one home and renting the other accepts a '
+                                   'slimmer return',
+                                   'Peter Kelly Property ([KmCwZ5I6BYU @ 00:01:24]) on motive-based hurdle '
+                                   'rates'],
+                                  ['Reading covenant enforcement risk before buying rural land',
+                                   'Treat recorded restrictions as binding on every future owner and '
+                                   'enforceable by legal action',
+                                   'Drive the neighborhood; if farms are everywhere, enforcement is less '
+                                   'likely',
+                                   'Just Call Maggie ([sazxc_VdXOw @ 00:01:49]) and Tyler Bobo Investor, '
+                                   'Alaska Realtor ([zzxrwQSJnC4 @ 00:01:47])'],
+                                  ['Fighting an HOA claim over mineral rights under a private lot',
+                                   'Litigate hard, pursue fees, and ignore fines to build a harassment '
+                                   'record',
+                                   'Paper the chain parcel by parcel and send it to the land department',
+                                   'HOA Insanity ([KuFkYy1kf7s @ 00:12:55]) and HOA LAND WARS '
+                                   '([CnlqGcAGqOo @ 00:23:35])'],
+                                  ['Pooling mineral leases across a whole community of owners',
+                                   'Board-run $20M consolidation pitch carrying a 10% management fee',
+                                   "Owners' own transparent trust negotiating collectively with minimal "
+                                   'fees',
+                                   'HOA Insanity ([KuFkYy1kf7s @ 00:16:21]) and HOA Insanity ([KuFkYy1kf7s '
+                                   '@ 00:18:22])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The biggest economic trap is buying cheap dirt and then paying for '
+                              'everything underneath and around it. Barndo And Tiny Homes Vision warns an '
+                              '$8,000 acre can turn into $60,000 more, and that sellers usually are not '
+                              'required to disclose problems on land; the perc test averages about $1,300, '
+                              'while septic runs $5,000 to $25,000 standard and $15,000 to $30,000 for a '
+                              'mound [VIdzLB23cAw @ 00:03:09]. The same channel prices utilities at $9,000 '
+                              'to $34,500, or $40,000 to $80,000 and up with full site work, notes bids '
+                              'vary by 30 to 60 percent, and insists on a 10 to 20 percent buffer '
+                              '[VIdzLB23cAw @ 00:06:13]. Tim Howell shows how frontage kills splits: '
+                              'upgrading a driveway to a county approved road means about 20 feet of '
+                              'surface, 6 to 8 inches of base rock, a 40 to 50 foot right-of-way and a '
+                              "grade no steeper than 15 percent, more likely 12, which he calls 'very "
+                              "costly,' and counties won't let you create a non-conforming lot "
+                              "[rtRAjfGZ_nY @ 00:01:20]. Liberty Acres adds that 'the government "
+                              "application fee is often the smallest line' once surveyor, septic, "
+                              'engineering, road, bonds and recording stack up [qSoWEXftiCQ @ 00:01:22].',
+                              'Site geometry and mapping errors are the quiet killers. Peter Kelly '
+                              'Property says the position of the existing house matters more than total '
+                              'land size even at 600 to 700 square meters, and his access rule is blunt: '
+                              "'If you cannot get cars to the back safely and comfortably, you do not have "
+                              "a project,' with about 4 meters of clear width needed, not 3, and the front "
+                              'house often losing compliant parking [KmCwZ5I6BYU @ 00:03:49]. He also '
+                              'flags that services bring easements, protected trees and existing pits, '
+                              'that building behind an existing house means hand work and slower progress, '
+                              'and that feasibility must be stress-tested for delays and a softer market '
+                              "because 'a quick permit is not the goal' [KmCwZ5I6BYU @ 00:10:58]. On "
+                              "coastal parcels, MassDEP's presenters warn about the 'invisible A zone': a "
+                              'transition narrower than 0.2 inches on the map, roughly 80 feet on the '
+                              'ground, is simply not mapped, and because detailed analysis happens only at '
+                              'transects that get interpolated between, operators should check the date of '
+                              'the coastal study rather than the map date [lRc-2cEUn7U @ 00:08:36]. '
+                              'Claiming a less restrictive zone needs a Letter of Map Change, while photo '
+                              'evidence of higher flooding can make an area more restrictive without one '
+                              '[lRc-2cEUn7U @ 00:16:14].',
+                              'Encumbrance traps hit after the contract is signed if the paperwork pull '
+                              'comes late. Dana Sparks of Real Estate Made Crystal Clear says to get the '
+                              'CC&Rs during due diligence so the buyer can terminate and protect earnest '
+                              "money, warning that assessments 'tend to increase' and covenants can be "
+                              'amended; she pulls them from the seller, county deed books, the gsccca.org '
+                              "index or a Secretary of State search for the HOA's name [okIP6dYiTD4 @ "
+                              '00:04:03]. The amendment risk is real: in the HOA Insanity case, the '
+                              "mineral clause was slipped in 7 years earlier through a 30-day 'silence "
+                              "equals acceptance' notice with only 12 of 30 owners attending, the TRO was "
+                              "denied, and $3,000-plus in fines became a lien while the HOA's "
+                              'cease-and-desist delayed drilling for months [KuFkYy1kf7s @ 00:19:15]. The '
+                              'Real Estate Lawyer warns the seller side too: adding restrictions without '
+                              'disclosing them before contract risks breach under the North Carolina '
+                              'standard offer to purchase [gP3fDaUu5Iw @ 00:03:30]. Conservation '
+                              'encumbrances cap income as well: on the MissStateExtension Panther Tract, a '
+                              "Wetland Reserve Easement means crops can't be pulled, the trees are too "
+                              "young for pulpwood, and hunting leases are the 'number one income "
+                              "generator' [UkiDG5GpG_Y @ 00:02:46]."],
+               'table': {'caption': 'Firsthand Traps and the Numbers Behind Them',
+                         'headers': ['Trap',
+                                     'What Happened or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Cheap raw acre hiding expensive site work underneath',
+                                   'An $8,000 acre can turn into $60,000 more; sellers usually need not '
+                                   'disclose',
+                                   'Budget due diligence at $3,000 to $10,000 plus a 10 to 20 percent '
+                                   'buffer',
+                                   'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:00:00]) and Barndo And '
+                                   'Tiny Homes Vision ([VIdzLB23cAw @ 00:10:09])'],
+                                  ['Relying on verbal or physical access to the parcel',
+                                   'Physical access is not legal access; lenders and title companies need '
+                                   'a recorded easement',
+                                   'Driveways run $3,000 to $20,000; a 500 ft gravel run costs $3,000 to '
+                                   '$6,000',
+                                   'Barndo And Tiny Homes Vision ([VIdzLB23cAw @ 00:04:05]) and Barndo And '
+                                   'Tiny Homes Vision ([VIdzLB23cAw @ 00:05:35])'],
+                                  ['Shared driveway that must become a county approved road',
+                                   'Upgrade to about 20 ft of surface, 6 to 8 inches of base rock, 40 to '
+                                   '50 ft right-of-way',
+                                   'Grade capped at 15 percent, more likely 12; he calls the upgrade very '
+                                   'costly',
+                                   'Tim Howell ([rtRAjfGZ_nY @ 00:01:20]) on road frontage upgrade costs'],
+                                  ['Selling individual lots before the plat is recorded',
+                                   'Most states bar lot sales until the plat is recorded at the county',
+                                   'Selling the whole parcel instead shifts the approval risk onto the '
+                                   'buyer',
+                                   'Liberty Acres ([qSoWEXftiCQ @ 00:01:22]) on recording and sale timing'],
+                                  ['Backyard split with poor rear-lot access and parking',
+                                   'Need about 4 m of clear width; the front house often loses compliant '
+                                   'parking',
+                                   'A shared driveway creates common property; separate driveways command '
+                                   'premium titles',
+                                   'Peter Kelly Property ([KmCwZ5I6BYU @ 00:03:49]) and Peter Kelly '
+                                   'Property ([KmCwZ5I6BYU @ 00:07:01])'],
+                                  ['Trusting the FEMA map date on coastal land',
+                                   'Transitions under 0.2 inches on the map, about 80 ft on the ground, go '
+                                   'unmapped',
+                                   'Check the coastal study date; less restrictive claims need a Letter of '
+                                   'Map Change',
+                                   'MassDEP ([lRc-2cEUn7U @ 00:07:19]) and MassDEP ([lRc-2cEUn7U @ '
+                                   '00:16:14])'],
+                                  ['Deed restriction whose original grantor has died or dissolved',
+                                   'Two children branched into 10 grandchildren who all had to sign off',
+                                   'A single holdout makes removal challenging if not impossible, so price '
+                                   'it in',
+                                   'The Real Estate Lawyer ([gP3fDaUu5Iw @ 00:01:53]) and The Real Estate '
+                                   'Lawyer ([gP3fDaUu5Iw @ 00:03:13])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do Not Close Until These Four Checks Clear',
+                           'body': 'Every item below comes from a cost overrun, a dead split, or a '
+                                   'covenant fight practitioners ran into firsthand. Keep contingencies '
+                                   'alive until each one is answered on paper.',
+                           'items': ['Make the offer contingent on a perc test run by a licensed local '
+                                     'tester, knowing results stay valid 2 to 5 years and a mound system '
+                                     'can run $15,000 to $30,000 [Barndo And Tiny Homes Vision — '
+                                     'VIdzLB23cAw @ 00:03:30].',
+                                     'Confirm a recorded easement or frontage on an actual county approved '
+                                     'road, because verbal access means nothing to lenders and title '
+                                     'companies [Barndo And Tiny Homes Vision — VIdzLB23cAw @ 00:04:05].',
+                                     "Run a title search and pull the county clerk's deed abstract listing "
+                                     'every restriction before the buyer plans substantial changes [US '
+                                     'Realty Training — B_XnC97BYF8 @ 00:03:38].',
+                                     'Follow the mineral chain through deeds, reservations, assignments '
+                                     'and releases, since HOA ownership of common property does not '
+                                     'automatically mean ownership of minerals under lots [HOA LAND WARS — '
+                                     'CnlqGcAGqOo @ 00:05:01].']}}],
+ 'pull_quote': "'Physical access is not legal access.' Attributed to Barndo And Tiny Homes Vision "
+               '(VIdzLB23cAw @ 00:04:05).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Check zoning, minimum lot size, frontage and setbacks, then ask planning staff '
+                      'whether the split is minor or major and get their checklist [Liberty Acres — '
+                      'qSoWEXftiCQ @ 00:00:00].',
+                      'Write the perc test in as an offer contingency and keep every contingency in place '
+                      'until each due diligence check is done [Barndo And Tiny Homes Vision — VIdzLB23cAw '
+                      '@ 00:03:30].',
+                      'Verify each new parcel fronts an actual county approved road, or budget a 50 ft '
+                      'flag-lot strip where the county allows it [Tim Howell — rtRAjfGZ_nY @ 00:00:14].',
+                      "Ask the buyer 'Why?' when they say they want land, then dig for recorded deed "
+                      'restrictions that conflict with that use [Danielle Dojcak — ieOUjD1jQXA @ '
+                      '00:00:36].',
+                      'Pull the CC&Rs during due diligence from the seller, county deed books, the '
+                      "gsccca.org index or a Secretary of State search for the HOA's name [Real Estate "
+                      'Made Crystal Clear — okIP6dYiTD4 @ 00:07:16].',
+                      'Before signing or contesting a mineral lease, trace title at the courthouse to '
+                      'confirm whether surface and minerals were ever severed [HOA Insanity — KuFkYy1kf7s '
+                      '@ 00:02:28].'],
+ 'statutory_citations': [{'title': 'Tim Howell — Subdivisions and road frontage [00:01:20]',
+                          'url': 'https://www.youtube.com/watch?v=rtRAjfGZ_nY&t=80s',
+                          'relevance': 'Primary practitioner testimony on road frontage rules and the cost '
+                                       'of upgrading a driveway to a county approved road.'},
+                         {'title': 'Barndo And Tiny Homes Vision — Raw Land Traps 2026: Perc Tests, Road '
+                                   'Access & Utility Costs Explained [00:04:05]',
+                          'url': 'https://www.youtube.com/watch?v=VIdzLB23cAw&t=245s',
+                          'relevance': 'Primary practitioner testimony on legal access, perc tests, septic '
+                                       'and utility cost stacks for raw land.'},
+                         {'title': 'The Real Estate Lawyer — How To Legally Remove Deeded Property '
+                                   'Restrictions (HOA, ETC.) [00:01:53]',
+                          'url': 'https://www.youtube.com/watch?v=gP3fDaUu5Iw&t=113s',
+                          'relevance': 'Primary practitioner testimony on who can remove deed restrictions '
+                                       'and the heir-tracing holdout problem.'},
+                         {'title': 'HOA LAND WARS — HOA Signed a Mineral Lease Under My Home—Then the '
+                                   'Royalty Trail Led Elsewhere [00:18:31]',
+                          'url': 'https://www.youtube.com/watch?v=CnlqGcAGqOo&t=1111s',
+                          'relevance': 'Primary practitioner testimony on parcel-by-parcel mineral chain '
+                                       'verification against an HOA lease claim.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '1B8q3q_Xt-s',
+                       'title': 'Minor Partition vs. Subdivision in Land Development',
+                       'channel': 'Cody Bjugan',
+                       'author': 'Cody Bjugan',
+                       'text': "I don't want to poo poo on minor partitions.",
+                       'tip': "I don't want to poo poo on minor partitions.",
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=1B8q3q_Xt-s&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=1B8q3q_Xt-s&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KmCwZ5I6BYU',
+                       'title': 'Backyard Subdivision, What Most People Get Wrong',
+                       'channel': 'Peter Kelly Property',
+                       'author': 'Peter Kelly Property',
+                       'text': 'If you cannot get cars to the back safely and comfortably, you do not have '
+                               'a project.',
+                       'tip': 'If you cannot get cars to the back safely and comfortably, you do not have '
+                              'a project.',
+                       'timestamp': 229,
+                       'timestamp_seconds': 229,
+                       'timestamp_label': '[00:03:49]',
+                       'url': 'https://www.youtube.com/watch?v=KmCwZ5I6BYU&t=229s',
+                       'markdown': '[00:03:49](https://www.youtube.com/watch?v=KmCwZ5I6BYU&t=229s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qSoWEXftiCQ',
+                       'title': 'How to Subdivide Land: Steps, Costs and Approvals',
+                       'channel': 'Liberty Acres',
+                       'author': 'Liberty Acres',
+                       'text': 'The government application fee is often the smallest line.',
+                       'tip': 'The government application fee is often the smallest line.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=qSoWEXftiCQ&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=qSoWEXftiCQ&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rtRAjfGZ_nY',
+                       'title': 'Subdivisions and road frontage',
+                       'channel': 'Tim Howell',
+                       'author': 'Tim Howell',
+                       'text': "Counties won't allow you to create a non-conforming lot.",
+                       'tip': "Counties won't allow you to create a non-conforming lot.",
+                       'timestamp': 200,
+                       'timestamp_seconds': 200,
+                       'timestamp_label': '[00:03:20]',
+                       'url': 'https://www.youtube.com/watch?v=rtRAjfGZ_nY&t=200s',
+                       'markdown': '[00:03:20](https://www.youtube.com/watch?v=rtRAjfGZ_nY&t=200s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UkiDG5GpG_Y',
+                       'title': 'Wetland Reserve Easements: Benefits for Landowners and the Environment',
+                       'channel': 'MissStateExtension',
+                       'author': 'MissStateExtension',
+                       'text': "Crops can't be pulled off the easement, and hunting leases are the number "
+                               'one income generator.',
+                       'tip': "Crops can't be pulled off the easement, and hunting leases are the number "
+                              'one income generator.',
+                       'timestamp': 166,
+                       'timestamp_seconds': 166,
+                       'timestamp_label': '[00:02:46]',
+                       'url': 'https://www.youtube.com/watch?v=UkiDG5GpG_Y&t=166s',
+                       'markdown': '[00:02:46](https://www.youtube.com/watch?v=UkiDG5GpG_Y&t=166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VIdzLB23cAw',
+                       'title': 'Raw Land Traps 2026: Perc Tests, Road Access & Utility Costs Explained',
+                       'channel': 'Barndo And Tiny Homes Vision',
+                       'author': 'Barndo And Tiny Homes Vision',
+                       'text': 'Physical access is not legal access.',
+                       'tip': 'Physical access is not legal access.',
+                       'timestamp': 245,
+                       'timestamp_seconds': 245,
+                       'timestamp_label': '[00:04:05]',
+                       'url': 'https://www.youtube.com/watch?v=VIdzLB23cAw&t=245s',
+                       'markdown': '[00:04:05](https://www.youtube.com/watch?v=VIdzLB23cAw&t=245s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lRc-2cEUn7U',
+                       'title': 'How to Identify Zones in the Land Subject to Coastal Storm Flowage '
+                                '(LSCSF) from FEMA Maps',
+                       'channel': 'MassDEP',
+                       'author': 'MassDEP',
+                       'text': 'They need to have that mapped by Fema.',
+                       'tip': 'They need to have that mapped by Fema.',
+                       'timestamp': 1785,
+                       'timestamp_seconds': 1785,
+                       'timestamp_label': '[00:29:45]',
+                       'url': 'https://www.youtube.com/watch?v=lRc-2cEUn7U&t=1785s',
+                       'markdown': '[00:29:45](https://www.youtube.com/watch?v=lRc-2cEUn7U&t=1785s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gP3fDaUu5Iw',
+                       'title': 'How To Legally Remove Deeded Property Restrictions (HOA, ETC.)',
+                       'channel': 'The Real Estate Lawyer',
+                       'author': 'The Real Estate Lawyer',
+                       'text': 'One holdout among the heirs makes removing the restriction challenging if '
+                               'not impossible.',
+                       'tip': 'One holdout among the heirs makes removing the restriction challenging if '
+                              'not impossible.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=gP3fDaUu5Iw&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=gP3fDaUu5Iw&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'okIP6dYiTD4',
+                       'title': 'How to Find HOA Covenants Conditions & Restrictions #HOACovenants',
+                       'channel': 'Real Estate Made Crystal Clear',
+                       'author': 'Real Estate Made Crystal Clear',
+                       'text': 'Get the covenants during due diligence so the buyer can terminate and '
+                               'protect their earnest money.',
+                       'tip': 'Get the covenants during due diligence so the buyer can terminate and '
+                              'protect their earnest money.',
+                       'timestamp': 243,
+                       'timestamp_seconds': 243,
+                       'timestamp_label': '[00:04:03]',
+                       'url': 'https://www.youtube.com/watch?v=okIP6dYiTD4&t=243s',
+                       'markdown': '[00:04:03](https://www.youtube.com/watch?v=okIP6dYiTD4&t=243s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KuFkYy1kf7s',
+                       'title': 'HOA Claimed My Mineral Rights Were Theirs I Showed Up With the Original '
+                                'Deed and a Geologist!',
+                       'channel': 'HOA Insanity',
+                       'author': 'HOA Insanity',
+                       'text': 'The HOA covenant, regardless of its language, cannot supersede a recorded '
+                               'deed.',
+                       'tip': 'The HOA covenant, regardless of its language, cannot supersede a recorded '
+                              'deed.',
+                       'timestamp': 706,
+                       'timestamp_seconds': 706,
+                       'timestamp_label': '[00:11:46]',
+                       'url': 'https://www.youtube.com/watch?v=KuFkYy1kf7s&t=706s',
+                       'markdown': '[00:11:46](https://www.youtube.com/watch?v=KuFkYy1kf7s&t=706s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KuFkYy1kf7s',
+                       'title': 'HOA Claimed My Mineral Rights Were Theirs I Showed Up With the Original '
+                                'Deed and a Geologist!',
+                       'channel': 'HOA Insanity',
+                       'author': 'HOA Insanity',
+                       'text': 'Mineral rights are real property interests that run with the land.',
+                       'tip': 'Mineral rights are real property interests that run with the land.',
+                       'timestamp': 435,
+                       'timestamp_seconds': 435,
+                       'timestamp_label': '[00:07:15]',
+                       'url': 'https://www.youtube.com/watch?v=KuFkYy1kf7s&t=435s',
+                       'markdown': '[00:07:15](https://www.youtube.com/watch?v=KuFkYy1kf7s&t=435s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B_XnC97BYF8',
+                       'title': 'What are Real Estate Deed Restrictions?',
+                       'channel': 'US Realty Training',
+                       'author': 'US Realty Training',
+                       'text': 'The title company is your right-hand person.',
+                       'tip': 'The title company is your right-hand person.',
+                       'timestamp': 232,
+                       'timestamp_seconds': 232,
+                       'timestamp_label': '[00:03:52]',
+                       'url': 'https://www.youtube.com/watch?v=B_XnC97BYF8&t=232s',
+                       'markdown': '[00:03:52](https://www.youtube.com/watch?v=B_XnC97BYF8&t=232s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ieOUjD1jQXA',
+                       'title': 'Did you know, NO HOA does not mean NO Rules? #hoa #landrestrictions '
+                                '#landusepolicy #land',
+                       'channel': 'Danielle Dojcak',
+                       'author': 'Danielle Dojcak',
+                       'text': 'There could very well still be restrictive covenants recorded in the land '
+                               'records.',
+                       'tip': 'There could very well still be restrictive covenants recorded in the land '
+                              'records.',
+                       'timestamp': 13,
+                       'timestamp_seconds': 13,
+                       'timestamp_label': '[00:00:13]',
+                       'url': 'https://www.youtube.com/watch?v=ieOUjD1jQXA&t=13s',
+                       'markdown': '[00:00:13](https://www.youtube.com/watch?v=ieOUjD1jQXA&t=13s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CnlqGcAGqOo',
+                       'title': 'HOA Signed a Mineral Lease Under My Home—Then the Royalty Trail Led '
+                                'Elsewhere',
+                       'channel': 'HOA LAND WARS',
+                       'author': 'HOA LAND WARS',
+                       'text': 'So, we worked parcel by parcel.',
+                       'tip': 'So, we worked parcel by parcel.',
+                       'timestamp': 1111,
+                       'timestamp_seconds': 1111,
+                       'timestamp_label': '[00:18:31]',
+                       'url': 'https://www.youtube.com/watch?v=CnlqGcAGqOo&t=1111s',
+                       'markdown': '[00:18:31](https://www.youtube.com/watch?v=CnlqGcAGqOo&t=1111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'potSOIxnw0E',
+                       'title': 'Land Rights: Grazing, Timber and Mineral Rights and Leases for '
+                                'Genealogists - James Tanner',
+                       'channel': 'BYU Library Family History Center',
+                       'author': 'BYU Library Family History Center',
+                       'text': 'A license is generally revocable at any time and usually has a one-time '
+                               'fee.',
+                       'tip': 'A license is generally revocable at any time and usually has a one-time '
+                              'fee.',
+                       'timestamp': 1028,
+                       'timestamp_seconds': 1028,
+                       'timestamp_label': '[00:17:08]',
+                       'url': 'https://www.youtube.com/watch?v=potSOIxnw0E&t=1028s',
+                       'markdown': '[00:17:08](https://www.youtube.com/watch?v=potSOIxnw0E&t=1028s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zzxrwQSJnC4',
+                       'title': 'Home Owners Association (HOA) or Covenants Condition and Restrictions '
+                                '(CC&R)',
+                       'channel': 'Tyler Bobo Investor, Alaska Realtor',
+                       'author': 'Tyler Bobo Investor, Alaska Realtor',
+                       'text': "You're just going to want to know what you're signing up for when you buy "
+                               "the property and then you won't be surprised later.",
+                       'tip': "You're just going to want to know what you're signing up for when you buy "
+                              "the property and then you won't be surprised later.",
+                       'timestamp': 222,
+                       'timestamp_seconds': 222,
+                       'timestamp_label': '[00:03:42]',
+                       'url': 'https://www.youtube.com/watch?v=zzxrwQSJnC4&t=222s',
+                       'markdown': '[00:03:42](https://www.youtube.com/watch?v=zzxrwQSJnC4&t=222s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sazxc_VdXOw',
+                       'title': 'Real Estate Exam Prep: Understanding Private Property Restrictions',
+                       'channel': 'Just Call Maggie',
+                       'author': 'Just Call Maggie',
+                       'text': "HOAs don't have the power to take ownership of the property, and their "
+                               'rules are not optional.',
+                       'tip': "HOAs don't have the power to take ownership of the property, and their "
+                              'rules are not optional.',
+                       'timestamp': 557,
+                       'timestamp_seconds': 557,
+                       'timestamp_label': '[00:09:17]',
+                       'url': 'https://www.youtube.com/watch?v=sazxc_VdXOw&t=557s',
+                       'markdown': '[00:09:17](https://www.youtube.com/watch?v=sazxc_VdXOw&t=557s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sazxc_VdXOw',
+                       'title': 'Real Estate Exam Prep: Understanding Private Property Restrictions',
+                       'channel': 'Just Call Maggie',
+                       'author': 'Just Call Maggie',
+                       'text': "Future owners are also bound by this rule, so unless it's legally lifted, "
+                               'no one can operate a commercial business on that land.',
+                       'tip': "Future owners are also bound by this rule, so unless it's legally lifted, "
+                              'no one can operate a commercial business on that land.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=sazxc_VdXOw&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=sazxc_VdXOw&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

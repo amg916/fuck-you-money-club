@@ -9,49 +9,49 @@
       "BROKERAGE"
     ],
     "deck": [
-      "PACKAGE THE FILE. MATCH CREDIT BOX.",
-      "PROTECT ORIGINATION FEES."
+      "MATCH EACH BORROWER TO THE ONE LENDER WHOSE CREDIT BOX FITS, PACKAGE A CLEAN FILE, AND GET PAID ONLY WHEN IT FUNDS",
+      "PRICE POINTS, PACKAGING DEPOSITS, BACK-END SPLITS, AND FACTORING RESIDUALS ACROSS EQUIPMENT, FACTORING, ABL, SBA, MCA, DSCR, AND CAPITAL STACKS"
     ],
-    "lead": "Fee-Only Commercial Capital Placement Across Equipment Leasing, Asset-Based Lending, SBA 7(a)/504 & Transferable Tax Credits",
-    "summary": "Underwrite borrower DSCR and UCC positions upfront, match multi-lender credit matrices, and comply with state commercial finance disclosure laws.",
+    "lead": "Practitioners show how a commercial loan broker who never lends a dollar of their own money turns bank declines into funded deals, from $30,000 on a $2 million loan at 1.5 points to factoring residuals of 10% to 15% of monthly factor fees.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, with every quote, metric, pro-tip, and operator gate carrying timestamped inline attribution to its source video. The chapters cover the full brokerage path, from deal economics and launching a brokerage through equipment finance, factoring, SBA lending, merchant cash advances, DSCR underwriting, and capital stacks.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The Broker's Role and Deal Economics",
+      "Launching a Commercial Loan Brokerage",
+      "Licensing, Compliance, and Professional Positioning",
+      "Building an Equipment Finance Brokerage",
+      "Equipment Leasing, Asset-Backed, and Contractor Finance Products",
+      "Factoring and Accounts Receivable Financing",
+      "Asset-Based Lending and Supply Chain Finance",
+      "SBA 7(a) and 504 Lending",
+      "Merchant Cash Advances: ISO Operations and Debt Restructuring",
+      "Working Capital, Revenue-Based Financing, and Capital Raising",
+      "DSCR Loans and Commercial Real Estate Underwriting Metrics",
+      "Capital Stacks, Tax Credit Finance, and Litigation Funding"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "QUALIFY",
+        "Score the file on deal size, deal type, borrower constraints, and time pressure, and check that the prospect's story matches the bank statements and balance sheet before quoting points."
       ],
       [
         "UNDERWRITE",
-        "Screen margin, float & rules"
+        "Run LTV, DSCR, and debt yield yourself from the rent roll, P&L, and PFS, because a 10% debt yield against an 11% lender test opens a funding gap."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "MATCH",
+        "Call bank commercial managers on Monday or Tuesday to ask where the money is going this week, then place the file with one lender whose credit box fits instead of spraying it."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "COMMIT",
+        "Take a packaging deposit, even $250 with a 45-day LOI refund clause, and set the hair clause up front so messy deals add points at the end."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "PACKAGE",
+        "Scrub the package for credit reports older than 60 days, inactive LLCs, and missing pages, and answer every borrower and referral within 24 to 48 hours."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "FUND AND REPEAT",
+        "Get paid only when the deal funds, then work the capital stack for repeat financing events across acquisition, rehab, permanent financing, equipment, and working capital."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "SPECIALTY FINANCE BROKERAGE",
-  "subtitle": "The Complete Playbook for $120,000–$1,000,000 USD in Annual Retained Brokerage Fees: Build a 2 FT + 2 C Pod, Scale to Six People",
+  "subtitle": "Score the File, Match the One Lender Whose Credit Box Fits, and Get Paid at Funding: Points and Packaging Deposits, Dealer-Channel Equipment Deals, Lifetime Factoring Residuals, SBA and DSCR Underwriting Math, MCA Takeout Ladders, and Capital-Stack Placement",
   "chapter_count": 12,
-  "total_word_count": 76558,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 75454,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

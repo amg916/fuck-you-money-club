@@ -1,714 +1,823 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "probate-automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 3 C (5 people) probate real estate team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Docket Alerts, Evidence-Bound AI, Court-Sale Checklists, Attorney Referral Loops, and Recorded-Access GIS Diligence",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
-        "Score. This chapter translates 11 mapped plays into an evidence-first operating "
-        "system: authorized docket ingestion, reviewed qualification, executor concierge "
-        "coordination, transaction checklists, attorney distribution, and recorded-access "
-        "parcel research. A 2 FT + 3 C team targets 70%+ removal of measured repetitive "
-        "work without automating authority determinations, valuation commitments, or sale "
-        "instructions. Canonical annual owner profits remain $24,000 Conservative, "
-        "$140,250 Base, and $315,000 Scaled; recognized revenue means retained brokerage "
-        "commissions after brokerage splits, never property values. Python workers and "
-        "signed webhooks assemble evidence; people authorize consequential actions. "
-        "Costed runs, exception queues, verified source links, and recoverable checklists "
-        "turn distribution into repeatable capacity rather than another unstaffed inbox."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$510,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Instrument eleven plays before automating the probate evidence chain",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a work ledger, not an AI subscription. The two full-time "
-                    "roles are a properly licensed brokerage lead and an operations lead; "
-                    "three contractors supply bounded research, transaction support, and "
-                    "distribution production within their permitted scopes. Measure repetitive "
-                    "minutes by docket collection, identity matching, qualification preparation, "
-                    "checklist maintenance, and distribution preparation. In an illustrative "
-                    "1,000-minute weekly sample, automate 740 minutes and retain 260 minutes "
-                    "of corrections, exceptions, and required review: 74% net repetitive-work "
-                    "removal. Include review within the remaining time rather than hiding it "
-                    "outside the denominator. This does not mean eliminating 74% of negotiation, "
-                    "fiduciary judgment, or relationship work. Freeze the sample definition for "
-                    "four weeks, record failures as labor, and compare like-for-like case "
-                    "complexity. The eleven mappings below are this chapter's operating "
-                    "decomposition, not eleven additional revenue streams. Only the supplied "
-                    "GIS mapping carries a canonical play identifier. Each mapping must "
-                    "produce either a sourced fact, a reviewed task, or a measurable "
-                    "distribution event. Give every event an owner and a terminal state. "
-                    "If the team cannot explain what happens when the automation stops, "
-                    "the process is not ready for unattended execution."
-                ),
-                (
-                    "Build the intake worker with Python's urllib.request, json, hashlib, "
-                    "sqlite3, and datetime modules. Use court-provided feeds, licensed "
-                    "data exports, or expressly permitted portal access; do not bypass "
-                    "authentication or access restrictions. Many probate courts lack stable "
-                    "APIs, so maintain a manual retrieval path and a source-specific "
-                    "polling schedule. Store jurisdiction, case number, document identifier, "
-                    "retrieval timestamp, source URL, content digest, and parser version. "
-                    "An idempotency key combining jurisdiction, case number, document "
-                    "identifier, and digest distinguishes a revised filing from a repeated "
-                    "notification. Download into quarantine, validate expected content type "
-                    "and size, then commit the evidence record and pending job in one "
-                    "SQLite transaction. Treat names as matching clues, never unique keys. "
-                    "An estate caption can resemble another case, and a decedent's "
-                    "mailing address may not identify estate-owned property. Require "
-                    "separate links between case, authorized representative, parcel, "
-                    "vesting document, and proposed service. Route low-confidence matches "
-                    "to the researcher before creating any contact task. Maintain an "
-                    "explicit deletion schedule and least-privilege access because public "
-                    "court availability does not justify unrestricted internal copying "
-                    "of sensitive estate records."
-                ),
-                (
-                    "Use an LLM as an evidence extractor behind a deterministic "
-                    "validator. Supply only necessary document excerpts, instruct the "
-                    "model to treat document text as data, and permit no outbound "
-                    "messages or transaction tools. Require a JSON object containing "
-                    "field value, document identifier, page reference, quoted supporting "
-                    "text, and extraction status. An absent fact becomes a review task "
-                    "rather than a guessed representative, deadline, or sale power. "
-                    "Validate types, allowed states, date formats, and source references "
-                    "in Python; reject extra keys and unsupported claims. Store the "
-                    "model identifier, prompt version, and input digest so reviewers "
-                    "can reproduce the decision path without retaining unnecessary "
-                    "personal details in logs. For webhook inputs, verify the provider's "
-                    "documented signature over the original bytes with hmac.compare_digest, "
-                    "enforce timestamp tolerance, and reject reused event identifiers. "
-                    "A valid signature proves message origin, not authority to sell "
-                    "property. Persist accepted events before acknowledging receipt and "
-                    "process them asynchronously. Limit retry counts and route exhausted "
-                    "jobs to a visible exception queue. The operations lead owns daily "
-                    "queue clearance; the brokerage lead owns any interpretation that "
-                    "could change who receives advice or what action proceeds."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven mapped operating plays with evidence outputs and recovery ownership",
-                "headers": [
-                    "Mapped play and bounded operating scope",
-                    "Automated input and concrete evidence output",
-                    "Human decision before consequential external action",
-                    "Failure fallback preserving useful service delivery",
-                ],
-                "rows": [
-                    [
-                        "Court docket alerts for newly filed estate matters",
-                        "Authorized court feed produces timestamped case change records",
-                        "Researcher confirms jurisdiction and correct estate identity",
-                        "Manual portal retrieval replaces unavailable authorized feed access",
-                    ],
-                    [
-                        "Estate representative authority extraction for brokerage intake",
-                        "Filed appointment documents produce source-linked authority summaries",
-                        "Broker and estate counsel resolve document limitations",
-                        "Suspend action tasks until current authority evidence arrives",
-                    ],
-                    [
-                        "Parcel ownership resolution across estate and recorder records",
-                        "Assessor references and recorded deeds produce parcel links",
-                        "Researcher separates tax mailing addresses from ownership",
-                        "Order title research when recorded ownership remains ambiguous",
-                    ],
-                    [
-                        "Executor qualification preparation using reviewed service needs",
-                        "Intake responses produce prioritized service preparation notes",
-                        "Broker confirms client identity and permitted engagement scope",
-                        "Replace inferred circumstances with direct authorized intake questions",
-                    ],
-                    [
-                        "Executor concierge coordination for property readiness tasks",
-                        "Approved work orders produce scheduled vendor task packets",
-                        "Representative approves scope and costs before vendor dispatch",
-                        "Offer alternate qualified vendors without changing authorized scope",
-                    ],
-                    [
-                        "Probate transaction checklists tied to verified authority",
-                        "Reviewed milestones produce owner-assigned transaction task dependencies",
-                        "Transaction lead verifies dates against controlling documents",
-                        "Pause dependent tasks and manually reconstruct affected milestones",
-                    ],
-                    [
-                        "Probate attorney referral flywheel through useful reporting",
-                        "Permissioned updates produce source-backed estate progress summaries",
-                        "Broker reviews recipient authority and relationship disclosures",
-                        "Send minimal factual updates through established secure channels",
-                    ],
-                    [
-                        "Programmatic county education pages for organic discovery",
-                        "Verified local procedures produce reviewed jurisdiction-specific drafts",
-                        "Qualified reviewer checks current rules and misleading claims",
-                        "Unpublish outdated pages until source checks are complete",
-                    ],
-                    [
-                        "Professional outbound sequences for relevant probate service relationships",
-                        "Business contact research produces relevance-ranked outreach drafts",
-                        "Staff checks suppression records and channel-specific requirements",
-                        "Use individual professional introductions instead of automated sequences",
-                    ],
-                    [
-                        "Permissioned resource sharing and executor service introductions",
-                        "Approved resource requests produce attributable opt-in introductions",
-                        "Team verifies sharing permission without exposing estate details",
-                        "Provide public educational resources without tracking private recipients",
-                    ],
-                    [
-                        "gis_landlocked_parcel_easement_assemblage: voluntary recorded-access and strip research",
-                        "GIS geometry and recorded instruments produce access questions",
-                        "Title counsel and surveyor verify rights before commitment",
-                        "Exercise diligence contingencies and offer survey-backed voluntary access services",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the source document the operating advantage",
-                "body": (
-                    "Experienced probate operators reduce rereading and premature outreach "
-                    "by preserving the exact evidence that supports each next action."
-                ),
-                "items": [
-                    "Maintain separate fields for appointment date, document retrieval date, and verified sale-authority status; a fresh download does not mean fresh authority.",
-                    "Index parcels by jurisdiction and assessor identifier, but preserve the recorded legal description for title and survey review.",
-                    "Ask referral attorneys which status changes actually reduce their follow-up work, then automate those updates rather than sending generic market newsletters.",
-                    "Keep a county-specific manual retrieval sheet beside every docket connector so staff can recover service during portal redesigns.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn authority, court-sale timing, and parcel access into reviewed checklists",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Model a transaction as dependencies, not a universal closing-date "
-                    "template. Begin with representative identity, appointment evidence, "
-                    "scope of authority, property ownership, engagement terms, and the "
-                    "jurisdiction's sale procedure. California illustrates why branching "
-                    "matters: Probate Code section 10501 distinguishes powers available "
-                    "under full versus limited authority, while sections 10580 through "
-                    "10592 address notice of proposed action procedures when applicable. "
-                    "Sales subject to court confirmation follow a different path; "
-                    "section 10308 addresses qualifying increased offers at confirmation. "
-                    "Do not generalize that path to every state or every California "
-                    "estate. Have estate counsel or the responsible qualified professional "
-                    "identify the applicable route and record the supporting instrument. "
-                    "Only then generate draft tasks for notices, valuation evidence, "
-                    "marketing, hearings, objections, and closing conditions. Never derive "
-                    "a controlling deadline solely from an LLM reading a docket caption. "
-                    "Use the actual order, applicable rule, service details, and reviewed "
-                    "calendar calculation. A new objection, amended order, or authority "
-                    "change invalidates dependent tasks and triggers re-review. This "
-                    "design prevents a polished automated checklist from advancing a "
-                    "sale that the representative cannot presently authorize."
-                ),
-                (
-                    "Define consequential outputs narrowly and explicitly: legal-authority "
-                    "conclusions, pricing recommendations, listing publication, offer "
-                    "submission, vendor spending, notices, and settlement instructions "
-                    "require the designated person's review. AI can assemble comparable "
-                    "property evidence, but the licensed professional selects adjustments "
-                    "and approves pricing. A concierge worker can prepare a cleanout "
-                    "scope, but the authorized representative approves disposal and "
-                    "spending before anything leaves the property. Store review identity, "
-                    "timestamp, evidence version, and approved action scope. Approval "
-                    "expires when material inputs change; it does not attach forever "
-                    "to the estate record. Use two-person verification for changed "
-                    "payment instructions, with an independently sourced callback "
-                    "number rather than contact details inside the change request. "
-                    "California Business and Professions Code section 10130 anchors "
-                    "the licensing boundary for brokerage activity; contractor titles "
-                    "do not expand permitted work. Route questions about fiduciary "
-                    "duties, conflicts, or contested authority to estate counsel. "
-                    "For acquisitions, disclose the operator's buyer-side interest "
-                    "and separate it from brokerage representation under the applicable "
-                    "duties. Never let an automated qualification score decide which "
-                    "family member controls the engagement or whether an estate should "
-                    "accept an affiliated buyer's offer."
-                ),
-                (
-                    "The required gis_landlocked_parcel_easement_assemblage play belongs "
-                    "inside this evidence system, not outside it. Overlay county "
-                    "parcel geometry with roads and candidate access corridors, then "
-                    "retrieve deeds, easement instruments, plats, and relevant title "
-                    "exceptions. Geometry screens opportunities; it cannot establish "
-                    "legal access, extinguishment, scope, maintenance obligations, or "
-                    "the right to transfer an easement. Illustratively, screen 100 "
-                    "parcels at $0.04 each for $4 of variable compute, review ten "
-                    "candidates for twenty minutes each at $45 per hour for $150, "
-                    "and purchase three record packets at $60 for $180. Initial "
-                    "screening costs $334 before title counsel, survey work, travel, "
-                    "or any option payment. If one candidate supports a voluntary "
-                    "strip option, a $2,000 option payment plus $3,000 of scoped "
-                    "diligence adds $5,000 of separate capital exposure; neither "
-                    "amount is brokerage revenue. Obtain title and survey review "
-                    "before negotiating recorded access terms, and use a documented "
-                    "diligence contingency with a realistic expiry. Do not obstruct "
-                    "existing access or manufacture pressure against neighbors. If "
-                    "rights or economics fail, exercise diligence contingencies and "
-                    "offer survey-backed voluntary access services instead. Recognize "
-                    "any separate service economics outside the canonical brokerage "
-                    "scorecard."
-                ),
-            ],
-            "table": {
-                "caption": "Six probate-specific review checkpoints with invalidation triggers",
-                "headers": [
-                    "Checkpoint and responsible human review owner",
-                    "Required evidence before advancing dependent work",
-                    "Automation permitted before the human decision",
-                    "Trigger requiring immediate suspension and re-review",
-                ],
-                "rows": [
-                    [
-                        "Representative authority reviewed by broker and estate counsel",
-                        "Current appointment documents and applicable authority limitations",
-                        "Extract source passages and prepare authority comparison",
-                        "New order changes powers or identifies contested authority",
-                    ],
-                    [
-                        "Sale procedure selected by responsible qualified reviewer",
-                        "Jurisdiction rules and documented authority determine sale route",
-                        "Draft separate confirmation and independent-administration task branches",
-                        "Objection or court direction changes the documented route",
-                    ],
-                    [
-                        "Marketing release controlled by responsible licensed broker",
-                        "Executed engagement and reviewed property facts support publication",
-                        "Prepare listing drafts with traceable factual source links",
-                        "Ownership discrepancy or material property fact changes emerge",
-                    ],
-                    [
-                        "Concierge spending authorized by the estate representative",
-                        "Written scope identifies vendor costs and property handling",
-                        "Collect quotes and organize approved scheduling alternatives",
-                        "Disputed personal property or increased spending changes scope",
-                    ],
-                    [
-                        "Access rights assessed by title counsel and surveyor",
-                        "Recorded instruments and survey evidence support proposed corridor",
-                        "Compare parcel shapes and flag possible access conflicts",
-                        "Instrument scope contradicts apparent roadway or mapped boundary",
-                    ],
-                    [
-                        "Settlement changes verified by two designated people",
-                        "Independent callback and matching transaction records confirm instructions",
-                        "Flag changed account details without transmitting estate funds",
-                        "Unverified recipient changes or urgent payment pressure appears",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before an external action",
-                "body": (
-                    "Stop the affected action when any check fails; continue unrelated "
-                    "research that does not depend on the disputed fact."
-                ),
-                "items": [
-                    "Verify the representative, property, current appointment evidence, and action-specific authority against source documents.",
-                    "Verify the governing sale route, applicable notices, reviewed dates, and unresolved objections with the responsible qualified reviewer.",
-                    "Verify the recipient, permitted channel, suppression status, and exact message version before releasing any outreach.",
-                    "Verify recorded access evidence, conflict disclosures, capital exposure, and signed diligence terms before committing to a parcel option.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the evidence event",
-                    "action": "Persist the source digest, jurisdiction, case identifier, and document version.",
-                    "detail": "Reject duplicate events while preserving revised filings as separate evidence versions.",
-                },
-                {
-                    "step": 2,
-                    "title": "Assemble the proposed checklist change",
-                    "action": "Generate source-linked draft tasks without sending messages or changing commitments.",
-                    "detail": "Mark affected dependencies and assign a named reviewer for every consequential change.",
-                },
-                {
-                    "step": 3,
-                    "title": "Review and release the bounded action",
-                    "action": "Record the reviewer, supporting evidence version, approved scope, and release timestamp.",
-                    "detail": "Recheck current evidence immediately before execution so stale reviews cannot authorize new facts.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile execution and recover exceptions",
-                    "action": "Confirm delivery or completion, then reconcile the action against the durable event ledger.",
-                    "detail": "Route uncertain outcomes to manual verification before retrying any externally visible action.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Build permissioned distribution loops around attorney usefulness and county accuracy",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The attorney referral loop starts with service reliability. Offer "
-                    "probate practices a concise, permissioned property-readiness report: "
-                    "verified authority status, occupancy questions, approved vendor "
-                    "milestones, marketing progress, and unresolved decisions. Share "
-                    "only information the client has authorized for that recipient. "
-                    "A Python worker can assemble the report from reviewed states, "
-                    "but the broker releases it after checking accuracy and tone. "
-                    "Measure introductions, accepted consultations, signed engagements, "
-                    "and closed commissions by originating relationship. An illustrative "
-                    "cohort of twenty attorney relationships producing two introductions "
-                    "each creates forty introductions; a 50% consultation rate, 50% "
-                    "engagement rate, and 60% closing rate yields six expected closings. "
-                    "At $17,000 retained commission each, that cohort contributes "
-                    "$102,000 toward, not on top of, the $510,000 Base case. Track "
-                    "actual cohorts over the four-to-eighteen-month first-deal horizon "
-                    "rather than declaring monthly projections earned revenue. Do not "
-                    "pay for referrals involving covered settlement services contrary "
-                    "to 12 U.S.C. section 2607 and Regulation X. Document bona fide "
-                    "services and any permitted arrangements independently; a newsletter "
-                    "label does not cure a disguised referral payment. Relationship "
-                    "quality comes from reducing execution uncertainty, not purchasing "
-                    "access to distressed families."
-                ),
-                (
-                    "Programmatic acquisition should mean structured publishing, not "
-                    "hundreds of interchangeable county pages. Build one reviewed "
-                    "page per genuinely supported jurisdiction, using current court "
-                    "links, filing terminology, local sale-path explanations, and "
-                    "a practical executor property-readiness worksheet. Publish source "
-                    "dates and an editorial owner; remove stale procedural claims "
-                    "when the source changes. Google Search Console identifies "
-                    "questions bringing qualified visitors, while first-party form "
-                    "events connect requests to permissioned follow-up. In an "
-                    "illustrative monthly cohort, 1,200 relevant visits at a 3% "
-                    "request rate produce 36 requests. A 25% consultation rate "
-                    "produces nine consultations; a 20% engagement rate produces "
-                    "1.8 expected engagements; a 60% eventual closing rate produces "
-                    "1.08 expected closings. These are planning expectations, not "
-                    "fractional transactions booked into revenue. Deduplicate people "
-                    "and estates across attorney and organic sources before "
-                    "attributing results. A shareable worksheet can generate a "
-                    "second visit from a sibling or adviser without revealing "
-                    "a decedent's address or case history. Avoid public client "
-                    "maps, fabricated testimonials, and implied court endorsement. "
-                    "If a page cannot answer a local question better than "
-                    "the underlying official source, link to that source and "
-                    "spend the production budget on a useful service workflow."
-                ),
-                (
-                    "Outbound automation should prioritize relevant professional "
-                    "relationships rather than converting docket exposure into "
-                    "indiscriminate family solicitation. Research probate attorneys, "
-                    "qualified property vendors, and other appropriate business "
-                    "contacts, then draft an individually relevant introduction "
-                    "with a specific operational resource. A public email address "
-                    "does not establish permission for every marketing channel. "
-                    "Commercial email must follow applicable CAN-SPAM requirements, "
-                    "including accurate routing information, required identification, "
-                    "a valid postal address, and a functioning opt-out process. "
-                    "Telephone and text programs require a separate assessment "
-                    "under 47 U.S.C. section 227, implementing rules, and "
-                    "applicable state requirements; do not assume manual and "
-                    "automated campaigns share identical obligations. Illustratively, "
-                    "100 reviewed professional emails costing two minutes each "
-                    "at $40 per hour consume $133.33 of labor. Twelve replies, "
-                    "four meetings, and one productive referral relationship "
-                    "would create useful learning, but no commission until a "
-                    "resulting transaction closes. Suppress opt-outs centrally "
-                    "before every send, cap frequency, and stop sequences after "
-                    "a reply or complaint. When delivery quality deteriorates, "
-                    "pause the campaign and inspect targeting, permission, and "
-                    "message substance instead of rotating identities or increasing "
-                    "volume. The useful loop is better service producing better "
-                    "introductions, not more automation producing more intrusion."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution loops with explicit attribution and recovery controls",
-                "headers": [
-                    "Distribution loop and intended recipient value",
-                    "Illustrative measurable conversion or production unit",
-                    "Release control protecting the relationship and record",
-                    "Failure response before increasing distribution volume",
-                ],
-                "rows": [
-                    [
-                        "Attorney progress reports reduce repetitive estate status questions",
-                        "Forty introductions yield six expected eventual closed transactions",
-                        "Broker checks client permission and report evidence freshness",
-                        "Correct inaccurate status and suspend the affected report",
-                    ],
-                    [
-                        "County procedure pages answer concrete executor preparation questions",
-                        "Twelve hundred visits yield thirty-six requested resource deliveries",
-                        "Editorial owner verifies current official jurisdiction source links",
-                        "Remove stale claims and publish reviewed replacement wording",
-                    ],
-                    [
-                        "Shareable executor worksheets support private family task coordination",
-                        "Measure attributed resource requests without exposing estate identities",
-                        "Recipients choose sharing rather than automatic family enrollment",
-                        "Provide an untracked public version for sensitive situations",
-                    ],
-                    [
-                        "Professional email introductions offer relevant property execution resources",
-                        "One hundred reviewed messages consume three-and-one-third labor hours",
-                        "Suppression checks and accurate sender details precede release",
-                        "Pause sequences after replies complaints or deteriorating relevance",
-                    ],
-                    [
-                        "Vendor service coordination creates useful reciprocal professional introductions",
-                        "Track completed work orders and voluntarily requested introductions",
-                        "Representative approves vendor scope without required referral exchange",
-                        "Replace unreliable vendors using documented service quality evidence",
-                    ],
-                    [
-                        "Closed transaction learning improves future preparation and attribution",
-                        "Reconcile each closed estate to one primary acquisition source",
-                        "Broker separates actual commissions from forecast pipeline estimates",
-                        "Resolve duplicate attribution before comparing channel acquisition costs",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Price every automated run and scale only after recovery works",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Cost the automation at its real unit boundary. Assume an "
-                    "illustrative completed evidence run uses 4,000 input tokens "
-                    "at $2 per million, 1,000 output tokens at $6 per million, "
-                    "and $0.004 of variable compute and storage: $0.018 per run. "
-                    "These are budgeting assumptions, not quoted vendor tariffs. "
-                    "At 6,000 runs monthly, variable machine cost is $108. If "
-                    "8% need three minutes of exception handling, 480 exceptions "
-                    "consume 24 hours; at $40 per hour, review costs $960. "
-                    "The resulting $1,068 is $0.178 per processed run before "
-                    "fixed software, paid court records, acquisition labor, "
-                    "ordinary transaction review, and supervision. If exceptions "
-                    "double to 16%, handling rises to 48 hours and $1,920; "
-                    "total variable machine-plus-exception cost becomes $2,028. "
-                    "That sensitivity matters more than trimming a fraction "
-                    "of a cent from inference. Record tokens, retrieval charges, "
-                    "retries, review minutes, and accepted outputs separately. "
-                    "Report both cost per processed run and cost per accepted "
-                    "evidence packet so failed output is not disguised as "
-                    "productivity. Use weekly samples to compare machine-extracted "
-                    "facts against source documents and to identify which "
-                    "parser, court feed, or document type generates rework."
-                ),
-                (
-                    "Reconcile improvements to the canonical scorecard without "
-                    "changing its revenue definition. Conservative retains $120,000 "
-                    "of annual brokerage commissions after splits, incurs $96,000 "
-                    "of total modeled costs, and leaves $24,000 owner net profit "
-                    "at 20% with 2 FT + 3 C. Base retains $510,000, incurs "
-                    "$369,750, and leaves $140,250 at 27.5% with the same "
-                    "team count. Scaled retains $900,000, incurs $585,000, and "
-                    "leaves $315,000 at 35% with 3 FT + 4 C. Illustrative "
-                    "closing bridges are eight closings at $15,000 retained "
-                    "each, thirty at $17,000, and fifty at $18,000 respectively; "
-                    "actual negotiated commissions and brokerage splits must "
-                    "replace those assumptions. Home sale prices, acquisition "
-                    "principal, escrow balances, and option proceeds do not "
-                    "belong in these brokerage revenue totals. Treat the "
-                    "cost envelopes as reconciliation constraints, not proof "
-                    "that local wages and contractor demand fit. Build an "
-                    "actual staffing budget with hours, payroll costs, and "
-                    "contractor scopes before committing spend. The $3,000 "
-                    "to $18,000 monthly operating range is not a substitute "
-                    "for all-in annual scenario costs. Allocate automation "
-                    "expenses within those totals; do not deduct them again "
-                    "after calculating canonical profit or count hypothetical "
-                    "labor savings as additional revenue."
-                ),
-                (
-                    "Prove recovery before expanding geography or outreach. "
-                    "Maintain a durable event ledger, bounded exponential "
-                    "backoff for transient failures, and a queue for jobs "
-                    "requiring manual intervention. Honor source rate limits "
-                    "and stop retrying permanent authorization failures. "
-                    "Reconcile source event counts against accepted records "
-                    "daily; a silent connector can look healthy while "
-                    "missing an amended order. Test restoring the database "
-                    "and document index from encrypted backups, then replay "
-                    "a controlled event set without duplicate messages or "
-                    "vendor bookings. An external send can succeed even "
-                    "when its acknowledgment is lost, so inspect provider "
-                    "delivery records before replaying uncertain actions. "
-                    "Keep a manual board containing current case owners, "
-                    "reviewed milestones, and upcoming deadlines for service "
-                    "continuity. Expand only after measured repetitive-work "
-                    "removal exceeds 70%, review queues clear within "
-                    "documented service targets, and source-backed accuracy "
-                    "holds across representative samples. Housing downturns "
-                    "reduce closing probability, family disputes increase "
-                    "review hours, and court delays extend cash collection. "
-                    "Stress the plan with fewer closings and longer "
-                    "holding periods rather than merely higher software "
-                    "usage. Move to the seven-person Scaled configuration "
-                    "when sustained workload supports it, preserving named "
-                    "owners for authority review, client decisions, and "
-                    "distribution quality instead of letting automation "
-                    "create ownerless obligations."
-                ),
-            ],
-            "table": {
-                "caption": "Unit economics, canonical reconciliation, and failure-recovery thresholds",
-                "headers": [
-                    "Measured operating unit or canonical scenario",
-                    "Exact planning math and recognized revenue boundary",
-                    "Cost or labor detail requiring operator attention",
-                    "Decision rule and concrete recovery action",
-                ],
-                "rows": [
-                    [
-                        "One completed evidence extraction run before human handling",
-                        "Four thousand input tokens plus one thousand output tokens",
-                        "Illustrative machine charges total $0.018 for each run",
-                        "Validate evidence references before accepting the extracted packet",
-                    ],
-                    [
-                        "Monthly workload with eight percent exception incidence",
-                        "Six thousand runs produce four hundred eighty exceptions",
-                        "Machine and exception handling together cost $1,068 monthly",
-                        "Inspect document categories causing repeated three-minute manual reviews",
-                    ],
-                    [
-                        "Monthly workload with sixteen percent exception incidence",
-                        "Six thousand runs produce nine hundred sixty exceptions",
-                        "Forty-eight review hours raise combined costs to $2,028",
-                        "Repair the failing connector before increasing processing volume",
-                    ],
-                    [
-                        "Conservative scenario using two full-time and three contractors",
-                        "Eight illustrative closings retain $120,000 after brokerage splits",
-                        "$96,000 total modeled costs leave $24,000 owner profit",
-                        "Validate actual staffing costs against the twenty-percent margin",
-                    ],
-                    [
-                        "Base scenario using two full-time and three contractors",
-                        "Thirty illustrative closings retain $510,000 after brokerage splits",
-                        "$369,750 total modeled costs leave $140,250 owner profit",
-                        "Preserve the 27.5% margin through reconciled actual expenses",
-                    ],
-                    [
-                        "Scaled scenario using three full-time and four contractors",
-                        "Fifty illustrative closings retain $900,000 after brokerage splits",
-                        "$585,000 total modeled costs leave $315,000 owner profit",
-                        "Expand staffing only when workload supports thirty-five-percent economics",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Automate the evidence trail, not the authority to act."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Baseline four weeks of repetitive work by task, including exceptions and human review, then calculate net minutes removed against the same task mix.",
-        "Build an authorized docket ingestion ledger with source digests, versioned evidence, idempotent jobs, signed-webhook verification, and a manual retrieval fallback.",
-        "Configure jurisdiction-specific transaction dependencies and require action-specific human review for authority, deadlines, marketing, vendor spending, and settlement changes.",
-        "Pilot one attorney reporting cohort and one reviewed county resource page, deduplicating estate attribution and enforcing channel-specific suppression controls.",
-        "Run the recorded-access GIS screening model with title and survey review, separate capital accounting, and enforceable diligence contingencies before any option commitment.",
-        "Reconcile retained commissions and total costs to all three canonical scenarios, then test backup restoration and uncertain-send recovery before expanding volume.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Business and Professions Code section 10130",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": (
-                "Requires the applicable real estate license for covered brokerage "
-                "activity; use it to bound staff and contractor responsibilities."
-            ),
-        },
-        {
-            "title": "California Probate Code section 10501",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10501.",
-            "relevance": (
-                "Identifies actions requiring court supervision and distinctions "
-                "associated with limited authority under independent administration."
-            ),
-        },
-        {
-            "title": "California Probate Code section 10580",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10580.",
-            "relevance": (
-                "Provides part of the notice of proposed action framework; determine "
-                "applicability before generating notice-related transaction tasks."
-            ),
-        },
-        {
-            "title": "California Probate Code section 10308",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10308.",
-            "relevance": (
-                "Addresses increased offers at a real property sale confirmation "
-                "hearing; distinguish confirmation sales from other authorized routes."
-            ),
-        },
-        {
-            "title": "12 U.S.C. section 2607 — Referral fees and fee splitting",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": (
-                "Restricts referral payments and unearned fee arrangements involving "
-                "covered settlement services, subject to statutory scope and exceptions."
-            ),
-        },
-        {
-            "title": "12 CFR section 1024.14 — Prohibition against kickbacks and unearned fees",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1024/section-1024.14",
-            "relevance": (
-                "Supplies Regulation X detail for evaluating referral arrangements "
-                "and payments claimed to compensate actual services."
-            ),
-        },
-        {
-            "title": "15 U.S.C. section 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Supports accurate sender information, required commercial-message "
-                "content, opt-out handling, and suppression controls for outbound email."
-            ),
-        },
-        {
-            "title": "47 U.S.C. section 227 — Restrictions on telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires channel-specific assessment before telephone or text "
-                "automation; equipment, purpose, recipient, and permission affect applicability."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'calling-and-converting-probate-leads',
+ 'question_prompt': 'What do you say on the phone to probate sellers, and how do you convert leads into '
+                    'appointments and offers?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Calling and Converting Probate Leads',
+ 'subtitle': 'Probate cold-call scripts, live role plays, inbound call handling, calling surviving '
+             "spouses, cold calling vs. mailing letters, rapport and winning heirs' trust, resource "
+             'packages and VA follow-up, working leads before they need to sell, and multi-option offer '
+             'structuring at appointments',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Probate callers across Probate Mastery, All The Leads, and the wholesale camp '
+                      "converge on one playbook: dial first, lead with the family's hardest problem, and "
+                      'sell the relationship rather than the house. Kevin Ward says one-shot sell calls '
+                      "miss 95 to 99 percent of opportunities, while Bruce Hill's call-first math produces "
+                      'about 50 conversations per 100 leads for roughly $400 of ISA cost versus $900 for '
+                      '600 mailers. The street mechanics are specific: an offshore VA scrubbing 25 '
+                      'prospects a day, three dials on day one, a resource package as the ask, follow-up '
+                      'inside 15 minutes, and no more than 50 calls per number per day before carriers '
+                      'flag it. The splits are sharp: concierge versus direct-to-sell openers, mail-first '
+                      "versus call-first, and Rick's 'half a mile from you' cover line versus full "
+                      'investor disclosure from Ward.',
+ 'key_metrics': [{'label': 'Live Contact Rate on Cold Probate Dials',
+                  'metric': 'Live Contact Rate on Cold Probate Dials',
+                  'value': 'About 10% of calls reach a person',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Dave Pinel's expectation for agents starting phones-first on probate lists: "
+                             "'You're going to get a hold of 10% of the calls you make.'",
+                  'source': 'Probate Mastery ([URZzrpQSKmU @ 00:55:44])'},
+                 {'label': 'Call-First Conversations per 100 Leads',
+                  'metric': 'Call-First Conversations per 100 Leads',
+                  'value': 'About 50 conversations for roughly $400 ISA cost vs. $900 for 600 mailers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bruce's month-one answer rate per 100 probate leads compared with a "
+                             'six-month mail campaign at $1.50 per piece that pulls inbound calls from '
+                             'about 5%.',
+                  'source': 'Probate Mastery ([y1TInRM-Flc @ 00:00:43])'},
+                 {'label': 'Expired Rate on Estate Listings',
+                  'metric': 'Expired Rate on Estate Listings',
+                  'value': '77% of probate listings expired in the local MLS',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Chad Corbett's tracking of inherited-home listings, used to justify calling "
+                             'as a duty because families lost six to twelve months on failed listings.',
+                  'source': 'Bill Gross, the LA Probate Expert ([-ZhpzThVK5o @ 00:01:39])'},
+                 {'label': 'Raw Leads to Closed Deals',
+                  'metric': 'Raw Leads to Closed Deals',
+                  'value': '100 raw leads (about 70 with real estate) yield about 1.5 deals',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bruce Hill's funnel: 20 to 25% of pipeline leads reach an appointment and "
+                             'about 15 to 20% close.',
+                  'source': 'Probate Mastery ([3UwWnM4igSY @ 00:22:52])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ["The loudest point of agreement is that the one-shot 'do you want to sell' "
+                              'call leaves most of the money on the table. Kevin Ward frames probate as a '
+                              'relationship business, arguing that a single sell-or-not call misses '
+                              "roughly 95 to 99 percent of the opportunity, because 'the story changes' as "
+                              'the estate moves forward [URZzrpQSKmU @ 00:05:36]. Bruce Hill backs that '
+                              'with personal numbers: the old direct script produced five to six deals a '
+                              "year, and repositioning as an estate 'concierge' who solves the family's "
+                              'entire new job is what changed the business [sVEhoM1KXUo @ 00:08:38]. Chad '
+                              'Corbett treats the calls as a duty rather than an intrusion, claiming about '
+                              '98 percent of these owners are likely to sell and that 77 percent of estate '
+                              'listings in the local MLS expired, wasting six to twelve months for '
+                              'families [-ZhpzThVK5o @ 00:01:07]. Even the wholesaler camp agrees on what '
+                              "not to say. Rick warns that opening with 'I saw this person pass away, I "
+                              "want to buy their house' gets the caller cursed out, so the script assumes "
+                              'ownership, never names the deceased, and lets motivated heirs volunteer the '
+                              "death themselves, which builds trust [utX5VR1nHk4 @ 00:01:41]. Ward's "
+                              'baseline prerequisite is patience: the relationship, not the property, is '
+                              'the asset being worked.',
+                              'The second consensus is that the phone is the fastest and most predictable '
+                              'lead channel, and mail is a supporting act. Hill ranks four channels for an '
+                              'operator who needs income quickly and puts cold calling first, noting that '
+                              "marketing 'is just less predictable' and that a fresh 700-letter drop went "
+                              'out in hope of about six calls [LNsr_JuZvn8 @ 00:43:14]. The call-first '
+                              'math per 100 leads is blunt: roughly 50 percent answer in month one, giving '
+                              'about 50 conversations for around $400 of ISA cost, against a six-month '
+                              'campaign of 600 mailers at $1.50 that runs $900 and pulls inbound calls '
+                              'from about 5 percent [y1TInRM-Flc @ 00:00:43]. When an All The Leads '
+                              "subscriber asked to mail first so the call could open with 'did you receive "
+                              "my letter,' the answer was that mailing first is 'semi valid' but mostly an "
+                              'excuse to postpone dialing; if the opener cannot stand without a mailer '
+                              'reference, the fix is practice and better scripts [omZ157LG-W8 @ 00:03:57]. '
+                              'Rick reaches the same conclusion from the wholesale side, calling the phone '
+                              "'the best one' and the cheapest option, while still crediting 45 to 50 cent "
+                              'mailers as technically effective and pointing to a mailer that drew a call '
+                              'on a $7M Dallas house [utX5VR1nHk4 @ 00:00:28].',
+                              "Every coach agrees the first minutes belong to the seller's emotion, not "
+                              'the property. Corbett pairs a probate-specific value proposition with '
+                              "'what's been the hardest thing for you so far,' deliberately keeping the "
+                              'conversation emotional rather than logical and leading sellers out of '
+                              "'probate quicksand' instead of pushing them [URZzrpQSKmU @ 00:07:40]. Jim "
+                              "on the All The Leads mastermind calls 'sorry for your loss' false sympathy "
+                              "and swaps in 'I'm sure this is a difficult time... what's been the hardest "
+                              "part?', while Elaine adds a pattern interrupt, the word 'families,' and a "
+                              "hard ban on saying 'I understand' [P5kUaYnRKbo @ 00:25:08]. In the inbound "
+                              "role play, Corbett's debrief ranks the order of operations: rapport, family "
+                              'dynamics, and motivation first, property details after, and no listing '
+                              'appointment without every decision-maker on the phone or in the room '
+                              '[z0GTjTG76ls @ 00:06:24]. Surviving spouses are not off-limits either. '
+                              'Corbett cites 88 percent of Americans over 65 planning to stay in their '
+                              'home for life against one of the fastest-growing nursing-home industries, '
+                              'and recounts a widow who swore she would never sell; two months later a '
+                              "stroke brought the daughter's call, and the house sold for $25,000 more "
+                              'than the price it had expired at with a Remax agent [1d9vQy5dUpU @ '
+                              '00:01:41].'],
+               'table': {'caption': 'Where the probate calling coaches line up: core principles, '
+                                    'execution, and reported payoff',
+                         'headers': ['Consensus Principle',
+                                     'Street-Level Execution',
+                                     'Reported Payoff or Risk',
+                                     'Expert Source'],
+                         'rows': [['Relationship beats the one-shot sell call every time',
+                                   'Keep calling and adding value as the estate story changes over months',
+                                   'One-shot sell calls miss roughly 95 to 99 percent of opportunities',
+                                   'Probate Mastery ([URZzrpQSKmU @ 00:05:36])'],
+                                  ['Position as an estate concierge, not a buyer',
+                                   'Solve attorney, belongings, court, winterizing, and mowing jobs for '
+                                   'the family',
+                                   'Old direct script yielded only five to six deals per year before '
+                                   'repositioning',
+                                   'Probate Mastery ([sVEhoM1KXUo @ 00:08:38])'],
+                                  ['Call first, then mail mainly the people already reached',
+                                   'Dial fresh leads in month one and reserve mail budget for real '
+                                   'conversations',
+                                   'About 50 conversations per 100 leads for roughly $400 of ISA cost',
+                                   'Probate Mastery ([y1TInRM-Flc @ 00:00:43])'],
+                                  ['Open with the hardest part, never canned condolences',
+                                   'Ask what has been the hardest part instead of saying sorry for your '
+                                   'loss',
+                                   'Keeps the call emotional and avoids false sympathy that prospects '
+                                   'instantly detect',
+                                   'All The Leads ([P5kUaYnRKbo @ 00:25:08])'],
+                                  ['Never pitch without every decision-maker present',
+                                   'Book only when all siblings join by phone, online meeting, or in '
+                                   'person',
+                                   'Siblings expecting 500 against a 350 CMA will feel you stole 150 grand',
+                                   'Probate Mastery ([z0GTjTG76ls @ 00:07:33])'],
+                                  ["Never lead with the death or 'I buy houses'",
+                                   'Assume ownership, skip the deceased, and let motivated heirs volunteer '
+                                   'the loss themselves',
+                                   'Direct death references get callers cursed out; volunteered disclosure '
+                                   'builds trust instead',
+                                   'More Flip with Rick ([utX5VR1nHk4 @ 00:01:41])'],
+                                  ['Call surviving spouses with empathy instead of skipping them',
+                                   'Offer senior movers, estate sale companies, clean-out crews, '
+                                   'photographers, and contractors',
+                                   'A widow who refused later led to a sale $25,000 above the expired '
+                                   'price',
+                                   'Probate Mastery ([1d9vQy5dUpU @ 00:01:41])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The conversion engine Bruce Hill runs on Probate Mastery starts with an '
+                              'offshore virtual assistant deliberately hired without phone-sales '
+                              "experience to avoid 'bad habits,' working roughly 300 probate leads a month "
+                              '[uTFKO8zRNsI @ 00:09:40]. Each day the VA spends 60 to 90 minutes building '
+                              'a 25-prospect list: drop records where the decedent did not own the '
+                              "residence, and park personal representatives living at the decedent's "
+                              'address as likely surviving spouses for a callback in three to four weeks. '
+                              'Non-answers get three calls on day one with a voicemail on the third, then '
+                              'two calls the next day, and personal representatives at a different address '
+                              'get dialed on day one [uTFKO8zRNsI @ 00:34:53]. The VA script never '
+                              "mentions real estate, the target is 80 percent agreeing to 'send me the "
+                              "package,' and hand-offs run about three leads a day, or 27 to 29 in two "
+                              'weeks. The stack is a lead-list login, county GIS and tax records, free '
+                              'homes.com ownership checks, and JustCall.io [uTFKO8zRNsI @ 00:40:37]. Speed '
+                              "matters after the yes: Hill wants the agent's follow-up call inside 15 "
+                              'minutes and never later than a day, otherwise wait until the package lands '
+                              '[3UwWnM4igSY @ 00:09:27]. The pipeline rules are fixed: never ask '
+                              'permission to call back, and never end a call without labeling the next '
+                              'one.',
+                              "Hill's soft opening confirms the personal representative, makes an empathy "
+                              'statement, then asks permission to continue, and it gets a yes 90 to 95 '
+                              'percent of the time; Hill counts 95 percent polite engagement as a success '
+                              'even when the prospect is not excited [6EHNu72T83s @ 00:09:39]. The selling '
+                              "question carries a built-in exit, 'or is it just way too early to tell?', "
+                              'so prospects never have to lie, followed by an offer to bring numbers, an '
+                              'estimate slipped into the packet, and a roughly ten-minute drive-by '
+                              "property preview [6EHNu72T83s @ 00:43:36]. Rick's wholesale script asks "
+                              "only 'are you the owner of this property and are you looking to sell it,' "
+                              'and when a heir asks how the information was obtained, trained VAs answer '
+                              "that a cash-buyer partner bought 'half a mile from you,' never framing it "
+                              "as probate [utX5VR1nHk4 @ 00:02:54]. For 'I have a realtor,' Hill guesses "
+                              "the connection out loud, 'probably a family member,' because people give "
+                              'more information correcting you than answering a question, then asks '
+                              "whether to bring the offer to them or to the realtor; 'bring it to me' "
+                              "means nothing is signed, and at open houses the variant is 'how does this "
+                              "one compare?' [uTFKO8zRNsI @ 00:53:32].",
+                              "Jim's capacity math on the All The Leads mastermind: 500 leads at three to "
+                              'four touches is about 2,500 dials; at roughly 30 dials an hour that is '
+                              'about 40 hours a month, and a power dialer cuts it to about 20, roughly an '
+                              'hour a day, worked in windows of 5 to 7pm, 8 to 11am, occasional 1 to 3pm '
+                              "slots, and Tim's Wednesday nights and Saturdays around 11am [KirkNi05zPU @ "
+                              '00:32:42]. The same session sets the carrier ceiling: more than 50 outbound '
+                              'calls a day from one number gets flagged as spam, so rotate Line2, '
+                              'JustCall, or Aircall numbers, register 10DLC and STIR/SHAKEN, and treat '
+                              'asterisked DNC numbers as a business-risk decision, with Tim citing TCPA '
+                              'fines up to $2,500 per incident [KirkNi05zPU @ 00:37:37]. Jim learned the '
+                              'flag problem expensively, burning hours on about 100 calls before '
+                              'discovering a Verizon flag, and a 954-400 RingCentral prefix went dead '
+                              "because it reads as the 'telemarketing capital'; the self-check is calling "
+                              'a non-contact and asking what displayed [P5kUaYnRKbo @ 00:07:30]. On yield, '
+                              "Hill's funnel turns 300 to 400 raw leads into about 100 pipeline leads a "
+                              'month, 20 to 25 percent of which reach an appointment and roughly 15 to 20 '
+                              'percent of which close, with a deliberately low barrier to entry for the '
+                              'pipeline [3UwWnM4igSY @ 00:22:09].'],
+               'table': {'caption': 'Exact calling, staffing, mail, and pricing parameters the '
+                                    'practitioners run',
+                         'headers': ['Mechanic',
+                                     'Exact Parameters Taught',
+                                     'Numbers Reported',
+                                     'Expert Source'],
+                         'rows': [['Daily VA list build from the monthly probate feed',
+                                   'Offshore VA scrubs non-owners and flags spouses living at the '
+                                   "decedent's address",
+                                   'Twenty-five prospects daily in 1 to 1.5 hours; about three hand-offs '
+                                   'per day',
+                                   'Probate Mastery ([uTFKO8zRNsI @ 00:09:40])'],
+                                  ['Non-answer dial cadence before mailing anything',
+                                   'Three calls on day one with voicemail, two calls the following day',
+                                   'Seven to ten total attempts; about half eventually answer, so only '
+                                   'half need mail',
+                                   'Probate Mastery ([uTFKO8zRNsI @ 00:39:20])'],
+                                  ['VA compensation and hiring channel',
+                                   'Hire direct offshore at lower pay with a one-to-two month probation '
+                                   'period',
+                                   'Direct $7 to $10 hourly; agencies mark up two to three times and pay '
+                                   '$4 to $5',
+                                   'Probate Mastery ([uTFKO8zRNsI @ 00:46:10])'],
+                                  ['Post-call mail blitz for unconverted leads',
+                                   'Call only for 30 to 45 days, then mail the survivors in a heavy '
+                                   'envelope',
+                                   'One hundred leads shrink to 40; five pieces sent seven to ten days '
+                                   'apart',
+                                   'Probate Mastery ([6EHNu72T83s @ 01:03:06])'],
+                                  ['Cash offer pricing at the appointment',
+                                   'Price cash off as-is value instead of ARV times 70 minus guessed '
+                                   'repairs',
+                                   'As-is value times 75 percent; a $100K as-is home yields a $75K cash '
+                                   'price',
+                                   'Probate Mastery ([5IPg3A5CXFU @ 00:02:28])'],
+                                  ['Monthly dial capacity for a solo agent',
+                                   'Five hundred leads at three to four touches each, ideally on a power '
+                                   'dialer',
+                                   'About 2,500 dials; 40 hours monthly at 30 per hour, about 20 with a '
+                                   'dialer',
+                                   'All The Leads ([KirkNi05zPU @ 00:32:42])'],
+                                  ['Carrier spam ceiling and number rotation',
+                                   'Rotate Line2, JustCall, or Aircall numbers and register 10DLC and '
+                                   'STIR/SHAKEN',
+                                   'More than 50 outbound calls daily from one number gets flagged as spam',
+                                   'All The Leads ([KirkNi05zPU @ 00:37:37])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Lines and pivots the coaches use to pull truth and appointments out '
+                                    'of guarded heirs',
+                           'body': 'These are the small verbal moves the practitioners credit with '
+                                   'extracting hidden information, saving stalled calls, and getting past '
+                                   'the attorney-is-handling-it wall.',
+                           'items': ["Guess the realtor connection wrong on purpose ('probably a family "
+                                     "member') because people reveal more correcting you than answering, "
+                                     'then ask whether to bring the offer to them or their realtor '
+                                     '[Probate Mastery — uTFKO8zRNsI @ 00:53:32]',
+                                     "Smoke out hidden heirs with 'no other family members that are going "
+                                     "to try to nose into this, are they?' so the heir feels like they are "
+                                     'tattling to an ally; Bruce Hill says it brings the truth out most of '
+                                     'the time [Probate Mastery — sVEhoM1KXUo @ 00:49:04]',
+                                     "When told 'the attorney's handling everything,' pivot to switching "
+                                     'the vacant-home insurance, since carriers can deny coverage after 30 '
+                                     "days of vacancy and Lloyd's can insure within an hour [All The Leads "
+                                     '— P5kUaYnRKbo @ 00:25:08]',
+                                     "Bundle the likely 'no' with the likely 'yes' in a single question so "
+                                     'the prospect can agree without feeling cornered [Probate Mastery — '
+                                     '3UwWnM4igSY @ 00:24:58]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Scrub and stage the daily call list',
+                              'action': 'Have the VA build 25 prospects a day, drop non-owners, and park '
+                                        'spouse-occupied homes for a three-to-four week callback.',
+                              'detail': 'Run roughly 300 monthly leads through county GIS, tax records, '
+                                        'and homes.com ownership checks, then dial different-address PRs '
+                                        'on day one [Probate Mastery — uTFKO8zRNsI @ 00:09:40]'},
+                             {'step': 2,
+                              'title': 'Open soft and ask for the resource package',
+                              'action': 'Confirm the PR, make an empathy statement, ask permission, and '
+                                        'offer the resource package without mentioning real estate.',
+                              'detail': 'Bruce Hill reports a 90 to 95 percent yes rate on the soft '
+                                        'opening and targets 80 percent of VA conversations ending in '
+                                        "'send me the package' [Probate Mastery — 6EHNu72T83s @ 00:08:29]"},
+                             {'step': 3,
+                              'title': 'Agent follow-up and next-call labeling',
+                              'action': 'Call the handed-off lead inside 15 minutes, never later than a '
+                                        'day, and log a dated next call plus next marketing piece.',
+                              'detail': 'If the window is missed, wait until the package lands; sort leads '
+                                        'into Discovery, Hot, Warm, and Nurture without ever asking '
+                                        'permission to call back [Probate Mastery — 3UwWnM4igSY @ '
+                                        '00:09:27]'},
+                             {'step': 4,
+                              'title': 'Mail non-answerers and fund real conversations',
+                              'action': 'In month two, mail only the people not reached and spend the '
+                                        'heaviest budget on conversations that read as sellers.',
+                              'detail': "Treat 'we don't even know what we're going to do yet' as a seller "
+                                        'signal; about 25 of every 50 conversations become a marketable '
+                                        'nurture pipeline [Probate Mastery — y1TInRM-Flc @ 00:01:59]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Bruce Hill and colleague David run opposite sequences on the same probate '
+                              'list. David mails first. Bruce calls first and does the math out loud. On '
+                              '100 leads, roughly 50% answer in month one, which buys 50 conversations for '
+                              'about $400 of ISA cost. A six-month campaign of 600 mailers at $1.50 apiece '
+                              'costs $900 and pulls inbound calls from about 5% [y1TInRM-Flc @ 00:00:43]. '
+                              'Bruce concedes that mail responders arrive hot while the phone '
+                              'conversations do not, but turns about 25 of the 50 into marketable '
+                              "pipeline: 'I do it my way because I get a bigger pipeline.' An All The "
+                              "Leads subscriber wanted to mail first so the opener could be 'did you "
+                              "receive my letter.' Bruce called that semi-valid but mostly an excuse to "
+                              'put off calling, and told the asker to practice and build better scripts '
+                              '[omZ157LG-W8 @ 00:03:57]. Rick of More Flip with Rick splits the '
+                              'difference. Calling is the cheapest channel, yet mailers at 45 to 50 cents '
+                              "are 'technically the best.' One mailer surfaced a $7M Dallas house near "
+                              "Mark Cuban's, even though the seller went with a higher bidder [utX5VR1nHk4 "
+                              "@ 00:00:28]. Hill's 2025 playbook sequences both: call only for 30 to 45 "
+                              'days, which takes 100 leads down to 40, then send a five-piece blitz spaced '
+                              '7 to 10 days apart [6EHNu72T83s @ 01:03:06].',
+                              "The script itself is contested. Kevin Ward argues that 'nothing is "
+                              "impossible to script' and likens a script to a golf club, which is useless "
+                              'until you learn to swing it. In the same session, Chad Corbett admits to '
+                              'resisting scripts in this niche because the conversation tree blows out '
+                              'within a few turns [URZzrpQSKmU @ 00:10:38]. Bruce Hill frames the core '
+                              'fork as speed versus pipeline. Lead with real estate and you get to deals '
+                              'faster, but people lie to you. Lead as a concierge and you move slower, but '
+                              'you fill the CRM [LNsr_JuZvn8 @ 00:43:14]. Wholesaler Rick runs the hard '
+                              "real-estate version for investors. Ask 'are you the owner of this property "
+                              "and are you looking to sell it,' assume ownership, never bring up the "
+                              'deceased, and give the person an exit if they are uncomfortable. Rick adds '
+                              'that motivated heirs volunteer the death on their own, and that builds '
+                              'trust. When a prospect asks how Rick got their information, the trained VA '
+                              'answer is that a cash-buyer partner bought a house half a mile away, and '
+                              'the call is never framed as probate [utX5VR1nHk4 @ 00:02:54]. Ward sits at '
+                              'the opposite pole on disclosure. An investor-agent names the buyer entity '
+                              'up front with no bait and switch, because hiding it signals a conflict '
+                              'while trust sits at a lifetime low [URZzrpQSKmU @ 00:18:12].',
+                              'Coaches also split on how much to unpack on the first call. In the All The '
+                              'Leads role play, Bruce Hill let the estate-sale objection slide and pivoted '
+                              'straight to a 15-minute walkthrough. Corbett argued the team should be '
+                              "presented as a 'golden safety net' because that spurs action. Corbett would "
+                              "then use personal-property equity, plus the brother's need for a mortgage "
+                              "to buy out the other heir, to trigger the prospect's own epiphany "
+                              "[et_msiK8rvo @ 00:11:01]. Family logistics cut both ways. Corbett's inbound "
+                              'rule is to skip any listing appointment until every decision-maker is on '
+                              'the phone or in person, and to email a PDF of the listing package ahead. '
+                              "Otherwise, siblings expecting 500 against a CMA of 350 will feel 'you just "
+                              "stole 150 grand' [z0GTjTG76ls @ 00:07:33]. Yet when Ashley booked a Panera "
+                              'meeting with estranged sisters joining on Zoom, Corbett warned it risked '
+                              'inflaming the conflict. The prescribed alternative was to hand the seller '
+                              'the solution: replace the slow attorney, pull the address and tax card, '
+                              'have an insurance agent call within the hour, then get the seller in front '
+                              'of an attorney to explain state succession [et_msiK8rvo @ 00:42:21]. On '
+                              "pricing, a questioner's cash tier of 70% of ARV minus repairs drew "
+                              'pushback. Most people cannot estimate repairs, and lumber jumped from $200 '
+                              'to $950 per board foot in 2020 [5IPg3A5CXFU @ 00:01:50].'],
+               'table': {'caption': 'Competing probate calling playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Lead sequence when a fresh probate list lands',
+                                   'Call first: 100 leads yield about 50 conversations for roughly $400 of '
+                                   'ISA cost',
+                                   'Mail first: 600 mailers at $1.50 cost $900 and pull about 5% inbound',
+                                   'Probate Mastery ([y1TInRM-Flc @ 00:00:43])'],
+                                  ['Opening line on the first cold call to the PR',
+                                   'Direct script naming the estate and asking if the family was thinking '
+                                   'about selling',
+                                   'Soft opening: confirm the PR, make an empathy statement, then ask '
+                                   'permission, which gets a yes 90 to 95% of the time',
+                                   'Probate Mastery ([6EHNu72T83s @ 00:09:39])'],
+                                  ['Calling surviving spouses still living in the home',
+                                   "The VA flags a PR living at the decedent's address as a likely spouse "
+                                   'and waits 3 to 4 weeks',
+                                   "Corbett says don't hesitate: a widow who said she would never sell "
+                                   'produced a deal about two months later',
+                                   'Probate Mastery ([uTFKO8zRNsI @ 00:09:40]); Probate Mastery '
+                                   '([1d9vQy5dUpU @ 00:01:41])'],
+                                  ['Free versus paid sourcing for the probate lead list',
+                                   'Hill sits in court hearings when there is time but no money to buy '
+                                   'leads',
+                                   'Kristen found hearings a poor return on time: three cases and paid '
+                                   'parking',
+                                   'Probate Mastery ([3UwWnM4igSY @ 00:18:17])'],
+                                  ['Disclosing who is actually buying the house',
+                                   'Ward: name the buyer entity up front, with no bait and switch',
+                                   "Rick's VAs cite a cash-buyer partner who bought half a mile away, "
+                                   'never framed as probate',
+                                   'Probate Mastery ([URZzrpQSKmU @ 00:18:12]); More Flip with Rick '
+                                   '([utX5VR1nHk4 @ 00:02:54])'],
+                                  ['How long to hold rapport before asking for the appointment',
+                                   'Old rule: keep prospects on the phone 12 minutes, a number the host '
+                                   'now calls arbitrary',
+                                   'Hill pivots to the appointment the moment the prospect voices '
+                                   'uncertainty about the property',
+                                   'Probate Mastery ([uTFKO8zRNsI @ 00:04:53]); All The Leads '
+                                   '([et_msiK8rvo @ 00:18:38])'],
+                                  ['Pricing the cash tier in a multi-option probate offer',
+                                   "Questioner's tier: 70% of ARV minus estimated repairs, mirroring the "
+                                   'investor standard',
+                                   "Respondent's tier: as-is value times 75%, landing within single-digit "
+                                   'points of the 70% formula',
+                                   'Probate Mastery ([5IPg3A5CXFU @ 00:02:28])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The dialer is the first place campaigns die quietly. Jim's carrier rule is "
+                              'blunt: dial more than 50 calls a day from one number and it gets flagged as '
+                              'spam. The fix is to work Line2, JustCall or Aircall numbers and finish '
+                              '10DLC and STIR/SHAKEN registration ahead of the August 1 deadline '
+                              '[KirkNi05zPU @ 00:37:37]. Jim learned the cost firsthand. A RingCentral '
+                              '954-400 number went unanswered because that prefix is the telemarketing '
+                              'capital, so Jim switched to a Rocky Mount, North Carolina number. Verizon '
+                              'still flags Jim about every other month, and getting a number unflagged '
+                              'means roughly 20 minutes on the phone with the carrier [P5kUaYnRKbo @ '
+                              '00:07:30]. The worst version is not knowing. Jim burned hours on about 100 '
+                              'calls before discovering a flag. The routine now is to call a non-contact '
+                              'and ask exactly what displayed on their screen before a session '
+                              '[P5kUaYnRKbo @ 00:08:24]. Local area codes help on the receiving end: San '
+                              'Francisco and Marin dialers use 415, and the North Bay uses 707. Dave '
+                              "Pinel's baseline keeps expectations honest even with a clean line: 'You're "
+                              "going to get a hold of 10% of the calls you make' [URZzrpQSKmU @ 00:55:44]. "
+                              'Pinel cited Hoss Pratt, who needed four months to land a first expired '
+                              'before stacking 61 expireds and FSBOs.',
+                              "Conversation failures cluster around value and grief. Ashley's call "
+                              'reluctance traced back to a fear of being exposed as ignorant, and the '
+                              "coaching verdict on a referral who went silent was brutal: 'He's not "
+                              "calling you back because you didn't provide any real value.' The prescribed "
+                              'recovery was to promise a 4:00 PM callback with the answer and lean on the '
+                              '10,000 to 11,000-member community for it [et_msiK8rvo @ 00:26:05]. Rick '
+                              "warns that opening with 'I saw this person pass away, I want to buy their "
+                              "house' gets you cursed out [utX5VR1nHk4 @ 00:01:41]. Corbett tells callers "
+                              'to expect to offend someone eventually, refuse to be pushy or unethical, '
+                              'and move on [1d9vQy5dUpU @ 00:03:11]. On the investor side, Randy in '
+                              'Arkansas reported that about 60% of heirs lied, four deals in a row. Title '
+                              'uncovered the hidden heirs almost every time through obituaries, Find a '
+                              'Grave and headstones. The fallout was delays of one to two weeks, and a '
+                              "title company refused a second affidavit from the same people. Bruce Hill's "
+                              'fix is a single question that makes heirs feel they are tattling to an '
+                              "ally: 'no other family members that are going to try to nose into this, are "
+                              "they?' Hill says it brings the truth out most of the time [sVEhoM1KXUo @ "
+                              '00:49:04].',
+                              "Economics checks separate busy from profitable. Corbett's earlier model ran "
+                              'about $8,000 a month in overhead and $140,000 gross, yet produced only '
+                              '$2,900 in adjusted gross income. Internet leads converted at about 1 in '
+                              "100, which is why Corbett called a lead-buying recommendation 'bad advice' "
+                              "[URZzrpQSKmU @ 00:31:14]. Bruce Hill's county filter is equally cold: skip "
+                              "counties that consistently run under 25 records. By Hill's math, 100 "
+                              'records yield about 60 to 70 with property and roughly 2 deals at a bare '
+                              'minimum, and 30 files yield 15-plus sales, of which capturing 20 to 30% '
+                              "means 1.5 to 3 deals [uTFKO8zRNsI @ 01:05:36]. Hill's funnel numbers from a "
+                              'separate session land in the same range: 100 raw leads, 70 of them carrying '
+                              'real estate, produce about 1.5 deals [3UwWnM4igSY @ 00:22:52]. Mail has its '
+                              'own floor. About 20% of competitors send a single letter, prospects forget '
+                              'within 30 days, and financially urgent sellers make up only 10 to 20% of '
+                              "the market. Hill's verdict: if you are going to mail only one or two "
+                              'letters, save your money [6EHNu72T83s @ 01:04:04]. Hill backs that with a '
+                              'heavy-envelope, five-piece sequence rather than a one-off drop, because a '
+                              'single letter is gone from memory before the estate is ready to move.'],
+               'table': {'caption': 'Firsthand traps reported by probate callers and the fixes they used',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Practitioner Fix',
+                                     'Expert Source'],
+                         'rows': [['Silent spam flag on the outbound calling number',
+                                   'Jim burned hours on about 100 calls before learning the number was '
+                                   'flagged',
+                                   'Call a non-contact and ask what displayed, then call the carrier to '
+                                   'clear it',
+                                   'All The Leads ([P5kUaYnRKbo @ 00:08:24])'],
+                                  ['Calling from a toxic telemarketing area-code prefix',
+                                   'A RingCentral 954-400 number went unanswered because of its '
+                                   'telemarketing reputation',
+                                   'Switched to a Rocky Mount, North Carolina number, and use local codes '
+                                   'like 415',
+                                   'All The Leads ([P5kUaYnRKbo @ 00:07:30])'],
+                                  ['Dialing numbers on the do-not-call registry',
+                                   'Each lead carries 3 to 5 numbers, and DNC numbers are marked with an '
+                                   'asterisk',
+                                   'Treat it as a business-risk decision; Tim pegs TCPA fines at up to '
+                                   '$2,500 per incident',
+                                   'All The Leads ([KirkNi05zPU @ 00:52:02])'],
+                                  ['Ending a call without delivering any real value',
+                                   'A referral never called back because the call gave them nothing useful',
+                                   'Promise a 4:00 PM callback with the answer and lean on the community',
+                                   'All The Leads ([et_msiK8rvo @ 00:26:05])'],
+                                  ['Heirs lying about who else holds an interest',
+                                   'About 60% lied; title refused a second affidavit, and closings slipped '
+                                   'one to two weeks',
+                                   'Ask whether other family members are going to try to nose into this',
+                                   'Probate Mastery ([sVEhoM1KXUo @ 00:50:10])'],
+                                  ['Cash offers built on repair estimates that blow up',
+                                   'Lumber went from $200 to $950 per board foot in five months of 2020',
+                                   'Price cash at as-is value times 75% instead of ARV minus repairs',
+                                   'Probate Mastery ([5IPg3A5CXFU @ 00:01:50])'],
+                                  ['Estate listings handed to agents who let them expire',
+                                   "77% of estate listings in Corbett's market expired, wasting six to "
+                                   'twelve months for families',
+                                   "Treat calling as a duty and let the sellers' needs dictate the "
+                                   'strategy',
+                                   'Bill Gross, the LA Probate Expert ([-ZhpzThVK5o @ 00:01:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Before You Scale the Dialer',
+                           'body': 'Each gate below comes from a mistake a practitioner paid for in burned '
+                                   'hours, lost appointments or delayed closings.',
+                           'items': ['Before every calling session, call a non-contact and confirm what '
+                                     'your caller ID displays, because Jim lost hours on about 100 calls '
+                                     'to an undetected flag [All The Leads — P5kUaYnRKbo @ 00:08:24].',
+                                     'Keep each number under about 50 dials a day and rotate Line2, '
+                                     'JustCall or Aircall numbers, or carriers will flag the line as spam '
+                                     '[All The Leads — KirkNi05zPU @ 00:37:37].',
+                                     'Do not walk into a listing appointment unless every decision-maker '
+                                     'is on the phone or in the room, and email the PDF listing package '
+                                     'ahead [Probate Mastery — z0GTjTG76ls @ 00:07:33].',
+                                     "Before relying on an heir's affidavit, ask whether other family "
+                                     'members are going to try to nose into this, because title finds '
+                                     'hidden heirs and refuses repeat affidavits [Probate Mastery — '
+                                     'sVEhoM1KXUo @ 00:49:04].']}}],
+ 'pull_quote': "'So if you're going to do mail one or two letters, save your money.' — Bruce Hill, Probate "
+               'Mastery (6EHNu72T83s @ 01:04:04).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Have a VA build a daily 25-prospect list: drop leads where the decedent did not own '
+                      "the residence, and hold PRs living at the decedent's address for 3 to 4 weeks as "
+                      'likely surviving spouses [Probate Mastery — uTFKO8zRNsI @ 00:09:40].',
+                      'Open with the soft script: confirm the PR, make an empathy statement, then ask '
+                      'permission to continue, which earns a yes 90 to 95% of the time [Probate Mastery — '
+                      '6EHNu72T83s @ 00:08:29].',
+                      'Never ask permission to follow up, and never finish a call without labeling the '
+                      'next call in a Discovery, Hot, Warm or Nurture pipeline [Probate Mastery — '
+                      'uTFKO8zRNsI @ 00:26:33].',
+                      'In month two, mail only the non-answerers, and spend the most mail money on '
+                      'conversations where you read between the lines that the person is a seller [Probate '
+                      'Mastery — y1TInRM-Flc @ 00:01:59].',
+                      "Replace 'sorry for your loss' with 'what's been the hardest part,' and when told "
+                      'the attorney is handling everything, pivot to switching insurance on the vacant '
+                      'house [All The Leads — P5kUaYnRKbo @ 00:25:08].',
+                      'Price the cash tier at as-is value times 75% and present it alongside the as-is '
+                      'listing and renovation options [Probate Mastery — 5IPg3A5CXFU @ 00:02:28].'],
+ 'statutory_citations': [{'title': 'Probate Mastery — Cold Calling Probate or Mailing Letters — Which Gets '
+                                   'Better Results? [00:00:43]',
+                          'url': 'https://www.youtube.com/watch?v=y1TInRM-Flc&t=43s',
+                          'relevance': 'Primary practitioner testimony on call-first versus mail-first '
+                                       'unit economics per 100 probate leads.'},
+                         {'title': 'Probate Mastery — Speaking to Probate Sellers with Kevin Ward, Chad '
+                                   'Corbett | Probate Script for Cold Calling [00:31:14]',
+                          'url': 'https://www.youtube.com/watch?v=URZzrpQSKmU&t=1874s',
+                          'relevance': 'Primary practitioner testimony on the script debate, investor '
+                                       'disclosure, overhead economics and contact rates.'},
+                         {'title': 'Probate Mastery — How I Convert Probate Leads Using a Resource Package '
+                                   '& Follow-Up Plan ( + VA execution tips) [01:05:36]',
+                          'url': 'https://www.youtube.com/watch?v=uTFKO8zRNsI&t=3936s',
+                          'relevance': 'Primary practitioner testimony on VA list building, call cadence, '
+                                       'follow-up labeling and county-size deal math.'},
+                         {'title': 'All The Leads — Rapport and Prospecting Tips for Probate Real Estate '
+                                   'Agents | Probate Mastermind #435 [00:37:37]',
+                          'url': 'https://www.youtube.com/watch?v=KirkNi05zPU&t=2257s',
+                          'relevance': 'Primary practitioner testimony on dial pacing, spam flags, carrier '
+                                       'registration and do-not-call exposure.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'URZzrpQSKmU',
+                       'title': 'Speaking to Probate Sellers with Kevin Ward, Chad Corbett | Probate '
+                                'Script for Cold Calling',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "You're going to get a hold of 10% of the calls you make.",
+                       'tip': "You're going to get a hold of 10% of the calls you make.",
+                       'timestamp': 3344,
+                       'timestamp_seconds': 3344,
+                       'timestamp_label': '[00:55:44]',
+                       'url': 'https://www.youtube.com/watch?v=URZzrpQSKmU&t=3344s',
+                       'markdown': '[00:55:44](https://www.youtube.com/watch?v=URZzrpQSKmU&t=3344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'et_msiK8rvo',
+                       'title': 'Probate Real Estate Scripts Training: Live Cold Call Role Play #59',
+                       'channel': 'All The Leads',
+                       'author': 'All The Leads',
+                       'text': "He's not calling you back because you didn't provide any real value.",
+                       'tip': "He's not calling you back because you didn't provide any real value.",
+                       'timestamp': 1565,
+                       'timestamp_seconds': 1565,
+                       'timestamp_label': '[00:26:05]',
+                       'url': 'https://www.youtube.com/watch?v=et_msiK8rvo&t=1565s',
+                       'markdown': '[00:26:05](https://www.youtube.com/watch?v=et_msiK8rvo&t=1565s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uTFKO8zRNsI',
+                       'title': 'How I Convert Probate Leads Using a Resource Package & Follow-Up Plan  ( '
+                                '+ VA execution tips)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'Number one is I never ask for permission to follow up on the phone.',
+                       'tip': 'Number one is I never ask for permission to follow up on the phone.',
+                       'timestamp': 1468,
+                       'timestamp_seconds': 1468,
+                       'timestamp_label': '[00:24:28]',
+                       'url': 'https://www.youtube.com/watch?v=uTFKO8zRNsI&t=1468s',
+                       'markdown': '[00:24:28](https://www.youtube.com/watch?v=uTFKO8zRNsI&t=1468s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uTFKO8zRNsI',
+                       'title': 'How I Convert Probate Leads Using a Resource Package & Follow-Up Plan  ( '
+                                '+ VA execution tips)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "Rule of thumb for me is I don't normally go after counties that are "
+                               'consistently under 25.',
+                       'tip': "Rule of thumb for me is I don't normally go after counties that are "
+                              'consistently under 25.',
+                       'timestamp': 3936,
+                       'timestamp_seconds': 3936,
+                       'timestamp_label': '[01:05:36]',
+                       'url': 'https://www.youtube.com/watch?v=uTFKO8zRNsI&t=3936s',
+                       'markdown': '[01:05:36](https://www.youtube.com/watch?v=uTFKO8zRNsI&t=3936s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6EHNu72T83s',
+                       'title': 'Probate Cold Calling Scripts That Work in 2025 (Watch This Before Your '
+                                'Next Call)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "So if you're going to do mail one or two letters, save your money.",
+                       'tip': "So if you're going to do mail one or two letters, save your money.",
+                       'timestamp': 3844,
+                       'timestamp_seconds': 3844,
+                       'timestamp_label': '[01:04:04]',
+                       'url': 'https://www.youtube.com/watch?v=6EHNu72T83s&t=3844s',
+                       'markdown': '[01:04:04](https://www.youtube.com/watch?v=6EHNu72T83s&t=3844s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-ZhpzThVK5o',
+                       'title': 'Chad Corbett Explains Why Probate Calls are Important',
+                       'channel': 'Bill Gross, the LA Probate Expert',
+                       'author': 'Bill Gross, the LA Probate Expert',
+                       'text': 'Sometimes the right thing is to get your checkbook out and just take it to '
+                               'closing in two or three days.',
+                       'tip': 'Sometimes the right thing is to get your checkbook out and just take it to '
+                              'closing in two or three days.',
+                       'timestamp': 273,
+                       'timestamp_seconds': 273,
+                       'timestamp_label': '[00:04:33]',
+                       'url': 'https://www.youtube.com/watch?v=-ZhpzThVK5o&t=273s',
+                       'markdown': '[00:04:33](https://www.youtube.com/watch?v=-ZhpzThVK5o&t=273s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z0GTjTG76ls',
+                       'title': 'Real Estate Cold Calling -  Inbound probate leads role play | Real Estate '
+                                'Coaching with Chad Corbett',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "Do not go on that listing appointment until they're either going to be on "
+                               'the phone or in person.',
+                       'tip': "Do not go on that listing appointment until they're either going to be on "
+                              'the phone or in person.',
+                       'timestamp': 453,
+                       'timestamp_seconds': 453,
+                       'timestamp_label': '[00:07:33]',
+                       'url': 'https://www.youtube.com/watch?v=z0GTjTG76ls&t=453s',
+                       'markdown': '[00:07:33](https://www.youtube.com/watch?v=z0GTjTG76ls&t=453s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y1TInRM-Flc',
+                       'title': 'Cold Calling Probate or Mailing Letters — Which Gets Better Results?',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'I do it my way because I get a bigger pipeline.',
+                       'tip': 'I do it my way because I get a bigger pipeline.',
+                       'timestamp': 102,
+                       'timestamp_seconds': 102,
+                       'timestamp_label': '[00:01:42]',
+                       'url': 'https://www.youtube.com/watch?v=y1TInRM-Flc&t=102s',
+                       'markdown': '[00:01:42](https://www.youtube.com/watch?v=y1TInRM-Flc&t=102s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'omZ157LG-W8',
+                       'title': 'Probate Cold Calling vs Direct Mail: Which Gets More Listings?',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'So, if I hate cold calling, I have to earn my way out of cold calling.',
+                       'tip': 'So, if I hate cold calling, I have to earn my way out of cold calling.',
+                       'timestamp': 150,
+                       'timestamp_seconds': 150,
+                       'timestamp_label': '[00:02:30]',
+                       'url': 'https://www.youtube.com/watch?v=omZ157LG-W8&t=150s',
+                       'markdown': '[00:02:30](https://www.youtube.com/watch?v=omZ157LG-W8&t=150s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LNsr_JuZvn8',
+                       'title': 'How to Work Probate Leads Before They Need to Sell',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'So the fastest way to get deals in probate, the fastest is in prospecting '
+                               'in the cold call.',
+                       'tip': 'So the fastest way to get deals in probate, the fastest is in prospecting '
+                              'in the cold call.',
+                       'timestamp': 2594,
+                       'timestamp_seconds': 2594,
+                       'timestamp_label': '[00:43:14]',
+                       'url': 'https://www.youtube.com/watch?v=LNsr_JuZvn8&t=2594s',
+                       'markdown': '[00:43:14](https://www.youtube.com/watch?v=LNsr_JuZvn8&t=2594s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KirkNi05zPU',
+                       'title': 'Rapport and Prospecting Tips for Probate Real Estate Agents | Probate '
+                                'Mastermind #435',
+                       'channel': 'All The Leads',
+                       'author': 'All The Leads',
+                       'text': "The general carrier rule is if you're dialing out more than 50 calls in a "
+                               "day they'll flag you as spam.",
+                       'tip': "The general carrier rule is if you're dialing out more than 50 calls in a "
+                              "day they'll flag you as spam.",
+                       'timestamp': 2257,
+                       'timestamp_seconds': 2257,
+                       'timestamp_label': '[00:37:37]',
+                       'url': 'https://www.youtube.com/watch?v=KirkNi05zPU&t=2257s',
+                       'markdown': '[00:37:37](https://www.youtube.com/watch?v=KirkNi05zPU&t=2257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P5kUaYnRKbo',
+                       'title': 'Post-Election Prospecting, Probate Calling Tips & New Holiday Mailers! | '
+                                'ATL Mastermind 602',
+                       'channel': 'All The Leads',
+                       'author': 'All The Leads',
+                       'text': "So I'm going to hit those guys seven times in 30 days.",
+                       'tip': "So I'm going to hit those guys seven times in 30 days.",
+                       'timestamp': 713,
+                       'timestamp_seconds': 713,
+                       'timestamp_label': '[00:11:53]',
+                       'url': 'https://www.youtube.com/watch?v=P5kUaYnRKbo&t=713s',
+                       'markdown': '[00:11:53](https://www.youtube.com/watch?v=P5kUaYnRKbo&t=713s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'utX5VR1nHk4',
+                       'title': 'The Perfect Cold Calling Script for Probate Leads in Wholesaling Real '
+                                'Estate',
+                       'channel': 'More Flip with Rick',
+                       'author': 'More Flip with Rick',
+                       'text': 'Are you the owner of this property and are you looking to sell it.',
+                       'tip': 'Are you the owner of this property and are you looking to sell it.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=utX5VR1nHk4&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=utX5VR1nHk4&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sVEhoM1KXUo',
+                       'title': 'Probate Real Estate Specialist Reveals How to Win Heirs’ Trust (Even When '
+                                'They Lie)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "And that'll bring the truth out most of the time.",
+                       'tip': "And that'll bring the truth out most of the time.",
+                       'timestamp': 2993,
+                       'timestamp_seconds': 2993,
+                       'timestamp_label': '[00:49:53]',
+                       'url': 'https://www.youtube.com/watch?v=sVEhoM1KXUo&t=2993s',
+                       'markdown': '[00:49:53](https://www.youtube.com/watch?v=sVEhoM1KXUo&t=2993s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3UwWnM4igSY',
+                       'title': 'How To Find Probate Real Estate Leads ( + Different Conversation '
+                                'Approaches)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "And I've got a really low barrier to entry for pipeline.",
+                       'tip': "And I've got a really low barrier to entry for pipeline.",
+                       'timestamp': 1307,
+                       'timestamp_seconds': 1307,
+                       'timestamp_label': '[00:21:47]',
+                       'url': 'https://www.youtube.com/watch?v=3UwWnM4igSY&t=1307s',
+                       'markdown': '[00:21:47](https://www.youtube.com/watch?v=3UwWnM4igSY&t=1307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5IPg3A5CXFU',
+                       'title': 'Probate appointments & deal structuring: Price options, repair costs, '
+                                'cash offers for probate deals',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "The problem with that formula is most people don't know how to estimate "
+                               'repairs.',
+                       'tip': "The problem with that formula is most people don't know how to estimate "
+                              'repairs.',
+                       'timestamp': 110,
+                       'timestamp_seconds': 110,
+                       'timestamp_label': '[00:01:50]',
+                       'url': 'https://www.youtube.com/watch?v=5IPg3A5CXFU&t=110s',
+                       'markdown': '[00:01:50](https://www.youtube.com/watch?v=5IPg3A5CXFU&t=110s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1d9vQy5dUpU',
+                       'title': 'Should you cold call a surviving spouse in real estate? Calling Probate '
+                                'Leads with Chad Corbett',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'At some point somebody will get offended.',
+                       'tip': 'At some point somebody will get offended.',
+                       'timestamp': 191,
+                       'timestamp_seconds': 191,
+                       'timestamp_label': '[00:03:11]',
+                       'url': 'https://www.youtube.com/watch?v=1d9vQy5dUpU&t=191s',
+                       'markdown': '[00:03:11](https://www.youtube.com/watch?v=1d9vQy5dUpU&t=191s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

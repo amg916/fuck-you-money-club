@@ -1,338 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-authority-to-retained-commission",
-      "chart_type": "process_flow",
-      "title": "From Probate Signal to Collected Commission",
-      "subtitle": "Five operating stages separate estate authority from brokerage execution.",
+      "diagram_id": "diag-01-filing-to-letters-roadmap",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Use the property's jurisdiction, current court orders, and actual appointment documents. California statutes illustrate routing rules, not uniform national procedure. Initial deal timing is 4–18 months.",
-      "caption": "Docket alerts identify possible work; verified authority permits the appropriate next step. Recognized operator revenue is retained brokerage commission after brokerage splits, never property sale value.",
+      "chart_type": "process_flow",
+      "title": "From Filing to Certified Letters",
+      "subtitle": "The court sequence that must finish before any estate property is listed",
+      "caption": "Nothing moves on an estate property until the court issues letters; the letters date is the date the property can be listed.",
+      "assumptions_note": "Timing figures are attributed practitioner claims. SwiftProbate cites 2 to 6 weeks for letters in straightforward cases and several months for busy courts or contested cases; California timelines run longer.",
+      "note": "Sequence per SwiftProbate, RLS Law Corporation, California Probate Real Estate Made Simple, and NOVA Real Estate Solutions.",
       "stages": [
         {
-          "label": "Detect and qualify",
-          "value": "Create one deduplicated estate opportunity record",
-          "numeric_value": 1.0,
-          "detail": "Use permitted court docket alerts and county property records to connect the estate, parcel, representative, and counsel. Record source dates; a filing alone does not establish sale intent."
+          "step": "01",
+          "label": "File in the county of domicile",
+          "value": "Step 1",
+          "detail": "Original will, certified death certificate, petition and fee; request full IAEA authority at filing to avoid repeat court approvals."
         },
         {
-          "label": "Verify authority",
-          "value": "Document who can authorize each transaction action",
-          "numeric_value": 2.0,
-          "detail": "Obtain appointment documents, current orders, and counsel's sale-path assessment. California Probate Code section 10501 requires different treatment for full and limited authority."
+          "step": "02",
+          "label": "Notify every heir and publish",
+          "value": "Step 2",
+          "detail": "List every heir and relative, including disinherited ones; the DE121 notice is mailed by a non-party with proof filed."
         },
         {
-          "label": "Engage and prepare",
-          "value": "Execute brokerage scope and property preparation plan",
-          "numeric_value": 3.0,
-          "detail": "Confirm licensing, agency relationships, occupancy, insurance, access, and vendor budgets. Executor concierge work coordinates property tasks without replacing the representative or estate counsel."
+          "step": "03",
+          "label": "Clear the hearing",
+          "value": "Step 3",
+          "detail": "An omitted heir is the most common avoidable mistake, and the judge will continue the hearing."
         },
         {
-          "label": "Market and transact",
-          "value": "Track offers alongside notices and court dependencies",
-          "numeric_value": 4.0,
-          "detail": "Use transaction checklists for disclosures, title exceptions, notice delivery, objections, and required confirmation. Avoid promising possession before occupancy and closing conditions resolve."
+          "step": "04",
+          "label": "Pull certified letters",
+          "value": "Step 4",
+          "detail": "Order at least 5 to 10 certified copies; some institutions refuse letters more than sixty to ninety days old."
         },
         {
-          "label": "Close and reconcile",
-          "value": "Match closing evidence to retained brokerage revenue",
-          "numeric_value": 5.0,
-          "detail": "Reconcile the closing statement, brokerage split, collection, and transaction expenses. Exclude escrow principal, estate proceeds, vendor reimbursements, and acquisition resale proceeds from this brokerage scorecard."
+          "step": "05",
+          "label": "Open the estate account under its EIN",
+          "value": "Step 5",
+          "detail": "Estate money runs only through this account, and debts are paid in statutory priority order to avoid personal liability."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-mature-cohort-conversion",
-      "chart_type": "funnel",
-      "title": "A Mature Cohort Producing 30 Closings",
-      "subtitle": "Nested estate-opportunity counts connect origination to the Base Case.",
+      "diagram_id": "diag-02-probate-lead-funnel",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative mature cohort, not observed conversion data or a first-year forecast. One record represents one estate-property opportunity. The 30 eventual closings are assumed to fall within the modeled revenue year after a sufficient pipeline-development period.",
-      "caption": "1,000 opportunities yield 30 closings: 3.0% end-to-end conversion. Thirty closings at $17,000 average retained commission produce $510,000 Base-Case annual gross operator revenue.",
+      "chart_type": "funnel",
+      "title": "What 100 Probate Leads Become",
+      "subtitle": "Per-100-lead figures reported by probate listing specialists",
+      "caption": "Probate inventory does not care about rates, but it rewards volume and follow-up; three touches do not do it.",
+      "assumptions_note": "Stages combine per-100-lead figures from different speakers and are not a single tracked cohort. Carolynn Castillo reports 20 to 40 leads a week per county.",
+      "note": "Figures from Probate Mastery (Bruce Hill) and Carolynn Castillo; the must-sell share is the Probate Mastery 10 to 15 percent estimate.",
       "stages": [
         {
-          "label": "Recorded opportunities",
-          "value": "1,000 distinct estate-property opportunities enter the cohort",
-          "numeric_value": 1000.0,
-          "detail": "Deduplicate docket and parcel records before counting. Exclude repeated filings, duplicate representatives, and unrelated properties from the same opportunity record."
+          "label": "Raw probate leads",
+          "value": 100,
+          "display": "100 leads",
+          "conversion": "Baseline",
+          "detail": "Most counties produce 20 to 40 leads a week, about 1 to 2 hours of calling."
         },
         {
-          "label": "Qualified opportunities",
-          "value": "400 opportunities satisfy documented service-fit criteria",
-          "numeric_value": 400.0,
-          "detail": "Retain 40% of the starting cohort after checking geography, real property ownership, a plausible sale need, and an identifiable representative or estate attorney."
+          "label": "Leads with real estate",
+          "value": 70,
+          "display": "About 70",
+          "conversion": "About 70% carry real estate",
+          "detail": "Bruce Hill counts about 70 of 100 raw leads holding real estate."
         },
         {
-          "label": "Substantive conversations",
-          "value": "120 qualified opportunities produce representative conversations",
-          "numeric_value": 120.0,
-          "detail": "Convert 30% of qualified opportunities into two-way discussions with the representative or authorized counsel. Count completed conversations, not unanswered calls or automated messages."
+          "label": "Live conversations, call-first",
+          "value": 50,
+          "display": "About 50",
+          "conversion": "About 50 per 100 leads",
+          "detail": "Roughly $400 of ISA cost versus $900 for 600 mailers."
         },
         {
-          "label": "Executed listings",
-          "value": "60 conversations convert into signed brokerage engagements",
-          "numeric_value": 60.0,
-          "detail": "Convert 50% of engaged opportunities after authority review, scope agreement, and property assessment. Signed listings remain exposed to disputes, withdrawals, and delayed court dates."
+          "label": "Estates that have to sell",
+          "value": 10,
+          "display": "About 10",
+          "conversion": "10 to 15% of leads",
+          "detail": "Probate Mastery estimates 10 to 15 of every 100 leads have to go."
         },
         {
-          "label": "Closed transactions",
-          "value": "30 listings close within the modeled revenue year",
-          "numeric_value": 30.0,
-          "detail": "Close 50% of signed listings during the modeled period. The remaining listings may carry forward or terminate; record neither as collected commission."
+          "label": "Closed deals",
+          "value": 1.5,
+          "display": "About 1.5",
+          "conversion": "About 1.5 per 100 raw leads",
+          "detail": "20 to 25% of pipeline reaches an appointment and about 15 to 20% close."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-base-case-profit-bridge",
-      "chart_type": "waterfall",
-      "title": "The $510,000 to $140,250 Profit Bridge",
-      "subtitle": "Four illustrative expense buckets reconcile to a 27.5% net margin.",
+      "diagram_id": "diag-03-step-up-and-confirmation-floor",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD per year. First and last bars are absolute totals; middle bars are signed expense movements. Cost allocations are illustrative, while revenue, margin, and owner net profit are canonical. Do not subtract brokerage splits again from retained revenue.",
-      "caption": "$510,000 − $180,000 − $90,000 − $60,000 − $39,750 = $140,250; $140,250 / $510,000 = 27.5%. Conservative: $120,000 revenue and $24,000 profit at 20%. Scaled: $900,000 revenue and $315,000 profit at 35%.",
-      "stages": [
+      "chart_type": "waterfall",
+      "title": "Step-Up Basis and the 90% Floor on an $800,000 House",
+      "subtitle": "Two reported calculations an heir runs before setting the asking price",
+      "caption": "A professional date-of-death appraisal erased a projected capital gains bill, and the referee value sets the lowest price a court will confirm.",
+      "assumptions_note": "The first three bars follow a Ventura County sale where the CPA had estimated roughly $180,000 in tax; the last three apply the 90% referee-value floor to the same figure.",
+      "note": "Step-up math per Tricia Garcia Real Estate; 90% court-confirmation floor per Matt McGilvray.",
+      "bars": [
         {
-          "label": "Retained gross revenue",
-          "value": "$510,000 annual commissions after brokerage splits",
-          "numeric_value": 510000.0,
-          "detail": "Opening absolute total. Model 30 completed brokerage transactions averaging $17,000 retained commission; underlying home prices and estate distributions are excluded."
+          "label": "Sale price",
+          "value": 800000,
+          "display": "$800,000",
+          "kind": "total"
         },
         {
-          "label": "Full-time personnel",
-          "value": "Subtract $180,000 for two full-time operating seats",
-          "numeric_value": -180000.0,
-          "detail": "Illustrative loaded compensation for the broker lead and operations lead. Any owner compensation included here is an expense distinct from the residual owner net profit."
+          "label": "Date-of-death basis",
+          "value": -800000,
+          "display": "-$800,000",
+          "kind": "deduction"
         },
         {
-          "label": "Contractor delivery",
-          "value": "Subtract $90,000 for three contracted delivery seats",
-          "numeric_value": -90000.0,
-          "detail": "Budget field brokerage support, transaction coordination, and vendor coordination. Include only operator-paid costs not already removed in calculating retained commissions."
+          "label": "Taxable gain",
+          "value": 0,
+          "display": "$0",
+          "kind": "result"
         },
         {
-          "label": "Origination and marketing",
-          "value": "Subtract $60,000 for attributable pipeline development",
-          "numeric_value": -60000.0,
-          "detail": "Allocate docket access, relationship development, property marketing, and targeted outreach. Measure spend against collected commissions rather than unsigned pipeline estimates."
+          "label": "Referee appraisal",
+          "value": 800000,
+          "display": "$800,000",
+          "kind": "total"
         },
         {
-          "label": "Operating overhead",
-          "value": "Subtract $39,750 for remaining operating expenses",
-          "numeric_value": -39750.0,
-          "detail": "Illustrative insurance, software, accounting, licensing, travel, and administrative expense allocation. Estate-funded repairs paid directly to vendors are outside operator revenue."
+          "label": "Allowed discount below appraisal",
+          "value": -80000,
+          "display": "-10% (-$80,000)",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net profit",
-          "value": "$140,250 residual profit at 27.5% net margin",
-          "numeric_value": 140250.0,
-          "detail": "Closing absolute total, not another additive movement. Total modeled expenses are $369,750; this bridge preserves the canonical Base-Case annual owner net profit."
+          "label": "Court-confirmation minimum",
+          "value": 720000,
+          "display": "$720,000",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-retained-commission-by-service-niche",
-      "chart_type": "horizontal_bars",
-      "title": "Five Service Niches, One Brokerage Revenue Rail",
-      "subtitle": "Illustrative retained commission per completed transaction, in USD.",
+      "diagram_id": "diag-04-overbid-dollar-ranges",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "These are planning assumptions, not market commission schedules or evidence that complexity causes higher fees. Compensation is negotiated for each engagement. Assign each closing to one primary niche so categories do not overlap.",
-      "caption": "Six closings in each niche produce 30 total transactions and 6 × ($10,000 + $14,000 + $17,000 + $20,000 + $24,000) = $510,000 retained revenue. No separate concierge fee or acquisition spread is included.",
-      "stages": [
+      "chart_type": "horizontal_bars",
+      "title": "Courtroom Overbid Dollars",
+      "subtitle": "Statutory opening bids and observed overbid amounts in Los Angeles and Las Vegas",
+      "unit": "USD",
+      "caption": "Limited authority sales must survive a confirmation hearing that doubles as a live auction; 1 in 6 Los Angeles confirmations drew an overbid.",
+      "assumptions_note": "Where a single figure was reported, min, max and typical are equal. For Las Vegas the typical value is set to the lower reported overbid because no midpoint was reported.",
+      "note": "Los Angeles figures per Bill Gross, the LA Probate Expert; opening bid formula per Win-Win Realtors TV; Las Vegas calendar per Mario Joyner.",
+      "bars": [
         {
-          "label": "Straightforward local estate",
-          "value": "$10,000 retained commission per completed property sale",
-          "numeric_value": 10000.0,
-          "detail": "Illustrative six-deal cohort contributes $60,000 annually. Prioritize clear access, manageable preparation, and an available local representative; still verify sale authority."
+          "label": "LA expected value per estate",
+          "min": 8000,
+          "max": 8000,
+          "typical": 8000,
+          "display": "About $8,000 (1 in 6 chance of roughly $48,000)"
         },
         {
-          "label": "Remote executor coordination",
-          "value": "$14,000 retained commission per completed property sale",
-          "numeric_value": 14000.0,
-          "detail": "Illustrative six-deal cohort contributes $84,000 annually. Coordinate access, photographs, vendor scheduling, and concise status reports for a representative living elsewhere."
+          "label": "Las Vegas February 10 overbid amounts",
+          "min": 15000,
+          "max": 19000,
+          "typical": 15000,
+          "display": "About $15,000 and $19,000 (2 of 10 confirmations)"
         },
         {
-          "label": "Preparation-intensive vacant home",
-          "value": "$17,000 retained commission per completed property sale",
-          "numeric_value": 17000.0,
-          "detail": "Illustrative six-deal cohort contributes $102,000 annually. Document vacancy coverage, security, utilities, cleanout scope, and who authorizes and pays each vendor."
+          "label": "Statutory opening overbid on a $500,000 contract",
+          "min": 25500,
+          "max": 25500,
+          "typical": 25500,
+          "display": "$525,500 opening bid (10% of first $10,000 plus 5% of balance)"
         },
         {
-          "label": "Court-dependent sale",
-          "value": "$20,000 retained commission per completed property sale",
-          "numeric_value": 20000.0,
-          "detail": "Illustrative six-deal cohort contributes $120,000 annually. Coordinate counsel, court calendars, and buyer expectations; extra procedural work does not establish a fixed fee entitlement."
+          "label": "LA median overbid, all sales",
+          "min": 47500,
+          "max": 47500,
+          "typical": 47500,
+          "display": "$47,500 (6.7% over accepted offer)"
         },
         {
-          "label": "Complex property brokerage",
-          "value": "$24,000 retained commission per completed property sale",
-          "numeric_value": 24000.0,
-          "detail": "Illustrative six-deal cohort contributes $144,000 annually. Route title, occupancy, and condition issues to appropriate specialists before treating an accepted offer as dependable revenue."
+          "label": "LA median overbid, properties over $1 million",
+          "min": 322000,
+          "max": 322000,
+          "typical": 322000,
+          "display": "$322,000"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-statutory-and-risk-routing",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before Committing the Estate",
-      "subtitle": "A sequential yes-or-redirect decision path, documented in the transaction file.",
+      "diagram_id": "diag-05-cleanout-gate-tree",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "California is the statutory example; replace it with the property's applicable law and actual court orders. Numeric values indicate check sequence, not probabilities or a measure of legal sufficiency.",
-      "caption": "Proceed only along a documented transaction path. Missing authority, unresolved objections, and conflicting interests change the workflow; they are not problems that automation can waive.",
-      "stages": [
+      "chart_type": "decision_tree",
+      "title": "Cleanout Gates Before Anything Leaves the House",
+      "subtitle": "Secure, authorize, document and search before disposal",
+      "caption": "Throw nothing away until a professional has looked; the market decides the value of the items, not the memories.",
+      "assumptions_note": "Gate order follows the shared sequence of probate realtors, haulers, liquidators and preservation contractors. Fee and return figures are attributed practitioner claims.",
+      "note": "Gates per JunkRemovalWeb, Gyd Path, Local Probate Help, Cesar Espinoza, Illinois Probate Solutions, BizMove, At Home with Jody, Smile Abroad, and JM Junk Removers.",
+      "nodes": [
         {
-          "label": "Authority and sale route",
-          "value": "Verified authority: continue; missing authority: return to counsel",
-          "numeric_value": 1.0,
-          "detail": "Inspect appointment documents and current orders. California Probate Code section 10501 distinguishes full from limited independent-administration authority; limited-authority real property sales require the applicable court-supervised route."
+          "gate": "G1",
+          "question": "Has the person with legal authority signed before a single item is loaded?",
+          "pass_next": "G2",
+          "fail_action": "Stop. Nobody loads a truck until that person signs; where two heirs inherit, get both signatures."
         },
         {
-          "label": "Licensing and referral economics",
-          "value": "Permitted role: continue; prohibited compensation: restructure engagement",
-          "numeric_value": 2.0,
-          "detail": "Confirm brokerage licensing under California Business and Professions Code section 10130. Screen covered referral arrangements under 12 U.S.C. section 2607 and 12 CFR section 1024.14; do not pay for prohibited steering."
+          "gate": "G2",
+          "question": "Is every room, garage, shed and closet photographed or on video?",
+          "pass_next": "G3",
+          "fail_action": "Shoot the preliminary inventory before any contents move."
         },
         {
-          "label": "Notices, objections, and closing readiness",
-          "value": "Requirements satisfied: continue; unresolved conditions: suspend closing commitments",
-          "numeric_value": 3.0,
-          "detail": "Have counsel identify applicable notice duties under California Probate Code section 10580 and the effect of any objection. Resolve title exceptions, occupancy, and required court action before committing to a closing date."
+          "gate": "G3",
+          "question": "Have books, coat pockets, high shelves, tins and shoeboxes been searched?",
+          "pass_next": "G4",
+          "fail_action": "Run the one-pass search; one hoarder-home sort turned up $5,000 in jewelry and nearly $30,000 in cash."
         },
         {
-          "label": "Conflicts and principal acquisitions",
-          "value": "Independent review completed: proceed; unresolved conflict: separate transaction paths",
-          "numeric_value": 4.0,
-          "detail": "Document buyer affiliations and agency interests. California Probate Code section 9880 restricts representative purchases subject to statutory exceptions. Route affiliated acquisitions for counsel review; brokerage disclosures alone may be insufficient."
+          "gate": "G4",
+          "question": "Has a professional looked at valuable or unique items?",
+          "pass_next": "Choose the sale route: DIY ($400 in expenses turned into well over $10,000) or a company (base minimum plus 25-50% or more), then quote cleanout as load price plus labor.",
+          "fail_action": "Hire an appraiser for valuable or unique items before disposal."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-five-to-seven-person-pod",
-      "chart_type": "org_architecture",
-      "title": "Five Core Seats, Two Conditional Expansion Seats",
-      "subtitle": "Conservative and Base: 2 FT + 3 C; Scaled: 3 FT + 4 C.",
+      "diagram_id": "diag-06-probate-wholesale-architecture",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each stage describes one potential person. Numeric values show Base-Case active headcount: five ones and two zeros. Activate both expansion seats for the seven-person Scaled configuration. Estate counsel and title providers are external counterparties.",
-      "caption": "The five-person pod supports the $120,000 Conservative and $510,000 Base revenue scenarios. The seven-person pod supports the $900,000 Scaled scenario; additional seats alone do not establish demand or commission production.",
-      "stages": [
+      "chart_type": "org_architecture",
+      "title": "The Pre-Completion Probate Wholesale Setup",
+      "subtitle": "One operator, fresh filings, and the parties that make the contract close",
+      "caption": "Reach the personal representative within 30 days of filing and contract before probate completes; Flip With Rick reports an average near $47,000 per probate deal.",
+      "assumptions_note": "Team size was not reported. Practitioners split on attorneys: Flip With Rick bypasses them as billable-hour blockers, while Al Nicoletti treats them as closing partners.",
+      "note": "Structure per Flip With Rick, Rick Ginn, and Michael Franke; Rick Ginn pegs probate spreads at 3 to 3.5 times a normal assignment.",
+      "center": {
+        "role": "Probate wholesaler",
+        "headcount": "Not reported",
+        "focus": "Warm calls at 80/20 or 90/10 listening, no price on the first call, and a price-deposit-terms anchor locked with the PR."
+      },
+      "spokes": [
         {
-          "label": "Broker lead — FT",
-          "value": "One core full-time owner of brokerage execution",
-          "numeric_value": 1.0,
-          "detail": "Own agency relationships, listing strategy, negotiations, and brokerage supervision. Maintain a weekly exception review covering authority, disputes, and stalled transactions."
+          "role": "Personal representative",
+          "type": "Seller",
+          "kpi": "Letters of administration confirmed; contract re-papered with a new date after they issue; EMD of at least $500."
         },
         {
-          "label": "Operations lead — FT",
-          "value": "One core full-time owner of pipeline control",
-          "numeric_value": 1.0,
-          "detail": "Maintain docket alerts, CRM records, checklist versions, cash forecasts, and reporting. Escalate missing evidence rather than marking incomplete statutory tasks as finished."
+          "role": "Courthouse or XLeads list pull",
+          "type": "Lead source",
+          "kpi": "Filings from the last 30 days only, never older than 90."
         },
         {
-          "label": "Field brokerage support — C",
-          "value": "One core contractor handling authorized licensed fieldwork",
-          "numeric_value": 1.0,
-          "detail": "Provide appropriately licensed showing, inspection-access, and market-support services within the brokerage's supervision. Confirm worker classification under applicable law."
+          "role": "Cash buyer",
+          "type": "Exit",
+          "kpi": "May pay $10,000 more for a faster close; $50 to $75 rekey plus lockbox lets buyers tour without an out-of-state PR."
         },
         {
-          "label": "Transaction coordinator — C",
-          "value": "One core contractor maintaining transaction evidence",
-          "numeric_value": 1.0,
-          "detail": "Track deadlines, signatures, disclosures, and closing records. Administrative coordination does not authorize independent brokerage activity or interpretation of disputed estate powers."
-        },
-        {
-          "label": "Property vendor coordinator — C",
-          "value": "One core contractor organizing property preparation",
-          "numeric_value": 1.0,
-          "detail": "Schedule authorized cleanouts, security checks, repairs, and photography. Keep vendor scopes and estate payment responsibility separate from operator commission accounting."
-        },
-        {
-          "label": "Additional licensed producer — FT",
-          "value": "Zero Base seats; add one Scaled full-time producer",
-          "numeric_value": 0.0,
-          "detail": "Expand to three full-time people when collected revenue, active listings, and response-time pressure support the added fixed cost and supervisory workload."
-        },
-        {
-          "label": "Additional coordination support — C",
-          "value": "Zero Base seats; add one Scaled contractor",
-          "numeric_value": 0.0,
-          "detail": "Expand to four contractors for greater docket, document, and vendor workload. Assign a defined service scope instead of creating overlapping ownership of deadlines."
+          "role": "Title company and real estate attorney",
+          "type": "Closing partner",
+          "kpi": "Sale process verified in order through the state probate court site, the title company, then the attorney."
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate Capital Before the First Closing",
-      "subtitle": "Four buckets compare $15,000, $50,000, and $100,000 startup plans.",
+      "diagram_id": "diag-07-medicaid-home-equity-caps",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values encode the illustrative $50,000 allocation. Each stage also states its corresponding $15,000 and $100,000 allocation. These are startup funding plans, not additional revenue scenarios or assumed annual expense budgets.",
-      "caption": "Low plan: $4,000 + $5,000 + $3,000 + $3,000 = $15,000. Middle plan: $12,000 + $16,000 + $10,000 + $12,000 = $50,000. High plan: $24,000 + $32,000 + $20,000 + $24,000 = $100,000.",
-      "stages": [
+      "chart_type": "stacked_comparison",
+      "title": "Long-Term Care Medicaid Home Equity Caps",
+      "subtitle": "Current limits versus the flat cap starting January 1, 2028",
+      "total_range": "$752,000 to $1.13 million",
+      "caption": "Home equity must sit under the limit to qualify for long-term care Medicaid unless a spouse or a minor or disabled child lives there.",
+      "assumptions_note": "The 2028 cap is reported at $1 million with no inflation increases; DC's limit drops under it. Each bucket is a single reported figure, so low and high are equal.",
+      "note": "Caps reported by Marc Cormier.",
+      "buckets": [
         {
-          "label": "Business readiness and systems",
-          "value": "$12,000 middle-plan allocation for setup and operating systems",
-          "numeric_value": 12000.0,
-          "detail": "Low: $4,000; middle: $12,000; high: $24,000. Fund licensing-related setup, insurance deposits, devices, CRM, docket access, document storage, and transaction checklist configuration."
+          "label": "Maryland today",
+          "low": 752000,
+          "high": 752000,
+          "notes": "$752,000 current limit."
         },
         {
-          "label": "Origination and relationship development",
-          "value": "$16,000 middle-plan allocation for measurable pipeline creation",
-          "numeric_value": 16000.0,
-          "detail": "Low: $5,000; middle: $16,000; high: $32,000. Fund targeted outreach, attorney relationship work, property-market materials, and source attribution without purchasing prohibited referrals."
+          "label": "Virginia today",
+          "low": 752000,
+          "high": 752000,
+          "notes": "$752,000 current limit; a broader-estate recovery state."
         },
         {
-          "label": "Delivery mobilization",
-          "value": "$10,000 middle-plan allocation for contracted execution capacity",
-          "numeric_value": 10000.0,
-          "detail": "Low: $3,000; middle: $10,000; high: $20,000. Fund contractor onboarding, field coordination, transaction setup, and operator-paid listing preparation under documented scopes."
+          "label": "DC today",
+          "low": 1130000,
+          "high": 1130000,
+          "notes": "$1.13 million current limit, which falls under the 2028 cap."
         },
         {
-          "label": "Liquidity reserve",
-          "value": "$12,000 middle-plan allocation for delays and operating continuity",
-          "numeric_value": 12000.0,
-          "detail": "Low: $3,000; middle: $12,000; high: $24,000. Preserve cash for court delays and slow collections. With 4–18 months to a first deal, test actual burn before hiring; these reserves do not establish complete runway."
+          "label": "All three from January 1, 2028",
+          "low": 1000000,
+          "high": 1000000,
+          "notes": "$1 million with no inflation increases."
         }
       ]
     },
     {
-      "diagram_id": "diag-08-thirty-day-launch-sprint",
-      "chart_type": "timeline_roadmap",
-      "title": "Build Transaction Readiness in Thirty Days",
-      "subtitle": "Four weekly milestones create a usable operating system, not instant closings.",
+      "diagram_id": "diag-08-senior-transition-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate milestone end days. The 30-day sprint builds capability and an initial pipeline; the canonical 4–18-month time to first deal remains the planning horizon.",
-      "caption": "Finish the month with an authority-aware workflow, traceable opportunities, rehearsed transaction controls, and a cash-backed capacity plan. Do not count preparation activity as earned revenue.",
-      "stages": [
+      "chart_type": "timeline_roadmap",
+      "title": "Senior Transition Sale Roadmap",
+      "subtitle": "Authority first, then the house, then the capital",
+      "caption": "Sheri Coleman reports as short as 6 weeks from family meeting to closing once a power of attorney and a single family contact are in place.",
+      "assumptions_note": "The four weeks are a sequencing frame, not a reported duration; actual timing depends on asking price and finding the right buyer.",
+      "note": "Sequence per Florida Realtors YouTube, Dale Corpus, The Cobb Home Team, Ariana Jay, Brett Chotkevys, Serg Lupescu, and Unit Math.",
+      "weeks": [
         {
-          "label": "Days 1-7",
-          "value": "Define jurisdiction, brokerage scope, and authority evidence",
-          "numeric_value": 7.0,
-          "detail": "Select one service geography; confirm licensing and supervision; map local sale procedures with counsel. Build intake fields for appointment documents, authority limits, notice requirements, property occupancy, and source provenance."
+          "week": "Week 1",
+          "title": "Lock legal authority",
+          "deliverable": "Power of attorney or the senior signing, plus one designated family contact.",
+          "gate": "No senior listing without both."
         },
         {
-          "label": "Days 8-14",
-          "value": "Configure docket alerts and deduplicated opportunity records",
-          "numeric_value": 14.0,
-          "detail": "Configure permitted alerts, CRM ownership, and document access. Review an initial 25 opportunity records for duplicate parcels, incorrect representatives, and unsupported sale assumptions; correct the workflow before expanding collection."
+          "week": "Week 2",
+          "title": "Payoff and pricing",
+          "deliverable": "Reverse mortgage balance confirmed, since it is paid off at closing; family educated on current market conditions.",
+          "gate": "No overpriced list that stalls and frustrates the family."
         },
         {
-          "label": "Days 15-21",
-          "value": "Rehearse the transaction path and contractor handoffs",
-          "numeric_value": 21.0,
-          "detail": "Run a synthetic estate sale through authority review, property preparation, listing, notices, closing, and commission collection. Test a family objection and a delayed hearing; verify that both trigger a revised schedule and cash forecast."
+          "week": "Week 3",
+          "title": "Fund the care",
+          "deliverable": "Bay Area assisted living or memory care at $5,000 to $12,000-plus per month, often funded by the home sale.",
+          "gate": "Two years of private pay saved, with financial and medical POA and a will or trust."
         },
         {
-          "label": "Days 22-30",
-          "value": "Launch measured outreach and review economic readiness",
-          "numeric_value": 30.0,
-          "detail": "Begin targeted representative and attorney outreach using applicable channel rules. Review cohort definitions, contractor capacity, startup reserve, and retained-commission accounting. Publish a weekly dashboard separating conversations, listings, closings, collected revenue, and unresolved court dependencies."
+          "week": "Week 4",
+          "title": "Redeploy capital",
+          "deliverable": "Residential assisted living targets $3,000 to $10,000 per client per month; a $240 rough site plan clears zoning questions.",
+          "gate": "Zoning confirmed for the exact address and debt service coverage near 1.2."
         }
       ]
     }

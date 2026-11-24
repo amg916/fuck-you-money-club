@@ -1,689 +1,837 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for specialty finance brokerage?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Retained Equipment, AR, SBA & Bridge Origination Fees: Cohort CAC, Commission Reversals, Lender Payout Locks & Cash Runway",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays "
-        "with a 89/100 Money-to-Manpower Score. Its economics depend on retained fees, not "
-        "the principal moving through lender accounts. The canonical annual owner profits "
-        "are $30,000 Conservative, $196,000 Base, and $450,000 Scaled, supported by retained "
-        "revenue of $120,000, $560,000, and $1,000,000. This chapter reconstructs those outcomes "
-        "through funded cohorts, acquisition spend, contractor delivery, commission scrubs, "
-        "and collection delays. It also separates specialty-finance placement income from "
-        "the underlying legal, healthcare, and property economics in three mapped plays. "
-        "Use the waterfall to price files, reserve reversals, negotiate payout terms, and "
-        "size working capital before expanding lender-dependent volume."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "25% net margin; $30,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "35.0% net margin; $196,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "45% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Price the funded cohort, not the borrowed principal",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the revenue ledger around one funded placement with an enforceable fee "
-                    "agreement, not one application or lender introduction. The illustrative "
-                    "Conservative cohort contains ten closings averaging $650,000 of principal "
-                    "and a 2% scheduled commission: $6.5 million financed produces $130,000 "
-                    "before commission scrubs. Base contains forty $750,000 closings at 2%, "
-                    "producing $600,000 before scrubs on $30 million financed. Scaled contains "
-                    "sixty $900,000 closings at 2%, producing $1,080,000 before scrubs on "
-                    "$54 million financed. Those principal amounts belong to borrowers and "
-                    "lenders; none enters operator revenue. Deduct $10,000, $40,000, and "
-                    "$80,000 respectively for modeled fee reductions, reversals, and collection "
-                    "adjustments to reach the canonical retained revenue. The 2% fee is a "
-                    "model input, not an asserted market standard or permission to charge "
-                    "every product identically. Equipment leases, receivables facilities, SBA "
-                    "loans, and bridge debt require separate agreements and earning triggers. "
-                    "Track whether compensation attaches to commitment, initial funding, "
-                    "drawn balance, or renewal. An undrawn AR line cannot silently receive "
-                    "the same fee treatment as cash funded at closing. Keep executed "
-                    "agreements and lender settlement statements beside each ledger entry."
-                ),
-                (
-                    "Use reviewed files as the acquisition denominator before switching to funded "
-                    "deals for contribution analysis. Assume forty, 160, and 240 reviewed files "
-                    "in the three cases, with 25% eventually funding. Annual acquisition spend "
-                    "of $18,000, $84,000, and $140,000 therefore costs $450, $525, and "
-                    "$583.33 per reviewed file, while funded CAC becomes $1,800, $2,100, "
-                    "and $2,333.33. These are different measures, and a dashboard that labels "
-                    "both CAC conceals failed-closing expense. Attribute paid search, referral "
-                    "payments, outbound data, and agency invoices to the originating cohort. "
-                    "A HubSpot deal identifier can connect the application checklist, DocuSign "
-                    "fee agreement, QuickBooks invoice, and lender remittance. Record declined "
-                    "applications rather than deleting them after an unsuccessful match. "
-                    "The base cohort must absorb 120 reviewed files that never fund; contractor "
-                    "underwriting time on those files remains a real delivery cost. Attribute "
-                    "renewals to their original lender relationship while separately recording "
-                    "incremental renewal outreach. Otherwise cheap renewal conversions make "
-                    "new-borrower acquisition appear profitable when it is not. Calculate "
-                    "source-level contribution only after the cohort has matured through "
-                    "its ordinary funding and reversal windows, and report immature cohorts "
-                    "separately rather than assigning them immediate success."
-                ),
-                (
-                    "Before quoting a placement, translate the lender matrix into expected dollars. "
-                    "For a base reviewed file, the modeled 25% funding probability multiplied "
-                    "by $14,000 retained fees per closing yields $3,500 expected retained "
-                    "revenue. Allocate $625 of contractor delivery, $525 of acquisition, "
-                    "$900 of payroll, and $225 of systems and administration per reviewed "
-                    "file: expected owner profit is $1,225, matching $196,000 across 160 "
-                    "files. This calculation assumes the modeled mix and timing; it does "
-                    "not mean every file should receive identical effort. A bridge request "
-                    "with an unresolved senior lien deserves a lower funding probability "
-                    "than an equipment purchase with verified vendor documentation. Underwrite "
-                    "AR dilution, debtor concentration, and lien priority before promising "
-                    "advance rates. Check state broker licensing against the actual activity; "
-                    "California Financial Code section 22100 is one concrete starting point "
-                    "for applicable finance-lender and broker licensing. SBA agent compensation "
-                    "requires attention to 13 CFR 103.5 and applicable Form 159 instructions. "
-                    "For covered residential transactions, 12 U.S.C. 2607 creates a separate "
-                    "referral-fee constraint. Product labeling does not replace transaction "
-                    "classification, and a commercial lending relationship does not authorize "
-                    "securities placement activity."
-                ),
-            ],
-            "table": {
-                "caption": "Funded-Cohort Definitions and Evidence Required Before Fee Recognition",
-                "headers": [
-                    "Operating measurement",
-                    "Conservative construction",
-                    "Base construction",
-                    "Scaled construction",
-                ],
-                "rows": [
-                    [
-                        "Reviewed applications retained in the acquisition denominator",
-                        "Forty reviewed files include every unsuccessful lender submission",
-                        "160 reviewed files include 120 unsuccessful funding outcomes",
-                        "240 reviewed files include 180 unsuccessful funding outcomes",
-                    ],
-                    [
-                        "Funded placements supported by actual lender disbursement",
-                        "Ten funded placements establish the annual revenue cohort",
-                        "Forty funded placements establish the annual revenue cohort",
-                        "Sixty funded placements establish the annual revenue cohort",
-                    ],
-                    [
-                        "Average funded principal excluded from brokerage revenue",
-                        "$650,000 average principal remains entirely outside operator revenue",
-                        "$750,000 average principal remains entirely outside operator revenue",
-                        "$900,000 average principal remains entirely outside operator revenue",
-                    ],
-                    [
-                        "Scheduled commissions before contractual reductions and reversals",
-                        "$130,000 equals ten closings earning $13,000 scheduled commissions",
-                        "$600,000 equals forty closings earning $15,000 scheduled commissions",
-                        "$1,080,000 equals sixty closings earning $18,000 scheduled commissions",
-                    ],
-                    [
-                        "Retained fee yield after modeled commission adjustments",
-                        "$12,000 retained revenue per closing follows cohort adjustments",
-                        "$14,000 retained revenue per closing follows cohort adjustments",
-                        "$16,666.67 rounded retained revenue per closing follows adjustments",
-                    ],
-                    [
-                        "Acquisition cost allocated across all reviewed applications",
-                        "$450 per reviewed file includes unsuccessful acquisition attempts",
-                        "$525 per reviewed file includes unsuccessful acquisition attempts",
-                        "$583.33 rounded per reviewed file includes unsuccessful attempts",
-                    ],
-                    [
-                        "Funded acquisition cost calculated without deleting failed files",
-                        "$1,800 funded CAC absorbs acquisition for forty applications",
-                        "$2,100 funded CAC absorbs acquisition for 160 applications",
-                        "$2,333.33 rounded funded CAC absorbs acquisition for 240 applications",
-                    ],
-                    [
-                        "Team capacity distinguished from contractor full-time employment",
-                        "Two full-time roles plus two variable-hours contractor relationships",
-                        "Two full-time roles plus two variable-hours contractor relationships",
-                        "Three full-time roles plus three variable-hours contractor relationships",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every deduction to the canonical owner-profit waterfall",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Read the waterfall in order: scheduled commissions, commission adjustments, "
-                    "retained revenue, delivery labor, acquisition, payroll, systems, and owner "
-                    "profit. Conservative deducts $24,000 of contractor delivery, $18,000 of "
-                    "acquisition, $36,000 of employee payroll and burden, and $12,000 of "
-                    "systems and administration from $120,000 retained revenue. Total expense "
-                    "is $90,000, leaving $30,000. Base deducts $100,000, $84,000, $144,000, "
-                    "and $36,000 respectively from $560,000; $364,000 of expense leaves "
-                    "$196,000. Scaled deducts $170,000, $140,000, $180,000, and $60,000 "
-                    "from $1 million; $550,000 leaves $450,000. These allocations construct "
-                    "the supplied scorecard rather than claim independently observed industry "
-                    "averages. The owner occupies one full-time role and receives the modeled "
-                    "residual without a second owner-salary deduction. Conservative therefore "
-                    "supports only $36,000 of loaded compensation for the other full-time "
-                    "employee, a restrictive hiring assumption that must be tested locally. "
-                    "Base supports one nonowner employee at a higher allocation; Scaled "
-                    "supports two. Contractor counts describe available relationships, not "
-                    "four or six full-time-equivalent salaries. Personal owner taxes and "
-                    "additional financing costs require a separate reconciliation when applicable."
-                ),
-                (
-                    "Separate contribution margin from owner margin before approving more traffic. "
-                    "After contractor delivery and acquisition, Conservative contributes $78,000, "
-                    "Base $376,000, and Scaled $690,000 before payroll and systems. Per funded "
-                    "deal, those contributions are $7,800, $9,400, and $11,500. Contractor "
-                    "delivery already includes diligence on unsuccessful files; do not add "
-                    "a second failed-file labor charge. Specify deliverables such as statement "
-                    "normalization, equipment-vendor verification, borrowing-base analysis, and "
-                    "closing checklist completion. Pay against accepted work, not a contractor's "
-                    "unverified assertion that a lender will fund. The fixed monthly platform "
-                    "burn is $4,000 Conservative, $14,000 Base, and $17,000 Scaled when "
-                    "systems costs are split into fixed amounts of $12,000, $24,000, and "
-                    "$24,000 annually, with remaining systems costs treated as throughput-linked. "
-                    "That split respects the stated $4,000–$18,000 monthly operating range "
-                    "without pretending variable acquisition and delivery disappear. Total "
-                    "annual expense divided by twelve is higher at Base and Scaled. A "
-                    "pricing decision must recover both categories across the expected "
-                    "closing count. Track contractor rework separately: repeated lender "
-                    "document requests can destroy contribution even when the headline "
-                    "commission remains unchanged."
-                ),
-                (
-                    "Commission scrubs are reductions in expected fee realization, not a convenient "
-                    "place to bury ordinary operating expense. The modeled deductions equal "
-                    "7.69%, 6.67%, and 7.41% of scheduled commissions, rounded. Maintain "
-                    "distinct reasons for preinvoice fee negotiation, postinvoice dispute, "
-                    "contractual early-payoff clawback, duplicate referral attribution, and "
-                    "credit loss. Their accounting presentation can differ; the management "
-                    "bridge aggregates them solely to reconcile scheduled billings with "
-                    "canonical retained revenue. Have the accounting policy distinguish "
-                    "variable consideration, credit losses, and cash settlements. A lender "
-                    "holding an otherwise earned payment is not automatically reversing "
-                    "revenue; the contractual right and collection evidence determine the "
-                    "treatment. Record reversal exposure by funded vintage, lender, product, "
-                    "and contractual expiration date. If $15,000 is scheduled and $1,000 "
-                    "is expected to be lost, the cohort carries $14,000 retained economics; "
-                    "later paying that anticipated $1,000 must not create a second modeled "
-                    "loss. Reconcile estimates to actual settlements monthly and release "
-                    "unused estimates only with documented support. A commission register "
-                    "should show gross entitlement, estimated adjustment, recognized amount, "
-                    "cash received, outstanding receivable, and remaining recourse. Without "
-                    "those fields, attractive reported margins can simply represent "
-                    "unrecognized obligations to return money."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Commission-to-Owner-Profit Waterfall With Explicit Expense Allocation",
-                "headers": [
-                    "Waterfall line and economic treatment",
-                    "Conservative annual dollars",
-                    "Base annual dollars",
-                    "Scaled annual dollars",
-                ],
-                "rows": [
-                    [
-                        "Scheduled commissions before reductions, excluding every principal dollar",
-                        "$130,000 scheduled commissions establish the initial fee bridge",
-                        "$600,000 scheduled commissions establish the initial fee bridge",
-                        "$1,080,000 scheduled commissions establish the initial fee bridge",
-                    ],
-                    [
-                        "Subtract modeled scrubs, reversals, and fee collection adjustments",
-                        "$10,000 deduction reduces scheduled commissions before operating expenses",
-                        "$40,000 deduction reduces scheduled commissions before operating expenses",
-                        "$80,000 deduction reduces scheduled commissions before operating expenses",
-                    ],
-                    [
-                        "Retained revenue matching the canonical scorecard revenue basis",
-                        "$120,000 retained fees constitute the recognized operator revenue",
-                        "$560,000 retained fees constitute the recognized operator revenue",
-                        "$1,000,000 retained fees constitute the recognized operator revenue",
-                    ],
-                    [
-                        "Subtract contractor delivery across successful and unsuccessful applications",
-                        "$24,000 contractor expense includes diligence on unsuccessful applications",
-                        "$100,000 contractor expense includes diligence on unsuccessful applications",
-                        "$170,000 contractor expense includes diligence on unsuccessful applications",
-                    ],
-                    [
-                        "Subtract acquisition spending attributed to originating application cohorts",
-                        "$18,000 acquisition expense includes paid channels and referrals",
-                        "$84,000 acquisition expense includes paid channels and referrals",
-                        "$140,000 acquisition expense includes paid channels and referrals",
-                    ],
-                    [
-                        "Subtract nonowner employee payroll and associated employment burden",
-                        "$36,000 loaded payroll requires validating the local hiring assumption",
-                        "$144,000 loaded payroll supports the modeled nonowner employee",
-                        "$180,000 loaded payroll supports two modeled nonowner employees",
-                    ],
-                    [
-                        "Subtract systems, administration, and throughput-linked vendor expenses",
-                        "$12,000 systems allocation is entirely fixed within this model",
-                        "$36,000 systems allocation includes $12,000 throughput-linked vendor expense",
-                        "$60,000 systems allocation includes $36,000 throughput-linked vendor expense",
-                    ],
-                    [
-                        "Residual annual owner profit after all modeled operating deductions",
-                        "$30,000 owner profit equals exactly 25% of retained revenue",
-                        "$196,000 owner profit equals exactly 35.0% of retained revenue",
-                        "$450,000 owner profit equals exactly 45% of retained revenue",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Keep the commission register more precise than the sales dashboard",
-                "body": (
-                    "Lender payment mechanics, failed-file work, and vintage-specific recourse "
-                    "determine whether the quoted commission becomes distributable cash."
-                ),
-                "items": [
-                    "Negotiate a dated commission statement and itemized offset notice; reject unexplained netting across unrelated borrower files.",
-                    "Require contractor invoices to reference the application identifier and accepted deliverable, including work on declined files.",
-                    "Separate initial-draw fees from future utilization fees on AR facilities so unused commitments never inflate retained revenue.",
-                    "Calendar each lender's clawback expiration beside renewal eligibility; a renewal opportunity does not erase earlier recourse.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund payout locks and stress the same cohort before adding volume",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Measure collection time from the contractual earning event, and state whether "
-                    "a payout lock is already inside reported DSO. This model defines DSO "
-                    "after release eligibility as thirty, forty-five, and sixty days, then "
-                    "adds nonoverlapping locks of fifteen, fifteen, and thirty days. Effective "
-                    "collection gaps are therefore forty-five, sixty, and ninety days. At "
-                    "steady annual throughput, retained-fee receivables approximate $14,795, "
-                    "$92,055, and $246,575 using revenue multiplied by gap days divided "
-                    "by 365. Those balances are assets tied up in collection, not additional "
-                    "expenses. A separate burn-funded bridge uses annual cash operating "
-                    "costs of $90,000, $364,000, and $550,000, producing $11,096, $59,836, "
-                    "and $135,616 over the respective gaps. Do not add the entire receivable "
-                    "balance to that cost bridge; doing so mixes two measurements of the "
-                    "same operating cycle. Both estimates assume smooth activity, cash-paid "
-                    "expenses, and no supplier credit. Actual bridge placements can bunch "
-                    "several months of acquisition and diligence into one closing week. "
-                    "Build a weekly thirteen-week cash schedule from invoice dates, payroll "
-                    "dates, lender release dates, and expected recourse payments. Use the "
-                    "actual disbursement calendar whenever it differs from the annualized "
-                    "shortcut."
-                ),
-                (
-                    "Earmark another 2% of retained annual revenue as a discretionary liquidity "
-                    "buffer: $2,400, $11,200, and $20,000. This cash designation is not "
-                    "another expense or the accounting estimate already deducted for scrubs. "
-                    "Adding it to the burn-funded collection bridge gives rounded liquidity "
-                    "targets of $13,496, $71,036, and $155,616 before startup losses, taxes, "
-                    "debt service, or unusually clustered clawbacks. Reconcile already booked "
-                    "clawback payables into the dated cash schedule rather than blindly "
-                    "adding the entire annual scrub estimate. The stated startup capital "
-                    "range is $20,000–$100,000, and first funding may take three to nine "
-                    "months. At Conservative's $4,000 fixed monthly burn, that wait alone "
-                    "uses $12,000–$36,000 before acquisition and contractor spending. Thus "
-                    "the bottom of the capital range cannot support every launch timetable. "
-                    "Scaled's bridge also exceeds the upper startup figure; expansion needs "
-                    "retained earnings, negotiated faster payouts, or separately costed capital. "
-                    "Do not assume receivable financing is available against contingent, "
-                    "nonassignable, or heavily recourse-laden commissions. If borrowing funds "
-                    "the bridge, add interest and fees below the existing waterfall and "
-                    "show the resulting departure from canonical profit instead of hiding "
-                    "financing expense inside loan principal."
-                ),
-                (
-                    "Stress the same denominator and expense commitments across all three cases. "
-                    "A 10% decline in retained fee yield with costs unchanged leaves owner "
-                    "profits of $18,000, $140,000, and $350,000. Losing 20% of funded "
-                    "closings after acquisition and delivery costs are committed leaves "
-                    "$6,000, $84,000, and $250,000. These are deliberately severe short-run "
-                    "tests; they do not assume contractors or employees can instantly be "
-                    "removed. Increasing acquisition spending by 25% costs another $4,500, "
-                    "$21,000, and $35,000. Combine that increase with the failed-closing "
-                    "shock and owner profit falls to $1,500, $63,000, and $215,000. "
-                    "An additional thirty-day collection delay requires approximately "
-                    "$7,397, $29,918, and $45,205 of operating cash without changing "
-                    "profit before financing expense. Lender concentration compounds these "
-                    "risks: a lender responsible for 40% of Base retained fees controls "
-                    "$224,000 of annual revenue exposure, not merely one relationship "
-                    "on the matrix. Set internal concentration limits against fee revenue "
-                    "and outstanding receivables, maintain genuinely executable alternative "
-                    "lenders, and suspend discretionary distributions when dated cash "
-                    "obligations exceed available liquidity. A second lender listing is "
-                    "not diversification unless its credit box, documentation requirements, "
-                    "and funding capacity fit the actual borrower pipeline."
-                ),
-            ],
-            "table": {
-                "caption": "Collection Float and Short-Run Sensitivity Tests Against Unchanged Baselines",
-                "headers": [
-                    "Timing assumption or isolated stress",
-                    "Conservative cash or profit effect",
-                    "Base cash or profit effect",
-                    "Scaled cash or profit effect",
-                ],
-                "rows": [
-                    [
-                        "Effective collection gap combines separate DSO and payout locks",
-                        "Forty-five days combine thirty collection days plus fifteen locked",
-                        "Sixty days combine forty-five collection days plus fifteen locked",
-                        "Ninety days combine sixty collection days plus thirty locked",
-                    ],
-                    [
-                        "Steady-state retained-fee receivables exclude all borrower loan principal",
-                        "$14,795 rounded receivables reflect retained revenue awaiting collection",
-                        "$92,055 rounded receivables reflect retained revenue awaiting collection",
-                        "$246,575 rounded receivables reflect retained revenue awaiting collection",
-                    ],
-                    [
-                        "Operating cost bridge plus separately earmarked liquidity buffer",
-                        "$13,496 rounded cash target excludes additional startup losses",
-                        "$71,036 rounded cash target excludes additional startup losses",
-                        "$155,616 rounded cash target excludes additional startup losses",
-                    ],
-                    [
-                        "Retained fee yield declines ten percent with expenses unchanged",
-                        "$18,000 annual owner profit remains after isolated yield compression",
-                        "$140,000 annual owner profit remains after isolated yield compression",
-                        "$350,000 annual owner profit remains after isolated yield compression",
-                    ],
-                    [
-                        "Funded closings decline twenty percent after costs become committed",
-                        "$6,000 annual owner profit remains after failed-closing stress",
-                        "$84,000 annual owner profit remains after failed-closing stress",
-                        "$250,000 annual owner profit remains after failed-closing stress",
-                    ],
-                    [
-                        "Reversals increase three percentage points of original scheduled commissions",
-                        "$26,100 annual owner profit follows another $3,900 deduction",
-                        "$178,000 annual owner profit follows another $18,000 deduction",
-                        "$417,600 annual owner profit follows another $32,400 deduction",
-                    ],
-                    [
-                        "Additional thirty collection days delay cash without changing fees",
-                        "$7,397 additional operating cash bridges the isolated collection delay",
-                        "$29,918 additional operating cash bridges the isolated collection delay",
-                        "$45,205 additional operating cash bridges the isolated collection delay",
-                    ],
-                    [
-                        "Twenty percent fewer closings combine with twenty-five percent higher acquisition",
-                        "$1,500 annual owner profit remains under combined operating stress",
-                        "$63,000 annual owner profit remains under combined operating stress",
-                        "$215,000 annual owner profit remains under combined operating stress",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the cohort and evidence",
-                    "action": "Export every reviewed application, funded amount, fee agreement, and lender remittance.",
-                    "detail": "Keep failed applications in the cohort and distinguish scheduled commission from earned, retained, invoiced, and collected amounts.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile retained fees and delivery",
-                    "action": "Match every commission adjustment and contractor invoice to its original application.",
-                    "detail": "Compare the commission register with QuickBooks receivables; investigate duplicate referral credit and undocumented lender offsets before closing the month.",
-                },
-                {
-                    "step": 3,
-                    "title": "Date the actual cash cycle",
-                    "action": "Populate thirteen weekly columns with payroll, acquisition, delivery, collections, and recourse settlements.",
-                    "detail": "Count payout-lock days once, include preclosing spending, and identify the largest cumulative cash deficit rather than relying solely on average DSO.",
-                },
-                {
-                    "step": 4,
-                    "title": "Stress and authorize distributions",
-                    "action": "Apply failed-closing, fee-yield, reversal, acquisition, and collection-delay stresses.",
-                    "detail": "Distribute only cash remaining after dated obligations and the documented liquidity buffer; price any bridge financing separately.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Underwrite mapped plays without importing their gross proceeds into brokerage revenue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For arizona_abs_mass_tort_cocounsel, separate an authorized law firm's legal "
-                    "fees from a specialty-finance broker's placement fee. Arizona Supreme "
-                    "Court Rule 31.1(c) and ACJA section 7-209 establish the licensed ABS "
-                    "framework permitting qualifying nonlawyer ownership; Arizona's removal "
-                    "of its Rule 5.4 restrictions did not repeal other jurisdictions' rules. "
-                    "A hypothetical $100,000 legal fee within the mapped $50,000–$400,000-plus "
-                    "settled-case range could leave $40,000 after a $40,000 lawful co-counsel "
-                    "allocation, $12,000 acquisition cost, and $8,000 case expense. That "
-                    "is law-firm economics, not brokerage revenue, and actual fee division "
-                    "requires the governing professional rules, client documentation, and "
-                    "substantive services. If a separately authorized $500,000 credit placement "
-                    "earns a 2% retained brokerage fee, brokerage revenue is $10,000, not "
-                    "the facility principal or litigation recovery. Survivor claims involving "
-                    "juvenile detention, clergy, boarding schools, medical lookback windows, "
-                    "or rideshare proceedings require attorney-led intake and primary-document "
-                    "verification before filing. Do not capitalize an unverified claimant "
-                    "list as near-term collections. Model multi-year institutional and "
-                    "catastrophic mass-tort dockets separately from faster single-event "
-                    "injury matters. In restrictive states, an MSO may provide permitted "
-                    "administrative services but cannot recreate prohibited ownership, "
-                    "fee sharing, or control over professional judgment."
-                ),
-                (
-                    "For out_of_network_dme_telehealth_billing_arbitrage, the relevant borrowers "
-                    "may be an MSO, independent telehealth group, licensed DME supplier, or "
-                    "reference laboratory, each with different receivables ownership. A "
-                    "hypothetical supplier collects $1,800 per paid claim, spends $150 on "
-                    "hardware, $150 on patient acquisition, and $300 on fulfillment, billing, "
-                    "and clinical support, leaving $1,200 before fixed overhead and recoupments. "
-                    "That example sits within the mapped $900–$3,500-plus reimbursement, "
-                    "$85–$220 acquisition, and $70–$220 hardware ranges, but those ranges "
-                    "are underwriting assumptions rather than verified payer schedules. "
-                    "If only eighty of one hundred submitted claims collect while all "
-                    "$60,000 of modeled costs are incurred, contribution falls from "
-                    "$120,000 to $84,000 before later recoupments. Require payer-specific "
-                    "remittances, HCPCS or CPT support, coverage criteria, medical necessity, "
-                    "and independent clinical chart review. Federal anti-kickback exposure "
-                    "under 42 U.S.C. 1320a-7b(b) cannot be solved merely by calling an "
-                    "agreement an MSO retainer; 42 CFR 1001.952(d) has specific conditions. "
-                    "Fixed fair-market-value compensation must reflect actual services, "
-                    "and commercial payer concentration does not eliminate state referral "
-                    "restrictions. Recurring CGM resupply still requires valid eligibility. "
-                    "A $400,000 facility at a 2% retained placement fee yields only "
-                    "$8,000 of brokerage revenue."
-                ),
-                (
-                    "For cell_tower_billboard_easement_strip_out, underwrite assignable site-access "
-                    "and rent rights separately from the underlying parcel and its residual "
-                    "burden. Suppose a specialist buyer offers $500,000 for an income-rights "
-                    "interest, transaction and title costs total $25,000, and a documented "
-                    "valuation attributes $75,000 of lost value to the remaining property. "
-                    "The owner's economic proceeds are $400,000 before taxes, existing "
-                    "debt, and the opportunity cost of future rent surrendered. A separate "
-                    "$300,000 bridge facility paying a 2% retained placement fee creates "
-                    "$6,000 of brokerage revenue, not $500,000. Verify tenant termination "
-                    "rights, renewal options, escalation clauses, access easements, landlord "
-                    "and mortgagee approvals, and any required municipal permissions. "
-                    "A headline perpetuity value collapses if the tenant can terminate "
-                    "cheaply after equipment removal or if access rights cannot transfer. "
-                    "Do not substitute a UCC filing for the real-property recording and "
-                    "title work the actual rights require. The fallback is retaining "
-                    "the lease or negotiating a narrower term-limited assignment with "
-                    "all necessary approvals. Across these three mapped plays, keep "
-                    "separate contracts and ledgers for professional services, healthcare "
-                    "collections, property proceeds, and financing compensation. Any example "
-                    "placement fee is a possible component of the canonical cohort, "
-                    "not incremental revenue added to its totals."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Cash Boundaries, Underwriting Evidence, and Executable Fallbacks",
-                "headers": [
-                    "Mapped operating exposure",
-                    "Concrete unit economics and revenue boundary",
-                    "Required primary evidence before placement",
-                    "Failure response preserving economic discipline",
-                ],
-                "rows": [
-                    [
-                        "Arizona ABS ownership and lawful co-counsel operating economics",
-                        "$100,000 legal fee less $60,000 modeled deductions leaves $40,000",
-                        "Confirm active ABS licensing, attorney responsibility, and documented fee arrangements",
-                        "Use permitted administrative services where ownership restrictions prevent the structure",
-                    ],
-                    [
-                        "Survivor and catastrophic mass-tort docket financing exposure",
-                        "$500,000 financed at 2% produces only $10,000 brokerage revenue",
-                        "Verify primary claim documents, case status, liens, and collection assumptions",
-                        "Separate long-duration dockets from independently supported faster-settling injury cases",
-                    ],
-                    [
-                        "Out-of-network DME and diagnostic claim collection exposure",
-                        "Eighty paid claims yield $144,000 against $60,000 committed costs",
-                        "Inspect payer remittances, coverage criteria, clinical records, and recoupment history",
-                        "Stop unsupported submissions and require independent clinical chart review",
-                    ],
-                    [
-                        "Healthcare MSO services and separately contracted credit placement",
-                        "$400,000 financed at 2% produces only $8,000 brokerage revenue",
-                        "Document actual services, fair-market-value compensation, and applicable referral restrictions",
-                        "Use qualifying fixed service arrangements without purchasing physician referral decisions",
-                    ],
-                    [
-                        "Cell-tower rooftop and billboard income-rights separation economics",
-                        "$500,000 proceeds less $25,000 costs and $75,000 residual impairment",
-                        "Review recorded rights, tenant termination provisions, access, and mortgagee requirements",
-                        "Retain the lease when permanent burdens exceed realizable sale value",
-                    ],
-                    [
-                        "Property-rights bridge financing distinct from easement sale proceeds",
-                        "$300,000 financed at 2% produces only $6,000 brokerage revenue",
-                        "Confirm transferable collateral rights, required approvals, and bridge repayment sources",
-                        "Negotiate a narrower term-limited assignment with every required approval",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before funding acquisition or releasing owner cash",
-                "body": (
-                    "Require evidence for the economics, authority, collateral, and cash timing "
-                    "of the actual transaction rather than relying on its category label."
-                ),
-                "items": [
-                    "Verify the borrower, fee payer, earning event, broker authority, and executed fee agreement; classify any securities or covered residential activity separately.",
-                    "Reconcile scheduled commissions to retained fees and confirm principal, legal recoveries, insurance collections, and property proceeds remain outside brokerage revenue.",
-                    "Inspect ABS documentation, clinical and payer evidence, or recorded property rights as applicable; unresolved source-document defects block the affected placement.",
-                    "Confirm the thirteen-week schedule funds delivery, payroll, recourse obligations, and payout locks before discretionary owner distributions.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A commission becomes owner cash only after failed files, reversal exposure, and the lender's payment clock have all been funded.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Build a commission register linking each reviewed file to its agreement, funded principal, scheduled fee, adjustments, invoice, and cash receipt.",
-        "Reconcile Conservative, Base, and Scaled retained revenues to $120,000, $560,000, and $1,000,000 without including borrower principal.",
-        "Allocate failed-file contractor labor and acquisition spending to originating cohorts, then calculate reviewed-file cost and funded CAC separately.",
-        "Document lender-specific earning triggers, payout locks, offset rights, clawback windows, and practical alternative funding sources.",
-        "Maintain a thirteen-week cash schedule and rerun fee compression, failed-closing, acquisition, reversal, and thirty-day collection-delay stresses monthly.",
-        "Validate mapped-play primary evidence and keep legal fees, healthcare collections, property proceeds, and brokerage compensation in separate economic ledgers.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Arizona Code of Judicial Administration § 7-209 — Alternative Business Structures",
-            "url": "https://www.azcourts.gov/Portals/0/admcode/pdfcurrentcode/7-209.pdf",
-            "relevance": (
-                "Defines Arizona ABS licensing and operating requirements; use with Supreme "
-                "Court Rule 31.1(c) and applicable professional-conduct rules when evaluating "
-                "nonlawyer ownership and law-firm financing."
-            ),
-        },
-        {
-            "title": "13 CFR § 103.5 — Compensation of Agents",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-103/section-103.5",
-            "relevance": (
-                "Governs compensation agreements and disclosures for agents in covered SBA "
-                "matters; reconcile applicable Form 159 requirements to actual services and fees."
-            ),
-        },
-        {
-            "title": "California Financial Code § 22100 — Finance Lender and Broker Licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": (
-                "Establishes the licensing requirement for covered finance lending and "
-                "brokering activities, subject to applicable statutory scope and exemptions."
-            ),
-        },
-        {
-            "title": "12 U.S.C. § 2607 — Prohibition Against Kickbacks and Unearned Fees",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": (
-                "Requires separate referral-compensation analysis for settlement services "
-                "involving covered federally related mortgage loans rather than assuming "
-                "commercial brokerage practices apply."
-            ),
-        },
-        {
-            "title": "42 U.S.C. § 1320a-7b(b) — Federal Health Care Anti-Kickback Provisions",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": (
-                "Addresses remuneration connected to referrals or business payable by federal "
-                "health care programs, affecting healthcare acquisition and service arrangements."
-            ),
-        },
-        {
-            "title": "42 CFR § 1001.952(d) — Personal Services and Management Contracts",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-V/subchapter-B/part-1001/subpart-C/section-1001.952",
-            "relevance": (
-                "Sets conditions for the personal-services and management-contract safe harbor; "
-                "a fixed MSO retainer alone does not establish that every condition is satisfied."
-            ),
-        },
-        {
-            "title": "16 CFR § 314.4 — Elements of an Information Security Program",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
-            "relevance": (
-                "Specifies safeguards for covered financial institutions, including relevant "
-                "access controls, service-provider oversight, and protection of customer information."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1691 — Equal Credit Opportunity",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1691",
-            "relevance": (
-                "Prohibits specified discrimination in credit transactions; evaluate the "
-                "broker's actual role and applicable Regulation B duties when designing "
-                "application intake and lender-matching criteria."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'licensing-compliance-professional-positioning',
+ 'question_prompt': 'What licensing, regulatory, and compliance lines must a finance broker respect, and '
+                    'how do they build credibility with lenders and a client pipeline?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Licensing, Compliance, and Professional Positioning',
+ 'subtitle': 'California Broker Licensing and MLO Law, Texas Sales-Based Financing Rules, FinCEN Customer '
+             'Due Diligence, TRID Disclosures, Broker-Dealer Exclusions, Form U4, Reg BI and FINRA 2210, '
+             'Starting an Advisory Business, Building a Lender Network, Why Lenders Ignore New Brokers, '
+             'and Ranking Client Acquisition Channels',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Commercial loan brokers still operate unlicensed in most states, but practitioners '
+                      'agree the gap is closing. Jonathan Mills Patrick brokered from Tennessee unlicensed '
+                      'and routes licensing-state deals through a licensed associate for a referral fee. '
+                      'Funder Intel tracks a California bill requiring a $500 to $1,000 license and '
+                      '$25,000 net worth by July 2028, and the Texas OCCC sets NMLS registration for '
+                      'sales-based financing by December 31, 2026. Securities lawyers draw a hard line at '
+                      "selling someone else's security, where a $25,000 fee on a $1 million raise can "
+                      'become a $1 million rescission judgment. Commercial Loan Broker Institute frames '
+                      'positioning as lender trust: build the network first, add two new lenders a month, '
+                      'and pass five lender screens. Practitioners split on which Texas auto-debit rule '
+                      'version to adopt and on whether a 50-state patchwork stifles innovation.',
+ 'key_metrics': [{'label': 'California Commercial Finance License Cost',
+                  'metric': 'California Commercial Finance License Cost',
+                  'value': '$500 to $1,000 plus $25,000 net worth',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Funder Intel's breakdown of the California bill: license fee, fingerprint "
+                             'background check, $25,000 net worth floor and proper insurance, with '
+                             'licensing required by July 2028.',
+                  'source': 'Funder Intel ([jCWdtQmKTiU @ 00:00:34])'},
+                 {'label': 'Texas Sales-Based Financing Registration Deadline',
+                  'metric': 'Texas Sales-Based Financing Registration Deadline',
+                  'value': 'December 31, 2026 via NMLS',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "The OCCC's HB 700 chapter 398 timeline: rules due by September 1, 2026, then "
+                             'registration through NMLS on a one-year registration plus fees.',
+                  'source': 'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ 00:06:28])'},
+                 {'label': 'Unlicensed Securities Sale Rescission Exposure',
+                  'metric': 'Unlicensed Securities Sale Rescission Exposure',
+                  'value': '$25,000 fee earned on $1M raised becomes a $1M judgment',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Trowbridge Law Group's rescission example for someone who sells another "
+                             "sponsor's securities without a license.",
+                  'source': 'Trowbridge Law Group ([8p8VFFvdliQ @ 00:07:22])'},
+                 {'label': 'Annual Lender Network Growth Target',
+                  'metric': 'Annual Lender Network Growth Target',
+                  'value': '15 to 20 percent new lenders per year, about 2 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Commercial Loan Broker Institute's maintenance rule for keeping a broker's "
+                             'lender bench fresh.',
+                  'source': 'Commercial Loan Broker Institute ([tgEHrpyZE9U @ 00:11:45])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The working baseline on the commercial side is that a pure business-loan '
+                              'broker can still operate without a state license across most of the '
+                              'country, but the window is closing fast. Jonathan Mills Patrick lists the '
+                              'licensing states as of about August 6, 2021 as Arizona, California, '
+                              'Florida, Minnesota, Nevada, New York, North Dakota, South Dakota and '
+                              'Vermont, and says those licenses are specific to commercial mortgages, '
+                              'similar to residential NMLS, while non-real-estate lines of credit are '
+                              'typically okay [gfK-oOi-TuI @ 00:00:33]. Patrick brokered from Tennessee '
+                              'without a license, and the logic offered is that business borrowers are '
+                              'presumed savvy, much like the accredited-investor exemptions. When a state '
+                              'does require the badge, the play is to partner as an associate with a '
+                              'licensed local, refer the deal and collect a referral fee [gfK-oOi-TuI @ '
+                              '00:05:56]. Funder Intel reports the counter-trend: a California bill headed '
+                              'to the governor would require a license for commercial loans, asset-based '
+                              'lending, receivables purchases, credit lines and lease financing, effective '
+                              'January 1, 2028, with the license required by July 2028, after a '
+                              'near-unanimous legislative vote with five absentees [jCWdtQmKTiU @ '
+                              '00:00:14]. The Texas Office of Consumer Credit Commissioner is already '
+                              'writing HB 700 chapter 398 rules for commercial sales-based financing, '
+                              'using registration rather than licensing [rhDEWGC8KqM @ 00:03:06].',
+                              'The second point of agreement is that the moment a deal drifts into '
+                              'securities or residential mortgage, the light-touch regime disappears. '
+                              'Trowbridge Law Group, run by a former syndicator who taught CCIM classes '
+                              'for 40 years, draws the line simply: you need a license if you sell '
+                              'securities for someone else or take compensation to sell them, and a '
+                              'security is an investment of money in a common enterprise with an '
+                              "expectation of profit from the sponsor's efforts [8p8VFFvdliQ @ 00:02:49]. "
+                              'The issuer exemption works like for sale by owner, so members of the '
+                              'manager can sell their own deal [8p8VFFvdliQ @ 00:04:16]. VoraPrep sharpens '
+                              'the edge cases: issuers are excluded only when selling their own stock, so '
+                              'the Tech Innovations example becomes a broker-dealer the moment it sells '
+                              "other companies' shares, and bank employees actively pushing securities "
+                              'need agent registration [N0Pz-cRD6A4 @ 00:02:29]. On the residential side, '
+                              "firsttuesday lays out California's split: DRE and DBO both regulate "
+                              'mortgage loan originators, a DRE broker needs individual and company MLO '
+                              'endorsements, a salesperson needs an endorsement plus a supervising '
+                              'endorsed broker, and DBO licenses run under CRMLA or CFL, where a CFL '
+                              'lender must lend its own funds with no warehouse line [8bJtTzzuQ-Y @ '
+                              '00:01:01]. Every one of these speakers defines the badge by the activity '
+                              'being performed, not by the job title on the business card.',
+                              'The third consensus is that professional positioning is earned with lenders '
+                              'and corporate structure, not with marketing polish. Commercial Loan Broker '
+                              'Institute opens with the thesis that the lender network comes first, '
+                              'because no lenders means no closing, and says most new brokers wrongly '
+                              'believe their number one job is finding clients [tgEHrpyZE9U @ 00:00:00]. '
+                              'Shane Walton of the same institute, who runs a network of hundreds of '
+                              'lenders, warns that you cannot BS a lender and that once you burn trust '
+                              "with the lender you're done [4ELMBLT7mvs @ 00:02:16]. Lenders fear "
+                              'half-baked or wrong-fit deals, sloppy packages and brokers who disappear, '
+                              'and premium lenders reject new brokers outright [tgEHrpyZE9U @ 00:08:28]. '
+                              'Josh Olfert, CFP, with about six years in the industry and about four '
+                              'running their own firm, names compliance, brand trust and having no one '
+                              'upstream to absorb problems as the real concerns of going independent. '
+                              'Olfert insists on incorporating with a lawyer and opening a corporate bank '
+                              'account, because you need a legal entity to sign distribution contracts, '
+                              'and says they have never seen anyone run this kind of business '
+                              'unincorporated [skWLJwzq_fc @ 00:09:15]. Apps, Zoom and a storefront rank '
+                              'as optional extras once the entity, licensing and distribution contracts '
+                              'are locked in.'],
+               'table': {'caption': 'Where practitioners agree on licensing exposure and professional '
+                                    'positioning',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Most states require no commercial broker license today',
+                                   'Licensing states as of August 2021 were AZ, CA, FL, MN, NV, NY, ND, SD '
+                                   'and VT, mostly tied to commercial mortgage',
+                                   'Call your state department to verify before brokering across state '
+                                   'lines',
+                                   'Jonathan Mills Patrick ([gfK-oOi-TuI @ 00:00:33])'],
+                                  ['California is moving to full commercial finance licensing',
+                                   'Bill covers commercial loans, ABL, AR purchases, credit lines and '
+                                   'lease financing, effective January 1, 2028',
+                                   'Budget for a California license by July 2028 if funding California '
+                                   'merchants',
+                                   'Funder Intel ([jCWdtQmKTiU @ 00:00:14])'],
+                                  ['Texas uses registration rather than a full license',
+                                   'HB 700 chapter 398 governs commercial sales-based financing with '
+                                   'NMLS-based registration',
+                                   'Expect registration fees and one-year renewal cycles on every Texas '
+                                   'deal',
+                                   'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ '
+                                   '00:03:06])'],
+                                  ["Selling someone else's securities requires a securities license",
+                                   'License needed when selling securities for someone else or taking '
+                                   'compensation to sell them',
+                                   'Keep success fees away from third-party securities raises unless '
+                                   'licensed',
+                                   'Trowbridge Law Group ([8p8VFFvdliQ @ 00:02:49])'],
+                                  ['The issuer exclusion is narrow and easily lost',
+                                   'Issuers are excluded only when selling their own stock, never other '
+                                   "companies' shares",
+                                   "Never sell other sponsors' paper while leaning on an issuer theory",
+                                   'VoraPrep ([N0Pz-cRD6A4 @ 00:02:29])'],
+                                  ['The lender network comes before client acquisition',
+                                   'No lenders means no closing, yet most new brokers chase clients first',
+                                   'Build lender relationships before spending money on client acquisition '
+                                   'channels',
+                                   'Commercial Loan Broker Institute ([tgEHrpyZE9U @ 00:00:00])'],
+                                  ['Incorporate before signing any distribution contracts',
+                                   'You need a corporation, a legal entity, to sign carrier and dealer '
+                                   'contracts',
+                                   'Form the entity with a lawyer and open a corporate bank account first',
+                                   'Josh Olfert, CFP ([skWLJwzq_fc @ 00:09:15])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The licensing numbers are concrete. Funder Intel puts the California '
+                              'license at $500 to $1,000, plus a fingerprint background check, $25,000 in '
+                              'net worth and proper insurance. The bill bans confessions of judgment and '
+                              'powers of attorney before default, adds interest-rate disclosures and '
+                              'broker and funder duties, and sweeps in MCA and revenue-based financing '
+                              'alongside factoring and ABL [jCWdtQmKTiU @ 00:00:34]. Texas runs on a '
+                              'different clock. The OCCC says rules are due by September 1, 2026, with '
+                              'registration through NMLS by December 31, 2026, on a one-year registration '
+                              'plus fees [rhDEWGC8KqM @ 00:06:28]. Disclosures are required for deals '
+                              'under $1 million, confessions of judgment are banned, and auto-debit is '
+                              'banned absent a first-priority perfected security interest, while banks, '
+                              'credit unions, tech providers, real-property-secured deals and auto dealers '
+                              'are exempt. Records must be kept for the later of four years from the '
+                              'transaction or two years from the final entry, contracts must carry an '
+                              'OCCC-contact statement, and the UDAAP list explicitly includes mislabeling '
+                              'consumer use as commercial [rhDEWGC8KqM @ 00:08:47]. There is no model '
+                              'disclosure form, so every shop drafts its own paper. Funder Intel expects '
+                              'the California model to spread to other states, noting most legislatures '
+                              'are out of session by the end of September [jCWdtQmKTiU @ 00:03:59].',
+                              'File hygiene is where specialty finance desks borrow directly from bank '
+                              'compliance. Compliance Connection walks through the FinCEN customer due '
+                              'diligence rule: identify and verify the beneficial owners of corporations '
+                              'and LLCs, meaning every owner of 25 percent or more of the equity plus one '
+                              'controller such as the CEO, for a total of one to five beneficial owners '
+                              '[gnx32nNbVfU @ 00:05:01]. The Appendix A certification form or an '
+                              'equivalent method works, photocopies of ID are permitted, and reliance on a '
+                              'prior form is allowed with verbal or written confirmation that must be '
+                              'recorded. Renewals and rollovers count as new accounts, though a '
+                              'notify-of-change clause suffices, and records are kept five years after '
+                              'account closure for identification and five years after the record is made '
+                              'for verification [gnx32nNbVfU @ 00:10:41]. For brokers who cross into '
+                              'residential, CLA spells out the integrated disclosure clock: the loan '
+                              'estimate is due within three business days and at least seven days before '
+                              'consummation, lender fees carry zero tolerance, third-party services and '
+                              'recording fees share a 10 percent cumulative tolerance, and refunds are due '
+                              'within 60 days [ByTHmfsxaNQ @ 00:38:27]. No fee is collected before intent '
+                              'to proceed except the credit report, and the closing disclosure lands three '
+                              'days before consummation, with a new waiting period if the APR, product or '
+                              'prepayment penalty changes [ByTHmfsxaNQ @ 00:48:26].',
+                              'Lender acquisition runs on a script. Commercial Loan Broker Institute sorts '
+                              'capital into banks and credit unions with the best rates but slow '
+                              'execution, private money, family offices and funds that move faster but '
+                              'cost more, and platform lenders described as middlemen with good technology '
+                              '[tgEHrpyZE9U @ 00:03:11]. The outreach script targets the business '
+                              'development officer, uses a specific subject line such as 7A program for '
+                              'car washes, leads with value like a $1.5 million retail acquisition, asks '
+                              'about lending parameters and locks in next steps. At industry events, '
+                              'follow-up jumps 80 percent when the next step is scheduled in the room '
+                              '[tgEHrpyZE9U @ 00:06:32]. Submissions follow the AAA framework: anticipate '
+                              'DSCR and LTV questions, arrange the package, and advocate through a cover '
+                              "letter. Shane Walton's five screens are clarity, fit, package, viability "
+                              'and perseverance: a lender should understand the deal in under 30 seconds, '
+                              'numbers must reconcile with no scavenger hunt, and bad lender fit damages '
+                              'credibility faster than a bad deal [4ELMBLT7mvs @ 00:03:19]. Fractional '
+                              'Firm Academy adds the LinkedIn discipline: wait until a connection is '
+                              'accepted before messaging, which also avoids spending an InMail, and run '
+                              'Sales Navigator because it is cheap with potentially huge ROI [KJF9HKiAu0Y '
+                              '@ 00:03:26].'],
+               'table': {'caption': 'Hard numbers and execution rules operators work from',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['California commercial finance license cost',
+                                   '$500 to $1,000 plus fingerprint check, $25,000 net worth and proper '
+                                   'insurance',
+                                   'Fold the net-worth floor into capitalization planning well before 2028',
+                                   'Funder Intel ([jCWdtQmKTiU @ 00:00:34])'],
+                                  ['Texas sales-based financing registration deadline',
+                                   'Registration via NMLS by December 31, 2026, one-year term plus fees',
+                                   'Calendar the NMLS filing and the annual renewal for Texas deals',
+                                   'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ '
+                                   '00:06:28])'],
+                                  ['Texas disclosure threshold and form availability',
+                                   'Disclosures required on deals under $1 million, with no model form '
+                                   'provided',
+                                   'Draft your own disclosure paper for every sub-$1 million Texas deal',
+                                   'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ '
+                                   '00:04:31])'],
+                                  ['Texas recordkeeping retention clock',
+                                   'Later of four years from the transaction or two years from final entry',
+                                   'Set retention policies on whichever of the two clocks runs longer',
+                                   'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ '
+                                   '00:07:48])'],
+                                  ['Beneficial ownership capture at onboarding',
+                                   'Every 25 percent equity owner plus one controller, one to five owners '
+                                   'total',
+                                   'Collect Appendix A certification and ID photocopies on every entity '
+                                   'borrower',
+                                   'Compliance Connection ([gnx32nNbVfU @ 00:05:01])'],
+                                  ['Lender bench growth rate',
+                                   'Add 15 to 20 percent new lenders annually, roughly two per month',
+                                   'Track new lender adds monthly inside the lender research spreadsheet',
+                                   'Commercial Loan Broker Institute ([tgEHrpyZE9U @ 00:11:45])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Moves From Brokers, Lawyers and Lender-Network Operators',
+                           'body': 'Four plays practitioners use to stay positioned with lenders and clear '
+                                   'of the licensing tripwires that end careers.',
+                           'items': ['In a licensing state, run the associate play: partner with a '
+                                     'licensed local, refer the deal and collect a referral fee instead of '
+                                     'brokering it yourself [Jonathan Mills Patrick — gfK-oOi-TuI @ '
+                                     '00:05:56]',
+                                     'Book the next step before you leave an event room, because follow-up '
+                                     'jumps 80 percent when it is scheduled on the spot [Commercial Loan '
+                                     'Broker Institute — tgEHrpyZE9U @ 00:05:26]',
+                                     "To bring money into someone else's syndication without a securities "
+                                     'license, form your own syndication and have it invest as a single '
+                                     'investor [Trowbridge Law Group — 8p8VFFvdliQ @ 00:10:09]',
+                                     "Read lender silence as an answer, since 'that silence isn't "
+                                     "confusion, it's a decision', and keep backup lenders lined up with "
+                                     'aggressive follow-up [Commercial Loan Broker Institute — 4ELMBLT7mvs '
+                                     '@ 00:06:17]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map Your Licensing Exposure',
+                              'action': 'Verify broker and borrower state rules before taking the first '
+                                        'file.',
+                              'detail': 'Call your state department to verify requirements, and treat '
+                                        'borrower location as the rule most people apply when broker and '
+                                        'borrower sit in different states [Jonathan Mills Patrick — '
+                                        'gfK-oOi-TuI @ 00:04:44]'},
+                             {'step': 2,
+                              'title': 'Calendar the Texas and California Deadlines',
+                              'action': 'Set NMLS registration and licensing milestones for every state '
+                                        'you fund into.',
+                              'detail': 'Texas sales-based financing registration via NMLS is due by '
+                                        'December 31, 2026 on a one-year term plus fees, ahead of '
+                                        "California's July 2028 license requirement [Texas Office of "
+                                        'Consumer Credit Commissioner — rhDEWGC8KqM @ 00:06:28]'},
+                             {'step': 3,
+                              'title': 'Build the Beneficial Ownership File',
+                              'action': 'Capture owners and controller on every corporate and LLC '
+                                        'borrower.',
+                              'detail': 'Use the Appendix A certification or equivalent, identify every 25 '
+                                        'percent equity owner plus one controller such as the CEO, and '
+                                        'accept ID photocopies [Compliance Connection — gnx32nNbVfU @ '
+                                        '00:05:01]'},
+                             {'step': 4,
+                              'title': 'Grow the Lender Bench on a Quota',
+                              'action': 'Add lenders monthly and log them in the research spreadsheet.',
+                              'detail': 'Target two new lenders per month to hit the 15 to 20 percent '
+                                        'annual refresh, pitching BDOs with specific subject lines and '
+                                        'real deal value [Commercial Loan Broker Institute — tgEHrpyZE9U @ '
+                                        '00:12:02]'}]},
+              {'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether a commercial loan broker needs any license at '
+                              "all. Jonathan Mills Patrick opens flat: 'the short answer is that you do "
+                              "not have to be licensed in most states' [gfK-oOi-TuI @ 00:00:16]. His "
+                              'licensing-state list (AZ, CA, FL, MN, NV, NY, ND, SD, VT) is tied to '
+                              'commercial mortgages, and he says non-real-estate lines of credit are '
+                              "'typically okay' [gfK-oOi-TuI @ 00:02:05]. He brokered from Tennessee "
+                              'without a license and justifies the gap on the theory that business '
+                              'borrowers are presumed savvy, much like accredited-investor carve-outs '
+                              '[gfK-oOi-TuI @ 00:03:09]. Funder Intel describes the ground moving under '
+                              'that model: a California bill headed to the governor would license '
+                              'commercial loans, ABL, receivables purchases, credit lines and lease '
+                              'financing, effective January 1, 2028, with the license in hand by July 2028 '
+                              '[jCWdtQmKTiU @ 00:00:14]. The entry ticket is $500 to $1,000, a fingerprint '
+                              'check, $25,000 net worth and proper insurance [jCWdtQmKTiU @ 00:00:34]. '
+                              'Texas takes a third road that Funder Intel calls strict but '
+                              'registration-based [jCWdtQmKTiU @ 00:02:54]: under HB 700 operators '
+                              'register through NMLS by December 31, 2026, for one-year terms plus fees '
+                              '[rhDEWGC8KqM @ 00:06:28]. Funder Intel itself argues the 50-state patchwork '
+                              "stifles innovation, yet insists merchants must 'take some responsibility' "
+                              '[jCWdtQmKTiU @ 00:03:43].',
+                              'Inside Texas the fight is over the auto-debit ban, which applies unless the '
+                              'funder holds a first-priority perfected security interest [rhDEWGC8KqM @ '
+                              '00:04:47]. The OCCC draft floats two versions: Version A secures the '
+                              'deposit account, Version B secures all receivables [rhDEWGC8KqM @ '
+                              "00:10:36]. Ferve's Cuff backed Version A [rhDEWGC8KqM @ 00:18:28]. Hudson "
+                              "Cook's Fischer backed Version B [rhDEWGC8KqM @ 00:20:28], and Murray "
+                              "Legal's Sigreed pushed B hard, warning that Version A shrinks access to "
+                              'capital [rhDEWGC8KqM @ 00:42:29]. Jurisdiction is the second open question. '
+                              "Jonathan Mills Patrick admits it is unclear whether the broker's state or "
+                              "the borrower's state governs; 'most people' say borrower location, and he "
+                              'routes that call to a lawyer [gfK-oOi-TuI @ 00:05:26]. In California, '
+                              'firsttuesday lays out two non-equivalent license stacks. A DRE broker with '
+                              'individual and company MLO endorsements can operate under CRMLA or CFL '
+                              'without a separate DBO license, but a DBO licensee cannot reverse that '
+                              '[8bJtTzzuQ-Y @ 00:03:19]. The DBO tracks differ: a CRMLA licensee can '
+                              'service loans for third parties, brokers only to CRMLA lenders and '
+                              'chartered institutions, and needs no California address [8bJtTzzuQ-Y @ '
+                              '00:02:31], while a CFL lender must fund from its own money with no '
+                              'warehouse line, yet may make secured and unsecured consumer and commercial '
+                              'loans [8bJtTzzuQ-Y @ 00:02:56].',
+                              'The compensation workaround splits along asset lines. Jonathan Mills '
+                              "Patrick's play for unlicensed brokers in licensing states is to partner as "
+                              "an 'associate' with a licensed local, refer the deal across and take a "
+                              'referral fee, the Property Brothers model [gfK-oOi-TuI @ 00:05:56]. '
+                              'Trowbridge Law Group draws a hard line once the product is a security: '
+                              "taking compensation to sell someone else's securities requires a license "
+                              '[8p8VFFvdliQ @ 00:02:49], and the clean fix is to form your own syndication '
+                              'and have it invest as a single investor [8p8VFFvdliQ @ 00:10:09]. The rule '
+                              "is blunt: 'just don't sell someone else's security unless you have a "
+                              "securities license' [8p8VFFvdliQ @ 00:10:29]. Sourcing playbooks clash too. "
+                              'Commercial Loan Broker Institute ranks established networks first, industry '
+                              'veterans second, events third, Google research fourth and tailored LinkedIn '
+                              'connections last [tgEHrpyZE9U @ 00:04:31]. Fractional Firm Academy puts '
+                              'LinkedIn in tier A/B, telling operators to wait until a connection is '
+                              'accepted before messaging so no InMail gets burned [KJF9HKiAu0Y @ '
+                              "00:03:26], and drops cold email to tier D: 'In my opinion, it does not "
+                              "work' [KJF9HKiAu0Y @ 00:09:37]. Even there it allows short, non-AI messages "
+                              'to a tight list [KJF9HKiAu0Y @ 00:10:11]. Its verdict on struggling firms: '
+                              'a message or offer clarity problem, not a channel problem [KJF9HKiAu0Y @ '
+                              '00:11:32].'],
+               'table': {'caption': 'Competing playbooks on licensing, structure and sourcing',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Do commercial loan brokers need a license at all?',
+                                   'No in most states; licensing states target commercial mortgages and '
+                                   'non-real-estate credit lines are typically fine',
+                                   'California bill requires a license by July 2028 with $25,000 net worth '
+                                   'and fingerprinting',
+                                   'Jonathan Mills Patrick ([gfK-oOi-TuI @ 00:00:16]); Funder Intel '
+                                   '([jCWdtQmKTiU @ 00:00:14])'],
+                                  ['State oversight model for sales-based and commercial financing',
+                                   'California licensing covering MCA, RBF, factoring, ABL and lease '
+                                   'financing providers',
+                                   'Texas registration through NMLS by December 31, 2026 with one-year '
+                                   'terms plus fees',
+                                   'Funder Intel ([jCWdtQmKTiU @ 00:01:08]); Texas Office of Consumer '
+                                   'Credit Commissioner ([rhDEWGC8KqM @ 00:06:28])'],
+                                  ['Texas auto-debit security interest standard for funders',
+                                   "Version A secures the deposit account, backed by Ferve's Cuff during "
+                                   'comment',
+                                   'Version B secures all receivables, backed by Hudson Cook and Murray '
+                                   'Legal',
+                                   'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ '
+                                   '00:18:28])'],
+                                  ["Which state's rules govern a cross-border broker deal",
+                                   "Broker's home state rules, which remain unclear and contested among "
+                                   'brokers',
+                                   "Borrower's location, which most people say controls the licensing "
+                                   'analysis',
+                                   'Jonathan Mills Patrick ([gfK-oOi-TuI @ 00:05:26])'],
+                                  ['Getting paid on deals without holding the license',
+                                   'Partner as an associate with a licensed local and collect a referral '
+                                   'fee',
+                                   'For securities, form your own syndication and invest as a single '
+                                   'investor',
+                                   'Jonathan Mills Patrick ([gfK-oOi-TuI @ 00:05:56]); Trowbridge Law '
+                                   'Group ([8p8VFFvdliQ @ 00:10:09])'],
+                                  ['California mortgage license stack and endorsement overlap',
+                                   'DRE broker with MLO endorsements can work under CRMLA or CFL licenses',
+                                   'A DBO license alone cannot cross back into DRE MLO activity',
+                                   'firsttuesday – California real estate educators ([8bJtTzzuQ-Y @ '
+                                   '00:03:19])'],
+                                  ['Ranking of outreach channels for new relationships',
+                                   'CLBI ranks established networks first and tailored LinkedIn '
+                                   'connections fifth',
+                                   'Fractional Firm Academy rates LinkedIn tier A/B and cold email tier D',
+                                   'Commercial Loan Broker Institute ([tgEHrpyZE9U @ 00:04:31]); '
+                                   'Fractional Firm Academy ([KJF9HKiAu0Y @ 00:09:37])']]}},
+              {'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is selling a security without a license. Trowbridge '
+                              'Law Group, run by a former syndicator who taught CCIM classes for 40 years, '
+                              "lays out the math: earn $25,000 placing $1M of someone else's raise and "
+                              'rescission can hand you a $1M judgment [8p8VFFvdliQ @ 00:07:22]. Stacked on '
+                              'top come SEC or state fines, a cease-and-desist order with the bad-actor '
+                              'bar attached [8p8VFFvdliQ @ 00:06:41], injunctions and state criminal '
+                              'penalties. Regulators do not need a tip; state notice filings let them '
+                              'trace who sold the deal [8p8VFFvdliQ @ 00:08:46]. That stands in stark '
+                              "contrast to Jonathan Mills Patrick's read on unlicensed commercial loan "
+                              'brokering, where the worst case he names is a fine for operating outside '
+                              'the license [gfK-oOi-TuI @ 00:04:57]. The exclusions that look like escape '
+                              'hatches carry trip wires. VoraPrep shows an issuer stays excluded only '
+                              'while selling its own stock; the moment Tech Innovations sells other '
+                              "companies' shares, it is a broker-dealer [N0Pz-cRD6A4 @ 00:02:29]. Bank "
+                              'employees actively pushing securities need agent registration because the '
+                              'bank exclusion covers traditional banking only [N0Pz-cRD6A4 @ 00:05:45]. '
+                              'Achievable adds that the institution and vacation exclusions only work with '
+                              'no office in the state [j_Gp2v7DBzo @ 00:06:09], and VoraPrep says opening '
+                              'an office or cold-calling retail investors triggers registration '
+                              '[N0Pz-cRD6A4 @ 00:04:37].',
+                              'On the lender side, the failure is reputational and usually permanent. '
+                              "Commercial Loan Broker Institute's Shane Walton: 'Once you burn trust with "
+                              "the lender you're done,' and you cannot BS a lender [4ELMBLT7mvs @ "
+                              '00:02:16]. Spraying deals at the wrong shops is worse than a weak file, '
+                              'because bad lender fit damages your credibility faster than a bad deal '
+                              '[4ELMBLT7mvs @ 00:04:34]. The other killers on his five-screen list are a '
+                              'package that forces the lender into a scavenger hunt through unreconciled '
+                              'numbers [4ELMBLT7mvs @ 00:04:57], plus projections that are not '
+                              'market-based and leverage the deal cannot support [4ELMBLT7mvs @ 00:05:34]. '
+                              "When a lender goes quiet, read it correctly: 'that silence isn't confusion, "
+                              "it's a decision' [4ELMBLT7mvs @ 00:06:17]. His fix for perseverance is "
+                              'aggressive follow-up with backup lenders lined up [4ELMBLT7mvs @ 00:06:37]. '
+                              'The CLBI lender-network video names what lenders fear: half-baked or '
+                              'wrong-fit deals, sloppy packages and brokers who disappear [tgEHrpyZE9U @ '
+                              '00:08:28], and warns premium lenders reject new brokers [tgEHrpyZE9U @ '
+                              '00:08:45]. CLBI tells brokers to add 15 to 20 percent new lenders a year, '
+                              'about two a month [tgEHrpyZE9U @ 00:11:45]. Fractional Firm Academy flags '
+                              'the matching outreach failure: operators give up too early and hop channels '
+                              "[KJF9HKiAu0Y @ 00:12:04], and 'if nobody replied, that data is about your "
+                              "message' [KJF9HKiAu0Y @ 00:03:10].",
+                              'The compliance file is where quiet violations pile up. The Texas OCCC lists '
+                              'mislabeling consumer use as commercial among UDAAP violations [rhDEWGC8KqM '
+                              '@ 00:08:47], bans confessions of judgment [rhDEWGC8KqM @ 00:04:47], '
+                              'requires an OCCC-contact statement in the contract [rhDEWGC8KqM @ '
+                              '00:17:12], and holds records for the later of four years from the '
+                              'transaction or two years from the final entry [rhDEWGC8KqM @ 00:07:48]. '
+                              "Compliance Connection's FinCEN walk-through sets the beneficial-ownership "
+                              'trap: identify every 25 percent equity owner plus one controller '
+                              '[gnx32nNbVfU @ 00:05:01], and treat renewals and rollovers as new accounts '
+                              '[gnx32nNbVfU @ 00:09:42]. Reliance on a prior certification works only with '
+                              'verbal or written confirmation that gets recorded [gnx32nNbVfU @ 00:08:45]. '
+                              'Financial Regulation Courses warns Form U4 amendments are due within 30 '
+                              'calendar days, but certain criminal matters need an accelerated 10 business '
+                              "day window [qptR4ByTPDw @ 00:01:54]. The Finance Lab's casework shows the "
+                              'cost of loose supervision: UBS Puerto Rico paid $33.5M after concentration '
+                              'plus leverage blew up [xgYLNDnEqKg @ 00:00:31], and a 20-month-old balance '
+                              'sheet blocks a Rule 2114 trade because the cap is 15 months [xgYLNDnEqKg @ '
+                              '00:06:26]. A concentration hit at 30 percent against a 25 percent threshold '
+                              'does not kill the trade; it triggers principal review [xgYLNDnEqKg @ '
+                              '00:07:18].'],
+               'table': {'caption': 'Firsthand traps and their price tags',
+                         'headers': ['Trap', 'Reported Consequence', 'Countermove Taught', 'Expert Source'],
+                         'rows': [["Taking compensation to sell someone else's security",
+                                   'Rescission turns $25,000 earned on $1M raised into a $1M judgment',
+                                   'Form your own syndication and have it invest as a single investor',
+                                   'Trowbridge Law Group ([8p8VFFvdliQ @ 00:07:22])'],
+                                  ['Assuming state notice filings stay invisible to regulators',
+                                   'Notice filings let state regulators trace exactly who sold the '
+                                   'securities',
+                                   "Never sell someone else's security without holding a securities "
+                                   'license',
+                                   'Trowbridge Law Group ([8p8VFFvdliQ @ 00:08:46])'],
+                                  ['Spraying deals at lenders without checking their fit',
+                                   'Bad lender fit damages broker credibility faster than a bad deal',
+                                   'Match each deal to lender parameters before any submission goes out',
+                                   'Commercial Loan Broker Institute ([4ELMBLT7mvs @ 00:04:34])'],
+                                  ['Bluffing a lender or disappearing on them mid-deal',
+                                   'Once trust burns with the lender, the broker is done there',
+                                   'Run aggressive follow-up and keep backup lenders ready to step in',
+                                   'Commercial Loan Broker Institute ([4ELMBLT7mvs @ 00:02:16])'],
+                                  ['Labeling a consumer-purpose deal as commercial in Texas',
+                                   'Listed among UDAAP violations in the OCCC sales-based financing draft',
+                                   'Keep records for the later of four years or two years after final '
+                                   'entry',
+                                   'Texas Office of Consumer Credit Commissioner ([rhDEWGC8KqM @ '
+                                   '00:08:47])'],
+                                  ['Treating renewals and rollovers as existing customer accounts',
+                                   'Under FinCEN CDD they count as new accounts needing certification',
+                                   'Use a notify-of-change clause and record every reliance confirmation',
+                                   'Compliance Connection ([gnx32nNbVfU @ 00:09:42])'],
+                                  ['Missing the Form U4 criminal amendment filing window',
+                                   'Certain criminal matters require filing within 10 business days',
+                                   'Treat Form U4 as a living document and amend it promptly',
+                                   'Financial Regulation Courses ([qptR4ByTPDw @ 00:01:54])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before You Take a Fee',
+                           'body': 'Run every deal through these practitioner-reported trip wires before '
+                                   'money changes hands.',
+                           'items': ["Confirm whether the borrower's state licenses or registers "
+                                     'commercial financing by calling the state department; most people '
+                                     'treat borrower location as controlling [Jonathan Mills Patrick — '
+                                     'gfK-oOi-TuI @ 00:04:44].',
+                                     'If the product is a security, do not take a fee for selling it; '
+                                     'rescission turns a $25,000 fee into $1M judgment exposure '
+                                     '[Trowbridge Law Group — 8p8VFFvdliQ @ 00:07:22].',
+                                     'Strip confessions of judgment and pre-default power of attorney out '
+                                     'of California paper [Funder Intel — jCWdtQmKTiU @ 00:00:50].',
+                                     'Before submission, the lender should understand the deal in under 30 '
+                                     'seconds with reconciled numbers [Commercial Loan Broker Institute — '
+                                     '4ELMBLT7mvs @ 00:03:19].']}}],
+ 'pull_quote': '"Once you burn trust with the lender you\'re done." — Commercial Loan Broker Institute '
+               '(4ELMBLT7mvs @ 00:02:16).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Verify licensing status by calling your state department before brokering, and '
+                      'where a licensing state blocks you, partner as an associate with a licensed local '
+                      'for a referral fee [Jonathan Mills Patrick — gfK-oOi-TuI @ 00:04:44].',
+                      'Calendar Texas NMLS registration by December 31, 2026 and budget for one-year '
+                      'registration plus fees [Texas Office of Consumer Credit Commissioner — rhDEWGC8KqM '
+                      '@ 00:06:28].',
+                      'Line up California entry items ahead of the July 2028 deadline: $500 to $1,000, '
+                      'fingerprint background check, $25,000 net worth and proper insurance [Funder Intel '
+                      '— jCWdtQmKTiU @ 00:00:34].',
+                      'Collect beneficial-ownership certification on every corporation and LLC covering '
+                      'all 25 percent equity owners plus one controller [Compliance Connection — '
+                      'gnx32nNbVfU @ 00:05:01].',
+                      'Build lender submissions with the AAA framework: anticipate DSCR and LTV, arrange '
+                      'the package, advocate with a cover letter [Commercial Loan Broker Institute — '
+                      'tgEHrpyZE9U @ 00:09:49].',
+                      'Add about two new lenders a month by targeting the BDO with a specific subject line '
+                      "such as '7A program for car washes' and locking next steps [Commercial Loan Broker "
+                      'Institute — tgEHrpyZE9U @ 00:12:02].'],
+ 'statutory_citations': [{'title': 'Funder Intel — Will commercial loan brokers and funding providers need '
+                                   'a license in California? [00:00:14]',
+                          'url': 'https://www.youtube.com/watch?v=jCWdtQmKTiU&t=14s',
+                          'relevance': 'Primary practitioner testimony on the California commercial '
+                                       'financing license bill, its cost and its 2028 timeline.'},
+                         {'title': 'Jonathan Mills Patrick — Does a commercial loan broker need a license? '
+                                   '[00:00:16]',
+                          'url': 'https://www.youtube.com/watch?v=gfK-oOi-TuI&t=16s',
+                          'relevance': 'Primary practitioner testimony on unlicensed commercial loan '
+                                       'brokering and the associate referral-fee workaround.'},
+                         {'title': 'Texas Office of Consumer Credit Commissioner — Commercial Sales-Based '
+                                   'Financing Rules: Precomment Draft – January 28, 2026 [00:06:28]',
+                          'url': 'https://www.youtube.com/watch?v=rhDEWGC8KqM&t=388s',
+                          'relevance': 'Primary practitioner testimony on Texas NMLS registration, '
+                                       'auto-debit versions and UDAAP traps.'},
+                         {'title': "Trowbridge Law Group — Don't Act as a Broker-Dealer [00:07:22]",
+                          'url': 'https://www.youtube.com/watch?v=8p8VFFvdliQ&t=442s',
+                          'relevance': 'Primary practitioner testimony on rescission exposure and '
+                                       'penalties for selling securities unlicensed.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'jCWdtQmKTiU',
+                       'title': 'Will commercial loan brokers and funding providers need a license in '
+                                'California?',
+                       'channel': 'Funder Intel',
+                       'author': 'Funder Intel',
+                       'text': 'So, this would take effect January 1 of 2028 where you would need the '
+                               'license by July of 2028.',
+                       'tip': 'So, this would take effect January 1 of 2028 where you would need the '
+                              'license by July of 2028.',
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=jCWdtQmKTiU&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=jCWdtQmKTiU&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gfK-oOi-TuI',
+                       'title': 'Does a commercial loan broker need a license?',
+                       'channel': 'Jonathan Mills Patrick',
+                       'author': 'Jonathan Mills Patrick',
+                       'text': 'And the short answer is that you do not have to be licensed in most '
+                               'states.',
+                       'tip': 'And the short answer is that you do not have to be licensed in most states.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=gfK-oOi-TuI&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=gfK-oOi-TuI&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tgEHrpyZE9U',
+                       'title': 'How to Build a Lender Network as a New Commercial Loan Broker',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Most new brokers think that their number one job is finding clients.',
+                       'tip': 'Most new brokers think that their number one job is finding clients.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=tgEHrpyZE9U&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=tgEHrpyZE9U&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8bJtTzzuQ-Y',
+                       'title': 'Mortgage Concepts  California MLO licensing laws',
+                       'channel': 'firsttuesday – California real estate educators',
+                       'author': 'firsttuesday – California real estate educators',
+                       'text': 'A DRE licensed MLO can work under a CRMLA or CFL license without a DBO '
+                               'license, but the reverse is not true.',
+                       'tip': 'A DRE licensed MLO can work under a CRMLA or CFL license without a DBO '
+                              'license, but the reverse is not true.',
+                       'timestamp': 199,
+                       'timestamp_seconds': 199,
+                       'timestamp_label': '[00:03:19]',
+                       'url': 'https://www.youtube.com/watch?v=8bJtTzzuQ-Y&t=199s',
+                       'markdown': '[00:03:19](https://www.youtube.com/watch?v=8bJtTzzuQ-Y&t=199s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gnx32nNbVfU',
+                       'title': 'Compliance Outlook - FinCEN Customer Due Diligence',
+                       'channel': 'Compliance Connection',
+                       'author': 'Compliance Connection',
+                       'text': 'The ownership prong covers each individual who owns 25 percent or more of '
+                               'the equity interests of the legal entity.',
+                       'tip': 'The ownership prong covers each individual who owns 25 percent or more of '
+                              'the equity interests of the legal entity.',
+                       'timestamp': 301,
+                       'timestamp_seconds': 301,
+                       'timestamp_label': '[00:05:01]',
+                       'url': 'https://www.youtube.com/watch?v=gnx32nNbVfU&t=301s',
+                       'markdown': '[00:05:01](https://www.youtube.com/watch?v=gnx32nNbVfU&t=301s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rhDEWGC8KqM',
+                       'title': 'Commercial Sales-Based Financing Rules: Precomment Draft – January 28, '
+                                '2026',
+                       'channel': 'Texas Office of Consumer Credit Commissioner',
+                       'author': 'Texas Office of Consumer Credit Commissioner',
+                       'text': 'So, the law generally went into effect on September 1st, 2025.',
+                       'tip': 'So, the law generally went into effect on September 1st, 2025.',
+                       'timestamp': 326,
+                       'timestamp_seconds': 326,
+                       'timestamp_label': '[00:05:26]',
+                       'url': 'https://www.youtube.com/watch?v=rhDEWGC8KqM&t=326s',
+                       'markdown': '[00:05:26](https://www.youtube.com/watch?v=rhDEWGC8KqM&t=326s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ByTHmfsxaNQ',
+                       'title': 'TIL/RESPA Final Rule on Integrated Mortgage Disclosures',
+                       'channel': 'CLA (CliftonLarsonAllen LLP)',
+                       'author': 'CLA (CliftonLarsonAllen LLP)',
+                       'text': 'The loan estimate must be delivered within three business days of '
+                               'receiving the application.',
+                       'tip': 'The loan estimate must be delivered within three business days of receiving '
+                              'the application.',
+                       'timestamp': 1734,
+                       'timestamp_seconds': 1734,
+                       'timestamp_label': '[00:28:54]',
+                       'url': 'https://www.youtube.com/watch?v=ByTHmfsxaNQ&t=1734s',
+                       'markdown': '[00:28:54](https://www.youtube.com/watch?v=ByTHmfsxaNQ&t=1734s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xgYLNDnEqKg',
+                       'title': 'Series 24: Supervising Reg BI, Form CRS, Institutional Suitability and '
+                                'Concentration Reviews',
+                       'channel': 'The Finance Lab',
+                       'author': 'The Finance Lab',
+                       'text': 'A balance sheet that is 20 months old means the trade is blocked under '
+                               'Rule 2114.',
+                       'tip': 'A balance sheet that is 20 months old means the trade is blocked under Rule '
+                              '2114.',
+                       'timestamp': 386,
+                       'timestamp_seconds': 386,
+                       'timestamp_label': '[00:06:26]',
+                       'url': 'https://www.youtube.com/watch?v=xgYLNDnEqKg&t=386s',
+                       'markdown': '[00:06:26](https://www.youtube.com/watch?v=xgYLNDnEqKg&t=386s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KJF9HKiAu0Y',
+                       'title': 'Referrals Aren’t Enough: Ranking The Top 5 Client Channels for Fractional '
+                                'Firms',
+                       'channel': 'Fractional Firm Academy',
+                       'author': 'Fractional Firm Academy',
+                       'text': 'Most finance and accounting firms who struggle with outreach have a '
+                               'message or offer clarity problem, not a channel problem.',
+                       'tip': 'Most finance and accounting firms who struggle with outreach have a message '
+                              'or offer clarity problem, not a channel problem.',
+                       'timestamp': 692,
+                       'timestamp_seconds': 692,
+                       'timestamp_label': '[00:11:32]',
+                       'url': 'https://www.youtube.com/watch?v=KJF9HKiAu0Y&t=692s',
+                       'markdown': '[00:11:32](https://www.youtube.com/watch?v=KJF9HKiAu0Y&t=692s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8p8VFFvdliQ',
+                       'title': "Don't Act as a Broker-Dealer",
+                       'channel': 'Trowbridge Law Group',
+                       'author': 'Trowbridge Law Group',
+                       'text': "That's fine, but just don't sell someone else's security unless you have a "
+                               'securities license.',
+                       'tip': "That's fine, but just don't sell someone else's security unless you have a "
+                              'securities license.',
+                       'timestamp': 629,
+                       'timestamp_seconds': 629,
+                       'timestamp_label': '[00:10:29]',
+                       'url': 'https://www.youtube.com/watch?v=8p8VFFvdliQ&t=629s',
+                       'markdown': '[00:10:29](https://www.youtube.com/watch?v=8p8VFFvdliQ&t=629s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j_Gp2v7DBzo',
+                       'title': 'Broker dealer exclusions (NASAA Series 63, 65, 66)',
+                       'channel': 'Achievable',
+                       'author': 'Achievable',
+                       'text': "If it's a bank and that's it you can assume it's excluded from the "
+                               'definition of a broker dealer.',
+                       'tip': "If it's a bank and that's it you can assume it's excluded from the "
+                              'definition of a broker dealer.',
+                       'timestamp': 340,
+                       'timestamp_seconds': 340,
+                       'timestamp_label': '[00:05:40]',
+                       'url': 'https://www.youtube.com/watch?v=j_Gp2v7DBzo&t=340s',
+                       'markdown': '[00:05:40](https://www.youtube.com/watch?v=j_Gp2v7DBzo&t=340s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qptR4ByTPDw',
+                       'title': 'Form U4 Compliance Obligations Explained | Series 7, SIE & Broker-Dealer '
+                                'Careers',
+                       'channel': 'Financial Regulation Courses',
+                       'author': 'Financial Regulation Courses',
+                       'text': 'However, certain criminal matters require an accelerated 10 business day '
+                               'filing window to maintain regulatory standing.',
+                       'tip': 'However, certain criminal matters require an accelerated 10 business day '
+                              'filing window to maintain regulatory standing.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=qptR4ByTPDw&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=qptR4ByTPDw&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N0Pz-cRD6A4',
+                       'title': '[Series 63] S632: Broker-Dealer Exclusions: Agents, Issuers, and Banks '
+                                'Under the Uniform Securiti...',
+                       'channel': 'VoraPrep',
+                       'author': 'VoraPrep',
+                       'text': "Third, the bank exclusion is for the institution's traditional banking "
+                               'activities, not for employees who are essentially acting as unregistered '
+                               'agents.',
+                       'tip': "Third, the bank exclusion is for the institution's traditional banking "
+                              'activities, not for employees who are essentially acting as unregistered '
+                              'agents.',
+                       'timestamp': 427,
+                       'timestamp_seconds': 427,
+                       'timestamp_label': '[00:07:07]',
+                       'url': 'https://www.youtube.com/watch?v=N0Pz-cRD6A4&t=427s',
+                       'markdown': '[00:07:07](https://www.youtube.com/watch?v=N0Pz-cRD6A4&t=427s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JR8TOdAxFa4',
+                       'title': 'Projected Investment Returns: 4 Compliance Priorities for Broker-Dealers',
+                       'channel': 'LeGaye Law Firm',
+                       'author': 'LeGaye Law Firm',
+                       'text': "And accredited investor status alone doesn't establish compliance.",
+                       'tip': "And accredited investor status alone doesn't establish compliance.",
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=JR8TOdAxFa4&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=JR8TOdAxFa4&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'skWLJwzq_fc',
+                       'title': 'How To Start a Financial Advisory Business',
+                       'channel': 'Josh Olfert, CFP',
+                       'author': 'Josh Olfert, CFP',
+                       'text': "You can't just walk up and sign a contract you need a corporation a legal "
+                               'entity to sign the contract.',
+                       'tip': "You can't just walk up and sign a contract you need a corporation a legal "
+                              'entity to sign the contract.',
+                       'timestamp': 555,
+                       'timestamp_seconds': 555,
+                       'timestamp_label': '[00:09:15]',
+                       'url': 'https://www.youtube.com/watch?v=skWLJwzq_fc&t=555s',
+                       'markdown': '[00:09:15](https://www.youtube.com/watch?v=skWLJwzq_fc&t=555s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4ELMBLT7mvs',
+                       'title': 'Business Loan Broker Training: Why Lenders Ignore You',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': "Once you burn trust with the lender you're done.",
+                       'tip': "Once you burn trust with the lender you're done.",
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=4ELMBLT7mvs&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=4ELMBLT7mvs&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4ELMBLT7mvs',
+                       'title': 'Business Loan Broker Training: Why Lenders Ignore You',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'This is subtle but critical because bad lender fit damages your '
+                               'credibility faster than a bad deal.',
+                       'tip': 'This is subtle but critical because bad lender fit damages your credibility '
+                              'faster than a bad deal.',
+                       'timestamp': 274,
+                       'timestamp_seconds': 274,
+                       'timestamp_label': '[00:04:34]',
+                       'url': 'https://www.youtube.com/watch?v=4ELMBLT7mvs&t=274s',
+                       'markdown': '[00:04:34](https://www.youtube.com/watch?v=4ELMBLT7mvs&t=274s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

@@ -1,577 +1,838 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-your-first-domain-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in domain investing, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (2–9 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine USPTO Records, RDAP, Drop Auctions and Buyer Intent; Close Through Escrow With ACPA, UDRP and CAN-SPAM Discipline",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower score. "
-        "The advantage is disciplined demand discovery, not collecting attractive strings. "
-        "This chapter maps eight operating plays: brandable buyer baskets, exact-match demand gaps, "
-        "expired-authority recovery, drop-auction discipline, outbound domain upgrades, portfolio "
-        "liquidation sourcing, inbound intent routing, and serverless edge demonstrations. "
-        "Only the edge-hosting play carries a supplied catalog identifier; the other seven are "
-        "chapter-defined domain workflows. Build auditable buyer evidence, cap acquisition exposure, "
-        "and use measured outreach to pursue the first three to ten completed sales over 2–9 months. "
-        "Canonical annual owner profits remain $3,000 Conservative, $44,000 Base, and $120,000 Scaled. "
-        "Gross domain sale proceeds are revenue; acquisition, renewals, commissions, and operating "
-        "expenses must fit inside those margins."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$20,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "15% net margin; $3,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Base",
-            "value": "$160,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "27.5% net margin; $44,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$300,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "40% net margin; $120,000 annual owner net profit; 2 FT + 2 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine buyer baskets before bidding on inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with buyer density, not an expired-domain feed. Choose two commercial categories "
-                    "whose businesses already spend to acquire customers, then build a worksheet containing "
-                    "company name, current domain, operating geography, public business contact, trigger date, "
-                    "and the precise improvement a generic alternative could provide. Google Ads Keyword "
-                    "Planner can expose commercial vocabulary; Google Trends can distinguish persistent demand "
-                    "from a temporary spike. State business registries, SEC EDGAR filings, company announcements, "
-                    "and public procurement notices supply expansion signals, but a filing is evidence of "
-                    "activity rather than permission to solicit indiscriminately. Record the source URL and "
-                    "observation date beside each inference. For each candidate domain, identify ten independent "
-                    "potential users before acquisition. Ten companies sharing a descriptive category constitute "
-                    "a stronger buyer basket than ten subsidiaries of one trademark owner. Keep buyer research "
-                    "separate from trademark clearance: a newly announced proprietary product name is a reason "
-                    "to investigate conflicts, not a registration opportunity. A useful first batch contains "
-                    "forty researched businesses, twenty candidate strings, and at most five names eligible for "
-                    "paid diligence. This deliberately small inventory makes rejection cheap and exposes whether "
-                    "the operator actually understands customer language."
-                ),
-                (
-                    "Split sourcing into eight workflows so attractive anecdotes cannot substitute for a "
-                    "repeatable channel. Brandable buyer baskets seek pronounceable, commercially flexible "
-                    "names supported by multiple unrelated users. Exact-match demand gaps connect descriptive "
-                    "terms with established purchasing intent. Expired-authority recovery evaluates surviving "
-                    "editorial references without assuming rankings transfer. Drop-auction discipline sets "
-                    "maximum bids before competitive pressure appears. Outbound domain upgrades approach "
-                    "businesses whose existing generic addresses create measurable friction. Portfolio "
-                    "liquidation sourcing buys selected assets from willing owners rather than inheriting "
-                    "their entire renewal problem. Inbound intent routing converts genuine inquiries into "
-                    "priced conversations. The eighth workflow implements the supplied "
-                    "serverless_edge_free_tier_empire_hosting play through permitted static demonstrations. "
-                    "These are separate acquisition or conversion hypotheses, not eight additional revenue "
-                    "streams in the scorecard. NameBio and DNJournal provide sale references, while registrar "
-                    "marketplaces and auction histories reveal current supply. Treat published transactions "
-                    "as selected observations: exceptional sales, incomplete reporting, seller financing, and "
-                    "bundled assets can distort comparisons. For every comparable, preserve extension, length, "
-                    "transaction date, venue, and evidence that the reported price describes the domain itself. "
-                    "Three relevant transactions beat thirty visually impressive but unrelated examples. "
-                    "When evidence remains thin, lower the bid rather than manufacture precision."
-                ),
-                (
-                    "Use a weekly sourcing rhythm with explicit stop conditions. On Monday, collect twenty "
-                    "fresh business triggers and twenty available or owner-held domains. On Tuesday, remove "
-                    "obvious trademark conflicts, expensive renewal tiers, confusing spellings, and candidates "
-                    "with only one plausible buyer. On Wednesday, inspect ownership history, comparable sales, "
-                    "and the surviving buyer baskets. Thursday is reserved for owner conversations and small "
-                    "auctions; Friday closes the evidence ledger and updates renewal exposure. ICANN Lookup "
-                    "and registry RDAP responses help establish registration status, but redacted contact "
-                    "records do not establish owner identity or authorize attempts to uncover private data. "
-                    "Use registrar contact relays, published business addresses, or the owner's sales page. "
-                    "Before making an offer, state whether the operator is buying for inventory or acting "
-                    "under a written brokerage mandate. A signed mandate is a pipeline event, not a completed "
-                    "domain sale, and commission economics belong in a separate ledger. Count a first win "
-                    "only after buyer funds clear, the agreed transfer completes, and proceeds reconcile. "
-                    "Over the specified 3–24 month first-deal window, preserve working capital by pausing "
-                    "purchases whenever unsold inventory grows faster than qualified buyer conversations "
-                    "and the next twelve months of renewals are no longer fully reserved."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Domain Operating Plays: Evidence, Unit Tests and Downside Controls",
-                "headers": [
-                    "Operating play and observable sourcing signal",
-                    "Illustrative unit math for a bounded test",
-                    "Evidence required before committing acquisition capital",
-                    "Risk fallback when the original thesis fails",
-                ],
-                "rows": [
-                    [
-                        "Brandable buyer baskets spanning multiple unrelated commercial users",
-                        "Screen twenty names; buy two at $300 each",
-                        "Document ten independent buyers and spoken-name clarity tests",
-                        "Reject trademark concentration; cap initial exposure at $600",
-                    ],
-                    [
-                        "Exact-match demand gaps in established descriptive service categories",
-                        "A $2,500 sale less $375 fees and $250 basis leaves $1,875",
-                        "Verify commercial vocabulary and several credible buyer budgets",
-                        "Reduce the bid when buyer evidence remains concentrated",
-                    ],
-                    [
-                        "Expired-authority recovery supported by surviving editorial reference links",
-                        "Spend $400 acquisition plus $100 review before rebuilding",
-                        "Inspect actual referring pages, anchors, archives and ownership transitions",
-                        "Value the name alone when links disappear or disappoint",
-                    ],
-                    [
-                        "Drop-auction discipline for descriptive names with diversified buyers",
-                        "Budget $600 hammer plus $100 charges and $100 renewals",
-                        "Confirm auction rules, transfer timing and ordinary renewal pricing",
-                        "Stop bidding at $600 rather than chase sunk effort",
-                    ],
-                    [
-                        "Outbound domain upgrades addressing observable address or spelling friction",
-                        "Forty delivered messages producing four replies imply 10% response",
-                        "Identify generic naming improvements without targeting another party's mark",
-                        "Stop after the defined cadence and retain inbound availability",
-                    ],
-                    [
-                        "Portfolio liquidation sourcing from verified owners seeking selective exits",
-                        "Ten names at $100 each require $1,000 acquisition cash",
-                        "Price each asset individually and reserve its renewal costs",
-                        "Offer only for qualified names instead of accepting bundles",
-                    ],
-                    [
-                        "Inbound intent routing from genuine domain landing-page inquiries",
-                        "Twenty inquiries yielding four qualified buyers imply 20% qualification",
-                        "Capture domain, intended use, budget range and decision timing",
-                        "Filter automated submissions and keep unsupported offers unrecognized",
-                    ],
-                    [
-                        "serverless_edge_free_tier_empire_hosting for permitted static buyer-facing demonstrations across owned domains",
-                        "One hundred $15 renewals cost $1,500 despite $0 hosting",
-                        "Verify commercial permission, quotas and useful original property content",
-                        "Prebuild locally; upload artifacts directly and consolidate weak properties",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Veteran sourcing habits that preserve negotiating leverage",
-                "body": "The useful edge is a better evidence file and a lower carrying burden, not faster participation in every auction.",
-                "items": [
-                    "Save the auction's full fee schedule and displayed renewal price before bidding; premium renewals can erase an apparently cheap acquisition.",
-                    "Check comparable-sale dates against major category changes; an old speculative cycle is a weak anchor for today's buyer budget.",
-                    "Keep a second-choice domain for each thesis so one auction never becomes the only route to testing demand.",
-                    "Export inquiry timestamps and landing-page versions before changing price; otherwise improved response can be mistaken for improved asset quality.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn diligence into a price ceiling and a transfer-ready file",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Score each surviving asset on a one-hundred-point worksheet: independent buyer density "
-                    "earns twenty-five points, commercial clarity twenty, comparable-sale relevance fifteen, "
-                    "clean ownership and use history fifteen, carrying-cost resilience fifteen, and transfer "
-                    "readiness ten. Define full-credit evidence before reviewing candidates. Buyer density "
-                    "requires ten researched independent users; carrying-cost resilience requires a funded "
-                    "two-year renewal reserve at the actual renewal rate. Advance names scoring seventy-five "
-                    "or more only when every hard rejection test also passes. Trademark exposure is not a "
-                    "small deduction that strong commercial scores can offset. Search the USPTO trademark "
-                    "database, ordinary web results, relevant state records, and the intended market's "
-                    "business usage. Federal registration searches alone do not capture every enforceable "
-                    "right. Under 15 U.S.C. 1125(d), bad-faith intent to profit from protected marks can "
-                    "create cybersquatting liability; statutory damages under 15 U.S.C. 1117(d) can reach "
-                    "$100,000 per domain. ICANN's UDRP is a separate contractual dispute process with its "
-                    "own elements. Dictionary words are not automatically safe when acquisition circumstances, "
-                    "targeting, or landing-page advertisements reveal abusive intent. Escalate genuine conflicts "
-                    "to qualified counsel before spending money, and abandon candidates whose economics "
-                    "depend on pressure against a single rights holder."
-                ),
-                (
-                    "For expired domains, inspect Internet Archive captures across several years, current "
-                    "search results, backlink samples from Ahrefs or Majestic, and any public evidence of "
-                    "malware or deceptive historical use. Vendor authority scores are screening aids, not "
-                    "transferable cash flows. A thousand links from abandoned directories can be weaker than "
-                    "five maintained editorial references. Sample the referring pages directly, record whether "
-                    "links remain live, and distinguish branded navigation from topic-relevant citations. "
-                    "Do not recreate copyrighted pages, impersonate the former operator, or imply continuity "
-                    "with a closed business. After authorized control, Google Search Console can reveal "
-                    "manual actions or indexing problems; seller screenshots before purchase remain evidence "
-                    "to verify, not independent access. Request an express representation of domain ownership "
-                    "and the seller's authority to transfer. For direct acquisitions, verify control using "
-                    "a temporary DNS TXT challenge or a registrar-supported process before releasing funds. "
-                    "Check registrar and registry status codes, current expiration, transfer restrictions, "
-                    "and any recent registration or registrant change that could delay movement. A registrar "
-                    "push may solve some operational timing issues but is not interchangeable with an "
-                    "inter-registrar transfer. Put the actual delivery mechanism and completion evidence "
-                    "into the transaction instructions before a buyer wires money."
-                ),
-                (
-                    "Translate diligence into a maximum acquisition price using probability-weighted cash "
-                    "rather than an aspirational retail listing. Consider a hypothetical name with a $4,000 "
-                    "sale price, a 25% chance of sale within twenty-four months, a 15% marketplace fee, "
-                    "a $200 fallback liquidation value, $40 of renewals, and $150 of allocated handling "
-                    "cost. Expected receipts are 0.25 times $3,400 plus 0.75 times $200, or $1,000. "
-                    "Subtract $190 of carrying and handling costs and a required $400 expected contribution; "
-                    "the acquisition ceiling is $410. These probabilities are planning assumptions, not "
-                    "market statistics. Set the fallback value to zero if no executable wholesale buyer "
-                    "supports it, reducing the ceiling to $260. Auction charges and immediate transfer costs "
-                    "must fit inside that ceiling rather than appearing afterward as exceptions. Maintain "
-                    "separate fields for cash acquisition, annual renewals, selling fees, and allocated labor "
-                    "so the model cannot double-count a cost or hide one. Reserve cash for failed theses: "
-                    "a profitable completed sale does not replenish capital trapped in ten unsold names. "
-                    "When seller expectations exceed the ceiling, leave a dated standing offer or move "
-                    "to the next candidate instead of changing the assumptions to justify participation."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Acquisition Forensic Worksheet and Hard Rejection Tests",
-                "headers": [
-                    "Review area with accountable operating purpose",
-                    "Evidence captured in the acquisition decision file",
-                    "Specific failure that stops or reprices acquisition",
-                    "Concrete recovery action before money changes hands",
-                ],
-                "rows": [
-                    [
-                        "Trademark review covering registration and actual commercial use",
-                        "Save search terms, relevant records and dated usage examples",
-                        "A single protected brand supplies nearly all buyer value",
-                        "Reject targeted registrations and obtain counsel for genuine ambiguity",
-                    ],
-                    [
-                        "Ownership verification before negotiating final escrow release instructions",
-                        "Record successful DNS challenge or equivalent registrar verification evidence",
-                        "Seller cannot demonstrate control or explain transfer authority",
-                        "Pause payment and request an independently verifiable control method",
-                    ],
-                    [
-                        "Historical use review across multiple archived operating periods",
-                        "Preserve dated captures and notes describing material topic changes",
-                        "Historical impersonation or harmful activity undermines the acquisition thesis",
-                        "Reprice as a clean-name purchase or abandon the acquisition",
-                    ],
-                    [
-                        "Link evidence review focused on maintained editorial references",
-                        "Inspect referring pages directly rather than trusting aggregate scores",
-                        "Most valuable links disappeared or point toward unrelated content",
-                        "Remove authority value and rerun the descriptive-name ceiling",
-                    ],
-                    [
-                        "Renewal and transfer review at registrar and registry levels",
-                        "Record actual renewal prices, expiration dates and applicable locks",
-                        "Premium carrying charges exceed the funded two-year reserve",
-                        "Lower the offer or reject the carrying-cost burden",
-                    ],
-                    [
-                        "Comparable-sale review using verifiable domain-only transaction details",
-                        "Match extension, category, length, venue and transaction timing",
-                        "Price anchors depend on exceptional sales or bundled businesses",
-                        "Use a wider discount and demand stronger buyer evidence",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before any binding acquisition commitment",
-                "body": "Record evidence and the reviewing operator's decision for every candidate; a high worksheet score cannot override a failed check.",
-                "items": [
-                    "Verify seller control, contracting identity, transfer authority, and the precise delivery method before funding escrow.",
-                    "Complete trademark and historical-use review; reject names whose resale thesis depends on another party's protected identity.",
-                    "Fund acquisition charges plus two years of actual renewals while preserving operating cash for the expected holding period.",
-                    "Approve a written maximum bid using downside assumptions, a defensible buyer basket, and a documented exit if retail demand fails.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a bounded outreach cadence and distinguish replies from wins",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build outreach around a verifiable improvement and an honest ownership statement. "
-                    "A first message can say: 'I own ClearExample.com, a descriptive alternative to your "
-                    "current multiword address. The asking price is $3,000, with transfer through an agreed "
-                    "escrow provider. Would reviewing the domain be useful?' Substitute an actually owned "
-                    "and cleared name; never claim ownership while merely watching an auction. Avoid invented "
-                    "traffic figures, promised rankings, fabricated competing bids, or claims that the buyer "
-                    "must purchase to protect their business. Under 15 U.S.C. 7704, commercial email must "
-                    "meet applicable sender-identification, subject-line, postal-address, advertising-identification, "
-                    "and opt-out requirements. Honor opt-outs within ten business days and retain a suppression "
-                    "record across campaigns. Business recipients are not categorically exempt. For this "
-                    "workflow, use individualized business email and manual professional-network contact where "
-                    "platform rules permit; exclude automated calls and texts. Send the initial email on "
-                    "day one, one evidence-bearing follow-up on day six, and a brief close-the-loop message "
-                    "on day fourteen. A relevant manual network message can replace the second email, not "
-                    "multiply the touches. Stop immediately after an objection to further contact. "
-                    "Verify recipient jurisdiction before extending the campaign beyond the reviewed market."
-                ),
-                (
-                    "Treat conversion figures as instrumented planning hypotheses until the operator has "
-                    "their own cohort history. One illustrative batch starts with two hundred raw company "
-                    "records, produces one hundred twenty qualified prospects, and reaches one hundred "
-                    "verified delivered messages. Twelve substantive replies produce six qualified buyer "
-                    "conversations, three written offers, and one completed sale. The implied conversions "
-                    "are 60% raw-to-qualified, 83.3% qualified-to-delivered, 12% delivered-to-reply, 50% "
-                    "reply-to-conversation, 50% conversation-to-offer, and 33.3% offer-to-close. Overall, one "
-                    "sale from two hundred records is 0.5%. These are test targets, not published industry "
-                    "benchmarks. A signed purchase agreement remains open until funding and delivery finish; "
-                    "a brokerage mandate remains a separate event entirely. If this funnel reproduced, "
-                    "three to ten wins would require six hundred to two thousand raw records, but inventory "
-                    "quality, buyer overlap, and long decision cycles prevent linear extrapolation from "
-                    "being a forecast. Review each batch by domain and source channel. High replies with "
-                    "few offers usually indicate weak pricing or buyer fit; low delivery indicates contact "
-                    "quality; offers without closes point toward trust, transfer friction, or unrealistic "
-                    "terms. Do not respond to every weak conversion stage by increasing message volume."
-                ),
-                (
-                    "Resolve objections with alternatives that preserve both trust and margin. When a buyer "
-                    "says the price is too high, ask whether the obstacle is budget, naming relevance, or "
-                    "approval timing; then offer a simpler payment schedule only through a provider whose "
-                    "domain-control and default procedures have been reviewed. Installments change cash "
-                    "timing and collection exposure, so do not record the entire contract value as collected "
-                    "proceeds. When the buyer already owns a suitable domain, demonstrate an optional "
-                    "redirect or memorable campaign address without pretending migration is necessary. "
-                    "When they ask about search rankings, separate the name's descriptive value from "
-                    "unproven search outcomes. When they question ownership, provide the agreed control "
-                    "proof and escrow process rather than sending account credentials. When they allege "
-                    "a trademark conflict, stop the sales pitch and review the claim; threatening litigation "
-                    "or redirecting to hostile content worsens the position. For an accepted offer, document "
-                    "the exact domain, gross price, fee allocation, transfer method, inspection conditions, "
-                    "and release criteria. Verify the escrow destination independently through the provider's "
-                    "known website. A spoofed payment confirmation is not funded escrow. Close the ledger "
-                    "only after registrar delivery evidence and actual provider disbursement reconcile "
-                    "with the signed transaction terms."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach Cadence, Funnel Diagnostics and Objection Responses",
-                "headers": [
-                    "Moment or objection requiring a specific operator response",
-                    "Message or action grounded in verifiable buyer value",
-                    "Measurement that distinguishes progress from surface activity",
-                    "Stop condition or alternative that protects transaction quality",
-                ],
-                "rows": [
-                    [
-                        "Day-one introduction to a verified relevant business recipient",
-                        "State ownership, descriptive use, asking price and transfer route",
-                        "Measure verified delivery and substantive replies by individual domain",
-                        "Suppress invalid addresses and stop immediately after contact objections",
-                    ],
-                    [
-                        "Day-six follow-up after an unanswered but delivered introduction",
-                        "Add one concrete usage example without claiming search gains",
-                        "Compare incremental qualified conversations against additional contact effort",
-                        "Replace rather than duplicate with permitted manual network contact",
-                    ],
-                    [
-                        "Day-fourteen closing message after two unanswered relevant touches",
-                        "Confirm availability briefly and leave a clear response path",
-                        "Record final cohort response before removing active follow-up tasks",
-                        "End this cadence rather than recycling recipients into another",
-                    ],
-                    [
-                        "Buyer rejects price while acknowledging genuine naming relevance",
-                        "Separate budget limitations from value doubts and decision timing",
-                        "Track revised offers against the documented minimum acceptable contribution",
-                        "Decline discounts that break economics; review secured installments separately",
-                    ],
-                    [
-                        "Buyer questions ownership or requests evidence of ranking value",
-                        "Demonstrate control and distinguish naming utility from unproven outcomes",
-                        "Measure movement toward verified terms rather than screenshot exchanges",
-                        "Use escrow verification and withdraw unsupported performance assertions immediately",
-                    ],
-                    [
-                        "Accepted offer awaits funding, delivery and final proceeds reconciliation",
-                        "Confirm domain, fees, transfer method and independent escrow destination",
-                        "Count a win only after completed delivery and disbursement",
-                        "Pause on payment discrepancies and investigate before releasing control",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create the qualified buyer batch",
-                    "action": "Select twenty-five prospects with a recorded generic-domain use case.",
-                    "detail": "Save source dates, public business contacts, jurisdiction review, ownership status, and suppression checks before drafting messages.",
-                },
-                {
-                    "step": 2,
-                    "title": "Send and instrument the bounded cadence",
-                    "action": "Run day-one, day-six, and day-fourteen touches without increasing the contact ceiling.",
-                    "detail": "Record delivered messages, substantive replies, opt-outs, qualified conversations, written offers, and completed sales as distinct events.",
-                },
-                {
-                    "step": 3,
-                    "title": "Convert interest into executable terms",
-                    "action": "Confirm intended use, budget, decision timing, minimum acceptable proceeds, and transfer requirements.",
-                    "detail": "Send a written offer naming the exact asset and fee allocation; resolve ownership, payment, and delivery concerns before acceptance.",
-                },
-                {
-                    "step": 4,
-                    "title": "Complete and reconcile the transaction",
-                    "action": "Use verified escrow instructions, document delivery, and reconcile disbursed proceeds.",
-                    "detail": "Archive the agreement and transfer evidence, update inventory and costs, and record why the buyer purchased for the next sourcing batch.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Build inbound proof without turning cheap hosting into expensive inventory",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Implement serverless_edge_free_tier_empire_hosting as a controlled merchandising experiment, "
-                    "not a promise that a thousand properties cost nothing to operate. Generate useful static "
-                    "HTML and JSON locally: a service-area directory with verified entries, a transparent "
-                    "calculator, or an original comparison tool can demonstrate a generic domain's possible "
-                    "use. Start with ten properties and one meaningful conversion event, such as a qualified "
-                    "purchase inquiry. Cloudflare Pages or Workers, Vercel, Netlify, GitHub Pages, and Supabase "
-                    "have different current commercial-use restrictions, account limits, and resource "
-                    "allowances; a free allocation is not permission for every proposed deployment. GitHub "
-                    "Pages specifically restricts certain commercial hosting uses, so do not assume it "
-                    "fits a transaction-oriented property. Check terms before choosing infrastructure. "
-                    "Keep hosting, bandwidth, and SSL at $0.00 per month only where the actual permitted "
-                    "deployment stays within current allowances. Acquisition, renewals, editorial work, and "
-                    "inquiry handling remain real costs. One hundred domains renewing at $15 consume $1,500 "
-                    "annually; one thousand consume $15,000 before any sale. Avoid thin doorway pages and "
-                    "duplicated directories created solely to capture search queries. A useful demonstration "
-                    "can improve buyer understanding; publishing a template across many names does not "
-                    "establish search demand or saleable goodwill."
-                ),
-                (
-                    "The required technical fallback is to prebuild static bundles locally or on an "
-                    "authorized self-hosted runner and upload compiled artifacts through the selected "
-                    "provider's supported API. This reduces cloud build-minute consumption but does not "
-                    "remove bandwidth, request, storage, or account limits. Use one repeatable content "
-                    "schema, validate links before deployment, and retain a portable archive for each "
-                    "property. Trigger rebuilds only when substantive data changes. Keep secrets outside "
-                    "generated files, and never place registrar credentials in a public repository. "
-                    "Use a minimal inquiry form that records the requested domain, contact address, "
-                    "budget range, and message; route submissions into a tagged mailbox or existing CRM. "
-                    "Add rate limiting and spam filtering within the chosen service's allowed configuration. "
-                    "Assign every inquiry to an owner and acknowledge genuine interest within one business "
-                    "day. Weekly reporting should show inquiries per property, qualified share, offers, "
-                    "completed sales, carrying costs, and operator minutes. If a quota or policy change "
-                    "makes a free deployment unsuitable, consolidate properties, serve a simpler static "
-                    "sales page, or move to a paid plan already covered by the operating budget. "
-                    "Do not evade service limits by creating extra accounts. Stop expanding demonstrations "
-                    "when maintenance consumes the time needed for qualified negotiations."
-                ),
-                (
-                    "Keep the portfolio model anchored to the supplied annual scorecard rather than adding "
-                    "hosting traffic or prospective buyer sales to domain revenue. Conservative revenue is "
-                    "$20,000 with $17,000 total modeled costs, producing $3,000 owner net profit and a "
-                    "15% margin with 1 FT + 1 C. Base revenue is $160,000 with $116,000 costs, "
-                    "producing $44,000 and 27.5% with 1 FT + 1 C. Scaled revenue is $300,000 "
-                    "with $180,000 costs, producing $120,000 and 40% with 2 FT + 2 C. "
-                    "Illustrative sale mixes are four sales at $5,000, sixteen at $10,000, and twenty "
-                    "at $15,000 respectively; these reconcile revenue without asserting identical inventory "
-                    "or sell-through. The cost totals include acquisition and renewals under the canonical "
-                    "model, alongside selling and operating expenses. Maintain a separate cash schedule "
-                    "for unsold acquisitions, escrow balances, and installment collections so modeled profit "
-                    "cannot disguise a funding shortage. Startup capital remains $8,000–$60,000 and "
-                    "monthly operating expenditure $500–$5,000; neither substitutes for a renewal reserve. "
-                    "After three completed sales, compare source-level contribution and time invested. "
-                    "After ten, expand only the channels with reproducible buyer evidence, manageable "
-                    "carrying exposure, and transfers that close without extraordinary intervention."
-                ),
-            ],
-            "table": {
-                "caption": "Inbound Infrastructure Controls and Canonical Annual Portfolio Reconciliation",
-                "headers": [
-                    "Portfolio or infrastructure decision requiring explicit accounting treatment",
-                    "Revenue or cost calculation used by the operator",
-                    "Required evidence before recording the claimed operating result",
-                    "Fallback or management action when performance falls short",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case with one employee and one contractor",
-                        "$20,000 revenue less $17,000 costs produces $3,000 owner profit",
-                        "Reconcile gross domain proceeds and all modeled portfolio expenses",
-                        "Preserve the 15% margin assumption without inventing additional revenue",
-                    ],
-                    [
-                        "Base annual case with one employee and one contractor",
-                        "$160,000 revenue less $116,000 costs produces $44,000 owner profit",
-                        "Match annual completed transactions and costs to the portfolio ledger",
-                        "Investigate shortfalls rather than treating pipeline offers as proceeds",
-                    ],
-                    [
-                        "Scaled annual case with two employees and two contractors",
-                        "$300,000 revenue less $180,000 costs produces $120,000 owner profit",
-                        "Validate 40% margin using the same gross-proceeds revenue basis",
-                        "Reduce acquisition pace when cash or execution capacity tightens",
-                    ],
-                    [
-                        "Free-hosting experiment across one hundred independently renewed domain properties",
-                        "$0 monthly hosting can coexist with $1,500 annual renewals",
-                        "Verify current commercial permission, quotas and actual resource consumption",
-                        "Consolidate weak properties before adding paid infrastructure or inventory",
-                    ],
-                    [
-                        "Local artifact compilation instead of repeated cloud-based production builds",
-                        "Ten revised properties require ten uploads rather than wholesale rebuilds",
-                        "Retain build outputs, deployment records and documented provider resource limits",
-                        "Upload precompiled bundles directly through supported authenticated provider APIs",
-                    ],
-                    [
-                        "Inquiry routing designed to distinguish genuine demand from noise",
-                        "Twenty inquiries and four qualified buyers yield 20% qualification",
-                        "Require buyer context and keep spam outside conversion denominators",
-                        "Simplify forms and improve evidence before increasing acquisition spend",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Buy a domain only when the buyer evidence is stronger than the story you tell yourself about the name.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Build two category-specific buyer baskets with forty researched businesses, dated public triggers, and ten independent potential users per acquisition candidate.",
-        "Score twenty candidate domains, reject hard conflicts, and document ownership, trademark, historical-use, renewal, and transfer evidence for every finalist.",
-        "Set probability-weighted acquisition ceilings and reserve two years of actual renewals before entering auctions or sending binding purchase offers.",
-        "Run a twenty-five-prospect outreach batch with a three-touch ceiling, jurisdiction review, suppression handling, and distinct reply-to-close measurements.",
-        "Launch ten useful static demonstrations on commercially permitted infrastructure, prebuild portable artifacts, and track qualified inquiries rather than page count.",
-        "Reconcile every completed sale through verified escrow and compare portfolio costs against the exact $3,000, $44,000, and $120,000 annual profit cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 1125(d) — Cyberpiracy prevention",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Screen acquisition circumstances and proposed use for bad-faith intent to profit from protected marks; trademark concentration can require rejecting a domain.",
-        },
-        {
-            "title": "15 U.S.C. 1117(d) — Statutory damages for cyberpiracy",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1117",
-            "relevance": "A plaintiff may elect statutory damages of $1,000–$100,000 per domain for a qualifying violation, making rights review material to acquisition downside.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Structure commercial outreach around accurate transmission information, nondeceptive subjects, applicable identification requirements, a postal address, and timely opt-out handling.",
-        },
-        {
-            "title": "16 CFR Part 316 — CAN-SPAM Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-316",
-            "relevance": "Apply the rule's commercial-message framework and opt-out protections when designing outreach and suppression procedures; do not impose prohibited barriers to opting out.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'domainsherpa-valuation-room-portfolio-reviews-pricing-strategy',
+ 'question_prompt': 'How do seasoned investors value portfolios, set moonshot prices, and buy at value '
+                    'according to DomainSherpa review panels?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The DomainSherpa Valuation Room: Portfolio Reviews and Pricing Strategy',
+ 'subtitle': 'User-submitted portfolio critiques, appraised vs market value, DotDB end-user research, '
+             'moonshot pricing, whether price changes trigger sales, the biggest investor mistakes, Adam '
+             "Dicker's valuation tools, making money on the buy, and premium sale breakdowns (Techno.com)",
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'The DomainSherpa Valuation Room panel, with Drew Rosener, Shane Cultra, Michael '
+                      'Cyger, Adam Dicker and Andrew Allemann, agrees on one core rule: profit is set on '
+                      'the buy. Value comes from an identifiable end-user pool, not from automated '
+                      'appraisals. Rosener pays at most 10% of resale for illiquid names and 30-50% for '
+                      'liquid ones. Dicker counts potential buyers and the advertisers already paying for '
+                      'the keyword. Allemann bulk-checks DotDB for registrations across TLDs and live '
+                      'companies. Portfolio reviews usually end with most hand-registrations dropped and '
+                      'the renewal money moved into $1K-5K names. The disagreements are sharp. Rosener '
+                      'treats $25K as table stakes for payments, crypto and AI names, while Cultra cuts '
+                      'brandables to clear 10-20K names for cash flow. appraise.net numbers are quoted on '
+                      'nearly every show, yet Dicker puts zero value on online appraisals.',
+ 'key_metrics': [{'label': 'Illiquid-Name Buy Ceiling',
+                  'metric': 'Illiquid-Name Buy Ceiling',
+                  'value': 'No more than 10% of expected resale for illiquid names; 30-50% for liquid '
+                           'names',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Rosener's acquisition rule at Media Options. Diagnose.com, worth about "
+                             '$100-150K retail, gets a bid of about $30-35K.',
+                  'source': 'domainsherpa ([KZqosumnXfg @ 01:09:57])'},
+                 {'label': 'Lifetime Sell-Through Behind the 10x Rule',
+                  'metric': 'Lifetime Sell-Through Behind the 10x Rule',
+                  'value': "About 10% of a portfolio sells in an investor's lifetime, so asks carry "
+                           'roughly 10x',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rosener used this rule while reviewing a listener portfolio and set a '
+                             'roughly $250K ask on Timeless.com.',
+                  'source': 'domainsherpa ([cb-n0okmiuw @ 00:17:23])'},
+                 {'label': 'Minimum Viable Portfolio',
+                  'metric': 'Minimum Viable Portfolio',
+                  'value': '$5K-$25K',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "A panelist's floor for getting consistent sales. The advice is to buy names "
+                             'with 2-3 active bidders, which implies liquidity within 10-20% of cost.',
+                  'source': 'domainsherpa ([KYAHTsYNIPI @ 00:39:42])'},
+                 {'label': 'Repricing Test Outcome',
+                  'metric': 'Repricing Test Outcome',
+                  'value': 'About 50 names repriced; one lowered-price sale versus three raised-price '
+                           'sales in under a month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Every name in the test had received Afternic inquiries or offers in the '
+                             'prior 60-90 days. Most prices went up 10-15%, and 15-20 were lowered.',
+                  'source': 'domainsherpa ([DLZJeUWhf3I @ 00:52:42])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every panel in the Valuation Room starts from the same premise: a domain is '
+                              'worth what a specific, identifiable buyer will pay, and the automated '
+                              'number is noise. Adam Dicker ran appliances.com through three engines. '
+                              'GoDaddy returned $25,000, Estibot roughly $1.2M and Free Valuator about 504 '
+                              'pounds. Dicker then said flatly that zero value goes into an online '
+                              'appraisal, calling them only good for the ego [anQ8Zjhrg_M @ 00:06:02]. In '
+                              'place of appraisals, Dicker counts the buyer pool. Dentures.com reaches '
+                              'about 10,000 potential buyers and floridadentures.com about 5,000. A Miami '
+                              'dentures name reaches only 500 to 1,000, but those buyers are far more '
+                              'targeted and easier to work [anQ8Zjhrg_M @ 00:07:29]. The March 2026 panel '
+                              'named the biggest investor mistake as picturing Google, Facebook or Amazon '
+                              "as the buyer. Its standard was blunt: 'There has to be an obvious end user "
+                              'for who this is an upgrade or it needs to be an extremely strategic '
+                              'defensive or offensive acquisition for a large company with significant '
+                              "proof' [OzWsYhxMiCE @ 01:42:37]. Andrew Allemann puts the end-user hunt "
+                              'into practice in DotDB. Every registered variant of a string is opened in a '
+                              "tab, and each operating company becomes a prospect: 'These are all people "
+                              "that could potentially want to get that shorter domain name' [jD02RIu6q3Q @ "
+                              '00:10:05]. The shared conclusion is that a name without a buyer you can '
+                              'actually name sits in the inventory column, whatever any appraisal engine '
+                              'prints next to it.',
+                              'The second point of agreement is that the margin is locked in at '
+                              "acquisition, not at sale. Rosener's rule at Media Options is mechanical. "
+                              'For an illiquid name like Spacecakes.com, pay no more than 10% of what it '
+                              'can sell for. For liquid names, pay 30-50%, which put Diagnose.com, worth '
+                              'about $100-150K retail, at a bid of roughly $30-35K [KZqosumnXfg @ '
+                              '01:09:57]. On the appraised-versus-market episode, a panelist credited '
+                              "Frank with the line 'You make a lot of your money on the buy' and added "
+                              'that auctions are for buying, not selling [KYAHTsYNIPI @ 00:49:21]. The '
+                              'same panel warned about anchoring. One end user bidding $10K in an auction '
+                              'can lead investors to believe a name is worth $50K, which pushes wholesale '
+                              'bids toward retail and wipes out the spread [KYAHTsYNIPI @ 00:11:45]. '
+                              "Michael Cyger holds NameJet lists to the same standard: 'if I can't get a "
+                              "good deal I don't want to just an okay deal there's too many other "
+                              "opportunities out there' [P7O7_GHUYb0 @ 01:08:36]. Taken together, the "
+                              'panel works out a maximum bid from a realistic resale figure and a '
+                              'liquidity judgment before the auction opens. A dropped auction is treated '
+                              'as a normal outcome, and a stretched bid is treated as a pricing mistake '
+                              'that no later listing strategy can fully repair.',
+                              'When listener portfolios reach the review table, the verdict is almost '
+                              "always a cull. Of Horus's 25 hand-registered names, Shane Cultra would keep "
+                              'only getbacktaxes.com, preferring to own a brand.com over pillows.xyz '
+                              '[4a5oAIneDaA @ 00:15:34]. Rosener went further. The advice was to drop '
+                              'everything, stop paying renewals, and put that money into $1K-5K names, '
+                              'buying at $500-1K, flipping at $2,500 and rolling the proceeds [4a5oAIneDaA '
+                              "@ 00:18:30]. Cultra's January 2015 'new rule' was that any name not fitting "
+                              "a defined spreadsheet column is out. On Mike Dunn's list, Cultra estimated "
+                              'about $50 in total registration costs and said half could be dropped '
+                              '[RpOpttsk1qw @ 00:10:37]. The appraised-versus-market panel reached the '
+                              'same place from the cost side. One name bought for $3,500 beats 50 names at '
+                              '$69, because a $3K name costs $10 to renew while the alternative means '
+                              'renewing 300 names every year [KYAHTsYNIPI @ 00:44:37]. Even Adam Dicker, '
+                              "who defended Horus's list against the other two, worked by triage. Four "
+                              'names (getbacktaxes, photohostingsite, isummons and onlinebankstatement) '
+                              'were judged worth about $200 each, and the rest were to be listed at '
+                              '$250-300 on DNForum. The baseline the panel agrees on is a few genuinely '
+                              'liquid names rather than a long tail of hand-registrations whose renewal '
+                              'costs quietly compound every year.'],
+               'table': {'caption': 'Valuation Room consensus principles and the practitioner evidence '
+                                    'behind each',
+                         'headers': ['Consensus Principle',
+                                     'What the Practitioner Said or Did',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['An obvious upgrade end user must exist',
+                                   'Panel says Google could have had meet.com for $500K but offered only '
+                                   'about $20K',
+                                   'Price against named upgrade buyers, never against imagined tech giants',
+                                   'domainsherpa ([OzWsYhxMiCE @ 01:42:04])'],
+                                  ['Automated appraisals do not set value',
+                                   'Dicker got $25,000 GoDaddy, about $1.2M Estibot, about 504 pounds Free '
+                                   'Valuator for appliances.com',
+                                   'Treat the spread between engines as noise, not a pricing anchor',
+                                   'HostMaria ([anQ8Zjhrg_M @ 00:05:43])'],
+                                  ['Profit is locked in on the buy',
+                                   'Rosener pays at most 10% of resale for illiquid names and 30-50% for '
+                                   'liquid names',
+                                   'Fix the maximum bid as a fraction of realistic resale before bidding',
+                                   'domainsherpa ([KZqosumnXfg @ 01:09:57])'],
+                                  ['Every sale must be replaced with new inventory',
+                                   'After the MonthlyRent sale, about 25K after taxes went into '
+                                   'InCrypto.com bought at 10K',
+                                   'Recycle after-tax sale proceeds into equal-quality names without long '
+                                   'idle gaps',
+                                   'domainsherpa ([P7O7_GHUYb0 @ 01:02:12])'],
+                                  ['Hand-registered long tails should be culled hard',
+                                   'Rosener told Horus to drop all 25 names and redeploy renewals into '
+                                   '$1K-5K names',
+                                   'Stop renewing filler and concentrate capital into fewer, more liquid '
+                                   'assets',
+                                   'domainsherpa ([4a5oAIneDaA @ 00:18:30])'],
+                                  ['Lifetime sell-through dictates the asking multiple',
+                                   "Rosener's 10x rule assumes only about 10% of a portfolio sells in a "
+                                   'lifetime',
+                                   'Set asks high enough that rare sales carry the unsold remainder',
+                                   'domainsherpa ([cb-n0okmiuw @ 00:17:23])'],
+                                  ['Competing bidders are proof of liquidity',
+                                   'Panelist buys names with 2-3 active bidders, implying resale within '
+                                   '10-20% of cost',
+                                   'Use bidder counts as an exit check before committing any capital',
+                                   'domainsherpa ([KYAHTsYNIPI @ 00:39:42])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Research runs on a repeatable stack. Allemann pastes full domain names, not '
+                              "keywords, into DotDB's paid bulk search, which accepts up to 10,000 "
+                              'entries. A batch of 250 domains processes in no more than a minute, with '
+                              'filters for keyword position, hyphens, digits and site status [jD02RIu6q3Q '
+                              "@ 00:00:37]. The trap is the 'active' column, which always overcounts "
+                              'because new product-style parking pages show up as active. So every result '
+                              'is Cmd/Ctrl-clicked open and checked by hand for stale copyright dates, '
+                              'Internet Explorer 11 notices and one-person shops [jD02RIu6q3Q @ 00:02:14]. '
+                              "Cyger's NameJet prep builds the same kind of snapshot for each name. "
+                              'Tradesman.com was registered in 69 TLDs, 1,684 second-level domains '
+                              'contained the term, the registration dated to 1996, and it carried 18 '
+                              'exact-match and 29 broad trademarks [P7O7_GHUYb0 @ 00:39:03]. Dicker adds '
+                              'an advertiser layer. Pull Google AdWords to see who already pays for the '
+                              'keyword, because those advertisers are the best targets. Then size demand '
+                              'in tools like Keywords Everywhere, which showed 165,000 monthly searches '
+                              "for 'appliances' on $10 of credit that lasted almost a year [anQ8Zjhrg_M @ "
+                              '00:08:06]. Allemann also runs the same DotDB pass for renew-or-drop '
+                              'decisions on a couple hundred GoDaddy names at a time. Registrations in '
+                              'three to five extensions can still mean little value if those names sit '
+                              'unused.',
+                              "Pricing starts from Rosener's 10x rule. Because an investor sells roughly "
+                              '10% of a portfolio in a lifetime, asks have to carry about ten times the '
+                              'buy. That logic produced a roughly $250K ask on Timeless.com against Shane '
+                              "Cultra's $6-8K wholesale read on the same name [cb-n0okmiuw @ 00:17:23]. "
+                              'Repricing is treated as an active lever. Rosener repriced about 50 names, '
+                              'all of which had drawn Afternic inquiries or offers in the prior 60-90 '
+                              'days. Most went up 10-15% and 15-20 were lowered, and one panelist reported '
+                              'selling one lowered-price name and three raised-price names in under a '
+                              'month [DLZJeUWhf3I @ 00:51:40]. The platform matters for this. Atom emails '
+                              'price changes to everyone who inquired and Afternic does not, which the '
+                              'hosts called a lost opportunity [DLZJeUWhf3I @ 00:53:39]. Lease-to-own '
+                              "terms are priced in detail. Mike's ways.io was on a 60-month plan at "
+                              '$19,995 ($317 a month) and defaulted after 13 payments with about $4K '
+                              'collected. The price was then raised and the name resold at $24,995. '
+                              'Rosener prefers prices ending in 895 [sekhN8zuNlU @ 01:04:21]. Cultra now '
+                              'requires 20-30% down on every Atom plan after a meme-coin buyer walked away '
+                              'from a short Ploob.com lease-to-own. Down payments are treated as a '
+                              'standard term rather than a negotiable extra.',
+                              "Wholesale numbers have moved, and the panel tracks them closely. Rosener's "
+                              'old $255 proxy bid used to win about 80% of auctions. That tier now runs '
+                              "$300-500, and the line on the December review was blunt: 'i win exactly "
+                              "zero domains for 255 dollars anymore' [R695oEH1bvA @ 00:31:51]. On the "
+                              'appraised-versus-market panel, names that once cost $500-1,500 on GoDaddy '
+                              'and NameJet now cost $2,500-3K. One investor caps inventory buys at $500, '
+                              'mostly in the $250-500 range, and makes separate target buys at $5K, $10K '
+                              'and $20K [KYAHTsYNIPI @ 00:24:12]. The November 2026 show put the most '
+                              'competitive band at $500-4,000. Shane Cultra reported that a single bidder '
+                              'cost $160,000 in lost names in one week and that about 99% of auctions end '
+                              'up lost [oeP4t891CPs @ 00:52:12]. With that much competition, payment speed '
+                              'becomes a buying tool. Rosener agreed to $15K on Oregano.com, then offered '
+                              "$16.5K, about 10% more, to close within an hour: 'i'll give you a 16-5 but "
+                              "i want the deal done now' [KZqosumnXfg @ 00:47:05]. Media Options keeps "
+                              '10-20 live escrow.com deals running at any time, so funds are always on '
+                              'hand to pay sellers the same day.'],
+               'table': {'caption': 'Street-level tools, thresholds and unit economics used in the '
+                                    'Valuation Room',
+                         'headers': ['Tool or Lever',
+                                     'Exact Number or Setting',
+                                     'How Practitioners Use It',
+                                     'Expert Source'],
+                         'rows': [['DotDB paid bulk search feature',
+                                   'Up to 10,000 entries; 250 domains processed in under one minute',
+                                   'Paste full domains to find end users across other TLDs',
+                                   'Andrew Allemann ([jD02RIu6q3Q @ 00:00:01])'],
+                                  ['appraise.net credit packs for portfolios',
+                                   '$1 first month; 1,000 credits $150; 10,000 credits $900',
+                                   'Appraise an entire portfolio for roughly $500 to $1,000 total',
+                                   'domainsherpa ([OzWsYhxMiCE @ 00:49:35])'],
+                                  ['Exact-match search volume threshold for buys',
+                                   'At least 10,000 exact searches monthly, or 2,000 at $40-50 CPC',
+                                   'Screen exact-match acquisitions before any offer goes out to sellers',
+                                   'domainsherpa ([KZqosumnXfg @ 00:09:20])'],
+                                  ['CPC pitch aimed at existing advertisers',
+                                   '$2 per click times 200 clicks equals $400 monthly ad spend',
+                                   'Offer the domain to that advertiser for about $3,500 to $4,000',
+                                   'HostMaria ([anQ8Zjhrg_M @ 00:21:17])'],
+                                  ['Keywords Everywhere demand sizing on a budget',
+                                   '165,000 monthly searches for appliances; $10 credit lasted almost a '
+                                   'year',
+                                   'Size buyer demand cheaply before setting a retail asking price',
+                                   'HostMaria ([anQ8Zjhrg_M @ 00:23:15])'],
+                                  ['Lease-to-own default penalty after a missed plan',
+                                   'Two extra monthly payments charged on top as a stupidity tax',
+                                   'Enforce cure terms after canopyglobal.com defaulted following 11 of 12 '
+                                   'installments',
+                                   'domainsherpa ([CKvIo_PJEQI @ 00:34:13])'],
+                                  ['DNX Dutch auction flat commission structure',
+                                   '15% commission regardless of listing, brokerage or newsletter channel',
+                                   'Route deals over $500 through escrow.com and smaller ones through '
+                                   'PayPal',
+                                   'domainsherpa ([KZqosumnXfg @ 01:16:28])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How the Valuation Room panel wins deals on the margin',
+                           'body': 'These are small, repeatable moves practitioners reported using to '
+                                   'close at better numbers or win the right buyer.',
+                           'items': ["Put the number in the subject line. Rosener writes '$10,000 purchase "
+                                     "offer' in outreach subjects and pushes buyers to make offers, "
+                                     'because nobody wants to publicly offer their domain at a low price, '
+                                     "'because then that becomes the ceiling' [domainsherpa — KZqosumnXfg "
+                                     '@ 00:33:43].',
+                                     'Get on the phone. Tradesman.com closed at about 150K after the deal '
+                                     'came in by phone, and Rosener said many domainers are afraid to pick '
+                                     'up the phone [domainsherpa — P7O7_GHUYb0 @ 00:37:26].',
+                                     'Bid high early to thin the field. Dicker bumped groomers.com from '
+                                     "$1,600 to $3K early in the auction 'because it scares some people "
+                                     "away' [domainsherpa — 4a5oAIneDaA @ 00:33:50].",
+                                     'Answer a cheap appraisal with a comp, then give a small win. On '
+                                     'BainbridgeBuilders.com, Cyger countered a $1,655 GoDaddy valuation '
+                                     'with NameBio comps, cut $200 so the buyer felt they won, and closed '
+                                     'on Dan.com at a 5% fee [domainsherpa — R695oEH1bvA @ 00:13:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the list for live end users',
+                              'action': 'Bulk-run candidate or portfolio names through DotDB and open '
+                                        'every result manually.',
+                              'detail': 'Paste full domains, filter out hyphens and digits, then '
+                                        "Cmd/Ctrl-click every result into tabs. Discount the 'active' "
+                                        'count, which overcounts parked pages, and check About Us pages, '
+                                        'LinkedIn and Impressum entries for real companies [Andrew '
+                                        'Allemann — jD02RIu6q3Q @ 00:01:55].'},
+                             {'step': 2,
+                              'title': 'Set the bid ceiling from liquidity',
+                              'action': 'Cap the buy at a fixed fraction of realistic resale before '
+                                        'bidding.',
+                              'detail': 'Pay no more than 10% of expected resale for illiquid names and '
+                                        '30-50% for liquid ones. Diagnose.com at $100-150K retail gets a '
+                                        'bid of about $30-35K [domainsherpa — KZqosumnXfg @ 01:09:57].'},
+                             {'step': 3,
+                              'title': 'Reprice names that are drawing inquiries',
+                              'action': 'Adjust buy-it-now prices on names with recent inquiry or offer '
+                                        'activity.',
+                              'detail': "Rosener's roughly 50-name test only touched names with Afternic "
+                                        'inquiries or offers in the prior 60-90 days. Most prices went up '
+                                        '10-15%, and Atom emails price changes to past inquirers '
+                                        '[domainsherpa — DLZJeUWhf3I @ 00:53:00].'},
+                             {'step': 4,
+                              'title': 'Close lease-to-own deals with money down',
+                              'action': 'Require an upfront deposit on payment plans and enforce defaults.',
+                              'detail': 'After a meme-coin buyer walked away from a short Ploob.com plan '
+                                        'through Atom, Cultra now requires 20-30% down on every '
+                                        'lease-to-own deal [domainsherpa — OzWsYhxMiCE @ 00:41:11].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Valuation method is the first fault line, and the panels never closed it. '
+                              'Adam Dicker puts zero value on any online appraisal. Dicker pointed to '
+                              'appliances.com, which priced at $25,000 on GoDaddy, roughly $1.2M on '
+                              'Estibot and about 504 pounds on Free Valuator, and called those numbers '
+                              'good only for your ego [anQ8Zjhrg_M @ 00:06:02]. Shane Cultra, reviewing a '
+                              'NameJet list, said appraisals get ignored and backorder counts are the real '
+                              'demand signal [P7O7_GHUYb0 @ 01:27:45]. The comps question splits the room '
+                              'the same way. One panelist argued there is no such thing as a comp in '
+                              'domains because every name is scarce by definition, so ZIZ.com has nothing '
+                              'to compare against LIL.com or QIQ.com [KYAHTsYNIPI @ 00:17:53]. Another '
+                              'panelist runs wholesale buying straight off comps: three-letter .coms get '
+                              'bought at $25K because 27 of them cleared between $23K and $28K in the '
+                              'prior 30 days [KYAHTsYNIPI @ 00:18:23]. The working compromise is a split '
+                              'by tier. Comps hold up for commodity classes with dense, recent sales. For '
+                              'one-off premium names, operators fall back on buyer counts, search volume, '
+                              'CPC and the specific end user who needs the upgrade. That is where the '
+                              'appraisal engines and the human pricers diverge hardest.',
+                              'Pricing posture is the second split: hold out for moonshots or keep cash '
+                              'moving. Drew Rosner argued that $25K is table stakes for payments names and '
+                              'applied the same floor to gaming, crypto and AI, while insisting that every '
+                              'name still gets looked at individually [DLZJeUWhf3I @ 00:42:56]. Shane '
+                              'Cultra pushed back that an operator needs cash flow. Shane liquidates two '
+                              'or three names a month in the $10K to $20K range and reported that dropping '
+                              'brandables from 25 to 10 is what finally got them to move [DLZJeUWhf3I @ '
+                              '00:44:28]. The replaceability framework credited to Johnny sits closer to '
+                              'Shane. For the bottom 60 to 80% of a portfolio, take any offer within an '
+                              'order of magnitude of your price and reinvest; only 10 to 15% of names get '
+                              'held for 10 to 20 years [KYAHTsYNIPI @ 00:28:11]. Amar drew the moonshot '
+                              'line directly: the label belongs to names with few alternatives, and '
+                              "moonshotting everything means you expect never to sell. Drew's own moonshot "
+                              'test is irreplaceability plus demand [CKvIo_PJEQI @ 01:12:24]. The operator '
+                              'read is a two-bucket book. A small, irreplaceable top tier is priced for '
+                              'the one buyer who must have it. A replaceable bulk tier is priced to turn '
+                              'over and fund renewals and new buys.',
+                              'Sourcing strategy is the third split, especially for operators on small '
+                              'budgets. Reviewing a 25-name hand-registered portfolio, Drew Rosner said to '
+                              'drop everything, stop paying renewals and push that money into $1K to $5K '
+                              'names bought privately, flipped around $2,500 and rolled [4a5oAIneDaA @ '
+                              '00:18:30]. Adam Dicker disagreed on the same names. Dicker noted that the '
+                              'whole set cost about $210 in fees, that a market always exists in the $200 '
+                              'to $1,000 range, and that four of the names could bring about $200 each. '
+                              'Dicker also defends hand registration as a trend play: follow new medical '
+                              'and tech product lists and stay a year or two ahead of everyone else. '
+                              'Dicker claims names bought for $10 have sold for 50,000 plus [4a5oAIneDaA @ '
+                              '00:05:33]. A panelist in the appraised-versus-market-value session told '
+                              'newcomers flatly not to hand-register, and to slow down and start in niches '
+                              'they know [KYAHTsYNIPI @ 00:35:44]. Shane Cultra sits between the camps. '
+                              'Four- and five-letter .coms hand-registered by the hundreds in 2007 and '
+                              '2008 still produce sales such as Ploob.com at $4,700, because pronounceable '
+                              'five-letter names priced under $5K get hit fast [OzWsYhxMiCE @ 00:40:36]. '
+                              'What separates the two camps is what gets registered. Forward-looking trend '
+                              'terms and short pronounceables pay, while random long phrases mostly feed '
+                              'renewal bills.'],
+               'table': {'caption': 'Head-to-head practitioner disagreements on pricing, sourcing and '
+                                    'selling',
+                         'headers': ['Fault Line Under Debate',
+                                     'Position A',
+                                     'Position B',
+                                     'Expert Source'],
+                         'rows': [['Whether GoDaddy should cap automated appraisals at one million dollars',
+                                   'Amar prefers a $100K cap because a $500K figure on a seven-figure name '
+                                   'anchors the buyer low',
+                                   'Drew backs the $1M cap because about 50% of brokered names sell for '
+                                   '$1M or more and the old $25K cap was atrocious',
+                                   'domainsherpa ([CKvIo_PJEQI @ 00:44:03]); domainsherpa ([CKvIo_PJEQI @ '
+                                   '00:46:31])'],
+                                  ['How much an operator should pay for .io names at auction',
+                                   'Michael Cyger says one-word tech .io names reach high five figures and '
+                                   'two-word .io names are rising',
+                                   'Drew caps personal .io bids at about $1K, even after closing '
+                                   'Metaverse.io at $30K against a $75K ask',
+                                   'domainsherpa ([R695oEH1bvA @ 00:35:18]); domainsherpa ([R695oEH1bvA @ '
+                                   '00:47:52])'],
+                                  ['What a premium one-word brandable like Timeless.com is actually worth',
+                                   'Drew calls it a lights-out tier one brand worth six figures and would '
+                                   'ask about $250K',
+                                   'Adam says set realistic expectations near $25K on NameJet, while Shane '
+                                   'puts wholesale at $6K to $8K',
+                                   'domainsherpa ([cb-n0okmiuw @ 00:14:59])'],
+                                  ['How to triage a weak hand-registered portfolio of twenty-five names',
+                                   'Drew says drop every name, stop renewals and redirect that cash into '
+                                   '$1K to $5K names',
+                                   'Adam keeps four names at roughly $200 each because a $200 to $1,000 '
+                                   'market always exists',
+                                   'domainsherpa ([4a5oAIneDaA @ 00:18:30]); domainsherpa ([4a5oAIneDaA @ '
+                                   '00:21:25])'],
+                                  ['Whether raising asking prices helps or hurts actual sell-through',
+                                   'Drew raised most of about 50 inquired names by 10 to 15% and sold '
+                                   'three raised names in under a month',
+                                   'A retail pricing veteran of 200,000 products says you can never raise '
+                                   'prices, and Miller warns increases can overshoot',
+                                   'domainsherpa ([DLZJeUWhf3I @ 00:52:42]); domainsherpa ([DLZJeUWhf3I @ '
+                                   '00:56:03])'],
+                                  ['Whether domain sales skill can be taught through a paid course',
+                                   'Drew says buyers fall into 10 to 20 motivation buckets, so selling '
+                                   'cannot really be taught',
+                                   'Shane says selling can be taught using SPIN selling and Chris Voss '
+                                   'negotiation methods',
+                                   'domainsherpa ([OzWsYhxMiCE @ 01:35:11]); domainsherpa ([OzWsYhxMiCE @ '
+                                   '01:37:14])'],
+                                  ['Whether expired-name auctions can serve as a selling channel at all',
+                                   'A panelist says auctions are for buying, not selling, and that you '
+                                   'make your money on the buy',
+                                   'Shane proposes instant relisting, with the winner relisting for 3 more '
+                                   'days, noting Chinese groups already do this',
+                                   'domainsherpa ([KYAHTsYNIPI @ 00:49:21]); domainsherpa ([OzWsYhxMiCE @ '
+                                   '00:55:03])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Payment plans are the most frequently reported firsthand loss. Drew Rosner '
+                              'priced canopyglobal.com around $10K on a 12-month plan and watched the '
+                              'buyer pay 11 installments, then default. Drew described how the penalty has '
+                              'escalated. The first defaulter got the penalty waived, which Drew '
+                              'regretted. The second paid 50% of one monthly payment. Every defaulter now '
+                              'pays two extra payments as a stupidity tax [CKvIo_PJEQI @ 00:34:13]. Mike '
+                              "Siger's ways.io sat on a 60-month plan at $19,995, roughly $317 a month, "
+                              'until the buyer quit after 13 payments with about $4K collected. Mike '
+                              'raised the price and resold the name at $24,995 [sekhN8zuNlU @ 01:04:21]. '
+                              "Shane Cultra's Ploob.com went to a meme-coin rug-puller on a short "
+                              'lease-to-own through Atom, which is why every Atom deal now requires 20 to '
+                              '30% down [OzWsYhxMiCE @ 00:41:11]. After switching AI names to make-offer, '
+                              'Shane saw offers near the old buy-it-now price, but buyers wanted five-year '
+                              'terms instead of two. Shane refuses any deal with nothing upfront '
+                              '[DLZJeUWhf3I @ 00:54:39]. A default is not a pure loss when the '
+                              'installments are kept and the name relists higher. Long terms with no '
+                              'deposit, however, hand speculative buyers a cheap option on your inventory.',
+                              'Closing friction kills deals that were already won. Andrew Rosener told the '
+                              'Oregano.com story from the buy side. The seller agreed to $15K, and Rosener '
+                              'paid $16.5K to close within an hour with funds sent immediately. A later '
+                              '$80K sale of the same name to an Abu Dhabi buyer fell through over escrow '
+                              'delay [KZqosumnXfg @ 00:47:05]. Mike Siger reported Escrow.com stalling on '
+                              'a KYC review of Japanese-language documents. The verdict was that escrow '
+                              'companies need to understand time kills deals and do what they need to do '
+                              'legally as soon as possible [CKvIo_PJEQI @ 01:01:39]. Drew Rosner added '
+                              'that no escrow provider is doing a great job. The panel also flagged '
+                              'Network Solutions for taking 7 to 10 days to move a domain when auth codes '
+                              'should arrive within 24 to 48 hours [OzWsYhxMiCE @ 00:07:16]. On the '
+                              'marketplace side, Mike was refunded on one Sedo purchase and still had an '
+                              'Afternic purchase unresolved, and pushed for owner verification. Drew '
+                              "called Sedo's only moat its legacy listings and said it all comes down to "
+                              'German labor law [sekhN8zuNlU @ 01:34:19]. Cash readiness and venue choice '
+                              'are part of the price. Rosener keeps 10 to 20 live escrow deals running at '
+                              'any time so that same-day funds are always on hand.',
+                              'The wholesale squeeze and carrying costs are the quieter traps. Shane '
+                              'Cultra said one bidder cost Shane $160,000 in lost names in a single week. '
+                              'Shane also said the $500 to $4,000 band is the most competitive and that '
+                              "losing 99% of auctions is routine [oeP4t891CPs @ 00:52:42]. Drew Rosner's "
+                              'old $255 proxy bid used to win about 80% of auctions. It now wins exactly '
+                              'zero, maybe one a month, with that tier running $300 to $500 [R695oEH1bvA @ '
+                              '00:31:13]. Volume plays without exits compound the damage. Swetha '
+                              'registered 10,000 .xyz names at $1 each, then faced renewals of 100k a year '
+                              'rising to 200k [P7O7_GHUYb0 @ 00:41:58]. A panelist warned that a novice '
+                              'who outbids veterans has likely overpaid, because the odds a beginner found '
+                              'a diamond in the rough are real low. The same session put the cost of '
+                              'carrying 1,000 names at about $7K a year [KYAHTsYNIPI @ 00:42:24]. The '
+                              'economics check is to price every renewal against realistic sell-through. '
+                              "Drew's 10x rule assumes you sell about 10% of a portfolio in a lifetime. "
+                              'Quality beats count: one $3,500 name renews for $10, while hundreds of $69 '
+                              'names each bill annually.'],
+               'table': {'caption': 'Firsthand traps, what actually happened, and the economics check',
+                         'headers': ['Trap Practitioners Walked Into',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Accepting a fast offer on a freshly bought name',
+                                   'Drew took $45,000 for yardly.com via Afternic six weeks after buying '
+                                   'it for $3,200',
+                                   'Miller guessed $136,000 and appraise.net returned $265,000 to '
+                                   '$390,000, so the 15x likely left money behind',
+                                   'domainsherpa ([oeP4t891CPs @ 00:41:42])'],
+                                  ['Trusting the DotDB active-site count as a buyer list',
+                                   'Allemann found that new product-style parking pages register as active '
+                                   'sites in the counts',
+                                   'The active count always overcounts, so open every result in a tab '
+                                   'before counting real buyers',
+                                   'Andrew Allemann ([jD02RIu6q3Q @ 00:02:14])'],
+                                  ['Buying trademark-adjacent names that echo a litigious brand',
+                                   'Shane received a cease-and-desist from Entrepreneur in 2007, and '
+                                   'TeenPreneur was flagged on that basis',
+                                   'Entrepreneur is litigious and sends cease-and-desist letters, so '
+                                   'discount the $5K to $25K end-user range',
+                                   'domainsherpa ([R695oEH1bvA @ 00:54:01])'],
+                                  ['Building income that depends on a single search platform',
+                                   'Drew lost money on Rob Monster exact-match .net and .org mini-sites '
+                                   'after Google banned them',
+                                   'Build-out revenue can vanish with one ranking decision, so the name '
+                                   'itself must carry the value',
+                                   'domainsherpa ([OzWsYhxMiCE @ 00:24:45])'],
+                                  ['Assuming an active niche vertical contains willing end-user buyers',
+                                   "Michael's outbound test of sky.yoga reached more than 100 yoga "
+                                   'companies without landing a buyer',
+                                   'Yoga names trade well at wholesale, but yoga businesses proved to be '
+                                   'poor end-user buyers',
+                                   'domainsherpa ([R695oEH1bvA @ 01:22:44])'],
+                                  ['Paying up for replaceable color-plus-noun brandables at auction',
+                                   "Drew's pink flamingo name generated zero inquiries while held in the "
+                                   'portfolio',
+                                   'Color names are replaceable, so cap bids like yellowparrot at about '
+                                   '$500 against a $10K to $20K exit',
+                                   'domainsherpa ([OzWsYhxMiCE @ 01:04:35])'],
+                                  ['Over-hardening account security without any recovery path',
+                                   'Shane disabled second-device logins to block SIM swaps, and losing the '
+                                   'phone locked Shane out',
+                                   'Lockout freezes transfers and sales, so treat recovery access as part '
+                                   'of portfolio operations',
+                                   'domainsherpa ([OzWsYhxMiCE @ 01:23:26])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Deal-Killer Checks Before You Close',
+                           'body': 'Run these four checks before signing a payment plan, quoting a premium '
+                                   'price or bidding on a trademark-adjacent name. Each one comes from a '
+                                   'loss or near-miss a practitioner reported firsthand.',
+                           'items': ['Require money down on every lease-to-own: Shane now puts a down '
+                                     'payment on all Atom deals after a meme-coin buyer defaulted, at 20 '
+                                     'to 30% down [domainsherpa — OzWsYhxMiCE @ 00:41:29].',
+                                     'Write the default penalty into the terms upfront: Drew now charges '
+                                     'two monthly payments on top after waiving the penalty once and '
+                                     'regretting it [domainsherpa — CKvIo_PJEQI @ 00:36:11].',
+                                     'Do not anchor mid-tier buyers with mega-deal talk: Miller reported '
+                                     'that citing eight-figure deals scared off buyers of $1.5M to $2M '
+                                     'names [domainsherpa — DLZJeUWhf3I @ 00:50:50].',
+                                     'Cap bids on trademark-exposed names at the cost of a takedown: Drew '
+                                     'said $2,500 is the logical ceiling on WordPresstutorials.com because '
+                                     'that is what a UDRP-style takedown would cost [domainsherpa — '
+                                     '4a5oAIneDaA @ 00:44:22].']}}],
+ 'pull_quote': '"Timing is more important than price." Attributed to domainsherpa (sekhN8zuNlU @ '
+               '00:59:52).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Paste full domain names into DotDB bulk search in batches of about 250, which take '
+                      'no more than a minute, then open every result in a tab to confirm live end users '
+                      '[Andrew Allemann — jD02RIu6q3Q @ 00:00:37].',
+                      'Pull the advertisers already paying for your keyword in Google AdWords, then work '
+                      'them in sequence: email, phone call, LinkedIn, email, phone [HostMaria — '
+                      'anQ8Zjhrg_M @ 00:27:46].',
+                      'Pay no more than 10% of expected resale for illiquid names and 30 to 50% for liquid '
+                      'ones, as in the Diagnose.com math of about $30K to $35K against $100K to $150K '
+                      'retail [domainsherpa — KZqosumnXfg @ 01:09:57].',
+                      'Reprice only names that drew Afternic inquiries or offers in the prior 60 to 90 '
+                      'days, and track which raised or lowered names actually close [domainsherpa — '
+                      'DLZJeUWhf3I @ 00:53:00].',
+                      'Replace every name you sell by redeploying the after-tax proceeds into a comparable '
+                      'asset, as Shane did when moving MonthlyRent money into InCrypto.com [domainsherpa — '
+                      'P7O7_GHUYb0 @ 01:02:12].',
+                      'Start with a $5K to $25K portfolio of names that drew 2 to 3 active bidders, and '
+                      'set covering renewals as the year-one target [domainsherpa — KYAHTsYNIPI @ '
+                      '00:40:17].'],
+ 'statutory_citations': [{'title': 'domainsherpa — Navigating Appraised Value vs Market Value of Your '
+                                   'Domain [00:08:21]',
+                          'url': 'https://www.youtube.com/watch?v=KYAHTsYNIPI&t=501s',
+                          'relevance': 'Primary practitioner testimony on the price-versus-value gap, '
+                                       'comps, the replaceability framework and portfolio carrying costs.'},
+                         {'title': 'domainsherpa — Making Money on the Buy -- With Andrew Rosener '
+                                   '[01:09:57]',
+                          'url': 'https://www.youtube.com/watch?v=KZqosumnXfg&t=4197s',
+                          'relevance': 'Primary practitioner testimony on liquidity-based buy ceilings, '
+                                       'closing speed and escrow-delay deal loss.'},
+                         {'title': 'domainsherpa — Do Domain Price Changes Trigger More Sales? | '
+                                   'DomainSherpa Podcast (July 2, 2026) [00:51:40]',
+                          'url': 'https://www.youtube.com/watch?v=DLZJeUWhf3I&t=3100s',
+                          'relevance': 'Primary practitioner testimony on repricing tests, table-stakes '
+                                       'floors and the cash-flow counterargument.'},
+                         {'title': 'domainsherpa — How Domain Investors Pick Names for Moonshot Pricing | '
+                                   'DomainSherpa Podcast (September 3, 2026) [00:34:13]',
+                          'url': 'https://www.youtube.com/watch?v=CKvIo_PJEQI&t=2053s',
+                          'relevance': 'Primary practitioner testimony on lease-to-own defaults, penalty '
+                                       'escalation and moonshot criteria.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'jD02RIu6q3Q',
+                       'title': 'Domain investing: Using DotDB to find end users and value domains',
+                       'channel': 'Andrew Allemann',
+                       'author': 'Andrew Allemann',
+                       'text': "It's always going to overcount.",
+                       'tip': "It's always going to overcount.",
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=jD02RIu6q3Q&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=jD02RIu6q3Q&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oeP4t891CPs',
+                       'title': 'Inside the Domain Market: Valuations, NamesCon & What’s Next | '
+                                'DomainSherpa Podcast (Nov. 19, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'Every day you lose like 99% of the auctions.',
+                       'tip': 'Every day you lose like 99% of the auctions.',
+                       'timestamp': 3210,
+                       'timestamp_seconds': 3210,
+                       'timestamp_label': '[00:53:30]',
+                       'url': 'https://www.youtube.com/watch?v=oeP4t891CPs&t=3210s',
+                       'markdown': '[00:53:30](https://www.youtube.com/watch?v=oeP4t891CPs&t=3210s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0-ax0cEcuZk',
+                       'title': 'The Future of Domains with Andrew Rosener | HANDYCON',
+                       'channel': 'SkyInclude',
+                       'author': 'SkyInclude',
+                       'text': 'My investment thesis in the legacy domain names has always been I want '
+                               'broad appeal, the broader the appeal the better.',
+                       'tip': 'My investment thesis in the legacy domain names has always been I want '
+                              'broad appeal, the broader the appeal the better.',
+                       'timestamp': 1299,
+                       'timestamp_seconds': 1299,
+                       'timestamp_label': '[00:21:39]',
+                       'url': 'https://www.youtube.com/watch?v=0-ax0cEcuZk&t=1299s',
+                       'markdown': '[00:21:39](https://www.youtube.com/watch?v=0-ax0cEcuZk&t=1299s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R695oEH1bvA',
+                       'title': 'DomainSherpa Review – Dec 21: BainbridgeBuilders.com, Ziplet.com, '
+                                'Metaverse.io',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'You want to get the highest price possible, you gotta want to not sell '
+                               'your names.',
+                       'tip': 'You want to get the highest price possible, you gotta want to not sell your '
+                              'names.',
+                       'timestamp': 2435,
+                       'timestamp_seconds': 2435,
+                       'timestamp_label': '[00:40:35]',
+                       'url': 'https://www.youtube.com/watch?v=R695oEH1bvA&t=2435s',
+                       'markdown': '[00:40:35](https://www.youtube.com/watch?v=R695oEH1bvA&t=2435s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sekhN8zuNlU',
+                       'title': '$175K for Techno.com?! Premium Domain Sales & Valuations | DomainSherpa '
+                                'Podcast (November 12, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'Timing is more important than price.',
+                       'tip': 'Timing is more important than price.',
+                       'timestamp': 3592,
+                       'timestamp_seconds': 3592,
+                       'timestamp_label': '[00:59:52]',
+                       'url': 'https://www.youtube.com/watch?v=sekhN8zuNlU&t=3592s',
+                       'markdown': '[00:59:52](https://www.youtube.com/watch?v=sekhN8zuNlU&t=3592s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KYAHTsYNIPI',
+                       'title': 'Navigating Appraised Value vs Market Value of Your Domain',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "If you're just starting out, the chances that you identified a diamond in "
+                               'the rough are real low.',
+                       'tip': "If you're just starting out, the chances that you identified a diamond in "
+                              'the rough are real low.',
+                       'timestamp': 2531,
+                       'timestamp_seconds': 2531,
+                       'timestamp_label': '[00:42:11]',
+                       'url': 'https://www.youtube.com/watch?v=KYAHTsYNIPI&t=2531s',
+                       'markdown': '[00:42:11](https://www.youtube.com/watch?v=KYAHTsYNIPI&t=2531s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KYAHTsYNIPI',
+                       'title': 'Navigating Appraised Value vs Market Value of Your Domain',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'The finish is the cost per click.',
+                       'tip': 'The finish is the cost per click.',
+                       'timestamp': 1266,
+                       'timestamp_seconds': 1266,
+                       'timestamp_label': '[00:21:06]',
+                       'url': 'https://www.youtube.com/watch?v=KYAHTsYNIPI&t=1266s',
+                       'markdown': '[00:21:06](https://www.youtube.com/watch?v=KYAHTsYNIPI&t=1266s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OzWsYhxMiCE',
+                       'title': 'The Biggest Mistake Domain Investors Make And How to Fix It | '
+                                'DomainSherpa Podcast (March 19, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'There has to be an obvious end user for who this is an upgrade or it needs '
+                               'to be an extremely strategic defensive or offensive acquisition for a '
+                               'large company with significant proof.',
+                       'tip': 'There has to be an obvious end user for who this is an upgrade or it needs '
+                              'to be an extremely strategic defensive or offensive acquisition for a large '
+                              'company with significant proof.',
+                       'timestamp': 6157,
+                       'timestamp_seconds': 6157,
+                       'timestamp_label': '[01:42:37]',
+                       'url': 'https://www.youtube.com/watch?v=OzWsYhxMiCE&t=6157s',
+                       'markdown': '[01:42:37](https://www.youtube.com/watch?v=OzWsYhxMiCE&t=6157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P7O7_GHUYb0',
+                       'title': 'DomainSherpa Review – 10/27/22: Cyger Says “I’m Back”: RealInnovation, '
+                                'Tradesman, Encrypto',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "I tell everybody when you sell a name you've got to replace it if you're "
+                               'in this game for the long term.',
+                       'tip': "I tell everybody when you sell a name you've got to replace it if you're in "
+                              'this game for the long term.',
+                       'timestamp': 3732,
+                       'timestamp_seconds': 3732,
+                       'timestamp_label': '[01:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=P7O7_GHUYb0&t=3732s',
+                       'markdown': '[01:02:12](https://www.youtube.com/watch?v=P7O7_GHUYb0&t=3732s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CKvIo_PJEQI',
+                       'title': 'How Domain Investors Pick Names for Moonshot Pricing | DomainSherpa '
+                                'Podcast (September 3, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'And I just feel like escrow companies need to understand that time kills '
+                               'deals and they need to do what they need to do legally as soon as '
+                               'possible.',
+                       'tip': 'And I just feel like escrow companies need to understand that time kills '
+                              'deals and they need to do what they need to do legally as soon as possible.',
+                       'timestamp': 3699,
+                       'timestamp_seconds': 3699,
+                       'timestamp_label': '[01:01:39]',
+                       'url': 'https://www.youtube.com/watch?v=CKvIo_PJEQI&t=3699s',
+                       'markdown': '[01:01:39](https://www.youtube.com/watch?v=CKvIo_PJEQI&t=3699s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KZqosumnXfg',
+                       'title': 'Making Money on the Buy -- With Andrew Rosener',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "If a name is illiquid, I'm looking to pay no more than 10% of what I think "
+                               'I could sell it for.',
+                       'tip': "If a name is illiquid, I'm looking to pay no more than 10% of what I think "
+                              'I could sell it for.',
+                       'timestamp': 4197,
+                       'timestamp_seconds': 4197,
+                       'timestamp_label': '[01:09:57]',
+                       'url': 'https://www.youtube.com/watch?v=KZqosumnXfg&t=4197s',
+                       'markdown': '[01:09:57](https://www.youtube.com/watch?v=KZqosumnXfg&t=4197s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yT5y3iEQ96U',
+                       'title': 'Down the Domain & Crypto Rabbit Hole – with Bitcoin Developer Jimmy Song',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'You just sort of have to hold until somebody really wants it from you.',
+                       'tip': 'You just sort of have to hold until somebody really wants it from you.',
+                       'timestamp': 4680,
+                       'timestamp_seconds': 4680,
+                       'timestamp_label': '[01:18:00]',
+                       'url': 'https://www.youtube.com/watch?v=yT5y3iEQ96U&t=4680s',
+                       'markdown': '[01:18:00](https://www.youtube.com/watch?v=yT5y3iEQ96U&t=4680s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'anQ8Zjhrg_M',
+                       'title': 'Adam Dicker: How to Value a Domain Name, Domain Valuation Tools & UK '
+                                'domain portfolio review',
+                       'channel': 'HostMaria',
+                       'author': 'HostMaria',
+                       'text': 'I put zero value into an online appraisal or even an appraisal that comes '
+                               'from a company or corporation.',
+                       'tip': 'I put zero value into an online appraisal or even an appraisal that comes '
+                              'from a company or corporation.',
+                       'timestamp': 362,
+                       'timestamp_seconds': 362,
+                       'timestamp_label': '[00:06:02]',
+                       'url': 'https://www.youtube.com/watch?v=anQ8Zjhrg_M&t=362s',
+                       'markdown': '[00:06:02](https://www.youtube.com/watch?v=anQ8Zjhrg_M&t=362s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RpOpttsk1qw',
+                       'title': 'DomainSherpa Review with @AdamDicker @MediaOptions @DomainShane – Jan 26, '
+                                '2015',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "NameJet's by far the best.",
+                       'tip': "NameJet's by far the best.",
+                       'timestamp': 2534,
+                       'timestamp_seconds': 2534,
+                       'timestamp_label': '[00:42:14]',
+                       'url': 'https://www.youtube.com/watch?v=RpOpttsk1qw&t=2534s',
+                       'markdown': '[00:42:14](https://www.youtube.com/watch?v=RpOpttsk1qw&t=2534s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cb-n0okmiuw',
+                       'title': 'DomainSherpa Review with @AdamDicker @MediaOptions @DomainShane – Mar 16, '
+                                '2015',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "You've got a sunk cost that means nothing for what the value is today.",
+                       'tip': "You've got a sunk cost that means nothing for what the value is today.",
+                       'timestamp': 1909,
+                       'timestamp_seconds': 1909,
+                       'timestamp_label': '[00:31:49]',
+                       'url': 'https://www.youtube.com/watch?v=cb-n0okmiuw&t=1909s',
+                       'markdown': '[00:31:49](https://www.youtube.com/watch?v=cb-n0okmiuw&t=1909s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4a5oAIneDaA',
+                       'title': 'DomainSherpa Review with @AdamDicker @MediaOptions @DomainShane – May 18, '
+                                '2015',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "2500 seems like a logical number considering that's what it would cost to "
+                               'take it.',
+                       'tip': "2500 seems like a logical number considering that's what it would cost to "
+                              'take it.',
+                       'timestamp': 2662,
+                       'timestamp_seconds': 2662,
+                       'timestamp_label': '[00:44:22]',
+                       'url': 'https://www.youtube.com/watch?v=4a5oAIneDaA&t=2662s',
+                       'markdown': '[00:44:22](https://www.youtube.com/watch?v=4a5oAIneDaA&t=2662s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DLZJeUWhf3I',
+                       'title': 'Do Domain Price Changes Trigger More Sales? | DomainSherpa Podcast (July '
+                                '2, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'I sold one name that I lowered the price and I sold three names that I '
+                               'raised the price and that was over the course of less than a month.',
+                       'tip': 'I sold one name that I lowered the price and I sold three names that I '
+                              'raised the price and that was over the course of less than a month.',
+                       'timestamp': 3162,
+                       'timestamp_seconds': 3162,
+                       'timestamp_label': '[00:52:42]',
+                       'url': 'https://www.youtube.com/watch?v=DLZJeUWhf3I&t=3162s',
+                       'markdown': '[00:52:42](https://www.youtube.com/watch?v=DLZJeUWhf3I&t=3162s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

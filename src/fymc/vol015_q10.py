@@ -1,703 +1,831 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) judgment recovery team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Docket Pipelines, Reviewed LLM Extraction, Stay-Aware Deadline Queues, Reconciled Recovery Fees, and Counsel-Checked Lien Priority",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower Score. "
-        "This chapter gives the volume's 15 mapped plays a shared automation architecture: "
-        "authorized docket ingestion, evidence-linked LLM extraction, reviewed deadline calculations, "
-        "payment reconciliation, and creditor referral loops. Target 70%+ less repetitive handling "
-        "time without delegating enforcement decisions to software. The canonical annual owner "
-        "profit cases remain $12,000 Conservative, $84,000 Base, and $200,000 Scaled, generated "
-        "from recognized service fees rather than judgment balances or client collections. "
-        "A four-person team owns exceptions, source verification, and attorney coordination; "
-        "six people support the Scaled case. The design explicitly separates ordinary recovery "
-        "fees from speculative lien acquisitions and makes bankruptcy, exemption, priority, "
-        "and collection-authority checks prerequisites for consequential action."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees, excluding client collections and judgment balances",
-            "note": "20% net margin; $12,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$280,000",
-            "context": "Annual recognized service fees, excluding client collections and judgment balances",
-            "note": "30.0% net margin; $84,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$500,000",
-            "context": "Annual recognized service fees, excluding client collections and judgment balances",
-            "note": "40% net margin; $200,000 annual owner net profit; 2 FT + 4 C (6 people)",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence-first docket pipeline before automating decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Design the pipeline around a case event, not an AI conversation. The full-time "
-                    "operator owns intake, queue economics, and client communication; three contractors "
-                    "cover authorized research, bookkeeping, and licensed attorney work under separate "
-                    "engagements. Contractor status does not create permission to practice law or collect "
-                    "in a jurisdiction requiring a license. Each accepted file receives a case identifier, "
-                    "court identifier, creditor identity, debtor entity identifier, judgment date, entered "
-                    "amount, assignment evidence, and source-document digest. Use PACER for federal "
-                    "records and the relevant state court portal for state proceedings, through permitted "
-                    "access methods and approved accounts. A Python worker can ingest permitted downloads "
-                    "with urllib.request, normalize timestamps with datetime, and deduplicate documents "
-                    "with hashlib. Store transactional state in PostgreSQL through a separately reviewed "
-                    "deployment integration, or SQLite for a genuinely single-worker installation. Keep "
-                    "original files immutable and attach extracted claims to page references. Treat the "
-                    "15 mapped plays as consumers of this shared evidence layer, not as permission to "
-                    "reuse assumptions across jurisdictions. A commercial guaranty, consumer obligation, "
-                    "HOA assessment, and purchased judgment can require different authority checks even "
-                    "when the same person appears in the docket."
-                ),
-                (
-                    "Send only minimized, authorized document excerpts to an approved LLM endpoint, "
-                    "with retention settings consistent with the engagement. Ask for a fixed JSON "
-                    "schema containing extracted values, quoted source spans, page numbers, and explicit "
-                    "review reasons. Python validates field types, checks dates against the source, and "
-                    "rejects unsupported assertions; the model never supplies a deadline from memory. "
-                    "Treat docket text as untrusted input, including instructions embedded in exhibits. "
-                    "A rule registry stores jurisdiction, rule citation, effective dates, triggering event, "
-                    "calendar convention, and attorney reviewer. California Code of Civil Procedure "
-                    "section 683.020 supplies a general ten-year enforcement framework subject to "
-                    "exceptions and renewal rules, not a universal countdown for every obligation. "
-                    "Build proposed dates from reviewed rules, then require the responsible professional "
-                    "to confirm consequential deadlines against the operative docket. Bankruptcy alerts "
-                    "invoke a stay-review workflow under 11 U.S.C. section 362. Section 108(c) requires "
-                    "separate analysis; software must not assume every state limitation period simply "
-                    "stops running. Changes to a trigger date invalidate downstream calculations and "
-                    "generate a visible correction task. Every proposed filing remains a draft until "
-                    "the authorized person reviews the actual source packet."
-                ),
-                (
-                    "Measure automation against a stable workload rather than counting colorful "
-                    "dashboard actions. For an illustrative monthly cohort of 1,000 routine research, "
-                    "qualification, fulfillment-preparation, and acquisition-administration work items, "
-                    "the manual baseline is ten minutes each, or 10,000 minutes. Suppose 750 items "
-                    "complete extraction and routing automatically but retain one minute of human "
-                    "verification each; 250 exceptions require eight minutes each. Human handling "
-                    "becomes 2,750 minutes, a 72.5% reduction, while straight-through machine processing "
-                    "covers 75% of items. That result does not mean 75% of enforcement decisions are "
-                    "automated. Consequential approvals within this routine cohort must fit the measured "
-                    "review time; contested litigation and complex priority opinions remain separately "
-                    "budgeted work. Track corrections, missed triggers, stale sources, and reopened "
-                    "exceptions alongside minutes saved. Sample completed low-risk extractions weekly "
-                    "and inspect every material deadline change. Require four consecutive measured "
-                    "weeks before treating the reduction as an operating assumption. If exception "
-                    "volume rises, narrow the supported courts or document types instead of suppressing "
-                    "review. The useful deliverable is a reproducible evidence packet with an accountable "
-                    "reviewer, not an impressive percentage detached from case consequences."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-to-Decision Pipeline for a Four-Person Judgment Recovery Team",
-                "headers": [
-                    "Pipeline stage and bounded operational purpose",
-                    "Machine output retained with source evidence",
-                    "Human responsibility before consequential downstream action",
-                    "Failure signal and explicit recovery procedure",
-                ],
-                "rows": [
-                    [
-                        "Authorized court ingestion retrieves the accepted docket record",
-                        "Document digest and retrieval timestamp accompany every stored original",
-                        "Research contractor verifies court identity and permitted access method",
-                        "Portal denial pauses retrieval and creates manual download work",
-                    ],
-                    [
-                        "Entity matching separates similarly named people and businesses",
-                        "Candidate matches include identifiers and supporting public record references",
-                        "Operator resolves ambiguous identities before any external case communication",
-                        "Conflicting identifiers quarantine matches rather than merging debtor records",
-                    ],
-                    [
-                        "LLM extraction structures amounts, parties, and docket event dates",
-                        "Every material extracted field includes its quoted source location",
-                        "Research contractor checks material fields against the actual document",
-                        "Unsupported output returns to manual extraction with error classification",
-                    ],
-                    [
-                        "Deadline calculation applies a versioned jurisdiction-specific rule registry",
-                        "Proposed dates retain trigger events, calendar assumptions, and citations",
-                        "Responsible attorney confirms consequential dates and any applicable exceptions",
-                        "Changed trigger events invalidate dependent dates and notify reviewers",
-                    ],
-                    [
-                        "Bankruptcy monitoring identifies possible cases involving the debtor",
-                        "Potential matches retain court identifiers and current docket evidence",
-                        "Counsel determines stay applicability before affected collection activity resumes",
-                        "Possible stay immediately blocks affected actions pending documented review",
-                    ],
-                    [
-                        "Draft assembly organizes evidence for authorized enforcement professionals",
-                        "Packet index links judgment, assignments, balances, and reviewed chronology",
-                        "Licensed professional controls representation, filing decisions, and legal conclusions",
-                        "Missing authority documents return the packet to intake correction",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before any consequential output leaves the queue",
-                "body": (
-                    "Extraction can run unattended; collection communications, filings, bids, and "
-                    "disbursements require the appropriate accountable reviewer."
-                ),
-                "items": [
-                    (
-                        "Verify creditor authority, assignment continuity, commercial or consumer "
-                        "classification, and applicable collection licensing before accepting the mandate."
-                    ),
-                    (
-                        "Resolve current bankruptcy indicators and relevant orders with counsel; "
-                        "record the review time and precisely which actions remain blocked."
-                    ),
-                    (
-                        "Confirm the judgment balance, exemptions, lien priority, service requirements, "
-                        "and controlling deadline source before approving an enforcement packet."
-                    ),
-                    (
-                        "Match the intended recipient, approved document version, payment destination, "
-                        "and reviewer identity before transmission or any movement of funds."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every payment and price every automated run",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build payment processing as an append-only ledger of observed events, not a "
-                    "spreadsheet that overwrites yesterday's balance. A signed bank or payment-provider "
-                    "webhook reaches a narrow receiver that verifies the signature over the raw request "
-                    "body, checks timestamp freshness, and records the provider event identifier before "
-                    "returning success. Python hmac and hashlib can implement provider-specified "
-                    "verification without inventing a signature format. Unique constraints prevent "
-                    "duplicate posting, while a durable queue separates receipt from reconciliation. "
-                    "Use decimal.Decimal for money and retain currency, value date, payer reference, "
-                    "case identifier, and source transaction identifier. Distinguish pending funds, "
-                    "settled funds, returned payments, creditor liabilities, earned service fees, "
-                    "and recoverable expenses. Allocate interest and principal only through a reviewed "
-                    "jurisdiction-specific ledger rule. A receipt is not automatically earned revenue, "
-                    "and an earned fee is not automatically available cash. Where funds belong in "
-                    "an attorney trust account or another required custodial arrangement, the recovery "
-                    "operator does not route them through an ordinary operating account. Bookkeeping "
-                    "prepares the allocation; the authorized signatory controls disbursement. Reversal "
-                    "events create linked compensating entries rather than deleting the original "
-                    "receipt, preserving the complete creditor statement history."
-                ),
-                (
-                    "Reconcile the scorecard using recognized service fees exclusively. An illustrative "
-                    "25% fee on settled client recoveries produces $60,000 of Conservative revenue "
-                    "from $240,000 collected, $280,000 of Base revenue from $1,120,000 collected, and "
-                    "$500,000 of Scaled revenue from $2,000,000 collected. These collection amounts "
-                    "are explanatory assumptions, not additional scorecard revenue or promised "
-                    "recoveries. Total annual operating costs must equal $48,000, $196,000, and "
-                    "$300,000 respectively, leaving exactly $12,000 at 20%, $84,000 at 30.0%, and "
-                    "$200,000 at 40%. Conservative and Base retain 1 FT + 3 C; Scaled uses "
-                    "2 FT + 4 C. Contractor headcount does not imply four full-time salaries. "
-                    "The stated $2,000–$12,000 monthly operating range should be tracked as a "
-                    "planning range for recurring overhead, while the scenario reconciliation must "
-                    "also include variable contractor work, acquisition, research, and operator-borne "
-                    "enforcement expenses. The Base cost envelope averages about $16,333 monthly "
-                    "when all annual costs are included. Assign each expense to the correct bucket "
-                    "and prevent recoverable client advances from being mistaken for earned fees. "
-                    "A larger judgment face amount improves neither revenue nor margin until actual "
-                    "economics support recognition."
-                ),
-                (
-                    "Price automation at the work-item level before buying a larger stack. Assume "
-                    "each routine run consumes $0.18 of parsing, $0.08 of LLM inference, $0.04 "
-                    "of orchestration, and $0.12 of storage and monitoring allocation: $0.42 total. "
-                    "At 1,000 monthly runs, that is $420 of machine cost. The earlier 2,750 "
-                    "human minutes equal 45.833 hours; at an illustrative loaded $45 hourly rate, "
-                    "review costs $2,062.50. Combined monthly handling cost is $2,482.50, or "
-                    "$2.4825 per run, compared with a $7,500 labor-only manual baseline. Annualized, "
-                    "the modeled handling bundle costs $29,790 and belongs inside the Base "
-                    "$196,000 cost envelope, not on top of it. These assumptions exclude separately "
-                    "priced court retrieval, specialist opinions, contested proceedings, acquisition "
-                    "spend, and disbursement work outside the routine cohort. Vendor quotes and "
-                    "measured time must replace assumptions before committing capacity. Retry "
-                    "transient failures with bounded exponential backoff, then move exhausted jobs "
-                    "to an exception queue. During a provider outage, accept no blind ledger "
-                    "updates: reconcile bank statements manually, preserve event identifiers, and "
-                    "replay only after duplicate detection passes. A cheap run that misallocates "
-                    "client money is an expensive operational defect."
-                ),
-            ],
-            "table": {
-                "caption": "Payment Controls and Illustrative Unit Economics Without Revenue Inflation",
-                "headers": [
-                    "Ledger event or measured economic assumption",
-                    "Deterministic processing and retained audit evidence",
-                    "Reviewer control protecting client and operator balances",
-                    "Reconciliation target or explicit failure recovery",
-                ],
-                "rows": [
-                    [
-                        "Payment webhook arrives with a provider transaction reference",
-                        "Verify authentic signature before recording the unique event identifier",
-                        "Bookkeeper investigates any sender or transaction reference mismatch promptly",
-                        "Rejected signatures remain quarantined without changing any case balance",
-                    ],
-                    [
-                        "Settled receipt becomes available for reviewed contractual allocation",
-                        "Decimal arithmetic separates creditor liability from earned operator fees",
-                        "Authorized reviewer confirms fee terms and applicable allocation rules",
-                        "Allocation totals must equal the actual settled receipt exactly",
-                    ],
-                    [
-                        "Returned payment reverses a previously reconciled debtor receipt",
-                        "Linked compensating entries preserve the original transaction audit trail",
-                        "Bookkeeper checks creditor statements and any necessary disbursement correction",
-                        "Freeze affected distributions until the revised balances reconcile completely",
-                    ],
-                    [
-                        "Routine machine processing assumes forty-two cents per completed run",
-                        "Parsing, inference, orchestration, and storage allocations sum to $0.42",
-                        "Operator compares actual vendor invoices against completed work-item counts",
-                        "Separate court retrieval and specialist costs from this assumption",
-                    ],
-                    [
-                        "Monthly human review consumes the modeled 2,750 handling minutes",
-                        "Loaded labor of $45 hourly produces $2,062.50 review cost",
-                        "Operator samples time logs across ordinary and exception queues",
-                        "Recalculate savings when consequential reviews exceed the measured allowance",
-                    ],
-                    [
-                        "Canonical annual costs preserve all three published owner-profit cases",
-                        "Costs of $48,000, $196,000, and $300,000 reconcile respective scenarios",
-                        "Bookkeeper excludes client principal from recognized operator service revenue",
-                        "Resolve every variance before increasing acquisition or staffing commitments",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Authenticate and persist the incoming payment event",
-                    "action": (
-                        "Verify the provider signature and timestamp, then durably store the event "
-                        "under a unique provider identifier."
-                    ),
-                    "detail": (
-                        "Acknowledge delivery only after durable receipt; repeated deliveries return "
-                        "the existing result without reposting money."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Match the receipt to its authorized case ledger",
-                    "action": (
-                        "Use transaction references and verified payer details to propose a case "
-                        "match and settlement classification."
-                    ),
-                    "detail": (
-                        "Ambiguous references enter a suspense queue; no model may resolve "
-                        "competing case matches by probability alone."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Review allocation and prepare the creditor statement",
-                    "action": (
-                        "Apply approved fee and allocation rules, reconcile totals, and obtain "
-                        "the required human authorization."
-                    ),
-                    "detail": (
-                        "Keep earned fees, client liabilities, expenses, and returned funds "
-                        "separate; source every amount to a ledger event."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile settlement and close the exception loop",
-                    "action": (
-                        "Match the ledger against the bank statement, investigate differences, "
-                        "and record the final reconciliation evidence."
-                    ),
-                    "detail": (
-                        "Replay missed events through the same duplicate controls; preserve "
-                        "reversals and reviewer decisions for later reconstruction."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "3. Turn reviewed knowledge into creditor acquisition loops",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build distribution for creditors and referral partners, not for public exposure "
-                    "of debtors. Programmatic pages should explain specific commercial recovery "
-                    "workflows: locating an entered judgment, preparing assignment records, assessing "
-                    "enforcement costs, or organizing a lien-priority review. Publish a page only "
-                    "when its jurisdictional differences justify distinct content and a named reviewer "
-                    "has checked the sources. An LLM can draft from the approved rule registry, "
-                    "but it cannot invent recoverability statistics, attorney relationships, or local "
-                    "office locations. Use Google Search Console to monitor search queries and a "
-                    "first-party intake form to capture creditor authorization, court, judgment date, "
-                    "and available documents. Do not collect a full sensitive case file through "
-                    "an unrestricted marketing form. A Python webhook validates the submission, "
-                    "creates a deduplicated lead, and sends a secure upload invitation after "
-                    "basic screening. Record source attribution without leaking debtor names "
-                    "into analytics URLs. Separate marketing contacts from case subjects so "
-                    "a debtor never enters a creditor prospecting sequence because their "
-                    "name appeared in a docket. If a page's governing authority changes, "
-                    "remove its automated recommendations until a reviewer refreshes the content "
-                    "and confirms any linked intake logic."
-                ),
-                (
-                    "Make the referral loop useful before making it viral. Give commercial "
-                    "litigators, credit managers, and receivables teams a reusable judgment-transfer "
-                    "checklist, a sample evidence index, and a plain explanation of case acceptance "
-                    "criteria. The artifact should save partner labor even when no referral occurs. "
-                    "Allow partners to forward the public checklist while keeping client documents "
-                    "inside controlled workspaces. After a completed engagement, request permission "
-                    "to publish a genuinely de-identified process case study; removing a name "
-                    "alone may not prevent identification through a distinctive judgment amount "
-                    "or court history. Avoid referral payments that conflict with applicable "
-                    "attorney professional-conduct rules or collection restrictions. For outbound "
-                    "email, target verified business creditor roles using lawfully obtained contact "
-                    "data, truthful sender information, accurate subjects, a valid postal address, "
-                    "and an effective opt-out process under 15 U.S.C. section 7704. Maintain "
-                    "suppression across every sending system and honor statutory timing. Do not "
-                    "expand automatically into texts or autodialed calls, which require separate "
-                    "analysis under 47 U.S.C. section 227 and implementing rules. A referral "
-                    "engine fails when convenience turns case records into unauthorized marketing "
-                    "data or when an automated follow-up ignores a recipient's objection."
-                ),
-                (
-                    "Model acquisition as cohorts with delayed cash, because the scorecard allows "
-                    "six to twenty-four months to the first deal. An illustrative annual cohort "
-                    "starts with 240 qualified creditor inquiries, converts 60 into accepted "
-                    "engagements, and eventually produces 20 paying matters averaging $14,000 "
-                    "of recognized fees. That yields the Base $280,000, but only in the "
-                    "period when those fees qualify for recognition; signing all 60 this "
-                    "year does not create this year's revenue. At the illustrative 25% "
-                    "fee, each paying matter corresponds to $56,000 of client collections, "
-                    "and twenty produce $1,120,000 of underlying recoveries. A $24,000 "
-                    "acquisition allocation implies $100 per qualified inquiry, $400 per "
-                    "accepted engagement, and $1,200 per paying matter. Include that allocation "
-                    "inside the $196,000 Base cost envelope alongside the $29,790 routine "
-                    "handling bundle, leaving $142,210 for all remaining modeled costs. "
-                    "Track intake qualification, acceptance, collectible-asset evidence, realized "
-                    "fees, and elapsed months separately. Stop scaling a channel that supplies "
-                    "large nominal judgments but repeated insolvency findings. When organic "
-                    "traffic falls, prioritize partner checklists and existing creditor renewals "
-                    "rather than publishing hundreds of unreviewed jurisdiction pages. Acquisition "
-                    "quality is measured by collectible, authorized work, not database size."
-                ),
-            ],
-            "table": {
-                "caption": "Six Creditor Acquisition Loops With Reviewable Inputs and Economic Feedback",
-                "headers": [
-                    "Distribution loop and clearly identified target audience",
-                    "Reusable asset and bounded automation mechanism",
-                    "Human review and recipient-protection operating requirement",
-                    "Economic signal and practical channel fallback",
-                ],
-                "rows": [
-                    [
-                        "Jurisdiction pages attract creditors researching commercial enforcement procedures",
-                        "Reviewed rule records populate genuinely distinct explanatory page drafts",
-                        "Named reviewer verifies current sources before any publication occurs",
-                        "Withdraw stale pages and route visitors to reviewed intake",
-                    ],
-                    [
-                        "Litigator partnerships receive clean judgment-transfer and evidence checklists",
-                        "Public checklist links create attributed partner intake submissions",
-                        "Operator confirms referrals respect applicable professional relationship restrictions",
-                        "Track accepted matters rather than counting forwarded checklist downloads",
-                    ],
-                    [
-                        "Credit managers receive targeted commercial recovery process outreach",
-                        "Verified business contacts enter restrained sequences with suppression checks",
-                        "Reviewer confirms lawful sourcing and accurate sender identification",
-                        "Stop sequences on objection and investigate elevated complaint rates",
-                    ],
-                    [
-                        "Authorized case studies demonstrate specific operational improvements publicly",
-                        "Approved templates separate process metrics from sensitive case details",
-                        "Creditor permission and reidentification review precede public publication",
-                        "Use synthetic teaching examples when disclosure risks remain material",
-                    ],
-                    [
-                        "Existing creditors receive scheduled portfolio review invitations directly",
-                        "Relationship records trigger reminders without exposing debtor case information",
-                        "Account owner verifies contact permissions and current engagement status",
-                        "Measure retained collectible portfolios instead of repeated reminder volume",
-                    ],
-                    [
-                        "Base acquisition cohort connects inquiry quality to realized fees",
-                        "Two hundred forty inquiries yield twenty modeled paying matters",
-                        "Operator distinguishes eventual cohort outcomes from current recognition periods",
-                        "Pause weak channels before nominal judgment balances distort spending",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Use recovery-specific evidence to make the flywheel stronger",
-                "body": (
-                    "Experienced operators reduce wasted diligence before increasing lead volume. "
-                    "Make every reusable asset improve case selection or handoff quality."
-                ),
-                "items": [
-                    (
-                        "Ask referral partners for the entered judgment, assignment chain, and "
-                        "payment history together; a complete packet prevents repeated intake labor."
-                    ),
-                    (
-                        "Keep insolvency findings in a dated evidence field, not a permanent "
-                        "debtor label; any later review must use fresh, lawfully obtained sources."
-                    ),
-                    (
-                        "Tag each rejected lead with a concrete reason such as missing authority, "
-                        "unfunded enforcement costs, or unresolved priority, then improve the intake checklist."
-                    ),
-                    (
-                        "Publish a sample creditor statement with synthetic amounts so prospects "
-                        "understand fee allocation without exposing an actual debtor or recovery."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "4. Isolate statutory-interest experiments and scale through recoverable failures",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Apply the same evidence architecture to "
-                    "hoa_super_lien_tax_deed_redemption_arbitrage, the TRACK_1 play for HOA "
-                    "Super-Lien & Sub-Threshold Tax-Deed Statutory Redemption Arbitrage, without "
-                    "turning it into a universal title strategy. A small purchase price changes "
-                    "capital exposure, not statutory notice requirements, lien priority, or "
-                    "redemption rights. Nevada Revised Statutes section 116.3116 supplies an "
-                    "HOA lien framework whose priority and enforceability require transaction-specific "
-                    "review of the applicable statutory version, related provisions, recorded "
-                    "instruments, payments, and foreclosure history. Do not assume acquiring "
-                    "an assessment claim conveys an unrestricted enforcement right or extinguishes "
-                    "a senior interest. Texas Tax Code section 34.21 supplies a different "
-                    "tax-sale redemption structure, including different periods for qualifying "
-                    "homestead, agricultural, mineral, and other property categories. Keep these "
-                    "jurisdictions and instruments in separate rule records. Python can assemble "
-                    "the title chronology, notice evidence, redemption dates, and cost ledger; "
-                    "an LLM can flag missing documents. Counsel must determine what interest "
-                    "can actually be acquired and enforced. Neither tool establishes valid "
-                    "title from a docket summary. Treat unresolved priority, deficient notice, "
-                    "or bankruptcy as reasons to suspend bidding, not as opportunities for "
-                    "a more optimistic automated valuation."
-                ),
-                (
-                    "Use bounded arithmetic to expose the play's fragility. Suppose counsel "
-                    "confirms an assignable HOA interest with $2,600 of realistically available "
-                    "net proceeds before acquisition and operator costs. A $1,200 purchase, "
-                    "$300 diligence budget, and $500 operator-borne enforcement budget create "
-                    "$2,000 of modeled exposure and a $600 spread, or 30% on that "
-                    "exposure before additional overhead and timing effects. Another $600 "
-                    "of required enforcement work eliminates the spread entirely. This example "
-                    "does not assert that $2,600 receives statutory priority. For a separate "
-                    "Texas example, assume counsel confirms an $8,000 eligible redemption "
-                    "basis and a first-year redemption calculation carrying the applicable "
-                    "25% premium. The resulting $2,000 premium is a conditional statutory "
-                    "calculation, not a 25% annual yield or assured recovery; $800 of "
-                    "unreimbursed costs would leave $1,200 before overhead and capital costs. "
-                    "If redemption never occurs, evaluate the actual remaining interest "
-                    "rather than projecting the premium forever. These investment illustrations "
-                    "sit outside the canonical service-fee scenarios. Suspend bidding when "
-                    "evidence fails, seek available statutory refunds where the facts and "
-                    "law permit them, and limit acquisitions to counsel-cleared interests. "
-                    "Never book the acquisition principal or a hypothetical premium as "
-                    "ordinary judgment recovery service revenue."
-                ),
-                (
-                    "Scale the shared system only after its failure paths work. Maintain "
-                    "separate queues for routine extraction, uncertain identity, deadline review, "
-                    "bankruptcy, payment mismatch, acquisition review, and partner intake. Give "
-                    "each queue an accountable owner, a response target, and a safe paused "
-                    "state. A bankruptcy flag blocks affected collection actions but still "
-                    "permits internal preservation and review; a broken court connector "
-                    "creates a manual retrieval task rather than silently treating yesterday's "
-                    "docket as current. Test restoration from backups and rebuild case "
-                    "state from retained events before expanding volume. Use least-privilege "
-                    "service credentials, encrypted document storage, redacted application logs, "
-                    "and recorded access reviews. Retain source evidence according to the "
-                    "engagement and applicable requirements rather than keeping everything "
-                    "indefinitely. Within the $10,000–$75,000 startup range, reserve capital "
-                    "for long acquisition cycles and necessary specialist review before "
-                    "optional software. At Scaled, assign the second full-time person to "
-                    "operations quality and reconciliation, and use four contractors for "
-                    "bounded specialist capacity. Preserve the $500,000 fee revenue, "
-                    "$300,000 total cost, and $200,000 owner profit arithmetic. If "
-                    "backlogs exceed capacity, restrict intake or reprice documented scope; "
-                    "never make the margin work by removing source checks, stay review, "
-                    "or payment controls."
-                ),
-            ],
-            "table": {
-                "caption": "Statutory-Interest Underwriting and Failure-Recovery Matrix",
-                "headers": [
-                    "Specific exposure requiring evidence-based operator attention",
-                    "Automated calculation or supporting evidence assembly",
-                    "Human determination required before capital or enforcement",
-                    "Loss-limiting fallback when the evidence fails",
-                ],
-                "rows": [
-                    [
-                        "Nevada HOA interest requires transaction-specific statutory priority analysis",
-                        "Assemble assessment history, recorded instruments, payments, and notice chronology",
-                        "Counsel confirms assignability, enforceability, priority, and applicable statutory version",
-                        "Suspend bidding and acquire only a counsel-cleared interest",
-                    ],
-                    [
-                        "Texas tax-sale interest requires property-specific redemption classification",
-                        "Separate eligible cost basis from any conditional statutory premium",
-                        "Counsel verifies property category, dates, costs, and redemption rights",
-                        "Seek available statutory refunds only where legally supported",
-                    ],
-                    [
-                        "Illustrative HOA purchase exposes $2,000 before additional unforeseen costs",
-                        "Available proceeds of $2,600 leave a modeled $600 spread",
-                        "Operator requires support for proceeds and every enforcement estimate",
-                        "Reject the acquisition if added costs erase the spread",
-                    ],
-                    [
-                        "Illustrative Texas redemption basis equals $8,000 under reviewed assumptions",
-                        "Applicable twenty-five percent premium would produce $2,000 before costs",
-                        "Counsel confirms the example fits the actual statutory calculation",
-                        "Underwrite nonredemption separately instead of assuming automatic premium recovery",
-                    ],
-                    [
-                        "Possible bankruptcy filing interrupts otherwise routine collection scheduling",
-                        "Preserve match evidence and mark affected actions as blocked",
-                        "Counsel determines stay scope and any lawful next action",
-                        "Keep affected collection paused until the determination is documented",
-                    ],
-                    [
-                        "Connector outage or queue backlog threatens evidence freshness",
-                        "Monitor retrieval timestamps, exception age, and missing event sequences",
-                        "Queue owner prioritizes deadlines and assigns manual source verification",
-                        "Restrict intake and restore reliable processing before expanding volume",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Automate the evidence trail and the arithmetic; keep authority, priority, and the movement of money accountable to people."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        (
-            "Create a case-event schema linking every material field to an immutable source "
-            "document, retrieval timestamp, and assigned reviewer."
-        ),
-        (
-            "Build a versioned deadline registry for the first supported courts, including "
-            "stay-review handling and invalidation after changed trigger events."
-        ),
-        (
-            "Implement authenticated payment webhooks, duplicate controls, Decimal-based allocations, "
-            "and bank-to-ledger reconciliation before enabling distribution instructions."
-        ),
-        (
-            "Measure a fixed 1,000-item routine cohort and verify the 70%+ handling-time "
-            "reduction without excluding required reviews or reopened exceptions."
-        ),
-        (
-            "Launch reviewed creditor resources and partner checklists, then track qualified "
-            "inquiries through collectible engagements and recognized service fees."
-        ),
-        (
-            "Keep statutory-interest acquisitions outside the service-fee scorecard, document "
-            "counsel-cleared rights, and rehearse bidding suspension and manual recovery procedures."
-        ),
-    ],
-    "statutory_citations": [
-        {
-            "title": "11 U.S.C. § 362 — Automatic stay",
-            "url": "https://www.law.cornell.edu/uscode/text/11/362",
-            "relevance": (
-                "Defines the automatic stay framework that requires review before continuing "
-                "affected enforcement, collection, or lien activity after a bankruptcy filing."
-            ),
-        },
-        {
-            "title": "11 U.S.C. § 108(c) — Extension of time",
-            "url": "https://www.law.cornell.edu/uscode/text/11/108",
-            "relevance": (
-                "Supports separate analysis of enforcement deadlines during bankruptcy; "
-                "do not encode a universal assumption that every limitation period stops."
-            ),
-        },
-        {
-            "title": "California Code of Civil Procedure § 683.020 — General enforcement period",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=683.020.&lawCode=CCP",
-            "relevance": (
-                "Provides the general ten-year judgment enforcement framework, subject to "
-                "applicable exceptions and renewal provisions requiring source-specific review."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1692a(5) — Definition of debt",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1692a",
-            "relevance": (
-                "Defines the consumer-purpose debt scope relevant to federal debt-collection "
-                "classification; commercial focus does not remove applicable state requirements."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email practices including sender accuracy, subject lines, "
-                "postal address disclosure, opt-out functionality, and honoring opt-out requests."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires separate analysis before extending an email acquisition workflow "
-                "into calling or messaging practices covered by the statute and implementing rules."
-            ),
-        },
-        {
-            "title": "Nevada Revised Statutes § 116.3116 — Association liens",
-            "url": "https://www.leg.state.nv.us/NRS/NRS-116.html#NRS116Sec3116",
-            "relevance": (
-                "Provides the Nevada association-lien framework; priority and enforcement "
-                "depend on the applicable text, related provisions, and transaction evidence."
-            ),
-        },
-        {
-            "title": "Texas Tax Code § 34.21 — Right of redemption",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.34.htm#34.21",
-            "relevance": (
-                "Establishes property-specific tax-sale redemption periods and payment mechanics; "
-                "premiums require verified classification, timing, and eligible cost calculations."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'commercial-debt-recovery-collection-operations',
+ 'question_prompt': 'How do businesses and collection firms recover unpaid commercial invoices and '
+                    'judgments, and what operational tools and collateral rights do they rely on?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Commercial Debt Recovery and Collection Operations',
+ 'subtitle': 'B2B collection process, unpaid-invoice escalation, mediation vs. litigation, turning '
+             'invoices and judgments into cash, UCC liens and secured transactions, collection-law-firm '
+             'enforcement results, default-judgment disputes, compliance tooling, data waterfalls and '
+             'KPIs, docket scraping, and debt-collection industry insider economics',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Commercial recovery operators converge on one ladder: soft collection, a letter '
+                      'before action, a court claim, then enforcement agents, with mediation or litigation '
+                      'as the fork. Shergroup runs no-collect-no-fee collection at 15% plus VAT, The '
+                      'Business Disputes Register puts US agency fees at 20-25% with success often above '
+                      '50 percent, and Mike Martinez says a $1 million file yields $170,000 to $350,000 in '
+                      'the first few months. Speed dominates: debtors stall with resend requests and '
+                      'partner excuses, 90% simply refuse, and Martinez wants accounts placed after six '
+                      'months. A judgment collects nothing alone; The Tribe stresses the sheriff will not '
+                      'hunt assets, so operators trace tuition payments, depose debtors, and run '
+                      'skip-trace data waterfalls retested quarterly. Disagreement is sharp: Zindo calls '
+                      'agencies harassment that damages a brand, while Taurus favours mediation over the '
+                      'irreversible lawsuit.',
+ 'key_metrics': [{'label': 'Agency Recovery on a $1M Placement',
+                  'metric': 'Agency Recovery on a $1M Placement',
+                  'value': '$170,000 to $350,000 in the first few months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Mike Martinez's stated early recovery range when a $1 million file of "
+                             'delinquent receivables is assigned to the agency',
+                  'source': 'Danny Klein ([3AJVt6F_pYQ @ 00:10:08])'},
+                 {'label': 'US Agency Contingency Fee and Success Rate',
+                  'metric': 'US Agency Contingency Fee and Success Rate',
+                  'value': '20-25% of amount collected; success often above 50 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Agency placement for unpaid invoices over $2,000; agencies hold no '
+                             'enforcement power',
+                  'source': 'The Business Disputes Register ([bgQht-y6jWY @ 00:00:38])'},
+                 {'label': 'UK No-Collect-No-Fee Collection Rate',
+                  'metric': 'UK No-Collect-No-Fee Collection Rate',
+                  'value': '15% plus VAT, no take-on fee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Shergroup collection tier pricing, with clients told to rewrite terms so the '
+                             'cost is recoverable from the customer',
+                  'source': 'Shergroup TV ([aPUKKsyL_NM @ 00:01:38])'},
+                 {'label': 'Consumer Contact Data Decay',
+                  'metric': 'Consumer Contact Data Decay',
+                  'value': '60 to 70% incorrect after two years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Will Turner's figure for how fast consumer data goes stale, driving the need "
+                             'for skip-trace waterfalls and quarterly retesting',
+                  'source': 'Receivables Info | Debt Collection News ([1M9DIxuxJGA @ 00:24:47])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who walked through a commercial file describes the same '
+                              'staircase, and nobody skips the first step. Thomas Higgins Limited opens '
+                              'with a letter before action giving the debtor 7 days to pay, carrying the '
+                              'name, address and amount owed, and recommends a solicitor send it; the firm '
+                              'flags that this letter is not a court order, so its force comes entirely '
+                              'from what it threatens next [MxMjZqkhltA @ 00:01:02]. Shergroup TV runs 30 '
+                              'days of emails, letters and phone calls under its collection tier before '
+                              'issuing a free letter before action, then hands the survivors to its '
+                              'SRA-regulated legal arm and finally its enforcement arm [aPUKKsyL_NM @ '
+                              '00:02:33]. Taurus Collections frames the threat of litigation as the lever '
+                              'that drags evasive debtors to the mediation table, while calling the '
+                              'lawsuit itself the nuclear option [PQz21Mf4OZc @ 00:02:09]. The Business '
+                              'Disputes Register lays out the US version of the same ladder as four plays: '
+                              'mediation for quality disputes, a contingency agency, small claims, and '
+                              'going public with a $20 dispute filing that stays up until the invoice '
+                              'settles [bgQht-y6jWY @ 00:01:53]. The consensus is sequencing: cheap '
+                              'pressure first, court second, enforcement last, with each rung making the '
+                              'next threat credible to a debtor who has already ignored the polite '
+                              'reminders.',
+                              'Practitioners agree the late-paying business debtor is rarely confused; it '
+                              "is stalling, and time works against the creditor. Fair Capital's skit runs "
+                              'the standard script: resend the invoice that already went out three times, '
+                              "at 60 days 'speak with my partner,' at 90 days 'we'll see,' and a business "
+                              'owner admits having to spend another year chasing those balances alone '
+                              '[svZlO-c19tA @ 00:01:33]. Mike Martinez, who built a 160-person agency, '
+                              'puts numbers on it: roughly 90% of the people on the files are refusing to '
+                              'pay and not cooperating, and only about 10% did not know they owed anything '
+                              '[3AJVt6F_pYQ @ 00:09:25]. Martinez tells businesses to assign delinquent '
+                              'receivables to an agency after six months of delinquency rather than '
+                              'letting them rot in-house [3AJVt6F_pYQ @ 00:10:27]. Retrievables Collection '
+                              'Attorneys pushes the front end earlier still, with explicit contracts '
+                              'carrying payment deadlines and late-payment consequences, follow-ups as the '
+                              'due date nears, and collections treated as customer service that balances '
+                              'firmness with empathy [YT8Fu3qHWM0 @ 00:00:17]. The shared baseline is '
+                              'written terms before the sale, a collection clock that starts on the first '
+                              'day of lateness, and zero patience for repeated excuses that only buy the '
+                              'debtor more time to move money elsewhere.',
+                              'The hardest consensus point is that winning a judgment is the middle of the '
+                              "job, not the end of it. The Tribe's secured-transactions lecture is blunt "
+                              "that a judgment is not a lien, and lays out the unsecured creditor's five "
+                              'steps: judgment, discover assets, paperwork, levy, sheriff sale '
+                              '[r1sk4alg3RM @ 00:28:03]. The same lecture warns that the sheriff will not '
+                              "search for assets on the creditor's behalf, which is exactly why debtor "
+                              'depositions built around a dozen pointed questions matter [r1sk4alg3RM @ '
+                              "00:30:03]. Richard Evans of Evanns Collection Law Firm, citing '20 30 $40 "
+                              "million' in judgment debt collected or satisfied over 10-plus years, treats "
+                              "every file as a mystery: the firm knows which private school a debtor's "
+                              'kids attend and their names, and traces how the tuition is paid to find '
+                              'collectible money, including against debtors hiding behind attorneys, '
+                              'corporations and LLCs [XOwPGudMeaY @ 00:01:32]. Shergroup TV closes the '
+                              'loop with physical leverage, describing enforcement agents removing goods '
+                              "and hauling a debtor's car away on a low loader [aPUKKsyL_NM @ 00:08:54]. "
+                              'Across UK and US speakers the rule holds: paper wins nothing until someone '
+                              'locates an asset and a sheriff, bailiff or enforcement officer actually '
+                              'seizes it.'],
+               'table': {'caption': 'Where Commercial Recovery Practitioners Agree',
+                         'headers': ['Consensus Principle',
+                                     'Practitioner Execution',
+                                     'Operator Payoff',
+                                     'Expert Source'],
+                         'rows': [['Letter before action opens formal recovery',
+                                   'Send a 7-day demand naming debtor, address and exact amount, ideally '
+                                   'via solicitor',
+                                   'Signals escalation cheaply before any court fees are incurred',
+                                   'Thomas Higgins Limited ([MxMjZqkhltA @ 00:01:02])'],
+                                  ['Soft collection always precedes legal escalation',
+                                   'Run 30 days of emails, letters and calls, then issue a free LBA',
+                                   'Filters out payers before any fixed-fee legal work begins',
+                                   'Shergroup TV ([aPUKKsyL_NM @ 00:02:33])'],
+                                  ['The litigation threat drives debtors to settle',
+                                   'Use the prospect of suit to pull evasive debtors into mediation',
+                                   'Keeps the irreversible nuclear option in reserve while forcing '
+                                   'engagement',
+                                   'Taurus Collections (UK) Ltd ([PQz21Mf4OZc @ 00:02:09])'],
+                                  ['Most debtors are refusing, not confused or unaware',
+                                   'Treat roughly 90% of files as deliberate non-payers needing real '
+                                   'pressure',
+                                   'Scripts get built for refusal rather than polite invoice reminders',
+                                   'Danny Klein ([3AJVt6F_pYQ @ 00:09:25])'],
+                                  ['Place delinquent accounts before they age further',
+                                   'Assign receivables to a collection agency after six months of '
+                                   'delinquency',
+                                   'Martinez cites $170,000 to $350,000 recovered per $1M file early on',
+                                   'Danny Klein ([3AJVt6F_pYQ @ 00:10:27])'],
+                                  ['A judgment alone is not a lien on anything',
+                                   'Follow judgment with asset discovery, paperwork, levy and a sheriff '
+                                   'sale',
+                                   'The sheriff will not search for assets, so the creditor must hunt',
+                                   'The Tribe ([r1sk4alg3RM @ 00:28:03])'],
+                                  ["Investigate the debtor's lifestyle, not just accounts",
+                                   "Trace private-school tuition payments and children's names to locate "
+                                   'money',
+                                   'Uncovers assets hidden behind attorneys, corporations and LLC '
+                                   'structures',
+                                   'Evanns Collection Law Firm ([XOwPGudMeaY @ 00:01:32])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The pricing grid is where the operators get specific. Shergroup TV prices '
+                              'its collection tier as no collect, no fee at 15% plus VAT with no take-on '
+                              'fee, and tells clients to rewrite their terms of business so those '
+                              'collection costs become recoverable from the customer instead of eaten by '
+                              'the creditor [aPUKKsyL_NM @ 00:01:38]. On enforcement, Shergroup routes '
+                              'judgments over £600 to the High Court with a fixed fee that was £161 at '
+                              'recording and is mostly recovered from the debtor, while sub-£600 work '
+                              'stays no collect, no fee [aPUKKsyL_NM @ 00:07:37]. In the US, The Business '
+                              'Disputes Register quotes agencies at 20-25% of the amount collected for '
+                              'debts over $2,000, with no enforcement power but success often above 50 '
+                              'percent; small claims limits run $2,000 to $15,000 depending on the state, '
+                              'and larger claims mean an attorney costing thousands of dollars plus '
+                              'separate enforcement costs on top [bgQht-y6jWY @ 00:00:38]. Taurus '
+                              'Collections prices the fork directly: mediation fees split 50/50 at $1,500 '
+                              'to $5,000 per day for a total in the low thousands, against litigation '
+                              'retainers of $10k, $20k or $50k and a discovery phase billed at $400 to '
+                              '$600 an hour that runs into tens of thousands before expert witnesses are '
+                              'even hired [PQz21Mf4OZc @ 00:03:10].',
+                              'The UK court track is mapped step by step, and each step carries its own '
+                              'hard deadline. Thomas Higgins Limited files a county court claim form once '
+                              'the letter before action expires, giving the debtor 14 days to respond, and '
+                              'decides whether to accept an offered payment plan depending on the '
+                              'relationship with that customer [MxMjZqkhltA @ 00:02:02]. Ignore the claim '
+                              'and a county court judgment lands on the public register of judgments, '
+                              'orders and fines for 6 years, removable only if paid within one month, '
+                              'which hands the creditor a sharp reputational deadline to wave at the '
+                              'debtor [MxMjZqkhltA @ 00:02:19]. Enforcement splits by size: Thomas Higgins '
+                              'instructs the county court bailiff for debts under £600 and the High Court '
+                              'enforcement officer for anything larger, holding a winding-up order as the '
+                              'last resort against company debtors [MxMjZqkhltA @ 00:02:58]. Shergroup TV '
+                              'names the instrument as a writ of control, the document known as fieri '
+                              'facias until 2004, and runs it through a dedicated enforcement tier sitting '
+                              'behind its collection and legal tiers [aPUKKsyL_NM @ 00:06:24]. The '
+                              'operator takeaway is a calendar rather than a feeling: 7 days on the '
+                              'letter, 14 days on the claim, one month to clear the judgment, then '
+                              'bailiffs or enforcement officers at the door.',
+                              'Inside the agency, the mechanics are people, scripts and data. Mike '
+                              'Martinez hires off a scripted Indeed ad through a three-stage interview, '
+                              'starts classes of at least five with a one-hour orientation, trains on the '
+                              'CRM, the script, rebuttals and call recordings, and has new hires on the '
+                              'phones by the end of day one with managers coaching; anyone who cannot '
+                              'figure it out in the first few days is not right for the role [3AJVt6F_pYQ '
+                              '@ 00:19:02]. Martinez treats speed as king, arguing that the operation that '
+                              'moves faster simply makes more money [3AJVt6F_pYQ @ 00:16:59]. Will Turner '
+                              'of TEC Services builds the skip-trace side as a data waterfall: '
+                              'exclusionary scrubs for deceased, bankruptcy and litigious debtors first, '
+                              'then recovery scores, then skip tracing, drawing on about 120 data sources '
+                              'connected to the platform [1M9DIxuxJGA @ 00:06:21]. Turner insists on '
+                              'keeping part of the inventory permanently in A/B testing and retesting no '
+                              'less than quarterly, because five vendors run in a different order produce '
+                              'very different outcomes and contact data decays fast enough that no '
+                              'strategy stays optimal for long [1M9DIxuxJGA @ 00:19:59]. The street '
+                              'version: hire fast, put collectors on live calls immediately, and never '
+                              "trust last quarter's data order."],
+               'table': {'caption': 'Collection Levers, Stated Numbers and Tools',
+                         'headers': ['Lever', 'Stated Number or Tool', 'Street Execution', 'Expert Source'],
+                         'rows': [['No-collect-no-fee collection tier',
+                                   '15% plus VAT with no take-on fee charged',
+                                   'Rewrite terms so collection costs land on the customer',
+                                   'Shergroup TV ([aPUKKsyL_NM @ 00:01:38])'],
+                                  ['High Court enforcement for larger judgments',
+                                   '£161 fixed fee at recording, mostly recovered from debtor',
+                                   'Route judgments over £600 to High Court enforcement officers',
+                                   'Shergroup TV ([aPUKKsyL_NM @ 00:07:37])'],
+                                  ['US contingency agency placement on invoices',
+                                   '20-25% of amount collected on debts over $2,000',
+                                   'Expect success often above 50 percent despite no enforcement power',
+                                   'The Business Disputes Register ([bgQht-y6jWY @ 00:00:38])'],
+                                  ['Mediation budget before any lawsuit is filed',
+                                   '$1,500 to $5,000 per day, fee split 50/50',
+                                   'Settle confidentially with payment plans or future-service discounts',
+                                   'Taurus Collections (UK) Ltd ([PQz21Mf4OZc @ 00:02:54])'],
+                                  ['Litigation budget when the debtor will not engage',
+                                   '$10k, $20k or $50k retainer; discovery $400-$600 hourly',
+                                   'Budget tens of thousands and 12 to 18 months to judgment',
+                                   'Taurus Collections (UK) Ltd ([PQz21Mf4OZc @ 00:03:10])'],
+                                  ['Automated court date and docket tracking',
+                                   'Octoparse no-code scraper, local or cloud, CSV and Excel export',
+                                   'Replace manual docket checks with scheduled scraping tasks and '
+                                   'templates',
+                                   'Martin Kravchenko ([aB0whCtGI5k @ 00:01:27])'],
+                                  ['Skip-trace data waterfall for locating debtors',
+                                   'About 120 connected data sources, retested no less than quarterly',
+                                   'Scrub deceased and bankrupt, score recovery, then run skip tracing',
+                                   'Receivables Info | Debt Collection News ([1M9DIxuxJGA @ 00:08:38])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Tactics From the Operators',
+                           'body': 'Small execution details the practitioners use to find money, keep data '
+                                   'clean, and keep tools running.',
+                           'items': ["Follow the tuition money: knowing which private school a debtor's "
+                                     'kids attend, and how that tuition gets paid, can lead straight to a '
+                                     'collectible account [Evanns Collection Law Firm — XOwPGudMeaY @ '
+                                     '00:01:32]',
+                                     "Open the asset deposition with blunt questions, including 'how much "
+                                     "money do you have on you today,' as part of a 12-question discovery "
+                                     'run [The Tribe — r1sk4alg3RM @ 00:32:51]',
+                                     'When an Octoparse search task throws an error, add a scroll to the '
+                                     'page bottom after load; hard-code date values because the tool takes '
+                                     'no dynamic text input [Martin Kravchenko — aB0whCtGI5k @ 00:08:49]',
+                                     'Test new waterfall orders retroactively on accounts with known '
+                                     'outcomes first, so there is no operational impact before a small '
+                                     'production champion/challenger run [Receivables Info | Debt '
+                                     'Collection News — 1M9DIxuxJGA @ 00:21:30]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the Terms Before the Sale',
+                              'action': 'Write explicit payment deadlines, late-payment consequences, and '
+                                        'recoverable collection costs into customer contracts.',
+                              'detail': 'Retrievables uses explicit contracts with deadlines and '
+                                        'late-payment consequences, and Shergroup tells clients to rewrite '
+                                        'terms so the 15% plus VAT collection cost is recoverable from the '
+                                        'customer [Shergroup TV — aPUKKsyL_NM @ 00:02:15]'},
+                             {'step': 2,
+                              'title': 'Run Soft Collection, Then Issue the LBA',
+                              'action': 'Work the account for 30 days by email, letter and phone, then '
+                                        'send a letter before action with a 7-day deadline.',
+                              'detail': 'Shergroup runs 30 days of emails, letters and calls before a free '
+                                        'LBA; Thomas Higgins sets 7 days to pay with name, address and '
+                                        'amount [Shergroup TV — aPUKKsyL_NM @ 00:02:33]'},
+                             {'step': 3,
+                              'title': 'File the Claim and Take Judgment',
+                              'action': 'Issue the county court claim form, give 14 days to respond, and '
+                                        'take the CCJ if the debtor ignores it.',
+                              'detail': 'Thomas Higgins files the claim form with a 14-day response window '
+                                        'and weighs any payment plan against the relationship; the CCJ '
+                                        'stays on the register for 6 years unless paid within one month '
+                                        '[Thomas Higgins Limited — MxMjZqkhltA @ 00:02:02]'},
+                             {'step': 4,
+                              'title': 'Discover Assets and Enforce',
+                              'action': 'Hunt assets yourself, then levy through bailiffs, High Court '
+                                        'enforcement officers, or a sheriff sale.',
+                              'detail': "The Tribe's five-step unsecured route runs judgment, discover "
+                                        'assets, paperwork, levy, sheriff sale, and the sheriff will not '
+                                        "search for assets on the creditor's behalf [The Tribe — "
+                                        'r1sk4alg3RM @ 00:28:03]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over whether a third-party agency earns its cut. The '
+                              'Business Disputes Register puts agency fees at 20 to 25 percent of the '
+                              'amount collected on debts over $2,000, concedes agencies hold no '
+                              'enforcement power, and still reports success "often above 50 percent" '
+                              '[bgQht-y6jWY @ 00:00:38]. Zindo takes the opposite line: what agencies "can '
+                              'do is harass," they "don\'t work," and they ruin the creditor\'s name, so '
+                              'it pitches its own model of getting paid in 30 days with no upfront cost '
+                              '[Xpf-6IU1qtQ @ 00:00:35]. Mike Martinez, whose agency is licensed in every '
+                              'state, sets his own benchmark: assign him a million-dollar file and he '
+                              'expects to recover $170,000 to $350,000 in the first few months, and he '
+                              'tells businesses to place delinquent receivables with an agency after six '
+                              'months of delinquency [3AJVt6F_pYQ @ 00:10:08]. Shergroup competes on price '
+                              'instead, running a no collect, no fee tier at 15 percent plus VAT with no '
+                              'take-on fee, working the account through 30 days of emails, letters and '
+                              'calls before a free letter before action [aPUKKsyL_NM @ 00:01:38]. The real '
+                              'decision is when to hand off and at what percentage, weighed against how '
+                              'many months an operator is willing to keep chasing the same invoice alone.',
+                              'On escalation, the mediation camp and the court camp read the same debtor '
+                              'differently. Taurus Collections argues the threat of litigation is what '
+                              'draws evasive debtors to the table, prices mediation at $1,500 to $5,000 '
+                              'per day with the fee split 50/50, and sets that against litigation '
+                              'retainers of $10k, $20k or $50k, 12 to 18 months to judgment and roughly '
+                              'another year if there is an appeal [PQz21Mf4OZc @ 00:02:54]. Its core claim '
+                              'is that it sees "a much higher rate of people voluntarily complying with a '
+                              'mediated settlement than with a court order that was forced on them" '
+                              '[PQz21Mf4OZc @ 00:07:16]. The Business Disputes Register reserves mediation '
+                              'for quality disputes, notes some courts offer it free while otherwise it '
+                              'runs "well over a thousand dollars," and points creditors toward small '
+                              'claims, where limits run $2,000 to $15,000 by state and the creditor '
+                              'self-represents [bgQht-y6jWY @ 00:00:20]. Thomas Higgins Limited lays out a '
+                              'straight UK court ladder instead: a seven-day letter before action, a '
+                              "county court claim with 14 days to respond, a CCJ, then a bailiff's warrant "
+                              'of control, with a winding-up order kept as the last resort [MxMjZqkhltA @ '
+                              '00:02:58]. Mediation buys confidentiality and payment plans; court buys a '
+                              'public, binary result.',
+                              'Practitioners split hard on what a UCC filing is for. The Tribe treats '
+                              'collateral as the line between two collection worlds: an unsecured creditor '
+                              'grinds through judgment, asset discovery, paperwork, levy and sheriff sale, '
+                              'while a secured party can use self-help repossession and sale under 9-609 '
+                              'and 9-610, and exemptions do not defeat the security interest [r1sk4alg3RM '
+                              '@ 00:42:03]. Credit Commerce & Currency frames the UCC-1 from the same '
+                              "lender side: filed with the Secretary of State in the borrower's state, "
+                              'public record, valid five years though that varies by state, continuable, '
+                              'and able to choke new funding because lenders are reluctant to take second '
+                              'position [TEEr5IdEtHY @ 00:01:18]. R.E.A.D.Y. Nation runs a different '
+                              'playbook, calling the UCC-1 "not about a loan," splitting the all-caps '
+                              'debtor "strawman" from the living secured party and trustee, and building '
+                              'filings around "two planes of law" [CPZ9XWAJAIY @ 00:05:17]. Even so, '
+                              'R.E.A.D.Y. Nation keeps the core mechanics conventional: the security '
+                              'agreement creates the interest, the UCC-1 perfects it, both are needed, and '
+                              '"first in time, first in right" sets priority [CPZ9XWAJAIY @ 00:07:07]. For '
+                              'a commercial creditor trying to move collateral, The Tribe and Credit '
+                              'Commerce treat the filing strictly as lender security for an obligation, '
+                              "not as a filing against one's own name."],
+               'table': {'caption': 'Side-by-side playbooks where practitioners take different routes on '
+                                    'the same commercial debt',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether to place debts with an outside agency',
+                                   'Place debts over $2,000 with an agency at 20 to 25 percent of '
+                                   'collections',
+                                   'Avoid agencies that only harass, fail to work and damage the '
+                                   "creditor's name",
+                                   'The Business Disputes Register ([bgQht-y6jWY @ 00:00:38]) vs Zindo '
+                                   '([Xpf-6IU1qtQ @ 00:00:35])'],
+                                  ['When to hand off delinquent receivables',
+                                   'Assign delinquent receivables to a collection agency after six months '
+                                   'of delinquency',
+                                   'Run 30 days of emails, letters and calls, then a free letter before '
+                                   'action',
+                                   'Danny Klein ([3AJVt6F_pYQ @ 00:10:27]) vs Shergroup TV ([aPUKKsyL_NM @ '
+                                   '00:02:33])'],
+                                  ['Mediation versus filing suit on disputed invoices',
+                                   'Mediate for weeks to a couple of months at low thousands, '
+                                   'confidentially',
+                                   'Litigate for 12 to 18 months as the public, binary nuclear option',
+                                   'Taurus Collections (UK) Ltd ([PQz21Mf4OZc @ 00:06:33])'],
+                                  ['Tone used on the debtor during collection contact',
+                                   'Treat collections as customer service, balancing firmness with empathy '
+                                   'and alternative plans',
+                                   'Run the pressure script of lawsuit, credit damage, garnishment, bank '
+                                   'levy and property lien',
+                                   'Retrievables Collection Attorneys ([YT8Fu3qHWM0 @ 00:02:23]) vs Danny '
+                                   'Klein ([3AJVt6F_pYQ @ 00:08:55])'],
+                                  ['How to test a new data waterfall strategy',
+                                   'Retroactive testing on accounts with known outcomes and no operational '
+                                   'impact',
+                                   'Small-percentage production champion/challenger tests while the bulk '
+                                   'runs the existing strategy',
+                                   'Receivables Info | Debt Collection News ([1M9DIxuxJGA @ 00:21:30])'],
+                                  ['What a UCC-1 filing is actually used for',
+                                   'Lender security perfected on collateral, enforced by self-help '
+                                   'repossession and sale',
+                                   'Filing framed as "not about a loan" separating strawman debtor from '
+                                   'secured party',
+                                   'The Tribe ([r1sk4alg3RM @ 00:42:03]) vs R.E.A.D.Y. Nation '
+                                   '([CPZ9XWAJAIY @ 00:05:17])'],
+                                  ['Which enforcement officer handles a UK judgment debt',
+                                   'County court bailiff for debts under £600, high court officer above '
+                                   'that',
+                                   'High Court writ of control over £600, fixed fee £161 mostly recovered',
+                                   'Thomas Higgins Limited ([MxMjZqkhltA @ 00:02:58]) vs Shergroup TV '
+                                   '([aPUKKsyL_NM @ 00:07:37])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The most expensive failures start in the operator's own chair. Mike "
+                              'Martinez admits he began as "a pushover," taking offers like $50 a month '
+                              '[3AJVt6F_pYQ @ 00:05:07]. Later, earning $350k to $500k a year, he coined '
+                              '"baller syndrome" for taking the foot off the gas once the money arrives. '
+                              'He also hit a wall in 2019, when a $1M Navy Federal lawsuit landed while he '
+                              'had $40k in the bank and payroll for 25 employees; he dates his absentee '
+                              'ownership to around 2015 or 2016 and now says "I always need to be the CEO" '
+                              "[3AJVt6F_pYQ @ 00:12:12]. On the creditor side, Fair Capital's skit maps "
+                              'the stall sequence self-collectors hear: "send it again" after three sends, '
+                              '"speak with my partner" at 60 days past due, "we\'ll see" at 90, and a '
+                              'business owner who says "I had to spend another year chasing those" '
+                              '[svZlO-c19tA @ 00:01:33]. Zindo lists the fixes that fail: untrained AR '
+                              'hires, agencies it says only harass, and attorneys it calls slow and '
+                              'costly, while some industries write off close to 30 percent, and it tells '
+                              'owners to "ask your CFO" what was written off [Xpf-6IU1qtQ @ 00:00:19]. '
+                              'Every month spent soft-pedaling or self-chasing an account compounds the '
+                              'loss.',
+                              'Court wins carry their own traps. Taurus Collections calls the discovery '
+                              'phase "the real cost driver," billed at $400 to $600 an hour and climbing '
+                              'into the tens of thousands before expert witnesses are added, and warns '
+                              'that suing first is irreversible [PQz21Mf4OZc @ 00:08:12]. The Business '
+                              'Disputes Register adds that claims above small-claims limits need an '
+                              'attorney at thousands of dollars, and that enforcement costs extra on top '
+                              'of the win [bgQht-y6jWY @ 00:01:15]. The Tribe hammers the gap between '
+                              'judgment and cash: a judgment is not a lien, the sheriff will not search '
+                              "for assets, and an unsecured creditor who simply takes the debtor's "
+                              'property commits both the tort and the crime of conversion [r1sk4alg3RM @ '
+                              "00:09:38]. Collection then depends on the creditor's own asset discovery, "
+                              'including 12 deposition questions down to "how much money do you have on '
+                              'you today," and priority can turn on being first to levy or on '
+                              "relation-back to writ delivery, depending on the state. The Tribe's "
+                              'sheriff-sale example has the creditor credit bidding a $1,000 judgment '
+                              'against a $2,000 TV. In bankruptcy the automatic stay freezes collection, '
+                              'and a creditor is secured only up to collateral value, so a claim splits '
+                              'into $30k secured and $20k general [r1sk4alg3RM @ 00:51:14].',
+                              'Back-office data rots on a clock. Will Turner of TEC Services puts consumer '
+                              'data at 60 to 70 percent incorrect after two years, and names three repeat '
+                              'mistakes: overconfidence with a static mindset, single-threading on one '
+                              'provider, and trusting creditor-provided data, as in agencies that say "we '
+                              'don\'t skip trace" [1M9DIxuxJGA @ 00:23:31]. Automation breaks too: Martin '
+                              "Kravchenko's Octoparse build cannot take dynamic text input like today's "
+                              'date, throws an error if the search is entered directly unless the page is '
+                              'scrolled to the bottom after load, and gets harder against CAPTCHAs '
+                              "[aB0whCtGI5k @ 00:12:10]. Saul Ewing's Ryan Gallagher reports an Equifax "
+                              'coding glitch that miscalculated about 12 percent of scores between March '
+                              'and April 2022, some by 20 to 130 points, now heading to a $100M class '
+                              'settlement, and warns that "accuracy failures at this type of scale now '
+                              'carry nine figure exposure" [MM_dCPRf9LE @ 00:20:55]. Peter Nanov\'s cases '
+                              'punish slow handling and loose fees: in Sixty v. IQ Data a single unwanted '
+                              'letter, sent after a two-week delay processing a representation letter, was '
+                              'enough for standing, and in Glover pay-to-pay fees of $7.50 to $12 were '
+                              'barred unless the contract or state law permits them; his lesson is "when '
+                              'you receive a representation letter, process it" [MM_dCPRf9LE @ 00:32:32].'],
+               'table': {'caption': 'Firsthand failure modes with the economics practitioners attach to '
+                                    'each one',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Soft negotiating posture from a new collector',
+                                   'Martinez started as a pushover, accepting offers like $50 a month',
+                                   'Benchmark against his million-dollar file recovering $170,000 to '
+                                   '$350,000 early',
+                                   'Danny Klein ([3AJVt6F_pYQ @ 00:05:07])'],
+                                  ['Absentee ownership and baller syndrome complacency',
+                                   '2019 brought a $1M Navy Federal lawsuit with $40k in the bank',
+                                   'Payroll for 25 employees was due; recovery required learning KPIs and '
+                                   'leadership',
+                                   'Danny Klein ([3AJVt6F_pYQ @ 00:12:12])'],
+                                  ['Filing suit before trying any mediated settlement',
+                                   'Suing first is irreversible and turns the dispute public and binary',
+                                   'Retainers of $10k to $50k plus discovery at $400 to $600 hourly',
+                                   'Taurus Collections (UK) Ltd ([PQz21Mf4OZc @ 00:08:12])'],
+                                  ['Unsecured creditor seizing debtor property without process',
+                                   'Taking property without a security interest is the tort and crime of '
+                                   'conversion',
+                                   'Only secured parties get self-help repossession and sale under 9-609 '
+                                   'and 9-610',
+                                   'The Tribe ([r1sk4alg3RM @ 00:09:38])'],
+                                  ['Running a stale, set-and-forget data waterfall',
+                                   'After two years, 60 to 70 percent of consumer data is not correct',
+                                   'Keep part of inventory in A/B testing and retest no less than '
+                                   'quarterly',
+                                   'Receivables Info | Debt Collection News ([1M9DIxuxJGA @ 00:24:47])'],
+                                  ["Sitting on a debtor's representation letter for weeks",
+                                   'A two-week processing delay and one unwanted letter supported standing '
+                                   'in Sixty v. IQ Data',
+                                   'Document procedures, honor deadlines, audit fees, run reporting and '
+                                   'collection as one program',
+                                   'Saul Ewing LLP ([MM_dCPRf9LE @ 00:32:32])'],
+                                  ['Leaving a paid-off UCC lien sitting on file',
+                                   'Lenders reluctant to take second position deny or limit new funding',
+                                   'Get the lender to file a UCC-3 after payoff, or dispute with proof and '
+                                   'an oath',
+                                   'Credit Commerce & Currency ([TEEr5IdEtHY @ 00:03:40])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Escalation Step',
+                           'body': 'Each gate comes straight from a loss, reversal or exposure a '
+                                   'practitioner reported firsthand. Clear all four before moving an '
+                                   'account up the ladder.',
+                           'items': ['Before filing suit, put the litigation threat on the table through '
+                                     'mediation or a letter before action, because suing first cannot be '
+                                     'undone [Taurus Collections (UK) Ltd — PQz21Mf4OZc @ 00:08:12].',
+                                     'Do not lay hands on debtor property without a perfected security '
+                                     'interest; an unsecured creditor who takes property commits '
+                                     'conversion and must go through levy and sheriff sale [The Tribe — '
+                                     'r1sk4alg3RM @ 00:09:38].',
+                                     'Process every representation letter the day it arrives; a two-week '
+                                     'delay plus one unwanted letter was enough for standing in Sixty v. '
+                                     'IQ Data [Saul Ewing LLP — MM_dCPRf9LE @ 00:32:32].',
+                                     'Refresh skip and contact data on at least a quarterly retest cycle '
+                                     'and never trust creditor-provided data alone, since 60 to 70 percent '
+                                     'is wrong after two years [Receivables Info | Debt Collection News — '
+                                     '1M9DIxuxJGA @ 00:24:47].']}}],
+ 'pull_quote': '"We see a much higher rate of people voluntarily complying with a mediated settlement than '
+               'with a court order that was forced on them." — Taurus Collections (UK) Ltd (PQz21Mf4OZc @ '
+               '00:07:16).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Rewrite your terms of business so collection costs are recoverable from the '
+                      'customer before you place a single account [Shergroup TV — aPUKKsyL_NM @ 00:02:15].',
+                      'Send a seven-day letter before action with name, address and amount, or a late '
+                      'payment demand letter to claim compensation and interest [Thomas Higgins Limited — '
+                      'MxMjZqkhltA @ 00:01:44].',
+                      'Assign delinquent receivables to a collection agency once they hit six months of '
+                      'delinquency [Danny Klein — 3AJVt6F_pYQ @ 00:10:27].',
+                      'Build the data waterfall in order: exclusionary scrubs for deceased, bankruptcy and '
+                      'litigious debtors, then recovery scores, then skip tracing [Receivables Info | Debt '
+                      'Collection News — 1M9DIxuxJGA @ 00:06:21].',
+                      "Trace lifestyle spending such as which private school the debtor's kids attend and "
+                      'how that tuition is paid [Evanns Collection Law Firm — XOwPGudMeaY @ 00:01:32].',
+                      'Submit unpaid judgments up to six years old for an enforcement review and route '
+                      'judgments over £600 to the High Court [Shergroup TV — aPUKKsyL_NM @ 00:12:07].'],
+ 'statutory_citations': [{'title': 'Taurus Collections (UK) Ltd — Invoice Recovery: Mediation Versus '
+                                   'Litigation Analysis [00:08:12]',
+                          'url': 'https://www.youtube.com/watch?v=PQz21Mf4OZc&t=492s',
+                          'relevance': 'Primary practitioner testimony on mediation versus litigation '
+                                       'costs, timelines and the irreversibility of suing first.'},
+                         {'title': 'The Tribe — Secured Transactions - Collection of Debts, Liens, and Why '
+                                   'Collateral Matters [00:28:03]',
+                          'url': 'https://www.youtube.com/watch?v=r1sk4alg3RM&t=1683s',
+                          'relevance': 'Primary practitioner testimony on the five-step unsecured '
+                                       'collection route from judgment to sheriff sale.'},
+                         {'title': 'Saul Ewing LLP — Disputes, Damages, & Default Judgments - 2026 CFS '
+                                   'Annual Webinar: Panel 1 [00:32:32]',
+                          'url': 'https://www.youtube.com/watch?v=MM_dCPRf9LE&t=1952s',
+                          'relevance': 'Primary practitioner testimony on representation letters, standing '
+                                       'rulings and collection litigation exposure.'},
+                         {'title': 'Danny Klein — The Undeniable Podcast | Secrets Behind the Debt '
+                                   'Collection Business | Mike Martinez Episode 6 [00:10:08]',
+                          'url': 'https://www.youtube.com/watch?v=3AJVt6F_pYQ&t=608s',
+                          'relevance': 'Primary practitioner testimony on agency recovery rates, placement '
+                                       'timing and scaling a collection agency.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'XOwPGudMeaY',
+                       'title': 'Judgment Enforcement | Evanns Collection Law Firm',
+                       'channel': 'Evanns Collection Law Firm',
+                       'author': 'Evanns Collection Law Firm',
+                       'text': "Knowing where a debtor's kids attend private school and tracing how that "
+                               'tuition is paid can lead to collection.',
+                       'tip': "Knowing where a debtor's kids attend private school and tracing how that "
+                              'tuition is paid can lead to collection.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=XOwPGudMeaY&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=XOwPGudMeaY&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aB0whCtGI5k',
+                       'title': 'Web Scraping for Law Firms - STOP manually tracking court dates and '
+                                'dockets',
+                       'channel': 'Martin Kravchenko',
+                       'author': 'Martin Kravchenko',
+                       'text': 'Octoparse needs no coding, runs locally or in the cloud, and comes with '
+                               'templates for LinkedIn jobs, Google Maps and Amazon.',
+                       'tip': 'Octoparse needs no coding, runs locally or in the cloud, and comes with '
+                              'templates for LinkedIn jobs, Google Maps and Amazon.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=aB0whCtGI5k&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=aB0whCtGI5k&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MxMjZqkhltA',
+                       'title': 'Thomas Higgins Limited - What Is the Process of Commercial Debt '
+                                'Collection?',
+                       'channel': 'Thomas Higgins Limited',
+                       'author': 'Thomas Higgins Limited',
+                       'text': 'At Thomas Higgins Limited, we instruct the county court bailiff for debts '
+                               'under £600 and the high court enforcement officer for larger debts.',
+                       'tip': 'At Thomas Higgins Limited, we instruct the county court bailiff for debts '
+                              'under £600 and the high court enforcement officer for larger debts.',
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=MxMjZqkhltA&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=MxMjZqkhltA&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YT8Fu3qHWM0',
+                       'title': 'Mastering B2B Debt Collection Fast & Effective Commercial Debt Recovery',
+                       'channel': 'Retrievables Collection Attorneys',
+                       'author': 'Retrievables Collection Attorneys',
+                       'text': 'Treat collections as customer service and balance firmness with empathy.',
+                       'tip': 'Treat collections as customer service and balance firmness with empathy.',
+                       'timestamp': 143,
+                       'timestamp_seconds': 143,
+                       'timestamp_label': '[00:02:23]',
+                       'url': 'https://www.youtube.com/watch?v=YT8Fu3qHWM0&t=143s',
+                       'markdown': '[00:02:23](https://www.youtube.com/watch?v=YT8Fu3qHWM0&t=143s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'svZlO-c19tA',
+                       'title': 'Another Excuse. Same Unpaid Invoice. | Fair Capital',
+                       'channel': 'Fair Capital',
+                       'author': 'Fair Capital',
+                       'text': 'I had to spend another year chasing those.',
+                       'tip': 'I had to spend another year chasing those.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=svZlO-c19tA&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=svZlO-c19tA&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bgQht-y6jWY',
+                       'title': 'Unpaid Invoice - 4 Best Actions to Take Immediately to Get Clients to Pay '
+                                'in the USA',
+                       'channel': 'The Business Disputes Register',
+                       'author': 'The Business Disputes Register',
+                       'text': 'For debts over $2,000, a collection agency charges 20 to 25 percent of the '
+                               'amount collected, and success is often above 50 percent.',
+                       'tip': 'For debts over $2,000, a collection agency charges 20 to 25 percent of the '
+                              'amount collected, and success is often above 50 percent.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=bgQht-y6jWY&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=bgQht-y6jWY&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PQz21Mf4OZc',
+                       'title': 'Invoice Recovery: Mediation Versus Litigation Analysis',
+                       'channel': 'Taurus Collections (UK) Ltd',
+                       'author': 'Taurus Collections (UK) Ltd',
+                       'text': 'We see a much higher rate of people voluntarily complying with a mediated '
+                               'settlement than with a court order that was forced on them.',
+                       'tip': 'We see a much higher rate of people voluntarily complying with a mediated '
+                              'settlement than with a court order that was forced on them.',
+                       'timestamp': 436,
+                       'timestamp_seconds': 436,
+                       'timestamp_label': '[00:07:16]',
+                       'url': 'https://www.youtube.com/watch?v=PQz21Mf4OZc&t=436s',
+                       'markdown': '[00:07:16](https://www.youtube.com/watch?v=PQz21Mf4OZc&t=436s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PQz21Mf4OZc',
+                       'title': 'Invoice Recovery: Mediation Versus Litigation Analysis',
+                       'channel': 'Taurus Collections (UK) Ltd',
+                       'author': 'Taurus Collections (UK) Ltd',
+                       'text': 'The real cost driver in many cases is something called the discovery '
+                               'phase.',
+                       'tip': 'The real cost driver in many cases is something called the discovery phase.',
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=PQz21Mf4OZc&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=PQz21Mf4OZc&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aPUKKsyL_NM',
+                       'title': 'CASHFLOW SOLUTIONS | TURN YOUR UNPAID INVOICES AND JUDGMENTS INTO CASH IN '
+                                'THE BANK',
+                       'channel': 'Shergroup TV',
+                       'author': 'Shergroup TV',
+                       'text': 'The collection service is no collect, no fee at 15 percent plus VAT with '
+                               'no take-on fee.',
+                       'tip': 'The collection service is no collect, no fee at 15 percent plus VAT with no '
+                              'take-on fee.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=aPUKKsyL_NM&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=aPUKKsyL_NM&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xpf-6IU1qtQ',
+                       'title': 'How Do You Fix Cash Flow Problems Caused by Unpaid Invoices?',
+                       'channel': 'Zindo',
+                       'author': 'Zindo',
+                       'text': 'Nationwide, companies are writing off at least 5% of their invoices.',
+                       'tip': 'Nationwide, companies are writing off at least 5% of their invoices.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=Xpf-6IU1qtQ&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=Xpf-6IU1qtQ&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TEEr5IdEtHY',
+                       'title': 'What Should I Do If a UCC Lien Has Been Filed Against My Business',
+                       'channel': 'Credit Commerce & Currency',
+                       'author': 'Credit Commerce & Currency',
+                       'text': 'Lenders are reluctant to take second position, so funding may be denied or '
+                               'limited when a UCC lien is on file.',
+                       'tip': 'Lenders are reluctant to take second position, so funding may be denied or '
+                              'limited when a UCC lien is on file.',
+                       'timestamp': 220,
+                       'timestamp_seconds': 220,
+                       'timestamp_label': '[00:03:40]',
+                       'url': 'https://www.youtube.com/watch?v=TEEr5IdEtHY&t=220s',
+                       'markdown': '[00:03:40](https://www.youtube.com/watch?v=TEEr5IdEtHY&t=220s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r1sk4alg3RM',
+                       'title': 'Secured Transactions - Collection of Debts, Liens, and Why Collateral '
+                                'Matters',
+                       'channel': 'The Tribe',
+                       'author': 'The Tribe',
+                       'text': "An unsecured creditor who takes the debtor's property commits the tort and "
+                               'the crime of conversion.',
+                       'tip': "An unsecured creditor who takes the debtor's property commits the tort and "
+                              'the crime of conversion.',
+                       'timestamp': 578,
+                       'timestamp_seconds': 578,
+                       'timestamp_label': '[00:09:38]',
+                       'url': 'https://www.youtube.com/watch?v=r1sk4alg3RM&t=578s',
+                       'markdown': '[00:09:38](https://www.youtube.com/watch?v=r1sk4alg3RM&t=578s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CPZ9XWAJAIY',
+                       'title': 'UCC-1 Explained: Debtor vs. Secured Party & the Two Planes of Law',
+                       'channel': 'R.E.A.D.Y. Nation',
+                       'author': 'R.E.A.D.Y. Nation',
+                       'text': 'The security agreement creates the security interest and the UCC-1 '
+                               'perfects it, and both are needed.',
+                       'tip': 'The security agreement creates the security interest and the UCC-1 perfects '
+                              'it, and both are needed.',
+                       'timestamp': 360,
+                       'timestamp_seconds': 360,
+                       'timestamp_label': '[00:06:00]',
+                       'url': 'https://www.youtube.com/watch?v=CPZ9XWAJAIY&t=360s',
+                       'markdown': '[00:06:00](https://www.youtube.com/watch?v=CPZ9XWAJAIY&t=360s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3AJVt6F_pYQ',
+                       'title': 'The Undeniable Podcast | Secrets Behind the Debt Collection Business | '
+                                'Mike Martinez Episode 6',
+                       'channel': 'Danny Klein',
+                       'author': 'Danny Klein',
+                       'text': "If you assign a file to me of a million dollars, chances are I'll recover "
+                               '$170,000 to $350,000 in the first few months.',
+                       'tip': "If you assign a file to me of a million dollars, chances are I'll recover "
+                              '$170,000 to $350,000 in the first few months.',
+                       'timestamp': 608,
+                       'timestamp_seconds': 608,
+                       'timestamp_label': '[00:10:08]',
+                       'url': 'https://www.youtube.com/watch?v=3AJVt6F_pYQ&t=608s',
+                       'markdown': '[00:10:08](https://www.youtube.com/watch?v=3AJVt6F_pYQ&t=608s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3AJVt6F_pYQ',
+                       'title': 'The Undeniable Podcast | Secrets Behind the Debt Collection Business | '
+                                'Mike Martinez Episode 6',
+                       'channel': 'Danny Klein',
+                       'author': 'Danny Klein',
+                       'text': 'Baller syndrome is when you make so much money and you take your foot off '
+                               'the gas or you become complacent and you stop growing.',
+                       'tip': 'Baller syndrome is when you make so much money and you take your foot off '
+                              'the gas or you become complacent and you stop growing.',
+                       'timestamp': 705,
+                       'timestamp_seconds': 705,
+                       'timestamp_label': '[00:11:45]',
+                       'url': 'https://www.youtube.com/watch?v=3AJVt6F_pYQ&t=705s',
+                       'markdown': '[00:11:45](https://www.youtube.com/watch?v=3AJVt6F_pYQ&t=705s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'miiZfl53MAc',
+                       'title': 'Credit Issuer Compliance Tools You Should Be Using in 2025 | Ep.238',
+                       'channel': 'Receivables Info | Debt Collection News',
+                       'author': 'Receivables Info | Debt Collection News',
+                       'text': 'But then the regulators said that credit issuers became responsible for '
+                               'the activities of a third-party debt collector.',
+                       'tip': 'But then the regulators said that credit issuers became responsible for the '
+                              'activities of a third-party debt collector.',
+                       'timestamp': 340,
+                       'timestamp_seconds': 340,
+                       'timestamp_label': '[00:05:40]',
+                       'url': 'https://www.youtube.com/watch?v=miiZfl53MAc&t=340s',
+                       'markdown': '[00:05:40](https://www.youtube.com/watch?v=miiZfl53MAc&t=340s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1M9DIxuxJGA',
+                       'title': 'Debt Collection Data Waterfalls: Testing, KPIs, and Continuous '
+                                'Improvement | Ep. 264',
+                       'channel': 'Receivables Info | Debt Collection News',
+                       'author': 'Receivables Info | Debt Collection News',
+                       'text': 'After two years, 60 to 70% of that consumer data is not correct.',
+                       'tip': 'After two years, 60 to 70% of that consumer data is not correct.',
+                       'timestamp': 1487,
+                       'timestamp_seconds': 1487,
+                       'timestamp_label': '[00:24:47]',
+                       'url': 'https://www.youtube.com/watch?v=1M9DIxuxJGA&t=1487s',
+                       'markdown': '[00:24:47](https://www.youtube.com/watch?v=1M9DIxuxJGA&t=1487s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MM_dCPRf9LE',
+                       'title': 'Disputes, Damages, & Default Judgments - 2026 CFS Annual Webinar: Panel 1',
+                       'channel': 'Saul Ewing LLP',
+                       'author': 'Saul Ewing LLP',
+                       'text': 'The ultimate takeaway here is that accuracy failures at this type of scale '
+                               'now carry nine figure exposure.',
+                       'tip': 'The ultimate takeaway here is that accuracy failures at this type of scale '
+                              'now carry nine figure exposure.',
+                       'timestamp': 1255,
+                       'timestamp_seconds': 1255,
+                       'timestamp_label': '[00:20:55]',
+                       'url': 'https://www.youtube.com/watch?v=MM_dCPRf9LE&t=1255s',
+                       'markdown': '[00:20:55](https://www.youtube.com/watch?v=MM_dCPRf9LE&t=1255s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

@@ -1,550 +1,804 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-domain-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 1 C (2 people) domain investing team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Queues, Registrar Reconciliation, Comparable-Sale Evidence, and Human-Controlled UDRP/ACPA Screening",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower Score. "
-        "Its leverage comes from processing inventory evidence and buyer intent without automating speculative judgment. "
-        "This chapter maps eight operator plays: auction sourcing, asset qualification, comparable-sale monitoring, renewal control, "
-        "inbound routing, programmatic distribution, outbound upgrades, and transfer fulfillment. A 1 FT + 1 C pod uses Python "
-        "workers, authenticated webhooks, constrained language-model outputs, and exception queues to target 72% net time removal "
-        "from a measured repetitive-work baseline. Canonical annual owner profits remain $3,000 Conservative, $44,000 Base, "
-        "and $120,000 Scaled; the Scaled case requires 2 FT + 2 C. Gross domain sale proceeds, acquisition costs, renewal "
-        "exposure, dispute screening, and transfer evidence stay visible throughout."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$20,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "15% net margin; $3,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Base",
-            "value": "$160,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "27.5% net margin; $44,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$300,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "40% net margin; $120,000 annual owner net profit; 2 FT + 2 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Instrument Eight Plays Before Delegating Repetitive Work",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build one asset ledger before connecting auction feeds or a language model. Each domain receives an immutable "
-                    "asset identifier, its ASCII IDNA representation, readable display form, registrar account reference, acquisition "
-                    "cash paid, expiration timestamp, renewal quote, listing identifiers, and evidence links. Store timestamps in UTC "
-                    "and money as integer cents with an explicit currency. A Python scheduled worker can ingest permitted registrar "
-                    "exports, normalize marketplace records, and persist changes in SQLite; keep a single writer and enable tested "
-                    "backups. Do not treat RDAP responses as an ownership ledger: public registration data can be redacted, delayed, "
-                    "or insufficient to establish account control. Reconcile ownership against authenticated registrar records and "
-                    "keep contradictory observations in an exception queue. This chapter's eight-play mapping covers auction sourcing, "
-                    "asset qualification, comparable-sale monitoring, renewal control, inbound routing, programmatic distribution, "
-                    "outbound upgrades, and transfer fulfillment. These are operating workstreams, not eight independent businesses "
-                    "or eight additional revenue categories. The full-time owner controls capital, pricing, disputes, and transfers; "
-                    "the contractor maintains evidence quality and exception resolution within scheduled hours. Neither role should "
-                    "spend the morning copying identical expiration dates between dashboards. Assign every field a source, refresh "
-                    "interval, and named reviewer before using it in a consequential decision."
-                ),
-                (
-                    "Use a durable event table rather than a chain of fragile scripts. Each record should contain event_id, "
-                    "asset_id, event_type, source, observed_at, payload_hash, processing_state, attempt_count, and next_attempt_at. "
-                    "For providers offering signed webhooks, verify the documented signature against the raw request bytes, enforce "
-                    "their timestamp tolerance, and reject duplicate delivery identifiers. Providers without suitable webhooks should "
-                    "be polled through permitted interfaces; never invent an endpoint or evade a marketplace's access controls. "
-                    "Acknowledge a webhook only after durable persistence, then let workers perform enrichment asynchronously. Python's "
-                    "json, sqlite3, hashlib, hmac, datetime, and urllib modules cover a lean implementation, although public ingress "
-                    "still needs a production-capable TLS endpoint. Route events through explicit states such as received, enriched, "
-                    "review_required, authorized, completed, and failed. A model may propose a structured classification, but ordinary "
-                    "Python validates required fields, enumerated values, lengths, and referenced evidence identifiers. Treat landing-page "
-                    "text, inquiry messages, and auction descriptions as untrusted data, including instructions embedded inside them. "
-                    "Keep model credentials separate from registrar credentials. A generated instruction must never become a registrar "
-                    "command merely because it arrived in valid JSON. Record the prompt version and model identifier so disputed "
-                    "classifications can be reproduced or compared after a change."
-                ),
-                (
-                    "Measure the automation target in minutes removed, not messages generated. Start with a two-week time study "
-                    "and classify repetitive handling separately from negotiation, purchase decisions, and dispute assessment. An illustrative "
-                    "weekly baseline of 1,000 repetitive-work minutes can yield 800 minutes of machine-executed work while introducing "
-                    "80 minutes of sampling, exception review, and maintenance. Remaining human effort is therefore 280 minutes, and "
-                    "net removal is 720 minutes, or 72%. That arithmetic does not assert that machines replace 72% of the "
-                    "owner's entire job. Log actual handling times across all eight plays, including retries and failed batches. "
-                    "The contractor owns routine reconciliation and prepares concise evidence packets; the owner handles irreversible "
-                    "actions during two scheduled review windows, with urgent expiration and security exceptions interrupting immediately. "
-                    "Review every proposed purchase, material price change, externally sent outbound pitch, ownership transfer, and "
-                    "decision to abandon an asset. Sample low-risk research classifications after initial calibration, but return a "
-                    "category to full review when its error rate rises. A weekly dashboard should expose minutes saved, unresolved "
-                    "exceptions, late renewals, incorrect buyer routing, and unauthorized-action attempts. If review effort exceeds the "
-                    "time saved, reduce the workflow's scope rather than celebrating its event volume. Preserve the manual worksheet "
-                    "until the automated ledger consistently reconciles."
-                ),
-            ],
-            "table": {
-                "caption": "Eight-Play Operating Map for the Owner and Contractor Pod",
-                "headers": [
-                    "Mapped operator play and business purpose",
-                    "Machine work with a bounded scope",
-                    "Human responsibility and authority boundary",
-                    "Evidence retained for recovery and measurement",
-                ],
-                "rows": [
-                    [
-                        "Play one: auction sourcing for relevant acquisition candidates",
-                        "Import permitted auction exports and deduplicate domain records",
-                        "Owner approves each bid ceiling before auction participation",
-                        "Retain auction identifiers, timestamps, ceilings, and actual bids",
-                    ],
-                    [
-                        "Play two: asset qualification before capital becomes committed",
-                        "Assemble history, spelling variants, and trademark search evidence",
-                        "Contractor investigates flags; owner resolves acquisition suitability decisions",
-                        "Retain search dates, source links, and unresolved conflicts",
-                    ],
-                    [
-                        "Play three: comparable-sale monitoring for disciplined asking prices",
-                        "Cluster reported sales by extension, structure, and transaction date",
-                        "Owner chooses comparable relevance and any resulting price change",
-                        "Retain reported prices, source terms, and exclusion explanations",
-                    ],
-                    [
-                        "Play four: renewal control protecting economically justified inventory",
-                        "Reconcile expiration dates and forecast upcoming renewal cash",
-                        "Owner approves retention policy and individual abandonment decisions",
-                        "Retain payment receipts, registrar confirmations, and exception resolution",
-                    ],
-                    [
-                        "Play five: inbound routing toward qualified buyer conversations",
-                        "Classify inquiry intent and draft evidence-grounded response suggestions",
-                        "Owner handles negotiation and approves binding commercial representations",
-                        "Retain original inquiry, classification reasons, and response history",
-                    ],
-                    [
-                        "Play six: programmatic distribution through accurate inventory pages",
-                        "Refresh approved listing facts and measure qualified inquiry attribution",
-                        "Owner approves public templates and material asset claims",
-                        "Retain published versions, change records, and attribution events",
-                    ],
-                    [
-                        "Play seven: outbound upgrades for individually researched prospects",
-                        "Prepare relevant prospect packets and suppression-checked draft messages",
-                        "Owner approves recipients, domain rationale, and final message content",
-                        "Retain contact provenance, opt-out status, and delivery outcomes",
-                    ],
-                    [
-                        "Play eight: transfer fulfillment after verified transaction milestones",
-                        "Prepare checklists, reconcile transaction status, and flag transfer stalls",
-                        "Owner authorizes credential release through verified transfer channels",
-                        "Retain escrow status evidence, registrar receipts, and closure records",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Use Automation to Expose Inventory Friction",
-                "body": "Experienced operators automate evidence collection first because a faster bad acquisition compounds carrying costs.",
-                "items": [
-                    "Keep auction closing time separate from registrar expiration time; a successful auction result does not establish immediate transfer availability.",
-                    "Snapshot the actual renewal quote for premium-priced names instead of multiplying a standard registration rate across the portfolio.",
-                    "Quarantine unusually high comparable sales until venue, date, payment structure, and reported transaction scope have been checked.",
-                    "Maintain an owner-approved fast-transfer enrollment register and disable conflicting instant-purchase listings immediately after a sale.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build Renewal, Comparable-Sale, and Inquiry Pipelines That Fail Safely",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Renewal tracking starts with authenticated registrar data and a cash forecast, not a calendar reminder alone. "
-                    "Schedule daily reconciliation and create review tasks at 90, 60, 30, 14, and seven days before expiration, "
-                    "adjusted for the registrar and registry's actual rules. Those intervals are operating choices, not universal "
-                    "grace periods. Record whether auto-renew is enabled, which payment instrument funds it, and when the registrar "
-                    "attempts collection. A renewal is complete only after the authenticated expiration date advances and the payment "
-                    "record reconciles; a successful HTTP response proves neither condition by itself. Permit automatic renewals only "
-                    "within an owner-approved retention policy and spending limit. Route premium renewal surprises, payment failures, "
-                    "and account mismatches to immediate human review. Use annual carrying cost and observed inquiry quality to "
-                    "prepare keep-or-drop packets, but never let a model silently abandon inventory. The Anti-cybersquatting Consumer "
-                    "Protection Act, 15 U.S.C. § 1125(d), makes bad-faith intent and specified domain conduct material; acquisition "
-                    "screening must examine the actual name and context. USPTO trademark searches inform that work without exhausting "
-                    "possible rights. ICANN's UDRP is a contractual dispute mechanism, distinct from the statute. Preserve acquisition "
-                    "rationale and historical use evidence before a dispute requires them."
-                ),
-                (
-                    "Comparable-sale monitoring should produce an evidence packet, not a synthetic appraisal disguised as market truth. "
-                    "Import authorized NameBio exports where available under the account's terms, marketplace reports, and the portfolio's "
-                    "own closed transactions. Deduplicate repeated reports using the normalized domain, transaction date, venue, and "
-                    "reported amount. Store the original currency and any conversion rate separately from the source price. Classify "
-                    "extension, character count, word count, linguistic meaning, buyer segment, and whether the record appears to "
-                    "describe a domain alone or an operating website. A model can suggest comparable clusters and explain exclusions; "
-                    "the owner must review the actual source records before changing reserves or asking prices. Report the count "
-                    "and dispersion of observations instead of manufacturing precision from three exceptional sales. Separate wholesale "
-                    "auction outcomes from end-user retail purchases and identify installment arrangements when reported. For expired-authority "
-                    "assets, use permitted Ahrefs or Majestic exports alongside Internet Archive evidence to investigate topical changes "
-                    "and suspicious link histories. Historical links do not establish current traffic, transferable trust, or a future "
-                    "search position. Record missing evidence as an explicit investigation task in the ledger rather than filling "
-                    "the gap with a model's plausible story. Never publish estimated traffic as measured traffic."
-                ),
-                (
-                    "Inbound routing should distinguish a buyer, a broker, a spam message, a dispute notice, and an account-security "
-                    "alert before optimizing response speed. Connect the landing-page form and dedicated sales mailbox to one event "
-                    "queue, retain the original message, and attach only the minimum necessary content to model requests. Strip active "
-                    "markup, isolate attachments, and avoid fetching arbitrary inquiry links automatically. Deterministic rules should elevate "
-                    "ownership complaints, legal-service language, registrar security warnings, and unexpected payment instructions regardless of model "
-                    "confidence. For ordinary inquiries, extract the requested domain, proposed budget, timing, and contact channel, then "
-                    "draft a response using approved inventory facts. An acknowledgment may be automatic within a preapproved template; "
-                    "offers, discounts, exclusivity promises, and escrow instructions need owner review. Confidence scores require calibration "
-                    "against labeled cases and cannot substitute for evidence. Failure handling is equally concrete: cap retries, use "
-                    "exponential backoff with jitter, and move exhausted events into a failed-event queue with a named assignee. "
-                    "If the model provider is unavailable, route through deterministic categories and the original message. If the "
-                    "registrar feed fails, retain the last confirmed date with its observation timestamp and start manual reconciliation. "
-                    "Silence from a vendor must appear as stale evidence, never as a clean bill of health."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence, Escalation, and Recovery Rules for Core Domain Pipelines",
-                "headers": [
-                    "Pipeline condition requiring explicit handling",
-                    "Deterministic check before trusting the event",
-                    "Human escalation and bounded operating response",
-                    "Recovery evidence required to close the incident",
-                ],
-                "rows": [
-                    [
-                        "Renewal payment accepted without an advanced expiration date",
-                        "Compare authenticated registrar dates against the previous snapshot",
-                        "Contractor investigates immediately while owner protects remaining renewal time",
-                        "Close only with updated expiration evidence and reconciled payment",
-                    ],
-                    [
-                        "Premium renewal quote exceeds the approved carrying budget",
-                        "Compare current quote with asset-specific authorized renewal limits",
-                        "Owner decides retention before any additional charge is initiated",
-                        "Retain revised spending authorization or documented abandonment instruction",
-                    ],
-                    [
-                        "Comparable sale appears repeatedly across several reporting sources",
-                        "Match normalized domain, transaction date, currency, and reported price",
-                        "Contractor merges duplicate reports without inflating comparable sample size",
-                        "Preserve original source references beneath one transaction record",
-                    ],
-                    [
-                        "Buyer inquiry contains a plausible ownership dispute allegation",
-                        "Prioritize explicit claim language independently of model confidence",
-                        "Owner pauses affected outreach and obtains specialist assessment",
-                        "Retain original message, asset history, and documented handling decision",
-                    ],
-                    [
-                        "Webhook delivery repeats after an upstream network timeout",
-                        "Check unique delivery identifier before applying any state change",
-                        "Contractor reviews only conflicting payloads or inconsistent transaction states",
-                        "Retain one committed transition and all duplicate delivery references",
-                    ],
-                    [
-                        "Model response cites evidence absent from the asset ledger",
-                        "Validate every cited source identifier against stored evidence records",
-                        "Reject the draft and route original evidence for review",
-                        "Retain rejected output, validation error, and corrected human classification",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Four Boundaries Before Enabling Live Actions",
-                "body": "Research automation can run broadly; money, public claims, and ownership changes require narrower authority.",
-                "items": [
-                    "Confirm authenticated account control, current expiration evidence, and the exact renewal quote before enabling policy-based renewal execution.",
-                    "Complete documented trademark and historical-use screening before approving a bid, outreach campaign, or disputed asset listing.",
-                    "Test that the model has no registrar write credentials and cannot bypass review through a forged event state or embedded instruction.",
-                    "Verify duplicate handling, failed-event ownership, backup restoration, and manual transfer procedures using a nonproduction transaction rehearsal.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Compound Qualified Distribution Without Manufacturing Demand",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Programmatic distribution begins with accurate inventory pages that answer a buyer's next question, not thousands "
-                    "of thin pages chasing unrelated searches. Generate one canonical landing page per owned domain from approved "
-                    "ledger fields: spelling, pronunciation guidance where useful, extension, asking-price policy, transaction method, and "
-                    "a working inquiry channel. Group relevant assets into genuinely useful collections, such as short industrial "
-                    "software names or plain-language local service names, only when the portfolio supports those descriptions. Do "
-                    "not invent businesses, testimonials, search demand, or revenue associated with an undeveloped asset. An approved "
-                    "template may publish routine factual updates automatically; material claims and new positioning require review. "
-                    "Keep ownership verification and listing status synchronized with Afternic or Sedo through permitted account workflows "
-                    "and exports rather than assumed APIs. Fixed-price listings create execution risk when prices disagree across "
-                    "venues or an asset remains purchasable after sale. Make sale detection trigger immediate delisting tasks, "
-                    "including a manual fallback when remote updates fail. The distribution loop is specific: useful collection "
-                    "pages attract relevant visitors, inquiries reveal vocabulary and objections, and approved revisions improve the "
-                    "next visitor's understanding. Track qualified conversations per owned domain and per collection, not merely page "
-                    "count, impressions, or model-generated descriptions. Retire pages immediately when ownership ends."
-                ),
-                (
-                    "Outbound upgrades should start with a plausible commercial fit and clean rights screening, not a purchased "
-                    "list sprayed with generated praise. A prospect using a long descriptive address may value a shorter "
-                    "generic alternative, but similarity to their protected brand can create the opposite outcome. Never frame "
-                    "a purchase as protection from threatened misuse, impersonate the prospect, or register a mark-targeting name "
-                    "to extract payment. The contractor prepares a short packet explaining the domain's generic meaning, the "
-                    "prospect's observable use case, the contact source, and existing suppression status. The owner approves each "
-                    "recipient and final message during the launch phase; later batches still require recipient-level evidence and "
-                    "explicit authorization. For commercial email, 15 U.S.C. § 7704 requires accurate transmission information, appropriate "
-                    "identification, a valid physical postal address, and a working opt-out mechanism, among other requirements. Honor "
-                    "opt-outs within ten business days and preferably suppress immediately across every connected tool. U.S. rules "
-                    "do not settle every recipient jurisdiction's requirements, so restrict initial targeting to assessed markets. "
-                    "Separate transactional buyer correspondence from prospecting campaigns. Use a low-volume, relevance-led cadence, measure "
-                    "qualified replies and complaints, and stop a segment when weak fit creates objections. Do not interpret "
-                    "email opens as reliable purchase intent."
-                ),
-                (
-                    "Create a referral loop around completed service, not speculative appreciation claims. After a successful transfer, "
-                    "send a concise handover guide covering registrar access, renewal settings, DNS responsibility, and the buyer's "
-                    "chosen next steps. Offer an optional shareable acquisition note that contains only facts the buyer has "
-                    "approved for publication; many buyers reasonably prefer confidentiality. A useful naming checklist or domain-transfer "
-                    "worksheet can earn referrals from designers, branding consultants, and small-business advisers without exposing buyer "
-                    "data. If a partner receives compensation for an endorsement, assess the disclosure requirements in 16 CFR "
-                    "Part 255 and make the relationship clear where the endorsement appears. Attribute introductions with simple "
-                    "referral identifiers rather than invasive enrichment. The owner reviews public case studies and partner economics; "
-                    "the contractor maintains approved collateral and checks links monthly. Close the loop by recording which "
-                    "referrals produce qualified inquiries, completed transactions, and repeat introductions. Neither social sharing nor search "
-                    "distribution has a dependable viral coefficient in an illiquid domain portfolio. Treat each channel as a "
-                    "measured experiment with a fixed effort budget. Stop creating content that attracts other sellers but no "
-                    "plausible buyers. Reinvest successful language into inventory descriptions, inquiry replies, and prospect research while "
-                    "preserving the same underlying evidence and price discipline."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheels Measured by Qualified Demand and Closed Transactions",
-                "headers": [
-                    "Channel and concrete buyer acquisition mechanism",
-                    "Reusable input approved for public distribution",
-                    "Conversion measure that avoids superficial activity counts",
-                    "Stop condition protecting the two-person operating pod",
-                ],
-                "rows": [
-                    [
-                        "Owned landing pages convert visitors already investigating specific domains",
-                        "Verified ownership facts and owner-approved transaction process descriptions",
-                        "Qualified inquiries divided by relevant sessions during consistent periods",
-                        "Pause publication when ownership or transaction instructions become stale",
-                    ],
-                    [
-                        "Curated collection pages connect related names with specific buyers",
-                        "Distinct portfolio groupings supported by actual available inventory",
-                        "Buyer conversations attributed to collections rather than raw impressions",
-                        "Retire collections generating seller chatter without credible buyer interest",
-                    ],
-                    [
-                        "Marketplace distribution exposes owned assets to existing purchase intent",
-                        "Reconciled prices and eligible listing status for each venue",
-                        "Closed gross proceeds after identifying venue-specific selling costs",
-                        "Disable conflicting listings whenever price or ownership diverges",
-                    ],
-                    [
-                        "Outbound upgrades introduce generic alternatives to individually researched prospects",
-                        "Rights-screened asset rationale and suppression-checked recipient contact evidence",
-                        "Qualified replies and completed sales per reviewed prospect cohort",
-                        "Stop segments producing complaints or repeated commercial-fit objections",
-                    ],
-                    [
-                        "Professional referrals connect naming advisers with suitable inventory",
-                        "Approved referral terms and clear compensation relationship disclosures",
-                        "Completed transactions attributable to documented professional referral introductions",
-                        "Pause partners making unsupported promises or misrepresenting ownership",
-                    ],
-                    [
-                        "Buyer-approved handover stories demonstrate an orderly acquisition experience",
-                        "Explicit publication permission and fact-checked transaction process details",
-                        "Relevant introductions and qualified inquiries from published buyer stories",
-                        "Remove publication when permission ends or material facts change",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Price Automated Runs, Reconcile Profit, and Rehearse Recovery",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Price one run as a completed, validated event rather than a single model request. An illustrative "
-                    "blended run costs $0.012 for model usage, $0.006 for permitted data access, and $0.004 for allocated "
-                    "queue, storage, and monitoring services: $0.022 in machine cost. These are planning assumptions, not published "
-                    "vendor quotes; replace them with invoices, actual token usage, export-license costs, and retry charges. At "
-                    "6,000 completed runs monthly, machine cost is $132. Add eight contractor review hours at $35, or "
-                    "$280, and the combined monthly workflow cost becomes $412, approximately $0.0687 per completed run. Owner "
-                    "review time remains a separate capacity measurement unless the operating budget explicitly prices it. Count "
-                    "failed attempts in the numerator and only completed events in the denominator, preventing cheap-looking "
-                    "metrics that conceal retry waste. This workflow budget is a subset of operating expense, not an "
-                    "extra profit deduction after the canonical margin. The volume's $500–$5,000 monthly operating range must "
-                    "also accommodate hosting, subscriptions, administration, and other recurring overhead within the selected scenario. "
-                    "The lower-revenue case cannot absorb the range's upper end while preserving its stated profit. Reduce "
-                    "run volume or remove unnecessary enrichment when the carrying budget becomes tighter than the automation budget."
-                ),
-                (
-                    "Reconcile the scorecard before telling a growth story. Conservative gross domain sale proceeds are $20,000; "
-                    "a 15% net margin produces $3,000 annual owner net profit and leaves $17,000 for the modeled "
-                    "cost envelope. Base proceeds are $160,000; a 27.5% margin produces $44,000 profit and a $116,000 "
-                    "cost envelope. Scaled proceeds are $300,000; a 40% margin produces $120,000 profit and a $180,000 "
-                    "cost envelope. These totals already include acquisition and renewal costs in the margin, alongside other "
-                    "modeled costs; do not deduct the same costs again when presenting owner profit. Revenue here means "
-                    "gross sales of the operator's domain assets, not marketplace-wide transaction volume, escrow balances, or "
-                    "buyers' later business revenue. Keep working-capital cash requirements distinct from annual profit because "
-                    "inventory purchases can precede sales by many months and unsold inventory remains illiquid. The startup "
-                    "capital range is $8,000–$60,000, and time to first deal can be 2–9 months. Automation does not "
-                    "compress that interval by assertion. Conservative and Base use 1 FT + 1 C; Scaled uses 2 FT "
-                    "+ 2 C. The canonical Scaled economics therefore cannot be presented as a two-person outcome merely "
-                    "because the software processes additional records."
-                ),
-                (
-                    "Transfer fulfillment is where event discipline protects the asset itself. After agreeing terms, reconcile the "
-                    "transaction against the escrow provider's authenticated dashboard or documented API, verify the domain spelling, "
-                    "confirm the buyer's receiving details through the agreed channel, and follow the provider's funded-transaction "
-                    "instructions. A screenshot or emailed payment claim is insufficient. Check registrar-specific transfer eligibility, "
-                    "applicable locks, and whether an internal account push or inter-registrar transfer is intended. The owner "
-                    "authorizes unlocking and release of the transfer code through the verified channel; keep those secrets "
-                    "out of model prompts, general logs, and contractor research worksheets. Record delivery evidence and final "
-                    "settlement separately because transfer initiation is not transaction completion. Rehearse recovery quarterly: replay a "
-                    "duplicate webhook, restore the ledger from backup, simulate model downtime, and process a renewal from "
-                    "the manual worksheet. A failed transfer should freeze conflicting listing activity and open a named "
-                    "incident without repeatedly issuing sensitive credentials. Add staffing when response and reconciliation service levels "
-                    "deteriorate, not when a dashboard reaches an arbitrary domain count. The durable flywheel is accurate "
-                    "inventory, defensible acquisition choices, timely buyer service, documented handover, and reinvested realized proceeds. "
-                    "Automation strengthens those links; it does not create liquidity or erase dispute exposure."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Economics and Illustrative Automation Cost Reconciliation",
-                "headers": [
-                    "Scenario or measurement with an explicit scope",
-                    "Revenue or cost calculation stated without mixing bases",
-                    "Staffing and capacity assumption behind the measurement",
-                    "Operator interpretation and required accounting treatment",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case using gross domain sale proceeds",
-                        "$20,000 proceeds minus $17,000 modeled costs equals $3,000 profit",
-                        "One full-time owner plus one contractor supports this case",
-                        "Preserve 15% margin by fitting all costs inside envelope",
-                    ],
-                    [
-                        "Base annual case using gross domain sale proceeds",
-                        "$160,000 proceeds minus $116,000 modeled costs equals $44,000 profit",
-                        "One full-time owner plus one contractor remains the assumption",
-                        "Preserve 27.5% margin without deducting acquisition costs twice",
-                    ],
-                    [
-                        "Scaled annual case using gross domain sale proceeds",
-                        "$300,000 proceeds minus $180,000 modeled costs equals $120,000 profit",
-                        "Two full-time workers plus two contractors support this case",
-                        "Preserve 40% margin and disclose the four-person team",
-                    ],
-                    [
-                        "Illustrative machine expense per completed and validated event",
-                        "$0.012 model plus $0.006 data plus $0.004 infrastructure",
-                        "Contractor monitors failures within separately budgeted review hours",
-                        "Replace assumed rates with actual invoices and completed-event counts",
-                    ],
-                    [
-                        "Illustrative monthly machine and contractor review operating subtotal",
-                        "6,000 runs cost $132; eight review hours cost $280",
-                        "Eight contractor hours priced at $35 per working hour",
-                        "$412 subtotal belongs inside operating expense and cost envelopes",
-                    ],
-                    [
-                        "Illustrative weekly repetitive-work savings after added review effort",
-                        "1,000 baseline minutes less 280 remaining equals 720 saved",
-                        "Owner and contractor retain judgment work outside this baseline",
-                        "Report 72% net removal only when observed timings support it",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish the ledger and manual baseline",
-                    "action": "Reconcile every owned domain against authenticated registrar records and measure two weeks of repetitive work.",
-                    "detail": "Assign all events to one of the eight plays; record expiration evidence, cost basis, review owner, and manual handling minutes.",
-                },
-                {
-                    "step": 2,
-                    "title": "Run read-only automation beside the existing process",
-                    "action": "Enable renewal alerts, comparable clustering, and inquiry classification without granting asset-changing credentials.",
-                    "detail": "Compare outputs with human decisions, label errors, test duplicate delivery, and reject unsupported model evidence references.",
-                },
-                {
-                    "step": 3,
-                    "title": "Authorize narrowly bounded production actions",
-                    "action": "Enable approved acknowledgments, factual listing refreshes, and policy-limited renewals after successful reconciliation tests.",
-                    "detail": "Keep bids, material pricing changes, outbound messages, abandonment decisions, and transfer-code release under explicit owner review.",
-                },
-                {
-                    "step": 4,
-                    "title": "Audit economics and rehearse fallback execution",
-                    "action": "Review completed-run costs weekly and restore the ledger from a tested backup during quarterly recovery exercises.",
-                    "detail": "Recalculate net minutes saved, reconcile scenario cost envelopes, investigate stale records, and adjust contractor hours before service levels deteriorate.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Automate the evidence trail, not the judgment that puts capital or ownership at risk.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create one asset ledger with authenticated ownership evidence, UTC expiration dates, renewal quotes, and approved venue listings.",
-        "Map events to the eight operator plays and establish a measured repetitive-work baseline before claiming 70%+ automation.",
-        "Deploy renewal reconciliation, comparable-sale evidence packets, and inquiry routing with durable event identifiers and bounded retries.",
-        "Keep purchase authority, material pricing decisions, outreach approval, asset abandonment, and transfer credentials under owner control.",
-        "Launch accurate collection pages, individually reviewed outbound upgrades, and permission-based referral stories with qualified-inquiry attribution.",
-        "Reconcile automation expense inside the canonical cost envelopes and rehearse duplicate delivery, provider downtime, ledger restoration, and manual fulfillment.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 1125(d) — Cyberpiracy prevention",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": (
-                "Screen acquisitions and outbound positioning for the statute's bad-faith intent and domain-name criteria; "
-                "preserve evidence of legitimate rationale instead of treating exact-match availability as sufficient clearance."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1117(d) — Statutory damages for specified domain-name violations",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1117",
-            "relevance": (
-                "For violations of section 1125(d)(1), the claimant may elect statutory damages of $1,000 to $100,000 per domain "
-                "as the court considers just; acquisition screening should account for exposure beyond the purchase price."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmitting commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Build accurate sender information, required message identification, a valid physical postal address, and "
-                "working opt-out processing into outbound upgrades; honor opt-outs within ten business days."
-            ),
-        },
-        {
-            "title": "16 CFR § 255.5 — Disclosure of material connections in endorsements",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": (
-                "Assess referral payments and other material connections when partners endorse the operator or inventory, "
-                "and make required disclosures clear and conspicuous."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'domain-parking-and-traffic-monetization',
+ 'question_prompt': 'How do you monetize domain traffic through parking, and what are the risks?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Domain Parking and Traffic Monetization',
+ 'subtitle': 'Parking setup with Voodoo, Bodis, ParkLogic, Namecheap, and Domain Notebook, monetization '
+             'options beyond parking, embarking, viability for low-traffic names, Cloudflare DNS pointing, '
+             'and the dark side of parking (typo traffic, malicious redirects)',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Parking operators agree on the core loop: point a domain's nameservers or DNS "
+                      'records at a parking service, let it serve a keyword-matched ad lander, and collect '
+                      'a revenue share on every click while the name sits for sale. David Utke treats it '
+                      'as a portfolio game where 100 names at $5 a month yield $500 a month, while Michael '
+                      'Gilmour of ParkLogic routes each visit through a 100-millisecond auction because '
+                      'the best single provider wins only 25% of traffic. Payout floors run $20 at Sedo '
+                      'and $25 at Domain Notebook, and ParkLogic gates entry at $250 a month in existing '
+                      "revenue. The fault lines are sharp: Semantic Mastery's Bradley has never earned a "
+                      'penny from parking, Braden Pollock says parking revenue is going into the toilet, '
+                      'and USENIX researchers classified about 45% of parking traffic as click fraud.',
+ 'key_metrics': [{'label': 'Per-Domain Parking Revenue Target',
+                  'metric': 'Per-Domain Parking Revenue Target',
+                  'value': '$5+/month per domain; 100 domains x $5 = $500/month passive',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Utke's 80/20 portfolio math: of 100 parked names, 5-10 earn $1-5/month and "
+                             '1-2 earn $10+, so the operating goal is a $5 monthly floor per domain.',
+                  'source': 'David Utke ([ck1VMki_11Q @ 00:02:24])'},
+                 {'label': 'Best Single Provider Traffic Win Rate',
+                  'metric': 'Best Single Provider Traffic Win Rate',
+                  'value': '25% of traffic (underperforms 75% of the time)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Gilmour's case for ParkLogic's 100 ms meta-auction across Sedo, Bodis, "
+                             'ParkingCrew and about 20 global ad networks instead of a single parking '
+                             'feed.',
+                  'source': 'HostMaria ([SE1nkvW6rGw @ 00:12:59])'},
+                 {'label': 'ParkLogic Entry Threshold',
+                  'metric': 'ParkLogic Entry Threshold',
+                  'value': '$250/month existing revenue; about 98% of applicants rejected',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Minimum existing parking revenue required to apply to ParkLogic, with a '
+                             'typical 80% owner / 20% ParkLogic revenue split once approved.',
+                  'source': 'HostMaria ([SE1nkvW6rGw @ 00:34:40])'},
+                 {'label': 'Click Fraud Share of Parking Traffic',
+                  'metric': 'Click Fraud Share of Parking Traffic',
+                  'value': 'About 45% of classified traffic',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Researchers posing as advertisers, traffic buyers and domain owners '
+                             'classified over 200,000 monetization chains; traffic spam was 38% and '
+                             'malware 2%.',
+                  'source': 'USENIX ([XyzbG8sP8iA @ 00:14:29])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The working definition is identical across the operator and research camps: '
+                              'a parked domain is a name that carries traffic but has no content, so '
+                              'instead of registering with ad networks directly, the owner hands the name '
+                              'to a parking service that fills the page with ads [XyzbG8sP8iA @ 00:00:30]. '
+                              'DomCop reduces the money loop to three moves: a visitor types the domain, '
+                              'lands on the park page, and clicks an ad, and the owner earns on that click '
+                              '[im4LjoyOxPE @ 00:00:40]. The USENIX researchers lay out the two plumbing '
+                              'options, an HTTP 302 redirect or the far more popular route of pointing '
+                              'nameservers at the service, and flag that the nameserver route hands the '
+                              'parking company complete control of the domain [XyzbG8sP8iA @ 00:04:00]. '
+                              'David Utke narrows the inventory that pays: names with type-in traffic and '
+                              'commercial intent, because the payout only fires when a visitor with buying '
+                              'intent clicks an ad [ck1VMki_11Q @ 00:00:14]. Every practitioner who '
+                              'actually runs parking treats it as a click-commission business riding on '
+                              'traffic the domain already attracts, not a traffic-generation tactic, which '
+                              'is why domain selection comes before platform selection in the workflows '
+                              'they teach.',
+                              'Practitioners also converge on what counts as a parkable asset. Utke '
+                              'targets roughly 50 to 200 visits a month, checked in Ahrefs, Semrush or '
+                              'Ubersuggest before a name goes live, and rates expired domains with '
+                              'backlinks from dropcatch.com or expireddomains.net as usually a little more '
+                              'valuable [ck1VMki_11Q @ 00:00:29]. Michael Gilmour of ParkLogic sets an '
+                              'even lower bar for the label, defining a traffic domain as any name with at '
+                              "least one unique visitor per day [SE1nkvW6rGw @ 00:52:04]. OpenTalk's Bodis "
+                              'pitch adds that the name needs a good keyword and good marketplace value '
+                              'for the play to work [VIRXW2_q7xI @ 00:01:37]. Utke frames the economics as '
+                              "a numbers game. Utke's 80/20 math says that out of 100 parked domains, only "
+                              '5 to 10 earn $1 to $5 a month and just 1 or 2 clear $10, so the goal is a '
+                              'floor of $5 per domain per month, which turns 100 names into $500 a month '
+                              'passive [ck1VMki_11Q @ 00:01:55]. The consensus operating posture is '
+                              'portfolio scale: accept that most names earn little, find the handful with '
+                              'real type-in demand, and let the aggregate carry renewal costs instead of '
+                              'betting the model on any one domain.',
+                              'The third point of agreement is that parking is a holding pattern, not an '
+                              "exit. RollerAds' Renz pitches almost-live per-domain traffic and revenue "
+                              'stats precisely so owners can set asking prices and answer buyers, and '
+                              'stresses that names can be listed for sale while still earning [-i811Ip0HIo '
+                              '@ 00:01:40]. Utke builds the same dual track inside Sedo, where each name '
+                              'gets a Buy Now price such as $500, a Make Offer minimum such as 250, or a '
+                              'Not for Sale flag right next to the parking setup [ck1VMki_11Q @ 00:05:02]. '
+                              'The baseline prerequisite everyone hammers is clean DNS. Creed Explains '
+                              "calls it the part most people miss: Namecheap's free park page only "
+                              'displays when the domain stays on Namecheap BasicDNS, and custom '
+                              'nameservers break it [URhIR-ejFvA @ 00:01:08]. Gilmour puts a number on '
+                              'sloppy handling, estimating that poor DNS management leaks 10 to 15% of '
+                              'parking revenue [ZMna4WBn7vc @ 00:35:19]. The shared baseline is therefore '
+                              'threefold: a name with measurable type-in demand, a correctly pointed DNS '
+                              'setup at whichever service is chosen, and a live sales listing so every '
+                              'visitor either clicks an ad or sees that the domain can be bought.'],
+               'table': {'caption': 'Where the Parking Practitioners Agree',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Parking is click-commission revenue earned on otherwise idle names',
+                                   'Visitor types the domain, sees the park page, clicks an ad, and the '
+                                   'owner earns per click',
+                                   'Every dollar depends on visitors who already arrive and then click an '
+                                   'ad',
+                                   'DomCop ([im4LjoyOxPE @ 00:00:40])'],
+                                  ['Nameserver pointing is the dominant way domains get parked',
+                                   'Pointing nameservers at the service is the most popular choice over an '
+                                   'HTTP 302 redirect',
+                                   'The parking service gains complete control of the domain once '
+                                   'nameservers move over',
+                                   'USENIX ([XyzbG8sP8iA @ 00:03:04])'],
+                                  ['Type-in traffic with commercial intent is the asset to target',
+                                   'Aim for roughly 50 to 200 visits per month, checked in Ahrefs, Semrush '
+                                   'or Ubersuggest',
+                                   'Screen every name for real traffic before spending setup time or '
+                                   'paying renewals',
+                                   'David Utke ([ck1VMki_11Q @ 00:00:29])'],
+                                  ['Parking returns follow a steep 80/20 portfolio curve',
+                                   'Of 100 parked names, 5 to 10 earn $1 to $5 monthly and 1 to 2 earn '
+                                   '$10+',
+                                   'Set a $5 per domain monthly floor and judge the whole portfolio in '
+                                   'aggregate',
+                                   'David Utke ([ck1VMki_11Q @ 00:01:55])'],
+                                  ['Parking runs alongside a live for-sale listing on the same name',
+                                   'Per-domain traffic and revenue stats help set asking prices while '
+                                   'names keep earning ad revenue',
+                                   'List every parked name for sale and use the stats to answer buyer '
+                                   'questions',
+                                   'RollerAds ([-i811Ip0HIo @ 00:01:40])'],
+                                  ['Correct DNS configuration is the baseline prerequisite for any park '
+                                   'page',
+                                   "Namecheap's free park page only displays on Namecheap BasicDNS, and "
+                                   'custom nameservers break it',
+                                   'Confirm nameserver settings first because this is the step most people '
+                                   'miss entirely',
+                                   'Creed Explains - Hosting & Website Builders ([URhIR-ejFvA @ '
+                                   '00:01:08])'],
+                                  ['Sloppy DNS handling quietly leaks a measurable slice of revenue',
+                                   'Poor DNS handling causes an estimated 10 to 15% leakage in parking '
+                                   'revenue',
+                                   'Audit DNS on every parked name before blaming the parking provider for '
+                                   'weak earnings',
+                                   'DomainFestConference ([ZMna4WBn7vc @ 00:35:19])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Onboarding speed varies sharply by platform. DomCop's Voodoo walkthrough is "
+                              'sign up free with instant approval, add domains, then point each one by '
+                              'DNS, CNAME or A record, with Voodoo claiming earnings can start within the '
+                              'first hour [im4LjoyOxPE @ 00:01:39]. In the same walkthrough, Bodis runs on '
+                              'nameservers instead: create the account, add domains, swap the nameservers '
+                              "at the registrar, and expect the park page within 24 hours. Utke's Sedo "
+                              'build sidesteps a manual review that takes days by self-verifying with a '
+                              "TXT record on host @ whose value is the account's personal ID, kept "
+                              'private, with TTL 3600 if the registrar demands one and automatic left '
+                              'alone on Namecheap [ck1VMki_11Q @ 00:11:00]. The nameserver swap follows, '
+                              'and Utke warns propagation may take 48 hours, though roughly 24 is usually '
+                              'enough. Domain Notebook avoids nameserver changes entirely: add the name '
+                              'under the Parking tab, pick categories such as earn a degree, then forward '
+                              'the domain from GoDaddy or another registrar to the supplied redirect URL '
+                              '[ntMgB1hXTa8 @ 00:02:24]. For operators routing names through Cloudflare '
+                              "first, Rick's warning applies: turn off registrar DNS before replacing "
+                              'nameservers or the domain could become unreachable [KJ61MrgDU6U @ '
+                              '00:02:10].',
+                              "Gilmour's ParkLogic mechanics run deepest. Inbound traffic is held for 100 "
+                              'milliseconds and routed to whichever buyer pays most, whether Sedo, Bodis, '
+                              'ParkingCrew or one of about 20 global ad networks, with the best '
+                              'Google-backed provider acting as the floor, because the best single '
+                              'provider wins only 25% of traffic and so underperforms 75% of the time '
+                              '[SE1nkvW6rGw @ 00:12:59]. The split is typically 80% to the owner and 20% '
+                              'to ParkLogic, shown openly in the dashboard as, for example, $1,000 earned, '
+                              'a $200 fee and $800 paid. Gilmour trusts only normalized RPM, revenue '
+                              'divided by raw traffic times 1,000, and separately reports that more than '
+                              "90% of traffic is bots [SE1nkvW6rGw @ 01:14:02]. Utke's self-managed "
+                              'version tracks CPM per domain and ad CTR, gives each platform one to three '
+                              'months, moves underperformers to another service, and sells names that fail '
+                              'everywhere [ck1VMki_11Q @ 00:01:28]. Gilmour pushes back on exactly that '
+                              'habit, calling A/B testing providers and locking in the winner the worst '
+                              'possible solution because the winner changes daily. Domain Notebook adds a '
+                              'reporting lag to plan around: visitors show in real time, but clicks and '
+                              'revenue only update after 4pm the next day [ntMgB1hXTa8 @ 00:03:27].',
+                              'The unit economics sit at the click level. Domain Notebook quotes CPCs '
+                              'ranging from a couple of cents to $3, $4 or $5, and runs the math as 100 '
+                              'clicks at $3 equals $300 against a $10 domain, while claiming the displayed '
+                              "revenue is 100 percent the owner's [ntMgB1hXTa8 @ 00:06:27]. Payout floors "
+                              'are low: Domain Notebook pays monthly via PayPal above $25, and Utke '
+                              "reports Sedo's minimum at $20, paid by PayPal or bank direct deposit "
+                              "[ck1VMki_11Q @ 00:15:44]. Sedo's marketplace layer adds its own costs, with "
+                              'Vanilla MLS at 15% commission and Premium at 20% on the claim of three '
+                              'times faster sales; Utke also notes Namecheap lacks that seller-side '
+                              'support [ck1VMki_11Q @ 00:09:31]. Renewal cost is the silent margin killer, '
+                              'which is why Utke registers at Namecheap, avoids $30-a-year renewals and '
+                              'locks in up to 10 years ahead with free privacy. At the high end, ParkLogic '
+                              'will not even take an account below $250 a month in existing revenue, asks '
+                              'applicants to write that they saw Michael on YouTube for its anti-fraud '
+                              'check, and rejects about 98% of applicants [SE1nkvW6rGw @ 00:34:40]. The '
+                              'built-in ParkLogic sales system charges 0% commission.'],
+               'table': {'caption': 'Parking Platforms: Setup Mechanics and Stated Numbers',
+                         'headers': ['Platform or Tool',
+                                     'Connection and Setup Mechanics',
+                                     'Stated Numbers and Terms',
+                                     'Expert Source'],
+                         'rows': [['Voodoo parking platform for unused domains',
+                                   'Free signup with instant approval, then point each domain via DNS, '
+                                   'CNAME or A record',
+                                   'Claims one of the highest revenue shares and earnings within the first '
+                                   'hour',
+                                   'DomCop ([im4LjoyOxPE @ 00:01:39])'],
+                                  ['Bodis parking platform for nameserver-pointed domains',
+                                   'Create the account, add domains, then point registrar nameservers to '
+                                   'Bodis',
+                                   'Park page shows within 24 hours and earnings accrue on every ad click',
+                                   'DomCop ([im4LjoyOxPE @ 00:02:35])'],
+                                  ['Sedo parking with integrated marketplace listings',
+                                   'Self-verify with a TXT record on host @, then swap to Sedo parking '
+                                   'nameservers',
+                                   '$20 minimum payout via PayPal or bank; MLS at 15% or Premium at 20%',
+                                   'David Utke ([ck1VMki_11Q @ 00:15:44])'],
+                                  ['ParkLogic meta network for established traffic portfolios',
+                                   'Apply at parklogic.com, take a call from Matt Herbert, then receive '
+                                   'unique nameservers',
+                                   '$250 monthly revenue minimum, about 98% rejected, typical split 80% '
+                                   'owner and 20% ParkLogic',
+                                   'HostMaria ([SE1nkvW6rGw @ 00:34:40])'],
+                                  ['Domain Notebook parking with registrar forwarding instead of '
+                                   'nameservers',
+                                   'Add the domain under the Parking tab, choose categories, forward from '
+                                   'registrar to redirect URL',
+                                   'Monthly PayPal payout above $25, with CPC from a couple of cents to $5',
+                                   'Domain Notebook ([ntMgB1hXTa8 @ 00:05:30])'],
+                                  ['RollerAds parking for bulk portfolios of any size',
+                                   'Bulk-add domains and connect them via API, DNS or CNAME with fast '
+                                   'moderation',
+                                   'Almost-live per-domain stats, IAB-matched ads, and tagging for five or '
+                                   '5,000 domains',
+                                   'RollerAds ([-i811Ip0HIo @ 00:00:41])'],
+                                  ['Namecheap free built-in park page for undecided names',
+                                   'Domain List, then Manage, then Advanced Settings, then toggle Domain '
+                                   'Parking on',
+                                   'Free park page only works while nameservers stay on Namecheap BasicDNS',
+                                   'Creed Explains - Hosting & Website Builders ([URhIR-ejFvA @ '
+                                   '00:00:28])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Setup Shortcuts the Operators Actually Use',
+                           'body': 'Small configuration moves the practitioners use to get approved '
+                                   'faster, verify sooner and read parking results correctly.',
+                           'items': ["Write 'saw Michael on YouTube' in the ParkLogic application, because "
+                                     'that note feeds the anti-fraud check [HostMaria — SE1nkvW6rGw @ '
+                                     '00:35:43].',
+                                     "Skip Sedo's manual review that takes days and self-verify with a TXT "
+                                     'record on host @ holding your private personal ID [David Utke — '
+                                     'ck1VMki_11Q @ 00:11:00].',
+                                     'Tag domains at upload by niche, geo or source so reports can be '
+                                     'filtered by tag, whether you run five domains or 5,000 [RollerAds — '
+                                     '-i811Ip0HIo @ 00:02:45].',
+                                     'Judge performance on normalized RPM, revenue divided by raw traffic '
+                                     'times 1,000, the only number Gilmour says can be relied upon '
+                                     '[HostMaria — SE1nkvW6rGw @ 01:15:28].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the Name for Type-In Demand',
+                              'action': 'Confirm type-in traffic and commercial intent before parking '
+                                        'anything.',
+                              'detail': 'Target roughly 50 to 200 visits per month, checked in Ahrefs, '
+                                        'Semrush or Ubersuggest, and favor expired names with backlinks '
+                                        'from dropcatch.com or expireddomains.net [David Utke — '
+                                        'ck1VMki_11Q @ 00:00:29].'},
+                             {'step': 2,
+                              'title': 'Register Cheap and Pick the Platform Tier',
+                              'action': 'Hold names at a low-renewal registrar and match the parking '
+                                        'platform to portfolio maturity.',
+                              'detail': 'Beginners and low-traffic names start at GoDaddy CashParking or '
+                                        'Sedo, proper domainers use ParkingCrew or Bodis, and names sit at '
+                                        'Namecheap to dodge $30-a-year renewals [David Utke — ck1VMki_11Q '
+                                        '@ 00:01:13].'},
+                             {'step': 3,
+                              'title': 'Point DNS and Verify Ownership',
+                              'action': 'Swap nameservers or add the required records, then wait out '
+                                        'propagation.',
+                              'detail': 'Point registrar nameservers at the parking service and expect the '
+                                        'Bodis park page within 24 hours [DomCop — im4LjoyOxPE @ '
+                                        '00:02:35]; if routing through Cloudflare, turn off registrar DNS '
+                                        'first or the domain could become unreachable [Rick — KJ61MrgDU6U '
+                                        '@ 00:02:10].'},
+                             {'step': 4,
+                              'title': 'Measure, Rotate, or Sell',
+                              'action': 'Track per-domain results and act on underperformers on a fixed '
+                                        'cycle.',
+                              'detail': 'Track CPM per domain and ad CTR for 1 to 3 months per platform, '
+                                        'move underperformers to another service, and sell names that fail '
+                                        'on every platform [David Utke — ck1VMki_11Q @ 00:01:28].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether parking pays at all. Domain Notebook sells it '
+                              'as the easy win: building a blog is “very tiring” and may never earn, while '
+                              'a parked name shows revenue that is “100 percent yours,” with a worked '
+                              'example of 100 clicks at $3 returning $300 on a $10 domain [ntMgB1hXTa8 @ '
+                              '00:06:27]. Bradley at Semantic Mastery, sitting on thousands of domains, '
+                              'says flatly they have “never made a penny from a park domain,” and that '
+                              'panel assumes the parked-page ad money flows to the registrar [eSTvHrvbZ-4 '
+                              '@ 00:02:35]. Michael Gilmour of ParkLogic runs parking as a scaled '
+                              'business, typically paying 80% to the owner and keeping 20%, with the fee '
+                              'shown line by line on the dashboard [SE1nkvW6rGw @ 00:21:07]. Back in 2013, '
+                              'Braden Pollock was already telling the DomainFest panel that parking '
+                              'revenue was “going into the toilet” and that domainers were “pretty lazy” '
+                              'for sitting on parked names [ZMna4WBn7vc @ 00:06:33]. The dividing line is '
+                              'traffic. Gilmour defines a traffic domain as any domain with at least one '
+                              'unique visitor per day, and ParkLogic only onboards portfolios already '
+                              'doing $250 a month. David Utke aims parking at names with type-in traffic '
+                              'and commercial intent, roughly 50 to 200 visits a month. A portfolio of '
+                              "untrafficked names lands on Bradley's side of the argument.",
+                              'Platform selection splits into two playbooks. David Utke tiers providers: '
+                              'GoDaddy CashParking or Sedo for beginners and low-traffic names, Parking '
+                              'Crew or Bodis for proper domainers [ck1VMki_11Q @ 00:01:13]. The method is '
+                              'manual rotation: test each platform for one to three months, track CPM per '
+                              'domain and ad CTR, move underperformers to another service, and sell the '
+                              'name if every service fails [ck1VMki_11Q @ 00:01:28]. Domain Notebook runs '
+                              'the same loop in miniature, editing or deleting non-earners, trying another '
+                              'parking site, then sending the name to auction to recoup cost [ntMgB1hXTa8 '
+                              '@ 00:04:59]. Gilmour calls exactly that A/B-and-lock-in approach “the worst '
+                              'possible solution,” because the winning provider changes daily. The best '
+                              'provider at the best point in time only wins about 25% of traffic, so any '
+                              'single lock-in underperforms roughly 75% of the time [SE1nkvW6rGw @ '
+                              "00:15:31]. ParkLogic's answer is a meta network. It holds each visit for "
+                              '100 milliseconds and routes it to the highest payer among Sedo, Bodis, '
+                              'ParkingCrew and about 20 global ad networks, with the best Google-backed '
+                              'provider as the floor. The catch is access. That auction routing sits '
+                              'behind a $250-per-month revenue threshold and a roughly 98% rejection rate, '
+                              "so small portfolios get pushed back into Utke's manual rotation.",
+                              'The third fault line is whether a traffic name should be parked at all. At '
+                              'DomainFest, Mike “Zeppy” Zeppelin argued that development converts “domain '
+                              'value to business value.” insurancequotes.com earned a few thousand dollars '
+                              'a month parked, then saw 40% of homepage visitors apply once it was built '
+                              'out [ZMna4WBn7vc @ 00:17:52]. On the same panel Gilmour, “not a believer” '
+                              'in development, countered that lead gen hides collections, receivables and '
+                              'domainer time “valued at zero.” Nobody can run “a thousand businesses,” '
+                              'which is why parking survives as a supply-demand matcher at scale '
+                              '[ZMna4WBn7vc @ 00:33:17]. Semantic Mastery prefers assets over park pages. '
+                              'Their options: put up an affiliate offer, an opt-in or a landing page, '
+                              '301-redirect the name to a relevant page with a call to action, or point '
+                              "local domains at a GMB map URL [eSTvHrvbZ-4 @ 00:04:07]. Bradley's build "
+                              'workflow uses a mass-page plugin such as Magic Page, connects Search '
+                              'Console, sorts the query report by average rank, and builds proper pages '
+                              'for near-ranking queries. New Net Profits goes further, calling parking '
+                              '“internet pollution” that earns from visitors clicking “to leave the site '
+                              'just as quick as possible.” It pitches 60-second auto-generated sites '
+                              'instead, though its own preview shows “holes and off topic results” '
+                              '[gDTGdxMNGZs @ 00:02:08].'],
+               'table': {'caption': 'Competing parking playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Does parking actually pay the owner?',
+                                   'Easy win: 100 clicks at $3 returns $300 on a $10 domain',
+                                   'Thousands of domains held and never made a penny parked',
+                                   'Domain Notebook ([ntMgB1hXTa8 @ 00:06:27]) vs Semantic Mastery '
+                                   '([eSTvHrvbZ-4 @ 00:02:35])'],
+                                  ['How to pick the parking provider',
+                                   'Test each platform one to three months, then move underperformers '
+                                   'elsewhere',
+                                   'A/B lock-in is the worst solution because the winner changes daily',
+                                   'David Utke ([ck1VMki_11Q @ 00:01:28]) vs HostMaria ([SE1nkvW6rGw @ '
+                                   '00:15:31])'],
+                                  ['Which platforms fit which operator tier',
+                                   'GoDaddy CashParking or Sedo for beginners and low-traffic domains',
+                                   'Parking Crew or Bodis for proper domainers running real portfolios',
+                                   'David Utke ([ck1VMki_11Q @ 00:01:13])'],
+                                  ['Park the name or develop a business',
+                                   'Develop it: insurancequotes.com saw 40% of homepage visitors apply',
+                                   'Park it: lead gen hides collections, receivables and unpaid domainer '
+                                   'time',
+                                   'DomainFestConference ([ZMna4WBn7vc @ 00:17:52]) vs '
+                                   'DomainFestConference ([ZMna4WBn7vc @ 00:33:17])'],
+                                  ['What to do with low-traffic names',
+                                   '301-redirect to a relevant page carrying a clear call to action',
+                                   'Point local domains at a GMB map URL for discovery traffic',
+                                   'Semantic Mastery ([eSTvHrvbZ-4 @ 00:04:07])'],
+                                  ['Is parking a primary or fallback channel',
+                                   'Content is primary and parking is only the alternative channel',
+                                   'Parking is internet pollution, so auto-build a site instead',
+                                   'DomainFestConference ([ZMna4WBn7vc @ 00:10:53]) vs newnet '
+                                   '([gDTGdxMNGZs @ 00:02:08])'],
+                                  ['Single provider versus auction routing',
+                                   'Bodis or Voodoo direct, with a park page showing within 24 hours',
+                                   'Meta network routes each visit to the highest of roughly 20 networks',
+                                   'DomCop ([im4LjoyOxPE @ 00:02:35]) vs HostMaria ([SE1nkvW6rGw @ '
+                                   '00:11:24])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The ecosystem-level failure mode is fraud running through the same pipes '
+                              "that pay owners. The USENIX Security '14 team posed as advertisers, traffic "
+                              'buyers and domain owners, then caught clicks their crawler never made. '
+                              'Across more than 200,000 classified chains, click fraud ran about 45%, '
+                              'traffic spam 38% and malware 2% [XyzbG8sP8iA @ 00:14:29]. They also logged '
+                              'traffic stealing: they paid 10 cents for a realjobs.info hit, and the owner '
+                              'never saw the money [XyzbG8sP8iA @ 00:11:06]. Leading services earned over '
+                              '40% of revenue fraudulently, and one laundered traffic through a sister '
+                              'traffic system. SOCDemystified reports the malicious share of parked '
+                              'domains climbing from under 5% a little over a decade ago to over 90%. Typo '
+                              'look-alikes sell traffic via real-time bidding and fingerprint each device. '
+                              'Scanners see harmless ads while users get malicious redirects [GPScvA9fgcw '
+                              "@ 00:02:09]. Gilmour puts more than 90% of ParkLogic's inbound traffic down "
+                              'to bots [SE1nkvW6rGw @ 00:23:46]. For an owner the economics check is '
+                              'blunt: raw hits are not revenue. That is why Gilmour says normalized RPM '
+                              '(revenue divided by raw traffic, times 1,000) is “the only number we can '
+                              'rely upon.”',
+                              'The account-level traps all punish manufactured clicks. Domain Notebook '
+                              'warns that self-clicking gets you blocked: “your IP is tracked and after '
+                              "your first clicked it'll be blocked,” and “you're going to get in trouble” "
+                              "[ntMgB1hXTa8 @ 00:04:11]. David Utke's Sedo setup includes a premium ad "
+                              'certification that explicitly bars self-clicks and incentivized clicks '
+                              'before the account runs [ck1VMki_11Q @ 00:14:32]. Gilmour names the worst '
+                              'case: pushing or redirecting traffic into parking risks a DRID (domain '
+                              'registrant ID) ban at Google, “the nightmare scenario” [SE1nkvW6rGw @ '
+                              '01:45:24]. Buying traffic carries clawback risk, and arbitrage sellers '
+                              'dilute quality over time, which Gilmour calls “talcum powder.” On the 2013 '
+                              'panel, LaVine Punjabi of Affinity blamed arbitrage “Hanky Panky” for '
+                              'damaging the whole ecosystem. Punjabi also noted that zero-click volume '
+                              'stays small because it only receives traffic Google or Yahoo reject '
+                              '[ZMna4WBn7vc @ 00:30:14]. Gilmour adds that any virus or redirect lander '
+                              'should be reported. The conservative fallback is a Google-only portfolio '
+                              'with no zero-click advertisers. The thread running through all of it: '
+                              'platforms accept organic type-ins and penalize anything that looks pushed. '
+                              'Any traffic source the owner cannot explain puts the whole account at risk, '
+                              'not just one name.',
+                              'The quiet losses come from DNS and carrying costs. Creed Explains flags the '
+                              "step most people miss: Namecheap's free park page only displays when name "
+                              'servers are set to Namecheap BasicDNS, and custom name servers break it '
+                              '[URhIR-ejFvA @ 00:01:08]. Gilmour told the DomainFest panel that poor DNS '
+                              "handling causes 10 to 15% revenue leakage [ZMna4WBn7vc @ 00:35:19]. Rick's "
+                              'Cloudflare walkthrough warns to turn off registrar DNS first “or your '
+                              'domain could become unreachable,” and to set third-party verification '
+                              "records to DNS only. On the cost side, Utke's 80/20 math is sobering. Of "
+                              '100 parked domains, only 5 to 10 earn $1 to $5 a month and 1 to 2 earn $10 '
+                              'or more, against a goal of $5 per name, or $500 a month. A “$30 a year” '
+                              'renewal eats that margin, which is why Utke registers at NameCheap '
+                              "[ck1VMki_11Q @ 00:01:55]. Gilmour's sell-through check: industry stock turn "
+                              'is 0.42%. If your sales rate sits above that, raise prices; if below, drop '
+                              'names [SE1nkvW6rGw @ 00:57:16]. Zeppy would let 950 of 1,000 domains '
+                              'expire. Payout floors also bite small portfolios: Sedo pays out at $20 and '
+                              'Domain Notebook at $25.'],
+               'table': {'caption': 'Firsthand traps, reported numbers and countermeasures',
+                         'headers': ['Failure Mode',
+                                     'Reported Damage or Number',
+                                     'Operator Countermeasure',
+                                     'Expert Source'],
+                         'rows': [['Click fraud inside the parking supply chain',
+                                   'About 45% of classified traffic was click fraud, spam 38%, malware 2%',
+                                   'Judge earnings by revenue per raw visit, not by click counts',
+                                   'USENIX ([XyzbG8sP8iA @ 00:14:29])'],
+                                  ['Traffic stolen before the owner is paid',
+                                   'Researchers paid 10 cents for a realjobs.info hit; owner never paid',
+                                   'Watch per-domain stats against expected traffic and rotate services',
+                                   'USENIX ([XyzbG8sP8iA @ 00:11:06])'],
+                                  ['Bot-dominated inbound traffic inflating dashboards',
+                                   'More than 90% of the server requests ParkLogic receives are bots',
+                                   'Track normalized RPM as the single number you rely upon',
+                                   'HostMaria ([SE1nkvW6rGw @ 01:15:28])'],
+                                  ['Self-clicking your own parked ads',
+                                   'IP tracked and blocked after the first click, owner gets in trouble',
+                                   'Never click your own ads and sign the no-incentive ad certification',
+                                   'Domain Notebook ([ntMgB1hXTa8 @ 00:04:11])'],
+                                  ['Pushed or redirected traffic into parking',
+                                   'Risks a DRID ban at Google, called the nightmare scenario',
+                                   'Park only organic type-ins and report any virus or redirect lander',
+                                   'HostMaria ([SE1nkvW6rGw @ 01:45:24])'],
+                                  ['Misconfigured DNS or name servers',
+                                   'Poor DNS handling leaks 10 to 15% of parking revenue',
+                                   'Use BasicDNS for Namecheap parking; disable registrar DNS before '
+                                   'switching',
+                                   'DomainFestConference ([ZMna4WBn7vc @ 00:35:19])'],
+                                  ['Renewal costs exceeding parking income',
+                                   'Only 5 to 10 of 100 names earn $1 to $5 monthly',
+                                   'Register at low-renewal registrars and drop names below sell-through '
+                                   'benchmarks',
+                                   'David Utke ([ck1VMki_11Q @ 00:01:55])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any name goes live on a park page',
+                           'body': 'Every gate below comes from a loss, ban or leak that practitioners '
+                                   'reported firsthand. Clear all four before counting a parked name as an '
+                                   'earning asset.',
+                           'items': ['Traffic source is organic type-in only. No pushed, redirected or '
+                                     'purchased arbitrage traffic, which risks a DRID ban at Google and '
+                                     'clawbacks [HostMaria — SE1nkvW6rGw @ 01:45:24].',
+                                     'Zero self-clicks from any owned IP, because the IP is tracked and '
+                                     'blocked after the first click [Domain Notebook — ntMgB1hXTa8 @ '
+                                     '00:04:11].',
+                                     'Name servers verified against the parking method. Namecheap parking '
+                                     'requires BasicDNS, and custom name servers break the park page '
+                                     '[Creed Explains - Hosting & Website Builders — URhIR-ejFvA @ '
+                                     '00:01:08].',
+                                     'Per-name economics pass the $5-per-month target against renewal '
+                                     'cost; otherwise rotate the service or sell the name [David Utke — '
+                                     'ck1VMki_11Q @ 00:02:24].']}}],
+ 'pull_quote': '“The age of the harmless typo is over.” — SOCDemystified (GPScvA9fgcw @ 00:06:32).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Qualify each name for type-in traffic and commercial intent at roughly 50 to 200 '
+                      'visits per month, checked in Ahrefs, Semrush or Ubersuggest, before parking it '
+                      '[David Utke — ck1VMki_11Q @ 00:00:29].',
+                      'Register or transfer names to a low-renewal registrar such as NameCheap, avoiding '
+                      '$30-a-year renewals that erode parking profit [David Utke — ck1VMki_11Q @ '
+                      '00:03:06].',
+                      'Point each domain to the parking provider: Voodoo via CNAME or A record, Bodis via '
+                      'its name servers set at the registrar [DomCop — im4LjoyOxPE @ 00:01:39].',
+                      'Self-verify ownership with a TXT record on host @ using your private ID instead of '
+                      'waiting days for manual review [David Utke — ck1VMki_11Q @ 00:11:00].',
+                      'When moving DNS to Cloudflare, turn off registrar DNS first and set third-party '
+                      'verification records to DNS only [Rick — KJ61MrgDU6U @ 00:02:10].',
+                      'Test each platform one to three months while tracking CPM and CTR per domain, then '
+                      'rotate or sell underperformers; apply to ParkLogic once the portfolio clears $250 a '
+                      'month [David Utke — ck1VMki_11Q @ 00:01:28].'],
+ 'statutory_citations': [{'title': 'HostMaria — Parking Domains with ParkLogic for a Newbie - Michael '
+                                   'Gilmour [00:12:59]',
+                          'url': 'https://www.youtube.com/watch?v=SE1nkvW6rGw&t=779s',
+                          'relevance': 'Primary practitioner testimony on auction routing across parking '
+                                       'providers, the 80/20 revenue split, bot traffic, normalized RPM '
+                                       'and DRID ban risk.'},
+                         {'title': "USENIX — USENIX Security '14 - Understanding the Dark Side of Domain "
+                                   'Parking [00:14:29]',
+                          'url': 'https://www.youtube.com/watch?v=XyzbG8sP8iA&t=869s',
+                          'relevance': 'Primary practitioner testimony on click fraud, traffic spam, '
+                                       'malware and traffic stealing measured inside parking services.'},
+                         {'title': 'David Utke — How to Park a Domain & Make Money With Ads (Step-by-Step) '
+                                   '[00:01:55]',
+                          'url': 'https://www.youtube.com/watch?v=ck1VMki_11Q&t=115s',
+                          'relevance': 'Primary practitioner testimony on platform tiering, the '
+                                       'test-and-rotate method and 80/20 per-domain parking economics.'},
+                         {'title': 'DomainFestConference — Webfest Global 2013 Panel - Domain Monetization '
+                                   'Options Beyond Domain Parking [00:33:17]',
+                          'url': 'https://www.youtube.com/watch?v=ZMna4WBn7vc&t=1997s',
+                          'relevance': 'Primary practitioner testimony on parking versus development and '
+                                       'lead gen, DNS revenue leakage and arbitrage damage.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'im4LjoyOxPE',
+                       'title': 'How to Domain Park with Voodoo and Bodis',
+                       'channel': 'DomCop',
+                       'author': 'DomCop',
+                       'text': 'Create an account, add your domains, and point them to the Bodis name '
+                               'servers at your registrar, and the park page shows within 24 hours.',
+                       'tip': 'Create an account, add your domains, and point them to the Bodis name '
+                              'servers at your registrar, and the park page shows within 24 hours.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=im4LjoyOxPE&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=im4LjoyOxPE&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ck1VMki_11Q',
+                       'title': 'How to Park a Domain & Make Money With Ads (Step-by-Step)',
+                       'channel': 'David Utke',
+                       'author': 'David Utke',
+                       'text': 'Like, you have a 100 domains and each domain is earning at least $5 a '
+                               'month.',
+                       'tip': 'Like, you have a 100 domains and each domain is earning at least $5 a '
+                              'month.',
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=ck1VMki_11Q&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=ck1VMki_11Q&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-i811Ip0HIo',
+                       'title': '5 things you should know before parking your domains 🎯',
+                       'channel': 'RollerAds',
+                       'author': 'RollerAds',
+                       'text': 'At Roller Ads, you can add domains in bulk and connect them via API, DNS, '
+                               'or CNAME.',
+                       'tip': 'At Roller Ads, you can add domains in bulk and connect them via API, DNS, '
+                              'or CNAME.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=-i811Ip0HIo&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=-i811Ip0HIo&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VIRXW2_q7xI',
+                       'title': 'Earn $1000 for domain parking - Best way to make money online - BODIS',
+                       'channel': 'OpenTalk',
+                       'author': 'OpenTalk',
+                       'text': 'To earn from parking, the domain needs a good keyword and good marketplace '
+                               'value.',
+                       'tip': 'To earn from parking, the domain needs a good keyword and good marketplace '
+                              'value.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=VIRXW2_q7xI&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=VIRXW2_q7xI&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GPScvA9fgcw',
+                       'title': 'Day 5 – Domain Parking Exposed: How It Became a Cybercrime Tool',
+                       'channel': 'SOCDemystified',
+                       'author': 'SOCDemystified',
+                       'text': 'A little over a decade ago, less than 5% of these parked domains were '
+                               'considered malicious.',
+                       'tip': 'A little over a decade ago, less than 5% of these parked domains were '
+                              'considered malicious.',
+                       'timestamp': 112,
+                       'timestamp_seconds': 112,
+                       'timestamp_label': '[00:01:52]',
+                       'url': 'https://www.youtube.com/watch?v=GPScvA9fgcw&t=112s',
+                       'markdown': '[00:01:52](https://www.youtube.com/watch?v=GPScvA9fgcw&t=112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZMna4WBn7vc',
+                       'title': 'Webfest Global 2013 Panel - Domain Monetization Options Beyond Domain '
+                                'Parking',
+                       'channel': 'DomainFestConference',
+                       'author': 'DomainFestConference',
+                       'text': 'Poor DNS handling causes 10 to 15 percent revenue leakage for parked '
+                               'domains.',
+                       'tip': 'Poor DNS handling causes 10 to 15 percent revenue leakage for parked '
+                              'domains.',
+                       'timestamp': 2119,
+                       'timestamp_seconds': 2119,
+                       'timestamp_label': '[00:35:19]',
+                       'url': 'https://www.youtube.com/watch?v=ZMna4WBn7vc&t=2119s',
+                       'markdown': '[00:35:19](https://www.youtube.com/watch?v=ZMna4WBn7vc&t=2119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'URhIR-ejFvA',
+                       'title': 'How To Park Domains In Namecheap Account (Step by Step Guide)',
+                       'channel': 'Creed Explains - Hosting & Website Builders',
+                       'author': 'Creed Explains - Hosting & Website Builders',
+                       'text': 'For the free parked page to display correctly, this must be set to '
+                               'Namecheap basic DNS.',
+                       'tip': 'For the free parked page to display correctly, this must be set to '
+                              'Namecheap basic DNS.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=URhIR-ejFvA&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=URhIR-ejFvA&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gDTGdxMNGZs',
+                       'title': 'Domain Embarking - Introduction',
+                       'channel': 'newnet',
+                       'author': 'newnet',
+                       'text': 'Parking is internet pollution that earns from people clicking to leave the '
+                               'site just as quick as possible.',
+                       'tip': 'Parking is internet pollution that earns from people clicking to leave the '
+                              'site just as quick as possible.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=gDTGdxMNGZs&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=gDTGdxMNGZs&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SE1nkvW6rGw',
+                       'title': 'Parking Domains with ParkLogic for a Newbie - Michael Gilmour',
+                       'channel': 'HostMaria',
+                       'author': 'HostMaria',
+                       'text': 'We know the best parking provider at the best point in time will only win '
+                               '25 percent of traffic.',
+                       'tip': 'We know the best parking provider at the best point in time will only win '
+                              '25 percent of traffic.',
+                       'timestamp': 779,
+                       'timestamp_seconds': 779,
+                       'timestamp_label': '[00:12:59]',
+                       'url': 'https://www.youtube.com/watch?v=SE1nkvW6rGw&t=779s',
+                       'markdown': '[00:12:59](https://www.youtube.com/watch?v=SE1nkvW6rGw&t=779s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SE1nkvW6rGw',
+                       'title': 'Parking Domains with ParkLogic for a Newbie - Michael Gilmour',
+                       'channel': 'HostMaria',
+                       'author': 'HostMaria',
+                       'text': "That's the only number we can rely upon is normalized RPM.",
+                       'tip': "That's the only number we can rely upon is normalized RPM.",
+                       'timestamp': 4528,
+                       'timestamp_seconds': 4528,
+                       'timestamp_label': '[01:15:28]',
+                       'url': 'https://www.youtube.com/watch?v=SE1nkvW6rGw&t=4528s',
+                       'markdown': '[01:15:28](https://www.youtube.com/watch?v=SE1nkvW6rGw&t=4528s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ntMgB1hXTa8',
+                       'title': 'Domain Notebook Parking Tutorial',
+                       'channel': 'Domain Notebook',
+                       'author': 'Domain Notebook',
+                       'text': 'We pay out on a monthly basis when your revenue is in excess of twenty '
+                               'five dollars.',
+                       'tip': 'We pay out on a monthly basis when your revenue is in excess of twenty five '
+                              'dollars.',
+                       'timestamp': 330,
+                       'timestamp_seconds': 330,
+                       'timestamp_label': '[00:05:30]',
+                       'url': 'https://www.youtube.com/watch?v=ntMgB1hXTa8&t=330s',
+                       'markdown': '[00:05:30](https://www.youtube.com/watch?v=ntMgB1hXTa8&t=330s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eSTvHrvbZ-4',
+                       'title': 'What Are Your Thoughts On Parked Domains For Monetizing Domains With Some '
+                                'Amounts Of Traffic?',
+                       'channel': 'Semantic Mastery',
+                       'author': 'Semantic Mastery',
+                       'text': "I've had throughout the time that I've been on with thousands of domains "
+                               "and I've never made a penny from a park domain.",
+                       'tip': "I've had throughout the time that I've been on with thousands of domains "
+                              "and I've never made a penny from a park domain.",
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=eSTvHrvbZ-4&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=eSTvHrvbZ-4&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XyzbG8sP8iA',
+                       'title': "USENIX Security '14 - Understanding the Dark Side of Domain Parking",
+                       'channel': 'USENIX',
+                       'author': 'USENIX',
+                       'text': 'These are definitely fraudulent clicks because our crawler never clicked '
+                               'on any advertisements.',
+                       'tip': 'These are definitely fraudulent clicks because our crawler never clicked on '
+                              'any advertisements.',
+                       'timestamp': 553,
+                       'timestamp_seconds': 553,
+                       'timestamp_label': '[00:09:13]',
+                       'url': 'https://www.youtube.com/watch?v=XyzbG8sP8iA&t=553s',
+                       'markdown': '[00:09:13](https://www.youtube.com/watch?v=XyzbG8sP8iA&t=553s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dn3tXJXOypg',
+                       'title': 'How to Set Up Cloudflare DNS to Your Domain - Full Guide (2026)',
+                       'channel': 'Ninja Guides',
+                       'author': 'Ninja Guides',
+                       'text': "Now, it's time to change the name servers at your domain registrar.",
+                       'tip': "Now, it's time to change the name servers at your domain registrar.",
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=dn3tXJXOypg&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=dn3tXJXOypg&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YwH_rctl2Kc',
+                       'title': 'How to Change DNS in Cloudflare, Update & Setup Easily 2026',
+                       'channel': 'PMN Online',
+                       'author': 'PMN Online',
+                       'text': 'For example, an A record is used to point a domain to an IP address.',
+                       'tip': 'For example, an A record is used to point a domain to an IP address.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=YwH_rctl2Kc&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=YwH_rctl2Kc&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'f5MBxWdYUPw',
+                       'title': 'How to Use Cloudflare DNS [Full Guide 2026]',
+                       'channel': 'The How-To Learning Academy',
+                       'author': 'The How-To Learning Academy',
+                       'text': 'Replace the name servers at your registrar with the two Cloudflare name '
+                               'servers exactly as provided.',
+                       'tip': 'Replace the name servers at your registrar with the two Cloudflare name '
+                              'servers exactly as provided.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=f5MBxWdYUPw&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=f5MBxWdYUPw&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KJ61MrgDU6U',
+                       'title': 'How To Set Up Cloudflare DNS In Under 5 Minutes [Step By Step Guide]',
+                       'channel': 'Rick',
+                       'author': 'Rick',
+                       'text': 'For verification records from third parties, make sure those are set to '
+                               'DNS only.',
+                       'tip': 'For verification records from third parties, make sure those are set to DNS '
+                              'only.',
+                       'timestamp': 99,
+                       'timestamp_seconds': 99,
+                       'timestamp_label': '[00:01:39]',
+                       'url': 'https://www.youtube.com/watch?v=KJ61MrgDU6U&t=99s',
+                       'markdown': '[00:01:39](https://www.youtube.com/watch?v=KJ61MrgDU6U&t=99s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

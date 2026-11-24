@@ -1,690 +1,852 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 2 C (4 people) specialty finance brokerage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Event Pipelines, Evidence-Bound Lender Matching, SBA Fee Controls, Renewal Triggers, and Measured Distribution Economics",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, ranks #06 among 29 mapped plays "
-        "with a 89/100 Money-to-Manpower Score. Its automation advantage comes from "
-        "turning application evidence, lender appetite, and renewal dates into "
-        "versioned workflows rather than delegating credit judgment to a model. "
-        "A 2 FT + 2 C team can target automation of 70%+ of repetitive task "
-        "instances while retaining accountable review of lender submissions, fees, "
-        "and borrower communications. Canonical annual owner profits remain "
-        "$30,000 Conservative, $196,000 Base, and $450,000 Scaled; recognized revenue "
-        "includes retained origination or referral fees, never loan principal. "
-        "This chapter connects measured workflow economics to formation referrals "
-        "and bankruptcy-claim research, separating adjacent-play receipts and "
-        "principal risk from the brokerage scorecard."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "25% net margin; $30,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "35.0% net margin; $196,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "45% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Instrument the application pipeline before delegating repetitive work",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Give the four-person brokerage explicit ownership before connecting tools. "
-                    "The first full-time operator owns borrower discovery, lender relationships, "
-                    "and consequential communications; the second owns underwriting preparation, "
-                    "file quality, and fee reconciliation. One contractor maintains integrations "
-                    "and access controls, while the other verifies documents and handles overflow "
-                    "research. Build a task ledger with application identifier, task type, source "
-                    "document hash, workflow version, start time, completion time, reviewer, and "
-                    "rework reason. Define the 70%+ target as repetitive task instances completed "
-                    "without manual execution, not the percentage of lending decisions delegated. "
-                    "An illustrative hundred-task cohort contains 24 intake checks, 20 extraction "
-                    "tasks, 18 lender-screening calculations, 16 reminders, and 22 judgment tasks. "
-                    "Automating the first 78 achieves 78% by task count only when retries and "
-                    "manual rescues are recorded honestly. Human sampling remains separate quality "
-                    "work and must appear in labor reporting. Also measure total minutes saved, "
-                    "because automating twenty trivial reminders can conceal an unresolved "
-                    "two-hour lien problem. Establish a two-week manual baseline, then compare "
-                    "matched equipment, receivables, SBA, and bridge applications rather than "
-                    "mixing simple renewals with distressed first-time borrowers. Report the "
-                    "achieved rate only after exceptions have cleared."
-                ),
-                (
-                    "Implement the workflow as durable events, not an elaborate sequence of "
-                    "unrecoverable browser clicks. A portal upload creates application.received; "
-                    "a Python handler validates required fields, checks an HMAC signature, rejects "
-                    "expired timestamps, and stores the event before acknowledging delivery. "
-                    "Use hashlib for content fingerprints, hmac.compare_digest for signature "
-                    "comparison, decimal.Decimal for money, and zoneinfo for renewal calendars. "
-                    "A managed queue and PostgreSQL event table can provide production durability; "
-                    "a stdlib sqlite3 prototype is sufficient for an isolated pilot with "
-                    "serialized writes. Every external action receives an idempotency key "
-                    "combining application, action, and workflow version. Persist an outbox "
-                    "record in the same transaction as the state change, then let a worker "
-                    "deliver it and record the provider response. A replay may regenerate "
-                    "an internal checklist but must never submit a second lender application "
-                    "or send duplicate borrower demands. Encrypt source files in restricted "
-                    "object storage, pass short-lived download links, and keep bank statements "
-                    "out of ordinary CRM notes. Treat uploaded documents as untrusted data: "
-                    "embedded instructions cannot change tool permissions, recipient lists, "
-                    "or the evidence requirements imposed by the workflow."
-                ),
-                (
-                    "Application checklists should depend on product, jurisdiction, entity type, "
-                    "and lender requirements. Equipment files need vendor quotes, asset descriptions, "
-                    "useful life, and applicable lien evidence; receivables files need aging, "
-                    "customer concentration, dilution, and existing assignment restrictions. SBA "
-                    "files require the selected lender's current program checklist, while bridge "
-                    "files need collateral, maturity, repayment source, and verified exit assumptions. "
-                    "OCR and an LLM may propose structured fields with document page references; "
-                    "deterministic validators reconcile statement periods, totals, legal names, "
-                    "and missing signatures. A model's confidence score does not establish "
-                    "accuracy. Route mismatched totals, altered-looking statements, and conflicting "
-                    "ownership records to a person without accusing the borrower automatically. "
-                    "The security design follows applicable duties under 16 CFR Part 314, "
-                    "including covered-institution risk assessment, access controls, service-provider "
-                    "oversight, and incident procedures. Disable vendor training on borrower "
-                    "documents where the service supports that setting, contract for appropriate "
-                    "retention, and minimize transmitted fields. If extraction fails twice, "
-                    "move the file to a manual queue with original evidence and error history. "
-                    "A failed model call should delay one checklist, not expose documents "
-                    "or corrupt the entire application's state."
-                ),
-            ],
-            "table": {
-                "caption": "Application Automation Ownership, Evidence, and Recovery Matrix",
-                "headers": [
-                    "Workflow boundary and named mechanism",
-                    "Evidence required before automated completion",
-                    "Accountable human review and permitted action",
-                    "Failure recovery and operational measurement",
-                ],
-                "rows": [
-                    [
-                        "Portal intake validates signed webhooks before durable event acceptance",
-                        "Application identifier, timestamp, signature, and payload hash remain linked",
-                        "Operations lead reviews conflicting borrower identities before file consolidation",
-                        "Reject invalid signatures and count retries without creating duplicate applications",
-                    ],
-                    [
-                        "Python checklist rules select equipment documents by lender version",
-                        "Vendor quote, asset description, borrower entity, and statement periods reconcile",
-                        "File contractor verifies missing collateral details against original supplied documents",
-                        "Create a manual exception task instead of inventing equipment attributes",
-                    ],
-                    [
-                        "Receivables extraction reconciles aging totals against supporting financial statements",
-                        "Customer balances, dilution history, and assignment restrictions retain source references",
-                        "Underwriting operator investigates concentrated debtors before presenting financing options",
-                        "Suspend automated matching when aging totals exceed documented reconciliation tolerance",
-                    ],
-                    [
-                        "SBA preparation applies the selected lender's current application checklist",
-                        "Eligibility representations and compensation documents retain dated borrower acknowledgments",
-                        "Relationship operator confirms program fit and required fee reporting",
-                        "Return incomplete packets internally without representing lender acceptance to borrowers",
-                    ],
-                    [
-                        "Restricted object storage serves short-lived links to authorized workers",
-                        "Access logs identify user, application, document, and legitimate processing purpose",
-                        "Integration contractor tests least-privilege roles without downloading live borrower files",
-                        "Revoke exposed links and follow the documented incident response procedure",
-                    ],
-                    [
-                        "Task ledger separates automated execution from manual rescue and sampling",
-                        "Start times, completion times, workflow versions, and rework reasons persist",
-                        "Operations lead compares matched cohorts before publishing an automation percentage",
-                        "Exclude failed attempts from completed automation and report total labor minutes",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make automation survive real borrower files",
-                "body": (
-                    "The most valuable automation preserves evidence, prevents repeated "
-                    "requests, and keeps lender relationships from absorbing software mistakes."
-                ),
-                "items": [
-                    "Fingerprint every uploaded statement so renamed duplicates do not trigger another extraction charge or another borrower request.",
-                    "Keep lender exceptions separate from published appetite rules; a one-off equipment approval must not silently become universal policy.",
-                    "Record payoff verification dates alongside renewal dates because stale payoff figures can invalidate an otherwise complete refinance packet.",
-                    "Use synthetic borrower packets for replay tests, including debtor concentration spikes, mismatched entity names, and duplicate webhook deliveries.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Bind lender matching and renewal automation to verified evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build lender matching as a transparent constraint engine before adding "
-                    "language generation. Each lender record needs product coverage, permitted "
-                    "states, minimum operating history, ticket range, collateral requirements, "
-                    "industry exclusions, concentration tolerance, current contact, evidence "
-                    "source, and last verification date. Represent a rule as data with "
-                    "effective dates and a named owner. Python evaluates hard exclusions "
-                    "first, then calculates a documented fit score from eligible attributes. "
-                    "An LLM can explain why a lender appears suitable, but it cannot "
-                    "override an exclusion or manufacture an appetite update. Set different "
-                    "freshness windows for stable documentation rules and volatile bridge "
-                    "pricing; expired records require confirmation before a borrower receives "
-                    "a lender-specific representation. Rank options using borrower fit and "
-                    "execution evidence, not simply the highest commission. Preserve the "
-                    "alternatives considered, rejection reasons, and compensation arrangements "
-                    "so the operator can explain the recommendation. Under 12 CFR 1002.2(l), "
-                    "some referral participants fall within creditor coverage for specified "
-                    "Regulation B provisions; determine the firm's actual activities rather "
-                    "than assuming every broker has identical duties. Do not use protected "
-                    "characteristics or unsupported demographic proxies to improve conversion "
-                    "scores or shape who receives financing outreach."
-                ),
-                (
-                    "Keep the model behind a narrow output contract: proposed document "
-                    "requests, cited lender matches, and draft explanations only. Validate "
-                    "JSON keys, types, enumerated products, and citations against records "
-                    "already retrieved by the application. If an output cites a nonexistent "
-                    "page or lender policy, reject it rather than asking another model "
-                    "to certify its plausibility. The relationship operator reviews every "
-                    "external lender submission, borrower-specific financing recommendation, "
-                    "and fee representation. Where an adverse-action duty applies, the "
-                    "responsible creditor must provide accurate reasons under 12 CFR 1002.9; "
-                    "a generic model explanation is insufficient. Business-credit notice "
-                    "procedures differ by circumstances, so record which entity owns each "
-                    "required notice and retain supporting facts. For SBA transactions, "
-                    "check agent compensation requirements under 13 CFR 103.5 and the "
-                    "applicable SBA Form 159 instructions before representing fees. Check "
-                    "state licensing and disclosure scope separately: California Financial "
-                    "Code sections 22100 and 22800 address different activities and "
-                    "requirements. Document the applicability analysis rather than treating "
-                    "one national checklist as universal. A stopped application remains "
-                    "visible to its owner, with a specific unresolved issue and next "
-                    "contact date, instead of disappearing into a rejected-model queue."
-                ),
-                (
-                    "Renewal tracking begins at funding, when the team records contractual "
-                    "maturity, draw availability, reporting covenants, prepayment terms, "
-                    "equipment schedules, and the borrower's permitted contact channels. "
-                    "Generate internal preparation tasks at 120, 90, and 60 days before "
-                    "maturity, adjusting timing to the actual product rather than assuming "
-                    "every facility renews annually. Reconfirm balances and business "
-                    "conditions before soliciting a refinance. The recurring workflow "
-                    "collects fresh statements, compares utilization and receivables aging, "
-                    "and identifies material changes for human review. Never infer that "
-                    "a past approval remains valid after a customer concentration spike "
-                    "or ownership change. Adopt a state machine with received, validated, "
-                    "review_required, submission_ready, submitted, funded, and closed "
-                    "states; separate terminal outcomes from temporary processing errors. "
-                    "Retry transient network failures with bounded exponential backoff "
-                    "and jitter, but send permission failures directly to the integration "
-                    "owner. A nightly reconciliation compares the CRM, event ledger, "
-                    "and lender acknowledgments to detect missing or duplicated transitions. "
-                    "During a vendor outage, export the minimum authorized task list "
-                    "for manual processing, preserve action identifiers, and reconcile "
-                    "those actions before restarting automation. Recovery must restore "
-                    "one coherent file history, not create competing versions of the deal."
-                ),
-            ],
-            "table": {
-                "caption": "Lender-Matrix Underwriting and Renewal Decision Boundaries",
-                "headers": [
-                    "Product or consequential decision boundary",
-                    "Deterministic screen and supporting evidence",
-                    "Human decision that remains explicitly assigned",
-                    "Stop condition and practical recovery route",
-                ],
-                "rows": [
-                    [
-                        "Equipment placement requires confirmed asset eligibility and vendor identity",
-                        "Compare ticket size, asset age, geography, and documented lender exclusions",
-                        "Relationship operator evaluates collateral issues and approves the proposed lender packet",
-                        "Request corrected vendor evidence when serial numbers or ownership records conflict",
-                    ],
-                    [
-                        "Receivables placement requires documented debtor concentration and dilution analysis",
-                        "Calculate aging buckets and largest debtor shares from reconciled source balances",
-                        "Underwriting operator reviews disputed invoices and existing receivables assignments",
-                        "Remove unsupported invoices and rerun borrowing-base estimates with visible exclusions",
-                    ],
-                    [
-                        "SBA matching requires current program fit and agent compensation controls",
-                        "Apply lender checklist versions and link applicable compensation documentation",
-                        "Relationship operator verifies representations before submitting the complete application packet",
-                        "Hold fee communications until required documentation and responsible parties are identified",
-                    ],
-                    [
-                        "Bridge debt matching requires credible repayment sources and current terms",
-                        "Check maturity, collateral evidence, exit assumptions, and lender verification dates",
-                        "Senior operator challenges optimistic refinance assumptions before recommending borrower action",
-                        "Refresh stale terms directly with the lender rather than extrapolating old quotes",
-                    ],
-                    [
-                        "Borrower-specific recommendations require evidence-bound explanations and recorded alternatives",
-                        "Validate cited records and exclude prohibited attributes from ranking inputs",
-                        "Accountable operator reviews fit, compensation, and the exact external message",
-                        "Reject unsupported model explanations and prepare a documented manual recommendation",
-                    ],
-                    [
-                        "Renewal preparation requires current balances and changed-condition review",
-                        "Schedule product-specific tasks from verified contractual dates and contact permissions",
-                        "File owner confirms borrower circumstances before initiating new lender outreach",
-                        "Pause outreach after material changes and rebuild the application evidence package",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four boundaries before any consequential release",
-                "body": (
-                    "Automated preparation may continue internally; external submissions "
-                    "and borrower-specific recommendations require an accountable reviewer."
-                ),
-                "items": [
-                    "Confirm borrower authorization, recipient identity, and the exact document set before transmitting any lender packet.",
-                    "Verify lender appetite freshness, hard-rule eligibility, and source-backed calculations before presenting a match.",
-                    "Confirm applicable licensing, commercial-financing disclosures, and SBA compensation documentation before representing fees or terms.",
-                    "Check idempotency records, open exceptions, and the prior submission receipt before releasing a retry or renewal message.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Validate and preserve the intake event",
-                    "action": "Authenticate the webhook, store its hash, and acknowledge only after durable acceptance.",
-                    "detail": "Attach the application identifier and workflow version; route conflicting identities to the file owner.",
-                },
-                {
-                    "step": 2,
-                    "title": "Prepare evidence-bound checklist and matches",
-                    "action": "Extract cited fields, reconcile totals, and run versioned lender constraints.",
-                    "detail": "Reject unsupported fields and create explicit exception tasks instead of silently filling missing evidence.",
-                },
-                {
-                    "step": 3,
-                    "title": "Review and release the authorized packet",
-                    "action": "Have the assigned operator inspect terms, recipients, fee statements, and unresolved issues.",
-                    "detail": "Persist the reviewed payload and an outbox action identifier before the delivery worker submits anything.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile delivery and schedule follow-through",
-                    "action": "Record lender acknowledgment, update application state, and assign follow-up or renewal tasks.",
-                    "detail": "Compare external receipts with internal actions nightly and reconcile manual work before replaying failed events.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Build distribution loops without confusing adjacent plays with brokerage revenue",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Programmatic distribution should answer specific financing questions with "
-                    "reviewed tools, not mass-produce thin location pages. Publish an equipment "
-                    "payment calculator, an invoice-aging readiness worksheet, and a maturity "
-                    "planning checklist, each using disclosed assumptions and a versioned "
-                    "calculation method. Let accountants and equipment vendors share a "
-                    "co-branded worksheet that returns a useful borrower action list before "
-                    "requesting a meeting. Attribute each referral with a partner identifier "
-                    "and preserve borrower permission before sharing application data. The "
-                    "viral mechanism is practical utility: an accountant forwards a "
-                    "reusable worksheet to another client, who can share an empty copy "
-                    "without exposing the first client's balances. For outbound, use "
-                    "lawfully obtained business contacts and truthful role-specific messages; "
-                    "apply commercial-email requirements under 15 U.S.C. 7704, including "
-                    "accurate headers and functioning opt-outs. Maintain suppression centrally "
-                    "so contractors cannot reintroduce removed contacts. An illustrative "
-                    "monthly funnel of 2,000 qualified visits produces 80 checklist "
-                    "starts at 4%, 24 completed intakes at 30%, eight lender-ready files "
-                    "at one-third, and two closings at 25%. Those are test assumptions, "
-                    "not the canonical annual scorecard. Track acquisition cost per "
-                    "funded, retained-fee deal after reversals, not per email reply."
-                ),
-                (
-                    "The mapped play free_llc_fintech_bounty_stacking offers a $0-service-fee "
-                    "formation and business-launch concierge, with the founder paying mandatory "
-                    "state filing fees. Its sequential post-formation 'Required Business "
-                    "Infrastructure Checklist' covers banking, corporate cards, payroll, "
-                    "bookkeeping, and merchant services, but distinguish actual operating "
-                    "requirements from optional sponsored products. Do not require all "
-                    "founders to open every account or condition financing access on "
-                    "affiliate enrollment. Collect separate authorization for each application, "
-                    "confirm provider eligibility, and disclose material referral relationships "
-                    "clearly. Illustrative qualified payouts of $150 for banking, $250 "
-                    "for cards, $200 for payroll, $100 for bookkeeping, and $200 for "
-                    "merchant services total $900; the mapped $600–$1,800+ range depends "
-                    "on live contracts, activation, retention, and reversal terms. Forty "
-                    "formations at $900 yield $36,000 only if every modeled payout "
-                    "qualifies. Applying a 70% realization assumption gives $25,200; "
-                    "subtracting $6,000 fulfillment and a $2,520 reversal allowance "
-                    "leaves $16,680 before other acquisition and overhead costs. Keep "
-                    "this adjacent-play ledger outside the brokerage scenarios. Pre-qualify "
-                    "founders for genuine 30-day operating revenue intent. Where lawful "
-                    "and clearly disclosed, release optional free operating-agreement "
-                    "and bookkeeping templates after verified bank funding, using provider "
-                    "confirmation rather than collecting bank credentials."
-                ),
-                (
-                    "The second mapped play, chapter11_trade_claim_convenience_class_rollup, "
-                    "uses public bankruptcy records to identify documented small trade "
-                    "claims offered below risk-adjusted expected distributions. PACER "
-                    "Schedule E/F research is a lead source, not proof that a claim "
-                    "is allowed or transferable on favorable terms. Reconcile the "
-                    "schedule with invoices, proofs of claim, objections, debtor identity, "
-                    "and the confirmed or proposed plan. For an illustrative $10,000 "
-                    "claim, an 80% probability of a 30% distribution and zero otherwise "
-                    "produces $2,400 expected gross recovery. Deduct $300 servicing "
-                    "and a $600 risk cushion to establish a $1,500 maximum purchase "
-                    "price. At a 10% distribution with the same probability and "
-                    "servicing assumption, expected net recovery falls to $500, "
-                    "creating a $1,000 expected loss against that purchase price. "
-                    "Review transfer procedures under Bankruptcy Rule 3001(e), any "
-                    "court-specific requirements, and plan treatment under 11 U.S.C. "
-                    "1122(b). Never assume splitting or aggregating claims creates "
-                    "convenience-class eligibility. Stop affected purchases when objections "
-                    "or plan restrictions undermine the thesis, enforce documented "
-                    "seller recourse where available, and price only supported "
-                    "general-unsecured recoveries. Claims purchased with capital belong "
-                    "in a separate investment ledger; neither purchase principal "
-                    "nor distributions become brokerage origination revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheel and Mapped-Play Economics With Explicit Risk Fallbacks",
-                "headers": [
-                    "Distribution asset or mapped operator play",
-                    "Illustrative unit economics and measurement basis",
-                    "Required evidence and accountable operating boundary",
-                    "Failure mode and concrete fallback response",
-                ],
-                "rows": [
-                    [
-                        "Equipment calculators attract borrowers through specific asset-financing questions",
-                        "Two thousand visits at four percent generate eighty checklist starts",
-                        "Reviewed formulas disclose assumptions without presenting indicative outputs as lender offers",
-                        "Correct inaccurate assumptions and pause affected pages before purchasing additional traffic",
-                    ],
-                    [
-                        "Accountant worksheets create repeat referrals through reusable practical utility",
-                        "Twenty-four completed intakes yield eight lender-ready files under modeled qualification",
-                        "Partner identifiers preserve attribution while borrower permission controls document sharing",
-                        "Replace low-quality sources with partners whose submissions survive documented qualification checks",
-                    ],
-                    [
-                        "Targeted business email distributes reviewed readiness tools to relevant operators",
-                        "Eight lender-ready files at twenty-five percent produce two modeled closings",
-                        "Central suppression and accurate message headers support commercial-email operating requirements",
-                        "Stop suppressed-address outreach and investigate contractors who reintroduce removed contacts",
-                    ],
-                    [
-                        "free_llc_fintech_bounty_stacking sequences formation assistance and optional product referrals",
-                        "Five illustrative qualified payouts total nine hundred dollars per fully activated formation",
-                        "Provider contracts determine qualification, activation, reversals, and permitted referral representations",
-                        "Pre-qualify operating intent and condition optional template bonuses only on disclosed lawful terms",
-                    ],
-                    [
-                        "Formation bounty realization requires separate receipts and reversal accounting",
-                        "Forty formations at seventy percent realization generate twenty-five thousand two hundred dollars",
-                        "Separate ledgers exclude these adjacent receipts from canonical brokerage fee scenarios",
-                        "Suspend weak providers and revise payout assumptions when activation or retention deteriorates",
-                    ],
-                    [
-                        "chapter11_trade_claim_convenience_class_rollup prices documented claims against supported plan recoveries",
-                        "Twenty-four hundred expected recovery supports fifteen hundred purchase after stated deductions",
-                        "Invoices, objections, transfer procedures, and plan classification receive transaction-specific review",
-                        "Stop affected purchases, enforce available seller recourse, and price supported unsecured recoveries",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Price each automated run and scale only the reconciled operating system",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Price automation at the application level, including failed attempts "
-                    "and human review. An illustrative run costs $0.18 for extraction, "
-                    "$0.12 for model processing, $0.04 for queue and storage allocation, "
-                    "and $0.06 for messaging and observability: $0.40 total machine "
-                    "cost. These are budgeting assumptions rather than vendor quotations. "
-                    "Six reviewer minutes at a $60 hourly loaded rate add $6, "
-                    "making the standard reviewed run $6.40. Against thirty manual "
-                    "minutes at the same rate, the modeled saving is $23.60 "
-                    "before development, maintenance, and exception work. If 15% of "
-                    "applications need eighteen additional review minutes, expected "
-                    "exception labor adds $2.70 per run, producing $9.10 total "
-                    "and $20.90 savings. At 400 monthly runs, machine expense "
-                    "is $160, standard review is $2,400, and expected exception "
-                    "labor is $1,080, totaling $3,640. Add $2,000 monthly integration "
-                    "maintenance to reach $5,640 versus $12,000 manual processing. "
-                    "These savings demonstrate a capacity hypothesis, not additional "
-                    "profit to stack onto the scorecard. Compare this workload "
-                    "with actual staffing availability, record opportunity costs, "
-                    "and replace estimates with invoices and observed handling "
-                    "times before increasing acquisition spend."
-                ),
-                (
-                    "Reconcile every commercial dashboard to the canonical fee-only cases. "
-                    "Conservative revenue of $120,000 at a 25% net margin produces "
-                    "$30,000 annual owner net profit and implies $90,000 total "
-                    "annual expenses with 2 FT + 2 C. Base revenue of "
-                    "$560,000 at 35.0% produces $196,000 profit and $364,000 "
-                    "expenses with the same team. Scaled revenue of $1,000,000 "
-                    "at 45% produces $450,000 profit and $550,000 expenses "
-                    "with 3 FT + 3 C. Illustrative bridges are twelve "
-                    "retained-fee closings at $10,000, forty at $14,000, and "
-                    "fifty at $20,000 respectively; actual fee mixes may differ. "
-                    "Loan principal never enters these revenue equations. The "
-                    "stated $4,000–$18,000 monthly operating range does not reconcile "
-                    "by itself to all modeled total expenses; retain the "
-                    "annual expense envelopes and document additional variable, "
-                    "compensation, acquisition, and other included costs. Likewise, "
-                    "the Conservative envelope may not support market-rate cash "
-                    "compensation for every listed person. Specify contractor "
-                    "utilization, owner compensation treatment, and cash runway "
-                    "before adopting the case operationally. The $20,000–$100,000 "
-                    "startup capital range must also cover a potential "
-                    "three-to-nine-month wait for the first deal rather "
-                    "than assuming immediate closing revenue."
-                ),
-                (
-                    "Build a weekly control meeting around four numbers: cost per "
-                    "reviewed application, funded conversion, retained fee after "
-                    "clawbacks, and lender concentration. A lender producing 45% "
-                    "of retained fees deserves a documented contingency even "
-                    "when its close rate looks excellent. Use an internal "
-                    "concentration trigger, such as 35%, to require alternate "
-                    "coverage research rather than automatically steering borrowers "
-                    "toward inferior offers. Track failed closings by cause: "
-                    "unsupported borrower facts, stale appetite, valuation gaps, "
-                    "timing failures, or lender withdrawal. Reconcile commission "
-                    "receipts against agreements and contractual clawback windows; "
-                    "keep reversal exposure visible and avoid distributing cash "
-                    "needed for foreseeable repayment obligations. Promote a "
-                    "workflow only after a replay set passes, a supervised "
-                    "pilot shows acceptable error rates, and the file owner "
-                    "can operate its manual fallback. Pause consequential "
-                    "releases after any unauthorized submission or material "
-                    "borrower-data exposure, investigate scope, and restore "
-                    "service through controlled replay. At scale, the "
-                    "additional full-time operator owns quality and portfolio "
-                    "follow-through, while the third contractor supports "
-                    "verified sourcing or integration coverage. More traffic "
-                    "is useful only when lender capacity, reviewer capacity, "
-                    "and retained-fee economics expand together. Automate "
-                    "repetition aggressively while keeping judgment, evidence, "
-                    "and recovery ownership unmistakably human."
-                ),
-            ],
-            "table": {
-                "caption": "Run-Level Costs, Canonical Scenario Reconciliation, and Scaling Controls",
-                "headers": [
-                    "Operating measurement or canonical scenario",
-                    "Explicit arithmetic and recognized revenue basis",
-                    "Capacity interpretation and responsible operating owner",
-                    "Risk control and reconciliation evidence required",
-                ],
-                "rows": [
-                    [
-                        "Standard automated run includes machines and mandatory human review",
-                        "Forty cents machine cost plus six dollars review equals six dollars forty",
-                        "Six minutes of reviewer time remains scheduled for each standard application",
-                        "Compare provider invoices and reviewer timers against the assumed cost allocation",
-                    ],
-                    [
-                        "Exception-adjusted run includes additional review on fifteen percent of files",
-                        "Six dollars forty plus two dollars seventy equals nine dollars ten",
-                        "Underwriting operator budgets eighteen extra minutes for each modeled exception",
-                        "Record exception causes and rebuild estimates when difficult files cluster together",
-                    ],
-                    [
-                        "Conservative canonical case retains two employees and two contractors",
-                        "One hundred twenty thousand fee revenue less ninety thousand expenses yields thirty thousand",
-                        "Twenty-five percent net margin requires explicit owner compensation and contractor utilization assumptions",
-                        "Exclude loan principal and reconcile each retained fee to its closing agreement",
-                    ],
-                    [
-                        "Base canonical case retains two employees and two contractors",
-                        "Five hundred sixty thousand revenue less three hundred sixty-four thousand expenses yields one hundred ninety-six thousand",
-                        "Thirty-five percent net margin requires measured acquisition and processing capacity",
-                        "Keep adjacent formation receipts and claim investment returns outside this fee ledger",
-                    ],
-                    [
-                        "Scaled canonical case uses three employees and three contractors",
-                        "One million revenue less five hundred fifty thousand expenses yields four hundred fifty thousand",
-                        "Forty-five percent net margin requires quality ownership and diversified lender coverage",
-                        "Reconcile variable costs and compensation rather than relying solely on monthly overhead ranges",
-                    ],
-                    [
-                        "Weekly concentration and clawback review protects retained-fee cash quality",
-                        "Internal thirty-five percent lender concentration trigger initiates documented alternate coverage research",
-                        "Relationship operator preserves borrower fit while developing credible execution alternatives",
-                        "Match receipts, reversal windows, and contingent repayment exposure before owner cash distributions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the repeated work, preserve the evidence, and keep every consequential decision attached to a named human.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Instrument a two-week manual baseline and calculate automation by completed repetitive task instances, manual rescues, review time, and total handling minutes.",
-        "Implement authenticated intake, durable event storage, transactional outbox delivery, idempotency keys, bounded retries, and a documented manual recovery path.",
-        "Version equipment, receivables, SBA, and bridge lender rules; require cited evidence and accountable review before submissions or borrower-specific recommendations.",
-        "Launch one reviewed calculator and one accountant referral worksheet, then measure funded retained-fee acquisition cost after failed closings and commission reversals.",
-        "Maintain separate ledgers for formation bounties and purchased claims, validating provider eligibility, optional-product disclosures, plan treatment, and seller recourse.",
-        "Reconcile $120,000, $560,000, and $1,000,000 fee-only revenue cases to their exact expense envelopes before expanding reviewer staffing or traffic spend.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "16 CFR Part 314 — Standards for Safeguarding Customer Information",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
-            "relevance": (
-                "Determine covered-institution status and implement applicable information-security "
-                "program, risk assessment, access-control, service-provider, and incident requirements."
-            ),
-        },
-        {
-            "title": "12 CFR 1002.2 — Regulation B Definitions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.2",
-            "relevance": (
-                "Paragraph (l) addresses creditor coverage, including specified treatment "
-                "of parties regularly referring applicants or selecting creditors."
-            ),
-        },
-        {
-            "title": "12 CFR 1002.4 — General Rules Under Regulation B",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.4",
-            "relevance": (
-                "Apply relevant restrictions on discrimination and discouragement when "
-                "designing qualification logic, lender routing, and borrower communications."
-            ),
-        },
-        {
-            "title": "12 CFR 1002.9 — Notifications",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.9",
-            "relevance": (
-                "Assign applicable creditor notification responsibilities and preserve "
-                "accurate reasons, accounting for the provisions governing business credit."
-            ),
-        },
-        {
-            "title": "13 CFR 103.5 — Compensation Agreement Requirements",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-103/section-103.5",
-            "relevance": (
-                "Check SBA agent compensation agreement requirements and applicable "
-                "reporting instructions before communicating or collecting transaction fees."
-            ),
-        },
-        {
-            "title": "California Financial Code Section 22100 — Finance Lender and Broker Licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": (
-                "Evaluate licensing requirements and applicable exceptions against the "
-                "brokerage's actual California lending and brokering activities."
-            ),
-        },
-        {
-            "title": "California Financial Code Section 22800 — Commercial Financing Disclosures",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22800.",
-            "relevance": (
-                "Determine whether covered commercial-financing offers require disclosures "
-                "and ensure automation uses the applicable statutory scope."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Design outbound messaging around accurate transmission information, "
-                "required identification, functioning opt-outs, and suppression handling."
-            ),
-        },
-        {
-            "title": "16 CFR 255.5 — Disclosure of Material Connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": (
-                "The FTC endorsement guides explain disclosure of material connections "
-                "relevant to sponsored fintech recommendations and referral promotions."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 1122(b) — Classification of Small Unsecured Claims",
-            "url": "https://www.law.cornell.edu/uscode/text/11/1122",
-            "relevance": (
-                "Evaluate convenience-class treatment under the actual plan without "
-                "assuming purchased, split, or aggregated claims qualify for favorable treatment."
-            ),
-        },
-        {
-            "title": "Federal Rule of Bankruptcy Procedure 3001(e) — Transferred Claims",
-            "url": "https://www.law.cornell.edu/rules/frbp/rule_3001",
-            "relevance": (
-                "Identify applicable claim-transfer evidence, notice, and objection "
-                "procedures before purchasing or attempting to enforce transferred trade claims."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'vol014-q10-working-capital-revenue-based-financing-capital-raising',
+ 'question_prompt': 'When should a business use a working capital loan, revenue-based financing, or '
+                    'equity, and what adjacent B2B payment and advisory services can a broker offer?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Working Capital, Revenue-Based Financing, and Capital Raising',
+ 'subtitle': 'Working Capital Loans vs. RBF, Soft-Pull Lines of Credit, Red and Green Flags in Alternative '
+             'Offers, Debt vs. Equity vs. Revenue-Based Funding, Raising Capital from Family Offices and '
+             'Investors, Fractional CFO Support, B2B Card Fees, Visa Level 3 and Virtual Cards, and '
+             'AI-Automated Fintech Referral Programs',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'The funding-side practitioners agree that banks have shut out most small operators. '
+                      'Today Capital Group puts bank approval rates below 14%, and Alex Shvarts says the '
+                      'real bank requirements are a 700-plus personal score, two profitable years and '
+                      '20-25% collateral. Revenue-based financing fills the gap by buying future '
+                      'receivables at a discount. Lenders underwrite it from three to six months of bank '
+                      'statements instead of FICO. Joe Camberato sizes advances at 100-150% of monthly '
+                      'gross revenue, at factor rates like 1.10 plus 1-3% origination. Holdbacks run 4-8% '
+                      'according to Today Capital and 5-16% according to Zach Siegel. Bootstrapp shows the '
+                      'same 6% fee turning into a 44% APR when revenue spikes. Practitioners split on '
+                      'three points: daily debits, merchant cash advance versus true RBF, and whether '
+                      'speed is worth the cost compared with refinancing into SBA loans.',
+ 'key_metrics': [{'label': 'Traditional Bank Small Business Approval Rate',
+                  'metric': 'Traditional Bank Small Business Approval Rate',
+                  'value': 'Below 14%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Today Capital Group's figure for current bank approval rates on small "
+                             'business loans. It is their case for why most founders look outside banks.',
+                  'source': 'Today Capital Group ([6tGMlJx13g8 @ 00:00:44])'},
+                 {'label': 'Revenue-Based Advance Sizing',
+                  'metric': 'Revenue-Based Advance Sizing',
+                  'value': '100% to 150% of average monthly gross revenue',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Lenders average the last three to six months of deposits and advance this '
+                             'share of it, then adjust for daily balance, industry and credit.',
+                  'source': 'Joe Camberato ([U1zLsMRu1ig @ 00:01:22])'},
+                 {'label': 'Revenue-Based Qualification Floor',
+                  'metric': 'Revenue-Based Qualification Floor',
+                  'value': '550 score, 6 months in business, $20,000 monthly revenue, 4 months of '
+                           'statements',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Shvarts's typical minimum file for revenue-based finance, compared with "
+                             '700-plus credit and two years of tax returns for bank loans.',
+                  'source': 'Unbankable with Alex Shvarts ([MNdDLiTLoNY @ 00:07:16])'},
+                 {'label': 'Red-Flag Factor Rate',
+                  'metric': 'Red-Flag Factor Rate',
+                  'value': '1.499 or higher ($149,900 repayment on $100,000)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Siegel says a quote this high should only appear when several lenders are '
+                             'already debiting the account. Never take it on a first funding.',
+                  'source': 'Zach Siegel ([Yq5OojmQIac @ 00:01:25])'}],
+ 'sections': [{'section_number': 1,
+               'title': 'The Practitioner Consensus: Banks Are Shut, the Bank Account Is the Credit File, '
+                        'and Every Dollar Needs a Job',
+               'paragraphs': ['Every funding-side operator here starts from the same point: the bank door '
+                              'is mostly shut. Today Capital Group says it plainly. Traditional bank '
+                              'approval rates for small business loans are hovering below 14%, so most '
+                              'founders have to look elsewhere [6tGMlJx13g8 @ 00:00:44]. Alex Shvarts of '
+                              'Unbankable lists what banks actually require now: a 700-plus personal '
+                              'score, an 80-plus business score, two years of consistent profitability, '
+                              '20-25% down or collateral, debt-to-income under 40%, and a detailed plan '
+                              'with projections. Even then, approvals take 30 to 90 days with no guarantee '
+                              '[MNdDLiTLoNY @ 00:01:39]. He has watched profitable businesses with strong '
+                              'cash flow get rejected because their credit took a single hit. '
+                              'Revenue-based financing steps into that gap. Joe Camberato, who started '
+                              'funding deals in 2007, says it is the same product as a merchant cash '
+                              'advance. It is written on a purchase and sale agreement and based purely on '
+                              'revenue and cash flow [U1zLsMRu1ig @ 00:00:00]. It is not a loan in the '
+                              'classic sense. The funder buys a slice of future sales at a discount today '
+                              'and collects it back over time. Camberato credits the product with opening '
+                              'up small-business access to capital that barely existed before alternative '
+                              'lending took off, and with completely changing how business lending works.',
+                              'Practitioners also agree that underwriting runs on bank statements, not on '
+                              'tax returns or a perfect FICO score. Camberato says that up to $250,000, '
+                              'all you need is the last three to six months of statements, and lenders '
+                              'want one to two years in business. Above $250,000 fewer lenders play, and '
+                              'they start asking for financials [U1zLsMRu1ig @ 00:00:52]. Shvarts puts the '
+                              'typical revenue-based minimum at about a 550 score, six months in business '
+                              'and $20,000 a month in revenue. The owner fills out one application and '
+                              'sends four months of bank statements. He calls the gap in accessibility '
+                              'versus banks dramatic [MNdDLiTLoNY @ 00:07:16]. Brian M. Hazel pitches an '
+                              'even lower bar: six months in business, $5,000 or more a month through the '
+                              'business account, and three months of statements. He says his programs are '
+                              'not credit-score driven [e3NbWehFdJs @ 00:00:27]. Marco Carbajo of Business '
+                              'Credit Builders walks through a direct lender with these requirements: one '
+                              'year in business, $200,000 in annual gross deposits, no FICO minimum, and a '
+                              '$3,000 average daily balance. The account can have no more than four '
+                              'negative-balance days a month, and five or more means an automatic decline '
+                              '[L3n2zgxag4E @ 00:05:55]. The common thread is that the bank account works '
+                              'as the credit file. Daily balances and the deposit pattern decide the deal '
+                              'before anyone looks at a credit score.',
+                              'Operators also agree that capital has to be matched to a specific job '
+                              'before the owner takes it. Enterprise Industry Network says the mistake is '
+                              'treating all funding as the same. A stable company with predictable cash '
+                              'flow fits debt. A high-growth business may consider equity. A company with '
+                              'revenue but uneven cash flow is the natural candidate for revenue-based '
+                              'funding [mXnUmcIc8Ek @ 00:02:28]. Hazel puts numbers on that discipline and '
+                              'gives every borrowed dollar a measurable mission. His rule: $50,000 put '
+                              'into inventory must turn in 45 to 90 days at a margin of at least 35%. If '
+                              'his performance indicators miss five days in a row, he pauses spending and '
+                              'redoes the forecast [e3NbWehFdJs @ 00:02:25]. Shvarts treats revenue-based '
+                              'money as a bridge, not a destination. Many successful businesses use it for '
+                              'immediate needs, then refinance into traditional loans once they have grown '
+                              'and improved their credit profile [MNdDLiTLoNY @ 00:08:21]. Fractional CFO '
+                              'Robert Cinapri starts earlier, with the cash cycle itself. He tells owners '
+                              'to track which customers are stringing out receivables, which vendors will '
+                              'match payment terms, and how long inventory sits. Then they should work '
+                              'with the bank to build buffers for seasonality, cost spikes and long '
+                              'overseas shipping delays [Ja8jXRIkOK4 @ 00:25:04].'],
+               'table': {'caption': 'Where the practitioners agree on working capital and revenue-based '
+                                    'financing',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner States',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Banks reject most small business borrowers',
+                                   'Traditional bank approval rates for small business loans are hovering '
+                                   'below 14% right now',
+                                   'Pitch alternatives early instead of waiting weeks for a bank decline',
+                                   'Today Capital Group ([6tGMlJx13g8 @ 00:00:44])'],
+                                  ['The bank checklist is a serious wall to clear',
+                                   '700-plus personal, 80-plus business score, two profitable years, '
+                                   '20-25% collateral, DTI under 40%',
+                                   'Most applicants miss at least one box and then wait 30 to 90 days',
+                                   'Unbankable with Alex Shvarts ([MNdDLiTLoNY @ 00:01:39])'],
+                                  ['Revenue-based financing is a purchase of future sales',
+                                   'The funder advances cash against future sales at a discount under a '
+                                   'purchase and sale agreement',
+                                   'Explain the agreement language so owners do not run back to term loans',
+                                   'Joe Camberato ([U1zLsMRu1ig @ 00:02:55])'],
+                                  ['Bank statements replace tax returns under $250,000',
+                                   'Six months of business bank statements and a one-page application '
+                                   'produce options within hours',
+                                   'Collect statements first, since financials only matter above the '
+                                   '$250,000 line',
+                                   'Joe Camberato ([GwPGzetluZM @ 00:01:39])'],
+                                  ['Payments flex with revenue instead of staying fixed',
+                                   'Repayment is a slice of monthly revenue, so a slow month means a '
+                                   'smaller payment',
+                                   'Pitch the flexibility to seasonal and variable-revenue operators '
+                                   'specifically',
+                                   'Today Capital Group ([6tGMlJx13g8 @ 00:02:03])'],
+                                  ['Capital must match purpose, timing and repayment ability',
+                                   'Funding should fit purpose, timing, repayment ability, risk level, '
+                                   'ownership goals and the growth plan',
+                                   'Diagnose the use of funds before choosing any product off the menu',
+                                   'Enterprise Industry Network ([mXnUmcIc8Ek @ 00:02:46])'],
+                                  ['Know the cash reality before borrowing a dollar',
+                                   'Map the next 13 weeks of cash in and out before taking any loan',
+                                   'Size the request from the forecast, not from the maximum approval '
+                                   'offered',
+                                   'Brian M. Hazel Quotes ([e3NbWehFdJs @ 00:01:17])']]}},
+              {'section_number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers: Sizing, Factor Math, Holdbacks and the '
+                        'Lender Box',
+               'paragraphs': ['The sizing math is simple and repeatable. Camberato says lenders pull the '
+                              'last three to six months of deposits and average them. They then advance '
+                              '100% to 150% of monthly gross revenue, adjusted for average daily balance, '
+                              'time in business, industry, and business and personal credit. Terms run '
+                              'from as short as six months to about 36 months [U1zLsMRu1ig @ 00:01:22]. '
+                              'Pricing uses a factor rate, not an interest rate. Approve $100,000 at a '
+                              '1.10 factor and total repayment is $110,000. A 1% to 3% origination fee may '
+                              'also come out of the funded amount and add to the total cost [U1zLsMRu1ig @ '
+                              '00:02:24]. The funder then collects through card-sale splits or daily, '
+                              'weekly, biweekly or monthly debits until it has the full purchased amount. '
+                              'Shvarts runs the side-by-side comparison owners actually need. A $100,000 '
+                              'bank loan over five years at 12% means $2,224.44 a month and $33,466.69 in '
+                              'total interest, and the payments are due even in a month with zero sales '
+                              '[MNdDLiTLoNY @ 00:03:06]. The revenue-based version sells $130,000 of '
+                              'receivables for $100,000 today. At a 10% holdback on $30,000 in monthly '
+                              'sales, the payment is $3,000. Approval and funding both land within 24 to '
+                              '48 hours, and a month with no sales means nothing is owed for that period '
+                              '[MNdDLiTLoNY @ 00:03:44].',
+                              'The holdback percentage is the number that matters day to day, and the '
+                              'quoted ranges differ by shop. Today Capital Group describes repayment as a '
+                              'slice of monthly revenue, usually 4% to 8%, paid until the pre-agreed cap '
+                              'is reached. Payments then stop, and the owner never gives up a single share '
+                              '[6tGMlJx13g8 @ 00:02:03]. Zach Siegel accepts holdbacks from 5% up to 16% '
+                              'and says anything above that puts the deal in the high-risk category '
+                              "[Yq5OojmQIac @ 00:03:17]. Bootstrapp's calculator shows how a flat fee "
+                              'hides an APR that moves. A startup at $250,000 in monthly revenue, growing '
+                              '3% a month, takes $100,000 with a 6% fee and repays 6% of revenue each '
+                              'month, for $106,000 in total [U0fB6ZY7Cpo @ 00:01:51]. If revenue drops to '
+                              '$120,000, the APR goes down because the same fee is spread over more time. '
+                              'If revenue spikes to $600,000, the advance is paid off in under three '
+                              'months at roughly a 44% APR. At that point, a 9% option would have saved '
+                              'serious money [U0fB6ZY7Cpo @ 00:04:16]. Bootstrapp calls this the core '
+                              'trade-off: time versus the cost of capital. At $25,000 a month, the same '
+                              'advance takes 38 months to repay, which works out far worse for the lender '
+                              'than for the founder.',
+                              "The details inside real lender requirements get granular. Carbajo's direct "
+                              'lender funds $3,000 to $100,000 on three-to-six-month terms. It runs a soft '
+                              'Experian pull with no FICO minimum and requires a read-only Plaid bank '
+                              'connection instead of uploaded statements. It will take first through third '
+                              'position behind existing advances and gives a 50% discount on outstanding '
+                              'fees for early payoff. It automatically declines cannabis, firearms and '
+                              'nonprofits, and sends agriculture, car and boat dealers, finance and '
+                              'insurance, online stores, real estate and transportation through stricter '
+                              'review [L3n2zgxag4E @ 00:04:25]. Camberato says his platform has over 75 '
+                              'lenders, and he separates three working capital products. Term loans run '
+                              '12, 24 or 36 months, or up to 10 years through the SBA. Revenue-based '
+                              'advances typically run 12 to 18 months for businesses only six to 12 months '
+                              'old. Revolving lines need a 620 score, two years in business, and a few '
+                              'thousand dollars kept in the account [GwPGzetluZM @ 00:02:14]. Hazel '
+                              'advertises funding from $500 up to $2 million within 48 hours on limited '
+                              'documentation [e3NbWehFdJs @ 00:00:47]. On the receivables side, Matt '
+                              "Dubois says Visa's Product 3 enhanced-data tier can cut interchange by "
+                              'roughly 0.5% to 1.5%. That is $50 to $150 kept on every $10,000 '
+                              'business-card invoice [vPF9bO_izWU @ 00:00:49].'],
+               'table': {'caption': 'Revenue-based and working capital unit economics stated by '
+                                    'practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Number Stated',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Advance sizing from averaged bank deposits',
+                                   '100% to 150% of average monthly gross revenue over three to six months',
+                                   'Quote the ceiling from averaged deposits before pitching any number',
+                                   'Joe Camberato ([U1zLsMRu1ig @ 00:01:22])'],
+                                  ['Factor rate pricing on the purchase amount',
+                                   '$100,000 at a 1.10 factor equals $110,000 total repayment plus 1-3% '
+                                   'origination',
+                                   'Multiply the approval by the factor and add origination to show true '
+                                   'cost',
+                                   'Joe Camberato ([U1zLsMRu1ig @ 00:02:24])'],
+                                  ['Receivables purchase payment example',
+                                   '$130,000 sold for $100,000, and 10% of $30,000 sales equals $3,000 a '
+                                   'month',
+                                   'Model the payment as holdback times monthly sales, not a fixed '
+                                   'installment',
+                                   'Unbankable with Alex Shvarts ([MNdDLiTLoNY @ 00:03:44])'],
+                                  ['Acceptable revenue holdback band',
+                                   '5% to 16% is acceptable, and anything above 16% falls into high-risk '
+                                   'territory',
+                                   'Push back on any offer that holds more than 16% of revenue',
+                                   'Zach Siegel ([Yq5OojmQIac @ 00:03:17])'],
+                                  ['Effective APR swing on a flat fee',
+                                   'A 6% fee on $100,000 becomes roughly a 44% APR at $600,000 monthly '
+                                   'revenue',
+                                   'Run fast-payoff scenarios before choosing RBF over cheaper, slower '
+                                   'money',
+                                   'Bootstrapp ([U0fB6ZY7Cpo @ 00:04:16])'],
+                                  ['Direct-lender minimum requirements',
+                                   'One year, $200,000 annual revenue, $3,000 average daily balance, at '
+                                   'most four negative days a month',
+                                   'Check bank statements for negative-balance days before submitting the '
+                                   'file',
+                                   'Business Credit ([L3n2zgxag4E @ 00:05:55])'],
+                                  ['Business credit card stacking for no-revenue files',
+                                   'Three to four business credit cards obtained in 14 to 20 days at '
+                                   '680-plus scores',
+                                   'Send startups without revenue into a no-doc program built on personal '
+                                   'credit',
+                                   'Business Credit ([L3n2zgxag4E @ 00:10:27])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Squeezing Cost Out of a Revenue-Based Deal',
+                           'body': 'These are the levers practitioners pull to make fast money cheaper and '
+                                   'safer to carry once the file is approved.',
+                           'items': ['Demand prepayment incentives. Some funders forgive as much as 100% '
+                                     'of interest, others take 5-20% off the remaining fees, and an offer '
+                                     'with no incentive at all is an instant red flag [Zach Siegel — '
+                                     'Yq5OojmQIac @ 00:02:26].',
+                                     'Use a revenue-based revolving line as a receivables bridge. '
+                                     'Simple-interest, unsecured lines can cost as little as 1% a month: '
+                                     'draw to start a job, then pay off the draw when receivables arrive '
+                                     '[Zach Siegel — Yq5OojmQIac @ 00:03:37].',
+                                     'Tell owners that purchase and sale agreements usually carry no '
+                                     'personal guarantee. They typically carry only a performance '
+                                     'guarantee that the owner will not divert sales away from the funder '
+                                     '[Joe Camberato — U1zLsMRu1ig @ 00:03:41].',
+                                     'Set up a small line of credit while times are good so it is ready '
+                                     'when they get hard. Keep daily balances high and keep a one-page '
+                                     'brief covering the need, why now, how you will repay, and the '
+                                     'downside plan [Brian M. Hazel Quotes — e3NbWehFdJs @ 00:03:01].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map the Cash Before Sizing the Ask',
+                              'action': 'Build a rolling 13-week forecast of cash in and cash out before '
+                                        'requesting any amount.',
+                              'detail': 'Split inflows into guaranteed and maybe, list what can be cut '
+                                        'without hurting sales, and set the amount and repayment date from '
+                                        'the forecast. Skip the deal if it will not bridge to higher '
+                                        'revenue, seasonal relief, a new contract or an operational fix '
+                                        '[Brian M. Hazel Quotes — e3NbWehFdJs @ 00:01:17].'},
+                             {'step': 2,
+                              'title': 'Screen the Bank File Like an Underwriter',
+                              'action': 'Pull the last three to six months of business bank statements and '
+                                        'audit the balances and negative days.',
+                              'detail': 'Confirm the average daily balance clears $3,000 and there are no '
+                                        'more than four negative days a month. Five, six or seven '
+                                        'negative-balance days a month means an automatic decline with '
+                                        "Carbajo's direct lender, and its Plaid read-only connection must "
+                                        'be live [Business Credit — L3n2zgxag4E @ 00:06:10].'},
+                             {'step': 3,
+                              'title': 'Route to the Right Working Capital Product',
+                              'action': 'Match credit, time in business and amount to a term loan, a '
+                                        'revenue-based advance or a revolving line.',
+                              'detail': 'Use term loans at 12, 24 or 36 months, or SBA out to 10 years, '
+                                        'for longer repayment. Use revenue-based advances at 12 to 18 '
+                                        'months for businesses six to 12 months old with any credit '
+                                        'profile. Use revolving lines only for files with a 620 score and '
+                                        'two years in business. Gather financials for any request above '
+                                        '$250,000 [Joe Camberato — GwPGzetluZM @ 00:01:57].'},
+                             {'step': 4,
+                              'title': 'Price, Stress-Test and Plan the Refinance',
+                              'action': 'Convert the factor rate and holdback into repayment scenarios '
+                                        'across slow and hot revenue months.',
+                              'detail': 'Run the flat fee against fast and slow revenue to see how far the '
+                                        "effective APR moves. Bootstrapp's 6% fee hits roughly a 44% APR "
+                                        'at $600,000 a month and stretches to 38 months at $25,000. If a '
+                                        'fast payoff is likely, weigh time against the cost of capital '
+                                        'before signing [Bootstrapp — U0fB6ZY7Cpo @ 00:05:12].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest street-level split is whether revenue-based financing and the '
+                              'merchant cash advance are one product under two labels. Joe Camberato says '
+                              'flatly that revenue-based financing is also known as merchant cash advance, '
+                              'written on a purchase and sale agreement, with the funder collecting '
+                              'through card sales or a daily, weekly, bi-weekly or monthly payment until '
+                              'the purchased amount is back [U1zLsMRu1ig @ 00:03:10]. Today Capital Group '
+                              'draws the line the other way: the key difference is payment structure, '
+                              'because RBF payments flex with revenue while an MCA typically pulls a fixed '
+                              'daily amount out of the account no matter how much was sold, and a slow '
+                              'week on an MCA can be absolutely brutal [6tGMlJx13g8 @ 00:04:07]. Alex '
+                              'Shvarts of Unbankable sells the flexing version, saying there are no '
+                              'minimum payments and a day with no sales means no payment [MNdDLiTLoNY @ '
+                              '00:03:06]. Zach Siegel makes the fixed version his first red flag: if cash '
+                              'gets pulled every weekday, walk away or make sure the money is working '
+                              'toward something better, because one bad day or a few missed payments can '
+                              'trigger overdrafts, defaults and a tanked credit score [Yq5OojmQIac @ '
+                              '00:00:50]. Read the remittance mechanic before trusting the product name.',
+                              'Practitioners also split on how to judge price. Camberato frames cost as a '
+                              'factor rate, using $100,000 at a 1.10 factor for $110,000 repaid, plus a '
+                              'possible 1 to 3% origination fee deducted from the advance [U1zLsMRu1ig @ '
+                              '00:02:24]. Shvarts concedes revenue-based money is often more expensive up '
+                              'front, models $130,000 of receivables sold for $100,000 today, and argues '
+                              'that paying more for speed and flexibility sometimes costs less once the '
+                              'opportunity cost of a three-month bank wait is counted [MNdDLiTLoNY @ '
+                              '00:06:56]. Bootstrapp attacks the same deal from the APR side: on a 6% fee, '
+                              'a company that rockets to $600K a month pays the $100K back in under three '
+                              'months and its APR jumps to roughly 44%, so a founder confident of that '
+                              'result might borrow at 9% elsewhere and save the fee [U0fB6ZY7Cpo @ '
+                              '00:04:39]. The same model shows APR falling when revenue is slower, because '
+                              'the fee is fixed and simply stretched over more months. Siegel sets the '
+                              'ceiling: a 1.499 factor, meaning $149,900 repaid on $100K, only belongs on '
+                              'a file that already has multiple lenders debiting, and it should never be '
+                              'taken on a first funding [Yq5OojmQIac @ 00:01:47]. Cheap and fast pull in '
+                              'opposite directions.',
+                              'The widest disagreement is whether to raise outside money at all. Kevin '
+                              "O'Leary and Mark Cuban answer a founder without a wealthy network with the "
+                              'line that sweat equity is the best equity, claiming at least 90 to 95% of '
+                              'small business startups can start without raising any capital, and they '
+                              'tell the founder to keep the day job, drive Uber nights and weekends, and '
+                              'get revenue in before quitting [HKB_cwWcRaE @ 00:00:20]. Taber Small of '
+                              'Prominence Strategic Capital pushes the opposite end: anything under $20 '
+                              'million is barely a private equity deal to family offices, and a $10 '
+                              'million deal takes the same time as a $100 million one, so Small chases '
+                              'bigger structures and bigger investors [2_gq6XRm47I @ 00:23:25]. Today '
+                              'Capital Group frames venture money as selling a permanent 25% slice that '
+                              'shrinks with every round, while RBF leaves the pie 100% yours and adds no '
+                              'new voice to the board [6tGMlJx13g8 @ 00:03:33]. Enterprise Industry '
+                              'Network refuses to crown a winner: debt protects ownership but demands '
+                              'repayment discipline, equity is a control decision as much as a capital '
+                              'decision, and revenue-based funding adds flexibility but can squeeze cash '
+                              'flow if structured carelessly [mXnUmcIc8Ek @ 00:01:33]. Capital has to '
+                              'match the stage.'],
+               'table': {'caption': 'Competing playbooks on working capital, revenue-based financing and '
+                                    'capital raising',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether revenue-based financing is really just a merchant cash advance',
+                                   'Camberato treats revenue-based financing as merchant cash advance '
+                                   'written on a purchase and sale agreement',
+                                   'Today Capital Group says an MCA pulls a fixed daily amount while true '
+                                   'RBF flexes with sales',
+                                   'Joe Camberato ([U1zLsMRu1ig @ 00:00:00]); Today Capital Group '
+                                   '([6tGMlJx13g8 @ 00:04:07])'],
+                                  ['How an operator should price a revenue-based offer fairly',
+                                   'Read it as a factor rate, such as 1.10 on $100,000 plus 1 to 3% '
+                                   'origination',
+                                   'Stick to a 4 to 8% fee range and walk away from opaque terms '
+                                   'immediately',
+                                   'Joe Camberato ([U1zLsMRu1ig @ 00:02:24]); Today Capital Group '
+                                   '([6tGMlJx13g8 @ 00:05:51])'],
+                                  ['Bank working capital loan versus revenue-based money for the same need',
+                                   'Bank path wants 700-plus credit, two profitable years, and approvals '
+                                   'that run 30 to 90 days',
+                                   'RBF path approves on performance in 24 to 48 hours with a 550 score '
+                                   'floor',
+                                   'Unbankable with Alex Shvarts ([MNdDLiTLoNY @ 00:01:57])'],
+                                  ['Speed versus cost of capital when the growth bet actually works',
+                                   'Take RBF when results are uncertain because APR falls as the payback '
+                                   'period stretches out',
+                                   'If $100K reliably drives $600K months, borrow at 9% elsewhere instead '
+                                   'of paying 44% APR',
+                                   'Bootstrapp ([U0fB6ZY7Cpo @ 00:04:39])'],
+                                  ['Whether an owner should ever accept a daily-debit repayment facility',
+                                   'Siegel says walk away from weekday debits unless the money works '
+                                   'toward something better',
+                                   'Carbajo shows lenders like Loot offering daily or weekly autopay as '
+                                   'standard draw options',
+                                   'Zach Siegel ([Yq5OojmQIac @ 00:00:50]); Business Credit ([L3n2zgxag4E '
+                                   '@ 00:08:36])'],
+                                  ['Raise outside capital now or bootstrap the business first',
+                                   "O'Leary and Cuban say sweat equity is best and 90 to 95% of startups "
+                                   'need no capital',
+                                   'Small chases $20 million-plus deals because $100 million takes the '
+                                   'same time as $10 million',
+                                   "Kevin O'Leary ([HKB_cwWcRaE @ 00:00:20]); The Capital Alliance TV "
+                                   '([2_gq6XRm47I @ 00:23:25])'],
+                                  ['Funding route for owners without a long revenue history yet',
+                                   'Carbajo routes owners with 680-plus personal credit into three to four '
+                                   'business cards in 14 to 20 days',
+                                   'Camberato routes six-to-twelve-month businesses into revenue-based '
+                                   'advances up to $250,000 off six months of statements',
+                                   'Business Credit ([L3n2zgxag4E @ 00:10:27]); Joe Camberato '
+                                   '([GwPGzetluZM @ 00:02:14])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap sits on the processing statement, not the funding contract. '
+                              'Sam Johnson, presenting on Insightful Accountant, reports that payment '
+                              'companies stuffed Level 3 fields with garbage data to win cheaper '
+                              'interchange, so Visa launched CEDP and began using AI to scrub the data and '
+                              'downgrade false submissions to the worst possible rate [TEwsEYj6XTI @ '
+                              '00:21:20]. Merchants who believed an automated tool had them qualified '
+                              'watched costs rise and nobody told them, which is why Johnson tells owners '
+                              'to compare current statements against ones from a year ago [TEwsEYj6XTI @ '
+                              '00:22:57]. Matt Dubois confirms the squeeze from the other side: Level 2 is '
+                              'gone, those transactions have been downgraded to standard rates since '
+                              'April, and placeholder or junk data no longer qualifies for Product 3 '
+                              '[vPF9bO_izWU @ 00:00:49]. The manual fix carries its own bill: one early '
+                              'client saved close to $100,000 a year on Level 3 but kept a full-time '
+                              'administrative employee keying data into every transaction [TEwsEYj6XTI @ '
+                              '00:46:32]. Johnson also warns that a percentage convenience fee breaks '
+                              'card-brand rules, which require a flat amount tied to real buyer '
+                              'convenience, and that flat-rate pricing inside QuickBooks is usually '
+                              'inflated above an interchange plus model.',
+                              'On the funding side, money leaks out through fees, guarantees and '
+                              'bank-account behavior rather than headline rates. Siegel reports that some '
+                              'offers turn a $50K loan into $43K after fees, with origination above 10%, '
+                              'and calls any offer without prepayment incentives an instant red flag, '
+                              'since most funders give 5 to 20% off remaining fees or even 100% interest '
+                              'forgiveness for early payoff [Yq5OojmQIac @ 00:02:08]. Marco Carbajo of '
+                              'Business Credit Builders shows how the account itself gets a file killed: '
+                              'the lender Loot requires a Plaid connection with no paper statements '
+                              'accepted, a $3,000 average daily balance, and declines automatically at '
+                              'more than four negative days a month [L3n2zgxag4E @ 00:06:10]. Camberato '
+                              'warns that purchase-and-sale deals usually skip the personal guarantee but '
+                              'can carry a performance guarantee that you will not do anything during '
+                              'repayment to divert sales or money away from the funder [U1zLsMRu1ig @ '
+                              "00:03:27]. The errors on Shvarts's list are choosing on cost alone, "
+                              'assuming you cannot qualify for a bank loan without actually trying, and '
+                              'waiting too long to explore alternatives after a bank says no [MNdDLiTLoNY '
+                              '@ 00:08:37]. Each of these traps shows up on paper before the money lands.',
+                              'The hardest losses come from borrowing into a business that cannot convert '
+                              'the money into margin. Brian M. Hazel maps 13 weeks of cash in and out '
+                              'before borrowing and refuses any loan that will not bridge to higher '
+                              'revenue, ease seasonality, fulfill a new contract or fund an operational '
+                              'fix; the payback test is concrete, with $50K into inventory required to '
+                              'turn in 45 to 90 days at 35% margin or better, and if performance '
+                              'indicators miss five days in a row, spending pauses and the forecast is '
+                              'redone [e3NbWehFdJs @ 00:02:25]. Robert Cinapri of CFO Collective names the '
+                              'three symptoms of a business that has outgrown itself: top line growing '
+                              'while profit stays flat, constant cash flow crisis without the working '
+                              'capital to support growth, and an owner burning out [Ja8jXRIkOK4 @ '
+                              "00:15:58]. Bootstrapp's model shows the downside of RBF when the spend "
+                              'fails: revenue sliding to $25K a month stretches the same $100K payoff to '
+                              '38 months and leaves the funder waiting three years instead of three months '
+                              '[U0fB6ZY7Cpo @ 00:05:30]. Taber Small adds the broker-side penalty: bring '
+                              'family offices and investment banks deals that do not make sense and they '
+                              'stop answering your phone calls [2_gq6XRm47I @ 00:27:15].'],
+               'table': {'caption': 'Firsthand failure modes and the economics check each one demands',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Automated Level 3 data quietly downgraded under Visa CEDP',
+                                   'Payment companies stuffed Level 3 fields with garbage and Visa '
+                                   'downgraded those transactions to the worst rate',
+                                   "Compare this year's card statements against last year's to see whether "
+                                   'rates quietly increased',
+                                   'Insightful Accountant ([TEwsEYj6XTI @ 00:22:57])'],
+                                  ['Level 2 business card transactions falling to standard rates',
+                                   'Since April, Level 2 transactions get downgraded to standard rates and '
+                                   'owners saw fees rise',
+                                   'Clean enhanced data is worth roughly $50 to $150 on every $10,000 '
+                                   'qualifying invoice',
+                                   'Matt Dubois ([vPF9bO_izWU @ 00:00:49])'],
+                                  ['Manual Level 3 data entry eating a full-time salary',
+                                   'One client saved close to $100,000 a year but paid a full-time '
+                                   'employee to key every transaction',
+                                   'Weigh the interchange savings against the labor cost before choosing a '
+                                   'manual entry process',
+                                   'Insightful Accountant ([TEwsEYj6XTI @ 00:46:32])'],
+                                  ['Paper check billing and receiving draining accounts receivable '
+                                   'overhead',
+                                   'Six hundred invoices a month on paper billing and receiving runs about '
+                                   '$6,000 monthly in overhead',
+                                   'That annualizes to roughly $73,000, which the presenter calls '
+                                   "somebody's entire salary",
+                                   'Insightful Accountant ([TEwsEYj6XTI @ 00:39:03])'],
+                                  ['Fee-gouged revenue-based offer accepted on a first funding',
+                                   'A $50K loan turns into $43K after fees once origination runs above 10%',
+                                   'A 1.499 factor on a first funding is a flat do-not-take signal from '
+                                   'Siegel',
+                                   'Zach Siegel ([Yq5OojmQIac @ 00:01:47])'],
+                                  ['Bank account red marks triggering an automatic lender decline',
+                                   'Loot automatically declines files showing more than four negative days '
+                                   'in a month',
+                                   'Hold at least a $3,000 average daily balance and $200,000 annual '
+                                   'revenue through the account',
+                                   'Business Credit ([L3n2zgxag4E @ 00:06:10])'],
+                                  ['Deal stalled for a year under the wrong capital advisor',
+                                   'A four-hotel sponsor sat on contract for about a year while a previous '
+                                   'broker failed to close',
+                                   'Small closed with an 80 to 82% LTV loan, a seller note and investors '
+                                   'from a list',
+                                   'The Capital Alliance TV ([2_gq6XRm47I @ 00:21:02])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill Switches Before Any Signature or Draw',
+                           'body': 'Every item below comes from a loss, downgrade or decline the '
+                                   'practitioners watched happen. Clear all four before an offer gets '
+                                   'signed or a card program gets switched.',
+                           'items': ['Refuse a first funding quoted at a 1.499 factor or with origination '
+                                     'above 10% of the advance [Zach Siegel — Yq5OojmQIac @ 00:01:47].',
+                                     'Clear negative days to four or fewer per month and hold a $3,000 '
+                                     'average daily balance before connecting Plaid [Business Credit — '
+                                     'L3n2zgxag4E @ 00:06:10].',
+                                     'Pull current card statements, compare them with year-ago rates, and '
+                                     'confirm Level 3 data is real line-item data rather than placeholders '
+                                     '[Insightful Accountant — TEwsEYj6XTI @ 00:22:57].',
+                                     'Map 13 weeks of cash in and out and refuse any loan that will not '
+                                     'bridge to higher revenue, ease seasonality, fulfill a contract or '
+                                     'fix operations [Brian M. Hazel Quotes — e3NbWehFdJs @ 00:01:17].']}}],
+ 'pull_quote': "Getting the wrong kind of funding facility can put you in a big hole that's really "
+               'difficult to get out of. — Zach Siegel (Yq5OojmQIac @ 00:00:00).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Pull the last 4 months of business bank statements and check the file against a 550 '
+                      'score floor, 6 months in business and $20,000 monthly revenue [Unbankable with Alex '
+                      'Shvarts — MNdDLiTLoNY @ 00:07:32].',
+                      'Demand written prepayment incentives, such as 5 to 20% off remaining fees or 50 to '
+                      '100% interest forgiveness, and treat their absence as a red flag [Zach Siegel — '
+                      'Yq5OojmQIac @ 00:02:26].',
+                      'Confirm the revenue holdback sits between 5 and 16% and push back on anything '
+                      'higher as high-risk pricing [Zach Siegel — Yq5OojmQIac @ 00:03:17].',
+                      'Use revenue-based money for the immediate need, then refinance into traditional '
+                      'business loans once revenue and credit improve [Unbankable with Alex Shvarts — '
+                      'MNdDLiTLoNY @ 00:08:21].',
+                      'Send clean line-item invoice data, including product code, quantity, unit of '
+                      'measure, unit price, tax and discounts, on every business card sale to qualify for '
+                      'Product 3 [Matt Dubois — vPF9bO_izWU @ 00:00:49].',
+                      'Build fully loaded costing by customer and either raise prices on or cut off small, '
+                      'high-maintenance accounts that lose money [Selling Your Canadian Business — '
+                      'Ja8jXRIkOK4 @ 00:23:27].'],
+ 'statutory_citations': [{'title': 'Unbankable with Alex Shvarts — Working Capital Loan vs Revenue-Based '
+                                   'Financing: Which One Should I Choose for My Business? [00:04:05]',
+                          'url': 'https://www.youtube.com/watch?v=MNdDLiTLoNY&t=245s',
+                          'relevance': 'Primary practitioner testimony on selling $130,000 of receivables '
+                                       'for $100,000 with remittance at 10% of monthly sales.'},
+                         {'title': 'Today Capital Group — Revenue-Based Financing Explained (RBF vs Loans '
+                                   'vs VC + Red Flags to Avoid) [00:04:07]',
+                          'url': 'https://www.youtube.com/watch?v=6tGMlJx13g8&t=247s',
+                          'relevance': 'Primary practitioner testimony on the fixed daily MCA debit versus '
+                                       'revenue-flexing RBF payments.'},
+                         {'title': 'Zach Siegel — Revenue-Based Financing: What Lenders Won’t Tell You '
+                                   '(Red & Green Flags) [00:00:33]',
+                          'url': 'https://www.youtube.com/watch?v=Yq5OojmQIac&t=33s',
+                          'relevance': 'Primary practitioner testimony on red and green flags in '
+                                       'alternative financing offers.'},
+                         {'title': 'Insightful Accountant — How to Reduce B2B Credit Card Processing Fees '
+                                   '| Future Forward November 2026 [00:21:58]',
+                          'url': 'https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1318s',
+                          'relevance': 'Primary practitioner testimony on Visa CEDP scrubbing Level 3 data '
+                                       'and downgrading false submissions.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'TEwsEYj6XTI',
+                       'title': 'How to Reduce B2B Credit Card Processing Fees | Future Forward November '
+                                '2026',
+                       'channel': 'Insightful Accountant',
+                       'author': 'Insightful Accountant',
+                       'text': 'Last year they implemented this program called CEDP where basically they '
+                               'started using AI to scrub the level three data that they were receiving.',
+                       'tip': 'Last year they implemented this program called CEDP where basically they '
+                              'started using AI to scrub the level three data that they were receiving.',
+                       'timestamp': 1318,
+                       'timestamp_seconds': 1318,
+                       'timestamp_label': '[00:21:58]',
+                       'url': 'https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1318s',
+                       'markdown': '[00:21:58](https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1318s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TEwsEYj6XTI',
+                       'title': 'How to Reduce B2B Credit Card Processing Fees | Future Forward November '
+                                '2026',
+                       'channel': 'Insightful Accountant',
+                       'author': 'Insightful Accountant',
+                       'text': 'They were saving close to $100,000 annually on level three processing.',
+                       'tip': 'They were saving close to $100,000 annually on level three processing.',
+                       'timestamp': 2771,
+                       'timestamp_seconds': 2771,
+                       'timestamp_label': '[00:46:11]',
+                       'url': 'https://www.youtube.com/watch?v=TEwsEYj6XTI&t=2771s',
+                       'markdown': '[00:46:11](https://www.youtube.com/watch?v=TEwsEYj6XTI&t=2771s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wSWcWyCHkxM',
+                       'title': 'Virtual Cards: Transforming B2B Payment Processes in 2025',
+                       'channel': 'Facilero',
+                       'author': 'Facilero',
+                       'text': 'With virtual cards, each payment can have its own set of card details, so '
+                               "even if one gets compromised, it won't affect the rest of your operations.",
+                       'tip': 'With virtual cards, each payment can have its own set of card details, so '
+                              "even if one gets compromised, it won't affect the rest of your operations.",
+                       'timestamp': 39,
+                       'timestamp_seconds': 39,
+                       'timestamp_label': '[00:00:39]',
+                       'url': 'https://www.youtube.com/watch?v=wSWcWyCHkxM&t=39s',
+                       'markdown': '[00:00:39](https://www.youtube.com/watch?v=wSWcWyCHkxM&t=39s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EtzXCqqxIWI',
+                       'title': 'Fintech Referral Program: How to Build an AI Growth Automation '
+                                'Step-by-Step',
+                       'channel': 'Lamar Duffy',
+                       'author': 'Lamar Duffy',
+                       'text': "Somebody who's referred to your product or service is much more likely to "
+                               'refer somebody else themselves.',
+                       'tip': "Somebody who's referred to your product or service is much more likely to "
+                              'refer somebody else themselves.',
+                       'timestamp': 588,
+                       'timestamp_seconds': 588,
+                       'timestamp_label': '[00:09:48]',
+                       'url': 'https://www.youtube.com/watch?v=EtzXCqqxIWI&t=588s',
+                       'markdown': '[00:09:48](https://www.youtube.com/watch?v=EtzXCqqxIWI&t=588s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vPF9bO_izWU',
+                       'title': 'How B2B Businesses Lower Credit Card Fees (Visa Product 3 Explained)',
+                       'channel': 'Matt Dubois',
+                       'author': 'Matt Dubois',
+                       'text': "Placeholder or junk data doesn't qualify anymore. Clean, real invoice data "
+                               'does.',
+                       'tip': 'On qualifying transactions, enhanced data can lower interchange by roughly '
+                              'half a percent to 1 and 1/2%.',
+                       'timestamp': 49,
+                       'timestamp_seconds': 49,
+                       'timestamp_label': '[00:00:49]',
+                       'url': 'https://www.youtube.com/watch?v=vPF9bO_izWU&t=49s',
+                       'markdown': '[00:00:49](https://www.youtube.com/watch?v=vPF9bO_izWU&t=49s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ja8jXRIkOK4',
+                       'title': 'How a Fractional CFO Helps Canadian Businesses Scale and Prepare for Sale '
+                                'with Robert Cinapri',
+                       'channel': 'Selling Your Canadian Business',
+                       'author': 'Selling Your Canadian Business',
+                       'text': "Your top line is growing, your profit isn't. Right? So, you're scaling "
+                               "your sales, but you're not making more money than you did before.",
+                       'tip': "Your top line is growing, your profit isn't. Right? So, you're scaling your "
+                              "sales, but you're not making more money than you did before.",
+                       'timestamp': 958,
+                       'timestamp_seconds': 958,
+                       'timestamp_label': '[00:15:58]',
+                       'url': 'https://www.youtube.com/watch?v=Ja8jXRIkOK4&t=958s',
+                       'markdown': '[00:15:58](https://www.youtube.com/watch?v=Ja8jXRIkOK4&t=958s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2_gq6XRm47I',
+                       'title': '$100M Is Easier to Get Than $10M — Here’s Why | Taber Small',
+                       'channel': 'The Capital Alliance TV',
+                       'author': 'The Capital Alliance TV',
+                       'text': "The same time it doesn't do a $10 million deal it takes the same time to "
+                               'do a $100 million dollar deal.',
+                       'tip': "The same time it doesn't do a $10 million deal it takes the same time to do "
+                              'a $100 million dollar deal.',
+                       'timestamp': 1405,
+                       'timestamp_seconds': 1405,
+                       'timestamp_label': '[00:23:25]',
+                       'url': 'https://www.youtube.com/watch?v=2_gq6XRm47I&t=1405s',
+                       'markdown': '[00:23:25](https://www.youtube.com/watch?v=2_gq6XRm47I&t=1405s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HKB_cwWcRaE',
+                       'title': "How to Raise Capital For Your Business | Shark Tank's Kevin O'Leary and "
+                                'Mark Cuban',
+                       'channel': "Kevin O'Leary",
+                       'author': "Kevin O'Leary",
+                       'text': 'Sweat equity is the best equity. You start smaller.',
+                       'tip': 'Sweat equity is the best equity. You start smaller.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=HKB_cwWcRaE&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=HKB_cwWcRaE&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MNdDLiTLoNY',
+                       'title': 'Working Capital Loan vs Revenue-Based Financing: Which One Should I '
+                                'Choose for My Business?',
+                       'channel': 'Unbankable with Alex Shvarts',
+                       'author': 'Unbankable with Alex Shvarts',
+                       'text': "In order to apply for revenue-based finance, most likely you're going to "
+                               'need a minimum score of only 550.',
+                       'tip': "In order to apply for revenue-based finance, most likely you're going to "
+                              'need a minimum score of only 550.',
+                       'timestamp': 436,
+                       'timestamp_seconds': 436,
+                       'timestamp_label': '[00:07:16]',
+                       'url': 'https://www.youtube.com/watch?v=MNdDLiTLoNY&t=436s',
+                       'markdown': '[00:07:16](https://www.youtube.com/watch?v=MNdDLiTLoNY&t=436s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U1zLsMRu1ig',
+                       'title': 'Revenue-Based Financing: What Is It, and How Does It Work?',
+                       'channel': 'Joe Camberato',
+                       'author': 'Joe Camberato',
+                       'text': 'Once you get your approval dollar amount, revenue based financing will be '
+                               'based off a factor rate.',
+                       'tip': 'Once you get your approval dollar amount, revenue based financing will be '
+                              'based off a factor rate.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=U1zLsMRu1ig&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=U1zLsMRu1ig&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6tGMlJx13g8',
+                       'title': 'Revenue-Based Financing Explained (RBF vs Loans vs VC + Red Flags to '
+                                'Avoid)',
+                       'channel': 'Today Capital Group',
+                       'author': 'Today Capital Group',
+                       'text': 'With an MCA, you are typically paying back a fixed daily amount that gets '
+                               'yanked out of your bank account no matter how much you sold that day.',
+                       'tip': 'A slow week with an MCA can be absolutely brutal.',
+                       'timestamp': 247,
+                       'timestamp_seconds': 247,
+                       'timestamp_label': '[00:04:07]',
+                       'url': 'https://www.youtube.com/watch?v=6tGMlJx13g8&t=247s',
+                       'markdown': '[00:04:07](https://www.youtube.com/watch?v=6tGMlJx13g8&t=247s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L3n2zgxag4E',
+                       'title': 'Revenue Based Financing | Soft Pull | Line of Credit | Up to $100k | Fast '
+                                'Funding',
+                       'channel': 'Business Credit',
+                       'author': 'Business Credit',
+                       'text': "You can't have more than four negative days in your business bank account "
+                               'per month.',
+                       'tip': "You can't have more than four negative days in your business bank account "
+                              'per month.',
+                       'timestamp': 370,
+                       'timestamp_seconds': 370,
+                       'timestamp_label': '[00:06:10]',
+                       'url': 'https://www.youtube.com/watch?v=L3n2zgxag4E&t=370s',
+                       'markdown': '[00:06:10](https://www.youtube.com/watch?v=L3n2zgxag4E&t=370s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U0fB6ZY7Cpo',
+                       'title': 'How Does Revenue Based Financing Work? -- A 6 minute overview of '
+                                'everything you need to know.',
+                       'channel': 'Bootstrapp',
+                       'author': 'Bootstrapp',
+                       'text': "So now you're making 600 K, your APR shoots up to 44% basically, so you're "
+                               'paying this off in nearly two months.',
+                       'tip': "So now you're making 600 K, your APR shoots up to 44% basically, so you're "
+                              'paying this off in nearly two months.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=U0fB6ZY7Cpo&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=U0fB6ZY7Cpo&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GwPGzetluZM',
+                       'title': 'What Is Working Capital, and How Do I Get a Working Capital Loan?',
+                       'channel': 'Joe Camberato',
+                       'author': 'Joe Camberato',
+                       'text': 'Two is a revenue-based advance, typically those are going to be 12 to 18 '
+                               'month terms.',
+                       'tip': 'Two is a revenue-based advance, typically those are going to be 12 to 18 '
+                              'month terms.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=GwPGzetluZM&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=GwPGzetluZM&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mXnUmcIc8Ek',
+                       'title': 'Debt vs Equity vs Revenue-Based Funding: Which Fits Your Business? | EIN '
+                                'Business Funding | EINBF',
+                       'channel': 'Enterprise Industry Network',
+                       'author': 'Enterprise Industry Network',
+                       'text': "That is why equity funding is not just a capital decision, it's also a "
+                               'control decision.',
+                       'tip': "That is why equity funding is not just a capital decision, it's also a "
+                              'control decision.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=mXnUmcIc8Ek&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=mXnUmcIc8Ek&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e3NbWehFdJs',
+                       'title': 'How to Get Business Funding & Working Capital - BusinessLoansConnect.com',
+                       'channel': 'Brian M. Hazel Quotes',
+                       'author': 'Brian M. Hazel Quotes',
+                       'text': 'For example, 50K into inventory must turn in 45 to 90 days with at least '
+                               '35% margin.',
+                       'tip': 'For example, 50K into inventory must turn in 45 to 90 days with at least '
+                              '35% margin.',
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=e3NbWehFdJs&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=e3NbWehFdJs&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Yq5OojmQIac',
+                       'title': 'Revenue-Based Financing: What Lenders Won’t Tell You (Red & Green Flags)',
+                       'channel': 'Zach Siegel',
+                       'author': 'Zach Siegel',
+                       'text': "If this is what you're being quoted on your first funding, do not take it.",
+                       'tip': "If your 50k loan turns into 43K in funding after fees, that's not a good "
+                              'deal.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=Yq5OojmQIac&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=Yq5OojmQIac&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

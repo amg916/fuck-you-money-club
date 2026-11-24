@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-domain-inventory-to-cash",
-    "diag-02-annual-domain-cohort-funnel",
-    "diag-03-base-case-profit-waterfall",
-    "diag-04-domain-route-contribution-yields",
-    "diag-05-domain-preflight-risk-tree",
-    "diag-06-domain-investing-pod-seats",
-    "diag-07-startup-capital-30000-reference-allocation",
-    "diag-08-thirty-day-domain-launch"
+    "diag-01-beginner-flip-loop",
+    "diag-02-buy-ceiling-funnel",
+    "diag-03-closeout-price-decay",
+    "diag-04-com-registrar-pricing",
+    "diag-05-emd-acquisition-gates",
+    "diag-06-trademark-defense-architecture",
+    "diag-07-backlink-count-spread",
+    "diag-08-first-month-portfolio-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-domain-inventory-to-cash",
-    "diag-02-annual-domain-cohort-funnel",
-    "diag-03-base-case-profit-waterfall",
-    "diag-04-domain-route-contribution-yields",
-    "diag-05-domain-preflight-risk-tree",
-    "diag-06-domain-investing-pod-seats",
-    "diag-07-startup-capital-30000-reference-allocation",
-    "diag-08-thirty-day-domain-launch"
+    "diag-01-beginner-flip-loop",
+    "diag-02-buy-ceiling-funnel",
+    "diag-03-closeout-price-decay",
+    "diag-04-com-registrar-pricing",
+    "diag-05-emd-acquisition-gates",
+    "diag-06-trademark-defense-architecture",
+    "diag-07-backlink-count-spread",
+    "diag-08-first-month-portfolio-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-domain-inventory-to-cash": {
+    "diag-01-beginner-flip-loop": {
       "concept_a": {
-        "graphic_id": "diag-01-domain-inventory-to-cash",
+        "graphic_id": "diag-01-beginner-flip-loop",
         "graphic_type": "diagram",
-        "label": "Operate the Domain Inventory-to-Cash Loop",
+        "label": "The Buy-Low, Sell-High Flip Loop",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-domain-inventory-to-cash",
+        "graphic_id": "diag-01-beginner-flip-loop",
         "graphic_type": "diagram",
-        "label": "Operate the Domain Inventory-to-Cash Loop",
+        "label": "The Buy-Low, Sell-High Flip Loop",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-domain-inventory-to-cash",
+        "graphic_id": "diag-01-beginner-flip-loop",
         "graphic_type": "diagram",
-        "label": "Operate the Domain Inventory-to-Cash Loop",
+        "label": "The Buy-Low, Sell-High Flip Loop",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-annual-domain-cohort-funnel": {
+    "diag-02-buy-ceiling-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-annual-domain-cohort-funnel",
+        "graphic_id": "diag-02-buy-ceiling-funnel",
         "graphic_type": "diagram",
-        "label": "Track Domains Through One Nested Annual Cohort",
+        "label": "Making Money on the Buy",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-annual-domain-cohort-funnel",
+        "graphic_id": "diag-02-buy-ceiling-funnel",
         "graphic_type": "diagram",
-        "label": "Track Domains Through One Nested Annual Cohort",
+        "label": "Making Money on the Buy",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-annual-domain-cohort-funnel",
+        "graphic_id": "diag-02-buy-ceiling-funnel",
         "graphic_type": "diagram",
-        "label": "Track Domains Through One Nested Annual Cohort",
+        "label": "Making Money on the Buy",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-profit-waterfall": {
+    "diag-03-closeout-price-decay": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-closeout-price-decay",
         "graphic_type": "diagram",
-        "label": "Reconcile $160,000 Gross Sales to $44,000 Owner Net",
+        "label": "GoDaddy Closeout Buy-Now Price Decay",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-closeout-price-decay",
         "graphic_type": "diagram",
-        "label": "Reconcile $160,000 Gross Sales to $44,000 Owner Net",
+        "label": "GoDaddy Closeout Buy-Now Price Decay",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-closeout-price-decay",
         "graphic_type": "diagram",
-        "label": "Reconcile $160,000 Gross Sales to $44,000 Owner Net",
+        "label": "GoDaddy Closeout Buy-Now Price Decay",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-domain-route-contribution-yields": {
+    "diag-04-com-registrar-pricing": {
       "concept_a": {
-        "graphic_id": "diag-04-domain-route-contribution-yields",
+        "graphic_id": "diag-04-com-registrar-pricing",
         "graphic_type": "diagram",
-        "label": "Compare Direct Contribution Across Domain Sale Routes",
+        "label": ".com Pricing Across Dedicated Registrars",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-domain-route-contribution-yields",
+        "graphic_id": "diag-04-com-registrar-pricing",
         "graphic_type": "diagram",
-        "label": "Compare Direct Contribution Across Domain Sale Routes",
+        "label": ".com Pricing Across Dedicated Registrars",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-domain-route-contribution-yields",
+        "graphic_id": "diag-04-com-registrar-pricing",
         "graphic_type": "diagram",
-        "label": "Compare Direct Contribution Across Domain Sale Routes",
+        "label": ".com Pricing Across Dedicated Registrars",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-domain-preflight-risk-tree": {
+    "diag-05-emd-acquisition-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-domain-preflight-risk-tree",
+        "graphic_id": "diag-05-emd-acquisition-gates",
         "graphic_type": "diagram",
-        "label": "Resolve Four Pre-Flight Rights and Execution Checks",
+        "label": "Exact-Match Domain Acquisition Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-domain-preflight-risk-tree",
+        "graphic_id": "diag-05-emd-acquisition-gates",
         "graphic_type": "diagram",
-        "label": "Resolve Four Pre-Flight Rights and Execution Checks",
+        "label": "Exact-Match Domain Acquisition Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-domain-preflight-risk-tree",
+        "graphic_id": "diag-05-emd-acquisition-gates",
         "graphic_type": "diagram",
-        "label": "Resolve Four Pre-Flight Rights and Execution Checks",
+        "label": "Exact-Match Domain Acquisition Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-domain-investing-pod-seats": {
+    "diag-06-trademark-defense-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-domain-investing-pod-seats",
+        "graphic_id": "diag-06-trademark-defense-architecture",
         "graphic_type": "diagram",
-        "label": "Keep the Core Pod Small and Add Two Seats Deliberately",
+        "label": "Trademark and Dispute Defense Around the Portfolio",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-domain-investing-pod-seats",
+        "graphic_id": "diag-06-trademark-defense-architecture",
         "graphic_type": "diagram",
-        "label": "Keep the Core Pod Small and Add Two Seats Deliberately",
+        "label": "Trademark and Dispute Defense Around the Portfolio",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-domain-investing-pod-seats",
+        "graphic_id": "diag-06-trademark-defense-architecture",
         "graphic_type": "diagram",
-        "label": "Keep the Core Pod Small and Add Two Seats Deliberately",
+        "label": "Trademark and Dispute Defense Around the Portfolio",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-30000-reference-allocation": {
+    "diag-07-backlink-count-spread": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-30000-reference-allocation",
+        "graphic_id": "diag-07-backlink-count-spread",
         "graphic_type": "diagram",
-        "label": "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
+        "label": "One URL, Four Backlink Counts",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-30000-reference-allocation",
+        "graphic_id": "diag-07-backlink-count-spread",
         "graphic_type": "diagram",
-        "label": "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
+        "label": "One URL, Four Backlink Counts",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-30000-reference-allocation",
+        "graphic_id": "diag-07-backlink-count-spread",
         "graphic_type": "diagram",
-        "label": "Allocate a $30,000 Reference Startup Budget Across Four Buckets",
+        "label": "One URL, Four Backlink Counts",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-domain-launch": {
+    "diag-08-first-month-portfolio-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-domain-launch",
+        "graphic_id": "diag-08-first-month-portfolio-roadmap",
         "graphic_type": "diagram",
-        "label": "Build an Auditable Domain Desk in Thirty Days",
+        "label": "First-Month Portfolio Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-domain-launch",
+        "graphic_id": "diag-08-first-month-portfolio-roadmap",
         "graphic_type": "diagram",
-        "label": "Build an Auditable Domain Desk in Thirty Days",
+        "label": "First-Month Portfolio Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-domain-launch",
+        "graphic_id": "diag-08-first-month-portfolio-roadmap",
         "graphic_type": "diagram",
-        "label": "Build an Auditable Domain Desk in Thirty Days",
+        "label": "First-Month Portfolio Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

@@ -8,49 +8,49 @@
       "RECOVERY"
     ],
     "deck": [
-      "SCREEN COLLECTABILITY. PERFECT LIENS.",
-      "ENFORCE WITH COUNSEL."
+      "SCREEN, ASSIGN, LOCATE ASSETS, AND ENFORCE THE 80 PERCENT OF JUDGMENTS COURTS NEVER COLLECT",
+      "GARNISHMENTS, LEVIES, LIENS, DEBTOR EXAMS, AND COMPLIANCE GATES BUILT INTO CONTINGENCY DEAL FLOW"
     ],
-    "lead": "Unsatisfied Commercial Judgment Underwriting, Assignee-of-Record Protocols, Post-Judgment Discovery & Attorney Co-Enforcement",
-    "summary": "Filter civil dockets for solvent operating debtors, avoid uncollectible paper, and execute lawful levy, lien, and settlement recoveries.",
+    "lead": "Courts award money but never enforce it, so the practitioners in these 12 chapters take assignment of unpaid judgments, front enforcement costs, locate bank accounts, wages, and property, and keep one-third to one-half of what they collect.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies covering the judgment recovery business, from assignments and debtor examinations to garnishments, liens, out-of-state domestication, bankruptcy, FDCPA and Regulation F risk, and judgment lifespan. Every claim, metric, pro-tip, and operator gate carries timestamped inline attribution to the practitioner channel and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The Judgment Recovery Business Opportunity",
+      "Assignments, Legal Boundaries, and Deal Paperwork",
+      "Post-Judgment Enforcement Fundamentals",
+      "Debtor Examinations and Citations to Discover Assets",
+      "Wage Garnishments, Bank Levies, and Writs of Execution",
+      "Judgment Liens, Abstracts, and Real Property",
+      "Skip Tracing, Asset Investigation, and Court Record Research",
+      "Domesticating and Enforcing Foreign and Out-of-State Judgments",
+      "Bankruptcy, Creditor Claims, and Claims Trading",
+      "Commercial Debt Recovery and Collection Operations",
+      "FDCPA and Regulation F Compliance Risk",
+      "Judgment Lifespan, Statutes of Limitation, and Debtor Resistance"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "SCREEN",
+        "Check bankruptcy filings and death records first, then rate each judgment on where the debtor moved, its size, and other judgments, refusing the roughly 30 percent rated uncollectible"
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "ASSIGN",
+        "Convert the creditor's judgment into a notarized assignment on a 50/50 contingency split or cash purchase, and do not start collecting until it is filed and returned by the court"
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "LOCATE",
+        "Confirm an attachable asset exists before signing, locating bank accounts first and sending notices only to debtors with a verified asset"
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "ENFORCE",
+        "Pursue driver's license suspension, bank garnishment, wage garnishment of up to 25 percent of gross pay, liens, and till taps"
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "SETTLE",
+        "Trade writ dismissal for $500 down plus $100 to $200 a month, building a payment stream of about $3,000 per month by the third month"
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "SATISFY",
+        "File SC-130, SC-290, or EJ-100 on full payment without letting a debtor's written demand sit 14 days, and re-check dead files about six months later"
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "JUDGMENT RECOVERY",
-  "subtitle": "The Complete Playbook for Judgment Recovery: $60,000–$500,000 USD in Annual Service Fees, from a 1 FT + 3 C (4 People) Pod to a Six-Person Team",
+  "subtitle": "Take the Assignment, Trace the Assets, Levy Every Bank, Record the Lien, and Keep the Judgment Alive Without Breaking Collection Rules",
   "chapter_count": 12,
-  "total_word_count": 77362,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73965,
+  "expert_youtube_link_count": 212,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

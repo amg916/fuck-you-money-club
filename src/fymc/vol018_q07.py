@@ -1,1135 +1,855 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "land-flipping-complete-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute land flipping end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "County GIS to Insured Closing: SQLite Event Accounting, Recorded Access, UCC-Aware Title Review, and a Cash-Reconciled Land Cohort",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
-        "This chapter maps six operator plays: county screening, owner sourcing, access-cleared "
-        "vacant resale, buildable infill, minor subdivision, and title-insured disposition. "
-        "A one-full-time-owner, three-contractor pod runs evidence-backed acquisitions rather "
-        "than speculative parcel accumulation. Six executable reference modules connect intake, "
-        "screening, verification, escrow states, immutable accounting events, and bank reconciliation. "
-        "The worked cohort separates $212,500 of quarterly gross sale proceeds from acquisition "
-        "basis, operating expense, and unsold inventory. Annual owner profits remain exactly "
-        "$24,000 Conservative, $157,250 Base, and $375,000 Scaled. The operating discipline is "
-        "simple: document access, price verified uses, preserve closing evidence, and reconcile "
-        "every dollar before recycling acquisition capital."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Route six plays through one evidence-controlled acquisition pod",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a county, a buyer profile, and an explicit exclusion map, not a national "
-                    "list of inexpensive acreage. Candidate #6's six chapter-mapped plays are county "
-                    "screening, owner sourcing, access-cleared vacant resale, buildable infill, minor "
-                    "subdivision, and title-insured disposition. County screening identifies the operating "
-                    "territory; owner sourcing creates permissioned conversations and offers; the next "
-                    "three plays describe alternative parcel treatments; disposition converts inventory "
-                    "into collected sale proceeds. They are not six simultaneous businesses or six "
-                    "independent revenue streams. Use QGIS with county assessor polygons, recorded "
-                    "plats, FEMA flood layers, and dated aerial imagery to establish the first-pass "
-                    "universe. Preserve county identifiers and leading zeros in assessor parcel numbers; "
-                    "an address is neither a stable parcel key nor proof of ownership. Track the "
-                    "source date of every layer because assessment boundaries and recently recorded "
-                    "splits can disagree. Reject parcels outside the chosen buyer's price, access, "
-                    "utility, or topography envelope before purchasing expensive reports. A low "
-                    "assessment does not establish a discount, and an advertised road does not "
-                    "establish a recorded right of passage. Screening produces a research queue; "
-                    "only verified instruments and settlement evidence advance a parcel toward cash."
-                ),
-                (
-                    "Constrain the Base pod to one full-time owner and three scoped contractors: "
-                    "a GIS and comparable-sales analyst, a title and escrow provider, and a survey "
-                    "or land-use specialist. The owner controls offers, acquisition capital, exceptions, "
-                    "and buyer negotiations. Contractor counts describe recurring delivery relationships, "
-                    "not three full-time salaries hidden inside a small expense allowance. Obtain "
-                    "written scopes and quotes; engage additional specialists only by replacing scope "
-                    "or explicitly revising the operating plan. Reserve a thirty-six-hour owner week "
-                    "across sourcing, underwriting, contractor review, disposition, and reconciliation. "
-                    "Keep four hours available for access disputes, failed closings, and seller "
-                    "documents rather than selling all forty hours to a spreadsheet. The cohort "
-                    "budget uses $6,000 monthly operating expense, within the canonical $3,000 to "
-                    "$15,000 range, and includes recurring contractor support and unsuccessful "
-                    "diligence. Settlement-specific costs sit separately in deal expense. Owner profit "
-                    "is the modeled residual before owner distributions; do not quietly add an "
-                    "owner salary and still claim the same margin. Limit active acquisitions to "
-                    "the capital and specialist capacity actually available. A speculative subdivision "
-                    "can occupy the same survey resource needed to rescue an otherwise straightforward "
-                    "infill closing."
-                ),
-                (
-                    "Underwrite the exit before negotiating the purchase. Build a comparable-sale packet "
-                    "from recorded transfers, verified brokerage information, and direct buyer feedback; "
-                    "separate closed sales from listings and exclude transfers with materially different "
-                    "access, utilities, entitlement, or acreage. Calculate the offer ceiling as expected "
-                    "gross resale proceeds less acquisition basis additions, selling costs, holding "
-                    "costs, allocated operating expense, and required owner profit. Do not multiply "
-                    "county assessed value by an arbitrary discount and call the result underwriting. "
-                    "For access-cleared vacant resale, obtain the recorded easement and confirm its "
-                    "benefited parcel, permitted uses, maintenance obligations, and connection to a "
-                    "public road. For infill, obtain the applicable zoning text, setbacks, minimum "
-                    "lot dimensions, utility service conditions, and a defensible buildable envelope. "
-                    "For minor subdivisions, establish the local plat procedure and realistic survey, "
-                    "review, improvement, and recording costs before assuming additional saleable "
-                    "lots. California Government Code sections 66424 and 66426 illustrate why "
-                    "parcel creation is a statutory process rather than a GIS drawing exercise. "
-                    "Keep the worked cohort on existing parcels without entitlement upside. That "
-                    "choice isolates ordinary acquisition and disposition execution from development "
-                    "risk and prevents an unapproved split from subsidizing the Base margin."
-                ),
-            ],
-            "table": {
-                "caption": "Six Mapped Land-Flipping Plays and Four-Person Pod Responsibilities",
-                "headers": [
-                    "Mapped operator play",
-                    "Required evidence and named working tools",
-                    "Accountable pod member and capacity boundary",
-                    "Economic decision and principal failure mode",
-                ],
-                "rows": [
-                    [
-                        "Play one: county screening establishes a repeatable acquisition territory.",
-                        "QGIS project preserves assessor polygons, source dates, flood overlays, and exclusions.",
-                        "GIS contractor researches; owner approves one bounded county acquisition thesis.",
-                        "Reject weak buyer demand before spending scarce title and survey dollars.",
-                    ],
-                    [
-                        "Play two: owner sourcing turns selected parcels into priced offers.",
-                        "Recorded ownership, mailing provenance, response history, and signed offer terms remain linked.",
-                        "Owner handles negotiations; analyst prepares evidence without representing unrelated sellers.",
-                        "Measure accepted offers against collected sale proceeds rather than lead counts.",
-                    ],
-                    [
-                        "Play three: access-cleared vacant resale monetizes a verified usability discount.",
-                        "Recorded easement, public-road connection, survey exceptions, and maintenance duties support pricing.",
-                        "Title provider checks instruments; survey specialist resolves physical boundary conflicts.",
-                        "A visible track without enforceable access can destroy the planned exit.",
-                    ],
-                    [
-                        "Play four: buildable infill matches small parcels with identified builders.",
-                        "Zoning text, setbacks, utility letters, and topographic envelope substantiate buyer utility.",
-                        "Land-use specialist checks constraints; owner obtains direct builder price feedback.",
-                        "Utility extension costs can exceed the apparent discount on purchase price.",
-                    ],
-                    [
-                        "Play five: minor subdivision creates lots only through completed local procedures.",
-                        "Survey proposal, subdivision ordinance, agency conditions, and recorded plat define deliverables.",
-                        "Survey specialist owns technical scope; owner caps capital and calendar exposure.",
-                        "Keep unrecorded additional lots outside booked revenue and cohort exit assumptions.",
-                    ],
-                    [
-                        "Play six: title-insured disposition converts owned inventory into reconciled cash.",
-                        "Executed contract, settlement statement, deed recording, and title coverage support closure.",
-                        "Escrow provider closes; owner independently confirms bank receipt and accounting entries.",
-                        "Report gross parcel proceeds while deducting acquisition basis and settlement costs.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four checks that protect the land spread",
-                "body": "Experienced operators buy document-supported usability, not attractive satellite images.",
-                "items": [
-                    "Ask the title examiner to identify the exact recorded instrument supplying access; compare its legal description with the parcel being acquired.",
-                    "Request both utility availability and the conditions of service; a nearby main can still require expensive extensions, capacity work, or easements.",
-                    "Call two actual builders about a dimensioned infill sketch before using their neighborhood sales as comparable evidence.",
-                    "Price the existing legal parcel first; treat a proposed split as a separate investment until survey, agency conditions, and recording costs are documented.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble six executable modules with atomic state and accounting transitions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The six-module reference below is a small SQLite application, not a payment "
-                    "robot or a replacement for professional title examination. Copy the code cells "
-                    "in order into one Python file, call initialize with a database path, and keep "
-                    "that file on a local filesystem controlled by the operator. SQLite WAL, "
-                    "foreign keys, integer cents, unique identities, and BEGIN IMMEDIATE transactions "
-                    "serialize database decisions across local processes. A busy writer fails after "
-                    "the configured timeout; the caller retries the complete request with the same "
-                    "event key. Never retry only the posting portion. Every state-changing request "
-                    "contains a stable source identifier, external event identifier, and canonical "
-                    "payload. Identical replays return the original event; a reused identifier with "
-                    "different contents raises an error. State validation, evidence checks, balanced "
-                    "journal insertion, and state advancement occur inside one transaction, eliminating "
-                    "the database check-then-write race. The reference deliberately sends no external "
-                    "wires, deeds, or messages. Escrow performs those actions through its established "
-                    "controls; this application records confirmed results. Consequently, a timeout "
-                    "cannot issue a second payment. Multi-host deployment requires a server database "
-                    "and equivalent transaction semantics rather than a shared network-mounted SQLite file."
-                ),
-                (
-                    "Treat evidence as attributed, immutable review records, not boolean truth supplied "
-                    "by a public web form. Each record names a reviewer, document location, digest, "
-                    "verdict, and expiration time. The latest review for each required category "
-                    "controls advancement; a failed replacement blocks the next transition even if "
-                    "an earlier review passed. The code expects its callers to be trusted internal "
-                    "adapters behind operating-system access controls. Reviewer names are audit "
-                    "metadata, not authentication credentials, and the program does not independently "
-                    "fetch or interpret the referenced documents. The screening score merely orders "
-                    "work: documented access, plausible zoning fit, closed comparable coverage, and "
-                    "environmental screening contribute explicit points. A high score cannot substitute "
-                    "for the later evidence requirements. Verify environmental assumptions against "
-                    "site history and appropriate professional investigation. When CERCLA liability "
-                    "protections are being pursued, 42 U.S.C. 9601(40) and 40 CFR Part 312 "
-                    "make timing and scope material; a desktop wetland layer alone does not "
-                    "satisfy all appropriate inquiries. Obtain jurisdiction-specific wetlands advice "
-                    "before proposing fill under Clean Water Act section 404. Keep investigation "
-                    "findings attached to the parcel so a subsequent buyer package cannot silently "
-                    "drop an inconvenient constraint."
-                ),
-                (
-                    "The journal recognizes acquisition as inventory against cash, not immediate loss. "
-                    "A completed sale records gross proceeds as revenue, releases the parcel's "
-                    "actual inventory basis into cost of goods sold, and expenses settlement "
-                    "deductions. Because escrow commonly remits a net deposit, the sale has one "
-                    "cash line for proceeds less deductions; that line reconciles to one immutable "
-                    "bank reference. Monthly operating expense uses a separate event and reference. "
-                    "The example assumes full-cash purchases, full-cash sales, and expenses paid "
-                    "when recorded. Earnest-money advances, debt, seller notes, multiple settlement "
-                    "disbursements, and partial-lot allocations require additional accounts and event "
-                    "types before use; never force those transactions into the simplified handlers. "
-                    "The reconciliation view compares imported bank amounts with posted cash, "
-                    "including bank-only and ledger-only references. A balanced journal is necessary "
-                    "but insufficient: an entirely omitted closing can still leave debits equal "
-                    "to credits. Import complete statement coverage and investigate every unmatched "
-                    "reference. Run the supplied checks after posting and again after the statement "
-                    "period closes. They test journal balance, inventory state, bank matching, "
-                    "duplicate handling, and rollback in an isolated database. These reference "
-                    "checks are provided for execution; no test execution or production certification "
-                    "is asserted here."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Executable reference module",
-                    "Copy-pasteable Python and SQL implementation",
-                    "Operator integration contract",
-                    "Concurrency and audit invariant",
-                ],
-                "rows": [
-                    [
-                        "Module one establishes schema, connection policy, and serialized transaction boundaries.",
-                        r'''import hashlib
-import json
-import sqlite3
-import time
-from contextlib import contextmanager
-
-def connect(path):
-    connection = sqlite3.connect(
-        str(path), timeout=30, isolation_level=None
-    )
-    connection.row_factory = sqlite3.Row
-    connection.execute("PRAGMA foreign_keys = ON")
-    connection.execute("PRAGMA busy_timeout = 30000")
-    return connection
-
-@contextmanager
-def transaction(path):
-    connection = connect(path)
-    try:
-        connection.execute("BEGIN IMMEDIATE")
-        yield connection
-        connection.commit()
-    except BaseException:
-        connection.rollback()
-        raise
-    finally:
-        connection.close()
-
-def canonical(value):
-    return json.dumps(
-        value, sort_keys=True, separators=(",", ":"), allow_nan=False
-    )
-
-def positive_cents(value):
-    if type(value) is not int or value <= 0:
-        raise ValueError("Expected a positive integer amount in cents")
-    return value
-
-def initialize(path):
-    connection = connect(path)
-    try:
-        connection.execute("PRAGMA journal_mode = WAL")
-        connection.executescript("""
-CREATE TABLE IF NOT EXISTS parcel (
-    id INTEGER PRIMARY KEY,
-    county TEXT NOT NULL,
-    apn TEXT NOT NULL,
-    UNIQUE(county, apn)
-);
-CREATE TABLE IF NOT EXISTS lead (
-    id INTEGER PRIMARY KEY,
-    parcel_id INTEGER NOT NULL REFERENCES parcel(id),
-    source TEXT NOT NULL,
-    external_id TEXT NOT NULL,
-    payload TEXT NOT NULL,
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    UNIQUE(source, external_id)
-);
-CREATE TABLE IF NOT EXISTS deal (
-    id INTEGER PRIMARY KEY,
-    parcel_id INTEGER NOT NULL UNIQUE REFERENCES parcel(id),
-    state TEXT NOT NULL DEFAULT 'intake'
-        CHECK(state IN (
-            'intake', 'verified', 'escrow',
-            'acquired', 'listed', 'sold'
-        ))
-);
-CREATE TABLE IF NOT EXISTS evidence (
-    id INTEGER PRIMARY KEY,
-    deal_id INTEGER NOT NULL REFERENCES deal(id),
-    kind TEXT NOT NULL,
-    uri TEXT NOT NULL,
-    digest TEXT NOT NULL,
-    reviewer TEXT NOT NULL,
-    passed INTEGER NOT NULL CHECK(passed IN (0, 1)),
-    expires INTEGER NOT NULL,
-    recorded INTEGER NOT NULL,
-    UNIQUE(deal_id, kind, digest, reviewer, passed, expires)
-);
-CREATE TABLE IF NOT EXISTS event (
-    id INTEGER PRIMARY KEY,
-    source TEXT NOT NULL,
-    external_id TEXT NOT NULL,
-    deal_id INTEGER REFERENCES deal(id),
-    kind TEXT NOT NULL,
-    payload TEXT NOT NULL,
-    recorded INTEGER NOT NULL,
-    UNIQUE(source, external_id)
-);
-CREATE TABLE IF NOT EXISTS journal (
-    event_id INTEGER NOT NULL REFERENCES event(id),
-    line INTEGER NOT NULL,
-    account TEXT NOT NULL CHECK(account IN (
-        'cash', 'inventory', 'cogs', 'revenue', 'expense'
-    )),
-    cents INTEGER NOT NULL CHECK(cents <> 0),
-    bank_ref TEXT,
-    UNIQUE(event_id, line),
-    CHECK(
-        (account = 'cash' AND bank_ref IS NOT NULL)
-        OR (account <> 'cash' AND bank_ref IS NULL)
-    )
-);
-CREATE UNIQUE INDEX IF NOT EXISTS one_cash_post_per_bank_reference
-    ON journal(bank_ref) WHERE account = 'cash';
-CREATE TABLE IF NOT EXISTS bank (
-    bank_ref TEXT PRIMARY KEY,
-    cents INTEGER NOT NULL CHECK(cents <> 0),
-    booked_date TEXT NOT NULL,
-    statement_uri TEXT NOT NULL
-);
-""")
-        for table in ("evidence", "event", "journal", "bank"):
-            for operation in ("UPDATE", "DELETE"):
-                name = table + "_block_" + operation.lower()
-                sql = (
-                    "CREATE TRIGGER IF NOT EXISTS " + name
-                    + " BEFORE " + operation + " ON " + table
-                    + " BEGIN SELECT RAISE(ABORT, "
-                    + "'Append-only audit records'); END;"
-                )
-                connection.execute(sql)
-    finally:
-        connection.close()
-''',
-                        "Initialize once before workers start; use integer cents and county-canonical parcel identifiers.",
-                        "Unique constraints and immediate transactions serialize local writes; immutable audit rows reject mutation.",
-                    ],
-                    [
-                        "Module two deduplicates source intake and calculates transparent screening priorities.",
-                        r'''def intake(path, source, external_id, county, apn, facts):
-    identity = [source, external_id, county, apn]
-    if any(not isinstance(value, str) or not value.strip()
-           for value in identity):
-        raise ValueError("Every source and parcel identity must be populated")
-    county, apn = county.strip(), apn.strip()
-    for field in ("access_documented", "zoning_fit", "environmental_clear"):
-        if type(facts[field]) is not bool:
-            raise ValueError("Screening flags must be explicit booleans")
-    comps = facts["sold_comps"]
-    if type(comps) is not int or comps < 0:
-        raise ValueError("Closed comparable count must be a nonnegative integer")
-    payload = canonical({
-        "county": county, "apn": apn, "facts": facts
-    })
-    score = (
-        30 * int(facts["access_documented"])
-        + 25 * int(facts["zoning_fit"])
-        + 5 * min(comps, 5)
-        + 20 * int(facts["environmental_clear"])
-    )
-    with transaction(path) as connection:
-        previous = connection.execute(
-            "SELECT parcel_id, payload FROM lead "
-            "WHERE source = ? AND external_id = ?",
-            (source, external_id),
-        ).fetchone()
-        if previous:
-            if previous["payload"] != payload:
-                raise ValueError("Intake identifier reused with different content")
-            return connection.execute(
-                "SELECT id FROM deal WHERE parcel_id = ?",
-                (previous["parcel_id"],),
-            ).fetchone()["id"]
-        connection.execute(
-            "INSERT INTO parcel(county, apn) VALUES (?, ?) "
-            "ON CONFLICT(county, apn) DO NOTHING",
-            (county, apn),
-        )
-        parcel_id = connection.execute(
-            "SELECT id FROM parcel WHERE county = ? AND apn = ?",
-            (county, apn),
-        ).fetchone()["id"]
-        connection.execute(
-            "INSERT INTO lead(parcel_id, source, external_id, payload, score) "
-            "VALUES (?, ?, ?, ?, ?)",
-            (parcel_id, source, external_id, payload, score),
-        )
-        connection.execute(
-            "INSERT INTO deal(parcel_id) VALUES (?) "
-            "ON CONFLICT(parcel_id) DO NOTHING",
-            (parcel_id,),
-        )
-        return connection.execute(
-            "SELECT id FROM deal WHERE parcel_id = ?", (parcel_id,)
-        ).fetchone()["id"]
-''',
-                        "Canonicalize parcel formatting in the county adapter; preserve leading zeros and source lineage.",
-                        "Concurrent duplicate leads converge on one parcel and deal without overwriting prior source content.",
-                    ],
-                    [
-                        "Module three records attributed evidence and validates the latest review snapshot.",
-                        r'''BASE_EVIDENCE = ("title", "access", "zoning", "environment", "valuation")
-REQUIREMENTS = {
-    "verified": BASE_EVIDENCE,
-    "escrow": BASE_EVIDENCE + ("escrow_instructions",),
-    "acquired": BASE_EVIDENCE + (
-        "escrow_instructions", "purchase_settlement"
-    ),
-    "listed": BASE_EVIDENCE + (
-        "purchase_settlement", "disclosures"
-    ),
-    "sold": BASE_EVIDENCE + (
-        "purchase_settlement", "disclosures",
-        "sale_settlement", "title_coverage"
-    ),
-}
-NEXT_STATE = {
-    "intake": "verified",
-    "verified": "escrow",
-    "escrow": "acquired",
-    "acquired": "listed",
-    "listed": "sold",
-}
-
-def record_evidence(path, deal_id, kind, uri, digest,
-                    reviewer, passed, expires):
-    allowed = set()
-    for required in REQUIREMENTS.values():
-        allowed.update(required)
-    if kind not in allowed:
-        raise ValueError("Evidence category is outside the review contract")
-    if not uri or not reviewer:
-        raise ValueError("Document location and reviewer are required")
-    if (len(digest) != 64
-            or any(char not in "0123456789abcdef" for char in digest)):
-        raise ValueError("Evidence requires a lowercase SHA-256 digest")
-    if type(passed) is not bool:
-        raise ValueError("Review verdict must be an explicit boolean")
-    if type(expires) is not int or expires <= int(time.time()):
-        raise ValueError("Evidence expiration must be a future epoch second")
-    values = (
-        deal_id, kind, uri, digest, reviewer, int(passed), expires
-    )
-    with transaction(path) as connection:
-        connection.execute(
-            "INSERT INTO evidence(deal_id, kind, uri, digest, reviewer, "
-            "passed, expires, recorded) VALUES (?, ?, ?, ?, ?, ?, ?, ?) "
-            "ON CONFLICT(deal_id, kind, digest, reviewer, passed, expires) "
-            "DO NOTHING",
-            values + (int(time.time()),),
-        )
-        row = connection.execute(
-            "SELECT id, uri FROM evidence WHERE deal_id = ? AND kind = ? "
-            "AND digest = ? AND reviewer = ? AND passed = ? AND expires = ?",
-            (deal_id, kind, digest, reviewer, int(passed), expires),
-        ).fetchone()
-        if row["uri"] != uri:
-            raise ValueError("Evidence identity reused with another location")
-        return row["id"]
-
-def evidence_snapshot(connection, deal_id, target):
-    accepted = []
-    now = int(time.time())
-    for kind in REQUIREMENTS[target]:
-        row = connection.execute(
-            "SELECT id, passed, expires FROM evidence "
-            "WHERE deal_id = ? AND kind = ? ORDER BY id DESC LIMIT 1",
-            (deal_id, kind),
-        ).fetchone()
-        if not row or not row["passed"] or row["expires"] <= now:
-            raise ValueError("Required evidence failed: " + kind)
-        accepted.append(row["id"])
-    return accepted
-''',
-                        "Authenticated internal reviewers inspect actual instruments; stored digests identify the exact reviewed versions.",
-                        "Evidence selection occurs inside the advancing write transaction; later revisions cannot alter its historical snapshot.",
-                    ],
-                    [
-                        "Module four advances escrow states and posts balanced, replay-safe accounting events.",
-                        r'''def prior_event(connection, source, external_id, payload):
-    row = connection.execute(
-        "SELECT id, payload FROM event WHERE source = ? AND external_id = ?",
-        (source, external_id),
-    ).fetchone()
-    if row and row["payload"] != payload:
-        raise ValueError("Event identifier reused with different content")
-    return row["id"] if row else None
-
-def write_event(connection, source, external_id, deal_id,
-                kind, payload, lines):
-    if not source or not external_id:
-        raise ValueError("Stable event source and identifier are required")
-    if sum(line[1] for line in lines) != 0:
-        raise ValueError("Journal event does not balance")
-    cursor = connection.execute(
-        "INSERT INTO event(source, external_id, deal_id, kind, payload, recorded) "
-        "VALUES (?, ?, ?, ?, ?, ?)",
-        (source, external_id, deal_id, kind, payload, int(time.time())),
-    )
-    event_id = cursor.lastrowid
-    for number, (account, cents, bank_ref) in enumerate(lines, 1):
-        connection.execute(
-            "INSERT INTO journal(event_id, line, account, cents, bank_ref) "
-            "VALUES (?, ?, ?, ?, ?)",
-            (event_id, number, account, cents, bank_ref),
-        )
-    return event_id
-
-def advance(path, source, external_id, deal_id, expected, target, data):
-    request = canonical({
-        "kind": "transition", "deal": deal_id,
-        "expected": expected, "target": target, "data": data
-    })
-    with transaction(path) as connection:
-        prior = prior_event(connection, source, external_id, request)
-        if prior is not None:
-            return prior
-        row = connection.execute(
-            "SELECT state FROM deal WHERE id = ?", (deal_id,)
-        ).fetchone()
-        if not row or row["state"] != expected:
-            raise ValueError("Deal state differs from expected state")
-        if NEXT_STATE.get(expected) != target:
-            raise ValueError("Transition is outside the allowed sequence")
-        evidence_ids = evidence_snapshot(connection, deal_id, target)
-        if data.get("evidence_ids") != evidence_ids:
-            raise ValueError("Caller must bind the current ordered evidence identifiers")
-        lines = []
-        if target == "acquired":
-            amount = positive_cents(data["purchase_cents"])
-            reference = data["bank_ref"]
-            if not isinstance(reference, str) or not reference.strip():
-                raise ValueError("Confirmed purchase requires a bank reference")
-            lines = [
-                ("inventory", amount, None),
-                ("cash", -amount, reference),
-            ]
-        elif target == "sold":
-            gross = positive_cents(data["gross_cents"])
-            costs = data["selling_costs_cents"]
-            if type(costs) is not int or not 0 <= costs < gross:
-                raise ValueError("Selling costs must be nonnegative and below proceeds")
-            reference = data["bank_ref"]
-            if not isinstance(reference, str) or not reference.strip():
-                raise ValueError("Confirmed sale requires a bank reference")
-            basis = connection.execute(
-                "SELECT COALESCE(SUM(j.cents), 0) AS basis "
-                "FROM journal j JOIN event e ON e.id = j.event_id "
-                "WHERE e.deal_id = ? AND j.account = 'inventory'",
-                (deal_id,),
-            ).fetchone()["basis"]
-            positive_cents(basis)
-            lines = [
-                ("cash", gross - costs, reference),
-                ("revenue", -gross, None),
-                ("cogs", basis, None),
-                ("inventory", -basis, None),
-            ]
-            if costs:
-                lines.append(("expense", costs, None))
-        event_id = write_event(
-            connection, source, external_id, deal_id, target, request, lines
-        )
-        connection.execute(
-            "UPDATE deal SET state = ? WHERE id = ? AND state = ?",
-            (target, deal_id, expected),
-        )
-        return event_id
-
-def post_opex(path, source, external_id, cents, bank_ref, description):
-    positive_cents(cents)
-    if not bank_ref or not description:
-        raise ValueError("Expense requires a bank reference and description")
-    payload = canonical({
-        "kind": "opex", "cents": cents,
-        "bank_ref": bank_ref, "description": description
-    })
-    with transaction(path) as connection:
-        prior = prior_event(connection, source, external_id, payload)
-        if prior is not None:
-            return prior
-        return write_event(
-            connection, source, external_id, None, "opex", payload,
-            [("expense", cents, None), ("cash", -cents, bank_ref)],
-        )
-
-def current_evidence_ids(path, deal_id, target):
-    with transaction(path) as connection:
-        return evidence_snapshot(connection, deal_id, target)
-''',
-                        "Record externally confirmed cash closings only; fetch evidence identifiers and retry stale requests after review.",
-                        "Posting, evidence binding, and state advancement commit together; repeated payment references cannot create second cash entries.",
-                    ],
-                    [
-                        "Module five imports statement evidence and exposes a complete cash reconciliation view.",
-                        r'''def initialize_reconciliation(path):
-    with transaction(path) as connection:
-        connection.execute("""
-CREATE VIEW IF NOT EXISTS cash_reconciliation AS
-WITH ledger AS (
-    SELECT bank_ref, SUM(cents) AS ledger_cents
-    FROM journal WHERE account = 'cash'
-    GROUP BY bank_ref
-), references_all AS (
-    SELECT bank_ref FROM ledger
-    UNION
-    SELECT bank_ref FROM bank
-)
-SELECT r.bank_ref,
-       l.ledger_cents,
-       b.cents AS bank_cents,
-       COALESCE(l.ledger_cents, 0) - COALESCE(b.cents, 0)
-           AS difference_cents,
-       CASE
-           WHEN l.bank_ref IS NULL THEN 'bank entry awaits ledger posting'
-           WHEN b.bank_ref IS NULL THEN 'ledger entry awaits statement evidence'
-           WHEN l.ledger_cents = b.cents THEN 'matched amount and immutable reference'
-           ELSE 'amount difference requires settlement investigation'
-       END AS status
-FROM references_all r
-LEFT JOIN ledger l ON l.bank_ref = r.bank_ref
-LEFT JOIN bank b ON b.bank_ref = r.bank_ref
-""")
-
-def import_bank(path, bank_ref, cents, booked_date, statement_uri):
-    if type(cents) is not int or cents == 0:
-        raise ValueError("Bank amount must be a nonzero integer in cents")
-    if not bank_ref or not booked_date or not statement_uri:
-        raise ValueError("Statement identity, date, and source are required")
-    with transaction(path) as connection:
-        row = connection.execute(
-            "SELECT cents, booked_date, statement_uri FROM bank WHERE bank_ref = ?",
-            (bank_ref,),
-        ).fetchone()
-        values = (cents, booked_date, statement_uri)
-        if row:
-            if tuple(row) != values:
-                raise ValueError("Bank identity reused with different statement content")
-            return
-        connection.execute(
-            "INSERT INTO bank(bank_ref, cents, booked_date, statement_uri) "
-            "VALUES (?, ?, ?, ?)",
-            (bank_ref,) + values,
-        )
-
-def reconciliation(path):
-    connection = connect(path)
-    try:
-        return [
-            dict(row) for row in connection.execute(
-                "SELECT * FROM cash_reconciliation ORDER BY bank_ref"
-            )
-        ]
-    finally:
-        connection.close()
-''',
-                        "Namespace bank references by institution, account, and transaction identifier; import complete operating statement coverage.",
-                        "Repeated statement imports are harmless; mismatched amounts and absent counterpart entries remain visible.",
-                    ],
-                    [
-                        "Module six checks integrity and exercises duplicate handling and transaction rollback.",
-                        r'''def qa(path, require_statement_match=False):
-    connection = connect(path)
-    try:
-        if connection.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
-            raise AssertionError("SQLite integrity check failed")
-        if connection.execute("PRAGMA foreign_key_check").fetchall():
-            raise AssertionError("Foreign key check failed")
-        unbalanced = connection.execute(
-            "SELECT event_id FROM journal GROUP BY event_id "
-            "HAVING SUM(cents) <> 0"
-        ).fetchall()
-        if unbalanced:
-            raise AssertionError("Unbalanced journal events exist")
-        missing = connection.execute(
-            "SELECT e.id FROM event e LEFT JOIN journal j ON j.event_id = e.id "
-            "WHERE e.kind IN ('acquired', 'sold', 'opex') "
-            "GROUP BY e.id HAVING COUNT(j.line) = 0"
-        ).fetchall()
-        if missing:
-            raise AssertionError("Cash events are missing journal lines")
-        bad_inventory = connection.execute("""
-SELECT d.id
-FROM deal d
-LEFT JOIN event e ON e.deal_id = d.id
-LEFT JOIN journal j ON j.event_id = e.id
-GROUP BY d.id, d.state
-HAVING
-    (d.state IN ('acquired', 'listed')
-     AND COALESCE(SUM(CASE WHEN j.account = 'inventory'
-                          THEN j.cents ELSE 0 END), 0) <= 0)
- OR (d.state NOT IN ('acquired', 'listed')
-     AND COALESCE(SUM(CASE WHEN j.account = 'inventory'
-                          THEN j.cents ELSE 0 END), 0) <> 0)
-""").fetchall()
-        if bad_inventory:
-            raise AssertionError("Inventory does not match parcel custody state")
-        rows = [
-            dict(row) for row in connection.execute(
-                "SELECT * FROM cash_reconciliation "
-                "WHERE ledger_cents IS NULL OR bank_cents IS NULL "
-                "OR difference_cents <> 0"
-            )
-        ]
-        if require_statement_match and rows:
-            raise AssertionError("Statement reconciliation remains incomplete")
-        return rows
-    finally:
-        connection.close()
-
-def self_test():
-    import tempfile
-    from pathlib import Path
-
-    with tempfile.TemporaryDirectory() as directory:
-        path = Path(directory) / "reference-test.sqlite"
-        initialize(path)
-        initialize_reconciliation(path)
-        facts = {
-            "access_documented": True,
-            "zoning_fit": True,
-            "sold_comps": 4,
-            "environmental_clear": True,
-        }
-        deal_id = intake(path, "county-export", "lead-1", "06037", "000123", facts)
-        assert intake(
-            path, "county-export", "lead-1", "06037", "000123", facts
-        ) == deal_id
-        try:
-            advance(path, "escrow", "premature-1", deal_id,
-                    "intake", "verified", {"evidence_ids": []})
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Missing evidence unexpectedly advanced a deal")
-        try:
-            with transaction(path) as connection:
-                connection.execute(
-                    "INSERT INTO event(source, external_id, kind, payload, recorded) "
-                    "VALUES ('test', 'rollback-1', 'probe', '{}', 0)"
-                )
-                raise RuntimeError("Deliberate rollback probe")
-        except RuntimeError:
-            pass
-        with transaction(path) as connection:
-            assert connection.execute(
-                "SELECT COUNT(*) FROM event"
-            ).fetchone()[0] == 0
-        first = post_opex(
-            path, "bookkeeper", "expense-1", 600000,
-            "bank:operating:001", "Monthly operating expense"
-        )
-        assert post_opex(
-            path, "bookkeeper", "expense-1", 600000,
-            "bank:operating:001", "Monthly operating expense"
-        ) == first
-        try:
-            post_opex(
-                path, "bookkeeper", "expense-1", 600001,
-                "bank:operating:001", "Monthly operating expense"
-            )
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Changed replay unexpectedly succeeded")
-        import_bank(
-            path, "bank:operating:001", -600000,
-            "2026-01-31", "local:statements/january.pdf"
-        )
-        assert qa(path, require_statement_match=True) == []
-    return "Isolated intake, evidence, rollback, replay, and bank checks passed"
-''',
-                        "Run self_test separately, then run qa against the operating database after each statement close.",
-                        "Checks reject orphaned inventory and unbalanced postings; isolated tests never modify the operating database.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Initialize and test the isolated reference",
-                    "action": "Assemble the six code cells in order and call self_test before loading operating records.",
-                    "detail": "Use a local SQLite database, restrictive filesystem permissions, and a tested backup process; initialize schema before concurrent workers start.",
-                },
-                {
-                    "step": 2,
-                    "title": "Bind reviewed evidence to each transition",
-                    "action": "Record attributed document reviews, fetch current_evidence_ids, and include that ordered list in the transition data.",
-                    "detail": "A concurrent replacement review causes a stale evidence list to fail; inspect the replacement instead of automatically accepting it.",
-                },
-                {
-                    "step": 3,
-                    "title": "Record completed escrow results exactly once",
-                    "action": "Advance acquired or sold only after the external closing is confirmed, using a stable event identifier and statement-matchable bank reference.",
-                    "detail": "An acquired request supplies purchase_cents; a sold request supplies gross_cents and selling_costs_cents; both include bank_ref and evidence_ids.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and close the statement period",
-                    "action": "Import complete operating cash movements, inspect reconciliation, and run qa with require_statement_match enabled.",
-                    "detail": "The reference tracks operating cash deltas; maintain the independently evidenced opening cash balance and extend accounts before posting capital contributions or debt.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Worked 90-Day Cohort Walk: distinguish profit, inventory, and cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Read this walk as a prepared operating cohort, not a promise that a new "
-                    "operator closes inside ninety days. The canonical time to first deal remains "
-                    "three to twelve months. County selection, contractor onboarding, buyer discovery, "
-                    "and seller conversations begin before day one; acquisition-ready opportunities "
-                    "enter the illustrated quarter. Opening unrestricted cash is $150,000, within "
-                    "the $15,000 to $75,000 startup range, and opening parcel inventory is zero. "
-                    "Each monthly lead cohort contains 120 researched records: ninety fail desktop "
-                    "screening, twenty of the thirty survivors fail contact-stage qualification, "
-                    "seven of the remaining ten fail offer underwriting, and two of three offers "
-                    "do not close. One parcel is acquired per month for $70,000. These nested "
-                    "counts reconcile to 119 non-acquisitions and one acquisition, not 119 paid "
-                    "diligence reports. Budget $600 of each month's $6,000 operating expense for "
-                    "unsuccessful research and diligence; the other $5,400 supports sourcing, "
-                    "contractor retainers, systems, and administration. No earnest money is "
-                    "forfeited and no parcel is written down in this example. Those zero realized "
-                    "losses are explicit scenario assumptions, while the screening losses and "
-                    "research expense remain visible."
-                ),
-                (
-                    "Month one acquires parcel A for $70,000 and pays $6,000 operating expense, "
-                    "creating a $76,000 cash outflow and $74,000 ending cash. There is no sale, "
-                    "so the month reports a $6,000 operating loss and $70,000 inventory. Month "
-                    "two acquires parcel B for $70,000 and sells A for $106,250 gross. Escrow "
-                    "deducts $7,593.75 of selling and holding charges, remitting $98,656.25 to "
-                    "the operating bank account. Releasing A's $70,000 basis and charging "
-                    "$6,000 operating expense produces $22,656.25 owner profit. Because the "
-                    "replacement purchase equals the released basis, monthly cash also rises "
-                    "$22,656.25. Month three repeats those amounts: parcel C is acquired, B "
-                    "sells, and C remains inventory awaiting a later buyer. Ending cash is "
-                    "$119,312.50, not $189,312.50; the difference is capital still invested in C. "
-                    "The quarter's $39,312.50 profit reconciles to a $30,687.50 cash decline "
-                    "after the $70,000 inventory increase. There are no receivables, payables, "
-                    "borrowings, owner distributions, or other working-capital movements in this "
-                    "walk. An operator adding any of them must extend the bridge rather than "
-                    "reuse its final cash figure."
-                ),
-                (
-                    "Annualize the quarter's two completed sales, not its three acquisition checks. "
-                    "Four equivalent earnings quarters generate eight sales totaling $850,000, "
-                    "$560,000 released acquisition basis, $60,750 selling and holding expense, "
-                    "and $72,000 operating expense. The residual is exactly $157,250, or "
-                    "18.5% of gross parcel sale proceeds. After the initial inventory build, "
-                    "each later quarter purchases two replacement parcels and sells two parcels; "
-                    "it does not keep buying three while presenting unchanged working capital. "
-                    "Across the first year, nine purchases cost $630,000, eight parcels sell, "
-                    "and one $70,000 parcel remains. Operating cash increases $87,250, taking "
-                    "the initial $150,000 to $237,250 before distributions. The first quarter's "
-                    "inventory build explains why cash generation trails owner profit. The "
-                    "Conservative case remains $200,000 revenue at 12%, yielding $24,000; "
-                    "the Scaled case remains $1,500,000 at 25%, yielding $375,000 with two "
-                    "full-time staff and four contractors. Neither case is created by multiplying "
-                    "the example's lead counts. Test slower exits separately: another quarter "
-                    "holding C delays its cash release and adds actual carrying costs. A "
-                    "stale parcel cannot be counted as a completed sale merely to preserve "
-                    "the annual target."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Period and deal or lead cohort",
-                    "Gross proceeds, basis, and recognized owner result",
-                    "Cash timing, expense, and explicit scrubs",
-                    "Cumulative cash and inventory reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Month 1 researches 120 leads and acquires parcel A; 119 records do not become purchases.",
-                        "Gross proceeds equal $0; released basis equals $0; operating loss equals $6,000.",
-                        "Pay $70,000 acquisition and $6,000 opex, including $600 failed diligence; realized forfeitures equal $0.",
-                        "Monthly cash flow is negative $76,000; cumulative flow is negative $76,000; cash equals $74,000; inventory equals $70,000.",
-                    ],
-                    [
-                        "Month 2 researches 120 new leads, acquires parcel B, and completes parcel A's disposition.",
-                        "Gross proceeds equal $106,250; basis equals $70,000; sale charges equal $7,593.75; owner profit equals $22,656.25.",
-                        "Collect $98,656.25 net settlement; pay $70,000 acquisition and $6,000 opex; 119 leads produce no acquisition.",
-                        "Monthly cash flow equals $22,656.25; cumulative flow is negative $53,343.75; cash equals $96,656.25; inventory equals $70,000.",
-                    ],
-                    [
-                        "Month 3 researches 120 new leads, acquires parcel C, and completes parcel B's disposition.",
-                        "Gross proceeds equal $106,250; basis equals $70,000; sale charges equal $7,593.75; owner profit equals $22,656.25.",
-                        "Collect $98,656.25 net settlement; pay $70,000 acquisition and $6,000 opex; parcel C remains unsold.",
-                        "Monthly cash flow equals $22,656.25; cumulative flow is negative $30,687.50; cash equals $119,312.50; inventory equals $70,000.",
-                    ],
-                    [
-                        "Quarter total covers 360 researched leads, three acquisitions, two dispositions, and 357 non-acquisitions.",
-                        "Revenue $212,500 minus basis $140,000 minus sale charges $15,187.50 minus opex $18,000 equals $39,312.50 profit.",
-                        "Acquisition cash totals $210,000; opex includes $1,800 unsuccessful diligence; principal write-downs and forfeitures remain zero.",
-                        "Profit $39,312.50 less inventory increase $70,000 equals negative $30,687.50 cash flow before distributions.",
-                    ],
-                    [
-                        "Base annual bridge uses eight dispositions and nine acquisitions, retaining one parcel at year end.",
-                        "Revenue $850,000 minus basis $560,000 minus sale charges $60,750 minus opex $72,000 equals $157,250 profit.",
-                        "Cash purchases total $630,000; later quarters replace two sold parcels each rather than building additional inventory.",
-                        "Annual cash increase equals $87,250; ending cash equals $237,250; ending inventory equals $70,000; margin equals 18.5%.",
-                    ],
-                    [
-                        "Inventory custody bridge follows parcel A into Month 2, parcel B into Month 3, and parcel C beyond day ninety.",
-                        "Only A and B contribute quarterly sale revenue; C contributes no recognized proceeds or released basis.",
-                        "No debt, seller notes, receivables, payable balances, or owner distributions alter this illustrated cash bridge.",
-                        "Opening cash $150,000 plus quarterly cash change negative $30,687.50 reconciles exactly to closing cash $119,312.50.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Close the evidence loop before recycling acquisition capital",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Before entering escrow, compare the executed purchase agreement with the title "
-                    "commitment's vesting, legal description, exceptions, and required instruments. "
-                    "A clean-looking ownership record does not resolve tax liens, probate "
-                    "authority, boundary encroachments, mineral reservations, or access exclusions. "
-                    "Ask the title provider which exceptions remain after closing and whether "
-                    "available endorsements address the actual insured risk. Title insurance "
-                    "does not establish zoning compliance or physical buildability. Where fixtures "
-                    "or recorded secured interests are implicated, obtain a targeted search and "
-                    "review under the applicable state's enacted UCC provisions; UCC 9-501 "
-                    "illustrates the recording-office distinction for fixture filings. Do not "
-                    "treat every vacant parcel as requiring a generic personal-property filing "
-                    "search. Confirm seller identity and signing authority through the escrow "
-                    "provider's procedures, independently verify changed wire instructions using "
-                    "an established telephone number, and preserve the signed settlement "
-                    "statement. State-specific disclosure duties survive an attractive resale "
-                    "spread. When representing another owner rather than selling owned inventory, "
-                    "review the relevant broker licensing provisions; California Business and "
-                    "Professions Code sections 10130 and 10131 provide a concrete example. "
-                    "The operator's entity, contractor scopes, marketing claims, and actual "
-                    "activities must agree."
-                ),
-                (
-                    "Run a weekly exception meeting from the evidence queue rather than a slideshow "
-                    "of acquisition targets. Review parcels whose latest access, title, zoning, "
-                    "or environmental evidence failed; contracts nearing diligence deadlines; "
-                    "aged inventory without current buyer feedback; and cash events lacking "
-                    "statement support. Assign each exception one owner, a next action, and "
-                    "an explicit deadline. The GIS contractor can refresh comparable sales "
-                    "and flag changed parcel boundaries, but cannot resolve a disputed easement "
-                    "by changing a score. The survey specialist can quantify an encroachment, "
-                    "but the owner must decide whether the revised economics still support "
-                    "the offer. The title provider can document a curative requirement, but "
-                    "cash should not leave merely because a checklist contains a green "
-                    "cell. Preserve adverse evidence alongside subsequent cures. If an access "
-                    "instrument changes, record the new document and reopen the relevant "
-                    "review before further advancement. Stop new acquisitions when cash "
-                    "needed for committed closings, expected carrying costs, and the chosen "
-                    "operating reserve exceeds unrestricted funds. The example's $74,000 "
-                    "first-month cash trough is observable liquidity, not automatically "
-                    "available buying power. Commitments outside the ledger still consume "
-                    "real capacity and belong in the weekly capital schedule."
-                ),
-                (
-                    "At period close, reconcile three independent views: parcel custody, settlement "
-                    "documents, and bank cash. Every acquired parcel must have one identifiable "
-                    "inventory balance and a recorded ownership package; every disposed parcel "
-                    "must have gross proceeds, released basis, selling expense, and a matching "
-                    "net receipt. Inspect the entire bank statement, not only transactions "
-                    "already exported by the application. Compare opening bank balance plus "
-                    "all statement movements with closing bank balance, then classify any "
-                    "capital contribution, distribution, loan, refund, or transfer outside "
-                    "the reference handlers. Back up SQLite using its backup API while "
-                    "the database is live, retain document versions separately, and test "
-                    "restoration into an isolated location. A copied database file without "
-                    "its active WAL can omit committed work. Recompute the scorecard "
-                    "bridge from posted amounts rather than copying last month's dashboard. "
-                    "Track acquisition-to-sale days, cash tied up by parcel, realized "
-                    "spread after expenses, and reasons for rejected offers. Increase "
-                    "volume only when those controls remain current within the four-person "
-                    "Base pod. Moving to the six-person Scaled team is an explicit "
-                    "capacity change with different economics, not permission to book "
-                    "unclosed transactions or ignore evidence that makes a parcel harder "
-                    "to sell."
-                ),
-            ],
-            "table": {
-                "caption": "Closing, Exception, and Recovery Controls for a Title-Insured Land Pod",
-                "headers": [
-                    "Control and review cadence",
-                    "Evidence inspected by the accountable operator",
-                    "Failure response and preserved audit trail",
-                    "Ledger or capital consequence before further commitments",
-                ],
-                "rows": [
-                    [
-                        "Recorded access review occurs before purchase and after any material instrument change.",
-                        "Title provider compares easement description, benefited parcel, permitted use, and public-road connection.",
-                        "Block advancement and commission targeted review when physical access exceeds recorded rights.",
-                        "Exclude speculative access value from the offer and preserve funds for verified opportunities.",
-                    ],
-                    [
-                        "Buildability and environmental review precedes any representation of a usable building envelope.",
-                        "Land-use specialist checks zoning, setbacks, utility conditions, flood information, and site history.",
-                        "Revise buyer materials and price assumptions when restrictions reduce the plausible use.",
-                        "Record actual investigation expense and reassess carrying exposure before committing acquisition cash.",
-                    ],
-                    [
-                        "Escrow instruction verification occurs before each outward payment through independent communication.",
-                        "Owner confirms established contact details, beneficiary instructions, settlement terms, and signing authority.",
-                        "Pause the external payment when instructions change without independent confirmation and retain communications.",
-                        "Post acquisition cash only after the externally completed transaction has documented support.",
-                    ],
-                    [
-                        "Weekly inventory aging review follows every acquired parcel until a completed sale.",
-                        "Owner compares acquisition date, current buyer feedback, carrying bills, and realistic exit value.",
-                        "Choose documented repricing, additional investigation, or a revised hold plan with assigned deadlines.",
-                        "Reduce available acquisition capacity by committed closing funds and expected holding expenditure.",
-                    ],
-                    [
-                        "Monthly bank reconciliation connects the complete statement with immutable cash event references.",
-                        "Owner compares bank-only entries, ledger-only entries, net settlement receipts, and statement balance movement.",
-                        "Investigate differences individually; never edit historical entries merely to force matching totals.",
-                        "Use an explicitly designed correcting-event extension for errors before treating the period as closed.",
-                    ],
-                    [
-                        "Periodic restoration testing verifies recoverable accounting records and linked document versions.",
-                        "Operator restores a backup into isolation and checks journal integrity, evidence references, and balances.",
-                        "Resolve missing files or inconsistent snapshots before relying on the backup for recovery.",
-                        "Suspend new workflow writes during incident recovery until the restored baseline is reconciled.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight verifications before acquisition capital moves",
-                "body": "The owner signs off on evidence and liquidity; a screening score cannot substitute for any check.",
-                "items": [
-                    "Verify seller authority, the insured legal description, recorded access, and the title exceptions that will remain after closing.",
-                    "Verify the priced use against zoning, dimensions, utility conditions, environmental findings, and any required subdivision procedure.",
-                    "Verify the settlement amount and wire instructions independently, then reserve cash for committed closings and the chosen operating runway.",
-                    "Verify stable event identifiers, current evidence versions, integer-cent postings, and an available statement reference before recording the completed purchase.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A parcel becomes profit only when verified rights become a completed sale and the settlement becomes reconciled cash.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Select one county and buyer profile, then preserve dated QGIS layers, parcel identifiers, and explicit exclusion reasons.",
-        "Assign the owner, GIS analyst, title and escrow provider, and survey or land-use specialist to written scopes within the Base expense budget.",
-        "Assemble the six reference modules, run the isolated checks, and bind reviewed evidence identifiers to every state transition.",
-        "Fund the illustrated cohort only after modeling the $74,000 first-month cash trough and all commitments outside the reference ledger.",
-        "Reconcile quarterly revenue of $212,500 and owner profit of $39,312.50 to the $70,000 inventory increase and negative $30,687.50 cash change.",
-        "Close each statement period with parcel custody, settlement documents, bank references, tested backups, and the exact annual Base profit bridge.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Government Code section 66424 — Definition of subdivision",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=66424.&lawCode=GOV",
-            "relevance": "Defines subdivision for California's map framework; use the applicable jurisdiction's rules before treating proposed parcel divisions as saleable lots.",
-        },
-        {
-            "title": "California Government Code section 66426 — Tentative and final map requirements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=66426.&lawCode=GOV",
-            "relevance": "Establishes map requirements and exceptions relevant to California subdivision planning, review scope, and timing.",
-        },
-        {
-            "title": "42 U.S.C. 9601(40) — Bona fide prospective purchaser",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9601",
-            "relevance": "Sets conditions associated with purchaser status under CERCLA, including inquiry and continuing-obligation considerations that affect acquisition diligence.",
-        },
-        {
-            "title": "40 CFR Part 312 — Innocent Landowners, Standards for Conducting All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": "Provides inquiry standards and timing requirements when the acquisition strategy relies on qualifying environmental investigation.",
-        },
-        {
-            "title": "33 U.S.C. 1344 — Permits for dredged or fill material",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": "Governs section 404 permitting for covered discharges; evaluate jurisdiction and required permits before assuming constrained land can be filled.",
-        },
-        {
-            "title": "California Business and Professions Code section 10130 — Real estate license requirement",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10130.&lawCode=BPC",
-            "relevance": "Requires licensing for covered California brokerage activity; distinguish owned-inventory transactions from representing other owners.",
-        },
-        {
-            "title": "California Business and Professions Code section 10131 — Real estate broker activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10131.&lawCode=BPC",
-            "relevance": "Defines covered activities performed for another for compensation, informing contractor scopes and representation boundaries.",
-        },
-        {
-            "title": "UCC section 9-501 — Filing office",
-            "url": "https://www.law.cornell.edu/ucc/9/9-501",
-            "relevance": "Identifies model filing-office rules, including real-property recording for certain fixture filings; confirm the applicable state's enacted text for the parcel review.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'access-easements-and-flood-zones',
+ 'question_prompt': 'How do I spot and solve landlocked parcels, and how do flood zones affect a land '
+                    'deal?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Access, Easements, and Flood Zones',
+ 'subtitle': 'What landlocked means, easements by necessity and case law, Texas and Florida access '
+             "options, knocking on neighbors' doors for access, appraising access easements, turning "
+             'landlocked land into profit, easements vs. encroachments, reading FEMA flood maps, and '
+             'changing flood determinations with a LOMA',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land operators agree that a parcel is only truly landlocked when it lacks both '
+                      'legal and physical access, that lenders and title insurers will not touch it until '
+                      'access is recorded, and that a negotiated express easement beats litigation on cost '
+                      'and speed. Jack Bosch cuts landlocked value at least in half, offers around $4,000 '
+                      'on a $40,000-access parcel, and either flips as-is at $12,000 to $15,000 or pays a '
+                      'neighbor about $500 for an easement to capture the $20,000 spread. The Apke '
+                      'Brothers will pay 70 to 80 percent of retail for the road-fronting tract. On flood, '
+                      'PushLeads prices elevation certificates at $400 to $800 and LOMAs at $1,500 to '
+                      '$5,000. They split on whether access is automatic: LandGate and Holmes say '
+                      'neighbors cannot deny it, while Lashmet says Texas grants no automatic right.',
+ 'key_metrics': [{'label': 'Landlocked Value Haircut',
+                  'metric': 'Landlocked Value Haircut',
+                  'value': 'At least 50% cut ($40,000 with access drops to $15,000-$20,000)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bosch's personal rule for repricing a 10-acre rural parcel once it proves to "
+                             'have neither legal nor physical road access, before making any offer.',
+                  'source': 'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ 00:05:47])'},
+                 {'label': 'Neighbor Easement Payment',
+                  'metric': 'Neighbor Easement Payment',
+                  'value': '$500',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Price a reasonable adjoining owner might ask for an access strip, unlocking '
+                             'the spread between a $20,000 landlocked value and a $40,000 accessible '
+                             'value.',
+                  'source': 'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ 00:09:36])'},
+                 {'label': 'Frontage Parcel Purchase Price',
+                  'metric': 'Frontage Parcel Purchase Price',
+                  'value': '70-80% of retail',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'What the Apke Brothers would pay for a 10-acre road-fronting neighbor parcel '
+                             'to unlock a discounted 60-acre landlocked Oklahoma tract and still double '
+                             'their money.',
+                  'source': 'Apke Brothers ([5p6zCt25Tyw @ 00:01:08])'},
+                 {'label': 'LOMA Engineering and Survey Cost',
+                  'metric': 'LOMA Engineering and Survey Cost',
+                  'value': '$1,500-$5,000; can cut premiums $1,000+ per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cost to file a letter of map amendment when a survey shows the property sits '
+                             'above base flood elevation but was mapped into a high-risk zone; payback '
+                             'cited within months.',
+                  'source': 'PushLeads ([fXtOfFlKqmc @ 00:04:43])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Jack Bosch, who reports over 4,000 deals with co-founder Michelle Bosch, '
+                              'opens every landlocked question in the Bosch Facebook group by challenging '
+                              'the definition: a parcel is only truly landlocked when it has neither legal '
+                              'nor actual road access [tfERI-RnheU @ 00:01:59]. If county records show a '
+                              'recorded easement running to the parcel, Bosch treats it as accessible, '
+                              'because the easement holder can bring in a backhoe and grade a road across '
+                              'it and the burdened neighbor cannot stop it [tfERI-RnheU @ 00:02:45]. Chris '
+                              'Thomas of Land Flipping 101 sets the physical test even tighter: to have '
+                              'access without an easement, at least one boundary of the parcel must '
+                              'coincide exactly, without gap or deviation, with the edge of the roadway, '
+                              'known as the right-of-way line; if those lines miss, the buyer needs an '
+                              'easement giving the legal right to cross whatever sits between the parcel '
+                              'and the public road [gwLVELHJjbc @ 00:06:58]. Tiffany Lashmet, an '
+                              'agricultural law specialist with Texas A&M, kills the most common myth on '
+                              'the rural circuit: land absolutely can be landlocked in Texas, and nobody '
+                              'is automatically obligated to hand you access [D_ZiLS1CYJg @ 00:00:22]. The '
+                              'operator takeaway is that a missing road is a research question to run down '
+                              'in the records, not a verdict that kills the deal.',
+                              'Every practitioner who touches the money side agrees that no-access land is '
+                              'a cash-only, deep-discount asset. Attorney David Holmes, interviewed by '
+                              'Alabama broker David Miller, says a parcel can only be loaned on if the '
+                              'lender has some way to reach it in a foreclosure, and that no lender will '
+                              'lend money on land that cannot be accessed [orMrWlpfWj4 @ 00:02:13]. Holmes '
+                              'adds that a driveway used for twenty years without paperwork may ripen into '
+                              'a prescriptive easement, but financial institutions want something in '
+                              'writing; the land can still be bought and sold, you just buy it with cash '
+                              'and figure out the easement afterward, and Miller knows people who have '
+                              'done exactly that [orMrWlpfWj4 @ 00:03:28]. Lashmet stacks a second wall on '
+                              'top: you cannot get title insurance on a property with no legal access, and '
+                              'without title insurance you cannot borrow to buy it or pledge it as '
+                              'collateral [D_ZiLS1CYJg @ 00:01:17]. That is why the Apke Brothers, '
+                              'answering a Discord member named Sean who had a landlocked parcel under '
+                              'contract and neighbors unlikely to cooperate, say the first job is making '
+                              'sure you are buying it like a landlocked property and never paying more '
+                              'than you should for it [5p6zCt25Tyw @ 00:00:27].',
+                              'On the fix, lawyers and flippers alike land in the same place: negotiate '
+                              'before you litigate. Lashmet calls an express easement from a neighbor the '
+                              'best, cheapest, cleanest option, one that saves everybody time, legal fees, '
+                              'court costs and headaches, and notes Texas offers about five legal methods '
+                              'to pursue access in court, each with its own elements to prove [D_ZiLS1CYJg '
+                              '@ 00:02:49]. Legal Counsel P.A. in Florida ranks a negotiated agreement as '
+                              'the best, least expensive and most expeditious route, while an easement by '
+                              'necessity usually means suing the neighbor and asking a judge for a '
+                              'judicial determination, a long and expensive process [4mnTabZRS60 @ '
+                              '00:00:37]. Flood exposure is the second baseline check every land operator '
+                              'runs. Jeremy of PushLeads stresses that the zone letter dictates mandatory '
+                              'insurance on federally backed mortgages, elevation minimums and what you '
+                              "owe a buyer at sale, and pegs FEMA's own figure for zone AE at a 26% chance "
+                              'of flooding over a 30-year mortgage [fXtOfFlKqmc @ 00:00:36]. Felicia of '
+                              'Compass Land USA frames the entire flood-zone fight the same way: '
+                              'everything is based around elevation, and a parcel only comes out of a '
+                              'high-risk area when documentation shows the mapped zone is wrong '
+                              '[bPbMFP-bGyU @ 00:01:00].'],
+               'table': {'caption': 'Baseline access and flood consensus every land operator checks before '
+                                    'pricing',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Definition of a truly landlocked parcel for offers',
+                                   'Neither legal nor actual road access; a recorded easement means '
+                                   'accessible',
+                                   'Pull county records for recorded easements before cutting your offer '
+                                   'price',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:01:59])'],
+                                  ['Frontage test for access without any easement at all',
+                                   "One boundary must exactly coincide with the road's right-of-way line",
+                                   'Survey before closing and condition every purchase on legal road '
+                                   'access',
+                                   'Land Flipping 101 ([gwLVELHJjbc @ 00:06:58])'],
+                                  ['Lender access requirement on landlocked acreage deals',
+                                   'No lender loans money on land it cannot reach in a foreclosure',
+                                   'Plan landlocked acquisitions as cash purchases, then solve the '
+                                   'easement afterward',
+                                   'David Miller ([orMrWlpfWj4 @ 00:02:13])'],
+                                  ['Title insurance wall on parcels lacking legal access',
+                                   'No legal access means no title insurance, no mortgage, no collateral '
+                                   'use',
+                                   'Expect zero financed buyers until legal access is documented and '
+                                   'recorded',
+                                   'Texas Agriculture Law ([D_ZiLS1CYJg @ 00:01:17])'],
+                                  ['Neighbor negotiation comes before any court filing',
+                                   'An express easement from a neighbor is the best, cheapest, cleanest '
+                                   'option',
+                                   'Call or write the closest neighbor before spending anything on '
+                                   'litigation',
+                                   'Texas Agriculture Law ([D_ZiLS1CYJg @ 00:02:49])'],
+                                  ['Paper the negotiated easement and record it publicly',
+                                   'Have a real estate attorney memorialize terms and record them in '
+                                   'county records',
+                                   'Never close on a verbal promise of access; get the recorded instrument',
+                                   'Legal Counsel P.A. ([4mnTabZRS60 @ 00:01:06])'],
+                                  ['Flood zone label drives insurance and elevation rules',
+                                   'High-risk A or V zones carry mandatory insurance on federally backed '
+                                   'mortgages',
+                                   'Check the zone before pricing any parcel a buyer will finance or build',
+                                   'PushLeads ([fXtOfFlKqmc @ 00:00:53])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Bosch's repricing rule is mechanical. Take a 10-acre rural parcel worth "
+                              '$40,000 with road access; once it proves truly landlocked it might only be '
+                              'worth $15,000 to $20,000, so Bosch personally cuts value at least in half '
+                              'and makes the offer from there [tfERI-RnheU @ 00:05:47]. At a typical 20 to '
+                              '25 percent offer, that is about $4,000 for the parcel, and Bosch says the '
+                              'Facebook group sees students posting deals at 10, 15 and 20 cents on the '
+                              'dollar nearly every week. From a $4,000 basis, the fast exit is a quick '
+                              'resale at $12,000 to $15,000 for an $8,000 to $10,000 profit [tfERI-RnheU @ '
+                              '00:06:58]. If four separate owners stand between the parcel and the road, '
+                              'Bosch skips the easement hunt entirely: put it under contract at $3,500 to '
+                              '$4,000, sell at $12,000, and let the next buyer deal with it, disclosing '
+                              'that there is currently no legal or physical access while pitching that '
+                              'installing access could double the value toward $40,000 [tfERI-RnheU @ '
+                              '00:07:47]. The Apke Brothers read proximity the same way, calling a 60-acre '
+                              'Oklahoma tract with a pond in the middle a great situation to be in '
+                              'precisely because it sits so close to the road [5p6zCt25Tyw @ 00:00:42].',
+                              'When only one parcel separates the land from the street, Bosch pulls the '
+                              "neighbor's information from public record, sends a letter or calls, and "
+                              "pitches a strip along the side of the neighbor's property that would not "
+                              'affect anything they do; the leverage, which Bosch says you keep to '
+                              'yourself, is that a judge would grant the easiest access anyway '
+                              '[tfERI-RnheU @ 00:08:30]. A reasonable neighbor might ask $500, and that '
+                              'payment captures the spread between a $20,000 landlocked value and a '
+                              '$40,000 accessible value [tfERI-RnheU @ 00:09:36]. Bosch then sells at '
+                              '$35,000 on seller financing, takes a $5,000 to $7,000 down payment that '
+                              'alone exceeds the purchase price, collects $500 to $600 a month, and '
+                              'estimates the interest pushes the take roughly $50,000 past what the deal '
+                              'would otherwise produce. The Apke Brothers run a heavier version: buy the '
+                              '10 acres fronting the road outright, paying 70 to 80 percent of retail, and '
+                              'still double the money because the landlocked tract was bought so cheap '
+                              '[5p6zCt25Tyw @ 00:01:08]. Chris Thomas closes the paper loop through a '
+                              'title company, which drafts a separate easement agreement, often a simple '
+                              'one-page document notarized with witnesses, usually backed by a survey, and '
+                              'recorded like a deed [gwLVELHJjbc @ 00:10:27].',
+                              'Flood screening starts free. Chad, executive director of the National '
+                              'Association of State Floodplain Managers, walks through searching for the '
+                              'FEMA flood map viewer, typing an address into the search bar, and reading '
+                              'the colors: the highest-hazard part of the flood zone, a reddish-tan '
+                              'moderate hazard area beyond it, and the floodway, the especially risky '
+                              'strip marked with blue hatching; county maps can add local detail '
+                              '[ptM7-3KSnO4 @ 00:01:15]. Jeremy at PushLeads then orders an elevation '
+                              'certificate from a licensed surveyor at $400 to $800, calling it the single '
+                              'most powerful lever on premium because every foot above base flood '
+                              'elevation earns a discount [fXtOfFlKqmc @ 00:04:04]. If that survey shows '
+                              'the parcel sits above BFE but was mismapped, a letter of map amendment runs '
+                              '$1,500 to $5,000 in engineering and survey costs and can cut premiums by '
+                              '$1,000 or more a year, paying back within months; a preliminary map carries '
+                              'a 90-day appeal window, after which the new zone is final [fXtOfFlKqmc @ '
+                              '00:04:43]. Felicia at Compass Land USA quotes a LOMA at around 500 to '
+                              'submit with responses taking upwards of 60 days, insists the map be revised '
+                              'before building starts, and flags imported fill dirt as a LOMR-F '
+                              'opportunity once the permit is pulled [bPbMFP-bGyU @ 00:03:48].'],
+               'table': {'caption': 'Street numbers for landlocked flips, easement buys, and flood-zone '
+                                    'fixes',
+                         'headers': ['Line Item', 'Number Stated', 'How Operators Use It', 'Expert Source'],
+                         'rows': [['Landlocked value haircut on a rural 10-acre parcel',
+                                   '$40,000 with access drops to $15,000-$20,000; cut at least half',
+                                   'Reprice the parcel first, then build the offer from the reduced figure',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:05:47])'],
+                                  ['Acquisition offer on the truly landlocked parcel',
+                                   '20 to 25 percent of market value, roughly $4,000 accepted',
+                                   'Lock the contract low enough that an as-is flip still pays',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:06:06])'],
+                                  ['As-is wholesale exit when easements look too hard',
+                                   'Resell at $12,000-$15,000 for an $8,000-$10,000 profit',
+                                   'Disclose no access, pitch the doubling upside, let the next buyer work',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:06:58])'],
+                                  ['Negotiated easement payment to the single adjoining neighbor',
+                                   '$500 unlocks the jump from $20,000 to $40,000 in value',
+                                   'Contact the neighbor by letter or phone using public-record owner '
+                                   'information',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:09:36])'],
+                                  ['Buying the road-fronting neighbor parcel outright for access',
+                                   'Pay 70-80 percent of retail for the 10 frontage acres',
+                                   'Discounted landlocked basis absorbs a near-retail frontage purchase '
+                                   'and still doubles',
+                                   'Apke Brothers ([5p6zCt25Tyw @ 00:01:08])'],
+                                  ['Elevation certificate from a licensed surveyor before pricing',
+                                   '$400-$800; every foot above base flood elevation earns discount',
+                                   'Use it to control premiums and support any flood map challenge',
+                                   'PushLeads ([fXtOfFlKqmc @ 00:04:04])'],
+                                  ['Letter of map amendment engineering and survey work',
+                                   '$1,500-$5,000; can cut premiums $1,000 or more yearly',
+                                   'File when the survey shows the parcel sits above base flood elevation',
+                                   'PushLeads ([fXtOfFlKqmc @ 00:04:43])'],
+                                  ['Annual flood premium tiers by FEMA zone designation',
+                                   'Zone X near $500; AE at BFE $900-$1,800 for $250,000 coverage',
+                                   'Quote insurance cost into resale pricing for any buyer planning to '
+                                   'build',
+                                   'PushLeads ([fXtOfFlKqmc @ 00:05:18])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Leverage Moves Practitioners Use on Access and Flood Deals',
+                           'body': 'Small tactical edges the practitioners use to shift cost, time, and '
+                                   'negotiating power in their favor.',
+                           'items': ['When a neighbor overprices an easement, have the appraiser value the '
+                                     "neighbor's diminution in value rather than your lot's gain; the "
+                                     'appraiser says roughly $20,000 in legal fees likely wins the suit '
+                                     'when the route is the only option, so your negotiating room is the '
+                                     'cost of litigation [dhall3000 — GpQWztIpKSo @ 00:05:17].',
+                                     'Dodge survey costs: tell the seller the title company needs a survey '
+                                     'to close and ask how they want to pay, get the surveyor paid from '
+                                     'closing proceeds, or have seller and buyer each pay half so both '
+                                     'think they are splitting it with you [Land Flipping 101 — '
+                                     'gwLVELHJjbc @ 00:12:02].',
+                                     'Revise the flood map before you start building, and pull the permit '
+                                     'before bringing in fill dirt if you plan a fill-based map revision '
+                                     '[Compass Land USA — bPbMFP-bGyU @ 00:02:22].',
+                                     'If a driveway has been used for years without paperwork, use that '
+                                     'history as leverage: the crossed owner is already used to the '
+                                     'access, which makes getting it in writing easier [David Miller — '
+                                     'orMrWlpfWj4 @ 00:03:10].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Prove the Access Status',
+                              'action': 'Pull county records, order a title search, and check whether any '
+                                        'boundary matches the right-of-way line.',
+                              'detail': 'Thomas runs a title search on all properties and conditions every '
+                                        'purchase on road access, while Bosch treats any recorded easement '
+                                        'in county records as legal access that ends the landlocked label '
+                                        '[Land Flipping 101 — gwLVELHJjbc @ 00:06:37] [Land Profit '
+                                        'Generator with Jack & Michelle Bosch — tfERI-RnheU @ 00:02:31].'},
+                             {'step': 2,
+                              'title': 'Reprice Before You Offer',
+                              'action': 'Cut the accessible value at least in half, then offer roughly 20 '
+                                        'to 25 percent of the reduced figure.',
+                              'detail': 'Bosch drops a $40,000 parcel to $15,000-$20,000 when truly '
+                                        'landlocked and offers around $4,000; the Apke Brothers warn never '
+                                        'to pay more than a landlocked price [Land Profit Generator with '
+                                        'Jack & Michelle Bosch — tfERI-RnheU @ 00:05:47] [Apke Brothers — '
+                                        '5p6zCt25Tyw @ 00:00:27].'},
+                             {'step': 3,
+                              'title': 'Screen Flood Zone and Elevation',
+                              'action': 'Search the parcel in the FEMA flood map viewer, read the zone '
+                                        'colors, and order an elevation certificate if it lands in a '
+                                        'high-risk zone.',
+                              'detail': 'Enter the address in the viewer search bar to read hazard colors, '
+                                        'then get a $400-$800 elevation certificate that controls premium '
+                                        'and supports a LOMA [LAVERNE MCGEE TV — ptM7-3KSnO4 @ 00:00:57] '
+                                        '[PushLeads — fXtOfFlKqmc @ 00:04:04].'},
+                             {'step': 4,
+                              'title': 'Choose the Exit and Record It',
+                              'action': 'Flip as-is with disclosure when multiple neighbors block the '
+                                        'road, or buy the easement and record it when one neighbor stands '
+                                        'in the way.',
+                              'detail': 'Bosch flips hard-to-unlock parcels and captures the upside on '
+                                        'easy ones, while Legal Counsel P.A. has an attorney memorialize '
+                                        'any agreed easement and record it in the county public records '
+                                        '[Land Profit Generator with Jack & Michelle Bosch — tfERI-RnheU @ '
+                                        '00:10:43] [Legal Counsel P.A. — 4mnTabZRS60 @ 00:01:06].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether access is a birthright or a fight. LandApp by '
+                              'LandGate tells owners flatly that neighboring owners cannot deny access '
+                              'because federal and state laws protect it [2lVnO8IebI0 @ 00:01:54], and '
+                              "attorney David Holmes, on David Miller's channel, says anyone holding "
+                              'landlocked property has an absolute right to reach the nearest accessible '
+                              'public right-of-way, either by negotiated easement or, if all else fails, a '
+                              'condemnation action [orMrWlpfWj4 @ 00:00:50]. The landlocked owner on '
+                              "dhall3000 hears the same from their appraiser: in Washington you can't be "
+                              'landlocked, so the suit is highly likely to win, though it might burn '
+                              '$20,000 in legal fees [GpQWztIpKSo @ 00:04:16]. Tiffany Lashmet of Texas '
+                              'Agriculture Law calls that belief a misconception to clear up once and for '
+                              'all: property absolutely can be landlocked in Texas, there is no automatic '
+                              'right to access, and each of roughly five legal methods carries elements '
+                              'you must prove before a court hands you a judgment [D_ZiLS1CYJg @ '
+                              '00:00:22]. The operator takeaway is jurisdictional: the same parcel can be '
+                              'a winnable lawsuit in one state and a dead asset in another, so the price '
+                              'you pay has to reflect which rulebook governs the dirt you are buying.',
+                              'On deal structure, the land flippers run three different plays. Jack Bosch '
+                              'cuts the value of a truly landlocked parcel at least in half before '
+                              'offering, so a $40,000 ten-acre tract becomes a $15,000 to $20,000 asset, '
+                              'and the offer lands around 20 to 25 percent of that, roughly $4,000 '
+                              '[tfERI-RnheU @ 00:05:31]. From there Bosch forks the deal: if four '
+                              'properties sit between the parcel and the road, put it under contract at '
+                              '$3,500 to $4,000 and sell it for $12,000, letting the next buyer chase the '
+                              'easements; if only one neighbor stands in the way, call or mail that owner '
+                              'and pay something like $500 for the easement [tfERI-RnheU @ 00:07:31]. The '
+                              'Apke Brothers skip the easement entirely on a 60-acre Oklahoma lake parcel '
+                              'sitting close to the road: go to the owner of the 10 acres between it and '
+                              'the road and buy that frontage outright, paying 70 to 80 percent of retail '
+                              'because the landlocked piece was bought at such a discount that the '
+                              'combined deal can still double [5p6zCt25Tyw @ 00:00:55]. The appraiser on '
+                              'dhall3000 adds a third lens, reporting that a before-and-after valuation of '
+                              "the benefited lot and a diminution analysis of the neighbor's lot produce "
+                              'widely divergent numbers, and either can be used to negotiate [GpQWztIpKSo '
+                              '@ 00:02:17].',
+                              'Practitioners also split on how much an unwritten path is worth. Bosch '
+                              'treats a long-used physical road with no recorded easement as a fixable '
+                              'asset: after roughly 10 years of use in some states and 15 in others, it '
+                              'ripens into an easement by prescription that can be entered into the county '
+                              'records, so the parcel is not truly landlocked [tfERI-RnheU @ 00:04:19]. '
+                              'Holmes puts the clock at 20 years or so and warns that a prescriptive '
+                              "easement is not written and documented, so financial institutions won't "
+                              'recognize it; its real value is as leverage to get the crossing owner to '
+                              'sign something in writing [orMrWlpfWj4 @ 00:02:51]. On the flood side, the '
+                              'cost of fighting a bad map diverges sharply between channels. Compass Land '
+                              'USA prices a LOMA at around $500 to submit with upwards of 60 days for a '
+                              'response, and stresses revising the map before you start building if you '
+                              'want to avoid paying for flood insurance [bPbMFP-bGyU @ 00:03:48]. Jeremy '
+                              'of PushLeads quotes $1,500 to $5,000 in engineering and survey costs, but '
+                              'says a successful LOMA can cut premiums by $1,000 or more per year and pay '
+                              'back the investment within months [fXtOfFlKqmc @ 00:04:43].'],
+               'table': {'caption': 'Competing playbooks on access rights, pricing, easement valuation, '
+                                    'and flood-map challenges',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether legal access is guaranteed by default',
+                                   'Neighbors cannot deny access because federal and state laws protect '
+                                   'owners',
+                                   'Texas has no automatic right; property absolutely can be landlocked '
+                                   'there',
+                                   'LandApp by LandGate ([2lVnO8IebI0 @ 00:01:54]); Texas Agriculture Law '
+                                   '([D_ZiLS1CYJg @ 00:00:22])'],
+                                  ['How to price a truly landlocked parcel',
+                                   'Cut value at least in half, then offer roughly 20 to 25 percent of '
+                                   'that',
+                                   'Buy the adjoining 10-acre frontage parcel at 70 to 80 percent of '
+                                   'retail',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:05:31]); Apke Brothers ([5p6zCt25Tyw @ 00:01:08])'],
+                                  ['Exit strategy once the parcel is under contract',
+                                   'Four neighbors in the way: contract at $3,500 to $4,000 and flip at '
+                                   '$12,000',
+                                   'One neighbor away: pay about $500, sell for $25,000 to $35,000 with '
+                                   'seller financing',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:09:36])'],
+                                  ['Negotiated easement versus going to court',
+                                   'Friendly written easement recorded in county public records is '
+                                   'cheapest and fastest',
+                                   'Easement by necessity lawsuit is long and expensive and requires proof '
+                                   'of common ownership',
+                                   'Legal Counsel P.A. ([4mnTabZRS60 @ 00:00:52]); Simple Explain '
+                                   '([e7VCFv7koQE @ 00:02:22])'],
+                                  ['Which number anchors the easement price negotiation',
+                                   'Gain to the benefited lot: near worthless without access, close to a '
+                                   'million with it',
+                                   "Neighbor's diminution in value, with negotiating room capped by the "
+                                   'cost of litigation',
+                                   'dhall3000 ([GpQWztIpKSo @ 00:05:17])'],
+                                  ['Value of an unwritten, long-used access road',
+                                   'Bosch: 10 to 15 years of use creates a prescriptive easement '
+                                   'recordable with the county',
+                                   'Holmes: roughly 20 years, unwritten, and lenders will not recognize '
+                                   'it; signs and gates stop the clock',
+                                   'Land Profit Generator with Jack & Michelle Bosch ([tfERI-RnheU @ '
+                                   '00:04:19]); David Miller ([orMrWlpfWj4 @ 00:02:51]); The Real Estate '
+                                   'Classroom ([HsA2g1n57AY @ 00:07:18])'],
+                                  ['Cost and payoff of a FEMA letter of map amendment',
+                                   'Compass Land USA: around $500 to submit and upwards of 60 days for a '
+                                   'response',
+                                   'PushLeads: $1,500 to $5,000 in engineering and survey, saving $1,000 '
+                                   'or more yearly',
+                                   'Compass Land USA ([bPbMFP-bGyU @ 00:03:48]); PushLeads ([fXtOfFlKqmc @ '
+                                   '00:04:43])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is relying on access nobody wrote down. In Barry v '
+                              "Hasseldine, the plot's original access ran over a disused airfield on a "
+                              "stranger's land by permission; in 1950 the stranger fenced it off, and "
+                              "Barry had to sue to force a way of necessity over the seller's retained "
+                              'land, with the court holding that a mere permissive way can be terminated '
+                              'at any time [wij1Dm2XEX8 @ 00:00:18]. NBC 10 WJAR documented the street '
+                              'version: the Stone and King families pay thousands in taxes on roughly 8 '
+                              'and 64 acres in North Smithfield, but about 10 years ago the neighbors to '
+                              'the north put massive boulders and a metal gate across two paper roads that '
+                              'appear on town documents back to 1843, so the families now paddle across a '
+                              'pond to reach their land legally [gnZroureXsw @ 00:00:56]. When the Stones '
+                              'finally got back in, 2.7 acres of trees were missing, now part of a '
+                              'Superior Court lawsuit against the businesses [gnZroureXsw @ 00:03:17]. '
+                              'Chris Thomas of Land Flipping 101 frames the same risk in deal terms: if '
+                              'there is no legal language in the deed covering a road that crosses another '
+                              "person's property, the new owner can close that road off [gwLVELHJjbc @ "
+                              '00:02:19].',
+                              'The second trap is assuming an exit buyer can borrow. Lashmet says you '
+                              "can't get title insurance on a property with no legal access, and without "
+                              'it most lenders will not allow a mortgage or let you use the land as '
+                              'collateral, which shrinks the buyer pool for the flip [D_ZiLS1CYJg @ '
+                              '00:01:17]. Holmes agrees that no lender will loan on land it cannot reach '
+                              'in a foreclosure, so landlocked tracts get bought with cash and the '
+                              'easement gets figured out afterward; a buyer who skips a legal-access '
+                              'condition in the purchase contract is the one who pays to acquire the '
+                              'access later [orMrWlpfWj4 @ 00:01:54]. Thomas responds by conditioning '
+                              'every purchase on road access, ordering a title search on every deal '
+                              'because not all easements are searchable in public records, and insisting '
+                              'on utility line and pipe rights alongside the road easement because without '
+                              'them the land loses a lot of its value [gwLVELHJjbc @ 00:06:37]. Survey '
+                              'cost is treated as a negotiation rather than an expense: Thomas pushes it '
+                              'onto the seller, onto the closing proceeds, or splits it so seller and '
+                              'buyer each think they are halving it with Thomas while the survey gets paid '
+                              'for 100 percent by them [gwLVELHJjbc @ 00:12:02].',
+                              'Flood labels carry their own reversals. Jeremy of PushLeads warns that more '
+                              'than 20% of National Flood Insurance Program claims come from zones with no '
+                              'federal mandate, where one inch of water averages a $25,000 loss, and that '
+                              'renovations exceeding 50% of pre-improvement market value can trigger full '
+                              'structure elevation costing $30,000 to $100,000 or more [fXtOfFlKqmc @ '
+                              '00:04:24]. Miss the 90-day appeal window on a preliminary map and the new '
+                              'zone is final, with FEMA updating maps every 5 to 10 years [fXtOfFlKqmc @ '
+                              '00:05:02]. Compass Land USA adds that a LOMA does not change the flood risk '
+                              'itself, the property may still flood after removal, and fill dirt brought '
+                              'in for building needs a permit before it arrives [bPbMFP-bGyU @ 00:02:22]. '
+                              "On the ground, Amber Shah's door-knocking run in St. Augustine shows how "
+                              'messy the cheap neighbor easement can get: the only route crosses a fenced '
+                              "backyard at an absentee owner's non-primary residence, drops toward an "
+                              "off-road area where improvements may be barred, and runs into St. John's "
+                              'River District land, with no way to be sure what anybody is willing to do '
+                              '[O6tZ8o1scfY @ 00:03:22].'],
+               'table': {'caption': 'Firsthand access and flood traps with the economics check each one '
+                                    'demands',
+                         'headers': ['Trap',
+                                     'What Happened Or Was Warned',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [["Permissive access over a stranger's land",
+                                   'Stranger fenced the airfield in 1950, forcing the buyer to sue the '
+                                   'seller',
+                                   'Price access at zero until a written, recorded right exists',
+                                   'Law Case Summaries ([wij1Dm2XEX8 @ 00:00:18])'],
+                                  ['Historic paper roads gated by neighbors',
+                                   'Boulders and a gate cut off roads mapped since 1843; families boat in',
+                                   'Taxes keep running while a Superior Court lawsuit drags on',
+                                   'NBC 10 WJAR ([gnZroureXsw @ 00:01:12])'],
+                                  ['No title insurance and no mortgage financing',
+                                   'Lenders refuse land they cannot access in a foreclosure scenario',
+                                   'Exit buyer pool shrinks to cash buyers who fix access afterward',
+                                   'Texas Agriculture Law ([D_ZiLS1CYJg @ 00:01:17]); David Miller '
+                                   '([orMrWlpfWj4 @ 00:03:28])'],
+                                  ['Court picks a different access route',
+                                   'Judge may find another alternative that costs more to develop',
+                                   'Budget roughly $20,000 in legal fees and confirm only one reasonable '
+                                   'route',
+                                   'dhall3000 ([GpQWztIpKSo @ 00:04:38])'],
+                                  ['Neighbor balks or demands unreasonable compensation',
+                                   'Owner is pushed toward an easement by necessity lawsuit instead',
+                                   'Fund a deed and title search proving common prior ownership of both '
+                                   'parcels',
+                                   'Simple Explain ([e7VCFv7koQE @ 00:02:22]); LandApp by LandGate '
+                                   '([2lVnO8IebI0 @ 00:03:15])'],
+                                  ['Trusting a moderate or low-risk flood label',
+                                   'Over 20% of claims come from non-mandate zones; county maps may differ '
+                                   'from FEMA',
+                                   'One inch of water runs $25,000 against $400 to $600 yearly premiums',
+                                   'PushLeads ([fXtOfFlKqmc @ 00:03:23]); LAVERNE MCGEE TV ([ptM7-3KSnO4 @ '
+                                   '00:01:36])'],
+                                  ['Ignoring upkeep on a private road easement',
+                                   'The easement holder using the private road is usually responsible for '
+                                   'maintaining it',
+                                   'Build road maintenance into hold costs and resale pricing',
+                                   'Land Flipping 101 ([gwLVELHJjbc @ 00:11:24])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-or-Proceed Checks Before Signing on Access or Flood Risk',
+                           'body': 'Each gate below comes from a loss, lawsuit, or dead end practitioners '
+                                   'hit firsthand. Clear all four before committing earnest money or '
+                                   'pricing the exit.',
+                           'items': ['Do not price a deal as landlocked until county records confirm there '
+                                     'is neither a recorded easement nor a long-used physical road; Bosch '
+                                     'only treats a parcel with neither legal nor actual road access as '
+                                     'truly landlocked [Land Profit Generator with Jack & Michelle Bosch — '
+                                     'tfERI-RnheU @ 00:01:59].',
+                                     'Never count permissive access as legal access; a mere permissive way '
+                                     'can be terminated at any time, as the airfield fence in Barry v '
+                                     'Hasseldine proved [Law Case Summaries — wij1Dm2XEX8 @ 00:01:14].',
+                                     'Assume the exit buyer cannot get title insurance or a mortgage on a '
+                                     'parcel with no legal access, and price the flip for cash buyers only '
+                                     '[Texas Agriculture Law — D_ZiLS1CYJg @ 00:01:17].',
+                                     'Check the flood zone before any build or renovation, because work '
+                                     'exceeding 50% of pre-improvement market value can trigger $30,000 to '
+                                     '$100,000 or more in elevation costs [PushLeads — fXtOfFlKqmc @ '
+                                     '00:04:24].']}}],
+ 'pull_quote': '"First figure out exactly: are they truly landlocked? If it\'s too hard to get the '
+               "easement, just flip them. If it's easy to get the easement, get it and capture that "
+               'upside." — Jack Bosch, Land Profit Generator with Jack & Michelle Bosch (tfERI-RnheU @ '
+               '00:10:43).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Open the FEMA flood map viewer, enter the parcel address in the top-left search '
+                      'bar, read the zone colors and floodway hatching, then call the county for any local '
+                      'flood maps [LAVERNE MCGEE TV — ptM7-3KSnO4 @ 00:00:57].',
+                      'For any A or V zone parcel, order an elevation certificate from a licensed surveyor '
+                      'at $400 to $800 to control premiums and support a LOMA challenge [PushLeads — '
+                      'fXtOfFlKqmc @ 00:04:04].',
+                      'Run a title search on every deal and condition the purchase on legal road access '
+                      'plus utility line and pipe rights [Land Flipping 101 — gwLVELHJjbc @ 00:06:37].',
+                      'If only one neighbor sits between the parcel and the road, pull their public-record '
+                      'contact info, send a letter or call, and offer a small payment such as $500 for the '
+                      'easement [Land Profit Generator with Jack & Michelle Bosch — tfERI-RnheU @ '
+                      '00:08:30].',
+                      'Have a title company or real estate attorney draw up the easement as a one-page '
+                      'document, notarized with witnesses, and record it in the county public records '
+                      '[Land Flipping 101 — gwLVELHJjbc @ 00:10:07].',
+                      "If the neighbor refuses, commission an appraisal of the neighbor's diminution in "
+                      'value and negotiate knowing your ceiling is the cost of litigation [dhall3000 — '
+                      'GpQWztIpKSo @ 00:05:17].'],
+ 'statutory_citations': [{'title': 'Land Profit Generator with Jack & Michelle Bosch — FCP 058: LANDLOCKED '
+                                   'REAL ESTATE - HOW TO TURN A PROBLEM PROPERTY INTO PURE PROFIT '
+                                   '[00:05:31]',
+                          'url': 'https://www.youtube.com/watch?v=tfERI-RnheU&t=331s',
+                          'relevance': 'Primary practitioner testimony on discounting landlocked parcels '
+                                       'by half, offer math, and the flip-versus-easement decision.'},
+                         {'title': 'Texas Agriculture Law — Landlocked Property in Texas - What You Need '
+                                   'to Know! [00:00:22]',
+                          'url': 'https://www.youtube.com/watch?v=D_ZiLS1CYJg&t=22s',
+                          'relevance': 'Primary practitioner testimony on the absence of an automatic '
+                                       'access right in Texas and the title insurance and financing '
+                                       'consequences.'},
+                         {'title': 'Law Case Summaries — Barry v Hasseldine: Strict Easement of Necessity '
+                                   '(Landlocked Land) [1952] Ch 835 [00:00:54]',
+                          'url': 'https://www.youtube.com/watch?v=wij1Dm2XEX8&t=54s',
+                          'relevance': 'Primary practitioner testimony on permissive access being '
+                                       "terminated and a way of necessity being implied over the grantor's "
+                                       'land.'},
+                         {'title': 'PushLeads — What is a FEMA flood zone and does it affect your claim? '
+                                   '[00:04:43]',
+                          'url': 'https://www.youtube.com/watch?v=fXtOfFlKqmc&t=283s',
+                          'relevance': 'Primary practitioner testimony on LOMA costs, premium savings, and '
+                                       'flood-zone appeal deadlines.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ptM7-3KSnO4',
+                       'title': 'HOW TO READ A FLOOD MAP BY FEMA TO SEE IF YOU ARE IN A FLOOD ZONE',
+                       'channel': 'LAVERNE MCGEE TV',
+                       'author': 'LAVERNE MCGEE TV',
+                       'text': 'Up in the top left corner is the address search bar; put in the address '
+                               'and see what pops up, and a lot of blue means there are some flood hazards '
+                               'nearby.',
+                       'tip': 'Up in the top left corner is the address search bar; put in the address and '
+                              'see what pops up, and a lot of blue means there are some flood hazards '
+                              'nearby.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=ptM7-3KSnO4&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=ptM7-3KSnO4&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fXtOfFlKqmc',
+                       'title': 'What is a FEMA flood zone and does it affect your claim?',
+                       'channel': 'PushLeads',
+                       'author': 'PushLeads',
+                       'text': 'If your survey shows your property sits above BFE but was incorrectly '
+                               'mapped, file a letter of map amendment; engineering and survey costs run '
+                               '$1,500 to $5,000, but a successful LOMA can cut premiums by $1,000 or more '
+                               'per year.',
+                       'tip': 'If your survey shows your property sits above BFE but was incorrectly '
+                              'mapped, file a letter of map amendment; engineering and survey costs run '
+                              '$1,500 to $5,000, but a successful LOMA can cut premiums by $1,000 or more '
+                              'per year.',
+                       'timestamp': 283,
+                       'timestamp_seconds': 283,
+                       'timestamp_label': '[00:04:43]',
+                       'url': 'https://www.youtube.com/watch?v=fXtOfFlKqmc&t=283s',
+                       'markdown': '[00:04:43](https://www.youtube.com/watch?v=fXtOfFlKqmc&t=283s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bPbMFP-bGyU',
+                       'title': 'How to Change Flood Zone Determination (with FEMA LOMA)',
+                       'channel': 'Compass Land USA',
+                       'author': 'Compass Land USA',
+                       'text': 'A LOMA does not change the flood risk of the property, and the property '
+                               "may still flood even if it's removed from the special flood hazard area.",
+                       'tip': 'A LOMA can cost around 500 to submit and can take upwards of 60 days for a '
+                              'response, so do your homework ahead of time.',
+                       'timestamp': 228,
+                       'timestamp_seconds': 228,
+                       'timestamp_label': '[00:03:48]',
+                       'url': 'https://www.youtube.com/watch?v=bPbMFP-bGyU&t=228s',
+                       'markdown': '[00:03:48](https://www.youtube.com/watch?v=bPbMFP-bGyU&t=228s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2lVnO8IebI0',
+                       'title': 'What does landlocked mean, and how do you solve it?',
+                       'channel': 'LandApp by LandGate',
+                       'author': 'LandApp by LandGate',
+                       'text': 'The landlocked owner must demonstrate through a deed and title search that '
+                               'the landlocked property and the neighboring property were once owned by '
+                               'the same person.',
+                       'tip': 'The landlocked owner must demonstrate through a deed and title search that '
+                              'the landlocked property and the neighboring property were once owned by the '
+                              'same person.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=2lVnO8IebI0&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=2lVnO8IebI0&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5p6zCt25Tyw',
+                       'title': 'Landlocked Properties & What To Do With A Property With No Access',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': "If we're buying this landlocked property for such a discount, we can "
+                               'probably pay 70 80 percent for this 10 acres and still come up and double '
+                               'our money.',
+                       'tip': "If we're buying this landlocked property for such a discount, we can "
+                              'probably pay 70 80 percent for this 10 acres and still come up and double '
+                              'our money.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=5p6zCt25Tyw&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=5p6zCt25Tyw&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4mnTabZRS60',
+                       'title': 'Is Your Florida Property Landlocked? Here’s What You Can Do',
+                       'channel': 'Legal Counsel P.A.',
+                       'author': 'Legal Counsel P.A.',
+                       'text': 'Absent an agreement with your neighbor, an easement by necessity often '
+                               'involves initiating a lawsuit against your neighbor, and this can be a '
+                               'long and expensive process.',
+                       'tip': 'Absent an agreement with your neighbor, an easement by necessity often '
+                              'involves initiating a lawsuit against your neighbor, and this can be a long '
+                              'and expensive process.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=4mnTabZRS60&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=4mnTabZRS60&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e7VCFv7koQE',
+                       'title': 'Landlocked: Definition in Real Estate and Easement Solution',
+                       'channel': 'Simple Explain',
+                       'author': 'Simple Explain',
+                       'text': 'If a neighbor balks at signing a friendly easement or asks for '
+                               'unreasonable compensation, it may be necessary to obtain an easement by '
+                               'necessity.',
+                       'tip': 'If a neighbor balks at signing a friendly easement or asks for unreasonable '
+                              'compensation, it may be necessary to obtain an easement by necessity.',
+                       'timestamp': 142,
+                       'timestamp_seconds': 142,
+                       'timestamp_label': '[00:02:22]',
+                       'url': 'https://www.youtube.com/watch?v=e7VCFv7koQE&t=142s',
+                       'markdown': '[00:02:22](https://www.youtube.com/watch?v=e7VCFv7koQE&t=142s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tfERI-RnheU',
+                       'title': 'FCP 058: LANDLOCKED REAL ESTATE - HOW TO TURN A PROBLEM PROPERTY INTO '
+                                'PURE PROFIT',
+                       'channel': 'Land Profit Generator with Jack & Michelle Bosch',
+                       'author': 'Land Profit Generator with Jack & Michelle Bosch',
+                       'text': 'The moment we find out that the property is landlocked the value goes down '
+                               'and therefore our offer goes down; I personally cut the value at least in '
+                               'half and then I make my offer from there.',
+                       'tip': 'The moment we find out that the property is landlocked the value goes down '
+                              'and therefore our offer goes down; I personally cut the value at least in '
+                              'half and then I make my offer from there.',
+                       'timestamp': 331,
+                       'timestamp_seconds': 331,
+                       'timestamp_label': '[00:05:31]',
+                       'url': 'https://www.youtube.com/watch?v=tfERI-RnheU&t=331s',
+                       'markdown': '[00:05:31](https://www.youtube.com/watch?v=tfERI-RnheU&t=331s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wij1Dm2XEX8',
+                       'title': 'Barry v Hasseldine: Strict Easement of Necessity (Landlocked Land) [1952] '
+                                'Ch 835',
+                       'channel': 'Law Case Summaries',
+                       'author': 'Law Case Summaries',
+                       'text': 'A mere permissive way of approach cannot defeat the implication, since '
+                               'permission can be terminated at any time.',
+                       'tip': 'A mere permissive way of approach cannot defeat the implication, since '
+                              'permission can be terminated at any time.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=wij1Dm2XEX8&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=wij1Dm2XEX8&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'orMrWlpfWj4',
+                       'title': 'Landlocked property, easements, and shark attacks!!! David Holmes '
+                                'Attorney',
+                       'channel': 'David Miller',
+                       'author': 'David Miller',
+                       'text': 'Any land can be sold, but as far as being able to borrow money, you got to '
+                               'buy it with cash and then figure out your easements.',
+                       'tip': 'Any land can be sold, but as far as being able to borrow money, you got to '
+                              'buy it with cash and then figure out your easements.',
+                       'timestamp': 208,
+                       'timestamp_seconds': 208,
+                       'timestamp_label': '[00:03:28]',
+                       'url': 'https://www.youtube.com/watch?v=orMrWlpfWj4&t=208s',
+                       'markdown': '[00:03:28](https://www.youtube.com/watch?v=orMrWlpfWj4&t=208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gwLVELHJjbc',
+                       'title': 'Landlocked Properties and Easements',
+                       'channel': 'Land Flipping 101',
+                       'author': 'Land Flipping 101',
+                       'text': 'To be absolutely certain that I found all the easements on my properties, '
+                               'my best advice would be to have a title search done; I do this on all my '
+                               'properties.',
+                       'tip': "When I'm a buyer I always condition my purchase on having road access, "
+                              "because without it you wouldn't be able to use the land.",
+                       'timestamp': 397,
+                       'timestamp_seconds': 397,
+                       'timestamp_label': '[00:06:37]',
+                       'url': 'https://www.youtube.com/watch?v=gwLVELHJjbc&t=397s',
+                       'markdown': '[00:06:37](https://www.youtube.com/watch?v=gwLVELHJjbc&t=397s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O6tZ8o1scfY',
+                       'title': '🎥 Landlocked Land in Florida?! What I Learned While Hunting for Access, '
+                                'Easements & Closest Neighbor',
+                       'channel': 'Amber Shah of St. Augustine Realtor',
+                       'author': 'Amber Shah of St. Augustine Realtor',
+                       'text': 'I could grid that out for you and find out what the full area would be, '
+                               'acreage wise, to look at the costs involved, because you can never be sure '
+                               "what anybody's willing to do.",
+                       'tip': 'I could grid that out for you and find out what the full area would be, '
+                              'acreage wise, to look at the costs involved, because you can never be sure '
+                              "what anybody's willing to do.",
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=O6tZ8o1scfY&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=O6tZ8o1scfY&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GpQWztIpKSo',
+                       'title': 'Landlocked property access easement appraisal',
+                       'channel': 'dhall3000',
+                       'author': 'dhall3000',
+                       'text': "The analysis based on the benefit to your lot isn't realistic because you "
+                               'will win the lawsuit; your negotiating room is really the cost of '
+                               'litigation.',
+                       'tip': "The analysis based on the benefit to your lot isn't realistic because you "
+                              'will win the lawsuit; your negotiating room is really the cost of '
+                              'litigation.',
+                       'timestamp': 317,
+                       'timestamp_seconds': 317,
+                       'timestamp_label': '[00:05:17]',
+                       'url': 'https://www.youtube.com/watch?v=GpQWztIpKSo&t=317s',
+                       'markdown': '[00:05:17](https://www.youtube.com/watch?v=GpQWztIpKSo&t=317s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gnZroureXsw',
+                       'title': 'I-Team: Landlocked property owners want access',
+                       'channel': 'NBC 10 WJAR',
+                       'author': 'NBC 10 WJAR',
+                       'text': "Your family owns this land, 64 acres, and you can't get to it; it's been "
+                               'closed on both ends.',
+                       'tip': "Your family owns this land, 64 acres, and you can't get to it; it's been "
+                              'closed on both ends.',
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=gnZroureXsw&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=gnZroureXsw&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HsA2g1n57AY',
+                       'title': 'Basics of Easements & Encroachments | Real Estate Exam Prep Videos',
+                       'channel': 'The Real Estate Classroom',
+                       'author': 'The Real Estate Classroom',
+                       'text': "Easement by prescription is through continuous use, and that's why in the "
+                               'countryside you see a lot of no trespassing, keep out signs, to prevent '
+                               'anybody from creating those easements.',
+                       'tip': "Easement by prescription is through continuous use, and that's why in the "
+                              'countryside you see a lot of no trespassing, keep out signs, to prevent '
+                              'anybody from creating those easements.',
+                       'timestamp': 438,
+                       'timestamp_seconds': 438,
+                       'timestamp_label': '[00:07:18]',
+                       'url': 'https://www.youtube.com/watch?v=HsA2g1n57AY&t=438s',
+                       'markdown': '[00:07:18](https://www.youtube.com/watch?v=HsA2g1n57AY&t=438s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D_ZiLS1CYJg',
+                       'title': 'Landlocked Property in Texas - What You Need to Know!',
+                       'channel': 'Texas Agriculture Law',
+                       'author': 'Texas Agriculture Law',
+                       'text': 'The best, cheapest, cleanest option to deal with a landlocked property '
+                               'situation is to obtain an express easement from a neighbor.',
+                       'tip': 'The best, cheapest, cleanest option to deal with a landlocked property '
+                              'situation is to obtain an express easement from a neighbor.',
+                       'timestamp': 152,
+                       'timestamp_seconds': 152,
+                       'timestamp_label': '[00:02:32]',
+                       'url': 'https://www.youtube.com/watch?v=D_ZiLS1CYJg&t=152s',
+                       'markdown': '[00:02:32](https://www.youtube.com/watch?v=D_ZiLS1CYJg&t=152s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

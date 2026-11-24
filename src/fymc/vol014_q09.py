@@ -1,792 +1,899 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern specialty finance brokerage?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Commercial Loan-Broker Licensing, SBA Fee Agreements, UCC Collateral Controls, HIPAA Claims Workflows, and Securities-Safe Referral Boundaries",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #20, Specialty Finance Brokerage, holds Rank #06 among 29 mapped plays "
-        "with a Money-to-Manpower Score of 89/100. The operating asset is a documented "
-        "boundary between commercial debt placement, claims administration, and securities "
-        "intermediation. Build jurisdiction-specific lender matrices, signed fee triggers, "
-        "controlled disclosures, and evidence-backed outreach before accepting applications. "
-        "Canonical annual owner profits are $30,000 Conservative, $196,000 Base, and $450,000 "
-        "Scaled; revenue counts retained origination or referral fees, never loan principal. "
-        "Medical-receivables recovery, privacy-claim support, and solar tax-equity syndication "
-        "each require separate authority and engagement design. This chapter supplies "
-        "contract clauses, licensing checks, communication scripts, and escalation rules "
-        "that prevent failed closings, lender concentration, and commission clawbacks "
-        "from turning a lean brokerage into an unfunded liability."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "25% net margin; $30,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "35.0% net margin; $196,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "45% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Classify the transaction before quoting fees or contacting lenders",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Open every file with a transaction classification sheet, not a lender blast. "
-                    "Record borrower organization, principal business address, collateral location, "
-                    "proceeds purpose, guarantor involvement, broker activity location, and proposed "
-                    "capital source. A corporate borrower does not erase state commercial lending "
-                    "requirements, and an equipment lease label does not determine whether the "
-                    "arrangement is legally a loan. California Financial Code section 22100 requires "
-                    "licensing for covered finance lending and brokering; analyze exemptions and "
-                    "the actual lender relationship rather than assuming every bank referral fits. "
-                    "California commercial financing disclosures under sections 22800 through 22805 "
-                    "are a separate analysis, generally involving covered offers of $500,000 or "
-                    "less. New York Financial Services Law article 8 uses a different framework, "
-                    "including a $2.5 million transaction threshold and implementing rules in "
-                    "23 NYCRR Part 600. Neither disclosure framework substitutes for a licensing "
-                    "review. Store the applicable statute, exemption rationale, reviewed activity, "
-                    "reviewer, and review date in Airtable or a controlled spreadsheet. Mark lender "
-                    "permissions separately from broker permissions: a lender's charter does not "
-                    "automatically authorize an independent intermediary. Recheck the sheet when "
-                    "a transaction changes from equipment financing to real-estate bridge debt, "
-                    "receivables purchase, or an investment offering. Each change can move the "
-                    "file into a different licensing and disclosure perimeter."
-                ),
-                (
-                    "Treat fair lending as an intake and routing discipline. The Equal Credit "
-                    "Opportunity Act, 15 U.S.C. section 1691, and Regulation B apply to business "
-                    "credit, although particular notification and recordkeeping rules vary by "
-                    "applicant and transaction. Regulation B includes certain regular referral "
-                    "and creditor-selection activities within its creditor definition for "
-                    "anti-discrimination and discouragement provisions; do not assume that "
-                    "avoiding underwriting eliminates exposure. Build lender matching from "
-                    "documented factors such as equipment age, receivables dilution, industry "
-                    "eligibility, debt-service coverage, and lien position. Never steer by "
-                    "protected characteristics or use demographic proxies as convenient "
-                    "shortcuts. Assign responsibility for adverse-action notices explicitly, "
-                    "while recognizing that a contract cannot transfer away a statutory duty. "
-                    "Maintain the version of the credit criteria actually used and preserve "
-                    "the applicant's submitted facts. For personal guarantor reports, establish "
-                    "a permissible purpose under 15 U.S.C. section 1681b before requesting "
-                    "consumer-report data; a generic marketing checkbox is inadequate evidence. "
-                    "Collect only the information needed for the requested placement and "
-                    "restrict report access. For small-business lending data collection, assess "
-                    "12 CFR Part 1002, Subpart B against the lender's coverage and effective "
-                    "implementation schedule rather than hard-coding a universal start date. "
-                    "Document whether the brokerage merely transmits required fields or "
-                    "independently has covered obligations."
-                ),
-                (
-                    "Give SBA, collateral, and securities work their own routing rules. For "
-                    "SBA transactions, identify each agent, service, payer, and compensation "
-                    "basis under 13 CFR Part 103; use SBA Form 159 when applicable and "
-                    "reconcile compensation across borrower, lender, and referral agreements. "
-                    "Do not bury an additional success fee inside a document-processing charge. "
-                    "For equipment and accounts-receivable placements, counsel should determine "
-                    "the governing state's UCC enactment, debtor location, filing office, "
-                    "collateral description, perfection method, and existing lien priorities. "
-                    "A UCC search is evidence of filed records, not proof that every competing "
-                    "interest has been discovered. Request payoff and release mechanics before "
-                    "representing that a lender can receive first priority. Real-estate bridge "
-                    "transactions require an additional mortgage-broker and property-law review; "
-                    "business purpose alone is not a nationwide exemption. Finally, separate "
-                    "ordinary commercial loan introductions from solicitation of notes, fund "
-                    "interests, or partnership equity that may constitute securities. Exchange "
-                    "Act section 15(a), 15 U.S.C. section 78o(a), can require broker-dealer "
-                    "registration. Transaction-based compensation is a major warning signal, "
-                    "not the only relevant fact. Do not rename a placement commission a "
-                    "consulting fee and continue solicitation. Route securities activity to "
-                    "appropriately registered intermediaries and document the permitted "
-                    "services before discussing investor allocations."
-                ),
-            ],
-            "table": {
-                "caption": "Jurisdiction and Product Classification Matrix for Commercial Finance Intake",
-                "headers": [
-                    "Transaction and authority to classify",
-                    "Evidence required before lender routing",
-                    "Operating control assigned to the file",
-                    "Failure response before further activity",
-                ],
-                "rows": [
-                    [
-                        "California finance brokering under Financial Code section 22100",
-                        "Borrower location, actual services, lender identity, and exemption analysis",
-                        "Record license authority or documented exemption for specific activities",
-                        "Stop covered brokering until required authority is established",
-                    ],
-                    [
-                        "California covered offers under Financial Code sections 22800 through 22805",
-                        "Offer amount, financing category, recipient facts, and provider role",
-                        "Assign disclosure preparation, delivery timing, and signed acknowledgment retention",
-                        "Withhold covered offer delivery until required disclosures are complete",
-                    ],
-                    [
-                        "New York commercial financing under Financial Services Law article 8",
-                        "Recipient nexus, transaction amount, product classification, and exemption support",
-                        "Apply relevant Part 600 calculations and disclosure workflow",
-                        "Correct inconsistent offer economics before obtaining recipient acceptance",
-                    ],
-                    [
-                        "Business credit referrals under ECOA and Regulation B",
-                        "Actual matching criteria, applicant communications, and creditor role assessment",
-                        "Preserve objective routing reasons and assigned notification responsibilities",
-                        "Escalate discriminatory criteria and correct affected routing decisions",
-                    ],
-                    [
-                        "SBA agent compensation under 13 CFR Part 103",
-                        "Agent services, compensation schedule, payer identity, and program instructions",
-                        "Complete required Form 159 documentation and reconcile every fee",
-                        "Remove unsupported charges before presenting final closing instructions",
-                    ],
-                    [
-                        "Investment solicitation under Exchange Act section 15(a)",
-                        "Instrument terms, investor communications, compensation structure, and intermediary registration",
-                        "Separate securities placements from ordinary commercial debt referral workflows",
-                        "Suspend solicitation and route activity through authorized securities professionals",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before a borrower receives a financing proposal",
-                "body": (
-                    "The file owner records evidence for each check before the team "
-                    "quotes a fee, circulates sensitive records, or transmits an offer."
-                ),
-                "items": [
-                    "Verify borrower, collateral, and activity jurisdictions against the actual product; retain license records or a transaction-specific exemption analysis.",
-                    "Reconcile borrower and lender compensation schedules, required commercial financing disclosures, and applicable SBA agent documentation.",
-                    "Confirm the intended recipient, permissible report purpose, data-sharing authority, and any required service-provider or business-associate agreement.",
-                    "Review the instrument for securities characteristics and stop investor solicitation unless the intermediary structure supports the proposed activity.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Make compensation, authority, and downside allocation executable",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use an engagement agreement that describes what the brokerage will actually "
-                    "do: package an application, compare eligible lenders, coordinate diligence, "
-                    "and transmit offers without promising approval. Exclude authority to bind "
-                    "the borrower, sign loan documents, hold proceeds, or change lender terms "
-                    "unless a separate authorized arrangement genuinely requires it. Identify "
-                    "the paying party and disclose lender-paid compensation and material "
-                    "placement conflicts as required. Define the success-fee trigger using "
-                    "observable evidence: cleared funding to the borrower, qualifying funded "
-                    "amount, agreed percentage, payment deadline, and any exclusions. A term "
-                    "sheet, commitment, signed note, and funded loan are different events. "
-                    "For a revolving facility, specify whether the fee uses commitment size, "
-                    "initial draw, or cumulative draws; never leave the base implicit. Use "
-                    "a worked example: a $1,000,000 equipment financing at a 2% retained fee "
-                    "produces $20,000 of brokerage revenue, not $1,000,000. If $5,000 must "
-                    "be remitted to an outside introducer, retained revenue for this "
-                    "scorecard becomes $15,000. Include the introducer's authority and "
-                    "permitted compensation analysis before agreeing to the split. Require "
-                    "written amendments when loan size, payer, or economics change. Archive "
-                    "the executed agreement and the corresponding lender compensation "
-                    "schedule together so accounting does not infer terms from sales messages."
-                ),
-                (
-                    "Keep anti-circumvention narrow enough to administer. List introduced lenders, "
-                    "define qualifying transactions, exclude documented preexisting relationships, "
-                    "and establish a finite tail measured from a stated event. A twelve-month "
-                    "tail is an illustrative negotiating position, not a universal entitlement. "
-                    "Require a causal connection between the introduction and the funded "
-                    "transaction instead of claiming every future borrowing. Specify whether "
-                    "renewals, affiliates, refinancings, and replacement facilities count. Pair "
-                    "the clause with a lender introduction log and dated borrower acknowledgment. "
-                    "For clawbacks, negotiate enumerated triggers, a limited recovery period, "
-                    "notice requirements, supporting evidence, dispute rights, and restrictions "
-                    "on offsets against unrelated commissions. Distinguish borrower fraud, "
-                    "early payoff, first-payment default, and lender processing error; they "
-                    "should not silently share one unlimited repayment obligation. Liability "
-                    "caps should identify the measurement period and treatment of confidentiality, "
-                    "data incidents, fraud, and willful misconduct, subject to enforceability "
-                    "review. Match insurance to the negotiated exposure rather than assuming "
-                    "professional liability covers every cyber event. State governing law, "
-                    "forum or arbitration procedure, interim relief, notice methods, and "
-                    "cost allocation. Review dispute provisions alongside statutory rights "
-                    "and the counterparty's location. A signed agreement with an unenforceable "
-                    "restriction is weaker than a modest clause supported by clean evidence "
-                    "and a commercially realistic collection process."
-                ),
-                (
-                    "Separate operating revenue from transaction volume in both contracts and "
-                    "management reporting. The canonical Conservative case is $120,000 retained "
-                    "fees less $90,000 operating costs, leaving $30,000 owner profit at 25%. "
-                    "Base is $560,000 less $364,000, leaving $196,000 at 35.0%. Scaled is "
-                    "$1,000,000 less $550,000, leaving $450,000 at 45%. Teams remain 2 FT "
-                    "plus 2 C for Conservative and Base, and 3 FT plus 3 C for Scaled. "
-                    "An illustrative reconciliation at $20,000 retained fees per closing "
-                    "requires six, twenty-eight, and fifty annual closings respectively; "
-                    "those counts explain the totals without adding loan principal to "
-                    "revenue. They imply $6 million, $28 million, and $50 million of "
-                    "funded volume only if every deal has the same $1 million size "
-                    "and 2% retained yield. Record signed commitments separately from "
-                    "funded, earned, invoiced, and collected fees. Failed closings generate "
-                    "no success fee under a funding-based trigger. Track disputed fees "
-                    "and contingent repayment exposure separately from unrestricted cash, "
-                    "with the accounting treatment reviewed for the applicable reporting "
-                    "basis. Set lender-concentration alerts by retained fees and pipeline "
-                    "dependence. If one lender pauses originations, reroute only with "
-                    "borrower authorization and updated economics; never conceal a "
-                    "replacement lender's different fee or collateral requirements."
-                ),
-            ],
-            "table": {
-                "caption": "Six Contract Clauses with Evidence, Economics, and Collection Mechanics",
-                "headers": [
-                    "Clause and specifically bounded contractual promise",
-                    "Drafting instruction for the engagement agreement",
-                    "Evidence retained with the executed agreement",
-                    "Operational consequence when the clause fails",
-                ],
-                "rows": [
-                    [
-                        "Scope limits brokerage to identified placement coordination services",
-                        "Exclude binding authority, custody, underwriting promises, and unauthorized representations",
-                        "Retain service schedule, authorized contacts, and documented borrower instructions",
-                        "Stop expanded services until authority and pricing are documented",
-                    ],
-                    [
-                        "Fee trigger distinguishes funded principal from retained compensation",
-                        "Name payer, percentage, funding event, exclusions, and payment deadline",
-                        "Retain funding confirmation, fee calculation, invoice, and payment record",
-                        "Do not invoice unfunded commitments as earned success fees",
-                    ],
-                    [
-                        "Anti-circumvention protects documented introductions within a finite tail",
-                        "List covered lenders, causal connection, exclusions, and qualifying transactions",
-                        "Retain dated introductions and evidence of preexisting relationship exclusions",
-                        "Limit collection demands to transactions supported by contractual evidence",
-                    ],
-                    [
-                        "Liability allocation specifies caps and negotiated exception categories",
-                        "Define cap period, indemnity procedure, insurance alignment, and exclusions",
-                        "Retain negotiated redlines and coverage analysis for actual services",
-                        "Escalate uninsured exposure before accepting broader contractual risk",
-                    ],
-                    [
-                        "Dispute resolution establishes forum and practical notice mechanics",
-                        "Specify governing law, arbitration scope, costs, and interim relief",
-                        "Retain notice addresses, delivery receipts, and dispute escalation records",
-                        "Follow contractual notice procedures before pursuing recovery remedies",
-                    ],
-                    [
-                        "IP and data terms preserve client records and proprietary methods",
-                        "Allocate template ownership, permitted processing, export rights, and deletion",
-                        "Retain access logs, processor agreements, retention schedules, and exports",
-                        "End unnecessary access while preserving required records and holds",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the fee before celebrating the closing",
-                "body": (
-                    "Experienced specialty finance operators reconcile the lender's "
-                    "payment mechanics against the borrower's agreement while the "
-                    "transaction is still negotiable."
-                ),
-                "items": [
-                    "For equipment deals, compare vendor payment, borrower funding, and broker commission dates; they often occur on different days.",
-                    "For receivables facilities, define whether fee calculations exclude reserves, ineligible invoices, and unused commitments before presenting pricing.",
-                    "For SBA referrals, compare Form 159 treatment with every side agreement so an extra processing charge cannot hide duplicate compensation.",
-                    "For lender-paid commissions, request the clawback schedule before submitting the first borrower and track exposure by lender cohort.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fence medical claims, privacy support, and solar equity into separate mandates",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play hospital_lien_medical_receivables_arbitrage is claims-recovery "
-                    "work, not permission to trade patient obligations or assume a hospital "
-                    "lien exists. Partner with surgical centers, air or ground ambulance "
-                    "operators, and specialty clinics only after classifying payer, service, "
-                    "plan type, patient protections, and representative authority. Federal "
-                    "No Surprises Act payment disputes under 42 U.S.C. section 300gg-111 "
-                    "and 45 CFR section 149.510 have specific eligibility and timing rules; "
-                    "federal protections generally do not cover ground ambulance services. "
-                    "For eligible disputes, track the 30-business-day open-negotiation initiation "
-                    "window from initial payment or denial, the negotiation period, and "
-                    "the ordinarily four-business-day IDR initiation window after that "
-                    "period. Check current extensions and governing process instructions. "
-                    "An illustrative $200,000 incremental recovery at a 25% contingency "
-                    "produces $50,000 gross recovery-service fees, within the mapped 20–35% "
-                    "range, before delivery costs and permitted splits. These are separate "
-                    "service economics, not additional canonical brokerage revenue. Use "
-                    "encrypted EDI transfers, minimum-necessary access, and signed BAAs "
-                    "where HIPAA requires them. If IDR timing has lapsed, evaluate "
-                    "available ERISA administrative appeals under 29 CFR section "
-                    "2560.503-1, including applicable plan deadlines and authority to "
-                    "represent the claimant. An appeal is not an automatic substitute "
-                    "for a provider payment dispute, and some plans or claims fall "
-                    "outside ERISA entirely."
-                ),
-                (
-                    "The mapped play cipa_vppa_wiretap_pixel_settlement_arbitrage supports counsel-led "
-                    "evaluation of genuine privacy claims; it is not a volume demand-letter "
-                    "machine. California Penal Code section 631 and the Video Privacy "
-                    "Protection Act, 18 U.S.C. section 2710, have distinct elements, "
-                    "defenses, and standing questions. Preserve the user's actual session, "
-                    "disclosures, permission state, relevant network requests, timestamps, "
-                    "and provenance under a written collection protocol. Do not create "
-                    "deceptive interactions, access another person's account, or represent "
-                    "that a tracking request alone proves liability. Counsel determines "
-                    "whether the facts support interception, protected video information, "
-                    "a covered defendant, cognizable injury, and a viable remedy. An "
-                    "illustrative authorized evidence-support engagement of twenty hours "
-                    "at $200 per hour yields $4,000 service revenue; a potential statutory "
-                    "damages figure is neither brokerage revenue nor an expected settlement. "
-                    "Avoid arrangements that improperly share legal fees, purchase "
-                    "clients, or reward solicitation; review the governing professional "
-                    "conduct and claim-transfer rules before any financing arrangement. "
-                    "The operator supplies technical evidence and remediation findings, "
-                    "not legal representation. Close unsupported matters with a documented "
-                    "reason and offer an authorized privacy-remediation audit instead. "
-                    "Keep investigation materials separate from outbound marketing systems. "
-                    "Do not promise privilege merely because a lawyer receives a report; "
-                    "counsel must structure the engagement and assess protection."
-                ),
-                (
-                    "The mapped play solar_tax_equity_depreciation_strip_syndication concerns "
-                    "genuine equity ownership in commercial solar projects, not sale of "
-                    "depreciation as a freestanding credit. Partnership allocations require "
-                    "review under Internal Revenue Code section 704(b), related regulations, "
-                    "basis and risk limitations, and the transaction's actual economics. "
-                    "Section 7701(o) supplies an economic-substance framework where relevant; "
-                    "labels and spreadsheets do not replace ownership risk. Determine "
-                    "the applicable energy credit regime, construction and placed-in-service "
-                    "facts, current eligibility restrictions, recapture exposure, and any "
-                    "section 6418 transfer election separately. A transferable eligible "
-                    "credit and a depreciation deduction are different tax attributes. "
-                    "An illustrative $5 million equity commitment with a 2% placement "
-                    "charge yields $100,000 to the authorized placement intermediary "
-                    "under its agreement, not automatically to this brokerage. Only "
-                    "lawfully retained compensation could enter the brokerage scorecard, "
-                    "and the canonical totals remain unchanged. Suspend solicitation "
-                    "and closing if registration, offering, allocation, or ownership "
-                    "support is unresolved. Use appropriately licensed intermediaries "
-                    "and restructure only as independently reviewed genuine equity "
-                    "ownership. Demand project budgets, executed ownership documents, "
-                    "interconnection status, tax models, waterfall sensitivities, and "
-                    "conflict disclosures. Never describe a targeted tax benefit as "
-                    "assured cash yield, and never use an ordinary commercial loan "
-                    "engagement to authorize securities distribution."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Economics, Authority Boundaries, and Concrete Fallbacks",
-                "headers": [
-                    "Mapped workflow and controlled operating scope",
-                    "Illustrative unit economics and revenue classification",
-                    "Evidence supporting the proposed regulated activity",
-                    "Fallback when the required support fails",
-                ],
-                "rows": [
-                    [
-                        "Medical recovery intake for eligible provider payment disputes",
-                        "$200,000 incremental collections multiplied by 25% equals $50,000 service fees",
-                        "Provider authority, payer records, service category, and deadline evidence",
-                        "Assess available appeals without reviving expired statutory dispute rights",
-                    ],
-                    [
-                        "Medical recovery data processing through restricted EDI pipelines",
-                        "Recovery-service fees exclude patient balances and underlying claim amounts",
-                        "Signed required BAAs, encryption settings, access logs, and incident procedures",
-                        "Pause ingestion until protected information can be processed securely",
-                    ],
-                    [
-                        "Privacy evidence support under a counsel-directed investigation",
-                        "Twenty authorized hours multiplied by $200 equals $4,000 service revenue",
-                        "Genuine session artifacts, disclosure versions, permission state, and provenance",
-                        "Close unsupported claims and propose authorized remediation work instead",
-                    ],
-                    [
-                        "Privacy remediation audit separated from claim valuation activity",
-                        "Fixed technical fees remain separate from speculative settlement proceeds",
-                        "Written audit scope, site authority, test accounts, and findings",
-                        "Exclude unapproved systems and avoid unsupported liability conclusions",
-                    ],
-                    [
-                        "Solar equity placement through an appropriately authorized intermediary",
-                        "$5 million equity multiplied by 2% equals $100,000 intermediary compensation",
-                        "Registration review, offering documents, ownership economics, and tax analysis",
-                        "Suspend solicitation and closing until the structure is supported",
-                    ],
-                    [
-                        "Solar ownership restructuring with independently reviewed allocation mechanics",
-                        "Depreciation deductions remain tax attributes rather than standalone sale proceeds",
-                        "Capital accounts, waterfall models, basis schedules, and project records",
-                        "Restructure genuine equity ownership or abandon the proposed transaction",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Use permission-based scripts and preserve the evidence behind each statement",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Commercial outreach needs a channel-specific rule set. CAN-SPAM, 15 U.S.C. "
-                    "section 7704, applies to covered commercial email, including business "
-                    "audiences. Use accurate sender information and subject lines, identify "
-                    "the commercial nature as required, provide a valid postal address "
-                    "and functional opt-out, and honor opt-outs within ten business days. "
-                    "For calling and texting, assess the Telephone Consumer Protection "
-                    "Act, 47 U.S.C. section 227, FCC rules, applicable state restrictions, "
-                    "number type, technology, purpose, and permission evidence. A business "
-                    "title does not make a personal mobile number unrestricted. Avoid "
-                    "purchased lists with unsupported permission claims and do not "
-                    "assume a website inquiry authorizes every affiliate's campaign. "
-                    "Use this email body after configuring the sender's real postal "
-                    "address and unsubscribe mechanism: 'This is a commercial financing "
-                    "services inquiry. We help equipment-intensive businesses compare "
-                    "eligible commercial lenders. We do not make credit decisions. "
-                    "If you are considering equipment financing, may I send our "
-                    "document checklist and explain our compensation? Please do not "
-                    "email bank statements or identification documents. Reply stop "
-                    "or use the unsubscribe link to end these messages.' "
-                    "Keep the message specific to the recipient's business need "
-                    "without inventing an existing relationship, lender endorsement, "
-                    "prequalification, or guaranteed funding timeline."
-                ),
-                (
-                    "Run discovery before requesting documents. Say: 'What amount do you "
-                    "need, what will the proceeds fund, where is the business organized "
-                    "and operating, and what collateral is available? Are you seeking "
-                    "equipment debt, a receivables facility, SBA financing, or a bridge "
-                    "loan? Which lenders already know this request? We will explain "
-                    "our role, proposed compensation, and authorized recipients before "
-                    "submitting your information.' Ask only relevant follow-up questions "
-                    "and record the answers without filling gaps with assumptions. "
-                    "For fee disclosure, say: 'Our proposed success fee is 2% of "
-                    "the funded amount, payable at funding under the signed agreement. "
-                    "On $1 million funded, that is $20,000. We will identify the "
-                    "payer and any lender-paid compensation before you accept the "
-                    "engagement. A lender can decline or change its offer after "
-                    "diligence.' Use those numbers only when they match the actual "
-                    "agreement. For a medical provider, say: 'We first check payer "
-                    "type, service eligibility, representative authority, deadlines, "
-                    "and secure transfer arrangements. We cannot promise IDR access "
-                    "or recovery.' For solar investors, stop the ordinary broker "
-                    "script: 'This involves an equity offering. We will not discuss "
-                    "subscription terms or investor commitments until the authorized "
-                    "securities intermediary establishes the permitted process.'"
-                ),
-                (
-                    "Make the CRM a record of authorized actions rather than a warehouse "
-                    "of sensitive attachments. Assess whether the business is a covered "
-                    "financial institution under the FTC Safeguards Rule, 16 CFR Part "
-                    "314, and implement the applicable written information-security "
-                    "program, risk assessment, access controls, encryption, service-provider "
-                    "oversight, and incident response requirements. GLBA coverage turns "
-                    "on actual activities and protected information, not merely the "
-                    "company's preferred industry label. For HIPAA business-associate "
-                    "work, address 45 CFR sections 164.308, 164.312, and 164.504(e), "
-                    "including subcontractor obligations. Configure Salesforce or "
-                    "HubSpot to store workflow status and secure document links; "
-                    "use a properly configured document platform with appropriate "
-                    "contracts rather than public sharing links. Keep medical files "
-                    "outside general sales workspaces. Apply role-based access, "
-                    "multifactor authentication, audit logs, and an evidence-based "
-                    "retention schedule that accommodates statutory duties and "
-                    "litigation holds. Review templates when statutes, lender "
-                    "terms, or channel rules change, and retain the version "
-                    "actually sent. Test application checklists, lender matching, "
-                    "and renewal reminders against synthetic records before "
-                    "enabling automation. The final pre-send review should verify "
-                    "recipient identity, permitted purpose, current fee language, "
-                    "suppression status, and attachment access. Automation should "
-                    "reduce missing documents and missed renewals, not multiply "
-                    "unsupported representations."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach and Discovery Scripts with Required Evidence Controls",
-                "headers": [
-                    "Communication situation and intended operating purpose",
-                    "Exact language for the permitted conversation",
-                    "Evidence required before using this language",
-                    "Stop condition and safer next action",
-                ],
-                "rows": [
-                    [
-                        "First commercial email seeking permission for further discussion",
-                        "May I send our equipment-financing checklist and explain our compensation?",
-                        "Accurate sender identity, postal address, suppression check, and opt-out",
-                        "Honor opt-outs and remove recipients from further commercial outreach",
-                    ],
-                    [
-                        "Live discovery conversation identifying the requested financing product",
-                        "What will the proceeds fund, and which lenders already know this request?",
-                        "Appropriate contact basis, relevant business context, and channel review",
-                        "Avoid collecting sensitive documents before establishing authorized handling arrangements",
-                    ],
-                    [
-                        "Fee discussion using the actual proposed engagement economics",
-                        "At 2% of $1 million funded, the proposed success fee is $20,000.",
-                        "Matching agreement, identified payer, compensation disclosures, and funding trigger",
-                        "Replace example economics whenever actual terms differ from this statement",
-                    ],
-                    [
-                        "Medical provider intake before sharing protected claim records",
-                        "We first verify representative authority, deadlines, and secure transfer arrangements.",
-                        "Provider authorization, service classification, applicable BAA, and transfer controls",
-                        "Pause records transfer until authority and safeguards are documented",
-                    ],
-                    [
-                        "Privacy inquiry routed toward a genuine counsel-led assessment",
-                        "Counsel must evaluate the facts before anyone asserts a privacy claim.",
-                        "Authorized evidence collection, genuine user experience, and preserved disclosures",
-                        "Close unsupported matters and offer an authorized remediation audit",
-                    ],
-                    [
-                        "Solar inquiry crossing from lending into investment solicitation",
-                        "An authorized securities intermediary must establish the process before subscription discussions.",
-                        "Instrument classification, intermediary authority, offering process, and compensation review",
-                        "Suspend solicitation rather than relabeling the transaction as consulting",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify authority and product",
-                    "action": "Complete the jurisdiction, product, lender, and activity record.",
-                    "detail": (
-                        "Attach applicable licensing analysis, exemptions, disclosure duties, "
-                        "and specialist routing decisions before quoting services."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Bind the economic and data terms",
-                    "action": "Execute the engagement and required information-handling agreements.",
-                    "detail": (
-                        "Reconcile payer, retained fee, funding trigger, permitted recipients, "
-                        "clawbacks, and required BAAs against lender-side documents."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Communicate through verified channels",
-                    "action": "Use the reviewed script and preserve its sent version.",
-                    "detail": (
-                        "Check channel restrictions, suppression records, recipient identity, "
-                        "actual fee numbers, and secure document access before transmission."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile funding and close access",
-                    "action": "Match funding evidence to earned fees and post-closing obligations.",
-                    "detail": (
-                        "Track collected compensation, clawback exposure, renewal authority, "
-                        "required retention, access removal, and outstanding disputes."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "A funded transaction earns a fee only when authority, disclosure, "
-        "and the contract all support the same payment."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a jurisdiction-by-product licensing matrix covering equipment, receivables, SBA, bridge debt, claims services, and securities-sensitive referrals.",
-        "Execute matching borrower and lender compensation terms that identify retained fees, funding triggers, permitted splits, and bounded clawbacks.",
-        "Assign commercial financing disclosures, SBA Form 159 documentation, fair-lending controls, and applicable notice responsibilities to named file owners.",
-        "Separate medical, privacy, and solar mandates with documented authority, distinct unit economics, secure evidence handling, and explicit fallback procedures.",
-        "Load reviewed outreach scripts into the CRM with channel restrictions, suppression checks, secure document links, and version retention.",
-        "Reconcile annual retained revenue and operating costs to $30,000, $196,000, and $450,000 owner-profit cases without counting principal or speculative recoveries.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Financial Code section 22100 — Finance lender and broker licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": (
-                "Requires analysis of covered lending and brokering activities, "
-                "applicable licensing, and transaction-specific exemptions."
-            ),
-        },
-        {
-            "title": "California Financial Code section 22800 — Commercial financing disclosure scope",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22800.",
-            "relevance": (
-                "Defines terms used in California's commercial financing disclosure "
-                "framework; related sections supply disclosure duties and exclusions."
-            ),
-        },
-        {
-            "title": "12 CFR section 1002.2 — Regulation B definitions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.2",
-            "relevance": (
-                "Explains when referral and creditor-selection activities fall within "
-                "the creditor definition for specified fair-lending provisions."
-            ),
-        },
-        {
-            "title": "12 CFR section 1002.4 — General rules against discrimination and discouragement",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.4",
-            "relevance": (
-                "Supports objective intake, lender matching, and communications "
-                "that do not discriminate or discourage protected applicants."
-            ),
-        },
-        {
-            "title": "15 U.S.C. section 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": (
-                "Requires a supported permissible purpose before obtaining "
-                "consumer-report information about personal guarantors."
-            ),
-        },
-        {
-            "title": "13 CFR Part 103 — SBA standards for conducting business",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-103",
-            "relevance": (
-                "Governs agent conduct and compensation arrangements relevant "
-                "to SBA placement services and required fee documentation."
-            ),
-        },
-        {
-            "title": "15 U.S.C. section 78o(a) — Broker-dealer registration",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": (
-                "Establishes registration requirements relevant to securities "
-                "solicitation and transaction-based placement compensation."
-            ),
-        },
-        {
-            "title": "42 U.S.C. section 300gg-111 — Surprise medical billing protections",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
-            "relevance": (
-                "Provides core requirements for covered out-of-network services "
-                "and the federal payment-dispute framework."
-            ),
-        },
-        {
-            "title": "45 CFR section 149.510 — Federal independent dispute resolution process",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-149/subpart-E/section-149.510",
-            "relevance": (
-                "Controls eligibility, open negotiation, initiation timing, "
-                "and administration of covered federal payment disputes."
-            ),
-        },
-        {
-            "title": "29 CFR section 2560.503-1 — Employee benefit plan claims procedures",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-G/part-2560/section-2560.503-1",
-            "relevance": (
-                "Establishes claims and appeal procedures for covered benefit "
-                "plans, including relevant health-claim review requirements."
-            ),
-        },
-        {
-            "title": "45 CFR section 164.504(e) — HIPAA business-associate arrangements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": (
-                "Supplies required contractual assurances when covered entities "
-                "use business associates to process protected health information."
-            ),
-        },
-        {
-            "title": "45 CFR section 164.312 — HIPAA technical safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312",
-            "relevance": (
-                "Supports access controls, audit controls, authentication, "
-                "integrity protection, and transmission-security decisions."
-            ),
-        },
-        {
-            "title": "California Penal Code section 631 — Interception-related prohibitions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=631.",
-            "relevance": (
-                "Requires fact-specific legal assessment before asserting "
-                "California tracking-related interception claims."
-            ),
-        },
-        {
-            "title": "18 U.S.C. section 2710 — Video Privacy Protection Act",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2710",
-            "relevance": (
-                "Defines covered video-service disclosures and related remedies "
-                "requiring individualized factual and legal evaluation."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 704 — Partnership allocations",
-            "url": "https://www.law.cornell.edu/uscode/text/26/704",
-            "relevance": (
-                "Governs allocation of partnership items and supports review "
-                "of genuine solar tax-equity ownership economics."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 7701(o) — Economic substance doctrine",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7701",
-            "relevance": (
-                "Provides the statutory economic-substance framework where relevant "
-                "to the proposed tax-equity transaction."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 6418 — Transfer of certain credits",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6418",
-            "relevance": (
-                "Distinguishes eligible tax-credit transfer elections from "
-                "partnership ownership and depreciation allocation mechanics."
-            ),
-        },
-        {
-            "title": "15 U.S.C. section 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Supports accurate commercial email identification, postal-address "
-                "disclosure, functioning opt-outs, and timely suppression."
-            ),
-        },
-        {
-            "title": "47 U.S.C. section 227 — Telephone solicitation restrictions",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires channel-specific review of calls and texts, "
-                "including technology, destination, purpose, and permission."
-            ),
-        },
-        {
-            "title": "16 CFR Part 314 — FTC Safeguards Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
-            "relevance": (
-                "Establishes information-security requirements for covered financial "
-                "institutions and relevant service-provider oversight."
-            ),
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'mca-iso-operations-and-debt-restructuring',
+ 'question_prompt': 'How do merchant cash advances work from the ISO side, and what can a business do when '
+                    'stacked MCA debt becomes unmanageable?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Merchant Cash Advances: ISO Operations and Debt Restructuring',
+ 'subtitle': 'MCA Warning Signs, ISO Training and Funder Updates, Stacked Positions, UCC Liens, Default '
+             'Consequences, Consolidation, Settlement and Restructuring, SBA Refinancing and New SBA '
+             'Rules, Bankruptcy, and Court Reclassification of MCAs as Loans',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'MCA brokers, restructuring attorneys, a CRO and ISO trainers all describe the same '
+                      'trap. The UCC-1 filed at funding blocks better credit, so owners stack second, '
+                      'third and up to seventh positions. Combined pulls then reach thirty to forty '
+                      'percent of daily receipts. The shared playbook starts with two moves: stop '
+                      'stacking, and build a debt schedule from the actual funder contracts. From there '
+                      'the owner climbs a takeout ladder. Conventional or SBA refinance comes first if '
+                      'credit and DSCR allow. Asset-backed takeouts come next. Everyone else goes to '
+                      'attorney-led restructures that promise 50 to 80 percent monthly payment relief. '
+                      'Factor rates run 1.14 to 1.45, and settlement shops charge 15 to 30 percent. The '
+                      'practitioners split on SBA. The Approved Guy reports that new SBA rules shut 7(a) '
+                      'MCA refinances. ProjectionHub says SBA permits them but lenders walk away from '
+                      'payoffs that move every day. Nearly everyone rejects reverse consolidation.',
+ 'key_metrics': [{'label': 'Attorney-Led Restructure Monthly Payment Reduction',
+                  'metric': 'Attorney-Led Restructure Monthly Payment Reduction',
+                  'value': '50 to 80 percent savings on monthly MCA payments',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Sebastian Boore says an attorney firm representing the owner against MCA '
+                             'lenders saves between 50 and 80 percent on monthly expenses and ends with a '
+                             'paid in full, zero balance letter.',
+                  'source': 'The Approved Guy ([dDwHOnFlzaA @ 00:01:28])'},
+                 {'label': 'Stacking Collapse Threshold',
+                  'metric': 'Stacking Collapse Threshold',
+                  'value': '30 to 40 percent of daily card receipts',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mick Wadley reports that once combined MCA withdrawals hit thirty to forty '
+                             'percent of daily card receipts, most businesses cannot cover rent, payroll '
+                             'and inventory on what is left.',
+                  'source': 'Gap Funding | 100% Real Estate Financing ([OWlnOeMGBkg @ 00:01:35])'},
+                 {'label': 'Debt Settlement Company Fees and Payoff Range',
+                  'metric': 'Debt Settlement Company Fees and Payoff Range',
+                  'value': '15 to 30 percent fees; 40 to 65 percent payoff outcomes',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Wadley lists typical settlement fees as a flat percentage of enrolled debt '
+                             'or of the amount saved, with reported outcomes landing at 40 to 65 percent '
+                             'of the balance.',
+                  'source': 'Gap Funding | 100% Real Estate Financing ([OWlnOeMGBkg @ 00:05:18])'},
+                 {'label': 'SBA Refinance Cash Flow Test',
+                  'metric': 'SBA Refinance Cash Flow Test',
+                  'value': '10 percent improvement in monthly cash flow',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Adam Hookima says SBA refinancing of existing debt requires a 10 percent '
+                             'improvement from the current monthly payment to the proposed SBA payment, '
+                             'which MCA files usually clear.',
+                  'source': 'ProjectionHub ([_V39MGbzjw0 @ 00:00:21])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus: The UCC Trap, the Stacking Spiral and the Exit '
+                          'Ladder',
+               'paragraphs': ['Every practitioner who works MCA files describes the same trap door. Once '
+                              'the advance funds, the funder files a UCC filing. Sebastian Boore of The '
+                              'Approved Guy says that filing makes it very difficult to get a better '
+                              'product, so the only offer left is another advance. He has seen up to seven '
+                              'positions stacked against one business [8x-cfQhQpPU @ 00:01:03]. Meredith '
+                              'at Berkshire Financial Services calls it a blanket lien over equipment, '
+                              'inventory, bank accounts and especially future receivables. That lien '
+                              'blocks new financing, lets funders freeze accounts, and gives them a '
+                              'pretext to contact customers and reroute payments [V8S0sywozwU @ 00:00:15]. '
+                              'Mick Wadley of Gap Funding maps the spiral step by step. The first advance '
+                              'covers payroll, a repair or an equipment purchase. The daily pull eats more '
+                              'cash than expected, so a second advance covers the gap the first one '
+                              'created, and then a third follows. Once combined withdrawals hit thirty to '
+                              'forty percent of daily card receipts, most businesses cannot cover rent, '
+                              'payroll and inventory [OWlnOeMGBkg @ 00:01:18]. The Parkins & Rubio '
+                              'attorneys define stacking as using a new MCA to pay off an old one. They '
+                              'read it as a sign of a repeated cash flow problem, not a short-term hiccup. '
+                              'They add that stacking is a refinancing fact that pushes a court toward '
+                              'treating the deal as a loan [A8iNT8Ctrhk @ 00:07:10].',
+                              'The speakers also agree on how the product gets sold. Boore says '
+                              'boiler-room brokers and direct lenders market all day to businesses that '
+                              'have good credit and no business taking an MCA. The pitch is that there is '
+                              'no interest rate, just a factor rate of 1.35 or 1.45, sometimes 1.25. The '
+                              'advance is 80 to 90 percent of the average monthly statement, repaid by '
+                              'daily or weekly debits over three to twelve months [8x-cfQhQpPU @ '
+                              '00:01:25]. Zach Siegel of Small Biz Heroes adds that most brokers blowing '
+                              'up the phone sell only that one product, and many hold no license. Their '
+                              'standard hook is: make payments for a month or two and you will qualify for '
+                              'a line of credit. That line rarely shows up. The broker ghosts or offers '
+                              'one more short-term position [w-ETPb-Trek @ 00:01:36]. David Rutz, founder '
+                              'of David Allen Capital, told his ISO force about a construction client '
+                              'whose prior broker placed four advances on the same day for the commission. '
+                              'None of the four lenders was told about the others. The client was left '
+                              'sending 40 percent of sales to payments, about 80,000 a month out of '
+                              "200,000 in revenue [i0yXJe_x34I @ 00:26:34]. Zoryn Capital's operator "
+                              'states one rule that separates winners from casualties. The advance has to '
+                              'be profit-based: take it only if it makes you money, and never to pay bills '
+                              'or survive [ORF9Ue9ge8A @ 00:06:23].',
+                              'Before any exit, the agreed first move is to stop adding positions. '
+                              "Siegel's rule: if you carry more than three MCAs, take no new ones while "
+                              'the fix is underway, because every new position makes the business harder '
+                              'to save. From that point the goal is fewer, cheaper and slower payments, '
+                              'not shorter, faster and more expensive ones [w-ETPb-Trek @ 00:03:16]. The '
+                              'practitioners rank the exits in the same order. Boore lists an SBA 7(a), a '
+                              'business term loan or a line of credit for owners who have good credit and '
+                              'time. Everyone else gets an attorney-led MCA restructure [dDwHOnFlzaA @ '
+                              '00:01:08]. Michael Granados calls refinance or consolidation into a new '
+                              'loan the fastest route. It takes 10 to 15 days, and up to 30 days of '
+                              'underwriting when a bank is involved. It only works if the owner clears the '
+                              'credit score and debt service coverage hurdles; otherwise he pushes '
+                              "restructuring [lBvWGt7bnCw @ 00:00:14]. Wadley's matrix lands in the same "
+                              'place. If revenue is solid and the problem is payment structure, roll the '
+                              'balances into a term loan, HELOC, line of credit or 0% cards. If a UCC '
+                              'enforcement action, confession of judgment or lawsuit is already live, talk '
+                              'to a business attorney first [OWlnOeMGBkg @ 00:07:44]. Granados, Siegel and '
+                              'Wadley all treat reverse consolidation as a non-exit that stacks more '
+                              'expensive debt on top.'],
+               'table': {'caption': 'Consensus Rules Shared Across MCA Brokers, Restructurers and '
+                                    'Bankruptcy Counsel',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['The UCC filing locks the owner out of better credit',
+                                   'Funder files a UCC on acceptance, making a better replacement loan '
+                                   'very difficult to get',
+                                   'Expect the next inbound offer to be another stacked advance, not a '
+                                   'bank product',
+                                   'The Approved Guy ([8x-cfQhQpPU @ 00:00:43])'],
+                                  ['There is a hard danger line on daily withdrawals',
+                                   'Combined withdrawals at thirty to forty percent of daily card receipts '
+                                   'sink rent and payroll',
+                                   'Measure total daily pulls against receipts before any file crosses '
+                                   'that line',
+                                   'Gap Funding | 100% Real Estate Financing ([OWlnOeMGBkg @ 00:01:35])'],
+                                  ['Stop digging before any exit work begins',
+                                   'Anyone holding more than three MCAs takes zero new positions while the '
+                                   'fix runs',
+                                   'Every added position makes every exit route harder to execute later',
+                                   'Zach Siegel ([w-ETPb-Trek @ 00:03:16])'],
+                                  ['An attorney-led restructure is the fallback when refinance fails',
+                                   'Restructure cuts monthly MCA payments 50 to 80 percent and still '
+                                   'repays in full',
+                                   'The zero balance letter at the end clears the UCC filing off the '
+                                   'business',
+                                   'The Approved Guy ([spCn3Rbs4XY @ 00:00:59])'],
+                                  ['Reverse consolidation is not a real exit',
+                                   'A new funder covers the old payments, total debt is not reduced, '
+                                   'another layer is added',
+                                   'Use it only as a stopgap for a business that is genuinely about to '
+                                   'turn the corner',
+                                   'Gap Funding | 100% Real Estate Financing ([OWlnOeMGBkg @ 00:04:41])'],
+                                  ['MCA capital only works when it is used for profit',
+                                   'Take the advance only when margin generated clearly exceeds the fixed '
+                                   'factor payback',
+                                   'Advances used to pay bills or survive are how operating companies go '
+                                   'under',
+                                   'Zoryn Capital ([ORF9Ue9ge8A @ 00:06:23])'],
+                                  ["Undisclosed same-day stacking is the commission broker's signature "
+                                   'move',
+                                   'Prior broker placed four advances the same day without disclosure, '
+                                   'leaving 40 percent of sales to payments',
+                                   'Only disclosed stacks that are sized so the client can actually afford '
+                                   'the payments',
+                                   'MM BUSINESS SOLUTIONS ([i0yXJe_x34I @ 00:26:34])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools and Numbers: Sizing, Takeouts, Restructures and '
+                          'Legal Levers',
+               'paragraphs': ['The speakers give the sizing and pricing math in hard numbers. Zoryn '
+                              "Capital's formula is that average monthly sales roughly equals the average "
+                              'approval, so 50k a month in revenue means about a 50k advance. Factor rates '
+                              'run 1.14 to 1.45, with the average around 1.27 to 1.3. At 1.2, borrowing '
+                              '100 dollars costs a fixed 120, whether you pay early or not [ORF9Ue9ge8A @ '
+                              '00:03:39]. Zoryn puts typical payback at 6 to 13 months, averaging 6. '
+                              'Across the market terms span 3 to 24 months, and risky files sometimes get '
+                              '1 month [ORF9Ue9ge8A @ 00:07:30]. Compressing the term drives the effective '
+                              'cost up fast. Charles Rubio has seen APRs of 100 percent or more, and 200 '
+                              'to 250 percent on some facilities [A8iNT8Ctrhk @ 00:14:42]. Neil Goldstein, '
+                              'the CRO who appears on Corporate Bankruptcy A to Z, says most advances sit '
+                              'between 60 and 90 percent interest. Loans, by contrast, have to stay within '
+                              "usury limits [50wAPhzWGmY @ 00:04:42]. Zoryn's profit test runs on the same "
+                              'numbers. Borrow 100 at 1.2, earn 300 in margin after cost of goods, and '
+                              'keep 180, which he calls effectively free money. He has seen both outcomes '
+                              'in his own high-end fashion company. Holiday inventory advances made a '
+                              'killing. Advances taken years later just to pay bills helped sink the '
+                              'business.',
+                              'Each refinance route comes with specific qualification numbers. Granados '
+                              'lists credit floors of 660-plus FICO, 680-plus or 640-plus across all three '
+                              'consumer bureaus. He also wants a debt service coverage ratio of preferably '
+                              '1.25x, with 1.0 workable when other factors carry the file: average daily '
+                              'balances, NSFs, negative days and deposit frequency [lBvWGt7bnCw @ '
+                              "00:00:52]. Siegel's bar for conventional financing is higher: 700-plus "
+                              'credit, net profitability, time in business and securable assets. Below '
+                              'that bar he uses asset-backed takeouts: business-use HELOCs on terms up to '
+                              '30 years, receivables facilities or invoice factoring, sale-leasebacks on '
+                              'equipment owned free and clear, and stacked unsecured five-year term loans '
+                              "with a co-signer if needed [w-ETPb-Trek @ 00:07:10]. Boore's showcase file "
+                              'had five MCAs totaling over 1.5 million dollars, with payments above '
+                              '300,000 a month. He refinanced it into a 10-year SBA 7(a) at prime plus '
+                              '2.75 to 3 percent [8x-cfQhQpPU @ 00:03:30]. Adam Hookima of ProjectionHub '
+                              'explains why that is so hard. The SBA requires a 10 percent improvement in '
+                              'monthly cash flow, which MCA files usually clear. The problem is that the '
+                              'SBA lender needs first UCC position and a fixed payoff, and the MCA balance '
+                              'moves every day. So most SBA lenders simply refuse the file [_V39MGbzjw0 @ '
+                              '00:01:21].',
+                              'Restructuring and settlement come with their own price sheet. Granados says '
+                              'a restructure cuts total monthly outflow by an average of 50 to 75 percent '
+                              'and reduces face value by more than 25 percent on average. It runs as a '
+                              'six-plus month program, not an overnight exit [lBvWGt7bnCw @ 00:02:16]. '
+                              'Settlement shops price differently. Wadley reports fees of 15 to 30 percent '
+                              'of enrolled or settled debt, with typical outcomes landing at 40 to 65 '
+                              'percent of the balance and no funder obligated to settle. He adds that the '
+                              'FTC rule generally bars a debt relief company from collecting a fee until '
+                              'the debt is settled and a payment has been made [OWlnOeMGBkg @ 00:05:33]. '
+                              'Siegel puts most consolidator fees at 15 to 25 percent of the book, or '
+                              '15,000 to 25,000 dollars to consolidate 100,000 in advances. Before an '
+                              'owner signs, he wants to see zero balance letters and proof that past '
+                              "clients' funders were actually paid [w-ETPb-Trek @ 00:13:49]. The legal "
+                              'lever underneath all of this is getting the advance recharacterized as a '
+                              'loan. Goldstein walks through five factors the Southern District of New '
+                              'York bankruptcy court used: the provider bore no real risk; it knew the end '
+                              'date; it relied on personal guarantees and acceleration clauses; it drafted '
+                              'daily regardless of sales; and it liened all payments. He says each added '
+                              "factor strengthens the owner's ability to fight the usurious rate "
+                              '[50wAPhzWGmY @ 00:08:25].'],
+               'table': {'caption': 'Street Numbers for Sizing, Refinancing and Restructuring MCA '
+                                    'Positions',
+                         'headers': ['Lever Or Tool',
+                                     'Exact Number Or Mechanic',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Revenue-based advance sizing formula',
+                                   'Average monthly sales roughly equals average advance, so 50k monthly '
+                                   'revenue gets about 50k',
+                                   'Quote expected approval size on the first call without waiting for '
+                                   'underwriting',
+                                   'Zoryn Capital ([ORF9Ue9ge8A @ 00:02:32])'],
+                                  ['Factor rate pricing band',
+                                   'Factor rates run 1.14 to 1.45 with the average around 1.27 to 1.3 as a '
+                                   'fixed fee',
+                                   'Multiply funded amount by factor to show the client total payback up '
+                                   'front',
+                                   'Zoryn Capital ([ORF9Ue9ge8A @ 00:03:39])'],
+                                  ['SBA refinance qualification test',
+                                   'Ten percent monthly cash flow improvement, first-position UCC, and a '
+                                   'fixed payoff figure',
+                                   'Expect SBA lenders to balk, so plan a stairstep through a specialist '
+                                   'term loan first',
+                                   'ProjectionHub ([_V39MGbzjw0 @ 00:00:21])'],
+                                  ['MCA refinance loan when SBA is out of reach',
+                                   'One monthly payment over one to two years, freeing 50 percent or more '
+                                   'in cash flow',
+                                   'Sell it as immediate cash flow relief, since total repaid stays about '
+                                   'the same',
+                                   'The Approved Guy ([8x-cfQhQpPU @ 00:04:12])'],
+                                  ['Accounts receivable financing speed',
+                                   'Application to funding within four to seven days, plus or minus, '
+                                   'against receivables',
+                                   'Use it as the fast asset-backed takeout when bank underwriting would '
+                                   'run 30 days',
+                                   'Michael Granados ([lBvWGt7bnCw @ 00:01:13])'],
+                                  ['Chapter 11 repayment stretch on MCA claims',
+                                   'A 100,000 dollar MCA due in 12 weekly payments can be paid monthly '
+                                   'over four years',
+                                   'Post-petition interest drops to roughly prime plus one to three '
+                                   'percent if treated as secured',
+                                   'Parkins & Rubio LLP ([A8iNT8Ctrhk @ 00:14:23])'],
+                                  ['Attorney-led restructure with nothing charged upfront',
+                                   'Frees up as much as 75 percent of cash flow, with fees handled through '
+                                   'the negotiations',
+                                   'Position it for clients running 5 to 15 positions who are choosing '
+                                   'between payroll and funders',
+                                   'Zeus Commercial Capital | Business & RE Loans ([OccRWwWbI2M @ '
+                                   '00:00:49])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the Restructure Desks and Honest ISOs Actually Run',
+                           'body': 'Four field-level moves that change the outcome of an MCA exit file '
+                                   'before a single payoff letter is requested.',
+                           'items': ['Never ask the MCA funder for a copy of the agreement, because that '
+                                     "tips them off. Pull the originals from the client's own records and "
+                                     'work around the funder if needed [Zeus Commercial Capital | Business '
+                                     '& RE Loans — OccRWwWbI2M @ 00:02:10].',
+                                     'Audit the UCC-1 itself. One typo in the business name, or a DBA used '
+                                     'instead of the legal entity, can invalidate the lien. If the deal '
+                                     'was framed as a sale, the funder may have had no right to file a '
+                                     'security interest at all [Berkshire Financial Services LLC — '
+                                     'V8S0sywozwU @ 00:00:47].',
+                                     'Use the withholding percentage. If revenue drops while the fixed '
+                                     'payment stays the same, the funder is only entitled to a smaller '
+                                     'payment. The trade-off is that good funders may agree but refuse to '
+                                     'fund that merchant again [Zach Siegel — w-ETPb-Trek @ 00:10:22].',
+                                     'When one lender will not cover the full ask, build a disclosed '
+                                     "stack. Rutz's team got two lenders on the phone to split a 350,000 "
+                                     'dollar request into 100,000 and 250,000, with payments sized so the '
+                                     'owner could afford them [MM BUSINESS SOLUTIONS — i0yXJe_x34I @ '
+                                     '00:30:41].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Freeze the Stack and Build the Real Debt Schedule',
+                              'action': 'Stop all new positions and put every live MCA on paper from the '
+                                        'funder contracts.',
+                              'detail': 'List how many positions there are, the balance left on each, the '
+                                        'daily or weekly payment, and the true remaining payback. Use the '
+                                        "funder's agreements, not the broker's paperwork, because you "
+                                        'cannot build an exit around numbers the owner is hiding from '
+                                        '[Zach Siegel — w-ETPb-Trek @ 00:04:14].'},
+                             {'step': 2,
+                              'title': 'Assemble the Restructure Intake Package',
+                              'action': 'Collect the minimum file a restructure desk needs to start '
+                                        'negotiating.',
+                              'detail': 'Gather a one-page application, the current debt schedule, '
+                                        'month-to-date and last-month business bank statements, the '
+                                        "owner's driver's license front and back, and the original MCA "
+                                        'agreements, all without alerting the funders [Zeus Commercial '
+                                        'Capital | Business & RE Loans — OccRWwWbI2M @ 00:01:55].'},
+                             {'step': 3,
+                              'title': 'Run the Takeout Ladder from Cheapest to Most Available',
+                              'action': 'Test conventional and SBA first, then asset-backed and specialist '
+                                        'refinance products.',
+                              'detail': 'If SBA lenders balk at the moving payoff, stairstep instead. Go '
+                                        'through specialist lenders whose lawyers pay off the MCA funders '
+                                        'and take first UCC position, move the client into a term loan, '
+                                        'and build toward SBA later [ProjectionHub — _V39MGbzjw0 @ '
+                                        '00:02:30].'},
+                             {'step': 4,
+                              'title': 'Route Non-Qualifiers to an Attorney-Led Restructure',
+                              'action': 'When refinance is off the table, place the file with attorneys '
+                                        'who negotiate payment reductions.',
+                              'detail': 'The attorneys negotiate the monthly payments down 50 to 80 '
+                                        'percent, the owner pays the debt back in full, and the file ends '
+                                        'with a zero balance letter that clears the UCC filing [The '
+                                        'Approved Guy — spCn3Rbs4XY @ 00:00:59].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The SBA 7(a) takeout is the sharpest split on the street. The Approved Guy '
+                              'reports one of the biggest wins on record: a client carrying five advances '
+                              'worth over $1.5 million, with weekly payments of over $300,000 a month, '
+                              'refinanced into a 10-year SBA 7(a) at prime plus 2.75 to 3 percent '
+                              '[8x-cfQhQpPU @ 00:03:30]. Later, the same operator delivered what he called '
+                              'bad news. New SBA rules disqualify businesses with merchant cash advances '
+                              'from using a 7(a) to refinance or consolidate that debt. That leaves the '
+                              'owner two choices: bite the bullet and pay, or bring in an attorney-led '
+                              'restructure [spCn3Rbs4XY @ 00:00:00]. Adam Hookima of ProjectionHub sees '
+                              'the problem as mechanical rather than regulatory. SBA refinancing needs a '
+                              '10 percent monthly cash-flow improvement, which MCA debt clears easily. The '
+                              'trouble is that the SBA lender demands first-position UCC and a fixed '
+                              'payoff figure, while the MCA balance moves every day, so most SBA lenders '
+                              'simply refuse the hassle [_V39MGbzjw0 @ 00:01:37]. His alternative is a '
+                              'stairstep: a specialist lender pays off the funders, takes first position, '
+                              'and moves the owner toward SBA later. Zach Siegel sets the conventional bar '
+                              'higher still. Before a real term loan or line of credit can buy out the '
+                              'positions, he looks for 700-plus credit, net profitability, long time in '
+                              'business, and securable assets [w-ETPb-Trek @ 00:05:08].',
+                              'When no takeout loan exists, the operators split three ways. Michael '
+                              'Granados ranks the options bluntly. A reverse debt consolidation is just '
+                              'adding more fuel to the flame. A debt restructure is the option he '
+                              'recommends most, dropping 40 to 75 percent plus on average of what goes '
+                              'back to the lenders. Settlement comes last [WX8DT-NQK5w @ 00:01:02]. In his '
+                              'longer breakdown, Granados puts the restructure at a 50 to 75 percent cut '
+                              'to monthly outflow and more than 25 percent off face value. He also warns '
+                              'that it runs as a 6-plus month program, so the owner is not out right away '
+                              '[lBvWGt7bnCw @ 00:01:55]. The Approved Guy defends the opposite trade. His '
+                              'non-SBA refinance products roll two to seven stacked advances into one '
+                              'monthly payment over one to two years, freeing what he describes as 50 or '
+                              'more in new cash flow immediately. He admits it will not save money in the '
+                              'long run, because the owner ends up paying the same amount [8x-cfQhQpPU @ '
+                              '00:04:32]. Zach Siegel draws a hard line on reverse consolidations. He '
+                              'calls many of them an expensive advance wearing a rescue costume: they pump '
+                              'money into the account to cover daily and weekly pulls, then take it right '
+                              'back during the week [w-ETPb-Trek @ 00:08:35].',
+                              'The third fault line is who negotiates, and from what leverage. Zach Siegel '
+                              'admits his own funders will be angry with him, then tells owners to go '
+                              'straight back to the original funder anyway. An empty bank account collects '
+                              'them nothing. And the withholding percentage in the contract means a '
+                              'revenue drop entitles the funder to less. The catch is that cutting '
+                              'payments can kill future MCA eligibility with that shop [w-ETPb-Trek @ '
+                              '00:10:22]. Thomas at Zeus Commercial Capital runs the opposite play. His '
+                              'attorney-led team charges nothing upfront and wants the original agreements '
+                              'in hand. He tells owners never to call the funder for a copy, because that '
+                              'tips the funder off [OccRWwWbI2M @ 00:02:10]. Rise Alliance dismisses '
+                              'negotiation-only shops, arguing that payment reductions work only if every '
+                              'MCA agrees. Instead, it leans on the contractual right to reconciliation '
+                              'and an Article 9 restructuring through its parent company, Second Wind '
+                              '[BcdnIkuJ7Fc @ 00:01:31]. Parkins & Rubio push the heaviest lever. A '
+                              'Chapter 11 plan can take a balance owed in 12 weekly installments over '
+                              'three months and stretch it into monthly payments over four years. If the '
+                              'claim is treated as secured debt, the rate drops to roughly prime plus 1 to '
+                              '3 percent [A8iNT8Ctrhk @ 00:14:23].'],
+               'table': {'caption': 'Competing MCA Exit Playbooks Taught by Operators, Brokers, and '
+                                    'Restructuring Attorneys',
+                         'headers': ['Decision Point',
+                                     'Playbook Taught',
+                                     'Counter-Position or Risk Flagged',
+                                     'Expert Source'],
+                         'rows': [['SBA 7(a) takeout of a stacked MCA position',
+                                   'Five advances over $1.5 million refinanced into a 10-year 7(a) at '
+                                   'prime plus 2.75 to 3 percent',
+                                   'Same operator later reports new SBA rules disqualify MCA debt from '
+                                   '7(a) refinance or consolidation',
+                                   'The Approved Guy ([8x-cfQhQpPU @ 00:03:30]; [spCn3Rbs4XY @ 00:00:00])'],
+                                  ['Direct jump from MCA funder to SBA lender',
+                                   'SBA allows refinancing existing debt when monthly cash flow improves '
+                                   'by at least 10 percent',
+                                   'Moving payoff figures and first-position UCC demands make most SBA '
+                                   'lenders walk, so stairstep through a specialist lender first',
+                                   'ProjectionHub ([_V39MGbzjw0 @ 00:00:21])'],
+                                  ['Restructure versus refinance when cash flow is choking',
+                                   'Restructure cuts monthly outflow 50 to 75 percent and face value more '
+                                   'than 25 percent over a 6-plus month program',
+                                   'Refinance into one payment over one to two years frees cash flow '
+                                   'immediately but costs the same long term',
+                                   'Michael Granados ([lBvWGt7bnCw @ 00:01:55]); The Approved Guy '
+                                   '([8x-cfQhQpPU @ 00:04:32])'],
+                                  ['Reverse consolidation offered by a new funder',
+                                   'New funder covers existing daily payments so only one withdrawal hits '
+                                   'the account each day',
+                                   'Total debt is not reduced; Granados calls it adding fuel to the flame '
+                                   'and Wadley says give them a miss',
+                                   'Gap Funding | 100% Real Estate Financing ([OWlnOeMGBkg @ 00:04:41]); '
+                                   'Michael Granados ([WX8DT-NQK5w @ 00:01:02])'],
+                                  ['Who approaches the funder about a hardship',
+                                   'Owner goes back to the original funder citing the withholding '
+                                   'percentage after revenue drops',
+                                   'Attorney-led team gathers agreements quietly and never asks the funder '
+                                   'for a copy to avoid tipping them off',
+                                   'Zach Siegel ([w-ETPb-Trek @ 00:10:22]); Zeus Commercial Capital | '
+                                   'Business & RE Loans ([OccRWwWbI2M @ 00:02:10])'],
+                                  ['Negotiation-only relief versus structural cash-flow defense',
+                                   'Relief firms promise payment reductions or tell owners to stop paying '
+                                   'and save for a later settlement',
+                                   'Reductions only work if every MCA agrees, so reconciliation rights and '
+                                   'Article 9 restructuring protect cash flow first',
+                                   'Rise Alliance ([BcdnIkuJ7Fc @ 00:01:31])'],
+                                  ['Court-supervised stretch-out versus case-by-case funder negotiation',
+                                   'Chapter 11 plan repays a three-month MCA balance monthly over four '
+                                   'years near prime plus 1 to 3 percent',
+                                   'Each MCA litigates, negotiates, and bullies differently, so no single '
+                                   'approach fits every funder across 30 cases',
+                                   'Parkins & Rubio LLP ([A8iNT8Ctrhk @ 00:14:23]); Corporate Bankruptcy A '
+                                   'to Z ([50wAPhzWGmY @ 00:13:57])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Stacking is the failure every operator has watched firsthand. The Approved '
+                              'Guy reports seeing up to seven advances stacked against one business, each '
+                              'with its own UCC filing. The first UCC blocks better products, so the owner '
+                              'is fed another advance as the only exit [8x-cfQhQpPU @ 00:01:03]. Mick '
+                              'Wadley of Gap Funding puts the breaking point at combined withdrawals of 30 '
+                              'to 40 percent of daily card receipts. Past that line, most businesses '
+                              'cannot cover rent, payroll, and inventory. He also cites a single Chapter '
+                              '11 filing carrying 21 stacked MCAs totaling $3.6 million [OWlnOeMGBkg @ '
+                              '00:01:35]. David Rutz of David Allen Capital, training his own ISO force, '
+                              'describes a local construction owner hurt by another broker. Chasing a big '
+                              'commission, that broker put the owner into four loans on the same day '
+                              'without disclosing them to the lenders. The business now sends 40 percent '
+                              'of sales, about $80,000 of $200,000 monthly, to repayments. It still cannot '
+                              'qualify for new money because it also carries an SBA loan [i0yXJe_x34I @ '
+                              '00:26:34]. Zach Siegel names the hook that starts the spiral. A broker '
+                              'promises that a month or two of payments will qualify the owner for a real '
+                              'line or term loan, and that second part usually never shows up [w-ETPb-Trek '
+                              '@ 00:01:53].',
+                              'Default and the wrong relief shop are where owners get hurt fastest. Rise '
+                              'Alliance warns that default is a trigger, not a slow burn. One missed '
+                              'payment can bring UCC 9-406 notices telling customers to pay the MCA '
+                              'directly, sweeps of operating accounts, and lawsuits within weeks. It only '
+                              'takes one aggressive funder to collapse the whole revenue system while the '
+                              'others are still negotiating [BcdnIkuJ7Fc @ 00:00:44]. Zach Siegel lays out '
+                              'the predatory settlement playbook in detail. It starts with big upfront or '
+                              'monthly fees and an instruction to stop paying every funder at once. The '
+                              'resulting default triggers lawsuits, frozen accounts, and liens on '
+                              'receivables or card processing. Fees run 15 to 25 percent of the '
+                              'consolidated amount, which means $15,000 to $25,000 on $100,000 '
+                              '[w-ETPb-Trek @ 00:12:39]. Gap Funding quotes industry fees of 15 to 30 '
+                              'percent of enrolled or settled debt, with payoff outcomes landing at 40 to '
+                              '65 percent of the balance. It also flags confession-of-judgment clauses '
+                              'that let a funder obtain a court judgment before the business gets to argue '
+                              '[OWlnOeMGBkg @ 00:05:18]. Thomas at Zeus Commercial Capital sees the '
+                              'operational end state. Some of his clients hold 5 to 15 advances and have '
+                              'closed accounts and opened new ones, because they had to choose between '
+                              'making payroll and paying the MCA lender [OccRWwWbI2M @ 00:00:33].',
+                              'The economics check comes down to two questions: does the money earn more '
+                              "than it costs, and is the paper really a loan? Zoryn Capital's founder ran "
+                              'a high-end fashion company in the early 2010s. It made a killing borrowing '
+                              'this product against holiday inventory. A few years later, the company took '
+                              'the same product just to survive and pay bills, and he names that as one '
+                              'reason it went under [ORF9Ue9ge8A @ 00:08:57]. His rule follows from that: '
+                              'factor rates run 1.14 to 1.45, so if the advance will not clearly make '
+                              'money, do not take it. Parkins & Rubio report APRs on these facilities '
+                              'easily reaching 100 percent, with 200 to 250 percent seen. That is why '
+                              'stacking itself becomes evidence of a disguised refinancing loan in usury '
+                              'fights [A8iNT8Ctrhk @ 00:14:42]. Neil Goldstein of Corporate Bankruptcy A '
+                              'to Z walks through the five factors the Southern District of New York court '
+                              'weighed, from no real funder risk to daily drafts regardless of sales. '
+                              'Drawing on more than 30 MCA cases, he still cautions that no two were alike '
+                              'and that funders fight like the devil to get paid [50wAPhzWGmY @ 00:13:57]. '
+                              'Berkshire Financial adds a cheap audit: one typo in the business name, or a '
+                              'DBA used instead of the legal entity, can invalidate the lien [V8S0sywozwU '
+                              '@ 00:00:31].'],
+               'table': {'caption': 'Firsthand MCA Failure Modes, Reported Losses, and the Math Behind '
+                                    'Them',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Undisclosed same-day stack placed by a commission-chasing broker',
+                                   'Broker placed four loans on one construction client the same day '
+                                   'without telling any lender',
+                                   'Repayments now eat 40 percent of sales, about $80,000 of $200,000 '
+                                   'monthly revenue',
+                                   'MM BUSINESS SOLUTIONS ([i0yXJe_x34I @ 00:26:34])'],
+                                  ['Stacking past the daily receipts breaking point',
+                                   'Owners rotate advances until withdrawals swallow daily card receipts '
+                                   'and rent goes unpaid',
+                                   'Combined pulls of 30 to 40 percent of daily receipts leave most '
+                                   'businesses unable to operate',
+                                   'Gap Funding | 100% Real Estate Financing ([OWlnOeMGBkg @ 00:01:18])'],
+                                  ['Stop-paying settlement playbook sold by relief shops',
+                                   'Relief shops collect upfront fees, order a full default, and sometimes '
+                                   'never pay the funders',
+                                   'Fees run 15 to 25 percent, so $15,000 to $25,000 on $100,000 '
+                                   'consolidated',
+                                   'Zach Siegel ([w-ETPb-Trek @ 00:12:39])'],
+                                  ['Single aggressive funder pulling the default trigger',
+                                   'One missed payment brings customer redirection notices, account '
+                                   'sweeps, and lawsuits within weeks',
+                                   'One aggressive MCA can collapse the entire revenue system while others '
+                                   'still negotiate',
+                                   'Rise Alliance ([BcdnIkuJ7Fc @ 00:00:44])'],
+                                  ['Survival borrowing to cover bills instead of growth',
+                                   'Fashion company that profited on holiday inventory later borrowed just '
+                                   'to pay bills and went under',
+                                   'Factor rates of 1.14 to 1.45 demand the advance generate profit beyond '
+                                   'its full payback',
+                                   'Zoryn Capital ([ORF9Ue9ge8A @ 00:08:57])'],
+                                  ['Hardship payment reduction that burns future funder access',
+                                   'Funders may cut fixed payments after a revenue drop under the contract '
+                                   'withholding percentage',
+                                   'Good funders may still refuse to fund that owner again once the '
+                                   'balance is repaid',
+                                   'Zach Siegel ([w-ETPb-Trek @ 00:10:39])'],
+                                  ['Low-barrier ISO entrants selling one product with no exit plan',
+                                   'New brokers start with a cell phone, a laptop, and very low startup '
+                                   'cost',
+                                   'Many MCA cold-callers hold no license and only sell short-term working '
+                                   'capital to owners',
+                                   'Oz Konar - Business Lending Blueprint ([zmUu669RTPQ @ 00:01:17]); Zach '
+                                   'Siegel ([w-ETPb-Trek @ 00:01:21])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Gate Before Any MCA Exit Move Goes Live',
+                           'body': 'Four checks the practitioners run before a restructure, refinance, '
+                                   'settlement, or default strategy touches a single funder.',
+                           'items': ['Build a written debt schedule from the funder contracts, not broker '
+                                     'summaries. List every position, the remaining balance, the daily or '
+                                     'weekly pull, and the true payback [Zach Siegel — w-ETPb-Trek @ '
+                                     '00:03:56].',
+                                     'Route any active UCC enforcement action, confession of judgment, or '
+                                     'lawsuit to an attorney rather than a non-attorney relief company '
+                                     '[Gap Funding | 100% Real Estate Financing — OccRWwWbI2M @ 00:02:53].',
+                                     'Collect the original MCA agreements, a current debt schedule, '
+                                     "month-to-date and last-month bank statements, and the owner's "
+                                     'license without alerting the funder [Zeus Commercial Capital | '
+                                     'Business & RE Loans — OccRWwWbI2M @ 00:01:55].',
+                                     'Audit each UCC-1 for a wrong business name, or a DBA in place of the '
+                                     'legal entity, before conceding the lien [Berkshire Financial '
+                                     'Services LLC — V8S0sywozwU @ 00:00:31].']}}],
+ 'pull_quote': '"Real help survives the math. A trap doesn\'t." — Zach Siegel (w-ETPb-Trek @ 00:09:13).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Halt all new advances the moment three or more positions are live, because every '
+                      'added stack makes the business harder to save [Zach Siegel — w-ETPb-Trek @ '
+                      '00:03:16].',
+                      'Price every rescue or consolidation offer by total payback, real term, and whether '
+                      'cost actually falls; walk away if the funder will not show it clearly [Zach Siegel '
+                      '— w-ETPb-Trek @ 00:09:13].',
+                      'Pursue an SBA refinance only where monthly cash flow improves at least 10 percent '
+                      'and a fixed payoff with UCC release can be locked; otherwise stairstep through a '
+                      'specialist lender [ProjectionHub — _V39MGbzjw0 @ 00:01:21].',
+                      'Size restructure targets at 50 to 75 percent monthly relief and plan cash flow '
+                      'around a 6-plus month program [Michael Granados — lBvWGt7bnCw @ 00:02:16].',
+                      'Run the profit-based test before placing any advance: take it only if the margin it '
+                      'produces clearly exceeds the factor-rate payback [Zoryn Capital — ORF9Ue9ge8A @ '
+                      '00:06:23].',
+                      'When a deal needs multiple funders, disclose the stack to every lender and '
+                      'structure payments the business can afford [MM BUSINESS SOLUTIONS — i0yXJe_x34I @ '
+                      '00:30:58].'],
+ 'statutory_citations': [{'title': 'Parkins & Rubio LLP — Merchant Cash Advances and Bankruptcy: What '
+                                   'Business Owners Need to Know [00:14:23]',
+                          'url': 'https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=863s',
+                          'relevance': 'Primary practitioner testimony on Chapter 11 stretch-outs, the '
+                                       'automatic stay, and usury and fraudulent transfer attacks on MCA '
+                                       'claims.'},
+                         {'title': 'Zach Siegel — 4 Ways to Get Out of Merchant Cash Advance Debt '
+                                   '[00:09:31]',
+                          'url': 'https://www.youtube.com/watch?v=w-ETPb-Trek&t=571s',
+                          'relevance': 'Primary practitioner testimony on direct funder renegotiation, '
+                                       'reverse consolidation traps, and predatory settlement fee '
+                                       'structures.'},
+                         {'title': 'Rise Alliance — What Really Happens When You Default on an MCA? '
+                                   '(Warning) [00:00:44]',
+                          'url': 'https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=44s',
+                          'relevance': 'Primary practitioner testimony on UCC 9-406 customer notices, '
+                                       'account sweeps, and Article 9 restructuring after default.'},
+                         {'title': 'ProjectionHub — Can I Refinance an MCA Loan with an SBA Loan? '
+                                   '[00:00:21]',
+                          'url': 'https://www.youtube.com/watch?v=_V39MGbzjw0&t=21s',
+                          'relevance': 'Primary practitioner testimony on the SBA 10 percent cash-flow '
+                                       'test, first-position UCC conflicts, and stairstep refinancing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'dDwHOnFlzaA',
+                       'title': 'MCA DEBT RESTRUCTURE OR REFINANCE',
+                       'channel': 'The Approved Guy',
+                       'author': 'The Approved Guy',
+                       'text': 'Some of your options can be an SBA 7A loan, it could also be a business '
+                               'term loan or a line of credit if you have good credit and you have time to '
+                               'work on that solution.',
+                       'tip': 'Some of your options can be an SBA 7A loan, it could also be a business '
+                              'term loan or a line of credit if you have good credit and you have time to '
+                              'work on that solution.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=dDwHOnFlzaA&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=dDwHOnFlzaA&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V8S0sywozwU',
+                       'title': '“UCC Liens & MCA Debt  What Borrowers MUST Know (2 Minute Breakdown)"',
+                       'channel': 'Berkshire Financial Services LLC',
+                       'author': 'Berkshire Financial Services LLC',
+                       'text': 'One typo in your business name or using a DBA instead of the legal entity '
+                               'can invalidate the lien altogether.',
+                       'tip': 'One typo in your business name or using a DBA instead of the legal entity '
+                              'can invalidate the lien altogether.',
+                       'timestamp': 31,
+                       'timestamp_seconds': 31,
+                       'timestamp_label': '[00:00:31]',
+                       'url': 'https://www.youtube.com/watch?v=V8S0sywozwU&t=31s',
+                       'markdown': '[00:00:31](https://www.youtube.com/watch?v=V8S0sywozwU&t=31s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lBvWGt7bnCw',
+                       'title': 'Fastest Way To Get Out Of Merchant Cash Advance Debt (MCA Debt Relief)',
+                       'channel': 'Michael Granados',
+                       'author': 'Michael Granados',
+                       'text': 'This is by looking at the total amount going out monthly, helping reduce '
+                               'by an average of 50 to 75%.',
+                       'tip': 'This is by looking at the total amount going out monthly, helping reduce by '
+                              'an average of 50 to 75%.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=lBvWGt7bnCw&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=lBvWGt7bnCw&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OWlnOeMGBkg',
+                       'title': 'MCA Debt Consolidation & Settlement  Everything You Need to Know',
+                       'channel': 'Gap Funding | 100% Real Estate Financing',
+                       'author': 'Gap Funding | 100% Real Estate Financing',
+                       'text': 'So the critical distinction here is total debt is not reduced. A new '
+                               'advance is added on top of existing ones.',
+                       'tip': 'So the critical distinction here is total debt is not reduced. A new '
+                              'advance is added on top of existing ones.',
+                       'timestamp': 281,
+                       'timestamp_seconds': 281,
+                       'timestamp_label': '[00:04:41]',
+                       'url': 'https://www.youtube.com/watch?v=OWlnOeMGBkg&t=281s',
+                       'markdown': '[00:04:41](https://www.youtube.com/watch?v=OWlnOeMGBkg&t=281s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8x-cfQhQpPU',
+                       'title': "STUCK IN MCA DEBT? THERE'S A WAY OUT!",
+                       'channel': 'The Approved Guy',
+                       'author': 'The Approved Guy',
+                       'text': 'I have been able to help a client who had five merchant cash advances '
+                               'equivalent over 1.5 million dollars in merchant cash advances.',
+                       'tip': 'I was able to help her to refinance that and get into an SBA 7A loan, '
+                              '10-year term, with an SBA interest rate.',
+                       'timestamp': 210,
+                       'timestamp_seconds': 210,
+                       'timestamp_label': '[00:03:30]',
+                       'url': 'https://www.youtube.com/watch?v=8x-cfQhQpPU&t=210s',
+                       'markdown': '[00:03:30](https://www.youtube.com/watch?v=8x-cfQhQpPU&t=210s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w-ETPb-Trek',
+                       'title': '4 Ways to Get Out of Merchant Cash Advance Debt',
+                       'channel': 'Zach Siegel',
+                       'author': 'Zach Siegel',
+                       'text': "Demand the total payback, the real term, and whether it's truly lowering "
+                               'your cost or just rescheduling your pain.',
+                       'tip': "If they can't or won't show you that clearly, then just walk away. Real "
+                              "help survives the math. A trap doesn't.",
+                       'timestamp': 553,
+                       'timestamp_seconds': 553,
+                       'timestamp_label': '[00:09:13]',
+                       'url': 'https://www.youtube.com/watch?v=w-ETPb-Trek&t=553s',
+                       'markdown': '[00:09:13](https://www.youtube.com/watch?v=w-ETPb-Trek&t=553s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w-ETPb-Trek',
+                       'title': '4 Ways to Get Out of Merchant Cash Advance Debt',
+                       'channel': 'Zach Siegel',
+                       'author': 'Zach Siegel',
+                       'text': 'So, rule number one, starting today, if you have more than three merchant '
+                               'cash advances, do not take any new ones while we fix this.',
+                       'tip': 'So, rule number one, starting today, if you have more than three merchant '
+                              'cash advances, do not take any new ones while we fix this.',
+                       'timestamp': 196,
+                       'timestamp_seconds': 196,
+                       'timestamp_label': '[00:03:16]',
+                       'url': 'https://www.youtube.com/watch?v=w-ETPb-Trek&t=196s',
+                       'markdown': '[00:03:16](https://www.youtube.com/watch?v=w-ETPb-Trek&t=196s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'spCn3Rbs4XY',
+                       'title': 'SBA 7(A) NEW RULES BOMBSHELL FOR MCA DEBT CONSOLIDATION',
+                       'channel': 'The Approved Guy',
+                       'author': 'The Approved Guy',
+                       'text': 'The SBA has released new rules which now disqualifies businesses with '
+                               'merchant cash advances from using an SBA 7A loan to refinance or '
+                               'consolidate that merchant cash advance debt.',
+                       'tip': 'The SBA has released new rules which now disqualifies businesses with '
+                              'merchant cash advances from using an SBA 7A loan to refinance or '
+                              'consolidate that merchant cash advance debt.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=spCn3Rbs4XY&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=spCn3Rbs4XY&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BcdnIkuJ7Fc',
+                       'title': 'What Really Happens When You Default on an MCA? (Warning)',
+                       'channel': 'Rise Alliance',
+                       'author': 'Rise Alliance',
+                       'text': 'It only takes one aggressive MCA to pull the trigger.',
+                       'tip': 'It only takes one aggressive MCA to pull the trigger.',
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WX8DT-NQK5w',
+                       'title': 'MCA Debt Relief (Best Merchant Cash Advance Help)',
+                       'channel': 'Michael Granados',
+                       'author': 'Michael Granados',
+                       'text': 'You also have a reverse debt consolidation which I strongly do not '
+                               "recommend doing; that's just adding more fuel to the flame.",
+                       'tip': 'You also have a reverse debt consolidation which I strongly do not '
+                              "recommend doing; that's just adding more fuel to the flame.",
+                       'timestamp': 62,
+                       'timestamp_seconds': 62,
+                       'timestamp_label': '[00:01:02]',
+                       'url': 'https://www.youtube.com/watch?v=WX8DT-NQK5w&t=62s',
+                       'markdown': '[00:01:02](https://www.youtube.com/watch?v=WX8DT-NQK5w&t=62s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'A8iNT8Ctrhk',
+                       'title': 'Merchant Cash Advances and Bankruptcy: What Business Owners Need to Know',
+                       'channel': 'Parkins & Rubio LLP',
+                       'author': 'Parkins & Rubio LLP',
+                       'text': 'In a Chapter 11 plan you could pay that amount over monthly installments '
+                               'over 4 years.',
+                       'tip': 'In a Chapter 11 plan you could pay that amount over monthly installments '
+                              'over 4 years.',
+                       'timestamp': 863,
+                       'timestamp_seconds': 863,
+                       'timestamp_label': '[00:14:23]',
+                       'url': 'https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=863s',
+                       'markdown': '[00:14:23](https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=863s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_V39MGbzjw0',
+                       'title': 'Can I Refinance an MCA Loan with an SBA Loan?',
+                       'channel': 'ProjectionHub',
+                       'author': 'ProjectionHub',
+                       'text': "So, what I've noticed from a lot of SBA lenders is they just don't want to "
+                               'deal with it.',
+                       'tip': "So, what I've noticed from a lot of SBA lenders is they just don't want to "
+                              'deal with it.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=_V39MGbzjw0&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=_V39MGbzjw0&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '50wAPhzWGmY',
+                       'title': 'MCA reclassified as Loans? | Breaking news on MCAs (Merchant Cash '
+                                'Advances)',
+                       'channel': 'Corporate Bankruptcy A to Z',
+                       'author': 'Corporate Bankruptcy A to Z',
+                       'text': 'There was so many differences in those 30 cases that it would be foolish '
+                               'of somebody to say there is one way to approach it.',
+                       'tip': 'There was so many differences in those 30 cases that it would be foolish of '
+                              'somebody to say there is one way to approach it.',
+                       'timestamp': 837,
+                       'timestamp_seconds': 837,
+                       'timestamp_label': '[00:13:57]',
+                       'url': 'https://www.youtube.com/watch?v=50wAPhzWGmY&t=837s',
+                       'markdown': '[00:13:57](https://www.youtube.com/watch?v=50wAPhzWGmY&t=837s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OccRWwWbI2M',
+                       'title': 'MCA Debt Restructuring- Debt Relief, Debt Consolidation, and MCA Debt '
+                                'Settlement',
+                       'channel': 'Zeus Commercial Capital | Business & RE Loans',
+                       'author': 'Zeus Commercial Capital | Business & RE Loans',
+                       'text': 'Whatever you do, do not call your MCA lender and ask for a copy of that '
+                               'agreement.',
+                       'tip': 'Whatever you do, do not call your MCA lender and ask for a copy of that '
+                              'agreement.',
+                       'timestamp': 130,
+                       'timestamp_seconds': 130,
+                       'timestamp_label': '[00:02:10]',
+                       'url': 'https://www.youtube.com/watch?v=OccRWwWbI2M&t=130s',
+                       'markdown': '[00:02:10](https://www.youtube.com/watch?v=OccRWwWbI2M&t=130s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ORF9Ue9ge8A',
+                       'title': 'WARNING Before Taking a Merchant Cash Advance MCA? (Revenue Based Loan or '
+                                'Working Capital Loan)',
+                       'channel': 'Zoryn Capital',
+                       'author': 'Zoryn Capital',
+                       'text': "This is the one rule. It's called profit-based. Meaning that this loan "
+                               'must make you make money.',
+                       'tip': "This is the one rule. It's called profit-based. Meaning that this loan must "
+                              'make you make money.',
+                       'timestamp': 383,
+                       'timestamp_seconds': 383,
+                       'timestamp_label': '[00:06:23]',
+                       'url': 'https://www.youtube.com/watch?v=ORF9Ue9ge8A&t=383s',
+                       'markdown': '[00:06:23](https://www.youtube.com/watch?v=ORF9Ue9ge8A&t=383s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i0yXJe_x34I',
+                       'title': 'Business Funding Broker Training Nov 2026: David Allen Capital ISO '
+                                'Updates, Working Capital & Small',
+                       'channel': 'MM BUSINESS SOLUTIONS',
+                       'author': 'MM BUSINESS SOLUTIONS',
+                       'text': "It's called stacking. Because the commission, the guy wanted to make a big "
+                               'commission.',
+                       'tip': "It's called stacking. Because the commission, the guy wanted to make a big "
+                              'commission.',
+                       'timestamp': 1594,
+                       'timestamp_seconds': 1594,
+                       'timestamp_label': '[00:26:34]',
+                       'url': 'https://www.youtube.com/watch?v=i0yXJe_x34I&t=1594s',
+                       'markdown': '[00:26:34](https://www.youtube.com/watch?v=i0yXJe_x34I&t=1594s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i0yXJe_x34I',
+                       'title': 'Business Funding Broker Training Nov 2026: David Allen Capital ISO '
+                                'Updates, Working Capital & Small',
+                       'channel': 'MM BUSINESS SOLUTIONS',
+                       'author': 'MM BUSINESS SOLUTIONS',
+                       'text': 'So it was a disclosed stack.',
+                       'tip': 'So it was a disclosed stack.',
+                       'timestamp': 1858,
+                       'timestamp_seconds': 1858,
+                       'timestamp_label': '[00:30:58]',
+                       'url': 'https://www.youtube.com/watch?v=i0yXJe_x34I&t=1858s',
+                       'markdown': '[00:30:58](https://www.youtube.com/watch?v=i0yXJe_x34I&t=1858s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zmUu669RTPQ',
+                       'title': 'Commercial Loan Broker Training - Business Lending Blueprint Review-- '
+                                'Kyle',
+                       'channel': 'Oz Konar - Business Lending Blueprint',
+                       'author': 'Oz Konar - Business Lending Blueprint',
+                       'text': 'One other thing I really love about this industry is that there really '
+                               "aren't any barriers to enter this market or this type of business.",
+                       'tip': 'One other thing I really love about this industry is that there really '
+                              "aren't any barriers to enter this market or this type of business.",
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=zmUu669RTPQ&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=zmUu669RTPQ&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

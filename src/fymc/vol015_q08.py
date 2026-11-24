@@ -1,786 +1,858 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small judgment recovery desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "PACER, UCC Searches, County Recorders, Entity Resolution, Bankruptcy Stops, and Evidence-Linked Recovery Queues",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
-        "Score. Its information advantage comes from joining court events, entity "
-        "identifiers, recorded liens, and payment evidence without confusing a "
-        "search result with an executable recovery. This chapter connects 15 mapped "
-        "plays to a source-ranked research waterfall, an evidence-preserving pipeline, "
-        "and a tightly bounded tax-credit origination adjacency. The canonical annual "
-        "owner profit cases are $12,000 Conservative, $84,000 Base, and $200,000 Scaled; "
-        "recognized service fees, never judgment balances or client asset values, "
-        "drive those cases. Buy fewer speculative reports, refresh critical records "
-        "at the moment of action, and route disputed identity, bankruptcy, priority, "
-        "and credit eligibility questions to the appropriate specialist before money "
-        "or process moves."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized recovery service fees; excludes client collections and judgment principal.",
-            "note": "20% net margin; $12,000 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$280,000",
-            "context": "Annual recognized recovery service fees; excludes client collections and judgment principal.",
-            "note": "30.0% net margin; $84,000 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$500,000",
-            "context": "Annual recognized recovery service fees; excludes client collections and judgment principal.",
-            "note": "40% net margin; $200,000 annual owner net profit; 2 FT + 4 C, six people.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build a source-ranked registry desk, not a bulk people-search operation",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start every commercial judgment file with the rendered judgment, "
-                    "complete party caption, court identifier, entry date, remaining "
-                    "balance, and documented authority to act. A docket search is "
-                    "discovery; the filed instrument and applicable court rules "
-                    "determine what happened. PACER Case Locator identifies federal "
-                    "cases, while the originating court supplies the operative docket "
-                    "and documents. State trial courts, county recorders, secretaries "
-                    "of state, and UCC filing offices answer different questions and "
-                    "must remain separate evidence classes. An assessor record suggests "
-                    "a parcel relationship, not current title or reachable equity. A "
-                    "registered agent provides a service address, not ownership proof. "
-                    "A UCC filing identifies a claimed security interest, not the "
-                    "current payoff balance or a complete priority opinion. Save the "
-                    "original response, retrieval time, source identifier, query terms, "
-                    "and document hash before extracting fields. Maintain the exact "
-                    "debtor name alongside normalized aliases; normalization must never "
-                    "rewrite the legal caption. For each promising asset, require a "
-                    "second authoritative record connecting the debtor to that asset. "
-                    "A similarly named company, household member, or shared mailing "
-                    "address is a research lead, never a substitute for that connection."
-                ),
-                (
-                    "Use the directory below as an access plan, not a claim that "
-                    "every portal offers unrestricted automation. Public visibility "
-                    "does not create permission to bypass authentication, CAPTCHAs, "
-                    "session controls, or contractual limits. Prefer documented APIs, "
-                    "licensed feeds, and official bulk downloads; otherwise assign "
-                    "a human retrieval task. Source publication latency and your "
-                    "polling interval are separate fields. A nightly collector cannot "
-                    "make a delayed recorder index current, and a five-minute refresh "
-                    "does not prove that a bankruptcy petition has appeared in a "
-                    "nationwide locator. The listed refresh intervals are desk targets, "
-                    "not vendor delivery promises. Confirm current charges, coverage, "
-                    "and contractual limits before purchasing access. Cache stable "
-                    "documents by identifier, use conditional requests where supported, "
-                    "and honor Retry-After responses. For SEC resources, identify the "
-                    "organization and contact in the User-Agent and remain below the "
-                    "published aggregate request ceiling. For portals without a "
-                    "published automation policy, use manual retrieval or obtain "
-                    "written access terms. Never rotate identities or network "
-                    "addresses to defeat a restriction. Record restricted access as "
-                    "an operational exception and move to the named fallback rather "
-                    "than silently treating missing results as clean records."
-                ),
-                (
-                    "Organize the chapter's 15 mapped plays as explicit work queues: "
-                    "judgment intake verification, debtor identity resolution, entity "
-                    "status monitoring, bankruptcy screening, judgment deadline "
-                    "tracking, lien discovery, priority review, parcel research, "
-                    "business activity verification, receivable lead discovery, "
-                    "attorney enforcement packaging, assignment chain verification, "
-                    "payment reconciliation, collection cost triage, and "
-                    "transferable_tax_credit_brokerage_syndication. The first fourteen "
-                    "are operational applications within this recovery desk; the "
-                    "fifteenth is a separately controlled origination adjacency. "
-                    "Each queue needs an input document, a decisive question, an "
-                    "authorized operator, and an exit condition. For example, ten "
-                    "judgments with $100,000 face amounts create $1 million of "
-                    "claimed principal, not $1 million of operator revenue. If "
-                    "one matter produces a $20,000 collected payment and an earned "
-                    "25% fee, recognized service revenue is $5,000 under that "
-                    "illustrative contract. The remaining $15,000 belongs in client "
-                    "settlement accounting, subject to documented expenses and "
-                    "disbursement terms. Do not assign an expected recovery merely "
-                    "because a directory returns a property hit. First resolve "
-                    "identity, available equity, enforceability, exemptions, competing "
-                    "claims, and the cost of obtaining executable evidence. This "
-                    "ordering prevents a cheap search from creating an expensive "
-                    "and unsupported enforcement theory."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen named sources: access route, cost tier, refresh target, request discipline, and fallback",
-                "headers": [
-                    "Resource and exact access route",
-                    "Evidence and permitted research purpose",
-                    "Cost tier and purchase discipline",
-                    "Publication latency and desk refresh",
-                    "Rate-limit and access hygiene",
-                    "Fallback evidence retrieval route",
-                ],
-                "rows": [
-                    [
-                        "PACER Case Locator: authenticated searches through pcl.uscourts.gov.",
-                        "Locate federal civil and bankruptcy case identifiers before opening originating records.",
-                        "Generally $0.10 per page; quarterly usage of $30 or less is waived.",
-                        "Locator updates generally occur nightly; recheck originating courts before consequential action.",
-                        "Use registered access and supported search methods; avoid speculative nationwide query loops.",
-                        "Search the relevant court directly and verify uncertain results with its clerk.",
-                    ],
-                    [
-                        "Federal CM/ECF: follow originating court links from pacer.uscourts.gov.",
-                        "Retrieve docket entries, bankruptcy petitions, orders, and operative filed instruments.",
-                        "PACER document caps generally apply; transcripts and some reports have different treatment.",
-                        "Entries follow court processing; inspect current dockets immediately before enforcement instructions.",
-                        "Cache purchased documents and request targeted docket ranges rather than repeated full reports.",
-                        "Obtain clerk-issued copies when online documents are unavailable or certification is required.",
-                    ],
-                    [
-                        "CourtListener and RECAP: courtlistener.com search and documented REST API.",
-                        "Find contributed federal documents and docket leads without treating archive gaps as clearance.",
-                        "Free public browsing; API capacity and advanced access follow current account terms.",
-                        "Archive coverage depends on acquisition; compare every decisive event with court records.",
-                        "Use account credentials, contractual quotas, caching, and backoff on throttled responses.",
-                        "Purchase the specific missing document from its originating PACER court.",
-                    ],
-                    [
-                        "New York eCourts and NYSCEF: enter through official nycourts.gov services.",
-                        "Inspect covered state matters, appearances, filings, and case-status changes.",
-                        "Public searches generally cost nothing; certified documents follow court copy charges.",
-                        "Publication follows clerk processing and coverage; refresh active matters each business day.",
-                        "Use authorized portal searches; do not automate challenges or authenticated session restrictions.",
-                        "Contact the relevant county clerk for missing filings and certified judgment records.",
-                    ],
-                    [
-                        "California bizfile: business entity searches through bizfileonline.sos.ca.gov.",
-                        "Resolve entity numbers, status, filed names, and registered agent information.",
-                        "Public entity lookup is free; document and certification products follow posted charges.",
-                        "Filing updates depend on processing; refresh names and status before service planning.",
-                        "Use supported searches and downloads; request authorized bulk options before scaling.",
-                        "Order official entity records directly from the California Secretary of State.",
-                    ],
-                    [
-                        "California UCC Connect: follow UCC search links from sos.ca.gov.",
-                        "Identify indexed financing statements, amendments, continuations, and termination filings.",
-                        "Search and copy products carry published state charges; price each requested product.",
-                        "Indexing follows filing processing; obtain current searches for consequential priority review.",
-                        "Search exact legal names and authorized variants without high-volume blind enumeration.",
-                        "Order certified filing-office searches and copies through an authorized search provider.",
-                    ],
-                    [
-                        "Los Angeles Recorder: property-record access instructions at lavote.gov.",
-                        "Retrieve recorded deeds, abstracts, releases, and other indexed property instruments.",
-                        "Search access and copy charges vary by channel; certified copies incur posted fees.",
-                        "Recording and indexing differ; obtain recent instrument coverage before relying on ownership.",
-                        "Use permitted office, mail, or online channels rather than assuming open bulk access.",
-                        "Commission a title search and obtain recorder-certified copies of decisive instruments.",
-                    ],
-                    [
-                        "Los Angeles Assessor: parcel lookup through portal.assessor.lacounty.gov.",
-                        "Identify parcel numbers, assessed attributes, and leads requiring recorder corroboration.",
-                        "Public parcel lookup is free; separately ordered record products may carry charges.",
-                        "Assessment data follows office update cycles; refresh promising parcels before ordering title.",
-                        "Use parcel-focused requests and published access methods; avoid unrestricted owner harvesting.",
-                        "Cross-check parcel identity through county maps, recorder instruments, and title records.",
-                    ],
-                    [
-                        "SEC EDGAR: company submissions at data.sec.gov and filings at sec.gov.",
-                        "Verify issuer identity, subsidiaries, disclosed litigation, and reported business assets.",
-                        "Public SEC submissions and filings are free; budget only processing and review.",
-                        "Filings publish after acceptance; monitor relevant issuers daily and inspect filing dates.",
-                        "Identify organization and contact; use two requests per second below SEC's ten ceiling.",
-                        "Download the original filing from EDGAR and inspect exhibits directly.",
-                    ],
-                    [
-                        "FMCSA SAFER: Company Snapshot search at safer.fmcsa.dot.gov.",
-                        "Corroborate motor-carrier identifiers, operating names, addresses, and recorded operating status.",
-                        "Public Company Snapshot searches are free; licensed enrichment remains a separate purchase.",
-                        "Displayed fields have different update cycles; preserve the shown dates with each result.",
-                        "Use targeted USDOT searches and supported datasets; avoid aggressive portal scraping.",
-                        "Check FMCSA licensing records and official company filings for corroborating identifiers.",
-                    ],
-                    [
-                        "SAM.gov: public search and documented APIs through open.gsa.gov.",
-                        "Identify entity registration identifiers and relevant federal contracting leads.",
-                        "Public access is free; API keys and account-based quotas govern programmatic retrieval.",
-                        "Publication varies by dataset; inspect metadata and refresh relevant entities weekly.",
-                        "Use the required key, endpoint pagination, and the quota assigned to the account.",
-                        "Retrieve the public SAM record manually and corroborate with agency award documents.",
-                    ],
-                    [
-                        "USAspending: award searches and documented endpoints at api.usaspending.gov.",
-                        "Discover award relationships without equating award ceilings with collectible receivables.",
-                        "Public search, downloads, and documented API access are free to use.",
-                        "Agency reporting and corrections create lag; inspect reporting periods before outreach.",
-                        "Paginate bounded queries, cache award identifiers, and reduce concurrency after throttling.",
-                        "Use agency award documents and lawful discovery to establish actual payment rights.",
-                    ],
-                    [
-                        "LexisNexis Accurint: credentialed portal or separately contracted integration.",
-                        "Corroborate licensed business and identity leads within an approved permissible purpose.",
-                        "Subscription and report pricing require a written quote and per-matter spend limits.",
-                        "Underlying sources update differently; preserve source dates rather than assuming live accuracy.",
-                        "Use named seats, permitted purposes, audit logs, and contracted query limits.",
-                        "Return to official entity records, recorded instruments, and authorized service research.",
-                    ],
-                    [
-                        "TransUnion TLOxp: approved account access through the contracted customer portal.",
-                        "Resolve licensed identity and business associations while separating leads from verified facts.",
-                        "Contracted subscription or transaction pricing requires approval before each expanded search package.",
-                        "Refresh varies by contributing source; verify consequential findings against original records.",
-                        "Enforce individual credentials, permitted uses, export restrictions, and the provider's request limits.",
-                        "Obtain corroborating court, recorder, and entity documents through lawful public channels.",
-                    ],
-                    [
-                        "OpenCorporates: company search and documented API at api.opencorporates.com.",
-                        "Generate cross-jurisdiction entity leads while preserving each linked source registry.",
-                        "Public browsing and licensed API products differ; select terms matching commercial use.",
-                        "Registry ingestion can lag source filings; inspect source timestamps before reliance.",
-                        "Use the licensed token, assigned limits, pagination, and reusable entity identifiers.",
-                        "Retrieve current records directly from the originating official company registry.",
-                    ],
-                    [
-                        "PJM interconnection queue: queue pages and downloads at pjm.com.",
-                        "Find project-development leads; queue position alone establishes neither completion nor credit eligibility.",
-                        "Public queue resources are free; technical diligence requires separate specialist spending.",
-                        "Updates follow PJM publication; retain snapshot dates and review changes weekly.",
-                        "Prefer published downloads and permitted access; avoid repeatedly crawling individual project pages.",
-                        "Ask the developer for interconnection agreements and corroborate with utility records.",
-                    ],
-                    [
-                        "EPA RE-Powering America's Land: published resources through epa.gov/re-powering.",
-                        "Identify redevelopment-site leads without treating screening data as a tax-credit registry.",
-                        "Public maps and published datasets are free; site-specific verification remains separately budgeted.",
-                        "Dataset releases determine freshness; record the release date and inspect project status directly.",
-                        "Download published datasets once per release and obey mapping-service usage restrictions.",
-                        "Consult the relevant state environmental agency and developer-provided site documentation.",
-                    ],
-                    [
-                        "Georgia film incentives: program records and guidance through georgia.org and dor.georgia.gov.",
-                        "Identify program participants and verify current state credit certification and transfer requirements.",
-                        "Public guidance is free; records requests and transaction diligence can create additional charges.",
-                        "Program lists and certification events differ; verify seller-specific status before any pricing.",
-                        "Use published materials and lawful records requests rather than assuming a public allocation API.",
-                        "Obtain seller authorizations, state-issued documents, and direct program-office verification.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn registry hits into an evidence-preserving enrichment waterfall",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement the waterfall with PostgreSQL for structured case data, "
-                    "encrypted object storage for documents, and a scheduler such as "
-                    "systemd timers or a managed job runner. A small desk does not "
-                    "need a distributed crawler to handle hundreds of active "
-                    "judgments. Separate matters, parties, identifiers, assets, "
-                    "instruments, observations, deadlines, and cash events into "
-                    "different records. Give every observation a source URL, source "
-                    "record key, retrieved_at timestamp, effective date when "
-                    "available, parser version, content hash, and access-purpose "
-                    "reference. Preserve raw files separately from extracted text. "
-                    "Hash the original bytes with SHA-256; hashing only normalized "
-                    "text loses the ability to identify an altered original. OCR "
-                    "with Tesseract can make scanned judgments searchable, but an "
-                    "operator must verify debtor names, amounts, dates, and decretal "
-                    "language against the image. Store money as integer cents and "
-                    "record currencies explicitly. Retain exact court identifiers "
-                    "including leading zeros and punctuation. Use stable source "
-                    "keys for idempotent ingestion so a repeated download creates "
-                    "a fresh observation without duplicating the instrument. A "
-                    "document correction should supersede an earlier interpretation, "
-                    "not erase the earlier record or its review history."
-                ),
-                (
-                    "Resolve identity before buying broader enrichment. Begin with "
-                    "the judgment caption and entity number, then compare formation "
-                    "jurisdiction, historical names, service records, and business "
-                    "addresses. Match a business using identifiers and corroborating "
-                    "documents rather than name similarity alone. Keep individual "
-                    "guarantors separate from corporate defendants; an owner's "
-                    "relationship to a company does not automatically make their "
-                    "assets available for the company's debt. Route ambiguous "
-                    "matches into manual review and prohibit automated enforcement "
-                    "exports from that queue. The Fair Credit Reporting Act treats "
-                    "permissible purpose as a substantive condition, including "
-                    "collection-related access only where the statutory conditions "
-                    "apply; a commercial judgment does not itself authorize every "
-                    "consumer report. Likewise, motor vehicle personal information "
-                    "requires an applicable Driver's Privacy Protection Act "
-                    "exception, not merely a useful investigative purpose. Restrict "
-                    "Accurint or TLOxp access to contracted uses, individual accounts, "
-                    "and retained purpose records. Never pretext a bank, employer, "
-                    "or relative to obtain protected information. If a licensed "
-                    "report produces only an address association, return to original "
-                    "records or attorney-directed discovery. The correct fallback "
-                    "for an unresolved person match is a narrower research task, "
-                    "not a larger automated contact campaign."
-                ),
-                (
-                    "Instrument the pipeline around false positives and missed "
-                    "events, not just successful HTTP responses. A login page "
-                    "returned with status 200 is not a valid docket response. "
-                    "Validate content type, expected record identifiers, pagination "
-                    "totals, and required fields before accepting an extract. "
-                    "Maintain redacted fixtures for a normal result, empty result, "
-                    "restricted response, amended filing, duplicate debtor name, "
-                    "and scanned document. Python unittest, sqlite3 scratch "
-                    "databases, and structured logging provide enough diagnostics "
-                    "for the first production version. Add exponential backoff "
-                    "with jitter, a bounded retry count, and a manual exception "
-                    "queue; authentication failures should stop that connector "
-                    "rather than trigger repeated login attempts. A weekly review "
-                    "should sample ten accepted matches and every rejected "
-                    "critical event, measuring incorrect joins and stale records. "
-                    "Track cost per verified lead, not cost per returned row. "
-                    "For example, fifty $4 reports cost $200; if only five produce "
-                    "verified new asset leads, acquisition cost is $40 per "
-                    "verified lead before labor. If ten review hours cost an "
-                    "assumed $35 each, the combined cost rises to $110 per "
-                    "verified lead. Stop the purchase tier when that evidence "
-                    "does not improve expected net recovery."
-                ),
-            ],
-            "table": {
-                "caption": "Six diagnostic controls that prevent cheap data from becoming expensive mistakes",
-                "headers": [
-                    "Failure mode and diagnostic tool",
-                    "Required evidence retained by the pipeline",
-                    "Acceptance test before downstream use",
-                    "Fallback and accountable operator action",
-                ],
-                "rows": [
-                    [
-                        "HTTP client receives an apparently successful login page instead of records.",
-                        "Retain status, content type, redirected URL, and a redacted response sample.",
-                        "Expected source identifier and record markers must appear in the parsed response.",
-                        "Suspend the connector and assign credential review to the authorized account holder.",
-                    ],
-                    [
-                        "Tesseract OCR misreads an entry date or judgment amount.",
-                        "Keep original image, OCR output, page coordinates, and reviewer correction history.",
-                        "A human compares every operative amount and date against the filed image.",
-                        "Request a clearer court copy before calculating balances or deadline tasks.",
-                    ],
-                    [
-                        "Entity matching joins two unrelated businesses sharing a similar name.",
-                        "Retain formation jurisdiction, entity number, name history, and supporting source documents.",
-                        "Require corroborating identifiers before linking an asset to the judgment debtor.",
-                        "Separate candidate entities and send the disputed link to manual research.",
-                    ],
-                    [
-                        "Pagination stops early and silently drops later docket entries.",
-                        "Store request cursors, returned counts, source totals, and terminal-page evidence.",
-                        "Collected pages must reconcile with available counts and documented endpoint behavior.",
-                        "Retrieve the missing range manually and repair the connector fixture.",
-                    ],
-                    [
-                        "A repeated import duplicates an earned fee or client payment.",
-                        "Preserve bank transaction identifier, matter allocation, import batch, and reconciliation history.",
-                        "Stable event keys prevent duplicate posting while preserving legitimate separate payments.",
-                        "Quarantine conflicting entries and require bookkeeper review before any disbursement.",
-                    ],
-                    [
-                        "A restored database cannot locate the documents supporting its conclusions.",
-                        "Maintain encrypted backups, object references, document hashes, and restoration audit records.",
-                        "A monthly sample restoration must open documents and reproduce their recorded hashes.",
-                        "Repair retention or backup configuration before accepting additional unattended ingestion.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy decisive evidence, not larger piles of search results",
-                "body": "Experienced recovery operators spend on the document that changes the next lawful action.",
-                "items": [
-                    "Purchase the actual assignment, release, or continuation instrument when an index entry changes apparent priority; the index label rarely settles scope.",
-                    "Search historical legal names and formation jurisdictions before paying for another broad enrichment report on the same debtor.",
-                    "Retain negative-search scope, query terms, and retrieval time; an empty county search is not evidence that every jurisdiction is clear.",
-                    "Build the attorney packet around source-linked facts and unresolved questions, so counsel does not bill to reconstruct your research trail.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Anchor the matter",
-                    "action": "Register the judgment, authority documents, exact parties, and court identifiers.",
-                    "detail": "Verify the filed image and separate principal, interest, costs, prior receipts, and disputed amounts.",
-                },
-                {
-                    "step": 2,
-                    "title": "Run the low-cost source tier",
-                    "action": "Check originating dockets, entity records, bankruptcy indicators, and relevant recorder indexes.",
-                    "detail": "Preserve original responses and define the exact unresolved question before buying enrichment.",
-                },
-                {
-                    "step": 3,
-                    "title": "Escalate only decisive gaps",
-                    "action": "Order a licensed report, certified search, title work, or attorney-directed discovery.",
-                    "detail": "Record permissible purpose, expected decision value, spending ceiling, and the responsible reviewer.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish a bounded action packet",
-                    "action": "Export verified facts, source documents, freshness timestamps, and unresolved exceptions.",
-                    "detail": "Require current bankruptcy and authority checks before enforcement instructions or client disbursements.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Convert court events and payment evidence into controlled operator economics",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Deadline tracking begins with jurisdiction-specific rules, not "
-                    "a universal judgment expiration formula. Store the triggering "
-                    "event, applicable authority, counting convention, review owner, "
-                    "and supporting document for each renewal, response, or "
-                    "enforcement task. Under Federal Rule of Civil Procedure 69, "
-                    "execution generally follows the procedure of the state where "
-                    "the federal court sits unless a federal statute applies. "
-                    "That makes state-specific templates essential even inside "
-                    "one federal docket connector. California Code of Civil "
-                    "Procedure section 683.020 provides a useful example of a "
-                    "ten-year enforceability framework, but exceptions, renewal "
-                    "rules, stays, and the particular judgment still require "
-                    "review. A bankruptcy petition can trigger 11 U.S.C. section "
-                    "362 before a search aggregator reflects it. Screen at "
-                    "intake, monitor active matters, and repeat the check "
-                    "immediately before consequential enforcement activity. Upon "
-                    "credible bankruptcy notice, pause affected collection tasks "
-                    "and obtain counsel's assessment of the debtor, property, "
-                    "claim, and any applicable order. Do not automatically "
-                    "resume after dismissal, discharge, or a vendor status "
-                    "change. The system should generate a review task with "
-                    "the underlying court event, preserving a visible record "
-                    "of who authorized the next step and why."
-                ),
-                (
-                    "Payment reconciliation is the second high-value automation "
-                    "lever because cash errors destroy both margin and client "
-                    "trust. Import bank transactions through an authorized "
-                    "bank feed or controlled statement export, match receipts "
-                    "to matters, and hold ambiguous matches outside the "
-                    "disbursement queue. Record gross receipts, earned service "
-                    "fees, reimbursable expenses, client payable balances, and "
-                    "reversals separately. Do not calculate distributable money "
-                    "from a dashboard total that includes uncleared deposits. "
-                    "The illustrative $20,000 receipt with a 25% earned fee "
-                    "produces $5,000 of operator revenue, not $20,000, and "
-                    "does not justify recognizing the entire unpaid judgment. "
-                    "Apply the actual contract, accounting policy, and relevant "
-                    "custody requirements. If counsel holds client money, "
-                    "reconcile your matter ledger to counsel's remittance "
-                    "statement rather than assuming your own operating account "
-                    "should receive it. A daily exception report should flag "
-                    "duplicate payment identifiers, receipts without matters, "
-                    "fees exceeding agreed terms, stale checks, and transfers "
-                    "without supporting settlement instructions. Require a "
-                    "second person to verify changed payment destinations "
-                    "through a previously established contact channel. Keep "
-                    "bank credentials outside source-control files and limit "
-                    "each integration to the minimum access needed for its "
-                    "specific reconciliation function."
-                ),
-                (
-                    "Reconcile the desk to the canonical scenarios before "
-                    "approving more subscriptions. Conservative recognizes "
-                    "$60,000 of annual service fees, incurs $48,000 of "
-                    "all-in costs, and leaves $12,000 owner net profit at "
-                    "20% with 1 FT + 3 C. Base recognizes $280,000, "
-                    "incurs $196,000, and leaves $84,000 at 30.0% with "
-                    "1 FT + 3 C. Scaled recognizes $500,000, incurs "
-                    "$300,000, and leaves $200,000 at 40% with 2 FT "
-                    "+ 4 C. Contractors are staffing capacity, not an "
-                    "assumption that everyone works full time. The stated "
-                    "$2,000–$12,000 monthly operating range is not a cap "
-                    "on total scenario expenses; modeled all-in costs also "
-                    "need to absorb applicable labor, case costs, and "
-                    "other delivery expenses without double counting. At "
-                    "an illustrative $5,000 earned fee per completed "
-                    "matter, the revenue cases require 12, 56, and "
-                    "100 fee-producing matters respectively. These are "
-                    "capacity equivalents, not predicted collections. A "
-                    "$300 research package on a $5,000 fee opportunity "
-                    "consumes 6% of the fee before enforcement expense "
-                    "and labor. If verified equity disappears or senior "
-                    "claims consume likely proceeds, stop incremental "
-                    "spending rather than trying to rescue sunk research "
-                    "costs with a more aggressive collection tactic."
-                ),
-            ],
-            "table": {
-                "caption": "Six operating controls tied to deadlines, collections, and exact scenario economics",
-                "headers": [
-                    "Operating decision or scenario",
-                    "Concrete unit calculation and evidence",
-                    "Required control before committing resources",
-                    "Failure response and recovery path",
-                ],
-                "rows": [
-                    [
-                        "Conservative desk operates with one full-time person and three contractors.",
-                        "$60,000 recognized fees minus $48,000 all-in costs equals $12,000 owner profit.",
-                        "Maintain the exact 20% margin and exclude client receipts from operator revenue.",
-                        "Reduce optional data purchases when verified collection opportunities cannot support their cost.",
-                    ],
-                    [
-                        "Base desk retains one full-time person and three contractors.",
-                        "$280,000 recognized fees minus $196,000 all-in costs equals $84,000 owner profit.",
-                        "Maintain the exact 30.0% margin while tracking case expenses and contractor utilization.",
-                        "Reprice or stop weak matters instead of assuming unpaid principal funds overhead.",
-                    ],
-                    [
-                        "Scaled desk uses two full-time people and four contractors.",
-                        "$500,000 recognized fees minus $300,000 all-in costs equals $200,000 owner profit.",
-                        "Maintain the exact 40% margin with six people and controlled evidence queues.",
-                        "Add capacity only after verified workload and realized fees support recurring commitments.",
-                    ],
-                    [
-                        "A bankruptcy signal appears before scheduled enforcement instructions.",
-                        "Preserve the petition, case identifier, notice time, and affected debtor relationship.",
-                        "Pause affected work and obtain counsel's review of stay scope and court orders.",
-                        "Resume only on documented authority rather than an automated vendor status change.",
-                    ],
-                    [
-                        "A client receipt arrives with an unclear matter reference.",
-                        "Hold the receipt unmatched while preserving bank identifiers and the remittance evidence.",
-                        "Reconcile earned fees and client payables before publishing any disbursement instruction.",
-                        "Ask the authorized sender for clarification and retain the resolution audit trail.",
-                    ],
-                    [
-                        "A promising property hit carries substantial competing secured claims.",
-                        "Compare supported asset value with senior balances, exemptions, sale costs, and uncertainty.",
-                        "Obtain current title evidence and counsel's priority analysis before funding enforcement.",
-                        "Archive the evidence and revisit only after a material change improves reachable value.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before the desk creates external consequences",
-                "body": "A source-linked packet must pass all four checks before enforcement instructions, paid escalation, or disbursement.",
-                "items": [
-                    "Verify the exact judgment debtor, current creditor, assignment chain, and authority of the person directing the matter.",
-                    "Refresh bankruptcy and relevant court records; resolve credible stay or discharge signals with counsel before affected activity.",
-                    "Confirm jurisdiction-specific licensing, enforcement procedure, exemptions, and each paid data product's permitted purpose.",
-                    "Reconcile available evidence, expected case costs, earned fee terms, client money treatment, and verified payment destinations.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Separate tax-credit origination intelligence from credit ownership and recovery proceeds",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The mapped play "
-                    "transferable_tax_credit_brokerage_syndication uses project "
-                    "intelligence to find potential sellers, but its data model "
-                    "must remain separate from judgment enforcement. Do not "
-                    "describe DOE or EPA as nationwide interconnection queue "
-                    "operators. DOE-funded Berkeley Lab queue research aggregates "
-                    "project information, while regional grid operators and "
-                    "utilities maintain their respective queues; EPA redevelopment "
-                    "datasets identify sites, not transferable tax credits. Use "
-                    "PJM downloads, Berkeley Lab's Queued Up research, EPA "
-                    "RE-Powering resources, state film-office publications, and "
-                    "state historic-preservation records as lead sources only. "
-                    "Confirm whether a project exists, who owns the eligible "
-                    "taxpayer entity, whether construction or production milestones "
-                    "were satisfied, and whether the relevant credit is actually "
-                    "transferable. A queue application, film listing, historic "
-                    "designation, or brownfield address proves none of those "
-                    "conclusions by itself. Public records may also omit "
-                    "private project ownership changes and current credit "
-                    "allocations. Obtain seller authorization and original "
-                    "eligibility documents before sending a buyer any "
-                    "transaction-specific representation. Keep recovery-client "
-                    "information out of origination outreach unless its use "
-                    "is independently authorized; a distressed developer's "
-                    "appearance in a judgment file does not make confidential "
-                    "client intelligence available for another business line."
-                ),
-                (
-                    "IRC section 6418 permits specified eligible federal credits "
-                    "to move under its conditions; it does not create a "
-                    "freely resalable bearer instrument. The transferee cannot "
-                    "subsequently transfer the purchased credit under that "
-                    "provision. Therefore, the proposed buy-low, sell-high "
-                    "economics must be structured as a direct eligible "
-                    "seller-to-buyer transfer with a documented intermediary "
-                    "fee or other properly analyzed arrangement, not an "
-                    "operator taking title and flipping the same federal "
-                    "credit. For an illustrative $100,000 eligible credit, "
-                    "an $0.85 seller realization and $0.94 buyer outlay "
-                    "create a $9,000 gross economic spread. If documented "
-                    "transaction expenses are $4,000, the remaining "
-                    "contribution is $5,000 before overhead. These are "
-                    "illustrative negotiating assumptions, not current "
-                    "quotes, insurance prices, or additions to the "
-                    "canonical recovery scenarios. When the desk acts "
-                    "as agent, recognize its earned fee under the "
-                    "applicable accounting treatment, not the $100,000 "
-                    "credit face value or the buyer's entire wire. "
-                    "Counsel and the tax specialist must allocate "
-                    "seller consideration, buyer costs, escrow "
-                    "instructions, and intermediary compensation "
-                    "consistently with transfer rules. Georgia film, "
-                    "Louisiana film, historic rehabilitation, and "
-                    "brownfield programs require separate state-specific "
-                    "transferability analysis rather than borrowed federal assumptions."
-                ),
-                (
-                    "The risk fallback is strict: never warehouse unhedged "
-                    "credits or advance the seller money against an "
-                    "uncommitted buyer. Require buyer-funded simultaneous "
-                    "escrow, a direct authorized transfer, and a "
-                    "binding tax-credit insurance policy meeting the "
-                    "transaction's required non-cancelable coverage terms. "
-                    "Do not represent that such coverage is always "
-                    "available or that it eliminates exclusions, "
-                    "recapture exposure, or claims disputes. If the "
-                    "insurer cannot provide the required terms, or "
-                    "the buyer will not fund the coordinated closing, "
-                    "decline the transaction rather than weaken this "
-                    "play's conditions. Verify insured parties, "
-                    "coverage period, exclusions, cancellation "
-                    "provisions, claims control, and the specific "
-                    "credit facts covered. Federal pre-filing "
-                    "registration is part of the applicable "
-                    "process, not proof that the IRS has "
-                    "approved substantive eligibility. State "
-                    "program certificates likewise need "
-                    "program-specific review. Keep an immutable "
-                    "closing packet with seller authority, "
-                    "eligibility workpapers, buyer commitments, "
-                    "escrow confirmations, insurance evidence, "
-                    "and fee invoices. Price origination "
-                    "research separately from recovery cases: "
-                    "twenty leads at an assumed $25 "
-                    "research cost consume $500 before "
-                    "specialist diligence. Continue only when "
-                    "documented buyer demand and eligible "
-                    "supply justify that spend, never because "
-                    "a public dataset makes distressed "
-                    "projects easy to enumerate."
-                ),
-            ],
-            "table": {
-                "caption": "Six tax-credit diligence checkpoints with source-specific fallbacks",
-                "headers": [
-                    "Origination source or transaction stage",
-                    "What the evidence actually establishes",
-                    "Unit economics or required verification",
-                    "Risk fallback before money moves",
-                ],
-                "rows": [
-                    [
-                        "DOE-supported Berkeley Lab Queued Up research and regional operator queue downloads.",
-                        "Project applications and development indicators establish leads rather than eligible tax-credit balances.",
-                        "Twenty preliminary leads at an assumed $25 each require $500 research spending.",
-                        "Require developer documents and current utility evidence before paying for transaction diligence.",
-                    ],
-                    [
-                        "EPA RE-Powering datasets and state environmental agency redevelopment records.",
-                        "Site characteristics can support research but do not establish qualifying credit ownership.",
-                        "Verify project taxpayer, eligible activity, costs, dates, and the applicable statutory program.",
-                        "Discard unsupported eligibility assumptions and obtain program-specific specialist review before quoting.",
-                    ],
-                    [
-                        "Georgia film program records and Louisiana entertainment incentive program materials.",
-                        "Program participation differs from issued, usable, transferable credits under current state rules.",
-                        "Check issuance year, certificates, purchaser restrictions, expiration, transfer process, and program changes.",
-                        "Use direct agency confirmation and decline structures that depend on assumed transferability.",
-                    ],
-                    [
-                        "State historic-preservation offices, NPS records, and state brownfield program documents.",
-                        "Historic status or site designation alone does not establish transferable state credit value.",
-                        "Separate federal rehabilitation treatment from each state's eligibility and transfer provisions.",
-                        "Require tax specialist review and original certificates before proposing any buyer allocation.",
-                    ],
-                    [
-                        "Direct eligible seller-to-buyer federal transfer under IRC section 6418.",
-                        "A compliant first transfer does not authorize subsequent resale by the transferee.",
-                        "$100,000 face value times the $0.09 illustrative difference yields $9,000 gross spread.",
-                        "Document intermediary compensation without taking prohibited resale positions or counting principal as revenue.",
-                    ],
-                    [
-                        "Buyer-funded escrow closing supported by the required binding insurance policy.",
-                        "Escrow coordinates settlement while policy wording determines the actual insured exposures.",
-                        "$9,000 illustrative spread minus $4,000 transaction expenses leaves $5,000 before overhead.",
-                        "Decline if simultaneous funding or required non-cancelable coverage terms cannot be secured.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The winning record is the one that survives identity, priority, freshness, and cash reconciliation—not the one that appears first in search.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create a source register covering all eighteen directory entries, with authorized access, current pricing, permitted uses, refresh targets, and fallback owners.",
-        "Build a matter schema that separates parties, instruments, observations, deadlines, client receipts, earned fees, and supporting document hashes.",
-        "Test the enrichment waterfall against duplicate names, amended filings, scanned judgments, restricted responses, and incomplete pagination before production use.",
-        "Configure bankruptcy review tasks and jurisdiction-specific deadline templates, with a fresh check before consequential enforcement activity.",
-        "Reconcile recognized service fees and all-in costs to $12,000, $84,000, and $200,000 annual owner profit without counting client principal as revenue.",
-        "Keep tax-credit origination separate; require verified transferability, direct authorized transfer, buyer-funded simultaneous escrow, and the specified binding insurance terms.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "11 U.S.C. § 362 — Automatic stay",
-            "url": "https://www.law.cornell.edu/uscode/text/11/362",
-            "relevance": "A bankruptcy filing can stay affected collection and enforcement activity; credible notice requires immediate review rather than reliance on search freshness.",
-        },
-        {
-            "title": "Federal Rule of Civil Procedure 69 — Execution",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_69",
-            "relevance": "Federal money-judgment execution generally follows the forum state's procedure unless a federal statute applies; post-judgment discovery also has defined procedural routes.",
-        },
-        {
-            "title": "15 U.S.C. § 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Consumer-report access requires an applicable permissible purpose; commercial judgment research does not authorize indiscriminate consumer-report purchases.",
-        },
-        {
-            "title": "18 U.S.C. § 2721 — Motor vehicle record privacy and permitted disclosures",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
-            "relevance": "Use of personal information from motor vehicle records must fit an applicable statutory exception and any associated conditions.",
-        },
-        {
-            "title": "California Code of Civil Procedure § 683.020 — Judgment enforceability period",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=683.020.&lawCode=CCP",
-            "relevance": "Provides a state-specific enforceability framework that must be applied with relevant exceptions, renewal provisions, and the actual judgment history.",
-        },
-        {
-            "title": "26 U.S.C. § 6418 — Transfer of certain credits",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6418",
-            "relevance": "Defines eligible credit transfers and statutory conditions, including the restriction on a transferee's subsequent transfer of the purchased credit.",
-        },
-        {
-            "title": "26 CFR § 1.6418-2 — Rules for making a transfer election",
-            "url": "https://www.ecfr.gov/current/title-26/section-1.6418-2",
-            "relevance": "Governs transfer-election mechanics and supports direct seller-to-buyer structuring rather than assuming freely resalable federal credit inventory.",
-        },
-        {
-            "title": "26 CFR § 1.6418-4 — Pre-filing registration requirements",
-            "url": "https://www.ecfr.gov/current/title-26/section-1.6418-4",
-            "relevance": "Requires applicable pre-filing registration steps; a registration number does not establish that the underlying credit satisfies substantive eligibility requirements.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'domesticating-enforcing-foreign-out-of-state-judgments',
+ 'question_prompt': 'How do I enforce a judgment against a debtor or assets in another state or country?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Domesticating and Enforcing Foreign and Out-of-State Judgments',
+ 'subtitle': 'Registering sister-state judgments, domestication in Florida, statute-of-limitations '
+             'challenges, the Uniform Foreign Money Judgments Recognition Act, UK, Ontario, Vietnam, and '
+             'India (DRT) enforcement regimes, serving overseas defendants, asset-protection limits '
+             'abroad, and jurisdiction, transfer, and forum non conveniens',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners across the US, Canada, England, Vietnam, and India agree that a '
+                      'judgment is only a right to collect, not cash: it must be recognized or '
+                      "domesticated where the debtor's assets sit, then executed with local tools. For "
+                      'sister-state money judgments, full faith and credit and the Uniform Enforcement of '
+                      'Foreign Judgments Act make domestication a paperwork drill: certified copy, filing, '
+                      'service, and a 30-day response window, with defenses confined to jurisdiction and '
+                      'service defects. Foreign-country judgments face real screens: due process, notice, '
+                      'fraud, public policy, and a limitation capped at the earlier of the foreign '
+                      "validity period or 15 years. Street mechanics include Florida 'machine gun' "
+                      'garnishment writs at $50 to $100 each across about 10 banks and New York '
+                      'clearing-bank freezes. Disagreement centers on Florida limitation math and on '
+                      'whether foreign collection abroad is even economic.',
+ 'key_metrics': [{'label': 'Machine Gun Garnishment Writ Cost',
+                  'metric': 'Machine Gun Garnishment Writ Cost',
+                  'value': '$50 to $100 per writ, served across about 10 banks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Haber Law's per-writ service cost for simultaneous writs of garnishment "
+                             "fired at a Florida debtor's likely banks after domestication",
+                  'source': 'Haber Law ([ZdVZvPMh4qM @ 00:19:17])'},
+                 {'label': 'Uniform Act Recognition Limitation Window',
+                  'metric': 'Uniform Act Recognition Limitation Window',
+                  'value': 'Earlier of the foreign validity period or 15 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Outer time limit John at OffshoreAlert gives for recognizing a '
+                             'foreign-country money judgment under the state-law Uniform Act',
+                  'source': 'OffshoreAlert ([ruQAKGpCYE8 @ 00:01:20])'},
+                 {'label': 'Debtor Response Window After Domestication Service',
+                  'metric': 'Debtor Response Window After Domestication Service',
+                  'value': '30 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Time James Vann says a debtor has to respond after being served with the '
+                             'North Carolina domestication lawsuit, before the court issues a North '
+                             'Carolina judgment',
+                  'source': 'Vann Attorneys, PLLC ([YhtCR_GKvQ4 @ 00:02:00])'},
+                 {'label': 'Contingency Domestication Settlement Recovery',
+                  'metric': 'Contingency Domestication Settlement Recovery',
+                  'value': '$350,000 judgment settled at almost 100 cents on the dollar',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Haber Law war story: an out-of-state judgment taken on contingency settled '
+                             'after the debtor hired a big firm to move to vacate',
+                  'source': 'Haber Law ([ZdVZvPMh4qM @ 00:12:49])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who works the collection side opens with the same '
+                              'premise: a judgment is paper until someone forces it into money. LTS Law '
+                              "Firm frames it bluntly, 'judgments don't enforce themselves,' and routes "
+                              'every Vietnamese recovery through THADS, the Ministry of Justice '
+                              'enforcement agency with provincial and district offices, which moves only '
+                              'on a formal request plus a complete dossier [cv-rg7aHsRE @ 00:00:06]. '
+                              'BlackBeltBarrister gives the same order of operations for England and '
+                              'Wales: recognize first, then enforce, because the enforcement tools stay '
+                              'locked until the foreign judgment is recognized locally [EKjVl_JQ5QE @ '
+                              '00:00:56]. The Proper Person warns that US states do not automatically '
+                              "recognize each other's judgments, so the creditor must register where the "
+                              'debtor or the assets actually sit [djAI4TQ1S00 @ 00:00:00]. John at '
+                              'OffshoreAlert hammers the same geography rule from the international side: '
+                              'judgments do not travel automatically between states, so you file where the '
+                              'assets are [ruQAKGpCYE8 @ 00:04:12]. The baseline prerequisite is therefore '
+                              'location intelligence, not legal brilliance: knowing which courthouse sits '
+                              'nearest the bank accounts, real estate, receivables, or business premises '
+                              'before a single filing fee is spent. Everything downstream, from the choice '
+                              'of regime to the speed of recovery, depends on that first asset map.',
+                              'On sister-state money judgments, the consensus is that domestication is a '
+                              "paperwork exercise, not a rematch. Snellings Law defines 'foreign' as any "
+                              'other state or country and explains that full faith and credit applies: the '
+                              'creditor domesticates by filing in the home state and then serves the '
+                              "debtor [W1XbSRwt1D8 @ 00:00:30]. James Vann of Vann Attorneys calls it 'not "
+                              "really a very difficult process' and lists the only openings the debtor "
+                              'gets: improper personal jurisdiction, bad service, or improper '
+                              "subject-matter jurisdiction. In Vann's words, 'we're not retrying the whole "
+                              "terms again' [YhtCR_GKvQ4 @ 00:01:44]. The Proper Person agrees that "
+                              'objections are limited to technicalities, with no retrial of the underlying '
+                              'dispute [djAI4TQ1S00 @ 00:01:05]. Attorney Thoughts counts the reach of the '
+                              'Uniform Enforcement of Foreign Judgments Act of 1986 at 47 states plus the '
+                              'District of Columbia and the Virgin Islands, with registration done by '
+                              'filing a copy of the original judgment with the clerk alongside an '
+                              'affidavit containing essential information [QgFvjr6fOpg @ 00:02:05]. The '
+                              'operator takeaway is consistent across all four speakers: if the original '
+                              'judgment was entered with proper jurisdiction and proper service, the '
+                              "debtor's attack surface inside the new state is narrow, and the creditor's "
+                              'real work shifts to finding and hitting assets rather than relitigating the '
+                              'debt.',
+                              'Foreign-country judgments are where the agreement turns into a warning. '
+                              'Snellings Law states the US is not obligated to recognize them at all; some '
+                              'states do so by statute, through an action filed in the home state '
+                              '[W1XbSRwt1D8 @ 00:01:46]. Hesham Elrafei of Lex Animata lists the denial '
+                              'criteria courts run through: jurisdiction, finality, a fair trial with '
+                              'notice and appeal, and the public policy of the enforcing country '
+                              '[YB6KKY7Q7ts @ 00:01:46]. John at OffshoreAlert gives the US version of the '
+                              'same checklist: due process, personal jurisdiction, notice, fraud, public '
+                              'policy, and a seriously inconvenient forum, with defamation, IP, and First '
+                              'Amendment conflicts sitting inside the public-policy bucket [ruQAKGpCYE8 @ '
+                              '00:07:36]. Rob Lambert of AssetProtectionTraining.com, speaking from the '
+                              'debtor side, pushes the point to its extreme: no country automatically '
+                              "enforces US judgments, and there is always 'at least a mini trial' abroad, "
+                              'while arbitration awards travel more easily, which is exactly why Lambert '
+                              'tells debtors to avoid arbitration clauses [HqKU9rVRjNI @ 00:00:34]. '
+                              'Whether the speaker is collecting or defending, the shared reality is that '
+                              'cross-border recognition is a contested proceeding with defined escape '
+                              'hatches. The creditor has to build the file around jurisdiction, notice, '
+                              'and due process from day one, because those are the doors the debtor will '
+                              'try first.'],
+               'table': {'caption': 'Where the practitioners line up: baseline rules for domesticating and '
+                                    'enforcing judgments',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Judgments never enforce themselves anywhere',
+                                   'Vietnamese recovery runs through THADS only after a formal request '
+                                   'plus a complete dossier',
+                                   'Plan and fund a separate enforcement phase after winning the case',
+                                   'LTS Law Firm Channel ([cv-rg7aHsRE @ 00:00:06])'],
+                                  ['Recognize the judgment first, then enforce it',
+                                   'England and Wales route foreign judgments through one of four '
+                                   'recognition regimes before enforcement',
+                                   'Identify the correct recognition regime before choosing any collection '
+                                   'tool',
+                                   'BlackBeltBarrister ([EKjVl_JQ5QE @ 00:02:32])'],
+                                  ["File where the debtor's assets actually sit",
+                                   'Judgments do not travel automatically between states, so the filing '
+                                   'follows the asset location',
+                                   'Map bank accounts and property before paying any filing fee',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:04:12])'],
+                                  ['Sister-state merits are never retried after domestication',
+                                   'Debtor defenses are limited to personal jurisdiction, service, and '
+                                   'subject-matter jurisdiction defects',
+                                   'Audit the original service and jurisdiction record before '
+                                   'domesticating anywhere',
+                                   'Vann Attorneys, PLLC ([YhtCR_GKvQ4 @ 00:01:44])'],
+                                  ['The Uniform Act covers nearly every US jurisdiction',
+                                   'Forty-seven states, DC, and the Virgin Islands register a judgment '
+                                   'copy plus affidavit with the clerk',
+                                   'Expect a clerk-level registration path in most American jurisdictions',
+                                   'Attorney Thoughts ([QgFvjr6fOpg @ 00:02:05])'],
+                                  ['Foreign-country judgments face formal denial screens',
+                                   'Courts test jurisdiction, finality, fair trial with notice and appeal, '
+                                   'and public policy',
+                                   'Build the original record around notice and due process from the start',
+                                   'Lex Animata Law Visualized | Hesham Elrafei ([YB6KKY7Q7ts @ '
+                                   '00:01:46])'],
+                                  ['Specialized recovery forums beat ordinary civil court timelines',
+                                   'An Indian bank suit took 8 years to decree, while the DRT targets 180 '
+                                   'days',
+                                   'The DRT rests on a tribunal, summary procedure, and dedicated Recovery '
+                                   'Officers',
+                                   'Court Kutchehry ([E-XLFQLiAEE @ 00:02:59])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The step-by-step domestication drill varies by state but follows a '
+                              "recognizable pattern. James Vann's North Carolina workflow starts with a "
+                              'certified copy of the judgment from the state of original filing, then a '
+                              'new lawsuit filed in North Carolina, served on the defendant, with the '
+                              'debtor getting 30 days to respond before the court issues a North Carolina '
+                              'judgment and the asset search begins [YhtCR_GKvQ4 @ 00:01:08]. Haber Law '
+                              "describes Florida, which the firm calls 'the most debtor friendly state,' "
+                              'as a record-and-notice system: the creditor records the judgment and mails '
+                              'notice, the debtor may contest by filing a complaint, and an initial '
+                              'hearing follows. Florida usually recognizes default judgments, while New '
+                              'York does not, and the Florida limitations period usually runs 20 years '
+                              '[ZdVZvPMh4qM @ 00:06:30]. The Proper Person adds the Nevada detail that '
+                              'registration happens at the courthouse near the assets [djAI4TQ1S00 @ '
+                              '00:00:49]. When the defendant sits overseas, The Global Process Server says '
+                              'the Hague Service Convention is mandatory for member countries under '
+                              'Volkswagen Werk, and three checks come first: membership, objections and '
+                              'declarations, and language and format. Those three answers decide timing, '
+                              'translation, cost, and whether alternative service methods are available '
+                              '[SUlnLzzcvIk @ 00:00:47]. Skip the treaty, the speaker warns, and service '
+                              'gets quashed, defaults get vacated, and enforcement gets refused.',
+                              'Once the judgment is local, the speakers pivot hard to collection hardware. '
+                              "Haber Law's signature move is 'machine gun' writs of garnishment, roughly "
+                              '$50 to $100 apiece to serve, fired across about 10 banks at once, backed by '
+                              'a fact information sheet, subpoenas duces tecum, sheriff break orders, and '
+                              'proceedings supplementary to implead transferees [ZdVZvPMh4qM @ 00:19:17]. '
+                              "Florida's homestead exemption shields the residence, but investment "
+                              'property is reachable, and head-of-household limits cap what can be taken '
+                              'from income. Nizam Hashmi lays out the Ontario toolkit: garnishment of '
+                              'wages and bank funds, a writ of seizure and sale over personal property or '
+                              'land, and an examination in aid of execution where the debtor answers under '
+                              'oath about employment, income, property, accounts, debts, and expenses '
+                              "[AT4U_1yLtaE @ 00:00:43]. Hashmi stresses that 'enforcement also requires "
+                              "economic judgment,' weighing likely recovery, reachable assets, cost, and "
+                              'time while post-judgment interest keeps accruing [AT4U_1yLtaE @ 00:01:04]. '
+                              "BlackBeltBarrister's English menu runs parallel: third-party debt orders, "
+                              'writs and warrants of control, charging orders, and attachment of earnings '
+                              '[EKjVl_JQ5QE @ 00:05:45]. Across all three jurisdictions the sequence is '
+                              'the same: force the debtor to disclose assets under oath or on a sworn '
+                              'form, then hit every reachable account and property interest before money '
+                              'moves.',
+                              'For foreign-country judgments landing in the US, John at OffshoreAlert '
+                              'supplies the hardest numbers. The Uniform Act is state law, adopted in 1962 '
+                              'and updated in 2005, and the recognition window runs to the earlier of the '
+                              "foreign judgment's validity period or 15 years [ruQAKGpCYE8 @ 00:01:20]. "
+                              'New York is the preferred landing zone because of its clearing banks, a '
+                              'summary procedure, in rem jurisdiction, and the ability to file in '
+                              'anticipation of assets that have not yet arrived [ruQAKGpCYE8 @ 00:05:12]. '
+                              'The payoff of that venue choice is the ability to freeze dollar flows as '
+                              'they pass through New York clearing banks, catching money in transit '
+                              '[ruQAKGpCYE8 @ 01:02:16]. LTS Law Firm runs the Vietnamese equivalent as a '
+                              'five-part dossier: a judgment copy; a request naming the debtor, the '
+                              'amount, and the scope; proof of standing and power of attorney; asset '
+                              'information covering bank accounts, real estate, business locations, and '
+                              'receivables; and fees and costs [cv-rg7aHsRE @ 00:02:01]. The firm reports '
+                              "that delays are usually 'dossier problems,' not legal defeats, and that "
+                              'speed depends on whether assets exist and whether the creditor hands over '
+                              'actionable asset information. Its recommended homework is asset mapping and '
+                              'corporate registry checks before the request is lodged, and its closing '
+                              "line sums up the whole chapter: 'winning is not collecting.'"],
+               'table': {'caption': 'Street-level mechanics, timelines, and unit costs the practitioners '
+                                    'put on the record',
+                         'headers': ['Mechanic or Tool',
+                                     'How Practitioners Run It',
+                                     'Stated Number or Cost',
+                                     'Expert Source'],
+                         'rows': [['Machine gun garnishment writs in Florida',
+                                   'Serve writs of garnishment across many banks simultaneously to catch '
+                                   'hidden accounts',
+                                   'About $50 to $100 per writ across roughly 10 banks',
+                                   'Haber Law ([ZdVZvPMh4qM @ 00:19:17])'],
+                                  ['North Carolina domestication lawsuit sequence',
+                                   'Certified copy from original state, new suit filed, then served on the '
+                                   'debtor',
+                                   'Debtor gets 30 days to respond before judgment issues',
+                                   'Vann Attorneys, PLLC ([YhtCR_GKvQ4 @ 00:02:00])'],
+                                  ['Uniform Act recognition limitation window',
+                                   'Foreign-country money judgment recognized under the state-law version '
+                                   'of the Uniform Act',
+                                   'Earlier of the foreign validity period or 15 years',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:01:20])'],
+                                  ['New York recognition proceeding timeline',
+                                   'Recognition action filed where clearing banks and summary procedure '
+                                   'favor the creditor',
+                                   'Recognition takes a few months according to the speaker',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:18:55])'],
+                                  ['Florida diligent creditor priority rule',
+                                   'Diligent creditor leapfrogs other creditors, but not prior perfected '
+                                   'security interests',
+                                   'Florida judgment lifespan usually runs 20 years',
+                                   'Haber Law ([ZdVZvPMh4qM @ 00:11:39])'],
+                                  ['Small-judgment economics filter before pursuit',
+                                   'Weigh collection cost against realistic recovery before launching any '
+                                   'enforcement campaign',
+                                   'Judgments of $15,000 to $20,000 may not justify pursuit',
+                                   'Haber Law ([ZdVZvPMh4qM @ 00:20:36])'],
+                                  ['Hague Service Convention compliance for overseas defendants',
+                                   'Check membership, objections and declarations, then language and '
+                                   'format requirements',
+                                   '80+ member countries, each running its own central authority',
+                                   'The Global Process Server ([SUlnLzzcvIk @ 00:00:16])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the collectors actually run',
+                           'body': 'Four field tactics the practitioners describe for turning a '
+                                   'domesticated or recognized judgment into recovered money faster.',
+                           'items': ['Fire garnishment writs at about 10 banks at once instead of guessing '
+                                     'one account; each writ costs roughly $50 to $100 to serve [Haber Law '
+                                     '— ZdVZvPMh4qM @ 00:19:17]',
+                                     'If the debtor and the assets are already in Florida, sue there '
+                                     'directly rather than domesticating a judgment with service defects '
+                                     "that invite a 'do-over' [Haber Law — ZdVZvPMh4qM @ 00:10:13]",
+                                     'For post-judgment discovery on a foreign judgment, domesticate in '
+                                     "New York first; using Section 1782 for this purpose is a '50/50' "
+                                     'proposition [OffshoreAlert — ruQAKGpCYE8 @ 00:54:49]',
+                                     'Hand the enforcement agency actionable asset information up front; '
+                                     'delays are usually dossier problems, and speed depends on what the '
+                                     'creditor supplies [LTS Law Firm Channel — cv-rg7aHsRE @ 00:03:27]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map the assets and pick the forum',
+                              'action': "Locate the debtor's bank accounts, real estate, business "
+                                        'locations, and receivables, then choose the courthouse nearest '
+                                        'them.',
+                              'detail': 'Judgments do not travel automatically between states, so the '
+                                        'filing follows the assets [OffshoreAlert — ruQAKGpCYE8 @ '
+                                        '00:04:12]; in Nevada, register at the courthouse near the assets '
+                                        '[The Proper Person — djAI4TQ1S00 @ 00:00:49].'},
+                             {'step': 2,
+                              'title': 'Pull the certified copy and file',
+                              'action': 'Obtain a certified copy from the original court and file the '
+                                        'domestication or registration in the target state.',
+                              'detail': "Vann's workflow starts with a certified copy from the state of "
+                                        'initial filing and a new North Carolina lawsuit [Vann Attorneys, '
+                                        'PLLC — YhtCR_GKvQ4 @ 00:01:08]; Uniform Act states take a copy '
+                                        'plus affidavit at the clerk [Attorney Thoughts — QgFvjr6fOpg @ '
+                                        '00:02:05].'},
+                             {'step': 3,
+                              'title': 'Serve correctly and run the response clock',
+                              'action': 'Serve the debtor, using the Hague Service Convention for member '
+                                        'countries, and track the response deadline.',
+                              'detail': 'The debtor has 30 days to respond before a North Carolina '
+                                        'judgment issues [Vann Attorneys, PLLC — YhtCR_GKvQ4 @ 00:02:00]; '
+                                        'for overseas defendants, check membership, objections, and '
+                                        'language first [The Global Process Server — SUlnLzzcvIk @ '
+                                        '00:00:47].'},
+                             {'step': 4,
+                              'title': 'Force disclosure, then hit every account',
+                              'action': 'Compel sworn asset disclosure, then launch simultaneous '
+                                        'garnishments and seizure writs.',
+                              'detail': 'Use the examination in aid of execution under oath [Nizam Hashmi '
+                                        '- Hashmi Law Group — AT4U_1yLtaE @ 00:00:43], then the fact '
+                                        'information sheet and machine gun garnishment writs across about '
+                                        '10 banks [Haber Law — ZdVZvPMh4qM @ 00:19:17].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is how long a domesticated judgment stays alive. Arguing '
+                              'for Lisa Worthington before the Florida appellate bench, counsel treated a '
+                              "registration under Florida's foreign-judgment statute as a Florida judgment "
+                              'carrying 20 years measured from original entry, with a separate action on '
+                              'the judgment available within 5 years to mint a fresh 20-year judgment; '
+                              "under that reading, New Mexico's 14-year limit leaves only “six more years” "
+                              'in Florida [9x7_I2ygY9E @ 00:10:31]. The bench resisted, worried the rule '
+                              'hands out more credit than the originating state would, read section '
+                              '55.504(4) as saying nothing in it should “extend the limitation period,” '
+                              'and shut down forum-shopping the filing across states. Robert Donald, for '
+                              'the appellee, went further: registration never creates a Florida judgment, '
+                              'and the borrowing statute, 95.10, imports the shorter foreign clock '
+                              '[9x7_I2ygY9E @ 00:34:10]. Haber Law works from a usual 20-year Florida '
+                              'horizon and leans on the rule that the diligent creditor is always rewarded '
+                              "[ZdVZvPMh4qM @ 00:11:39], while OffshoreAlert's John reads the Uniform Act "
+                              'for foreign-country money judgments as running only until the earlier of '
+                              'the foreign validity period or 15 years [ruQAKGpCYE8 @ 00:01:20]. Same '
+                              'judgment, three different counts of remaining life, so the originating '
+                              "state's own expiry and renewal status gets pinned before any filing fee is "
+                              'spent.',
+                              'Practitioners also split on how much of a fight domestication invites. '
+                              'James Vann of Vann Attorneys calls the sister-state route “quite easy”: a '
+                              'certified copy from the original state, a new lawsuit in North Carolina, '
+                              'service, a 30-day response window, then a North Carolina judgment, with '
+                              'defenses confined to improper personal jurisdiction, bad service or '
+                              'improper subject-matter jurisdiction and no retrial of the merits '
+                              '[YhtCR_GKvQ4 @ 00:01:44]. Haber Law paints Florida as “the most debtor '
+                              'friendly state,” where the judgment is recorded, notice is mailed, the '
+                              'debtor may contest by complaint and an initial hearing follows; Florida '
+                              'usually recognizes default judgments, while New York does not [ZdVZvPMh4qM '
+                              '@ 00:07:10]. Cross a national border and the gap widens. Rob Lambert of '
+                              "AssetProtectionTraining.com, speaking from the debtor's chair, says no "
+                              'country automatically enforces US judgments, there is always “at least a '
+                              'mini trial,” and arbitration awards travel more easily, which is why that '
+                              'camp tells debtors to avoid arbitration clauses [HqKU9rVRjNI @ 00:00:34]. '
+                              'Hesham Elrafei frames the root of the divide: a liberal approach prizing '
+                              'certainty and an end to repeat litigation, against a conservative approach '
+                              'guarding reciprocity and sovereignty out of fear of corrupt proceedings or '
+                              'public-policy violations [YB6KKY7Q7ts @ 00:00:47]. Creditors chasing assets '
+                              'abroad budget for the conservative camp.',
+                              'Even the filing vehicle differs by speaker and jurisdiction. Attorney '
+                              'Thoughts describes the 1986 Uniform Act model followed by 47 states, the '
+                              'District of Columbia and the Virgin Islands as a registration play: a copy '
+                              'of the original judgment lodged with the clerk alongside an affidavit '
+                              "containing essential information [QgFvjr6fOpg @ 00:02:05], while Vann's "
+                              "North Carolina workflow runs as a fresh lawsuit. OffshoreAlert's John "
+                              'treats forum choice as strategy, not paperwork: file where the assets are, '
+                              'favor New York for its clearing banks, summary procedure, in rem '
+                              'jurisdiction and the ability to file in anticipation of assets, and expect '
+                              'state court to often move faster than federal [ruQAKGpCYE8 @ 00:05:12]. '
+                              'BlackBeltBarrister maps four English regimes and puts post-2020 US '
+                              'judgments under common law, which demands a definite sum and fresh '
+                              'proceedings, though summary judgment can shortcut them [EKjVl_JQ5QE @ '
+                              '00:02:32]. Haber Law offers the bypass: when both the debtor and the assets '
+                              'already sit in Florida and the original judgment carries a service defect, '
+                              'skip domestication and sue there directly rather than invite a “do-over” '
+                              '[ZdVZvPMh4qM @ 00:10:13]. The real choice is between speed of registration, '
+                              'leverage of a creditor-friendly banking forum, and the durability of a '
+                              'fresh local judgment.'],
+               'table': {'caption': 'Competing playbooks for domesticating and enforcing out-of-state and '
+                                    'foreign judgments',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Florida limitation clock on a registered sister-state judgment',
+                                   'Registration acts as a Florida judgment with 20 years from original '
+                                   'entry',
+                                   'Borrowing statute 95.10 imports the shorter originating-state clock '
+                                   'instead',
+                                   'Florida Trust, Real Estate, Probate, & Foreclosure ([9x7_I2ygY9E @ '
+                                   '00:03:40]; [9x7_I2ygY9E @ 00:34:10])'],
+                                  ['Limitation period on foreign-country money judgments in the US',
+                                   'Uniform Act runs to the earlier of foreign validity or 15 years',
+                                   'Florida practice usually works from a 20-year limitation horizon',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:01:20]); Haber Law ([ZdVZvPMh4qM @ '
+                                   '00:11:39])'],
+                                  ['How much of a fight domestication actually invites',
+                                   'Defenses limited to jurisdiction and service with no retrial of the '
+                                   'merits',
+                                   'Abroad there is always at least a mini trial before any collection',
+                                   'Vann Attorneys, PLLC ([YhtCR_GKvQ4 @ 00:01:44]); '
+                                   'AssetProtectionTraining.com ([HqKU9rVRjNI @ 00:00:34])'],
+                                  ['Filing vehicle for a sister-state money judgment',
+                                   'Register a copy with the clerk plus an affidavit of essential '
+                                   'information',
+                                   'File a new lawsuit, serve it, wait 30 days, obtain a local judgment',
+                                   'Attorney Thoughts ([QgFvjr6fOpg @ 00:02:05]); Vann Attorneys, PLLC '
+                                   '([YhtCR_GKvQ4 @ 00:02:00])'],
+                                  ['Choosing the forum where enforcement will actually run',
+                                   'File in New York for clearing banks, in rem reach and anticipation '
+                                   'filing',
+                                   'Sue directly in Florida when debtor and assets both already sit there',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:05:12]); Haber Law ([ZdVZvPMh4qM @ '
+                                   '00:10:13])'],
+                                  ['Jurisdictions without a registration statute for the judgment',
+                                   'Non-adopting Tennessee requires a common-law debt action on the '
+                                   'judgment',
+                                   'England treats post-2020 US judgments at common law, summary judgment '
+                                   'possible',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:16:46]); BlackBeltBarrister '
+                                   '([EKjVl_JQ5QE @ 00:02:32])'],
+                                  ['Recognition philosophy driving how hard courts push back',
+                                   'Liberal camp prizes certainty and avoiding repeat litigation entirely',
+                                   'Conservative camp guards reciprocity, sovereignty and public policy '
+                                   'against corrupt proceedings',
+                                   'Lex Animata Law Visualized | Hesham Elrafei ([YB6KKY7Q7ts @ 00:00:47]; '
+                                   '[YB6KKY7Q7ts @ 00:01:07])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures are clock failures. Dr. V.K. Kohli of Court '
+                              'Kutchehry walks through a ₹50 lakh mortgage loan from 1985 that defaulted '
+                              'in 1987: “The suit is decreed only in 1995, after 8 years of hearings,” and '
+                              'execution ran another 5 years while the security lost value and crores of '
+                              "rupees of public money sat stuck, which is the problem the DRT's 180-day "
+                              'target was built to kill [E-XLFQLiAEE @ 00:03:22]. The Florida appellate '
+                              'fight shows the same trap in US form: a 2003 Arizona judgment registered in '
+                              "Florida in 2006, Arizona's 5-year limit lapsing in 2008 without renewal, "
+                              'and execution not sought until 2012, leaving the creditor to litigate '
+                              'whether anything survived [9x7_I2ygY9E @ 00:25:40]. LTS Law Firm warns that '
+                              'statutory time limits apply once a Vietnamese judgment is legally '
+                              'effective, and that arbitral awards need recognition before enforcement '
+                              'even starts, so delay is the enemy [cv-rg7aHsRE @ 00:01:11]. JD '
+                              "Simplified's federal-procedure rule points the same direction: once the "
+                              'statute of limitations has run, transfer beats dismissal because “Transfer '
+                              'keeps the case alive,” and the standing warning is to watch for limitation '
+                              'facts before choosing a move [FUPJlxOU2nI @ 00:08:09].',
+                              'The second cluster is procedural self-sabotage. The Global Process Server '
+                              'says the Hague Service Convention, with 80-plus members and a central '
+                              'authority in each, is mandatory when service goes to a member country; skip '
+                              'it and service is quashed, defaults are vacated and enforcement is refused: '
+                              '“Months of work gone” [SUlnLzzcvIk @ 00:01:06]. The three checks come '
+                              'first: membership, objections and declarations, language and format. Haber '
+                              'Law flags the domestic version: a defect such as lack of service in the '
+                              'original case hands the debtor a “do-over,” and Haber separately expects '
+                              'English defamation judgments to go unenforced in Florida [ZdVZvPMh4qM @ '
+                              '00:10:13]. LTS Law Firm finds most Vietnamese enforcement delays are '
+                              '“dossier problems,” not legal defeats, traced to missing pieces of the '
+                              'five-part file: judgment copy, a request naming debtor, amount and scope, '
+                              'standing and power of attorney, asset information, and fees [cv-rg7aHsRE @ '
+                              "00:02:36]. OffshoreAlert's John frames the defense choice as contesting "
+                              'jurisdiction only, never the merits, calling it “a really important '
+                              'decision that has to be made at the very beginning of a case”; creditors '
+                              'face non-recognition fights on due process, notice, fraud and public policy '
+                              '[ruQAKGpCYE8 @ 00:21:47].',
+                              'The final check is pure economics. Haber Law says $15,000 to $20,000 '
+                              'judgments may not be worth pursuing, even though “machine gun” writs of '
+                              'garnishment cost only about $50 to $100 apiece across roughly 10 banks, and '
+                              'warns that covert bank-account searches by investigators are “probably a '
+                              'violation of federal law” [ZdVZvPMh4qM @ 00:20:36]. On the agency side, Rob '
+                              'Fisher at OffshoreAlert cites Caledonian, a $25M judgment with nothing left '
+                              'to collect, and a RICO courier paying $1,000 a month toward a $25M joint '
+                              "forfeiture [ruQAKGpCYE8 @ 00:41:59]. Rob Lambert's debtor-side math is "
+                              'harsher abroad: foreign lawyers will not take contingency cases, a Swiss '
+                              'lawyer can want “a quarter million dollars,” bonds are often demanded in '
+                              'cash, and funds move in “5 10 15 minutes” while the creditor litigates for '
+                              'six months, spending “$10 to collect 10 cents” [HqKU9rVRjNI @ 00:04:54]. '
+                              "Nizam Hashmi's Ontario filter is the counterweight: weigh likely recovery, "
+                              'reachable assets, cost and time before choosing garnishment, a writ of '
+                              'seizure and sale, or an examination in aid of execution, remembering that '
+                              'post-judgment interest may keep accruing [AT4U_1yLtaE @ 00:01:04]. Leverage '
+                              'still pays when the numbers line up: Haber took a $350,000 judgment on '
+                              'contingency and settled near 100 cents on the dollar.'],
+               'table': {'caption': 'Firsthand enforcement failures and the economics behind them',
+                         'headers': ['Failure Mode', 'What Went Wrong', 'Economics Check', 'Expert Source'],
+                         'rows': [['Origin-state limitation lapsed before execution was sought',
+                                   '2003 Arizona judgment registered 2006, 5-year limit lapsed unrenewed '
+                                   'in 2008',
+                                   'Execution sought in 2012 dragged the creditor into an appellate fight',
+                                   'Florida Trust, Real Estate, Probate, & Foreclosure ([9x7_I2ygY9E @ '
+                                   '00:25:40])'],
+                                  ['Ordinary civil suit used for large bank recovery',
+                                   '₹50 lakh loan decreed after 8 years, execution ran 5 more years',
+                                   'Security lost value while crores of public money sat stuck',
+                                   'Court Kutchehry ([E-XLFQLiAEE @ 00:03:22]; [E-XLFQLiAEE @ 00:00:24])'],
+                                  ['Hague Service Convention skipped for an overseas defendant',
+                                   'Service quashed, defaults vacated and enforcement refused in member '
+                                   'countries',
+                                   'Months of work gone because the treaty route was mandatory',
+                                   'The Global Process Server ([SUlnLzzcvIk @ 00:01:06]; [SUlnLzzcvIk @ '
+                                   '00:00:32])'],
+                                  ['Incomplete enforcement dossier lodged with the THADS agency',
+                                   'Missing judgment copy, standing, asset information or fees stalls '
+                                   'enforcement',
+                                   'Delays are usually dossier problems rather than outright legal defeats',
+                                   'LTS Law Firm Channel ([cv-rg7aHsRE @ 00:02:36])'],
+                                  ['Judgment entered against an emptied or judgment-proof debtor',
+                                   'Caledonian left a $25M judgment with nothing left to collect',
+                                   'RICO courier pays $1,000 monthly toward a $25M joint forfeiture',
+                                   'OffshoreAlert ([ruQAKGpCYE8 @ 00:41:59]; [ruQAKGpCYE8 @ 00:35:29])'],
+                                  ['Chasing a small judgment through a full collection campaign',
+                                   '$15,000 to $20,000 judgments may not justify the collection effort',
+                                   'Garnishment writs cost about $50 to $100 each per bank served',
+                                   'Haber Law ([ZdVZvPMh4qM @ 00:20:36]; [ZdVZvPMh4qM @ 00:19:17])'],
+                                  ['Creditor litigates abroad while the debtor moves the funds',
+                                   'Foreign lawyers refuse contingency and Swiss counsel wants a quarter '
+                                   'million',
+                                   'Funds move in minutes while creditors litigate for six months',
+                                   'AssetProtectionTraining.com ([HqKU9rVRjNI @ 00:04:54]; [HqKU9rVRjNI @ '
+                                   '00:02:12])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-Switch Checks Before Spending a Dollar on Enforcement',
+                           'body': 'Each check traces to a loss, reversal or bottleneck a practitioner '
+                                   'reported firsthand; clear all four before filing.',
+                           'items': ["Pull the originating state's limitation period and renewal history "
+                                     'first; the 2003 Arizona judgment registered in Florida in 2006 '
+                                     'lapsed unrenewed in 2008 and execution was not sought until 2012 '
+                                     '[Florida Trust, Real Estate, Probate, & Foreclosure — 9x7_I2ygY9E @ '
+                                     '00:25:40].',
+                                     'If the defendant sits overseas, answer the three questions first '
+                                     '(membership, objections and declarations, language and format), '
+                                     'because skipping the Hague route gets service quashed and defaults '
+                                     'vacated [The Global Process Server — SUlnLzzcvIk @ 00:00:47].',
+                                     'Map assets before filing: bank accounts, real estate, business '
+                                     'locations and receivables decide how fast enforcement moves, and a '
+                                     'creditor without actionable asset information waits [LTS Law Firm '
+                                     'Channel — cv-rg7aHsRE @ 00:03:27].',
+                                     'Size the judgment against collection cost; $15,000 to $20,000 '
+                                     'judgments may not be worth pursuing even with cheap garnishment '
+                                     'writs [Haber Law — ZdVZvPMh4qM @ 00:20:36].']}}],
+ 'pull_quote': "“There's one thing I always fall back on and that is this concept that the diligent "
+               'creditor is always rewarded.” — Haber Law (ZdVZvPMh4qM @ 00:11:39).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Order a certified copy of the judgment from the court in the state where it was won '
+                      'before filing anywhere else [Vann Attorneys, PLLC — YhtCR_GKvQ4 @ 00:01:08].',
+                      'Register at the courthouse nearest the debtor or the assets, because states do not '
+                      "automatically recognize each other's judgments [The Proper Person — djAI4TQ1S00 @ "
+                      '00:00:49].',
+                      'Domesticate in New York first when post-judgment discovery is the goal, rather than '
+                      'betting on a 50/50 Section 1782 application [OffshoreAlert — ruQAKGpCYE8 @ '
+                      '00:54:49].',
+                      'Fire “machine gun” writs of garnishment at about $50 to $100 each across roughly 10 '
+                      'banks once the Florida judgment is in hand [Haber Law — ZdVZvPMh4qM @ 00:19:17].',
+                      'Put the debtor through an examination in aid of execution under oath covering '
+                      'employment, income, property, accounts, debts and expenses [Nizam Hashmi - Hashmi '
+                      'Law Group — AT4U_1yLtaE @ 00:00:43].',
+                      "Use proceedings supplementary to implead transferees who received the debtor's "
+                      'assets [Haber Law — ZdVZvPMh4qM @ 00:37:19].'],
+ 'statutory_citations': [{'title': 'Haber Law — Domesticating an Out of State Judgment in The State of '
+                                   'Florida [00:11:39]',
+                          'url': 'https://www.youtube.com/watch?v=ZdVZvPMh4qM&t=699s',
+                          'relevance': 'Primary practitioner testimony on Florida domestication, the usual '
+                                       '20-year limitation horizon and diligent-creditor priority.'},
+                         {'title': 'OffshoreAlert — How To Enforce Foreign Judgments in the USA & How US '
+                                   'based Agencies Can Reach Offshore Activity   Of [00:04:12]',
+                          'url': 'https://www.youtube.com/watch?v=ruQAKGpCYE8&t=252s',
+                          'relevance': 'Primary practitioner testimony on filing where the assets are and '
+                                       'Uniform Act recognition of foreign-country money judgments.'},
+                         {'title': 'Florida Trust, Real Estate, Probate, & Foreclosure — Can a Foreign '
+                                   'Judgment Be BLOCKED by the Statute of Limitations? | FL Appellate Oral '
+                                   'Argument [00:25:40]',
+                          'url': 'https://www.youtube.com/watch?v=9x7_I2ygY9E&t=1540s',
+                          'relevance': 'Primary practitioner testimony on limitation lapse of a registered '
+                                       'sister-state judgment.'},
+                         {'title': 'Vann Attorneys, PLLC — Enforcement of Foreign Judgments by James Vann '
+                                   '[00:01:08]',
+                          'url': 'https://www.youtube.com/watch?v=YhtCR_GKvQ4&t=68s',
+                          'relevance': 'Primary practitioner testimony on the certified-copy, new-lawsuit, '
+                                       '30-day domestication workflow.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'E-XLFQLiAEE',
+                       'title': 'Why Was the DRT Act Needed? 8 Years in Civil Court vs 180 Days in DRT | '
+                                'DRT Act Explained Ep 1',
+                       'channel': 'Court Kutchehry',
+                       'author': 'Court Kutchehry',
+                       'text': 'The suit is decreed only in 1995, after 8 years of hearings.',
+                       'tip': 'The suit is decreed only in 1995, after 8 years of hearings.',
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=E-XLFQLiAEE&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=E-XLFQLiAEE&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cv-rg7aHsRE',
+                       'title': 'The Role of Vietnam’s Civil Judgment Enforcement Agency in Debt Recovery '
+                                '| LTS LAW FIRM',
+                       'channel': 'LTS Law Firm Channel',
+                       'author': 'LTS Law Firm Channel',
+                       'text': 'For arbitral awards, enforcement generally requires recognition in Vietnam '
+                               'where applicable.',
+                       'tip': 'For arbitral awards, enforcement generally requires recognition in Vietnam '
+                              'where applicable.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=cv-rg7aHsRE&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=cv-rg7aHsRE&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cv-rg7aHsRE',
+                       'title': 'The Role of Vietnam’s Civil Judgment Enforcement Agency in Debt Recovery '
+                                '| LTS LAW FIRM',
+                       'channel': 'LTS Law Firm Channel',
+                       'author': 'LTS Law Firm Channel',
+                       'text': 'Winning is not collecting.',
+                       'tip': 'Winning is not collecting.',
+                       'timestamp': 410,
+                       'timestamp_seconds': 410,
+                       'timestamp_label': '[00:06:50]',
+                       'url': 'https://www.youtube.com/watch?v=cv-rg7aHsRE&t=410s',
+                       'markdown': '[00:06:50](https://www.youtube.com/watch?v=cv-rg7aHsRE&t=410s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AT4U_1yLtaE',
+                       'title': 'Enforcing a Judgment in Ontario: How Do You Actually Get Paid? Hashmi Law '
+                                'Group',
+                       'channel': 'Nizam Hashmi - Hashmi Law Group',
+                       'author': 'Nizam Hashmi - Hashmi Law Group',
+                       'text': 'Enforcement also requires economic judgment.',
+                       'tip': 'Enforcement also requires economic judgment.',
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=AT4U_1yLtaE&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=AT4U_1yLtaE&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W1XbSRwt1D8',
+                       'title': 'How to Enforce a Foreign Judgment',
+                       'channel': 'Snellings Law LLC',
+                       'author': 'Snellings Law LLC',
+                       'text': 'A sister-state money judgment gets full faith and credit, so the creditor '
+                               'domesticates it by filing in the home state and then serves the debtor.',
+                       'tip': 'A sister-state money judgment gets full faith and credit, so the creditor '
+                              'domesticates it by filing in the home state and then serves the debtor.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=W1XbSRwt1D8&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=W1XbSRwt1D8&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9x7_I2ygY9E',
+                       'title': 'Can a Foreign Judgment Be BLOCKED by the Statute of Limitations? | FL '
+                                'Appellate Oral Argument',
+                       'channel': 'Florida Trust, Real Estate, Probate, & Foreclosure',
+                       'author': 'Florida Trust, Real Estate, Probate, & Foreclosure',
+                       'text': 'The judgment was entered in Arizona in 2003, registered in Florida in '
+                               "2006, Arizona's five-year limit lapsed in 2008 without renewal, and "
+                               'execution was sought in 2012.',
+                       'tip': 'The judgment was entered in Arizona in 2003, registered in Florida in 2006, '
+                              "Arizona's five-year limit lapsed in 2008 without renewal, and execution was "
+                              'sought in 2012.',
+                       'timestamp': 1540,
+                       'timestamp_seconds': 1540,
+                       'timestamp_label': '[00:25:40]',
+                       'url': 'https://www.youtube.com/watch?v=9x7_I2ygY9E&t=1540s',
+                       'markdown': '[00:25:40](https://www.youtube.com/watch?v=9x7_I2ygY9E&t=1540s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ruQAKGpCYE8',
+                       'title': 'How To Enforce Foreign Judgments in the USA & How US based Agencies Can '
+                                'Reach Offshore Activity   Of',
+                       'channel': 'OffshoreAlert',
+                       'author': 'OffshoreAlert',
+                       'text': "So, that's a really important decision that has to be made at the very "
+                               'beginning of a case.',
+                       'tip': "So, that's a really important decision that has to be made at the very "
+                              'beginning of a case.',
+                       'timestamp': 1307,
+                       'timestamp_seconds': 1307,
+                       'timestamp_label': '[00:21:47]',
+                       'url': 'https://www.youtube.com/watch?v=ruQAKGpCYE8&t=1307s',
+                       'markdown': '[00:21:47](https://www.youtube.com/watch?v=ruQAKGpCYE8&t=1307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'djAI4TQ1S00',
+                       'title': 'Legal Nuts And Bolts: Registering Foreign Judgment',
+                       'channel': 'The Proper Person',
+                       'author': 'The Proper Person',
+                       'text': 'Register the judgment at the courthouse near where the debtor or the '
+                               "assets are, because states do not automatically recognize each other's "
+                               'judgments.',
+                       'tip': 'Register the judgment at the courthouse near where the debtor or the assets '
+                              "are, because states do not automatically recognize each other's judgments.",
+                       'timestamp': 49,
+                       'timestamp_seconds': 49,
+                       'timestamp_label': '[00:00:49]',
+                       'url': 'https://www.youtube.com/watch?v=djAI4TQ1S00&t=49s',
+                       'markdown': '[00:00:49](https://www.youtube.com/watch?v=djAI4TQ1S00&t=49s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EKjVl_JQ5QE',
+                       'title': 'Enforcing a Foreign Judgment - Where Do You Start? | BlackBeltBarrister',
+                       'channel': 'BlackBeltBarrister',
+                       'author': 'BlackBeltBarrister',
+                       'text': 'It matters where the assets lie.',
+                       'tip': 'It matters where the assets lie.',
+                       'timestamp': 407,
+                       'timestamp_seconds': 407,
+                       'timestamp_label': '[00:06:47]',
+                       'url': 'https://www.youtube.com/watch?v=EKjVl_JQ5QE&t=407s',
+                       'markdown': '[00:06:47](https://www.youtube.com/watch?v=EKjVl_JQ5QE&t=407s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HqKU9rVRjNI',
+                       'title': 'Who Enforces US Judgments Abroad - No Country',
+                       'channel': 'AssetProtectionTraining.com',
+                       'author': 'AssetProtectionTraining.com',
+                       'text': 'The money can move in 5, 10, 15 minutes while the creditor spends six '
+                               'months litigating abroad.',
+                       'tip': 'The money can move in 5, 10, 15 minutes while the creditor spends six '
+                              'months litigating abroad.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=HqKU9rVRjNI&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=HqKU9rVRjNI&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M__Ft9jrAVI',
+                       'title': 'Jurisdiction and Choice of Law',
+                       'channel': 'NYU School of Law',
+                       'author': 'NYU School of Law',
+                       'text': 'Choice of law certainly matters.',
+                       'tip': 'Choice of law certainly matters.',
+                       'timestamp': 3127,
+                       'timestamp_seconds': 3127,
+                       'timestamp_label': '[00:52:07]',
+                       'url': 'https://www.youtube.com/watch?v=M__Ft9jrAVI&t=3127s',
+                       'markdown': '[00:52:07](https://www.youtube.com/watch?v=M__Ft9jrAVI&t=3127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YhtCR_GKvQ4',
+                       'title': 'Enforcement of Foreign Judgments by James Vann',
+                       'channel': 'Vann Attorneys, PLLC',
+                       'author': 'Vann Attorneys, PLLC',
+                       'text': "It's quite easy; basically what you do is you get a certified copy of the "
+                               'judgment from the state of the initial filing (where you actually got the '
+                               'judgment).',
+                       'tip': "It's quite easy; basically what you do is you get a certified copy of the "
+                              'judgment from the state of the initial filing (where you actually got the '
+                              'judgment).',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=YhtCR_GKvQ4&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=YhtCR_GKvQ4&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZdVZvPMh4qM',
+                       'title': 'Domesticating an Out of State Judgment in The State of Florida',
+                       'channel': 'Haber Law',
+                       'author': 'Haber Law',
+                       'text': "There's one thing I always fall back on and that is this concept that the "
+                               'diligent creditor is always rewarded.',
+                       'tip': "There's one thing I always fall back on and that is this concept that the "
+                              'diligent creditor is always rewarded.',
+                       'timestamp': 699,
+                       'timestamp_seconds': 699,
+                       'timestamp_label': '[00:11:39]',
+                       'url': 'https://www.youtube.com/watch?v=ZdVZvPMh4qM&t=699s',
+                       'markdown': '[00:11:39](https://www.youtube.com/watch?v=ZdVZvPMh4qM&t=699s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZdVZvPMh4qM',
+                       'title': 'Domesticating an Out of State Judgment in The State of Florida',
+                       'channel': 'Haber Law',
+                       'author': 'Haber Law',
+                       'text': 'We were able to settle the case for almost 100 cents on the dollar.',
+                       'tip': 'We were able to settle the case for almost 100 cents on the dollar.',
+                       'timestamp': 856,
+                       'timestamp_seconds': 856,
+                       'timestamp_label': '[00:14:16]',
+                       'url': 'https://www.youtube.com/watch?v=ZdVZvPMh4qM&t=856s',
+                       'markdown': '[00:14:16](https://www.youtube.com/watch?v=ZdVZvPMh4qM&t=856s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SUlnLzzcvIk',
+                       'title': 'What Happens When Your Defendant Lives in Another Country #lawtok #lawyer '
+                                '#shorts',
+                       'channel': 'The Global Process Server',
+                       'author': 'The Global Process Server',
+                       'text': 'If the treaty applies, you follow it.',
+                       'tip': 'If the treaty applies, you follow it.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=SUlnLzzcvIk&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=SUlnLzzcvIk&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QgFvjr6fOpg',
+                       'title': 'What is the Enforcement of Foreign Judgments?',
+                       'channel': 'Attorney Thoughts',
+                       'author': 'Attorney Thoughts',
+                       'text': 'In order to comply with the Act a copy of the original judgment must be '
+                               'registered with the clerk of the courts in the related jurisdiction along '
+                               'with an affidavit containing essential information.',
+                       'tip': 'In order to comply with the Act a copy of the original judgment must be '
+                              'registered with the clerk of the courts in the related jurisdiction along '
+                              'with an affidavit containing essential information.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=QgFvjr6fOpg&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=QgFvjr6fOpg&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YB6KKY7Q7ts',
+                       'title': 'International Law | Recognition & Enforcement of Foreign Judgments | Lex '
+                                'Animata by Hesham Elrafei',
+                       'channel': 'Lex Animata Law Visualized | Hesham Elrafei',
+                       'author': 'Lex Animata Law Visualized | Hesham Elrafei',
+                       'text': 'Lastly that the judgment is not contrary to the public policy of the '
+                               'enforcing country.',
+                       'tip': 'Lastly that the judgment is not contrary to the public policy of the '
+                              'enforcing country.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=YB6KKY7Q7ts&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=YB6KKY7Q7ts&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FUPJlxOU2nI',
+                       'title': 'NEW 2026 How to do the analysis for Transfer & Forum Non Conveniens | '
+                                '§1404(a), §1406(a), §1631',
+                       'channel': 'JD Simplified',
+                       'author': 'JD Simplified',
+                       'text': 'Transfer keeps the case alive.',
+                       'tip': 'Transfer keeps the case alive.',
+                       'timestamp': 489,
+                       'timestamp_seconds': 489,
+                       'timestamp_label': '[00:08:09]',
+                       'url': 'https://www.youtube.com/watch?v=FUPJlxOU2nI&t=489s',
+                       'markdown': '[00:08:09](https://www.youtube.com/watch?v=FUPJlxOU2nI&t=489s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

@@ -1,581 +1,894 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-specialty-finance-brokerage",
-    "question_prompt": "What exactly is specialty finance brokerage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Specialty Finance Brokerage?",
-    "subtitle": "Equipment, Receivables, SBA and Bridge-Debt Placement: Retained Fees, Lender Matrices, UCC Priority and Closing Controls",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Specialty finance brokerage converts difficult commercial credit requests into fundable, documented placements without treating loan principal as operator revenue. "
-        "Candidate #20 ranks #06 among 29 mapped plays with a Money-to-Manpower Score of 89/100. "
-        "The durable business owns borrower access, lender-fit intelligence, clean submissions, and enforceable compensation terms; it does not merely forward applications. "
-        "Canonical annual owner profits are $30,000 Conservative, $196,000 Base, and $450,000 Scaled, generated from $120,000, $560,000, and $1,000,000 of retained origination or referral fees. "
-        "This chapter distinguishes five operating archetypes, compares fifteen placement sub-verticals, and examines adjacent public-filing, employer-benefit, and distressed-receivable plays without importing their transaction values into brokerage revenue. "
-        "The central discipline is simple: measure collectible retained fees after closing risk, not impressive funding volume."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "25% net margin; $30,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "35.0% net margin; $196,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained origination or referral fees; loan principal excluded",
-            "note": "45% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the intermediary, the deliverable and the revenue boundary",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Specialty finance brokerage is the business of arranging commercial financing that requires more product knowledge, collateral analysis, or lender selection than a generic bank introduction. "
-                    "The operator translates a borrower's purpose, repayment capacity, collateral, ownership, and timing into a lender-ready package, then manages the transaction through documented funding. "
-                    "Equipment loans, accounts-receivable facilities, SBA loans, acquisition debt, and property bridge loans are different products, not interchangeable sources of easy capital. "
-                    "An equipment lender values identifiable machinery and resale liquidity; a factor evaluates invoice eligibility and account-debtor credit; a bridge lender studies property value, title, and a credible repayment exit. "
-                    "The broker normally neither advances principal nor earns the lender's interest spread. "
-                    "Its deliverable is a properly matched, documented placement under an enforceable compensation agreement. "
-                    "A $2 million facility therefore represents arranged financing, not $2 million of brokerage sales. "
-                    "This distinction separates an intermediary from a balance-sheet lender, debt purchaser, servicer, or securities placement agent. "
-                    "Each adjacent role changes capital needs and operating duties. "
-                    "Before accepting an assignment, identify the actual product, relevant jurisdictions, borrower entity, compensation payer, and activities the engagement authorizes. "
-                    "Do not describe ordinary commercial-debt placement as permission to sell investment interests or handle customer funds."
-                ),
-                (
-                    "For this volume, recognized operator revenue means retained origination or referral fees only; loan principal, borrower sales, collateral value, and client transaction volume remain outside the revenue ledger. "
-                    "Consider a $1 million closing with a contractual $20,000 commission and a $5,000 referral share belonging to an outside originator. "
-                    "The scorecard revenue basis is the $15,000 retained fee, not the funded principal and not an inflated figure that counts another party's entitlement. "
-                    "Keep separate fields for contractual gross commission, partner allocation, retained fee, earned date, payment date, and reversal exposure. "
-                    "Contract terms determine when the service is complete and compensation becomes enforceable; cash receipt alone does not resolve revenue recognition. "
-                    "Under an applicable accrual framework, evaluate performance obligations, collectibility, and constraints on variable consideration rather than automatically recognizing every signed term sheet. "
-                    "Refundable advances remain liabilities until earned, while a disputed commission requires separate treatment from an unconditional receivable. "
-                    "The operational retained-fee measure should reconcile to the accountant's gross-versus-net presentation, including any principal-agent assessment. "
-                    "Track clawback estimates consistently without subtracting the same exposure twice. "
-                    "A lender dashboard showing funded volume is a production report; only the contract, closing evidence, and fee reconciliation establish what the brokerage actually earned."
-                ),
-                (
-                    "Five archetypes explain where a small brokerage can build repeatability: equipment placement, receivables placement, SBA packaging and placement, property bridge placement, and acquisition or cash-flow debt placement. "
-                    "Choose one initial borrower profile and one primary repayment logic rather than advertising every financing product. "
-                    "A practical starting wedge might be established manufacturers replacing equipment, staffing firms financing approved invoices, or owner-operators purchasing occupied commercial premises. "
-                    "The canonical launch envelope is $20,000 to $100,000 of startup capital, $4,000 to $18,000 of monthly operating expense, and three to nine months to the first deal. "
-                    "Those ranges describe planning inputs, not a promise that their lowest endpoints work together. "
-                    "Nine months at $18,000 consumes $162,000 before startup costs, so that combination needs additional runway or a lower burn rate. "
-                    "Licensing, insurance, secure document handling, experienced underwriting support, and delayed commissions consume cash before marketing produces dependable closings. "
-                    "Two full-time roles can cover origination and credit operations while two contractors supply bounded specialist work. "
-                    "Specify contractor hours and deliverables; a headcount label does not purchase unlimited capacity. "
-                    "The initial moat is a narrow, accurate credit process that lenders trust enough to review quickly and borrowers trust enough to use again."
-                ),
-            ],
-            "table": {
-                "caption": "Five Specialty Finance Brokerage Archetypes and Their Actual Deliverables",
-                "headers": [
-                    "Operating archetype and initial customer wedge",
-                    "Placement work that creates lender value",
-                    "Retained compensation structure and revenue boundary",
-                    "Durability test and common failure mechanism",
-                ],
-                "rows": [
-                    [
-                        "Equipment placement for established manufacturers replacing productive machinery",
-                        "Validate vendor invoices, equipment identity, useful life, and repayment capacity",
-                        "Negotiated funded-placement fee retained after any contractual referral allocation",
-                        "Repeat dealer relationships endure; unverifiable equipment destroys lender confidence",
-                    ],
-                    [
-                        "Receivables placement for staffing and business-service suppliers with invoices",
-                        "Reconcile aging, customer concentration, disputes, dilution, and borrowing-base eligibility",
-                        "Initial or recurring referral compensation under an executed lender agreement",
-                        "Debtor-level knowledge compounds; disputed invoices collapse expected borrowing availability",
-                    ],
-                    [
-                        "SBA placement for owner-operators pursuing eligible business expansion projects",
-                        "Organize ownership, repayment evidence, eligibility questions, and agent compensation documentation",
-                        "Permitted documented agent compensation excludes guaranteed or unguaranteed loan principal",
-                        "Accurate packages win repeat work; eligibility defects can terminate closings",
-                    ],
-                    [
-                        "Property bridge placement for commercial sponsors with defined exit strategies",
-                        "Coordinate title, valuation, sponsor liquidity, property operations, and refinance evidence",
-                        "Contractual placement fee earned under documented closing and payment conditions",
-                        "Local execution knowledge matters; title defects and weak exits kill funding",
-                    ],
-                    [
-                        "Acquisition debt placement for buyers purchasing established cash-generating businesses",
-                        "Normalize cash flow, reconcile purchase terms, and test debt-service capacity",
-                        "Negotiated debt-arrangement compensation excludes purchase price and seller financing principal",
-                        "Industry-specific diligence creates trust; inflated earnings undermine the entire package",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the business before accepting a live mandate",
-                "body": "Complete these four checks for the actual product and jurisdictions before collecting a sensitive borrower package.",
-                "items": [
-                    "Document whether the activity requires a state commercial-loan broker license, an exemption, or a separately authorized specialist; California Financial Code section 22100 is one concrete starting point.",
-                    "Execute compensation terms identifying the payer, retained fee, outside referral allocation, earning event, payment deadline, and every contractual clawback trigger.",
-                    "Confirm borrower authority, approved recipients, secure upload access, retention rules, and a working process for independently verifying changes to payment instructions.",
-                    "Establish at least two plausible lender paths with current product criteria; decline or restructure requests whose repayment source, collateral ownership, or permitted use cannot be substantiated.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build a lender matrix that predicts execution rather than promises",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A useful lender matrix stores constraints that change placement decisions: geography, transaction size, industry exclusions, operating history, collateral eligibility, lien position, guarantor requirements, minimum coverage, documentation, and realistic closing duration. "
-                    "Add the last verification date and the person who confirmed each material criterion. "
-                    "A website advertising equipment financing cannot establish appetite for a particular used machine, cross-border seller, or startup borrower. "
-                    "The named organizations in the comparison matrix are research starting points, not representations of active broker agreements, available products, or published compensation schedules. "
-                    "Every fee structure shown is a negotiation category requiring written confirmation. "
-                    "Build primary and backup routes before submitting documents, but obtain borrower authorization and avoid uncontrolled application distribution. "
-                    "For accounts receivable, model advance rates against eligible invoices rather than total revenue. "
-                    "For example, $500,000 of invoices less $100,000 of excluded balances leaves $400,000 eligible; an illustrative 80% advance produces $320,000 before reserves and other deductions. "
-                    "For equipment, distinguish invoice price from lender collateral value and borrower cash contribution. "
-                    "For bridge debt, distinguish initial funding from holdbacks and future draws. "
-                    "These calculations prevent a nominal approval from becoming a closing failure when the borrower discovers that usable proceeds cannot satisfy the actual transaction."
-                ),
-                (
-                    "The underwriting package should answer the lender's next question before a credit analyst asks it. "
-                    "Use Salesforce or HubSpot for relationship stages, ShareFile or Box for controlled document exchange, and a restricted Airtable or relational database for non-sensitive lender criteria. "
-                    "Do not scatter tax returns, identity records, or bank statements across unrestricted marketing systems. "
-                    "Capture source dates, document owners, reconciliations, and unresolved discrepancies so automation flags missing evidence instead of manufacturing credit conclusions. "
-                    "A receivables package should connect aging totals to the ledger and explain credits, offsets, concentrations, and related-party invoices. "
-                    "An acquisition package should reconcile seller adjustments to source evidence and distinguish historical earnings from unsupported projections. "
-                    "UCC searches and lien analysis belong early in secured transactions: UCC section 9-322 generally establishes priority rules, but state enactments, perfection methods, collateral classes, and exceptions determine the actual result. "
-                    "A filing receipt alone does not prove first priority. "
-                    "Use experienced closing professionals to resolve releases, intercreditor arrangements, and perfection issues. "
-                    "Maintain a dated exception register, assign every unresolved item, and stop describing a file as complete while essential repayment or collateral evidence remains contradictory. "
-                    "Lender trust comes from accurate exceptions, not cosmetically perfect folders."
-                ),
-                (
-                    "Durable brokerage economics emerge when knowledge accumulates faster than headcount. "
-                    "Application checklists reduce repeated document requests; lender matching removes unsuitable submissions; renewal tracking creates timely repeat conversations before facilities expire. "
-                    "Those are the canonical automation levers, and each needs a measurable operating result. "
-                    "Track submission-to-indication conversion, indication-to-close conversion, days awaiting borrower documents, days awaiting lender decisions, and retained revenue per funded transaction. "
-                    "Separate lender rejection from borrower withdrawal and closing failure; otherwise a weak credit process can hide behind a single aggregate conversion rate. "
-                    "Monitor lender concentration by retained fees and qualified pipeline, because a dominant lender can change appetite faster than the brokerage can rebuild its distribution. "
-                    "Maintain backup relationships with genuinely different funding sources rather than multiple contacts at one institution. "
-                    "A moat also includes documented loss lessons: machinery categories that resell poorly, invoice disputes that recur, acquisition adjustments lenders reject, and property exits that fail under current rates. "
-                    "Borrower permission and contractual restrictions govern reuse of customer information; process knowledge can compound without republishing private files. "
-                    "Beginner hype advertises maximum financing amounts and instant approvals. "
-                    "A professional brokerage sells accurate expectations, cleaner execution, and credible alternatives when the first lender declines."
-                ),
-            ],
-            "table": {
-                "caption": "Fifteen Placement Sub-Verticals: Named Research Starting Points, Negotiated Fees and Failure Triggers",
-                "headers": [
-                    "Sub-vertical and named platform or lender reference",
-                    "Compensation structure requiring written commercial confirmation",
-                    "Defensible operator knowledge or relationship advantage",
-                    "Closing failure, repayment or commission reversal trigger",
-                ],
-                "rows": [
-                    [
-                        "General equipment financing researched through GreatAmerica Financial Services relationships",
-                        "Negotiate a funded referral fee and document all partner allocations",
-                        "Dealer integration reveals replacement cycles and produces complete equipment schedules",
-                        "Vendor cancellation or misrepresented equipment can invalidate funding and compensation",
-                    ],
-                    [
-                        "Heavy construction equipment researched through existing DLL financing programs",
-                        "Confirm whether the program permits external referral compensation before sourcing",
-                        "Understand utilization, serial verification, auction liquidity, and seasonal repayment patterns",
-                        "Collateral condition disputes or prohibited equipment age can terminate approval",
-                    ],
-                    [
-                        "Commercial vehicle financing researched through available CIT transportation financing channels",
-                        "Obtain written commission terms for the particular vehicle financing product",
-                        "Distinguish fleet economics, insurance costs, maintenance reserves, and borrower experience",
-                        "Title problems or insurance deficiencies can prevent delivery and funding",
-                    ],
-                    [
-                        "Healthcare equipment financing researched through applicable Siemens Financial Services offerings",
-                        "Document product-specific origination compensation without assuming a universal broker schedule",
-                        "Understand installation milestones, service contracts, reimbursement exposure, and equipment acceptance",
-                        "Installation delays or failed acceptance can postpone fee earning events",
-                    ],
-                    [
-                        "Technology equipment leasing researched through relevant DLL vendor finance programs",
-                        "Clarify whether compensation applies at acceptance, funding, or another milestone",
-                        "Map obsolescence risk, software components, deployment schedules, and vendor dependencies",
-                        "Unfundable software components or disputed acceptance can reduce financed amounts",
-                    ],
-                    [
-                        "Staffing receivables factoring researched through eCapital commercial finance relationships",
-                        "Negotiate initial or recurring referral compensation tied to defined transactions",
-                        "Reconcile timesheets, customer approvals, payroll timing, and debtor concentration limits",
-                        "Disputed timesheets or customer offsets can shrink eligibility and referral earnings",
-                    ],
-                    [
-                        "Freight receivables factoring researched through RTS Financial service offerings",
-                        "Specify compensation duration, eligible accounts, termination rules, and payment reporting",
-                        "Verify delivery documentation, freight-broker credit, deductions, and duplicate invoice controls",
-                        "Fraudulent invoices or account termination can trigger contracted commission reversals",
-                    ],
-                    [
-                        "General business invoice factoring researched through Triumph Business Capital relationships",
-                        "Separate broker referral compensation from customer factoring charges and reserves",
-                        "Understand debtor verification, notification procedures, dilution, and concentration management requirements",
-                        "Customer disputes or undisclosed existing assignments can stop facility activation",
-                    ],
-                    [
-                        "Asset-based revolving credit researched through Wells Fargo Capital Finance",
-                        "Negotiate arrangement compensation with clear funding and retained-share definitions",
-                        "Translate collateral audits and borrowing-base exclusions into realistic usable liquidity",
-                        "Inventory obsolescence or lien conflicts can materially reduce initial availability",
-                    ],
-                    [
-                        "SBA 7(a) placement researched through Live Oak Bank lending programs",
-                        "Document permitted agent compensation and required SBA fee reporting procedures",
-                        "Screen ownership, eligibility, repayment evidence, equity injection, and transaction purpose",
-                        "Eligibility defects or unsupported injection sources can defeat a conditional offer",
-                    ],
-                    [
-                        "SBA 504 placement researched through CDC Small Business Finance",
-                        "Confirm allowable compensation across the actual bank and development-company structure",
-                        "Coordinate project eligibility, occupancy requirements, interim financing, and component timing",
-                        "Project changes or financing gaps can delay completion and fee collection",
-                    ],
-                    [
-                        "Investment-property bridge loans researched through Kiavi business-purpose lending offerings",
-                        "Confirm negotiated referral compensation for the specific permitted property product",
-                        "Evaluate renovation budgets, sponsor liquidity, title status, and exit sensitivity",
-                        "Appraisal shortfalls or infeasible refinance assumptions can eliminate closing proceeds",
-                    ],
-                    [
-                        "Commercial property bridge lending researched through relevant Ready Capital offerings",
-                        "Execute debt-placement compensation terms identifying obligor, milestones, and payment source",
-                        "Understand lease quality, sponsor equity, debt yield, and construction dependencies",
-                        "Tenant deterioration or unresolved title exceptions can invalidate underwriting assumptions",
-                    ],
-                    [
-                        "Purchase-order financing researched through King Trade Capital transaction programs",
-                        "Define referral compensation against funded transactions rather than customer sales",
-                        "Validate supplier performance, buyer credit, gross margin, and fulfillment logistics",
-                        "Supplier nonperformance or rejected merchandise can prevent repayment and compensation",
-                    ],
-                    [
-                        "Cross-border receivables finance researched through applicable Tradewind Finance offerings",
-                        "Specify currency, payment timing, retained referral share, and reversal provisions",
-                        "Understand buyer verification, shipping evidence, jurisdictional recovery, and currency exposure",
-                        "Trade-document discrepancies or buyer disputes can block funding and renewals",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make lender trust compound across transactions",
-                "body": "The strongest tactics improve decision quality and fee collectibility rather than merely increasing application traffic.",
-                "items": [
-                    "Ask each lender for three recent decline patterns, record them as dated matrix rules, and verify them again before submitting an edge-case file.",
-                    "Build a proceeds waterfall before presenting an offer: principal, holdbacks, existing lien payoffs, lender charges, borrower costs, and actual usable cash.",
-                    "Negotiate recurring referral reporting with account identifiers, calculation periods, termination treatment, and audit access before counting renewal commissions in forecasts.",
-                    "Maintain a closing postmortem for every failed mandate, separating credit defects, borrower withdrawal, lender retrades, documentation failures, and unpaid commissions.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile retained-fee production to the three canonical profit cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Conservative case is $120,000 of annual retained-fee revenue at a 25% net margin, producing $30,000 of annual owner net profit with two full-time staff and two contractors. "
-                    "One illustrative production bridge is twelve funded transactions averaging $10,000 in retained fees. "
-                    "At an illustrative 2% retained yield, each transaction would involve $500,000 of principal and the annual arranged principal would be $6 million; neither principal figure is revenue. "
-                    "The corresponding annual expense allowance is $90,000, or $7,500 monthly on an averaged basis. "
-                    "That allowance must cover the costs included in the scorecard, with a documented treatment for owner compensation and contractor time. "
-                    "It cannot silently assume four market-rate employees receiving full-year salaries. "
-                    "If the owner fills a full-time role, distinguish cash owner profit from any economic adjustment for replacement labor; do not overwrite the canonical result with a differently defined metric. "
-                    "Assuming a 25% qualified-opportunity closing rate, twelve closings require forty-eight qualified opportunities annually. "
-                    "This is a planning assumption, not observed conversion evidence. "
-                    "Measure acquisition expense per qualified file and per funded deal separately, then preserve enough working capital to survive delayed closings without accepting unsuitable borrowers."
-                ),
-                (
-                    "The Base case is $560,000 of annual retained-fee revenue at a 35.0% net margin, producing $196,000 of annual owner net profit with two full-time staff and two contractors. "
-                    "An illustrative production bridge is twenty-eight closings averaging $20,000 retained, equivalent to a little over two closings monthly rather than a constant weekly rhythm. "
-                    "At a hypothetical 2% retained yield, the corresponding principal is $28 million annually. "
-                    "The canonical expense allowance is $364,000, averaging about $30,333 monthly across all modeled costs. "
-                    "This exceeds the quoted $4,000 to $18,000 monthly operating range, so that range cannot describe the complete Base-case expense stack. "
-                    "Treat it as an initial planning envelope or partial overhead category only after defining its contents. "
-                    "Reconcile payroll, contractor support, acquisition spending, systems, insurance, professional services, and other modeled expenses explicitly rather than forcing incompatible figures together. "
-                    "At a hypothetical 35% qualified closing rate, eighty qualified files generate twenty-eight closings. "
-                    "Capacity depends on package complexity and rework, not just file count. "
-                    "A brokerage processing acquisition packages may need fewer simultaneous mandates than one placing standardized equipment transactions. "
-                    "Preserve the canonical revenue and profit while testing whether the chosen mix can actually fit the stated team."
-                ),
-                (
-                    "The Scaled case is $1,000,000 of annual retained-fee revenue at a 45% net margin, producing $450,000 of annual owner net profit with three full-time staff and three contractors. "
-                    "Forty closings averaging $25,000 retained provide one illustrative production bridge. "
-                    "At a hypothetical 2% retained yield, arranged principal reaches $50 million, but the brokerage still recognizes only $1 million on the defined retained-fee basis. "
-                    "Annual expenses are $550,000, averaging approximately $45,833 monthly across the complete modeled cost stack. "
-                    "The higher margin requires better fee yield, repeat relationships, reduced rework, or a more productive mix; automation alone does not prove those improvements. "
-                    "Stress the plan before adding fixed costs. "
-                    "If one quarter of projected closings disappear while average fees remain unchanged, revenue falls to $750,000. "
-                    "Holding the $550,000 expense assumption constant leaves $200,000 of owner profit before any additional downside, not the canonical $450,000. "
-                    "Separately model a lender exit, sixty-day commission delays, and reversals under actual contract terms. "
-                    "Do not merge these stress cases into the published scorecard. "
-                    "Weekly management should reconcile qualified pipeline, expected funding dates, earned retained fees, receivables, cash collections, and reversal exposure so headline production never substitutes for an executable cash plan."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scenario Reconciliation and the Evidence Needed to Trust It",
-                "headers": [
-                    "Scenario or measurement under operational review",
-                    "Exact calculation and retained-revenue treatment",
-                    "Evidence required before relying on the figure",
-                    "Management response when actual results diverge",
-                ],
-                "rows": [
-                    [
-                        "Conservative production with two full-time staff and two contractors",
-                        "Twelve illustrative closings times $10,000 retained equals $120,000 annual revenue",
-                        "Executed compensation agreements and funded closing records support each retained fee",
-                        "Protect runway and narrow acquisition spending when qualified conversion deteriorates",
-                    ],
-                    [
-                        "Conservative owner profit after the full modeled expense allowance",
-                        "$120,000 revenue less $90,000 expenses equals $30,000 profit at 25%",
-                        "Expense ledger identifies owner-pay treatment and actual contractor service commitments",
-                        "Do not describe the team as affordable without a credible labor budget",
-                    ],
-                    [
-                        "Base production with two full-time staff and two contractors",
-                        "Twenty-eight illustrative closings times $20,000 retained equals $560,000 annual revenue",
-                        "Capacity records substantiate package throughput without hiding substantial unpaid rework",
-                        "Improve transaction selection before expanding undifferentiated lead generation and intake",
-                    ],
-                    [
-                        "Base owner profit after the full modeled expense allowance",
-                        "$560,000 revenue less $364,000 expenses equals $196,000 profit at 35.0%",
-                        "Complete cost reconciliation explains spending beyond the initial monthly overhead range",
-                        "Separate launch overhead from total operating costs rather than compressing expenses",
-                    ],
-                    [
-                        "Scaled production with three full-time staff and three contractors",
-                        "Forty illustrative closings times $25,000 retained equals $1,000,000 annual revenue",
-                        "Fee concentration and lender concentration reports support repeatable production assumptions",
-                        "Diversify executable funding routes before committing to additional permanent operating costs",
-                    ],
-                    [
-                        "Scaled owner profit after the full modeled expense allowance",
-                        "$1,000,000 revenue less $550,000 expenses equals $450,000 profit at 45%",
-                        "Collected fees and consistent reversal estimates reconcile with the annual ledger",
-                        "Run separate downside cases instead of presenting stressed profits as canonical",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Qualify the actual credit request",
-                    "action": "Record borrower authority, financing purpose, repayment source, collateral, timing, and jurisdiction.",
-                    "detail": "Use a product-specific checklist and reject unsupported representations before sending the file to a lender.",
-                },
-                {
-                    "step": 2,
-                    "title": "Match and document compensation",
-                    "action": "Select a primary and backup lender using recently verified criteria, then execute compensation terms.",
-                    "detail": "Identify the retained share, fee payer, earning event, invoice procedure, and reversal triggers before substantial placement work.",
-                },
-                {
-                    "step": 3,
-                    "title": "Control the closing package",
-                    "action": "Resolve exceptions, reconcile usable proceeds, verify closing instructions independently, and obtain funding evidence.",
-                    "detail": "Leave movement of principal to the authorized lender and closing parties; retain the documents supporting the brokerage's earned fee.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and schedule the next event",
-                    "action": "Post the retained fee, reconcile collections and partner allocations, and schedule renewal and clawback reviews.",
-                    "detail": "Review aged receivables weekly and preserve a separate record of arranged principal that never enters recognized brokerage revenue.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use adjacent mapped plays without importing their economics or unlawful assumptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play public_filing_trigger_mail_arbitrage uses Secretary of State formations and county deed or mortgage recordings as timing signals, not proof that a recipient wants financing. "
-                    "Where access terms permit, ingest daily records, deduplicate entities and addresses, suppress unsuitable contacts, and send clearly private offers through Lob or Postalytics. "
-                    "Never imitate government seals, official citation numbers, or mandatory invoices; 39 U.S.C. section 3001 addresses deceptive mailed solicitations, and California Business and Professions Code section 17537.9 regulates specified recorded-document solicitations. "
-                    "Illustratively, 1,000 pieces at an assumed $1.10 delivered cost consume $1,100. "
-                    "A 2% response rate produces twenty responses; if five qualify and one eventually closes for a $10,000 retained fee, contribution before sales labor and all other costs is $8,900. "
-                    "Those assumed rates require cohort testing across the entire closing cycle. "
-                    "The play's broader monetization includes genuine workplace-update subscriptions, property-tax appeal services, and exclusive new-mover or business leads, each under its own applicable operating requirements. "
-                    "Those receipts are separate service economics and excluded from this brokerage scorecard. "
-                    "The fallback is unambiguous private branding and a useful standalone service, not more aggressive official-looking copy. "
-                    "Use recorded events to improve relevance while preserving accurate identity, truthful pricing, suppression controls, and a direct explanation of what the customer actually receives."
-                ),
-                (
-                    "The mapped play erisa_self_funded_specialty_drug_importation_arbitrage targets self-funded employers with 100 to 5,000 employees, but its international sourcing premise requires a major boundary: ERISA status does not authorize importing otherwise unlawful prescription products. "
-                    "Foreign pharmacy licensing, manufacturer-sealed packaging, and zero employee copays do not establish lawful United States distribution. "
-                    "The proposed $6,000 to $15,000 monthly domestic list-price range and $800 to $2,200 foreign range are diligence hypotheses, not verified obtainable prices or employer net costs. "
-                    "At the play's illustrative $50,000 to $100,000 annual verified savings per patient, a 25% to 35% service fee spans $12,500 to $35,000. "
-                    "Do not calculate savings against list price when rebates, benefit design, or actual plan payments establish a different baseline. "
-                    "These amounts are benefit-service compensation, not retained loan-origination revenue, and enter none of the three canonical cases. "
-                    "The workable fallback starts with independent TPAs, transparent pass-through PBMs, lawful domestic specialty channels, and manufacturer assistance programs where actual eligibility permits. "
-                    "Maintain domestic bridge-fill coverage and licensed clinical oversight so administrative savings never depend on interrupted treatment. "
-                    "Any international channel needs a product-specific lawful pathway under the FDCA and applicable FDA rules; section 804 programs have defined limits and do not create blanket permission for employer-arranged biologic imports. "
-                    "Treat this as an adjacent specialist partnership, not an automatic finance-broker expansion."
-                ),
-                (
-                    "The mapped play out_of_statute_zombie_debt_portfolio_settlement concerns purchasing or servicing distressed receivables, not arranging new commercial loans. "
-                    "Separate the period for filing collection litigation from credit-reporting limits, and exclude obligations extinguished by applicable law, discharged in bankruptcy, already paid, or unsupported by ownership and balance records. "
-                    "Regulation F, 12 CFR section 1006.26, prohibits covered debt collectors from suing or threatening suit on time-barred debt; it does not create a universal permission to solicit every old account. "
-                    "State rules can further restrict communications, require disclosures, or affect revival. "
-                    "Illustratively, $1 million face value purchased for $5,000 remains a $5,000 acquisition outlay, not $1 million of revenue. "
-                    "If verified lawful voluntary collections total $30,000 and servicing costs total $12,000, cash surplus before overhead and other expenses is $13,000; accounting presentation still requires its own analysis. "
-                    "No part belongs in this volume's retained-origination scorecard. "
-                    "A self-service portal must identify the creditor accurately, support disputes, avoid invented urgency, and never imply that payment erases accurate reporting automatically. "
-                    "Apply the Fair Credit Reporting Act's reporting periods separately from litigation limitation periods. "
-                    "The fallback is to suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation. "
-                    "Across all three mapped plays, the transferable moat is disciplined verification; public records, healthcare savings, and face-value receivables are not substitutes for collectible brokerage fees."
-                ),
-            ],
-            "table": {
-                "caption": "Adjacent-Play Boundaries and Cross-Cutting Statutory Operating Controls",
-                "headers": [
-                    "Mapped play or operating boundary requiring attention",
-                    "Concrete economic unit and accounting separation",
-                    "Primary requirement and foreseeable failure mechanism",
-                    "Practical fallback preserving legitimate customer value",
-                ],
-                "rows": [
-                    [
-                        "Public-filing trigger mail using Lob or Postalytics delivery services",
-                        "One illustrative $10,000 retained closing offsets $1,100 assumed mailing spend",
-                        "Official-looking payment demands can violate federal mailing and state solicitation rules",
-                        "Use private commercial branding and clearly priced genuine business services",
-                    ],
-                    [
-                        "Employer specialty-drug savings partnerships involving TPAs and pass-through PBMs",
-                        "Illustrative savings fees remain separate from all loan-origination revenue scenarios",
-                        "ERISA plan status does not override prescription importation and distribution restrictions",
-                        "Prioritize lawful domestic channels, eligible assistance, and uninterrupted bridge-fill coverage",
-                    ],
-                    [
-                        "Time-barred receivable portfolios with voluntary self-service resolution channels",
-                        "Portfolio face value never substitutes for collections or brokerage fee revenue",
-                        "Expired litigation rights and reporting periods require separate account-level determinations",
-                        "Suppress affected accounts, correct reporting, and suspend collection pending approved remediation",
-                    ],
-                    [
-                        "Commercial credit referrals subject to applicable fair-lending responsibilities",
-                        "Evaluate broker fees separately from lender interest charges and principal",
-                        "Regulation B duties vary by creditor role and specific transaction circumstances",
-                        "Use documented selection criteria and allocate application notices by actual responsibility",
-                    ],
-                    [
-                        "Sensitive borrower information held by covered financial-services businesses",
-                        "Security spending belongs in expenses rather than financing principal calculations",
-                        "Applicable FTC Safeguards Rule duties require risk-based protection of customer information",
-                        "Implement access restrictions, multifactor authentication, vendor oversight, and incident procedures",
-                    ],
-                    [
-                        "Debt mandates that expand into securities solicitation or placement",
-                        "Transaction-based compensation requires analysis beyond ordinary commercial brokerage fee economics",
-                        "Exchange Act section 15(a) can require registration when broker activity involves securities",
-                        "Restrict the mandate or engage an appropriately registered broker-dealer for securities work",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The moat is not access to money; it is turning a difficult credit file into a collectible retained fee without losing control of the facts.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Select one of the five brokerage archetypes and define its borrower profile, repayment logic, permitted jurisdictions, and required licensing or documented exemption.",
-        "Build a dated lender matrix covering product limits, collateral rules, documentation, compensation, closing duration, and at least one credible backup route.",
-        "Execute a compensation agreement and configure separate ledger fields for arranged principal, contractual commission, partner allocation, retained fee, collections, and clawback exposure.",
-        "Create a secure product-specific intake checklist with source-document reconciliation, exception ownership, borrower-authorized sharing, and independent verification of payment-instruction changes.",
-        "Reconcile the three canonical cases to $30,000, $196,000, and $450,000 of annual owner profit, explicitly explaining labor assumptions and the difference between initial overhead and complete scenario expenses.",
-        "Test one narrowly targeted acquisition cohort through collected fees, and keep public-filing service receipts, employer-benefit fees, and distressed-debt collections outside the brokerage scorecard.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Financial Code section 22100 — Finance lender and broker licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": "Determine whether the contemplated California finance-broker activity requires a license, considering the transaction structure and applicable exemptions.",
-        },
-        {
-            "title": "13 CFR section 103.5 — SBA agent compensation agreements",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-103/section-103.5",
-            "relevance": "Document compensation for covered SBA agent services and follow the applicable agreement, disclosure, and reasonableness requirements.",
-        },
-        {
-            "title": "UCC section 9-322 — Priority among conflicting security interests",
-            "url": "https://www.law.cornell.edu/ucc/9/9-322",
-            "relevance": "Use the relevant state's enacted version and applicable exceptions when analyzing collateral priority; a search or filing receipt alone does not establish first priority.",
-        },
-        {
-            "title": "12 CFR section 1002.4 — General rules under Regulation B",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1002/section-1002.4",
-            "relevance": "Apply relevant nondiscrimination and discouragement restrictions to covered commercial-credit activities, with responsibilities determined by the operator's actual role.",
-        },
-        {
-            "title": "16 CFR section 314.4 — FTC Safeguards Rule information-security requirements",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
-            "relevance": "For covered financial institutions, implement the applicable written security program, risk assessment, access controls, service-provider oversight, and other required safeguards.",
-        },
-        {
-            "title": "15 U.S.C. section 78o(a) — Broker and dealer registration",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Analyze registration requirements before a commercial-finance mandate becomes securities solicitation or placement; ordinary loan brokerage does not confer securities authority.",
-        },
-        {
-            "title": "39 U.S.C. section 3001 — Nonmailable matter and specified deceptive solicitations",
-            "url": "https://www.law.cornell.edu/uscode/text/39/3001",
-            "relevance": "Evaluate solicitation formats against federal restrictions concerning misleading bill-like mail and misleading governmental presentation.",
-        },
-        {
-            "title": "California Business and Professions Code section 17537.9 — Recorded-document solicitations",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=17537.9",
-            "relevance": "Apply the specific state requirements when soliciting paid services involving copies of recorded documents, rather than assuming public-record access authorizes any offer format.",
-        },
-        {
-            "title": "21 U.S.C. section 381 — Imports and exports under the FDCA",
-            "url": "https://www.law.cornell.edu/uscode/text/21/381",
-            "relevance": "Assess product-specific prescription-drug import restrictions; foreign licensing and employer plan structure do not independently establish lawful importation.",
-        },
-        {
-            "title": "21 U.S.C. section 384 and 21 CFR part 251 — Prescription-drug importation programs",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-251",
-            "relevance": "Review the defined section 804 program framework, eligible products, exclusions, and controls instead of treating international sourcing as a general employer entitlement.",
-        },
-        {
-            "title": "29 U.S.C. section 1104 — ERISA fiduciary duties",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1104",
-            "relevance": "Evaluate covered plan decisions and service-provider arrangements under applicable duties of prudence and loyalty, including participant interests and substantiated cost comparisons.",
-        },
-        {
-            "title": "12 CFR section 1006.26 — Collection of time-barred debts",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1006/section-1006.26",
-            "relevance": "Covered debt collectors must not sue or threaten suit on time-barred debt; additional state restrictions and account-specific legal status remain separate operating checks.",
-        },
-        {
-            "title": "15 U.S.C. section 1681c — Requirements relating to information in consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681c",
-            "relevance": "Determine applicable reporting periods separately from collection limitation periods, including the statutory rules governing delinquent accounts placed for collection or charged off.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'broker-role-and-deal-economics',
+ 'question_prompt': 'What does a commercial loan broker actually do, why do business owners and lenders '
+                    'need one, and how do brokers get paid per deal?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': "The Broker's Role and Deal Economics",
+ 'subtitle': 'Bridging Borrowers and Lenders, Why Banks Decline Deals and Lender Capacity Limits, '
+             'Front-End Points vs. Back-End Splits, Origination Fee Pricing, $30K-per-Deal Math, the Real '
+             'Day-to-Day, Market Shifts, and CRE Loan Marketplace Platforms',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one model: the commercial loan broker never lends a '
+                      'dollar of their own money, matches borrowers to the lender whose credit box fits, '
+                      'packages the file, and gets paid when the deal funds. Shane Walton of the '
+                      'Commercial Loan Broker Institute frames the math as funded amount times points, '
+                      'with most products paying 1% to 6% and outliers reaching 15%, so a $2 million loan '
+                      'at 1.5 points pays $30,000. Pay stacks beyond points: upfront packaging deposits, '
+                      'back-end yield spread, correspondent premiums, factoring residuals, and repeat '
+                      'financing events per client. John Neufer prices points on deal size, complexity, '
+                      'borrower hair, and urgency, and targets $5,000 to $10,000 per deal. Sua Truong '
+                      'pushes relationship lending with bank commercial managers, while Bill Rapp sells a '
+                      '700-lender marketplace as the fix for thin lender benches.',
+ 'key_metrics': [{'label': 'Typical broker fee range across most products',
+                  'metric': 'Typical broker fee range across most products',
+                  'value': '1% to 6% of the total loan amount, up to 15% in certain cases',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Shane Walton's stated range for most financing products, with commissions in "
+                             'certain cases reaching 15%',
+                  'source': 'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:03:38])'},
+                 {'label': 'Commission on a $2 million commercial loan at 1.5 points',
+                  'metric': 'Commission on a $2 million commercial loan at 1.5 points',
+                  'value': '$30,000 on one deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Walton contrasts this with a $400,000 residential loan at about 1% paying '
+                             'roughly $4,000',
+                  'source': 'Commercial Loan Broker Institute ([v3GnrXphwvM @ 00:04:10])'},
+                 {'label': 'Factoring brokerage residual',
+                  'metric': 'Factoring brokerage residual',
+                  'value': '10% to 15% of the monthly factor fees',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Paid whenever the client pulls on the factor line, so one placement can pay '
+                             'month after month for the next 5 years',
+                  'source': 'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:07:38])'},
+                 {'label': 'Per-deal and monthly closing target',
+                  'metric': 'Per-deal and monthly closing target',
+                  'value': '2 to 5 closed deals a month at $5,000 to $10,000 per deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "John Neufer's personal benchmark for pricing points so each deal is worth "
+                             "the broker's time",
+                  'source': 'John Neufer ([uqs40-CCDSc @ 00:10:38])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus: The Broker Is the Bridge, Paid on Funding',
+               'paragraphs': ['The broker is not the bank. Shane Walton of the Commercial Loan Broker '
+                              'Institute describes the job as a capital consultant who never funds clients '
+                              'out of their own accounts, starts by diagnosing goals, cash flow, and '
+                              'recent financial history, then builds an enticing package and walks it to '
+                              'the one, two, or three lenders whose credit box actually fits that borrower '
+                              "[-HZRdtDpSRo @ 00:02:41]. Walton's analogy is the real estate or insurance "
+                              'broker: they do not own the house or pay the claim, they match the right '
+                              'buyer to the right seller, structure the deal so it works for everybody, '
+                              'and see it through to funding [v3GnrXphwvM @ 00:01:41]. In a separate '
+                              'breakdown Walton sharpens it further: the job is not selling money, it is '
+                              'reducing friction between a real business with a real need and a real '
+                              'capital source, acting as translator, guide, deal designer, and placement '
+                              'professional [FnBYMtrQW9M @ 00:02:06]. Melissa Mueller, a commercial and '
+                              'residential loan officer at Keystone Alliance Mortgage and Capital, adds '
+                              'the street reason the role exists: not all banks finance everything, so '
+                              "finding the lender who lends in the borrower's space and property type is "
+                              'what makes the purchase happen, from a rental single-family to a '
+                              'hundred-unit complex, land, warehouses, restaurants, or auto dealerships '
+                              '[SulpxqBYams @ 00:05:45].',
+                              'Every speaker ties the paycheck to funding. Walton states that compensation '
+                              'might come from the lender, the borrower, or both on the same transaction, '
+                              'but regardless of who pays it is connected to a successful close '
+                              "[3V8HTzwHS90 @ 00:03:23]. In the Institute's longer business walkthrough "
+                              'the logic is spelled out: the broker helps the borrower find capital and '
+                              'helps the lender find a good client, both sides get value, so often both '
+                              'pay, and the fee is earned at the moment money changes hands [FnBYMtrQW9M @ '
+                              '00:04:24]. The capital requirement is zero. Walton tells prospects who say '
+                              'they are not bankers and lack $3 million to lend that the broker never puts '
+                              'up a dollar, and that the model rests on four things: knowing loan types '
+                              'well enough to know what fits, packaging cleanly so a lender can read it, '
+                              'holding a lender network to place it with, and guiding the borrower from '
+                              "first call to funding [408PWyXwwrI @ 00:07:24]. The Institute's channel "
+                              'opener compresses the pitch: no inventory, no storefront, deals in the '
+                              'millions, and the person who knows where the money actually is gets paid '
+                              'when the deal funds, and Walton claims the Institute has launched and '
+                              'supported more than 500 independent brokerages whose brokers placed well '
+                              'over $2 billion [68tfdYJmEpw @ 00:00:16].',
+                              'The third point of agreement is that the fee scales with loan size, not '
+                              'hours. Walton contrasts a $2 million commercial loan at 1.5 points paying '
+                              '$30,000 with a $400,000 home loan at around 1% paying about $4,000, and '
+                              'concludes this industry pays per deal, not per hour and not salaried '
+                              '[v3GnrXphwvM @ 00:04:50]. Walton drives it home with a strip mall: a $3 '
+                              'million retail center at 2% pays $60,000, which equals 120 custom-website '
+                              'sales at $5,000 each and a 10% B2B commission, and argues, drawing on 15 '
+                              'years running their own marketing agency, that the loan takes a bit more '
+                              'effort but not drastically more, because both run the same consultative '
+                              'cycle of discovery, proposal, objections, and close [408PWyXwwrI @ '
+                              '00:02:10]. John Neufer runs the same arithmetic from the other direction: '
+                              'one point on a $100,000 deal is only $1,000, while one point on a $1 '
+                              'million deal is $10,000, so small deals force more points and big deals '
+                              'leave room to charge fewer [uqs40-CCDSc @ 00:01:39]. Moonshine Capital TV '
+                              'pitches the entry-level version of this consensus, claiming that a few '
+                              'successful deals a month makes $10,000 a month achievable and that '
+                              'commission rates can rise with experience [-uMKPEnEzXI @ 00:00:43].'],
+               'table': {'caption': 'Practitioner consensus on the broker role and how broker pay is '
+                                    'earned',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say Works',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Broker never lends a dollar of own capital',
+                                   'Acts as consultant matching borrower to lender whose credit box fits '
+                                   'the profile',
+                                   'Zero balance sheet risk; the asset is the diagnosis, packaging, and '
+                                   'placement process',
+                                   'Commercial Loan Broker Institute ([-HZRdtDpSRo @ 00:02:41])'],
+                                  ['Compensation is earned only when the deal actually funds',
+                                   'Lender, borrower, or both pay, usually settled at the closing desk '
+                                   'through escrow',
+                                   'Pipeline quality matters more than activity because trying alone earns '
+                                   'nothing at all',
+                                   'Commercial Loan Broker Institute ([qkeq6lhotvM @ 00:02:40])'],
+                                  ['Points are a straight percentage of the funded loan amount',
+                                   'One point equals 1% of the loan; most products pay 1% to 6%',
+                                   'Funded amount times commission percentage equals gross broker '
+                                   'compensation on every file',
+                                   'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:02:46])'],
+                                  ['Points rise as deals get smaller, riskier, and less bankable',
+                                   'Conventional bank CRE pays one to two points while working capital '
+                                   'runs one to ten',
+                                   'Chase total commission dollars, not the headline point number on the '
+                                   'quote',
+                                   'Commercial Loan Broker Institute ([7OHPVFeEmD4 @ 00:03:50])'],
+                                  ['No single lender fits every borrower or transaction type',
+                                   'Brokers depending on three to ten lenders have nowhere to turn after a '
+                                   'decline',
+                                   'Build a broad lender bench so a bank no starts the search instead of '
+                                   'ending it',
+                                   'Bill Rapp, CCIM - Director - Commloan ([WqF62XF9lk4 @ 00:00:54])'],
+                                  ['Commercial underwriting weighs experience, cash flow, credit, and '
+                                   'reserves together',
+                                   'Lenders want skin in the game, often 25% down on six-to-ten unit '
+                                   'purchases',
+                                   'Qualifying happens up front, so prepared packages beat same-day '
+                                   'pre-approval expectations',
+                                   'The Lab: Mortgage & Real Estate Business Academy ([SulpxqBYams @ '
+                                   '00:02:39])'],
+                                  ['Bank commercial managers refer out deals they lack capacity for',
+                                   'Sua Truong books three to five commercial manager lunches every week '
+                                   'for referrals',
+                                   'Retail-channel banker relationships generate steady deal flow from '
+                                   'full or declining portfolios',
+                                   'CFM (Commercial Financing Mastery) ([cqOh0arlXGU @ 00:05:27])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers: Points, Fees, Spreads and Stacks',
+               'paragraphs': ["Walton's product rate card, delivered as the Institute's commission ranges "
+                              'by financing type, is the street baseline. Traditional commercial mortgages '
+                              'sit around 1% to 2%, with many traditional CRE plays closer to 1 to 1.5; '
+                              'bridge, private credit, and hard money on the same real estate commonly run '
+                              '2% to 3%; SBA 7A and 504 loans pay 1% to 2%; and equipment finance commonly '
+                              "lands at 3% to 5% [3V8HTzwHS90 @ 00:05:24]. In the Institute's "
+                              'points-and-splits breakdown the bands widen: conventional bank CRE pays one '
+                              'to two points with one most common, SBA one to three, bridge and hard money '
+                              'two to four, equipment two to six, and short working capital and business '
+                              'term loans anywhere from one to ten points [7OHPVFeEmD4 @ 00:02:49]. Walton '
+                              'defends using 2% in their strip-mall math because it sits at the low end '
+                              'for bridge and the high end for conventional real estate, while equipment '
+                              'can earn 3% and MCAs 10% or more [408PWyXwwrI @ 00:01:13]. Factoring breaks '
+                              'the one-time pattern: the brokerage fee is typically 10% to 15% of the '
+                              'monthly factor fees, paid every time the client pulls on the line, so one '
+                              'placement can pay month after month for the next five years [3V8HTzwHS90 @ '
+                              '00:07:38].',
+                              "Lender selection moves the check more than the borrower does. Walton's "
+                              'example is a $1 million revolving line: a bank pays 1%, or $10,000, while '
+                              "private lenders in the Institute's network serving non-bankable clients pay "
+                              '10% on the same facility, or $100,000 [3V8HTzwHS90 @ 00:07:03]. Yet the '
+                              'Institute warns against chasing headline rates: a clean, bankable $5 '
+                              'million deal at one point pays $50,000, more than three times a riskier '
+                              '$500,000 bridge loan at three points paying $15,000, so the target is total '
+                              'commission dollars [7OHPVFeEmD4 @ 00:04:11]. Front-end money comes before '
+                              'the file is worked. The same breakdown describes a packaging or processing '
+                              'deposit, something like $2,500 on a million-dollar deal, credited against '
+                              'fees at closing, and used as a filter on price-shopping tire kickers; some '
+                              'brokers drop it to $250 or attach a refund clause if they cannot deliver a '
+                              'comparable LOI within 45 days [7OHPVFeEmD4 @ 00:06:29]. A second Institute '
+                              'explainer lays out client-facing commission set by agreement before or at '
+                              'the start of engagement, exclusive or non-exclusive, or an engagement fee '
+                              'such as $10,000 to work the loan plus two points on the financed amount '
+                              'when it funds; in practice it is paid out of escrow at the closing desk '
+                              '[qkeq6lhotvM @ 00:02:02].',
+                              'The back end is where seasoned brokers double up. The Institute describes '
+                              'lender-facing commission, or yield spread, as negotiated directly between '
+                              'broker and lender, often without the client knowing, and typically wired or '
+                              'sent by ACH a few days after closing as a thank-you for another loan on the '
+                              'books [qkeq6lhotvM @ 00:03:55]. Once a track record proves clean files and '
+                              'performing borrowers, a broker can become a correspondent, get '
+                              'near-wholesale pricing, place borrowers a quarter to a half percent above '
+                              "the lender's par rate, and collect a premium of another one to two points, "
+                              'roughly $20,000 on a million-dollar deal, without charging the borrower '
+                              'more out of pocket [7OHPVFeEmD4 @ 00:09:08]. Splits only leave the '
+                              "independent owner's pocket when someone hands over a deal: on a "
+                              'CPA-referred $600,000 equipment loan at three points, the $18,000 '
+                              'commission pays the CPA a 10% fee of $1,800 and the broker keeps $16,200, '
+                              'which Walton calls the cheapest, highest-quality lead source available '
+                              '[7OHPVFeEmD4 @ 00:07:39]. Sua Truong of CFM adds that on the commercial '
+                              'side, especially unsecured financing, brokers are not regulated like '
+                              'residential mortgage brokers, collect retainer fees, and can get paid on '
+                              'unsecured deals before most people get a townhouse funded [QmriETtG_oE @ '
+                              '00:14:00].'],
+               'table': {'caption': 'Street rate card: points, fee levers, and worked commission examples '
+                                    'by product',
+                         'headers': ['Product or Fee Lever',
+                                     'Stated Points or Dollar Figure',
+                                     'Worked Example From Practitioner',
+                                     'Expert Source'],
+                         'rows': [['Conventional commercial mortgage and traditional CRE financing',
+                                   'About 1% to 2%, many plays closer to 1 to 1.5',
+                                   '$2 million CRE loan at 1.5 points produces $30,000 in commission',
+                                   'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:04:34])'],
+                                  ['Bridge, private credit, and hard money on real estate',
+                                   'Commonly 2% to 3%, two to four points per Institute',
+                                   '$5 million bridge or private credit deal at 2% produces a $100,000 '
+                                   'check',
+                                   'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:04:34])'],
+                                  ['Equipment financing for trucks, machinery, and new build-outs',
+                                   'Commonly 3% to 5%, two to six points by lender',
+                                   '$500,000 equipment purchase at 5% produces $25,000 in broker '
+                                   'compensation',
+                                   'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:04:12])'],
+                                  ['Working capital lines, term loans, MCA, and factoring lines',
+                                   'One to ten points; factoring pays 10% to 15% of fees',
+                                   '$250,000 working capital loan at 10% also produces a $25,000 check',
+                                   'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:04:12])'],
+                                  ['Upfront packaging or processing deposit used as a filter',
+                                   'Around $2,500 on a million-dollar deal, or as low as $250',
+                                   'Credited against fees at closing; refunded if no comparable LOI within '
+                                   '45 days',
+                                   'Commercial Loan Broker Institute ([7OHPVFeEmD4 @ 00:05:11])'],
+                                  ['Correspondent premium above lender par rate on trusted relationships',
+                                   'Quarter to half percent above par, one to two extra points',
+                                   'Roughly another $20,000 on a million-dollar deal at no extra borrower '
+                                   'cost',
+                                   'Commercial Loan Broker Institute ([7OHPVFeEmD4 @ 00:09:08])'],
+                                  ['Lender marketplace submission instead of one-by-one lender shopping',
+                                   'Access to more than 700 commercial lending sources in one platform',
+                                   'Matching on property type, loan size, occupancy, DSCR, LTV, geography, '
+                                   'and purpose',
+                                   'Bill Rapp, CCIM - Director - Commloan ([WqF62XF9lk4 @ 00:01:33])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How working brokers protect and multiply the check',
+                           'body': 'These are the pricing and relationship moves practitioners describe '
+                                   'using on live files to hold their points, surface hidden deal flow, '
+                                   'and turn one client into several paydays.',
+                           'items': ['Never cut points on a promise of future business: run the first deal '
+                                     'as quoted and only consider reducing fees once more business '
+                                     'actually shows up, because Neufer says the promised deals almost '
+                                     'never come [John Neufer — uqs40-CCDSc @ 00:02:44].',
+                                     'Set the hair clause at the start: tell the borrower that if the deal '
+                                     'turns complex or messy, more points get added at the end, and walk '
+                                     'away if they refuse [John Neufer — uqs40-CCDSc @ 00:04:38].',
+                                     'Call bank commercial managers on Monday or Tuesday asking where the '
+                                     'money is going this week, and book three to five commercial manager '
+                                     'lunches weekly; Truong reports at least one deal a month from a '
+                                     'single TD contact [CFM (Commercial Financing Mastery) — cqOh0arlXGU '
+                                     '@ 00:05:27].',
+                                     'Think in capital stacks: an investor property can pay three times '
+                                     'through acquisition, rehab, and permanent financing, and a second '
+                                     'business location can pay four times through real estate, equipment, '
+                                     'fixtures, and working capital [Commercial Loan Broker Institute — '
+                                     '7OHPVFeEmD4 @ 00:10:37].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Run diagnostic intake before quoting anything',
+                              'action': 'Build a simple intake checklist and lead with questions instead '
+                                        'of products',
+                              'detail': 'Collect business basics, use of funds, timeline, revenue, cash '
+                                        'flow snapshots, collateral, and credit issues, refining the '
+                                        'checklist week after week [Commercial Loan Broker Institute — '
+                                        'FnBYMtrQW9M @ 00:16:39]. On the call, ask the questions Walton '
+                                        'models for a medical practice acquisition: current DSCR, '
+                                        'relationship with the existing bank, the numbers on the new '
+                                        'location, and what keeps the owner up at night [Commercial Loan '
+                                        'Broker Institute — WUTiN5zYjnU @ 00:05:48].'},
+                             {'step': 2,
+                              'title': 'Price points on four variables',
+                              'action': 'Score deal size, deal type, borrower constraints, and time '
+                                        'constraints before quoting points',
+                              'detail': 'Neufer charges more points on small deals, complex deals with '
+                                        'permitting or rehab, difficult borrowers with recent bankruptcies '
+                                        'or scattered sources of funds, and time-sensitive files such as '
+                                        'maturing notes, and gets more competitive on large, simple, '
+                                        'unhurried deals where the borrower has time to shop other brokers '
+                                        '[John Neufer — uqs40-CCDSc @ 00:08:33].'},
+                             {'step': 3,
+                              'title': 'Lock front-end terms and the packaging deposit',
+                              'action': 'Agree commission structure and amount at engagement start and '
+                                        'take a credited deposit',
+                              'detail': 'Set exclusive or non-exclusive terms and the points or engagement '
+                                        'fee before or at the start of the engagement [Commercial Loan '
+                                        'Broker Institute — qkeq6lhotvM @ 00:00:58]. Take a packaging '
+                                        'deposit, roughly $2,500 on a million-dollar file or $250 with a '
+                                        '45-day LOI refund clause, credited at closing so serious '
+                                        'borrowers pay nothing extra [Commercial Loan Broker Institute — '
+                                        '7OHPVFeEmD4 @ 00:05:50].'},
+                             {'step': 4,
+                              'title': 'Package, place on fit, and collect both ends',
+                              'action': 'Submit to a curated lender bench chosen by actual deal fit, then '
+                                        'track front-end and back-end pay',
+                              'detail': 'Use a curated bench across banks, non-banks, fintechs, and '
+                                        'private credit chosen on fit rather than blasting a contact list, '
+                                        'with packaging and narrative discipline so lenders trust the data '
+                                        'fast [Commercial Loan Broker Institute — MsdnoNJpPrg @ 00:09:37]. '
+                                        "Front-end fees pay out of escrow at closing; the lender's yield "
+                                        'spread arrives a few days later by wire or ACH [Commercial Loan '
+                                        'Broker Institute — qkeq6lhotvM @ 00:04:16].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Pricing is the first fault line. John Neufer refuses any flat fee schedule '
+                              'and prices every file on four variables: deal size, deal type, borrower '
+                              "constraints and time pressure. Neufer tells brokers to charge 'enough "
+                              "points to make it worth your time,' and to load more points onto small "
+                              'loans, because one point on $100,000 is only $1,000 [uqs40-CCDSc @ '
+                              '00:00:32]. Shane Walton of the Commercial Loan Broker Institute comes at it '
+                              'from the other end. Stop staring at the point number and chase total '
+                              'commission dollars, because a clean $5 million deal at one point pays '
+                              '$50,000, while a riskier $500,000 bridge at three points pays only $15,000 '
+                              "[7OHPVFeEmD4 @ 00:04:11]. Walton's way to grow is to move upstream once "
+                              'capacity is maxed out: larger loans and larger checks instead of more '
+                              "conversations [FnBYMtrQW9M @ 00:14:12]. Neufer's answer is a floor. Close "
+                              'two to five deals a month and clear at least $5,000 to $10,000 per deal, or '
+                              'ask what the point is [uqs40-CCDSc @ 00:10:38]. Both playbooks share one '
+                              'discipline: every file has to justify the hours. They split on where the '
+                              'leverage lives. Neufer squeezes margin out of small, messy, rushed files, '
+                              'while Walton argues the cleaner, bigger, bankable file wins even at a '
+                              'fraction of the rate.',
+                              "Upfront money splits the camp. Walton's default line is that the broker "
+                              "typically gets paid only when the deal actually funds: 'not just for "
+                              "trying, only for closing the deal' [v3GnrXphwvM @ 00:01:57]. Yet the same "
+                              'Institute teaches charging a packaging or processing deposit, around $2,500 '
+                              'on a million-dollar file, as a filter for tire kickers. The deposit is '
+                              'credited back against fees at closing. Softer operators drop it to $250 or '
+                              'add a refund clause that kicks in if no comparable LOI arrives within 45 '
+                              "days [7OHPVFeEmD4 @ 00:05:11]. A harder version from the Institute's payout "
+                              'breakdown combines both: a $10,000 engagement fee to work the loan, then '
+                              'two points on the financed amount at closing. It can run under an exclusive '
+                              'agreement that locks the client to your lenders for a set period, or as a '
+                              'non-exclusive, success-only deal [qkeq6lhotvM @ 00:02:02]. Sua Truong of '
+                              'CFM goes furthest. On unsecured commercial financing the CFM side collects '
+                              "retainer fees, because commercial brokers are 'not regulated the same way' "
+                              'residential mortgage brokers are, and unsecured deals can pay out before a '
+                              'townhouse even funds [QmriETtG_oE @ 00:14:14]. The practical split is that '
+                              'success-only pay builds trust on clean files, while deposits and retainers '
+                              'protect hours on files that may never close.',
+                              'Lender access is the third fight. Bill Rapp of CommLoan argues that brokers '
+                              'with only three to ten lender relationships have nowhere to turn after a '
+                              'decline, which means lost commissions and frustrated clients. The CommLoan '
+                              'answer is one submission into a marketplace of more than 700 sources, '
+                              'matched by property type, loan size, DSCR, LTV and geography [WqF62XF9lk4 @ '
+                              '00:00:54]. Sua Truong runs the opposite playbook, built on people. Truong '
+                              'makes Monday or Tuesday check-in calls to commercial managers to ask where '
+                              'the money is going this week, and books three to five lunches with '
+                              'commercial managers every week. Truong credits that routine with at least '
+                              'one deal a month from a single TD contact [cqOh0arlXGU @ 00:05:27]. Scope '
+                              "draws a second line. Walton once called breadth the broker's real power, "
+                              "citing one broker who placed a real estate purchase, a manufacturer's "
+                              "equipment loan and a restaurant's line of credit in a single month "
+                              '[v3GnrXphwvM @ 00:07:11]. Elsewhere, Walton argues that generalists only '
+                              'survive in stable markets. Selective markets reward depth in a niche: a '
+                              'vertical like healthcare or franchises, a product like SBA or equipment, or '
+                              'a part of the capital stack like bridge, mezz and private credit '
+                              '[MsdnoNJpPrg @ 00:08:32]. Operators have to decide whether breadth or depth '
+                              'is their edge.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners take opposing positions on '
+                                    'pricing, fees, lender access and scope',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How many points to quote on a file',
+                                   'Price every deal on size, type, borrower constraints and time '
+                                   'pressure, with more points on small files',
+                                   'Ignore the headline rate and chase total dollars, since a $5M deal at '
+                                   'one point beats a $500K bridge at three',
+                                   'John Neufer ([uqs40-CCDSc @ 00:01:23]); Commercial Loan Broker '
+                                   'Institute ([7OHPVFeEmD4 @ 00:04:11])'],
+                                  ['Whether to take money before the deal funds',
+                                   'Success-only: the broker typically gets paid when the deal funds, not '
+                                   'for trying',
+                                   'A $2,500 packaging deposit credited at closing, or $250 with a refund '
+                                   'if no comparable LOI arrives within 45 days',
+                                   'Commercial Loan Broker Institute ([v3GnrXphwvM @ 00:01:57]); '
+                                   'Commercial Loan Broker Institute ([7OHPVFeEmD4 @ 00:06:29])'],
+                                  ['How wide to cast the lender net',
+                                   'One CommLoan submission matched against more than 700 commercial '
+                                   'lending sources',
+                                   'A curated bench of banks, non-banks, fintechs and private credit, used '
+                                   'by actual deal fit rather than as a giant contact list',
+                                   'Bill Rapp, CCIM - Director - Commloan ([WqF62XF9lk4 @ 00:01:33]); '
+                                   'Commercial Loan Broker Institute ([MsdnoNJpPrg @ 00:10:00])'],
+                                  ['Which bank channel to route a file through',
+                                   'Lender-facing back-end yield spread, paid by wire or ACH a few days '
+                                   'after closing',
+                                   'Skip the broker channel for short-term flippers and go to B lending, '
+                                   "private lending or the bank's retail branch when the client pays",
+                                   'Commercial Loan Broker Institute ([qkeq6lhotvM @ 00:03:38]); CFM '
+                                   '(Commercial Financing Mastery) ([cqOh0arlXGU @ 00:02:00])'],
+                                  ['Generalist breadth versus specialist depth',
+                                   'One broker places three different products with three different '
+                                   'lenders in a single month',
+                                   'Generalists survive only in stable markets, while selective markets '
+                                   'reward vertical, product or capital-stack niches',
+                                   'Commercial Loan Broker Institute ([v3GnrXphwvM @ 00:07:11]); '
+                                   'Commercial Loan Broker Institute ([MsdnoNJpPrg @ 00:09:14])'],
+                                  ['Which rung of the ladder to enter on',
+                                   'Refer and earn, or team up with an established brokerage as a 1099 '
+                                   'contractor while learning',
+                                   'Broker and earn: keep 100% of the commission but carry 100% of the '
+                                   'work and responsibility',
+                                   'Commercial Loan Broker Institute ([FnBYMtrQW9M @ 00:07:38]); '
+                                   'Commercial Loan Broker Institute ([FnBYMtrQW9M @ 00:09:55])'],
+                                  ['What a realistic early income target looks like',
+                                   'A few successful deals each month makes $10,000 a month achievable',
+                                   'Beginners close one or two a month, so each deal had better pay about '
+                                   '$5,000 to $10,000',
+                                   'Moonshine Capital TV ([-uMKPEnEzXI @ 00:00:21]); John Neufer '
+                                   '([uqs40-CCDSc @ 00:11:09])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["John Neufer's sharpest warning is the goose chase. A borrower on a small "
+                              "file promises more business if the broker cuts points. Neufer's response is "
+                              'to run the first deal as quoted and revisit fees only after new business '
+                              "actually shows up: 'I can't tell you how many times I've been told oh I "
+                              "promise you more business and you never get more business' [uqs40-CCDSc @ "
+                              '00:02:44]. The second trap is scope creep. A file priced as a simple '
+                              'refinance turns messy with permitting or rehab, and Neufer tells brokers to '
+                              'announce more points mid-deal or walk away, and to set that expectation at '
+                              'the very start [uqs40-CCDSc @ 00:04:38]. Delays caused by the borrower get '
+                              'the same treatment. A client who demands a rush and then sits on documents '
+                              'is not holding up their end of the bargain, so charge more points or walk '
+                              '[uqs40-CCDSc @ 00:09:04]. Walton reaches the same economic truth from the '
+                              "pipeline side. A pipeline full of weak files 'is not an asset, it's a time "
+                              "trash,' and a smaller pipeline of qualified, fundable, well-matched "
+                              'opportunities is worth far more [3V8HTzwHS90 @ 00:11:38]. Both treat '
+                              'unfundable or underpriced files as the silent margin killer, because '
+                              'commission arrives only at funding while hours burn from day one.',
+                              'Lender capacity kills deals that look fundable on paper. Sua Truong placed '
+                              'seven Subway franchises for one client at TD, then watched the bank refuse '
+                              'the eighth. The portfolio was full of Subways, and the concentration had '
+                              'become high risk. Truong is blunt that the underwriters understood the '
+                              'business fine; the bank simply could not hold any more of it in the '
+                              'portfolio [cqOh0arlXGU @ 00:03:46]. Truong also points out that declines '
+                              'work differently in the two worlds. On the residential side, once an '
+                              'underwriter declines a file it cannot be resubmitted. A commercial deal can '
+                              'go back in after restructuring, so a commercial decline is a prompt to fix '
+                              'the structure rather than a dead file [cqOh0arlXGU @ 00:10:06]. Bill Rapp '
+                              'names the cost of having no alternative when one lender says no: lost '
+                              'commissions, frustrated clients, lower closing ratios and missed referral '
+                              'opportunities [WqF62XF9lk4 @ 00:00:54]. Walton adds that specialized, '
+                              'tech-equipped lenders now say no faster. Brokers who send a stream of '
+                              'marginal or poorly fitting submissions get deprioritized, while curated '
+                              'files actually close [MsdnoNJpPrg @ 00:07:26]. The economics check is '
+                              'simple: relying on one lender puts every commission at risk.',
+                              "The income math has its own trap. Walton's formula is qualified "
+                              'conversations times close rate times average commission. The classic '
+                              'beginner mistake is scaling conversations before the broker can reliably '
+                              'close: chasing leads, traffic and volume when raising the close rate is the '
+                              'faster path to money. This is how brokers end up busy but broke '
+                              '[FnBYMtrQW9M @ 00:12:02]. The daily reality is firefighting: environmental '
+                              'assessment issues, credit problems and appraisal shortfalls. Income swings '
+                              'from $30,000 one month to $50,000 the next and $5,000 after that, and '
+                              'Walton puts it as a gut check: if that stresses you out, this might not be '
+                              'a fit [WUTiN5zYjnU @ 00:12:24]. Walton is equally direct that commercial '
+                              'deals take weeks, often months, and not every file funds. A pipeline has to '
+                              'be built and tended; it is not a button that spits out money [408PWyXwwrI @ '
+                              '00:06:29]. Truong flags a structural blocker for residential brokers '
+                              'crossing over. Brokerage owners spread fear because most errors and '
+                              'omissions (E&O) policies do not cover unsecured financing or commercial '
+                              'property financing. The fix is topping up E&O coverage, which Truong calls '
+                              'a little more money that opens the floodgates to mezzanine, bridge, private '
+                              'and working capital files [QmriETtG_oE @ 00:13:12].'],
+               'table': {'caption': 'Firsthand traps reported by practitioners and the economics check '
+                                    'each one demands',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Hit Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Discounting for promised future business',
+                                   'Borrowers promise more business to talk points down and then never '
+                                   'send any',
+                                   'Run the first deal as quoted and cut fees only after real volume '
+                                   'arrives',
+                                   'John Neufer ([uqs40-CCDSc @ 00:02:44])'],
+                                  ['A simple file grows more complicated mid-deal',
+                                   'A straight refinance becomes complex with permitting or rehab partway '
+                                   'through',
+                                   'Say up front that added complexity means added points, or be ready to '
+                                   'walk away',
+                                   'John Neufer ([uqs40-CCDSc @ 00:04:38])'],
+                                  ['Lender portfolio concentration cap',
+                                   'TD funded seven Subway franchises for one client, then refused the '
+                                   'eighth because the portfolio was full',
+                                   'Call commercial managers weekly to learn where appetite is open or '
+                                   'closed',
+                                   'CFM (Commercial Financing Mastery) ([cqOh0arlXGU @ 00:04:41])'],
+                                  ['Tire-kicking price shoppers',
+                                   "Borrowers call everybody, commit to nobody and burn the broker's "
+                                   'packaging time',
+                                   'Take a packaging deposit as a filter and credit it at closing for '
+                                   'serious borrowers',
+                                   'Commercial Loan Broker Institute ([7OHPVFeEmD4 @ 00:05:31])'],
+                                  ['Dead end with a single lender',
+                                   'Brokers with three to ten lender relationships have nowhere to turn '
+                                   'after a decline',
+                                   'Lost commissions, frustrated clients, lower closing ratios and missed '
+                                   'referral opportunities',
+                                   'Bill Rapp, CCIM - Director - Commloan ([WqF62XF9lk4 @ 00:00:54])'],
+                                  ['A pipeline full of weak files',
+                                   'Chasing every deal, even every large deal, fills the pipeline with '
+                                   'unfundable files',
+                                   'A smaller pipeline of qualified, fundable, well-matched deals is far '
+                                   'more valuable',
+                                   'Commercial Loan Broker Institute ([3V8HTzwHS90 @ 00:11:24])'],
+                                  ['Borrowers surprised by a balloon payment',
+                                   'Local lenders amortize over 15 years with a five-year ARM or balloon '
+                                   'that forces a refinance',
+                                   'Brokers can find 30-year amortization or interest-only options that '
+                                   'greatly improve monthly cash flow',
+                                   'The Lab: Mortgage & Real Estate Business Academy ([SulpxqBYams @ '
+                                   '00:04:28])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before a File Gets Your Hours',
+                           'body': 'Every check below comes from a loss, a declined deal or a wasted '
+                                   'pipeline the speakers report firsthand. Run them before you put '
+                                   'serious packaging hours into a file.',
+                           'items': ['Score the file on deal size, deal type, borrower constraints and '
+                                     'time pressure before quoting points. If it is small and messy and '
+                                     'the borrower keeps talking you down, walk away and use fear of loss '
+                                     'as leverage [John Neufer — uqs40-CCDSc @ 00:11:38].',
+                                     "Confirm the lender's current appetite before you submit. Call "
+                                     'commercial managers on Monday or Tuesday and ask where the money is '
+                                     'going this week, because portfolios fill up by asset type [CFM '
+                                     '(Commercial Financing Mastery) — cqOh0arlXGU @ 00:04:41].',
+                                     'Before the heavy lifting, take a packaging deposit, even $250 with a '
+                                     "45-day LOI refund clause. A borrower who won't put down $200 with a "
+                                     "full refund guarantee isn't serious [Commercial Loan Broker "
+                                     'Institute — 7OHPVFeEmD4 @ 00:06:48].',
+                                     'Top up your E&O policy before working commercial or unsecured files '
+                                     'out of a residential shop, because most E&O policies do not cover '
+                                     'unsecured or commercial property financing [CFM (Commercial '
+                                     'Financing Mastery) — QmriETtG_oE @ 00:14:43].']}}],
+ 'pull_quote': '"A pipeline full of weak files is not an asset, it\'s a time trash. A smaller pipeline of '
+               'qualified, fundable, well-matched opportunities is far more valuable." — Commercial Loan '
+               'Broker Institute (3V8HTzwHS90 @ 00:11:38).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Pick your entry rung (refer, team up or full broker) and a simple lane. Working '
+                      'capital and equipment are the usual beginner lanes because the deals are easier to '
+                      'understand and demand is constant [Commercial Loan Broker Institute — FnBYMtrQW9M @ '
+                      '00:15:50].',
+                      'Build an intake checklist that captures business basics, use of funds, timeline, '
+                      'revenue, cash flow snapshots, collateral and credit issues, then use it and refine '
+                      'it every week [Commercial Loan Broker Institute — FnBYMtrQW9M @ 00:16:39].',
+                      "Talk to 20 warm prospects from your existing network in week three. Don't pitch; "
+                      'ask questions and get curious about their projects and challenges [Commercial Loan '
+                      'Broker Institute — FnBYMtrQW9M @ 00:17:15].',
+                      'Offer CPAs a 10% referral split. On a $600,000 equipment deal at three points, the '
+                      'CPA earns $1,800 and you keep $16,200 from a warm, trusted lead [Commercial Loan '
+                      'Broker Institute — 7OHPVFeEmD4 @ 00:07:39].',
+                      'Book three to five lunches with commercial managers every week to track lender '
+                      'capacity and pick up deals the banks can no longer hold [CFM (Commercial Financing '
+                      'Mastery) — cqOh0arlXGU @ 00:05:27].',
+                      "Map each client's full capital stack for repeat paydays: acquisition, rehab or "
+                      'construction, then permanent financing on the same property [Commercial Loan Broker '
+                      'Institute — 7OHPVFeEmD4 @ 00:10:17].'],
+ 'statutory_citations': [{'title': 'Commercial Loan Broker Institute — How Brokers Get Paid Points, Fees & '
+                                   'Splits [00:04:11]',
+                          'url': 'https://www.youtube.com/watch?v=7OHPVFeEmD4&t=251s',
+                          'relevance': 'Primary practitioner testimony on point ranges, chasing total '
+                                       'commission dollars over the headline rate, packaging deposits, '
+                                       'referral splits and correspondent yield.'},
+                         {'title': 'John Neufer — How Much Origination to Charge | CRE Loan Brokering '
+                                   '[00:01:23]',
+                          'url': 'https://www.youtube.com/watch?v=uqs40-CCDSc&t=83s',
+                          'relevance': 'Primary practitioner testimony on four-variable point pricing, '
+                                       'avoiding the goose chase and per-deal income floors.'},
+                         {'title': 'CFM (Commercial Financing Mastery) — Why the Bank Declined His 8th '
+                                   'Subway Loan: Lender Capacity Explained | Sua Truong [00:03:46]',
+                          'url': 'https://www.youtube.com/watch?v=cqOh0arlXGU&t=226s',
+                          'relevance': 'Primary practitioner testimony on lender portfolio capacity, '
+                                       'commercial manager relationships and restructuring declined '
+                                       'commercial deals.'},
+                         {'title': 'Bill Rapp, CCIM - Director - Commloan — How CommLoan Helps Brokers '
+                                   'Close More Commercial Loans [00:00:54]',
+                          'url': 'https://www.youtube.com/watch?v=WqF62XF9lk4&t=54s',
+                          'relevance': 'Primary practitioner testimony on the cost of relying on a few '
+                                       'lenders and on marketplace lender matching.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '3V8HTzwHS90',
+                       'title': 'How Loan Brokers Can Earn $200K+ From Just 2 Deals',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': "A pipeline full of weak files is not an asset, it's a time trash. A "
+                               'smaller pipeline of qualified, fundable, well-matched opportunities is far '
+                               'more valuable.',
+                       'tip': "A pipeline full of weak files is not an asset, it's a time trash. A smaller "
+                              'pipeline of qualified, fundable, well-matched opportunities is far more '
+                              'valuable.',
+                       'timestamp': 698,
+                       'timestamp_seconds': 698,
+                       'timestamp_label': '[00:11:38]',
+                       'url': 'https://www.youtube.com/watch?v=3V8HTzwHS90&t=698s',
+                       'markdown': '[00:11:38](https://www.youtube.com/watch?v=3V8HTzwHS90&t=698s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-HZRdtDpSRo',
+                       'title': 'What is a Commercial Loan Broker? What do they do?',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Not every lender is going to fit every client; in fact most clients are '
+                               'going to be a best fit for just one or two or three different lenders.',
+                       'tip': 'Not every lender is going to fit every client; in fact most clients are '
+                              'going to be a best fit for just one or two or three different lenders.',
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=-HZRdtDpSRo&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=-HZRdtDpSRo&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v3GnrXphwvM',
+                       'title': 'What Does a Commercial Loan Broker REALLY Do?',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'The broker typically only gets paid when the deal actually funds. Not just '
+                               'for trying, only for closing the deal.',
+                       'tip': 'The broker typically only gets paid when the deal actually funds. Not just '
+                              'for trying, only for closing the deal.',
+                       'timestamp': 117,
+                       'timestamp_seconds': 117,
+                       'timestamp_label': '[00:01:57]',
+                       'url': 'https://www.youtube.com/watch?v=v3GnrXphwvM&t=117s',
+                       'markdown': '[00:01:57](https://www.youtube.com/watch?v=v3GnrXphwvM&t=117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FnBYMtrQW9M',
+                       'title': 'The Broker Business Explained: Low Risk, Big Commissions',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Many new brokers try to scale the first variable, their conversations, '
+                               'before they can reliably and consistently close.',
+                       'tip': 'Many new brokers try to scale the first variable, their conversations, '
+                              'before they can reliably and consistently close.',
+                       'timestamp': 722,
+                       'timestamp_seconds': 722,
+                       'timestamp_label': '[00:12:02]',
+                       'url': 'https://www.youtube.com/watch?v=FnBYMtrQW9M&t=722s',
+                       'markdown': '[00:12:02](https://www.youtube.com/watch?v=FnBYMtrQW9M&t=722s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WUTiN5zYjnU',
+                       'title': 'A Day in the Life of a Commercial Loan Broker (The Real Version)',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Are you comfortable with variable income? Because one month you might make '
+                               '30,000, another 50,000, and another 5,000.',
+                       'tip': 'Are you comfortable with variable income? Because one month you might make '
+                              '30,000, another 50,000, and another 5,000.',
+                       'timestamp': 744,
+                       'timestamp_seconds': 744,
+                       'timestamp_label': '[00:12:24]',
+                       'url': 'https://www.youtube.com/watch?v=WUTiN5zYjnU&t=744s',
+                       'markdown': '[00:12:24](https://www.youtube.com/watch?v=WUTiN5zYjnU&t=744s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SulpxqBYams',
+                       'title': 'How A Commercial Loan Works? | Co/LAB Lending',
+                       'channel': 'The Lab: Mortgage & Real Estate Business Academy',
+                       'author': 'The Lab: Mortgage & Real Estate Business Academy',
+                       'text': "If you go to a local lender you're most likely going to be getting a loan "
+                               'that is amortized over 15 years and has a five-year ARM or balloon '
+                               'payment.',
+                       'tip': "If you go to a local lender you're most likely going to be getting a loan "
+                              'that is amortized over 15 years and has a five-year ARM or balloon payment.',
+                       'timestamp': 268,
+                       'timestamp_seconds': 268,
+                       'timestamp_label': '[00:04:28]',
+                       'url': 'https://www.youtube.com/watch?v=SulpxqBYams&t=268s',
+                       'markdown': '[00:04:28](https://www.youtube.com/watch?v=SulpxqBYams&t=268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '408PWyXwwrI',
+                       'title': 'Why 1 Loan Deal Pays More than 100 B2B Sales',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Commercial deals take weeks, often months, to close. And not every file is '
+                               'going to fund.',
+                       'tip': 'Commercial deals take weeks, often months, to close. And not every file is '
+                              'going to fund.',
+                       'timestamp': 389,
+                       'timestamp_seconds': 389,
+                       'timestamp_label': '[00:06:29]',
+                       'url': 'https://www.youtube.com/watch?v=408PWyXwwrI&t=389s',
+                       'markdown': '[00:06:29](https://www.youtube.com/watch?v=408PWyXwwrI&t=389s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7OHPVFeEmD4',
+                       'title': 'How Brokers Get Paid Points, Fees & Splits',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': "You don't chase the headline rate. You chase the total commission dollars.",
+                       'tip': "You don't chase the headline rate. You chase the total commission dollars.",
+                       'timestamp': 272,
+                       'timestamp_seconds': 272,
+                       'timestamp_label': '[00:04:32]',
+                       'url': 'https://www.youtube.com/watch?v=7OHPVFeEmD4&t=272s',
+                       'markdown': '[00:04:32](https://www.youtube.com/watch?v=7OHPVFeEmD4&t=272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7OHPVFeEmD4',
+                       'title': 'How Brokers Get Paid Points, Fees & Splits',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': "The packaging deposit sorts that all out. Someone who won't put a dime "
+                               'down to get started was probably never going to close with you anyway.',
+                       'tip': "The packaging deposit sorts that all out. Someone who won't put a dime down "
+                              'to get started was probably never going to close with you anyway.',
+                       'timestamp': 331,
+                       'timestamp_seconds': 331,
+                       'timestamp_label': '[00:05:31]',
+                       'url': 'https://www.youtube.com/watch?v=7OHPVFeEmD4&t=331s',
+                       'markdown': '[00:05:31](https://www.youtube.com/watch?v=7OHPVFeEmD4&t=331s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MsdnoNJpPrg',
+                       'title': '3 Shifts Reshaping Commercial Lending That Most Brokers Are Missing',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Lenders essentially want fewer, better deals. Brokers who are sending '
+                               'lenders a stream of marginal submissions or poorly fit submissions are '
+                               'going to get deprioritized.',
+                       'tip': 'Lenders essentially want fewer, better deals. Brokers who are sending '
+                              'lenders a stream of marginal submissions or poorly fit submissions are '
+                              'going to get deprioritized.',
+                       'timestamp': 446,
+                       'timestamp_seconds': 446,
+                       'timestamp_label': '[00:07:26]',
+                       'url': 'https://www.youtube.com/watch?v=MsdnoNJpPrg&t=446s',
+                       'markdown': '[00:07:26](https://www.youtube.com/watch?v=MsdnoNJpPrg&t=446s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qkeq6lhotvM',
+                       'title': 'How do Commercial Loan Brokers get Paid?',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'You have to pay me 10,000 to work on your loan, but then when we are '
+                               "successful in getting you financed, you're going to pay me two points on "
+                               'the financed amount.',
+                       'tip': 'You have to pay me 10,000 to work on your loan, but then when we are '
+                              "successful in getting you financed, you're going to pay me two points on "
+                              'the financed amount.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=qkeq6lhotvM&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=qkeq6lhotvM&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QmriETtG_oE',
+                       'title': 'What Brokers Get Wrong About Commercial Financing | Sua Truong',
+                       'channel': 'CFM (Commercial Financing Mastery)',
+                       'author': 'CFM (Commercial Financing Mastery)',
+                       'text': "Doesn't cover unsecured financing, doesn't cover commercial property real "
+                               'estate financing. So you have to add additional to that current insurance '
+                               "policy that you have if you're doing this.",
+                       'tip': "Doesn't cover unsecured financing, doesn't cover commercial property real "
+                              'estate financing. So you have to add additional to that current insurance '
+                              "policy that you have if you're doing this.",
+                       'timestamp': 810,
+                       'timestamp_seconds': 810,
+                       'timestamp_label': '[00:13:30]',
+                       'url': 'https://www.youtube.com/watch?v=QmriETtG_oE&t=810s',
+                       'markdown': '[00:13:30](https://www.youtube.com/watch?v=QmriETtG_oE&t=810s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cqOh0arlXGU',
+                       'title': 'Why the Bank Declined His 8th Subway Loan: Lender Capacity Explained | '
+                                'Sua Truong',
+                       'channel': 'CFM (Commercial Financing Mastery)',
+                       'author': 'CFM (Commercial Financing Mastery)',
+                       'text': 'I usually book three to five commercial manager lunches in a week just to '
+                               'catch up.',
+                       'tip': 'I usually book three to five commercial manager lunches in a week just to '
+                              'catch up.',
+                       'timestamp': 327,
+                       'timestamp_seconds': 327,
+                       'timestamp_label': '[00:05:27]',
+                       'url': 'https://www.youtube.com/watch?v=cqOh0arlXGU&t=327s',
+                       'markdown': '[00:05:27](https://www.youtube.com/watch?v=cqOh0arlXGU&t=327s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cqOh0arlXGU',
+                       'title': 'Why the Bank Declined His 8th Subway Loan: Lender Capacity Explained | '
+                                'Sua Truong',
+                       'channel': 'CFM (Commercial Financing Mastery)',
+                       'author': 'CFM (Commercial Financing Mastery)',
+                       'text': 'Getting a deal declined by the lender is not a bad thing, by the way.',
+                       'tip': 'Getting a deal declined by the lender is not a bad thing, by the way.',
+                       'timestamp': 589,
+                       'timestamp_seconds': 589,
+                       'timestamp_label': '[00:09:49]',
+                       'url': 'https://www.youtube.com/watch?v=cqOh0arlXGU&t=589s',
+                       'markdown': '[00:09:49](https://www.youtube.com/watch?v=cqOh0arlXGU&t=589s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uqs40-CCDSc',
+                       'title': 'How Much Origination to Charge | CRE Loan Brokering',
+                       'channel': 'John Neufer',
+                       'author': 'John Neufer',
+                       'text': 'If somebody promises you more business, avoid the goose chase at all '
+                               'costs.',
+                       'tip': 'If somebody promises you more business, avoid the goose chase at all costs.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=uqs40-CCDSc&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=uqs40-CCDSc&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '68tfdYJmEpw',
+                       'title': 'How to Build a Successful Commercial Loan Brokerage | Start Here',
+                       'channel': 'Commercial Loan Broker Institute',
+                       'author': 'Commercial Loan Broker Institute',
+                       'text': 'Every day, business owners and real estate investors need capital, and '
+                               'most of them get told no at the bank.',
+                       'tip': 'Every day, business owners and real estate investors need capital, and most '
+                              'of them get told no at the bank.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=68tfdYJmEpw&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=68tfdYJmEpw&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-uMKPEnEzXI',
+                       'title': '💰 How to Make $10,000/Month as a Commercial Loan Broker! 🚀',
+                       'channel': 'Moonshine Capital TV',
+                       'author': 'Moonshine Capital TV',
+                       'text': 'To make this kind of money you need a network of lenders and potential '
+                               'clients; start by building relationships, attend networking events, '
+                               'leverage LinkedIn and explore online forums.',
+                       'tip': 'To make this kind of money you need a network of lenders and potential '
+                              'clients; start by building relationships, attend networking events, '
+                              'leverage LinkedIn and explore online forums.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=-uMKPEnEzXI&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=-uMKPEnEzXI&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WqF62XF9lk4',
+                       'title': 'How CommLoan Helps Brokers Close More Commercial Loans',
+                       'channel': 'Bill Rapp, CCIM - Director - Commloan',
+                       'author': 'Bill Rapp, CCIM - Director - Commloan',
+                       'text': 'Many commercial brokers depend on three to 10 lender relationships, and '
+                               'when one lender is going to decline a loan, many brokers really have '
+                               'nowhere else to turn at that point.',
+                       'tip': 'Many commercial brokers depend on three to 10 lender relationships, and '
+                              'when one lender is going to decline a loan, many brokers really have '
+                              'nowhere else to turn at that point.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=WqF62XF9lk4&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=WqF62XF9lk4&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

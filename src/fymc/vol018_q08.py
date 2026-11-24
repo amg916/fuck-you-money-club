@@ -1,774 +1,779 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small land flipping desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "County Recorder Evidence, Regrid and ATTOM Enrichment, FEMA and USFWS Screens, and Title-Insured Parcel Decisions",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower "
-        "Score. Its information advantage comes from resolving parcel identity, "
-        "ownership, access, buildability, and resale evidence before committing "
-        "capital. This chapter maps six plays: rural discount resales, infill "
-        "builder lots, tax-delinquent owner purchases, estate-owned acquisitions, "
-        "access-and-title cures, and minor subdivisions. A 1 FT + 3 C pod combines "
-        "official records, selective commercial enrichment, and reproducible GIS "
-        "checks rather than buying every available subscription. Conservative, "
-        "Base, and Scaled annual owner profits remain $24,000, $157,250, and "
-        "$375,000 respectively; gross parcel sale proceeds are the revenue basis. "
-        "The directory and operating sequence below identify acquisition costs, "
-        "source delays, request controls, fallback evidence, and the precise "
-        "questions automation must leave for qualified human review."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence-ranked directory before purchasing parcel feeds",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one county and build a source register, not a nationwide "
-                    "spreadsheet of loosely matched parcels. The examples below use "
-                    "Maricopa County and Arizona institutions to make access paths "
-                    "concrete; replace those local sources when entering another "
-                    "jurisdiction. Store county FIPS, the assessor's original parcel "
-                    "identifier, a separately normalized identifier, source URL, retrieval "
-                    "time, effective date, and document reference. Preserve leading zeros "
-                    "and punctuation in the original field. A parcel split can retire an "
-                    "identifier while the recorder continues indexing documents under "
-                    "an older legal description. Consequently, assessor ownership is a "
-                    "discovery signal, a recorded instrument is transaction evidence, "
-                    "and a title commitment is a separate examination with exceptions "
-                    "and requirements. None substitutes for a boundary survey. Assign "
-                    "each disputed fact to its appropriate source: taxes to the "
-                    "treasurer, permitted uses to the planning authority, recorded "
-                    "easement language to the instrument, and insurability to the title "
-                    "provider. The principal owns the source register and decides which "
-                    "disagreements block an offer. The GIS contractor collects and "
-                    "normalizes evidence without silently resolving conflicts. This "
-                    "separation prevents an attractive commercial map from becoming an "
-                    "unsupported ownership, access, or buildability assertion in a "
-                    "buyer presentation."
-                ),
-                (
-                    "Treat the directory's cost descriptions as purchasing categories "
-                    "rather than fixed vendor quotes. Public viewing often costs "
-                    "nothing, while certified copies, bulk extracts, survey work, and "
-                    "commercial API rights have separate charges. Request written "
-                    "pricing for the actual geography, fields, annual volume, caching "
-                    "rights, and permitted downstream use. A website subscription does "
-                    "not automatically include API access or permission to resell "
-                    "records. Refresh latency also has two clocks: when an event "
-                    "occurred and when the source published it. Capture both whenever "
-                    "available. A deed recorded yesterday may appear promptly in a "
-                    "recorder search but much later in an assessor roll or commercial "
-                    "ownership feed. Before sending offers, inspect the latest recorder "
-                    "and tax information for the shortlisted parcels instead of "
-                    "relying on last month's enriched export. Use published bulk "
-                    "downloads first, documented APIs second, and ordinary manual "
-                    "retrieval when automated access is unavailable. Start permitted "
-                    "API work with one worker, honor documented limits and Retry-After, "
-                    "and stop repeated failures for investigation. Never turn a blocked "
-                    "portal into a scraping contest. The fallback is an authorized "
-                    "records request or a staff-assisted document order, with the "
-                    "resulting delay reflected in the acquisition schedule."
-                ),
-                (
-                    "Use hazard and physical-condition tools to generate questions, "
-                    "not automatic conclusions about development rights. FEMA's "
-                    "effective flood information can identify mapped hazards, but "
-                    "local floodplain rules, map revisions, elevation evidence, and "
-                    "engineering still control the practical project. USFWS wetlands "
-                    "mapping is an inventory rather than a parcel-specific federal "
-                    "jurisdiction determination. Soil survey interpretations describe "
-                    "mapped soil units; they do not replace a septic evaluation or "
-                    "geotechnical investigation. EPA records flag reported facilities "
-                    "and cleanup activity, while a clean search does not establish "
-                    "clean land. For transactions seeking applicable CERCLA liability "
-                    "protections, have an environmental professional address the "
-                    "conditions and timing under 40 CFR Part 312; several specified "
-                    "components require updating within 180 days before acquisition, "
-                    "and the broader inquiry generally must occur within one year. "
-                    "Do not advertise a browser search as that inquiry. Likewise, "
-                    "BLM patents illuminate historic conveyances but do not resolve "
-                    "every current reservation or access question. The GIS contractor "
-                    "screens these layers, the survey and civil coordinator scopes "
-                    "field questions, and the title and closing contractor examines "
-                    "recorded interests. The principal funds deeper work only when "
-                    "the remaining spread supports its cost and elapsed time."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen named sources: access, cost category, latency, request hygiene, and fallback evidence",
-                "headers": [
-                    "Named source and operational role",
-                    "Exact access method",
-                    "Cost category and use boundary",
-                    "Refresh latency to record",
-                    "Request discipline",
-                    "Fallback and evidentiary limit",
-                ],
-                "rows": [
-                    [
-                        "Maricopa County Assessor for parcel identity and assessed ownership",
-                        "Open https://mcassessor.maricopa.gov/ and search parcel number or owner",
-                        "Public lookup is free; confirm separate bulk extract terms",
-                        "Roll and transfer processing create event-to-publication delays",
-                        "Use offered exports; do not automate undocumented browser endpoints",
-                        "Compare recorded deeds when assessed ownership trails a transfer",
-                    ],
-                    [
-                        "Maricopa County Recorder for deeds, easements, and recorded plats",
-                        "Open https://recorder.maricopa.gov/ and select recorded document search",
-                        "Search access and copy charges follow the posted fee schedule",
-                        "Record recording date separately from search-index availability",
-                        "Search narrowly by instrument or party; respect portal controls",
-                        "Order official copies when images or indexing are incomplete",
-                    ],
-                    [
-                        "Maricopa County Treasurer for balances and tax-sale research",
-                        "Open https://treasurer.maricopa.gov/ and search the parcel account",
-                        "Public account lookup is free; obtain transaction-specific payoff figures",
-                        "Payments, penalties, and posted balances can change between checks",
-                        "Recheck shortlisted accounts before offers and before closing",
-                        "Request a dated payoff when posted balances need reconciliation",
-                    ],
-                    [
-                        "Maricopa County Planning and Development for unincorporated land controls",
-                        "Open https://www.maricopa.gov/ and select Planning and Development",
-                        "Published maps are free; applications and written determinations may cost",
-                        "Code amendments and case decisions update on separate schedules",
-                        "Retrieve applicable code text; verify jurisdiction before requesting interpretation",
-                        "Use the relevant city's planning department for incorporated parcels",
-                    ],
-                    [
-                        "Maricopa County Superior Court for probate case discovery",
-                        "Open https://www.clerkofcourt.maricopa.gov/ and navigate to case information",
-                        "Public case access varies; certified document orders carry posted charges",
-                        "Docket entry timing differs from document availability and finality",
-                        "Respect restricted records; request documents through authorized court channels",
-                        "Obtain current authority documents rather than relying on docket summaries",
-                    ],
-                    [
-                        "Arizona Corporation Commission eCorp for entity identity and filings",
-                        "Open https://ecorp.azcc.gov/ and search the exact entity name",
-                        "Public entity searches are free; certified records have separate fees",
-                        "Filing acceptance and search publication can occur at different times",
-                        "Search exact names and entity identifiers before broad name variants",
-                        "Request organizational authority evidence; registry status alone proves little",
-                    ],
-                    [
-                        "Maricopa County Department of Transportation for public roadway evidence",
-                        "Open https://www.maricopa.gov/ and navigate to Transportation road information",
-                        "Published resources are free; specific records requests may incur charges",
-                        "Accepted roadway status and published map revisions can diverge",
-                        "Request the named road segment and supporting acceptance documents",
-                        "Recorder instruments and surveys address rights beyond roadway map coverage",
-                    ],
-                    [
-                        "FEMA Map Service Center for effective flood hazard products",
-                        "Open https://msc.fema.gov/portal/home and search location or map panel",
-                        "Federal map viewing and available product downloads are free",
-                        "Use panel effective dates and applicable map revision dates",
-                        "Download relevant panels once; cache files with retrieval timestamps",
-                        "Consult the local floodplain administrator for parcel-specific project questions",
-                    ],
-                    [
-                        "USFWS National Wetlands Inventory for mapped wetland screening",
-                        "Open https://www.fws.gov/program/national-wetlands-inventory/wetlands-mapper and use mapper or downloads",
-                        "Federal inventory viewing and published spatial downloads are free",
-                        "Project imagery dates and inventory publication dates vary geographically",
-                        "Prefer regional downloads; avoid repeated identical map service queries",
-                        "Commission delineation and agency review when the proposed activity requires",
-                    ],
-                    [
-                        "USDA NRCS Web Soil Survey for soils and limitations",
-                        "Open https://websoilsurvey.nrcs.usda.gov/app/ and define the area of interest",
-                        "Public soil reports and available soil data downloads are free",
-                        "Survey vintage and updated interpretations vary by survey area",
-                        "Save the selected area report instead of repeatedly regenerating it",
-                        "Use local septic evaluation and geotechnical testing for design decisions",
-                    ],
-                    [
-                        "USGS National Map Downloader for elevation and terrain inputs",
-                        "Open https://apps.nationalmap.gov/downloader/ and select elevation product coverage",
-                        "Federal elevation downloads are free; processing creates local resource costs",
-                        "Check acquisition year, publication date, resolution, and vertical reference",
-                        "Download intersecting tiles once and retain the accompanying metadata",
-                        "Order current survey elevations when available terrain resolution is insufficient",
-                    ],
-                    [
-                        "EPA Envirofacts for reported environmental facilities and program records",
-                        "Open https://enviro.epa.gov/ and select relevant Envirofacts search resources",
-                        "Public searches and supported federal data access are free",
-                        "Underlying program update cycles differ; inspect each record's dates",
-                        "Use documented interfaces and bounded geography rather than unrestricted harvesting",
-                        "Check state cleanup records and commission environmental professional review",
-                    ],
-                    [
-                        "BLM General Land Office Records for historic patents and surveys",
-                        "Open https://glorecords.blm.gov/ and search patents or survey records",
-                        "Public search and available document image viewing are free",
-                        "Historic document dates differ from later digitization and indexing",
-                        "Search township, range, section, and names to constrain results",
-                        "Current title examination must address later conveyances and reservations",
-                    ],
-                    [
-                        "U.S. Census TIGER/Line for geographic joins and area context",
-                        "Open https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html and select release",
-                        "Published federal geographic downloads are free for operator analysis",
-                        "Release vintage is periodic and cannot establish current road rights",
-                        "Cache release files locally and preserve geographic identifier fields",
-                        "County engineering and recorded instruments establish stronger access evidence",
-                    ],
-                    [
-                        "Regrid parcel products for normalized geometry and owner screening",
-                        "Open https://regrid.com/ and request the appropriate data or API plan",
-                        "Commercial access requires plan-specific pricing, credits, and permitted-use terms",
-                        "County source vintage and vendor ingestion timing differ by coverage",
-                        "Use issued credentials and contractual quotas; cache where expressly permitted",
-                        "Return to assessor geometry and recorder evidence for disputed attributes",
-                    ],
-                    [
-                        "ATTOM property APIs for transaction enrichment and comparable discovery",
-                        "Open https://api.developer.attomdata.com/ and use documented property API endpoints",
-                        "Commercial endpoint access and call allowances depend on the contract",
-                        "Sale-event coverage and publication delay differ across local recording systems",
-                        "Send required credentials securely; meter requests by endpoint and parcel",
-                        "Verify consideration, parcel allocation, and transaction context through primary records",
-                    ],
-                    [
-                        "First American DataTree for document discovery and property research",
-                        "Open https://www.datatree.com/ and use the contracted property research interface",
-                        "Subscription and document retrieval charges depend on purchased service rights",
-                        "Index and image coverage depend on source jurisdictions and product feeds",
-                        "Use licensed export features; browser access does not imply automation rights",
-                        "Order missing instruments from the recorder and obtain separate title services",
-                    ],
-                    [
-                        "QGIS desktop for geometry, coordinate systems, and parcel diagnostics",
-                        "Download from https://qgis.org/ and run Check Validity in Processing Toolbox",
-                        "Desktop software is free; staff time and source licenses still cost",
-                        "Results inherit input vintage and must retain the processing timestamp",
-                        "Process downloaded layers locally and limit unnecessary live service requests",
-                        "Compare official plats and licensed surveys before treating boundaries as definitive",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn six plays into a paid-enrichment waterfall",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Map the six plays to distinct evidence requirements instead of "
-                    "using one universal land score. Rural discount resales need "
-                    "credible access and sales evidence for genuinely comparable "
-                    "acreage. Infill builder lots need jurisdiction, setbacks, utility "
-                    "serviceability, and a plausible building envelope. Tax-delinquent "
-                    "owner purchases need current balances and owner authority; they "
-                    "are negotiated acquisitions, not an assumption that a tax lien "
-                    "conveys ownership. Estate-owned acquisitions require the correct "
-                    "representative and transaction authority, not merely a deceased "
-                    "name on an assessor record. Access-and-title cures require a "
-                    "documented, executable cure whose cost and counterparties are "
-                    "understood before relying on improved resale value. Minor "
-                    "subdivisions require local division rules, state definitions, "
-                    "survey work, service constraints, and recordable results. Arizona's "
-                    "subdivision definitions in A.R.S. 32-2101 illustrate why a desk "
-                    "cannot treat a locally labeled minor division as automatically "
-                    "outside every state requirement. Assign one primary play to each "
-                    "candidate, with secondary opportunities recorded separately. This "
-                    "makes rejection reasons measurable. An inaccessible rural tract "
-                    "must not quietly become an access-cure opportunity unless the "
-                    "principal approves a new evidence budget and a specific cure "
-                    "path. Otherwise automation simply relabels risk until every "
-                    "parcel appears investable."
-                ),
-                (
-                    "Run enrichment from cheapest disqualifier to most expensive "
-                    "confirmation. Stage one uses an authorized county extract to "
-                    "remove duplicates, unsuitable acreage, obvious jurisdiction "
-                    "mismatches, and retired parcel identifiers. Stage two joins "
-                    "public hazard layers, tax records, and recorded subdivision "
-                    "references. Stage three buys commercial transaction attributes "
-                    "only for surviving parcels, then checks the underlying sales "
-                    "against deed type, parcel count, improvement status, and transfer "
-                    "context. Stage four commissions the targeted title, survey, "
-                    "civil, or environmental work needed by the actual play. For "
-                    "an illustrative processing batch, 5,000 source parcels might "
-                    "become 600 geographic matches, 120 desktop survivors, 30 paid "
-                    "enrichments, and six document-intensive reviews. Those counts "
-                    "describe workload, not expected closings or a replacement "
-                    "revenue forecast. Set a maximum purchased-data cost per reviewed "
-                    "candidate before releasing the batch. If a commercial source "
-                    "returns a bundled sale of ten parcels, do not assign its entire "
-                    "consideration to each component. If consideration is missing "
-                    "or protected by local disclosure practice, retain the sale as "
-                    "unpriced evidence and seek another supported comparable. The "
-                    "waterfall saves money by preserving uncertainty rather than "
-                    "manufacturing a price from incomplete fields."
-                ),
-                (
-                    "Keep the four-person pod small by assigning decisions as carefully "
-                    "as tasks. The full-time principal sets buying criteria, negotiates, "
-                    "allocates capital, and approves releases of funds. Contractor one "
-                    "handles GIS, source ingestion, and comparable packets. Contractor "
-                    "two coordinates licensed survey and civil investigations within "
-                    "the qualifications actually held, arranging additional specialist "
-                    "services only when required. Contractor three provides title and "
-                    "closing coordination through properly qualified providers. Do "
-                    "not count a data subscription as a person or describe the pod "
-                    "as able to perform every regulated service internally. Escalated "
-                    "professional services are purchased transaction costs, with "
-                    "scope and price approved before ordering. At the canonical "
-                    "Conservative and Base levels, staffing remains 1 FT + 3 C; "
-                    "Scaled uses 2 FT + 4 C. Size each review queue to available "
-                    "decision hours rather than accumulating thousands of unresolved "
-                    "leads. Give each exception an owner, next evidence request, due "
-                    "date, and spending ceiling. A weekly twenty-minute exception "
-                    "meeting should decide whether to reject, investigate, or "
-                    "negotiate a conditional acquisition. It should not become a "
-                    "tour of maps. The operational advantage is fewer unsupported "
-                    "commitments per completed deal, not a larger raw contact list."
-                ),
-            ],
-            "table": {
-                "caption": "Six mapped land plays and their distinct enrichment decisions",
-                "headers": [
-                    "Mapped operator play",
-                    "Lowest-cost qualifying evidence",
-                    "Paid confirmation and responsible role",
-                    "Specific rejection or escalation trigger",
-                ],
-                "rows": [
-                    [
-                        "Rural discount resales using documented acreage and credible access",
-                        "County geometry, recorded access references, and verified acreage comparables",
-                        "GIS contractor prepares comparisons; title provider examines access-related interests",
-                        "Reject unsupported road rights or prices derived from improved properties",
-                    ],
-                    [
-                        "Infill builder lots matched to a feasible building envelope",
-                        "Planning jurisdiction, setbacks, lot dimensions, and utility provider service records",
-                        "Survey and civil coordinator confirms envelope and obtains service estimates",
-                        "Escalate utility extension costs that consume the documented resale spread",
-                    ],
-                    [
-                        "Tax-delinquent owner purchases negotiated directly with authorized property owners",
-                        "Treasurer balances cross-checked against recorder ownership and parcel identity",
-                        "Title and closing contractor obtains current payoff and ownership requirements",
-                        "Reject transactions whose payoff and acquisition cost exceed buying limits",
-                    ],
-                    [
-                        "Estate-owned acquisitions supported by current authority to convey",
-                        "Probate case references matched to deeds and the correct estate",
-                        "Title provider and qualified counsel resolve authority and conveyance requirements",
-                        "Pause offers requiring signatures from people without demonstrated authority",
-                    ],
-                    [
-                        "Access-and-title cures with documented counterparties and executable remedies",
-                        "Recorded exceptions, easement instruments, legal descriptions, and adjoining ownership",
-                        "Title provider and licensed surveyor define the insurable cure",
-                        "Reject speculative neighbor cooperation or cures without a closing sequence",
-                    ],
-                    [
-                        "Minor subdivisions producing recordable and practically saleable resulting parcels",
-                        "Local division rules, state definitions, dimensions, access, and service constraints",
-                        "Survey and civil coordinator prices required plans, reviews, and improvements",
-                        "Escalate road construction or agency timelines beyond the carrying budget",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four ways experienced land desks avoid buying misleading certainty",
-                "body": "Use these tactics before increasing lead volume or purchasing another national dataset.",
-                "items": [
-                    "Search recorder documents under both the current parcel and its parent legal description after a split; indexing often follows the older description.",
-                    "For an access claim, capture the easement's instrument number, beneficiary language, route, and exceptions rather than saving only a road screenshot.",
-                    "Ask a utility provider for the service point and extension scope; a line visible across the street does not establish an inexpensive connection.",
-                    "Separate vacant-lot sales from improved, assemblage, related-party, and bundled transfers before calculating acreage or frontage price distributions.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Make the pipeline reproducible and expose silent data failures",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement a small evidence store before adopting elaborate "
-                    "orchestration. Python's csv, json, sqlite3, hashlib, urllib.request, "
-                    "and datetime modules can ingest permitted exports and documented "
-                    "API responses without a separate application platform. Preserve "
-                    "the original response or downloaded file, calculate a SHA-256 "
-                    "digest, and load normalized records into SQLite inside a "
-                    "transaction. Use separate tables for parcels, source observations, "
-                    "recorded instruments, comparable sales, review decisions, and "
-                    "request costs. An observation should include the asserted field, "
-                    "value, source, retrieval timestamp, effective date when published, "
-                    "and evidence location. Missing attributes stay explicitly empty "
-                    "in the database with a reason code; they must never become "
-                    "invented ownership or buildability facts. Keep original parcel "
-                    "identifiers as text and use county plus identifier as the initial "
-                    "business key. Add parent-child links for splits and merges "
-                    "rather than rewriting history. Store geographic data with its "
-                    "coordinate reference system and export review layers for QGIS. "
-                    "Calculate area only in an appropriate projected reference system "
-                    "or with a suitable geodesic method; degree-based polygon area "
-                    "is not acreage. Keep credentials outside source files, redact "
-                    "them from logs, and restrict raw owner-contact data to the "
-                    "people performing authorized acquisition work."
-                ),
-                (
-                    "Make every batch idempotent and observable. A source observation "
-                    "key can combine the source, source record identifier, publication "
-                    "version, and payload digest so rerunning a download does not "
-                    "create duplicate evidence. Log HTTP status, elapsed time, returned "
-                    "record count, retry count, bytes, and metered credits without "
-                    "recording secrets. Follow the provider's pagination mechanism "
-                    "until its documented completion condition is reached; a successful "
-                    "first page is not a complete county extract. Reject a load when "
-                    "required columns disappear, record counts collapse unexpectedly, "
-                    "or parcel identifiers lose leading zeros. Use bounded retries "
-                    "for temporary failures, exponential backoff with jitter, and "
-                    "Retry-After where supplied. A permission failure requires "
-                    "credential or entitlement review, not a faster retry loop. "
-                    "Schedule source-specific refreshes: current tax and recorder "
-                    "checks near transaction decisions, periodic commercial updates "
-                    "under the purchased plan, and hazard-layer replacement when "
-                    "published versions change. Keep the previous successful snapshot "
-                    "available for comparison. A changed owner, new recorded "
-                    "instrument, revised flood layer, or altered parcel geometry "
-                    "should create a review task, not automatically change an active "
-                    "offer. The principal needs a short exception queue with evidence "
-                    "links, not a dashboard that silently overwrites yesterday's "
-                    "underwriting."
-                ),
-                (
-                    "Diagnose suspicious results with independent checks before tuning "
-                    "the scoring formula. In QGIS, inspect invalid polygons, duplicate "
-                    "features, multipart parcels, slivers, and mismatched coordinate "
-                    "systems. Compare calculated area with assessor acreage, but "
-                    "investigate material differences rather than declaring one "
-                    "source correct by default. A centroid can fall outside an "
-                    "irregular parcel or on the wrong side of a road; use an "
-                    "interior point for display and the actual polygon for "
-                    "intersections. Test whether the flood layer intersects the "
-                    "proposed building area, not merely whether any corner of the "
-                    "property touches a mapped zone. Comparable diagnostics should "
-                    "flag repeated sale identifiers, implausible unit prices, "
-                    "multiple parcels sharing full consideration, and listings "
-                    "mistaken for closed sales. Retain rejected comparable evidence "
-                    "with the rejection reason so another analyst does not "
-                    "reintroduce it next month. Before scaling, create a small "
-                    "labeled test set containing an ordinary parcel, a split, a "
-                    "bundled sale, a disputed-access tract, and a constrained infill "
-                    "lot. Every pipeline change should reproduce the expected "
-                    "warnings. This is a more useful quality test than increasing "
-                    "a model's apparent precision while its ownership joins and "
-                    "area calculations remain wrong."
-                ),
-            ],
-            "table": {
-                "caption": "Six diagnostic tests that catch expensive parcel-data errors",
-                "headers": [
-                    "Observed failure signature",
-                    "Reproducible diagnostic action",
-                    "Evidence required for resolution",
-                    "Operator response and accountable role",
-                ],
-                "rows": [
-                    [
-                        "Different counties produce matching normalized parcel identifier strings",
-                        "Group records by identifier and compare county FIPS values",
-                        "Retained source identifiers and county-qualified keys demonstrate distinct properties",
-                        "GIS contractor repairs joins before any affected offer packet proceeds",
-                    ],
-                    [
-                        "Polygon acreage differs materially from the assessor's stated acreage",
-                        "Inspect reference systems, multipart features, geometry validity, and unit conversion",
-                        "Official plat and survey evidence clarify boundaries and acreage differences",
-                        "Survey coordinator scopes verification before the principal prices usable acreage",
-                    ],
-                    [
-                        "One sale appears repeatedly with identical total recorded consideration",
-                        "Group by instrument reference and inspect the complete conveyed parcel set",
-                        "Recorded instrument and supported allocation establish usable comparable treatment",
-                        "GIS contractor excludes unsupported component prices from the valuation set",
-                    ],
-                    [
-                        "Assessor ownership conflicts with the most recent recorded conveyance",
-                        "Compare recording dates, grantee names, legal descriptions, and parcel histories",
-                        "Current instrument chain and title examination resolve the acquisition counterparty",
-                        "Title and closing contractor addresses requirements before signatures are relied upon",
-                    ],
-                    [
-                        "A nightly extract suddenly returns only one page of records",
-                        "Inspect pagination tokens, completion markers, counts, and response schema changes",
-                        "Documented endpoint behavior and complete archived responses support the repaired load",
-                        "GIS contractor quarantines the batch and preserves the previous accepted snapshot",
-                    ],
-                    [
-                        "A parcel score improves after a missing hazard layer disappears",
-                        "Check source coverage, service errors, dataset vintage, and join completeness",
-                        "Successful layer retrieval and explicit coverage checks distinguish absence from failure",
-                        "Principal blocks automatic repricing until the screening evidence is restored",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register and retrieve authorized inputs",
-                    "action": "Record source terms, geography, fields, publication dates, and request limits before ingestion.",
-                    "detail": "Save original files or responses with retrieval timestamps and digests; document the county-specific fallback contact.",
-                },
-                {
-                    "step": 2,
-                    "title": "Normalize without erasing source evidence",
-                    "action": "Load county-qualified identifiers, original values, geometry references, and linked observations into SQLite.",
-                    "detail": "Preserve parent-child parcel relationships and reject malformed loads before they replace an accepted snapshot.",
-                },
-                {
-                    "step": 3,
-                    "title": "Screen and purchase targeted evidence",
-                    "action": "Run public-data exclusions, assign the primary play, and enrich only the survivors within budget.",
-                    "detail": "Send identity, access, title, environmental, and buildability exceptions to the contractor responsible for that evidence.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release a dated decision packet",
-                    "action": "Assemble supported comparables, unresolved conditions, source dates, investigation costs, and the acquisition ceiling.",
-                    "detail": "The principal records reject, investigate, or negotiate, then schedules transaction-stage refreshes for material facts.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Underwrite the tooling against gross sale proceeds and release capital deliberately",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Keep the canonical economics visible in every purchasing "
-                    "decision. Conservative annual gross parcel sale proceeds are "
-                    "$200,000, with a 12% net margin and $24,000 owner net profit. "
-                    "Base proceeds are $850,000, with an 18.5% net margin and "
-                    "$157,250 profit. Scaled proceeds are $1,500,000, with a 25% "
-                    "net margin and $375,000 profit. The corresponding total "
-                    "cost envelopes are $176,000, $692,750, and $1,125,000; these "
-                    "include acquisition costs rather than treating land purchases "
-                    "as someone else's transaction volume. The desk's revenue basis "
-                    "is its gross parcel sale proceeds, not client deal volume, "
-                    "borrowed principal, or an imagined recurring software fee. "
-                    "The stated startup capital range is $15,000 to $75,000, "
-                    "monthly operating expense range is $3,000 to $15,000, and "
-                    "time to first deal is three to twelve months. These are "
-                    "planning ranges, not instructions to combine every upper "
-                    "bound with the Conservative case. Tool subscriptions, records "
-                    "orders, professional investigations, carrying costs, and "
-                    "disposition expenses must fit the selected case's total "
-                    "cost envelope. A new subscription earns its place by "
-                    "reducing purchased research, avoiding a demonstrated error, "
-                    "or freeing constrained review time. More records alone "
-                    "do not increase the modeled margin."
-                ),
-                (
-                    "Use transaction-level cost codes to determine whether the "
-                    "information stack actually helps. Separate recurring "
-                    "subscriptions from per-record purchases, parcel-specific "
-                    "investigations, title and closing charges, and broader "
-                    "operating overhead. For an illustrative internal authorization, "
-                    "a $600 monthly data-and-records allowance equals $7,200 "
-                    "annually; it must be contained within the selected scenario's "
-                    "existing cost envelope, not added while preserving its "
-                    "profit unchanged. Track cost per desktop survivor, cost per "
-                    "decision-ready packet, contractor hours per packet, and "
-                    "elapsed days between identification and a defensible offer. "
-                    "Do not optimize cost per lead when cheap leads repeatedly "
-                    "fail access or ownership checks. Review rejected transactions "
-                    "quarterly to identify which source or question produced "
-                    "the decisive finding. Remove duplicated feeds when they "
-                    "do not improve coverage, speed, or evidence quality. Keep "
-                    "a renewal calendar tied to actual usage and export rights "
-                    "so cancellation does not strand required transaction "
-                    "records. Measure the concentration of cash in unsold "
-                    "parcels separately from research throughput. Illiquidity "
-                    "can defeat an otherwise efficient desk, particularly "
-                    "when a subdivision or title cure extends the holding "
-                    "period. Capital release therefore follows resolved "
-                    "transaction questions, not the number of completed "
-                    "automation tasks."
-                ),
-                (
-                    "Before an acquisition becomes irreversible, require a dated "
-                    "decision packet that another qualified reviewer can "
-                    "reconstruct. It should identify the exact interest being "
-                    "purchased, supported seller authority, current tax and "
-                    "title requirements, access evidence, intended-use "
-                    "constraints, comparable selection, and the remaining "
-                    "cash exposure. Confirm the proposed disposition structure "
-                    "with the appropriate professionals: selling owned land "
-                    "differs from representing another owner, and Arizona's "
-                    "licensing exemptions in A.R.S. 32-2121 have conditions "
-                    "rather than creating a blanket exemption for every "
-                    "property-related service. Recording requirements under "
-                    "A.R.S. 33-411 also belong in the closing workflow, not "
-                    "in an automated assumption that a signed document "
-                    "has completed every necessary step. For land involving "
-                    "possible discharges of dredged or fill material into "
-                    "waters subject to federal jurisdiction, evaluate "
-                    "33 U.S.C. 1344 with qualified project support before "
-                    "pricing unrestricted development. Public accessibility "
-                    "of a record does not authorize every downstream use; "
-                    "retain license terms and avoid unnecessary collection "
-                    "of personal information. When the deal closes, archive "
-                    "the executed instruments, final settlement statement, "
-                    "policy documents, and evidence supporting material "
-                    "representations. Then reconcile actual proceeds and "
-                    "all costs against underwriting, so the next buying "
-                    "rule reflects completed transactions rather than "
-                    "optimistic listing prices."
-                ),
-            ],
-            "table": {
-                "caption": "Scenario reconciliation and operating controls for the four-person land desk",
-                "headers": [
-                    "Control or economic case",
-                    "Exact operating basis",
-                    "Required evidence or arithmetic",
-                    "Decision consequence for the principal",
-                ],
-                "rows": [
-                    [
-                        "Conservative case uses one full-time principal and three contractors",
-                        "$200,000 annual gross parcel proceeds with a 12% net margin",
-                        "$200,000 less $176,000 total costs equals $24,000 owner profit",
-                        "Keep acquisition, research, carrying, and disposition costs inside that envelope",
-                    ],
-                    [
-                        "Base case uses one full-time principal and three contractors",
-                        "$850,000 annual gross parcel proceeds with an 18.5% net margin",
-                        "$850,000 less $692,750 total costs equals $157,250 owner profit",
-                        "Purchase incremental evidence only where the transaction spread supports it",
-                    ],
-                    [
-                        "Scaled case uses two full-time staff and four contractors",
-                        "$1,500,000 annual gross parcel proceeds with a 25% net margin",
-                        "$1,500,000 less $1,125,000 total costs equals $375,000 owner profit",
-                        "Scale qualified review capacity before increasing unresolved acquisition volume",
-                    ],
-                    [
-                        "Illustrative data allowance remains an internal cost allocation only",
-                        "$600 monthly authorization creates a $7,200 annual purchasing ceiling",
-                        "Supplier invoices and parcel-linked usage substantiate recurring and variable spend",
-                        "Offset new spending within existing costs or explicitly revise underwriting",
-                    ],
-                    [
-                        "Parcel carrying exposure measures cash concentration rather than lead throughput",
-                        "Track acquisition cash, elapsed holding days, taxes, and required improvements",
-                        "Updated sale timetable and actual obligations show remaining cash exposure",
-                        "Stop additional purchases when unsold inventory exhausts available working capital",
-                    ],
-                    [
-                        "Closing reconciliation turns completed deals into defensible buying rules",
-                        "Compare gross proceeds and every attributable cost with original underwriting",
-                        "Settlement records, supplier invoices, and archived evidence explain each variance",
-                        "Adjust filters and offer ceilings using realized results rather than listings",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before releasing acquisition funds",
-                "body": "Each check requires dated evidence, a responsible reviewer, and a written disposition of remaining exceptions.",
-                "items": [
-                    "Identity and authority: reconcile county-qualified parcel identifiers, legal descriptions, current ownership, and the actual signer's power to convey.",
-                    "Access and title: obtain the title provider's requirements, inspect relevant access instruments, and price any executable cure before relying on it.",
-                    "Use and physical constraints: confirm jurisdiction, intended-use feasibility, utility scope, and necessary survey, civil, environmental, or wetland investigations.",
-                    "Cash and exit: reconcile purchase price, all projected costs, holding exposure, supported comparables, and the remaining cash reserve against the selected scenario.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Buy the parcel only after the evidence explains the discount, the access, and the exit.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Choose one county and register official parcel, recorder, tax, planning, court, and roadway sources with access terms and fallback contacts.",
-        "Assign every candidate one of the six mapped plays and specify the evidence that can reject or advance that play.",
-        "Build a SQLite evidence store with preserved identifiers, source timestamps, document references, payload digests, and split-or-merge history.",
-        "Run public-data screening before purchasing commercial enrichment, and record request costs and contractor time against each surviving parcel.",
-        "Test the pipeline against splits, bundled sales, coordinate errors, missing hazard coverage, and disputed-access examples before increasing batch size.",
-        "Release acquisition funds only after completing the four pre-flight checks and reconciling all projected costs with the selected canonical scenario.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "40 CFR 312.20 — All appropriate inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312/subpart-C/section-312.20",
-            "relevance": (
-                "Defines inquiry requirements and acquisition timing for applicable "
-                "CERCLA liability protections; desktop environmental searches alone "
-                "do not perform the required professional inquiry."
-            ),
-        },
-        {
-            "title": "33 U.S.C. 1344 — Permits for dredged or fill material",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": (
-                "Creates the federal permitting framework relevant to covered "
-                "discharges of dredged or fill material; inventory mapping does "
-                "not independently decide parcel-specific jurisdiction."
-            ),
-        },
-        {
-            "title": "A.R.S. 32-2101 — Real estate and subdivision definitions",
-            "url": "https://www.azleg.gov/ars/32/02101.htm",
-            "relevance": (
-                "Supplies Arizona definitions that must be checked alongside local "
-                "land-division requirements before underwriting a minor subdivision."
-            ),
-        },
-        {
-            "title": "A.R.S. 32-2121 — Exceptions to real estate licensing requirements",
-            "url": "https://www.azleg.gov/ars/32/02121.htm",
-            "relevance": (
-                "Identifies conditional licensing exceptions; distinguish selling "
-                "owned property from activities performed for other owners."
-            ),
-        },
-        {
-            "title": "A.R.S. 33-411 — Recording instruments affecting real property",
-            "url": "https://www.azleg.gov/ars/33/00411.htm",
-            "relevance": (
-                "Addresses recording and acknowledgment requirements affecting "
-                "real-property instruments; integrate the applicable requirements "
-                "into the title and closing workflow."
-            ),
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'subdividing-land-for-profit',
+ 'question_prompt': 'How do I subdivide a parcel to multiply profit on a land deal?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Subdividing Land for Profit',
+ 'subtitle': 'Step-by-step subdivides in Land Portal, minor vs. major subdivides, types of subdivisions, '
+             'rural acreage splits, the 80-acre Minnesota and $192K case studies, $500K from a minor '
+             'subdivide, surveying projects, and Australian plan-of-subdivision processes',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land operators converge on one engine: buy acreage at the bulk per-acre price and '
+                      'resell smaller pieces at the higher small-lot per-acre price, with road frontage, '
+                      'minimum lot size, utilities and access deciding how many lots a parcel can yield. '
+                      'Rural paper splits and exempt plats run cheap and fast: Jack Bosch cites a roughly '
+                      '$400 application and six weeks in Arizona, Clay Hepler netted $235K on 80 Minnesota '
+                      'acres in under six months, and Jon Jasniak turned 79 Texas acres into $818K of '
+                      'seller-financed notes. Urban and suburban operators like Jerome Maldonado and David '
+                      'Reitz split half-acre to two-acre infill lots for builders. Disagreements center on '
+                      'deal size, seller financing versus cash exits, infill versus rural recreational '
+                      'land, and how much engineering, hearings and timeline risk to absorb.',
+ 'key_metrics': [{'label': 'Minnesota 80-Acre Four-Lot Split Net Profit',
+                  'metric': 'Minnesota 80-Acre Four-Lot Split Net Profit',
+                  'value': '$235K net on $134K total cost, under 6 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Four lots sold for $369K versus about $180K whole; costs included $2K '
+                             'buy-side closing, $5K perc testing and about 6% (~$22K) sale-side closing.',
+                  'source': 'Clay Hepler ([o_c7zC-iYqE @ 00:01:35])'},
+                 {'label': 'Texas Exempt-Plat Seller-Financed Notes Created',
+                  'metric': 'Texas Exempt-Plat Seller-Financed Notes Created',
+                  'value': '$818K notes receivable; ~$538K after debt and down payment',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '79 acres near Stanton, Martin County, cut into six 10-acre lots and one '
+                             '19-acre lot on 120-month terms; all lots sold within 3 days and the notes '
+                             'were sold to investors before the balloon.',
+                  'source': 'Jon Jasniak ([N5LpbcKdDVE @ 00:04:19])'},
+                 {'label': 'Arizona Five Split Application Cost And Timeline',
+                  'metric': 'Arizona Five Split Application Cost And Timeline',
+                  'value': '~$400 application fee, a few hundred dollars for descriptions, ~6 weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rural paper split with no survey or corner markers: pieces over 1 acre, road '
+                             'access to each, new legal description for each.',
+                  'source': 'Jack Bosch ([JXUkA5K7RSc @ 00:06:56])'},
+                 {'label': 'Infill Land Cost Ceiling Versus Home Value',
+                  'metric': 'Infill Land Cost Ceiling Versus Home Value',
+                  'value': 'Land at 20% or less of total home value',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rule applied to a 1.2-acre Depew parcel in a $400-500K home market, split '
+                             'into four $50-60K paper lots.',
+                  'source': 'David Reitz ([WHUzvXvl_18 @ 00:02:40])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['The engine every operator describes is price-per-acre arbitrage. Jack Bosch '
+                              'frames it as a $30 cake sold as twelve $5 slices for $60, then puts numbers '
+                              'on it: a 40-acre parcel worth $40,000 cut into ten 4-acre lots at $10,000 '
+                              'to $15,000 each lands around $150,000, roughly a 4x, and seller financing '
+                              'can push it toward $300,000 [JXUkA5K7RSc @ 00:02:11]. The Apke Brothers '
+                              'make the spread the market filter itself: 25 acres at $125,000 is $5,000 an '
+                              'acre, while five 5-acre lots at $50,000 each total $250,000, and any county '
+                              'where small and large acreage price the same gets skipped [8LneZstpCGY @ '
+                              '00:01:56]. Neil Clements on REtipster uses the same logic to justify paying '
+                              'sellers 90 to 100 percent of market value instead of the usual 50 to 60 '
+                              'percent, because 50 acres bought at $10,000 an acre and resold as five '
+                              '10-acre lots at $20,000 an acre exits at $1 million [TzjxQStPaW4 @ '
+                              "00:02:36]. Paul Jang's Oklahoma deal shows the small-scale version: 10 "
+                              'acres bought for $32,000, cut into five lots worth a combined $95,000 to '
+                              '$120,000, roughly 3x, with bigger tracts carrying thinner margins but '
+                              'fatter dollar totals, such as 100 acres at $100,000 split into ten $30,000 '
+                              'lots for $300,000 [e8Ouv9k5iag @ 00:04:56].',
+                              'Before any line gets drawn on a map, the gating variables are the same '
+                              'across the board: road frontage, legal access, minimum lot size and '
+                              'utilities. Clay Hepler calls failing to check road access the single '
+                              'biggest mistake and screens for 10 to 100 acres with public road frontage, '
+                              'power nearby and no flood or slope problems [o_c7zC-iYqE @ 00:03:26]. Dr. '
+                              "Dirt calls road frontage 'super super important' for minor subdivides and "
+                              'runs the math live: 1,300 feet of frontage divided by four is 325 feet per '
+                              'lot, but a 350-foot county minimum yields only 3.7, so the parcel supports '
+                              'three lots [7wJsf4BbLHY @ 00:57:06]. Simply Invested, staking a '
+                              'just-under-one-acre lot beside a standard tract subdivision, puts it '
+                              'bluntly: more road frontage makes lots easier to cut up and market, while '
+                              "narrow frontage yields one lot, maybe two, as 'awkward long rectangle Lots' "
+                              '[bYgyURXYuP0 @ 00:04:26]. Sumner Healey adds that utilities can dictate the '
+                              'minimum lot size outright, screens out topography with 20 to 30 degree '
+                              'slopes, generally rejects flood or wetlands coverage above roughly 30 to 50 '
+                              'percent, and refuses any deal that requires building a road [pWQCNBiSpUY @ '
+                              '00:04:23]. The shared conclusion is that frontage and access, not raw '
+                              'acreage, set the lot count.',
+                              'Every operator also agrees the county or city planning office is the first '
+                              'call, not the last. Jack Bosch tells subdividers to check zoning minimums, '
+                              'sketch the setback building envelope, then talk to the city or county '
+                              "because some processes take a year [JXUkA5K7RSc @ 00:04:39]. Clay Hepler's "
+                              'script is three questions for the county planner: minimum lot size, deed '
+                              'split versus survey plat, and approval timeline [o_c7zC-iYqE @ 00:02:56]. '
+                              'The consensus tiering runs from cheapest to heaviest. BiggerPockets '
+                              'describes the simple path as a legal description, a recorded deed and a '
+                              'certificate of title, versus the complex path of preliminary plat, '
+                              'engineering review, construction and final plat, with timelines ranging '
+                              'from weeks to years [y_3SP6N-l4c @ 00:04:55]. Dr. Dirt pegs a minor '
+                              'subdivide at plat-and-record, about three months of process and nine months '
+                              'total, against a major subdivide with road, sewer and electric that can run '
+                              'about 30 months, the territory of entitlement specialists who do two deals '
+                              'a year, gross around $1 million annually and may front $500,000 '
+                              '[7wJsf4BbLHY @ 00:45:36]. That gap is why nearly every operator here hunts '
+                              'minor splits, paper splits and statewide exemptions first, and treats major '
+                              'plats with new roads as a separate, capital-heavy business.'],
+               'table': {'caption': 'Consensus principles multiple subdividers apply before buying a '
+                                    'parcel',
+                         'headers': ['Consensus Principle',
+                                     'What The Operator Reported',
+                                     'Why It Matters On A Deal',
+                                     'Expert Source'],
+                         'rows': [['Small acreage must price higher per acre',
+                                   'Ten 4-acre lots from a $40,000 parcel bring about $150,000',
+                                   'The per-acre spread is the entire profit engine',
+                                   'Jack Bosch ([JXUkA5K7RSc @ 00:02:11])'],
+                                  ['Skip counties with no price spread at all',
+                                   '25 acres at $5,000/acre versus 5-acre lots totaling $250,000',
+                                   'Flat per-acre pricing across sizes kills the split',
+                                   'Apke Brothers ([8LneZstpCGY @ 00:02:39])'],
+                                  ['Verify road access before anything else on site',
+                                   'Not checking road access named as the biggest mistake',
+                                   'Every resulting lot needs its own legal access',
+                                   'Clay Hepler ([o_c7zC-iYqE @ 00:03:26])'],
+                                  ['Road frontage divided by county minimum sets lot count',
+                                   '1,300 feet over a 350-foot minimum yields only three lots',
+                                   'Rounding down to whole lots changes projected revenue fast',
+                                   'Dr. Dirt l Land Investor ([7wJsf4BbLHY @ 00:56:09])'],
+                                  ['Utilities can dictate the minimum lot size outright',
+                                   'Utility availability drives lot sizing; slopes of 20-30 degrees '
+                                   'disqualify',
+                                   'Septic, wells and power shape what the county approves',
+                                   'Sumner Healey ([pWQCNBiSpUY @ 00:04:23])'],
+                                  ['Ask the county planner three questions first',
+                                   'Minimum lot size, deed split versus survey plat, approval timeline',
+                                   'Answers decide between a cheap split and a full plat',
+                                   'Clay Hepler ([o_c7zC-iYqE @ 00:02:56])'],
+                                  ['Minor splits beat major subdivisions for most operators',
+                                   'Minor about 9 months total; major about 30 months total',
+                                   'Major work needs roads, sewer, electric and heavy capital',
+                                   'Dr. Dirt l Land Investor ([7wJsf4BbLHY @ 00:41:44])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The cheapest street-level split is the Arizona five split. Jack Bosch lays '
+                              'out the rules: pieces over one acre, road access to each, a new legal '
+                              'description for each, and no survey or corner markers required, which is '
+                              "why it is 'simply also called a paper split' [JXUkA5K7RSc @ 00:06:06]. The "
+                              'run is a title company charging a few hundred dollars for descriptions, an '
+                              'application fee around $400 and about six weeks to approval, typically '
+                              'carving one 20-acre piece plus four 5-acre pieces sold at $15,000 each on '
+                              '$3,000 down and $300 a month for eight years [JXUkA5K7RSc @ 00:09:17]. In '
+                              'Texas the lever is the statewide exemption for resulting lots of 10 acres '
+                              'or more; Neil Clements says only a surveyor is needed and the exempt plat '
+                              'can produce 1.5 to 2x [TzjxQStPaW4 @ 00:03:40]. Jon Jasniak ran that '
+                              'exemption on 79 acres near Stanton in Martin County, cutting six 10-acre '
+                              'lots and one 19-acre lot after sending the surveyor a Google Earth sketch. '
+                              'The purchase was $70,000 down on a $210,000 note with a two-year balloon, '
+                              'the 10-acre lots went out at $1,250 down and $1,250 a month for 120 months, '
+                              'everything sold within three days, and $818,000 of notes became roughly '
+                              '$538,000 after debt and the down payment [N5LpbcKdDVE @ 00:04:19].',
+                              'Suburban infill runs on different math because the buyer is a builder. '
+                              'Jerome Maldonado splits one-acre lots into half-acre lots in $500,000 to '
+                              '$800,000 custom-home areas, skipping the $200,000 to $400,000 median-price '
+                              'builders, and budgets a pencil sketch, a survey of a few hundred dollars '
+                              'and a city development meeting of a couple hundred dollars, with council '
+                              'meeting every 30 days for about 60 days total [ffCHGUtstfA @ 00:07:25]. '
+                              "Maldonado's builder math: two half-acre lots at $100,000 each net about "
+                              '$99,000 after roughly $1,000 in costs [ffCHGUtstfA @ 00:12:20]. On a '
+                              '2.1-acre lot listed at $150,000, Maldonado negotiated down to about '
+                              '$110,000 because of a waterway, spent about $15,000 on dirt work for a '
+                              '$125,000 basis, and keeps the split plan hidden from the seller behind a '
+                              'delayed close [fNHhVpzVhdo @ 00:04:56]. David Reitz entitles while under '
+                              'contract: a 1.2-acre parcel in Depew at a $45,000 contract price, $2,500 '
+                              'for engineer concept drawings, a $60,000 to $80,000 shared driveway, and '
+                              'four $50,000 to $60,000 lots, a roughly $200,000 asset on $120,000 to '
+                              '$150,000 all-in, with the engineer, architect, permits and fees charged to '
+                              'an AMEX card [WHUzvXvl_18 @ 00:03:49].',
+                              "Sourcing is systematized. The Apke Brothers run Landportal's LP "
+                              'Intelligence across Georgia counties, flagging Gilmore at $9,000 an acre '
+                              'for 25 to 50 acres versus $20,000 an acre for 3 to 7 acres, then filtering '
+                              'Carroll County for road frontage over 800 feet, FEMA flood zone and '
+                              'wetlands each under 50 percent, AI buildability over 50 percent, and 25 to '
+                              '60 acres outside city limits, which returned 50 results to skip trace and '
+                              'hit by mail, text and cold call [8LneZstpCGY @ 00:05:35]. Dr. Dirt works '
+                              'Zillow instead: owner-posted lots and land, pending listings included '
+                              'because contracts fall through, one acre or more, over 12 months on market, '
+                              'saves near 10 percent of views, and a price cut five days in as a '
+                              'motivation tell, with Land Insights and Land Portal used on free tiers '
+                              '[7wJsf4BbLHY @ 00:02:36]. For rules, Sumner Healey Googles the county '
+                              'subdivision regulations, reads page count as a complexity signal, as with '
+                              "Wilson County's 97 pages, and searches 'exemptions' to find the "
+                              'over-10-acre unlimited-cuts rule [pWQCNBiSpUY @ 00:15:43]. Dr. Dirt also '
+                              'feeds the APN into Claude or ChatGPT to pull county minor-subdivide rules '
+                              'before calling planners [7wJsf4BbLHY @ 00:49:34].'],
+               'table': {'caption': 'Exact split mechanics, tools and unit costs quoted by operators',
+                         'headers': ['Mechanic Or Tool',
+                                     'Exact Numbers Or Settings',
+                                     'Operator Use Case',
+                                     'Expert Source'],
+                         'rows': [['Arizona five split rural paper split',
+                                   'Pieces over 1 acre, ~$400 fee, ~6 weeks, no survey',
+                                   'One 20-acre piece plus four 5-acre lots',
+                                   'Jack Bosch ([JXUkA5K7RSc @ 00:06:56])'],
+                                  ['Texas statewide exempt plat for large lots',
+                                   'Resulting lots of 10 acres or more, surveyor only',
+                                   'Cheap split producing 1.5 to 2x on exit',
+                                   'REtipster ([TzjxQStPaW4 @ 00:03:40])'],
+                                  ['Minor plat when exemptions do not apply',
+                                   'Drainage plans a few thousand, plats several thousand, 4-6 months',
+                                   'DFW projects drawing 10 to 15 county comments',
+                                   'REtipster ([TzjxQStPaW4 @ 00:08:25])'],
+                                  ['Rural four-lot split cost stack in Minnesota',
+                                   '$2K buy closing, $5K perc testing, ~6% sale closing',
+                                   '80 acres to four lots, $235K net',
+                                   'Clay Hepler ([o_c7zC-iYqE @ 00:01:35])'],
+                                  ['Survey quote range on a rural deal',
+                                   'About $2.5K paid; typically $5K+; one quote $12K',
+                                   'All-in cost $122,486 on 40 acres',
+                                   'Sumner Healey ([pWQCNBiSpUY @ 00:08:35])'],
+                                  ['Engineer concept drawings for an infill split',
+                                   '$2,500 drawings; budget $2-10K engineering overall',
+                                   'Half-acre to 2-acre parcels for builder lots',
+                                   'David Reitz ([WHUzvXvl_18 @ 00:05:41])'],
+                                  ['Landportal LP Intelligence list filters for subdivides',
+                                   '800+ ft frontage, flood/wetlands under 50%, buildability over 50%',
+                                   '25-60 acre Carroll County list of 50 parcels',
+                                   'Apke Brothers ([8LneZstpCGY @ 00:05:35])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-level edges operators use on split deals',
+                           'body': 'Funding, presale, distressed-land and layout moves that operators '
+                                   'report adding speed or margin to a subdivide.',
+                           'items': ['Bring in deal funders to cover 100% of acquisition and split costs '
+                                     'on 45/50/50/60-40 profit splits instead of using your own cash [Clay '
+                                     'Hepler — o_c7zC-iYqE @ 00:05:18]',
+                                     'Sketch lots on Google Earth for the surveyor, then pre-sell; all '
+                                     'seven Texas lots sold within 3 days on seller-finance terms [Jon '
+                                     'Jasniak — N5LpbcKdDVE @ 00:04:00]',
+                                     'Target parcels with an old building on them: land worth $250K/acre '
+                                     'can sell at $100-150K/acre with the structure, so buy, demolish and '
+                                     'subdivide [Jerome Maldonado — ZvmmZBcu3kc @ 00:02:55]',
+                                     'Orient cuts to dodge overgrown ground; vertical cuts avoided '
+                                     'per-acre brush hogging costs, and the layout alone added $20-30K to '
+                                     'expected profit [Sumner Healey — pWQCNBiSpUY @ 00:05:21]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick a county with a real per-acre spread',
+                              'action': 'Pull small-acre versus large-acre pricing by county and shortlist '
+                                        'only counties where small lots price much higher per acre.',
+                              'detail': 'Gilmore showed $9K/acre at 25-50 acres versus $20K/acre at 3-7 '
+                                        'acres while Fannon showed no spread; shortlist Gilmore, Bullick '
+                                        'and Carol and call each county for its minor subdivide definition '
+                                        '[Apke Brothers — 8LneZstpCGY @ 00:03:56]'},
+                             {'step': 2,
+                              'title': 'Run the county planner script before contracting',
+                              'action': 'Ask minimum lot size, deed split versus survey plat, and approval '
+                                        'timeline, then check frontage and access on every proposed lot.',
+                              'detail': 'Three planner questions plus a road-access check, since missing '
+                                        'access is the biggest mistake; screen 10-100 acres with public '
+                                        'frontage and power nearby [Clay Hepler — o_c7zC-iYqE @ 00:02:56]'},
+                             {'step': 3,
+                              'title': 'Tie up the land and entitle during the contract',
+                              'action': 'Lock the parcel with small earnest money and a long control '
+                                        'window, then hand the surveyor a sketch and file during the '
+                                        'contract period.',
+                              'detail': '40 acres controlled at $121K with $100 earnest money until '
+                                        'December 20; survey ran about $2.5K against typical $5K+ quotes '
+                                        '[Sumner Healey — pWQCNBiSpUY @ 00:01:12]'},
+                             {'step': 4,
+                              'title': 'Record, pre-list and sell on terms',
+                              'action': 'Record the split, pre-list lots, and offer owner financing to '
+                                        'widen the buyer pool and raise total sale price.',
+                              'detail': 'Four 5-acre lots at $15K each on $3K down and $300/month for 8 '
+                                        'years turned a $10K buy into a stated $147K profit versus $20K '
+                                        'for a straight flip [Jack Bosch — JXUkA5K7RSc @ 00:09:17]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over what size dirt to chase. Jerome Maldonado runs '
+                              'small infill: carve 1-acre lots into half-acre lots in $500K to $800K '
+                              "custom-home areas, because appraisals follow the house's square footage, "
+                              'not the lot, and two half-acre lots at $100K each net about $99K after '
+                              'roughly $1K in costs [ffCHGUtstfA @ 00:12:20]. Dr. Dirt goes the opposite '
+                              'way. He focuses on rural recreational land of 5-plus acres and avoids '
+                              'infill entirely, where he says buying at $5K and selling at $10K nets only '
+                              '$1K to $2K [7wJsf4BbLHY @ 01:08:29]. David Reitz sits in between. He '
+                              'targets half an acre to 2 acres because bigger projects drag in HOAs and '
+                              'attorney fees, refuses townhomes for the same reason, and uses a shared '
+                              'maintenance agreement instead of an HOA [WHUzvXvl_18 @ 00:05:13]. Paul Jang '
+                              'frames the trade-off in pure scale terms: bigger lots carry thinner margins '
+                              'but fatter dollar amounts. His example is 100 acres bought for $100K and '
+                              'cut into ten $30K lots for $300K, against his 10-acre Oklahoma deal that '
+                              'ran roughly 3x [e8Ouv9k5iag @ 00:04:56]. Infill rewards builder '
+                              'relationships and high home values, while rural acreage rewards frontage, '
+                              'volume, and buyer financing.',
+                              'Practitioners also disagree on how much engineering a split really needs. '
+                              'Jack Bosch teaches the Arizona five split as a pure paper split. The pieces '
+                              'must be over 1 acre, each needs road access and a new legal description, '
+                              'and no survey or corner markers are required. A title company charges a few '
+                              'hundred dollars, the application fee runs roughly $400, and approval takes '
+                              'about six weeks [JXUkA5K7RSc @ 00:06:56]. Jon Jasniak went nearly as light '
+                              'in Texas, sending his surveyor a Google Earth sketch on a 79-acre '
+                              'platting-exempt deal [N5LpbcKdDVE @ 00:03:29]. On the other side, '
+                              'BiggerPockets says getting through for under $2K is rare and that impact '
+                              'fees alone can reach tens of thousands per lot [y_3SP6N-l4c @ 00:05:45]. '
+                              'Kent Cliffe puts a basic Australian house-lot subdivision at $25K to $30K '
+                              'in WA, $30K to $40K in other states, and up to $60K in some areas '
+                              '[Ie0jq4Go9is @ 00:00:46]. Bosch himself says that outside five-split states '
+                              'the work becomes surveys, corner stakes, maps, and hearings over three to '
+                              'nine months. Jurisdiction decides it: an exempt rural split runs on paper, '
+                              'while anything that triggers a plat, new utilities, or a council hearing '
+                              'becomes an engineering project with a real budget.',
+                              "Acquisition posture and exit structure split the field too. REtipster's "
+                              'Neil Clements argues a value-add subdivider can pay 90 to 100 percent of '
+                              'market value instead of the usual 50 to 60 percent, because the split '
+                              'itself creates the margin [TzjxQStPaW4 @ 00:01:17]. Jerome Maldonado plays '
+                              'harder at the table. He negotiated a 2.1-acre lot listed at $150K down to '
+                              'about $110K by pointing to a waterway, and he teaches hiding the split plan '
+                              'from the seller and using a delayed close [fNHhVpzVhdo @ 00:04:56]. On the '
+                              'exit, Jack Bosch says seller financing can double a $150K cash split to '
+                              '$300K [JXUkA5K7RSc @ 00:02:59]. Jon Jasniak sold his 10-acre lots at $1,250 '
+                              'down and $1,250 a month for 120 months, then sold the notes to investors '
+                              'before his own 2-year balloon came due [N5LpbcKdDVE @ 00:04:19]. Maldonado '
+                              'instead sells finished dirt to builders such as D.R. Horton, or builds '
+                              'himself for $250K to $300K profit per house. David Reitz keeps three exits '
+                              'open: sell paper lots, build one, or build all. Cash buyers and builders '
+                              'mean a fast, clean payday. Terms buyers mean a bigger total and a note book '
+                              'to manage or sell.'],
+               'table': {'caption': 'Competing subdivision playbooks side by side',
+                         'headers': ['Decision Point', 'Approach One', 'Approach Two', 'Expert Source'],
+                         'rows': [['Target parcel size and location',
+                                   'Half-acre infill splits in $500K to $800K custom-home areas',
+                                   'Rural recreational land of five-plus acres; infill nets only $1K to '
+                                   '$2K',
+                                   'Jerome Maldonado ([ffCHGUtstfA @ 00:05:25]); Dr. Dirt l Land Investor '
+                                   '([7wJsf4BbLHY @ 01:08:29])'],
+                                  ['How much paperwork the split needs',
+                                   'Arizona five split as a paper split, about $400 fee, about six weeks',
+                                   'Non-five-split states need surveys, corner stakes, maps, and hearings '
+                                   'over 3 to 9 months',
+                                   'Jack Bosch ([JXUkA5K7RSc @ 00:06:56]); Jack Bosch ([JXUkA5K7RSc @ '
+                                   '00:10:53])'],
+                                  ['Entry price paid to the seller',
+                                   'Pay 90 to 100 percent of market value because the split creates margin',
+                                   'Negotiate $150K down to about $110K, hide the split plan, use a '
+                                   'delayed close',
+                                   'REtipster ([TzjxQStPaW4 @ 00:01:17]); Jerome Maldonado ([fNHhVpzVhdo @ '
+                                   '00:04:56])'],
+                                  ['Exit structure on the finished lots',
+                                   'Seller-finance lots at $1,250 down and $1,250 monthly for 120 months, '
+                                   'then sell the notes',
+                                   'Sell finished dirt to builders like D.R. Horton or build homes '
+                                   'directly',
+                                   'Jon Jasniak ([N5LpbcKdDVE @ 00:02:47]); Jerome Maldonado ([ZvmmZBcu3kc '
+                                   '@ 00:02:06])'],
+                                  ['Funding the deal without own cash',
+                                   'Deal funders cover 100 percent of costs in exchange for a profit split',
+                                   'Put engineer, architect, permits, and fees on an AMEX card while the '
+                                   'lender funds land',
+                                   'Clay Hepler ([o_c7zC-iYqE @ 00:05:18]); David Reitz ([WHUzvXvl_18 @ '
+                                   '00:03:49])'],
+                                  ['Choosing which market to work',
+                                   'Hunt per-acre price spreads between acreage bands with LP Intelligence '
+                                   'across Georgia counties',
+                                   'Work red states with fewer land-use laws and stay out of California',
+                                   'Apke Brothers ([8LneZstpCGY @ 00:03:56]); Sumner Healey ([pWQCNBiSpUY '
+                                   '@ 00:10:49])'],
+                                  ['Researching the county subdivision rules',
+                                   'Google the county regulations and search the code for the word '
+                                   'exemptions',
+                                   'Ask Claude or ChatGPT for the county minor-subdivide rules using the '
+                                   'APN',
+                                   'Sumner Healey ([pWQCNBiSpUY @ 00:15:43]); Dr. Dirt l Land Investor '
+                                   '([7wJsf4BbLHY @ 00:49:34])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated trap is access. Clay Hepler names not checking road '
+                              'access as the biggest subdivision mistake [o_c7zC-iYqE @ 00:03:26], and Dr. '
+                              'Dirt warns that without physical access, value drops sharply [7wJsf4BbLHY @ '
+                              '00:50:27]. Frontage math quietly cuts lot counts. Dr. Dirt walks through '
+                              '1,300 feet of frontage divided by four, which looks like 325 feet per lot. '
+                              'But the county minimum is 350 feet, which yields only 3.7 lots, so the deal '
+                              'is really three [7wJsf4BbLHY @ 00:54:54]. Simply Invested hits the same '
+                              'ceiling in the field. He notes that a narrow-frontage parcel would probably '
+                              'be one lot, maybe two, and then you are stuck with awkward long rectangle '
+                              'lots [bYgyURXYuP0 @ 00:04:26]. Dr. Dirt adds that just because a layout '
+                              'works on a map does not mean it is going to sell, and he calls flagpole '
+                              'lots love-it-or-hate-it with buyers. Sumner Healey refuses to build roads '
+                              'at all. He screens out 20 to 30 degree slopes and parcels with more than 30 '
+                              'to 50 percent flood or wetlands before ever drawing lines. Divide the '
+                              'frontage by the county minimum and round down before putting a number on '
+                              'any lot.',
+                              'Hidden infrastructure costs are where margins evaporate. Kent Cliffe hit a '
+                              '4.5-metre-deep sewer with a 2.5-metre water table that required dewatering, '
+                              'turning a roughly $3.5K connection into about $17K. Separately, a '
+                              'structural truncation of about 6 square metres cost him around $40K '
+                              "[Ie0jq4Go9is @ 00:05:32]. David Reitz's Depew layout needed a shared "
+                              'driveway priced at $60K to $80K plus utility feed lines. That pushed a $50K '
+                              'land deal to $120K to $150K all-in for four lots worth roughly $200K '
+                              '[WHUzvXvl_18 @ 00:02:15]. Dr. Dirt flags power as a deal-breaker: if '
+                              'bringing electricity runs around $200K, lot prices must rise or the cost '
+                              'gets split across every lot [7wJsf4BbLHY @ 00:49:01]. Jerome Maldonado '
+                              'tells operators to check utilities and infrastructure first, naming '
+                              'asphalt, curbs, and gutters, and says sewage became a huge issue on his '
+                              '110-acre project [ZvmmZBcu3kc @ 00:02:42]. Smaller line items stack up too. '
+                              'Sumner Healey laid out vertical cuts specifically to avoid brush hogging. '
+                              'Kent Cliffe calls stormwater soakwells, concrete, and retaining big lumpy '
+                              'costs. Price utilities, access construction, and site clearing before '
+                              'making the offer.',
+                              'Time and approvals are the final failure layer. REtipster warns that a '
+                              'major plat brings new roads, a civil engineer, and six-figure plan costs, '
+                              'and the risks include a buyer walking away or plans being rejected '
+                              '[TzjxQStPaW4 @ 00:09:40]. Dr. Dirt calls public hearings a real risk on '
+                              'rezoning. He tells operators to keep multiple exits or make the purchase '
+                              'contract contingent on rezoning [7wJsf4BbLHY @ 00:35:22]. He also notes '
+                              'that ag land is assessed lower, so rezoning brings a tax hike. Jerome '
+                              'Maldonado says a missing item in the application package costs a 30-day '
+                              'delay. That package is the address or legal description, the survey, the '
+                              'proposed lot line, and the covenants [fNHhVpzVhdo @ 00:04:14]. Peter Kelly '
+                              'says rookies focus on the build and fail to give the subdivision process '
+                              'the respect it requires, and any slip pushes back settlement and payday. If '
+                              'there is a mortgage, the bank holds the original title and must release it '
+                              '[3jBR5FOYoag @ 00:04:33]. Sumner Healey received one survey quote of $12K '
+                              'and six months. David Reitz deals with a variance board that meets only '
+                              'every two to three months. Build the approval calendar before signing the '
+                              'contract.'],
+               'table': {'caption': 'Firsthand subdivision failure modes and the economics check for each',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['No legal road access to the lots',
+                                   'Named as the single biggest mistake in subdividing land',
+                                   'Confirm public road frontage and nearby power on every parcel before '
+                                   'contract',
+                                   'Clay Hepler ([o_c7zC-iYqE @ 00:03:26])'],
+                                  ['Frontage below the county minimum width',
+                                   '1,300 feet against a 350-foot minimum yields 3.7, so three lots',
+                                   'Divide total frontage by the county minimum and always round down',
+                                   'Dr. Dirt l Land Investor ([7wJsf4BbLHY @ 00:54:54])'],
+                                  ['Deep sewer under a high water table',
+                                   'Dewatering turned a roughly $3.5K sewer connection into about $17K',
+                                   'Check sewer location and depth before the subdivision budget is locked',
+                                   'Kent Cliffe ([Ie0jq4Go9is @ 00:05:32])'],
+                                  ['Shared driveway and utility feed lines',
+                                   'Driveway alone priced at $60K to $80K on a $50K land deal',
+                                   'Keep land under 20 percent of home value and total all-in cost first',
+                                   'David Reitz ([WHUzvXvl_18 @ 00:02:15])'],
+                                  ['Incomplete application package at the city',
+                                   'Missing survey, lot line, legal description, or covenants caused '
+                                   '30-day delay',
+                                   'Submit the full package at once to hold the 60-day timeline',
+                                   'Jerome Maldonado ([fNHhVpzVhdo @ 00:04:14])'],
+                                  ['Major plat with roads and engineering',
+                                   'Six-figure plan costs with the risk of rejection or a walking buyer',
+                                   'Stay inside exempt or minor plat thresholds unless the budget absorbs '
+                                   'that risk',
+                                   'REtipster ([TzjxQStPaW4 @ 00:09:40])'],
+                                  ['Impact fees and complex review paths',
+                                   'Impact fees can reach tens of thousands of dollars per lot',
+                                   'Assume under $2K is rare and price fees into every lot',
+                                   'BiggerPockets ([y_3SP6N-l4c @ 00:05:45])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill-or-Reprice Checks Before Signing',
+                           'body': 'If any one of these checks fails, re-price the offer or walk before '
+                                   'committing earnest money.',
+                           'items': ['Confirm physical road access and public frontage for every proposed '
+                                     'lot; skipping this is the biggest subdivision mistake [Clay Hepler — '
+                                     'o_c7zC-iYqE @ 00:03:26].',
+                                     'Divide total frontage by the county minimum lot width and round '
+                                     'down; 1,300 feet against a 350-foot minimum is three lots, not four '
+                                     '[Dr. Dirt l Land Investor — 7wJsf4BbLHY @ 00:54:54].',
+                                     'Verify sewer location and depth plus power cost; dewatering pushed a '
+                                     '$3.5K connection to about $17K [Kent Cliffe — Ie0jq4Go9is @ '
+                                     '00:06:04].',
+                                     'If rezoning or a public hearing is required, make the contract '
+                                     'contingent on rezoning or keep multiple exits [Dr. Dirt l Land '
+                                     'Investor — 7wJsf4BbLHY @ 00:35:22].']}}],
+ 'pull_quote': '"Just because it works on a map doesn\'t necessarily mean though that it\'s going to '
+               'sell." — Dr. Dirt l Land Investor (7wJsf4BbLHY @ 00:59:00).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Compare price per acre between large and small acreage bands county by county with '
+                      'LP Intelligence, and skip counties with no spread [Apke Brothers — 8LneZstpCGY @ '
+                      '00:03:56].',
+                      'Call the county planner and ask for the minimum lot size, whether it is a deed '
+                      'split or a survey plat, and the approval timeline [Clay Hepler — o_c7zC-iYqE @ '
+                      '00:02:56].',
+                      'Pull the county subdivision regulations and search them for exemptions, such as the '
+                      'over-10-acre unlimited-cuts rule [Sumner Healey — pWQCNBiSpUY @ 00:15:43].',
+                      'Tie up the land with about $5K earnest money on a $50K lot, going hard at 120 days, '
+                      'and do the entitlements while under contract [David Reitz — WHUzvXvl_18 @ '
+                      '00:07:30].',
+                      'Send the surveyor a Google Earth sketch of the lot layout, then pre-sell the lots '
+                      'before the survey is recorded [Jon Jasniak — N5LpbcKdDVE @ 00:03:29].',
+                      'Have the solicitor lodge the statement of compliance and original title as soon as '
+                      'possible, and get any mortgage-holding bank to release the title [Peter Kelly '
+                      'Property — 3jBR5FOYoag @ 00:04:33].'],
+ 'statutory_citations': [{'title': 'Jack Bosch — How To Subdivide Land For Profit (Step By Step) '
+                                   '[00:06:06]',
+                          'url': 'https://www.youtube.com/watch?v=JXUkA5K7RSc&t=366s',
+                          'relevance': 'Primary practitioner testimony on the Arizona five split paper '
+                                       'split, fees, and six-week approval.'},
+                         {'title': 'Jon Jasniak — How I Made $500k with a Minor Land Subdivision '
+                                   '[00:02:28]',
+                          'url': 'https://www.youtube.com/watch?v=N5LpbcKdDVE&t=148s',
+                          'relevance': 'Primary practitioner testimony on seller-financed acquisition, '
+                                       'terms lot sales, and selling notes before a balloon.'},
+                         {'title': 'REtipster — The Essential Types of Land Subdivisions (Part 1 of 4) | '
+                                   'The Real Deal w/ Neil Clements [00:03:40]',
+                          'url': 'https://www.youtube.com/watch?v=TzjxQStPaW4&t=220s',
+                          'relevance': 'Primary practitioner testimony on exempt, minor, and major plat '
+                                       'thresholds, costs, and timelines.'},
+                         {'title': 'Dr. Dirt l Land Investor — Minor vs Major Subdivides Explained (Split '
+                                   'Land for Profit) | Dr. Dirt Office Hours Ep. 2 [00:41:44]',
+                          'url': 'https://www.youtube.com/watch?v=7wJsf4BbLHY&t=2504s',
+                          'relevance': 'Primary practitioner testimony on minor versus major subdivide '
+                                       'timelines, frontage math, and rezoning risk.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'JXUkA5K7RSc',
+                       'title': 'How To Subdivide Land For Profit (Step By Step)',
+                       'channel': 'Jack Bosch',
+                       'author': 'Jack Bosch',
+                       'text': "It's simply also called a paper split.",
+                       'tip': "It's simply also called a paper split.",
+                       'timestamp': 366,
+                       'timestamp_seconds': 366,
+                       'timestamp_label': '[00:06:06]',
+                       'url': 'https://www.youtube.com/watch?v=JXUkA5K7RSc&t=366s',
+                       'markdown': '[00:06:06](https://www.youtube.com/watch?v=JXUkA5K7RSc&t=366s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8LneZstpCGY',
+                       'title': 'Subdivide Land With These Simple Steps',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': 'Twenty-five acres at $125,000 is $5,000 an acre, but five 5-acre lots at '
+                               '$50,000 each total $250,000.',
+                       'tip': 'Twenty-five acres at $125,000 is $5,000 an acre, but five 5-acre lots at '
+                              '$50,000 each total $250,000.',
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=8LneZstpCGY&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=8LneZstpCGY&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZvmmZBcu3kc',
+                       'title': 'How To Subdivide Land',
+                       'channel': 'Jerome Maldonado',
+                       'author': 'Jerome Maldonado',
+                       'text': 'An old building distresses the value of the land, so land worth $250,000 '
+                               'an acre may sell for $100,000 to $150,000 an acre with the building on it.',
+                       'tip': 'An old building distresses the value of the land, so land worth $250,000 an '
+                              'acre may sell for $100,000 to $150,000 an acre with the building on it.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=ZvmmZBcu3kc&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=ZvmmZBcu3kc&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ffCHGUtstfA',
+                       'title': 'Subdivide Land Guide: Fastest Profits in Real Estate',
+                       'channel': 'Jerome Maldonado',
+                       'author': 'Jerome Maldonado',
+                       'text': 'Appraisals follow the square footage of the house, not the size of the '
+                               'lot.',
+                       'tip': 'Appraisals follow the square footage of the house, not the size of the lot.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=ffCHGUtstfA&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=ffCHGUtstfA&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fNHhVpzVhdo',
+                       'title': 'How to Subdivide Land for Maximum Profit',
+                       'channel': 'Jerome Maldonado',
+                       'author': 'Jerome Maldonado',
+                       'text': 'If the application is missing the survey, the proposed lot line, the legal '
+                               'description, or the covenants, it causes a 30-day delay.',
+                       'tip': 'If the application is missing the survey, the proposed lot line, the legal '
+                              'description, or the covenants, it causes a 30-day delay.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=fNHhVpzVhdo&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=fNHhVpzVhdo&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TzjxQStPaW4',
+                       'title': 'The Essential Types of Land Subdivisions (Part 1 of 4) | The Real Deal w/ '
+                                'Neil Clements',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'A value-add buyer can offer 90 to 100 percent of market value instead of '
+                               '50 to 60 percent.',
+                       'tip': 'A value-add buyer can offer 90 to 100 percent of market value instead of 50 '
+                              'to 60 percent.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=TzjxQStPaW4&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=TzjxQStPaW4&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o_c7zC-iYqE',
+                       'title': 'Subdividing Land 101: How We Turned 80 Acres in Minnesota Into $235K in '
+                                '10 Minutes',
+                       'channel': 'Clay Hepler',
+                       'author': 'Clay Hepler',
+                       'text': 'The biggest mistake is not checking road access.',
+                       'tip': 'The biggest mistake is not checking road access.',
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=o_c7zC-iYqE&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=o_c7zC-iYqE&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pWQCNBiSpUY',
+                       'title': 'Full Subdivide Land Guide: Fastest Profits in Real Estate ($192k profit '
+                                'case study)',
+                       'channel': 'Sumner Healey',
+                       'author': 'Sumner Healey',
+                       'text': 'Search the county regulations for exemptions to find the rule that allows '
+                               'unlimited cuts over 10 acres.',
+                       'tip': 'Search the county regulations for exemptions to find the rule that allows '
+                              'unlimited cuts over 10 acres.',
+                       'timestamp': 943,
+                       'timestamp_seconds': 943,
+                       'timestamp_label': '[00:15:43]',
+                       'url': 'https://www.youtube.com/watch?v=pWQCNBiSpUY&t=943s',
+                       'markdown': '[00:15:43](https://www.youtube.com/watch?v=pWQCNBiSpUY&t=943s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e8Ouv9k5iag',
+                       'title': 'Subdividing Rural Land For Sale - What is the Process?',
+                       'channel': 'Paul Jang',
+                       'author': 'Paul Jang',
+                       'text': 'Bigger lots have lower margins but higher dollar amounts, so 100 acres '
+                               'bought for $100,000 and split into 10 lots at $30,000 yields $300,000.',
+                       'tip': 'Bigger lots have lower margins but higher dollar amounts, so 100 acres '
+                              'bought for $100,000 and split into 10 lots at $30,000 yields $300,000.',
+                       'timestamp': 296,
+                       'timestamp_seconds': 296,
+                       'timestamp_label': '[00:04:56]',
+                       'url': 'https://www.youtube.com/watch?v=e8Ouv9k5iag&t=296s',
+                       'markdown': '[00:04:56](https://www.youtube.com/watch?v=e8Ouv9k5iag&t=296s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y_3SP6N-l4c',
+                       'title': 'Subdividing Land: What Real Estate Investors Should Know | Daily Podcast '
+                                '183',
+                       'channel': 'BiggerPockets',
+                       'author': 'BiggerPockets',
+                       'text': 'Getting a subdivision done for under $2,000 is rare, and impact fees can '
+                               'reach tens of thousands of dollars per lot.',
+                       'tip': 'Getting a subdivision done for under $2,000 is rare, and impact fees can '
+                              'reach tens of thousands of dollars per lot.',
+                       'timestamp': 345,
+                       'timestamp_seconds': 345,
+                       'timestamp_label': '[00:05:45]',
+                       'url': 'https://www.youtube.com/watch?v=y_3SP6N-l4c&t=345s',
+                       'markdown': '[00:05:45](https://www.youtube.com/watch?v=y_3SP6N-l4c&t=345s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N5LpbcKdDVE',
+                       'title': 'How I Made $500k with a Minor Land Subdivision',
+                       'channel': 'Jon Jasniak',
+                       'author': 'Jon Jasniak',
+                       'text': 'The notes receivable came to $818,000, and the notes were sold to '
+                               'investors before the balloon came due.',
+                       'tip': 'The notes receivable came to $818,000, and the notes were sold to investors '
+                              'before the balloon came due.',
+                       'timestamp': 259,
+                       'timestamp_seconds': 259,
+                       'timestamp_label': '[00:04:19]',
+                       'url': 'https://www.youtube.com/watch?v=N5LpbcKdDVE&t=259s',
+                       'markdown': '[00:04:19](https://www.youtube.com/watch?v=N5LpbcKdDVE&t=259s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WHUzvXvl_18',
+                       'title': 'Guide To Subdividing Land: Fastest Profits In Real Estate',
+                       'channel': 'David Reitz',
+                       'author': 'David Reitz',
+                       'text': 'Your land cost should never exceed 20% of your total home value.',
+                       'tip': 'Your land cost should never exceed 20% of your total home value.',
+                       'timestamp': 160,
+                       'timestamp_seconds': 160,
+                       'timestamp_label': '[00:02:40]',
+                       'url': 'https://www.youtube.com/watch?v=WHUzvXvl_18&t=160s',
+                       'markdown': '[00:02:40](https://www.youtube.com/watch?v=WHUzvXvl_18&t=160s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bYgyURXYuP0',
+                       'title': 'Subdividing land small lots big profits',
+                       'channel': 'Simply Invested',
+                       'author': 'Simply Invested',
+                       'text': 'The more road frontage you have, the easier it is to get your lots cut up '
+                               'and marketed.',
+                       'tip': 'The more road frontage you have, the easier it is to get your lots cut up '
+                              'and marketed.',
+                       'timestamp': 241,
+                       'timestamp_seconds': 241,
+                       'timestamp_label': '[00:04:01]',
+                       'url': 'https://www.youtube.com/watch?v=bYgyURXYuP0&t=241s',
+                       'markdown': '[00:04:01](https://www.youtube.com/watch?v=bYgyURXYuP0&t=241s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3jBR5FOYoag',
+                       'title': 'Subdivide Property In Australia - The Plan of Subdivision Process '
+                                'Simplified',
+                       'channel': 'Peter Kelly Property',
+                       'author': 'Peter Kelly Property',
+                       'text': 'Remember, time is everything as an initial property developer.',
+                       'tip': 'Remember, time is everything as an initial property developer.',
+                       'timestamp': 273,
+                       'timestamp_seconds': 273,
+                       'timestamp_label': '[00:04:33]',
+                       'url': 'https://www.youtube.com/watch?v=3jBR5FOYoag&t=273s',
+                       'markdown': '[00:04:33](https://www.youtube.com/watch?v=3jBR5FOYoag&t=273s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ie0jq4Go9is',
+                       'title': 'Property Development Australia: Beginners Guide to Subdividing Your House '
+                                'or an Investment Property',
+                       'channel': 'Kent Cliffe',
+                       'author': 'Kent Cliffe',
+                       'text': 'So, just make sure the location and the depth of the sewer is okay.',
+                       'tip': 'So, just make sure the location and the depth of the sewer is okay.',
+                       'timestamp': 364,
+                       'timestamp_seconds': 364,
+                       'timestamp_label': '[00:06:04]',
+                       'url': 'https://www.youtube.com/watch?v=Ie0jq4Go9is&t=364s',
+                       'markdown': '[00:06:04](https://www.youtube.com/watch?v=Ie0jq4Go9is&t=364s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7wJsf4BbLHY',
+                       'title': 'Minor vs Major Subdivides Explained (Split Land for Profit) | Dr. Dirt '
+                                'Office Hours Ep. 2',
+                       'channel': 'Dr. Dirt l Land Investor',
+                       'author': 'Dr. Dirt l Land Investor',
+                       'text': "Road frontage is super super important when you're looking at subdivides, "
+                               'especially minor subdivides.',
+                       'tip': "Road frontage is super super important when you're looking at subdivides, "
+                              'especially minor subdivides.',
+                       'timestamp': 3426,
+                       'timestamp_seconds': 3426,
+                       'timestamp_label': '[00:57:06]',
+                       'url': 'https://www.youtube.com/watch?v=7wJsf4BbLHY&t=3426s',
+                       'markdown': '[00:57:06](https://www.youtube.com/watch?v=7wJsf4BbLHY&t=3426s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7wJsf4BbLHY',
+                       'title': 'Minor vs Major Subdivides Explained (Split Land for Profit) | Dr. Dirt '
+                                'Office Hours Ep. 2',
+                       'channel': 'Dr. Dirt l Land Investor',
+                       'author': 'Dr. Dirt l Land Investor',
+                       'text': "Just because it works on a map doesn't necessarily mean though that it's "
+                               'going to sell.',
+                       'tip': "Just because it works on a map doesn't necessarily mean though that it's "
+                              'going to sell.',
+                       'timestamp': 3540,
+                       'timestamp_seconds': 3540,
+                       'timestamp_label': '[00:59:00]',
+                       'url': 'https://www.youtube.com/watch?v=7wJsf4BbLHY&t=3540s',
+                       'markdown': '[00:59:00](https://www.youtube.com/watch?v=7wJsf4BbLHY&t=3540s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

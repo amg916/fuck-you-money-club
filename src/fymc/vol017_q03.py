@@ -1,692 +1,829 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "domain-investing-unit-economics-margin-waterfall-working-capital",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for domain investing?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Acquisition Basis, Afternic and Sedo Deductions, Escrow Release Timing, Renewal Runway, and ACPA-Screened Buyer Acquisition",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
-        "Score. The business earns gross domain sale proceeds, not transaction "
-        "volume belonging to another merchant. Its canonical annual owner profits "
-        "are $3,000 Conservative, $44,000 Base, and $120,000 Scaled. This chapter "
-        "maps eight operating applications: brandables, exact-match domains, "
-        "expired-authority domains, drop-catching, outbound upgrades, inbound "
-        "routing, renewal pruning, and authorized comparison acquisition. The "
-        "waterfall separates sold-name acquisition basis, renewals, marketplace "
-        "deductions, contractor labor, buyer acquisition, staffing, overhead, and "
-        "reversal reserves. Cash planning then distinguishes unsold inventory "
-        "from receivables and payout locks. The practical objective is a portfolio "
-        "that can survive delayed settlement and weak sell-through without "
-        "financing renewals through distressed sales."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$20,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "15% net margin; $3,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Base",
-            "value": "$160,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "27.5% net margin; $44,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$300,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "40% net margin; $120,000 annual owner net profit; 2 FT + 2 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the sale unit before buying another portfolio",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one domain sold to one buyer, not one registration, "
-                    "inquiry, auction win, or estimated appraisal. Record the asset, "
-                    "purchase date, original basis, auction charges, renewal history, "
-                    "asking price, accepted consideration, transfer completion, and "
-                    "cash release separately. NameBio can inform comparable-sale "
-                    "research, while registrar exports establish what the business "
-                    "actually controls. Neither an automated appraisal nor an inbound "
-                    "offer creates recognized sale proceeds. For this operating model, "
-                    "recognize a completed sale when the contractual transfer obligation "
-                    "is satisfied; apply the actual accounting policy consistently. "
-                    "Cash may arrive later. The canonical revenue basis is gross "
-                    "domain sale proceeds, with acquisition and renewal deductions "
-                    "inside margin. It is not a broker-only commission model. A "
-                    "marketplace selling an owned name for $4,000 and withholding "
-                    "$400 therefore produces $4,000 gross proceeds, $400 selling "
-                    "expense, and $3,600 settlement cash before other deductions. "
-                    "If the business merely introduces another owner's domain, its "
-                    "earned brokerage fee belongs in a separate ledger. Do not "
-                    "import that owner's sale price into this portfolio's revenue. "
-                    "Also separate collected transaction taxes and refundable deposits "
-                    "from earned consideration. These distinctions prevent impressive "
-                    "transaction totals from concealing a weak inventory business."
-                ),
-                (
-                    "Build cohorts by acquisition quarter, domain strategy, purchase "
-                    "channel, and renewal month. A brandable bought through GoDaddy "
-                    "Auctions is economically different from an exact-match domain "
-                    "registered at standard cost or an expired name won through "
-                    "DropCatch. The eight mappings below are chapter-level operating "
-                    "applications, not eight additional scorecard candidates. For each "
-                    "application, attach a maximum basis, expected sale price, carrying "
-                    "budget, and abandonment rule. A $600 acquisition targeting a "
-                    "$2,000 sale leaves $1,400 before marketplace charges, renewals, "
-                    "labor, and unsuccessful inventory. That spread says nothing "
-                    "about how many years the name will remain unsold. Measure annual "
-                    "sell-through as completed sales divided by average eligible "
-                    "inventory, using a consistent exposure convention for recent "
-                    "purchases. Ten sales from 250 fully exposed names imply 4%; "
-                    "forty from 1,000 also imply 4%; sixty from 1,500 again imply "
-                    "4%. These are illustrative portfolio constructions, not observed "
-                    "market benchmarks. At $12 per annual renewal, those portfolios "
-                    "require $3,000, $12,000, and $18,000 respectively. Premium "
-                    "renewals, auction-related extensions, and currency conversion "
-                    "must replace the $12 assumption wherever the registrar's "
-                    "actual invoice differs. Avoid charging an included renewal "
-                    "twice when constructing the holding-cost schedule."
-                ),
-                (
-                    "Treat typo_squatting_brand_bid_hijacking as a replacement brief, "
-                    "not permission to register confusing variants or divert an "
-                    "affiliate's branded traffic. Under 15 U.S.C. § 1125(d), "
-                    "bad-faith conduct involving protected marks can expose the "
-                    "registrant to forfeiture, transfer, and monetary remedies. UDRP "
-                    "proceedings can also cancel or transfer qualifying abusive "
-                    "registrations. Replace the prohibited tactic with documented "
-                    "brand-bidding rights or truthful comparison pages serving "
-                    "alternative, pricing, and review queries. A separate illustrative "
-                    "affiliate test might buy 200 clicks at $1 each, produce ten "
-                    "tracked orders, and provisionally earn ten $40 commissions: "
-                    "$400 before scrubs, or $200 after media alone. A 25% scrub "
-                    "reduces commissions to $300 and contribution to $100; a "
-                    "100% reversal leaves a $200 media loss before labor. None "
-                    "of those merchant order values or affiliate receipts enters "
-                    "the canonical domain-sale cases. Secure written TM+ whitelisting "
-                    "where required, or route permitted competitor-alternative queries "
-                    "to a challenger welcoming conquesting traffic. If permissions, "
-                    "claims, or attribution terms fail review, stop that channel "
-                    "and use direct domain inquiries instead. Maintain clear "
-                    "commercial disclosures when endorsements or affiliate relationships "
-                    "could affect how buyers evaluate the comparison."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Domain Operating Mappings with Explicit Unit Math and Loss Controls",
-                "headers": [
-                    "Operating application and acquisition route",
-                    "Illustrative economic unit and measurable spread",
-                    "Evidence required before committing acquisition cash",
-                    "Risk fallback protecting the remaining portfolio",
-                ],
-                "rows": [
-                    [
-                        "Brandable inventory acquired through independently screened marketplace listings",
-                        "$600 basis against $2,000 proceeds leaves $1,400 before deductions",
-                        "Compare relevant completed sales and document unrelated commercial meanings",
-                        "Reject mark-dependent demand and cap exposure by renewal cohort",
-                    ],
-                    [
-                        "Exact-match inventory targeting descriptive products and service categories",
-                        "$120 basis plus $24 carrying costs precedes a $1,500 exit",
-                        "Identify multiple plausible buyers without assuming exclusive trademark rights",
-                        "Drop weak demand categories before another annual renewal payment",
-                    ],
-                    [
-                        "Expired-authority inventory screened through historical content and link evidence",
-                        "$800 basis plus $100 research precedes a $3,000 target",
-                        "Inspect Internet Archive history and independently assess link quality",
-                        "Value the name alone when claimed search benefits disappear",
-                    ],
-                    [
-                        "Drop-catching auctions managed through a documented maximum bid",
-                        "$1,200 landed basis against $4,000 proceeds leaves $2,800 initially",
-                        "Include auction fees and verify transfer restrictions before bidding",
-                        "Walk away when competing bids exceed the written ceiling",
-                    ],
-                    [
-                        "Outbound upgrades offered to independently qualified operating businesses",
-                        "$300 outreach expenditure for one sale adds $300 acquisition cost",
-                        "Retain truthful outreach copy and evidence of legitimate buyer fit",
-                        "Stop repetitive outreach and return the name to inbound distribution",
-                    ],
-                    [
-                        "Inbound inquiry routing using registrar landing pages and marketplace distribution",
-                        "Twenty qualified inquiries yielding two sales imply ten inquiries per sale",
-                        "Deduplicate inquiries and attribute only completed incremental sale outcomes",
-                        "Remove stale prices before conflicting channels create duplicate commitments",
-                    ],
-                    [
-                        "Renewal pruning applied to low-demand names before billing dates",
-                        "Dropping 100 names at $12 avoids $1,200 future annual carrying costs",
-                        "Review inquiry history and defensible demand before removing inventory",
-                        "Retain high-intent names selectively rather than renewing entire cohorts",
-                    ],
-                    [
-                        "typo_squatting_brand_bid_hijacking replaced by authorized search comparison acquisition",
-                        "$400 provisional commissions less $200 media yields $200 before scrubs",
-                        "Verify merchant permissions and disclose material affiliate relationships clearly",
-                        "Use permitted challenger queries or stop buying the disputed traffic",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the renewal-adjusted spread, not the appraisal",
-                "body": (
-                    "Experienced operators protect liquidity before negotiating the "
-                    "headline sale price. Make these controls part of every acquisition."
-                ),
-                "items": [
-                    "Export premium renewal prices before bidding; an attractive first-year registration can conceal a carrying cost larger than the modeled sale contribution.",
-                    "Compare NameBio records by extension, length, buyer use, and sale venue; do not price a wholesale auction purchase from unrelated retail outliers.",
-                    "Ask escrow support which transfer evidence releases funds before agreeing to a close; an internal registrar push and an inter-registrar transfer can follow different procedures.",
-                    "Route trademark-dependent demand to rejection, not a larger reserve; a disputed name can lose both its resale value and the cash spent defending it.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every deduction to the canonical owner-profit cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The waterfall allocates the supplied scorecard totals into "
-                    "illustrative expense buckets; the allocation is not a claim "
-                    "about prevailing marketplace rates. Conservative uses ten sales "
-                    "at $2,000, Base forty at $4,000, and Scaled sixty at "
-                    "$5,000. Sold-name acquisition basis is $600, $1,200, and "
-                    "$800 per completed sale respectively, yielding $6,000, $48,000, "
-                    "and $48,000 in annual deductions. Scaled therefore assumes "
-                    "better acquisition discipline and stronger realized pricing, "
-                    "not simply more purchases. Validate both assumptions against "
-                    "closed cohorts before increasing inventory. Selling deductions "
-                    "are modeled at 10%, 10%, and 8% of proceeds, producing "
-                    "$2,000, $16,000, and $24,000. Actual Afternic, Sedo, broker, "
-                    "payment, and escrow charges depend on the applicable agreement, "
-                    "distribution channel, and service. Record the real combination "
-                    "rather than imposing this blended percentage on every deal. "
-                    "The buyer's payment of an escrow fee does not become the "
-                    "seller's expense; conversely, a seller-paid transfer service "
-                    "cannot disappear merely because it was netted at settlement. "
-                    "Attach the closing statement to each sale and reconcile gross "
-                    "consideration to the bank deposit. Investigate any unexplained "
-                    "difference before treating the portfolio as economically closed "
-                    "for the month."
-                ),
-                (
-                    "Contractor delivery labor is distinct from buyer acquisition. "
-                    "The model budgets $1,500, $12,000, and $24,000 for research, "
-                    "listing preparation, transfer administration, and reconciliation. "
-                    "At an illustrative $30 hourly rate, those totals purchase "
-                    "50, 400, and 800 contractor hours. Conservative and Base "
-                    "each have one owner working full time plus one contractor; "
-                    "Scaled has the owner, one additional full-time employee, and "
-                    "two contractors sharing those 800 hours. The Scaled employee "
-                    "budget is $42,000 including employer burden; verify whether "
-                    "that amount supports the actual role and jurisdiction. Owner "
-                    "labor is compensated through the modeled residual rather than "
-                    "an additional salary deduction. Buyer-acquisition budgets of "
-                    "$1,000, $8,000, and $12,000 imply $100, $200, and $200 "
-                    "per completed domain sale. Include paid outreach support, "
-                    "prospecting tools, and domain-buyer advertising here, but do "
-                    "not charge contractor hours again if already allocated above. "
-                    "General overhead contributes $2,500, $16,000, and $6,000; "
-                    "the apparent Scaled decline reflects its separately disclosed "
-                    "employee payroll, not free administration. Compare combined "
-                    "staffing and overhead, not one isolated account. Replace "
-                    "these illustrative allocations with invoices while preserving "
-                    "a transparent reconciliation to whichever scenario is being "
-                    "tested."
-                ),
-                (
-                    "After renewals, labor, acquisition spending, staffing, and "
-                    "overhead, pre-reserve surplus is $4,000 Conservative, $48,000 "
-                    "Base, and $126,000 Scaled. The model then deducts $1,000, "
-                    "$4,000, and $6,000 as operating allowances for qualifying "
-                    "refunds, failed completion costs, collection losses, and "
-                    "post-close disputes. These equal 5%, 2.5%, and 2% of gross "
-                    "proceeds. A reserve is a planning estimate supported by "
-                    "documented exposure, not a claim that every completed domain "
-                    "sale permits reversal. It also does not justify recognizing "
-                    "an unsigned offer or an uncompleted transfer. Maintain a "
-                    "separate exposure register showing the contractual reason, "
-                    "maximum loss, expected amount, expiration date, and recovery "
-                    "rights. Apply actual losses against the allowance in the "
-                    "management ledger instead of deducting them a second time. "
-                    "The resulting annual owner net profits are exactly $3,000, "
-                    "$44,000, and $120,000, representing 15%, 27.5%, and 40% "
-                    "margins. Here owner profit means the operating residual before "
-                    "owner-level personal taxes and discretionary distributions. "
-                    "Formal book and tax treatment can differ from this planning "
-                    "presentation. Unsold purchases consume cash but do not belong "
-                    "in sold-name basis merely because they were paid this year. "
-                    "Track impairment, abandonment, and disposition treatment through "
-                    "a separate inventory reconciliation."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Gross-to-Net Waterfall with Explicit Expense Allocations",
-                "headers": [
-                    "Revenue or deduction and recognition discipline",
-                    "Conservative annual operating allocation",
-                    "Base annual operating allocation",
-                    "Scaled annual operating allocation",
-                ],
-                "rows": [
-                    [
-                        "Gross domain sale proceeds from completed portfolio dispositions",
-                        "Ten sales at $2,000 produce $20,000 gross annual proceeds",
-                        "Forty sales at $4,000 produce $160,000 gross annual proceeds",
-                        "Sixty sales at $5,000 produce $300,000 gross annual proceeds",
-                    ],
-                    [
-                        "Deduct acquisition basis attached only to names actually sold",
-                        "Ten sold names carrying $600 basis deduct $6,000 annually",
-                        "Forty sold names carrying $1,200 basis deduct $48,000 annually",
-                        "Sixty sold names carrying $800 basis deduct $48,000 annually",
-                    ],
-                    [
-                        "Deduct renewals across retained eligible inventory rather than sold names",
-                        "Maintain 250 names at $12 for $3,000 annual renewals",
-                        "Maintain 1,000 names at $12 for $12,000 annual renewals",
-                        "Maintain 1,500 names at $12 for $18,000 annual renewals",
-                    ],
-                    [
-                        "Deduct combined selling charges using illustrative channel-weighted percentages",
-                        "Ten percent of gross proceeds deducts $2,000 selling expense",
-                        "Ten percent of gross proceeds deducts $16,000 selling expense",
-                        "Eight percent of gross proceeds deducts $24,000 selling expense",
-                    ],
-                    [
-                        "Deduct contractor delivery labor without duplicating prospecting allocations",
-                        "Fifty hours at $30 deduct $1,500 contractor delivery expense",
-                        "Four hundred hours at $30 deduct $12,000 delivery expense",
-                        "Eight hundred hours at $30 deduct $24,000 delivery expense",
-                    ],
-                    [
-                        "Deduct buyer acquisition costs assigned to completed domain dispositions",
-                        "Ten completed sales absorb $1,000 total buyer acquisition expense",
-                        "Forty completed sales absorb $8,000 total buyer acquisition expense",
-                        "Sixty completed sales absorb $12,000 total buyer acquisition expense",
-                    ],
-                    [
-                        "Deduct nonowner employee payroll including the modeled employer burden",
-                        "Owner supplies full-time labor; additional employee payroll remains $0",
-                        "Owner supplies full-time labor; additional employee payroll remains $0",
-                        "One additional full-time employee costs $42,000 including employer burden",
-                    ],
-                    [
-                        "Deduct general overhead excluding separately identified staffing and selling charges",
-                        "Software and administration consume $2,500 in annual overhead expense",
-                        "Software and administration consume $16,000 in annual overhead expense",
-                        "Software and administration consume $6,000 excluding separately budgeted payroll",
-                    ],
-                    [
-                        "Deduct documented operating allowances without repeating realized reserve-covered losses",
-                        "Five percent of gross proceeds allocates $1,000 operating allowance",
-                        "Two point five percent allocates $4,000 annual operating allowance",
-                        "Two percent of gross proceeds allocates $6,000 operating allowance",
-                    ],
-                    [
-                        "Reconcile total annual deductions before calculating residual owner profit",
-                        "All listed annual deductions total exactly $17,000 before distributions",
-                        "All listed annual deductions total exactly $116,000 before distributions",
-                        "All listed annual deductions total exactly $180,000 before distributions",
-                    ],
-                    [
-                        "Retain canonical owner net profit after every listed operating deduction",
-                        "$20,000 less $17,000 yields $3,000 owner profit at 15%",
-                        "$160,000 less $116,000 yields $44,000 owner profit at 27.5%",
-                        "$300,000 less $180,000 yields $120,000 owner profit at 40%",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund the inventory hold separately from the settlement gap",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Domain investing has two clocks: acquisition-to-sale inventory "
-                    "dwell and sale-to-cash collection. A name can sit for eighteen "
-                    "months before a buyer appears, then require additional time "
-                    "for funding, transfer, inspection, and payout. Escrow.com "
-                    "instructions, registrar transfer restrictions, and marketplace "
-                    "verification procedures determine the real sequence; do not "
-                    "assume every platform offers identical release terms. Define "
-                    "the operational DSO proxy here as invoice-to-payout-eligibility "
-                    "days, then measure payout-lock days from eligibility to "
-                    "usable bank cash. The first interval may include pre-completion "
-                    "time, so the resulting pipeline estimate is not automatically "
-                    "a balance-sheet receivable. Conservative assumes 30 plus 7 "
-                    "days, Base 45 plus 14, and Scaled 60 plus 21. Using "
-                    "annual proceeds divided by 365, the corresponding gross "
-                    "pipeline estimates are $2,027, $25,863, and $66,575, rounded "
-                    "to dollars. These are planning assumptions rather than quoted "
-                    "vendor service levels. Maintain timestamps for invoice, buyer "
-                    "funding, transfer completion, payout eligibility, and bank "
-                    "availability to replace assumptions with observed distributions. "
-                    "Do not add a marketplace's quoted total settlement interval "
-                    "to a bank delay already included in that interval. Where "
-                    "sales cluster, individual deal schedules provide a better "
-                    "liquidity estimate than daily averages."
-                ),
-                (
-                    "A useful planning envelope adds the gross pipeline estimate, "
-                    "ninety days of non-selling cash operations, ninety days of "
-                    "replacement purchases, and a separately earmarked loss buffer. "
-                    "Using one quarter of annual budgets, non-selling operations "
-                    "are $2,000 Conservative, $12,000 Base, and $25,500 Scaled. "
-                    "Those amounts include renewals, contractor delivery, buyer "
-                    "acquisition, overhead, and applicable employee payroll; selling "
-                    "charges are assumed withheld from proceeds. Replacement "
-                    "purchases equal $1,500, $12,000, and $12,000. Adding cash "
-                    "buffers of $1,000, $4,000, and $6,000 produces indicative "
-                    "envelopes of $6,527, $53,863, and $110,075 respectively. "
-                    "These envelopes are conservative liquidity cushions, not "
-                    "additional expenses or a formal working-capital accounting "
-                    "identity. A dated cash forecast can release overlap between "
-                    "pipeline protection and upcoming disbursements. None includes "
-                    "the purchase cost of the existing unsold portfolio, expansion "
-                    "inventory, or owner living expenses. Consequently, the stated "
-                    "$8,000 to $60,000 startup capital range does not establish "
-                    "that every Scaled portfolio fits inside $150,000. Subtract "
-                    "the required cash envelope before bidding on initial inventory. "
-                    "Likewise, the $500 to $5,000 monthly opex range is a "
-                    "planning reference, not a ceiling covering acquisition basis "
-                    "and every variable transaction cost."
-                ),
-                (
-                    "Operate a thirteen-week cash schedule at domain and invoice "
-                    "level. Bring forward opening bank cash, committed purchases, "
-                    "renewal dates, contractor invoices, payroll, expected settlement "
-                    "dates, and owner withdrawals. Mark a tentative buyer separately "
-                    "from funded escrow; only the latter supports a more confident "
-                    "collection forecast, and neither eliminates transfer conditions. "
-                    "A signed installment sale is not equivalent to immediate "
-                    "cash proceeds. Keep unpaid principal, repossession terms, "
-                    "servicing charges, and transfer timing visible, and determine "
-                    "recognition from the actual contract. For conventional completed "
-                    "sales, reconcile the registrar transaction evidence to the "
-                    "escrow closing statement and then to the bank. Stress a "
-                    "thirty-day delay across all modeled annual proceeds: the "
-                    "incremental gross pipeline is about $1,644 Conservative, "
-                    "$13,151 Base, and $24,658 Scaled. That delay does not "
-                    "change modeled profit unless financing charges or other "
-                    "incremental costs arise, but it can prevent the next renewal "
-                    "payment. Address the gap by pausing discretionary purchases, "
-                    "deferring owner distributions, or reducing weak renewal cohorts. "
-                    "Do not sell a valuable domain urgently merely to support "
-                    "a purchase that should never have cleared the cash forecast. "
-                    "Record any emergency discount explicitly so liquidity mistakes "
-                    "remain visible in subsequent cohort reviews."
-                ),
-            ],
-            "table": {
-                "caption": "Settlement Float and Renewal Runway Controls with Auditable Evidence",
-                "headers": [
-                    "Cash exposure requiring separate measurement",
-                    "Calculation or scheduling rule for operators",
-                    "Evidence establishing the actual cash position",
-                    "Action when projected cash coverage fails",
-                ],
-                "rows": [
-                    [
-                        "Acquisition-to-sale dwell across the existing unsold domain portfolio",
-                        "Track purchase cash separately from completed-sale collection pipeline estimates",
-                        "Registrar inventory exports linked to auction invoices and purchase agreements",
-                        "Stop expansion purchases before liquidating strong names at distressed prices",
-                    ],
-                    [
-                        "Invoice-to-eligibility interval preceding the final bank payout lock",
-                        "Model 30, 45, and 60 days across respective scenarios",
-                        "Invoice timestamps linked to transfer completion and payout eligibility notices",
-                        "Replace averages with deal schedules when unusually large sales dominate",
-                    ],
-                    [
-                        "Eligibility-to-bank lock after contractual payout conditions are satisfied",
-                        "Model another 7, 14, and 21 nonoverlapping calendar days",
-                        "Marketplace release confirmations matched against actual bank value dates",
-                        "Escalate missing documents before assuming a scheduled payment will arrive",
-                    ],
-                    [
-                        "Quarterly operating runway excluding commissions withheld directly at settlement",
-                        "Reserve $2,000, $12,000, or $25,500 for modeled quarterly operations",
-                        "Dated renewal invoices plus payroll and contractor payment calendars",
-                        "Prune weak renewal cohorts while preserving essential transfer support",
-                    ],
-                    [
-                        "Replacement acquisition funding distinct from unsold portfolio expansion spending",
-                        "Allocate $1,500, $12,000, or $12,000 for quarterly replacement purchases",
-                        "Approved purchase budgets linked to realized sold-name basis records",
-                        "Defer replacement purchases until collections restore the designated cash floor",
-                    ],
-                    [
-                        "Combined illustrative liquidity envelope before initial unsold inventory purchases",
-                        "Plan $6,527, $53,863, or $110,075 including separate loss buffers",
-                        "Thirteen-week cash forecast reconciled to unrestricted opening bank balances",
-                        "Freeze discretionary distributions whenever dated commitments breach minimum cash",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build the domain-level basis register",
-                    "action": "Join registrar inventory exports with purchase invoices and renewal charges.",
-                    "detail": "Assign a unique asset record, identify included registration periods, and keep unsold purchases outside completed-sale acquisition deductions.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile each completed settlement",
-                    "action": "Match gross consideration, withheld charges, transfer evidence, and released cash.",
-                    "detail": "Record invoice, completion, eligibility, and bank dates separately; resolve every unmatched deduction against the actual agreement.",
-                },
-                {
-                    "step": 3,
-                    "title": "Refresh the thirteen-week runway",
-                    "action": "Schedule renewals, payroll, contractor invoices, replacement purchases, and expected collections.",
-                    "detail": "Run both the expected schedule and a thirty-day collection delay before authorizing another discretionary acquisition.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the cohort and update purchasing limits",
-                    "action": "Reconcile owner profit, reserve usage, inventory movement, and cash movement independently.",
-                    "detail": "Reduce maximum bids or renewal exposure when realized contribution, sell-through, or liquidity falls below the written acquisition thesis.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress the thin assumptions before increasing acquisition velocity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The attractive Scaled margin depends on assumptions that must "
-                    "survive separately before they are combined. First reduce "
-                    "completed sales by 20%, holding realized price constant. "
-                    "Revenue falls by $4,000, $32,000, and $60,000 across "
-                    "Conservative, Base, and Scaled. Only sold-name basis and "
-                    "percentage selling charges flex in this stress; renewals, "
-                    "labor, buyer acquisition, payroll, overhead, and allowances "
-                    "remain fixed. Expense savings are therefore $1,600, $12,800, "
-                    "and $14,400, leaving owner profits of $600, $24,800, "
-                    "and $74,400. Unsold names still consume acquisition cash "
-                    "already committed, so the cash outcome can be worse than "
-                    "the earnings result. Next cut realized prices by 10% while "
-                    "holding units constant. Only percentage selling charges "
-                    "decline, leaving $1,200, $29,600, and $92,400 in owner "
-                    "profit. This distinction matters: lower sale counts defer "
-                    "recognition of sold-name basis, while lower prices on the "
-                    "same sales do not. Never model a discount as if it also "
-                    "reduces the historical acquisition price. Track stress results "
-                    "against actual inventory age and inquiry quality rather than "
-                    "assuming that another month of holding automatically restores "
-                    "the original asking price. A portfolio-wide haircut can "
-                    "destroy Conservative's already modest return on owner time."
-                ),
-                (
-                    "Run renewal inflation, buyer-acquisition inflation, and reversal "
-                    "losses as separate shocks. A 25% renewal increase costs "
-                    "$750, $3,000, and $4,500 annually, leaving $2,250, "
-                    "$41,000, and $115,500 owner profit. A 50% buyer-acquisition "
-                    "increase costs $500, $4,000, and $6,000, leaving $2,500, "
-                    "$40,000, and $114,000. An incremental unrecovered loss "
-                    "equal to 5% of gross proceeds, beyond the allowance already "
-                    "deducted, leaves $2,000, $36,000, and $105,000. Treat "
-                    "these as isolated sensitivities; a combined downside requires "
-                    "recomputing the waterfall to capture interactions. For affiliate "
-                    "comparison experiments, retain merchant-level reversal rules "
-                    "and attribution windows outside the domain-sale ledger. A "
-                    "pending $40 commission with a contractual clawback remains "
-                    "different from a completed $4,000 domain sale whose transfer "
-                    "conditions were satisfied. Unauthorized trademark bidding can "
-                    "trigger complete commission reversals under program terms, "
-                    "while abusive registrations can threaten the asset itself. "
-                    "Under 15 U.S.C. § 1117(d), an eligible plaintiff may "
-                    "elect statutory damages of $1,000 to $100,000 per domain "
-                    "for qualifying violations of § 1125(d). Those potential "
-                    "losses overwhelm ordinary carrying-cost assumptions. Reject "
-                    "the exposure rather than pretending a small portfolio "
-                    "allowance prices it adequately."
-                ),
-                (
-                    "Turn the sensitivity sheet into purchase rules. Approve a "
-                    "maximum bid only after testing a lower exit price, an "
-                    "additional renewal year, the applicable selling fee, and "
-                    "the next payout delay. For a contemplated $4,000 Base "
-                    "sale, $1,200 basis and $400 selling charges leave $2,400 "
-                    "before portfolio carrying costs and shared operations. A "
-                    "10% price haircut changes proceeds to $3,600 and the "
-                    "modeled selling charge to $360, reducing that spread to "
-                    "$2,040. One extra $12 renewal then reduces it to $2,028; "
-                    "it does not capture the carrying costs of other unsold "
-                    "names, which still belong in the cohort view. Require "
-                    "rights screening and cash coverage independently of that "
-                    "apparently healthy unit spread. Outbound commercial email "
-                    "must satisfy applicable requirements under 15 U.S.C. § 7704, "
-                    "including accurate routing information, required identification "
-                    "and address information, and functioning opt-out handling. "
-                    "Comparison pages must substantiate their claims and disclose "
-                    "material connections where relevant under FTC endorsement "
-                    "guidance. Preserve the dated evidence with the acquisition "
-                    "decision. Increase purchasing velocity only when completed "
-                    "cohorts demonstrate realized contribution and the cash forecast "
-                    "still funds renewals without relying on unsigned offers or "
-                    "unreleased marketplace balances."
-                ),
-            ],
-            "table": {
-                "caption": "Independent Downside Sensitivities Against the Three Canonical Cases",
-                "headers": [
-                    "Isolated stress and expense behavior assumption",
-                    "Conservative resulting economics or cash requirement",
-                    "Base resulting economics or cash requirement",
-                    "Scaled resulting economics or cash requirement",
-                ],
-                "rows": [
-                    [
-                        "Completed sale units decline 20%; only basis and selling charges flex",
-                        "Owner profit falls from $3,000 to $600 annually",
-                        "Owner profit falls from $44,000 to $24,800 annually",
-                        "Owner profit falls from $120,000 to $74,400 annually",
-                    ],
-                    [
-                        "Realized sale prices decline 10%; only percentage selling charges flex",
-                        "Owner profit falls from $3,000 to $1,200 annually",
-                        "Owner profit falls from $44,000 to $29,600 annually",
-                        "Owner profit falls from $120,000 to $92,400 annually",
-                    ],
-                    [
-                        "Annual renewal costs rise 25%; inventory counts remain unchanged",
-                        "Additional $750 expense leaves $2,250 annual owner profit",
-                        "Additional $3,000 expense leaves $41,000 annual owner profit",
-                        "Additional $4,500 expense leaves $115,500 annual owner profit",
-                    ],
-                    [
-                        "Buyer acquisition costs rise 50%; completed sales remain unchanged",
-                        "Additional $500 expense leaves $2,500 annual owner profit",
-                        "Additional $4,000 expense leaves $40,000 annual owner profit",
-                        "Additional $6,000 expense leaves $114,000 annual owner profit",
-                    ],
-                    [
-                        "Incremental unrecovered losses equal 5% of proceeds beyond existing allowances",
-                        "Additional $1,000 loss leaves $2,000 annual owner profit",
-                        "Additional $8,000 loss leaves $36,000 annual owner profit",
-                        "Additional $15,000 loss leaves $105,000 annual owner profit",
-                    ],
-                    [
-                        "Collection timing extends thirty days without additional financing charges",
-                        "Gross pipeline increases $1,644 while modeled profit remains $3,000",
-                        "Gross pipeline increases $13,151 while modeled profit remains $44,000",
-                        "Gross pipeline increases $24,658 while modeled profit remains $120,000",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four facts before releasing acquisition cash",
-                "body": (
-                    "An attractive spread cannot substitute for documented control, "
-                    "transferability, clean buyer acquisition, and funded carrying costs."
-                ),
-                "items": [
-                    "Verify registrant control, transfer restrictions, renewal pricing, and existing disputes against registrar records before paying the seller.",
-                    "Verify trademark screening and the legitimate commercial thesis; reject confusing brand variants whose demand depends on another party's goodwill.",
-                    "Verify each marketplace fee and escrow release condition against the live agreement, then place the expected bank date in the cash schedule.",
-                    "Verify the downside waterfall and ninety-day renewal runway; obtain written merchant permissions before any comparison experiment uses restricted brand terms.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A domain is profitable only when the sale pays for the names that did not sell and the cash survives long enough to collect.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Create a domain-level register separating purchase basis, included registration periods, subsequent renewals, transfer evidence, and completed-sale proceeds.",
-        "Reconcile the Conservative, Base, and Scaled waterfalls to exactly $3,000, $44,000, and $120,000 annual owner profit before changing any assumptions.",
-        "Replace illustrative selling percentages with current Afternic, Sedo, broker, payment, and escrow charges from the agreements governing each transaction.",
-        "Build a thirteen-week cash forecast separating unsold inventory purchases, invoice-to-eligibility days, payout locks, renewal commitments, and owner distributions.",
-        "Run all six independent sensitivities, then recompute a combined downside with explicit variable-cost behavior and dated cash consequences.",
-        "Document trademark screening, outbound-email requirements, affiliate disclosures, and any written TM+ permissions before activating the relevant acquisition channel.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 1125(d) — Cyberpiracy prevention",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Defines key elements of civil anti-cybersquatting liability and remedies relevant to screening mark-dependent domain acquisitions.",
-        },
-        {
-            "title": "15 U.S.C. § 1117(d) — Statutory damages for qualifying cybersquatting violations",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1117",
-            "relevance": "Permits an eligible statutory-damages election of $1,000 to $100,000 per domain name, demonstrating why ordinary renewal reserves cannot absorb abusive acquisition strategies.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes requirements affecting commercial domain-upgrade outreach, including transmission information, identification, postal address information, and opt-out mechanisms.",
-        },
-        {
-            "title": "15 U.S.C. § 45 — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supplies the statutory framework relevant to deceptive comparison claims and misleading representations about domain history, performance, or commercial relationships.",
-        },
-        {
-            "title": "16 CFR § 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": "FTC interpretive guidance addresses disclosure of material connections that may affect the weight or credibility of endorsements on affiliate comparison pages.",
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'hunting-expired-domains-auctions-backorders-drop-catching',
+ 'question_prompt': 'How do investors find, backorder, and win expired domains at GoDaddy, NameJet, '
+                    'SnapNames, Dynadot, and drop-catch auctions?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Hunting Expired Domains: Auctions, Backorders, and Drop Catching',
+ 'subtitle': 'GoDaddy Auctions filters and bargain-bin salvage, ExpiredDomains.net and DomCop screening, '
+             "NameJet/SnapNames backorders, Dynadot's aftermarket, SMS auction alerts, auction bidding "
+             'tactics, live hunts, drop-catch ethics, and what drives expired inventory quality',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Expired-domain hunters converge on one clock and one discipline. GoDaddy's panel "
+                      'maps the cycle: a 10-day auction from day 26, a 5-day declining Closeout from day '
+                      '36, registry release on day 43, and a public drop around day 75 to 80. Filters do '
+                      'the culling. ReviewUP and Scott Redgate strip numbers and hyphens and lock English '
+                      '.com, while Jamie Lewis calls expired lists 99% trash. The street economics are '
+                      'tight: a GoDaddy backorder places a $10 opening bid, credits cost just under $21, '
+                      'SnapNames runs about 79 per domain, and Closeouts bottom at $5. Practitioners split '
+                      'on bidding style. GoDaddy staff push proxy bids, while Affiliate Credo refuses to '
+                      "reveal a maximum. They also split on supply: Drew Rosner credits a registrar's net "
+                      'transfer-ins, not new registrations, for quality drops.',
+ 'key_metrics': [{'label': 'Weekly GoDaddy expiring inventory',
+                  'metric': 'Weekly GoDaddy expiring inventory',
+                  'value': 'Usually over 400,000 expiring domains each week',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Size of the GoDaddy Expired Domains list on expireddomains.net before any '
+                             'filters are applied',
+                  'source': 'ReviewUP ([LqUB5Dr0vrE @ 00:00:14])'},
+                 {'label': 'GoDaddy backorder credit cost',
+                  'metric': 'GoDaddy backorder credit cost',
+                  'value': 'Just under $21 per credit, about $25 of value, tiering down to about $16-17',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A credit bundles the $10 opening bid and a .com registration worth about '
+                             '$15; volume tiers drop about $2 each',
+                  'source': 'GoDaddy ([OM_5VESPepY @ 00:15:23])'},
+                 {'label': 'SnapNames drop-catch fee',
+                  'metric': 'SnapNames drop-catch fee',
+                  'value': 'About 79 per domain',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Rob Kerry's catch fee at SnapNames, with a refund or rollover on a failed "
+                             'catch and an auction for contested names',
+                  'source': 'Ecommerce FM ([N8NOW92hCY4 @ 00:12:10])'},
+                 {'label': 'Expired-domain flip return',
+                  'metric': 'Expired-domain flip return',
+                  'value': '$35,000 on $280 invested',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'getsober.org was built into a starter blog with a Freelancer dev and a '
+                             'ChatGPT logo, then sold on Flippa',
+                  'source': 'Jamie Lewis ([h0uYdy4XIdY @ 00:14:56])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every GoDaddy insider maps the same expiry clock, and operators who skip it '
+                              'bid blind. Joe walks a .com through Expired, Grace, Redemption and a 5-day '
+                              'Pending Delete, with GoDaddy retrying the renewal on day 1, day 5 and day '
+                              '12 [0f-o9p0h6u8 @ 00:06:01]. By Redemption the registrant has been '
+                              'contacted about nine times and faces the renewal plus an $80 fee. That '
+                              'keeps unclaimed inventory flowing into the auction on day 26 [0f-o9p0h6u8 @ '
+                              '00:08:10]. Brian Cowan, Joe Styler and broker Wes lay out the buy-side '
+                              'calendar. Day 26 opens a 10-day expired auction. Day 36 rolls names with no '
+                              'winner and no backorder into a 5-day Closeout, where set prices decline '
+                              'daily. Day 43 releases the name to the registry for about 30 days of '
+                              'Redemption, and the public drop lands around day 75 to 80 [OM_5VESPepY @ '
+                              '00:02:13]. Rob Kerry and Matt Young explain why catchers crowd that drop. '
+                              'An owner who wakes up in Redemption pays about $100 to recover. Roughly 80% '
+                              'of ICANN memberships are used for drop catching, and dropcatch.com owns '
+                              'over 1,200 of them while paying more than $5M a year. Rob openly calls the '
+                              'setup a gray area [N8NOW92hCY4 @ 00:03:31].',
+                              'The hunters agree that raw lists are noise, so the first job is cutting '
+                              'volume hard. ReviewUP opens GoDaddy Expired Domains on expireddomains.net '
+                              'to a list of usually over 400,000 expiring names each week. The channel '
+                              'then switches on no numbers and no hyphens, English dictionary words of 1 '
+                              'to 3 words, the last 7 days, and .com only, which it calls the gold '
+                              'standard [LqUB5Dr0vrE @ 00:00:32]. Scott Redgate runs the same stack from '
+                              'the Domain Search side. A single keyword like plumbing returns over 191,000 '
+                              'results until English and .com are locked in through the Additional tab '
+                              '[rzHCbB8_QqU @ 00:02:08]. Joe at GoDaddy Domain Academy starts from 484,000 '
+                              'unfiltered auction names. Feeding up to 30 space-separated Afternic '
+                              'keywords into ExpiredDomains.net cuts 480K to 80K, and keeping only .com '
+                              'and .org lands at 60K [n3Z47PI6nj0 @ 00:02:19]. Jamie Lewis frames the end '
+                              'state bluntly: expired lists are 99% trash. Sort an Estibot drop list of '
+                              'about 100,000 names by appraisal descending, not alphabetically, and stay '
+                              'hardcore and skeptical about the appraisals that survive [h0uYdy4XIdY @ '
+                              '00:01:00]. The shared rule is that filters do the heavy cutting before a '
+                              'human reads a single name.',
+                              'Consensus also holds that a dropped name arrives with its full history '
+                              'attached. Scott Redgate warns that you inherit the good and the bad. '
+                              'Sorting by backlinks is dangerous because a site may have bought links, '
+                              'been penalized and then been abandoned, so every candidate goes through '
+                              "Ahrefs' free backlink checker before money moves [rzHCbB8_QqU @ 00:04:22]. "
+                              'Rob Kerry lists the red flags he checks in Ahrefs or Moz: keyword anchors '
+                              "like nike max sneakers, foreign links that miss the site's target country, "
+                              'and previously penalized domains. Any rebuild must stay in the same niche, '
+                              'because Google discounts links when the topic changes; red shoes stays red '
+                              'shoes [N8NOW92hCY4 @ 00:13:31]. Joe on the GoDaddy basics hangout applies '
+                              'the same filter from the investor side. Avoid trademarks, typos and '
+                              'squatting, stay inside a niche you know, and favour aged generic names. '
+                              'Pull DomainTools, archive.org and whois history before bidding, since '
+                              'GoDaddy offers no warranty against Google penalties [0f-o9p0h6u8 @ '
+                              "00:18:39]. The Time's Up panel closes the loop. Bids are binding, and a "
+                              "winner who doesn't pay can see the name awarded to the second-highest "
+                              'bidder. Check prior spam and BBB reviews before the first click '
+                              '[OM_5VESPepY @ 00:48:09].'],
+               'table': {'caption': 'Where the expired-domain hunters agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Know the expiry clock cold',
+                                   'Track the day 26 auction, day 36 Closeout, day 43 release, and drop '
+                                   'near day 75',
+                                   'Timing decides whether you bid, buy the closeout, or backorder',
+                                   'GoDaddy ([OM_5VESPepY @ 00:02:13])'],
+                                  ['Cut the list before reading',
+                                   'Strip numbers and hyphens, keep English 1-3 words, .com only',
+                                   'Over 400,000 GoDaddy expiring names land every single week',
+                                   'ReviewUP ([LqUB5Dr0vrE @ 00:00:32])'],
+                                  ['Sort by value, not alphabet',
+                                   'Sort an Estibot drop list of about 100,000 by appraisal, descending',
+                                   'Expired lists are 99% trash, so surface the top first',
+                                   'Jamie Lewis ([h0uYdy4XIdY @ 00:01:00])'],
+                                  ['Verify backlinks before buying',
+                                   "Run candidates through Ahrefs' free backlink checker before any "
+                                   'purchase decision',
+                                   'Sites may have bought links, been penalized, then been abandoned',
+                                   'Scott Redgate ([rzHCbB8_QqU @ 00:04:22])'],
+                                  ['Stay inside the same niche',
+                                   'Rebuild on-topic and link back using brand mentions, not keywords',
+                                   "Google discounts inherited links when the site's topic changes",
+                                   'Ecommerce FM ([N8NOW92hCY4 @ 00:10:45])'],
+                                  ['Avoid trademark and typo names',
+                                   'Skip trademarks, typos and squatting; favour aged generic names '
+                                   'instead',
+                                   'Bids are binding and GoDaddy offers no Google penalty warranty',
+                                   'GoDaddy ([0f-o9p0h6u8 @ 00:18:39])'],
+                                  ['Start small and cheap',
+                                   'Buy closeouts at 20 bucks or less; expired names land under $50',
+                                   'A low barrier to entry compared with stocks or real estate',
+                                   'GoDaddy ([0f-o9p0h6u8 @ 00:38:18])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["GoDaddy's backorder is the cheapest seat at the table, and the Time's Up "
+                              'panel priced every piece of it. A backorder auto-places a $10 opening bid '
+                              'that bundles the bid and the registration. The speaker first said $12, then '
+                              'corrected to $10 [OM_5VESPepY @ 00:04:07]. A credit costs just under $21. A '
+                              '.com renewal runs about $15 and .net and .org cost more, so the panel '
+                              'frames a credit as roughly $25 of value [OM_5VESPepY @ 00:15:23]. Volume '
+                              'tiers of 1-19, 20-50, 50-100 and 100-plus each shave about $2, bottoming '
+                              'near $16-17. In the worked example, a $150 win normally costs $165. With a '
+                              'backorder it costs $140 plus about $17 upfront, or $157 total, and credits '
+                              'are reassignable when a catch fails [OM_5VESPepY @ 00:27:39]. Joe on the '
+                              'basics hangout prices the Closeout as a Dutch auction. Buy-now starts at '
+                              '$11 and drops $1 a day through 10, 9 and 8, then falls to $5 on the final '
+                              'day. The original owner can still renew until day 42, which triggers an '
+                              'auto-refund, though Joe says that is rare. A winner sees the name in their '
+                              'account on day 43 [0f-o9p0h6u8 @ 00:09:23].',
+                              'Outside GoDaddy, the catchers compete on access rather than price. Rob '
+                              'Kerry uses SnapNames, which shares ownership with NameJet. He pays about 79 '
+                              'per domain, gets a refund or rollover if the catch fails, and goes to '
+                              'auction whenever a name is contested [N8NOW92hCY4 @ 00:12:10]. DomCop walks '
+                              'both interfaces. SnapNames runs search, Back Order, cart and Place Order, '
+                              'and pending orders stay editable until acquisition. NameJet requires an '
+                              'account, offers Last Chance and Drop sections, and opens bidding at a 69 '
+                              'minimum. On both, a lone backorder wins at the minimum and multiple '
+                              "backorders trigger an auction [fVAMuCrwtUw @ 00:01:26]. Wes on the Time's "
+                              'Up panel stacks registrars. A Wild West Domains backorder gets no auction '
+                              'alert and allows only one holder per name, but a WWD catch goes straight to '
+                              'that holder. A GoDaddy catch instead triggers a 3-day private auction among '
+                              'backorder holders. Because the first backorder placed anywhere gets the '
+                              'first bid, Wes places backorders at both [OM_5VESPepY @ 00:31:52]. cssfx '
+                              'flags Dynadot as the overlooked lane. It sits outside NameJet and SnapNames '
+                              'and holds exclusive pending-delete names in a less saturated marketplace. '
+                              'It also offers a 120-hour deletion grace period for about $2 with a refund, '
+                              'and its prepaid credits feed Snatcher drop-catching [zN6FKHG-ORs @ '
+                              '00:00:29].',
+                              "Closing mechanics decide who actually walks away with the name. The Time's "
+                              'Up panel pushes proxy bids: a $7,000 proxy facing bids of $10 and then $15 '
+                              'climbs only to $20. A bid in the final 5 minutes adds 5 minutes, but only '
+                              'when the lead changes, as in a $35 to $40 to $45 sequence [OM_5VESPepY @ '
+                              '00:24:01]. Emailed outbid notices can lag, so the same panel tells bidders '
+                              'to stay logged in at auction end rather than trust the inbox [OM_5VESPepY @ '
+                              '00:29:43]. Affiliate Credo runs the opposite discipline. With eight years '
+                              'in, a 250-domain PBN behind them, and bids now up to $5,000 for 3-10x '
+                              'returns, they never show a maximum, skip auto-bids, and bid manually in the '
+                              'final minutes [9vU7vtxcYuc @ 00:06:11]. Jamie Lewis monetizes at both ends. '
+                              'The quick grabber buys at $10, lists GoDaddy-to-GoDaddy at $100, and lets '
+                              'drop-list browsers buy it. For real upside, the getsober.org play listed '
+                              'the name at about $1,000 for 48 hours. It then hired a Freelancer dev, made '
+                              'a ChatGPT logo, and built a starter blog. The blog sold on Flippa through a '
+                              '30-day auction, returning $35,000 on $280 invested [h0uYdy4XIdY @ '
+                              '00:07:37].'],
+               'table': {'caption': 'Street mechanics, tools and unit economics by acquisition lane',
+                         'headers': ['Mechanic', 'Exact Numbers', 'Operator Move', 'Expert Source'],
+                         'rows': [['GoDaddy backorder placement',
+                                   '$10 opening bid; credit just under $21; tiers drop about $2',
+                                   'Place it early, because GoDaddy hides backorder counts and shows one '
+                                   'bid',
+                                   'GoDaddy ([OM_5VESPepY @ 00:25:44])'],
+                                  ['GoDaddy Closeout Dutch auction',
+                                   'Buy-now starts at $11, drops $1 daily, $5 on the final day',
+                                   "Grab bargain-bin names, watching the original owner's day-42 renewal "
+                                   'cutoff',
+                                   'GoDaddy ([0f-o9p0h6u8 @ 00:09:23])'],
+                                  ['Bargain bin salvage buy',
+                                   '$5 buy-now plus about $8 renewal with a coupon, roughly $13 total',
+                                   'Sort by GoDaddy valuation, skip trademarks, check exact search volume',
+                                   'Rookie Domainer ([Bi-_Gko1m0g @ 00:03:42])'],
+                                  ['NameJet and SnapNames backorders',
+                                   'NameJet bidding opens at a 69 minimum per selection',
+                                   'A single backorder wins at minimum; multiple backorders trigger an '
+                                   'auction',
+                                   'DomCop ([fVAMuCrwtUw @ 00:01:26])'],
+                                  ['Dynadot grace period and credits',
+                                   '120-hour deletion grace period for about $2 with refund',
+                                   'Use prepaid credits for Snatcher drop-catching on exclusive '
+                                   'pending-delete names',
+                                   'cssfx ([zN6FKHG-ORs @ 00:00:15])'],
+                                  ['Afternic keyword prefilter',
+                                   'Up to 30 keywords cut 480K names down to 80K',
+                                   'Keep .com and .org, then sort by bids, valuation and age',
+                                   'GoDaddy Domain Academy ([n3Z47PI6nj0 @ 00:02:19])'],
+                                  ['DomCop metric floor',
+                                   'PageRank 2, Domain Authority 30, Trust Flow 15, $200 max price',
+                                   'Pick GoDaddy only, drop offer listings, then sort by Trust Flow',
+                                   'DomCop ([r5xkDG4-mvo @ 00:00:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Hunters Actually Use',
+                           'body': 'Small timing and alert moves that separate a caught name from a missed '
+                                   'one.',
+                           'items': ['Check the drop date on the freewhois.com Status tab, and never place '
+                                     'a drop backorder less than 2 hours before the drop [GoDaddy — '
+                                     'OM_5VESPepY @ 00:22:17]',
+                                     'Set alerts for auction start, registrant changes and nameserver '
+                                     'changes; a nameserver change can signal a seller newly open to '
+                                     'offers [GoDaddy — OM_5VESPepY @ 00:11:46]',
+                                     'Use the watch list instead of bidding, then on Ninja place the '
+                                     'backorder at the last moment [Affiliate Credo — 9vU7vtxcYuc @ '
+                                     '00:04:52]',
+                                     'Enable GoDaddy auction alerts under Domains, Auctions for domains, '
+                                     'Settings, then confirm the setting saved and your phone info is '
+                                     'current [Tutorialjake — P82q-S2X978 @ 00:01:54]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Filter the raw list',
+                              'action': 'Cut GoDaddy expired inventory down to brandable .com candidates.',
+                              'detail': 'Open GoDaddy Expired Domains on expireddomains.net. Enable no '
+                                        'numbers and no hyphens, English 1-3 words, last 7 days and .com '
+                                        'only. Sort by valuation, and optionally show zero-bid names only '
+                                        '[ReviewUP — LqUB5Dr0vrE @ 00:01:41]'},
+                             {'step': 2,
+                              'title': 'Vet history and links',
+                              'action': 'Kill any name with a toxic past before committing a bid.',
+                              'detail': 'Run the backlink profile through Ahrefs or Moz. Reject keyword '
+                                        'anchors, foreign links that miss the target country, and '
+                                        'previously penalized domains [Ecommerce FM — N8NOW92hCY4 @ '
+                                        '00:13:31]'},
+                             {'step': 3,
+                              'title': 'Lock the backorder early at both houses',
+                              'action': 'Get into the queue before competitors do.',
+                              'detail': 'Join the pre-release queue at the registrar holding the name, and '
+                                        'place backorders at both GoDaddy and Wild West Domains. File as '
+                                        'early as possible, since the first backorder placed anywhere gets '
+                                        'the first bid [GoDaddy — OM_5VESPepY @ 00:34:52]'},
+                             {'step': 4,
+                              'title': 'Close the auction live',
+                              'action': 'Be present at auction end and control your bid exposure.',
+                              'detail': 'Stay logged in at auction end, because emailed outbid notices '
+                                        'lag. A final-5-minute bid extends the clock only if the lead '
+                                        'changes [GoDaddy — OM_5VESPepY @ 00:30:33]. Keep your maximum '
+                                        'hidden by bidding manually in the closing minutes [Affiliate '
+                                        'Credo — 9vU7vtxcYuc @ 00:07:09]'}]},
+              {'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["GoDaddy's aftermarket team and Affiliate Credo run opposite bidding "
+                              'doctrines. On the GoDaddy Hangout, the team pushes proxy bids: a $7,000 '
+                              'proxy sitting against rival bids of $10 and $15 only climbs to $20, and '
+                              'they tell buyers to place backorders as early as possible because GoDaddy '
+                              'hides backorder counts and shows a single bid [OM_5VESPepY @ 00:24:01]. '
+                              'Affiliate Credo, eight years into expired domains and now bidding up to '
+                              '$5,000 per name, refuses to reveal a ceiling at all: no visible maximum, no '
+                              'auto-bids, watch-list the name instead of bidding, and on Ninja drop the '
+                              'backorder in at the last moment [9vU7vtxcYuc @ 00:06:11]. His third tactic '
+                              'is manual bidding in the final minutes, paired with tracking the visible '
+                              "usernames of repeat competitors [9vU7vtxcYuc @ 00:07:09]. GoDaddy's basics "
+                              'session frames that same last-minute crowd as snipers and points to the '
+                              'five-minute auto-extension as the counterweight [0f-o9p0h6u8 @ 00:29:36]. '
+                              'The practical split is about information leakage: the proxy camp trusts the '
+                              'auction engine to defend a hidden ceiling, while the manual camp treats any '
+                              'early bid as a signal that pulls rivals onto the name. Pick one doctrine '
+                              'per auction and execute it cleanly, because blending both halfway leaks '
+                              'your ceiling and still loses the final-minute fight.',
+                              'Practitioners split hard on what to filter for before a single bid. '
+                              "DomCop's Sophia runs a metrics-first screen on GoDaddy inventory: minimum "
+                              'PageRank 2, Domain Authority 30, Majestic Trust Flow 15, a $200 price cap, '
+                              'offer and counter-offer listings stripped out as a waste of time, and '
+                              'results re-sorted by Trust Flow [r5xkDG4-mvo @ 00:00:42]. ReviewUP skips '
+                              'link metrics and filters for brandability on expireddomains.net: no '
+                              'numbers, no hyphens, English dictionary words of one to three words, last '
+                              'seven days, .com only, then sort by valuation, optionally narrowed to '
+                              "zero-bid names [LqUB5Dr0vrE @ 00:00:50]. GoDaddy Domain Academy's Joe takes "
+                              'a third route, feeding up to 30 space-separated Afternic keywords into '
+                              'ExpiredDomains.net to cut 480,000 names to 80,000, and leaning on '
+                              "starts-with 'the' because it is the top-selling keyword [n3Z47PI6nj0 @ "
+                              '00:02:19]. Jamie Lewis sorts an Estibot drop list of roughly 100,000 names '
+                              'by appraisal descending but insists on being hardcore and skeptical of '
+                              'every appraisal, since catlitter.com showed $15,000 and was already taken '
+                              '[h0uYdy4XIdY @ 00:05:36]. The SEO buyer, the brandable flipper, and the '
+                              'keyword-data hunter are working from different filters because they are '
+                              'selling to different end buyers, so the screen has to match the exit you '
+                              'already have in mind.',
+                              'The DomainSherpa panel openly fought over where quality inventory still '
+                              'comes from. JT worried that the new-registration pipeline is drying up, and '
+                              "Drew Rosner rejected the premise: over 80% of his firm's sales are domains "
+                              'registered before 1997 or 1998, new registrations carry no liquid value, '
+                              'and the big GoDaddy auction prices go to names 20 to 35 years old '
+                              "[iiHOxt6I0u0 @ 00:48:14]. Drew's real driver is a registrar's net "
+                              'transfer-ins, which is how GoDaddy went from garbage to the best drops '
+                              "while NetSol, eNom and Moniker bled transfers; Logan Flat's counter is that "
+                              'gems remain but you have to sift harder [iiHOxt6I0u0 @ 00:54:06]. The same '
+                              'table split on .ai. Drew called wholesale .ai pricing absurd and said '
+                              'paying $10,000 to $15,000 at auction while expecting $150,000 to $250,000 '
+                              'resale is smoking crack [iiHOxt6I0u0 @ 00:29:37]. Mark Lavine, on the same '
+                              'panel, had just sold a hand-registered .ai from July 2025 for $23,000, and '
+                              'NamesBrun is holding ai.green, which cost $1,100 to register and renew, at '
+                              'a $99,000 asking price on Atom [tVPy99Y1MsA @ 00:02:54]. Exit posture split '
+                              'too: Drew paid a $20,000 ask on al.org rather than risk a counteroffer, '
+                              "while Logan turned down $50,000 from Drew's side on casino.gg and still "
+                              'asks six figures.'],
+               'table': {'caption': 'Competing expired-domain playbooks, side by side, as the '
+                                    'practitioners run them',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How to bid once a name you want goes live',
+                                   'Set a hidden proxy ceiling early; a $7,000 proxy against $10 and $15 '
+                                   'bids only reached $20',
+                                   'Never show a maximum or auto-bid; watch-list the name and bid manually '
+                                   'in the last minutes',
+                                   'GoDaddy ([OM_5VESPepY @ 00:24:01]); Affiliate Credo ([9vU7vtxcYuc @ '
+                                   '00:06:11])'],
+                                  ['When to place a backorder on a dropping name',
+                                   'Place it as early as possible, and never less than 2 hours before the '
+                                   'drop',
+                                   'Watch-list instead of bidding, then drop the Ninja backorder in at the '
+                                   'last moment',
+                                   'GoDaddy ([OM_5VESPepY @ 00:22:17]); Affiliate Credo ([9vU7vtxcYuc @ '
+                                   '00:04:52])'],
+                                  ['Primary filter used to cut the expired list down',
+                                   'Link metrics first: PageRank 2, Domain Authority 30, Trust Flow 15, '
+                                   'and a $200 price cap',
+                                   'Brandability or keyword data first: no numbers or hyphens, 1-3 English '
+                                   "words, .com, starts-with 'the'",
+                                   'DomCop ([r5xkDG4-mvo @ 00:00:42]); ReviewUP ([LqUB5Dr0vrE @ '
+                                   '00:00:32]); GoDaddy Domain Academy ([n3Z47PI6nj0 @ 00:05:48])'],
+                                  ["What to do with an expired domain's inherited link equity",
+                                   'Rebuild on-topic in the same niche and link back with brand mentions; '
+                                   '301 redirects get spammy if overdone',
+                                   'Treat it as a side tool, never a primary strategy, because you inherit '
+                                   'the good and the bad',
+                                   'Ecommerce FM ([N8NOW92hCY4 @ 00:08:42]); Scott Redgate ([rzHCbB8_QqU @ '
+                                   '00:00:16])'],
+                                  ['Which backorder venues to stack for a contested name',
+                                   'Backorder at both GoDaddy and Wild West Domains, since the first '
+                                   'backorder placed gets the first bid',
+                                   'NameJet at a 69 minimum or SnapNames, plus Dynadot for exclusive '
+                                   'pending-delete names in a less saturated market',
+                                   'GoDaddy ([OM_5VESPepY @ 00:34:52]); DomCop ([fVAMuCrwtUw @ 00:02:00]); '
+                                   'cssfx ([zN6FKHG-ORs @ 00:00:29])'],
+                                  ['Where quality auction inventory actually comes from now',
+                                   'Aged pre-1998 names and registrars with net transfer-ins; new '
+                                   'registrations carry no liquid value',
+                                   'Gems still surface in the drops, but you have to sift harder to find '
+                                   'them',
+                                   'domainsherpa ([iiHOxt6I0u0 @ 00:50:13]); domainsherpa ([iiHOxt6I0u0 @ '
+                                   '00:54:06])'],
+                                  ['How fast to flip a cheap expired name after winning',
+                                   'Quick grabber: buy at $10 and list GoDaddy-to-GoDaddy at $100 for '
+                                   'drop-list browsers',
+                                   'Build it out: logo, starter blog, 30-day Flippa auction, $35,000 on '
+                                   '$280 invested',
+                                   'Jamie Lewis ([h0uYdy4XIdY @ 00:07:37]); Jamie Lewis ([h0uYdy4XIdY @ '
+                                   '00:14:56])']]}},
+              {'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The firsthand losses start with inherited baggage. Scott Redgate warns that '
+                              'sorting expireddomains.net by backlinks is a trap, because a site may have '
+                              'bought links, been penalized, and then been abandoned, so every candidate '
+                              "goes through Ahrefs' free backlink checker before purchase [rzHCbB8_QqU @ "
+                              "00:04:22]. Rob Kerry's red flags are keyword-stuffed anchors such as 'nike "
+                              "max sneakers' and foreign links that do not match the site's target "
+                              'country, and he adds that Google discounts the links the moment the topic '
+                              'changes, so red shoes has to stay red shoes [N8NOW92hCY4 @ 00:13:31]. '
+                              "GoDaddy's team states there is no warranty against Google penalties on "
+                              'auction names; buyers check sandbox and fail-list status through NamePros '
+                              'or Bodis, and an end user can work a name out of the sandbox [0f-o9p0h6u8 @ '
+                              '00:41:33]. Trademark exposure is the second silent killer. GoDaddy tells '
+                              'buyers to avoid trademarks, typos and squatting outright, and Rookie '
+                              "Domainer's Herb sorts the bargain bin by GoDaddy valuation and skips "
+                              'trademark names on the way down the list [Bi-_Gko1m0g @ 00:01:38]. Run both '
+                              "screens on every name before the bid, because GoDaddy's Hangout team is "
+                              'clear that a placed bid is binding and the due diligence, including prior '
+                              'spam and BBB reviews, has to come first.',
+                              "The auction plumbing burns operators who trust notifications. GoDaddy's "
+                              'Hangout team says email outbid notices can lag, so you stay logged in at '
+                              'auction end, and the five-minute extension only fires when the lead '
+                              'actually changes, as in their $35 to $40 to $45 example [OM_5VESPepY @ '
+                              '00:29:43]. Venue choice is the next trap: a GoDaddy backorder on a name '
+                              'expiring at another registrar only reaches the public drop, where there are '
+                              'hundreds and hundreds of tries, the Ticketmaster problem, so you need a '
+                              'spot in the pre-release queue at whichever registrar holds the name '
+                              '[OM_5VESPepY @ 00:14:40]. Wild West Domains backorders also send no auction '
+                              'alert, and GoDaddy warns against placing a drop backorder less than two '
+                              'hours out. Closeout buyers face a reversal risk: the original owner can '
+                              'renew until day 42, which auto-refunds the winner, though GoDaddy calls it '
+                              "rare [0f-o9p0h6u8 @ 00:10:03]. Rookie Domainer's Herb reports the same "
+                              'thing in practice, with none of his seven or eight bargain-bin buys renewed '
+                              'out from under him [Bi-_Gko1m0g @ 00:01:07]. Failed catches are recoverable '
+                              'because GoDaddy credits are reassignable and SnapNames refunds or rolls '
+                              'over the fee, and a winner who fails to pay sees the name handed to the '
+                              'second-highest bidder.',
+                              'The economics checks are where appraisals collapse. Jamie Lewis treats '
+                              'appraisal numbers as hostile until proven: Maxwell.net showed $2,000 and '
+                              'expose.info $1,000, but .info yields about 1% of what the same .com would, '
+                              'and the high-scoring $12,000 .co only rated that way because it used to be '
+                              'a website with past traffic [h0uYdy4XIdY @ 00:05:14]. NamesBrun hit the '
+                              'same wall live, flagging aimed.co as proof that valuations are not always '
+                              'true while watching blackstrawberry.com climb to 29 bids [tVPy99Y1MsA @ '
+                              '00:29:28]. Holding costs and stubborn pricing compound the error on the '
+                              'exit side. Logan Flat bought podconnect.com for $200 in 2020, priced it '
+                              'higher for five years with no buyer, and only sold after cutting it to '
+                              '$4,995, while Drew Rosner warns most owners reject the best offer they will '
+                              'get that decade [iiHOxt6I0u0 @ 00:33:03]. On the acquisition side, run the '
+                              "backorder math before you bid: GoDaddy's worked example shows a $150 win "
+                              'costing $165 normally, or $140 plus about $17 upfront for $157 total with a '
+                              'backorder credit, and credits fall about $2 per volume tier toward $16 to '
+                              '$17 [OM_5VESPepY @ 00:27:39]. Redemption is the expensive lane, at the '
+                              'renewal plus an $80 fee on GoDaddy and about $100 per Rob Kerry on '
+                              'Ecommerce FM.'],
+               'table': {'caption': 'Firsthand traps reported by the practitioners, with the fix each one '
+                                    'teaches',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Evidence',
+                                     'Countermeasure',
+                                     'Expert Source'],
+                         'rows': [['Buying a penalized link profile disguised as authority',
+                                   'Sites that bought links, got penalized and were abandoned surface when '
+                                   'sorting by backlinks',
+                                   "Verify every backlink profile in Ahrefs' free backlink checker before "
+                                   'buying the name',
+                                   'Scott Redgate ([rzHCbB8_QqU @ 00:04:22])'],
+                                  ['Off-topic rebuild that kills the inherited link value',
+                                   'Google discounts links when the topic changes; keyword anchors and '
+                                   'foreign links are red flags',
+                                   'Stay in the same niche and link back with brand mentions, not keywords',
+                                   'Ecommerce FM ([N8NOW92hCY4 @ 00:10:45])'],
+                                  ['Losing the lead because an outbid email arrived late',
+                                   'Email outbid notices can lag, and the extension only adds 5 minutes '
+                                   'when the lead changes',
+                                   'Stay logged in at auction end and run Investor app outbid push '
+                                   'notifications',
+                                   'GoDaddy ([OM_5VESPepY @ 00:29:43]); GoDaddy ([0f-o9p0h6u8 @ '
+                                   '00:30:08])'],
+                                  ['Backordering at the wrong registrar for the drop',
+                                   'A GoDaddy backorder on a name held elsewhere only reaches the drop '
+                                   'against hundreds of tries',
+                                   'Get into the pre-release queue at the holding registrar and backorder '
+                                   'at both GoDaddy and WWD',
+                                   'GoDaddy ([OM_5VESPepY @ 00:14:40])'],
+                                  ['Trusting appraisals and valuations at face value',
+                                   'catlitter.com appraised at $15,000 was already taken; aimed.co showed '
+                                   'valuations are not always true',
+                                   'Stay hardcore and skeptical, and sort for real bids and keyword demand '
+                                   'instead',
+                                   'Jamie Lewis ([h0uYdy4XIdY @ 00:02:55]); NamesBrun ([tVPy99Y1MsA @ '
+                                   '00:29:28])'],
+                                  ['Overpaying for .ai at auction on resale hopes',
+                                   'Wholesale .ai hit about 10% of .com retail, some near parity, which '
+                                   'Drew Rosner calls absurd',
+                                   'Refuse to pay $10,000 to $15,000 at auction expecting $150,000 to '
+                                   '$250,000 resale',
+                                   'domainsherpa ([iiHOxt6I0u0 @ 00:26:27])'],
+                                  ['Overpricing and holding a name for years unsold',
+                                   'podconnect.com sat unsold for 5 years until a cut to $4,995 closed the '
+                                   'sale',
+                                   'Reprice stale inventory, since most owners reject the best offer they '
+                                   'get that decade',
+                                   'domainsherpa ([iiHOxt6I0u0 @ 00:33:03]); domainsherpa ([iiHOxt6I0u0 @ '
+                                   '00:24:00])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Bid Kill Switch',
+                           'body': 'Clear all four checks before any bid or backorder goes in. Bids are '
+                                   'binding, extensions only fire on a lead change, and a non-paying '
+                                   'winner hands the name to the second-highest bidder.',
+                           'items': ['Backlink profile cleared in Ahrefs or Moz with no keyword anchors, '
+                                     'no foreign links off the target country, and no prior penalty '
+                                     'history [Ecommerce FM — N8NOW92hCY4 @ 00:13:31].',
+                                     'Trademark, typo and squatting check passed, plus DomainTools TLD '
+                                     'variants, archive.org and whois history reviewed [GoDaddy — '
+                                     '0f-o9p0h6u8 @ 00:23:48].',
+                                     'Backorder placed early at the registrar holding the name and never '
+                                     'less than 2 hours before the drop, with the drop date confirmed on '
+                                     'the WHOIS Status tab [GoDaddy — OM_5VESPepY @ 00:22:17].',
+                                     'Maximum price fixed in advance and kept off the board: no visible '
+                                     'maximum, no auto-bids, and no chasing obviously great domains '
+                                     'without a $5,000 budget [Affiliate Credo — 9vU7vtxcYuc @ '
+                                     '00:07:48].']}}],
+ 'pull_quote': '"Our business is driven by the pain, suffering and misery of others." — domainsherpa '
+               '(iiHOxt6I0u0 @ 00:47:36).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Enable GoDaddy auction alerts via Domains, Auctions for domains, Settings, Enable '
+                      'alerts, then confirm the setting saved and your phone and account info are current '
+                      '[Tutorialjake — P82q-S2X978 @ 00:01:54].',
+                      'Build a DomCop search with GoDaddy as the only source, offer/counter-offer listings '
+                      'unchecked, PageRank 2, DA 30, Trust Flow 15 and a $200 cap, then sort by Trust Flow '
+                      '[DomCop — r5xkDG4-mvo @ 00:00:42].',
+                      'Feed up to 30 space-separated Afternic keywords into ExpiredDomains.net, keep .com '
+                      'and .org, and sort by bids, valuation, price, age or registrations [GoDaddy Domain '
+                      'Academy — n3Z47PI6nj0 @ 00:02:19].',
+                      'Check the drop date on the WHOIS Status tab, place backorders at both GoDaddy and '
+                      'Wild West Domains, and never place a drop backorder less than 2 hours out [GoDaddy '
+                      '— OM_5VESPepY @ 00:34:52].',
+                      "Run each candidate through Ahrefs' free backlink checker and reject bought-link, "
+                      'penalized and abandoned profiles [Scott Redgate — rzHCbB8_QqU @ 00:04:22].',
+                      'Work the closeout bargain bin by GoDaddy valuation, skip trademark names, and '
+                      'confirm exact-match search volume in the Google Keyword Tool before a $5 buy-now '
+                      '[Rookie Domainer — Bi-_Gko1m0g @ 00:02:30].'],
+ 'statutory_citations': [{'title': 'GoDaddy — Time’s Up: Acquiring Expired Domains | GoDaddy Hangout '
+                                   '[00:27:39]',
+                          'url': 'https://www.youtube.com/watch?v=OM_5VESPepY&t=1659s',
+                          'relevance': 'Primary practitioner testimony on backorder credit economics, the '
+                                       'GoDaddy expiry lifecycle, and drop-catching venue strategy.'},
+                         {'title': 'domainsherpa — Expired Domain Auctions: What Drives Quality Inventory? '
+                                   '| DomainSherpa Podcast (March 5, 2026) [00:48:14]',
+                          'url': 'https://www.youtube.com/watch?v=iiHOxt6I0u0&t=2894s',
+                          'relevance': 'Primary practitioner testimony on aged-domain inventory, registrar '
+                                       'transfer-ins, and .ai overpricing risk.'},
+                         {'title': 'Affiliate Credo — 5 Winning Tactics at Expired Domain Auctions 📈 '
+                                   '[00:06:11]',
+                          'url': 'https://www.youtube.com/watch?v=9vU7vtxcYuc&t=371s',
+                          'relevance': 'Primary practitioner testimony on manual last-minute bidding, '
+                                       'hidden maximums, and competitor tracking.'},
+                         {'title': 'Jamie Lewis — Expired Domains Are 99% Trash — Here’s How to Find the '
+                                   'Gold #jamielewis [00:14:56]',
+                          'url': 'https://www.youtube.com/watch?v=h0uYdy4XIdY&t=896s',
+                          'relevance': 'Primary practitioner testimony on appraisal skepticism and the '
+                                       'build-and-flip playbook returning $35,000 on $280.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'r5xkDG4-mvo',
+                       'title': 'Find awesome expired domains at GoDaddy Auctions using DomCop',
+                       'channel': 'DomCop',
+                       'author': 'DomCop',
+                       'text': 'Choose the minimum metrics that you want the domain to have; for this '
+                               'video we will find domains with the minimum page rank of two, a domain '
+                               'authority of 30 and a Majestic SEO trust flow of 15.',
+                       'tip': 'Choose the minimum metrics that you want the domain to have; for this video '
+                              'we will find domains with the minimum page rank of two, a domain authority '
+                              'of 30 and a Majestic SEO trust flow of 15.',
+                       'timestamp': 42,
+                       'timestamp_seconds': 42,
+                       'timestamp_label': '[00:00:42]',
+                       'url': 'https://www.youtube.com/watch?v=r5xkDG4-mvo&t=42s',
+                       'markdown': '[00:00:42](https://www.youtube.com/watch?v=r5xkDG4-mvo&t=42s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LqUB5Dr0vrE',
+                       'title': 'How to Find Cheap and Good  Expired Domains on GoDaddy (Quick & Easy '
+                                'Domain Flipping Tutorial)',
+                       'channel': 'ReviewUP',
+                       'author': 'ReviewUP',
+                       'text': "You'll see a massive list, usually over 400,000 expiring domains each "
+                               'week.',
+                       'tip': "You'll see a massive list, usually over 400,000 expiring domains each week.",
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=LqUB5Dr0vrE&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=LqUB5Dr0vrE&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OM_5VESPepY',
+                       'title': 'Time’s Up: Acquiring Expired Domains | GoDaddy Hangout',
+                       'channel': 'GoDaddy',
+                       'author': 'GoDaddy',
+                       'text': 'A $7,000 proxy bid sitting against bids of $10 and $15 only bids up to '
+                               '$20.',
+                       'tip': 'A $7,000 proxy bid sitting against bids of $10 and $15 only bids up to $20.',
+                       'timestamp': 1441,
+                       'timestamp_seconds': 1441,
+                       'timestamp_label': '[00:24:01]',
+                       'url': 'https://www.youtube.com/watch?v=OM_5VESPepY&t=1441s',
+                       'markdown': '[00:24:01](https://www.youtube.com/watch?v=OM_5VESPepY&t=1441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OM_5VESPepY',
+                       'title': 'Time’s Up: Acquiring Expired Domains | GoDaddy Hangout',
+                       'channel': 'GoDaddy',
+                       'author': 'GoDaddy',
+                       'text': "Check the Status tab for the drop date, and don't place a drop backorder "
+                               'less than 2 hours before the drop.',
+                       'tip': "Check the Status tab for the drop date, and don't place a drop backorder "
+                              'less than 2 hours before the drop.',
+                       'timestamp': 1337,
+                       'timestamp_seconds': 1337,
+                       'timestamp_label': '[00:22:17]',
+                       'url': 'https://www.youtube.com/watch?v=OM_5VESPepY&t=1337s',
+                       'markdown': '[00:22:17](https://www.youtube.com/watch?v=OM_5VESPepY&t=1337s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N8NOW92hCY4',
+                       'title': 'Expired Domains, SEO & Drop Catching',
+                       'channel': 'Ecommerce FM',
+                       'author': 'Ecommerce FM',
+                       'text': 'A 301 redirect is fast but spammy if overdone; rebuilding on-topic and '
+                               'linking back with brand mentions is better.',
+                       'tip': 'A 301 redirect is fast but spammy if overdone; rebuilding on-topic and '
+                              'linking back with brand mentions is better.',
+                       'timestamp': 522,
+                       'timestamp_seconds': 522,
+                       'timestamp_label': '[00:08:42]',
+                       'url': 'https://www.youtube.com/watch?v=N8NOW92hCY4&t=522s',
+                       'markdown': '[00:08:42](https://www.youtube.com/watch?v=N8NOW92hCY4&t=522s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rzHCbB8_QqU',
+                       'title': 'How to Buy Expired Domains (but should you really?)',
+                       'channel': 'Scott Redgate',
+                       'author': 'Scott Redgate',
+                       'text': 'If done correctly, this can be a powerful tool in your toolkit to drive '
+                               'quicker results in your digital marketing efforts.',
+                       'tip': 'If done correctly, this can be a powerful tool in your toolkit to drive '
+                              'quicker results in your digital marketing efforts.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=rzHCbB8_QqU&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=rzHCbB8_QqU&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0f-o9p0h6u8',
+                       'title': 'Learning the Basics of Buying Expired Domains | GoDaddy Hangout',
+                       'channel': 'GoDaddy',
+                       'author': 'GoDaddy',
+                       'text': 'The closeout buy-now starts at $11 and drops $1 a day, then $5 on the '
+                               'final day.',
+                       'tip': 'The closeout buy-now starts at $11 and drops $1 a day, then $5 on the final '
+                              'day.',
+                       'timestamp': 563,
+                       'timestamp_seconds': 563,
+                       'timestamp_label': '[00:09:23]',
+                       'url': 'https://www.youtube.com/watch?v=0f-o9p0h6u8&t=563s',
+                       'markdown': '[00:09:23](https://www.youtube.com/watch?v=0f-o9p0h6u8&t=563s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n3Z47PI6nj0',
+                       'title': 'The Best Way to Filter and Find Profitable Expired Domains (Keyword Data '
+                                'in Action)',
+                       'channel': 'GoDaddy Domain Academy',
+                       'author': 'GoDaddy Domain Academy',
+                       'text': "Right now, we've got 484,000 names for sale on GoDaddy's auctions.",
+                       'tip': "Right now, we've got 484,000 names for sale on GoDaddy's auctions.",
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=n3Z47PI6nj0&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=n3Z47PI6nj0&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'h0uYdy4XIdY',
+                       'title': 'Expired Domains Are 99% Trash — Here’s How to Find the Gold #jamielewis',
+                       'channel': 'Jamie Lewis',
+                       'author': 'Jamie Lewis',
+                       'text': 'So your total amount invested is $280 and you made $35,000.',
+                       'tip': 'So your total amount invested is $280 and you made $35,000.',
+                       'timestamp': 896,
+                       'timestamp_seconds': 896,
+                       'timestamp_label': '[00:14:56]',
+                       'url': 'https://www.youtube.com/watch?v=h0uYdy4XIdY&t=896s',
+                       'markdown': '[00:14:56](https://www.youtube.com/watch?v=h0uYdy4XIdY&t=896s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Bi-_Gko1m0g',
+                       'title': 'Salvage Domains from the GoDaddy Auctions Bargain Bin',
+                       'channel': 'Rookie Domainer',
+                       'author': 'Rookie Domainer',
+                       'text': 'The cost is a $5 buy-now plus about $8 renewal with a coupon, roughly $13 '
+                               'total.',
+                       'tip': 'The cost is a $5 buy-now plus about $8 renewal with a coupon, roughly $13 '
+                              'total.',
+                       'timestamp': 222,
+                       'timestamp_seconds': 222,
+                       'timestamp_label': '[00:03:42]',
+                       'url': 'https://www.youtube.com/watch?v=Bi-_Gko1m0g&t=222s',
+                       'markdown': '[00:03:42](https://www.youtube.com/watch?v=Bi-_Gko1m0g&t=222s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fVAMuCrwtUw',
+                       'title': 'Domcop - How to Backorder Domains w Namejet and SnapNames',
+                       'channel': 'DomCop',
+                       'author': 'DomCop',
+                       'text': 'On both, a single backorder wins at the minimum, and multiple backorders '
+                               'trigger an auction.',
+                       'tip': 'On both, a single backorder wins at the minimum, and multiple backorders '
+                              'trigger an auction.',
+                       'timestamp': 230,
+                       'timestamp_seconds': 230,
+                       'timestamp_label': '[00:03:50]',
+                       'url': 'https://www.youtube.com/watch?v=fVAMuCrwtUw&t=230s',
+                       'markdown': '[00:03:50](https://www.youtube.com/watch?v=fVAMuCrwtUw&t=230s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zN6FKHG-ORs',
+                       'title': 'Dynadot: An Often Overlooked Player in the Expired Domain Name '
+                                'Aftermarket',
+                       'channel': 'cssfx',
+                       'author': 'cssfx',
+                       'text': "You have a 120 hour window in which you're given a grace period for "
+                               "deleting domains that you've registered in case you no longer want them.",
+                       'tip': "You have a 120 hour window in which you're given a grace period for "
+                              "deleting domains that you've registered in case you no longer want them.",
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=zN6FKHG-ORs&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=zN6FKHG-ORs&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tVPy99Y1MsA',
+                       'title': 'Live Domain Name Hunt: Expired Ai Domains and Godaddy Auctions | Day-16',
+                       'channel': 'NamesBrun',
+                       'author': 'NamesBrun',
+                       'text': 'This is actually a good name going for very cheap.',
+                       'tip': 'This is actually a good name going for very cheap.',
+                       'timestamp': 1729,
+                       'timestamp_seconds': 1729,
+                       'timestamp_label': '[00:28:49]',
+                       'url': 'https://www.youtube.com/watch?v=tVPy99Y1MsA&t=1729s',
+                       'markdown': '[00:28:49](https://www.youtube.com/watch?v=tVPy99Y1MsA&t=1729s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P82q-S2X978',
+                       'title': 'How To Get Sms Alert Auction Domains GoDaddy  (full guide 2026)',
+                       'channel': 'Tutorialjake',
+                       'author': 'Tutorialjake',
+                       'text': 'Confirm the setting saved, and check that your phone and account info are '
+                               'current.',
+                       'tip': 'Confirm the setting saved, and check that your phone and account info are '
+                              'current.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=P82q-S2X978&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=P82q-S2X978&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rtK9sQfQ5cc',
+                       'title': 'Snatching With Sarah: Episode 1 - The Ethics of Expired Domain '
+                                'Dropcatching',
+                       'channel': 'cssfx',
+                       'author': 'cssfx',
+                       'text': 'Imagine 5 years of business suddenly vanishing because of domain registry '
+                               'expiration.',
+                       'tip': 'Imagine 5 years of business suddenly vanishing because of domain registry '
+                              'expiration.',
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=rtK9sQfQ5cc&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=rtK9sQfQ5cc&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9vU7vtxcYuc',
+                       'title': '5 Winning Tactics at Expired Domain Auctions 📈',
+                       'channel': 'Affiliate Credo',
+                       'author': 'Affiliate Credo',
+                       'text': "Don't show your maximum and don't use auto-bids.",
+                       'tip': "Don't show your maximum and don't use auto-bids.",
+                       'timestamp': 371,
+                       'timestamp_seconds': 371,
+                       'timestamp_label': '[00:06:11]',
+                       'url': 'https://www.youtube.com/watch?v=9vU7vtxcYuc&t=371s',
+                       'markdown': '[00:06:11](https://www.youtube.com/watch?v=9vU7vtxcYuc&t=371s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iiHOxt6I0u0',
+                       'title': 'Expired Domain Auctions: What Drives Quality Inventory? | DomainSherpa '
+                                'Podcast (March 5, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': 'The large majority of it has absolutely no liquid value of the new '
+                               'registration stream.',
+                       'tip': 'The large majority of it has absolutely no liquid value of the new '
+                              'registration stream.',
+                       'timestamp': 2944,
+                       'timestamp_seconds': 2944,
+                       'timestamp_label': '[00:49:04]',
+                       'url': 'https://www.youtube.com/watch?v=iiHOxt6I0u0&t=2944s',
+                       'markdown': '[00:49:04](https://www.youtube.com/watch?v=iiHOxt6I0u0&t=2944s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iiHOxt6I0u0',
+                       'title': 'Expired Domain Auctions: What Drives Quality Inventory? | DomainSherpa '
+                                'Podcast (March 5, 2026)',
+                       'channel': 'domainsherpa',
+                       'author': 'domainsherpa',
+                       'text': "It's one that I had had priced higher, but over time after 5 years and no "
+                               'one was buying, so lowered it to 495 and it sold.',
+                       'tip': "It's one that I had had priced higher, but over time after 5 years and no "
+                              'one was buying, so lowered it to 495 and it sold.',
+                       'timestamp': 1983,
+                       'timestamp_seconds': 1983,
+                       'timestamp_label': '[00:33:03]',
+                       'url': 'https://www.youtube.com/watch?v=iiHOxt6I0u0&t=1983s',
+                       'markdown': '[00:33:03](https://www.youtube.com/watch?v=iiHOxt6I0u0&t=1983s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

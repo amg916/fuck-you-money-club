@@ -1,751 +1,890 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-first-judgment-recovery-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in judgment recovery, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (6–24 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine Commercial Dockets, Verify UCC Priority, and Convert Creditor Mandates Through Rule 69 Enforcement and Bankruptcy-Stay Screening",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #28 with a Money-to-Manpower Score of "
-        "79/100. This chapter organizes 15 mapped plays into a creditor-first sourcing "
-        "system: commercial docket mining, counsel referrals, asset-event monitoring, "
-        "and carefully separated refinance-intent referrals. The product is a documented "
-        "path to collectible proceeds, not a pile of judgment balances. Build a narrow "
-        "court-and-industry watchlist, verify standing and lien priority, then sell a "
-        "bounded recovery mandate with counsel-directed enforcement. Target the first "
-        "3-to-10 signed mandates over 6–24 months while measuring cash-producing wins "
-        "separately. Canonical annual owner profit is $12,000 Conservative, $84,000 Base, "
-        "and $200,000 Scaled. Those cases recognize service fees, exclude client principal, "
-        "and depend on disciplined enforcement costs, lawful data access, and collectible assets."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees, excluding client principal and asset value",
-            "note": "20% net margin; $12,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$280,000",
-            "context": "Annual recognized service fees, excluding client principal and asset value",
-            "note": "30.0% net margin; $84,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$500,000",
-            "context": "Annual recognized service fees, excluding client principal and asset value",
-            "note": "40% net margin; $200,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine Creditor Pain and Asset Events Across Fifteen Sourcing Plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with creditors whose enforcement problem is visible, not debtors whose "
-                    "wealth merely looks attractive. Select two court systems and one commercial "
-                    "segment, such as equipment lessors, wholesalers, or commercial landlords. "
-                    "Use official state docket portals and PACER Case Locator for federal matters; "
-                    "CourtListener can surface leads, but confirm every material event against the "
-                    "court record. Capture judgment entry, creditor identity, debtor legal name, "
-                    "counsel, principal, interest basis, satisfaction entries, appeals, and recent "
-                    "execution activity. A final money judgment followed by twelve months without "
-                    "a recorded satisfaction is a research signal, not proof that nothing was "
-                    "collected. Ask the creditor for a payment ledger before quoting a recoverable "
-                    "balance. Public records also omit private settlements and pending disputes. "
-                    "Prioritize represented commercial creditors with several similar judgments, "
-                    "because one reliable relationship can supply repeat mandates without repeated "
-                    "acquisition expense. Schedule weekly searches rather than indiscriminate "
-                    "scraping, respect portal access terms, and record source timestamps. In "
-                    "Airtable or a SQLite register, separate the legal creditor, authorized contact, "
-                    "judgment debtor, and possible asset owner. That distinction prevents a common "
-                    "expensive error: pitching enforcement against property belonging to an affiliate "
-                    "whose similar name never made it a judgment debtor."
-                ),
-                (
-                    "Map each lead to one of the fifteen sourcing plays below, then require an "
-                    "asset-specific reason to investigate. County recorder activity, renewed "
-                    "business registrations, a disclosed business sale, and a creditor's abandoned "
-                    "execution file can create useful timing signals. None independently proves "
-                    "available equity. A property transfer might reflect an exempt residence, "
-                    "a senior foreclosure, or an ordinary sale with no surplus. A revived entity "
-                    "might hold no operating assets. Build an evidence packet containing the "
-                    "docket event, ownership match, competing claims, proposed next inquiry, and "
-                    "estimated investigation cost. Send that packet to the creditor or existing "
-                    "counsel, never to the debtor's customers as leverage. The highest-margin "
-                    "channel is often a small litigation practice with enforceable commercial "
-                    "judgments but little appetite for post-judgment administration. Offer organized "
-                    "records, status reporting, and authorized investigation; licensed counsel "
-                    "retains responsibility for legal strategy and court work. Do not promise "
-                    "nonlawyer representation or divide attorney fees through a disguised marketing "
-                    "charge. Confirm the governing state's collection-agency, assignment, and "
-                    "referral restrictions before choosing the engagement structure. If authority "
-                    "is unresolved, keep the file in research status and refer the legal question "
-                    "to appropriately licensed counsel instead of collecting signatures prematurely."
-                ),
-                (
-                    "The required play ucc1_expiration_refi_trigger_arbitrage belongs in a separate "
-                    "commercial-intent lane, not the collectible-judgment inventory. Monitor state "
-                    "Secretary of State UCC-1 statements, amendments, and continuations for operating "
-                    "businesses that may be four to nine months into high-cost Merchant Cash Advances "
-                    "or equipment notes. Filing age is only a prospecting proxy: a UCC statement "
-                    "does not establish an MCA, outstanding balance, interest cost, or contractual "
-                    "maturity. Under enacted UCC section 9-515, ordinary filings generally last five "
-                    "years, with continuation during the final six months; exceptions require "
-                    "review. Obtain borrower-confirmed agreements before labeling a refinance "
-                    "opportunity. Illustratively, 100 reviewed filings might produce 20 verified "
-                    "business contacts, six requested introductions, and two fundings. At an "
-                    "assumed lawful $750 referral fee per funding, gross referral revenue is "
-                    "$1,500; subtract $600 sourcing cost to leave $900 before overhead. A $50,000 "
-                    "advance is funded principal, never operator revenue. Track this adjacent "
-                    "experiment separately from the canonical recovery cases. Arrange live transfers "
-                    "only after the business requests an introduction. If transfer economics or "
-                    "permissions fail, use direct mail, B2B work-email sequences, and manual "
-                    "human-dialed outreach with applicable state commercial financing disclosures. "
-                    "Never condition judgment settlement on purchasing new credit."
-                ),
-            ],
-            "table": {
-                "caption": "Fifteen Mapped Sourcing Plays: Evidence, Unit Economics, and Failure Fallbacks",
-                "headers": [
-                    "Mapped sourcing play and target buyer",
-                    "Public-record or relationship signal to verify",
-                    "Illustrative unit math before shared overhead",
-                    "Failure mode and bounded operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 01: Dormant commercial judgment docket mining",
-                        "Confirm final judgment, payment ledger, and dormant execution history",
-                        "Review 40 files at $15 each; budget $600",
-                        "Stale balances mislead; obtain creditor ledger before quoting fees",
-                    ],
-                    [
-                        "Play 02: Litigation counsel's neglected enforcement inventory",
-                        "Ask ten commercial litigators about closed but unpaid matters",
-                        "Ten meetings at $50 preparation cost consume $500",
-                        "Referral restrictions vary; use permitted service contracts without fee splitting",
-                    ],
-                    [
-                        "Play 03: Equipment lessor deficiency judgment referrals",
-                        "Match equipment disposition records against documented remaining judgment balances",
-                        "Five reviewed files at $100 each consume $500",
-                        "Collateral credits may be missing; reconcile sale proceeds first",
-                    ],
-                    [
-                        "Play 04: Wholesale supplier repeat-creditor account mining",
-                        "Identify suppliers appearing as creditors across multiple commercial dockets",
-                        "One $300 account review can screen six related judgments",
-                        "Duplicate balances inflate value; reconcile each judgment separately",
-                    ],
-                    [
-                        "Play 05: Commercial landlord judgment inventory reviews",
-                        "Separate commercial lease judgments from residential consumer collection matters",
-                        "Eight preliminary screens at $40 each consume $320",
-                        "Vacant entities lack assets; verify guarantor judgments separately",
-                    ],
-                    [
-                        "Play 06: Receivership distribution and surplus monitoring",
-                        "Read receiver reports for distribution eligibility and actual deadlines",
-                        "Three counsel-reviewed reports at $150 each consume $450",
-                        "No surplus remains; stop research after priority reconciliation",
-                    ],
-                    [
-                        "Play 07: Recorder-based commercial property equity events",
-                        "Match debtor ownership with recorded liens and transfer events",
-                        "$250 title review against $4,000 expected fees is 6.25%",
-                        "Senior claims absorb equity; abandon that asset route",
-                    ],
-                    [
-                        "Play 08: Revived operating-entity creditor reactivation campaigns",
-                        "Verify renewed registration alongside current debtor-owned operating activity",
-                        "Twenty registry checks at $10 each consume $200",
-                        "Registration alone proves little; require independent ownership evidence",
-                    ],
-                    [
-                        "Play 09: Documented business-sale proceeds monitoring channel",
-                        "Confirm sale participant identity and proceeds ownership through counsel",
-                        "$300 research against $6,000 potential fees consumes five percent",
-                        "Affiliate received proceeds; investigate only with lawful factual grounds",
-                    ],
-                    [
-                        "Play 10: Failed-execution file rescue through existing counsel",
-                        "Read returned writs for dated addresses and specific obstacles",
-                        "Four rescue reviews at $125 each consume $500",
-                        "Repeated empty levies waste cash; require a changed asset signal",
-                    ],
-                    [
-                        "Play 11: Out-of-state judgment domestication readiness reviews",
-                        "Verify original judgment validity and assets within target jurisdiction",
-                        "$800 preliminary budget against $8,000 potential fees consumes ten percent",
-                        "Recognition costs dominate; refer locally or decline the mandate",
-                    ],
-                    [
-                        "Play 12: Creditor portfolio triage for finance teams",
-                        "Request authorized ledgers and representative judgments under restricted access",
-                        "Twenty-file pilot at $25 screening cost totals $500",
-                        "Mixed consumer accounts complicate scope; segregate before evaluation",
-                    ],
-                    [
-                        "Play 13: Counsel-led bankruptcy status change monitoring",
-                        "Read actual stay, dismissal, discharge, and closing orders",
-                        "Twelve monthly checks at $20 each cost $240",
-                        "Case closure permits no assumption; obtain order-specific legal review",
-                    ],
-                    [
-                        "Play 14: Inbound evidence-packet and case-study conversion",
-                        "Publish authorized process examples and jurisdiction-specific intake requirements",
-                        "$600 content spend across three qualified inquiries costs $200 each",
-                        "Unqualified traffic consumes time; require documents before substantive review",
-                    ],
-                    [
-                        "Play 15: ucc1_expiration_refi_trigger_arbitrage commercial-intent referral lane",
-                        "Verify filing dates against borrower-confirmed contracts and requested introductions",
-                        "Two $750 funding fees less $600 sourcing leaves $900",
-                        "Use direct mail, work email, and manual calls with required disclosures",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy Better Evidence Before Buying More Leads",
-                "body": (
-                    "Veteran recovery operators improve file quality before expanding territory. "
-                    "A smaller inventory with verified balances and ownership usually deserves "
-                    "attention before a large spreadsheet of impressive judgment amounts."
-                ),
-                "items": [
-                    "Read the most recent returned writ before researching assets; its return can explain precisely why the previous execution failed.",
-                    "Ask referring counsel for three previously abandoned files and the reason each stopped; repeated obstacles reveal the best service niche.",
-                    "Search exact legal names plus documented former names, then preserve the entity identifier used to distinguish similarly named businesses.",
-                    "Request a creditor payment ledger with every judgment packet; unrecorded partial payments can change the balance and the outreach proposition.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Qualify Collectible Equity Before Selling a Recovery Mandate",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Score evidence, not optimism. Use a 100-point intake model: 25 points for "
-                    "enforceability and standing, 25 for verified debtor-owned assets, 20 for "
-                    "residual value after senior claims and exemptions, 15 for executable venue "
-                    "and procedure, and 15 for creditor economics and cooperation. Require 75 "
-                    "points for a paid investigation proposal and 85 for a recovery proposal; "
-                    "these are internal triage thresholds, not measured success probabilities. "
-                    "An active bankruptcy stay, disputed authority, an expired judgment, or "
-                    "unresolved licensing requirements overrides any score. Separate evidence "
-                    "into confirmed facts, dated third-party records, and hypotheses requiring "
-                    "verification. A screenshot of a successful business does not earn asset "
-                    "points without ownership support. Request the entered judgment, relevant "
-                    "orders, service history where material, assignments, payment ledger, current "
-                    "counsel details, and prior enforcement invoices. Check renewal and limitation "
-                    "rules in the actual enforcing jurisdiction. Interest calculations must "
-                    "follow the applicable judgment and law, including payment credits; do not "
-                    "apply a favorite percentage universally. Under Federal Rule of Civil "
-                    "Procedure 69, federal money-judgment execution generally uses state procedure "
-                    "unless a federal statute applies. That procedural bridge makes local "
-                    "counsel and jurisdiction-specific checklists more valuable than a national "
-                    "template claiming universal coverage."
-                ),
-                (
-                    "Build a priority waterfall before estimating the operator's fee. Suppose a "
-                    "commercial asset could realize $150,000, documented sale and enforcement "
-                    "costs total $15,000, and senior claims consume $110,000. Only $25,000 remains "
-                    "before other applicable claims or exemptions. A $100,000 judgment does not "
-                    "turn that $25,000 residual into $100,000 of collectible value. If the "
-                    "engagement permits a 35% service fee on recovered funds, the illustrative "
-                    "fee ceiling is $8,750, not $35,000. Order UCC searches in the relevant "
-                    "filing jurisdiction, check county records where appropriate, and have "
-                    "counsel reconcile lien attachment, perfection, priority, and execution "
-                    "timing. A lapsed financing statement is not proof that the underlying "
-                    "debt vanished or that your creditor automatically moved ahead. Likewise, "
-                    "a tax lien search does not replace reviewing the governing priority "
-                    "rules. Screen bankruptcy using official records at intake and again "
-                    "before enforcement. Section 362 of title 11 can halt collection acts, "
-                    "and section 524 can prohibit collection of discharged personal liability. "
-                    "A dismissal, closing, or discharge entry needs order-specific interpretation. "
-                    "Where ownership or priority remains contested, cap investigation spending "
-                    "and obtain a written legal assessment before proposing an asset-specific "
-                    "recovery timeline to the creditor."
-                ),
-                (
-                    "Set an investigation budget using expected contribution, with explicit "
-                    "uncertainty. For a file with $20,000 estimated collectible proceeds, a "
-                    "35% fee would produce $7,000 if collected. At an illustrative 40% "
-                    "collection probability, expected fee revenue is $2,800. Subtract $500 "
-                    "acquisition cost and $900 expected unreimbursed investigation and enforcement "
-                    "expense to leave $1,400 before shared overhead and timing effects. This "
-                    "calculation is a screening model, not a valuation of the judgment or "
-                    "an instruction to purchase it. Stress the probability to 20%; expected "
-                    "contribution then falls to zero under the same assumptions. Prefer files "
-                    "whose downside remains manageable after such a stress. Document whether "
-                    "court costs are advanced by the creditor, recovered from proceeds, "
-                    "absorbed by the operator, or separately billed by counsel. Never count "
-                    "the same reimbursement twice. Use staged authority: initial document "
-                    "review, bounded asset investigation, then counsel-selected enforcement. "
-                    "Limit personal data to what the authorized task needs, and restrict "
-                    "access by role. Public availability does not authorize impersonation, "
-                    "pretexting for bank information, or unrestricted consumer-report access. "
-                    "If the only proposed asset lead requires unlawful access, reject that "
-                    "route and return to permissible records, creditor documents, or "
-                    "counsel-supervised discovery."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-Weighted Qualification and Stop Conditions for Commercial Judgments",
-                "headers": [
-                    "Qualification dimension and available scoring weight",
-                    "Evidence needed to award meaningful points",
-                    "Concrete failure condition requiring a stop",
-                    "Next authorized action or practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Enforceability and standing carry twenty-five available scoring points",
-                        "Entered judgment, valid assignments, balance ledger, and applicable renewal dates",
-                        "Expired enforcement period or unresolved claimant authority blocks progression",
-                        "Obtain counsel review before requesting a recovery engagement",
-                    ],
-                    [
-                        "Verified debtor-owned assets carry twenty-five available scoring points",
-                        "Ownership records match judgment debtor through reliable entity identifiers",
-                        "Property belongs to an affiliate without established debtor ownership",
-                        "Investigate other assets without asserting unsupported affiliate liability",
-                    ],
-                    [
-                        "Residual collectible value carries twenty available scoring points",
-                        "Priority waterfall includes senior claims, exemptions, and realization costs",
-                        "Documented senior claims consume the estimated realizable asset value",
-                        "Decline that execution route and update the creditor",
-                    ],
-                    [
-                        "Executable venue and procedure carry fifteen available scoring points",
-                        "Local counsel identifies available process and service requirements",
-                        "Proposed remedy lacks jurisdiction or a valid procedural basis",
-                        "Price domestication or another lawful local enforcement route",
-                    ],
-                    [
-                        "Creditor economics and cooperation carry fifteen available scoring points",
-                        "Authorized contact supplies records and accepts documented cost allocation",
-                        "Missing ledger or unlimited spending expectations prevent bounded engagement",
-                        "Offer limited document triage before any enforcement commitment",
-                    ],
-                    [
-                        "Bankruptcy and licensing conditions override every numerical intake score",
-                        "Current case status and operating authority receive documented review",
-                        "Applicable stay, discharge restriction, or missing required license stops collection",
-                        "Pause collection activity and obtain jurisdiction-specific legal direction",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Authority, Assets, Priority, and Spending Before Launch",
-                "body": (
-                    "A signed prospect does not cure a defective file. Record the reviewer, "
-                    "source, date, and conclusion for each condition before authorizing the "
-                    "corresponding activity."
-                ),
-                "items": [
-                    "Verify the creditor's authority, assignment chain, current balance, and your required collection licenses before accepting collection work.",
-                    "Confirm debtor identity, asset ownership, and current bankruptcy status before any debtor contact or enforcement instruction.",
-                    "Have counsel review priority, exemptions, available remedies, and any consumer-debt implications before presenting a collectible-value estimate.",
-                    "Obtain written spending limits, cost allocation, reporting duties, and client-funds handling instructions before incurring external costs.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Turn Verified Signals Into Conversations, Mandates, and Measured Wins",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Run outbound toward the creditor's authorized decision-maker, not toward "
-                    "people surrounding the debtor. Build a six-touch sequence over thirty "
-                    "business days: a short work email, a manual telephone call, a mailed "
-                    "one-page process brief, a second email offering a record checklist, "
-                    "a final manual call, and a close-the-loop note. Use the public case "
-                    "reference only when necessary and avoid sensitive details in subject "
-                    "lines or voicemail. A useful opening is: 'We organize commercial "
-                    "post-judgment files for documented asset review and counsel-led enforcement. "
-                    "Would a short review of your inactive inventory be useful?' Identify "
-                    "the sender accurately and explain how to stop further marketing. "
-                    "Commercial email must follow applicable CAN-SPAM requirements, including "
-                    "accurate headers, a valid postal address, and an effective opt-out. "
-                    "Maintain suppression across channels and assess telephone restrictions "
-                    "before calling; manual dialing is not a universal exemption. Inbound "
-                    "should match the same narrow offer: an evidence checklist, a realistic "
-                    "timeline, and an authorized case study with identifying details removed "
-                    "where appropriate. Do not publish debtor dossiers to attract search "
-                    "traffic. Qualify each inquiry with creditor authority, commercial debt "
-                    "purpose, jurisdiction, judgment date, outstanding balance, and available "
-                    "documents before scheduling an expensive substantive review."
-                ),
-                (
-                    "Use a transparent funnel to define the first ten mandates. In one "
-                    "illustrative six-month sourcing cohort, screen 300 raw docket leads, "
-                    "retain 120 eligible creditor records, reach 60 authorized contacts, "
-                    "hold 24 substantive conversations, receive 12 complete packets, and "
-                    "sign six mandates. Those transitions are 40%, 50%, 40%, 50%, and "
-                    "50%, producing a 2% raw-lead-to-mandate rate. They are planning "
-                    "assumptions, not industry benchmarks. If three mandates later produce "
-                    "collected funds, the cash-producing rate is 50% of signed mandates "
-                    "and 1% of raw leads, measured only after sufficient observation. "
-                    "A $3,600 sourcing budget produces a $600 acquisition cost per "
-                    "mandate or $1,200 per eventual cash-producing file in this example. "
-                    "Track those cohorts separately because a fresh file has not failed "
-                    "merely because enforcement takes months. The canonical first-deal "
-                    "window is 6–24 months; three early signatures are not three "
-                    "realized recoveries. For an initial three-to-ten mandate target, "
-                    "150–500 raw leads would be required at the assumed 2% rate. "
-                    "Do not extrapolate cash receipts from signatures. Diagnose losses "
-                    "by stage: poor contact data, weak relevance, missing creditor "
-                    "documents, unsuitable economics, or engagement terms that allocate "
-                    "costs unclearly."
-                ),
-                (
-                    "Handle objections with bounded next actions. When a creditor says "
-                    "'our attorney already tried,' ask for the returned writ, last "
-                    "asset report, and reason work stopped; offer only a changed-facts "
-                    "review. When they say 'there are no assets,' request permission "
-                    "to test one specific ownership lead under a fixed research cap. "
-                    "When they demand payment upfront for an assignment, distinguish "
-                    "a purchase from a service mandate: a purchase requires separate "
-                    "pricing, transfer review, capital allocation, and loss tolerance. "
-                    "Do not imply that a contingent service proposal includes an "
-                    "asset purchase. When they object to the percentage, show estimated "
-                    "net proceeds after documented costs and compare a smaller "
-                    "investigation scope, rather than inventing a collection certainty. "
-                    "For 'send references,' provide authorized creditor references or "
-                    "redacted process examples, never another client's private recovery "
-                    "file. The engagement should define scope, authority, fee basis, "
-                    "settlement decision rights, reporting frequency, expense limits, "
-                    "termination, and handling of proceeds. Keep counsel's engagement "
-                    "and the operator's permitted services distinct. Require secure "
-                    "document delivery through a configured client portal rather than "
-                    "broad email forwarding. Close the first conversation with one "
-                    "specific request and date: an authorized contact will deliver "
-                    "the judgment and ledger by Friday, or the file returns "
-                    "to nurture."
-                ),
-            ],
-            "table": {
-                "caption": "Thirty-Business-Day Creditor Outreach Cadence and Conversion Diagnostics",
-                "headers": [
-                    "Cadence timing and selected communication channel",
-                    "Specific message and requested next action",
-                    "Evidence recorded in the sourcing register",
-                    "Failure response that protects acquisition economics",
-                ],
-                "rows": [
-                    [
-                        "Business day one uses a targeted work email",
-                        "Offer inactive commercial judgment review and request authorized contact",
-                        "Record delivery, permission preferences, creditor identity, and source date",
-                        "Suppress invalid addresses rather than buying repeated replacement lists",
-                    ],
-                    [
-                        "Business day four uses a manual telephone call",
-                        "Confirm who manages judgment inventory without disclosing sensitive details",
-                        "Record contact role, stated interest, and requested follow-up timing",
-                        "Honor refusal and update the shared suppression register",
-                    ],
-                    [
-                        "Business day nine uses a concise mailed brief",
-                        "Explain document requirements, counsel involvement, and bounded investigation scope",
-                        "Record mailing cost and any confirmed routing correction",
-                        "Stop mailing when address quality fails verification checks",
-                    ],
-                    [
-                        "Business day fifteen uses a document-checklist email",
-                        "Request entered judgment, current ledger, and previous enforcement history",
-                        "Measure complete packets rather than opens or superficial replies",
-                        "Offer secure upload instructions when document transfer causes friction",
-                    ],
-                    [
-                        "Business day twenty-two uses one final manual call",
-                        "Resolve one concrete objection and agree a document deadline",
-                        "Record objection category and whether economics justify further review",
-                        "Close unsuitable opportunities instead of extending unpaid consulting",
-                    ],
-                    [
-                        "Business day thirty uses a close-the-loop message",
-                        "Offer future event-based contact only when preferences permit",
-                        "Record final disposition and a reason for any nurture date",
-                        "Reactivate only with relevant evidence and no suppression conflict",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create the weekly evidence queue",
-                    "action": "Screen a bounded batch of commercial judgments in the selected courts.",
-                    "detail": (
-                        "Deduplicate creditor and debtor entities, preserve source dates, and "
-                        "assign one of the fifteen sourcing plays to every retained lead."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Contact the authorized creditor representative",
-                    "action": "Run the thirty-business-day sequence with shared suppression controls.",
-                    "detail": (
-                        "Ask for the judgment, ledger, and previous enforcement history; "
-                        "do not contact unrelated debtor counterparties to pressure payment."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Price a bounded, evidence-supported mandate",
-                    "action": "Apply the qualification score and complete the priority waterfall.",
-                    "detail": (
-                        "Resolve overriding legal conditions, document assumptions, and "
-                        "state who funds each investigation and enforcement expense."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Measure signed and cash-producing cohorts separately",
-                    "action": "Track mandate conversion, acquisition cost, collected proceeds, and earned fees.",
-                    "detail": (
-                        "Review stage losses monthly and change one sourcing variable at "
-                        "a time so improvements can be attributed to actual operating changes."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Fund the First Wins and Reconcile Fees to the Canonical Scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat the first three-to-ten mandates as a learning portfolio with "
-                    "explicit spending ceilings. During months one through three, establish "
-                    "operating authority, counsel relationships, secure records handling, "
-                    "and the first court watchlists. During months four through six, "
-                    "test the creditor offer and document-transfer process without assuming "
-                    "a completed deal. During months six through twenty-four, convert "
-                    "qualified files, fund staged investigation, and allow actual "
-                    "enforcement timelines to determine receipts. The canonical startup "
-                    "capital range is $10,000–$75,000, while monthly operating expense "
-                    "ranges from $2,000–$12,000. These ranges are not interchangeable "
-                    "runway promises: $10,000 funds only five months at $2,000 per "
-                    "month before startup purchases or external enforcement costs. "
-                    "At $12,000 monthly spending, even $75,000 provides only 6.25 "
-                    "months before those additional uses. Match hiring to funded "
-                    "work, not gross judgment balances. The Conservative and Base "
-                    "teams are one full-time operator plus three contractors; the "
-                    "Scaled team is two full-time people plus four contractors. "
-                    "Contractor counts do not specify utilization or compensation. "
-                    "Define scoped deliverables for research, administration, and "
-                    "licensed services, then reconcile their actual costs to the "
-                    "annual case budget. If cash runway cannot cover the expected "
-                    "delay, reduce fixed spending or postpone expansion rather than "
-                    "pressuring unsuitable files into enforcement."
-                ),
-                (
-                    "Reconcile the scorecard through recognized service fees, never through "
-                    "judgment face value or client receipts. One illustrative Conservative "
-                    "bridge is $200,000 of collected client proceeds at a 30% "
-                    "service fee, producing $60,000 revenue. Total modeled expenses "
-                    "of $48,000 leave $12,000 owner net profit and a 20% "
-                    "margin. The Base bridge uses $800,000 collected at 35%, "
-                    "producing $280,000 revenue; $196,000 total expenses leave "
-                    "$84,000 profit and a 30.0% margin. The Scaled bridge uses "
-                    "$1,250,000 collected at 40%, producing $500,000 revenue; "
-                    "$300,000 expenses leave $200,000 profit and a 40% margin. "
-                    "These fee percentages illustrate arithmetic, not required pricing "
-                    "or historical recovery performance. Actual contracts may allocate "
-                    "costs differently and require a different collection volume. "
-                    "The monthly operating-expense range describes a planning range "
-                    "for recurring operations, not a ceiling on all annual case "
-                    "costs. For example, $8,000 monthly recurring expense totals "
-                    "$96,000 annually, leaving $100,000 of the Base expense "
-                    "envelope for other modeled costs, without double counting. "
-                    "Keep referral experiments outside these bridges unless the "
-                    "model explicitly reallocates revenue. Recognize contingent fees "
-                    "only when earned under the applicable contract and accounting "
-                    "policy; a signed mandate alone creates no collected service fee."
-                ),
-                (
-                    "Automate deadline reminders and payment reconciliation only after the "
-                    "underlying records are reliable. Maintain separate dates for judgment "
-                    "renewal, lien duration, writ returns, hearings, promised creditor "
-                    "documents, and any UCC continuation window. Import docket alerts "
-                    "as tasks requiring review, not instructions to execute process. "
-                    "A paralegal or attorney should validate legal deadlines against "
-                    "the governing rule and actual order. For money movement, "
-                    "assign a case identifier to every receipt, retain remittance "
-                    "evidence, and reconcile the client balance, earned service fee, "
-                    "approved expenses, and disbursement. Follow jurisdiction-specific "
-                    "trust-account or collection-account requirements; client money "
-                    "is not operating cash simply because it reaches an account "
-                    "you administer. Use QuickBooks or another properly configured "
-                    "ledger for accounting and a separate restricted case register "
-                    "for operational evidence. Review a monthly cohort report "
-                    "showing source, signed date, authorized cost ceiling, cash "
-                    "recovered, fee earned, expense incurred, and unresolved legal "
-                    "conditions. Stop a sourcing play when its mature-cohort "
-                    "contribution stays negative after realistic collection delays, "
-                    "or when missing records repeatedly prevent lawful execution. "
-                    "Expand only the channel that produces documented authority, "
-                    "collectible residual value, responsive creditors, and acceptable "
-                    "cash timing. A large pipeline of unverified judgments is "
-                    "inventory of questions, not a revenue asset."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Economics and the Controls That Keep Client Money Separate",
-                "headers": [
-                    "Scenario or operating control being reconciled",
-                    "Collection and recognized-revenue calculation or source",
-                    "Expense allocation and resulting operator economics",
-                    "Required interpretation before making spending decisions",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses one full-time operator and three contractors",
-                        "$200,000 client proceeds times 30% illustrates $60,000 service revenue",
-                        "$48,000 total annual expenses leave $12,000 owner net profit",
-                        "The resulting 20% margin excludes client principal from revenue",
-                    ],
-                    [
-                        "Base annual case uses one full-time operator and three contractors",
-                        "$800,000 client proceeds times 35% illustrates $280,000 service revenue",
-                        "$196,000 total annual expenses leave $84,000 owner net profit",
-                        "The resulting 30.0% margin requires all modeled costs included",
-                    ],
-                    [
-                        "Scaled annual case uses two full-time people and four contractors",
-                        "$1,250,000 client proceeds times 40% illustrates $500,000 service revenue",
-                        "$300,000 total annual expenses leave $200,000 owner net profit",
-                        "The resulting 40% margin describes six people with variable utilization",
-                    ],
-                    [
-                        "Startup runway connects available capital to actual monthly cash spending",
-                        "$10,000 divided by $2,000 monthly spending equals five months",
-                        "Startup purchases and external case costs shorten that runway",
-                        "A 6–24 month first-deal window requires additional cash planning",
-                    ],
-                    [
-                        "Base expense bridge separates recurring operations from other modeled costs",
-                        "$8,000 recurring monthly expense creates $96,000 annual operating spending",
-                        "$196,000 total budget minus $96,000 leaves $100,000 other costs",
-                        "Classify each expense once rather than duplicating contractor charges",
-                    ],
-                    [
-                        "Client receipt reconciliation separates proceeds, earned fees, and disbursements",
-                        "Match each bank receipt to its authorized case ledger",
-                        "Record approved costs separately under the applicable engagement terms",
-                        "Disburse client balances through required accounts with documented reconciliation",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Source the creditor's problem, prove the debtor's equity, and count only the fee you have earned.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Select two court systems and one commercial creditor segment; create a dated watchlist with exact entity identifiers and source links.",
-        "Map every retained lead to a sourcing play, keeping ucc1_expiration_refi_trigger_arbitrage in a separate commercial-referral ledger.",
-        "Obtain the judgment, payment ledger, assignment chain, and prior enforcement history before scoring a file or estimating collectible proceeds.",
-        "Complete bankruptcy, licensing, ownership, priority, and cost-allocation checks before authorizing the corresponding collection or enforcement activity.",
-        "Run the thirty-business-day creditor cadence and measure raw leads, complete packets, signed mandates, and cash-producing files by cohort.",
-        "Reconcile earned service fees, client balances, and all expenses monthly against the $12,000, $84,000, and $200,000 annual profit cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Federal Rule of Civil Procedure 69 — Execution",
-            "url": "https://www.law.cornell.edu/rules/frcp/rule_69",
-            "relevance": (
-                "Federal money-judgment execution generally follows procedure of the state "
-                "where the court sits unless a federal statute applies; post-judgment "
-                "discovery also requires use of authorized procedures."
-            ),
-        },
-        {
-            "title": "11 U.S.C. § 362 — Automatic Stay",
-            "url": "https://www.law.cornell.edu/uscode/text/11/362",
-            "relevance": (
-                "Identify applicable stay restrictions before collection acts, enforcement, "
-                "or asset process; bankruptcy status changes require review of the actual orders."
-            ),
-        },
-        {
-            "title": "11 U.S.C. § 524 — Effect of Discharge",
-            "url": "https://www.law.cornell.edu/uscode/text/11/524",
-            "relevance": (
-                "A discharge can restrict collection of discharged personal liability; "
-                "closing a bankruptcy case does not independently authorize resumed collection."
-            ),
-        },
-        {
-            "title": "California Commercial Code § 9515 — Duration and Continuation of Financing Statements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=9515.",
-            "relevance": (
-                "This enacted state provision illustrates ordinary five-year UCC filing "
-                "effectiveness and the six-month continuation window, subject to exceptions; "
-                "filing duration does not establish contractual loan maturity."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1692a — Debt Collection Definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1692a",
-            "relevance": (
-                "Classify the underlying obligation rather than assuming that every judgment "
-                "is commercial; federal consumer-debt definitions and broader state rules "
-                "affect collection scope."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1681b — Permissible Purposes of Consumer Reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": (
-                "Consumer-report access requires an applicable permissible purpose and "
-                "appropriate controls; a public judgment does not provide unrestricted access."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 6821 — Protection of Nonpublic Personal Information",
-            "url": "https://www.law.cornell.edu/uscode/text/15/6821",
-            "relevance": (
-                "Prohibits specified false-pretense methods of obtaining customer information "
-                "from financial institutions; asset investigation must use lawful access routes."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Structure creditor marketing emails with accurate routing information, "
-                "required sender identification, a valid postal address, and effective opt-out handling."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on Telephone Equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Assess calling methods, destination numbers, and applicable restrictions "
-                "before outreach; manual dialing does not resolve every federal or state requirement."
-            ),
-        },
-        {
-            "title": "California Financial Code § 22802 — Commercial Financing Disclosures",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22802.",
-            "relevance": (
-                "Evaluate required disclosures when offering covered commercial financing "
-                "in California; determine the parties' actual roles before operating a refinance referral lane."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'judgment-liens-abstracts-real-property',
+ 'question_prompt': 'How do judgments become liens on real property, where do they show up in records, and '
+                    'how do they get paid at closing?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Judgment Liens, Abstracts, and Real Property',
+ 'subtitle': 'Judgment vs. lien distinctions, abstracts of judgment, finding liens in courthouse and title '
+             'records, liens on primary residences, homestead and bankruptcy effects, removing liens from '
+             'preliminary title reports, and lien and encumbrance fundamentals from real estate exam prep',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners across title, collections, and real estate law agree that a money '
+                      'judgment is only a number against a person until it is recorded or docketed in each '
+                      'county where the debtor holds land. At that point it becomes a general, involuntary '
+                      'lien on every parcel there, including property acquired later. Bob Benjy walks '
+                      "through California's one-page abstract of judgment and multi-county recording. "
+                      'Hidden Power Files maps how to dig judgment liens out of grantor-grantee indexes '
+                      'and separate dockets. Nicholas Kralick sets a five-year revival window for '
+                      'Pennsylvania lien priority, and David Babel puts New York judgment interest at nine '
+                      'percent a year. The friction points are tax liens jumping senior, homestead and '
+                      'entireties shields, bankruptcy avoidance inside 90 days, and personal property that '
+                      'requires a sheriff levy or writ.',
+ 'key_metrics': [{'label': 'New York Judgment Lien Interest Rate',
+                  'metric': 'New York Judgment Lien Interest Rate',
+                  'value': '9 percent per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Interest accumulating on a judgment docketed in the Bronx Supreme Court that '
+                             'must be paid off before the owner can sell or refinance, even after a '
+                             'Chapter 7 discharge',
+                  'source': 'David Babel ([q6PjSqG-sF4 @ 00:01:50])'},
+                 {'label': 'Pennsylvania Revival Window for Lien Priority',
+                  'metric': 'Pennsylvania Revival Window for Lien Priority',
+                  'value': '5 years from entry of judgment',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Deadline to initiate an action reviving a judgment lien on real property and '
+                             'keep its place in line; a later revival works but the lien goes to the end '
+                             'of the line',
+                  'source': 'Five Minute Legal Master Series ([V5NrY_biljg @ 00:02:56])'},
+                 {'label': 'Bankruptcy Lien Avoidance Lookback',
+                  'metric': 'Bankruptcy Lien Avoidance Lookback',
+                  'value': '90 days before the bankruptcy filing',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A judgment lien filed within this window can be avoided on both a primary '
+                             'residence and investment properties',
+                  'source': 'David Babel ([q6PjSqG-sF4 @ 00:02:54])'},
+                 {'label': 'Abstract Originals Issued in Worked Example',
+                  'metric': 'Abstract Originals Issued in Worked Example',
+                  'value': '3 originals for 3 counties',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Three sealed abstracts issued by the LA County Superior Court clerk and '
+                             'recorded in Orange, San Francisco, and Contra Costa counties through an '
+                             'attorney service',
+                  'source': 'Bobby Benjy ([hJmfkC9gu4c @ 00:03:15])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who works title or collections draws the same hard line: '
+                              'a judgment is a number against a person, and a lien is a hook in an asset. '
+                              "The In Rem Podcast attorney says flatly that an entered judgment 'alone "
+                              "does not create any lien against any real or personal property' and that, "
+                              "until further steps are taken, it is 'just the number on a piece of paper "
+                              "or a number in a computer system' [pHI86CVm1RQ @ 00:01:10]. Hidden Power "
+                              'Files makes the same point from the records side. The final judgment gives '
+                              'the creditor a legal determination of money owed, but the lien on land '
+                              'attaches only when the judgment, or an abstract of judgment derived from '
+                              'it, is recorded in the deed records of the county where the debtor owns '
+                              'property [-HFzhDO6v-A @ 00:00:41]. Dave at titlesearch.com describes two '
+                              'attachment routes. One is statutory attachment once the judgment is '
+                              'recorded in the county court records. The other is specific recording, '
+                              'where the creditor carries the judgment paperwork over to the land records '
+                              '[gyWC9jWNaXQ @ 00:00:19]. Simple Explain adds the state split: some states '
+                              'create the real estate lien automatically on entry, while in most the '
+                              'creditor must record it through a county or state filing [cZtaubxDzMA @ '
+                              '00:00:34].',
+                              'The second point of agreement is geography: the lien is county-scoped and '
+                              'blankets everything the debtor holds there. Tiffany Weber of The Real '
+                              'Estate Lawyer explains that a judgment docketed in a county attaches to '
+                              'every piece of property the debtor owns in their own name in that county. '
+                              'Reaching land in other counties requires the creditor to docket the '
+                              'judgment in each of those counties as well [RFKcDlW0gQU @ 00:01:25]. Bob '
+                              'Benjy runs the same play in California with abstracts. The lien attaches '
+                              "even where the debtor is only a joint co-owner; Benjy's example is Jane Roe "
+                              'holding Orange County real estate with five other people. An abstract '
+                              "recorded where the debtor owns nothing will 'sit and wait' and attach the "
+                              'moment property is acquired [hJmfkC9gu4c @ 00:04:43]. Nicholas Kralick '
+                              'confirms the after-acquired angle in Pennsylvania. Kralick names '
+                              'inheritance, a divorce settlement, or a later purchase as the ways a debtor '
+                              'picks up land after judgment, and tells creditors to index the judgment in '
+                              'the county where that new real estate sits [V5NrY_biljg @ 00:03:32]. '
+                              'PrepAgent states the result: once filed, a judgment lien is a general, '
+                              'involuntary lien against all property of the defendant [dccNDC1WYF4 @ '
+                              '00:01:28].',
+                              'Practitioners also agree that a recorded judgment does not go away on its '
+                              'own; it surfaces at sale or refinance and gets paid out of the proceeds. '
+                              'Weber warns that sellers who hide judgments get caught because the title '
+                              'search reveals them. Weber has seen closing statements where the payoff '
+                              "wiped out the seller's proceeds, so the seller had to bring money to "
+                              "closing [RFKcDlW0gQU @ 00:02:51]. Maggie's priority walkthrough shows where "
+                              'the judgment sits in line. Take a 2012 first mortgage, a 2014 judgment '
+                              'lien, a 2020 second mortgage, and a 2022 tax lien: the tax lien is paid '
+                              'first despite being recorded last, then the first mortgage, then the '
+                              'judgment, then the second mortgage [SFR_S8YmDSU @ 00:03:20]. The exemptions '
+                              'are equally consistent. Kralick says there is no judgment lien on '
+                              'tenants-by-the-entirety property when the judgment is against only one '
+                              'spouse [V5NrY_biljg @ 00:01:45]. The In Rem Podcast attorney says Arizona '
+                              'and most states have a homestead exemption. Under it, judgments either '
+                              "never attach to the debtor's personal residence, or the owner can sell and "
+                              'pocket a certain amount without paying the judgment [pHI86CVm1RQ @ '
+                              '00:02:47].'],
+               'table': {'caption': 'Where title, collections, and real estate practitioners line up on '
+                                    'judgment liens',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['A judgment alone is not a lien on anything',
+                                   'An entered judgment is just a number on paper or in a computer system '
+                                   'until further steps are taken',
+                                   "Treat an unrecorded judgment as zero leverage against the debtor's "
+                                   'real estate',
+                                   'In Rem Podcast ([pHI86CVm1RQ @ 00:01:10])'],
+                                  ['Recording in the county deed records creates the lien',
+                                   'Recording the judgment or abstract in the county deed records attaches '
+                                   'the lien that same day',
+                                   'Record in every county where the debtor holds land as soon as possible',
+                                   'Hidden Power Files ([-HFzhDO6v-A @ 00:01:01])'],
+                                  ['Attachment runs county by county, not statewide',
+                                   "The judgment attaches to every parcel held in the debtor's own name in "
+                                   'the docketing county',
+                                   'Docket separately in each outside county where the debtor owns '
+                                   'property',
+                                   'The Real Estate Lawyer ([RFKcDlW0gQU @ 00:01:25])'],
+                                  ['The lien reaches property acquired after judgment',
+                                   'An inheritance, divorce settlement, or later purchase brings new land '
+                                   'under the judgment',
+                                   'Index the judgment in the county where after-acquired real estate is '
+                                   'located',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:03:32])'],
+                                  ['Judgment liens get paid at sale or refinance',
+                                   'The title search reveals the judgment, and it must be paid off at '
+                                   'closing',
+                                   'Expect the payoff to come through escrow rather than from the debtor '
+                                   'voluntarily',
+                                   'The Real Estate Lawyer ([RFKcDlW0gQU @ 00:03:17])'],
+                                  ['Tax liens jump ahead of earlier judgment liens',
+                                   'In the worked example, a 2022 tax lien was paid before a 2014 judgment '
+                                   'lien',
+                                   'Subtract the tax and senior mortgage balances ahead of you from '
+                                   'expected recovery',
+                                   'Just Call Maggie ([SFR_S8YmDSU @ 00:03:40])'],
+                                  ['Entireties and homestead property may be off limits',
+                                   'There is no lien on entireties property when the judgment is against '
+                                   'only one spouse',
+                                   'Check how title is held and homestead status before paying recording '
+                                   'costs',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:01:45])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Bob Benjy runs a Los Angeles litigation boutique, calls post-judgment '
+                              'collection their area of passion, and lays out the California abstract play '
+                              'step by step. After entry, the creditor asks the clerk of the court that '
+                              'entered the judgment to issue an abstract of judgment. It is a one-page '
+                              "Judicial Council form that asks for the entry date, the debtor's full name, "
+                              "their California driver's license number and the last four digits of their "
+                              'Social Security number if known, the last known address, and the principal '
+                              'balance awarded [hJmfkC9gu4c @ 00:00:57]. The creditor can submit several '
+                              'at once, one for each target county. If the form is correct and the name is '
+                              'spelled right, the clerk performs the ministerial task of issuing originals '
+                              "bearing the court seal and the clerk's signature [hJmfkC9gu4c @ 00:01:43]. "
+                              "In Benjy's example, three originals from the LA County Superior Court go to "
+                              'the Orange, San Francisco, and Contra Costa County Recorders through an '
+                              'attorney service [hJmfkC9gu4c @ 00:03:15]. SpeakLegal defines what the '
+                              'recorded instrument carries: the amount owed, the interest rate, court '
+                              'costs, and any specific orders the debtor must obey. It is acknowledged and '
+                              'stamped for recording, and if the debtor does not pay, the creditor can '
+                              'force a sheriff sale [EAME7zlaLqU @ 00:00:01].',
+                              'On the hunting side, Hidden Power Files gives the most detailed search '
+                              'protocol. Judgment liens sit in the grantor-grantee index under the '
+                              "debtor's name, mixed in with deeds, mortgages, and releases. The "
+                              'instrument-type field may read judgment lien, abstract of judgment, '
+                              'judgment, or certified judgment depending on how the county indexes it, so '
+                              "a search that filters for deed-type entries 'will scan right past it' "
+                              '[-HFzhDO6v-A @ 00:01:42]. Once an entry turns up, the operator pulls the '
+                              'full instrument, which names the creditor and debtor, states the amount, '
+                              'references the court case, and shows the recording date. Some counties keep '
+                              'a separate judgment lien index or judgment docket in a different office, '
+                              'some post judgments on an online court portal, and some states run a '
+                              'statewide registry, so every one of these sources has to be checked '
+                              '[-HFzhDO6v-A @ 00:03:01]. A renewal filing extends the lien. A release or '
+                              'satisfaction recorded after the entry confirms payoff, and an entry with no '
+                              'later release may still be active [-HFzhDO6v-A @ 00:04:35]. Dave at AFX '
+                              "Title adds that judgment liens are 'usually not in the land records' yet "
+                              'hit the property as hard as a mortgage, so a title order must specifically '
+                              'call for a judgment search [a5bLikprQ4E @ 00:01:35].',
+                              'For assets other than land, the practitioners agree the judgment does '
+                              'nothing until the creditor acts. Kralick says a Pennsylvania judgment is '
+                              "not a lien on personal property. The sheriff's levy on equipment, vehicles, "
+                              'furniture, or business inventory creates that lien, so creditors should not '
+                              "be put off by prior judgments and should 'beat the prior judgment creditors "
+                              "to the punch' with a levy [V5NrY_biljg @ 00:04:42]. The In Rem Podcast "
+                              'attorney describes two writs. A writ of garnishment served on the bank '
+                              'freezes non-exempt funds, so the bank cannot release them or pay checks '
+                              'until a later court proceeding turns the money over. A writ of execution '
+                              'after judgment lets the sheriff tow a non-exempt vehicle for sale by the '
+                              'court [pHI86CVm1RQ @ 00:03:42]. On real estate, Kralick dismisses the claim '
+                              'that a judgment is only good for five years. Five years is the window to '
+                              'start an action reviving the lien so it keeps its priority. A late revival '
+                              'still works, but the creditor drops to the end of the line [V5NrY_biljg @ '
+                              '00:02:56]. David Babel shows why surviving liens are valuable: in New York '
+                              'a docketed judgment accrues interest at nine percent per year, and by the '
+                              "time the owner sells or refinances the number 'can be humongous' "
+                              '[q6PjSqG-sF4 @ 00:01:50].'],
+               'table': {'caption': 'Execution mechanics, required fields, and numbers practitioners use '
+                                    'on judgment liens',
+                         'headers': ['Mechanic',
+                                     'Exact Steps, Fields or Numbers',
+                                     'Practical Edge or Risk',
+                                     'Expert Source'],
+                         'rows': [['Requesting a California abstract of judgment from the clerk',
+                                   'One-page Judicial Council form: entry date, debtor name, license '
+                                   'number, last four of SSN, address, principal',
+                                   "A misspelled debtor name stalls the clerk's ministerial issuance of "
+                                   'the abstract',
+                                   'Bobby Benjy ([hJmfkC9gu4c @ 00:01:11])'],
+                                  ['Recording abstracts in multiple counties through an attorney service',
+                                   'Three originals from the LA Superior Court recorded in Orange, San '
+                                   'Francisco, and Contra Costa counties',
+                                   "The lien attaches to the property's equity even when the debtor "
+                                   'co-owns with others',
+                                   'Bobby Benjy ([hJmfkC9gu4c @ 00:03:30])'],
+                                  ["Sweeping the grantor-grantee index under every owner's name",
+                                   'Look for the labels judgment lien, abstract of judgment, judgment, and '
+                                   'certified judgment',
+                                   'Filtering for deed-type entries only scans right past recorded '
+                                   'judgment liens',
+                                   'Hidden Power Files ([-HFzhDO6v-A @ 00:02:02])'],
+                                  ['Filing a Pennsylvania revival action to hold lien priority',
+                                   "The revival action must be started within five years of the judgment's "
+                                   'entry',
+                                   'A late revival still works, but the lien moves to the back of the line',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:02:56])'],
+                                  ["Sheriff levy on the debtor's business personal property",
+                                   'A levy on equipment, vehicles, furniture, and inventory creates the '
+                                   'personal property lien',
+                                   'The first creditor to levy wins, regardless of older judgments on '
+                                   'record',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:04:24])'],
+                                  ["Serving a writ of garnishment on the debtor's bank",
+                                   'The bank holds non-exempt funds and cannot release them or pay checks '
+                                   'pending court',
+                                   "Exempt amounts in the account stay out of the creditor's reach",
+                                   'In Rem Podcast ([pHI86CVm1RQ @ 00:03:57])'],
+                                  ['Interest on a docketed New York judgment lien',
+                                   'Interest accumulates at nine percent per year until the lien is paid '
+                                   'off',
+                                   'The surviving lien balance grows large over the years before any sale',
+                                   'David Babel ([q6PjSqG-sF4 @ 00:01:50])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Edges From the Collectors and Title Desks',
+                           'body': 'Small moves that collections attorneys and title searchers say decide '
+                                   'whether a judgment lien gets found, attaches, and gets paid.',
+                           'items': ['Skip the record-everywhere approach and record in the major counties '
+                                     'such as LA, Orange, and San Francisco plus every county where your '
+                                     'research shows the debtor owns land; a recorded abstract waits and '
+                                     'attaches retroactively when the debtor buys later [Bobby Benjy — '
+                                     'hJmfkC9gu4c @ 00:05:35]',
+                                     "Read every instrument type under the owner's name, not just deeds "
+                                     'and mortgages; that is the difference between finding a judgment '
+                                     'lien and missing it [Hidden Power Files — -HFzhDO6v-A @ 00:06:17]',
+                                     'Do not let a stack of prior judgments scare you off personal '
+                                     "property; the sheriff's levy sets lien priority, so the creditor who "
+                                     'levies first wins [Five Minute Legal Master Series — V5NrY_biljg @ '
+                                     '00:04:42]',
+                                     'When a lien on the preliminary title report belongs to someone with '
+                                     'the same name, have the seller fill out the Statement of '
+                                     'Information; a Social Security number mismatch got a child-support '
+                                     'lien removed by a title supplement [Dylan Raquel Real Estate — '
+                                     '7NXn3JN88l8 @ 00:02:33]']},
+               'sop_steps': [{'step': 1,
+                              'title': "Map the Debtor's Real Estate by County",
+                              'action': 'Before requesting any abstracts, identify every county where the '
+                                        'debtor is on title.',
+                              'detail': 'Do the homework first and confirm the debtor owns real estate in '
+                                        'counties such as Orange, San Francisco, or Contra Costa before '
+                                        'ordering abstracts [Bobby Benjy — hJmfkC9gu4c @ 00:02:41]; '
+                                        'finding the county where the debtor owns real estate is the first '
+                                        'listed problem with abstracts [SpeakLegal — EAME7zlaLqU @ '
+                                        '00:00:39]'},
+                             {'step': 2,
+                              'title': 'Request Sealed Abstracts From the Entering Court',
+                              'action': 'File the one-page Judicial Council abstract form with the clerk, '
+                                        'one copy per target county.',
+                              'detail': "Fill in the entry date, the debtor's full name, driver's license "
+                                        'number, last four of the SSN, last known address, and principal '
+                                        'balance, then submit the forms to the clerk of the court that '
+                                        'entered the judgment [Bobby Benjy — hJmfkC9gu4c @ 00:00:57]'},
+                             {'step': 3,
+                              'title': 'Record the Originals With Each County Recorder',
+                              'action': 'Send the sealed originals through an attorney service to every '
+                                        'target County Recorder.',
+                              'detail': 'Once recorded, the monetary lien attaches to any real estate the '
+                                        'debtor is on title for in that county, including joint '
+                                        'co-ownership [Bobby Benjy — hJmfkC9gu4c @ 00:03:30]'},
+                             {'step': 4,
+                              'title': 'Hold Priority and Wait for the Escrow Call',
+                              'action': 'Calendar the revival deadline and collect from equity when the '
+                                        'debtor sells or refinances.',
+                              'detail': "Start the revival action within five years to keep the lien's "
+                                        'place in line [Five Minute Legal Master Series — V5NrY_biljg @ '
+                                        '00:02:56]; on a sale or refinance, escrow contacts you and pays '
+                                        'from equity after senior deeds of trust [Bobby Benjy — '
+                                        'hJmfkC9gu4c @ 00:04:58]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fault line is whether a judgment is already a lien on real estate '
+                              'the moment it is entered. Nicholas Kralick of the Five Minute Legal Master '
+                              'Series says that in Pennsylvania a judgment automatically acts as a lien '
+                              'against real estate the debtor owns in the county where it is recorded, and '
+                              'that lien priority against that real estate is established just by virtue '
+                              'of having the judgment recorded [V5NrY_biljg @ 00:01:26]. Hidden Power '
+                              'Files takes the opposite position: the judgment itself does not '
+                              'automatically create a lien on real property, and the creditor has to '
+                              'record the judgment, or an abstract of judgment in some states, in the deed '
+                              'records of the county where the debtor owns land [-HFzhDO6v-A @ 00:00:41]. '
+                              'The In Rem Podcast host goes further, calling an unrecorded judgment just a '
+                              'number on a piece of paper or a number in a computer system until it is '
+                              "taken to the county recorder's office where the debtor owns real estate "
+                              '[pHI86CVm1RQ @ 00:02:08]. Dave at AFX Videos splits the difference from the '
+                              'title desk: in some states and counties the judgment attaches '
+                              'automatically, yet the holder can still carry it over to the land records '
+                              'and record it as a lien even though that might not be necessary '
+                              '[zYr0eoJPSpU @ 00:01:10].',
+                              'Priority is the second split, and it decides whether a recorded lien ever '
+                              'turns into cash. The Real Estate Classroom instructor teaches that specific '
+                              'liens have higher priority than judgment liens, so even when the judgment '
+                              'lien was filed first, a tax lien or IRS lien automatically jumps above it '
+                              '[dwH7f7RGYC4 @ 00:09:48]. Maggie of Just Call Maggie runs a first-in-time '
+                              'model with carve-outs for property taxes, assessments and sometimes HOA '
+                              'liens: in the worked example, a 2012 mortgage, a 2014 judgment lien, a 2020 '
+                              'second mortgage and a 2022 tax lien pay out tax first, then the first '
+                              'mortgage, then the judgment, and only then the second mortgage [SFR_S8YmDSU '
+                              '@ 00:03:40]. Bob Benjie of Benjie Law Corporation treats a recorded '
+                              'abstract like a deed of trust paid through escrow in the order it was '
+                              'recorded, with senior deeds of trust ahead but any equity left flowing to '
+                              'the creditor [hJmfkC9gu4c @ 00:05:19]. PrepAgent flags a lien class that '
+                              'cuts in line: mechanics liens take priority, so in foreclosure the '
+                              "mechanics lien is paid off before the lender, which can impair the owner's "
+                              'ability to get a loan [dccNDC1WYF4 @ 00:01:43]. Where Maggie and the '
+                              'Classroom agree is the top slot: property taxes and government assessments '
+                              'override recording date.',
+                              'The third split is what a judgment lien can reach and whether it survives '
+                              "the debtor's exit routes. Kralick says that where a married debtor owns "
+                              'real estate with a spouse as tenants by the entirety, there is no judgment '
+                              'lien against that property if the creditor only holds a judgment against '
+                              'one spouse [V5NrY_biljg @ 00:01:45]. Bob Benjie describes the California '
+                              'abstract reaching harder: it attaches to the equity of any property the '
+                              'debtor is on title for, even as a joint co-owner with five other people in '
+                              'Orange County [hJmfkC9gu4c @ 00:03:50]. Bankruptcy draws the sharpest '
+                              'contrast. The Real Estate Exam Questions channel answers that judgment '
+                              'liens can be discharged in bankruptcy proceedings depending on the type of '
+                              'bankruptcy and the specific circumstances [KgBg-x2ZZ4w @ 00:07:29]. David '
+                              'Babel warns that many people, including some attorneys, do not know a '
+                              'judgment lien may survive a Chapter 7 when the debtor owns a house or condo '
+                              '[q6PjSqG-sF4 @ 00:01:09]. In the Babel scenario the discharge forever ends '
+                              "the creditor's ability to sue on the debt, yet the lien docketed in the "
+                              'county stays on the property, so the debtor still cannot refinance or sell '
+                              'without paying it off. For a collector, the lien outlives the debt.'],
+               'table': {'caption': 'Competing practitioner playbooks on judgment lien attachment, '
+                                    'priority, reach and lifespan',
+                         'headers': ['Dispute', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Does entry of judgment alone create a real property lien',
+                                   'Pennsylvania judgment automatically liens debtor real estate in the '
+                                   'recording county',
+                                   'Judgment alone creates no lien until recorded or abstracted in county '
+                                   'records',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:01:26]) vs Hidden '
+                                   'Power Files ([-HFzhDO6v-A @ 00:00:41])'],
+                                  ['Does a judgment lien hold its recording-date place in line',
+                                   'Specific liens like tax or IRS liens jump above even an earlier '
+                                   'judgment',
+                                   'First in time rule pays a 2014 judgment ahead of a 2020 second '
+                                   'mortgage',
+                                   'The Real Estate Classroom ([dwH7f7RGYC4 @ 00:09:48]) vs Just Call '
+                                   'Maggie ([SFR_S8YmDSU @ 00:03:40])'],
+                                  ['How widely to record abstracts across California counties',
+                                   'Shotgun approach records in every county so abstracts lie in wait for '
+                                   'acquisitions',
+                                   'Record in major counties plus every county where homework shows debtor '
+                                   'property',
+                                   'Bobby Benjy ([hJmfkC9gu4c @ 00:04:43]) vs Bobby Benjy ([hJmfkC9gu4c @ '
+                                   '00:05:35])'],
+                                  ["Can one spouse or co-owner's debt hit shared real estate",
+                                   'No lien on tenants by the entirety property with judgment against one '
+                                   'spouse',
+                                   'California abstract attaches to equity even with five other co-owners '
+                                   'on title',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:01:45]) vs Bobby '
+                                   'Benjy ([hJmfkC9gu4c @ 00:03:50])'],
+                                  ['Does a Chapter 7 discharge wipe out a recorded judgment lien',
+                                   'Judgment liens can be discharged depending on the type of bankruptcy '
+                                   'and circumstances',
+                                   'Judgment lien on a house or condo may survive the discharge unless '
+                                   'avoided',
+                                   'Real Estate Exam Questions ([KgBg-x2ZZ4w @ 00:07:29]) vs David Babel '
+                                   '([q6PjSqG-sF4 @ 00:01:09])'],
+                                  ['How a creditor gets a lien on personal property',
+                                   'Sheriff levy on equipment, vehicles, furniture and inventory creates '
+                                   'the lien',
+                                   'Writ of garnishment freezes non-exempt bank funds; writ of execution '
+                                   'tows vehicles',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:05:48]) vs In Rem '
+                                   'Podcast ([pHI86CVm1RQ @ 00:03:57])'],
+                                  ['How long a recorded judgment lien keeps its working power',
+                                   'Five-year revival deadline preserves priority; late revival goes to '
+                                   'end of line',
+                                   'Lien duration varies significantly by state; renewal records a new '
+                                   'instrument',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:02:56]) vs Hidden '
+                                   'Power Files ([-HFzhDO6v-A @ 00:03:56])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common firsthand failure is simply not finding the lien. Hidden '
+                              'Power Files calls the judgment lien one of the most commonly missed '
+                              'instruments in a title search, because it sits in the grantor-grantee index '
+                              "under the debtor's name mixed in with deeds, mortgages and releases, and a "
+                              'search that only looks for deed-type entries scans right past it '
+                              '[-HFzhDO6v-A @ 00:02:02]. Dave at AFX Videos adds that judgment liens are '
+                              'usually not in the land records at all, yet may affect the property just as '
+                              'much as a mortgage, so anyone ordering a title search should specify that '
+                              'judgment liens are wanted [a5bLikprQ4E @ 00:01:35]. The reverse trap is a '
+                              'false hit. Realtor Dylan Raquel had a seller, Kristian Fuentes, in escrow '
+                              'when the preliminary title report showed a child-support lien against a '
+                              'Christian Fuentes; the seller had no kids, filled out a confidential '
+                              'statement of information, and the title insurance company found the Social '
+                              'Security numbers did not match and issued a supplement removing the lien '
+                              '[7NXn3JN88l8 @ 00:02:33]. The Raquel takeaway is that it is not a matter of '
+                              'whether the seller has an issue, but whether anyone with that name has one, '
+                              'and the prelim will reveal it.',
+                              'The second trap is economics at the closing table. Tiffany Weber, a real '
+                              'estate attorney in Mooresville, North Carolina, sees sellers conceal '
+                              'judgments hoping the closing attorney will not catch them, only for the '
+                              'payoff to surface on the closing statement with not enough proceeds left, '
+                              'so the seller has to bring money to closing [RFKcDlW0gQU @ 00:03:04]. That '
+                              'payoff compounds: David Babel says a judgment docketed in the Bronx Supreme '
+                              "Court attaches to the debtor's property automatically and blocks any "
+                              'refinance or sale until it is paid, including interest accumulating at nine '
+                              'percent per year, which over the years can be humongous [q6PjSqG-sF4 @ '
+                              "00:01:31]. On the creditor's side, the failure is attaching to nothing. "
+                              'Kralick warns that a debtor may own real estate without sufficient equity '
+                              'for the lien to attach, because the property is worth less than what is '
+                              'owed on it; the play then is to wait for improved finances or for the '
+                              'debtor to seek financing [V5NrY_biljg @ 00:02:02]. SpeakLegal lists the '
+                              'three standing problems with any abstract: finding the county where the '
+                              'debtor owns real estate, secured loans, tax liens and other judgments that '
+                              'come ahead of the judgment lien, and the debtor going bankrupt to avoid '
+                              'paying [EAME7zlaLqU @ 00:00:57].',
+                              'The third cluster is timing failures. Kralick says to disregard stories '
+                              'that a judgment is only valid for five years; five years is the statute of '
+                              'limitations for starting an action to revive the judgment lien on real '
+                              'property, and a late revival still works but loses priority against '
+                              'intervening liens and goes to the end of the line [V5NrY_biljg @ 00:03:14]. '
+                              'Hidden Power Files reads the same clock from the record side: a renewal '
+                              'shows up as a new instrument in the deed books, while a judgment lien entry '
+                              'with no subsequent release may still be active [-HFzhDO6v-A @ 00:04:35]. '
+                              'For debtors, the Babel clock is ninety days: the lien can be avoided on '
+                              'both a primary residence and investment properties if it was filed within '
+                              '90 days of the bankruptcy filing, it may also be knocked out where it '
+                              'impairs the homestead exemption, and attacking it after the case concludes '
+                              'is a lot more complicated, expensive and may not be permissible '
+                              '[q6PjSqG-sF4 @ 00:02:54]. On personal property, Kralick says the judgment '
+                              "is no lien at all; the sheriff's levy creates it, so a creditor sitting "
+                              'behind prior judgments just has to beat them to the punch by getting the '
+                              'sheriff out first [V5NrY_biljg @ 00:04:42].'],
+               'table': {'caption': 'Firsthand judgment lien failure modes and the economic hit '
+                                    'practitioners reported',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Warned',
+                                     'Economic Hit Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Search reads only deed-type entries in the grantor-grantee index',
+                                   'Judgment lien filed under the debtor name gets scanned past among '
+                                   'deeds',
+                                   'Read every instrument type under the current and every prior owner '
+                                   'name',
+                                   'Hidden Power Files ([-HFzhDO6v-A @ 00:05:15])'],
+                                  ['Separate judgment docket or court portal never checked by the searcher',
+                                   'Some counties keep judgment liens in a separate index run by another '
+                                   'office',
+                                   'Ask the clerk, then search deed records, court records and any '
+                                   'statewide registry',
+                                   'Hidden Power Files ([-HFzhDO6v-A @ 00:03:01])'],
+                                  ["Same-name lien lands on an innocent seller's preliminary title report",
+                                   'Child-support lien against Christian Fuentes appeared against seller '
+                                   'Kristian Fuentes',
+                                   'Statement of information proved a Social Security mismatch and title '
+                                   'issued a removal supplement',
+                                   'Dylan Raquel Real Estate ([7NXn3JN88l8 @ 00:02:49])'],
+                                  ['Seller hides a judgment hoping the closing attorney misses it',
+                                   "Payoff surfaces on the closing statement and wipes out the seller's "
+                                   'proceeds',
+                                   'Seller ends up bringing money; get the facts to the closing attorney '
+                                   'early',
+                                   'The Real Estate Lawyer ([RFKcDlW0gQU @ 00:03:04])'],
+                                  ['Debtor assumes the Chapter 7 discharge cleared the house',
+                                   'Docketed judgment keeps blocking refinance or sale while interest runs '
+                                   'at nine percent',
+                                   'Avoidance must be pursued during the bankruptcy case, not after it '
+                                   'concludes',
+                                   'David Babel ([q6PjSqG-sF4 @ 00:01:31])'],
+                                  ['Creditor records against real estate that carries no equity',
+                                   'Property worth less than owed on it leaves the lien nothing to attach '
+                                   'to',
+                                   'Wait for improved debtor finances or a future refinancing attempt by '
+                                   'the debtor',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:02:02])'],
+                                  ['Creditor lets the five-year revival window pass without filing',
+                                   'Late revival still works but priority against intervening liens is '
+                                   'lost',
+                                   'Judgment drops to the end of the line behind every later lien',
+                                   'Five Minute Legal Master Series ([V5NrY_biljg @ 00:03:14])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Recording And Pre-Closing Kill Checks',
+                           'body': 'Run these four checks before recording an abstract, before relying on '
+                                   'a clean chain, and before writing off a lien as dead.',
+                           'items': ['Confirm the search read every instrument type under the current '
+                                     'owner and every prior owner name, plus any separate judgment index '
+                                     'or docket, before treating the chain as unencumbered [Hidden Power '
+                                     'Files — -HFzhDO6v-A @ 00:04:56].',
+                                     "Confirm the debtor's real estate is worth more than what is owed on "
+                                     'it; with no equity the judgment lien has nothing to attach to and '
+                                     'the play becomes waiting for a refinance [Five Minute Legal Master '
+                                     'Series — V5NrY_biljg @ 00:02:02].',
+                                     'Calendar the five-year revival deadline from entry of judgment, '
+                                     'because a late revival survives but loses its place in line behind '
+                                     'intervening liens [Five Minute Legal Master Series — V5NrY_biljg @ '
+                                     '00:02:56].',
+                                     'When the debtor files bankruptcy, check whether the lien was filed '
+                                     'within 90 days of the filing or impairs the homestead exemption, '
+                                     'because either can get it avoided [David Babel — q6PjSqG-sF4 @ '
+                                     '00:02:54].']}}],
+ 'pull_quote': '"A judgment lien sits in the courthouse record looking like any other entry in the deed '
+               'index. The difference between finding it and missing it is whether your search read every '
+               "instrument type under the owner's name or only looked for the ones that looked like "
+               'deeds." Hidden Power Files (-HFzhDO6v-A @ 00:06:17).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Do the homework first: identify every county where the judgment debtor owns real '
+                      'estate, then request one original abstract per target county from the clerk of the '
+                      'court that entered the judgment [Bobby Benjy — hJmfkC9gu4c @ 00:02:41].',
+                      "Complete the one-page abstract form with the judgment entry date, the debtor's full "
+                      "and correctly spelled name, driver's license number, last four of the Social "
+                      'Security number, last known address and principal award [Bobby Benjy — hJmfkC9gu4c '
+                      '@ 00:01:11].',
+                      'Use an attorney service to record each sealed original abstract at the County '
+                      'Recorder in every target county so the lien attaches to any property the debtor is '
+                      'on title for [Bobby Benjy — hJmfkC9gu4c @ 00:03:15].',
+                      'When the debtor later acquires real estate by inheritance, divorce settlement or '
+                      'purchase, index the judgment in a court of record in the county holding that '
+                      'after-acquired property [Five Minute Legal Master Series — V5NrY_biljg @ 00:03:48].',
+                      'For equipment, vehicles, furniture and inventory, issue execution and send the '
+                      'sheriff to levy before prior judgment creditors do, because the levy creates the '
+                      'personal property lien [Five Minute Legal Master Series — V5NrY_biljg @ 00:04:24].',
+                      "Serve a writ of garnishment on the financial institution holding the debtor's "
+                      'account so the bank must hold all non-exempt funds pending later court proceedings '
+                      '[In Rem Podcast — pHI86CVm1RQ @ 00:03:42].'],
+ 'statutory_citations': [{'title': 'Bobby Benjy — BLC Legal Talks - California Money Judgment Enforcement '
+                                   'Series - Part 4: Abstracts of Judgment [00:00:19]',
+                          'url': 'https://www.youtube.com/watch?v=hJmfkC9gu4c&t=19s',
+                          'relevance': 'Primary practitioner testimony on obtaining, issuing and recording '
+                                       "abstracts of judgment county by county to lien a debtor's real "
+                                       'property.'},
+                         {'title': 'Five Minute Legal Master Series — The Five Minute Legal Master Series: '
+                                   'Judgment and Judgment Liens [00:01:26]',
+                          'url': 'https://www.youtube.com/watch?v=V5NrY_biljg&t=86s',
+                          'relevance': 'Primary practitioner testimony on automatic county judgment liens, '
+                                       'five-year revival priority, entireties property and sheriff '
+                                       'levies.'},
+                         {'title': 'Hidden Power Files — How Judgment Liens Show Up in Courthouse Records '
+                                   '— And How to Find Them | Hidden Power Files [00:01:01]',
+                          'url': 'https://www.youtube.com/watch?v=-HFzhDO6v-A&t=61s',
+                          'relevance': 'Primary practitioner testimony on recording judgment liens and '
+                                       'searching deed indexes, separate judgment dockets and court '
+                                       'portals.'},
+                         {'title': 'David Babel — Did You Know - Judgment Liens On Your Primary Residence '
+                                   '[00:01:09]',
+                          'url': 'https://www.youtube.com/watch?v=q6PjSqG-sF4&t=69s',
+                          'relevance': 'Primary practitioner testimony on judgment liens surviving Chapter '
+                                       '7 and the 90-day and homestead avoidance windows.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'cZtaubxDzMA',
+                       'title': 'Judgment Lien: Definition, Examples, Vs. Property Lien',
+                       'channel': 'Simple Explain',
+                       'author': 'Simple Explain',
+                       'text': 'If a court enters a judgment against a debtor, a lien is automatically '
+                               'created on any real estate the debtor owns in some states. In most states, '
+                               'the judgment creditor must record the lien via county or state filing.',
+                       'tip': 'If a court enters a judgment against a debtor, a lien is automatically '
+                              'created on any real estate the debtor owns in some states. In most states, '
+                              'the judgment creditor must record the lien via county or state filing.',
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=cZtaubxDzMA&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=cZtaubxDzMA&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dccNDC1WYF4',
+                       'title': 'liens - Pass your Real Estate Exam!',
+                       'channel': 'PrepAgent',
+                       'author': 'PrepAgent',
+                       'text': 'Once the judgment lien has been filed, it creates a general lien against '
+                               'all the property of the defendant.',
+                       'tip': 'Once the judgment lien has been filed, it creates a general lien against '
+                              'all the property of the defendant.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=dccNDC1WYF4&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=dccNDC1WYF4&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V5NrY_biljg',
+                       'title': 'The Five Minute Legal Master Series: Judgment and Judgment Liens',
+                       'channel': 'Five Minute Legal Master Series',
+                       'author': 'Five Minute Legal Master Series',
+                       'text': 'A judgment lien may still be revived after that five-year statute of '
+                               'limitations period for revival, but its priority against intervening liens '
+                               'would be lost; it would lose its place in line and go to the end of the '
+                               'line.',
+                       'tip': 'A judgment lien may still be revived after that five-year statute of '
+                              'limitations period for revival, but its priority against intervening liens '
+                              'would be lost; it would lose its place in line and go to the end of the '
+                              'line.',
+                       'timestamp': 176,
+                       'timestamp_seconds': 176,
+                       'timestamp_label': '[00:02:56]',
+                       'url': 'https://www.youtube.com/watch?v=V5NrY_biljg&t=176s',
+                       'markdown': '[00:02:56](https://www.youtube.com/watch?v=V5NrY_biljg&t=176s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V5NrY_biljg',
+                       'title': 'The Five Minute Legal Master Series: Judgment and Judgment Liens',
+                       'channel': 'Five Minute Legal Master Series',
+                       'author': 'Five Minute Legal Master Series',
+                       'text': 'You can still obtain a lien by sending the sheriff out and doing a levy on '
+                               "those items of personal property; it's the sheriff's levy that creates the "
+                               'lien.',
+                       'tip': 'You can still obtain a lien by sending the sheriff out and doing a levy on '
+                              "those items of personal property; it's the sheriff's levy that creates the "
+                              'lien.',
+                       'timestamp': 264,
+                       'timestamp_seconds': 264,
+                       'timestamp_label': '[00:04:24]',
+                       'url': 'https://www.youtube.com/watch?v=V5NrY_biljg&t=264s',
+                       'markdown': '[00:04:24](https://www.youtube.com/watch?v=V5NrY_biljg&t=264s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gyWC9jWNaXQ',
+                       'title': 'What is the difference between a judgement and a lien?',
+                       'channel': 'Private Investigator Videos',
+                       'author': 'Private Investigator Videos',
+                       'text': 'If that judgment is recorded in the court records in the county, any '
+                               'property in that county owned by the debtor becomes encumbered.',
+                       'tip': 'If that judgment is recorded in the court records in the county, any '
+                              'property in that county owned by the debtor becomes encumbered.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=gyWC9jWNaXQ&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=gyWC9jWNaXQ&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dwH7f7RGYC4',
+                       'title': 'What Is A Lien | Real Estate Exam Prep',
+                       'channel': 'The Real Estate Classroom',
+                       'author': 'The Real Estate Classroom',
+                       'text': 'Even if that lien is in first place, a specific lien will automatically '
+                               'jump above it. A tax lien, for example, is going to jump above a judgment '
+                               'lien.',
+                       'tip': 'Even if that lien is in first place, a specific lien will automatically '
+                              'jump above it. A tax lien, for example, is going to jump above a judgment '
+                              'lien.',
+                       'timestamp': 588,
+                       'timestamp_seconds': 588,
+                       'timestamp_label': '[00:09:48]',
+                       'url': 'https://www.youtube.com/watch?v=dwH7f7RGYC4&t=588s',
+                       'markdown': '[00:09:48](https://www.youtube.com/watch?v=dwH7f7RGYC4&t=588s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-HFzhDO6v-A',
+                       'title': 'How Judgment Liens Show Up in Courthouse Records — And How to Find Them | '
+                                'Hidden Power Files',
+                       'channel': 'Hidden Power Files',
+                       'author': 'Hidden Power Files',
+                       'text': 'A search that only looks for deed type entries in the index will scan '
+                               'right past it. A search that reads every entry under the name, every '
+                               'instrument type, will find it.',
+                       'tip': 'A search that only looks for deed type entries in the index will scan right '
+                              'past it. A search that reads every entry under the name, every instrument '
+                              'type, will find it.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=-HFzhDO6v-A&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=-HFzhDO6v-A&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q6PjSqG-sF4',
+                       'title': 'Did You Know - Judgment Liens On Your Primary Residence',
+                       'channel': 'David Babel',
+                       'author': 'David Babel',
+                       'text': 'You will not be able to refinance or sell your house unless you pay off '
+                               'the amount of the judgment lien including interest accumulating at nine '
+                               'percent per year, and that can be a lot over the years.',
+                       'tip': 'You will not be able to refinance or sell your house unless you pay off the '
+                              'amount of the judgment lien including interest accumulating at nine percent '
+                              'per year, and that can be a lot over the years.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=q6PjSqG-sF4&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=q6PjSqG-sF4&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RFKcDlW0gQU',
+                       'title': 'Judgment Liens: What Every Homeowner Needs to Know',
+                       'channel': 'The Real Estate Lawyer',
+                       'author': 'The Real Estate Lawyer',
+                       'text': 'Now there are not enough proceeds for the seller to take any money out of '
+                               "the transaction, so it's actually going to have to bring money.",
+                       'tip': 'Now there are not enough proceeds for the seller to take any money out of '
+                              "the transaction, so it's actually going to have to bring money.",
+                       'timestamp': 184,
+                       'timestamp_seconds': 184,
+                       'timestamp_label': '[00:03:04]',
+                       'url': 'https://www.youtube.com/watch?v=RFKcDlW0gQU&t=184s',
+                       'markdown': '[00:03:04](https://www.youtube.com/watch?v=RFKcDlW0gQU&t=184s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a5bLikprQ4E',
+                       'title': 'What is a judgment lien?',
+                       'channel': 'AFX Videos',
+                       'author': 'AFX Videos',
+                       'text': 'That lien will automatically attach to a property you own or even a '
+                               'property you acquire in the future.',
+                       'tip': 'That lien will automatically attach to a property you own or even a '
+                              'property you acquire in the future.',
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=a5bLikprQ4E&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=a5bLikprQ4E&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7NXn3JN88l8',
+                       'title': 'How to remove a judgment or lien from a Preliminary Title Report - Be a '
+                                'Better Realtor',
+                       'channel': 'Dylan Raquel Real Estate',
+                       'author': 'Dylan Raquel Real Estate',
+                       'text': 'Upon further research the social security number of the seller did not '
+                               'match with the social security number of this person that had the same '
+                               'name.',
+                       'tip': 'Upon further research the social security number of the seller did not '
+                              'match with the social security number of this person that had the same '
+                              'name.',
+                       'timestamp': 153,
+                       'timestamp_seconds': 153,
+                       'timestamp_label': '[00:02:33]',
+                       'url': 'https://www.youtube.com/watch?v=7NXn3JN88l8&t=153s',
+                       'markdown': '[00:02:33](https://www.youtube.com/watch?v=7NXn3JN88l8&t=153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KgBg-x2ZZ4w',
+                       'title': '20 Real Estate Exam Questions On Liens - Must Know Questions To Pass  The '
+                                'Real Estate Exam!',
+                       'channel': 'Real Estate Exam Questions',
+                       'author': 'Real Estate Exam Questions',
+                       'text': 'Judgment liens can be discharged in bankruptcy proceedings depending on '
+                               'the type of bankruptcy and the specific circumstances.',
+                       'tip': 'Judgment liens can be discharged in bankruptcy proceedings depending on the '
+                              'type of bankruptcy and the specific circumstances.',
+                       'timestamp': 449,
+                       'timestamp_seconds': 449,
+                       'timestamp_label': '[00:07:29]',
+                       'url': 'https://www.youtube.com/watch?v=KgBg-x2ZZ4w&t=449s',
+                       'markdown': '[00:07:29](https://www.youtube.com/watch?v=KgBg-x2ZZ4w&t=449s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hJmfkC9gu4c',
+                       'title': 'BLC Legal Talks - California Money Judgment Enforcement Series - Part 4: '
+                                'Abstracts of Judgment',
+                       'channel': 'Bobby Benjy',
+                       'author': 'Bobby Benjy',
+                       'text': 'Three years later Jane Roe does acquire real estate in Los Angeles; your '
+                               'abstract will retroactively attach to that property and will immediately '
+                               'become a monetary lien on the property.',
+                       'tip': 'Three years later Jane Roe does acquire real estate in Los Angeles; your '
+                              'abstract will retroactively attach to that property and will immediately '
+                              'become a monetary lien on the property.',
+                       'timestamp': 283,
+                       'timestamp_seconds': 283,
+                       'timestamp_label': '[00:04:43]',
+                       'url': 'https://www.youtube.com/watch?v=hJmfkC9gu4c&t=283s',
+                       'markdown': '[00:04:43](https://www.youtube.com/watch?v=hJmfkC9gu4c&t=283s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zYr0eoJPSpU',
+                       'title': 'What is the difference between a judgement and a lien? | AFX',
+                       'channel': 'AFX Videos',
+                       'author': 'AFX Videos',
+                       'text': 'That judgment holder can carry it over to the land records and record it '
+                               'as a lien against a property, even though that might not be necessary.',
+                       'tip': 'That judgment holder can carry it over to the land records and record it as '
+                              'a lien against a property, even though that might not be necessary.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=zYr0eoJPSpU&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=zYr0eoJPSpU&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EAME7zlaLqU',
+                       'title': 'abstract of judgment',
+                       'channel': 'SpeakLegal',
+                       'author': 'SpeakLegal',
+                       'text': 'There are several problems: to find the county where the loser owns real '
+                               'estate, the probability that there are secured loans, tax liens and or '
+                               'other judgments that come ahead of the judgment lien, and the possibility '
+                               'that the loser debtor may go bankrupt and avoid paying the debt.',
+                       'tip': 'There are several problems: to find the county where the loser owns real '
+                              'estate, the probability that there are secured loans, tax liens and or '
+                              'other judgments that come ahead of the judgment lien, and the possibility '
+                              'that the loser debtor may go bankrupt and avoid paying the debt.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=EAME7zlaLqU&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=EAME7zlaLqU&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SFR_S8YmDSU',
+                       'title': 'Mastering Encumbrances: Liens, Easements, Encroachments and More for Your '
+                                'Real Estate Exam',
+                       'channel': 'Just Call Maggie',
+                       'author': 'Just Call Maggie',
+                       'text': 'Even though the tax lien was recorded last, it takes priority and gets '
+                               'paid off first; after that the first mortgage lien is paid off, followed '
+                               'by the judgment lien and finally the second mortgage lien.',
+                       'tip': 'Even though the tax lien was recorded last, it takes priority and gets paid '
+                              'off first; after that the first mortgage lien is paid off, followed by the '
+                              'judgment lien and finally the second mortgage lien.',
+                       'timestamp': 220,
+                       'timestamp_seconds': 220,
+                       'timestamp_label': '[00:03:40]',
+                       'url': 'https://www.youtube.com/watch?v=SFR_S8YmDSU&t=220s',
+                       'markdown': '[00:03:40](https://www.youtube.com/watch?v=SFR_S8YmDSU&t=220s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pHI86CVm1RQ',
+                       'title': 'What is the Difference Between a Judgment and a Lien?',
+                       'channel': 'In Rem Podcast',
+                       'author': 'In Rem Podcast',
+                       'text': 'A judgment alone is not a lien; it just sits there in the court records '
+                               "and frankly at that point it's just the number on a piece of paper or a "
+                               'number in a computer system.',
+                       'tip': 'A judgment alone is not a lien; it just sits there in the court records and '
+                              "frankly at that point it's just the number on a piece of paper or a number "
+                              'in a computer system.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=pHI86CVm1RQ&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=pHI86CVm1RQ&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

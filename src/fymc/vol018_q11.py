@@ -1,586 +1,843 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Parcel-Level Accountability, QGIS Evidence, Title-Insured Closings, Accrual Cohorts & Transferable Rights Under 17 U.S.C. Section 204(a)",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score. "
-        "Build around six chapter-mapped execution plays: off-market sourcing, GIS screening, "
-        "comparable-led offers, title/access diligence, minor subdivisions, and title-insured "
-        "dispositions. The lean pod uses one full-time principal and three contractors; "
-        "the scaled pod adds an operations manager and a subdivision specialist. Canonical "
-        "annual owner net profit is $24,000 Conservative, $157,250 Base, and $375,000 Scaled, "
-        "on gross parcel sale proceeds rather than intermediary fees. Transferability comes "
-        "from documented access, closed-loop contractor QA, parcel-level accrual books, "
-        "assigned work-product rights, and counterparty exposure capped at 25%. Value "
-        "repeatable earnings separately from surplus land, and price replacement labor "
-        "before treating the business as a durable cash cow."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign six execution plays without disguising a large team",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with four dedicated people, not four departments. The full-time principal owns capital allocation, "
-                    "offer authority, exceptions, and final disposition pricing. Contractor one handles off-market sourcing, "
-                    "GIS screening, and comparable-led offer preparation as a parcel-intelligence seat. Contractor two "
-                    "coordinates title/access diligence, assembling recorded instruments and tracking curative work without "
-                    "substituting personal conclusions for title counsel or a licensed surveyor. Contractor three owns "
-                    "listing production, buyer follow-up, and closing coordination for title-insured dispositions, subject "
-                    "to the applicable brokerage rules. Minor subdivisions remain a principal-led exception play until "
-                    "volume supports specialist capacity. These are the six chapter-mapped plays; each parcel receives "
-                    "a primary play tag and may carry secondary tags without being counted twice in throughput. "
-                    "Airtable can hold the operating register, QGIS the spatial evidence, and a controlled document "
-                    "repository the closing record. Outside title insurers, attorneys, surveyors, and escrow providers "
-                    "are transaction vendors rather than hidden dedicated pod seats. Their invoices still enter "
-                    "parcel economics. Publish an authority map distinguishing who prepares, who checks, who signs, "
-                    "and who releases funds. No contractor may turn a promising screenshot into a binding acquisition "
-                    "commitment. Record an alternate reviewer so a principal's absence does not silently suspend diligence."
-                ),
-                (
-                    "Buy defined deliverables rather than vague availability. An illustrative Base contractor budget is "
-                    "$1,250 monthly for parcel intelligence, $1,500 for diligence coordination, and $1,750 for disposition "
-                    "coordination: $54,000 annually before separately scoped transaction services. Those amounts are "
-                    "planning assumptions inside existing scenario costs, not additions to canonical profit. Specify "
-                    "capacity, complexity limits, accepted evidence, and revision obligations before requesting bids. "
-                    "For example, require a first parcel screen within two business days after complete inputs, a "
-                    "title-exception log within three business days after receipt of the commitment, and a closing "
-                    "checklist within one business day after escrow opens. Missing county records pause the relevant "
-                    "clock only when the contractor logs the dependency and next follow-up date. Pay fixed scope "
-                    "fees against accepted batches; reserve any closing-related compensation for arrangements permitted "
-                    "by applicable licensing rules. Reject per-offer bonuses that encourage weak access assumptions "
-                    "or artificially generous comparable selection. Rework attributable to an omitted contracted check "
-                    "is included; a newly discovered easement dispute is a separately priced scope change. Have "
-                    "counsel assess worker classification from actual control and economic dependence, not merely "
-                    "the contractor label. Review rates quarterly against accepted output, error cost, and available "
-                    "specialist capacity."
-                ),
-                (
-                    "At the scaled configuration, the second full-time seat becomes an operations manager, while the "
-                    "fourth contractor supplies subdivision and entitlement expertise. The resulting six-person pod is "
-                    "two employees and four contractors, not six interchangeable acquisition agents. The manager "
-                    "owns queue discipline, reviewer assignments, monthly close coordination, and vendor service levels; "
-                    "the principal retains investment limits and unusual land-risk decisions. The subdivision specialist "
-                    "coordinates lot-yield assumptions, agency submissions, and licensed technical work within the "
-                    "specialist's actual credentials. Do not imply that a planning consultant can stamp a survey. "
-                    "Add these seats when funded workload and recurring contribution support them, rather than when "
-                    "one unusually profitable parcel closes. Require an eight-week capacity forecast, a thirteen-week "
-                    "cash forecast, and demonstrated completion of the existing team's checklists. Measure principal "
-                    "dependence by tracking substantive interventions per closing and hours needed to resolve exceptions. "
-                    "A buyer will discount a business whose owner alone remembers which road is public or which "
-                    "builder actually pays on time. Document substitute coverage for every recurring task, but keep "
-                    "bank release rights narrow and independently verified. The smaller pod remains valid when "
-                    "deal quality is strong and additional volume would merely increase inventory age or expose "
-                    "the business to unfamiliar jurisdictions."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Play Accountability Matrix for the Four-Person and Six-Person Pods",
-                "headers": [
-                    "Mapped execution play and accountable seat",
-                    "Required accepted evidence before handoff",
-                    "Lean compensation and scope control",
-                    "Scaled ownership and escalation boundary",
-                ],
-                "rows": [
-                    [
-                        "Off-market sourcing belongs to the parcel-intelligence contractor seat",
-                        "Deduplicated owner records include source dates and outreach history",
-                        "Monthly scoped batches exclude unsupported owner identification guesses",
-                        "Operations manager checks targeting drift before additional county expansion",
-                    ],
-                    [
-                        "GIS screening belongs to the parcel-intelligence contractor seat",
-                        "QGIS package preserves layers, dates, coordinate systems, and concerns",
-                        "Accepted screens require documented access and environmental flag checks",
-                        "Manager assigns second review when spatial evidence materially conflicts",
-                    ],
-                    [
-                        "Comparable-led offers remain under the principal's investment authority",
-                        "Recorded sale evidence separates usable comparables from listing aspirations",
-                        "Research fee rewards complete evidence rather than higher offers",
-                        "Manager checks arithmetic while principal retains binding offer authority",
-                    ],
-                    [
-                        "Title/access diligence belongs to the diligence-coordination contractor seat",
-                        "Exception register links recorded instruments, surveys, and insurer responses",
-                        "Fixed scope excludes newly discovered litigation and boundary proceedings",
-                        "Manager escalates unresolved access questions before earnest money exposure",
-                    ],
-                    [
-                        "Minor subdivisions remain principal-led until specialist capacity is funded",
-                        "Yield memorandum identifies local requirements and licensed technical dependencies",
-                        "Separate milestone scopes prevent speculative entitlement work from expanding",
-                        "Fourth contractor coordinates submissions within actual credentials and authority",
-                    ],
-                    [
-                        "Title-insured dispositions belong to the transaction-coordination contractor seat",
-                        "Listing claims reconcile with title evidence and closing instructions",
-                        "Permitted fixed coordination fees depend on accepted deliverable quality",
-                        "Manager tracks buyer readiness while principal controls price exceptions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that preserve specialist leverage",
-                "body": "Make the evidence portable before increasing parcel throughput or adding another county.",
-                "items": [
-                    "Save the county road-maintenance response beside the recorded access instrument; a road appearing on an aerial image proves neither legal access nor public maintenance.",
-                    "Store comparable deed references and adjustment notes, not just portal links; stale listings and expired subscriptions otherwise erase the offer rationale.",
-                    "Price survey mobilization and minimum trip charges before choosing a subdivision market; scattered low-value parcels can consume the apparent lot-split spread.",
-                    "Prepare a backup title contact before the first difficult closing, and preserve the original insurer's unresolved exception history when moving a file.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Run a weekly scorecard that penalizes hidden defects",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run the weekly meeting from a dated snapshot rather than a live dashboard that changes during "
-                    "discussion. Each Monday, freeze parcel stage, committed capital, latest evidence date, next action, "
-                    "and accountable seat. Track the six plays through a shared funnel: sourced, screened, offered, "
-                    "contracted, cleared, acquired, listed, and closed. Count unique parcels for screening and unique "
-                    "purchase agreements for contracting; count child lots separately only after assigning a parent "
-                    "link and allocating basis. Report first-pass QA acceptance as accepted submissions divided by "
-                    "reviewed submissions, and separately show critical defects discovered after acceptance. An initial "
-                    "internal target of 95% first-pass acceptance can guide coaching, but never excuses a single "
-                    "unsupported access claim. SLA attainment uses completed deliverables due that week as its denominator, "
-                    "with overdue open work displayed separately to prevent disappearance from the metric. Show median "
-                    "stage age alongside the oldest file because averages hide stranded land. Follow accepted offers "
-                    "into closed acquisitions by county and outreach cohort, rather than celebrating signatures that "
-                    "collapse during diligence. Finish the meeting with named actions, deadlines, and a capital decision "
-                    "for every exception. The principal should inspect the riskiest changes, not reread every clean "
-                    "parcel screen."
-                ),
-                (
-                    "Enforce concentration before exposure is created. Set a maximum of 25% for any related buyer "
-                    "group's share of trailing-twelve-month recognized sale proceeds and a separate 25% limit for "
-                    "its share of contracted receivables. Aggregate affiliates, common guarantors, and entities sharing "
-                    "the same actual decision-maker when evidence supports the relationship. Measure future exposure "
-                    "using the signed closing schedule as well as historical results, since a repeat builder can "
-                    "dominate next quarter without dominating last year. Add a 25% acquisition-cost exposure cap "
-                    "for any seller group or sourcing counterparty across open commitments. During startup, one "
-                    "closing necessarily produces concentrated revenue; disclose that condition, calculate the minimum "
-                    "four independent equal-sized buyer groups needed for a balanced book, and prohibit representing "
-                    "the portfolio as diversified. Pause incremental exposure to an over-limit group while seeking "
-                    "independent buyers or reducing commitments. For critical title, escrow, and survey counterparties, "
-                    "track unsettled cash or committed project cost separately; process four comparable closings "
-                    "sequentially if concurrent exposure would otherwise concentrate. A sole-vendor dependency remains "
-                    "visible even when only one transaction is open. Do not satisfy a cap by splitting invoices "
-                    "among affiliated entities or shrinking the denominator through selective reporting."
-                ),
-                (
-                    "Make QA a separate measurement from speed. Sample ordinary screens weekly and review every "
-                    "parcel with access ambiguity, floodway overlap, an environmental history flag, or a subdivision "
-                    "assumption driving the price. A QGIS overlay identifies questions; it does not establish a "
-                    "recorded easement, resolve a boundary, or replace local zoning confirmation. Require the reviewer "
-                    "to cite the controlling instrument or agency response and explain any mismatch with the "
-                    "listing. For environmental concerns, route the acquisition to an environmental professional early "
-                    "enough to assess whether all appropriate inquiries are required for an intended CERCLA defense. "
-                    "Treat 40 CFR Part 312 as a transaction-specific diligence framework, not a universal certificate "
-                    "that makes land harmless. Track defect cost through rework fees, extension payments, survey "
-                    "changes, and lost deposits. Assign the operational cause without promising recovery from a "
-                    "contractor beyond the agreement. When a contractor repeatedly misses evidence standards, narrow "
-                    "the scope, require retraining, or transfer the work; accelerating payment alone will not repair "
-                    "technical judgment. Close each weekly review by comparing forecast closings with actual cash "
-                    "availability, including property taxes and carrying costs on parcels that did not move. A "
-                    "fast funnel with deteriorating inventory age is a warning, not operating leverage."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Definitions, Evidence Owners, and Corrective Actions",
-                "headers": [
-                    "Weekly metric and exact counting rule",
-                    "Source evidence and accountable review owner",
-                    "Initial operating threshold or exposure limit",
-                    "Required response when the metric deteriorates",
-                ],
-                "rows": [
-                    [
-                        "First-pass acceptance divides accepted submissions by all reviewed submissions",
-                        "Reviewer logs preserve submitted versions and explicit acceptance decisions",
-                        "Target at least ninety-five percent with zero critical access omissions",
-                        "Require targeted rework and resample the contractor's next batch",
-                    ],
-                    [
-                        "SLA attainment counts completed on-time deliverables against completed deliverables due",
-                        "Operations register preserves due dates and separately lists overdue work",
-                        "Target ninety-five percent attainment with every overdue file explained",
-                        "Resolve input dependencies before increasing the contractor's assigned volume",
-                    ],
-                    [
-                        "Inventory age measures days since each parcel's completed acquisition",
-                        "Settlement date and parcel ledger establish the aging clock",
-                        "Review every parcel exceeding its documented underwriting holding period",
-                        "Reprice, improve evidence, or document a funded hold decision",
-                    ],
-                    [
-                        "Buyer concentration aggregates related purchasers across recognized sale proceeds",
-                        "Closing ledger and relationship register support rolling annual calculations",
-                        "Each related buyer group remains at or below twenty-five percent",
-                        "Suspend incremental exposure and develop independent qualified buyer coverage",
-                    ],
-                    [
-                        "Open seller exposure aggregates acquisition commitments by related counterparty",
-                        "Executed contracts and deposit schedules establish committed acquisition cost",
-                        "Each seller group remains at or below twenty-five percent",
-                        "Reduce commitments or diversify before signing another related acquisition",
-                    ],
-                    [
-                        "Critical vendor exposure aggregates unsettled cash or committed project costs",
-                        "Escrow balances and open work orders identify counterparty dependency",
-                        "Each critical counterparty remains at or below twenty-five percent",
-                        "Sequence transactions or qualify independent providers before adding exposure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before expanding the pod",
-                "body": "Release additional workload only after the principal records these checks against current evidence.",
-                "items": [
-                    "Verify that each active parcel has a signed purchase file, access evidence, unresolved title exceptions, and an accountable next-action owner.",
-                    "Verify that funded contractor scopes cover the eight-week queue and that licensed activities are assigned only to appropriately authorized providers.",
-                    "Verify buyer, seller, receivable, and critical-vendor exposure calculations; identify startup concentration explicitly and stop incremental over-limit exposure.",
-                    "Verify the thirteen-week cash forecast includes deposits, tax bills, curative work, and slower closings without spending refundable buyer funds.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Build parcel-level accrual books and assign the operating assets",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use parcel-level accrual management books even when a permitted tax method differs. Create a "
-                    "permanent parcel identifier that joins the purchase agreement, settlement statement, bank movement, "
-                    "title policy, and sale record. Carry land held for resale as inventory under the adopted "
-                    "accounting policy; do not expense every acquisition when cash leaves the bank and then "
-                    "describe the later sale as almost pure margin. Record capitalizable acquisition and improvement "
-                    "costs consistently, release the applicable basis when revenue is recognized, and separately "
-                    "track selling costs and period overhead. Have the accountant document the relevant inventory "
-                    "and capitalization treatment, including applicable small-business exceptions under federal tax rules. "
-                    "Gross parcel sale proceeds are the canonical revenue basis here; acquisition outlays belong "
-                    "in costs rather than reducing reported revenue to a brokerage-like fee. Refundable deposits "
-                    "remain liabilities until the contract and accounting facts support another treatment. Seller-held "
-                    "notes require distinct principal, interest, collectibility, and cash collection schedules; receiving "
-                    "a note does not create cash available for another acquisition. Reconcile escrow activity to "
-                    "the ledger instead of assuming a net wire explains every cost. Retain a documented cutoff "
-                    "policy so a December closing cannot migrate between years merely to improve a buyer presentation."
-                ),
-                (
-                    "Create acquisition cohorts by quarter, county, and primary play, preserving the original underwriting "
-                    "case beside actual results. For each cohort, show acquired cost, improvement spend, carrying cost, "
-                    "recognized proceeds, realized contribution, remaining inventory basis, and cash recovered. Calculate "
-                    "sold-parcel margin separately from whole-cohort results so profitable early exits do not conceal "
-                    "unsold remnants. For a minor subdivision, allocate parent basis and shared costs using a "
-                    "documented reasonable method, such as relative expected sales values supported at allocation; "
-                    "review the method with the accountant and retain subsequent changes. An illustrative $120,000 "
-                    "allocable project with expected lot values of $80,000 and $120,000 assigns $48,000 and $72,000 "
-                    "of basis, respectively. Those are teaching inputs, not additional canonical revenue. Reconcile "
-                    "every management profit bridge to the annual ledger. Conservative revenue of $200,000 less "
-                    "$176,000 total costs yields $24,000; Base revenue of $850,000 less $692,750 yields $157,250; "
-                    "Scaled revenue of $1,500,000 less $1,125,000 yields $375,000. The respective margins remain 12%, "
-                    "18.5%, and 25%. Contractor fees, acquisitions, and other costs must fit inside those totals. "
-                    "Separate capital contributions, borrowing, and principal repayments from operating proceeds, and "
-                    "explain any book-to-tax differences without rewriting the operating scorecard."
-                ),
-                (
-                    "Treat the operating system as an asset bundle that needs evidence of ownership and usable "
-                    "transfer rights. Obtain signed contractor assignments covering custom screening scripts, original "
-                    "listing copy, photographs, SOPs, and database structures, with clearly identified pre-existing "
-                    "materials and permitted reuse. Under 17 U.S.C. section 204(a), a copyright ownership transfer "
-                    "generally requires a signed writing from the owner or authorized agent; paying an invoice "
-                    "alone does not supply that instrument. A contract cannot assign third-party mapping rights "
-                    "that the contractor never owned. Inventory QGIS project dependencies, county data terms, paid "
-                    "comparable subscriptions, and photography licenses, identifying which assets transfer and which "
-                    "a buyer must license independently. Keep company-controlled administrator accounts, documented "
-                    "access levels, and tested exports without sharing personal credentials. Record assignment and "
-                    "change-of-control provisions in vendor and customer agreements, because a polished data room "
-                    "does not override a counterparty's contractual rights. Preserve parcel evidence with dates and "
-                    "version history so a buyer can reproduce an underwriting decision after the original contractor "
-                    "leaves. At monthly close, export the ledger, inventory register, open commitments, and relationship "
-                    "map to a restricted repository. Test restoration quarterly. Transferable books require both "
-                    "reconciled numbers and a lawful, practical way to keep operating."
-                ),
-            ],
-            "table": {
-                "caption": "Accrual, Cohort, and Ownership Evidence Required for a Transferable Land Business",
-                "headers": [
-                    "Record class and underlying operating purpose",
-                    "Required accounting or ownership treatment",
-                    "Monthly reconciliation and evidence retention",
-                    "Buyer diligence failure this record prevents",
-                ],
-                "rows": [
-                    [
-                        "Parcel inventory register connects each acquisition with later disposition",
-                        "Apply documented capitalization policy and release basis upon recognition",
-                        "Reconcile settlement statements, recorded deeds, and parcel ledger balances",
-                        "Prevents overstated margins caused by omitted acquisition cost basis",
-                    ],
-                    [
-                        "Refundable deposit schedule separates temporary custody from earned proceeds",
-                        "Record liabilities until contract terms and accounting facts support release",
-                        "Match deposit balances to escrow confirmations and executed agreements",
-                        "Prevents treating conditional buyer money as distributable operating cash",
-                    ],
-                    [
-                        "Subdivision basis schedule links parent parcels with saleable child lots",
-                        "Allocate shared basis consistently using a documented reasonable method",
-                        "Retain expected values, engineering invoices, and allocation change explanations",
-                        "Prevents early lot sales from absorbing artificially little project cost",
-                    ],
-                    [
-                        "Cohort performance report preserves sold and unsold acquisition outcomes",
-                        "Separate realized contribution from inventory carrying value and cash recovery",
-                        "Tie quarterly cohort totals to the closed general ledger",
-                        "Prevents profitable exits from concealing deteriorating unsold land positions",
-                    ],
-                    [
-                        "Contractor rights register establishes ownership of original operating materials",
-                        "Obtain signed assignments and identify excluded pre-existing licensed components",
-                        "Match delivered artifacts with agreements, signatures, and usable permissions",
-                        "Prevents buyers discovering that essential scripts remain contractor-owned assets",
-                    ],
-                    [
-                        "Systems transfer register identifies licenses and agreement assignment restrictions",
-                        "Distinguish owned assets from subscriptions requiring independent buyer procurement",
-                        "Test exports and preserve documented administrator recovery procedures quarterly",
-                        "Prevents an attractive sale package from becoming operationally unusable",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the monthly parcel population",
-                    "action": "Export active, acquired, subdivided, and sold parcel identifiers with dated stage histories.",
-                    "detail": "The principal in the lean pod, or operations manager in the scaled pod, resolves duplicate identifiers and retains parent-child links before ledger reconciliation.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile cash, escrow, and basis",
-                    "action": "Match settlement activity to bank entries, inventory movements, deposit liabilities, and parcel costs.",
-                    "detail": "Log unmatched items with an owner and resolution date; keep borrowing and owner contributions outside recognized parcel sale proceeds.",
-                },
-                {
-                    "step": 3,
-                    "title": "Publish cohorts and concentration",
-                    "action": "Issue the scenario bridge, inventory aging, buyer-group exposure, seller commitments, and critical-vendor exposure.",
-                    "detail": "Preserve denominators and relationship assumptions so neither an affiliate split nor an omitted stale parcel can improve the reported result.",
-                },
-                {
-                    "step": 4,
-                    "title": "Archive a reproducible transfer package",
-                    "action": "Save the closed books, supporting instruments, contractor assignments, license register, and exception log.",
-                    "detail": "Restrict access to authorized reviewers and test a sample parcel reconstruction using only the archived records rather than the principal's memory.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Underwrite the exit multiple and the cash-cow alternative",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Separate the value of an operating engine from the value of land already owned. A small "
-                    "land-flipping shop may attract an asset buyer who wants discounted inventory but pays little "
-                    "for sourcing routines. An owner-operator buyer may instead value transferable seller's discretionary "
-                    "earnings, while a strategic buyer may evaluate earnings after replacing the principal's continuing "
-                    "work. Canonical owner net profit is neither automatically discretionary earnings nor automatically "
-                    "EBITDA. Build a bridge that identifies actual owner compensation, interest, taxes, depreciation, "
-                    "documented exceptional expenses, and required replacement labor, using the accounting definitions "
-                    "agreed for the transaction. Do not add back routine survey bills, recurring marketing, or "
-                    "title-curative work merely because each parcel is different. For planning rather than a claimed "
-                    "market quotation, test 1.5 to 2.5 times verified owner-operated earnings, and 2.0 to 3.0 times "
-                    "earnings after necessary replacement labor for a demonstrably transferable platform. These "
-                    "ranges are sensitivities, not observed comparable transactions. Exceptional access risk, thin "
-                    "records, concentrated buyers, or stale inventory can reduce goodwill to zero. A premium requires "
-                    "evidence that the buyer inherits a repeatable process and enough ongoing capital, rather than "
-                    "a demanding job wrapped around a speculative land portfolio."
-                ),
-                (
-                    "Apply the sensitivity only after stating its denominator. If diligence establishes that Base "
-                    "owner net profit of $157,250 equals the agreed owner-operated earnings measure without further "
-                    "adjustments, 1.5 to 2.5 times implies $235,875 to $393,125 for the operating-business value "
-                    "under that stated asset perimeter. If the Scaled $375,000 requires $75,000 of additional "
-                    "annual replacement labor beyond costs already recorded, adjusted earnings become $300,000; "
-                    "2.0 to 3.0 times implies $600,000 to $900,000. The $75,000 is an illustrative diligence "
-                    "adjustment, not a revision to the canonical scorecard, and must not duplicate the existing "
-                    "operations manager's expense. Specify whether ordinary parcel inventory is included in normalized "
-                    "working capital supporting the quoted value. If it is included, adding the same inventory "
-                    "again overstates consideration. If inventory is excluded, price the parcel schedule separately "
-                    "and show how the buyer funds replacement stock. Reconcile operating value to seller equity "
-                    "proceeds through debt, excess cash, agreed working-capital adjustments, transaction costs, and "
-                    "any holdback. Price genuinely surplus land separately using parcel evidence and disposition "
-                    "costs, rather than assuming its ledger basis equals realizable value. Compare an earnout's "
-                    "collection risk with a lower cash-at-close offer."
-                ),
-                (
-                    "Prepare the exit package before deciding to sell. Assemble twenty-four months of reconciled "
-                    "monthly books where available, complete cohort histories, a current parcel inventory schedule, "
-                    "counterparty concentration reports, and a role-level intervention log. A younger business should "
-                    "present its actual operating history rather than manufacturing an annualized track record. "
-                    "Let a prospective buyer sample closed parcels backward from proceeds to acquisition evidence "
-                    "and forward from original cohorts to remaining inventory. Offer controlled document access "
-                    "and redact unnecessary personal information until the transaction justifies fuller disclosure. "
-                    "For a cash-cow strategy, use the same evidence to calculate distributable cash after replacement "
-                    "inventory, debt service, taxes, and a funded downside reserve; accounting profit alone does "
-                    "not establish withdrawal capacity. Re-run the thirteen-week forecast with delayed closings "
-                    "and lower sale prices before making distributions. Keep the principal's required hours "
-                    "visible, because an attractive margin coupled with constant emergency intervention is not "
-                    "passive ownership. Choose sale, hold, or selective inventory liquidation by comparing achievable "
-                    "net proceeds with risk-adjusted future cash and the owner's desired workload. The durable "
-                    "advantage is disciplined parcel selection backed by transferable evidence, not a headline "
-                    "multiple obtained by ignoring how much capital the next acquisition cycle consumes."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Exit Sensitivities and the Evidence Needed to Support Them",
-                "headers": [
-                    "Valuation question and relevant business configuration",
-                    "Explicit earnings or asset assumption used",
-                    "Illustrative arithmetic or transaction treatment applied",
-                    "Evidence required before relying on the result",
-                ],
-                "rows": [
-                    [
-                        "Conservative pod tests whether a going concern exists",
-                        "Canonical annual owner net profit remains exactly twenty-four thousand dollars",
-                        "Thin transferable earnings may support little goodwill beyond asset value",
-                        "Verify labor burden, inventory quality, and dependable repeat deal flow",
-                    ],
-                    [
-                        "Base owner-operator sensitivity assumes a reconciled earnings denominator",
-                        "Assume verified owner-operated earnings equal canonical profit of $157,250",
-                        "Illustrative 1.5 to 2.5 multiple produces $235,875 to $393,125",
-                        "Document every earnings adjustment and specify included operating assets",
-                    ],
-                    [
-                        "Scaled transfer sensitivity deducts incremental principal replacement labor",
-                        "Deduct illustrative $75,000 from canonical $375,000 without duplicating recorded salaries",
-                        "Illustrative 2.0 to 3.0 multiple produces $600,000 to $900,000",
-                        "Support replacement scope with duties, hours, and credible hiring costs",
-                    ],
-                    [
-                        "Ordinary operating inventory treatment depends on the purchase perimeter",
-                        "Determine whether normalized working capital already includes ordinary parcel inventory",
-                        "Never add inventory twice through working capital and separate consideration",
-                        "Reconcile signed perimeter definitions with parcel schedules and closing adjustments",
-                    ],
-                    [
-                        "Surplus parcel treatment requires independent realizable-value support",
-                        "Identify land genuinely unnecessary for the ongoing earnings stream",
-                        "Price separately after title defects, selling costs, and holding exposure",
-                        "Provide comparable evidence and a realistic expected liquidation timetable",
-                    ],
-                    [
-                        "Cash-cow choice depends on withdrawals after capital recycling",
-                        "Start with reconciled profit and adjust for actual cash requirements",
-                        "Reserve replacement inventory, debt service, taxes, and downside liquidity first",
-                        "Stress delayed closings before authorizing any recurring owner distribution",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A land business earns a premium when the next owner can reproduce the decisions, reconcile the cash, and close without borrowing the seller's memory.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign the six execution plays to the four-person pod, record signing limits, and define the funded workload that justifies the six-person configuration.",
-        "Contract for accepted evidence, revision scope, delivery clocks, and permitted compensation; assess classification and licensing against actual duties.",
-        "Freeze a weekly scorecard covering QA, overdue work, inventory age, capital commitments, and related-counterparty exposure capped at 25%.",
-        "Close parcel-level accrual books monthly and reconcile exactly to $24,000, $157,250, and $375,000 in the three canonical annual owner-profit cases.",
-        "Collect signed work-product assignments, verify third-party data rights, and test restoration of the parcel evidence and accounting archive.",
-        "Prepare an earnings-normalization bridge, define inventory treatment, and compare attainable sale proceeds with cash available after capital recycling.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Obtain signed ownership-transfer instruments for original contractor work product; "
-                "separately identify third-party materials and rights the contractor cannot assign."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 471 — General rule for inventories",
-            "url": "https://www.law.cornell.edu/uscode/text/26/471",
-            "relevance": (
-                "Have the accountant document applicable inventory treatment and small-business "
-                "exceptions while maintaining consistent parcel-level management books."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 263A — Capitalization and inclusion in inventory costs",
-            "url": "https://www.law.cornell.edu/uscode/text/26/263A",
-            "relevance": (
-                "Assess capitalization rules and applicable exceptions for acquisition, improvement, "
-                "and subdivision costs rather than automatically expensing every project payment."
-            ),
-        },
-        {
-            "title": "26 U.S.C. section 1221(a)(1) — Property excluded from capital-asset treatment",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1221",
-            "relevance": (
-                "Land held primarily for sale to customers in the ordinary course can fall outside "
-                "capital-asset treatment; preserve evidence of purpose and actual operating activity."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code section 10131 — Broker activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10131.&lawCode=BPC",
-            "relevance": (
-                "For California transactions, evaluate whether compensated activities performed "
-                "for another fall within broker licensing requirements; assess other states separately."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Where an acquisition strategy relies on a qualifying CERCLA defense, coordinate "
-                "timely environmental inquiries and required documentation with qualified professionals."
-            ),
-        },
-        {
-            "title": "42 U.S.C. section 9601(40) — Bona fide prospective purchaser criteria",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9601",
-            "relevance": (
-                "Environmental diligence is only part of the statutory criteria; evaluate continuing "
-                "obligations and other conditions before relying on prospective-purchaser protection."
-            ),
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'selling-land-buyers-seller-financing-drone-media',
+ 'question_prompt': 'How do I sell land, offer seller financing legally, and present properties to buyers?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Selling Land: Buyers, Seller Financing, and Drone Media',
+ 'subtitle': 'Why buyers are the real asset, seller financing under Dodd-Frank and the SAFE Act, MLO '
+             'requirements and exemptions, selling notes, shooting acreage with drones, top drone shots, '
+             'and scaling a real estate media business',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Land operators report that terms, not cash, drive the business. REtipster's Seth "
+                      "Williams and Gokce Capital's Abhi both sell on seller financing for higher prices, "
+                      'interest, and fees. Abhi runs roughly 80% of sales on terms, buying around $10K and '
+                      'selling around $20K, with buyers putting 10% down and paying about $500 a month. '
+                      'Abhi treats buyers as the real asset because acquisition costs climbed from $5 to '
+                      '$800-$1,200 per lead, and pulls cash forward with 5% and 2.5% early-payoff '
+                      'cashbacks instead of selling notes. On Dodd-Frank, Seth, William Bronchick, and '
+                      'Seller Finance Consultants agree that vacant land sold to non-occupants sits '
+                      'outside the dwelling rules. They split on entity stacking, licensed originators, '
+                      "and Joe Crump's 'don't worry' stance. Drone shooters Matt Wood, Rob, and Wyman "
+                      'Gentry sell acreage, surroundings, and lot lines, pricing aerials from $125 for '
+                      'five photos.',
+ 'key_metrics': [{'label': 'Terms-to-Cash Sales Split',
+                  'metric': 'Terms-to-Cash Sales Split',
+                  'value': '80% terms / 20% cash',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Abhi's sales mix across nearly 800 land deals since 2018, with 2023-24 "
+                             'called out as exceptions to the split.',
+                  'source': 'REtipster ([HpkNhY7WclQ @ 00:09:39])'},
+                 {'label': 'Customer Acquisition Cost Per Lead',
+                  'metric': 'Customer Acquisition Cost Per Lead',
+                  'value': 'About $5 per Facebook lead then vs. $800-$1,200 now',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Abhi's then-vs-now comparison of buyer acquisition cost, with direct mail "
+                             'costs also rising.',
+                  'source': 'REtipster ([HpkNhY7WclQ @ 00:42:14])'},
+                 {'label': 'Early-Payoff Cashback Uptake',
+                  'metric': 'Early-Payoff Cashback Uptake',
+                  'value': '5% back within 6 months, 2.5% within 12 months; about 10% of borrowers take it',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cashback offered on 4-year land loans to pull cash forward instead of '
+                             'selling notes or borrowing from funders.',
+                  'source': 'REtipster ([HpkNhY7WclQ @ 00:11:17])'},
+                 {'label': 'Aerial Photo Add-On Pricing',
+                  'metric': 'Aerial Photo Add-On Pricing',
+                  'value': '$125 for 5 photos, $225 for 10',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Wyman Gentry's add-on drone package, about 5 minutes of shooting time, with "
+                             'Part 107 certification required.',
+                  'source': 'Wyman Gentry ([ItWPpkhNHto @ 00:03:51])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus: Terms Sell the Dirt, Buyers Are the Asset',
+               'paragraphs': ['Land sells fastest and fattest on terms, and the practitioners who move '
+                              'volume say so without hedging. Seth Williams frames seller financing as the '
+                              'income route that brings a higher price plus interest while keeping the '
+                              'operator out of the landlord business. The buyer owns the parcel, so '
+                              "'you're not a landlord' [JL60o3hoi_w @ 00:02:17]. Seth ties the whole model "
+                              'to a lending gap: banks avoid raw-land loans without a development plan. '
+                              'The seller who carries the paper therefore captures a higher price, a '
+                              'faster sale, interest, closing fees, and servicing fees on the same dirt '
+                              '[JL60o3hoi_w @ 00:12:45]. Abhi of Gokce Capital runs a seven-figure '
+                              'operation nearly 800 deals deep. Abhi sells roughly 80% on terms and 20% '
+                              "for cash, treats 2023 and 2024 as exceptions, and calls it 'very hard' to "
+                              'sustain a land business without monthly terms income [HpkNhY7WclQ @ '
+                              '00:09:39]. The Seller Finance Consultants panel lands the same point from '
+                              'the lending side. No conforming loan exists over four to five acres, so '
+                              'large acreage moves only on cash or seller financing [gSHz85xxIz4 @ '
+                              '01:48:25]. The operating consensus is blunt: the bankless buyer is the '
+                              'default buyer for vacant land. The note is the product being sold, and the '
+                              'parcel is the collateral that makes the note possible.',
+                              'The second point of agreement is that the buyer list, not the parcel, '
+                              'carries the business. Abhi tracks acquisition costs that climbed from about '
+                              '$5 per Facebook lead to $800 to $1,200, with direct mail rising alongside '
+                              '[HpkNhY7WclQ @ 00:42:14]. Abhi concludes that lifetime value is the only '
+                              'lever an operator actually controls. A $500 acquisition cost against $5,000 '
+                              'of lifetime gross profit leaves $4,500 to work with [HpkNhY7WclQ @ '
+                              "00:14:53]. Abhi's answer is a customer success program: monthly check-in "
+                              'calls, a birthday call, and permission-based contact that never leads with '
+                              "an offer. The reasoning is that in the age of AI, 'human touch is our "
+                              "competitive advantage' [HpkNhY7WclQ @ 00:49:44]. Daniil Kleyman's panel "
+                              'frames the same buyer pool from the pricing side. They say seller financing '
+                              "'has been proven to sell properties for 15% more especially in the lower uh "
+                              "price point markets' [gSHz85xxIz4 @ 00:50:55]. Both camps converge on one "
+                              'rule. The people who cannot or will not use a bank are the market, and the '
+                              'premium they pay for access to terms is the margin. Once leads stop being '
+                              'cheap, the real work is keeping those borrowers paying, referring, and '
+                              'coming back. Abhi estimates repeat buyers at roughly a fifth of sales, a '
+                              'share nobody on the team formally tracks yet.',
+                              'On compliance, the practitioners working vacant land reach the same '
+                              'practical baseline. The heaviest Dodd-Frank rules hang on an owner-occupied '
+                              'dwelling, and a bare parcel is not one. Seth Williams reads Regulation Z '
+                              "Subpart E as limited to a consumer's principal dwelling, defined as a "
+                              "one-to-four unit residential structure. Seth concludes that 'vacant land "
+                              "seems to be excluded' from its originator, balloon, and ability-to-repay "
+                              'restrictions, and says more than one attorney agreed [m1GoTr9J5TM @ '
+                              '00:09:01]. The Seller Finance Consultants panel states flatly that vacant '
+                              'land and investor buyers are exempt, and that the real test is owner '
+                              'occupancy [gSHz85xxIz4 @ 01:15:07]. William Bronchick has been an attorney '
+                              'since 1990 and has closed more than 1,000 owner-finance deals. Bronchick '
+                              'confines Dodd-Frank to residential sales to owner-occupant buyers, mobile '
+                              'homes included. Investor sales, commercial deals, and short lease-options '
+                              'fall outside it [MNznbFmtOwI @ 00:07:19]. The shared trap is the buyer who '
+                              'moves onto the land. Bronchick warns that coverage can reach raw land and '
+                              'contracts for deed when the buyer occupies within one year [ZGvGq-_10yA @ '
+                              '00:03:45]. The practical consequence for a land seller is simple. Whether a '
+                              'note sits inside or outside the dwelling rules depends on who ends up '
+                              'living on the ground and when, not on what the deed says.'],
+               'table': {'caption': 'Where Land Sellers, Note Specialists, and Drone Shooters Agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Seller financing is the primary exit for vacant land',
+                                   'Banks avoid raw-land loans without a development plan, so carrying the '
+                                   'paper brings a higher price, a faster sale, interest, and closing and '
+                                   'servicing fees',
+                                   'Structure every listing around terms first and treat cash buyers as '
+                                   'the minority exit',
+                                   'REtipster ([JL60o3hoi_w @ 00:12:45])'],
+                                  ['Terms income is what sustains the land operation',
+                                   'Roughly 80% of sales close on terms and 20% for cash across nearly 800 '
+                                   'deals since 2018',
+                                   'Build recurring monthly note income before quitting a job or scaling '
+                                   'cash flips',
+                                   'REtipster ([HpkNhY7WclQ @ 00:09:39])'],
+                                  ['Buyers are the real asset, not individual parcels',
+                                   'Acquisition cost rose from about $5 per Facebook lead to $800 to '
+                                   '$1,200 per lead',
+                                   'Engineer lifetime value through retention, upsells, referrals, and '
+                                   'repeat land purchases',
+                                   'REtipster ([HpkNhY7WclQ @ 00:42:14])'],
+                                  ['Vacant land sits outside the Subpart E dwelling rules',
+                                   "Subpart E covers a consumer's principal dwelling of one to four units, "
+                                   'which excludes bare land',
+                                   'Keep the buyer from building until payoff to preserve the vacant-land '
+                                   'exclusion',
+                                   'REtipster ([m1GoTr9J5TM @ 00:09:01])'],
+                                  ['Owner occupancy is the real compliance trigger on every deal',
+                                   'Vacant land and investor buyers are exempt; the panel states the test '
+                                   'is owner occupancy',
+                                   'Classify every buyer as an occupant consumer or an investor before '
+                                   'writing paper',
+                                   'Seller Finance Consultants, Inc. ([gSHz85xxIz4 @ 01:26:20])'],
+                                  ['Large acreage moves almost exclusively on cash or terms',
+                                   'No conforming loan exists over four to five acres, which leaves cash '
+                                   'or seller financing',
+                                   'Market big tracts with carry-back terms from day one instead of '
+                                   'waiting on banks',
+                                   'Seller Finance Consultants, Inc. ([gSHz85xxIz4 @ 01:48:25])'],
+                                  ['Drone media sells the land and surroundings, not the house',
+                                   'Aerials sell lot size and surroundings; on a 35-acre lake tract the '
+                                   'house stays out of frame',
+                                   'Frame boundaries, water, and context first and treat structures as '
+                                   'secondary',
+                                   'Wyman Gentry ([ItWPpkhNHto @ 00:00:31]); Matt Wood ([ZU1aoe6pwQI @ '
+                                   '00:01:24])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Abhi's unit economics are the cleanest template for terms deals: buy around "
+                              '$10,000, sell around $20,000, and never go above $50,000 [HpkNhY7WclQ @ '
+                              '00:55:43]. Loans average $14,000 to $19,000. The typical buyer puts 10% '
+                              'down and pays about $500 a month [HpkNhY7WclQ @ 00:48:02]. Instead of '
+                              'selling notes or borrowing from funders, Abhi pulls cash forward with an '
+                              'early-payoff cashback on four-year loans. Borrowers get 5% back for paying '
+                              'off within six months, or 2.5% within twelve. About 10% of borrowers take '
+                              'it, and Abhi calls it cheaper than borrowing [HpkNhY7WclQ @ 00:11:17]. A '
+                              "higher down payment earns a lower rate. Against competitors advertising '$1 "
+                              "down, $199 a month,' the script is that such a structure takes ten years to "
+                              'become a landowner. Seth Williams shows why big down payments matter on '
+                              'cheap dirt. On a parcel bought for $500 and sold for $8,000, the down '
+                              'payment alone recovers the cost, which changes how much risk the seller is '
+                              "willing to carry [m1GoTr9J5TM @ 00:22:58]. Abhi's sales floor runs on "
+                              'speed. Leads get a response within 60 seconds, phones stay open 9am to 9pm, '
+                              'and a typical sale is a seven-call close. Each call aims for a hard yes or '
+                              'a hard no, because a maybe counts as failure.',
+                              'The paper itself gets engineered around the dwelling trigger. Seth Williams '
+                              'recommends loan documents that require payoff before the buyer improves the '
+                              'property. Seth repeats the clause for RESPA, which exempts vacant-land '
+                              'loans unless a structure or manufactured home goes on the land within two '
+                              "years using loan proceeds [m1GoTr9J5TM @ 00:17:36]. Bronchick's version is "
+                              'a one-year no-residence clause on raw land [ZGvGq-_10yA @ 00:26:56]. '
+                              'Advertising is where Seth treats the rules as live, because Regulation N '
+                              "reads 'real property or a dwelling.' An ad quoting 5% interest, $2,000 "
+                              'down, and $499 a month locks those terms at closing. The workaround is a '
+                              "vague line: 'seller financing may be available on this property, contact "
+                              "the owner for more information' [m1GoTr9J5TM @ 00:27:41]. On privacy, Seth "
+                              'keeps intake to name, address, and phone, which stays clear of nonpublic '
+                              "personal information. Collecting an SSN, driver's license, or passport "
+                              'pulls that information in, and sharing it then requires an opt-out '
+                              "disclosure. Pulling a credit report only needs the FTC's no-opt-out form, "
+                              'which Seth calls fairly easy to fill out. When a deal does touch an '
+                              'owner-occupant, Bronchick paid a licensed loan originator $500 and added '
+                              "the fee to the buyer's closing costs [MNznbFmtOwI @ 00:25:25]. The paper "
+                              "stays in the seller's hands, and the compliance cost lands on the buyer.",
+                              'Drone media is where the parcel gets sold visually, and the shooters agree '
+                              'the asset is the acreage, not the house. Matt Wood was shooting 35 acres '
+                              'with a lake. Wood starts with Google Earth, FAA restrictions, and a survey, '
+                              'then sets D-Log, ISO 500, shutter around 120, ND16, Sunny white balance, '
+                              'AEB 5, 24fps, and 4K [ZU1aoe6pwQI @ 00:03:23]. Wood keeps two-thirds '
+                              'horizon in frame. The flight pattern is two orbits, the second 50 to 100 '
+                              'feet higher, followed by low-and-slow passes that combine three '
+                              'simultaneous movements. Wood reviews the footage before leaving the '
+                              'property [ZU1aoe6pwQI @ 00:08:05]. Rob of Next Move runs one battery '
+                              "through four jobs on the Mavic 4 Pro. The 28mm wide lens is the 'map,' shot "
+                              'with a high push and a quarter orbit. The 70mm is the portrait lens, and '
+                              'the 168mm shoots from a distance to stay off the neighbors. Rob finishes '
+                              'with roughly ten-second vertical 9:16 clips and sells the bundle as a '
+                              "premium 'triple lens listing pass' [HrG-12X_ds8 @ 00:03:10]. Wyman Gentry "
+                              'prices aerials as an add-on: $125 for five photos and $225 for ten. The '
+                              'shoot takes about five minutes and requires Part 107 certification. Gentry '
+                              'steers clients away from drone shots when the neighbors are junky or a '
+                              'freeway sits next door [ItWPpkhNHto @ 00:03:51].'],
+               'table': {'caption': 'Street-Level Numbers, Clauses, and Settings for Selling Land on Terms',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Settings',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Typical land terms deal structure',
+                                   'Buy about $10K, sell about $20K, never over $50K; loans average $14K '
+                                   'to $19K',
+                                   'Underwrite to the standard buyer profile of 10% down and about $500 a '
+                                   'month',
+                                   'REtipster ([HpkNhY7WclQ @ 00:55:43]); REtipster ([HpkNhY7WclQ @ '
+                                   '00:48:02])'],
+                                  ['Early-payoff cashback on four-year loans',
+                                   '5% back within 6 months, 2.5% within 12 months, taken by about 10% of '
+                                   'borrowers',
+                                   'Pull cash forward without selling notes or borrowing from outside '
+                                   'funders',
+                                   'REtipster ([HpkNhY7WclQ @ 00:11:17])'],
+                                  ['Concierge loan upsell on monthly payments',
+                                   'A $29 a month concierge plan takes a $299 payment to $399 to $499',
+                                   'Layer attraction, upsell, downsell, and continuity offers onto every '
+                                   'borrower',
+                                   'REtipster ([HpkNhY7WclQ @ 00:28:18])'],
+                                  ['Regulation N advertising language on listings',
+                                   'Advertised terms such as 5% interest, $2,000 down, $499 a month cannot '
+                                   'change at closing',
+                                   'Keep listings vague: seller financing may be available, contact the '
+                                   'owner',
+                                   'REtipster ([m1GoTr9J5TM @ 00:27:41])'],
+                                  ['Licensed originator on owner-occupant deals',
+                                   'Bronchick paid $500; outfits charge about $500 to $1,500 for roughly '
+                                   '40 minutes of work',
+                                   'Add the fee to buyer closing costs or charge the buyer one point',
+                                   'William Bronchick ([MNznbFmtOwI @ 00:25:25]); William Bronchick '
+                                   '([ZGvGq-_10yA @ 00:32:42])'],
+                                  ['Acreage drone camera settings',
+                                   'D-Log, ISO 500, shutter around 120, ND16, Sunny white balance, AEB 5, '
+                                   '24fps, 4K',
+                                   'Research Google Earth, FAA restrictions, and the survey before the '
+                                   'flight',
+                                   'Matt Wood ([ZU1aoe6pwQI @ 00:03:23])'],
+                                  ['Aerial photo add-on pricing for listings',
+                                   '$125 for 5 photos and $225 for 10, about five minutes of shooting',
+                                   'Sell as an add-on package with Part 107 certification required to fly',
+                                   'Wyman Gentry ([ItWPpkhNHto @ 00:03:51])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Volume Sellers and Shooters Do Differently',
+                           'body': 'These are the small operating edges that separate high-volume land '
+                                   'sellers and acreage shooters from the rest: timed cashback nudges, '
+                                   'deal-count workarounds, synthetic balloons, and long-lens distance '
+                                   'from hostile neighbors.',
+                           'items': ["Time the cashback nudges. Abhi's team sends early-payoff reminders "
+                                     'in months 4-5 and 9-11 of the loan to trigger the 5% and 2.5% '
+                                     'windows before they close [REtipster — HpkNhY7WclQ @ 00:20:04].',
+                                     'Stack entities for deal count. Bronchick figures three LLCs could '
+                                     'give about 9 owner-occupant deals a year under the three-per-entity '
+                                     'exemption [William Bronchick — MNznbFmtOwI @ 00:20:23]. Seller '
+                                     "Finance Consultants calls multiple entities 'a blatant attempt to "
+                                     "evade' [Seller Finance Consultants, Inc. — SB_vfxPYuF8 @ 00:00:43].",
+                                     'Build a synthetic balloon. Escalating rates of 6, 8, 10, then 12% '
+                                     "make buyers 'cry uncle' and refinance, which mimics a balloon where "
+                                     'balloons are barred [William Bronchick — ZGvGq-_10yA @ 00:23:53].',
+                                     'Shoot long to avoid neighbors. Rob uses the 168mm lens from a '
+                                     'distance to stay off adjacent properties, citing a drone that was '
+                                     'shot down in Athens, AL [Next Move with Rob — HrG-12X_ds8 @ '
+                                     '00:07:06].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the Parcel Before Listing',
+                              'action': 'Run the land due-diligence checklist before any marketing goes '
+                                        'live.',
+                              'detail': 'Verify road access (landlocked parcels exist), utilities, flood '
+                                        'zone and wetlands, cliffs and steep slope, and zoning approval, '
+                                        'and confirm what the local body allows [REtipster — JL60o3hoi_w @ '
+                                        '00:09:26].'},
+                             {'step': 2,
+                              'title': 'Shoot the Acreage',
+                              'action': 'Plan the flight, lock the settings, fly orbits plus low passes, '
+                                        'and review on site.',
+                              'detail': 'Research the site on Google Earth, check FAA restrictions, and '
+                                        'pull the survey [Matt Wood — ZU1aoe6pwQI @ 00:02:26]. Open with '
+                                        'the wide lens as the map, then shoot 70mm portraits and 168mm '
+                                        'distance shots, ending with 9:16 vertical clips [Next Move with '
+                                        'Rob — HrG-12X_ds8 @ 00:03:10].'},
+                             {'step': 3,
+                              'title': 'Advertise Vague, Respond Fast',
+                              'action': 'List with non-specific financing language and answer every lead '
+                                        'within 60 seconds.',
+                              'detail': "Use the line 'seller financing may be available on this property, "
+                                        "contact the owner for more information' to avoid locked-in "
+                                        'Regulation N terms [REtipster — m1GoTr9J5TM @ 00:27:41]. Respond '
+                                        'to every lead within 60 seconds [REtipster — HpkNhY7WclQ @ '
+                                        '00:23:16].'},
+                             {'step': 4,
+                              'title': 'Write and Service the Paper',
+                              'action': 'Add a no-build-before-payoff clause, structure the terms, and run '
+                                        'retention.',
+                              'detail': 'Require payoff before the buyer improves the property [REtipster '
+                                        '— m1GoTr9J5TM @ 00:09:52]. Then offer the 5% and 2.5% '
+                                        'early-payoff cashback and run permission-based monthly check-ins '
+                                        '[REtipster — HpkNhY7WclQ @ 00:11:17].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether Dodd-Frank touches a vacant-land note at all. '
+                              'Seth Williams of REtipster breaks with the early land-investor line that '
+                              'the law simply does not apply, then lands on a narrow reading: the Subpart '
+                              "E balloon, originator, and ability-to-repay rules key off a consumer's "
+                              'principal dwelling, defined as a one-to-four unit residential structure, so '
+                              "'vacant land seems to be excluded from all of these special rules listed "
+                              "out in subpart E' [m1GoTr9J5TM @ 00:09:01]. The Seller Finance Consultants "
+                              'broker panel agrees from the licensing side, stating flatly that vacant '
+                              'land and investor buyers sit outside the rules [gSHz85xxIz4 @ 01:15:07]. '
+                              'William Bronchick draws the line by occupancy rather than property type: if '
+                              'the buyer moves onto the property within one year, the rules can reach raw '
+                              'land and installment contracts for deed [ZGvGq-_10yA @ 00:03:45]. Joe Crump '
+                              'sits at the far end, telling viewers the act is mainly focused on '
+                              'securities and private money, that ethical disclosure already satisfies it, '
+                              "and not to worry, while still adding 'I'm not saying don't comply' "
+                              '[mtE3-cvmAN0 @ 00:00:41]. For a land operator, every comfortable reading '
+                              'above depends on the buyer never occupying the parcel while the note is '
+                              "open, which means the loan documents, not the operator's hopes, have to "
+                              'carry that restriction.',
+                              'The second fault line is whether to engineer around the deal limits or pay '
+                              'a licensed originator on every owner-occupant sale. William Bronchick '
+                              'teaches the counting game: one free pass per year for a natural person, '
+                              'estate, or trust, three per year for any entity under the eight-part test, '
+                              'and roughly nine deals a year for an operator running three LLCs '
+                              '[MNznbFmtOwI @ 00:20:23]. Seller Finance Consultants calls that structure '
+                              "'a blatant attempt to evade,' putting multiple entities, forbearances, "
+                              'lease options, and land-trust titling in the same bucket [SB_vfxPYuF8 @ '
+                              '00:00:43]. Their broker panel also brands the three-loan exemption a '
+                              "'worthless exemption' because it bans the balloon, and Daniil Kleyman "
+                              'explains the cost: the plan is to season a note a few months and sell it, '
+                              'and that resale needs a balloon [gSHz85xxIz4 @ 00:37:12]. Their fix is '
+                              'routing every deal through an MLO, since an MLO can create a balloon that a '
+                              'non-MLO seller cannot, while the buyer pays the fee, so the seller should '
+                              "'take the free insurance' [SB_vfxPYuF8 @ 00:02:45]. The split is not about "
+                              'cost, since both camps push the originator fee onto the buyer; it is about '
+                              'whether the note must survive a resale.',
+                              'Practitioners also split hard on what to do with the paper after closing. '
+                              'Abhi of Gokce Capital, whose sales run roughly 80% terms across nearly 800 '
+                              'deals, deliberately does not sell notes [HpkNhY7WclQ @ 00:13:32]. Instead, '
+                              'the team pulls cash forward with an early-payoff cashback on a four-year '
+                              'loan: 5% back if paid off within six months, 2.5% within twelve, taken by '
+                              'about 10% of borrowers, which Abhi treats as cheaper than borrowing '
+                              '[HpkNhY7WclQ @ 00:11:17]. The Seller Finance Consultants model runs the '
+                              'opposite direction: the San Diego case resold at $437,500 with 30% down on '
+                              'an 8% note amortized over 30 years and due in five, then sold that note '
+                              'after three payments at a 12-15% investor yield for a $49,277.63 profit '
+                              '[gSHz85xxIz4 @ 01:01:58]. The Seller Financing, Real Estate & Note '
+                              'Investing channel splits the difference, declaring the old flip of 10% down '
+                              'and dumping the 90% note at 94 cents dead, and backing a 12-36 month '
+                              'partial sale that keeps the tail, with paper seasoned six to twelve months '
+                              'first [X6Bv1fbSvBk @ 00:03:06]. The choice tracks the business: a land shop '
+                              'selling $10,000 parcels for $20,000 lives on monthly terms income, while a '
+                              'house flipper carrying a $218,000 note needs the capital back to fund the '
+                              'next acquisition.'],
+               'table': {'caption': 'Competing playbooks on servicing, persuasion, advertising, balloons, '
+                                    'underwriting, and drone media',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Monthly check-in calls to land borrowers',
+                                   'Abhi runs monthly check-ins, a birthday call, and cashback reminders '
+                                   'in months 4-5 and 9-11, always permission-based and never leading with '
+                                   'an offer',
+                                   'Seth Williams pushes back repeatedly that the calls risk annoying '
+                                   'borrowers and that their ROI has never been measured',
+                                   'REtipster ([HpkNhY7WclQ @ 00:19:51]); REtipster ([HpkNhY7WclQ @ '
+                                   '00:28:47])'],
+                                  ['How hard it is to pitch seller financing',
+                                   'Daniil Kleyman calls seller financing a hard sell to sellers unless it '
+                                   'is pitched the right way',
+                                   'Terry Lewis says it is not hard to convince people once a CPA shows '
+                                   'tax exposure upwards of 30% and installment-sale treatment',
+                                   'Seller Finance Consultants, Inc. ([gSHz85xxIz4 @ 00:24:27]); Seller '
+                                   'Finance Consultants, Inc. ([gSHz85xxIz4 @ 00:25:03])'],
+                                  ['Advertising seller-financed land terms',
+                                   'Seth Williams shows an ad with 5% interest, $2,000 down, and $499 a '
+                                   'month, with those exact terms honored at closing',
+                                   "Seth's alternative is vague copy: seller financing may be available on "
+                                   'this property, contact the owner for more information',
+                                   'REtipster ([m1GoTr9J5TM @ 00:26:44]); REtipster ([m1GoTr9J5TM @ '
+                                   '00:27:41])'],
+                                  ['Replacing the banned balloon payment',
+                                   'William Bronchick escalates the rate from 6 to 8 to 10 to 12 percent '
+                                   'so buyers cry uncle, mimicking a balloon',
+                                   'Seller Finance Consultants hires an MLO, who can legally create a '
+                                   'balloon that a non-MLO seller cannot write',
+                                   'William Bronchick ([ZGvGq-_10yA @ 00:23:53]); Seller Finance '
+                                   'Consultants, Inc. ([SB_vfxPYuF8 @ 00:02:45])'],
+                                  ['How strictly to underwrite the buyer',
+                                   'William Bronchick uses the eight-part test with a 43% back-end DTI cap '
+                                   'and personally targets about 33%',
+                                   'The note channel calls bank-style underwriting ridiculous because a '
+                                   'buyer who could get a bank loan would not need owner financing',
+                                   'William Bronchick ([MNznbFmtOwI @ 00:19:44]); Seller Financing, Real '
+                                   'Estate & Note Investing ([X6Bv1fbSvBk @ 00:10:29])'],
+                                  ['Drone shots when surroundings are ugly',
+                                   'Wyman Gentry advises skipping drone shots entirely when neighbors are '
+                                   'junky or a freeway sits next to the property',
+                                   'Rob shoots the 70mm portrait without hiding flaws and uses the 168mm '
+                                   'lens from a distance to stay off neighbors',
+                                   'Wyman Gentry ([ItWPpkhNHto @ 00:01:15]); Next Move with Rob '
+                                   '([HrG-12X_ds8 @ 00:07:06])'],
+                                  ['Pricing drone and listing media',
+                                   'Wyman Gentry sells a cheap add-on at $125 for 5 photos or $225 for 10, '
+                                   'while Skyview Experts prices by square footage',
+                                   'ACRE Partner builds a full complete package priced at 3-5x competitors '
+                                   'and calls free shoots a race to the bottom',
+                                   'Wyman Gentry ([ItWPpkhNHto @ 00:03:51]); 6 Figure Revenue '
+                                   '([HbQpeDGaA_c @ 00:05:39]); ACRE Partner ([LlahXSpP0k4 @ '
+                                   '00:00:43])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The Dodd-Frank downside is concrete in the numbers practitioners quote. The '
+                              "Seller Finance Consultants panel puts it bluntly: 'the penalty is the "
+                              "recision of the note and interest forgiven,' meaning an operator can lose "
+                              'the 10-30% down payment plus every payment collected, with licenses also at '
+                              'risk [gSHz85xxIz4 @ 00:47:31]. They add a resale hit before any lawsuit: a '
+                              'badly written $200,000 note facing a 30% discount is a $60,000 loss '
+                              '[gSHz85xxIz4 @ 00:36:36]. William Bronchick stresses that Dodd-Frank is not '
+                              'regulatory, so the threat is a private civil action rather than arrest, but '
+                              'the clock runs longer than it looks: the statute of limitations is three '
+                              'years, yet a buyer can raise the violation as a foreclosure offset ten '
+                              'years later [MNznbFmtOwI @ 00:13:40]. In the webinar version, Bronchick '
+                              'frames the bet as losing less than 1% of the time versus complying 100% of '
+                              'the time, and says no reported cases have surfaced [ZGvGq-_10yA @ '
+                              '00:28:37]. A Houston investor Bronchick describes sells about 40 houses a '
+                              'year at around $60,000 and would simply give the house back if challenged. '
+                              'The economics check is blunt: the exposure lands exactly when an operator '
+                              'needs the note most, during default and foreclosure.',
+                              'Land operators carry traps of their own. Seth Williams warns that the '
+                              'vacant-land exclusion from the dwelling rules evaporates if the buyer '
+                              'builds, so the loan documents should require payoff before the buyer '
+                              'improves the property [m1GoTr9J5TM @ 00:09:52]. William Bronchick reaches '
+                              'the same place from the occupancy side with a one-year no-residence clause '
+                              'on raw land [ZGvGq-_10yA @ 00:26:56]. Advertising is the quieter trap: '
+                              "Regulation N reaches 'real property or a dwelling,' so a listing promising "
+                              '5% interest, $2,000 down, and $499 a month locks those terms in, and '
+                              'changing them at the closing table is the violation; the escape is a vague '
+                              'line that seller financing may be available [m1GoTr9J5TM @ 00:26:44]. Data '
+                              'collection is the third decision point. Name, address, and phone carry no '
+                              "nonpublic personal information, but an SSN, driver's license, or passport "
+                              'does, and sharing it triggers opt-out paperwork; Seth weighs that friction '
+                              'against margin, and on a $500 buy resold for $8,000 where the down payment '
+                              "alone repays the cost, the risk is 'not a big deal' [m1GoTr9J5TM @ "
+                              "00:22:58]. Bronchick's clause, Seth's payoff clause, and vague ad copy cost "
+                              'nothing to add and close the three easiest doors to a claim.',
+                              'The operating failures are about cost and speed more than law. Abhi reports '
+                              'customer acquisition cost climbing from about $5 per Facebook lead to '
+                              '$800-$1,200, with direct mail rising too, which is why Gokce Capital leans '
+                              'on lifetime value instead of cheap leads [HpkNhY7WclQ @ 00:42:14]. Speed is '
+                              'the other leak: a weekend voicemail delay lost a sale when the buyer spent '
+                              "the money on a Walmart TV instead, which backs the team's 60-second "
+                              'lead-response rule and 9am-9pm phone coverage [HpkNhY7WclQ @ 01:06:48]. '
+                              'Media agencies report the same pattern in people and paperwork. ACRE '
+                              'Partner says the agency lost its best creatives six to eight times and now '
+                              'hands members hiring templates, interview scripts, and SOPs to rebuild '
+                              'faster [x1a5YxEWplQ @ 00:07:22]. It also warns that brokerage partnerships '
+                              'launched without paperwork or clear expectations cost tens of thousands of '
+                              'dollars [x1a5YxEWplQ @ 00:06:36]. The common thread is that the first '
+                              'collapse point in both businesses is response capacity, not lead supply: '
+                              'Abhi added three hires to cover 150-200 active loans, and ACRE pushes '
+                              'owners at $20-40K a month to hire before they can reach $50-100K. '
+                              'Underfunded follow-up and undocumented handoffs leak margin faster than any '
+                              'market shift.'],
+               'table': {'caption': 'Firsthand failures, measured costs, and the fixes practitioners '
+                                    'applied',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Drone crashes and windshield time in year one',
+                                   'Sasha Marcetta of Skyview Experts crashed 5-7 drones and drove 45,000 '
+                                   'miles in the first year',
+                                   'Budget $100-200 per DJI replacement and start beginners on the DJI Air '
+                                   '2S',
+                                   '6 Figure Revenue ([HbQpeDGaA_c @ 00:12:27]); 6 Figure Revenue '
+                                   '([HbQpeDGaA_c @ 00:03:39])'],
+                                  ['Losing orientation on a long lens mid-flight',
+                                   'Rob lost orientation repositioning on a telephoto lens during the '
+                                   'bourbon-warehouse shoot',
+                                   'Reposition the aircraft on the wide lens, then switch to the 70mm or '
+                                   '168mm for the shot',
+                                   'Next Move with Rob ([HrG-12X_ds8 @ 00:05:27])'],
+                                  ['Hostile neighbors near the acreage',
+                                   'Rob cites a drone that was shot down over a property in Athens, '
+                                   'Alabama',
+                                   'Shoot the 168mm lens from a distance so the aircraft stays well away '
+                                   'from neighbors',
+                                   'Next Move with Rob ([HrG-12X_ds8 @ 00:07:06])'],
+                                  ['Leaving the property with unusable footage',
+                                   "Matt Wood's fifth tip exists because missed or bad clips force a "
+                                   'costly return trip to the acreage',
+                                   'Review every clip on site before packing up and leaving the property',
+                                   'Matt Wood ([ZU1aoe6pwQI @ 00:10:28])'],
+                                  ['Listing-platform cost creep on land sales',
+                                   'Abhi watched a land.com listing move from a $40 monthly premium to an '
+                                   '$800 monthly diamond tier',
+                                   'Shift focus to lifetime value, since only LTV is controllable, e.g. '
+                                   '$500 CAC against $5K gross profit',
+                                   'REtipster ([HpkNhY7WclQ @ 00:14:19]); REtipster ([HpkNhY7WclQ @ '
+                                   '00:14:53])'],
+                                  ['Writing deals on outdated state association forms',
+                                   'The broker panel says the CAR four-page addendum carries 13-14 CFPB '
+                                   'violations and Nevada and Arizona forms lag too',
+                                   'Paper the deal on forms the note network will actually buy, through an '
+                                   'MLO workflow',
+                                   'Seller Finance Consultants, Inc. ([gSHz85xxIz4 @ 00:43:27])'],
+                                  ['Self-employed buyer with no documented income',
+                                   'Bronchick says a buyer with no tax returns, even with 30% down, kills '
+                                   'that scenario under ability-to-repay',
+                                   'Rent first, then convert to owner financing to build a payment history '
+                                   'and long-term capital gains',
+                                   'William Bronchick ([ZGvGq-_10yA @ 00:39:05]); William Bronchick '
+                                   '([ZGvGq-_10yA @ 00:19:33])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Close and Pre-Flight Gate',
+                           'body': 'Run these four checks before signing a terms deal or flying a listing; '
+                                   'each one maps to a loss a practitioner reported firsthand.',
+                           'items': ['Lock the parcel as vacant: add a no-build-before-payoff clause, '
+                                     "because RESPA's land exemption fails if a structure or manufactured "
+                                     'home goes on within 2 years using loan proceeds [REtipster — '
+                                     'm1GoTr9J5TM @ 00:17:36].',
+                                     'Count owner-occupant deals per person, not per LLC, against state '
+                                     'RMLO thresholds of Texas 5, Colorado 3, and California 0 before '
+                                     'writing the next note [William Bronchick — ZGvGq-_10yA @ 00:08:25].',
+                                     'Run the high-cost test on APR, not the note rate, and stay under it: '
+                                     "'Just don't have a high-cost mortgage' [William Bronchick — "
+                                     'MNznbFmtOwI @ 00:28:44].',
+                                     'Before any acreage flight, research the parcel with Google Earth, '
+                                     'FAA restrictions, and the survey so the lines and airspace are known '
+                                     '[Matt Wood — ZU1aoe6pwQI @ 00:02:26].']}}],
+ 'pull_quote': '"What this means is we are in a place where you need to become the bank." — Seller Finance '
+               'Consultants, Inc. (gSHz85xxIz4 @ 00:08:26).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Before listing any parcel on terms, verify road access, utilities, flood zone and '
+                      'wetlands, slope, and zoning approval [REtipster — JL60o3hoi_w @ 00:09:26].',
+                      'Write a payoff-before-improvement clause into every land note so a buyer who builds '
+                      'cannot convert the parcel into a dwelling mid-loan [REtipster — m1GoTr9J5TM @ '
+                      '00:09:52].',
+                      'Either advertise exact terms you will honor at closing or keep the listing vague '
+                      "with 'seller financing may be available' [REtipster — m1GoTr9J5TM @ 00:27:41].",
+                      "On owner-occupant deals, pay an RMLO roughly $500 and add the fee to the buyer's "
+                      'closing costs [William Bronchick — MNznbFmtOwI @ 00:25:25].',
+                      'Answer every buyer lead within 60 seconds and pitch the 5%/2.5% early-payoff '
+                      'cashback to pull cash forward [REtipster — HpkNhY7WclQ @ 00:23:16].',
+                      'Shoot acreage with two orbit heights 50-100 ft apart, then low and slow passes '
+                      'combining three movements, and review footage before leaving [Matt Wood — '
+                      'ZU1aoe6pwQI @ 00:08:05].'],
+ 'statutory_citations': [{'title': 'REtipster — What the Dodd-Frank Act Means for Vacant Land & Seller '
+                                   'Financing [00:09:01]',
+                          'url': 'https://www.youtube.com/watch?v=m1GoTr9J5TM&t=541s',
+                          'relevance': 'Primary practitioner testimony on why vacant land falls outside '
+                                       'the Subpart E dwelling rules and how to keep it there.'},
+                         {'title': 'Seller Finance Consultants, Inc. — RehabValuator.com and Daniil '
+                                   'Kleyman: Seller Financing, Dodd-Frank, and Profitability in 2014 '
+                                   '[00:47:31]',
+                          'url': 'https://www.youtube.com/watch?v=gSHz85xxIz4&t=2851s',
+                          'relevance': 'Primary practitioner testimony on rescission penalties, the MLO '
+                                       'workflow, and note resale economics.'},
+                         {'title': 'William Bronchick — Seller Financing after Dodd-Frank [00:15:03]',
+                          'url': 'https://www.youtube.com/watch?v=MNznbFmtOwI&t=903s',
+                          'relevance': 'Primary practitioner testimony on private civil liability, '
+                                       'per-year exemptions, and entity stacking.'},
+                         {'title': 'REtipster — Land Flipping: Why Your Buyers Are the Real Asset w/ Abi '
+                                   'Asija | REtipster Podcast 290 [00:11:17]',
+                          'url': 'https://www.youtube.com/watch?v=HpkNhY7WclQ&t=677s',
+                          'relevance': 'Primary practitioner testimony on holding land notes, early-payoff '
+                                       'cashback, and buyer lifetime value.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'JL60o3hoi_w',
+                       'title': 'How Land Investing Really Works',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'Every parcel of land is useful for something.',
+                       'tip': 'Every parcel of land is useful for something.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=JL60o3hoi_w&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=JL60o3hoi_w&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HpkNhY7WclQ',
+                       'title': 'Land Flipping: Why Your Buyers Are the Real Asset w/ Abi Asija | '
+                                'REtipster Podcast 290',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "Seth, it's just in the age of AI, it's just like human touch is our "
+                               'competitive advantage.',
+                       'tip': "Seth, it's just in the age of AI, it's just like human touch is our "
+                              'competitive advantage.',
+                       'timestamp': 2984,
+                       'timestamp_seconds': 2984,
+                       'timestamp_label': '[00:49:44]',
+                       'url': 'https://www.youtube.com/watch?v=HpkNhY7WclQ&t=2984s',
+                       'markdown': '[00:49:44](https://www.youtube.com/watch?v=HpkNhY7WclQ&t=2984s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm1GoTr9J5TM',
+                       'title': 'What the Dodd-Frank Act Means for Vacant Land & Seller Financing',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'Vacant land seems to be excluded from all of these special rules listed '
+                               'out in subpart E.',
+                       'tip': 'Vacant land seems to be excluded from all of these special rules listed out '
+                              'in subpart E.',
+                       'timestamp': 541,
+                       'timestamp_seconds': 541,
+                       'timestamp_label': '[00:09:01]',
+                       'url': 'https://www.youtube.com/watch?v=m1GoTr9J5TM&t=541s',
+                       'markdown': '[00:09:01](https://www.youtube.com/watch?v=m1GoTr9J5TM&t=541s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm1GoTr9J5TM',
+                       'title': 'What the Dodd-Frank Act Means for Vacant Land & Seller Financing',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "Luckily, it's not really that difficult to comply with regulation N.",
+                       'tip': "Luckily, it's not really that difficult to comply with regulation N.",
+                       'timestamp': 1750,
+                       'timestamp_seconds': 1750,
+                       'timestamp_label': '[00:29:10]',
+                       'url': 'https://www.youtube.com/watch?v=m1GoTr9J5TM&t=1750s',
+                       'markdown': '[00:29:10](https://www.youtube.com/watch?v=m1GoTr9J5TM&t=1750s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B1mBRW8QMrw',
+                       'title': 'Owner Finance Webinar - The Dodd-Frank Act EXPOSED!',
+                       'channel': 'Phill Grove',
+                       'author': 'Phill Grove',
+                       'text': "My contention is this is the only thing that's really working in the real "
+                               'estate market today.',
+                       'tip': "My contention is this is the only thing that's really working in the real "
+                              'estate market today.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=B1mBRW8QMrw&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=B1mBRW8QMrw&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gSHz85xxIz4',
+                       'title': 'RehabValuator.com and Daniil Kleyman: Seller Financing, Dodd-Frank, and '
+                                'Profitability in 2014',
+                       'channel': 'Seller Finance Consultants, Inc.',
+                       'author': 'Seller Finance Consultants, Inc.',
+                       'text': 'The penalty is the recision of the note and interest forgiven.',
+                       'tip': 'The penalty is the recision of the note and interest forgiven.',
+                       'timestamp': 2851,
+                       'timestamp_seconds': 2851,
+                       'timestamp_label': '[00:47:31]',
+                       'url': 'https://www.youtube.com/watch?v=gSHz85xxIz4&t=2851s',
+                       'markdown': '[00:47:31](https://www.youtube.com/watch?v=gSHz85xxIz4&t=2851s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MNznbFmtOwI',
+                       'title': 'Seller Financing after Dodd-Frank',
+                       'channel': 'William Bronchick',
+                       'author': 'William Bronchick',
+                       'text': 'But again, Dodd-Frank is not regulatory, meaning if you screw it up, '
+                               "you're not going to get arrested.",
+                       'tip': "But again, Dodd-Frank is not regulatory, meaning if you screw it up, you're "
+                              'not going to get arrested.',
+                       'timestamp': 903,
+                       'timestamp_seconds': 903,
+                       'timestamp_label': '[00:15:03]',
+                       'url': 'https://www.youtube.com/watch?v=MNznbFmtOwI&t=903s',
+                       'markdown': '[00:15:03](https://www.youtube.com/watch?v=MNznbFmtOwI&t=903s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X6Bv1fbSvBk',
+                       'title': 'Q&A: Owner Financing and Selling the Notes, Land Trusts, Dodd-Frank, SAFE '
+                                'Act',
+                       'channel': 'Seller Financing, Real Estate & Note Investing',
+                       'author': 'Seller Financing, Real Estate & Note Investing',
+                       'text': 'Bank-style underwriting is ridiculous, because a buyer who could get a '
+                               'bank loan would not need owner financing.',
+                       'tip': 'Bank-style underwriting is ridiculous, because a buyer who could get a bank '
+                              'loan would not need owner financing.',
+                       'timestamp': 629,
+                       'timestamp_seconds': 629,
+                       'timestamp_label': '[00:10:29]',
+                       'url': 'https://www.youtube.com/watch?v=X6Bv1fbSvBk&t=629s',
+                       'markdown': '[00:10:29](https://www.youtube.com/watch?v=X6Bv1fbSvBk&t=629s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZGvGq-_10yA',
+                       'title': 'Webinar Weds: Understanding Dodd-Frank and Seller Financing',
+                       'channel': 'William Bronchick',
+                       'author': 'William Bronchick',
+                       'text': 'Escalating the rate from 6 to 8 to 10 to 12 percent makes buyers cry '
+                               'uncle, which works like a balloon.',
+                       'tip': 'Escalating the rate from 6 to 8 to 10 to 12 percent makes buyers cry uncle, '
+                              'which works like a balloon.',
+                       'timestamp': 1433,
+                       'timestamp_seconds': 1433,
+                       'timestamp_label': '[00:23:53]',
+                       'url': 'https://www.youtube.com/watch?v=ZGvGq-_10yA&t=1433s',
+                       'markdown': '[00:23:53](https://www.youtube.com/watch?v=ZGvGq-_10yA&t=1433s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SB_vfxPYuF8',
+                       'title': 'The Only True Dodd Frank Seller Finance Exemption and Why You Need an MLO '
+                                'For All Seller Financing',
+                       'channel': 'Seller Finance Consultants, Inc.',
+                       'author': 'Seller Finance Consultants, Inc.',
+                       'text': 'The buyer pays the MLO fee, so take the free insurance.',
+                       'tip': 'The buyer pays the MLO fee, so take the free insurance.',
+                       'timestamp': 186,
+                       'timestamp_seconds': 186,
+                       'timestamp_label': '[00:03:06]',
+                       'url': 'https://www.youtube.com/watch?v=SB_vfxPYuF8&t=186s',
+                       'markdown': '[00:03:06](https://www.youtube.com/watch?v=SB_vfxPYuF8&t=186s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mtE3-cvmAN0',
+                       'title': 'How Do I Comply With The Dodd-Frank Act?',
+                       'channel': 'Joe Crump',
+                       'author': 'Joe Crump',
+                       'text': 'We do it ethically.',
+                       'tip': 'We do it ethically.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=mtE3-cvmAN0&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=mtE3-cvmAN0&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZU1aoe6pwQI',
+                       'title': 'HOW TO SHOOT Acreage With a Drone - 5 TIPS l Drone VLOGs #4',
+                       'channel': 'Matt Wood',
+                       'author': 'Matt Wood',
+                       'text': 'Review your footage before you leave the property.',
+                       'tip': 'Review your footage before you leave the property.',
+                       'timestamp': 628,
+                       'timestamp_seconds': 628,
+                       'timestamp_label': '[00:10:28]',
+                       'url': 'https://www.youtube.com/watch?v=ZU1aoe6pwQI&t=628s',
+                       'markdown': '[00:10:28](https://www.youtube.com/watch?v=ZU1aoe6pwQI&t=628s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ItWPpkhNHto',
+                       'title': 'Top Drone Shots For Real Estate Photography',
+                       'channel': 'Wyman Gentry',
+                       'author': 'Wyman Gentry',
+                       'text': 'The amount of time that it takes to get these shots is about 5 minutes.',
+                       'tip': 'The amount of time that it takes to get these shots is about 5 minutes.',
+                       'timestamp': 246,
+                       'timestamp_seconds': 246,
+                       'timestamp_label': '[00:04:06]',
+                       'url': 'https://www.youtube.com/watch?v=ItWPpkhNHto&t=246s',
+                       'markdown': '[00:04:06](https://www.youtube.com/watch?v=ItWPpkhNHto&t=246s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HrG-12X_ds8',
+                       'title': 'How I Shoot Acreage Listings With the DJI Mavic 4 Pro - One Flight, Three '
+                                'Lenses',
+                       'channel': 'Next Move with Rob',
+                       'author': 'Next Move with Rob',
+                       'text': 'The wide is the setup, not the payoff.',
+                       'tip': 'The wide is the setup, not the payoff.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=HrG-12X_ds8&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=HrG-12X_ds8&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HbQpeDGaA_c',
+                       'title': 'How To Start $3,000/Week Real Estate Drone Photography Business',
+                       'channel': '6 Figure Revenue',
+                       'author': '6 Figure Revenue',
+                       'text': 'Crashes happen, and a DJI replacement runs about $100 to $200.',
+                       'tip': 'Crashes happen, and a DJI replacement runs about $100 to $200.',
+                       'timestamp': 747,
+                       'timestamp_seconds': 747,
+                       'timestamp_label': '[00:12:27]',
+                       'url': 'https://www.youtube.com/watch?v=HbQpeDGaA_c&t=747s',
+                       'markdown': '[00:12:27](https://www.youtube.com/watch?v=HbQpeDGaA_c&t=747s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LlahXSpP0k4',
+                       'title': 'How I Scaled My Real Estate Media Business to $7M (Step by Step)',
+                       'channel': 'ACRE Partner',
+                       'author': 'ACRE Partner',
+                       'text': "Most real estate media agency owners fail because they don't have an offer "
+                               'that real estate agents actually want.',
+                       'tip': "Most real estate media agency owners fail because they don't have an offer "
+                              'that real estate agents actually want.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=LlahXSpP0k4&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=LlahXSpP0k4&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x1a5YxEWplQ',
+                       'title': 'How Real Estate Media Agencies Scale From $10K to $100K+ Per Month '
+                                '(Proven Blueprint)',
+                       'channel': 'ACRE Partner',
+                       'author': 'ACRE Partner',
+                       'text': 'Hey, our goal is that marketing is the last thing that holds you back from '
+                               'winning your next listing.',
+                       'tip': 'Hey, our goal is that marketing is the last thing that holds you back from '
+                              'winning your next listing.',
+                       'timestamp': 311,
+                       'timestamp_seconds': 311,
+                       'timestamp_label': '[00:05:11]',
+                       'url': 'https://www.youtube.com/watch?v=x1a5YxEWplQ&t=311s',
+                       'markdown': '[00:05:11](https://www.youtube.com/watch?v=x1a5YxEWplQ&t=311s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

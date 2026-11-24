@@ -1,686 +1,859 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-first-enterprise-software-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in enterprise software reselling, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–9 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine Renewal Windows, AWS CPPO and Microsoft CSP Demand with Deal Registration, License Evidence, and Procurement-Ready Implementation Scopes",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
-        "Money-to-Manpower Score. This chapter maps nine sourcing plays: renewal rescue, "
-        "license reconciliation, cloud commitment alignment, security remediation, acquisition "
-        "integration, public procurement, implementation recovery, vendor referral coverage, "
-        "and customs-workflow modernization. Build the first three to ten wins around "
-        "documented purchase events, authorized distribution, and separately priced delivery. "
-        "Canonical annual owner net profits are $24,000 Conservative, $196,000 Base, and "
-        "$500,000 Scaled, against gross license resale and service billings of $300,000, "
-        "$1,400,000, and $2,500,000. Vendor costs remain inside the margin calculation. "
-        "The operating sequence turns public signals into verified buying windows, registered "
-        "opportunities, scoped implementation work, and collectible contracts without confusing "
-        "customer spending or tariff exposure with reseller revenue."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$300,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "8% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,400,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "14.0% net margin; $196,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "20% net margin; $500,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine Purchase Events Instead of Collecting Unqualified Names",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one buyer, one software category, and one purchase event. "
-                    "A workable opening wedge is a regional manufacturer with 250 to 2,000 "
-                    "employees, an infrastructure lead, and a renewal or integration deadline "
-                    "inside 180 days. Build an account ledger in HubSpot or Salesforce with "
-                    "legal entity, parent company, signal date, evidence URL, probable product, "
-                    "incumbent partner, estimated buying window, and next verification question. "
-                    "Use SEC EDGAR acquisition filings, SAM.gov notices, municipal purchasing "
-                    "portals, vendor partner directories, company engineering posts, and job "
-                    "advertisements naming migration responsibilities. A job advertisement proves "
-                    "recruiting activity, not an installed license count; a contract award proves "
-                    "a historical purchase, not an open renewal. Preserve that distinction in "
-                    "every record. Review fifty accounts weekly, retain twenty supported "
-                    "hypotheses, and ask a human to validate timing before assigning opportunity "
-                    "value. Avoid collecting personal contact details unrelated to the purchase. "
-                    "The best signal combines a dated operational change with an identifiable "
-                    "budget owner and a plausible implementation burden. A generic technology "
-                    "fingerprint without a deadline belongs in monitoring, not the active "
-                    "pipeline. Track signal age so stale evidence cannot inflate coverage. "
-                    "Record contradictions alongside supporting evidence rather than deleting them."
-                ),
-                (
-                    "Use eight direct software plays and one adjacent customs-workflow play "
-                    "as the chapter's nine mapped sourcing routes. Renewal rescue starts with "
-                    "a verified expiration and a comparison of current entitlements against "
-                    "actual use. License reconciliation starts with customer-authorized exports "
-                    "and ends with a purchased remediation scope, not an unsolicited accusation "
-                    "of underlicensing. Cloud commitment alignment connects an eligible software "
-                    "purchase to the customer's existing marketplace procurement process, while "
-                    "security remediation attaches implementation to a documented control gap. "
-                    "Acquisition integration uses public transaction announcements to identify "
-                    "duplicate identity, backup, and collaboration estates. Public procurement "
-                    "uses published solicitations and award histories, respecting the stated "
-                    "communications process. Implementation recovery targets stalled deployments "
-                    "through customer referrals rather than public shaming. Vendor referral "
-                    "coverage serves territories or account sizes the publisher cannot support "
-                    "economically. Each route needs its own unit calculation and fallback, shown "
-                    "below. Treat these as sourcing hypotheses, not nine guaranteed revenue "
-                    "streams. The opening economics should reward a narrow specialist: one "
-                    "credible license analysis and one repeatable implementation package outperform "
-                    "a catalog containing hundreds of products nobody on the team can deploy. "
-                    "Do not represent informal introductions as authorized reseller status."
-                ),
-                (
-                    "The supplied adjacent play, "
-                    "section_321_de_minimis_bonded_tariff_arbitrage, describes routing inventory "
-                    "through Tijuana IMMEX or Canadian bonded warehouses before individual "
-                    "consumer fulfillment. Do not sell its claimed tariff elimination as a "
-                    "current entitlement. The United States suspended duty-free de minimis "
-                    "treatment globally effective August 29, 2025; verify subsequent changes "
-                    "before designing any entry workflow. Section 321, 19 U.S.C. § 1321, "
-                    "is not blanket permission to divide commercial shipments, and Entry "
-                    "Type 86 is a filing mechanism rather than independent eligibility. "
-                    "For sourcing, translate the disruption into demand for customs data "
-                    "integration, order management, landed-cost controls, and broker exception "
-                    "queues. A brand shipping 10,000 monthly orders at an illustrative "
-                    "$4 duty exposure has $40,000 of customer exposure, not reseller "
-                    "revenue. Applying the historical 35–50% savings-fee concept would produce "
-                    "$14,000–$20,000 only if lawful, documented savings actually existed; "
-                    "exclude that contingent amount from this software pipeline. Instead "
-                    "quote a $12,000 integration with $7,000 direct delivery cost. "
-                    "Non-301 origin alone does not restore suspended treatment. First-sale "
-                    "valuation requires transaction evidence and broker review; bonded storage "
-                    "may defer duties rather than erase them. Fall back to ordinary "
-                    "duty-paid workflows when eligibility cannot be established."
-                ),
-            ],
-            "table": {
-                "caption": "Nine Mapped Sourcing Plays: Observable Demand, Unit Economics, and Practical Fallbacks",
-                "headers": [
-                    "Mapped play and accountable buyer",
-                    "Observable signal and verification task",
-                    "Illustrative transaction economics before shared overhead",
-                    "Failure condition and executable fallback",
-                ],
-                "rows": [
-                    [
-                        "Renewal rescue for the accountable infrastructure budget owner",
-                        "Obtain a customer-confirmed renewal date and current entitlement schedule",
-                        "$40,000 resale less $35,200 vendor cost yields $4,800 spread",
-                        "If registration fails, sell a separately scoped renewal assessment",
-                    ],
-                    [
-                        "License reconciliation for operations leaders managing subscription waste",
-                        "Compare authorized usage exports with purchased seats and contract minimums",
-                        "$8,000 assessment less $4,000 delivery cost yields $4,000 contribution",
-                        "If exports are unavailable, conduct a bounded administrator-led discovery",
-                    ],
-                    [
-                        "Cloud commitment alignment for the cloud procurement lead",
-                        "Verify eligible products against the actual commitment agreement terms",
-                        "$90,000 resale less $81,000 vendor cost yields $9,000 spread",
-                        "If commitment treatment fails, compare direct and distributor purchasing",
-                    ],
-                    [
-                        "Security remediation for the owner of documented control gaps",
-                        "Use an authorized assessment and a funded remediation deadline",
-                        "$25,000 deployment less $15,000 delivery cost yields $10,000 contribution",
-                        "If product access slips, sell vendor-neutral configuration and planning",
-                    ],
-                    [
-                        "Acquisition integration for the accountable post-merger technology lead",
-                        "Pair a published acquisition with customer-confirmed duplicate software estates",
-                        "$60,000 resale less $53,400 vendor cost yields $6,600 spread",
-                        "If transfer rights fail, price new licenses and staged migration",
-                    ],
-                    [
-                        "Public procurement for the named contracting office buyer",
-                        "Read solicitation instructions, mandatory qualifications, and historical award schedules",
-                        "$100,000 resale less $91,000 vendor cost yields $9,000 spread",
-                        "If prime eligibility fails, pursue an expressly permitted subcontract",
-                    ],
-                    [
-                        "Implementation recovery for the sponsor of a stalled deployment",
-                        "Confirm the failed milestone and obtain authorized environment access",
-                        "$30,000 recovery less $18,000 delivery cost yields $12,000 contribution",
-                        "If scope remains opaque, begin with a paid diagnostic",
-                    ],
-                    [
-                        "Vendor referral coverage for underserved publisher account segments",
-                        "Confirm territory rights, referral ownership, and minimum certification requirements",
-                        "$50,000 resale less $44,000 vendor cost yields $6,000 spread",
-                        "If channel conflict emerges, negotiate a documented services-only role",
-                    ],
-                    [
-                        "section_321_de_minimis_bonded_tariff_arbitrage mapped to customs-workflow software demand",
-                        "Ask the broker to confirm current entry and origin rules",
-                        "$12,000 integration less $7,000 delivery cost yields $5,000 contribution",
-                        "Use duty-paid fulfillment when preferential treatment cannot be substantiated",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Use Channel Friction as Evidence, Not as a Sales Claim",
-                "body": (
-                    "Experienced specialists make timing, authority, and delivery constraints "
-                    "visible before negotiating the headline discount."
-                ),
-                "items": [
-                    "Ask the customer for a redacted renewal notice before requesting publisher pricing; dates and product identifiers make registration defensible.",
-                    "Request written confirmation of registration duration, protected entity, and renewal treatment; a portal submission alone does not establish protection.",
-                    "Ask a distributor credit desk about required deposits before quoting payment terms; a profitable order can still exhaust available cash.",
-                    "For customs-adjacent software, involve the customer's broker in data-field design and preserve ruling references instead of promising tariff savings.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Qualify Margin, Authority, and Cash Before Building the Quote",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Score opportunities on six dimensions totaling one hundred points: "
-                    "verified purchase timing twenty, budget-owner access twenty, economic "
-                    "spread twenty, reseller authorization fifteen, implementation fit fifteen, "
-                    "and collection quality ten. Award full timing points only when the "
-                    "customer supplies a dated renewal, purchase milestone, or published "
-                    "procurement schedule; a salesperson's optimism earns nothing. Give "
-                    "economic points against an actual distributor quote with expiry, "
-                    "currency, quantities, and cancellation terms. Set seventy-five points "
-                    "as the active pursuit threshold, but treat absent authorization or "
-                    "unacceptable payment exposure as disqualifying regardless of total. "
-                    "An opportunity scoring eighty-five with a nontransferable license "
-                    "cannot be repaired by enthusiasm. In the first call, ask who "
-                    "signs, who administers, who pays, and who can block deployment. "
-                    "These are often four different people. Confirm the buying entity "
-                    "before registering a parent company or subsidiary; publisher coverage "
-                    "may differ. Document the customer's reason to change partners without "
-                    "soliciting restricted competitor material. A qualified opportunity has "
-                    "a buyer-confirmed next step and a dated evidence request, not merely "
-                    "a friendly meeting. Recalculate the score whenever price, timing, "
-                    "scope, or payment terms change materially."
-                ),
-                (
-                    "Separate reseller authorization from marketplace routing. AWS Marketplace "
-                    "channel partner private offers, commonly CPPO, require the applicable "
-                    "seller relationship and selling authorization; Microsoft CSP requires "
-                    "the relevant direct or indirect channel arrangement and customer "
-                    "relationship mechanics. Microsoft marketplace multiparty private offers "
-                    "are a separate route, not a synonym for CSP. Confirm the actual "
-                    "program, product, geography, buyer account, tax treatment, and settlement "
-                    "flow before drafting commercial promises. Deal registration can protect "
-                    "an opportunity or improve pricing under publisher rules, but it "
-                    "does not automatically override an incumbent agreement. Ask the "
-                    "publisher to confirm the registered legal entity and expiration "
-                    "in writing. For cloud commitments, have the customer verify which "
-                    "eligible purchases count under their specific agreement; never promise "
-                    "universal dollar-for-dollar treatment. The operator's worksheet should "
-                    "show customer price, vendor payable, platform charges, implementation "
-                    "labor, support reserve, and expected cash dates separately. If the "
-                    "operator acts only as an agent, commission revenue may be the "
-                    "appropriate recognition basis. Do not inflate that commission into "
-                    "gross resale billings merely to resemble the scorecard. Compare "
-                    "the canonical gross-billing cases only with transactions whose contractual "
-                    "and accounting treatment supports that basis."
-                ),
-                (
-                    "Run a cash test before a margin test becomes a commitment. "
-                    "An illustrative $100,000 license order with $88,000 vendor cost "
-                    "has a $12,000 product spread before platform charges, labor, "
-                    "support, and overhead. If the vendor requires payment on day "
-                    "fifteen and the customer pays on day sixty, the reseller "
-                    "carries $88,000 for forty-five days. That single order can "
-                    "consume much of the canonical $15,000–$75,000 startup capital "
-                    "range, while monthly operating expense still runs $5,000–$25,000. "
-                    "Seek a deposit, shorter customer terms, distributor credit, or "
-                    "a permitted marketplace settlement structure; calculate each alternative "
-                    "from its actual contract rather than assuming immediate payout. "
-                    "For public buyers, follow solicitation instructions and any incorporated "
-                    "FAR 52.212-4 payment provisions instead of demanding terms the "
-                    "contract cannot support. For subscriptions, disclose term length, "
-                    "renewal mechanics, seat-reduction restrictions, and cancellation exposure "
-                    "before signature. Preserve written scope acceptance for implementation "
-                    "milestones. A ten-percent customer deposit does not fund an "
-                    "eighty-eight-percent supplier obligation. When no workable cash structure "
-                    "exists, offer a paid assessment or services-only delivery and let "
-                    "the publisher transact the license directly."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Part Qualification Scorecard with Evidence-Based Pursuit Rules",
-                "headers": [
-                    "Dimension and maximum available points",
-                    "Evidence required before awarding full credit",
-                    "Specific verification question for the buyer",
-                    "Disposition when supporting evidence is weak",
-                ],
-                "rows": [
-                    [
-                        "Purchase timing carries twenty points in the pursuit score",
-                        "Dated renewal notice or published purchase milestone supplied directly",
-                        "Which documented deadline determines when the purchase must happen",
-                        "Move the account into monitoring until timing becomes verifiable",
-                    ],
-                    [
-                        "Budget-owner access carries twenty points in the pursuit score",
-                        "Named economic buyer attends discovery and confirms spending ownership",
-                        "Who can approve this amount for this purchasing entity",
-                        "Request a joint meeting before investing in custom demonstrations",
-                    ],
-                    [
-                        "Economic spread carries twenty points in the pursuit score",
-                        "Current vendor quote supports the proposed customer billing amount",
-                        "Which delivery obligations and charges reduce this transaction spread",
-                        "Reprice the scope or decline economically unsupported license resale",
-                    ],
-                    [
-                        "Reseller authorization carries fifteen points plus a mandatory check",
-                        "Publisher or distributor documents valid rights for this transaction",
-                        "Does this authorization cover the product territory and entity",
-                        "Stop license quoting and pursue only independently authorized services",
-                    ],
-                    [
-                        "Implementation fit carries fifteen points in the pursuit score",
-                        "Delivery lead confirms prerequisites effort estimate and available capacity",
-                        "Which dependencies must the customer complete before work starts",
-                        "Sell bounded discovery before committing to uncertain implementation work",
-                    ],
-                    [
-                        "Collection quality carries ten points plus a cash check",
-                        "Accepted payment terms and credit evidence support supplier obligations",
-                        "When will cleared customer cash precede each supplier payment",
-                        "Restructure deposits credit or transaction route before accepting exposure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Issuing a Binding Commercial Offer",
-                "body": (
-                    "A strong pursuit score does not replace these transaction-specific "
-                    "checks. Resolve failures before accepting customer obligations."
-                ),
-                "items": [
-                    "Verify current reseller rights, product eligibility, territory, customer entity, and registration status against written publisher or distributor evidence.",
-                    "Reconcile customer billing, vendor payable, platform charges, delivery effort, support reserve, and payment dates in one quote worksheet.",
-                    "Confirm the signer's purchasing authority, required procurement process, license terms, implementation acceptance criteria, and customer data-access permissions.",
-                    "Test supplier-payment coverage under delayed collection and confirm a workable deposit, credit facility, or alternative transaction structure.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a Permission-Aware Cadence That Converts Signals into Paid Discovery",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Organize outbound around the account event rather than a scraped "
-                    "contact list. On day one, send a short email connecting "
-                    "the public signal to one operational hypothesis and ask for "
-                    "a fifteen-minute verification call. For an acquisition, write that "
-                    "duplicate identity administration often complicates integration, then ask "
-                    "whether consolidation is on the current plan; do not assert "
-                    "that the buyer has a security defect. On day three, "
-                    "call a published business number and leave one concise message. "
-                    "On day six, send a relevant implementation checklist or "
-                    "an anonymized scope example. On day ten, request an introduction "
-                    "through a publisher representative only with an appropriate relationship "
-                    "and without sharing customer-confidential material. On day fourteen, "
-                    "close the sequence with a clear choice to discuss, defer, "
-                    "or stop. Honor suppression across channels. Commercial email must "
-                    "meet 15 U.S.C. § 7704 requirements, including accurate routing "
-                    "information, required identification, a valid postal address, and a "
-                    "working opt-out honored within the statutory period. Do not "
-                    "treat business outreach as permission for automated calls or "
-                    "texts; assess those methods separately under applicable rules. "
-                    "Keep sequences small enough that every response receives human review."
-                ),
-                (
-                    "Use an explicit funnel hypothesis to plan the first wins. "
-                    "Across twelve weeks, research 600 distinct accounts, retain 240 "
-                    "with credible purchase signals, reach 120 through delivered messages "
-                    "or completed introductions, conduct thirty discovery meetings, qualify "
-                    "fifteen opportunities, issue ten proposals, and win three contracts. "
-                    "Those stage conversions are 40%, 50%, 25%, 50%, approximately "
-                    "67%, and 30%, respectively; the overall account-to-win rate is "
-                    "0.5%. They are illustrative planning benchmarks, not observed "
-                    "industry averages. Define reached consistently and deduplicate companies "
-                    "before calculating conversion. A proposal means a priced scope "
-                    "with an identified buying process, not a generic brochure. "
-                    "A win means an executed purchase instrument accepted through "
-                    "the correct channel, not a verbal endorsement. With a "
-                    "3–12 month first-deal window, the twelve-week cohort may "
-                    "produce discoveries long before bookings. Track cohorts by first "
-                    "signal date and report pending opportunities separately from losses. "
-                    "At unchanged conversion, ten wins require roughly 2,000 researched "
-                    "accounts, which may exceed a small team's delivery capacity. "
-                    "Improve qualification and referral quality before multiplying outreach. "
-                    "Measure elapsed days and cash collected alongside conversion so "
-                    "rapid signatures cannot conceal slow settlement."
-                ),
-                (
-                    "Build inbound assets that answer procurement questions rather than "
-                    "repeat product marketing. Publish a renewal evidence checklist, "
-                    "a license export preparation guide, a private-offer purchasing "
-                    "worksheet, and an implementation acceptance template. Each asset "
-                    "should identify required inputs, likely bottlenecks, and the "
-                    "scope of a paid diagnostic. Offer a fixed $3,000 "
-                    "discovery engagement requiring roughly twenty delivery hours at "
-                    "$90 loaded hourly cost: $1,800 direct labor leaves "
-                    "$1,200 before selling expense and shared overhead. If "
-                    "that fee is later credited against implementation, record "
-                    "the credit so revenue is not counted twice. Keep "
-                    "customer production data out of public forms; request "
-                    "sanitized counts first and obtain authorized access only "
-                    "after scope agreement. Co-host narrow workshops with an "
-                    "authorized publisher representative or distributor specialist, using "
-                    "a sample environment rather than customer credentials. Tag "
-                    "each inquiry by asset, partner, purchase event, and "
-                    "verified timeline. Measure qualified discoveries per asset and "
-                    "gross contribution per partner referral, not download totals. "
-                    "For regulated or public buyers, provide procurement-ready "
-                    "descriptions without implying certifications or contract vehicles "
-                    "the business does not hold. Retire assets that attract "
-                    "unfunded research but no actionable purchase events."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Twelve-Week Account Cohort and Explicit Stage Conversion Definitions",
-                "headers": [
-                    "Transition and illustrative stage conversion",
-                    "Required evidence for the destination stage",
-                    "Operator action that advances the account",
-                    "Failure diagnosis and corrective operating response",
-                ],
-                "rows": [
-                    [
-                        "600 researched accounts become 240 signal-qualified accounts at 40%",
-                        "A dated source supports a specific software purchase hypothesis",
-                        "Verify the source and record the next factual question",
-                        "Weak signal density requires narrowing the chosen buyer segment",
-                    ],
-                    [
-                        "240 signal-qualified accounts become 120 reached accounts at 50%",
-                        "At least one relevant message delivers or introduction completes",
-                        "Validate business routing and coordinate introductions with authorized partners",
-                        "Poor reach requires better routing rather than repeated resending",
-                    ],
-                    [
-                        "120 reached accounts produce thirty completed discovery meetings at 25%",
-                        "A buyer attends and discusses the stated purchase event",
-                        "Use one hypothesis and request one concrete verification conversation",
-                        "Low meeting conversion suggests weak relevance or incorrect timing",
-                    ],
-                    [
-                        "Thirty discovery meetings produce fifteen qualified opportunities at 50%",
-                        "Score reaches seventy-five and mandatory transaction checks remain supportable",
-                        "Collect timing authority margin implementation and payment evidence together",
-                        "Low qualification indicates the initial signal lacks buying substance",
-                    ],
-                    [
-                        "Fifteen qualified opportunities produce ten priced proposals near 67%",
-                        "Buyer confirms scope purchasing route and next decision milestone",
-                        "Issue a bounded offer with dependencies and commercial expiry",
-                        "Missing proposals usually reveal scope uncertainty or channel conflict",
-                    ],
-                    [
-                        "Ten priced proposals produce three executed contracts at 30%",
-                        "Correct purchasing instrument is executed and accepted for processing",
-                        "Resolve objections and confirm ordering provisioning and payment responsibilities",
-                        "Lost proposals require coded reasons and evidence-based cohort review",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture and verify the event",
-                    "action": "Research fifty accounts weekly and retain only evidence-backed hypotheses.",
-                    "detail": "Store source URL, publication date, legal entity, suspected product, and the precise fact requiring customer confirmation.",
-                },
-                {
-                    "step": 2,
-                    "title": "Run the account-specific contact sequence",
-                    "action": "Use the fourteen-day email, business-call, asset, introduction, and closeout cadence.",
-                    "detail": "Assign one account owner, maintain a shared suppression list, and stop or defer immediately when the buyer requests it.",
-                },
-                {
-                    "step": 3,
-                    "title": "Convert discovery into a bounded commercial scope",
-                    "action": "Score the opportunity and offer paid discovery when delivery uncertainty remains.",
-                    "detail": "Obtain authorization evidence, a current supplier quote, buyer-confirmed timing, implementation prerequisites, and a cash coverage worksheet.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the correct instrument and hand off delivery",
-                    "action": "Confirm purchase acceptance, provisioning ownership, implementation milestones, and collection dates.",
-                    "detail": "Record the executed instrument, reconcile ordered quantities, schedule acceptance checks, and create renewal alerts with a named owner.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Close the First Wins Without Mistaking Product Spread for Owner Profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Handle objections by locating the missing decision fact. When "
-                    "the buyer says the incumbent is cheaper, ask whether "
-                    "the comparison includes the same term, quantities, support, "
-                    "implementation, and payment conditions; reconcile those fields "
-                    "before discussing discount. When procurement prefers buying "
-                    "direct, offer a transparent services-only alternative or an "
-                    "eligible marketplace route, explaining the distinct operational "
-                    "benefit rather than inventing channel exclusivity. When the "
-                    "buyer asks for guaranteed commitment drawdown, obtain agreement-specific "
-                    "confirmation from the relevant marketplace team. When security "
-                    "blocks administrator access, propose customer-operated exports, "
-                    "temporary least-privilege access, or a supervised working "
-                    "session. When the sponsor wants a free proof of "
-                    "concept, define a paid diagnostic with acceptance criteria "
-                    "and an optional, explicitly priced conversion credit. "
-                    "When purchasing requests extended payment, price and fund "
-                    "that exposure or restructure the transaction. Do not "
-                    "accept an unfunded obligation to save a headline "
-                    "win. Capture the objection category, evidence supplied, "
-                    "commercial change, and final result in the opportunity "
-                    "record. Repeated losses to one issue should change "
-                    "the targeting or offer design, not merely lengthen "
-                    "the follow-up sequence. Close the loop with a "
-                    "written decision summary the buyer can circulate internally."
-                ),
-                (
-                    "Reconcile every annual planning case to the canonical "
-                    "scorecard. Conservative gross license resale and service "
-                    "billings are $300,000; total modeled costs of $276,000 "
-                    "leave $24,000 owner net profit at 8%, supported "
-                    "by 2 FT + 3 C. Base billings are "
-                    "$1,400,000; total modeled costs of $1,204,000 leave "
-                    "$196,000 at 14.0%, again with 2 FT + "
-                    "3 C. Scaled billings are $2,500,000; total modeled "
-                    "costs of $2,000,000 leave $500,000 at 20%, "
-                    "with 3 FT + 4 C, seven people. "
-                    "Those residual cost totals include vendor costs and "
-                    "all other modeled expenses; they are not separate "
-                    "estimates of payroll. An illustrative volume bridge "
-                    "is six $50,000 contracts, fourteen $100,000 contracts, "
-                    "or twenty-five $100,000 contracts, respectively. These "
-                    "are equivalent billing packages, not promises about "
-                    "average order size or the first selling year. "
-                    "The first three to ten wins establish delivery "
-                    "evidence and renewal cohorts; they do not automatically "
-                    "produce the Base case. Contractor counts do not "
-                    "specify full-time utilization, so budget actual hours "
-                    "before hiring. Do not add product spread, assessment "
-                    "contribution, customer cloud spend, or avoided duties "
-                    "to owner profit as though they were independent gains."
-                ),
-                (
-                    "Close the first transaction with a delivery packet "
-                    "that another operator can execute without reconstructing "
-                    "the sale. Include the accepted quote, publisher "
-                    "authorization, customer purchase instrument, license quantities, "
-                    "tenant or account identifiers supplied through an "
-                    "authorized channel, implementation scope, acceptance tests, "
-                    "support boundaries, and collection schedule. Confirm "
-                    "whether signature, marketplace acceptance, purchase order, "
-                    "or another event actually forms the order under "
-                    "the governing documents. After provisioning, reconcile "
-                    "ordered versus delivered entitlements and obtain "
-                    "customer confirmation of the configured outcome. "
-                    "Schedule renewal alerts at 180, 120, 90, "
-                    "and 60 days, adjusted to contractual notice "
-                    "requirements. Automate quote assembly and license "
-                    "reconciliation only after the underlying fields "
-                    "have accountable owners; automation cannot repair "
-                    "an incorrect product identifier or unauthorized "
-                    "discount. Request a reference after demonstrated "
-                    "value and ask permission before sharing any "
-                    "customer-identifying material. Hold a weekly review "
-                    "of stage aging, expected contribution, cash exposure, "
-                    "delivery capacity, and publisher policy changes. "
-                    "During months three through twelve, favor repeatable "
-                    "wins inside the selected specialty over unrelated "
-                    "catalog expansion. A renewal-ready customer with "
-                    "clean entitlements and collectible invoices is "
-                    "a stronger asset than a large unscoped "
-                    "order requiring continual founder intervention."
-                ),
-            ],
-            "table": {
-                "caption": "First-Deal Objection Playbook: Evidence, Commercial Response, and Stop Conditions",
-                "headers": [
-                    "Buyer objection and underlying decision issue",
-                    "Evidence to request before changing the offer",
-                    "Concrete response that preserves transaction quality",
-                    "Stop condition or lower-risk alternative route",
-                ],
-                "rows": [
-                    [
-                        "The incumbent is cheaper on the proposed renewal",
-                        "Comparable quantities term support scope and payment conditions together",
-                        "Reconcile equivalent coverage before negotiating any further price reduction",
-                        "Decline unsupported discounting and offer a separately priced assessment",
-                    ],
-                    [
-                        "Our procurement team prefers purchasing the software directly",
-                        "Written purchasing preferences and the actual required transaction process",
-                        "Offer services-only delivery or a genuinely eligible marketplace purchase",
-                        "Let the publisher transact when resale adds no value",
-                    ],
-                    [
-                        "We require this purchase to reduce our cloud commitment",
-                        "Customer agreement terms and product-specific eligibility confirmation from counterparties",
-                        "Document confirmed treatment without promising benefits beyond the agreement",
-                        "Compare ordinary procurement when commitment treatment cannot be confirmed",
-                    ],
-                    [
-                        "Security will not permit your requested administrator access",
-                        "Customer access policy and the exact diagnostic data requirements",
-                        "Use supervised sessions or customer-operated exports with minimized privileges",
-                        "Limit scope when essential evidence cannot be accessed safely",
-                    ],
-                    [
-                        "We want a free proof before considering implementation",
-                        "A named sponsor measurable success criteria and funded decision",
-                        "Sell bounded discovery with an explicit optional conversion credit",
-                        "Provide public documentation instead of unpaid production engineering work",
-                    ],
-                    [
-                        "Our payment cycle requires substantially longer settlement terms",
-                        "Accepted payment schedule credit evidence and supplier payable dates",
-                        "Restructure deposit credit support or the permitted transaction route",
-                        "Decline unfunded resale while preserving a viable services relationship",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best first deal is a verified buying event you can authorize, deliver, and collect without financing the customer's uncertainty.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Choose one software specialty and build fifty evidence-backed account records with source dates, legal entities, purchase hypotheses, and verification questions.",
-        "Map the nine sourcing routes to current authorization and delivery capabilities; treat the customs route as software demand rather than assumed tariff savings.",
-        "Apply the hundred-point qualification scorecard and reject transactions with unresolved reseller rights or unfunded supplier-payment exposure.",
-        "Launch the fourteen-day contact cadence with account ownership, shared suppression, truthful claims, and a fixed-scope paid discovery offer.",
-        "Track the 600-account illustrative cohort through discovery, qualification, proposal, execution, and collection without counting pending opportunities as wins.",
-        "Reconcile accepted orders and delivered licenses, establish renewal alerts, and compare actual gross billings and owner profit with the three canonical scenarios.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. § 1321 — Administrative exemptions",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1321",
-            "relevance": (
-                "Defines statutory administrative exemption authority; current executive "
-                "actions and implementing requirements must also be checked before "
-                "designing low-value import workflows or claiming duty treatment."
-            ),
-        },
-        {
-            "title": "19 CFR § 152.103 — Transaction value",
-            "url": "https://www.ecfr.gov/current/title-19/section-152.103",
-            "relevance": (
-                "Provides transaction-value requirements relevant to broker-reviewed "
-                "customs valuation; first-sale claims require supporting facts and "
-                "cannot be inferred from warehouse location or product origin alone."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email practices including routing accuracy, required "
-                "identification, postal address, opt-out mechanisms, and honoring opt-outs."
-            ),
-        },
-        {
-            "title": "17 U.S.C. § 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": (
-                "Identifies copyright owners' exclusive rights; software resale, copying, "
-                "and deployment activities require analysis of actual licenses and "
-                "applicable authorization rather than assumptions based on possession."
-            ),
-        },
-        {
-            "title": "48 CFR § 52.212-4 — Contract Terms and Conditions—Commercial Products and Commercial Services",
-            "url": "https://www.ecfr.gov/current/title-48/section-52.212-4",
-            "relevance": (
-                "When incorporated into a federal contract, supplies operative commercial "
-                "contract terms including inspection, acceptance, invoicing, and payment; "
-                "review the actual contract and applicable modifications."
-            ),
-        },
-        {
-            "title": "2 CFR § 200.319 — Competition",
-            "url": "https://www.ecfr.gov/current/title-2/section-200.319",
-            "relevance": (
-                "Establishes competition requirements for procurements covered by the "
-                "federal award rules; relevant recipients and subrecipients must follow "
-                "the applicable procurement process rather than informal sales shortcuts."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'operating-as-a-microsoft-csp',
+ 'question_prompt': 'How does the Microsoft Cloud Solution Provider program work, and what does it take to '
+                    'operate profitably as a CSP?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Operating as a Microsoft CSP',
+ 'subtitle': 'Direct vs. indirect CSP models, CSP pricing, margins and incentives, new direct-bill '
+             'requirements, getting started through an indirect provider, CSP agreements, procurement ROI, '
+             'the commercial opportunity for MSPs, and moving customers between CSPs',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators at Pax8, Stratos Cloud Alliance, Manage Protect, Leader and the m365 Show '
+                      'agree on the core CSP play: the partner owns billing, provisioning and first-line '
+                      'support, the license throws off thin margin, and the money sits in services stacked '
+                      'on top. The street split is direct versus indirect. Direct bill now demands $1 '
+                      'million in trailing CSP revenue, up from $300,000, plus a solutions partner '
+                      'designation, a paid support plan and a billing marketplace Stratos prices upwards '
+                      'of $100,000, so Pax8 expects upwards of two-thirds of direct partners to move '
+                      'indirect. Indirect resellers need only $1,000 USD a year to stay authorized and '
+                      '$25,000 to chase rebates, and Stratos insists they earn identical back-end '
+                      'incentives. Friction remains over whether the security score binds indirect '
+                      'resellers, and where enterprise agreements undercut CSP at scale.',
+ 'key_metrics': [{'label': 'Direct-bill CSP revenue threshold',
+                  'metric': 'Direct-bill CSP revenue threshold',
+                  'value': '$1,000,000 per year in CSP revenue (up from $300,000)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Jeff Edwards on the October 1, 2025 direct-bill changes, which also add '
+                             'solution-area designations, a heavier security score and a mandatory premier '
+                             'or advanced support plan',
+                  'source': 'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:03:12])'},
+                 {'label': 'Indirect reseller authorization floor',
+                  'metric': 'Indirect reseller authorization floor',
+                  'value': '$1,000 USD (about $1,500 AUD) per rolling 12 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'David Bujaider on the minimum Microsoft licensing revenue an indirect '
+                             'reseller must generate to stay an authorized CSP',
+                  'source': 'Manage Protect ([Je2jbg9tm0Q @ 00:09:37])'},
+                 {'label': 'Direct-bill billing marketplace build cost',
+                  'metric': 'Direct-bill billing marketplace build cost',
+                  'value': 'Upwards of $100,000 initial investment',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Scott May on the in-house transacting and billing marketplace direct-bill '
+                             'partners must build and then maintain with their own people and money',
+                  'source': 'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:08:45])'},
+                 {'label': 'NCE monthly-term premium',
+                  'metric': 'NCE monthly-term premium',
+                  'value': '20% over annual list price ($100 becomes $120)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cost of flexibility under the New Commerce Experience; annual paid monthly '
+                             'carries a 5% premium and annual paid upfront sits at list',
+                  'source': 'm365 Show ([LGgw20GtaDQ @ 00:05:11])'}],
+ 'sections': [{'number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator on record frames CSP the same way: the partner, not '
+                              'Microsoft, owns the customer. AppXite describes both sales motions as '
+                              'partner-centric, with the partner running pre-sale, post-sale, cross-sell '
+                              'and upsell plus billing and support [rSX-pZstKp8 @ 00:00:17]. Robert Kofi '
+                              'of the Demystifying Microsoft series says partners explicitly demanded to '
+                              'own the Office 365 billing relationship, and CSP was built so they could '
+                              'bundle services, set pricing and own billing terms [lGN8Dnmwb08 @ '
+                              '00:00:34]. The m365 Show puts it bluntly for the customer side: buy through '
+                              'a CSP and Microsoft is no longer your billing contact; a 50-person shop '
+                              'gets one monthly invoice and calls the partner when someone cannot log in '
+                              '[LGgw20GtaDQ @ 00:00:54]. Crimson Line adds that CSP drops the enterprise '
+                              'agreement baggage entirely: no 500-user minimum, no software assurance '
+                              'requirement, and aggressive net pricing where the end price is driven by '
+                              "the partner's value-added services rather than deployment volume "
+                              '[pRWl0RalG28 @ 00:02:05]. The structural takeaway is consistent across '
+                              'these four voices. The license is a door-opener and a billing hook; the '
+                              'account, the support queue and the invoice are what the operator actually '
+                              'controls, and that control is what makes the rest of the economics work.',
+                              'The second point of agreement is that direct bill is being squeezed into a '
+                              'tiny elite. Chris Sharp of Pax8 says the bar used to be roughly $300,000 a '
+                              'year transacted plus a solution designation, and the jump to $1 million '
+                              'could push upwards of two-thirds of direct partners to find a new home with '
+                              'an indirect provider [Xywyds1IfvM @ 00:05:09]. Jeff Edwards at Stratos '
+                              'Cloud Alliance confirms the $300,000-to-$1 million move and lists the rest '
+                              'of the stack: a designation specific to each solution area, a heavier '
+                              'security score, and a mandatory premier or advanced support plan '
+                              '[rV-Q2IVur6I @ 00:03:12]. The m365 Show adds a requirement the others skip, '
+                              '12 months of prior experience as an indirect reseller, and puts the number '
+                              'of US direct bill partners at only about 30 [LGgw20GtaDQ @ 00:02:00]. Belen '
+                              "Tamayo of Microsoft's channel marketing frames the trade the same way: "
+                              'direct providers must fund billing, provisioning and first-level support, '
+                              "while indirect resellers lean on the provider's platform, credit and "
+                              'training, and break even four times faster [ybzVv-GZvMc @ 00:03:41]. The '
+                              'practical read across all four: if trailing CSP revenue sits anywhere below '
+                              'seven figures, indirect is now the default lane.',
+                              'Third, the money is in services, not the SKU. Eva Osborne of the '
+                              'Demystifying Microsoft series, while laying out an 8% managed-partner '
+                              'rebate, warned that profitability has to be driven by services and lower '
+                              'cost of sales through scale and automation, with incentives treated as an '
+                              'extra rather than the core driver [wzXR-g6_lxo @ 00:01:53]. AppXite says '
+                              'partners can theoretically earn up to 25% per sale since they control '
+                              'markups, but it is unlikely to reach that, and transacting out-of-the-box '
+                              'SKUs is no longer a scalable model; MSPs layering their own IP on top are '
+                              'the ones with a profitable future [rSX-pZstKp8 @ 00:02:41]. The m365 Show '
+                              'sizes license margin at 8 to 15% depending on incentives and volume and '
+                              'says the real profit lives in managed services wrapped around it '
+                              '[LGgw20GtaDQ @ 00:03:47]. Jeff Edwards closes the loop on rebates: the '
+                              'misconception that back-end incentives get split between distributor and '
+                              'reseller is wrong, because the indirect reseller earns exactly what a '
+                              'direct seller earns [rV-Q2IVur6I @ 00:16:13]. So the consensus operator '
+                              'model is simple: sell the license at or near list, collect whatever '
+                              'back-end incentive the tier allows, and build the margin on the service '
+                              'bundle.'],
+               'table': {'caption': 'Where CSP operators line up: the baseline mechanics multiple '
+                                    'practitioners repeat',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Partner owns the customer relationship end to end',
+                                   'Partner runs pre-sale, post-sale, billing, delivery, support, '
+                                   'cross-sell and upsell',
+                                   'Treat the invoice and support line as the asset you control',
+                                   'AppXite ([rSX-pZstKp8 @ 00:00:17])'],
+                                  ['Direct bill revenue bar jumped sharply this October',
+                                   'Threshold rose from about $300,000 to $1 million in yearly CSP revenue',
+                                   'Sub-seven-figure shops should plan the move to an indirect provider',
+                                   'Pax8 APAC ([Xywyds1IfvM @ 00:04:31])'],
+                                  ['Indirect resellers keep the same back-end incentives',
+                                   'Indirect reseller earns exactly the same back-end incentives as a '
+                                   'direct seller',
+                                   'Going indirect does not cut the rebate line in half',
+                                   'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:16:29])'],
+                                  ['License margin is thin while services carry the profit',
+                                   'License margin sits around 8 to 15% depending on incentives and volume',
+                                   'Price the managed service layer as the real product on the invoice',
+                                   'm365 Show ([LGgw20GtaDQ @ 00:03:47])'],
+                                  ['Indirect model reaches profitability much faster than direct',
+                                   'Indirect resellers break even four times faster than direct providers',
+                                   "Use the provider's billing, provisioning and credit instead of "
+                                   'building your own',
+                                   'Microsoft Americas Partner Community ([ybzVv-GZvMc @ 00:03:41])'],
+                                  ['Security score gates transacting for every CSP partner',
+                                   'Direct or indirect, missing the Partner Center security score blocks '
+                                   'CSP transactions',
+                                   'Enable MFA and clean up the security score before your anniversary '
+                                   'date',
+                                   'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:15:12])'],
+                                  ['Services, not incentives, should drive business profitability',
+                                   'Incentives are an extra opportunity and rebates change fiscal year by '
+                                   'fiscal year',
+                                   'Model the business so it survives a rebate cut next fiscal year',
+                                   'Demystifying Microsoft SMB Office Mix Series ([wzXR-g6_lxo @ '
+                                   '00:02:10])']]}},
+              {'number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Getting live as an indirect reseller is a Partner Center exercise. '
+                              'CloudStrategist walks the sequence: enroll free in the partner network to '
+                              'get your MPN ID, sign the Microsoft Partner Agreement, and have each end '
+                              'customer sign the Microsoft Customer Agreement; the distributor then '
+                              'defines how you order, either a self-service portal or orders placed on '
+                              "your behalf [-_TJlxiXPJc @ 00:03:50]. Alex, Leader's national trainer, says "
+                              'the first move after registration is verification under the cogwheel, '
+                              'account settings, legal info, where you prove ownership of the business and '
+                              "the domain; partners routinely stall here by missing Microsoft's emails "
+                              '[GAif9Dapd50 @ 00:08:01]. David Bujaider of Manage Protect adds the October '
+                              'vetting rules: the legal entity name must match your registration, the '
+                              'address must be your primary place of business, never a PO box or your '
+                              "accountant's office, and the contact must be a current employee rather than "
+                              'a former staffer behind an email redirect [Je2jbg9tm0Q @ 00:08:21]. '
+                              "Leader's operational tip is to create customers inside Leader Cloud rather "
+                              'than Partner Center, since the distributor-side record typically '
+                              'auto-creates in Partner Center but not the reverse, and to key in your '
+                              'partner ID correctly because it ties reseller, distributor and customer '
+                              'together [GAif9Dapd50 @ 00:13:09].',
+                              'The cost sheet for staying direct is brutal. Scott May at Stratos says '
+                              'direct bill requires your own marketplace for transacting and billing, an '
+                              'initial build priced upwards of $100,000, before the ongoing people, '
+                              'resources and money needed to maintain it [rV-Q2IVur6I @ 00:08:45]. On top '
+                              'of that sits the support mandate: the advanced plan at a minimum of 15k, '
+                              'often more, or premier at about $50,000 annually, both of which vanish when '
+                              'you move indirect because the distributor carries support [rV-Q2IVur6I @ '
+                              '00:12:32]. The m365 Show independently pegs advanced support for partners '
+                              'at about $15,000 a year as the floor, says it ends in January 2027 with '
+                              'Unified for Partners replacing it, and flags up to 50% off that replacement '
+                              'for partners who earn the support services designation [LGgw20GtaDQ @ '
+                              '00:11:32]. Contrast the indirect entry ticket from David Bujaider at Manage '
+                              'Protect: stay authorized by generating at least $1,000 USD, roughly $1,500 '
+                              'AUD, of Microsoft licensing revenue over a rolling 12 months, the '
+                              'equivalent of selling four annual Business Premium licenses [Je2jbg9tm0Q @ '
+                              '00:09:56]. That is the spread pushing sub-scale operators indirect: six '
+                              'figures of fixed infrastructure and support against a four-figure annual '
+                              'revenue floor.',
+                              'Once inside, the pricing levers are concrete. For partners chasing rebates, '
+                              'Bujaider sets the incentive tier at $25,000 USD, about $38,600 AUD, over 12 '
+                              'months, and says a partner sitting just short should bundle more Microsoft '
+                              'services, upsell to E3 or E5, or push longer-term agreements to close the '
+                              'gap [Je2jbg9tm0Q @ 00:16:48]. The m365 Show lays out the NCE price ladder: '
+                              'the monthly term runs a 20% premium over annual list, so $100 becomes $120; '
+                              'annual paid monthly carries a 5% premium; annual paid upfront sits at list; '
+                              'and triennial locks price for three years at roughly 12 to 18% savings '
+                              'versus renewing annually [LGgw20GtaDQ @ 00:05:11]. The same show models the '
+                              'bundle that actually pays: Business Premium sold at $22 per user per month, '
+                              'identical to buying from Microsoft, plus identity setup, device management '
+                              'and a help desk for another $8, landing the customer at $30 on one invoice '
+                              '[LGgw20GtaDQ @ 00:04:01]. Alex at Leader flags a quieter margin lever: the '
+                              'distributor charges no credit card fee, which depending on who you buy from '
+                              'today can mean 2 to 4% more margin [GAif9Dapd50 @ 00:27:02]. Stack those '
+                              'and the service layer, not the SKU, carries the account.'],
+               'table': {'caption': 'CSP street numbers: thresholds, build costs, term pricing and margin '
+                                    'stacks quoted by operators',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Step',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Indirect reseller authorization revenue floor',
+                                   'At least $1,000 USD (about $1,500 AUD) licensing revenue per rolling '
+                                   '12 months',
+                                   'Treat as a minimum engagement threshold, roughly four annual Business '
+                                   'Premium seats',
+                                   'Manage Protect ([Je2jbg9tm0Q @ 00:09:56])'],
+                                  ['Indirect incentive and rebate qualification tier',
+                                   '$25,000 USD (about $38,600 AUD) over 12 months plus designation or 25 '
+                                   'capability points',
+                                   'Close gaps by bundling services, upselling E3 or E5, or selling longer '
+                                   'terms',
+                                   'Manage Protect ([Je2jbg9tm0Q @ 00:16:48])'],
+                                  ['Direct bill in-house billing marketplace build',
+                                   'Upwards of $100,000 initial investment plus ongoing people and '
+                                   'maintenance costs',
+                                   'Indirect resellers skip it because the distributor runs and prices the '
+                                   'marketplace',
+                                   'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:08:45])'],
+                                  ['Direct bill mandatory Microsoft support plan',
+                                   'Advanced plan at least 15k or premier at about $50,000 per year',
+                                   'Move indirect and the distributor carries support so neither plan is '
+                                   'required',
+                                   'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:12:32])'],
+                                  ['NCE term pricing ladder for seat subscriptions',
+                                   'Monthly term 20% premium; annual paid monthly 5% premium; annual '
+                                   'upfront at list',
+                                   'Sell monthly terms to seasonal workforces that must drop seats '
+                                   'mid-year',
+                                   'm365 Show ([LGgw20GtaDQ @ 00:05:11])'],
+                                  ['Managed service wrap on top of the license',
+                                   'Business Premium at $22 plus $8 in services equals $30 per user per '
+                                   'month',
+                                   'Earn margin on identity, device management and help desk, not on '
+                                   'software',
+                                   'm365 Show ([LGgw20GtaDQ @ 00:04:01])'],
+                                  ['Fiscal 17 direct CSP margins versus MSRP',
+                                   'Office 365, Intune and EMS 20%; Dynamics 365 25%; Dynamics AX 30%; '
+                                   'Azure 15%',
+                                   'Stacked with an 8% managed-partner rebate paid out twice a year',
+                                   'Demystifying Microsoft SMB Office Mix Series ([wzXR-g6_lxo @ '
+                                   '00:03:08])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Edges Operators Use to Bank Points, Leads and Margin',
+                           'body': 'Low-effort moves named practitioners use to hit incentive tiers '
+                                   'faster, keep inbound leads, and reprice existing seats.',
+                           'items': ['Do not burn all your customer usage hitting a designation in the '
+                                     'first go; reach exactly what you need and save the rest, because you '
+                                     'will have to show more next year [Manage Protect — Je2jbg9tm0Q @ '
+                                     '00:16:12].',
+                                     'Fastest capability-point play: two team members completing '
+                                     'intermediate-level Microsoft certifications earns 10 points straight '
+                                     'away toward the 25 needed [Manage Protect — Je2jbg9tm0Q @ 00:15:57].',
+                                     'Action or self-assign Partner Center referral leads the moment they '
+                                     'land, or they get reassigned to other partners [Leader Academy — '
+                                     'GAif9Dapd50 @ 00:10:35].',
+                                     'Hunt accounts under 300 users still paying for Microsoft 365 E3 or '
+                                     'E5 and swap them to Business Premium plus Defender for business, the '
+                                     'same technology at a sharper price [Softspend — zwXrzaNyZB0 @ '
+                                     '00:01:19].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Register and Clear Verification',
+                              'action': 'Enroll in the partner network, obtain the MPN or partner ID, and '
+                                        'push account verification through legal info.',
+                              'detail': 'Enrollment is a no-cost process once your business entity details '
+                                        'are handy [CloudStrategist — -_TJlxiXPJc @ 00:03:31]; then prove '
+                                        'business and domain ownership under account settings, legal info, '
+                                        'and watch for Microsoft emails so vetting does not stall [Leader '
+                                        'Academy — GAif9Dapd50 @ 00:08:01].'},
+                             {'step': 2,
+                              'title': 'Pass Business Vetting and Sign the MPA',
+                              'action': 'Update legal name, primary physical address and a current '
+                                        'employee contact, then accept the new Microsoft Partner '
+                                        'Agreement.',
+                              'detail': 'Confirm CSP enrollment status under legal info; once it shows '
+                                        'qualified, accept the new MPA in the agreements tab, and note '
+                                        'only a global admin on your tenant can complete this step [Manage '
+                                        'Protect — Je2jbg9tm0Q @ 00:10:39].'},
+                             {'step': 3,
+                              'title': 'Lock the Security Baseline',
+                              'action': 'Enforce MFA across partner tenants, adopt the secure application '
+                                        'model, set a security contact and staff alert response.',
+                              'detail': 'All CSP partners must enable multi-factor authentication for all '
+                                        'users in all partner tenants [Microsoft Americas Partner '
+                                        'Community — ybzVv-GZvMc @ 00:09:59]; set a security contact and '
+                                        'respond to any alerts within 24 hours ahead of the new security '
+                                        'score dashboard [Manage Protect — Je2jbg9tm0Q @ 00:12:30].'},
+                             {'step': 4,
+                              'title': 'Link Customers and Cut Over Licenses',
+                              'action': 'Send the reseller relationship link, collect Microsoft Customer '
+                                        'Agreement acceptance, and schedule transfers around renewal '
+                                        'dates.',
+                              'detail': 'Once the customer accepts the reseller relationship link you get '
+                                        'global admin privileges into their tenant [Leader Academy — '
+                                        'GAif9Dapd50 @ 00:11:41]; for inbound transfers, schedule the '
+                                        'license cutover carefully around renewal dates after the customer '
+                                        'approves you in Partner Center [Plow Networks — KkM553ycNrA @ '
+                                        '00:01:41].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether losing direct-bill status is a demotion or an '
+                              'upgrade. Eva Osborne of the Microsoft SMB team frames the trade plainly: '
+                              'indirect CSP margins are typically lower than direct, but there is no '
+                              'upfront investment to get started, and distributors layer on bill-on-behalf '
+                              'and customer support services that cut your cost of transacting '
+                              '[wzXR-g6_lxo @ 00:03:29]. Jeff Edwards at Stratos Cloud Alliance attacks '
+                              'the margin half of that claim head-on, calling it a misconception that '
+                              'back-end incentives get split with the distributor; he says the indirect '
+                              'reseller makes the exact same back-end incentives as a direct seller '
+                              '[rV-Q2IVur6I @ 00:16:29]. His colleague Scott May adds the cost the direct '
+                              'camp tends to ignore: running your own marketplace, billing and transaction '
+                              'infrastructure can run upwards of $100,000 up front, then takes people, '
+                              "resources and money to maintain [rV-Q2IVur6I @ 00:08:45]. Microsoft's own "
+                              'Americas partner deck lands on the indirect side, stating that indirect '
+                              'resellers break even four times faster and that direct providers must fund '
+                              'billing, provisioning and first-level support themselves [ybzVv-GZvMc @ '
+                              '00:03:41]. Stratos still keeps the door open both ways, pitching indirect '
+                              'as a scaling runway that could carry a partner back to direct-bill status '
+                              'later rather than a permanent ceiling on growth.',
+                              'Where the money actually lives is the second fault line. Osborne quotes an '
+                              '8 percent rebate on CSP sales for managed partners, identical in direct and '
+                              'indirect, yet warns that services margins run significantly higher and '
+                              'incentives should never be the key profitability driver, especially since '
+                              'rebates change fiscal year by fiscal year [wzXR-g6_lxo @ 00:01:53]. AppXite '
+                              'goes further: incentives have been trending down, the latest move swapped '
+                              'them for partner earned credits under the new commerce experience, and '
+                              'while partners can theoretically mark up to 25 percent because they control '
+                              'their own markups, it is unlikely to get there; transacting out-of-the-box '
+                              'SKUs is no longer a scalable business model [rSX-pZstKp8 @ 00:02:41]. The '
+                              'm365 Show puts the license margin at 8 to 15 percent and says the same '
+                              'Business Premium seat costs $22 whether bought from Microsoft or the '
+                              'partner, so the partner stacks identity setup, device management and help '
+                              'desk for $8 more and bills $30 [LGgw20GtaDQ @ 00:04:01]. Softspend pulls '
+                              'the other way, pitching fiscal year 27 growth incentives as a reason to '
+                              'attach assessments and new services because Microsoft is incentivizing that '
+                              'heavily [ziNVpGkDNI4 @ 00:02:07]. That puts the Softspend playbook on a '
+                              "collision course with Osborne's warning to treat incentives as extra, not "
+                              'core.',
+                              "The EA-versus-CSP line moves depending on who draws it. Carl O'Doherty at "
+                              'Version 1 sets the break point around 2,500 users: above that, EA costs are '
+                              'typically lower unless competitive CSP pricing is put in place, while '
+                              'organizations from 500 to 2,500 users should see near parity on online '
+                              'services [PLfTJs7m4ww @ 00:22:05]. The m365 Show draws the line much lower, '
+                              'saying EA pricing typically comes in 20 to 35 percent lower per seat at 500 '
+                              'or more users, CSP is the call under 500, and under 300 seats CSP is almost '
+                              'certainly the best bet [LGgw20GtaDQ @ 00:07:59]. Softspend argues the '
+                              'historic EA price edge has already evaporated: Microsoft 365 E5 lists at '
+                              '$57 per user per month in both channels, and Windows 365 is priced better '
+                              'in CSP than in the EA [zwXrzaNyZB0 @ 00:00:18]. The m365 Show also reports '
+                              'new EA enrollment stopped in October 2024 and MPSA closed to new business '
+                              'in mid-2025, making CSP under new commerce the default for most buyers '
+                              "[LGgw20GtaDQ @ 00:09:23]. O'Doherty still keeps the EA alive for renewals, "
+                              'custom contractual terms, three-year fixed pricing and software assurance '
+                              'on on-premises servers, telling customers facing renewal to price the '
+                              'alternatives before rolling over.'],
+               'table': {'caption': 'Fault lines between CSP operators and the playbooks each camp runs',
+                         'headers': ['Fault Line', 'Camp A Playbook', 'Camp B Playbook', 'Expert Source'],
+                         'rows': [['Direct versus indirect margin and incentive economics',
+                                   'Indirect margins typically lower than direct, but zero upfront '
+                                   'investment required',
+                                   'Indirect resellers earn the exact same back-end incentives as direct '
+                                   'sellers',
+                                   'Demystifying Microsoft SMB Office Mix Series ([wzXR-g6_lxo @ '
+                                   '00:03:29]); Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:16:29])'],
+                                  ['Whether Microsoft incentives should drive partner profitability',
+                                   'Treat the 8 percent managed-partner rebate as extra; services drive '
+                                   'profit',
+                                   'Lean into fiscal year 27 growth incentives by attaching assessments '
+                                   'and services',
+                                   'Demystifying Microsoft SMB Office Mix Series ([wzXR-g6_lxo @ '
+                                   '00:01:53]); Softspend ([ziNVpGkDNI4 @ 00:02:07])'],
+                                  ['Realistic markup ceiling on the license itself',
+                                   'Partners control markups and can theoretically earn up to 25 percent',
+                                   'Real license margin sits at 8 to 15 percent; profit lives in services',
+                                   'AppXite ([rSX-pZstKp8 @ 00:02:41]); m365 Show | M365, Azure Cloud, '
+                                   'Power Platform & AI ([LGgw20GtaDQ @ 00:03:47])'],
+                                  ['Headcount break point where an EA beats CSP',
+                                   'EA typically cheaper above roughly 2,500 users, parity from 500 to '
+                                   '2,500',
+                                   'EA runs 20 to 35 percent cheaper per seat from 500 users upward',
+                                   'Version 1 ([PLfTJs7m4ww @ 00:22:05]); m365 Show | M365, Azure Cloud, '
+                                   'Power Platform & AI ([LGgw20GtaDQ @ 00:07:59])'],
+                                  ['Who owns the new Microsoft compliance burden',
+                                   'All-in Microsoft: keep your own MPN and manage every requirement '
+                                   'yourself',
+                                   'Hybrid keeps your MPN for compliance, or fully managed shifts '
+                                   'licensing under the distributor MPN',
+                                   'Manage Protect ([Je2jbg9tm0Q @ 00:21:10]); Manage Protect '
+                                   '([Je2jbg9tm0Q @ 00:22:20])'],
+                                  ['What indirect status means for a former direct partner',
+                                   'Indirect as a permanent home with account teams, marketplace and '
+                                   'in-house support',
+                                   'Indirect as a scaling runway to grow back into direct-bill status '
+                                   'later',
+                                   'Pax8 APAC ([Xywyds1IfvM @ 00:09:25]); Stratos Cloud Alliance '
+                                   '([rV-Q2IVur6I @ 00:05:42])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The direct-bill cliff is the biggest firsthand shock. Jeff Edwards at '
+                              'Stratos says the bar jumped from $300,000 to $1 million in annual CSP '
+                              'revenue, layered on solution designations now required in each solution '
+                              'area you sell into, a heavier security requirement you cannot tick '
+                              'overnight, and continued premier or advanced support plans [rV-Q2IVur6I @ '
+                              '00:03:12]. Scott May prices those plans at a basic tier of at least '
+                              '$15,000, or premier support at about $50,000 annually, and stresses that '
+                              "enforcement hits at each partner's annual renewal rather than a single "
+                              'October cut-off [rV-Q2IVur6I @ 00:12:14]. Chris Sharp of Pax8 estimates '
+                              'upwards of two-thirds of direct partners could be forced to find a new home '
+                              'with an indirect provider [Xywyds1IfvM @ 00:05:09]. The m365 Show adds that '
+                              'direct-bill now demands 12 months of prior experience as an indirect '
+                              'reseller and that only about 30 partners in the entire United States are '
+                              'direct bill [LGgw20GtaDQ @ 00:01:47]. Edwards singles out legacy partners '
+                              'still sitting on large GP and SL on-premises customer bases as most '
+                              'exposed, because the gold and silver competency route to CSP incentives has '
+                              'largely ended. His fix is to step on the accelerator: lock the solution '
+                              'designation and drive cloud volume well before renewal.',
+                              'The paperwork traps are mundane but lethal. David Bujaider at Manage '
+                              'Protect has watched partners stall in business vetting because they listed '
+                              "a PO box or their accountant's address instead of their primary place of "
+                              'business, or left a contact who left five years ago sitting behind an email '
+                              'redirect [Je2jbg9tm0Q @ 00:08:21]. He warns that only a global admin can '
+                              'accept the new Microsoft Partner Agreement, that Microsoft may begin '
+                              'de-authorizing partners who have not accepted it by their program '
+                              'anniversary following October 1, 2025, and that partnerships are already '
+                              "being suspended [Je2jbg9tm0Q @ 00:11:52]. Leader Cloud's Alex sees the same "
+                              "choke point from the onboarding side: partners miss Microsoft's "
+                              'verification emails and the process gets stuck, and the distributor cannot '
+                              'force it through because Microsoft does the vetting itself [GAif9Dapd50 @ '
+                              '00:08:16]. Scott May at Stratos flags the security score as the one '
+                              'requirement nobody escapes, because after October 1 neither direct nor '
+                              'indirect partners can transact CSP without meeting the Partner Center '
+                              'minimum [rV-Q2IVur6I @ 00:15:12]. Bujaider muddies that picture: while '
+                              'listing MFA for admins, a security contact and 24-hour alert response, he '
+                              'says it is not applicable to indirect resellers, with enforcement and the '
+                              'dashboard still pending.',
+                              'Even compliant partners bleed margin through commitment and consumption '
+                              'mechanics. The m365 Show lays out the new commerce trap: a 7-day '
+                              'cancellation window, then the term is binding with no mid-term seat '
+                              'reductions, so a customer who planned 100 seats in January and needs 80 by '
+                              'March keeps paying for 20 empty seats; month-to-month costs a 20 percent '
+                              'premium, and an expired subscription slides into an extended term at the '
+                              'monthly rate plus a 3 percent uplift [LGgw20GtaDQ @ 00:05:42]. Leader Cloud '
+                              'warns that some Azure resources are quite expensive to provision and that '
+                              'reserved instances only prepay compute, leaving disk, data flow and '
+                              "transfer charges still billed [GAif9Dapd50 @ 00:18:28]. Version 1's Carl "
+                              "O'Doherty sees organizations lift and shift all their cloud spend into CSP "
+                              'without ever right-sizing actual usage, and on the EA side, customers '
+                              'stuffing agreements with incentivized products that become rolled-over '
+                              'shelfware [PLfTJs7m4ww @ 00:09:52]. Leader also points to a quieter leak: '
+                              'credit card fees of two to four percent that a distributor charging no card '
+                              "fee hands back as margin [GAif9Dapd50 @ 00:27:02]. The m365 Show's survival "
+                              'rule is blunt: plan headcount carefully, and if unsure, overbuy slightly, '
+                              'because seats can be added but never removed.'],
+               'table': {'caption': 'Firsthand traps reported by CSP operators and what each one costs',
+                         'headers': ['Trap',
+                                     'What Practitioners Saw',
+                                     'Cost or Consequence',
+                                     'Expert Source'],
+                         'rows': [['Direct-bill revenue threshold jump at renewal',
+                                   'Revenue bar raised from $300,000 to $1 million in annual CSP revenue',
+                                   'Upwards of two-thirds of direct partners pushed toward indirect '
+                                   'providers',
+                                   'Pax8 APAC ([Xywyds1IfvM @ 00:04:31]); Stratos Cloud Alliance '
+                                   '([rV-Q2IVur6I @ 00:03:12])'],
+                                  ['Direct-bill door closed to new applicants',
+                                   'Partners mid-application at $300,000 told in May no new direct '
+                                   'partners',
+                                   'Application effort wasted; indirect route becomes the only realistic '
+                                   'entry',
+                                   'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:11:51])'],
+                                  ['Mandatory paid Microsoft support plan for direct-bill',
+                                   'Direct-bill requires advanced support or premier support for partners '
+                                   'plan',
+                                   'At least $15,000 basic, premier about $50,000 every single year',
+                                   'Stratos Cloud Alliance ([rV-Q2IVur6I @ 00:12:14]); m365 Show | M365, '
+                                   'Azure Cloud, Power Platform & AI ([LGgw20GtaDQ @ 00:10:39])'],
+                                  ['Bad address or stale contact in business vetting',
+                                   'PO box, accountant address or departed employee listed in Partner '
+                                   'Center',
+                                   'Business vetting stalls and CSP status sits incomplete before the '
+                                   'anniversary',
+                                   'Manage Protect ([Je2jbg9tm0Q @ 00:08:21])'],
+                                  ['Conflicting reports on the minimum revenue floor',
+                                   'Manage Protect cites $1,000 USD over rolling 12 months; Stratos '
+                                   'describes a one K monthly minimum',
+                                   'Missing the floor risks de-authorization as a partner for a full year',
+                                   'Manage Protect ([Je2jbg9tm0Q @ 00:09:37]); Stratos Cloud Alliance '
+                                   '([rV-Q2IVur6I @ 00:09:41])'],
+                                  ['New commerce seat lock after ordering',
+                                   'Seven-day cancellation window, then no mid-term seat reductions are '
+                                   'allowed',
+                                   'Customer pays for unused seats until term ends; monthly term costs 20 '
+                                   'percent more',
+                                   'm365 Show | M365, Azure Cloud, Power Platform & AI ([LGgw20GtaDQ @ '
+                                   '00:05:42])'],
+                                  ['Unactioned Microsoft referral leads in Partner Center',
+                                   'Referral leads left unactioned or unassigned when they first arrive',
+                                   'Leads get reassigned to other partners competing in the same region',
+                                   'Leader Academy ([GAif9Dapd50 @ 00:10:35])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Renewal Survival Gate',
+                           'body': 'Clear these four checks before your CSP anniversary date, because '
+                                   'operators report enforcement lands at renewal and suspensions are '
+                                   'already happening.',
+                           'items': ['Audit trailing 12-month CSP revenue and support plan spend against '
+                                     'the $1 million direct-bill bar before your renewal, not on October 1 '
+                                     '[Stratos Cloud Alliance — rV-Q2IVur6I @ 00:12:14].',
+                                     'Confirm the Partner Center legal entity name, primary business '
+                                     'address and a current employee contact, then have a global admin '
+                                     'accept the MPA [Manage Protect — Je2jbg9tm0Q @ 00:10:39].',
+                                     'Enforce multi-factor authentication for all users in all partner '
+                                     'tenants and implement the secure application model for API '
+                                     'integrations [Microsoft Americas Partner Community — ybzVv-GZvMc @ '
+                                     '00:09:59].',
+                                     'Lock customer headcount before any annual or triennial new commerce '
+                                     'order, because the 7-day window is the only exit [m365 Show | M365, '
+                                     'Azure Cloud, Power Platform & AI — LGgw20GtaDQ @ 00:05:42].']}}],
+ 'pull_quote': '"The partner earns the margin on the service layer, not the software. That\'s the model. '
+               'The license gets you in the door. The services keep you there." — m365 Show | M365, Azure '
+               'Cloud, Power Platform & AI (LGgw20GtaDQ @ 00:04:18).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Enroll in the Microsoft Partner Network through the no-cost enrollment with your '
+                      'business entity details ready, then use the MPN ID to sign the Microsoft Partner '
+                      'Agreement [CloudStrategist — -_TJlxiXPJc @ 00:03:50].',
+                      'Verify the account in Partner Center via the cogwheel, account settings and legal '
+                      'info, and watch for Microsoft vetting emails so verification does not stall [Leader '
+                      'Academy — GAif9Dapd50 @ 00:07:43].',
+                      'Create customers through the distributor storefront rather than Partner Center so '
+                      'they sync automatically, and enter your partner ID correctly to tie partner, '
+                      'customer and provider together [Leader Academy — GAif9Dapd50 @ 00:13:09].',
+                      'Start capability points with training: two team members passing intermediate '
+                      'Microsoft certifications earns 10 points, and do not burn all customer usage in the '
+                      'first year [Manage Protect — Je2jbg9tm0Q @ 00:15:57].',
+                      'Sweep the book for organizations under 300 users still on Microsoft 365 E3 or E5 '
+                      'and move them to Business Premium or Copilot for business [Softspend — zwXrzaNyZB0 '
+                      '@ 00:01:19].',
+                      'Run customer transitions in four steps: intake form, account manager quote, Partner '
+                      'Center approval email with Microsoft Customer Agreement, then a cutover timed to '
+                      'renewal dates [Plow Networks — KkM553ycNrA @ 00:01:22].'],
+ 'statutory_citations': [{'title': 'Stratos Cloud Alliance — New Requirements for Microsoft CSP '
+                                   'Direct-Bill Partners: What You Need to Know Before October 1st '
+                                   '[00:03:12]',
+                          'url': 'https://www.youtube.com/watch?v=rV-Q2IVur6I&t=192s',
+                          'relevance': 'Primary practitioner testimony on the $300,000 to $1 million '
+                                       'direct-bill jump, support plan costs, and indirect incentive '
+                                       'parity.'},
+                         {'title': 'Manage Protect — CSP Reseller Partners: New Microsoft Requirements '
+                                   '[00:04:11]',
+                          'url': 'https://www.youtube.com/watch?v=Je2jbg9tm0Q&t=251s',
+                          'relevance': 'Primary practitioner testimony on indirect reseller vetting, the '
+                                       'MPA, revenue floors, incentive hurdles, and de-authorization '
+                                       'risk.'},
+                         {'title': 'm365 Show | M365, Azure Cloud, Power Platform & AI — Microsoft Cloud '
+                                   'Solution Provider (CSP) - Simply Explained [00:01:47]',
+                          'url': 'https://www.youtube.com/watch?v=LGgw20GtaDQ&t=107s',
+                          'relevance': 'Primary practitioner testimony on direct versus indirect paths, '
+                                       'license margins, new commerce term traps, and EA versus CSP break '
+                                       'points.'},
+                         {'title': 'Demystifying Microsoft SMB Office Mix Series — CSP Licensing, Margins '
+                                   '& Incentives [00:03:29]',
+                          'url': 'https://www.youtube.com/watch?v=wzXR-g6_lxo&t=209s',
+                          'relevance': 'Primary practitioner testimony on direct versus indirect margins, '
+                                       'the 8 percent managed-partner rebate, and services-led '
+                                       'profitability.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Xywyds1IfvM',
+                       'title': 'Microsoft CSP Direct vs Indirect: Which Model Saves You More?',
+                       'channel': 'Pax8 APAC',
+                       'author': 'Pax8 APAC',
+                       'text': 'Going from 300,000 to a million really means that we might see upwards of '
+                               '2/3 of these partners having to find a new home or moving over to these '
+                               'indirect providers.',
+                       'tip': 'Going from 300,000 to a million really means that we might see upwards of '
+                              '2/3 of these partners having to find a new home or moving over to these '
+                              'indirect providers.',
+                       'timestamp': 309,
+                       'timestamp_seconds': 309,
+                       'timestamp_label': '[00:05:09]',
+                       'url': 'https://www.youtube.com/watch?v=Xywyds1IfvM&t=309s',
+                       'markdown': '[00:05:09](https://www.youtube.com/watch?v=Xywyds1IfvM&t=309s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wzXR-g6_lxo',
+                       'title': 'CSP Licensing, Margins & Incentives',
+                       'channel': 'Demystifying Microsoft SMB Office Mix Series',
+                       'author': 'Demystifying Microsoft SMB Office Mix Series',
+                       'text': 'Despite Microsoft incentives your own partner profitability needs to '
+                               'remain driven by your services offerings and by lower cost of sales '
+                               'through scale and automation.',
+                       'tip': 'Despite Microsoft incentives your own partner profitability needs to remain '
+                              'driven by your services offerings and by lower cost of sales through scale '
+                              'and automation.',
+                       'timestamp': 113,
+                       'timestamp_seconds': 113,
+                       'timestamp_label': '[00:01:53]',
+                       'url': 'https://www.youtube.com/watch?v=wzXR-g6_lxo&t=113s',
+                       'markdown': '[00:01:53](https://www.youtube.com/watch?v=wzXR-g6_lxo&t=113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rSX-pZstKp8',
+                       'title': 'Microsoft Cloud Ecosystem Explained: Cloud Solution Provider program',
+                       'channel': 'AppXite',
+                       'author': 'AppXite',
+                       'text': 'Transacting out-of-the-box Microsoft SKUs is no longer a scalable business '
+                               'model but the non-transacting business ventures thrive.',
+                       'tip': 'Transacting out-of-the-box Microsoft SKUs is no longer a scalable business '
+                              'model but the non-transacting business ventures thrive.',
+                       'timestamp': 196,
+                       'timestamp_seconds': 196,
+                       'timestamp_label': '[00:03:16]',
+                       'url': 'https://www.youtube.com/watch?v=rSX-pZstKp8&t=196s',
+                       'markdown': '[00:03:16](https://www.youtube.com/watch?v=rSX-pZstKp8&t=196s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ziNVpGkDNI4',
+                       'title': 'Why should we adopt CSP?',
+                       'channel': 'Softspend',
+                       'author': 'Softspend',
+                       'text': 'You get additional incentives and revenue from Microsoft because '
+                               'Microsoft, especially in fiscal year 27, is incentivizing you heavily to '
+                               'attach these new services.',
+                       'tip': 'You get additional incentives and revenue from Microsoft because Microsoft, '
+                              'especially in fiscal year 27, is incentivizing you heavily to attach these '
+                              'new services.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=ziNVpGkDNI4&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=ziNVpGkDNI4&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lGN8Dnmwb08',
+                       'title': 'What is the Cloud Solution Provider Program (CSP)?',
+                       'channel': 'Demystifying Microsoft SMB Office Mix Series',
+                       'author': 'Demystifying Microsoft SMB Office Mix Series',
+                       'text': 'We strongly advise and encourage our partners to transact through CSP '
+                               'since it places the partners in the center of the customer lifecycle.',
+                       'tip': 'We strongly advise and encourage our partners to transact through CSP since '
+                              'it places the partners in the center of the customer lifecycle.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=lGN8Dnmwb08&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=lGN8Dnmwb08&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rV-Q2IVur6I',
+                       'title': 'New Requirements for Microsoft CSP Direct-Bill Partners: What You Need to '
+                                'Know Before October 1st',
+                       'channel': 'Stratos Cloud Alliance',
+                       'author': 'Stratos Cloud Alliance',
+                       'text': 'The indirect reseller makes the exact same back-end incentives as a direct '
+                               'seller makes.',
+                       'tip': 'The indirect reseller makes the exact same back-end incentives as a direct '
+                              'seller makes.',
+                       'timestamp': 989,
+                       'timestamp_seconds': 989,
+                       'timestamp_label': '[00:16:29]',
+                       'url': 'https://www.youtube.com/watch?v=rV-Q2IVur6I&t=989s',
+                       'markdown': '[00:16:29](https://www.youtube.com/watch?v=rV-Q2IVur6I&t=989s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rV-Q2IVur6I',
+                       'title': 'New Requirements for Microsoft CSP Direct-Bill Partners: What You Need to '
+                                'Know Before October 1st',
+                       'channel': 'Stratos Cloud Alliance',
+                       'author': 'Stratos Cloud Alliance',
+                       'text': 'You either have to have basically the basic one which is at least 15k if '
+                               'not more or the premier support which is about 50,000 annually.',
+                       'tip': 'You either have to have basically the basic one which is at least 15k if '
+                              'not more or the premier support which is about 50,000 annually.',
+                       'timestamp': 734,
+                       'timestamp_seconds': 734,
+                       'timestamp_label': '[00:12:14]',
+                       'url': 'https://www.youtube.com/watch?v=rV-Q2IVur6I&t=734s',
+                       'markdown': '[00:12:14](https://www.youtube.com/watch?v=rV-Q2IVur6I&t=734s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GAif9Dapd50',
+                       'title': 'Getting started as a Microsoft CSP | Transacting through Leader Cloud',
+                       'channel': 'Leader Academy',
+                       'author': 'Leader Academy',
+                       'text': 'Licenses sold through Microsoft are sold at the recommended retail prices; '
+                               "there's no margin in for you as a partner.",
+                       'tip': 'Licenses sold through Microsoft are sold at the recommended retail prices; '
+                              "there's no margin in for you as a partner.",
+                       'timestamp': 396,
+                       'timestamp_seconds': 396,
+                       'timestamp_label': '[00:06:36]',
+                       'url': 'https://www.youtube.com/watch?v=GAif9Dapd50&t=396s',
+                       'markdown': '[00:06:36](https://www.youtube.com/watch?v=GAif9Dapd50&t=396s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pRWl0RalG28',
+                       'title': "What is Microsoft's Cloud Solution Provider program?",
+                       'channel': 'Crimson Line - Solving IT',
+                       'author': 'Crimson Line - Solving IT',
+                       'text': 'Rather than having programmatic discounts based on software deployment, '
+                               'CSP features aggressive net pricing for online services.',
+                       'tip': 'Rather than having programmatic discounts based on software deployment, CSP '
+                              'features aggressive net pricing for online services.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=pRWl0RalG28&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=pRWl0RalG28&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PLfTJs7m4ww',
+                       'title': 'Enable Software Procurement ROI with Microsoft CSP',
+                       'channel': 'Version 1',
+                       'author': 'Version 1',
+                       'text': 'If your organization has say more than two and a half thousand users the '
+                               'costs are going to be typically lower in an EA versus CSP.',
+                       'tip': 'If your organization has say more than two and a half thousand users the '
+                              'costs are going to be typically lower in an EA versus CSP.',
+                       'timestamp': 1325,
+                       'timestamp_seconds': 1325,
+                       'timestamp_label': '[00:22:05]',
+                       'url': 'https://www.youtube.com/watch?v=PLfTJs7m4ww&t=1325s',
+                       'markdown': '[00:22:05](https://www.youtube.com/watch?v=PLfTJs7m4ww&t=1325s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zwXrzaNyZB0',
+                       'title': 'The CSP Commercial Opportunity',
+                       'channel': 'Softspend',
+                       'author': 'Softspend',
+                       'text': "For Microsoft 365 E5, the list price is exactly the same; it's both $57 "
+                               'per user per month list price in the CSP and in the EA.',
+                       'tip': "For Microsoft 365 E5, the list price is exactly the same; it's both $57 per "
+                              'user per month list price in the CSP and in the EA.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=zwXrzaNyZB0&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=zwXrzaNyZB0&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-_TJlxiXPJc',
+                       'title': 'Microsoft CSP Agreements',
+                       'channel': 'CloudStrategist',
+                       'author': 'CloudStrategist',
+                       'text': "CSP is a pay-as-you-go model; you're consuming it for the month and then "
+                               'you pay by your monthly consumption.',
+                       'tip': "CSP is a pay-as-you-go model; you're consuming it for the month and then "
+                              'you pay by your monthly consumption.',
+                       'timestamp': 313,
+                       'timestamp_seconds': 313,
+                       'timestamp_label': '[00:05:13]',
+                       'url': 'https://www.youtube.com/watch?v=-_TJlxiXPJc&t=313s',
+                       'markdown': '[00:05:13](https://www.youtube.com/watch?v=-_TJlxiXPJc&t=313s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KkM553ycNrA',
+                       'title': 'How to transition to Plow Networks as your Microsoft CSP',
+                       'channel': 'Plow Networks',
+                       'author': 'Plow Networks',
+                       'text': "Once you've accepted our invitation we'll work with you to schedule a "
+                               'cutover date for transitioning your licenses carefully coordinated around '
+                               'your renewal dates.',
+                       'tip': "Once you've accepted our invitation we'll work with you to schedule a "
+                              'cutover date for transitioning your licenses carefully coordinated around '
+                              'your renewal dates.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=KkM553ycNrA&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=KkM553ycNrA&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ybzVv-GZvMc',
+                       'title': 'Cloud Solution Provider Program',
+                       'channel': 'Microsoft Americas Partner Community',
+                       'author': 'Microsoft Americas Partner Community',
+                       'text': "CSP indirect resellers break even four times faster and this is what's so "
+                               'important to choose the right model for your specific business.',
+                       'tip': "CSP indirect resellers break even four times faster and this is what's so "
+                              'important to choose the right model for your specific business.',
+                       'timestamp': 221,
+                       'timestamp_seconds': 221,
+                       'timestamp_label': '[00:03:41]',
+                       'url': 'https://www.youtube.com/watch?v=ybzVv-GZvMc&t=221s',
+                       'markdown': '[00:03:41](https://www.youtube.com/watch?v=ybzVv-GZvMc&t=221s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Je2jbg9tm0Q',
+                       'title': 'CSP Reseller Partners: New Microsoft Requirements',
+                       'channel': 'Manage Protect',
+                       'author': 'Manage Protect',
+                       'text': "If you need usage to get to a certain designation, don't burn all your "
+                               'customer usage in the first go; just get to as many as you need, then save '
+                               'the rest to add next year.',
+                       'tip': "If you need usage to get to a certain designation, don't burn all your "
+                              'customer usage in the first go; just get to as many as you need, then save '
+                              'the rest to add next year.',
+                       'timestamp': 972,
+                       'timestamp_seconds': 972,
+                       'timestamp_label': '[00:16:12]',
+                       'url': 'https://www.youtube.com/watch?v=Je2jbg9tm0Q&t=972s',
+                       'markdown': '[00:16:12](https://www.youtube.com/watch?v=Je2jbg9tm0Q&t=972s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LGgw20GtaDQ',
+                       'title': 'Microsoft Cloud Solution Provider (CSP) - Simply Explained',
+                       'channel': 'm365 Show | M365, Azure Cloud, Power Platform & AI',
+                       'author': 'm365 Show | M365, Azure Cloud, Power Platform & AI',
+                       'text': 'After you place an order, you have a 7-day cancellation window; after '
+                               'that, the commitment is binding and seat reductions are not allowed '
+                               'mid-term.',
+                       'tip': 'After you place an order, you have a 7-day cancellation window; after that, '
+                              'the commitment is binding and seat reductions are not allowed mid-term.',
+                       'timestamp': 342,
+                       'timestamp_seconds': 342,
+                       'timestamp_label': '[00:05:42]',
+                       'url': 'https://www.youtube.com/watch?v=LGgw20GtaDQ&t=342s',
+                       'markdown': '[00:05:42](https://www.youtube.com/watch?v=LGgw20GtaDQ&t=342s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DPkFIEeC0wk',
+                       'title': 'Paragon Micro UK - Microsoft Cloud Solution Provider (CSP)',
+                       'channel': 'Paragon Micro UK',
+                       'author': 'Paragon Micro UK',
+                       'text': 'With one bill from one partner each month enjoy greater flexibility as you '
+                               'only pay for what you need through this consumption based model.',
+                       'tip': 'With one bill from one partner each month enjoy greater flexibility as you '
+                              'only pay for what you need through this consumption based model.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=DPkFIEeC0wk&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=DPkFIEeC0wk&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

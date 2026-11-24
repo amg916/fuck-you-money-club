@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-016-probate-real-estate",
   "volume_id": "vol-016-probate-real-estate",
-  "title": "Probate Real Estate — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Probate Deal Qualification, Retained-Commission Economics, Executor Concierge Delivery, Court-Sale Controls, Attorney Referral Systems, and Small-Team Operating Readiness",
+  "title": "Probate Real Estate — Practitioner Testimony Operator Workbook",
+  "subtitle": "Court Letters, Confirmation Sales, Inherited-House Decisions, and Cleanout-to-Listing Execution for Executors, Heirs, and Probate Agents",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Opportunity Underwriting and Fiduciary Counterparty Qualification",
-      "purpose": "Select probate brokerage opportunities that fit the team's license, court experience, cash runway, and service capacity. Separate an estate's property value from brokerage revenue, establish who can instruct the broker, and expose title, authority, occupancy, and family conflicts before committing substantial work.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Letters, Authority, and the Confirmation Sale",
+      "purpose": "Map the legal path from filing to certified letters, lock in the authority level that governs the sale, and run the court confirmation numbers so no listing, offer, or contract moves ahead of the court's actual grant of power over the estate property.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Choose one initial county and one service lane. Record the applicable probate court, supervising broker, property profile, and expected appointment-to-closing interval. Treat acquisitions and executor concierge work as separately contracted activities rather than automatic extensions of a brokerage listing.",
-        "Obtain the appointment documents and relevant orders from the authorized representative or court record. Have estate counsel identify the representative's powers, restrictions, and required sale procedure. Do not treat a relative's possession of keys as authority to list.",
-        "Build a counterparty map covering the representative, estate attorney, beneficiaries, occupants, lender, title officer, and prospective buyers. Distinguish decision authority from consultation preferences, and document the permitted recipients of confidential pricing, offer, and estate information.",
-        "Underwrite property condition, liens, occupancy, access, insurance, and carrying costs before projecting commission timing. Use a dated comparative market analysis and scenario ranges. Track potential family objections as procedural and scheduling risks, not as presumed authority to veto.",
-        "Conclude with a written pursuit decision and assigned next action. Reject opportunities requiring unlicensed representation, undisclosed self-dealing, unsupported authority, or cash advances outside policy. Keep unresolved documents visible with owners and dates rather than replacing them with optimistic assumptions."
+        "Work the fields in order, because every later decision depends on the letters date and the authority level the court actually granted.",
+        "Pull every date, name, and dollar figure from court papers, the clerk, or the estate account records, never from memory or a family member's guess.",
+        "Treat the will as a map of intent only; a title company will not sell the house through the will, so cite the letters for every authority claim.",
+        "Where the estate faces limited authority, complete the confirmation math in front of the heirs so the overbid floor and deposit rules surprise nobody in the courtroom.",
+        "Revisit the certified copies and letters dates every sixty days, and request updated letters from the clerk before any institution rejects a stale copy."
       ],
       "fields": [
         {
-          "name": "Initial county and service lane",
-          "type": "textarea",
-          "prompt": "Define the initial geographic market, court, property segment, licensed activity, and concierge boundaries. Explain why the team can serve this lane without depending on unfamiliar procedures or speculative acquisition profits.",
-          "example": "Start with Sacramento County single-family probate listings priced from $450,000 to $800,000. The California supervising broker handles representation; the coordinator schedules estate-authorized vendors. Purchases by the operator require a separate conflict review and purchase file, and contribute nothing to the brokerage scorecard forecast."
+          "name": "letters_status_and_date",
+          "type": "text",
+          "prompt": "Record whether certified letters testamentary or letters of administration have issued, the exact issuance date, the court that issued them, and the name of the appointed personal representative. Note why no listing, offer, or contract can happen before that date arrives.",
+          "example": "Letters of administration issued March 4 by the probate court naming the decedent's daughter as personal representative. Per RLS Law Corporation, the letters date is the date the property can be listed [RLS Law Corporation — lNaVAVnUZTE @ 00:13:25]. Letters also grant authority to deal with creditors and the mortgage company and sell the home [Wanda Rochelle, Probate Resource — Ghymi1mvrRQ @ 00:01:06]."
         },
         {
-          "name": "Candidate fit and leverage thesis",
-          "type": "textarea",
-          "prompt": "Record the candidate's canonical rank, score components, and operating constraints. Identify the specific repetitive tasks that automation can remove while preserving licensed judgment and representative control over consequential decisions.",
-          "example": "Candidate #9, Probate Real Estate, ranks #26 of 29 with 80/100: revenue potential 23, margin potential 20, team efficiency 16, startup accessibility 10, and automation potential 11. Docket alerts and transaction checklists support the High-Leverage Operator Play; they do not replace court interpretation or negotiations."
+          "name": "certified_copies_order",
+          "type": "text",
+          "prompt": "List how many certified copies of the letters you will order at issuance, which institutions will receive one, and the date each copy was issued. Flag any institution likely to reject letters older than sixty to ninety days.",
+          "example": "Ordered eight certified copies at issuance because some institutions keep the copy they receive and requesting more later is harder [SwiftProbate — lAC-1ovhHAo @ 00:02:45]. Copies go to the bank, title company, insurer, mortgage servicer, and utility. Calendar reminder set at day 60 to request updated letters from the court clerk before any copy goes stale [SwiftProbate — lAC-1ovhHAo @ 00:03:29]."
         },
         {
-          "name": "Representative identity and documented authority",
+          "name": "filing_packet_checklist",
           "type": "textarea",
-          "prompt": "Identify the appointed representative, appointment date, current letters, relevant restrictions, and counsel's procedure assessment. Specify what evidence must exist before the broker accepts instructions, access permissions, or a listing agreement.",
-          "example": "Case PR-2026-0412 names Jordan Lee as personal representative. The file contains current Letters of Administration and the appointment order; counsel confirms full IAEA authority and checks for restrictions. Jordan signs the listing only after the broker verifies identity and matches the signing capacity."
+          "prompt": "Inventory the opening filing packet for the decedent's county of domicile: original will, certified death certificate, petition, and fee. Note whether a simplified small-estate path such as an affidavit procedure or summary administration was asked about first.",
+          "example": "Packet assembled for the county where the decedent lived: original will, certified death certificate, signed petition, and filing fee. Before filing, the clerk was asked whether an affidavit procedure or summary administration fit this modest estate, which can save real time and fees [The Executor's Guide — HPpVk5fp1No @ 00:06:19]. Clerk's answer: full proceeding required for this estate."
         },
         {
-          "name": "Counterparty communication and dispute map",
+          "name": "heir_and_relative_roster",
           "type": "textarea",
-          "prompt": "Map who instructs the broker, who receives updates, and who may object through the applicable procedure. Record actual disputes and communication permissions without assuming every beneficiary controls pricing or contract execution.",
-          "example": "Jordan instructs the broker; estate counsel receives legal questions; three beneficiaries receive an authorized Friday status summary. One beneficiary disputes the proposed cleanout budget. The broker records the concern and routes it to Jordan and counsel rather than collecting informal beneficiary signatures."
+          "prompt": "List every heir and relative named in the petition and notice, including anyone disinherited by the will, plus each heir's spouse. For each, confirm living, over 18, competent, and able to sign before anyone goes under contract.",
+          "example": "Roster: two daughters, one disinherited son, and two spouses, all living, over 18, and competent [The Real Estate Lawyer — ASuTQp-hvNU @ 00:02:07]. The disinherited son stays in the petition because DeGrazia calls the omission the most common avoidable mistake and says the judge will continue the hearing [California Probate Real Estate Made Simple — lrpGu0nZK1E @ 00:05:06]."
         },
         {
-          "name": "Property condition and access underwriting",
+          "name": "notice_and_publication_proof",
           "type": "textarea",
-          "prompt": "Describe occupancy, utilities, security, insurance, deferred maintenance, and inspection access. Separate observed facts from estimates, identify qualified vendors, and assign the representative responsibility for authorizing estate expenditures.",
-          "example": "The $625,000 target property is vacant with active utilities and a leaking garage roof. Jordan authorizes a $450 inspection and obtains vacant-property coverage confirmation. The coordinator logs lockbox access; no belongings leave the house until the representative gives written disposition instructions."
+          "prompt": "Document how heirs were notified and how publication was handled, who mailed the DE121 notice, and when proof of mailing was filed. Record the hearing date and any continuance risk created by a missing or defective notice.",
+          "example": "The DE121 notice was mailed to every heir and relative, including the disinherited son, by a neighbor who is not a party, and proof was filed [California Probate Real Estate Made Simple — lrpGu0nZK1E @ 00:06:25]. Publication ran in the local newspaper ahead of the hearing. Hearing set for June 12; no continuance expected because no relative was left off."
         },
         {
-          "name": "Title debt and estate proceeds bridge",
-          "type": "textarea",
-          "prompt": "List preliminary liens, payoff estimates, taxes, selling costs, and title exceptions. Calculate illustrative estate proceeds separately from brokerage receipts, identifying items that require updated demands or title clearance before closing.",
-          "example": "At a $625,000 sale, subtract a $210,000 mortgage, $12,000 tax lien, $18,750 negotiated listing-side commission, and $14,250 other estimated selling costs: provisional estate proceeds equal $370,000. The operator retains $15,000 after the assumed brokerage split; payoff interest and final settlement charges remain subject to reconciliation."
+          "name": "authority_level_requested",
+          "type": "text",
+          "prompt": "State whether full Independent Administration of Estates Act authority or limited authority was requested and granted. Describe what that level means for selling the real property, including how many court hearings and approvals the estate should expect before closing.",
+          "example": "Full IAEA authority requested at filing and granted, so the representative can manage and sell the house with far fewer court hearings [California Probate Real Estate Made Simple — lrpGu0nZK1E @ 00:04:14]. Heyman estimates 90 to 95 percent of probates carry full authority, with escrows running 18 to 30 days [Sell a House in Probate California | Brendan Mohr — G-_4Dz5R2z8 @ 00:01:33]."
         },
         {
-          "name": "Sale route and court timing",
+          "name": "timeline_and_creditor_clock",
           "type": "textarea",
-          "prompt": "Identify whether the proposed transaction uses independent administration or a court-supervised sale route. Record counsel's required notices, objection handling, hearing dependencies, and timing assumptions rather than promising a fixed closing date.",
-          "example": "Counsel selects a full-authority IAEA sale subject to the applicable notice process under California Probate Code sections 10580–10589. The planning calendar allows notice time plus a 30-day buyer escrow. An objection moves the file to counsel's revised procedure before any closing commitment."
+          "prompt": "Project the realistic timeline from filing to letters and from letters to distribution, naming the creditor period that drives it. Write the date the creditor window closes and how that date shapes when sale proceeds can reach heirs.",
+          "example": "Letters expected two to six weeks after filing in this straightforward case [SwiftProbate — lAC-1ovhHAo @ 00:03:49]. Renee Speakerman never quotes California probates shorter than nine months, averaging one to one and a half years to distribution, driven by the four-month creditor period running from letters [RLS Law Corporation — lNaVAVnUZTE @ 00:03:28]. Creditor window closes four months after letters."
         },
         {
-          "name": "Pricing evidence and downside sensitivity",
+          "name": "estate_account_and_debt_priority",
           "type": "textarea",
-          "prompt": "Document comparable sales, condition adjustments, valuation date, and the effect of a lower sale price on retained commission. State the negotiated rate and split explicitly; never present either as an industry requirement.",
-          "example": "Three adjusted comparable sales support $600,000 to $650,000, with $625,000 used for planning. At an illustrative negotiated 3% listing-side rate and 80% retention, operator revenue is $15,000. A 10% price reduction produces $562,500 of sale value and $13,500 of retained commission."
+          "prompt": "Record the estate EIN, the bank holding the estate account, and the order in which debts will be paid. Confirm no estate money moves through the decedent's personal accounts and explain the personal liability risk of paying out of order.",
+          "example": "EIN obtained the week letters issued; estate checking opened under that EIN, and every bill runs through it [NOVA Real Estate Solutions — JG6VKzYq_uA @ 00:07:06]. Debts are queued in statutory priority order because paying out of order may leave the personal representative personally liable [NOVA Real Estate Solutions — JG6VKzYq_uA @ 00:10:59]. The decedent's old checking account stays untouched."
         },
         {
-          "name": "Acquisition and concierge conflict screen",
+          "name": "confirmation_math_and_overbid",
           "type": "textarea",
-          "prompt": "Identify operator ownership interests, proposed purchases, vendor relationships, and concierge compensation. Describe how conflicts are disclosed and evaluated before proceeding, including alternatives that preserve independent representation and estate decision-making.",
-          "example": "An affiliated acquisition entity offers $540,000 while the listing analysis supports $625,000 before condition adjustments. The broker discloses ownership, stops using confidential seller leverage in acquisition negotiations, and asks counsel to assess the conflict and proposed procedure. The forecast excludes acquisition resale gains."
+          "prompt": "If the sale requires court confirmation, calculate the opening overbid from the accepted price, the ninety percent appraisal floor, and the deposit bidders must bring. Show the arithmetic so heirs and buyers see the courtroom numbers before the hearing.",
+          "example": "Accepted offer: $500,000. Opening overbid equals the accepted price plus ten percent of the first $10,000 and five percent of the balance, so $525,500 [Win-Win Realtors TV — nenCgIcDQpw @ 00:01:59]. Limited authority means no sale below 90% of appraised value [Aronsohn & So, Probate Real Estate — Ivp-A8gsOnI @ 00:00:19]. Bidders bring cashier's checks for 10 percent."
         },
         {
-          "name": "Pursuit decision and resource ceiling",
+          "name": "second_marketing_and_court_order",
           "type": "textarea",
-          "prompt": "State pursue, defer, or decline with evidence-based reasons, an initial labor budget, cash exposure limit, and next review date. Tie the decision to authority, economics, property readiness, and realistic closing dependencies.",
-          "example": "Pursue after authority verification, preliminary title review, and signed representation documents. Limit pre-listing work to 12 staff hours and $600 of brokerage spending; estate vendors invoice the estate directly. Review in seven days if access or insurance remains unresolved and defer marketing until those issues are cleared."
+          "prompt": "Describe how the property will be marketed a second time for the confirmation hearing, what goes in the agent remarks, and who will chase the certified court order to title. Note whether the contract was frozen before the petition and publication.",
+          "example": "Agent remarks list the hearing date, court location, court number, and room number, with an offer to coach overbidders [Bill Gross, the LA Probate Expert — ih5FQvZZVck @ 00:06:45]. Contingencies and the closing-cost credit were settled before the petition went out [Sell a House in Probate California | Brendan Mohr — Gz6Ih7tLzdQ @ 00:13:33]. The probate attorney's office chases the certified order."
         }
       ],
-      "completion_gate": "The supervising broker records a pursuit decision supported by verified signing authority, a documented sale route, preliminary property and title findings, a retained-commission estimate, and named owners for every unresolved condition."
+      "completion_gate": "Certified letters are in hand with a recorded issuance date, every heir and relative including disinherited ones appears in the petition with filed proof of notice, an estate account runs under its own EIN, and the authority level and any confirmation math are written down before any listing, offer, or contract."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Retained-Commission Economics, Defect Reserve, and Cash Float",
-      "purpose": "Reconcile the canonical revenue and owner-profit scenarios to retained brokerage commissions. Build a case-level cost bridge, an explicit failed-file allowance, and a cash timing plan that keeps estate money separate while exposing the funding gap created by delayed probate closings.",
-      "chapter_ref": "Q3, Q4",
+      "title": "The Inherited House Decision File",
+      "purpose": "Lock the inherited house's tax basis, protect the vacant asset, surface every lien and government claim, and settle the heirs' path to sale or buyout before a single dollar of repair money or a single contract signature commits the estate.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Enter all three canonical scenarios unchanged before adding local assumptions. Show sale value, gross listing-side commission, brokerage split, retained operator revenue, total costs, and owner net profit as separate quantities. Do not substitute property appreciation or acquisition proceeds for commissions.",
-        "Use negotiated commission and retention assumptions solely to construct a transparent unit model. Match annual retained revenue through closed-file counts, and distinguish realized closings from signed listings, pending escrows, and probability-weighted pipeline values that have not yet earned revenue.",
-        "Allocate recurring overhead, people costs, direct case costs, and failed-file allowances without counting any item twice. Explain which costs sit inside the monthly operating envelope and which require additional cash. Reconcile the complete annual expense total to the canonical margin.",
-        "Forecast cash by expected receipt and payment date rather than by annual averages alone. Stress a court delay and a reduced sale price separately. Never use estate deposits, trust funds, or vendor reimbursements to conceal the brokerage's own working-capital shortfall.",
-        "Set numerical hiring and spending conditions based on available unrestricted cash, committed funding, and documented costs. Keep launch capital separate from the mature team's annual economics, and show what happens when the first commission arrives near the far end of the timing range."
+        "Order the professional date-of-death appraisal first; every basis, buyout, and pricing number in this worksheet rests on that one valuation.",
+        "Call the insurance carrier and change the locks within days of vacancy, because coverage and security gaps open long before the heirs agree on anything.",
+        "Request every claim, lien status, and waiver answer on paper with a date, never over the phone, and attach each one to the field it supports.",
+        "Run the carrying-cost and buyout math in front of all heirs together so no sibling negotiates privately on numbers the others have never seen.",
+        "Send any deed change, gift, or title edit to an attorney before it happens, since a careless transfer can trigger an ineligibility penalty or forfeit the step-up."
       ],
       "fields": [
         {
-          "name": "Canonical scenario reconciliation",
-          "type": "textarea",
-          "prompt": "Write the three annual revenue, margin, owner-profit, expense, and staffing combinations. Verify revenue multiplied by margin equals owner profit, and revenue less profit equals the complete implied expense envelope.",
-          "example": "Conservative: $120,000 revenue, 20% margin, $24,000 profit, $96,000 costs, 2 FT + 3 C. Base: $510,000 revenue, 27.5% margin, $140,250 profit, $369,750 costs, 2 FT + 3 C. Scaled: $900,000 revenue, 35% margin, $315,000 profit, $585,000 costs, 3 FT + 4 C."
+          "name": "date_of_death_appraisal",
+          "type": "text",
+          "prompt": "Name the professional appraiser hired for the date-of-death valuation, the order date, the appraised value, and how far inside the first sixty days it landed. State why online estimates cannot substitute when the IRS reviews basis.",
+          "example": "Appraisal ordered on day 22 after death and completed at $800,000. Garcia says a Zillow or Redfin estimate does not count and the IRS wants a real appraisal, a step Garcia credits with saving clients over $40,000 [Tricia Garcia Real Estate — qNeCeQehzRg @ 00:03:38]. Assessed value was rejected as a huge mistake [Probate Mastery — evd32pAim5s @ 00:52:46]."
         },
         {
-          "name": "Sale value to retained commission bridge",
+          "name": "step_up_basis_math",
           "type": "textarea",
-          "prompt": "Calculate a representative closing from property sale value through negotiated listing-side commission and brokerage retention. Identify the recipient of each amount and the distinct recognition event for operator revenue.",
-          "example": "A $625,000 closing at an illustrative negotiated 3% listing-side commission generates $18,750 before the brokerage split. At 80% operator retention, $15,000 reaches the operator and $3,750 remains with the brokerage. Record the retained amount under the accountant's earned-revenue policy, not when the listing is signed."
+          "prompt": "Write the step-up calculation: original purchase price, date-of-death basis, expected sale price, and resulting taxable gain. Note any lifetime gift or irrevocable trust transfer that could forfeit the step-up, and whether the reset could run downward instead.",
+          "example": "Parents bought for about $200,000; date-of-death basis is $800,000; sale at $800,000 leaves $0 taxable gain instead of the CPA's roughly $180,000 estimate [Tricia Garcia Real Estate — qNeCeQehzRg @ 00:03:15]. The home is treated as held more than a year, and the reset can also be a step-down [The Legacy Desk — qlBYQPngO0o @ 00:03:05]. No lifetime gift occurred."
         },
         {
-          "name": "Annual closing count and property throughput",
+          "name": "vacancy_insurance_and_security",
           "type": "textarea",
-          "prompt": "Convert each scenario into an illustrative count of completed transactions. Reconcile aggregate property throughput separately from retained revenue, using explicit average prices, negotiated commission assumptions, and brokerage retention percentages.",
-          "example": "Conservative uses 10 closings at $500,000, producing $5,000,000 property throughput and $120,000 retained revenue at 3% commission and 80% retention. Base uses 34 closings at $625,000: $21,250,000 throughput and $510,000 revenue. Scaled uses 60 identical units: $37,500,000 throughput and $900,000 revenue."
+          "prompt": "Record the date the carrier was told the house is vacant, the vacant policy now bound, and every physical security step taken. Include locks, alarm codes, garage remotes, crawl space, and any police patrol request for the empty property.",
+          "example": "Carrier notified on day 12, well before standard policies quietly stop covering a property vacant 30 to 60 days [Sell That Wreck! With Stephanie Burt — 6xUa7KjeSSY @ 00:01:35]. Locks, alarm codes, and garage remotes changed [Selling Inherited Property - The Prepared Heir — rnWBVJVgbTw @ 00:01:00]. Crawl space sealed against squatters and the house added to the local police patrol route."
         },
         {
-          "name": "Base expense architecture and unit margin",
-          "type": "textarea",
-          "prompt": "Build an illustrative expense schedule that sums exactly to the base expense envelope. Identify personnel, recurring overhead, case spending, and expected losses, then calculate fully allocated cost and profit per closing.",
-          "example": "Budget $108,000 recurring overhead, $216,000 people costs, $32,250 direct case spending, and $13,500 expected failed-file losses: total $369,750. People costs comprise $156,000 for two full-time roles and $60,000 across three contractors. Across 34 closings, cost is $10,875 and owner profit is $4,125 each."
+          "name": "carrying_cost_burn",
+          "type": "text",
+          "prompt": "Total the monthly carrying costs on the inherited house: property taxes, utilities, insurance, and basic maintenance. Multiply across the months heirs expect to debate, then note what deferred-maintenance damage could add once indecision runs past six months.",
+          "example": "Taxes, utilities, vacant-home insurance, and lawn care run about $750 a month, or $4,500 over six months, squarely inside Burt's $3,000 to $6,000 range before the real damage begins [Sell That Wreck! With Stephanie Burt — 6xUa7KjeSSY @ 00:04:23]. Holding past six months risks deferred-maintenance damage, so the heirs agreed to a decision deadline of August 1."
         },
         {
-          "name": "Scrub defects and failed-file allowance",
+          "name": "title_search_and_liens",
           "type": "textarea",
-          "prompt": "Define the events that consume the loss allowance, including duplicate leads, authority defects, abandoned listings, and unrecovered case spending. Separate an internal budgeting allowance from actual accounting treatment and restricted cash.",
-          "example": "Allocate the $13,500 management allowance as $3,000 for docket and identity rework, $4,500 for unrecovered inspection or marketing commitments, and $6,000 for abandoned-file labor. Review actual losses monthly. Moving $13,500 into a reserve account creates no second expense; the accountant controls recorded expense recognition."
+          "prompt": "List what the title search ordered through the probate attorney surfaced: liens, unpaid taxes, judgments, HOA special assessments, mortgage balance, and any reverse mortgage payoff. Note the date ordered and how each item changes the net to heirs.",
+          "example": "Title search ordered through the probate attorney the week letters issued, surfacing one judgment lien and an unpaid HOA special assessment before any plan was built on the numbers [Sell That Wreck! With Stephanie Burt — 6xUa7KjeSSY @ 00:03:32]. A reverse mortgage balance appeared; it must be paid off at closing [Simplify Senior Transitions with Dale Corpus — S5zYm8kcrug @ 00:01:54]."
         },
         {
-          "name": "Startup capital and first-deal runway",
+          "name": "repair_or_as_is_decision",
           "type": "textarea",
-          "prompt": "Place the launch plan within the canonical startup capital and first-deal ranges. Separate one-time setup from liquid runway and show the consequence of a late first closing without assuming the mature team already exists.",
-          "example": "Canonical startup capital is $15,000–$100,000 and time to first deal is 4–18 months. A $90,000 launch budget spends $15,000 on setup and leaves $75,000 liquid. A staged $6,000 monthly burn lasts 12.5 months; reaching month 18 requires another $33,000 or documented reductions before committing."
+          "prompt": "Capture the experienced agent's evaluation before any repair money is spent. List each proposed improvement, whether buyers actually need it, and the final decision to sell as-is or repair, with the reasoning written in the heirs' own words.",
+          "example": "One heir wanted a new kitchen, fresh vanities, new flooring, and white paint throughout. The agent walked the house first and advised against all four until buyers showed they needed them [Horizon Real Estate & Probate and Trust Help — lo2f0qbkjaQ @ 00:04:21]. Decision: sell as-is, because, in the heirs' words, 'the market decides the value, not our memories.'"
         },
         {
-          "name": "Monthly operating envelope and mature float",
+          "name": "sibling_buyout_financing",
           "type": "textarea",
-          "prompt": "Explain how the quoted monthly operating range maps to this budget. Calculate mature-team cash requirements using all relevant costs rather than treating recurring overhead as the entire expense base.",
-          "example": "The canonical monthly opex range is $3,000–$18,000. For this worksheet, $9,000 is recurring non-personnel overhead, with $18,000 monthly people costs shown separately. Fixed cash demand is therefore $27,000 monthly, and 90 days requires $81,000 before direct case costs. This scope assumption must accompany the budget."
+          "prompt": "If one heir wants to buy out the others, record the neutral appraisal used, the inherited share's value, and the mortgage broker's written answer on financing. Confirm the buying heir can afford to live there after closing.",
+          "example": "A $600 neutral appraisal set the house at $480,000, making each of three shares $160,000. Before any sibling negotiation, a mortgage broker confirmed how the inherited share is treated and what the buyer qualifies for [Michelle Bell - Realtor — F1mwNdsm-HA @ 00:06:01]. The buying sibling also confirmed the monthly cost of living there [Michelle Bell - Realtor — F1mwNdsm-HA @ 00:06:42]."
         },
         {
-          "name": "Court-delay and price stress",
-          "type": "textarea",
-          "prompt": "Stress delayed receipts and reduced sale prices without altering the canonical scenario labels. Quantify cash timing effects separately from profit effects, and state which cost assumptions remain fixed in the sensitivity.",
-          "example": "Moving two $15,000 commissions beyond the quarter creates a $30,000 receipt shortfall without automatically destroying lifetime revenue. Separately, a 10% price decline across 34 base closings reduces retained revenue to $459,000. Holding modeled costs at $369,750 leaves $89,250 profit; this is a sensitivity, not the canonical base."
+          "name": "heir_communication_cadence",
+          "type": "text",
+          "prompt": "Set the beneficiary update schedule: channel, frequency, length, and who drafts it. Identify which weekly agent report feeds each update and which heirs need extra attention, including minors, estranged siblings, and anyone who has called upset.",
+          "example": "Every other Friday, the executor sends a two- to three-minute email to four beneficiaries built from the agent's weekly update, heading off 15- to 20-minute calls from an upset heir [Horizon Real Estate & Probate and Trust Help — lo2f0qbkjaQ @ 00:06:15]. The estranged sister is copied on everything, since family dynamics are the biggest file challenge [Carolynn Castillo — XN-9ankgVNk @ 00:24:29]."
         },
         {
-          "name": "Break-even volume and contribution logic",
+          "name": "medicaid_claim_and_waiver",
           "type": "textarea",
-          "prompt": "Separate fixed annual costs from variable case costs and expected losses. Calculate contribution per completed closing and the whole-number closing count required to cover fixed costs under the stated assumptions.",
-          "example": "Treat $324,000 of overhead and people costs as fixed. Allocate $45,750 of case spending and expected losses across 34 closings, or approximately $1,345.59 each. At $15,000 retained revenue, contribution is approximately $13,654.41. Fixed-cost break-even is 23.73 closings, rounded upward to 24 completed transactions."
+          "prompt": "If the decedent received long-term care Medicaid, record the itemized claim amount, the date the statement arrived on paper, and any spousal, minor child, disabled child, caregiver child, or undue hardship exemption pursued, with the waiver deadline counted in days.",
+          "example": "Itemized Medicaid statement received on paper September 3 showing a $64,000 claim, requested before pricing because the claim is paid from the sale [MarcCormier — t0-A8dVrr1o @ 00:04:01]. The undue hardship waiver application was requested by name, with 45 days logged, since silence counts as consent [นพดล เกิดยิ้ม — X-vkv-PR3pY @ 00:12:35]. Caregiver-child proof file started covering 24 months."
         },
         {
-          "name": "Cash ownership and funding decision",
+          "name": "deed_vesting_and_heirs_property",
           "type": "textarea",
-          "prompt": "Identify unrestricted brokerage cash, estate funds, trust deposits, proposed borrowing, and the next spending decision. Specify evidence required before treating future receipts or a credit facility as available working capital.",
-          "example": "The operator has $62,000 unrestricted cash against an $81,000 fixed-cost float target, leaving a $19,000 gap before case spending. A proposed $25,000 credit line counts only after execution and availability verification. Buyer earnest money remains with the authorized holder and cannot fund payroll or marketing."
+          "prompt": "Pull the recorded deed from the county recorder and note exactly how title is vested. Flag survivorship vesting, a deceased owner with no recorded probate or affidavit of heirship, any fractional interests, and whether a reverse mortgage or trust affects transfer.",
+          "example": "Recorder copy shows title still in the grandfather's name with no probate or affidavit of heirship recorded, which means heirs property where every co-owner must sign [The Accidental Executor — JsLnTFCaOUQ @ 00:02:26]. Investors can buy a 2% share for a few hundred dollars and force a partition auction [The Accidental Executor — JsLnTFCaOUQ @ 00:01:50], so every cousin gets contacted now."
         }
       ],
-      "completion_gate": "All canonical scenarios reconcile exactly; the base cost schedule totals $369,750; property throughput never appears as operator revenue; and the owner records a funded cash plan or specific spending reductions for the identified runway shortfall."
+      "completion_gate": "A professional date-of-death appraisal, a bound vacant-home policy, a completed title search, any itemized Medicaid claim with its waiver deadline, and a written exit decision agreed by every heir are all on file before pricing, repairs, or a buyout offer."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution Ledger and Transaction QA Pre-Flight",
-      "purpose": "Turn a qualified probate opportunity into a controlled transaction file. Assign evidence, owners, and deadlines from intake through closing, preserve a clear commission ledger, and test the technical controls that prevent stale authority, premature marketing, misdirected funds, and incomplete handoffs.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Cleanout, Preservation, and the Probate Listing Launch",
+      "purpose": "Clear, protect, and inventory the estate's contents under proper signing authority, then build the listing side of the file so the representative, every beneficiary, and every contract amendment are verified before the property reaches the market.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create a unique case identifier before importing documents or assigning tasks. Use the same identifier in the CRM, document folder, transaction checklist, and accounting reference. Keep sensitive identity and estate documents outside broadly shared prospecting views and marketing exports.",
-        "Define each transaction state by evidence rather than elapsed time. A signed listing does not prove authority remains current, a hearing date does not prove confirmation, and an accepted offer does not establish that required notices or objections have been resolved.",
-        "Assign one accountable owner for every deadline and one backup for absences. Record the source of each date and counsel's procedural instructions. Treat software reminders as operational aids, while preserving the underlying order, notice, contract, or verified court entry.",
-        "Reconcile the draft settlement statement to negotiated compensation, the brokerage split, and authorized credits. Verify payment instructions through a trusted independent channel. Keep estate distributions, buyer deposits, and operator receipts in separate ledger categories with explicit ownership.",
-        "Run a pre-closing review and a post-closing exception review. Test document access, duplicate prevention, deadline calculation, and receipt matching. Record failed checks with corrective actions and retest results rather than marking the entire file complete because funds were received."
+        "Get the signature of the person with legal authority before any hauler, liquidator, or family member removes a single item from the house.",
+        "Photograph every space and complete the one-pass valuables search before scheduling any estate sale, buyout, or junk removal appointment.",
+        "Price every contents option side by side, including DIY sale, hired company, and cleanout, using the load-plus-labor method for hauling quotes.",
+        "Confirm the court-appointed representative and issued letters against the court record before any MLS entry, yard sign, or door hanger goes up.",
+        "Copy the probate attorney on every addendum and read each amendment against the court papers, logging the date each document was reviewed."
       ],
       "fields": [
         {
-          "name": "Case identity and source register",
-          "type": "textarea",
-          "prompt": "Define the identifiers and source metadata needed to connect court records, property records, contacts, and transaction documents. Explain how duplicate estates and multiple properties belonging to one estate remain distinguishable.",
-          "example": "Use estate ID EST-0412 and property ID EST-0412-P01. Store the court case number, county, parcel number, source URL, and retrieval timestamp. A second property becomes P02 rather than a second estate. Match new imports on county plus case number before creating another representative contact."
+          "name": "signing_authority_for_contents",
+          "type": "text",
+          "prompt": "Name the person holding legal authority over the house contents, the document that grants it, and the date that person signed off on removal. If two heirs share authority, record both signatures before a single item leaves the house.",
+          "example": "The personal representative, holding letters issued May 2, signed the cleanout authorization on May 9; nobody loads a truck until that person signs [JunkRemovalWeb — L8fzGwXd_kk @ 00:05:35]. Because the two daughters co-inherit the contents, both signed the same removal sheet before any item went out [Gyd Path — AMYbwbqYqY8 @ 00:05:41]. Signed copies sit in the estate file."
         },
         {
-          "name": "Evidence-based transaction states",
+          "name": "room_by_room_photo_inventory",
           "type": "textarea",
-          "prompt": "List the operational states and documentary requirements for moving between them. Include a suspended state for authority changes, objections, access failures, or contract issues that require review before further execution.",
-          "example": "States are prospect, authority review, engaged, preparation, active listing, under contract, closing ready, closed, and suspended. Engaged requires verified authority and executed representation documents. Closing ready requires counsel's procedure confirmation, title clearance, and escrow readiness. A new authority restriction moves the file to suspended immediately."
+          "prompt": "Log the photo and video inventory: every room, closet, garage, shed, and outbuilding, with the date captured and where files are stored. Note any item flagged for a professional appraiser because it appears valuable or unique before contents move.",
+          "example": "Video walk-through recorded May 10 covering nine rooms, four closets, the garage, and the backyard shed as a preliminary inventory before contents moved [Local Probate Help — Bggg_tJ_y2g @ 00:03:10]. Files stored in a shared estate folder all heirs can view. A grandfather clock and coin binder were flagged for an appraiser [BizMove — ouKH71PUV3E @ 00:01:47]."
         },
         {
-          "name": "Document custody and access matrix",
+          "name": "valuables_search_pass",
           "type": "textarea",
-          "prompt": "Specify where originals and working copies are stored, which roles can access sensitive material, and how version history is preserved. Define a narrow document-sharing procedure for vendors and external counterparties.",
-          "example": "Google Drive contains a restricted estate folder with separate authority, title, offers, and closing subfolders. The coordinator can manage checklists but cannot export identity documents. A cleanout vendor receives only the property address, access window, scope, and representative authorization through a limited-access folder."
+          "prompt": "Describe the single search pass made before any disposal: books, coat pockets, high shelves, tins, and shoeboxes. Record who searched, how many days it took, what was found, and how each recovered item was logged and returned to the estate.",
+          "example": "Two heirs searched books, coat pockets, high shelves, tins, and shoeboxes over three days, knowing there is only one pass [Cesar Espinoza - Houston Probate Realtor — l68yR0_4B4g @ 00:02:32]. Found: a savings bond and $2,300 cash, deposited to the estate account. A hoarder sort elsewhere recovered $5,000 in jewelry and nearly $30,000 in cash [Illinois Probate Solutions — dHEXFlygm_8 @ 00:02:07]."
         },
         {
-          "name": "Deadline ledger and calendar validation",
-          "type": "textarea",
-          "prompt": "Record each deadline's triggering event, source document, calculation method, owner, and backup. Explain how the team checks weekends, holidays, service rules, and amended orders before relying on a software date.",
-          "example": "The notice task records the notice document, counsel-approved service date, applicable objection period, and calculated earliest action date. The coordinator enters reminders seven and two days before review; the broker checks counsel's instructions. An amended order replaces the operative deadline while preserving the original audit entry."
+          "name": "vacancy_tamper_checks",
+          "type": "text",
+          "prompt": "List the tamper indicators and preservation supplies set at the vacant house, who checks them, and how often. Note lockbox placement, moisture control, keyhole seals, door markers, and what happens the first time a seal is found disturbed.",
+          "example": "Blue painter's tape covers each keyhole and an empty trash can sits in front of the back door; a broken seal or moved can signals entry [Property Preservation Insiders — 4pX2VabEor4 @ 00:22:20]. Lockbox and DampRid bought at about $5 each, not $13 retail [Property Preservation Insiders — 4pX2VabEor4 @ 01:16:06]. A neighbor checks weekly and texts photos."
         },
         {
-          "name": "Vendor authorization and reimbursement ledger",
+          "name": "estate_sale_route",
           "type": "textarea",
-          "prompt": "Document vendor scope, approving party, spending ceiling, invoice recipient, and completion evidence. Separate estate expenses from brokerage expenses and identify any reimbursement agreement before the operator advances funds.",
-          "example": "Jordan authorizes a $2,800 cleanout contract payable directly by the estate. The vendor supplies insurance evidence, before-and-after photographs, and an itemized invoice. The brokerage separately spends $450 on photography as its own marketing cost. Neither amount is added to retained commission revenue."
+          "prompt": "Decide between a do-it-yourself estate sale, a hired estate sale company, or a buyout, and record the expected net of each. Note the vehicle listings, payment methods, and checkout rules planned if the family runs the sale itself.",
+          "example": "DIY sale chosen after Sam and Spencer turned $400 in expenses into well over $10,000 in one weekend [Smile Abroad with Sam & Spencer — q0NbvHAFXsA @ 00:15:03]. Both cars listed early to draw opening-morning buyers. Checkout accepts Venmo, PayPal, Zelle, and checks, and carts are held while buyers fetch cash [EstateSail | The All-In-One Estate Sale Manager — bx6BgPRa2JY @ 00:11:51]."
         },
         {
-          "name": "Offer comparison and decision evidence",
+          "name": "estate_sale_company_vetting",
           "type": "textarea",
-          "prompt": "Compare offers using net proceeds, funding evidence, contingencies, closing dependencies, and required court procedure. Record the representative's decision without allowing automated scoring to accept or reject a binding offer.",
-          "example": "Offer A is $625,000 with a 17-day inspection contingency and verified financing. Offer B is $610,000 cash with a seven-day inspection period. The broker prepares a net sheet for each and explains procedural dependencies. Jordan chooses A in writing after reviewing the documented tradeoffs."
+          "prompt": "If hiring an estate sale company, record the base minimum, the percentage of proceeds charged, and answers on advertising, payout timing, leftover items, and how valuables are secured. Compare at least two companies before anyone signs a contract.",
+          "example": "Company A quoted a base minimum plus 35% of proceeds, inside Whitehurst's 25-50%-or-more range [At Home with Jody — eQ9rTXDlJQM @ 00:08:32]. Each company was asked how and where it advertises, when the estate gets paid, what happens to leftovers, and whether valuables are secured [23ABC News | KERO — uvfLAJ4V3PM @ 00:01:09]. Company B refused written answers and was dropped."
         },
         {
-          "name": "Closing commission and receipt reconciliation",
-          "type": "textarea",
-          "prompt": "Tie the signed compensation terms to the settlement statement, brokerage disbursement, bank receipt, and accounting entry. Describe how credits, changed terms, or payment discrepancies remain visible until resolved.",
-          "example": "The closing statement shows $18,750 listing-side commission. The brokerage retains $3,750 and remits $15,000 to the operator. The coordinator matches the disbursement statement and bank receipt to EST-0412-P01; the bookkeeper records $15,000 retained revenue. A $250 discrepancy creates an exception, not an automatic revenue adjustment."
+          "name": "cleanout_quote_structure",
+          "type": "text",
+          "prompt": "Break the cleanout quote into load price and labor price, with the number of loads, crew size, and man-hours allocated per load. Compare the total against published ranges so a slow, multi-load job cannot quietly blow up the estate's budget.",
+          "example": "Hauler quoted two loads plus labor at 4 man-hours per full load, 8 man-hours total, or about 1 hour 20 minutes per load for a three-person crew [JM Junk Removers — 0dYqJW59Zxg @ 00:06:56]. The labor charge protects margin on slow jobs [JM Junk Removers — 0dYqJW59Zxg @ 00:07:55]. Total sits inside JunkRemovalWeb's $1,000-$2,500 range for a 3BR."
         },
         {
-          "name": "Payment instruction verification control",
-          "type": "textarea",
-          "prompt": "Define the independent verification procedure for changed payment instructions, including trusted contact sources, permitted communication channels, and stop conditions. Preserve proof of verification without exposing full account details in the CRM.",
-          "example": "An email requests a new escrow account two days before closing. The coordinator pauses the request and calls escrow using the number from the previously verified engagement record, not the email. The file records the verifier, callback time, and outcome; account details remain in the restricted closing folder."
+          "name": "pr_verification_before_marketing",
+          "type": "text",
+          "prompt": "Before any MLS entry, sign, or door hanger, confirm the court-appointed personal representative by name and the date letters issued. Note whether anyone pressed to sign a listing agreement before letters, and why that agreement would not hold.",
+          "example": "Court docket confirms the eldest son as personal representative, letters issued July 18; the MLS entry waited until then because a different PR can get appointed and hire someone else [Justin Stivers — Owbx6t3ocjM @ 00:10:10]. An heir asked to sign early, but an agreement signed before letters cannot hold anyone to anything [Probate Mastery — d-rZkDYaJhQ @ 00:51:22]."
         },
         {
-          "name": "Technical pre-flight test cases",
+          "name": "beneficiary_map_and_call_priority",
           "type": "textarea",
-          "prompt": "Write concrete tests for duplicate records, missing authority, expired links, date changes, and reconciliation errors. Specify expected behavior and evidence so the team can repeat the tests after an automation change.",
-          "example": "Test five synthetic files: a repeated docket event creates no duplicate task; missing letters prevent engagement status; a vendor cannot open identity documents; a changed hearing date preserves history; and a $14,750 receipt against $15,000 expected creates a $250 exception. Save screenshots and the test-run date."
+          "prompt": "Map every beneficiary, including minors and estranged siblings, with contact details and distance from the property. Rank outreach so out-of-area representatives come first, and note who will be called before any mail goes out to the family.",
+          "example": "The PR lives 300 miles away, so that file goes first; PRs more than 50 miles from the house find managing it a hassle [Probate Mastery — 7xCfSyqYEys @ 01:32:41]. Beneficiaries were pulled with the filing because listings have been won through siblings when the named executor could not be reached [The Aaron Novello Podcast — H-CW9uu5s-I @ 00:01:59]. Calls precede mail."
         },
         {
-          "name": "Closing handoff and retained evidence",
+          "name": "contract_and_amendment_control",
           "type": "textarea",
-          "prompt": "Define the final deliverables, retention owner, open-item review, and post-closing follow-up. Identify what the broker may retain and what should be removed from marketing systems while preserving required transaction records.",
-          "example": "Within five business days, archive the executed agreement, authority evidence, required notices, settlement statement, commission reconciliation, and communications supporting material decisions. The broker applies California Business and Professions Code section 10148 and any longer applicable hold. Remove unnecessary identity attachments from the prospecting CRM and confirm outstanding invoices."
+          "prompt": "Record how every amendment will be checked against the court papers, who has seller permission to call the buyer's lender, and how the probate attorney receives each addendum. Note the re-hearing risk if a concession change slips through unread.",
+          "example": "Each amendment is read line by line against the court papers, and the PR signed written permission to call the buyer's lender, since a missed concession change can force a two-week re-hearing [Probate Mastery — kvSTArlGoMU @ 00:25:30]. The attorney is treated like a transaction coordinator and copied on every addendum [Probate Mastery — lA-S6Qgcqwo @ 00:25:37]."
         }
       ],
-      "completion_gate": "The broker and coordinator complete the evidence checklist, resolve or formally assign every exception, demonstrate the five technical tests, and reconcile expected commission to the closing documents and actual bank receipt."
+      "completion_gate": "Signed removal authority, a dated photo inventory, a completed valuables search, a load-plus-labor cleanout quote, verified letters for the named representative, a full beneficiary map, and an amendment review routine are documented before contents leave or the listing goes live."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract, and Outreach Audit",
-      "purpose": "Translate applicable licensing, fiduciary, sale-procedure, advertising, and outreach requirements into evidence the team can actually inspect. Use California as the worked jurisdiction, then replace its authorities when operating elsewhere instead of carrying one state's probate workflow into another court.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Probate Business Blueprint and Attorney Referral Engine",
+      "purpose": "Build the two-prong probate business of direct family outreach plus an attorney referral network, with a funded runway, known lead costs, a value-first offer, and a nurture calendar that turns estate attorneys into steady listing sources.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Identify the property jurisdiction and the court administering the estate before selecting statutes or forms. Have qualified local counsel confirm the sale route and material procedural requirements. Record citations, verification dates, and the transaction facts that make each requirement applicable.",
-        "Verify the supervising broker's license and each worker's permitted activity. Review representation, agency disclosures, compensation terms, vendor agreements, and acquisition conflicts before engagement. Administrative support must not drift into negotiation or other activity requiring a real estate license.",
-        "Build separate procedures for independent administration and court-supervised sales. Document required notices, objections, appraisal conditions, confirmation, and overbid mechanics where applicable. A CRM status label cannot establish that statutory prerequisites have been satisfied.",
-        "Audit attorney relationships and settlement-service referrals for prohibited compensation. Review outreach channels independently: postal mail, live calls, texts, automated calls, and commercial email have different requirements. Public court information does not create blanket permission to contact someone.",
-        "Convert every material issue into a correction with an owner and evidence deadline. Suspend the affected activity when authority, licensing, required procedure, or contact permission is missing. Preserve lawful work on other parts of the file while the issue is resolved."
+        "Write your why, vendor team and 30-second USP before spending a dollar on marketing, because coached agents who jumped in haphazardly usually failed.",
+        "Enter real numbers for lead cost, close rate, and monthly budget, and plan around the conservative 2-3% coached conversion until your own results beat it.",
+        "Fund the runway before launch and keep probate a second channel until it produces 5-6 deals a month.",
+        "Approach attorneys in person with value before any ask, understate the volume you promise, and expect about a year and 10 visits before the first referral.",
+        "Copy referring attorneys on every addendum and update, and revisit this worksheet each quarter to compare projections against actual closings."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and controlling procedure",
+          "name": "written_why_and_usp",
           "type": "textarea",
-          "prompt": "Identify the property location, probate court, administration type, and applicable procedural sources. State how the team verifies current local rules and distinguishes a general checklist from counsel's case-specific instructions.",
-          "example": "The property and probate proceeding are in Sacramento County, California. Counsel checks the appointment order, California Probate Code, and current Sacramento Superior Court probate rules. A property later identified in Nevada receives a separate jurisdiction review rather than inheriting California notice and sale assumptions."
+          "prompt": "Write your personal reason for entering the probate niche and a 30-second unique selling proposition you could say to a grieving personal representative. Explain how the statement leads with value and options rather than a one-sided lowball cash offer to the family.",
+          "example": "Chad Corbett warns that coached agents who jumped in haphazardly usually failed, so lock the written why, vendor team and USP first [Chad Corbett — jgstz7zruMg @ 00:05:14]. Sample USP: I help families settle an inherited house with several options, from listing to a quick sale, and I run a consultation, never a we-buy-houses pitch."
         },
         {
-          "name": "Broker licensing and worker scope",
-          "type": "textarea",
-          "prompt": "Record license verification evidence and each role's permitted work. Identify who negotiates, signs brokerage documents, supervises advertising, and handles administrative tasks, citing the relevant licensing restriction for the worked jurisdiction.",
-          "example": "California Business and Professions Code section 10130 requires licensure for covered brokerage activity. The broker verifies active DRE status before assignment. The unlicensed coordinator schedules inspections and assembles documents but does not negotiate price or compensation. Compensation arrangements are checked against section 10137."
+          "name": "full_time_focus_threshold",
+          "type": "text",
+          "prompt": "Record how many probate deals you currently close each month and decide whether probate stays a side channel or becomes your main business. Name the monthly deal count you must reach before shifting full focus, and the single-source risk you face today.",
+          "example": "Current pace: two probate closings a month, both from one county list. Probate Mastery sets the bar at 5-6 deals a month before probate becomes the main business, because at one or two deals a single source can hand you a dry year [Probate Mastery — 7FoxQuVXm2k @ 00:02:34]. Probate stays a second channel until that threshold holds."
         },
         {
-          "name": "Representative authority and fiduciary conflicts",
+          "name": "runway_and_budget",
           "type": "textarea",
-          "prompt": "Document the representative's powers, restrictions, and potential interests in the buyer or vendors. Identify facts requiring counsel's review before a purchase, advance, or related-party arrangement proceeds.",
-          "example": "The representative proposes selling to a company they own. Counsel evaluates California Probate Code sections 9880–9885 and the specific facts before any commitment. The broker records ownership and alternative marketing evidence. A relationship disclosure alone is not treated as permission for a restricted transaction."
+          "prompt": "Calculate your per-county marketing budget and the cash runway you will hold before the first closing arrives. List monthly recurring costs, one-time setup costs, and the number of months you can survive with zero probate closings without abandoning the campaign.",
+          "example": "Chad Corbett's calculator prices one county at $813 a month recurring plus $700 one-time, about $3,000 for 267 leads over three months [Bill Gross, the LA Probate Expert — 4hp5f-_boUM @ 00:51:47]. Runway target: eight months, since David Pannell sat at zero closings for eight months before reaching 27 closings [Bill Gross, the LA Probate Expert — sy23pOWuMEU @ 00:25:49]."
         },
         {
-          "name": "IAEA notice and objection evidence",
-          "type": "textarea",
-          "prompt": "For an independent-administration sale, record authority scope, required notice recipients, service evidence, objection handling, and any applicable waiver. Avoid assuming that full authority eliminates procedural notice or court involvement.",
-          "example": "Counsel confirms full authority and applies California Probate Code sections 10580–10589. The file contains the Notice of Proposed Action, recipient list, service evidence, and counsel's timing calculation, including the applicable minimum notice period. A timely objection halts the independent-action path pending counsel's instructions."
+          "name": "lead_cost_and_close_rate",
+          "type": "text",
+          "prompt": "Enter your fully loaded cost per probate lead, including list builders, callers, mailhouses and follow-up help, and your expected close rate on a cold list. State whether you are planning around a personal benchmark or a more conservative coached conversion figure.",
+          "example": "Bruce Hill spends $32 per lead against a $10-$20 market norm, roughly $2,800 a month on about 90 Fayetteville filings [Probate Mastery — 7FoxQuVXm2k @ 00:47:04]. Chad Corbett held a 6% close rate on a cold list [Beau Eckstein, Business Ownership Coach — cbWbIqZ3KnU @ 00:04:48]. Plan conservatively at 2-3%, the coached range, until your own numbers prove otherwise."
         },
         {
-          "name": "Court-confirmed sale and overbid calculation",
+          "name": "call_script_review",
           "type": "textarea",
-          "prompt": "For a sale requiring confirmation, record appraisal requirements, accepted price, hearing terms, and the statutory overbid calculation. Explain that meeting a numeric threshold does not itself secure court confirmation.",
-          "example": "For the applicable private sale, California Probate Code section 10309 requires at least 90% of appraised value, using an appraisal within one year. A $500,000 accepted bid has a $525,500 initial statutory overbid under section 10311: $1,000 on the first $10,000 plus $24,500 on the remainder."
+          "prompt": "Describe how you will record, replay and tighten your probate conversations. Note the listening ratio you aim for, the words you will cut from your script, and how you will get the deal papered during the very first phone call with the family.",
+          "example": "Record and replay every call, then write out the script and trim the words [Probate Mastery — 6dyFJnKpQDI @ 00:20:24]. The more they talk, the more they trust [Probate Mastery — 6dyFJnKpQDI @ 00:26:15]. Close each call with paperwork in motion, because if it is not papered then, the paper is not coming [Bill Gross, the LA Probate Expert — 4hp5f-_boUM @ 00:35:22]."
         },
         {
-          "name": "Agency disclosures and negotiated compensation",
+          "name": "listing_offer_structure",
           "type": "textarea",
-          "prompt": "Identify required agency disclosures, the client's signing capacity, compensation terms, and any dual-agency issue. Specify how the broker confirms the applicable documents and does not imply a mandatory commission rate.",
-          "example": "The California file uses applicable agency disclosures under Civil Code sections 2079.14–2079.17. The listing states an expressly negotiated 3% listing-side commission and identifies the representative's estate capacity. Any dual agency receives the required disclosure and consent, with Business and Professions Code section 10176(d) reviewed."
+          "prompt": "Outline the listing offer you will present to probate families, including pricing strategy, the day you will begin reviewing offers, and any tiered or concierge fee options. Explain how the structure protects the estate's sale price while moving the house quickly.",
+          "example": "List 15% under market and review no offers until day 8; Chad Corbett averaged 8 days to sell in Roanoke even after volume dropped by two-thirds [Bill Gross, the LA Probate Expert — 4hp5f-_boUM @ 00:27:23]. Offer two tiers: a standard listing fee, and a concierge fee that covers coordination of the vendor bench for out-of-state heirs."
         },
         {
-          "name": "Attorney referrals and settlement-service payments",
+          "name": "attorney_target_list",
           "type": "textarea",
-          "prompt": "Describe every benefit exchanged with referral sources, including fees, gifts, shared marketing, and free services. Identify the transaction types requiring RESPA review and preserve evidence of genuine services rather than disguised referrals.",
-          "example": "The attorney relationship plan pays $0 for referrals. For transactions involving federally related mortgage loans, review 12 U.S.C. section 2607 and 12 CFR section 1024.14. A proposed $500 payment per referred closing is rejected. Genuine shared educational expenses require separate review of services, allocation, and other applicable rules."
+          "prompt": "Build your list of probate and estate-planning attorneys to approach, noting where each name came from and how you will make first contact. Explain why in-person contact beats email or mail and what value you bring before you ask for anything.",
+          "example": "Pull names from the bar directory, then visit in person. Attorney Mike Rutkowski, 15 years in probate, said agents never reach out and it would be a breath of fresh air [Brandon Mulrenin — tHKQUQ1PDts @ 00:08:36]. Rutkowski puts real estate in 80-90% of probates [Brandon Mulrenin — tHKQUQ1PDts @ 00:20:37]. First value offered: ask what slows their probate files."
         },
         {
-          "name": "Calls texts and email channel controls",
+          "name": "value_first_offer",
           "type": "textarea",
-          "prompt": "Specify the outreach channel, recipient category, suppression checks, and any required permission. Distinguish manual business outreach from consumer telemarketing and automated messaging, with a documented process for honoring stop requests.",
-          "example": "Do not cold-text representatives from docket records. Consumer calling procedures address 47 U.S.C. section 227, 47 CFR section 64.1200, and applicable 16 CFR section 310.4 requirements, including registry screening. Commercial email follows 15 U.S.C. section 7704, including accurate headers, postal identification, and timely opt-out handling."
+          "prompt": "Describe the specific service you will give an attorney before requesting a single referral, such as gopher help, sponsored lunches, or recorded interviews. Estimate what it costs you in dollars or hours and how often you will deliver it over the first year.",
+          "example": "Offer an overloaded solo attorney gopher time: fill out, drop off and file forms, and get documents notarized [Probate Mastery — g3dWuQ30j4Y @ 00:04:04]. Sponsor a lunch for about $250 [Probate Mastery — -lMVLigkZQI @ 00:37:32], then interview the attorney on Zoom and send the video to your sphere to manufacture referrals for them [Probate Mastery — 76c0h_es98E @ 00:03:07]."
         },
         {
-          "name": "Fair housing and property advertising",
+          "name": "nurture_cadence",
           "type": "textarea",
-          "prompt": "Review listing copy, audience selection, offer handling, and lead segmentation for prohibited discrimination or misleading claims. Define objective property and service criteria that replace protected-characteristic proxies in marketing decisions.",
-          "example": "The broker reviews advertising under 42 U.S.C. section 3604 and California Government Code section 12955. Copy describes three bedrooms, step-free entry, and inspection access rather than preferred occupants. Audience selection uses service geography and property needs, not protected traits or inferred family characteristics."
+          "prompt": "Map your attorney nurture calendar for the next twelve months, including visits, invitations, and updates. State the share of touches that will be invitations rather than requests, your email limits, and how you will avoid any gap that lets relationships go cold.",
+          "example": "Expect about a year and 10 visits before the first lead [Probate Mastery — evd32pAim5s @ 00:27:30]. Make 75% of outreach an invitation, like five-minute coffee or a small-group dinner [Probate Mastery — evd32pAim5s @ 00:36:30]. Never send five or six emails a day [Probate Mastery — kOa87jAYRNs @ 00:19:39], and never pause: Sarah's six-month gap left half the leads with another agent."
         },
         {
-          "name": "Data handling retention and correction register",
+          "name": "transaction_updates_to_attorneys",
           "type": "textarea",
-          "prompt": "Record data categories, access controls, retention rules, privacy-law applicability, and corrective actions. Identify which public record details are unnecessary for outreach and should never enter a marketing export.",
-          "example": "Export only the minimum lawful contact and property fields; exclude identity documents, account numbers, and beneficiary medical details. Assess California Civil Code section 1798.100 et seq. applicability and section 1798.81.5 security duties. The broker owns retention review and corrects an overbroad vendor folder before restoring access."
+          "prompt": "Explain how you will keep referring attorneys informed during each listing, including which documents you copy them on and how often you send property updates. Identify the date-of-death valuation service you will offer heirs and why market value matters for basis.",
+          "example": "Treat attorneys like your transaction coordinators and send every addendum, because Michelle's missed concession addendum forced a return to court [Probate Mastery — lA-S6Qgcqwo @ 00:25:37]. Send biweekly property updates. Run a free date-of-death BPO before heirs report basis, since using assessed value instead of market value is a huge mistake [Probate Mastery — evd32pAim5s @ 00:52:46]."
         }
       ],
-      "completion_gate": "The supervising broker and appropriate local counsel have resolved the applicable authority, sale-procedure, licensing, contract, referral-payment, and outreach issues; evidence is linked to the file, and unresolved activities remain suspended."
+      "completion_gate": "Complete when the written why, 30-second USP, per-county budget, eight-month runway figure, lead cost and close-rate assumptions, listing offer, a named list of target attorneys, a costed value-first offer, a twelve-month nurture calendar, and an attorney update protocol are all recorded with numbers."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Attorney Flywheel, and Risk Fallbacks",
-      "purpose": "Build a repeatable referral and execution system without turning court records into indiscriminate outreach. Combine authorized docket monitoring, structured qualification, useful attorney relationships, and transaction checklists with traceable data handling, measured conversion, and practical fallbacks for automation failures and disrupted sale timelines.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Probate Lead Data, Direct Mail, and Call Conversion System",
+      "purpose": "Turn raw county probate filings into conversations by pulling and scrubbing the right list, mailing help-first pieces on a funded drip, keeping phone lines clean, and running call-first scripts that surface every heir and decision-maker.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "List authorized information sources and their access conditions before configuring ingestion. Prefer court-provided alerts or permitted licensed feeds. Record freshness, source identifiers, and retrieval errors so the CRM can distinguish new evidence from stale or duplicated records.",
-        "Automate collection, deduplication, reminders, and checklist preparation before automating outreach. Require qualified review for authority interpretation, procedural dates, pricing, offer decisions, and contractual commitments. Test with synthetic records before enabling any live workflow.",
-        "Build the attorney flywheel around useful estate-property work: valuation explanations, sale-route checklists, vendor coordination, and concise authorized updates. Measure relationships through qualified introductions and completed service, not payments or benefits contingent on referral volume.",
-        "Use a source-level funnel with explicit denominators and conversion windows. Separate newly created opportunities from prior-period closings. Show acquisition cost alongside staff capacity and cash timing so growth does not conceal an overloaded transaction pod.",
-        "Assign fallback owners for unavailable feeds, court postponements, family disputes, weak demand, and vendor outages. Define the operational trigger and immediate response for each. An automation failure must reduce convenience, not remove control over deadlines or client funds."
+        "List each county, its source, cost and volume, and flag out-of-state representatives for priority treatment.",
+        "Assume a large share of raw data is flawed and build the scrub and skip-trace step before any mail drops.",
+        "Never open a letter or call with the death; lead with help, resources, and the family's hardest problem.",
+        "Commit to at least a six-month campaign on any new list, since one or two letters waste money and first touches are dismal.",
+        "Check caller ID, cap dials per number, and confirm every decision-maker before booking a listing appointment."
       ],
       "fields": [
         {
-          "name": "Authorized docket source and freshness",
-          "type": "textarea",
-          "prompt": "Identify the source, permitted access method, refresh cadence, and freshness threshold. Specify how the team verifies a docket event before using it to alter a transaction deadline or contact status.",
-          "example": "Use court-provided notifications where available or a licensed feed permitting the intended use. Refresh each business morning and flag records older than 48 hours. A new hearing event creates a review task; the coordinator checks the underlying entry before changing the operative calendar."
+          "name": "county_list_source",
+          "type": "text",
+          "prompt": "Name the counties you will work, the source of each probate list, its monthly cost, and the record volume. Note whether you pull the courthouse filings yourself or buy from a vendor, and which records you will prioritize first.",
+          "example": "David pays $2,200 a month for 1,100 records across 13 Dallas-Fort Worth counties and isolates 30-40 out-of-state representatives [Probate Mastery — pgW-G0oZoa4 @ 00:02:44], noting most deals come from people out of state [Probate Mastery — pgW-G0oZoa4 @ 00:01:26]. Skip counties that consistently file under 25 [Probate Mastery — uTFKO8zRNsI @ 01:05:36]."
         },
         {
-          "name": "CRM schema and deduplication rules",
+          "name": "scrub_and_skip_trace",
           "type": "textarea",
-          "prompt": "Define the minimum record schema, stable identifiers, merge rules, and suppression links. Explain how the workflow handles repeated events without duplicating outreach, erasing provenance, or merging different people who share a name.",
-          "example": "Airtable stores county, case number, estate ID, parcel number, event ID, source timestamp, owner, and review status. County plus case number identifies the estate; contact merges require additional identity evidence. A normalized contact key links suppression preferences across all campaigns."
+          "prompt": "Describe your process for scrubbing raw probate leads and skip tracing personal representatives and heirs. State who does the scrubbing, how many records per day, how you handle flawed data, and whether non-real-estate leads still get called.",
+          "example": "An offshore VA scrubs 25 prospects a day. Assume 40% of the data is flawed [Probate Mastery — LaCR15esK0k @ 00:37:19]. Bruce Hill's funnel starts at 100 raw leads, about 70 with real estate [Probate Mastery — 3UwWnM4igSY @ 00:22:52], yet All The Leads says call every lead [All The Leads — D2NGOVJ2s6U @ 00:00:31]."
         },
         {
-          "name": "Automation boundaries and review ownership",
+          "name": "mail_piece_design",
           "type": "textarea",
-          "prompt": "List tasks the system may perform automatically and decisions reserved for a qualified person. Specify the owner and required evidence for each consequential status change or external communication.",
-          "example": "A Python job imports permitted docket events and creates draft tasks. It cannot mark authority verified, send consumer texts, accept offers, or release payment instructions. The broker confirms representation status; counsel supplies procedure guidance; the coordinator sends only reviewed, authorized updates."
+          "prompt": "Specify the format of your first probate mail piece, including envelope style, addressing method, postage type, and opening line. Explain how the opening offers help instead of condolences and avoids leading with the death of the family member.",
+          "example": "Use a hand-addressed greeting-card envelope in blue ink with a live first-class stamp, which pulls about 2% versus under 1% for #10 envelopes and postcards [All The Leads — 6iVpjQj9wjc @ 00:02:48]. Never open with the deceased, since leading with the death could be highly offensive [Realestate Doru — kVqHwTzx-bo @ 00:01:35]. Open with resources for the estate."
         },
         {
-          "name": "Attorney relationship value proposition",
+          "name": "drip_campaign_schedule",
           "type": "textarea",
-          "prompt": "Define a specific service promise for probate attorneys, the deliverables supporting it, and the relationship cadence. Exclude referral-contingent payments and avoid promising legal conclusions or a closing date outside the broker's control.",
-          "example": "Offer a two-business-day property intake response, a documented pricing analysis, and an authorized weekly sale-status summary. Meet eight probate attorneys during the first quarter to explain the process. Referrals earn no payment; service quality and reliable file updates create the reason to introduce another estate."
+          "prompt": "Lay out your full follow-up mail sequence: number of touches, spacing between drops, total days, and per-recipient cost. Commit to a minimum campaign length on any new list and explain how you will stop charges once someone responds.",
+          "example": "Andy's PRINTgenie drip runs about $5 per recipient over roughly 112 days first class; 217 names times 5 pieces came to about $1,000 [Probate Mastery — IRtAt7-sQHc @ 00:28:01]. Run six months minimum on a new list [Probate Mastery — IRtAt7-sQHc @ 01:15:08], and delete respondents after each drop, as Bruce did with 4 people [Probate Mastery — IRtAt7-sQHc @ 01:11:57]."
         },
         {
-          "name": "Outbound cadence and suppression handling",
-          "type": "textarea",
-          "prompt": "Describe the initial audience, message content, follow-up limit, and stop conditions. Make the channel-specific requirements visible and state how opt-outs propagate before another employee or tool sends a message.",
-          "example": "Send individually reviewed commercial emails to 20 relevant probate-law firms with a clear service description, postal address, and opt-out method. Permit one follow-up after ten business days. A stop request updates the central suppression list immediately and is checked before every later campaign."
+          "name": "merge_fields_and_tags",
+          "type": "text",
+          "prompt": "Document how your mail platform maps names and tags records before launch. List which field holds the personal representative's first name, which holds the decedent's name, the tag that prevents duplicate mailings, and any merge fields you will never use.",
+          "example": "Map the personal representative's first name to first name and the deceased's first name to custom 2 [Probate Mastery — IRtAt7-sQHc @ 01:11:57]. Tag every record Direct Mail so it can be excluded later [BatchTV — xF9PxjJDUX0 @ 00:07:45]. Never put the (signature) merge field in the greeting, or your own name prints on every postcard [BatchTV — xF9PxjJDUX0 @ 00:03:47]."
         },
         {
-          "name": "Base funnel and conversion assumptions",
+          "name": "call_first_economics",
           "type": "textarea",
-          "prompt": "Construct an illustrative annual funnel that reaches the base closing count. Identify the conversion denominator at each stage and state whether the model describes a mature pipeline or a newly launched business.",
-          "example": "A mature pipeline produces 200 qualified introductions, 100 consultations, 50 signed listings, and 34 closings annually. Stage conversions are 50%, 50%, and 68%; overall introduction-to-close conversion is 17%. At $15,000 retained per closing, revenue is $510,000. A new launch should not expect this annual output immediately."
+          "prompt": "Compare the cost and expected conversations of calling first versus mailing first on a batch of 100 probate leads. State your realistic live contact rate, your caller cost, and which approach anchors your pipeline for the first month.",
+          "example": "Bruce Hill gets about 50 conversations per 100 leads for roughly $400 of ISA cost, versus $900 for 600 mailers that pull inbound calls from about 5% [Probate Mastery — y1TInRM-Flc @ 00:00:43]. Dave Pinel tells new agents to expect live contact on about 10% of dials [Probate Mastery — URZzrpQSKmU @ 00:55:44]. Calling anchors month one."
         },
         {
-          "name": "Attribution cost and acquisition payback",
-          "type": "textarea",
-          "prompt": "Define source attribution, direct channel spending, labor allocation, and completed-deal measurement. Calculate a transparent acquisition cost without claiming that retained commission equals contribution or adding existing expenses a second time.",
-          "example": "Tag each introduction with its originating relationship and first-contact date. An illustrative $24,000 annual outreach allocation supporting 34 closings equals $705.88 per closing before separately allocated labor. The $24,000 already sits inside $108,000 overhead; do not add it again when reconciling base profit."
+          "name": "phone_line_hygiene",
+          "type": "text",
+          "prompt": "Set the daily dial limit for each phone number, the services you rotate between, and the pre-session check you run on your caller ID. Explain how these steps prevent carriers from flagging your line as spam during a calling block.",
+          "example": "Keep each number under about 50 dials a day and rotate Line2, JustCall or Aircall numbers [All The Leads — KirkNi05zPU @ 00:37:37]. Before every session, call a non-contact and confirm what your caller ID displays, because Jim lost hours on about 100 calls to an undetected flag [All The Leads — P5kUaYnRKbo @ 00:08:24]."
         },
         {
-          "name": "Court delay and family dispute fallback",
+          "name": "opening_script_and_pivots",
           "type": "textarea",
-          "prompt": "Specify the trigger, owner, communication plan, and cash response for a postponed hearing or material family dispute. Identify what work stops and what property-protection tasks continue under valid authorization.",
-          "example": "A hearing moves by 60 days while a beneficiary challenges the sale. The coordinator moves the expected $15,000 receipt out of the current cash forecast. Counsel directs the procedural response; the broker pauses unsupported closing promises. Authorized insurance, security, and maintenance tasks continue with weekly updates."
+          "prompt": "Write your opening line for a cold probate call and two pivots for common put-offs, such as the attorney handling everything. Show how each pivot offers real value, such as insurance or resources, instead of pressing the family to sell immediately.",
+          "example": "Open with the family's hardest problem and ask to send a resource package. When told the attorney is handling everything, pivot to vacant-home insurance, since carriers can deny coverage after 30 days of vacancy and Lloyd's can insure within an hour [All The Leads — P5kUaYnRKbo @ 00:25:08]. Without value, nobody calls back [All The Leads — et_msiK8rvo @ 00:26:05]."
         },
         {
-          "name": "Housing-cycle response and capacity threshold",
+          "name": "hidden_heir_and_decision_makers",
           "type": "textarea",
-          "prompt": "Define measurable market and capacity triggers for adjusting pricing advice, spending, or intake volume. Preserve representative control over sale decisions and avoid treating increased leads as proof that the team can close more transactions.",
-          "example": "If median listing age exceeds 60 days or showings fall below two weekly for three weeks, the broker updates comparables and presents options to the representative. At more than 12 active files per coordinator, new intake slows until the broker verifies workload and funds additional capacity."
+          "prompt": "List the questions you will ask to uncover every heir, the realtor connection, and all decision-makers before booking an appointment. Explain how you confirm each decision-maker will attend by phone or in person and what you send ahead of time.",
+          "example": "Ask: no other family members are going to try to nose into this, are they? Bruce Hill says it brings the truth out most of the time [Probate Mastery — sVEhoM1KXUo @ 00:49:04]. Guess the realtor connection wrong on purpose [Probate Mastery — uTFKO8zRNsI @ 00:53:32]. Email PDF listing package ahead and require every decision-maker present [Probate Mastery — z0GTjTG76ls @ 00:07:33]."
         },
         {
-          "name": "Failure monitoring and manual recovery",
+          "name": "follow_up_engine",
           "type": "textarea",
-          "prompt": "Document the automation health signals, alert recipient, recovery method, and replay controls. Specify how the team continues deadline review during an outage without creating duplicate tasks or unauthorized communications.",
-          "example": "A missing daily heartbeat by 10:00 a.m. alerts the coordinator. They review the authorized court source and the exported active-file deadline list manually. Recovery replays events using stable event IDs, creates no duplicate tasks, and requires a spot-check of five files before scheduled processing resumes."
+          "prompt": "Describe your follow-up engine after the first conversation, including response time on inbound calls, how many dials happen on day one, and how long you nurture someone who holds you off. Name who on your team handles each follow-up task.",
+          "example": "Three dials on day one, inbound follow-up inside 15 minutes, and no asking permission to follow up [Probate Mastery — uTFKO8zRNsI @ 00:24:28]. Resistant PRs get about $61 of nurture over 6 to 8 months [Probate Mastery — kvSTArlGoMU @ 00:54:45], because three touches do not do it [Probate Mastery — dzqHqDnAl_E @ 00:06:02]. The VA runs follow-up; you run conversations."
         }
       ],
-      "completion_gate": "The pipeline has authorized sources, tested duplicate protection, central suppression handling, assigned review responsibilities, a base funnel that reconciles to 34 closings, and a demonstrated manual recovery path for docket and checklist outages."
+      "completion_gate": "Complete when every worked county has a named source and cost, the scrub process has an owner and daily quota, the mail piece and drip schedule are priced per recipient, merge fields and tags are mapped, dial limits are set, scripts include two value pivots, and the follow-up owner is named."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod Scorecard, and Exit-Readiness Ledger",
-      "purpose": "Launch the operating system in 30 days without confusing setup progress with earned commissions. Define accountable roles, staged spending, measurable service quality, and transferable records that support a durable small-team brokerage while respecting the longer probate deal cycle.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Probate Wholesale Execution and Senior Transition Sales",
+      "purpose": "Execute fresh-filing probate wholesale deals with enforceable paper and buyer access, then apply the same authority-first discipline to senior home sales and to any reinvestment of commissions into rentals or residential assisted living.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Break the first month into four work packages with named owners and inspectable deliverables. Prioritize licensing, authority review, cash planning, and file controls before expanding outreach. Treat 30 days as an operating-system launch, not a promised closing deadline.",
-        "Assign work by licensed responsibility and actual capacity. Use the canonical staffing models as scenario references, but stage hiring against funded runway and case demand. A contractor label does not replace a worker-classification review or proper supervision.",
-        "Publish a weekly scorecard containing lead quality, authority readiness, file aging, service reliability, cash coverage, and realized retained revenue. Give every metric an owner, denominator, measurement period, and trigger that changes a specific operating decision.",
-        "Separate launch acceptance tests from mature economic targets. Demonstrate the workflow on synthetic records and then review authorized live cases. Record missed deliverables honestly and carry unresolved items into the next sprint with assigned dates and resources.",
-        "Build transferability from the first month: clean records, documented processes, reconciled receipts, permission-aware data exports, and a second person able to operate critical checklists. Do not assume client contracts, licenses, or referral relationships transfer automatically in a sale."
+        "Work only fresh filings and reach the personal representative quickly, before inheritance-list buyers arrive.",
+        "Listen far more than you talk on the first call and hold price until the representative's problems are clear.",
+        "Anchor price, deposit, and terms first, then re-paper with a new date once letters issue so the contract can be enforced.",
+        "For senior sales, secure power of attorney or the senior's signature plus one family contact, and confirm every payoff before pricing.",
+        "Before reinvesting commissions, clear zoning for the exact address, the debt service coverage ratio, and the bed-fill marketing plan."
       ],
       "fields": [
         {
-          "name": "Days 1–7 foundation package",
-          "type": "textarea",
-          "prompt": "Assign the first week's jurisdiction, licensing, authority, budget, and workflow deliverables. Give each item an owner and objective acceptance evidence, including the conditions that prevent premature marketing or spending.",
-          "example": "By day 7, the broker verifies DRE status, selects Sacramento County, and reviews the representation packet. The coordinator creates the case template and access matrix. The owner approves the $90,000 launch plan and identifies the month-18 cash gap. No live listing begins without documented authority."
+          "name": "fresh_filing_window",
+          "type": "text",
+          "prompt": "Define the filing-date window you will pull for wholesale outreach and the source you will use. Explain why fresh filings beat older inheritance lists and how quickly you plan to reach each personal representative after the court filing.",
+          "example": "Pull only filings from the last 30 days and never go back more than 90, because inheritance lists cost thousands and are picked to death [Flip With Rick — e3YN7RJaj6U @ 00:59:35]. Rick Ginn puts it plainly: fresh probates is a must [Rick Ginn — LqNx0dBk2f8 @ 00:32:46]. Source: courthouse pull or XLeads, worked within 30 days."
         },
         {
-          "name": "Days 8–14 workflow and testing package",
+          "name": "first_call_listening_plan",
           "type": "textarea",
-          "prompt": "Specify the second week's system configuration, synthetic cases, reconciliation tests, and recovery exercise. Define what must pass before staff use the workflow for live confidential documents or external communications.",
-          "example": "By day 14, create five synthetic cases and run duplicate, authority, access, deadline-change, and receipt-mismatch tests. Disable the docket importer for one exercise and complete manual review. The broker checks results; failed permissions tests block live document uploads until corrected and retested."
+          "prompt": "Describe how you will run the first warm call with a personal representative, including your listening ratio and whether price comes up. Explain how you will build trust while keeping the conversation focused on the representative's problems rather than your offer.",
+          "example": "Run warm calls at 80/20 or 90/10 listening and give no price on the first call. Use the McDonald's/Burger King split, with different names on calls and letters, and leave a voicemail only on the third or fourth attempt [Flip With Rick — ZS8hjtChnG8 @ 00:23:13]. Remember that time kills all deals [Brent Daniels - Wholesaling Inc — wmbh_a5UnqI @ 00:23:51]."
         },
         {
-          "name": "Days 15–21 relationship and intake package",
+          "name": "price_deposit_terms_anchor",
           "type": "textarea",
-          "prompt": "Define the third week's target audience, reviewed outreach, meeting goals, and intake quality checks. Separate controllable activity targets from introductions or engagements that depend on independent counterparties choosing to respond.",
-          "example": "Prepare 20 reviewed law-firm contacts, send permitted individualized messages, and seek four introductory meetings. Actual meetings are reported separately from invitations. For each authorized estate introduction, the broker reviews authority and property fit before the coordinator creates a live transaction file."
+          "prompt": "Record the price, earnest money deposit, and sell-before-completion terms you will anchor with the personal representative before any attorney reviews the deal. Note the contract form you will use and confirm whether the assignability option is preserved in writing.",
+          "example": "Anchor price, an EMD of at least $500, and the sell-before-probate-completes terms with the PR before any lawyer reviews it, and keep the assignability box ticked [Flip With Rick — e3YN7RJaj6U @ 02:21:35]. Use the state-approved contract. Rick Ginn warns the attorney will kill your wholesale deal right off the bat [Rick Ginn — WU_DwL7k5ZE @ 00:36:55]."
         },
         {
-          "name": "Days 22–30 launch acceptance package",
-          "type": "textarea",
-          "prompt": "Define the final week's evidence review, cash check, service rehearsal, and next-month decision. Make launch completion independent of whether a commission has arrived, while keeping uncompleted deliverables visible.",
-          "example": "By day 30, the broker reviews all active files, the owner refreshes runway, and the coordinator rehearses the Friday client update. Accept launch only when critical controls pass. Record $0 earned commission if no closing occurred; the canonical first-deal expectation remains 4–18 months."
+          "name": "letters_and_repapering",
+          "type": "text",
+          "prompt": "Confirm whether the personal representative already holds letters of administration and describe how you will re-paper any early contract once they issue. Explain why an agreement signed before letters may not be enforceable and what dates the new paper carries.",
+          "example": "Confirm the PR holds letters of administration and re-paper the contract with a new date after they issue [Michael Franke — iJVCVwX-rmA @ 00:12:47]. Executors often start marketing before the property can be sold [Flipping Mastery TV — K_L_G6jbyAE @ 00:11:25]. Write a 6-month validity, a 10-day inspection after probate, and EMD due at clear-to-close [Flipping Mastery TV — K_L_G6jbyAE @ 00:12:08]."
         },
         {
-          "name": "Pod roles and staffing progression",
+          "name": "attorney_stance",
           "type": "textarea",
-          "prompt": "Assign the full-time and contractor responsibilities for the canonical scenarios. Explain how the launch stages capacity and how additional roles are authorized without assuming unpaid labor or automatic worker-classification outcomes.",
-          "example": "Conservative and base reference 2 FT + 3 C: licensed lead, transaction coordinator, and three specialist contractors. Scaled uses 3 FT + 4 C, seven people total, adding licensed capacity and another specialist. Launch starts lean; hiring requires funded costs, scope clarity, and applicable classification review."
+          "prompt": "Decide how you will treat the estate's probate attorney on a wholesale deal: as a closing partner or as a party to work around. Explain who the attorney actually represents and how you will verify the correct sale process in your state.",
+          "example": "Michael Franke notes you may pay for or assist with the process, but the attorney represents the family, not you [Michael Franke — iJVCVwX-rmA @ 00:08:06]. Verify the sale process in order through the state probate-court website, the title company, then a real estate attorney before accepting appraisal or BPO demands [Rick Ginn — OMiXHCnv8tU @ 00:07:36]."
         },
         {
-          "name": "Weekly leading-indicator scorecard",
+          "name": "buyer_access_and_speed",
           "type": "textarea",
-          "prompt": "Specify leading metrics with targets, denominators, owners, and corrective actions. Prioritize qualified intake, evidence readiness, service timeliness, and capacity rather than raw contact counts or unsourced claims about pipeline value.",
-          "example": "The coordinator reports qualified introductions, consultations held, authority-ready files divided by engaged files, and on-time updates divided by updates due. Target 100% authority readiness and at least 95% timely updates. Two missed updates trigger a workload review before additional intake is assigned."
+          "prompt": "Describe how cash buyers will tour the vacant probate house without coordinating with a distant personal representative, and how you will price speed into the deal. Include rekey costs, lockbox setup, and where any premium for a fast close is paid.",
+          "example": "Rekey the vacant house through a locksmith for $50 to $75, then install a lockbox so cash buyers can tour without the out-of-state PR [Flip With Rick — e3YN7RJaj6U @ 02:40:26]. A buyer may pay $10,000 more for a faster close, with proceeds going to the estate account [Rick Ginn — LqNx0dBk2f8 @ 00:51:04]."
         },
         {
-          "name": "Monthly realized-results scorecard",
-          "type": "textarea",
-          "prompt": "Define the monthly revenue, cost, profit, cash, and closing metrics. Tie them to actual ledger evidence and show canonical annual comparisons without treating a monthly average as a predictable receipt schedule.",
-          "example": "Base annual targets are 34 closings, $510,000 retained revenue, $369,750 costs, and $140,250 owner profit. Arithmetic monthly averages are $42,500 revenue, $30,812.50 costs, and $11,687.50 profit. The dashboard shows actual receipts and earned revenue separately because probate closings do not arrive evenly."
+          "name": "pipeline_persistence",
+          "type": "text",
+          "prompt": "Set your expected response rate on probate letters, the number of offers you must make per deal, and how many months you will mail before judging results. Note how you will handle the slow holiday season when competitors go quiet.",
+          "example": "Expect 1 to 2 calls per 100 pieces; 3 to 4 months without a deal is normal, and most people quit at 45 days [Rick Ginn — WU_DwL7k5ZE @ 00:38:32]. Fifteen offers get one deal [Real Estate Skills — M9iyZc2j_uQ @ 01:19:00]. Mail through the holidays, when December lead counts drop about 38% and competition idles [Probate Mastery — AAF69oF79DU @ 00:02:29]."
         },
         {
-          "name": "Thirty-day stop continue or adjust decision",
+          "name": "senior_authority_and_contact",
           "type": "textarea",
-          "prompt": "State the specific conditions for continuing, reducing spend, changing the service lane, or pausing new intake. Use evidence from runway, qualified demand, execution quality, and unresolved authority or licensing issues.",
-          "example": "Continue the county pilot when controls pass, outreach produces relevant conversations, and the next 90 days of committed spending are funded. Reduce discretionary spend if runway falls below six months before reliable receipts exist. Pause affected engagements immediately for unresolved authority or licensing defects."
+          "prompt": "Before listing a senior's home, document who holds power of attorney or whether the senior will sign directly, and name the single family contact. Explain how this setup shortens the timeline from first family meeting to closing for everyone involved.",
+          "example": "No senior listing without a power of attorney or the senior signing, plus one designated family contact [Florida Realtors YouTube — yyvDp4R_T84 @ 00:02:16]. With both in place, Sheri Coleman reports the cycle can run as short as six weeks from family meeting to closing in Vero Beach [Florida Realtors YouTube — yyvDp4R_T84 @ 00:01:01]. Educate everyone on pricing early."
         },
         {
-          "name": "Exit-readiness evidence and transfer restrictions",
+          "name": "senior_sale_payoffs_and_care_funding",
           "type": "textarea",
-          "prompt": "List the records a prospective successor would need to verify earnings, workflow, and client obligations. Identify restrictions on contract assignment, data sharing, licensing, and referral continuity before preparing any external diligence package.",
-          "example": "Maintain 24 months of reconciled retained-commission records when available, source attribution, documented procedures, vendor terms, and an exception log. A successor receives redacted summaries first. Counsel reviews assignment and confidentiality terms; the broker confirms licensing requirements. No valuation assumes that estate listings or attorney relationships transfer automatically."
+          "prompt": "List every payoff the senior's sale must cover, including any reverse mortgage balance, and the monthly care cost the proceeds will fund. Estimate how many months of private pay the net proceeds provide before other funding must step in.",
+          "example": "Any reverse mortgage must be paid off at closing. Bay Area assisted living or memory care runs $5,000 to $12,000-plus per month [Simplify Senior Transitions with Dale Corpus — S5zYm8kcrug @ 00:02:35]. Families need two years of private pay saved to stay under Medicaid [Discover Colorado - The Cobb Home Team — 1kkoh35VCho @ 00:00:36]."
         },
         {
-          "name": "Key-person coverage and improvement ledger",
+          "name": "ral_zoning_and_debt_check",
           "type": "textarea",
-          "prompt": "Identify critical tasks dependent on one person, name a qualified backup, and schedule a coverage exercise. Record improvement items with evidence, owners, and dates so transferability improves through tested operations rather than documentation alone.",
-          "example": "The broker is the only current negotiator, so qualified licensed coverage must be arranged before absence. The coordinator trains a permitted backup on deadline review and document permissions. A two-day coverage exercise tests five active-file tasks; any missed reminder receives an owner, correction date, and repeat test."
+          "prompt": "If you plan to redeploy probate commissions into rentals or a residential assisted living home, record your zoning verification, site plan, marketing plan to fill beds, and debt service coverage ratio. Explain which check must clear before any offer is made.",
+          "example": "No offer until planning and zoning confirms the use for that exact address [Serg Lupescu — JUTV80jUHSI @ 00:03:53]. Brett Chotkevys spent $240 on a rough site plan to learn exactly what is allowed [Brett Chotkevys — fFnH_VM4S48 @ 00:02:51]. Rentals need a debt service coverage ratio of roughly 1.2 [Unit Math — i8GDo8WTXWw @ 00:07:03]. Budget for paid placement-agent leads."
         }
       ],
-      "completion_gate": "The 30-day deliverables are evidenced, critical controls have passed their tests, the next spending period is funded or reduced to available resources, scorecard ownership is assigned, and the exit-readiness ledger distinguishes verified records from future evidence still to be accumulated."
+      "completion_gate": "Complete when the filing window and source, first-call plan, anchored price, deposit and terms, letters verification and re-papering dates, attorney stance, buyer access plan, persistence targets, senior authority and payoff figures, and zoning and debt checks are all recorded with concrete numbers."
     }
   ]
 }

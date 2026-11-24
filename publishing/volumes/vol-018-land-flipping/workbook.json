@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-018-land-flipping",
   "volume_id": "vol-018-land-flipping",
-  "title": "Land Flipping — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Vacant-Land Selection, GIS Underwriting, Parcel Economics, Title-Insured Closings, Minor Subdivisions, and Small-Team Portfolio Control",
+  "title": "Land Flipping — Practitioner Testimony Operator Workbook",
+  "subtitle": "Buy Below Value, Market With Discipline, and Verify Every Acre: Worksheets for the land flipping business model, direct mail and texting engines, compliant outbound, raw-land list building, sold-comp pricing, and perc, septic, and site due diligence",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Parcel Opportunity Underwriting and Counterparty Qualification",
-      "purpose": "Translate a vacant-land lead into a documented acquisition thesis before committing earnest money. Establish the intended buyer, supportable resale price, usable acreage, recorded access, seller authority, and evidence requirements that distinguish a marketable parcel from a cheap but unsellable liability.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Business Model and Direct Mail Engine",
+      "purpose": "Lock in the buy price, county selection, parcel scrub, offer math, and direct mail economics that turn scrubbed county lists into signed contracts with vacant landowners who own free and clear.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Choose one county, one parcel category, and one buyer profile before importing owner records. Describe the exit as a specific permitted use, then identify the evidence needed to support that use without relying on listing language.",
-        "Create a parcel evidence folder containing assessor records, recorded instruments, zoning sources, comparable deeds, and dated GIS exports. Record each source date and custodian so another operator can reproduce the underwriting without repeating every search.",
-        "Separate preliminary screening from acquisition clearance. A mapped road, utility line, or favorable zoning color supports further investigation only; obtain the recorded rights, provider response, and local interpretation required for the proposed exit.",
-        "Contact the seller through an approved channel and verify their relationship to the vesting owner before discussing binding terms. Route estates, trusts, entity transfers, and disputed ownership to the settlement team for authority review.",
-        "Calculate a maximum acquisition price using supported proceeds and the complete cost stack. Record the exact evidence that would change the decision, and reject opportunities whose economics depend on unapproved subdivision or speculative utility extensions."
+        "Work through one target county at a time and complete every field before pulling a list or paying for a single mail piece or text.",
+        "Use sold land-only numbers for every price input, and write each figure as a specific dollar amount, percentage, or count rather than a range you hope for.",
+        "Cite the practitioner benchmark you are measuring against next to each answer so later campaign results can be compared to a known standard.",
+        "Revisit fields five through ten after every completed mail drop and update the ratios with your own conversations had and cash collected.",
+        "Do not move to the outbound and data worksheet until funding for six months of drops is set aside and the completion gate below is signed."
       ],
       "fields": [
         {
-          "name": "Target parcel and buyer thesis",
-          "type": "textarea",
-          "prompt": "Define the geography, parcel size, current permitted use, buyer segment, and intended disposition. Explain why this segment offers repeatable demand rather than merely a low asking price or attractive aerial photograph.",
-          "example": "Target existing residential lots of 0.25–0.75 acres within a twenty-minute drive of an established employment center. The buyer is a local builder purchasing one buildable lot. Underwrite an $85,000 resale only when recent closed lots support similar frontage, utilities, and permitted housing density."
+          "name": "target_buy_percentage",
+          "type": "text",
+          "prompt": "Write the exact percentage of market value you will pay for vacant parcels, and explain where that number sits against the practitioner range of 5% to 30%, 50% to 55%, and roughly 80% with subdividing to manufacture margin.",
+          "example": "Target buy: 30% to 40% of market value through direct mail, the band the Apke Brothers describe [Apke Brothers — U4C3AVYK9M4 @ 00:00:01]. Deep-discount floor reference: Seth Williams buys at 5% to 30% of value, and one REtipster parcel bought for $4,587 sold for $20,000 [REtipster — pBstDNy9IuM @ 00:10:47]. Anything above 55% requires a subdivide plan before signing."
         },
         {
-          "name": "Parcel identity and source chain",
+          "name": "county_selection_criteria",
           "type": "textarea",
-          "prompt": "Record the assessor parcel identifier, vesting deed reference, legal description source, acreage discrepancies, and evidence timestamps. Explain how the settlement agent will resolve differences between tax mapping and the conveyed property.",
-          "example": "Working parcel LF-018-001 has assessor acreage of 0.52 and deed acreage of 0.49. The acquisition file retains the recorded deed, assessor export, and survey request. Pricing uses the smaller acreage until the surveyor and title examiner reconcile boundaries and the conveyance description."
+          "prompt": "List the counties you will market to and prove each one clears the volume screen: annual land sales count, active listings versus sold listings, and days on market. Note which small counties must be bundled with neighbors before a campaign launches.",
+          "example": "Ocala-area target county: 412 land sales last year, fewer active listings than sold listings, and median days on market of 74, so it clears the 200-sale floor Thomas uses [Thomas | Land Flipping — ZfyoS572Kbk @ 00:52:56]. A smaller neighbor produced only 780 text records, so it gets bundled with adjoining counties to avoid burnout [Thomas | Land Flipping — ZfyoS572Kbk @ 02:01:35]."
         },
         {
-          "name": "Seller identity and signing authority",
+          "name": "parcel_scrub_rules",
           "type": "textarea",
-          "prompt": "Identify the vesting owner, proposed signer, ownership form, and authority documents required for closing. Describe the independent verification method and any ownership dispute that would stop negotiations or release of funds.",
-          "example": "The vesting owner is an LLC, while the inquiry came from a member using a personal email address. Escrow requests formation records, operating authority, and signer identification through its secure portal. No deposit leaves escrow until the settlement team accepts the signing authority."
+          "prompt": "Define the scrub rules you will run on every pulled list before an offer is priced. Name each disqualifier, such as wetlands, flood zone, steep slope, or missing access, and estimate what share of the raw list you expect to remove.",
+          "example": "Remove parcels with wetlands, flood zone, slope, or bad access, which strips 40% to 50% of a county list. Then delete the 30% to 40% of DataTree records that are garbage before any letter is merged [Sumner Healey — R4icAmTE4WI @ 00:04:05]. Map-only frontage gets flagged: sometimes it looks like you have access, but you don't [DealMachine Podcast — HE45qWS8txg @ 00:12:30]."
         },
         {
-          "name": "Recorded access and physical access",
+          "name": "offer_formula",
           "type": "textarea",
-          "prompt": "Distinguish public frontage, recorded easement rights, physical passability, and maintenance obligations. Identify the instruments and professional review needed to demonstrate access suitable for the proposed buyer's use and likely construction traffic.",
-          "example": "An aerial image shows a gravel lane, but the deed does not establish access rights. Request the recorded easement, benefited parcel description, width, maintenance terms, and title treatment. Reject the acquisition if residential and construction access cannot be established before the inspection deadline."
+          "prompt": "Show the math behind your offer price for one county. Start from the median price per acre of sold comps, subtract agent, closing, and lender costs, then apply your target buy percentage and write the final per-acre offer number.",
+          "example": "Median sold price is $10,000 per acre; subtract agent, closing, and lender costs to reach a net resale figure, then apply the target percentage to land the per-acre offer. Every county is priced from a few great comps and acreage bands before upload, never auto-priced, since one user sent 50,000 mailers and got 2 deals [Apke Brothers — JRIbKp3FaEs @ 00:04:01]."
         },
         {
-          "name": "Zoning and minor-subdivision feasibility",
+          "name": "channel_mix_roas",
           "type": "textarea",
-          "prompt": "Record current zoning, minimum lot dimensions, setbacks, frontage standards, and the local subdivision process. Separate an existing-parcel resale from a proposed split, including required approvals, infrastructure conditions, fees, and processing dependencies.",
-          "example": "The parent tract contains 1.20 acres, but a proposed three-lot split requires minimum frontage that one child lot lacks. Underwrite the existing parcel only. A subdivision case must separately price surveying, application fees, improvement conditions, recording, and the county's written processing sequence."
+          "prompt": "Decide your opening channel mix between direct mail and texting, and record the return on ad spend you will hold each channel to. Explain how you will split budget if one channel outperforms the other over the first ninety days.",
+          "example": "Texting carries the larger share because Landon Bleau reports about 9x return on ad spend for texts versus about 3x for mail, with texting producing 60% to 70% of deals [REtipster — Uaqe67xWZN0 @ 00:38:55]. Mail stays in the mix at a 5x floor, matching the low end of the 5 to 10x band Clayton Hepler reports [DealMachine Podcast — HE45qWS8txg @ 00:09:38]."
         },
         {
-          "name": "Utilities and buildable-envelope evidence",
+          "name": "marketing_volume_per_deal",
           "type": "textarea",
-          "prompt": "Document water, wastewater, power, drainage, and usable building area using provider and professional evidence. Distinguish nearby infrastructure from an enforceable connection opportunity with known capacity, extension scope, and buyer responsibilities.",
-          "example": "Water is visible across the street, but the provider quotes a $12,000 connection and road-crossing package. The resale comparison assumes connected lots, so either deduct that burden from supported value or obtain comparable unconnected sales. A nearby main does not establish available capacity."
+          "prompt": "Estimate how many mailers or texts you must send to close one deal, and multiply that by your per-piece cost. Write the resulting marketing spend per deal next to the average profit you expect, and flag the gap.",
+          "example": "Model one deal per 2,500 mailers at about 60 cents each, or roughly $1,500 of marketing per deal against about $18,500 net [Apke Brothers — U4C3AVYK9M4 @ 00:01:03]. Stress case: 6,000 to 8,000 mailers or 30,000 to 40,000 texts per deal at about $25K average profit, still a clearly positive return on every closed deal [DealMachine Podcast — HE45qWS8txg @ 00:09:38]."
         },
         {
-          "name": "Environmental and terrain screening",
-          "type": "textarea",
-          "prompt": "List flood, wetland, slope, dumping, historic-use, and habitat indicators, together with their source dates. Identify which conditions require field investigation and how unresolved constraints affect usable acreage, pricing, and acquisition timing.",
-          "example": "County terrain data suggests a steep rear section, and a federal wetland inventory shows a mapped feature nearby. Exclude the rear section from the preliminary building envelope. Commission appropriate field review before pricing a homesite that depends on grading or filling that area."
+          "name": "mail_cost_and_runway",
+          "type": "text",
+          "prompt": "Record your all-in cost per mail piece and the monthly volume you can sustain. Confirm in writing that your cash covers at least six months of drops, including slow early results, before the first batch leaves the print house.",
+          "example": "All-in cost is $0.69 per piece with no minimum, the same price for 1 or 10,000 pieces [Apke Brothers — cFfiZJm0txo @ 00:30:07]. At 2,000 pieces a month that is $1,380 monthly, so six months of runway equals $8,280 set aside before the first drop [Apke Brothers — cFfiZJm0txo @ 00:08:16]. Funding stays separate from purchase capital for parcels."
         },
         {
-          "name": "Closed-sale comparison and liquidity",
+          "name": "offer_letter_style",
           "type": "textarea",
-          "prompt": "Select verified closed sales with comparable rights, utilities, size, and permitted use. Record sale dates, concessions, market exposure, and adjustments, explaining why active asking prices do not establish executable resale proceeds.",
-          "example": "Three verified comparable lots closed at $82,000, $86,000, and $89,000 after 74, 103, and 118 market days. The highest sale included a paid connection fee. Support an $85,000 subject resale only after adjusting that benefit and confirming similar recorded access and usable frontage."
+          "prompt": "Choose your letter format, whether blind priced offer, neutral letter, or range letter, and justify it. Describe what goes inside the envelope, including any enclosed purchase agreement, and how you will confirm merged pricing before the full drop.",
+          "example": "Blind priced offer, because the seller needs a number to react to. A one-page purchase agreement rides in the envelope, and sellers have texted back a photo of the signed agreement [Land Investing Pros — gMTr4Kngzx8 @ 00:05:52]. A merged proof of 10 to 20 letters confirms the offer price variable before the full drop [Land Insights — Tj5JsRK_YdQ @ 00:29:27]."
         },
         {
-          "name": "Counterparty and settlement qualification",
+          "name": "template_tracking",
           "type": "textarea",
-          "prompt": "Qualify the listing broker, settlement provider, survey resource, and likely buyer for land-specific execution. Record capacity, service scope, verification procedures, fee evidence, and the failure that would trigger replacement of each provider.",
-          "example": "The broker supplies five recent vacant-lot closings and accepts a negotiated $3,375 disposition fee. Escrow confirms its title-underwriting relationship and independent wire-verification procedure. The diligence contractor provides survey coordination and identifies when a separately licensed environmental or engineering specialist must be engaged."
+          "prompt": "Assign a reference number to every mailer or text template you run. Describe the tracking sheet you will keep, including conversations had and cash collected per template, and state the rule for when you double down on a winner.",
+          "example": "Template M-01 is the long handwritten letter and M-02 is the short priced postcard, each stamped with its reference number and logged for conversations had and cash collected [Olufemi Ajose — tF_EbilAGj4 @ 00:14:48]. Text openers get trimmed to roughly 100 characters, the change that lifted Landon Bleau's reply rate from 13% toward nearly 20% [REtipster — Uaqe67xWZN0 @ 00:43:33]."
         },
         {
-          "name": "Acquisition decision and maximum bid",
+          "name": "remail_and_stale_leads",
           "type": "textarea",
-          "prompt": "State the supported resale amount, complete nonpurchase cost stack, required owner profit, and resulting maximum bid. Name unresolved evidence and specify whether the decision is rejection, conditional pursuit, or documented acquisition readiness.",
-          "example": "At $85,000 proceeds, subtract $15,725 target profit, $2,200 buy-side closing, $1,800 diligence, $1,500 expected cure work, $2,400 carrying, $3,375 selling, and $10,000 overhead allocation. Maximum acquisition price is $48,000. Pursue conditionally, with recorded access and utility evidence still required before closing."
+          "prompt": "Write your remail calendar and stale-lead rules. State how many months you wait before remailing a list that produced zero deals, how you handle sellers who said no, and how long old leads stay in active follow-up.",
+          "example": "Lists that flop get remailed after 3 months, since one mailer got zero deals and the same data remailed three months later made $100,000 [Sumner Healey — R4icAmTE4WI @ 00:06:24]. Red sellers stay in follow-up for up to 2.5 years [Sumner Healey — R4icAmTE4WI @ 00:08:35], because someone who says no in April can turn around and sell in June."
         }
       ],
-      "completion_gate": "The owner signs a dated investment memo identifying the parcel, verified seller authority, supported buyer use, three reviewed comparables, maximum bid, and every unresolved acquisition condition. No unresolved access or buildability assumption is described as established."
+      "completion_gate": "Complete only when every target county clears the 200-sale floor, the scrub removes flood, wetland, slope, and access problems, offers are hand-priced from comps and acreage bands, a merged proof has been checked, and six months of mailing runway sits in a dedicated account."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-      "purpose": "Reconcile parcel-level decisions to the canonical annual scorecard while keeping purchase capital, operating expenses, reserves, and sale proceeds distinct. Model the cash trapped in unsold inventory, the effect of slower exits, and the exact bid reductions needed when defects or selling costs increase.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Outbound Acquisition, Compliance, and List Building",
+      "purpose": "Choose and budget outbound channels, write compliant openers, scrub every list against registries and litigator files, and build stacked raw-land lists from public-record data verified at the Recorder before the first dial or text.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Use gross parcel sale proceeds as the revenue basis for owned-land trading. Include acquisition costs in the net-margin calculation, exclude borrowed principal from revenue, and keep seller deposits and owner contributions outside earned operating income.",
-        "Build each parcel budget from purchase price through disposition, then allocate annual overhead consistently. Mark forecasts as forecasts and replace them with incurred costs at close; an unspent cash reserve does not become an expense automatically.",
-        "Reconcile Conservative, Base, and Scaled annual totals before using a parcel calculator. Changes to resale prices, volume, staffing, or cost assumptions belong in a separately labeled sensitivity case rather than an altered canonical scorecard.",
-        "Construct a monthly cash schedule showing deposits, acquisitions, diligence, cure payments, carrying costs, and closing receipts. Stress the acquisition cadence against delayed dispositions, because an attractive annual margin can still exhaust available cash.",
-        "Set a cash floor and acquisition-pause trigger before making offers. Tie contingency releases to documented risk retirement, and distinguish parcel-level carrying costs from enterprise overhead so the same invoice is never deducted twice."
+        "Fill in the channel and budget fields first, because channel math decides how many records you need to buy and which platform fits.",
+        "Write openers, scripts, and scrub schedules word for word so a partner or assistant can run them exactly without improvising.",
+        "Test every filter setting on a small pull before buying the full county export, and record any field that comes back empty or broken.",
+        "Log the scrub date for every list and every campaign so compliance can be proven later if a demand letter ever arrives.",
+        "Review your texts-per-contract and calls-per-lead numbers monthly and replace practitioner benchmarks with your own results once you have three months of data."
       ],
       "fields": [
         {
-          "name": "Canonical scenario reconciliation",
-          "type": "textarea",
-          "prompt": "Enter the three required annual revenue, margin, owner-profit, and staffing combinations. Explain the revenue basis and identify which scenario is the operating plan without presenting the other scenarios as interchangeable forecasts.",
-          "example": "Conservative: $200,000 revenue × 12% = $24,000 owner profit, with 1 FT + 3 C. Base: $850,000 × 18.5% = $157,250, with 1 FT + 3 C. Scaled: $1,500,000 × 25% = $375,000, with 2 FT + 4 C. Revenue means gross owned-parcel sale proceeds."
+          "name": "channel_start_choice",
+          "type": "text",
+          "prompt": "Pick the first outbound channel you will launch, whether texting, cold calling, or mail, and defend the choice using cost per contract, your skill level, and the sellers each channel reaches on the same county list.",
+          "example": "Launch with texting, because if I were to start over I'd start with texting first [Apke Brothers — Ls2lelB6ImM @ 00:16:11]. Budget assumes $1,300 to $1,500 per contract from A/B-tested openers and automated follow-ups [Dylan Applegate — Hyk7GilIJ8g @ 00:13:37]. Mail joins in month three, since calling, texting and mail reach different sellers on the same county list, as Michael Bull observes."
         },
         {
-          "name": "Base parcel cost stack",
-          "type": "textarea",
-          "prompt": "List acquisition, purchase closing, diligence, expected defect work, carrying, disposition, and allocated overhead separately. Show the total cost and owner contribution for one representative parcel using the Base scenario assumptions.",
-          "example": "One $85,000 sale carries $48,000 acquisition, $2,200 purchase closing, $1,800 diligence, $1,500 expected cure work, $2,400 carrying, $3,375 disposition, and $10,000 overhead. Total cost is $69,275; owner profit is $15,725. Ten identical completed sales reconcile exactly to the Base annual scorecard."
+          "name": "texts_per_contract_benchmark",
+          "type": "text",
+          "prompt": "Set your own texts-per-contract benchmark for a beginner and for a skilled texter. Multiply your planned monthly send volume by those ratios and write how many contracts per month that volume realistically produces at each skill level.",
+          "example": "Skilled benchmark is about 10,000 texts per contract; unskilled is 30,000 to 40,000 [Michael Bull — PMSn1EaZ42Y @ 00:06:01]. At 100,000 texts a month, that is only three contracts a month on the weaker ratio [Michael Bull — PMSn1EaZ42Y @ 00:06:15]. The Apke Brothers range of one per 5,000 skilled versus one per 20,000 beginner sets the stretch goal."
         },
         {
-          "name": "Annual volume and expense bridge",
+          "name": "text_opener_compliance",
           "type": "textarea",
-          "prompt": "Translate annual proceeds into an illustrative count of completed sales and average selling price. Reconcile total expenses and enterprise overhead without implying that these illustrative parcel counts are additional canonical operating requirements.",
-          "example": "Illustratively, Conservative sells four parcels at $50,000, with $176,000 total costs including $36,000 overhead. Base sells ten at $85,000, with $692,750 costs including $100,000 overhead. Scaled sells fifteen at $100,000, with $1,125,000 costs including $180,000 overhead. Each produces the required scenario profit."
+          "prompt": "Draft your first outbound text word for word. Confirm it states who you are, who you are contacting, and the marketing purpose, stays near 100 characters, and contains nothing casual or cryptic that could become screenshot evidence later.",
+          "example": "Opener: 'Hi, this is Dana with Ridge Land Co, reaching out to the owner of the parcel on County Road 12 about buying it.' It names the sender, the recipient, and the marketing purpose [REIPrintMail — L4oZCP8R6RQ @ 00:14:59]. From a TCPA perspective, calls and texts are the exact same thing, so the same rules apply [REIPrintMail — L4oZCP8R6RQ @ 00:13:11]."
         },
         {
-          "name": "Scrub failures and defect reserve",
+          "name": "dnc_litigator_scrub",
           "type": "textarea",
-          "prompt": "Estimate rejected-lead diligence and acquired-parcel cure exposure using explicit probabilities or observed cohorts. Separate cash earmarks from recognized expenses, and state how actual spending changes the forecast and final parcel margin.",
-          "example": "Budget $18,000 annual diligence, including abandoned-lead research, and allocate it across ten completed sales. Separately forecast $15,000 of incurred cure work, or $1,500 per sale. If only $9,000 is incurred, owner profit rises by $6,000 with other costs unchanged; unused earmarks are not expenses."
+          "prompt": "Document your compliance scrub schedule. List each registry and litigator database you will run before first contact, how often the scrub repeats, and the deadline your team follows for honoring removal requests once a seller asks to stop.",
+          "example": "Before first contact and every 30 days after, the list runs against the national and state DNC registries plus LexisNexis, Blacklist Alliance, and Contact Center Compliance litigator files, and removals are honored within 10 business days [REIPrintMail — L4oZCP8R6RQ @ 00:30:55]. The scrub date and file version are logged on every campaign sheet for audit."
         },
         {
-          "name": "Inventory float and startup funding",
+          "name": "honey_pot_screen",
           "type": "textarea",
-          "prompt": "Calculate cash committed before disposition across concurrent parcel slots. Add overhead runway and a separate liquidity buffer, identify the funding source, and compare the result with the stated startup capital range.",
-          "example": "Each slot commits $55,900 before selling fees: purchase, buy-side closing, diligence, cure work, and carrying. Three slots require $167,700. Add $50,000 for six months of Base overhead and $20,000 liquidity buffer: $237,700 startup funding, within the $15,000–$75,000 range. Selling fees are deducted at disposition."
+          "prompt": "Write the warning signs that tell you a seller may be a honey pot setting up a TCPA demand letter. Describe exactly how you will respond when an overeager seller pushes for the purchase and sale agreement before any real negotiation.",
+          "example": "Red flags: feigned motivation, no questions about price, and repeated demands for paperwork, because what they're waiting for is for you to send them the purchase and sale agreement for their property [Ryan Dossey — hzDGK6PCjPg @ 00:02:41]. Response: pause, verify ownership and the contact record, and send nothing until the lead passes review."
         },
         {
-          "name": "Cash conversion and holding delay",
+          "name": "list_stacking",
           "type": "textarea",
-          "prompt": "Specify acquisition-to-cash timing, monthly parcel carrying costs, and the effect of slower closings. Distinguish a cost sensitivity from an annual volume shortfall, and avoid assuming inventory proceeds arrive merely because listings are active.",
-          "example": "The Base parcel carries for four months at $600 monthly, totaling $2,400. A three-month delay adds $1,800 and reduces parcel profit to $13,925. Across ten unchanged sales, profit becomes $139,250; if fewer sales close that year, rebuild annual revenue and inventory separately."
+          "prompt": "Explain how you will stack lists before any outreach. Name the distress lists you will overlay, such as code violations, pre-foreclosure, or tax delinquency, and assign each stack tier its own treatment of hand-dials, texts, video, or power dialer.",
+          "example": "Tier 1 is code violations stacked with tax delinquency, which gets hand-dials, texts, and a 20-second video; single-list records get the power dialer and text blast [Maximilian Dier — xPy40xTlt64 @ 00:04:41]. Stacked government lists run about 1,000 records per deal versus 12,000 on regular data, roughly 10x better, so Tier 1 gets the best callers [Maximilian Dier — xPy40xTlt64 @ 00:22:01]."
         },
         {
-          "name": "Resale haircut and bid sensitivity",
+          "name": "raw_land_filter",
           "type": "textarea",
-          "prompt": "Stress supported proceeds downward while holding clearly identified costs constant. Calculate revised dollar profit, revised margin, and the acquisition-price adjustment required to preserve the original dollar contribution under that sensitivity.",
-          "example": "A 10% resale haircut reduces $85,000 to $76,500. With the original $69,275 cost stack unchanged, profit is $7,225 and margin is approximately 9.44%. Preserving $15,725 dollar profit requires reducing acquisition from $48,000 to $39,500, assuming every other cost remains fixed."
+          "prompt": "Write the exact filter settings you will use to isolate raw land on your data platform. Include improvement value, acreage range, land-use codes, and owner location, and note any field on that platform known to be poorly populated or broken.",
+          "example": "Improvement value set to 0 so only parcels with no improvements remain [Apke Brothers — tZnXE47jWp4 @ 00:02:39]. Acreage range 1 to 100.01, so the filter does not round to 99.99 and drop parcels [PRYCD — 7jGQIvwqBwc @ 00:07:50]. Owner mailing address must sit outside the county, and PropStream improvement-value fields get spot-checked before trusting the final pull."
         },
         {
-          "name": "Funding terms and debt separation",
-          "type": "textarea",
-          "prompt": "Document equity, loan proceeds, repayment dates, interest, origination charges, and collateral restrictions. Show how financing costs enter parcel economics while principal movements remain separate from sale revenue and operating profit.",
-          "example": "A proposed $40,000 loan at 12% simple annual interest for six months adds $2,400 interest plus an $800 origination charge. Unless already budgeted, the $3,200 reduces Base parcel profit to $12,525. The $40,000 advance and principal repayment are funding movements, not revenue or duplicate acquisition expense."
+          "name": "data_platform_cost",
+          "type": "text",
+          "prompt": "Compare the per-record cost of the data platforms you are considering, such as DataTree, PropStream, PRYCD, or free county GIS. Estimate your total list cost after deduping owners, and note which platform also delivers offer pricing.",
+          "example": "DataTree exports run $0.10 per record with membership, and deduping owners lowers the charge, though the deduped count is not shown in advance [Apke Brothers — tZnXE47jWp4 @ 00:07:14]. PRYCD priced 300 records for $24, with the offer price included at a 25% default slider [PRYCD — 7jGQIvwqBwc @ 00:20:36]. Estimated list of 5,000 deduped records costs about $500."
         },
         {
-          "name": "Operating runway and acquisition pause",
+          "name": "ownership_source_verification",
           "type": "textarea",
-          "prompt": "Set monthly enterprise spending, minimum unrestricted cash, and a pause rule based on expected obligations. Explain how the team distinguishes available cash from escrowed deposits, restricted reserves, and optimistic projected sales.",
-          "example": "Base annual overhead of $100,000 equals about $8,333.33 monthly, with a final-month rounding adjustment. Maintain $20,000 unrestricted liquidity beyond committed parcel spending. Pause new deposits when a thirteen-week cash forecast falls below that floor, even if listed inventory appears to contain substantial paper profit."
+          "prompt": "Describe how you will confirm current ownership before an offer goes out. Name the county office you treat as the source of truth, the layers you treat as secondary, and how you request bulk files when a clerk resists.",
+          "example": "Ownership comes from the Recorder, not the Assessor or GIS layer, which update later and can be stale [Country Land Sellers — 6qNh515jvww @ 00:04:53]. When a clerk resists, the request is framed as a private tax-paying citizen doing private independent research, with the file asked for in Excel [Zach Ginn — 3VKazhO11yk @ 00:04:24]. Mismatches get pulled from the campaign."
         },
         {
-          "name": "Closeout reconciliation and owner distributions",
+          "name": "budget_channel_math",
           "type": "textarea",
-          "prompt": "Describe the parcel closeout process linking settlement statements, invoices, inventory cost release, overhead, and owner withdrawals. Identify the records that prove the annual profit bridge without treating distributions as operating expenses.",
-          "example": "Ten Base sales produce $850,000 revenue against $480,000 acquisition, $22,000 purchase closing, $18,000 diligence, $15,000 cure work, $24,000 carrying, $33,750 selling, and $100,000 overhead. Expenses total $692,750 and owner profit equals $157,250. Owner draws reduce cash and equity, not this operating expense bridge."
+          "prompt": "Run your monthly marketing budget against channel math before dialing. Using the calls-per-lead and leads-per-deal ratios, show how many records, dials, and weeks of work one deal requires, and state whether cold calling fits your budget.",
+          "example": "At 1,000 calls per lead and 30 leads per deal, one deal needs about 30,000 dials, so 10,000 records get called three times [Maximilian Dier — KmEcpx-t8YM @ 00:01:55]. With only $1,000 a month, cold calling is off the table, because a VA yields only one to two good leads a day [Maximilian Dier — uQ2jDRUrtoY @ 00:33:47]. Texting takes that budget instead."
         }
       ],
-      "completion_gate": "Every scenario reconciles to its canonical revenue and owner profit; the Base parcel totals $69,275 cost and $15,725 profit. The owner approves a thirteen-week cash forecast, explicit reserve treatment, and a funded acquisition-pause threshold before issuing offers."
+      "completion_gate": "Complete only when the opening channel fits the monthly budget, every opener names sender, recipient, and purpose, registry and litigator scrubs are scheduled every 30 days, the honey-pot response is written, and raw-land filters are proven on a test pull."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution Ledger and Parcel Technical QA Pre-Flight",
-      "purpose": "Control the complete parcel lifecycle from accepted offer through recorded disposition. Use evidence-linked status changes, reproducible GIS checks, title exception review, settlement controls, and cost reconciliation to prevent mismatched parcels, missed deadlines, unsupported marketing claims, and funds released against incomplete closing conditions.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Comping, Pricing, and Due Diligence",
+      "purpose": "Value each parcel from sold land-only comps in a tight size band, adjust for wetlands, soils, and access, and run perc, septic, survey, and overlay checks inside the diligence window while walking away is still possible.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Assign one internal deal identifier and preserve the county parcel identifier separately. Use the internal identifier across contracts, GIS layers, invoices, title files, and listings; never substitute a street address for a verified legal description.",
-        "Create a dated execution ledger with one accountable owner for each transition. Link source documents rather than summarizing them from memory, and make inspection expiration, title objections, deposit changes, and closing deadlines visible together.",
-        "Run GIS screening in a known coordinate system and record layer dates, limitations, and geometry checks. Escalate apparent boundary, access, or flood conflicts to the relevant professional instead of treating a map overlay as a survey.",
-        "Review the title commitment and settlement requirements before the acquisition deadline. Track each exception through acceptance, cure, or rejection, and require documented confirmation when a requested coverage provision cannot actually be issued.",
-        "Before disposition, compare every listing claim with the evidence packet and reconcile estimated seller proceeds to the signed settlement statement. Complete the ledger only after recording evidence, funds confirmation, and unresolved post-closing items are captured."
+        "Complete one copy of this worksheet for every parcel under contract, and attach the exported comp list and overlay screenshots.",
+        "Start the comp search as narrow as possible on size, time, and distance, and widen only when too few sold comps remain.",
+        "Order soil, septic, and survey work the same day the contract is signed, because scheduling delays eat the diligence window.",
+        "Write the end buyer's exit next to every cost so septic, access, and survey findings are judged against what the buyer will actually build.",
+        "If any field reveals a deal killer, amend to extend closing before earnest money goes hard, or cancel inside the inspection period."
       ],
       "fields": [
         {
-          "name": "Deal identifier and document register",
-          "type": "textarea",
-          "prompt": "Define the parcel naming convention, document version rules, and authoritative sources for legal description and ownership. Explain how revised contracts or assessor changes are linked without erasing the evidence supporting earlier decisions.",
-          "example": "Use LF-018-001 as the permanent deal identifier and store the county parcel number in a separate field. The executed contract is version 03, linked to its signed amendment. The vesting deed supplies the initial legal description; escrow verifies the final conveyance description against its title examination."
+          "name": "comp_window_size_band",
+          "type": "text",
+          "prompt": "Define your comp rules for one target parcel: the sold-only requirement, the acreage band around the subject, the lookback window in months, and the radius. Explain why larger tracts cannot be compared directly to a small lot.",
+          "example": "Subject is 8 acres, so comps stay between 5 and 10 acres sold in the last six to twelve months, because 36 and 50 acre sales cannot be compared with 8 as price per acre shrinks with size [Cool Wholesaling+ Land Deals-Real Estate Investing — 3x8J7AdyCEw @ 00:01:22]. Start as narrow as possible and only expand if needed."
         },
         {
-          "name": "Contract dates and deposit ledger",
+          "name": "price_per_acre_calc",
           "type": "textarea",
-          "prompt": "Record acceptance, inspection expiration, title objection, cure, closing, and extension dates with the controlling contract language. Track deposit amount, holder, refund conditions, and the person responsible for timely notices.",
-          "example": "The contract is accepted June 3, with inspection ending June 24 at the stated local time and closing July 15. A $1,000 deposit is credited toward the $48,000 purchase price. Calendar reminders occur seven and three days before inspection expiration; the owner sends any required notice."
+          "prompt": "Build the price-per-acre average for your subject parcel from an exported sold list. Record the source, the number of comps used, the average per-acre value, and the resulting retail estimate, then write your target and maximum buy prices.",
+          "example": "Zillow sold comps of 5 acres at $30,000 and 9 acres at $50,000 put Fairmont retail at $5,000 to $6,000 an acre, so 8 acres is about $40,000 retail, with a target buy of $30,000 and a $35,000 maximum [Cool Wholesaling+ Land Deals-Real Estate Investing — 3x8J7AdyCEw @ 00:03:12]. Brent Bowers aims under 50 cents on the dollar."
         },
         {
-          "name": "GIS geometry and coordinate checks",
+          "name": "outlier_removal",
           "type": "textarea",
-          "prompt": "Specify the GIS software, source coordinate systems, geometry validation, acreage checks, and overlay tolerances. Explain which discrepancies are screening flags and which require survey evidence before the parcel can advance.",
-          "example": "QGIS imports county parcel polygons and reprojects them to a suitable local projected coordinate system before measuring area. Check invalid rings, duplicate features, and missing identifiers. A 0.03-acre difference from the deed is logged for survey review, not silently replaced by the GIS measurement."
+          "prompt": "List each comp you removed from the average and the reason. Flag sales that sit landlocked behind the main road, carry wetlands or poor soils, or simply do not line up with the rest of the sold list before averaging.",
+          "example": "Removed a $6,500 sale that looks landlocked behind the main road, so it is probably not a good comp [Cool Wholesaling+ Land Deals-Real Estate Investing — t8XDRE0ZjFc @ 00:02:04]. Removed one high sale that did not line up with the rest, since one odd sale throws everything else off [REtipster — rYCHQ59jzhY @ 00:06:17]. Eleven comps remain for the final per-acre average."
         },
         {
-          "name": "Title commitment and exception disposition",
+          "name": "non_disclosure_method",
           "type": "textarea",
-          "prompt": "Record the proposed insured owner, estate, policy amount, requirements, and exceptions. Assign a disposition to each material exception and identify written insurer confirmation needed for access, liens, restrictions, or requested endorsements.",
-          "example": "The acquisition commitment names the purchasing LLC and a $48,000 proposed policy amount. Escrow requires payoff of a recorded lien. A restrictive covenant remains for use review. Request available access coverage in writing; do not assume a standard policy resolves every physical-access or zoning concern."
+          "prompt": "If your county sits in a non-disclosure state, describe your workaround for missing sold prices. Show the days-on-market haircut you apply to last list prices, which listings you exclude, and which websites supply self-reported sold prices.",
+          "example": "Haircuts on last list price: 0-15% at 1-90 days, about 20-30% at 3-6 months, 35% and up to 50% at 6-12 months, with listings older than one year excluded [Sumner Advanced — 8pB5HoHJ4Bk @ 00:04:05]. Land.com sold listings supply self-reported prices, usually accurate, while LandFlip shows only actives [Sumner Advanced — 8pB5HoHJ4Bk @ 00:05:17]. A trusted realtor opinion backs thin markets."
         },
         {
-          "name": "Survey and field inspection acceptance",
+          "name": "demand_signals",
           "type": "textarea",
-          "prompt": "Define the survey scope and field inspection evidence needed for the intended exit. Capture encroachments, monuments, frontage, dumping, fences, and drainage observations, including who determines whether a discovered condition is acceptable.",
-          "example": "The survey request identifies boundary location, road frontage, visible encroachments, and recorded easements relevant to the purchase. Site photographs show a neighbor's fence inside the apparent boundary. The owner pauses acquisition while the surveyor, title examiner, and transaction counsel evaluate the encroachment and possible cure."
+          "prompt": "Record the demand signals you read from active listing pages in your target area. Note typical days on market, view counts, saves, and how long comparable lots have sat, then state whether the market reads as healthy or dead.",
+          "example": "Most Cedar Springs lots sit under 100 days, and one lot pulled 498 views in 57 days, which signals decent land demand [REtipster — 9cX2NuhnYro @ 00:13:12]. A comparison county showed 10 to 20 views and no saves after months, which reads as a dead market, so it is dropped. Sold comps outrank actives when setting price."
         },
         {
-          "name": "Subdivision task sequence and release",
+          "name": "realtor_blowout_price",
           "type": "textarea",
-          "prompt": "If a split is proposed, map application, conditions, engineering, surveying, recording, and child-parcel creation. Explain what must occur before child lots are marketed or sold, and isolate subdivision economics from the existing-parcel Base example.",
-          "example": "The proposed two-lot project receives a separate project code and budget. Planning confirmation precedes survey design; conditions are priced before filing. No child lot is advertised as legally created until required mapping and recording steps are complete. The existing-lot Base budget does not fund this entitlement work."
+          "prompt": "Write the script you will use when calling a local land realtor for pricing. Ask for the fast-sale number rather than the hopeful one, record the answer and timeframe, and note whether the realtor might become a buyer or listing partner.",
+          "example": "Script: 'What is the 30-day blowout price? I want the get it done number, not the pie in the sky one year from now number' [Brent Bowers — JNufnuENoDM @ 00:09:15]. Brent Bowers heard about $10,000 within 45 days on a parcel held at $285, then took the realtor's own $5,000 offer and closed four days later [Brent Bowers — JNufnuENoDM @ 00:07:30]."
         },
         {
-          "name": "Invoice coding and inventory ledger",
+          "name": "overlay_screen",
           "type": "textarea",
-          "prompt": "Assign parcel costs and enterprise expenses to consistent ledger categories, documenting the accounting treatment approved for the business. Explain allocation of failed-lead costs and prevent invoice duplication between parcel budgets and overhead.",
-          "example": "The management ledger assigns a $900 survey invoice to LF-018-001 diligence and an $85 CRM subscription to enterprise overhead. Failed-lead research remains visible in the annual diligence pool. The accountant determines capitalization and tax treatment; the management bridge still reconciles all costs to annual owner profit."
+          "prompt": "Describe the five-to-ten-minute overlay screen you run on every parcel before offering. List each layer checked, including slope, access, wetlands, flood zone, and soils, and the threshold on each layer that kills or reprices the deal.",
+          "example": "Wetlands, flood zone, and soil layers are pulled before any acreage comp is trusted, because a lot about 40 percent wet with very poorly drained Kinault peat sold at 20,000 after an 85,000 ask [Acrewell Land Company — TbH_4hSsYHU @ 00:06:46]. Any parcel over 25% wet gets repriced; any with no visible access path gets killed pending records."
         },
         {
-          "name": "Wire verification and closing pre-flight",
+          "name": "perc_septic_plan",
           "type": "textarea",
-          "prompt": "Specify how settlement instructions, recipient identity, payoff figures, deed execution, and cash requirements are independently verified. Identify the stop condition for changed instructions and the evidence retained after funds are transmitted.",
-          "example": "Before sending acquisition funds, the owner calls escrow using a previously verified number, confirms account details, and matches the final cash requirement to the statement. A last-minute emailed account change stops transmission. Retain callback notes and bank confirmation without copying full account credentials into the general CRM."
+          "prompt": "For any parcel without city sewer, write your soil and septic verification plan. State who orders the perc test or site evaluation, the expected cost, how long scheduling takes, and confirm it finishes inside the due diligence window.",
+          "example": "County health department perc runs $150 to $1,500 [REtipster — yp6qPMTkjgE @ 00:02:04]. The evaluation is booked the day the contract is signed, since evaluator scheduling can eat weeks, and closing waits until results are back [Florida Land Facts — zWTn3NY8wqc @ 00:02:14]. On resale, the buyer verifies inside the inspection period instead of paying about $600 per test."
         },
         {
-          "name": "Listing evidence and disposition QA",
+          "name": "septic_cost_vs_exit",
           "type": "textarea",
-          "prompt": "Compare asking price, parcel dimensions, access, utility, zoning, and subdivision claims with current evidence. Define who approves listing revisions and how the buyer receives relevant documents without exposing unnecessary seller or payment information.",
-          "example": "The listing states residential zoning and links the dated local source, but does not promise permit issuance. Utility language identifies the provider's written connection estimate. The broker removes an unsupported 'ready to build' claim and supplies buyers a redacted survey, title summary, and documented access description."
+          "prompt": "Price the septic system the soil actually demands and compare it to the end buyer's total build budget. Note conventional, mound, treatment unit, or drip costs, and decide whether the system cost kills the intended exit for that lot.",
+          "example": "A $30,000 to $50,000 alternative system kills a $5,000 lot meant for a $30,000 mobile home [Jack Bosch — nVJMPjUWdZw @ 00:09:46]. Conventional Florida installs run $10,000 to $15,000, often more than an $8,000 lot [Florida Land Facts — zWTn3NY8wqc @ 00:02:34]. This parcel needs a mound, so the exit shifts to a buyer with a larger build budget and longer timeline."
         },
         {
-          "name": "Post-closing receipt and exception ledger",
+          "name": "survey_and_diligence_window",
           "type": "textarea",
-          "prompt": "Describe how recorded instruments, issued title coverage, net proceeds, tax reporting, and remaining obligations are confirmed after closing. Set an aging threshold for missing documents and assign responsibility for clearing each item.",
-          "example": "The $85,000 sale is marked closed only after escrow confirms recording and the bank confirms collected proceeds. The issued policy and final statement are requested within the agreed service period. Missing documents remain open in a weekly exception queue, with escrow follow-up assigned to the owner."
+          "prompt": "Set your diligence timeline and survey policy. State the maximum hours standard diligence may take, when you order a survey, how you handle a failed test hole on a large tract, and how you protect earnest money if the deal is unsold.",
+          "example": "Standard diligence is capped at 48 hours max [Apke Brothers — j3-xqUjgb7k @ 00:29:06]. A survey is ordered on every purchase, since boundaries differ from GIS 25 to 30% of the time [REtipster — w08yc3MEaGE @ 00:10:54]. One failed hole gets retested elsewhere, as a 12-acre tract passed in one corner. Unsold deals get a 30-to-45-day extension amendment."
         }
       ],
-      "completion_gate": "A second reviewer or designated settlement professional checks the legal description, deadline ledger, material title items, and closing figures. Every material exception has evidence of cure, documented acceptance within the investment thesis, or a stop decision."
+      "completion_gate": "Complete only when the subject is priced from cleaned sold comps, outliers are removed, wetlands, flood, slope, and soils are screened, the perc or site evaluation is back, septic cost fits the exit, and a survey is ordered before closing."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract, and Outreach Audit",
-      "purpose": "Translate applicable land-use, brokerage, environmental, settlement, and outreach rules into documented operating requirements. Identify the actual jurisdiction and transaction structure before selecting forms or marketing language, with special attention to subdivision creation, seller authority, title representations, tax withholding, and permission-sensitive outreach.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Access, Easements, Flood Zones, and Subdivide Yield",
+      "purpose": "Confirm that every parcel has recorded legal access and a known flood status before it is priced, then test whether a split can legally and profitably multiply its value. A parcel without access, or a split without frontage, is not a deal until the paperwork proves otherwise.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Start with the property's state, county, municipality, and transaction structure. Record the controlling sources and verification date; a rule from a neighboring county or a residential-house form does not automatically fit a vacant-land transaction.",
-        "Separate selling property the business owns from representing another owner or marketing contractual rights. Confirm the state-specific licensing and disclosure requirements for each activity before paying transaction-based compensation or publishing the offer.",
-        "Have the transaction professional review contract contingencies, title delivery, disclosures, deposit release, and recording requirements against the actual parcel. Convert required actions into named tasks with due dates rather than attaching unused statutory excerpts.",
-        "Review environmental and water-related triggers before disturbing soil or assuming development capacity. Screening maps identify questions; appropriate investigations and agency determinations resolve them when the intended use depends on regulated land or water features.",
-        "Audit each outreach channel separately for identification, permission, suppression, and record-retention requirements. Store the evidence supporting contact eligibility, and disable automation when eligibility cannot be established or a recipient withdraws permission."
+        "Pull county deed records, recorded easements, and the FEMA flood map for the parcel before entering any offer price on this worksheet.",
+        "Treat a parcel as truly landlocked only when it lacks both legal access and a long-used physical road, and cut its value before you calculate the offer.",
+        "Never count permissive access as legal access; convert any informal driveway or shared lane into written, recorded access before resale.",
+        "For any subdivide, divide total frontage by the county minimum lot width, round down, and confirm road access and public frontage for every proposed lot.",
+        "Complete every field with real numbers and named sources, and leave no field blank; an unknown access or flood answer means the deal is not ready to price."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and controlling-source register",
+          "name": "access_status_verification",
           "type": "textarea",
-          "prompt": "Identify the parcel's governing jurisdictions and official sources for zoning, subdivision, recording, taxation, and broker licensing. Record the effective version and verification date, including any written agency interpretation used in underwriting.",
-          "example": "For an illustrative California acquisition, retain the county zoning ordinance, subdivision ordinance, recorder checklist, and state licensing source. A planning email dated May 12 explains frontage treatment for this parcel. The register distinguishes that parcel-specific response from the broader ordinance and records who confirmed its continuing applicability."
+          "prompt": "Record whether the parcel has legal access, physical access, both, or neither. List the county records you checked for a recorded easement and any long-used road, then state plainly whether the parcel qualifies as truly landlocked before pricing begins.",
+          "example": "Ten rural acres show no recorded easement in county deed records and no long-used physical road across the neighboring tract. Following the Bosch rule, only a parcel lacking both legal and actual road access counts as truly landlocked, so this one qualifies and gets repriced before any offer [Land Profit Generator with Jack & Michelle Bosch — tfERI-RnheU @ 00:01:59]."
         },
         {
-          "name": "Principal trading versus licensed representation",
-          "type": "textarea",
-          "prompt": "Describe whether the business sells owned land, represents another party, or transfers contract rights. Identify the applicable licensing analysis, compensation restrictions, required disclosures, and evidence that marketing accurately reflects the business's role.",
-          "example": "The LLC purchases and resells its own parcel; it does not accept a neighbor's listing for a success fee. California Business and Professions Code sections 10130, 10131, and 10133 inform the role review. Any proposed representation service is routed to a properly licensed broker before outreach begins."
+          "name": "landlocked_value_haircut",
+          "type": "text",
+          "prompt": "Enter the accessible market value, the landlocked value after your haircut, and the resulting offer. Show the percentage cut you applied and explain why the reduction comes before the offer rather than being negotiated away after the seller says yes.",
+          "example": "Accessible value $40,000; landlocked value $15,000 to $20,000 after cutting at least half; offer near $4,000. Bosch states that the moment a property proves landlocked, the value goes down and therefore the offer goes down, so the haircut is applied first and the offer is built from that reduced number [Land Profit Generator with Jack & Michelle Bosch — tfERI-RnheU @ 00:05:31]."
         },
         {
-          "name": "Subdivision mapping and public-report analysis",
+          "name": "neighbor_easement_negotiation",
           "type": "textarea",
-          "prompt": "Record proposed lot count, contiguous project ownership, local mapping requirements, and state sale requirements. Distinguish map approval from permission to offer lots and identify exemptions only when the actual project satisfies their conditions.",
-          "example": "For a California three-lot proposal, review Government Code sections 66424 and 66428 plus local parcel-map rules. Separately examine Business and Professions Code sections 11000 and 11010 for the broader project and any public-report requirement. Splitting phases does not by itself establish an exemption."
+          "prompt": "Name each adjoining owner who could grant an access strip, the price you plan to offer, and your fallback if they refuse or overprice. Note the spread between landlocked and accessible value that the easement would unlock for the flip.",
+          "example": "Adjoining owner to the north controls the shortest route to the county road; planned offer is $500, the price Bosch says a reasonable neighbor might ask. That payment unlocks the spread between a $20,000 landlocked value and a $40,000 accessible value. Fallback: sell as-is to a cash buyer at $12,000 to $15,000 [Land Profit Generator with Jack & Michelle Bosch — tfERI-RnheU @ 00:09:36]."
         },
         {
-          "name": "Environmental liability and inquiry timing",
+          "name": "easement_appraisal_leverage",
           "type": "textarea",
-          "prompt": "Identify historical-use concerns and the investigation needed before acquisition. If relying on a federal landowner liability protection, document the relevant qualification, inquiry timing, and continuing obligations rather than treating a report as blanket protection.",
-          "example": "A former equipment yard triggers environmental review before purchase. The specialist evaluates all appropriate inquiries under 40 CFR Part 312 and relevant CERCLA conditions in 42 U.S.C. 9601(40) and 9607(r). Confirm the one-year inquiry window, specified 180-day updates, and continuing obligations for any intended protection."
+          "prompt": "If a neighbor overprices the easement, describe how you will reframe the valuation and estimate what litigation would cost. Record whether the route is the only option and how that fact sets the ceiling on your negotiating room.",
+          "example": "The neighbor wants far more than the strip is worth. The appraiser values the neighbor's diminution in value rather than the lot's gain, and notes that roughly $20,000 in legal fees likely wins an easement-by-necessity suit when the route is the only option, so negotiating room tops out near that litigation cost [dhall3000 — GpQWztIpKSo @ 00:05:17]."
         },
         {
-          "name": "Wetlands, fill, drainage, and site disturbance",
+          "name": "permissive_vs_legal_access",
           "type": "textarea",
-          "prompt": "Describe proposed disturbance and possible regulated waters or drainage features. Identify the federal, state, and local determinations or permits needed before grading, filling, clearing, or advertising a development envelope dependent on those activities.",
-          "example": "A buyer's proposed driveway crosses a wet area. Before pricing the parcel as driveway-ready, investigate Clean Water Act section 404, 33 U.S.C. 1344, and applicable section 401 certification under 33 U.S.C. 1341. Agency jurisdiction, permit needs, and state wetland rules require project-specific review; inventory maps alone do not settle them."
+          "prompt": "List every driveway, two-track, or shared lane currently used to reach the parcel. For each, state whether it rests on a recorded easement or mere permission, and describe how you will convert informal use into written, recorded access.",
+          "example": "A gravel driveway has crossed the neighbor's land for years without paperwork, which is permissive use that can be terminated at any time [Law Case Summaries — wij1Dm2XEX8 @ 00:01:14]. That history is also leverage: the crossed owner is already used to the access, so getting it in writing is easier [David Miller — orMrWlpfWj4 @ 00:03:10]."
         },
         {
-          "name": "Contract protections and factual disclosures",
+          "name": "flood_zone_lookup",
           "type": "textarea",
-          "prompt": "Specify inspection rights, title objections, access verification, deposit treatment, seller representations, and required property disclosures. Explain how known adverse facts reach the buyer and why a general condition clause does not replace required disclosure.",
-          "example": "Draft terms allow termination by written notice before inspection expiration if recorded access or the intended use cannot be verified. The seller identifies a known dumping area in a signed attachment. Transaction counsel selects applicable vacant-land disclosures rather than automatically reusing a one-to-four-unit housing disclosure package."
+          "prompt": "Record the FEMA flood zone shown for the parcel, the share of the lot inside any special flood hazard area, and whether planned building or renovation could exceed the threshold that triggers costly elevation requirements for the end buyer.",
+          "example": "Address entered into the flood map search bar in the top left corner; a lot of blue appeared along the rear line, signaling nearby flood hazards [LAVERNE MCGEE TV — ptM7-3KSnO4 @ 00:00:57]. Any build or renovation exceeding 50% of pre-improvement market value can trigger $30,000 to $100,000 or more in elevation costs [PushLeads — fXtOfFlKqmc @ 00:04:24]."
         },
         {
-          "name": "Settlement taxes, withholding, and reporting",
+          "name": "loma_decision",
           "type": "textarea",
-          "prompt": "Identify seller tax-status documentation, potential withholding, information reporting, transfer taxes, and responsible settlement parties. Distinguish the amount realized from the seller's gain and require written resolution of any claimed withholding exception.",
-          "example": "A foreign seller's $48,000 sale receives FIRPTA review under 26 U.S.C. 1445. The general 15% calculation is $7,200 of amount realized unless an applicable exception or adjustment is established. Escrow also assigns real-estate reporting under 26 U.S.C. 6045(e); vacant land does not automatically satisfy residence-based exceptions."
+          "prompt": "If a survey suggests the parcel sits above base flood elevation but was mapped into a high-risk zone, estimate the cost of a letter of map amendment, the yearly premium savings, and what the amendment will not change.",
+          "example": "Survey shows the pad above BFE despite a high-risk mapping. Budget $1,500 to $5,000 for engineering and survey; a successful LOMA can cut premiums by $1,000 or more per year [PushLeads — fXtOfFlKqmc @ 00:04:43]. Buyer disclosure note: a LOMA does not change flood risk, and the property may still flood even after removal [Compass Land USA — bPbMFP-bGyU @ 00:03:48]."
         },
         {
-          "name": "Email outreach and suppression controls",
+          "name": "subdivide_lot_yield",
           "type": "textarea",
-          "prompt": "Describe the commercial email audience, sender identification, subject-line review, physical address, unsubscribe method, and suppression timing. Identify the party monitoring vendors and explain how suppressed addresses are prevented from reentering later campaigns.",
-          "example": "Builder outreach uses accurate sender information, a truthful parcel-specific subject, advertising identification where required, a postal address, and an operational unsubscribe link. Under 15 U.S.C. 7704, eligible opt-out requests are honored within ten business days. The CRM checks the suppression list before every send and vendor upload."
+          "prompt": "Calculate how many lots the parcel can legally yield. Enter total road frontage, the county minimum lot width, the minimum lot size, and the result rounded down, then confirm physical road access and public frontage for every proposed lot.",
+          "example": "Total frontage is 1,300 feet against a 350-foot county minimum width; 1,300 divided by 350 rounds down to three lots, not four [Dr. Dirt l Land Investor — 7wJsf4BbLHY @ 00:54:54]. Each of the three lots was checked for physical road access and public frontage, because skipping that check is the biggest subdivision mistake [Clay Hepler — o_c7zC-iYqE @ 00:03:26]."
         },
         {
-          "name": "Telephone, text, and direct-mail eligibility",
+          "name": "split_profit_model",
           "type": "textarea",
-          "prompt": "Identify calling or texting technology, message purpose, permission evidence, applicable do-not-call restrictions, and state requirements. Separately describe truthful direct-mail practices, and establish an immediate stop when contact eligibility is unresolved.",
-          "example": "Do not infer texting permission from a public assessor record. Review 47 U.S.C. 227, 47 CFR 64.1200, and applicable state rules for the proposed technology and campaign. Disable automated calls and texts until eligibility is established. Postal offers identify the actual buyer and avoid government-style notices or misleading urgency."
+          "prompt": "Model the bulk purchase price against the combined resale value of the smaller lots. List acquisition cost, survey or perc testing, buy-side and sale-side closing costs, the projected total from all lots, net profit, and the expected timeline.",
+          "example": "Eighty Minnesota acres worth about $180,000 whole were split into four lots that sold for $369,000. Costs included $2,000 buy-side closing, $5,000 in perc testing, and roughly $22,000 or 6% sale-side closing, for $134,000 total cost and $235,000 net in under six months [Clay Hepler — o_c7zC-iYqE @ 00:01:35]. Twenty-five acres at $125,000 split five ways sells for $250,000 [Apke Brothers — 8LneZstpCGY @ 00:01:56]."
         },
         {
-          "name": "Electronic records, privacy, and retention",
+          "name": "subdivide_approval_risk",
           "type": "textarea",
-          "prompt": "Define secure handling of identity records, signatures, contact information, and transaction evidence. Record applicable retention requirements and distinguish electronic contract validity from notarization, delivery, and county recording acceptance for a particular instrument.",
-          "example": "E-SIGN, 15 U.S.C. 7001, supports qualifying electronic records but does not eliminate every deed execution or recording requirement. Escrow confirms the recorder's accepted process. Identity files remain in restricted storage; the CRM retains only verification status. A written retention schedule incorporates applicable state and transaction requirements."
+          "prompt": "Describe the approval path for the split: paper split, exempt plat, minor or major subdivision. Note application fees, expected timeline, utility and sewer checks, and whether the contract carries a rezoning contingency or multiple exits if a hearing is required.",
+          "example": "Rural Arizona paper split: about $400 application fee, a few hundred dollars for new legal descriptions, roughly six weeks, each piece over one acre with road access [Jack Bosch — JXUkA5K7RSc @ 00:06:56]. On infill, sewer depth and power cost were verified because dewatering pushed a $3,500 connection to about $17,000 [Kent Cliffe — Ie0jq4Go9is @ 00:06:04]."
         }
       ],
-      "completion_gate": "The owner and appropriate transaction specialists resolve every applicable licensing, land-use, environmental, contract, withholding, and outreach question in a source-linked register. Unresolved items remain explicit stop conditions for the affected purchase, listing, site activity, or communication channel."
+      "completion_gate": "Do not move to pricing or marketing until legal access is recorded or the landlocked haircut is applied, the flood zone is documented with any elevation exposure priced, and every proposed lot passes the frontage-divided-by-minimum-width test with confirmed road access."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Growth Flywheel, and Risk Fallbacks",
-      "purpose": "Automate repeatable parcel screening and comparable-sale tracking without converting imperfect public data into false acquisition certainty. Build a measured sourcing and buyer-development system with source lineage, communication controls, human exception handling, and practical fallbacks when data feeds, provider responses, or market liquidity deteriorate.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Approvals, Encumbrances, Offers, and Title",
+      "purpose": "Treat the recorded file and the county rulebook as the real product, then structure the offer and closing so the spread survives. Perc contingencies, frontage, restrictions, severed rights, exit choice, earnest money, and title coverage are each a place where a profitable contract quietly turns into a loss.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Define the input contract for every data feed, including permitted use, refresh cadence, parcel identifiers, and required fields. Reject malformed records visibly, and preserve source lineage so a scoring decision can be reconstructed after an update.",
-        "Automate exclusions and prioritization before attempting automated valuation. Keep legal access, seller authority, environmental interpretation, and buildability decisions under qualified human review; a clean data row is not evidence that those transaction risks are resolved.",
-        "Connect outbound work to a narrow buyer thesis and documented contact eligibility. Measure progression from eligible records to responses, qualified conversations, accepted offers, and closed sales rather than celebrating imported records or gross message volume.",
-        "Keep comparable-sale monitoring separate from listing-price monitoring. Record verification, concessions, rights, utilities, and market exposure, then flag changes that affect current inventory instead of silently replacing the assumptions used when it was purchased.",
-        "For each automation, assign an owner, alert threshold, manual fallback, and restart condition. Test stale data, duplicate events, failed sends, and provider outages before the workflow can change a deal status or initiate external communication."
+        "Write every offer contingent on a perc test by a licensed local tester and confirm recorded frontage on a county approved road before signing.",
+        "Run a title search and pull the county clerk's deed abstract, recorded covenants, and the mineral chain before the buyer plans any change of use.",
+        "Present two offers on every lead, a fast cash number and a higher longer-close number, and re-send them in writing every 30 days.",
+        "Do not double close under a $15,000 spread, and call title companies until one confirms in writing that it will close both sides.",
+        "Collect non-refundable buyer earnest money and decide owner's, lender's, or open title coverage before the closing date is set."
       ],
       "fields": [
         {
-          "name": "Source inventory and permitted-use contract",
+          "name": "perc_contingency",
           "type": "textarea",
-          "prompt": "List county GIS, assessor, recorder, listing, and contact sources with access terms, refresh cadence, and required fields. Explain how licensed datasets remain segregated from public records and how expired access stops downstream processing.",
-          "example": "The county GIS export refreshes monthly and supplies parcel identifiers, geometry, and acreage. Recorder documents support deed verification. Broker-provided sales data stays within its licensed use. Each imported batch records source, retrieval date, terms reference, and checksum; an expired data license suspends that connector rather than reusing restricted exports."
+          "prompt": "Write the perc test contingency for this offer. Name the licensed local tester, the expected test cost, how long results stay valid, and the septic system cost range you would face if the soil demands an alternative system.",
+          "example": "Offer is contingent on a perc test by a licensed local tester, budgeted near the $1,300 average, with a typical range of $750 to $1,900. Results stay valid 2 to 5 years, and if the soil fails a conventional layout, a mound system could run $15,000 to $30,000 [Barndo And Tiny Homes Vision — VIdzLB23cAw @ 00:03:30]."
         },
         {
-          "name": "Parcel normalization and duplicate prevention",
+          "name": "road_frontage_and_legal_access",
           "type": "textarea",
-          "prompt": "Define normalization for parcel identifiers, owner names, mailing addresses, geometry, and jurisdiction. Explain how the pipeline handles leading zeros, multi-parcel ownership, changed identifiers, and repeated records without merging distinct properties.",
-          "example": "Store parcel identifiers as strings so leading zeros survive CSV imports. Use county code plus normalized parcel identifier as the current record key. Link an owner's four parcels without combining their geometry. A parcel renumbering creates a reviewed predecessor link instead of overwriting the historical deal record."
+          "prompt": "Identify the road each parcel or proposed lot fronts and whether it is a county approved road. Record the recorded easement or frontage document, and estimate upgrade costs if a private drive must be brought to county specifications.",
+          "example": "Seller says neighbors let everyone use the dirt drive, but physical access is not legal access, and verbal access means nothing to lenders and title companies [Barndo And Tiny Homes Vision — VIdzLB23cAw @ 00:04:05]. Upgrading the drive would require about 20 feet of surface, 6 to 8 inches of base rock, and 40 to 50 feet of right-of-way [Tim Howell — rtRAjfGZ_nY @ 00:01:20]."
         },
         {
-          "name": "Screening rules and exception routing",
+          "name": "deed_restriction_search",
           "type": "textarea",
-          "prompt": "Specify reproducible filters for target size, zoning, location, ownership, and apparent constraints. Separate hard exclusions from review flags and identify which evidence allows a reviewer to override an automated result.",
-          "example": "Screen for 0.25–0.75-acre residential parcels inside the chosen service area. Flag apparent landlocked geometry, steep terrain, and wetland intersections for review. A flag never becomes a confirmed legal conclusion. Overrides require a named reviewer and linked evidence, such as a recorded access easement accepted by the title examiner."
+          "prompt": "List every deed restriction, covenant, or CC&R found in the title search and county clerk's deed abstract. For each, note what it prohibits, who can lift it, and whether actual neighborhood compliance suggests it is still enforced.",
+          "example": "Deed abstract pulled before the buyer plans changes [US Realty Training — B_XnC97BYF8 @ 00:03:38]. A recorded covenant bars livestock even with no HOA. Only the original grantor or heirs can lift it, and one holdout heir makes removal challenging if not impossible [The Real Estate Lawyer — gP3fDaUu5Iw @ 00:03:13]. A neighborhood drive shows no horses, so no horses planned."
         },
         {
-          "name": "Comparable-sale tracking and drift alerts",
+          "name": "hoa_covenant_pull",
           "type": "textarea",
-          "prompt": "Describe the verified-sale data structure, update schedule, adjustment method, and repricing alert. Explain how active listings, stale transactions, unusual concessions, and dissimilar utility conditions are prevented from distorting the underwriting range.",
-          "example": "A weekly review adds closed sales with deed reference, closing date, utility status, access, and exposure time. An alert fires when three new comparable closings support a range more than 8% below the current $85,000 exit assumption. Active listings remain a separate competition view rather than verified sale evidence."
+          "prompt": "Find the governing HOA's exact legal name and pull the recorded covenants. Record the search tools used, the recording reference, and any covenant that would block the buyer's intended use, such as RVs, livestock, or detached garages.",
+          "example": "Ran the Secretary of State corporations search to confirm the HOA's exact name, then pulled the recorded covenants from the gsccca.org index using 'view image,' with the broker covering printing [Real Estate Made Crystal Clear — okIP6dYiTD4 @ 00:08:27]. Covenants restrict RV parking on lots, so the RV-owner buyer pool is struck from the marketing plan."
         },
         {
-          "name": "Seller outreach cohort and response ledger",
+          "name": "mineral_and_surface_rights",
           "type": "textarea",
-          "prompt": "Define a bounded sourcing cohort, eligible channels, offer logic, response categories, and follow-up limits. Track actual acquisition funnel outcomes and prevent repeat contact after suppression, ownership disputes, or a clear request to stop.",
-          "example": "The pilot sends 100 individually checked postal offers to owners of screened lots. Log 12 responses, four qualified conversations, two document-ready opportunities, and one conditional offer as observed pilot results only if achieved. Every refusal updates suppression, and the same owner is not approached repeatedly through duplicate parcel records."
+          "prompt": "Trace the mineral, timber, and grazing rights through the deed chain. Record any reservations, assignments, or releases, plus any conservation easement terms, and explain how each severed right changes what the end buyer actually receives at closing.",
+          "example": "Mineral chain followed through deeds, reservations, assignments, and releases; HOA ownership of common property does not automatically mean ownership of minerals under lots [HOA LAND WARS — CnlqGcAGqOo @ 00:05:01]. A wetland reserve easement covers the back forty: crops cannot be pulled off it, and hunting leases are the number one income generator on such land [MissStateExtension — UkiDG5GpG_Y @ 00:02:46]."
         },
         {
-          "name": "Builder network and buyer qualification",
+          "name": "two_offer_structure",
           "type": "textarea",
-          "prompt": "Identify buyer segments, acquisition criteria, proof-of-funds handling, viewing process, and repeat-purchase signals. Explain how buyer feedback improves parcel selection without disclosing confidential seller terms or promising an unverified development outcome.",
-          "example": "Interview ten local builders about frontage, utility cost tolerance, price ceiling, and closing speed. Three prefer serviced lots below $90,000 and request future inventory notices. Obtain appropriate communication permission, record criteria, and verify purchase capacity through the settlement process rather than storing bank statements in an unrestricted marketing folder."
+          "prompt": "Draft the two offers you will present on this lead: a fast cash number and a higher number closing in 90 to 120 days. Record each price, its percentage of market value, and the follow-up date for re-sending in writing.",
+          "example": "Cash offer at $85,000 now; longer-close offer at $117,000 in 90 days, mirroring the Apke example in which about 50% of the hosts' deals were not the highest offer [Apke Brothers — lWYFLEd7PA0 @ 00:19:10]. Both offers are mailed in writing and re-sent every 30 days within a five sellers a day conversation routine [Flipping Mastery TV — YPqUHvSAZrU @ 00:02:26]."
         },
         {
-          "name": "Workflow controls and communication eligibility",
+          "name": "exit_structure_choice",
           "type": "textarea",
-          "prompt": "Map the transition from screened parcel to reviewed opportunity, authorized offer, and scheduled follow-up. Specify which actions require human authorization and how suppression, channel eligibility, and stale evidence block external messages.",
-          "example": "Airtable stores review status while a scheduled Python job prepares an internal offer queue. The owner reviews price and recipient before any offer is sent. Suppressed contacts and expired evidence block queue release. No workflow signs contracts, changes escrow instructions, or treats a suggested bid as an accepted commitment."
+          "prompt": "Choose between cash close, assignment, and double close for this deal. Record the purchase price as a percentage of market value, the projected spread, doubled closing costs, and the specific question mark on the deal or market justifying a double close.",
+          "example": "Contract sits at 48% of market value, under Michael Bull's 50% cash-close threshold, so the plan is to buy outright [Michael Bull — V4qnHYV6EVo @ 00:11:38]. A second lead with a $10,000 spread would net about $4,000 after $5,000 to $6,000 in doubled closing costs, so it gets assigned instead of double closed [Flip With Rick — 4Ueirfxr5Ww @ 00:05:40]."
         },
         {
-          "name": "Automation quality test and audit sample",
+          "name": "title_company_confirmation",
           "type": "textarea",
-          "prompt": "Define representative test cases, acceptable error thresholds, sampling frequency, and incident ownership. Include duplicates, missing source dates, mismatched jurisdictions, and contradictory access indicators, with evidence showing how failed records are isolated.",
-          "example": "Test twenty fixtures, including a leading-zero parcel identifier, a county-name collision, duplicate owner records, and a polygon beside an unrecorded road. Any cross-county merge blocks deployment. Review ten newly screened records weekly and retain before-and-after evidence when correcting rules, so earlier acquisition assumptions can be reevaluated."
+          "prompt": "Before signing the purchase contract, list the title companies you called, which ones confirmed they will close both sides, any state cooling-off rule involved, and whether blind or split settlement statements are available and at what added fee.",
+          "example": "Following Hepler's approach on a Georgia deal, where the seven-day cooling-off period blocked the back close, kept dialing until the ninth of eleven title companies agreed to close both sides, saving a $28,000 spread on 38 acres [Clay Hepler — IRJeZQijnxU @ 00:08:08]. Also asked which offices provide blind or split HUDs, sometimes for an added fee [Flip With Rick — 4Ueirfxr5Ww @ 00:13:39]."
         },
         {
-          "name": "Data outage and provider fallback",
+          "name": "buyer_earnest_money",
           "type": "textarea",
-          "prompt": "Name the failure signals for source outages, stale exports, missing provider responses, and communication errors. Assign a manual fallback and restart test, ensuring the team does not silently reuse old evidence as current information.",
-          "example": "If the monthly county feed is more than forty-five days old, pause automated prioritization and verify active deals directly with official records. If the title provider misses a committed response date, escalate and evaluate a qualified replacement. Restart requires a validated fresh batch and review of affected open opportunities."
+          "prompt": "Record the end buyer's name, the non-refundable earnest money amount collected, the date it was received, and the spread on the deal. Explain how you will respond if the buyer resists the deposit or demands a different closing structure.",
+          "example": "Buyer deposit set at $1,000 non-refundable, above the $500 floor, because legitimate buyers will pay it [Sumner Advanced — zyoO3FxrTDQ @ 00:02:25]. Spread is $22,000, clearing the $15,000 double-close minimum. If the buyer pushes to restructure the closing, the deal is not switched to satisfy a difficult buyer; the buyer is replaced instead [Flip With Rick — 4Ueirfxr5Ww @ 00:13:39]."
         },
         {
-          "name": "Illiquidity fallback and learning loop",
+          "name": "title_insurance_plan",
           "type": "textarea",
-          "prompt": "Set inventory aging thresholds, buyer-feedback reviews, repricing authority, and the conditions for pausing acquisitions. Explain how realized selling results update future screening without disguising a liquidation loss or extending unsupported valuation assumptions.",
-          "example": "At ninety listing days without a qualified offer, review inquiries, showing feedback, and new closed sales. At 120 days, model a reduced-price cash exit and update the thirteen-week cash forecast. Pause new purchases if liquidity falls below $20,000. Record any loss explicitly and tighten future selection rules using the observed failure."
+          "prompt": "Specify the title insurance coverage for both your purchase and the resale. Note whether an owner's policy is being purchased on a cash or vacant land buy, and whether an open policy can avoid paying for two new policies.",
+          "example": "Cash purchase, so there is no lender's policy at all [House Cashers LLC — Up2OF5KmfcU @ 00:00:31]; an owner's policy is ordered because a lender policy gives the buyer zero direct legal protection. Resale expected within about a year, so an open title insurance policy is purchased to avoid paying for two new policies [Sumner Advanced — zyoO3FxrTDQ @ 00:01:06]."
         }
       ],
-      "completion_gate": "The screening pipeline passes its test set, every outward message has channel eligibility and owner authorization, and stale-source or suppression failures stop affected work. Parcel screening and comparable-sale tracking remain assistive systems, with accountable reviewers for material acquisition conclusions."
+      "completion_gate": "Do not sign or assign until the perc contingency is written, county approved frontage or a recorded easement is confirmed, every restriction and severed right is listed, the exit clears its spread floor, a title company has confirmed both sides, and buyer earnest money is in hand."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard, and Exit Ledger",
-      "purpose": "Launch a focused land-trading operation with measurable evidence production rather than premature revenue promises. Assign small-team responsibilities, sequence thirty days of setup and sourcing, monitor capital and inventory quality, and preserve the records needed to sell individual parcels or transfer an organized operating business.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Selling on Terms, Buyer Assets, Drone Media, and Alternative Land Uses",
+      "purpose": "Turn the inventory into cash flow by pricing on terms, staying inside the vacant land exemptions and originator thresholds, treating buyers as the real asset, and shooting media that sells acreage. Then test whether repositioning the land into RV, solar, or battery storage use earns more than a straight resale.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Treat the first thirty days as system construction and qualified pipeline development, not a mandatory closing window. The stated time to first deal is three to twelve months, so capital planning must accommodate a prolonged initial acquisition cycle.",
-        "Assign the canonical Base pod before setting activity targets: one full-time owner and three contractor roles. Define deliverables, capacity, and escalation paths, and purchase specialist services by scope without hiding their cost or workload.",
-        "Schedule market selection, source setup, professional onboarding, pilot outreach, and evidence-backed underwriting in that order. Do not accelerate offers simply to satisfy a launch calendar when access, title, seller authority, or liquidity remains unresolved.",
-        "Review leading indicators weekly and realized economics monthly. Keep records screened, conversations, offers, accepted contracts, closed sales, and collected cash separate, with explicit denominators and dates so the scorecard cannot mistake activity for completed revenue.",
-        "Maintain an exit ledger from the first purchase, including inventory cost, market evidence, title documents, provider contracts, and open obligations. A possible business transfer requires portable records and defensible earnings, not merely a stack of parcel listings."
+        "Set a cash price and a terms price for every parcel, multiply the terms price out, and compare both against acquisition cost.",
+        "Keep each seller-financed sale vacant with a no-build-before-payoff clause and count owner-occupant deals per person, not per LLC, against state thresholds.",
+        "Run the high-cost test on APR rather than the note rate, and schedule early-payoff reminders before each cashback window closes.",
+        "Research parcel lines, FAA restrictions, and the survey before any drone flight, and qualify every buyer by zip code, county, and subdivision.",
+        "Before pursuing RV, solar, or battery storage use, model site conversion, underwrite only contracted payments, and clear zoning and permitting first."
       ],
       "fields": [
         {
-          "name": "Strategic position and launch constraints",
+          "name": "terms_vs_cash_pricing",
           "type": "textarea",
-          "prompt": "Record the candidate's rank, score, capital range, operating expense range, and first-deal timing. Explain how these constraints shape the initial county, parcel category, acquisition cadence, and acceptable dependence on outside expertise.",
-          "example": "Land Flipping is Candidate #6, pipeline rank #15 of 29, scoring 86/100 as an Elite Small-Team Cash Machine. Startup capital is $15,000–$75,000, monthly operating expense is $3,000–$15,000, and first-deal timing is 3–9 months. Launch in one county with existing lots rather than funding speculative subdivision work."
+          "prompt": "Set both a cash price and a seller-financed terms price for the parcel. Record the down payment, monthly payment, term length, and total terms price multiplied out, and compare the result against your acquisition cost and target sales mix.",
+          "example": "Bought near $10,000, priced to sell near $20,000 on terms with 10% down and about $500 a month, following Abhi's model of roughly 80% terms and 20% cash [REtipster — HpkNhY7WclQ @ 00:09:39]. Terms price multiplied out the way Jeff does it: 297 down plus 97 a month for 48 months totals 4,953 [Jeff — mM0tCRujCDM @ 00:01:52]."
         },
         {
-          "name": "Pod roles and capacity commitments",
+          "name": "dodd_frank_vacant_check",
           "type": "textarea",
-          "prompt": "Assign the full-time owner and three contractor roles for the Base plan, including deliverables and backup arrangements. Distinguish contractor service costs from permanent staffing and describe the capacity change required for the Scaled plan.",
-          "example": "Base uses one full-time owner for underwriting and capital decisions, plus three contractor roles: diligence coordination, title and settlement, and disposition brokerage. Specialist engagements are scoped through the relevant role and separately budgeted. Scaled uses 2 FT + 4 C, six people total; additional transaction volume requires demonstrated capacity, not assumed availability."
+          "prompt": "Confirm the sale qualifies as vacant land sold to a non-occupant. Record the no-build-before-payoff clause wording, whether any structure or manufactured home could go on within two years, and how you protect the land exemption for this note.",
+          "example": "Buyer plans recreational use only. A no-build-before-payoff clause is added because RESPA's land exemption fails if a structure or manufactured home goes on within 2 years using loan proceeds [REtipster — m1GoTr9J5TM @ 00:17:36]. Vacant land seems excluded from the special rules in subpart E [REtipster — m1GoTr9J5TM @ 00:09:01], so the clause keeps the note inside that exclusion."
         },
         {
-          "name": "Days 1–7 market and evidence setup",
+          "name": "rmlo_threshold_tracker",
           "type": "textarea",
-          "prompt": "Specify first-week deliverables for county selection, buyer interviews, source access, record structure, and professional onboarding. Define completion through usable evidence and confirmed service scope rather than meetings booked or software accounts opened.",
-          "example": "By day seven, select one county, interview five builders, document ten closed-sale candidates, and confirm escrow and diligence service scopes. Create the deal register, evidence folder structure, and thirteen-week cash template. Completion requires source-linked records and written provider responses, not an unreviewed owner list or a generic market presentation."
+          "prompt": "Count owner-occupant seller-financed deals you have personally written this year against your state's residential mortgage loan originator threshold. Record the threshold, deals already closed, whether entity stacking is relied upon, and when a licensed originator must be brought in.",
+          "example": "Texas operator holding four owner-occupant notes this year, counted per person rather than per LLC, against thresholds of Texas 5, Colorado 3, and California 0 [William Bronchick — ZGvGq-_10yA @ 00:08:25]. One more owner-occupant note fits before a licensed originator is needed. Entity stacking is skipped, since critics call it a blatant attempt to evade [Seller Finance Consultants, Inc. — SB_vfxPYuF8 @ 00:00:43]."
         },
         {
-          "name": "Days 8–14 screening and economics pilot",
+          "name": "high_cost_and_rate_structure",
           "type": "textarea",
-          "prompt": "Define the second-week screening sample, quality checks, valuation work, and funding review. Explain what constitutes a qualified acquisition candidate and which findings require rejection before any seller receives a binding commitment.",
-          "example": "Screen 100 parcels and manually audit twenty records. Build complete preliminary economics for five candidates, including access evidence requests and utility assumptions. Verify the $237,700 illustrative three-slot funding plan against actual available funds. Reject apparent bargains whose supported exit cannot cover all costs and the required owner contribution."
+          "prompt": "Record the note rate, the calculated APR including fees, and the high-cost threshold you are testing against. If balloons are barred, describe any escalating-rate structure you plan to use to encourage the buyer to refinance early.",
+          "example": "High-cost test run on APR, not the note rate, and the note stays under it, following Bronchick's rule: just don't have a high-cost mortgage [William Bronchick — MNznbFmtOwI @ 00:28:44]. Because balloons are barred, rates escalate from 6 to 8 to 10 to 12%, making buyers cry uncle and refinance, which mimics a balloon [William Bronchick — ZGvGq-_10yA @ 00:23:53]."
         },
         {
-          "name": "Days 15–21 controlled sourcing pilot",
+          "name": "early_payoff_cashback",
           "type": "textarea",
-          "prompt": "Set a bounded outreach pilot, qualification checklist, offer authority, and response review cadence. Distinguish target activities from achieved results and identify what must be documented before a conditional offer is released.",
-          "example": "Prepare up to 100 reviewed postal contacts and log actual delivery and response outcomes. For each responsive owner, confirm the parcel and relationship to the vesting owner. Release a conditional offer only after owner review of price, inspection rights, deposit exposure, and funding. The sprint target does not require an accepted contract."
+          "prompt": "Design the early-payoff incentive for this note. Record the cashback percentage for each payoff window, the months when reminders go out, and the expected share of borrowers who accept, compared with selling the note outright to an investor.",
+          "example": "Four-year land note offers 5% back on payoff within 6 months and 2.5% within 12 months; about 10% of borrowers take it [REtipster — HpkNhY7WclQ @ 00:11:17]. Reminders are scheduled in months 4 to 5 and 9 to 11 so buyers act before each window closes [REtipster — HpkNhY7WclQ @ 00:20:04]. The cash pulled forward replaces selling notes or borrowing from funders."
         },
         {
-          "name": "Days 22–30 review and acquisition readiness",
+          "name": "buyer_list_asset",
           "type": "textarea",
-          "prompt": "Describe the final-week review of pilot results, deal files, provider performance, and cash capacity. Define the next thirty-day commitment using evidence, including the acceptable outcome when no parcel satisfies the investment criteria.",
-          "example": "Review every active opportunity, reconcile incurred launch spending, and refresh the cash forecast. If two parcels remain promising but access documentation is pending, continue diligence without closing. If none qualifies, revise the selection thesis or pricing method. A documented rejection cohort is preferable to purchasing defective inventory to satisfy day-thirty optics."
+          "prompt": "Describe how you will build and qualify your buyer list for this parcel. Record your current cost per buyer lead, the channels used, and the zip codes, counties, and subdivisions each buyer has confirmed interest in.",
+          "example": "Buyers are treated as the real asset because acquisition cost climbed from about $5 per Facebook lead to $800 to $1,200 per lead [REtipster — HpkNhY7WclQ @ 00:42:14]. Sellers get texts, but every buyer gets a call and is qualified by zip code, city, county, and subdivision in the Flip Force CRM [DGB Media — 4KWC7a6vLcY @ 00:39:07]."
         },
         {
-          "name": "Weekly funnel and quality KPI definitions",
+          "name": "drone_shot_plan",
           "type": "textarea",
-          "prompt": "Define each funnel stage, denominator, reporting period, and evidence requirement. Include defect detection, source freshness, and turnaround measures so the pod can distinguish weak sourcing from slow execution or poor data quality.",
-          "example": "Report screened parcels, qualified parcels, owner responses, reviewed offers, accepted contracts, and completed sales as separate counts. If 20 of 100 screened parcels qualify, qualification is 20%; if four of twenty qualify for offers, offer readiness is 20%. Track unresolved access cases and median title-response days alongside conversion."
+          "prompt": "Plan the aerial media for this listing. Record the pilot's certification, the FAA airspace check, how the survey lines will be shown, the lens and distance used to avoid neighbors, and the shots that sell acreage and surroundings.",
+          "example": "Before flight, the parcel is researched with Google Earth, FAA restrictions, and the survey so the lot lines and airspace are known [Matt Wood — ZU1aoe6pwQI @ 00:02:26]. The pilot holds Part 107 certification and delivers an add-on package at $125 for five photos or $225 for ten, about five minutes of shooting time [Wyman Gentry — ItWPpkhNHto @ 00:03:51]."
         },
         {
-          "name": "Monthly earnings and capital KPI scorecard",
+          "name": "rv_use_underwriting",
           "type": "textarea",
-          "prompt": "Record realized revenue, incurred expenses, owner profit, inventory cost, unrestricted cash, and aging by cohort. Connect results to the Base annual plan while avoiding straight-line revenue assumptions when closings are irregular or seasonal.",
-          "example": "One completed Base parcel contributes $85,000 revenue and $15,725 modeled owner profit after its $10,000 overhead allocation. Annual overhead still follows actual incurrence, so one closing does not prove monthly profitability. Track unsold parcels at ledger cost, cash separately, and progress toward ten completed sales without booking anticipated proceeds."
+          "prompt": "If the parcel could become an RV park or RV storage lot, record the usable site conversion percentage, number of spaces, entry cap rate, projected NOI, and the zoning and permitting status required before any units are built.",
+          "example": "Five-acre, $2M RV storage build modeled two ways: 240 spaces returns about 12% cash-on-cash, while 160 spaces returns roughly 1%, because poor layout drops conversion to 40% and NOI from about $190k to $115k [The Owner's Math — xjNh4eemKCs @ 00:18:13]. Zoning cleared first, since one glamping student was shut down for 6-plus months [Heather Blankenship — FY9TF9ZkLwk @ 00:32:00]."
         },
         {
-          "name": "Scale decision and score-component review",
+          "name": "solar_lease_terms",
           "type": "textarea",
-          "prompt": "Review the five score components against actual execution evidence. Identify the conditions required to increase inventory slots or staffing and show how the Scaled cost ceiling preserves the canonical owner-profit target.",
-          "example": "The 86 points comprise revenue potential 23, margin potential 23, team efficiency 18, startup accessibility 11, and automation potential 11. Scale only after repeatable closings, reliable access review, and adequate cash. At $1,500,000 proceeds, total costs must stay within $1,125,000 to preserve $375,000 owner profit and 25% margin."
+          "prompt": "If a solar developer approaches the landowner, record the option period length, annual rent per acre, escalator, lease term, and whether leased acreage matches optioned acreage. Note your plan for selling the lease stream once construction starts.",
+          "example": "Offer reviewed: 4-5 year option, then a 30-year lease at $300 to $2,000 per acre per year with a 2% escalator [LandApp by LandGate — Uaymin1wo40 @ 00:03:33]. Underwrite only lease payments and match lease acreage to optioned acreage, since the developer can terminate during the option. Once construction starts, investors pay huge premiums for the stream [LandApp by LandGate — Uaymin1wo40 @ 00:05:18]."
         },
         {
-          "name": "Parcel liquidation and business exit-readiness ledger",
+          "name": "battery_storage_site",
           "type": "textarea",
-          "prompt": "List the records required for an individual parcel sale and a possible operating-business transfer. Separate inventory value from business earnings, identify nontransferable contracts, and document open claims, deposits, obligations, and owner-dependent activities.",
-          "example": "Each parcel file contains deed, title policy, survey evidence, tax status, cost ledger, market comparison, and active obligations. The business file adds reconciled earnings, provider contracts, data-license restrictions, and workflow documentation. Do not count inventory sale proceeds twice as both asset value and recurring earnings; obtain independent support for any proposed transfer valuation."
+          "prompt": "For a battery storage inquiry, record parcel acreage, distance to the substation, the offered purchase price per acre, and the zoning or planning approvals needed. Explain why this use is typically sold rather than leased by the landowner.",
+          "example": "Fifteen-acre parcel near a substation drew an offer at $30,000 per acre, or $450,000 total. Storage sites of 5 to 15 acres are bought outright rather than leased because the substation is deeded to the utility [LandApp by LandGate — Uaymin1wo40 @ 00:09:18]. Counterpoint noted for the file: Texas batteries reportedly eat their own lunch."
         }
       ],
-      "completion_gate": "By day thirty, the owner signs the launch review with actual activity counts, incurred spending, a refreshed cash forecast, assigned pod responsibilities, and an evidence-based next-month plan. Acquisition and scaling decisions remain tied to verified parcel quality, funded obligations, and canonical profit reconciliation rather than calendar pressure."
+      "completion_gate": "Do not list or close a terms sale until the terms price is multiplied out, the no-build clause is in the note, owner-occupant deals are counted per person against the state threshold, APR clears the high-cost test, and any alternative use has zoning cleared and only contracted payments underwritten."
     }
   ]
 }

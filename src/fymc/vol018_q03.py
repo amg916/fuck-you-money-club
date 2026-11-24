@@ -1,682 +1,809 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "land-flipping-unit-economics-margin-waterfall-working-capital",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for land flipping?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Parcel-Level Cost Basis, Escrow Release Timing, Heirs-Property Buyouts, GIS Screening & Title-Insured Cash Conversion",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, holds Rank #15 with a 86/100 Money-to-Manpower score. "
-        "Its canonical annual owner profits are $24,000 Conservative, $157,250 Base, and "
-        "$375,000 Scaled, measured against gross parcel sale proceeds rather than broker "
-        "commissions. This chapter maps six operating plays: fractional heir-share acquisition, "
-        "vacant-lot spread capture, infill feasibility arbitrage, minor-subdivision execution, "
-        "access-defect resolution, and title-curative resale. Only the heir-share identifier "
-        "comes from the supplied play mapping; the other five are chapter-specific applications. "
-        "A reconciled waterfall separates purchase basis, contractor work, selling costs, "
-        "customer acquisition, carrying charges, financing, reserves, and overhead. Cash-cycle "
-        "tests expose why attractive accounting spreads can exhaust acquisition capital before "
-        "escrow releases sale proceeds."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition basis remains a cost.",
-            "note": "12% net margin; $24,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition basis remains a cost.",
-            "note": "18.5% net margin; $157,250 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition basis remains a cost.",
-            "note": "25% net margin; $375,000 owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile Every Parcel Dollar Before Calling the Spread Profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with closed parcel sales, not asking prices, signed offers, earnest "
-                    "money, or the retail value of somebody else's property. The canonical "
-                    "Conservative case is $200,000 revenue and $24,000 owner profit; Base is "
-                    "$850,000 and $157,250; Scaled is $1,500,000 and $375,000. For a transparent "
-                    "cohort reconstruction, assume respectively ten sales averaging $20,000, "
-                    "twenty-five averaging $34,000, and thirty averaging $50,000. These deal "
-                    "counts and expense allocations are illustrative, while the annual endpoints "
-                    "are fixed. Revenue means gross proceeds from parcels the operator owns "
-                    "and sells as principal. A broker representing another owner recognizes "
-                    "their contractual compensation, not the owner's sale price; that is a "
-                    "different business model. In QuickBooks Online or a controlled spreadsheet, "
-                    "assign each parcel a permanent project code linked to its APN, purchase "
-                    "deed, settlement statements, and disposition record. Keep county and "
-                    "jurisdiction fields because APNs are not nationally unique. Reconcile "
-                    "the gross contractual price to credits, seller-paid deductions, debt "
-                    "payoffs, and actual bank receipts. The settlement wire is cash received, "
-                    "not revenue by itself. Track concessions as reductions of price rather "
-                    "than quietly preserving an obsolete listing valuation."
-                ),
-                (
-                    "The waterfall below makes acquisition basis the largest deduction and "
-                    "keeps every remaining cost visible. Purchase basis consumes $110,000, "
-                    "$425,000, and $690,000 across the three cases. Closing and title budgets "
-                    "cover allocated acquisition and disposition charges without counting a "
-                    "broker commission twice. Contractor delivery includes survey coordination, "
-                    "parcel research, field verification, and limited curative work; customer "
-                    "acquisition covers list purchases, mail, answering services, and seller "
-                    "follow-up. Carrying costs contain property taxes, insurance, and routine "
-                    "site obligations; financing contains interest and allocated facility fees, "
-                    "never principal repayment. The residual operating contribution before "
-                    "overhead is $40,000, $242,250, and $525,000. Subtracting overhead of "
-                    "$16,000, $85,000, and $150,000 produces the exact canonical owner profits. "
-                    "Per closed parcel, that is $2,400, $6,290, and $12,500. Treat these as "
-                    "management-model earnings before the owner's personal income taxes and "
-                    "without an additional imputed salary for owner labor. The first "
-                    "full-time seat is the working owner; the Scaled overhead budget includes "
-                    "the second full-time employee. Contractor counts describe recurring "
-                    "relationships, not full-time equivalents. Actual employment costs must "
-                    "fit these envelopes or the scenario must be re-underwritten."
-                ),
-                (
-                    "Separate planning reserves from recognized expenses when reconciling "
-                    "management results to the books. This model deducts $2,000, $12,750, and "
-                    "$30,000 for expected scrubs, valuation corrections, and exceptional "
-                    "post-contract losses. Those allowances equal 1%, 1.5%, and 2% of sales. "
-                    "Holding the same dollars in a savings account does not itself create "
-                    "an accounting expense. Maintain a bridge showing modeled allowance, "
-                    "actual losses, remaining exposure, and any permitted accounting provision "
-                    "under the entity's reporting method. An earnest-money refund reverses "
-                    "a deposit liability when appropriate; it is not automatically negative "
-                    "revenue. A failed purchase can leave unrecoverable survey or counsel "
-                    "spending even when the deposit returns. Repeatedly marketing land for "
-                    "sale can also place property within the dealer-property exclusion in "
-                    "26 U.S.C. 1221(a)(1), so do not price the business on assumed capital-gain "
-                    "treatment. The stated $3,000–$15,000 monthly operating-budget range is a "
-                    "planning reference, not a replacement for this ledger. Separate recurring "
-                    "cash commitments from transaction-variable spending, and preserve an "
-                    "explicit bridge whenever annual activity pushes total monthly cash "
-                    "outflow beyond that range. Report cash profit, modeled profit, and "
-                    "taxable income as distinct measures."
-                ),
-            ],
-            "table": {
-                "caption": "Reconciled Annual Land-Flipping Waterfall: Fixed Canonical Endpoints and Illustrative Cost Allocations",
-                "headers": [
-                    "Waterfall line and accounting treatment",
-                    "Conservative annual cohort allocation",
-                    "Base annual cohort allocation",
-                    "Scaled annual cohort allocation",
-                ],
-                "rows": [
-                    [
-                        "Gross parcel proceeds recognized from completed principal sales",
-                        "$200,000 from ten sales averaging $20,000 each",
-                        "$850,000 from twenty-five sales averaging $34,000 each",
-                        "$1,500,000 from thirty sales averaging $50,000 each",
-                    ],
-                    [
-                        "Deduct purchase basis assigned to the parcels sold",
-                        "$110,000 purchase basis, averaging $11,000 per closed parcel",
-                        "$425,000 purchase basis, averaging $17,000 per closed parcel",
-                        "$690,000 purchase basis, averaging $23,000 per closed parcel",
-                    ],
-                    [
-                        "Deduct title, escrow, recording, and allocated closing charges",
-                        "$10,000 closing charges, averaging $1,000 per completed sale",
-                        "$34,000 closing charges, averaging $1,360 per completed sale",
-                        "$45,000 closing charges, averaging $1,500 per completed sale",
-                    ],
-                    [
-                        "Deduct contractor delivery labor and parcel-specific technical work",
-                        "$8,000 contractor spending, averaging $800 per completed sale",
-                        "$25,500 contractor spending, averaging $1,020 per completed sale",
-                        "$45,000 contractor spending, averaging $1,500 per completed sale",
-                    ],
-                    [
-                        "Deduct disposition commissions and transaction-linked selling expenses only",
-                        "$12,000 disposition spending, modeled at 6% of proceeds",
-                        "$51,000 disposition spending, modeled at 6% of proceeds",
-                        "$75,000 disposition spending, modeled at 5% of proceeds",
-                    ],
-                    [
-                        "Deduct seller acquisition campaigns and attributable conversion spending",
-                        "$8,000 acquisition marketing, averaging $800 per completed sale",
-                        "$25,500 acquisition marketing, averaging $1,020 per completed sale",
-                        "$30,000 acquisition marketing, averaging $1,000 per completed sale",
-                    ],
-                    [
-                        "Deduct property taxes, insurance, and recurring site obligations",
-                        "$6,000 carrying charges, averaging $600 per completed sale",
-                        "$17,000 carrying charges, averaging $680 per completed sale",
-                        "$30,000 carrying charges, averaging $1,000 per completed sale",
-                    ],
-                    [
-                        "Deduct interest and facility fees without deducting principal",
-                        "$4,000 financing charges, averaging $400 per completed sale",
-                        "$17,000 financing charges, averaging $680 per completed sale",
-                        "$30,000 financing charges, averaging $1,000 per completed sale",
-                    ],
-                    [
-                        "Deduct modeled scrub losses with separate accounting reconciliation",
-                        "$2,000 expected losses, equivalent to 1% of proceeds",
-                        "$12,750 expected losses, equivalent to 1.5% of proceeds",
-                        "$30,000 expected losses, equivalent to 2% of proceeds",
-                    ],
-                    [
-                        "Deduct overhead including applicable staff, systems, and administration",
-                        "$16,000 overhead budget after separately allocated transaction expenses",
-                        "$85,000 overhead budget after separately allocated transaction expenses",
-                        "$150,000 overhead budget including the additional employee seat",
-                    ],
-                    [
-                        "Retain canonical owner profit after all modeled deductions",
-                        "$24,000 owner profit, retaining exactly 12% of proceeds",
-                        "$157,250 owner profit, retaining exactly 18.5% of proceeds",
-                        "$375,000 owner profit, retaining exactly 25% of proceeds",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Price Six Operating Plays Against Evidence, Not Imagined Upside",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the Base parcel as a common underwriting ruler: $34,000 resale, "
-                    "$17,000 purchase basis, $1,360 closing charges, $1,020 contractor delivery, "
-                    "$2,040 selling costs, $1,020 acquisition CAC, $680 carrying costs, $680 "
-                    "financing, $510 expected losses, and $3,400 allocated overhead leave "
-                    "$6,290. Vacant-lot spread capture earns that result only when a legally "
-                    "usable parcel actually clears the assumed price. Infill feasibility "
-                    "arbitrage replaces superficial price-per-acre comparisons with frontage, "
-                    "setbacks, utility availability, lot coverage, and buildable-envelope "
-                    "evidence. An extra $2,000 utility verification expense reduces the "
-                    "same unit profit to $4,290 unless price or purchase basis changes. "
-                    "QGIS can overlay county parcels, FEMA flood mapping, and municipal "
-                    "zoning, but map geometry does not establish legal access or authorize "
-                    "construction. Obtain the recorded easement and jurisdiction-specific "
-                    "development requirements separately. Redfin and Zillow can provide "
-                    "listing context; verified deeds and MLS closed-sale records provide "
-                    "stronger transaction evidence when available. Save comparable selection "
-                    "rules before receiving a seller's counteroffer, so enthusiasm cannot "
-                    "silently replace the original underwriting standard. If utility or "
-                    "buildability evidence fails, value the parcel for its supported use "
-                    "and reprice before committing funds."
-                ),
-                (
-                    "The mandatory TRACK_1 play, fractional_heir_share_partition_forcing, "
-                    "requires a different liquidity model from fee-simple lot flipping. "
-                    "Suppose a documented 25% tenancy-in-common interest costs $8,000 and "
-                    "verified consensual buyout proceeds are $16,000. That $16,000 is the "
-                    "operator's sale revenue; the property's hypothetical $100,000 whole-parcel "
-                    "value is neither owned inventory nor operator revenue. A simplified "
-                    "deal contribution deducts $8,000 basis, $3,000 counsel and title work, "
-                    "$1,000 combined holding and financing, and $1,000 closing and selling "
-                    "costs, leaving $3,000 before acquisition marketing, reserves, and "
-                    "overhead. One additional $4,000 legal engagement makes that contribution "
-                    "negative. Confirm the probate chain, ownership fraction, existing "
-                    "agreements, liens, and actual applicability of heirs-property statutes "
-                    "before purchasing. California's partition provisions, including Code "
-                    "of Civil Procedure 874.316 and 874.317 where applicable, establish "
-                    "buyout procedures and constraints on partition by sale. A purchased "
-                    "minority interest does not promise a forced quick liquidation. Seek "
-                    "consensual exits first; use counsel-supervised proceedings only when "
-                    "available and economically justified. The fallback is renegotiating "
-                    "voluntary exits or retaining the interest, never threatening remedies "
-                    "the operator cannot lawfully obtain. Keep this example separate from "
-                    "the canonical fee-simple cohort."
-                ),
-                (
-                    "Minor-subdivision execution should be valued as a conditional conversion "
-                    "project, not several already-saleable lots. An illustrative $70,000 "
-                    "parent tract plus $20,000 engineering, $10,000 municipal charges, "
-                    "$10,000 carrying and financing, and $10,000 closing and selling costs "
-                    "requires $120,000 before CAC, reserves, or overhead. Three completed "
-                    "lots selling for $50,000 each produce $30,000 contribution; only two "
-                    "saleable lots produce a $20,000 loss. California Government Code 66424 "
-                    "supplies a statutory subdivision definition, while local implementation "
-                    "determines the actual review path. Access-defect resolution and "
-                    "title-curative resale need equally explicit incremental budgets. Adding "
-                    "a $4,000 recorded access solution to the Base parcel leaves $2,290 "
-                    "owner profit if every other assumption holds. Adding $2,500 of title "
-                    "curative work instead leaves $3,790; adding both leaves a $210 loss. "
-                    "Require the title company to identify the proposed insured estate "
-                    "and remaining exceptions, rather than treating a commitment as "
-                    "completed coverage. Environmental diligence also follows the parcel's "
-                    "history: former industrial use can warrant an environmental "
-                    "professional and an assessment aligned with 40 CFR Part 312. If "
-                    "cost or timing cannot be bounded, preserve the purchase contingency "
-                    "or decline the project."
-                ),
-            ],
-            "table": {
-                "caption": "Six Play Applications: Incremental Unit Math, Evidence Requirements, and Capital-Preserving Fallbacks",
-                "headers": [
-                    "Operating play and ownership position",
-                    "Illustrative unit contribution or profit calculation",
-                    "Evidence required before underwriting the premium",
-                    "Fallback when the value thesis breaks",
-                ],
-                "rows": [
-                    [
-                        "Vacant-lot spread capture using a principal-owned fee-simple parcel",
-                        "$34,000 gross resale less $27,710 deductions leaves $6,290",
-                        "Verify closed comparables, recorded access, taxes, and insurability",
-                        "Reduce acquisition price or abandon unsupported resale assumptions",
-                    ],
-                    [
-                        "Infill feasibility arbitrage based on documented development capacity",
-                        "Additional $2,000 utility investigation reduces owner profit to $4,290",
-                        "Obtain utility responses, zoning standards, and buildable-envelope analysis",
-                        "Underwrite supported existing use rather than hypothetical construction",
-                    ],
-                    [
-                        "Minor-subdivision execution after jurisdiction-specific parcel creation requirements",
-                        "Three $50,000 lots less $120,000 costs leave $30,000 contribution",
-                        "Confirm engineering scope, fees, access, utilities, and approval sequence",
-                        "Resell the parent tract only at verified achievable pricing",
-                    ],
-                    [
-                        "Access-defect resolution through enforceable, recorded property rights",
-                        "Additional $4,000 access cure reduces Base profit to $2,290",
-                        "Require executed easement documents and acceptable title treatment",
-                        "Reprice as access-constrained land or terminate under contingency",
-                    ],
-                    [
-                        "Title-curative resale after resolving specifically identified ownership defects",
-                        "Additional $2,500 curative work reduces Base profit to $3,790",
-                        "Collect recorded releases, corrected instruments, and updated title findings",
-                        "Stop spending when counsel cannot bound remaining curative work",
-                    ],
-                    [
-                        "fractional_heir_share_partition_forcing: documented fractional acquisition with co-owner protections",
-                        "$16,000 buyout less $13,000 direct costs leaves $3,000 contribution",
-                        "Verify probate chain, actual ownership fraction, and applicable protections",
-                        "Renegotiate voluntary exits or retain without threatening unavailable remedies",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the Evidence Before Buying the Story",
-                "body": (
-                    "Use small, bounded diligence expenditures to disprove the resale thesis "
-                    "before purchase funds become illiquid inventory."
-                ),
-                "items": [
-                    "Ask the title officer to identify the insured access position; compare the answer with recorded easements rather than a visible road.",
-                    "Archive comparable-sale searches with dates and exclusion reasons, preventing later cherry-picking of oversized or utility-served lots.",
-                    "Quote survey, probate, and access work by deliverable with stop-work limits; a cheap interest can otherwise become an open-ended legal project.",
-                    "Offer consensual heir-share exits using documented valuation and counsel-reviewed terms; price an extended holding period into every offer.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund the Inventory Cycle and the Escrow Release Gap Separately",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Land trading is usually inventory-heavy rather than receivables-heavy. "
-                    "Distinguish days from acquisition to an unconditional buyer closing, "
-                    "days from closing to usable escrow proceeds, and genuine receivable "
-                    "days after revenue recognition. For this liquidity illustration, assume "
-                    "180 days from acquisition to sale closing and ten additional days "
-                    "before funds are usable. The ten-day release assumption is a stress "
-                    "input, not a statement that ordinary escrow universally holds money "
-                    "that long. Confirm local recording, collected-funds rules, wire cutoffs, "
-                    "and transaction-specific holdbacks with the closing agent. At Base "
-                    "throughput, twenty-five annual sales times 190 days divided by 365 "
-                    "creates 13.01 average capital-funded parcel equivalents. Deploying "
-                    "$20,400 upfront per parcel, comprising basis, the full closing budget, "
-                    "contractor delivery, and CAC, requires approximately $265,500. Funding "
-                    "the entire closing budget early is deliberately conservative even "
-                    "though some charges occur at disposition. Average accrued carrying "
-                    "and financing costs add approximately $8,800 under a uniform-spend "
-                    "assumption. Maintain a deal-level cash schedule because a stalled "
-                    "subdivision or disputed heir interest cannot be represented faithfully "
-                    "by the same 190-day cycle. Buyer deposits held in trust are not "
-                    "available acquisition capital."
-                ),
-                (
-                    "Add three months of Base overhead, $21,250, and a separately earmarked "
-                    "$12,750 loss buffer to the approximately $274,300 deployed and accruing "
-                    "capital. The resulting steady-state funding target is approximately "
-                    "$308,300 before owner distributions or exceptional projects. Using "
-                    "the same timing method gives approximately $79,400 Conservative and "
-                    "$504,800 Scaled. Conservative upfront deployment is $13,600 per parcel; "
-                    "Scaled is $27,000. Average carrying-plus-financing accrual per open "
-                    "parcel is $500, $680, and $1,000 respectively. These are gross funding "
-                    "requirements before subtracting any committed, drawable financing. "
-                    "The Scaled requirement exceeds the supplied $400,000 upper startup "
-                    "capital reference, so thirty annual sales at this cycle cannot simply "
-                    "be declared self-funded within that range. Stage purchases, shorten "
-                    "verified cycle times, recycle retained earnings, or arrange capital "
-                    "whose availability and cost are documented. If a lender funds purchase "
-                    "basis, subtract the actual advance from equity needed and add its "
-                    "repayment to closing cash uses; do not subtract loan principal from "
-                    "profit. Recalculate interest if leverage changes, since the fixed "
-                    "financing allowance does not authorize unlimited borrowing. Keep owner "
-                    "draws subordinate to the forecast cash trough rather than trailing "
-                    "accounting profit."
-                ),
-                (
-                    "Measure release delays as a daily capital requirement. A thirty-day "
-                    "extension at Base throughput ties up approximately $43,300 more "
-                    "capital using $21,080 average funded value per open parcel times "
-                    "twenty-five annual sales times thirty divided by 365. That incremental "
-                    "funding need is separate from approximately $5,667 of additional "
-                    "annual carrying and financing expense if every parcel's original "
-                    "180-day holding period extends by thirty days. Do not add the "
-                    "entire trapped principal to the income statement. Maintain a rolling "
-                    "thirteen-week cash forecast that identifies signed purchase obligations, "
-                    "refundable diligence commitments, expected closings, and genuinely "
-                    "drawable facilities. Show a second schedule with receipts delayed "
-                    "thirty days and exclude disputed proceeds altogether until resolution "
-                    "has a documented path. Seller financing requires another model: "
-                    "recognized revenue, installment collections, servicing costs, defaults, "
-                    "and tax timing can diverge sharply. The canonical cases here assume "
-                    "cash dispositions, not a growing note portfolio. Contractors should "
-                    "be paid against completed research, survey, or curative milestones, "
-                    "but their agreed terms must remain credible; shifting every liquidity "
-                    "problem onto a surveyor usually destroys delivery capacity. A funding "
-                    "plan is workable only when both the cash amount and payment date "
-                    "are supported."
-                ),
-            ],
-            "table": {
-                "caption": "Working-Capital Control Sheet: Inventory Days, Escrow Holds, and Available Cash",
-                "headers": [
-                    "Cash-cycle component and measurement boundary",
-                    "Quantified assumption or operational calculation",
-                    "Required evidence supporting the cash forecast",
-                    "Operator response when timing deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Inventory holding period before a completed cash disposition",
-                        "Model 180 days from acquisition through sale closing",
-                        "Track acquisition wires, listing dates, contracts, and closing records",
-                        "Stop new commitments when delayed sales exceed funded capacity",
-                    ],
-                    [
-                        "Escrow release interval before sale proceeds become spendable",
-                        "Add ten illustrative days after the sale closing",
-                        "Obtain actual escrow release terms and recording dependencies",
-                        "Exclude held proceeds from currently available acquisition cash",
-                    ],
-                    [
-                        "Base upfront deployment across the steady-state acquisition pipeline",
-                        "$20,400 times twenty-five times 190 divided by 365",
-                        "Tie purchase basis and allocated early costs to invoices",
-                        "Reduce concurrent acquisitions before exhausting the overhead buffer",
-                    ],
-                    [
-                        "Three scenario funding targets before committed financing offsets",
-                        "Approximately $79,400 Conservative, $308,300 Base, and $504,800 Scaled",
-                        "Include average accruals, three overhead months, and loss buffers",
-                        "Stage Scaled deployment when available capital remains below requirement",
-                    ],
-                    [
-                        "Incremental Base float caused by thirty additional cycle days",
-                        "Approximately $43,300 additional funding before exceptional project costs",
-                        "Recompute using actual open-parcel values and delayed receipt dates",
-                        "Arrange documented liquidity without treating trapped principal as expense",
-                    ],
-                    [
-                        "Available capital after restrictions, commitments, and distributions",
-                        "Subtract restricted funds and committed purchases from bank cash",
-                        "Reconcile bank balances, trust restrictions, facilities, and scheduled draws",
-                        "Suspend discretionary owner distributions before missing contractual obligations",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build a parcel cash ledger",
-                    "action": "Assign dated purchase, diligence, holding, sale, and release events to each parcel.",
-                    "detail": "Separate expected amounts from contractual obligations and retain the supporting statement or invoice.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile closing proceeds",
-                    "action": "Bridge gross sale price to credits, selling deductions, debt repayment, and the bank wire.",
-                    "detail": "Recognize principal repayment as a financing cash use rather than a second acquisition expense.",
-                },
-                {
-                    "step": 3,
-                    "title": "Project the cash trough",
-                    "action": "Refresh thirteen weekly balances with a parallel thirty-day receipt-delay scenario.",
-                    "detail": "Include payroll, property obligations, contractor milestones, restricted deposits, and facility availability.",
-                },
-                {
-                    "step": 4,
-                    "title": "Set the next acquisition limit",
-                    "action": "Approve only purchase commitments supported after overhead and loss buffers remain funded.",
-                    "detail": "Record the maximum cash deployment and revisit it whenever a sale slips or a cure expands.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress the Cohort and Stop Losses Before They Consume the Margin",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Stress price, purchase basis, acquisition CAC, and time independently "
-                    "before combining them. The table holds annual unit counts constant "
-                    "and changes only the stated driver. A 10% resale-price decline reduces "
-                    "Conservative owner profit to $5,200, Base to $77,350, and Scaled to "
-                    "$232,500 after allowing disposition costs to fall at their modeled "
-                    "6%, 6%, and 5% rates. Other dollar budgets, including reserves, remain "
-                    "fixed so the stress does not manufacture savings. A 10% purchase-basis "
-                    "increase removes $11,000, $42,500, and $69,000 from profit respectively. "
-                    "Doubling acquisition CAC leaves $16,000, $131,750, and $345,000. Express "
-                    "CAC per closed acquisition, not per mailed name or signed contract: "
-                    "a $25,500 campaign that produces fifty contracts but only twenty-five "
-                    "completed purchases still costs $1,020 per purchase. Include failed "
-                    "campaign spending in the cohort rather than allocating it only to "
-                    "parcels that happened to sell. If annual purchases exceed sales, "
-                    "separate pipeline investment from the matched sold-parcel analysis. "
-                    "Otherwise a growing inventory balance can hide worsening conversion "
-                    "economics, while a liquidation year can temporarily make marketing "
-                    "efficiency appear better than it really is."
-                ),
-                (
-                    "Define scrub events before launching acquisition campaigns: inaccessible "
-                    "parcels, defective ownership chains, unbuildable setbacks, failed utility "
-                    "economics, adverse environmental findings, and buyers unable to close. "
-                    "For each event, distinguish refundable deposits, recoverable inventory "
-                    "value, sunk contractor work, and additional legal obligations. The "
-                    "stress table adds one loss beyond the existing annual allowance equal "
-                    "to half a typical upfront deployment: $6,800 Conservative, $10,200 "
-                    "Base, or $13,500 Scaled. This deliberately changes profit rather than "
-                    "merely moving money between bank accounts. Maintain a reserve register "
-                    "with parcel identifier, exposure category, estimated loss range, "
-                    "responsible operator, and next evidence date. Update estimates when "
-                    "title findings or field inspections change the facts. Do not apply "
-                    "a generic refund percentage borrowed from ecommerce to land sales. "
-                    "Recorded conveyances, escrow deposits, contractual remedies, and "
-                    "post-closing claims have different mechanics. CERCLA liability under "
-                    "42 U.S.C. 9607 can also overwhelm a small acquisition discount; "
-                    "environmental inquiry and applicable defenses require their own "
-                    "fact-specific assessment. A routine $510 Base allowance cannot absorb "
-                    "an industrial remediation project. Decline exposures whose plausible "
-                    "downside exceeds the business's capacity rather than pretending "
-                    "diversification makes every parcel acceptable."
-                ),
-                (
-                    "Apply a combined downside before increasing throughput: a 10% price "
-                    "decline, 10% purchase-basis increase, and thirty additional holding "
-                    "days produce approximately negative $7,467 Conservative profit, "
-                    "$29,183 Base profit, and $153,500 Scaled profit. The timing component "
-                    "scales the existing carrying-plus-financing budgets by thirty divided "
-                    "by 180; it does not assume new financing is automatically available. "
-                    "These results show why the Conservative case has little room for "
-                    "optimistic access, survey, or resale assumptions. Require an executable "
-                    "exit, bounded technical scope, insurable ownership position, and "
-                    "funded cash trough before making an acquisition nonrefundable. When "
-                    "representing another owner rather than selling owned inventory, review "
-                    "the jurisdiction's broker licensing rules; California Business and "
-                    "Professions Code 10131 identifies covered brokerage activities, with "
-                    "exceptions requiring separate analysis. Keep the operator's principal "
-                    "trading ledger distinct from any licensed representation business. "
-                    "After each ten completed dispositions, compare actual cost categories "
-                    "and release days with underwriting, investigate the largest misses, "
-                    "and update offer ceilings. Automation should accelerate parcel "
-                    "screening and comparable-sale tracking, not convert missing evidence "
-                    "into favorable assumptions. Expand only when realized unit contribution "
-                    "and cash recycling both support the next acquisition cohort."
-                ),
-            ],
-            "table": {
-                "caption": "One-Driver and Combined Stress Tests: Annual Owner Profit After Explicit Cost Behavior",
-                "headers": [
-                    "Stress assumption and fixed operating boundary",
-                    "Conservative resulting annual owner profit",
-                    "Base resulting annual owner profit",
-                    "Scaled resulting annual owner profit",
-                ],
-                "rows": [
-                    [
-                        "Resale prices decline 10%; disposition percentages remain unchanged",
-                        "$5,200 remains after $18,800 net profit erosion",
-                        "$77,350 remains after $79,900 net profit erosion",
-                        "$232,500 remains after $142,500 net profit erosion",
-                    ],
-                    [
-                        "Purchase basis rises 10%; all other budgets remain unchanged",
-                        "$13,000 remains after $11,000 additional acquisition basis",
-                        "$114,750 remains after $42,500 additional acquisition basis",
-                        "$306,000 remains after $69,000 additional acquisition basis",
-                    ],
-                    [
-                        "Seller acquisition CAC doubles without increasing closed sales",
-                        "$16,000 remains after $8,000 additional marketing expense",
-                        "$131,750 remains after $25,500 additional marketing expense",
-                        "$345,000 remains after $30,000 additional marketing expense",
-                    ],
-                    [
-                        "Every parcel carries thirty days beyond modeled 180 days",
-                        "Approximately $22,333 remains after $1,667 additional time costs",
-                        "Approximately $151,583 remains after $5,667 additional time costs",
-                        "$365,000 remains after $10,000 additional time costs",
-                    ],
-                    [
-                        "One exceptional loss exceeds the already deducted reserve",
-                        "$17,200 remains after $6,800 additional realized loss",
-                        "$147,050 remains after $10,200 additional realized loss",
-                        "$361,500 remains after $13,500 additional realized loss",
-                    ],
-                    [
-                        "Combine lower prices, higher basis, and thirty-day holding extension",
-                        "Approximately negative $7,467 results from the combined downside",
-                        "Approximately $29,183 remains after the combined downside assumptions",
-                        "$153,500 remains after applying the combined downside assumptions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before Capital Becomes Nonrefundable",
-                "body": (
-                    "Document each condition at the parcel level and stop the acquisition "
-                    "when evidence contradicts the funded underwriting case."
-                ),
-                "items": [
-                    "Verify the conveyed ownership interest, recorded access rights, title exceptions, and counsel-reviewed co-owner protections where fractional interests are involved.",
-                    "Verify the resale thesis with closed comparables, zoning requirements, utility evidence, and subdivision costs that match the actual intended use.",
-                    "Verify that all contractor quotes, selling deductions, CAC allocations, time costs, and loss allowances reconcile to the required owner-profit hurdle.",
-                    "Verify sufficient drawable capital under delayed receipts, preserving overhead and loss buffers without spending restricted buyer deposits.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A parcel spread becomes owner profit only after every deduction is funded and the sale proceeds are spendable.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Create a parcel-coded waterfall that reconciles gross sale proceeds, acquisition basis, every operating deduction, and the exact canonical scenario endpoints.",
-        "Document closed-sale comparables, legal access, title treatment, zoning, utility feasibility, and the supported exit for every acquisition.",
-        "Separate fractional-interest revenue from whole-property value and budget consensual exit or counsel-supervised proceedings with explicit spending limits.",
-        "Calculate inventory days, escrow release days, average funded parcel exposure, three months of overhead, and an independently tracked loss buffer.",
-        "Run price, purchase-basis, CAC, thirty-day delay, exceptional-loss, and combined downside tests before increasing annual throughput.",
-        "Refresh the thirteen-week cash forecast weekly and stop discretionary purchases or distributions when delayed receipts breach protected liquidity.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "26 U.S.C. 1221(a)(1) — Property excluded from the capital-asset definition",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1221",
-            "relevance": (
-                "Property held primarily for sale to customers in the ordinary course "
-                "of business is excluded from capital-asset treatment; repeated flipping "
-                "requires classification based on the operator's actual facts."
-            ),
-        },
-        {
-            "title": "California Code of Civil Procedure 874.316 — Cotenant buyout procedures",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=874.316.",
-            "relevance": (
-                "For proceedings within the applicable statutory framework, cotenant "
-                "buyout procedures affect fractional-interest exit timing, valuation, "
-                "notices, and liquidity assumptions."
-            ),
-        },
-        {
-            "title": "California Code of Civil Procedure 874.317 — Partition alternatives",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=874.317.",
-            "relevance": (
-                "The statutory treatment of partition in kind and partition by sale "
-                "prevents underwriting a purchased fractional interest as an automatic "
-                "right to immediate whole-property liquidation."
-            ),
-        },
-        {
-            "title": "California Government Code 66424 — Subdivision definition",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=66424.",
-            "relevance": (
-                "The statutory subdivision definition informs whether proposed parcel "
-                "creation enters the subdivision framework; local requirements determine "
-                "the project's engineering, review, and timing budget."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and Practices for All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Environmental inquiry standards can affect diligence scope and timing "
-                "for purchasers seeking applicable CERCLA landowner liability protections."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 9607 — CERCLA liability and related defenses",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Potential environmental liability can dwarf parcel acquisition cost; "
-                "underwriting must evaluate site history, investigation results, and "
-                "the conditions of any claimed protection."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 10131 — Real estate broker activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
-            "relevance": (
-                "Activities performed for others for compensation can fall within "
-                "broker licensing rules; distinguish principal-owned parcel sales from "
-                "representation services and evaluate applicable exceptions separately."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'cold-calling-texting-multichannel-land-deal-acquisition',
+ 'question_prompt': 'How do I use cold calling and texting to get land under contract without getting '
+                    'sued?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Cold Calling, Texting, and Multichannel Deal Acquisition',
+ 'subtitle': 'Live cold calling sessions on vacant land, tax-delinquent, and code-violation lists, texting '
+             'systems that produce contracts, DNC and TCPA legal rules and lawsuit risk, getting '
+             'landowners to say yes, the 4-channel marketing and 4-part acquisition systems, and why old '
+             'direct-response tactics are failing',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land operators agree that outbound volume plus fast offers drives contracts: '
+                      'Michael Bull says calling, texting and mail all profit and reach different sellers '
+                      "on one list, while Dylan Applegate's students hit 6 contracts in 7 days by pushing "
+                      '20 offers a day. The street math varies widely. The Apke Brothers clock one deal '
+                      'per 5,000 texts for a skilled texter versus one per 20,000 for beginners; Bull says '
+                      '10,000 to 40,000 texts per contract; Clay Hepler logs 30,000 to 250,000. Ajay '
+                      'Sharma prices callers at $4 to $8 an hour, and Maximilian Dier says stacked '
+                      'government lists convert roughly 10x better. The split is sharp: Land Academy and '
+                      'Bull favor mail, Applegate and the Apke Brothers start with SMS, and TCPA demand '
+                      'letters, honey-pot sellers and million-dollar settlements haunt every texting '
+                      'playbook.',
+ 'key_metrics': [{'label': 'Texts Required Per Contract',
+                  'metric': 'Texts Required Per Contract',
+                  'value': 'About 10,000 texts per contract if skilled; 30,000 to 40,000 if not',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bull's benchmark after running a dedicated texting team; at 100,000 texts a "
+                             'month that is only three contracts',
+                  'source': 'Michael Bull ([PMSn1EaZ42Y @ 00:06:01])'},
+                 {'label': 'Hand-Dial Deal Benchmark',
+                  'metric': 'Hand-Dial Deal Benchmark',
+                  'value': 'About 1,000 hand dials for at least one deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'At 40 calls a day that is roughly 25 days, or about one deal a month for a '
+                             'solo caller',
+                  'source': 'Apke Brothers ([lWYFLEd7PA0 @ 00:03:42])'},
+                 {'label': 'SMS Cost Per Contract',
+                  'metric': 'SMS Cost Per Contract',
+                  'value': '$1,300 to $1,500 per contract',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Applegate's current cost per contract running the SMS system with A/B-tested "
+                             'openers and automated follow-ups',
+                  'source': 'Dylan Applegate ([Hyk7GilIJ8g @ 00:13:37])'},
+                 {'label': 'Government List Records Per Deal',
+                  'metric': 'Government List Records Per Deal',
+                  'value': 'About 1,000 records per deal versus 12,000 on regular data',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Dier's comparison of stacked government lists such as code violations "
+                             'against standard purchased data, roughly 10x more effective',
+                  'source': 'Maximilian Dier ([xPy40xTlt64 @ 00:22:01])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every serious operator here treats deal acquisition as a volume game built '
+                              'on outbound reach, and none of them claims a single channel is the only one '
+                              'that pays. Michael Bull, who once ran three separate channel teams across '
+                              '300-plus transactions, says cold calling, texting and direct mail are all '
+                              'profitable and hit mutually exclusive seller types, so the same '
+                              '10,000-record list can be worked three ways [PMSn1EaZ42Y @ 00:00:53]. '
+                              'Maximilian Dier frames wholesaling as a pyramid: mass outreach at the base, '
+                              'follow-up in the middle, the close at the top, with paid upgrades like '
+                              'callers, pay-per-lead, Google ads and mailers layered on once cash exists '
+                              '[uQ2jDRUrtoY @ 00:00:36]. Jeff and DeAndre of the Land Flipping Empire run '
+                              'text-first because sellers respond faster to SMS than to cold calls, '
+                              'pushing about 1,000 texts a day through the Flip Force CRM [4KWC7a6vLcY @ '
+                              '00:40:39]. Clay Hepler, with 200-plus deals across 25-plus states at a $37K '
+                              'average profit, adds the discipline layer: pick one channel, one data type, '
+                              'and commit to it for a year before adding another, and only stack new '
+                              'channels after crossing $1M a year [c8ekY72VGy0 @ 00:06:04]. The shared '
+                              'baseline is relentless, repeatable outreach rather than clever one-off '
+                              'hustle.',
+                              'The second point of agreement is that leads are worthless until an offer '
+                              'goes out, and that qualification, not raw lead count, is what scales. Dylan '
+                              "Applegate's diagnosis of struggling students is blunt: everyone has the "
+                              'same tools, but the people who fall behind let leads stall in the qualify '
+                              'stage instead of pushing every single one to offer given, with phone offers '
+                              'preferred and text as the fallback [MaWsUKnc8CI @ 00:06:33]. Clay Hepler '
+                              'compresses the same idea into two lines: scale qualified leads, not gross '
+                              'leads, because qualified leads equal offers [c8ekY72VGy0 @ 00:11:05]. The '
+                              'Apke Brothers list the skills that separate a texter who closes from one '
+                              'who burns two to three months with nothing: qualifying and disqualifying '
+                              'both the person and the land, copywriting, A/B testing, follow-up, and a '
+                              'tight definition of what counts as a lead [Ls2lelB6ImM @ 00:10:28]. Ajay '
+                              'Sharma builds that filter into payroll, putting a roughly $6-an-hour lead '
+                              'manager in place whose entire job is to confirm the owner would sell, '
+                              'extract an asking price, and book the appointment [Jb9R7WTh63s @ 00:14:01]. '
+                              'Across channels, the operators converge on speed and volume of offers as '
+                              'the real needle mover.',
+                              'Baseline prerequisites are cheap in hardware and expensive in discipline. '
+                              'DeAndre says a phone, a laptop and Wi-Fi are the only three things needed '
+                              'to start, and the assignability clause lets the pair sell contracts with no '
+                              'license and no capital of their own [4KWC7a6vLcY @ 00:21:51]. Where the '
+                              'operators get demanding is the front end: data and market selection. Ajay '
+                              "Sharma's four-part acquisition system starts with data and market selection "
+                              'before lead generation, lead management and closing [Jb9R7WTh63s @ '
+                              '00:03:15]. Dylan Applegate screens counties for a 100% one-year '
+                              'sell-through rate, at least 15 actives and 15 solds in six months, a '
+                              'pending sell-through of 20% or more, a rising trend across every window, '
+                              'and a median pending price of at least $125K, then pulls rural 2-plus-acre '
+                              'parcels owned 36-plus months with government, church, school, landlocked, '
+                              'heavy-wetland and heavy-flood parcels scrubbed out, and adds that only '
+                              'about 13 to 14 counties fit everything at once [Hyk7GilIJ8g @ 00:04:17]. '
+                              'Clay Hepler runs a parallel screen, targeting 10 to 15% monthly '
+                              'sell-through and 60 to 75% over six months, and reads a weak six-month '
+                              'number as a slowing market [c8ekY72VGy0 @ 00:01:54].'],
+               'table': {'caption': 'Where the land acquisition operators line up on outbound deal flow',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['All three outbound channels can pay off',
+                                   'Calling, texting and mail are all profitable and reach mutually '
+                                   'exclusive seller types on one list',
+                                   'Work the same 10,000-record list through more than one channel over '
+                                   'time',
+                                   'Michael Bull ([PMSn1EaZ42Y @ 00:00:53])'],
+                                  ['Texting pulls faster seller responses than calling',
+                                   'Sellers respond faster to text than cold calls; about 1,000 texts go '
+                                   'out every day',
+                                   'Text sellers for speed, but call buyers to qualify zip codes and '
+                                   'subdivisions',
+                                   'DGB Media ([4KWC7a6vLcY @ 00:39:39])'],
+                                  ['Every single lead must reach an offer',
+                                   'Struggling students stall leads in qualify instead of moving every '
+                                   'lead to offer given',
+                                   'Set a daily offer quota and track the offer-given stage religiously',
+                                   'Dylan Applegate ([MaWsUKnc8CI @ 00:06:33])'],
+                                  ['Qualified leads matter more than gross lead counts',
+                                   'Scale qualified leads, not gross leads, because qualified leads equal '
+                                   'offers made',
+                                   'Judge each channel by qualified leads and offers, not raw response '
+                                   'volume',
+                                   'Clay Hepler ([c8ekY72VGy0 @ 00:11:05])'],
+                                  ['Stacked government lists outperform generic purchased data',
+                                   'Government lists run about 1,000 records per deal versus 12,000 on '
+                                   'regular data',
+                                   'Stack code violations with tax delinquency or pre-foreclosure before '
+                                   'dialing or texting',
+                                   'Maximilian Dier ([xPy40xTlt64 @ 00:22:01])'],
+                                  ['Acquisition runs as a team system, not owner hustle',
+                                   'Four parts: data, lead generation, lead management and closing, run '
+                                   'regardless of owner availability',
+                                   'Build roles so leads flow whether the owner is working, asleep or '
+                                   'traveling',
+                                   'Ajay Sharma ([Jb9R7WTh63s @ 00:03:15])'],
+                                  ['Startup equipment is minimal for a new operator',
+                                   'A phone, a laptop and Wi-Fi are the three things needed to get started',
+                                   'Spend early dollars on data and outreach volume, not on overhead or '
+                                   'setup',
+                                   'DGB Media ([4KWC7a6vLcY @ 00:21:51])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On the texting side, the Apke Brothers lay out a full monthly stack: Launch '
+                              'Control at $500, Land Portal Unlimited Pro at $500 for 20,000 data points, '
+                              'and roughly $400 of skip tracing at 4 cents a record, landing at about '
+                              '$1,400 a month for 10,000 new contacts, or $1,400 to $1,800 for 20,000 '
+                              '[Ls2lelB6ImM @ 00:12:06]. They flag REI Reply at $50 to $90 a month as '
+                              'cheaper but less legally compliant, and their student Roy texts from 9 to '
+                              '11 every day, closing about one deal per 5,000 texts against roughly one '
+                              'per 20,000 for beginners, at an average margin near $12K. Maximilian Dier '
+                              'runs a far cheaper send cost through GoHighLevel via XLeads at a penny a '
+                              'text, so 20,000 texts cost $200, and calls SMS the highest return on ad '
+                              "spend at 10 to 30 times [xPy40xTlt64 @ 00:23:27]. Ajay Sharma's staffing "
+                              'benchmark is one VA handling about 2,000 texts a day, roughly 50,000 a '
+                              'month, using SmarterContact or Launch Control, and insists owners should '
+                              "not be sending texts themselves [Jb9R7WTh63s @ 00:06:51]. Michael Bull's "
+                              'team model for a text shop adds a sender, a valuations manager, an '
+                              'acquisition manager and a transaction coordinator [PMSn1EaZ42Y @ 00:05:47].',
+                              'Cold-calling mechanics hinge on dialer throughput and honest yield math. '
+                              'Maximilian Dier runs the Enzo dialer across up to 14 lines at once, scaling '
+                              'from 1 to 14 based on how many people answer, and logged 680 calls in 1 '
+                              'hour 7 minutes against roughly 100 calls in 30 minutes on a regular dialer '
+                              "[hIbsCLgyqbg @ 00:54:33]. Dier's KPI is one hot lead per 1,000 contacts on "
+                              'average, and $300 buys XLeads plus Enzo with about 25,000 skip-traced '
+                              'numbers a month. Nick, the cold-calling agency guest of the Apke Brothers, '
+                              'publishes the package math: 5,000 records skip trace to about 4,000 mobile '
+                              'numbers at an 80% match, worked in 8,000 dials across two passes with no '
+                              'double-dialing, yielding one lead per 150 to 350 dials [lWYFLEd7PA0 @ '
+                              '00:35:06]. Layer SMS on top at one lead per 80 to 150 texts and the package '
+                              'delivers 40 to 100 leads for $3,600 with an American caller, at roughly one '
+                              'deal per 20 leads, or 5 to 10 contracts and 2 to 5 closings [lWYFLEd7PA0 @ '
+                              '00:38:10]. Ajay Sharma prices ReadyMode callers at $4 to $8 an hour and '
+                              'expects about 40 leads a month from one full-time caller, roughly 1.7 to '
+                              '1.8 a day [Jb9R7WTh63s @ 00:09:24].',
+                              "The scripts are built to disarm. The Apke Brothers' session with "
+                              'cold-calling agency owner Nick lays out an opener that is a deliberately '
+                              "flustered 'sorry to bother,' asks whether the owner has ever maybe "
+                              'considered selling, counts a maybe-plus as a lead, and bans the word '
+                              'investor because investor already means lowball offer [lWYFLEd7PA0 @ '
+                              "00:24:44]. The same session's rules: never ask the seller's price, since an "
+                              'early offer is like kissing at the start of a first date, start low and go '
+                              "up, and run 11 questions ordered easy to hard. Maximilian Dier's live call "
+                              'on a 2-acre Port Charlotte lot shows the lowball in action: two comps at '
+                              "$9,000 and $9,500, then a hard line that Dier couldn't go a dollar over "
+                              '$7,000 while covering closing costs, a roughly $500 survey and no agent '
+                              'fees, framed as a way to lowball without offending people [hIbsCLgyqbg @ '
+                              '00:22:12]. When renegotiating after contract, Dier brings ammunition such '
+                              'as a repair estimate jumping from $40K to $60K, blames a $15,000 gap with '
+                              'the lender, asks what do we do, then stays silent, landing about a 50% '
+                              "success rate [uQ2jDRUrtoY @ 01:08:14]. Dylan Applegate's rule closes the "
+                              'loop: if the seller cannot be reached by phone within 24 to 48 hours, text '
+                              'the offer anyway [Hyk7GilIJ8g @ 00:13:10].'],
+               'table': {'caption': 'Outbound acquisition tools, costs and yields as quoted by the '
+                                    'operators',
+                         'headers': ['Tool or Channel',
+                                     'Cost or Spec',
+                                     'Throughput or Yield',
+                                     'Expert Source'],
+                         'rows': [['Launch Control plus Land Portal plus skip tracing stack',
+                                   '$500 plus $500 plus roughly $400 at 4 cents per record, about $1,400 '
+                                   'monthly',
+                                   'About 10,000 new contacts monthly; Roy closes one deal per 5,000 texts',
+                                   'Apke Brothers ([Ls2lelB6ImM @ 00:12:06])'],
+                                  ['GoHighLevel SMS sent through the XLeads integration',
+                                   'One cent per text, so a 20,000-text blast costs $200',
+                                   'Highest return on ad spend of any channel, quoted at 10 to 30 times',
+                                   'Maximilian Dier ([xPy40xTlt64 @ 00:23:27])'],
+                                  ['Enzo multi-line power dialer for land lists',
+                                   '$300 covers XLeads plus Enzo with about 25,000 skip-traced numbers '
+                                   'monthly',
+                                   'Up to 14 lines at once; 680 calls logged in 1 hour 7 minutes',
+                                   'Maximilian Dier ([hIbsCLgyqbg @ 00:54:33])'],
+                                  ['Agency cold-calling package with an American caller',
+                                   '$3,600 for 5,000 records skip traced down to about 4,000 mobile '
+                                   'numbers',
+                                   '40 to 100 leads, then 5 to 10 contracts and 2 to 5 closings',
+                                   'Apke Brothers ([lWYFLEd7PA0 @ 00:38:10])'],
+                                  ['ReadyMode callers and outsourced calling firms like Land Caller and '
+                                   'Dirt Dialers',
+                                   'Callers at $4 to $8 hourly; outsourced firms at $2,000 to $3,000 '
+                                   'monthly',
+                                   'About 40 leads monthly per full-time caller, roughly 8 to 10 weekly',
+                                   'Ajay Sharma ([Jb9R7WTh63s @ 00:09:11])'],
+                                  ['Direct mail blind offers run as a solo operation',
+                                   '60 to 70 cents per piece, so 1,000 letters cost about $650',
+                                   'Lifestyle business near 10 hours weekly with an optional VA',
+                                   'Michael Bull ([PMSn1EaZ42Y @ 00:09:07])'],
+                                  ['Assigns.com owner data, phone numbers and comps',
+                                   'Plans starting at $89 covering owner info, phone numbers and comps',
+                                   'Pull up photos on answer and pivot if a house sits on the lot',
+                                   'Maximilian Dier ([uQ2jDRUrtoY @ 00:52:27])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Tested Edges From the Dialer and SMS Floor',
+                           'body': 'Small moves the operators use to squeeze more contracts out of the '
+                                   'same list and the same spend.',
+                           'items': ['Stack lists before you touch them: code violations combined with '
+                                     'pre-foreclosure or tax delinquency get the sniper treatment of '
+                                     'hand-dials, texts and a 20-second video, while single-list records '
+                                     'get the power dialer and text blast [Maximilian Dier — xPy40xTlt64 @ '
+                                     '00:04:41].',
+                                     'When a seller claims a higher bid, ask to see the contract or offer '
+                                     "to match legitimate recent offers; about 50% of the hosts' deals "
+                                     'were not the highest offer, as with 117K on 90 days versus 85K now '
+                                     '[Apke Brothers — lWYFLEd7PA0 @ 00:19:10].',
+                                     'Watch deliverability: under 13% signals carrier flags, so verify '
+                                     'numbers with Number Verifier and triple-dial for 48 hours before '
+                                     'dropping to double-dial in two-week blocks [Ajay Sharma — '
+                                     'Jb9R7WTh63s @ 00:16:29].',
+                                     'Text the sellers but call the buyers, qualifying each buyer by zip '
+                                     'code, city, county and subdivision inside the Flip Force CRM [DGB '
+                                     'Media — 4KWC7a6vLcY @ 00:39:07].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull a Filtered List in a Proven Market',
+                              'action': 'Screen the county on sell-through, then pull a scrubbed rural '
+                                        'list.',
+                              'detail': 'Pull rural 2-plus-acre parcels owned 36-plus months, off the MLS, '
+                                        'with no more than 25% wetlands or flood zone, and scrub '
+                                        'government, county, church, school and landlocked owners; pull '
+                                        'broad rather than only tax-delinquent owners [Dylan Applegate — '
+                                        'Hyk7GilIJ8g @ 00:06:48].'},
+                             {'step': 2,
+                              'title': 'Skip Trace and Launch Outreach Volume',
+                              'action': 'Skip trace the list and start at a fixed monthly send volume.',
+                              'detail': 'Start with 10,000 texts a month, scaling toward the 4,000 to '
+                                        '6,000 monthly texts the hosts tie to a $100K year once copy and '
+                                        'qualification are dialed in [Apke Brothers — Ls2lelB6ImM @ '
+                                        '00:09:48].'},
+                             {'step': 3,
+                              'title': 'Qualify Every Positive Response',
+                              'action': 'Run each responder through the qualification questions fast.',
+                              'detail': 'Ask about utilities, other owners, how long they have owned it '
+                                        'and the reason for selling; try for the asking price first, but '
+                                        'send an offer even if they will not give one [Dylan Applegate — '
+                                        'Hyk7GilIJ8g @ 00:11:08].'},
+                             {'step': 4,
+                              'title': 'Push Offers Out Daily',
+                              'action': 'Set a hard daily offer quota and let the CRM handle follow-up.',
+                              'detail': 'Jacob set a goal of 20 offers a day, did not wait for perfect '
+                                        'comps or phone contact, let the CRM automate follow-up and '
+                                        're-engagement, and landed 6 contracts in 7 days [Dylan Applegate '
+                                        '— MaWsUKnc8CI @ 00:02:04].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is which channel to lead with. Michael Bull ran three '
+                              'separate channel teams before settling on one: “Now, we just do direct mail '
+                              'because I love the simplicity of it” [PMSn1EaZ42Y @ 00:08:28]. Bull prices '
+                              '1,000 letters at about $650 and pitches mail as a 10-hour-a-week, '
+                              'one-operator lifestyle business running mid-six to low-seven figures. The '
+                              "Apke Brothers reverse the order, “if I were to start over I'd start with "
+                              'texting first,” because texting pulls 10%+ response against 1–1.5% on mail '
+                              'and works as a clear on-off button [Ls2lelB6ImM @ 00:16:11]. They still '
+                              'concede blind-offer mail is easier for beginners, while texting is the '
+                              'higher-skill, transferable channel. Jeff and DeAndre of Land Flipping '
+                              'Empire run fully text-first, pushing about 1,000 texts a day through the '
+                              'Flip Force CRM because “a lot of people respond faster to text,” and they '
+                              'closed a Georgia acre contracted at 20K and sold at 40K in 30 days by text '
+                              'alone [4KWC7a6vLcY @ 00:40:39]. Land Academy rejects both calling and '
+                              'texting, dismissing texting as a “worse version of emailing” that '
+                              'recipients report as spam, and keeps only plain-envelope mail with the '
+                              'exact dollar offer in the first sentence at roughly 1% response '
+                              '[NqKIWNpO1Ic @ 00:12:48].',
+                              "Texting volume thresholds don't reconcile. Michael Bull says a text "
+                              'operation needs at least 50–80K messages a month, ideally 100K, to carry '
+                              'the fixed cost of a sender, valuations manager, acquisition manager and '
+                              'transaction coordinator, and at about 10K texts per contract for a skilled '
+                              "team, “if you're going to send a 100,000 texts a month, it's only three "
+                              'contracts a month” [PMSn1EaZ42Y @ 00:06:15]. The Apke Brothers say 4–6K '
+                              'texts a month gets a $100K year, and their student Roy closes about one '
+                              'deal per 5,000 texts against roughly one per 20,000 for beginners '
+                              "[Ls2lelB6ImM @ 00:14:06]. Clay Hepler's benchmark is wider still at "
+                              '30K–250K texts per deal, set beside one deal per 5–8K mail pieces and one '
+                              'deal every six weeks per cold caller [c8ekY72VGy0 @ 00:08:17]. Ajay Sharma '
+                              'describes top texters firing 100–300K messages a month off whole-state '
+                              'pulls with minimal filtering, with one VA handling about 50K a month '
+                              '[Jb9R7WTh63s @ 00:06:51]. Deal size splits the same way: the Apke Brothers '
+                              'say they are “very very Pro bigger deals and less volume,” point to a $400K '
+                              "subdivide closed by brother Mike, and call Roy's roughly $12K average a "
+                              'small margin that could reach $15–20K.',
+                              'Legal exposure is the sharpest fault line. Zach of Flip With Rick reads '
+                              'Jantz v. Home Run Offer as a green light for unlicensed wholesalers, '
+                              '“Neither definition encompasses a scenario in which the caller offers to '
+                              "buy something from the recipient of the call,” and adds, “I've never been "
+                              'attacked once” [U4t9j_wTBLk @ 00:08:03]. Josh Stevens of McMurray & '
+                              "Shuster, interviewed by REIPrintMail's Jeff Charlton, counters with "
+                              'Anderson v. Catalina Structured Funding, Eagle v. GVG Capital and Pepper v. '
+                              'VGG Capital, where courts treated as-is buying as a service paid for '
+                              'through the purchase-price discount, motions to dismiss were denied, and '
+                              'the cases settled [L4oZCP8R6RQ @ 00:07:26]. Josh says there are “really '
+                              'good arguments” those rulings are wrong, but fighting one is very '
+                              'expensive. Nick, the cold-calling agency guest of the Apke Brothers, takes '
+                              'a third line: “Laws and enforcement are two different things,” with callers '
+                              "using only the client's first name from the agency's own number, producing "
+                              'one one-star review and zero lawsuits in nine years, while the hosts book a '
+                              '$5,000 litigator demand as an operating expense [lWYFLEd7PA0 @ 00:06:06]. '
+                              'Ryan Dossey says about half a dozen of roughly 240 community members got '
+                              'tagged and points to B2B prospecting of LLC owners through registered '
+                              'agents as the clean lane [hzDGK6PCjPg @ 00:06:37].'],
+               'table': {'caption': 'Competing playbooks for multichannel land deal acquisition, side by '
+                                    'side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which channel a new land operator should lead with',
+                                   'Mail-first: blind-offer letters at 60–70 cents each, simple, about 10 '
+                                   'hours a week',
+                                   'Text-first: 10%+ response versus 1–1.5% on mail, with a clear on-off '
+                                   'switch',
+                                   'Michael Bull ([PMSn1EaZ42Y @ 00:11:18]); Apke Brothers ([Ls2lelB6ImM @ '
+                                   '00:16:11])'],
+                                  ['Minimum monthly texting volume needed to stay viable',
+                                   'At least 50–80K texts, ideally 100K, to carry a four-seat team',
+                                   'Only 4–6K texts a month is enough to reach a $100K year',
+                                   'Michael Bull ([PMSn1EaZ42Y @ 00:05:22]); Apke Brothers ([Ls2lelB6ImM @ '
+                                   '00:00:00])'],
+                                  ['Calling the DNC list as an unlicensed land buyer',
+                                   'Jantz v. Home Run Offer: offers to buy are not telemarketing or '
+                                   'solicitation',
+                                   'Eagle v. GVG Capital and Pepper: as-is buying treated as a paid '
+                                   'service',
+                                   'Flip With Rick ([U4t9j_wTBLk @ 00:08:59]); REIPrintMail ([L4oZCP8R6RQ '
+                                   '@ 00:19:43])'],
+                                  ['Deal size versus deal volume as the core strategy',
+                                   'Infill grind of 30–40 deals a month at $2–5K each',
+                                   'Bigger deals and less volume, such as a $400K subdivide closed by Mike',
+                                   'Dylan Applegate ([Hyk7GilIJ8g @ 00:02:36]); Apke Brothers '
+                                   '([Ls2lelB6ImM @ 00:17:15])'],
+                                  ['Whether to ask the seller for their asking price',
+                                   'Never ask what they want for the property; start low and go up',
+                                   'Try to get the asking price first, then send an offer anyway if '
+                                   'refused',
+                                   'Apke Brothers ([lWYFLEd7PA0 @ 00:26:42]); Dylan Applegate '
+                                   '([Hyk7GilIJ8g @ 00:11:08])'],
+                                  ['Mass blasting versus targeted or trust-first outreach',
+                                   'Mass blasting still works but “feels more like gambling”; build brand '
+                                   'and drip mail instead',
+                                   'Shotgun power dialer and text blast on single lists, sniper hand-dial '
+                                   'on stacked lists',
+                                   'Anthony Weiler ([4vZN9zHC26c @ 00:05:01]); Maximilian Dier '
+                                   '([xPy40xTlt64 @ 00:04:41])'],
+                                  ['Owner dialing versus delegated callers on the phones',
+                                   'The owner on a dialer pulls one to two good leads per hour',
+                                   'A full-time caller at $4–8 an hour produces about 40 leads a month',
+                                   'Maximilian Dier ([uQ2jDRUrtoY @ 00:53:27]); Ajay Sharma ([Jb9R7WTh63s '
+                                   '@ 00:09:24])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The litigation trap is real and documented. Ryan Dossey lays out the honey '
+                              'pot: a fake seller feigns motivation, may even allow photos or an '
+                              "inspection, and “what they're waiting for is for you to send them the "
+                              'purchase and sale agreement,” the document that identifies your company '
+                              '[hzDGK6PCjPg @ 00:02:41]. From there the pipeline runs through a ChatGPT '
+                              'demand letter, an OpenCorporates lookup, certified mail and small claims, '
+                              'where four texts at $1,500 each makes $6,000 under an $8,000 ceiling, and '
+                              'ignoring the summons ends in a default judgment against company assets, '
+                              "rentals or the owner personally. REIPrintMail's Jeff Charlton reports a "
+                              'customer who settled for $1M plus hundreds of thousands in legal fees, and '
+                              'Josh Stevens prices defense at $300–1,000 an hour, calling $500K in fees '
+                              'ruinous for a shop clearing $200–300K a year [L4oZCP8R6RQ @ 00:08:18]. '
+                              'Michael Bull says courts treated paying closing costs or a quick close as '
+                              'services, that “99.9%” of operators skip DNC scrubbing, litigator scrubbing '
+                              "and safe harbor, and concludes, “to me, that risk wasn't worth it” "
+                              '[PMSn1EaZ42Y @ 00:07:54]. Land Academy adds that class actions over these '
+                              'channels are spreading, and its hosts treat mail as the one channel that '
+                              'works [NqKIWNpO1Ic @ 00:14:04].',
+                              'The economics checks are blunt. Maximilian Dier says, “If you have thousand '
+                              "bucks a month, you shouldn't be cold calling,” adds that a VA at about $800 "
+                              'a month produces only one to two good leads a day, puts 20 good leads at '
+                              'one close worth roughly $5K, and walked away from a Conway seller demanding '
+                              '$250K per lot on a back-end split [uQ2jDRUrtoY @ 00:33:47]. Land Academy '
+                              'pegs an eight-hour calling day at maybe one warm lead every two weeks, or '
+                              "roughly two deals a year, and one host quit cold calling doctors' offices "
+                              'to sell gloves in under two weeks [NqKIWNpO1Ic @ 00:07:15]. The Apke '
+                              'Brothers warn that without qualifying and disqualifying people and land, '
+                              'copy, A/B testing, follow-up and a clear lead definition, a new texter '
+                              'should expect two to three months with no deals while the roughly $1,400 '
+                              "monthly stack keeps billing [Ls2lelB6ImM @ 00:14:49]. Ajay Sharma's "
+                              'dashboards catch the slow leaks: deliverability under 13% means carriers '
+                              'are flagging numbers, burnt lists and an 8-pushed, 5-connected, 0-booked '
+                              'gap mark where the pipeline stalls, and a $100K take-home needs $200–250K '
+                              'gross profit, which means underwriting $30–40K of deals a month '
+                              '[Jb9R7WTh63s @ 00:16:29].',
+                              'Time and trust are the other bottlenecks. One of the Land Flipping Empire '
+                              'founders admits, “it took me 5 months to get my first deal which it took '
+                              'too long,” and Jeff spent four to five months on houses with no results '
+                              'before moving to land [4KWC7a6vLcY @ 00:47:32]. Dylan Applegate cold called '
+                              'government lists for about two months with zero success before an SMS '
+                              'system on a housing list produced an $11,000 first deal [Hyk7GilIJ8g @ '
+                              "00:01:48]. Dylan's diagnosis of students who fall behind is that everyone "
+                              'has the same tools, but leads stall in the qualify stage instead of '
+                              'reaching “offer given”: “This is not a game of perfection” [MaWsUKnc8CI @ '
+                              '00:06:33]. Anthony Weiler names the trust crisis that sinks lowball-only '
+                              'blasting: sellers get the same envelopes several times a month, promised '
+                              'one-to-three-week closes stretch to 30 days or 90 on a double close, and '
+                              'offers below 40–50% of perceived value stop working once sellers see a lot '
+                              "“bought for 30,000, listed for 90,000” [4vZN9zHC26c @ 00:02:29]. Weiler's "
+                              'fix is solving easement, clearing or minor-subdivision problems so the '
+                              'offer can go higher, then farming sellers with direct-mail drips, QR-code '
+                              'interest checks and retargeting.'],
+               'table': {'caption': 'Firsthand failure modes and the economics behind each one',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Honey-pot fake seller baiting a purchase agreement',
+                                   'A fake motivated seller allows photos, waits for the purchase '
+                                   'agreement, then sues',
+                                   'Four texts at $1,500 each equals a $6,000 small-claims judgment',
+                                   'Ryan Dossey ([hzDGK6PCjPg @ 00:05:29])'],
+                                  ['Unscrubbed outreach under the “we buy” services theory',
+                                   'A REIPrintMail customer settled for $1M plus hundreds of thousands in '
+                                   'legal fees',
+                                   'Fees of $500K are ruinous for a shop clearing $200–300K a year',
+                                   'REIPrintMail ([L4oZCP8R6RQ @ 00:10:17])'],
+                                  ['Underfunded cold calling on a thin monthly budget',
+                                   'Operators with about $1,000 a month grinding dials with VAs pulling '
+                                   'one to two leads daily',
+                                   'Roughly 20 good leads convert to one close worth about $5K',
+                                   'Maximilian Dier ([uQ2jDRUrtoY @ 00:33:47])'],
+                                  ['Skill gap on new texting campaigns and lead definition',
+                                   'Beginners without qualifying, copy, A/B testing and follow-up go '
+                                   'months without a deal',
+                                   'Expect two to three dry months and about one deal per 20,000 texts',
+                                   'Apke Brothers ([Ls2lelB6ImM @ 00:14:49])'],
+                                  ['Carrier flagging and burnt lists killing deliverability',
+                                   'Messages stop landing and pushed leads connect but never book '
+                                   'appointments',
+                                   'Deliverability under 13% signals carriers are flagging the sending '
+                                   'numbers',
+                                   'Ajay Sharma ([Jb9R7WTh63s @ 00:16:29])'],
+                                  ['Leads stalling in the qualify stage without offers',
+                                   'Students waiting on perfect comps or phone contact fall behind peers '
+                                   'using identical tools',
+                                   'Every lead should reach offer given, with text offers as the fallback',
+                                   'Dylan Applegate ([MaWsUKnc8CI @ 00:06:33])'],
+                                  ['Lowball-only offers colliding with a seller trust crisis',
+                                   'Sellers receive repeated identical envelopes and watch lots flip at '
+                                   'triple the price',
+                                   'Offers below 40–50% of perceived value no longer get accepted',
+                                   'Anthony Weiler ([4vZN9zHC26c @ 00:02:29])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before a Single Text or Dial Goes Out',
+                           'body': 'Each check maps to a loss, lawsuit or dead month that practitioners '
+                                   'took firsthand.',
+                           'items': ['Treat a seller who feigns motivation and pushes hard for the '
+                                     'purchase and sale agreement as a possible honey pot, because that '
+                                     'document is what identifies you in the demand letter [Ryan Dossey — '
+                                     'hzDGK6PCjPg @ 00:02:41].',
+                                     'Scrub the national and state DNC registries before first contact and '
+                                     'at least every 30 days, scrub litigator lists such as LexisNexis, '
+                                     'Blacklist Alliance and Contact Center Compliance, and honor removals '
+                                     'within 10 business days [REIPrintMail — L4oZCP8R6RQ @ 00:30:55].',
+                                     'Open every cold text with who you are, who you are contacting for '
+                                     'and the marketing purpose, since casual or cryptic openers become '
+                                     'screenshot evidence [REIPrintMail — L4oZCP8R6RQ @ 00:14:59].',
+                                     'Check budget against channel math before dialing: about $1,000 a '
+                                     'month should not go to cold calling, and a VA yields only one to two '
+                                     'good leads a day [Maximilian Dier — uQ2jDRUrtoY @ 00:33:47].']}}],
+ 'pull_quote': "“If you have thousand bucks a month, you shouldn't be cold calling.” — Maximilian Dier "
+               '(uQ2jDRUrtoY @ 00:33:47).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Run the 1-1-1-1 framework of one channel, one data type, one year and one million, '
+                      'spending 2–4 hours a day on marketing and adding channels only after $1M a year '
+                      '[Clay Hepler — c8ekY72VGy0 @ 00:06:04].',
+                      'Stack code violations with pre-foreclosure or tax delinquency, then hand-dial, text '
+                      'and send a 20-second video to stacked records while power-dialing single lists '
+                      '[Maximilian Dier — xPy40xTlt64 @ 00:04:41].',
+                      'Start texting at 10K texts a month and build qualifying, copy, A/B testing, '
+                      'follow-up and a clear lead definition before scaling [Apke Brothers — Ls2lelB6ImM @ '
+                      '00:09:48].',
+                      'Set a goal of 20 offers a day and text the offer when the seller cannot be reached '
+                      'by phone within 24–48 hours [Dylan Applegate — Hyk7GilIJ8g @ 00:13:10].',
+                      "Never say “investor” on a call, never ask the seller's price, and start low before "
+                      'working up [Apke Brothers — lWYFLEd7PA0 @ 00:24:44].',
+                      'Scrub national, state and litigator lists, skip ATDS and pre-recorded voices, make '
+                      'opening disclosures, and contact only between 8 a.m. and 9 p.m. at the called '
+                      "party's location [REIPrintMail — L4oZCP8R6RQ @ 00:26:37]."],
+ 'statutory_citations': [{'title': 'REIPrintMail — Real Estate Investors Beware! Texting and Cold calling '
+                                   'rules from a TCPA LEGAL expert [00:07:26]',
+                          'url': 'https://www.youtube.com/watch?v=L4oZCP8R6RQ&t=446s',
+                          'relevance': 'Primary practitioner testimony on “we buy” outreach being treated '
+                                       'as telephone solicitation and on DNC scrubbing mechanics.'},
+                         {'title': 'Flip With Rick — How to Legally Cold Call & Text the DNC LIST! '
+                                   '[00:08:03]',
+                          'url': 'https://www.youtube.com/watch?v=U4t9j_wTBLk&t=483s',
+                          'relevance': 'Primary practitioner testimony on Jantz v. Home Run Offer and '
+                                       'offers to purchase falling outside telemarketing.'},
+                         {'title': 'Ryan Dossey — Getting Sued For Texting AND Cold Calling 😨 [00:02:41]',
+                          'url': 'https://www.youtube.com/watch?v=hzDGK6PCjPg&t=161s',
+                          'relevance': 'Primary practitioner testimony on honey-pot sellers, small-claims '
+                                       'demand pipelines and per-violation fines.'},
+                         {'title': 'Michael Bull — Cold Calling vs Cold Texting vs Direct Mail: Which One '
+                                   'Actually Works Best for Land Flipping? [00:06:44]',
+                          'url': 'https://www.youtube.com/watch?v=PMSn1EaZ42Y&t=404s',
+                          'relevance': 'Primary practitioner testimony on texting litigation risk, '
+                                       'scrubbing gaps and the switch to direct mail.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '4KWC7a6vLcY',
+                       'title': 'How to Flip Land and Make $20,000 Texting with The Land Flipping Empire',
+                       'channel': 'DGB Media',
+                       'author': 'DGB Media',
+                       'text': 'So we like to text the sellers but we like to call the buyers.',
+                       'tip': 'So we like to text the sellers but we like to call the buyers.',
+                       'timestamp': 2379,
+                       'timestamp_seconds': 2379,
+                       'timestamp_label': '[00:39:39]',
+                       'url': 'https://www.youtube.com/watch?v=4KWC7a6vLcY&t=2379s',
+                       'markdown': '[00:39:39](https://www.youtube.com/watch?v=4KWC7a6vLcY&t=2379s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PMSn1EaZ42Y',
+                       'title': 'Cold Calling vs Cold Texting vs Direct Mail: Which One Actually Works '
+                                'Best for Land Flipping?',
+                       'channel': 'Michael Bull',
+                       'author': 'Michael Bull',
+                       'text': "And to me, that risk wasn't worth it.",
+                       'tip': "And to me, that risk wasn't worth it.",
+                       'timestamp': 474,
+                       'timestamp_seconds': 474,
+                       'timestamp_label': '[00:07:54]',
+                       'url': 'https://www.youtube.com/watch?v=PMSn1EaZ42Y&t=474s',
+                       'markdown': '[00:07:54](https://www.youtube.com/watch?v=PMSn1EaZ42Y&t=474s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PMSn1EaZ42Y',
+                       'title': 'Cold Calling vs Cold Texting vs Direct Mail: Which One Actually Works '
+                                'Best for Land Flipping?',
+                       'channel': 'Michael Bull',
+                       'author': 'Michael Bull',
+                       'text': "So, if you're going to send a 100,000 texts a month, it's only three "
+                               'contracts a month.',
+                       'tip': "So, if you're going to send a 100,000 texts a month, it's only three "
+                              'contracts a month.',
+                       'timestamp': 375,
+                       'timestamp_seconds': 375,
+                       'timestamp_label': '[00:06:15]',
+                       'url': 'https://www.youtube.com/watch?v=PMSn1EaZ42Y&t=375s',
+                       'markdown': '[00:06:15](https://www.youtube.com/watch?v=PMSn1EaZ42Y&t=375s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ls2lelB6ImM',
+                       'title': '$100K Blueprint: Flipping Land with Texts in 2025',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': "If I were to start over I'd start with texting first.",
+                       'tip': "If I were to start over I'd start with texting first.",
+                       'timestamp': 971,
+                       'timestamp_seconds': 971,
+                       'timestamp_label': '[00:16:11]',
+                       'url': 'https://www.youtube.com/watch?v=Ls2lelB6ImM&t=971s',
+                       'markdown': '[00:16:11](https://www.youtube.com/watch?v=Ls2lelB6ImM&t=971s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U4t9j_wTBLk',
+                       'title': 'How to Legally Cold Call & Text the DNC LIST!',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': 'Neither definition encompasses a scenario in which the caller offers to '
+                               'buy something from the recipient of the call.',
+                       'tip': 'Neither definition encompasses a scenario in which the caller offers to buy '
+                              'something from the recipient of the call.',
+                       'timestamp': 483,
+                       'timestamp_seconds': 483,
+                       'timestamp_label': '[00:08:03]',
+                       'url': 'https://www.youtube.com/watch?v=U4t9j_wTBLk&t=483s',
+                       'markdown': '[00:08:03](https://www.youtube.com/watch?v=U4t9j_wTBLk&t=483s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hzDGK6PCjPg',
+                       'title': 'Getting Sued For Texting AND Cold Calling 😨',
+                       'channel': 'Ryan Dossey',
+                       'author': 'Ryan Dossey',
+                       'text': "What they're waiting for is for you to send them the purchase and sale "
+                               'agreement for their property.',
+                       'tip': "What they're waiting for is for you to send them the purchase and sale "
+                              'agreement for their property.',
+                       'timestamp': 161,
+                       'timestamp_seconds': 161,
+                       'timestamp_label': '[00:02:41]',
+                       'url': 'https://www.youtube.com/watch?v=hzDGK6PCjPg&t=161s',
+                       'markdown': '[00:02:41](https://www.youtube.com/watch?v=hzDGK6PCjPg&t=161s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uQ2jDRUrtoY',
+                       'title': '🌳 Cold Calling Vacant Landowners Until I Get a DEAL',
+                       'channel': 'Maximilian Dier',
+                       'author': 'Maximilian Dier',
+                       'text': "If you have thousand bucks a month, you shouldn't be cold calling.",
+                       'tip': "If you have thousand bucks a month, you shouldn't be cold calling.",
+                       'timestamp': 2027,
+                       'timestamp_seconds': 2027,
+                       'timestamp_label': '[00:33:47]',
+                       'url': 'https://www.youtube.com/watch?v=uQ2jDRUrtoY&t=2027s',
+                       'markdown': '[00:33:47](https://www.youtube.com/watch?v=uQ2jDRUrtoY&t=2027s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L4oZCP8R6RQ',
+                       'title': 'Real Estate Investors Beware! Texting and Cold calling rules from a TCPA '
+                                'LEGAL expert',
+                       'channel': 'REIPrintMail',
+                       'author': 'REIPrintMail',
+                       'text': 'From a TCPA perspective, calls and texts are the exact same thing.',
+                       'tip': 'From a TCPA perspective, calls and texts are the exact same thing.',
+                       'timestamp': 791,
+                       'timestamp_seconds': 791,
+                       'timestamp_label': '[00:13:11]',
+                       'url': 'https://www.youtube.com/watch?v=L4oZCP8R6RQ&t=791s',
+                       'markdown': '[00:13:11](https://www.youtube.com/watch?v=L4oZCP8R6RQ&t=791s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L4oZCP8R6RQ',
+                       'title': 'Real Estate Investors Beware! Texting and Cold calling rules from a TCPA '
+                                'LEGAL expert',
+                       'channel': 'REIPrintMail',
+                       'author': 'REIPrintMail',
+                       'text': 'The main area where companies seem to mess up is with do not call.',
+                       'tip': 'The main area where companies seem to mess up is with do not call.',
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=L4oZCP8R6RQ&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=L4oZCP8R6RQ&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lWYFLEd7PA0',
+                       'title': 'Cold Calling Q&A: How to Get Landowners to Say “Yes”',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': 'Investor already means lowball offer.',
+                       'tip': 'Investor already means lowball offer.',
+                       'timestamp': 1484,
+                       'timestamp_seconds': 1484,
+                       'timestamp_label': '[00:24:44]',
+                       'url': 'https://www.youtube.com/watch?v=lWYFLEd7PA0&t=1484s',
+                       'markdown': '[00:24:44](https://www.youtube.com/watch?v=lWYFLEd7PA0&t=1484s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xPy40xTlt64',
+                       'title': 'Cold Calling Code Violations LIVE (Watch Me Get a Wholesale Deal)',
+                       'channel': 'Maximilian Dier',
+                       'author': 'Maximilian Dier',
+                       'text': 'It makes your cold calling 10x more effective or your text blasting.',
+                       'tip': 'It makes your cold calling 10x more effective or your text blasting.',
+                       'timestamp': 1341,
+                       'timestamp_seconds': 1341,
+                       'timestamp_label': '[00:22:21]',
+                       'url': 'https://www.youtube.com/watch?v=xPy40xTlt64&t=1341s',
+                       'markdown': '[00:22:21](https://www.youtube.com/watch?v=xPy40xTlt64&t=1341s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hIbsCLgyqbg',
+                       'title': 'Cold Calling Vacant Land Sellers LIVE',
+                       'channel': 'Maximilian Dier',
+                       'author': 'Maximilian Dier',
+                       'text': 'You lowball without offending people.',
+                       'tip': 'You lowball without offending people.',
+                       'timestamp': 2620,
+                       'timestamp_seconds': 2620,
+                       'timestamp_label': '[00:43:40]',
+                       'url': 'https://www.youtube.com/watch?v=hIbsCLgyqbg&t=2620s',
+                       'markdown': '[00:43:40](https://www.youtube.com/watch?v=hIbsCLgyqbg&t=2620s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NqKIWNpO1Ic',
+                       'title': 'Why Cold Calling, Emailing & Texting Fail In Real Estate | Land Deal '
+                                'Marketing Explained',
+                       'channel': 'Land Academy',
+                       'author': 'Land Academy',
+                       'text': 'I mean 1% gets responded to.',
+                       'tip': 'I mean 1% gets responded to.',
+                       'timestamp': 804,
+                       'timestamp_seconds': 804,
+                       'timestamp_label': '[00:13:24]',
+                       'url': 'https://www.youtube.com/watch?v=NqKIWNpO1Ic&t=804s',
+                       'markdown': '[00:13:24](https://www.youtube.com/watch?v=NqKIWNpO1Ic&t=804s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Jb9R7WTh63s',
+                       'title': 'The 4-Part Deal Acquisition System Every Land Business Needs',
+                       'channel': 'Ajay Sharma',
+                       'author': 'Ajay Sharma',
+                       'text': 'US closers convert higher.',
+                       'tip': 'US closers convert higher.',
+                       'timestamp': 1261,
+                       'timestamp_seconds': 1261,
+                       'timestamp_label': '[00:21:01]',
+                       'url': 'https://www.youtube.com/watch?v=Jb9R7WTh63s&t=1261s',
+                       'markdown': '[00:21:01](https://www.youtube.com/watch?v=Jb9R7WTh63s&t=1261s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'c8ekY72VGy0',
+                       'title': 'The 4-Channel Marketing System That Makes Me $3M in Land Deals',
+                       'channel': 'Clay Hepler',
+                       'author': 'Clay Hepler',
+                       'text': 'We scale qualified leads, not gross leads.',
+                       'tip': 'We scale qualified leads, not gross leads.',
+                       'timestamp': 557,
+                       'timestamp_seconds': 557,
+                       'timestamp_label': '[00:09:17]',
+                       'url': 'https://www.youtube.com/watch?v=c8ekY72VGy0&t=557s',
+                       'markdown': '[00:09:17](https://www.youtube.com/watch?v=c8ekY72VGy0&t=557s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4vZN9zHC26c',
+                       'title': 'Old Land Flipping Tactics Are Failing – Hormozi Explains Why',
+                       'channel': 'Anthony Weiler',
+                       'author': 'Anthony Weiler',
+                       'text': 'And again, the mass blasting technique can still work, casting a wide net, '
+                               'but it feels more like gambling.',
+                       'tip': 'And again, the mass blasting technique can still work, casting a wide net, '
+                              'but it feels more like gambling.',
+                       'timestamp': 301,
+                       'timestamp_seconds': 301,
+                       'timestamp_label': '[00:05:01]',
+                       'url': 'https://www.youtube.com/watch?v=4vZN9zHC26c&t=301s',
+                       'markdown': '[00:05:01](https://www.youtube.com/watch?v=4vZN9zHC26c&t=301s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hyk7GilIJ8g',
+                       'title': 'How to Start Flipping Land and Make 20k–30k/Mo (Full Free Course)',
+                       'channel': 'Dylan Applegate',
+                       'author': 'Dylan Applegate',
+                       'text': 'Our cost per contract right now is about $1,300 to $1,500.',
+                       'tip': 'Our cost per contract right now is about $1,300 to $1,500.',
+                       'timestamp': 817,
+                       'timestamp_seconds': 817,
+                       'timestamp_label': '[00:13:37]',
+                       'url': 'https://www.youtube.com/watch?v=Hyk7GilIJ8g&t=817s',
+                       'markdown': '[00:13:37](https://www.youtube.com/watch?v=Hyk7GilIJ8g&t=817s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MaWsUKnc8CI',
+                       'title': 'How He Got 6 Contracts His First Week Flipping Land ($20k in 30 Days)',
+                       'channel': 'Dylan Applegate',
+                       'author': 'Dylan Applegate',
+                       'text': 'This is not a game of perfection.',
+                       'tip': 'This is not a game of perfection.',
+                       'timestamp': 393,
+                       'timestamp_seconds': 393,
+                       'timestamp_label': '[00:06:33]',
+                       'url': 'https://www.youtube.com/watch?v=MaWsUKnc8CI&t=393s',
+                       'markdown': '[00:06:33](https://www.youtube.com/watch?v=MaWsUKnc8CI&t=393s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

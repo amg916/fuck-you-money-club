@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-placement-workflow",
-    "diag-02-annual-placement-funnel",
-    "diag-03-base-case-profit-waterfall",
-    "diag-04-specialty-placement-fee-yields",
-    "diag-05-statutory-risk-preflight",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days"
+    "diag-01-broker-deal-path",
+    "diag-02-factoring-invoice-funnel",
+    "diag-03-licensing-exposure-waterfall",
+    "diag-04-broker-point-ranges",
+    "diag-05-equipment-approval-gates",
+    "diag-06-dscr-underwriting-desk",
+    "diag-07-equipment-lead-source-yield",
+    "diag-08-capital-stack-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-placement-workflow",
-    "diag-02-annual-placement-funnel",
-    "diag-03-base-case-profit-waterfall",
-    "diag-04-specialty-placement-fee-yields",
-    "diag-05-statutory-risk-preflight",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days"
+    "diag-01-broker-deal-path",
+    "diag-02-factoring-invoice-funnel",
+    "diag-03-licensing-exposure-waterfall",
+    "diag-04-broker-point-ranges",
+    "diag-05-equipment-approval-gates",
+    "diag-06-dscr-underwriting-desk",
+    "diag-07-equipment-lead-source-yield",
+    "diag-08-capital-stack-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-placement-workflow": {
+    "diag-01-broker-deal-path": {
       "concept_a": {
-        "graphic_id": "diag-01-placement-workflow",
+        "graphic_id": "diag-01-broker-deal-path",
         "graphic_type": "diagram",
-        "label": "From Borrower File to Retained Brokerage Fee",
+        "label": "From Qualified File to Funded Commission",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-placement-workflow",
+        "graphic_id": "diag-01-broker-deal-path",
         "graphic_type": "diagram",
-        "label": "From Borrower File to Retained Brokerage Fee",
+        "label": "From Qualified File to Funded Commission",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-placement-workflow",
+        "graphic_id": "diag-01-broker-deal-path",
         "graphic_type": "diagram",
-        "label": "From Borrower File to Retained Brokerage Fee",
+        "label": "From Qualified File to Funded Commission",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-annual-placement-funnel": {
+    "diag-02-factoring-invoice-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-annual-placement-funnel",
+        "graphic_id": "diag-02-factoring-invoice-funnel",
         "graphic_type": "diagram",
-        "label": "Forty Funded Placements Support the Base Case",
+        "label": "What an Invoice Turns Into on Day One",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-annual-placement-funnel",
+        "graphic_id": "diag-02-factoring-invoice-funnel",
         "graphic_type": "diagram",
-        "label": "Forty Funded Placements Support the Base Case",
+        "label": "What an Invoice Turns Into on Day One",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-annual-placement-funnel",
+        "graphic_id": "diag-02-factoring-invoice-funnel",
         "graphic_type": "diagram",
-        "label": "Forty Funded Placements Support the Base Case",
+        "label": "What an Invoice Turns Into on Day One",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-profit-waterfall": {
+    "diag-03-licensing-exposure-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-licensing-exposure-waterfall",
         "graphic_type": "diagram",
-        "label": "$560,000 Retained Fees to $196,000 Owner Net",
+        "label": "The Same $25,000, Licensed Versus Unlicensed",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-licensing-exposure-waterfall",
         "graphic_type": "diagram",
-        "label": "$560,000 Retained Fees to $196,000 Owner Net",
+        "label": "The Same $25,000, Licensed Versus Unlicensed",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-profit-waterfall",
+        "graphic_id": "diag-03-licensing-exposure-waterfall",
         "graphic_type": "diagram",
-        "label": "$560,000 Retained Fees to $196,000 Owner Net",
+        "label": "The Same $25,000, Licensed Versus Unlicensed",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-specialty-placement-fee-yields": {
+    "diag-04-broker-point-ranges": {
       "concept_a": {
-        "graphic_id": "diag-04-specialty-placement-fee-yields",
+        "graphic_id": "diag-04-broker-point-ranges",
         "graphic_type": "diagram",
-        "label": "Compare Retained Fees, Not Financed Principal",
+        "label": "Broker Point Ranges by Product",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-specialty-placement-fee-yields",
+        "graphic_id": "diag-04-broker-point-ranges",
         "graphic_type": "diagram",
-        "label": "Compare Retained Fees, Not Financed Principal",
+        "label": "Broker Point Ranges by Product",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-specialty-placement-fee-yields",
+        "graphic_id": "diag-04-broker-point-ranges",
         "graphic_type": "diagram",
-        "label": "Compare Retained Fees, Not Financed Principal",
+        "label": "Broker Point Ranges by Product",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-risk-preflight": {
+    "diag-05-equipment-approval-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-risk-preflight",
+        "graphic_id": "diag-05-equipment-approval-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Live Financing Submission",
+        "label": "Four Gates Before an Equipment File Goes Out",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-risk-preflight",
+        "graphic_id": "diag-05-equipment-approval-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Live Financing Submission",
+        "label": "Four Gates Before an Equipment File Goes Out",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-risk-preflight",
+        "graphic_id": "diag-05-equipment-approval-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Live Financing Submission",
+        "label": "Four Gates Before an Equipment File Goes Out",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-person-pod": {
+    "diag-06-dscr-underwriting-desk": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-dscr-underwriting-desk",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Scale Seats",
+        "label": "Who Sets the Bar on a DSCR or CRE File",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-dscr-underwriting-desk",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Scale Seats",
+        "label": "Who Sets the Bar on a DSCR or CRE File",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-dscr-underwriting-desk",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Scale Seats",
+        "label": "Who Sets the Bar on a DSCR or CRE File",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-equipment-lead-source-yield": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-equipment-lead-source-yield",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Chasing Closings",
+        "label": "Funding Yield by Equipment Lead Source",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-equipment-lead-source-yield",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Chasing Closings",
+        "label": "Funding Yield by Equipment Lead Source",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-equipment-lead-source-yield",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Chasing Closings",
+        "label": "Funding Yield by Equipment Lead Source",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days": {
+    "diag-08-capital-stack-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-capital-stack-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Evidence-Ready Brokerage Desk",
+        "label": "Layering the Stack From Cheapest Money to Risk Capital",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-capital-stack-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Evidence-Ready Brokerage Desk",
+        "label": "Layering the Stack From Cheapest Money to Risk Capital",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-capital-stack-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Evidence-Ready Brokerage Desk",
+        "label": "Layering the Stack From Cheapest Money to Risk Capital",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

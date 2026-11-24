@@ -1,717 +1,800 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-domain-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching domain investing, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Two-Person Domain Desk: Auction Caps, Escrow Transfers, Renewal Reserves, UDRP Screening, and Evidence-Based Day-30/60/90 Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
-        "Score. Launch a controlled inventory experiment, not an indiscriminate buying "
-        "spree. This chapter maps eight operator plays: brandable acquisition, exact-match "
-        "acquisition, expired-authority diligence, drop-catching, wholesale exits, inbound "
-        "retail, outbound upgrades, and renewal-led portfolio optimization. One full-time "
-        "owner and one scoped contractor execute the first month with a $3,000 cash-outflow "
-        "ceiling and protected renewal reserves. Day-30/60/90 decisions measure title "
-        "quality, buyer evidence, contribution, and liquidity rather than auction excitement. "
-        "Canonical annual owner profits remain $3,000 Conservative, $44,000 Base, and "
-        "$120,000 Scaled. A 3–24-month first-deal horizon makes early process validation "
-        "useful, but neither unanswered outreach nor unsold inventory establishes market value."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$20,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin.",
-            "note": "15% net margin; $3,000 annual owner net profit; 1 FT + 1 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$160,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin.",
-            "note": "27.5% net margin; $44,000 annual owner net profit; 1 FT + 1 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$300,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin.",
-            "note": "40% net margin; $120,000 annual owner net profit; 2 FT + 2 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Define Eight Plays and Protect the Buying Budget",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Day 1 begins with a written investment mandate and a separate ledger, "
-                    "not an auction account deposit. Use eight explicit working play codes: "
-                    "P1 brandable acquisition, P2 exact-match acquisition, P3 expired-authority "
-                    "diligence, P4 drop-catching, P5 wholesale exits, P6 inbound retail, "
-                    "P7 outbound upgrades, and P8 renewal-led portfolio optimization. These "
-                    "are this sprint's operating mapping, not eight independent revenue "
-                    "forecasts. Every domain receives one acquisition code, while exit and "
-                    "maintenance codes can overlap without duplicating inventory or proceeds. "
-                    "Limit the pilot to English-language commercial names in one extension "
-                    "and two buyer categories the owner understands. The full-time owner "
-                    "controls underwriting, bids, negotiations, and transfers; the contractor "
-                    "collects evidence and checks records without payment or registrar "
-                    "administration access. Allocate thirty owner hours weekly across ten "
-                    "research hours, eight buyer-development hours, six operations hours, "
-                    "and six review hours. Contract for eight hours across the first month "
-                    "at an illustrative $25 hourly rate, with evidence collection prioritized "
-                    "over broad list building. The pod is 1 FT + 1 C, not two full-time "
-                    "researchers. Start with thirty screened candidates, advance no more "
-                    "than ten to complete underwriting, and buy no more than five names. "
-                    "Missing the purchase target is acceptable when available inventory "
-                    "fails the mandate."
-                ),
-                (
-                    "For a $10,000 starting account, allocate $2,500 to acquisitions, "
-                    "$1,000 to a segregated renewal reserve, $1,500 to three months of "
-                    "operating cash, and $5,000 to untouched liquidity. The month-one "
-                    "operating ceiling is $500: $200 contractor time, $150 research and "
-                    "listing services, $50 communications, and $100 contingency. Acquisition "
-                    "spending includes auction charges and mandatory transfer or registration "
-                    "costs; operating spending excludes those purchases but includes actual "
-                    "tool charges. This produces maximum cumulative cash outflows of $3,000 "
-                    "at Day 30, $3,500 at Day 60, and $4,000 at Day 90 before any separately "
-                    "documented expansion. Transfers between bank subaccounts are allocations, "
-                    "not expenses. Do not count expected sales as available cash or spend "
-                    "the renewal reserve on an attractive auction. At five names and an "
-                    "illustrative verified $20 annual renewal each, expected annual renewals "
-                    "equal $100; the larger reserve accommodates price differences and "
-                    "holding-time uncertainty rather than becoming acquisition capacity. "
-                    "Record each registrar's actual renewal quote, including premium "
-                    "renewal terms. Owner living costs remain outside this pilot cash "
-                    "budget and need separate funding. This narrow experiment does not "
-                    "recreate the annual scorecard cost structure. If the owner needs "
-                    "immediate income, the stated 3–24-month first-deal horizon makes "
-                    "this launch unsuitable for that need."
-                ),
-                (
-                    "Days 2–7 convert the mandate into evidence that survives a rejected "
-                    "bid. Build the ledger in Google Sheets or SQLite with acquisition "
-                    "channel, seller identity evidence, timestamps, renewal date, transfer "
-                    "restrictions, comparable sales, buyer categories, and rejection reason. "
-                    "Use NameBio for comparable-sale discovery and verify venue, date, "
-                    "extension, length, and commercial context before treating a result "
-                    "as relevant. Search USPTO Trademark Search, business websites, and "
-                    "ordinary web results for conflicts; federal registration searches "
-                    "alone miss common-law rights. Under 15 U.S.C. § 1125(d), confusing "
-                    "similarity and bad-faith intent to profit can create cybersquatting "
-                    "exposure. The UDRP separately addresses trademark similarity, rights "
-                    "or legitimate interests, and bad-faith registration and use. Neither "
-                    "a generic-looking string nor expiration removes those risks. For "
-                    "P3, inspect Internet Archive captures and referring-page samples "
-                    "rather than buying an authority score. For P4, inspect current "
-                    "DropCatch or SnapNames terms, duplicate commitments, and auction "
-                    "settlement obligations before placing a backorder. A $500 maximum "
-                    "all-in bid is a ceiling, not a valuation. Reduce it whenever "
-                    "documented wholesale evidence, holding costs, or transfer uncertainty "
-                    "demands a lower number. By Day 7, retain ten complete files, "
-                    "including rejected candidates, and a written explanation of why "
-                    "each approved name has identifiable commercial users."
-                ),
-            ],
-            "table": {
-                "caption": "Week One Daily Mandate, Evidence, and Cash-Control Deliverables",
-                "headers": [
-                    "Day and operating play",
-                    "Owner execution and contractor support",
-                    "Required evidence before moving forward",
-                    "Quantitative limit and failure response",
-                ],
-                "rows": [
-                    [
-                        "Day 1 establishes the mandate across all eight working plays.",
-                        "Owner defines buyer categories; contractor creates the evidence ledger.",
-                        "Signed mandate identifies extension, categories, responsibilities, and cash allocations.",
-                        "Commit no purchase funds until all allocations reconcile exactly.",
-                    ],
-                    [
-                        "Day 2 builds the P1 brandable candidate research queue.",
-                        "Owner scores pronunciation; contractor records spelling and commercial usage.",
-                        "Ten brandable files identify realistic users beyond existing trademark owners.",
-                        "Reject names requiring repeated spelling explanations during independent review.",
-                    ],
-                    [
-                        "Day 3 builds the P2 exact-match commercial candidate queue.",
-                        "Owner evaluates purchase intent; contractor verifies operating buyer businesses.",
-                        "Ten exact-match files connect wording to specific commercial products.",
-                        "Require five plausible buyers before advancing any acquisition candidate.",
-                    ],
-                    [
-                        "Day 4 tests P3 expired-authority history and link quality.",
-                        "Owner inspects historical use; contractor captures referring-page evidence samples.",
-                        "Ten historical files record topic changes, redirects, and suspicious anchors.",
-                        "Reject authority theses supported only by third-party aggregate scores.",
-                    ],
-                    [
-                        "Day 5 prices P4 drop-catching commitments before auction participation.",
-                        "Owner reviews auction terms; contractor logs existing backorder commitments.",
-                        "Commitment register includes possible simultaneous wins and mandatory transfer charges.",
-                        "Keep total possible settlement obligations inside remaining acquisition capacity.",
-                    ],
-                    [
-                        "Day 6 prepares P5 wholesale and P6 retail pricing.",
-                        "Owner compares transaction evidence; contractor normalizes comparable-sale attributes carefully.",
-                        "Each shortlisted file separates likely wholesale bids from retail aspirations.",
-                        "Require three relevant sold comparables or explicitly reject valuation confidence.",
-                    ],
-                    [
-                        "Day 7 prepares P7 outreach and P8 renewal controls.",
-                        "Owner signs underwriting files; contractor verifies dates and buyer lists.",
-                        "Ten complete files contain conflict screening, renewal quotes, and buyer evidence.",
-                        "Advance at most five purchases with $500 all-in individual ceilings.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Four Conditions Before Any Irreversible Purchase",
-                "body": (
-                    "The owner signs each condition in the domain ledger. A missing "
-                    "condition suspends that purchase rather than lowering the standard."
-                ),
-                "items": [
-                    "Confirm current seller control, domain spelling, extension, and the specific transfer procedure; registration data alone does not prove transferable title.",
-                    "Document trademark and historical-use review, including a reason the commercial thesis does not depend on another business's distinctive identity.",
-                    "Reconcile maximum simultaneous auction obligations against the $2,500 acquisition allocation, including platform charges and mandatory registration costs.",
-                    "Verify actual renewal pricing, transfer restrictions, and protected reserves before signing an offer or placing a binding auction bid.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Acquire Selectively and Make Every Listing Transfer-Ready",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Days 8 and 9 are controlled execution windows for P1 through "
-                    "P4, not a requirement to spend the allocation. Place only bids "
-                    "whose worst-case settlement obligations fit the remaining acquisition "
-                    "budget. Track open bids as commitments and completed purchases "
-                    "as deployed capital so five concurrent auctions cannot silently "
-                    "consume the same dollars. On Day 10, reconcile invoices, seller "
-                    "messages, registrar records, and domain spelling character by "
-                    "character. Confirm access using a fresh authenticated session, "
-                    "enable strong multifactor authentication, and store recovery "
-                    "material outside the shared research folder. Give the contractor "
-                    "read-only evidence access rather than credentials or authorization "
-                    "codes. A newly registered or recently transferred domain may "
-                    "face a 60-day transfer restriction; certain registrant changes "
-                    "can also trigger restrictions under applicable policy and registrar "
-                    "procedures. Check the actual domain state and permissible account "
-                    "push options rather than advertising immediate inter-registrar "
-                    "delivery. Day 11 assigns each purchased name an internal minimum "
-                    "acceptable price and a public asking price. The minimum includes "
-                    "acquisition cost, expected selling charges, relevant holding costs, "
-                    "and a positive contribution target. Keep the internal floor private. "
-                    "If market evidence cannot support that floor, record the underwriting "
-                    "error immediately rather than disguising it with an inflated listing."
-                ),
-                (
-                    "Use transaction arithmetic before choosing Afternic, Sedo, direct "
-                    "escrow, or another venue. As an illustrative transaction worksheet, "
-                    "a $2,000 completed sale with a 20% selling charge, $500 acquisition "
-                    "cost, $20 renewal allocation, and $30 additional closing cost "
-                    "produces $1,050 contribution before shared operating costs. The "
-                    "operator records $2,000 gross domain sale proceeds, not the "
-                    "$1,600 marketplace remittance, when following this volume's revenue "
-                    "basis. The $400 charge remains a cost. Fee percentages are "
-                    "worksheet assumptions, not assertions about a venue's current "
-                    "schedule; obtain the actual quote and determine which party "
-                    "pays escrow charges. Offers, appraisal estimates, listing views, "
-                    "and domains moved between the owner's accounts create no sale "
-                    "proceeds. For installment transactions, maintain separate contracted "
-                    "price, collected cash, and recognized revenue fields under the "
-                    "selected accounting treatment rather than booking the entire "
-                    "headline figure automatically. Day 12 publishes consistent retail "
-                    "pricing and a functional landing page with tested inquiry routing. "
-                    "Day 13 checks venue-specific fast-transfer eligibility and cross-listed "
-                    "inventory synchronization. Remove incompatible automatic sale "
-                    "settings: two simultaneous purchase paths can promise the same "
-                    "domain to different buyers. Record timestamps and screenshots "
-                    "so a later dispute has an auditable sequence."
-                ),
-                (
-                    "Day 14 runs a complete settlement rehearsal without inventing "
-                    "a buyer or sending funds. Prepare an Escrow.com transaction "
-                    "draft or the chosen marketplace's equivalent checklist, verify "
-                    "the actual service domain independently, and document identity "
-                    "checks, funded-status confirmation, delivery method, inspection "
-                    "terms, and payout timing. Never treat an emailed screenshot "
-                    "as confirmation that funds are secured. Confirm status inside "
-                    "the service directly, and release transfer credentials only "
-                    "at the documented stage. Put the domain string, price, payment "
-                    "responsibilities, delivery method, and transfer timing in the "
-                    "transaction record. For P3 inventory, disclose observed historical "
-                    "use accurately and avoid promising ranking improvements, inherited "
-                    "traffic, or search-engine treatment that the seller cannot "
-                    "control. A historical link profile is evidence to investigate, "
-                    "not recurring revenue. For P5, request two genuine wholesale "
-                    "opinions from independent counterparties while clearly identifying "
-                    "whether either is a firm offer. Those opinions inform liquidity "
-                    "and do not establish a realizable floor. Complete the week "
-                    "with every owned name listed or deliberately withheld for a "
-                    "documented reason, every renewal date monitored, and every "
-                    "transfer restriction visible to the owner. If a listing cannot "
-                    "be delivered as advertised, pause that listing before generating "
-                    "more buyer interest."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two Acquisition, Listing, and Settlement Readiness Matrix",
-                "headers": [
-                    "Day and portfolio operation",
-                    "Specific owner-controlled execution",
-                    "Evidence retained in the domain file",
-                    "Limit or corrective operating action",
-                ],
-                "rows": [
-                    [
-                        "Day 8 executes approved P1 and P2 acquisition opportunities.",
-                        "Submit written offers only after confirming current budget availability.",
-                        "Retain seller terms, exact domain strings, and approved maximum prices.",
-                        "Spend at most $500 all-in on each approved purchase.",
-                    ],
-                    [
-                        "Day 9 executes approved P3 and P4 auction opportunities.",
-                        "Review every open commitment before submitting another binding bid.",
-                        "Store auction rules, settlement deadlines, and historical-use review results.",
-                        "Aggregate possible wins must remain below the $2,500 allocation.",
-                    ],
-                    [
-                        "Day 10 verifies title control and hardens registrar access.",
-                        "Authenticate independently, inspect domain state, and enable multifactor authentication.",
-                        "Retain invoices, account-control evidence, expiry dates, and recovery procedures.",
-                        "Pause listings whenever ownership control or delivery authority remains unresolved.",
-                    ],
-                    [
-                        "Day 11 calculates internal floors and evidence-based asking prices.",
-                        "Model acquisition costs, quoted selling charges, and expected holding costs.",
-                        "Keep separate wholesale evidence, retail comparables, and transaction contribution worksheets.",
-                        "Reject prices that require unsupported comparable-sale adjustments to appear profitable.",
-                    ],
-                    [
-                        "Day 12 activates P6 landing pages and inquiry routing.",
-                        "Publish consistent prices and send clearly labeled internal test inquiries.",
-                        "Archive successful routing results with timestamps and response ownership assignments.",
-                        "Repair every failed inquiry path before starting outbound buyer outreach.",
-                    ],
-                    [
-                        "Day 13 synchronizes listings and verifies actual transfer eligibility.",
-                        "Check registrar restrictions and disable conflicting automatic sale commitments.",
-                        "Record platform settings, restriction dates, and permissible delivery methods.",
-                        "Advertise only delivery timelines supported by the domain's current state.",
-                    ],
-                    [
-                        "Day 14 rehearses settlement and requests P5 liquidity evidence.",
-                        "Walk through escrow stages and seek two independent wholesale opinions.",
-                        "Distinguish nonbinding opinions from executable offers with documented expiry dates.",
-                        "Release no credentials during rehearsals or before verified transaction conditions.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Habits That Keep a Small Domain Desk Solvent",
-                "body": (
-                    "Experienced operators preserve optionality by separating auction "
-                    "excitement, pricing evidence, deliverability, and actual cash."
-                ),
-                "items": [
-                    "Screenshot premium renewal quotes before buying; an inexpensive opening registration can conceal a recurring charge that destroys the holding thesis.",
-                    "Save comparable-sale dates and venue context; a decade-old end-user purchase should not anchor today's immediate wholesale exit estimate.",
-                    "Maintain one master inventory status and reconcile every marketplace after a sale; stale automatic listings can create conflicting delivery obligations.",
-                    "Ask wholesale counterparties whether a number is a funded offer, its expiry, and its payment method; informal enthusiasm is not liquidity.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Test Buyer Demand Without Manufacturing Signals",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Week three tests P6 inbound demand and P7 outbound upgrades "
-                    "while P5 supplies a separate liquidity reference. Day 15 builds "
-                    "a manually reviewed list of twenty businesses with a plausible "
-                    "operating use for the owned names. A plausible buyer already "
-                    "sells the relevant product, uses a materially weaker generic "
-                    "domain, or is launching a documented adjacent offering. Do "
-                    "not target a trademark owner with a demand premised on their "
-                    "mark, and do not imply affiliation, existing traffic, or a "
-                    "competitor's offer without evidence. Day 16 reviews the message "
-                    "and contact sourcing. Commercial email requirements under 15 "
-                    "U.S.C. § 7704 include accurate routing information, nondeceptive "
-                    "subjects, applicable advertising identification, a valid physical "
-                    "postal address, and a functioning opt-out mechanism. Honor "
-                    "opt-outs within ten business days and suppress them immediately "
-                    "as an internal standard. Recipient location can introduce "
-                    "additional rules, so restrict the initial cohort to a "
-                    "researched jurisdiction rather than exporting a purchased global "
-                    "list. Days 17 and 18 send ten individualized first contacts "
-                    "each, with no deceptive urgency and no tracking-dependent "
-                    "claims. Keep a record of why each recipient fits the "
-                    "domain. A smaller lawful, relevant cohort is more useful "
-                    "than hundreds of messages that obscure actual buyer intent."
-                ),
-                (
-                    "Define the funnel before reading replies. An eligible contact "
-                    "is a verified business recipient selected under the sourcing "
-                    "rules; a delivered first contact is one not returned as "
-                    "undeliverable after the review window. Exclude internal tests, "
-                    "follow-ups, and duplicate people from that denominator. A "
-                    "qualified reply must come from an identifiable prospective "
-                    "buyer and discuss price, intended use, procurement authority, "
-                    "or transfer terms. Courtesy acknowledgments, automated responses, "
-                    "spam proposals, and broker solicitations without an identified "
-                    "buyer do not qualify. A written offer must specify a "
-                    "price, domain, and counterparty; keep offers separate from "
-                    "funded transactions. Day 19 classifies every response and "
-                    "records objection themes. Day 20 runs one clearly documented "
-                    "pricing or positioning adjustment per domain rather than "
-                    "changing the price, audience, and copy simultaneously. Day "
-                    "21 checks inbound response time using business-hour timestamps "
-                    "and rehearses an inquiry when no real inbound message "
-                    "exists. Target responses within one business day. With "
-                    "twenty delivered first contacts, two qualified replies equal "
-                    "10%, but that tiny sample is directional evidence, not "
-                    "a stable conversion estimate. Report both counts and rates. "
-                    "A zero-sale month remains compatible with the stated "
-                    "holding horizon; it does not excuse missing records or "
-                    "broken routing."
-                ),
-                (
-                    "Keep demand testing inside the pod's actual capacity. The "
-                    "owner writes and sends the twenty first contacts, handles "
-                    "negotiation, and evaluates whether a reply changes underwriting. "
-                    "The contractor uses their remaining scoped time to verify "
-                    "business identities, remove duplicates, and audit renewal "
-                    "dates. Do not quietly add unpaid full-time contractor work "
-                    "to make the sprint appear efficient. Automation should "
-                    "handle renewal reminders, comparable-sale monitoring, and "
-                    "inbound inquiry routing, matching Candidate #16's specified "
-                    "levers. A calendar plus a spreadsheet can serve the "
-                    "first five names; additional software must replace a "
-                    "measured task while staying inside the $500 monthly "
-                    "operating ceiling. Use alerts at ninety, sixty, and "
-                    "thirty days before expiry, with the owner responsible "
-                    "for confirming registrar status rather than trusting "
-                    "email alone. Register explicit outcome codes for price "
-                    "objection, weak fit, timing, delivery restriction, and "
-                    "no response. Preserve the original outreach and negotiation "
-                    "record so a change can be evaluated against the "
-                    "same cohort. Do not scrape private contacts, rotate "
-                    "identities to bypass blocks, or keep contacting a "
-                    "recipient who opted out. An objection can improve "
-                    "P8 portfolio decisions even when it produces no "
-                    "transaction. The useful output is attributable market "
-                    "evidence, not a large activity counter."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three Buyer-Evidence Collection and Denominator Discipline",
-                "headers": [
-                    "Day and buyer-development activity",
-                    "Concrete execution within pod capacity",
-                    "Measurement and retained operator evidence",
-                    "Threshold and immediate corrective response",
-                ],
-                "rows": [
-                    [
-                        "Day 15 selects twenty relevant businesses for P7 upgrades.",
-                        "Owner selects commercial fits; contractor checks identities and duplicate records.",
-                        "Each prospect record explains a specific use for an owned domain.",
-                        "Exclude prospects whose entire rationale depends on another party's mark.",
-                    ],
-                    [
-                        "Day 16 reviews messages, sourcing, and recipient opt-out handling.",
-                        "Owner verifies accurate headers, truthful subjects, address, and suppression workflow.",
-                        "Retain message versions, sourcing notes, and a successful suppression test.",
-                        "Send nothing until every required message component has been checked.",
-                    ],
-                    [
-                        "Day 17 sends the first ten individually researched messages.",
-                        "Owner personalizes business relevance without inventing traffic or competing offers.",
-                        "Log unique recipients, exact messages, sending times, and returned deliveries.",
-                        "Pause the next batch after any complaint requiring investigation.",
-                    ],
-                    [
-                        "Day 18 sends the second ten messages after review.",
-                        "Owner removes suppressed recipients and corrects any sourcing defects first.",
-                        "Track eligible first contacts separately from follow-ups and internal tests.",
-                        "Investigate every bounce; never replace relevance with higher sending volume.",
-                    ],
-                    [
-                        "Day 19 classifies replies and records actual buyer objections.",
-                        "Owner separates qualified interest from courtesy replies and automated messages.",
-                        "Attach original replies to price, fit, timing, or delivery classifications.",
-                        "Count only identifiable buyers discussing concrete transaction or usage details.",
-                    ],
-                    [
-                        "Day 20 tests one pricing or positioning change per domain.",
-                        "Owner chooses one variable while preserving the original cohort records.",
-                        "Version the asking price, message, and reason for the selected change.",
-                        "Avoid simultaneous changes that prevent attribution of subsequent buyer responses.",
-                    ],
-                    [
-                        "Day 21 audits P6 routing and P8 renewal reminders.",
-                        "Owner tests inquiry delivery; contractor verifies dates against registrar records.",
-                        "Retain response timestamps and ninety, sixty, thirty-day reminder schedules.",
-                        "Repair missed inquiries immediately and target one-business-day response handling.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the eligible cohort",
-                    "action": "Assign one identifier to each domain and prospective buyer pair.",
-                    "detail": (
-                        "Record sourcing, jurisdiction, commercial fit, and suppression "
-                        "status before sending; exclude duplicate recipients from first-contact counts."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Capture delivery and buyer evidence",
-                    "action": "Reconcile returned messages and classify replies against written definitions.",
-                    "detail": (
-                        "Store delivered first contacts, qualified replies, written offers, "
-                        "funded transactions, and completed transfers as separate events."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Reprice one testable variable",
-                    "action": "Change either audience fit, message positioning, or asking price.",
-                    "detail": (
-                        "Document the hypothesis and preserve the earlier version; "
-                        "never attribute improvement to several simultaneous changes."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile costs and decide",
-                    "action": "Compare evidence with the applicable Day-30/60/90 decision row.",
-                    "detail": (
-                        "Apply safety and cash stops first, then Scale conditions; "
-                        "all remaining cases enter a time-boxed Fix queue."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30: Close the Evidence Loop and Apply Day-30/60/90 Decisions",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Day 22 reconciles domain ownership, cash, open auction obligations, "
-                    "and listing status. Day 23 completes missing buyer-fit notes "
-                    "and evidence files without buying replacement inventory. Day "
-                    "24 reviews objections and performs one documented asking-price "
-                    "test on names with defensible comparables. Day 25 rehearses "
-                    "transfer instructions against current registrar restrictions "
-                    "and removes stale listings. Day 26 reviews every renewal "
-                    "quote and assigns a hold, reprice, wholesale, or expiry "
-                    "review status; do not cancel a registration merely to "
-                    "improve an activity metric. Day 27 updates wholesale "
-                    "evidence and distinguishes firm bids from opinions. Day "
-                    "28 calculates cumulative cash outflows, realized transaction "
-                    "contribution, and the delivered-contact funnel. Day 29 "
-                    "drafts the Day-30 decision with supporting links and "
-                    "a specific next-review date. Day 30 applies the matrix "
-                    "below and signs a thirty-day work order. These dates "
-                    "produce a complete operating loop even when no domain "
-                    "sells. Carry unresolved questions forward with an owner "
-                    "and deadline rather than substituting optimism. For the "
-                    "next two months, maintain the $500 monthly operating "
-                    "ceiling and review spending weekly. Early Scale means "
-                    "more attention to a proven lane within the existing "
-                    "acquisition allocation, not permission to consume protected "
-                    "cash or hire the Scaled scenario's larger team."
-                ),
-                (
-                    "Treat the decision thresholds as explicit pilot policies, not "
-                    "industry conversion benchmarks. Apply Kill conditions first "
-                    "and interpret Kill as stopping new acquisition in the "
-                    "affected lane; preserve existing assets, transaction records, "
-                    "and necessary renewals while selecting an orderly exit. "
-                    "Suspected title defects, unresolved material trademark concerns, "
-                    "and reserve shortfalls override attractive reply rates "
-                    "immediately. Then apply every Scale condition conjunctively; "
-                    "anything neither killed nor qualified for Scale enters "
-                    "Fix. Day 30 requires at least twenty delivered first "
-                    "contacts and two qualified replies for bounded process "
-                    "scaling. Day 60 requires forty delivered first contacts, "
-                    "four qualified replies, and one written offer above "
-                    "its calculated transaction floor. Day 90 requires sixty "
-                    "delivered first contacts, six qualified replies, and "
-                    "two completed sales to independent buyers with aggregate "
-                    "realized transaction contribution at least equal to "
-                    "cumulative operating cash spend. An inbound sale can "
-                    "count toward sales evidence, but its origin must remain "
-                    "separate from outbound conversion calculations. No sale "
-                    "by Day 90 therefore blocks capital scaling, not "
-                    "continued careful ownership. After Day-90 qualification, "
-                    "release at most $1,000 additional acquisition cash only "
-                    "if at least $5,000 remains liquid afterward, including "
-                    "the $1,000 renewal reserve. Otherwise keep the existing "
-                    "capital cap despite favorable demand."
-                ),
-                (
-                    "Keep pilot evidence separate from the canonical annual "
-                    "scorecard. Conservative means $20,000 gross domain sale "
-                    "proceeds at 15% net margin, producing $3,000 owner "
-                    "net profit and $17,000 implied total costs with "
-                    "1 FT + 1 C. Base means $160,000 gross proceeds "
-                    "at 27.5%, producing $44,000 profit and $116,000 "
-                    "implied costs with the same pod. Scaled means "
-                    "$300,000 gross proceeds at 40%, producing $120,000 "
-                    "profit and $180,000 implied costs with 2 FT + "
-                    "2 C. Acquisition and renewal costs are already "
-                    "inside those margins; do not subtract them twice "
-                    "or portray the inventory's asking value as revenue. "
-                    "For arithmetic illustration only, a $4,000 average "
-                    "completed sale would require five, forty, and "
-                    "seventy-five annual sales respectively. That count "
-                    "does not establish portfolio size, sell-through, or "
-                    "time to settlement. Five pilot names cannot "
-                    "credibly support the Base case without demonstrated "
-                    "replenishment and sufficient capital. Likewise, a "
-                    "$1,050 contribution on one transaction is not "
-                    "$1,050 annual owner profit after all overhead. "
-                    "The chapter's budget tests learning efficiency "
-                    "during the first ninety days; the scorecard "
-                    "describes annual operating outcomes. Expand staffing "
-                    "only after sustained workload and funded economics "
-                    "justify it. If every promising deal depends on "
-                    "ignoring renewal costs, assuming instant resale, "
-                    "or contacting protected-name owners, kill the "
-                    "thesis rather than revise the denominator."
-                ),
-            ],
-            "table": {
-                "caption": "Quantitative Day-30/60/90 Kill, Fix, and Scale Decision Matrix",
-                "headers": [
-                    "Review date and decision scope",
-                    "Observable trigger or complete qualifying condition",
-                    "Required operator action and spending constraint",
-                    "Evidence required for the next review",
-                ],
-                "rows": [
-                    [
-                        "Day 30 Kill stops the defective acquisition lane immediately.",
-                        "Any material unresolved title or trademark issue, reserve shortfall, or outflows above $3,000.",
-                        "Freeze purchases, preserve records, investigate defects, and restore cash discipline.",
-                        "Document resolution for every defect and reconcile protected renewal cash.",
-                    ],
-                    [
-                        "Day 30 Fix covers every non-Kill case below Scale requirements.",
-                        "Fewer than twenty delivered contacts, fewer than two qualified replies, or incomplete owned-domain files.",
-                        "Run fourteen days of targeted repairs without increasing acquisition capacity.",
-                        "Complete every owned-domain file and retest the weakest measured funnel stage.",
-                    ],
-                    [
-                        "Day 30 Scale expands proven work inside existing capital limits.",
-                        "Twenty delivered contacts, two qualified replies, complete files, protected reserves, and outflows within $3,000.",
-                        "Prioritize the strongest lane without exceeding five names or $2,500 acquisition capacity.",
-                        "Retain reply evidence, complete underwriting files, and weekly cash reconciliations.",
-                    ],
-                    [
-                        "Day 60 Kill stops a persistently unsupported acquisition lane.",
-                        "Cash outflows exceed $3,500, safety defects persist, or forty contacts produce zero qualified replies after one documented test.",
-                        "Suspend new purchases in that lane and evaluate orderly holding or wholesale exits.",
-                        "Keep existing assets protected while documenting exit costs and buyer evidence.",
-                    ],
-                    [
-                        "Day 60 Fix retains inventory while repairing weak evidence.",
-                        "No Kill trigger applies, but any contact, reply, offer, or cash Scale condition fails.",
-                        "Test one objection-driven change and keep monthly operating cash within $500.",
-                        "Produce forty delivered contacts, four qualified replies, and an offer above its floor.",
-                    ],
-                    [
-                        "Day 60 Scale concentrates effort without releasing additional principal.",
-                        "Forty delivered contacts, four qualified replies, one above-floor written offer, clean files, protected reserves, and outflows within $3,500.",
-                        "Improve negotiation and routing while retaining the original acquisition allocation.",
-                        "Verify offer identity and terms; record funded and completed sales separately.",
-                    ],
-                    [
-                        "Day 90 Kill halts unsupported expansion and preserves remaining liquidity.",
-                        "Outflows exceed $4,000 before expansion, safety defects remain, or sixty contacts yield zero qualified replies after two documented tests.",
-                        "Stop new buying, audit carrying costs, and choose documented hold or exit actions.",
-                        "Retain renewal protection and evaluate actual wholesale offers rather than appraisals.",
-                    ],
-                    [
-                        "Day 90 Fix continues bounded ownership without releasing capital.",
-                        "No Kill trigger applies, but any sales, contribution, reply, contact, or liquidity Scale condition fails.",
-                        "Maintain or reduce operating spend and review portfolio economics every thirty days.",
-                        "Separate absent demand from incomplete exposure and document each renewal decision.",
-                    ],
-                    [
-                        "Day 90 Scale permits at most $1,000 additional acquisition cash.",
-                        "Sixty contacts, six qualified replies, two independent completed sales, contribution covering operating spend, clean files, and $5,000 post-release liquidity.",
-                        "Require pre-expansion outflows within $4,000 and preserve the $1,000 renewal reserve.",
-                        "Archive settlement records, contribution calculations, reserve balances, and revised position limits.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the evidence before you scale the inventory.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Create the P1–P8 ledger on Day 1, assigning one acquisition code per domain and separate exit and maintenance activity codes.",
-        "Protect the $1,000 renewal reserve and approve a $2,500 acquisition allocation with $500 individual all-in purchase ceilings.",
-        "Complete ten underwriting files by Day 7, including trademark review, historical use, actual renewal pricing, and plausible commercial buyers.",
-        "Verify ownership control, consistent listings, working inquiry routing, and a rehearsed settlement procedure by Day 14.",
-        "Execute the twenty-contact buyer experiment, preserve original messages, honor suppression requests, and report qualified replies with explicit denominators.",
-        "Sign Day-30/60/90 decisions using safety-first precedence, reconciled cash, realized contribution, and the matrix's complete Scale conditions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 1125(d) — Cyberpiracy prevention",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": (
-                "Evaluate trademark similarity and bad-faith intent to profit before "
-                "registration, acquisition, listing, or outreach; retain the independent "
-                "commercial rationale and review relevant statutory factors."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1117(d) — Statutory damages for cybersquatting",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1117",
-            "relevance": (
-                "The statute permits an election of statutory damages from $1,000 "
-                "to $100,000 per domain name for a violation of section 1125(d)(1), "
-                "as the court considers just; dispute exposure can overwhelm a small portfolio."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Build accurate sender information, truthful subjects, applicable "
-                "advertising identification, a valid physical postal address, and "
-                "working opt-out processing into outbound domain-upgrade messages."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 8131 — Cyberpiracy protections for individuals",
-            "url": "https://www.law.cornell.edu/uscode/text/15/8131",
-            "relevance": (
-                "Screen personal-name registrations where the proposed thesis depends "
-                "on selling the name for profit to the named individual or a third "
-                "party under the statute's specific-intent conditions."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'investor-journeys-challenges-and-capital',
+ 'question_prompt': 'What do real practitioner journeys, challenges, and capital strategies reveal about '
+                    'running domain investing as a business?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Investor Journeys, Challenges, and Capital',
+ 'subtitle': 'Eight-figure sales stories (Tim Ferriss, Manic Millionaire), Peter Askew and Paul Nicks '
+             "interviews, the $500 and $2K flipping challenges, Andrew Allemann's year in review, 15 years "
+             'of lessons, the reality of a flipping business, building a portfolio, starting in Nigeria, '
+             'plus off-niche capital lessons on margin-financed dividend portfolios and how investors '
+             'evaluate startups',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Practitioners from Andrew Rosener's eight-figure domain brokerage to GoDaddy's $500 "
+                      'challenge converge on one spine: .com first, generic terms over trademarks, cheap '
+                      'sourcing from expiring and closeout inventory, and an annual sell-through of '
+                      'roughly 1-3% where one or two names carry the year. The mechanics are specific: '
+                      'Mike Zigger hunts $1-$50 GoDaddy closeouts, Manic Millionaire runs a three-bucket '
+                      'ladder from $30 buys listed at $299 up to $50K-$500K holds, Andrew Allemann logs 21 '
+                      'of 25 sales through Afternic plus $5-7K monthly lease-to-own income, and Rosener '
+                      'leases names at 0.5-1 point per month. Disagreements run hot: Peter Askew overbids '
+                      '2-3x flippers because he develops, Manic says sell any offer above cost, Mike '
+                      'Zigger rejects tagging buyers on UDRP exposure, and parking is either dead or '
+                      'displaced by lease-to-own.',
+ 'key_metrics': [{'label': 'Annual Portfolio Sell-Through Rate',
+                  'metric': 'Annual Portfolio Sell-Through Rate',
+                  'value': '1-3% of a portfolio per year (roughly 2 of every 100 names)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Typical share of a domain portfolio that sells in a given year, framed as a '
+                             'lottery ticket business with a holding cost',
+                  'source': 'Ownerly ([xPtTNJU_OGE @ 00:02:01])'},
+                 {'label': 'Afternic Share of Annual Sales',
+                  'metric': 'Afternic Share of Annual Sales',
+                  'value': '21 of 25 sales; about 60% of revenue',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Venue breakdown of Allemann's sales year to date, with the remainder split "
+                             'across Sedo, Spaceship and saw.com',
+                  'source': 'Andrew Allemann ([E4jnQONuo6E @ 00:15:21])'},
+                 {'label': 'Domain Lease Pricing',
+                  'metric': 'Domain Lease Pricing',
+                  'value': '5-10% option fee credited to strike; 0.5-1 point per month lease, not credited',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Exclusive fixed-price option held at escrow.com, default five-year term; a '
+                             '$100K name yields $500-1,000 per month',
+                  'source': 'Tim Ferriss ([ApCGeST90RA @ 01:03:55])'},
+                 {'label': 'Challenge Starting Capital',
+                  'metric': 'Challenge Starting Capital',
+                  'value': '$500 per investor, one-year contest, only cash from sales counts',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rules of the GoDaddy Domain Academy $500 investing challenge ending April 15',
+                  'source': 'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:00:00])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['The floor every practitioner stands on is .com. Peter Askew calls .com '
+                              'king, ranks .org above .net, and buys only generic terms because trademark '
+                              'strings invite a UDRP [S9SNhuYObsA @ 00:29:34]. TheMaskedFreelancer tells '
+                              'Nigerian newcomers that .ng is not sellable today, that .com is the king, '
+                              'and that beginners should never register a www prefix [AiootzfgBRM @ '
+                              '00:14:30]. Andrew Rosener backs the ceiling with hard history: only one '
+                              'Fortune 1000 company operates off a .com, Facebook paid $8.5 million for '
+                              'fb.com because a banker blocked the IPO until the ID was wrapped up, and '
+                              'Overstock reversed its o.co rebrand within about six months after losing '
+                              '30-40% of traffic to people typing o.com [ApCGeST90RA @ 02:31:33]. The '
+                              'second shared rule is trademark avoidance. Ownerly prices the downside of '
+                              'an infringing name at a cease-and-desist or UDRP with legal costs starting '
+                              'at a few thousand dollars, models a $4,000 trademark dispute flipping a '
+                              'thin year into a roughly $3,000 loss, and closes with the rule to learn '
+                              'trademark law before spending a dime [xPtTNJU_OGE @ 00:19:59]. The operator '
+                              'read: generic, semantically meaningful .com names that are easy to spell '
+                              'carry liquidity, other extensions are side bets, and brand-adjacent strings '
+                              'are a cost center waiting to land.',
+                              'Everyone who has run real numbers agrees this is a low-hit-rate inventory '
+                              'business. Ownerly calls it a lottery ticket business with a holding cost, '
+                              'pegs typical sell-through at 1-3% of a portfolio per year, roughly two '
+                              'names out of every hundred, and warns that posted sales screenshots are '
+                              'survivorship bias [xPtTNJU_OGE @ 00:02:01]. Joe on GoDaddy Domain Academy '
+                              'lands on the same band: 2-3% for a good portfolio and about 1% for a '
+                              'beginner, with the top three challengers each buying 40-50 names '
+                              '[d1VjM9-Tyig @ 00:11:25]. Andrew Allemann lives the variance in their own '
+                              'book. Allemann logged three sales in January, five in February, three each '
+                              'in March through May, two each in June and July, and four in August, holds '
+                              'about 4,000 names after adding 1,000 year over year, and says consistency '
+                              'may require around 100,000 names, which turns the business into a slot '
+                              'machine [E4jnQONuo6E @ 00:13:08]. Concentration compounds the variance: '
+                              'Ownerly models one or two names producing more than 80% of revenue, and its '
+                              'sample good year drops from roughly $46,000 profit to about $17,000 once a '
+                              'single $35,000 sale is removed. Size the portfolio, the renewals, and the '
+                              'cash reserve for the dry months, not the hits.',
+                              'The third point of agreement is where inventory comes from and how it '
+                              "leaves. GoDaddy's own portfolio guide tells builders to target expiring "
+                              'domains, skip hype for evergreen names, compare similar sales, and never '
+                              'pay more than a name is worth [OKekYzcUFsg @ 00:00:35]. Mike Zigger '
+                              'operationalizes that by checking GoDaddy auctions and closeouts every '
+                              'single day with a $1 to $50 sweet spot, while Pew Patel says flatly that '
+                              'waiting for inbound does not work [d1VjM9-Tyig @ 00:03:09]. Manic '
+                              'Millionaire frames the whole game around buyers: sales means repeatedly '
+                              'asking whether someone wants to buy a domain, every inquiry email goes into '
+                              'a buyer bank they can tap when they need cash, and if you focus on the '
+                              'buyers everything else takes care of itself [rMXyBJCRlDQ @ 00:14:59]. '
+                              'Marketplaces are the shared rail for closing. TheMaskedFreelancer routes '
+                              'Nigerian sellers through them because the platform acts as escrow, hides '
+                              "the seller's identity against the scammer stigma, and reaches a buyer pool "
+                              'the speaker puts at 70% American, with 90% of marketplaces themselves '
+                              'American companies [AiootzfgBRM @ 00:05:24]. The consensus stack: cheap '
+                              'daily sourcing from drops and closeouts, active outbound to a growing buyer '
+                              'list, and a trusted marketplace or escrow layer to take the money.'],
+               'table': {'caption': 'Practitioner consensus points with the operator implication of each',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['.com is the default extension for core inventory',
+                                   'Askew calls .com king and ranks .org above .net for secondary picks',
+                                   'Build core inventory in generic .com names before touching any other '
+                                   'extension',
+                                   'POWERS Pod ([S9SNhuYObsA @ 00:29:34])'],
+                                  ['Trademark strings are a cost center, not inventory',
+                                   'Infringing names risk a C&D or UDRP with legal costs from a few '
+                                   'thousand dollars',
+                                   'Screen every buy for trademarks before spending a single dollar on '
+                                   'registration',
+                                   'Ownerly ([xPtTNJU_OGE @ 00:05:44])'],
+                                  ['Annual sell-through is low and lumpy for everyone',
+                                   'Joe reports 2-3% sell-through for good portfolios and roughly 1% for '
+                                   'beginners',
+                                   'Budget renewals assuming the vast majority of names sit unsold every '
+                                   'single year',
+                                   'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:11:25])'],
+                                  ['Outbound selling beats waiting passively for inbound offers',
+                                   'Pew Patel states plainly that the wait-for-inbound strategy does not '
+                                   'work',
+                                   'Pair every listing with active pitching through newsletters, Discords, '
+                                   'and direct buyer outreach',
+                                   'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:15:00])'],
+                                  ['A bank of known buyers is the real asset',
+                                   'Manic logs every inquiry email into a buyer bank to unlock cash on '
+                                   'demand',
+                                   'Capture contact details from every inquiry, including the ones that '
+                                   'never close a deal',
+                                   'Manic Millionaire ([rMXyBJCRlDQ @ 00:03:25])'],
+                                  ['Marketplaces handle trust, escrow, and payment for sellers',
+                                   'Marketplace escrow hides seller identity; the speaker puts American '
+                                   'buyers at 70%',
+                                   'Route cross-border sales through Afternic-style platforms rather than '
+                                   'direct one-to-one wire deals',
+                                   'TheMaskedFreelancer😷 ([AiootzfgBRM @ 00:05:24])'],
+                                  ['Exact-match .com names protect traffic that rivals leak',
+                                   'Overstock lost 30-40% of traffic on o.co and reversed in about six '
+                                   'months',
+                                   'Value exact .com names by the traffic a non-exact rival brand bleeds '
+                                   'away',
+                                   'Tim Ferriss ([ApCGeST90RA @ 02:31:33])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The low-capital playbook comes straight from the $500 challenge. Mike '
+                              "Zigger's ladder is to turn $10-30 buys into $95 net after the 5% "
+                              'commission, repeat that 10-20 times, then graduate to $200-to-$400 and '
+                              '$500-to-$1,000 flips, because new investors should focus on cash flow '
+                              '[d1VjM9-Tyig @ 00:13:38]. Zigger has bought 43 names, about one every eight '
+                              'to nine days, winning no-bid auctions on the last day at $1 or $11, then '
+                              'pushing them through NamePros, a newsletter, and Discord and text DMs '
+                              'offering first right of refusal. Andrew Allemann ran a parallel track: 37 '
+                              'names bought, 28 sold mostly around $99, including VGOE.com bought at $221 '
+                              'and sold at $299, with the warning that four-letter .coms realistically '
+                              'cost $300-400 on GoDaddy auctions [d1VjM9-Tyig @ 00:04:43]. Brooks Conkle '
+                              'adds the fee arbitrage. Spaceship renews at about $10 a year and takes a 5% '
+                              'commission, while Afternic takes 30% when nameservers are not pointed at '
+                              'it, so Conkle lists 30% higher on Afternic to net the same figure '
+                              '[nOLgURAW0ns @ 00:05:17]. The peakcovers.com sale closed at $3,246 against '
+                              'a $1,600 GoDaddy appraisal, yet roughly $2,400 earned minus about $1,500 in '
+                              'renewals left Conkle near $1,000 to reinvest.',
+                              "Scaled operators run tiered systems. Manic Millionaire's three buckets: "
+                              'bucket one buys at $30 and lists at $299 on Afternic for 10x; bucket two '
+                              'spends $200-5,000 and actively sells for 2-3x; bucket three spends '
+                              '$50,000-500,000 targeting 10x, though Manic would take $400,000 on a '
+                              '$200,000 name, and names shift between buckets depending on cash flow '
+                              '[rMXyBJCRlDQ @ 00:04:00]. Manic also owns 2,500 UK names picked up on a '
+                              'one-pound-per-year promo, sells them at 99, and now finds candidates with '
+                              "software and AI scripts. Allemann's sourcing log breaks it down: of 25 "
+                              'sales, 10 came from uncontested auctions, 6 from closeouts, 4 from '
+                              'hand-registrations, 3 from DropCatch, 1 from a launch, and 1 GoDaddy '
+                              'premium bought for $1,000 and sold for $15,000, with a median sale of '
+                              '$5,000 and median cost of $71 [E4jnQONuo6E @ 00:16:54]. Lease-to-own now '
+                              'brings in $5,000-7,000 a month; Allemann sets terms at 13-14 months to earn '
+                              "Afternic's extra 5% and never goes beyond about 25 months because "
+                              'cancellations rise [E4jnQONuo6E @ 00:18:36]. Eight of the 25 sales were '
+                              'LTOs, and 21 of 25 cleared through Afternic.',
+                              'At the top end, Rosener prices with search math. Total addressable market '
+                              'equals exact-match search volume, long tail discounted, times advertiser '
+                              'price per keyword, giving a monthly figure multiplied by 36 months '
+                              'conservatively, or 60 to 120 months in some industries [ApCGeST90RA @ '
+                              '02:16:52]. The worked example: 100,000 searches at roughly 25% '
+                              'click-through yields 25,000 clicks, and a 2% conversion yields 500 '
+                              'conversions a month valued at paid-traffic opportunity cost. The lease '
+                              'structure is an exclusive fixed-price option held at escrow.com, defaulting '
+                              'to five years, with a 5-10% option fee credited to the purchase price and '
+                              '0.5-1 point per month in uncredited lease payments, so a $100,000 name '
+                              'throws $500-1,000 monthly [ApCGeST90RA @ 01:03:55]. TheMaskedFreelancer '
+                              'runs a street version through SpyFu on the US market, demanding at least 10 '
+                              'monthly searches and pricing around $1,500-2,000 when volume nears 2,000 '
+                              '[AiootzfgBRM @ 00:44:14]. Peter Askew skips resale and builds: the '
+                              'job-board recipe is industry plus jobs plus .com bought at $500-5,000 on '
+                              'Dan.com, Sedo, or GoDaddy buy-now, a roughly $70 WordPress job-board theme, '
+                              'listings seeded from university postings, a Monday email, and Stripe or '
+                              'PayPal for payments [S9SNhuYObsA @ 00:46:12].'],
+               'table': {'caption': 'Street mechanics with the exact numbers each practitioner runs',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers Stated',
+                                     'How It Is Executed',
+                                     'Expert Source'],
+                         'rows': [['Closeout cash-flow ladder for brand-new investors',
+                                   '$10-30 buys turned into $95 net after a 5% commission',
+                                   'Repeat 10-20 times, then step up to $200-to-$400 and $500-to-$1,000 '
+                                   'flips',
+                                   'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:13:38])'],
+                                  ['Three-bucket portfolio ladder sorted by buy price',
+                                   '$30 buys listed at $299; $200-5K for 2-3x; $50K-500K for 10x',
+                                   'Move names between buckets depending on current cash flow needs at the '
+                                   'time',
+                                   'Manic Millionaire ([rMXyBJCRlDQ @ 00:04:00])'],
+                                  ['Afternic commission offset when nameservers point elsewhere',
+                                   '30% Afternic commission without nameservers versus 5% commission on '
+                                   'Spaceship',
+                                   'List names 30% higher on Afternic so the net payout matches Spaceship',
+                                   'Brooks Conkle // Build Income Streams ([nOLgURAW0ns @ 00:05:17])'],
+                                  ['Lease-to-own term setting on Afternic listings',
+                                   '$5-7K monthly LTO income; 13-14 month terms earn an extra 5%',
+                                   'Never set terms beyond about 25 months because cancellations rise past '
+                                   'that',
+                                   'Andrew Allemann ([E4jnQONuo6E @ 00:18:36])'],
+                                  ['Option-plus-lease structure for high-value premium names',
+                                   '5-10% option fee credited; 0.5-1 point monthly lease, never credited',
+                                   'Hold the domain at escrow.com under a default five-year exclusive '
+                                   'option',
+                                   'Tim Ferriss ([ApCGeST90RA @ 01:03:55])'],
+                                  ['Search-volume pricing screen for hand-registered names',
+                                   'Minimum 10 monthly searches; about 2,000 searches supports '
+                                   '$1,500-2,000 pricing',
+                                   'Check search volume, CPC, and synergy in SpyFu set to the US market',
+                                   'TheMaskedFreelancer😷 ([AiootzfgBRM @ 00:44:14])'],
+                                  ['Expiring-name drop list screening thirty days ahead',
+                                   'NameJet, SnapNames, and DropCatch publish lists 30 days before names '
+                                   'drop',
+                                   'Screen by dictionary term, age, memorability, and type-in traffic '
+                                   'before bidding',
+                                   'POWERS Pod ([S9SNhuYObsA @ 00:13:41])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Active Operators Actually Use',
+                           'body': 'Small execution habits separate the operators posting sales every '
+                                   'month from the ones renewing dead inventory: timing, bid discipline, '
+                                   'ignoring appraisals, and data-gated hand-registration.',
+                           'items': ['Search closeouts in the middle of the day, every day, and push names '
+                                     "to the newsletter fast: Zigger's newsletter names often sell before "
+                                     '5 a.m. Pacific [GoDaddy Domain Academy — d1VjM9-Tyig @ 00:44:08]',
+                                     'Build a bidding bot on the GoDaddy auctions API that bids late so it '
+                                     'never signals interest, and design it so you cannot raise your max '
+                                     'bid later; Allemann runs it on about $7 a month in cloud fees '
+                                     '[Andrew Allemann — E4jnQONuo6E @ 00:29:47]',
+                                     'Ignore registrar appraisals as a pricing anchor: Koerner has seen '
+                                     "names sell 99% below Dynadot's appraisal, and buys expired closeouts "
+                                     'at about $5 there versus $10-20 elsewhere [Chris Koerner on The '
+                                     'Koerner Office Podcast — aba_NmtzK1I @ 00:08:07]',
+                                     'Gate hand-registration themes with data: Afternic shows 365 days of '
+                                     'exact-match godaddy.com search data within a day or two, and if 50 '
+                                     'names in a theme show no searches, pause that theme [Andrew Allemann '
+                                     '— E4jnQONuo6E @ 00:24:00]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Source Daily From Closeouts and No-Bid Auctions',
+                              'action': 'Check GoDaddy auctions and closeouts every day and bid on '
+                                        'uncontested names on the final day.',
+                              'detail': 'Hold the $1 to $50 sweet spot, win no-bid auctions on the last '
+                                        'day at $1 or $11, and keep the pace near one buy every eight to '
+                                        'nine days [GoDaddy Domain Academy — d1VjM9-Tyig @ 00:42:09]'},
+                             {'step': 2,
+                              'title': 'Screen Trademarks and Search Demand Before Buying',
+                              'action': 'Count trademarks on the term and confirm search volume before '
+                                        'committing capital.',
+                              'detail': 'One trademark on the term is a red flag while 300 suggests a '
+                                        'generic word, and an Atom score of 7 or higher marks a strong '
+                                        'name worth explaining to buyers [GoDaddy Domain Academy — '
+                                        'd1VjM9-Tyig @ 00:29:33]'},
+                             {'step': 3,
+                              'title': 'List With Fee-Adjusted Pricing Across Venues',
+                              'action': 'Price each venue so the net payout is identical regardless of '
+                                        'where the buyer checks out.',
+                              'detail': 'Renew at Spaceship for about $10 a year with a 5% commission, and '
+                                        'list 30% higher on Afternic because it takes 30% when nameservers '
+                                        'are not pointed at it [Brooks Conkle // Build Income Streams — '
+                                        'nOLgURAW0ns @ 00:05:17]'},
+                             {'step': 4,
+                              'title': 'Push Outbound and Bank Every Buyer Contact',
+                              'action': 'Pitch buyers directly and log every inquiry email into a reusable '
+                                        'buyer list.',
+                              'detail': 'Keep asking whether people want to buy a domain, log each inquiry '
+                                        'email into a buyer bank, and return to that bank when you need to '
+                                        'unlock cash [Manic Millionaire — rMXyBJCRlDQ @ 00:03:25]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split on exit timing runs between churn and diamond hands. '
+                              'Manic Millionaire closes with a blunt rule: if an offer beats your cost, '
+                              "'sell, sell, sell' [rMXyBJCRlDQ @ 00:16:21], while running a three-bucket "
+                              'book where $30 names list at $299 for 10x, $200-5K names are worked '
+                              'actively for 2-3x, and $50K-500K names wait for 10x but would release a '
+                              '$200K name at $400K. Peter Askew reports the opposite temperament at the '
+                              'top of the market: Rick Schwartz rejects six-figure offers outright '
+                              '[S9SNhuYObsA @ 00:32:00]. Andrew Rosener explains why the best names lock '
+                              'up, describing a $250,000 sale where a rival came back within 24 hours with '
+                              '$350K, $500K, $750K and finally $1M, and the new owner refused every bid '
+                              "because 'this is my brand' [ApCGeST90RA @ 02:28:27]. Rosener's read is that "
+                              'once these names sell, they are generally off the market forever. '
+                              'TheMaskedFreelancer refuses to pick a side: flip fast at $80-$600 for cash '
+                              'flow, hold the strongest names for up to ten years, and do both, citing '
+                              'pharmacistondemand, which turned down $300 offers and later sold for '
+                              '$10,000 [AiootzfgBRM @ 00:19:43]. The operating rule is to assign every '
+                              'name an exit lane before the buy, not after the first offer lands.',
+                              'Outbound selling is the second fault line, and the $500 challenge field '
+                              'split on it in public. Pew Patel states flatly that waiting for inbound '
+                              'does not work [d1VjM9-Tyig @ 00:15:00], and Brooks Conkle reached the same '
+                              'conclusion from a $200 bankroll: with only 10-20 names affordable, turning '
+                              '$200 into $2,000 was feasible only through outbound sales [nOLgURAW0ns @ '
+                              '00:00:44]. The disagreement is over method. Pew tagged prospective buyers '
+                              'until six months earlier and drew a single inquiry, listed at $30K, '
+                              'countered at $40K, and watched the buyer walk. Mike Zigger rejects tagging '
+                              'entirely because a UDRP defense burns time, resources and money '
+                              '[d1VjM9-Tyig @ 00:21:25]; Andrew Allemann adds that tagging on X gets you '
+                              'blocked and points sellers to NamePros, while Mike works NamePros, a '
+                              'newsletter, and Discord or text DMs offering first right of refusal. Manic '
+                              'Millionaire reframes outbound as relationship capital: log every inquiry '
+                              'email into a buyer bank, go back to it when cash is needed, and remember '
+                              'that if you focus on the buyers, everything else takes care of itself '
+                              '[rMXyBJCRlDQ @ 00:14:59]. The working compromise is private, permissioned '
+                              'outreach to known buyers, with public tagging treated as a legal and '
+                              'reputational liability.',
+                              'Valuation and recurring income split practitioners into formula builders '
+                              'and market readers. Andrew Rosener values a name as exact-match search '
+                              'volume times advertiser keyword price, multiplied by 36 conservative '
+                              'months, or 60 to 120 in durable industries, and admits the months multiple '
+                              'is exactly where buyers push back, the method does not hit 100%, and buyers '
+                              "carry an emotional block against paying 'domain squatters' [ApCGeST90RA @ "
+                              '02:25:51]. TheMaskedFreelancer runs a lighter screen on SpyFu, setting a '
+                              'benchmark of at least 10 monthly searches and pricing names near 2,000 '
+                              'searches at $1,500-$2,000 [AiootzfgBRM @ 00:44:14]. Paul Nicks positions '
+                              'GoValue as a comparable-sales guideline that brokers beat by working buyer '
+                              'emotion, conceding that to quantify emotions is very difficult [n2nzWV5BL3M '
+                              "@ 00:16:25], while Chris Koerner ignores Dynadot's appraisal after watching "
+                              'names sell 99% below it. On income, Nicks says stable investor revenue has '
+                              'moved from parking to lease-to-own, and TheMaskedFreelancer confirms '
+                              'parking now pays as little as $0.16 a day on one name. Term length is '
+                              'contested: Rosener defaults to five-year options, while Andrew Allemann '
+                              'caps lease-to-own around 25 months because cancellations rise beyond that, '
+                              "targeting 13-14 months to earn Afternic's extra 5% [E4jnQONuo6E @ "
+                              '00:18:36].'],
+               'table': {'caption': 'Competing playbooks on exits, outreach, valuation, and recurring '
+                                    'income',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Exit timing when a strong offer arrives',
+                                   'Manic Millionaire: any offer above cost means sell, sell, sell, then '
+                                   'recycle the cash',
+                                   'Rick Schwartz, per Peter Askew, rejects six-figure offers and keeps '
+                                   'holding top names',
+                                   'Manic Millionaire ([rMXyBJCRlDQ @ 00:16:21]); POWERS Pod ([S9SNhuYObsA '
+                                   '@ 00:32:00])'],
+                                  ['Develop the name versus flip at 2-3x',
+                                   'Peter Askew outbids flippers targeting 2-3x because the name gets '
+                                   'developed into a business',
+                                   'Manic Millionaire runs a deliberate $200-5K bucket worked actively for '
+                                   'a 2-3x return',
+                                   'POWERS Pod ([S9SNhuYObsA @ 00:18:55]); Manic Millionaire ([rMXyBJCRlDQ '
+                                   '@ 00:04:00])'],
+                                  ['How to find buyers for small portfolios',
+                                   'Pew Patel and Brooks Conkle say inbound waiting fails and small '
+                                   'bankrolls need outbound',
+                                   'Mike Zigger refuses to tag buyers because UDRP defense costs time, '
+                                   'resources and money',
+                                   'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:21:25]); Brooks Conkle // '
+                                   'Build Income Streams ([nOLgURAW0ns @ 00:00:44])'],
+                                  ['Pricing a name from search data',
+                                   'Andrew Rosener: exact-match search volume times keyword price times a '
+                                   'conservative 36-month multiple',
+                                   'TheMaskedFreelancer: SpyFu US screen with a benchmark of at least 10 '
+                                   'monthly searches',
+                                   'Tim Ferriss ([ApCGeST90RA @ 02:18:50]); TheMaskedFreelancer😷 '
+                                   '([AiootzfgBRM @ 00:44:14])'],
+                                  ['Trusting automated appraisal tools',
+                                   'Paul Nicks calls GoValue one of the better comparable-sales guidelines '
+                                   'GoDaddy offers investors',
+                                   'Chris Koerner ignores Dynadot appraisals after seeing names sell 99% '
+                                   'below the stated value',
+                                   'GoDaddy Domain Academy ([n2nzWV5BL3M @ 00:17:31]); Chris Koerner on '
+                                   'The Koerner Office Podcast ([aba_NmtzK1I @ 00:08:07])'],
+                                  ['Which engine produces recurring portfolio income',
+                                   'Paul Nicks: stable investor income has shifted away from parking into '
+                                   'lease-to-own plans',
+                                   'TheMaskedFreelancer: parking is not that paying anymore, earning $0.16 '
+                                   'per day on one name',
+                                   'GoDaddy Domain Academy ([n2nzWV5BL3M @ 00:13:40]); '
+                                   'TheMaskedFreelancer😷 ([AiootzfgBRM @ 00:33:49])'],
+                                  ['Lease and option term length',
+                                   'Andrew Rosener defaults to five-year exclusive options with 0.5-1 '
+                                   'point monthly lease fees',
+                                   'Andrew Allemann targets 13-14 months and never stretches lease-to-own '
+                                   'past about 25 months',
+                                   'Tim Ferriss ([ApCGeST90RA @ 01:03:55]); Andrew Allemann ([E4jnQONuo6E '
+                                   '@ 00:18:36])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The economics check every practitioner circles back to is sell-through '
+                              'against renewals. Ownerly frames the business as a lottery ticket with a '
+                              'holding cost, models a typical 1-3% annual sell-through, and shows how thin '
+                              'the margin gets: a bad year of three sales totaling $9.4K leaves $900 of '
+                              'profit, and a single $4K trademark dispute flips it to a roughly $3K loss '
+                              '[xPtTNJU_OGE @ 00:16:34]. Pew Patel lived the concentration problem, '
+                              'deploying about $100K into 260-270 names, selling the first three for $28K, '
+                              'then going three months without a sale while renewals climb from $10K now '
+                              "to $70-80K next year [d1VjM9-Tyig @ 00:48:26]. Brooks Conkle's update shows "
+                              'the same squeeze at small scale: roughly $2,400 earned against about $1,500 '
+                              'in renewals nets about $1K to reinvest [nOLgURAW0ns @ 00:07:14]. Andrew '
+                              'Allemann, holding about 4,000 names, warns that genuinely consistent '
+                              'monthly sales may require around 100,000 names, which turns the portfolio '
+                              "into a slot machine [E4jnQONuo6E @ 00:13:08]. Allemann's counter is a hard "
+                              'theme test: if 50 hand-registered names in a theme show no exact-match '
+                              'searches, pause that theme. Pew now sells at 50-80% up instead of waiting.',
+                              'Legal and platform exposure is where small portfolios die fastest. Andrew '
+                              'Rosener calls the squatter-versus-investor line the key point: '
+                              'cybersquatting carries $100K per name in federal court, a UDRP case costs '
+                              'about $2,500, or about $3K for a three-person panel, and proving three '
+                              'elements forces a transfer [ApCGeST90RA @ 00:37:59]. Andrew Allemann warns '
+                              'that UDRPs build a reputation that follows the investor, and that buyers '
+                              'can rarely be sued for damages in return [d1VjM9-Tyig @ 00:26:06]; Pew '
+                              'Patel still takes trademark chances under $100 and watched Afternic flag '
+                              'one trademarked name three times. Peter Askew restricts buys to generic '
+                              'terms for exactly this reason and describes stolen two-letter names '
+                              'recovered only through lawyer John Berry Hill, which is why 2FA and '
+                              "GoDaddy's extra transfer approval top the security list [S9SNhuYObsA @ "
+                              '00:38:30]. Platform risk is real too: Manic Millionaire reports losing '
+                              'hundreds of thousands of pounds on platforms and is shutting them down to '
+                              'consolidate on Afternic [rMXyBJCRlDQ @ 00:10:28]. Brooks Conkle adds the '
+                              'fee trap: Afternic takes 30% when nameservers are not pointed at it, so '
+                              'list 30% higher there.',
+                              'Capital discipline and psychology fail together. Manic Millionaire says '
+                              'most domainers eventually hit liquidity crunches and come to them to sell '
+                              'names or borrow [rMXyBJCRlDQ @ 00:15:13], after their own sales had fallen '
+                              'to near zero before rebounding. Andrew Allemann admits slow months bring '
+                              'impostor syndrome, and in May they declined a low-five-figure offer they '
+                              'would have taken in August [E4jnQONuo6E @ 00:12:39]; Joe from the GoDaddy '
+                              'challenge made the opposite error, letting tarifftool.com go to an end user '
+                              "for about $100 when it should have priced at $700-800. Andrew Rosener's "
+                              'antidote from the early brokerage years was a $250-a-day profit floor, '
+                              'computed as annual expenses divided by business days, with a missed day '
+                              "tripling the next day's target and a willingness to give away a domain to "
+                              'hit it [ApCGeST90RA @ 00:51:21]. Peter Askew grew VidaliaOnions.com with no '
+                              'outside funding and reports growth going flat from 2021 to 2022. Leverage '
+                              'cuts the other way: The Dividend Domain, borrowing on margin against an '
+                              'income portfolio, sat at a 51% buffer with about $28K of margin debt, down '
+                              '9.48% year to date, and stress-tests a 20% drop [VV0hxi5TUu4 @ 00:00:47].'],
+               'table': {'caption': 'Firsthand losses, reversals, and the economics check each one forces',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Pricing too low on end-user sales',
+                                   'Joe sold tarifftool.com to an end user for about $100',
+                                   'Should have priced at $700-800; now uses low-retail BIN plus checkout '
+                                   'links',
+                                   'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:44:37])'],
+                                  ['Renewal bill outrunning incoming sales',
+                                   "Pew Patel's renewals run $10K now and $70-80K next year",
+                                   'Sell four-letter names at 50-80% up instead of waiting for retail '
+                                   'buyers',
+                                   'GoDaddy Domain Academy ([d1VjM9-Tyig @ 00:48:26])'],
+                                  ['One-sale dependency in the annual model',
+                                   "Ownerly's good year drops to about $17K profit without one $35K sale",
+                                   'Power law means 1-2 names can produce over 80% of total revenue',
+                                   'Ownerly ([xPtTNJU_OGE @ 00:15:55])'],
+                                  ['Extension or fad collapse wiping out value',
+                                   '.io crashed on UK-ownership instability; crypto, metaverse and NFT '
+                                   'names faded fast',
+                                   'Ownerly says fad names can lose most of their value within 18 months',
+                                   'Manic Millionaire ([rMXyBJCRlDQ @ 00:08:45]); Ownerly ([xPtTNJU_OGE @ '
+                                   '00:10:37])'],
+                                  ['Afternic commission without pointed nameservers',
+                                   'Brooks Conkle found Afternic charges 30% when nameservers are not '
+                                   'pointed there',
+                                   "List names 30% higher on Afternic so the net matches Spaceship's 5% "
+                                   'commission',
+                                   'Brooks Conkle // Build Income Streams ([nOLgURAW0ns @ 00:05:17])'],
+                                  ['Long lease-to-own plans getting cancelled',
+                                   'Andrew Allemann caps lease-to-own near 25 months because cancellations '
+                                   'rise beyond that',
+                                   "Keep terms near 13-14 months to capture Afternic's extra 5% payout",
+                                   'Andrew Allemann ([E4jnQONuo6E @ 00:18:36])'],
+                                  ['Margin buffer erosion while drawing living income',
+                                   'The Dividend Domain gets concerned below a 55% buffer and avoids going '
+                                   'under 50%',
+                                   'Withdrawals of $3.5-4.3K monthly sit against $5-6K overhead and buffer '
+                                   'limits',
+                                   'The Dividend Domain ([l5aojx7kWb8 @ 00:01:17])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Run These Four Checks Before Capital Goes Out',
+                           'body': 'Every item below comes from a loss, reversal, or near miss an operator '
+                                   'lived through. Clear all four before a buy, a renewal cycle, or a new '
+                                   'leverage line.',
+                           'items': ['Model the bad year first: three sales totaling $9.4K left $900 '
+                                     'profit, and a $4K trademark dispute turned it into a roughly $3K '
+                                     'loss [Ownerly — xPtTNJU_OGE @ 00:17:49].',
+                                     'Buy generic terms only, because trademark terms invite UDRP filings '
+                                     'against the portfolio [POWERS Pod — S9SNhuYObsA @ 00:30:09].',
+                                     'Price the renewal ceiling against cash: about $100K into 260-270 '
+                                     'names brought $28K on the first three sales, then three dry months '
+                                     '[GoDaddy Domain Academy — d1VjM9-Tyig @ 00:41:30].',
+                                     'Hard-cap auction bids: Andrew Allemann built the bidding tool so the '
+                                     'max bid cannot be raised later, and it bids late to avoid signaling '
+                                     'interest [Andrew Allemann — E4jnQONuo6E @ 00:29:47].']}}],
+ 'pull_quote': '"It is a lottery ticket business with a holding cost." — Ownerly (xPtTNJU_OGE @ 00:01:22).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Check GoDaddy auctions and closeouts every day and keep early buys in the $1 to $50 '
+                      'sweet spot [GoDaddy Domain Academy — d1VjM9-Tyig @ 00:03:09].',
+                      'Log every inquiry email into a buyer bank and go back to those buyers when you need '
+                      'to unlock cash [Manic Millionaire — rMXyBJCRlDQ @ 00:03:25].',
+                      'Screen candidates on SpyFu, US market, and skip names below 10 monthly searches '
+                      '[TheMaskedFreelancer😷 — AiootzfgBRM @ 00:44:14].',
+                      "Set lease-to-own terms at 13-14 months to earn Afternic's extra 5% and never "
+                      'stretch past about 25 months [Andrew Allemann — E4jnQONuo6E @ 00:18:36].',
+                      'If Afternic is not your nameserver host, list 30% higher there so the net matches '
+                      'your Spaceship price [Brooks Conkle // Build Income Streams — nOLgURAW0ns @ '
+                      '00:05:17].',
+                      'Set a daily profit floor of annual expenses divided by business days, and triple '
+                      "the next day's target after a miss [Tim Ferriss — ApCGeST90RA @ 00:51:00]."],
+ 'statutory_citations': [{'title': 'Tim Ferriss — From Scallop Kingpin to Selling 8-Figure Domains (4K) '
+                                   '[01:01:51]',
+                          'url': 'https://www.youtube.com/watch?v=ApCGeST90RA&t=3711s',
+                          'relevance': 'Primary practitioner testimony on lease-option structures, owner '
+                                       'returns, and broker-funded capital growth.'},
+                         {'title': 'GoDaddy Domain Academy — S2 E8 The $500 Domain Investing Challenge: '
+                                   'Who’s Winning & What We’ve Learned So Far [00:13:38]',
+                          'url': 'https://www.youtube.com/watch?v=d1VjM9-Tyig&t=818s',
+                          'relevance': 'Primary practitioner testimony on small-bankroll cash flow, '
+                                       'outbound disputes, and renewal pressure.'},
+                         {'title': 'Andrew Allemann — My domain investing year so far - DNW Podcast #602 '
+                                   '[00:11:16]',
+                          'url': 'https://www.youtube.com/watch?v=E4jnQONuo6E&t=676s',
+                          'relevance': 'Primary practitioner testimony on monthly sales volatility, '
+                                       'lease-to-own income, and sourcing data.'},
+                         {'title': 'Ownerly — The Reality of Owning a Domain Flipping Business [00:14:04]',
+                          'url': 'https://www.youtube.com/watch?v=xPtTNJU_OGE&t=844s',
+                          'relevance': 'Primary practitioner testimony on good-year and bad-year portfolio '
+                                       'economics.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ApCGeST90RA',
+                       'title': 'From Scallop Kingpin to Selling 8-Figure Domains (4K)',
+                       'channel': 'Tim Ferriss',
+                       'author': 'Tim Ferriss',
+                       'text': 'But if I can make $250 every day minimum, then my business will survive.',
+                       'tip': 'But if I can make $250 every day minimum, then my business will survive.',
+                       'timestamp': 3081,
+                       'timestamp_seconds': 3081,
+                       'timestamp_label': '[00:51:21]',
+                       'url': 'https://www.youtube.com/watch?v=ApCGeST90RA&t=3081s',
+                       'markdown': '[00:51:21](https://www.youtube.com/watch?v=ApCGeST90RA&t=3081s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ApCGeST90RA',
+                       'title': 'From Scallop Kingpin to Selling 8-Figure Domains (4K)',
+                       'channel': 'Tim Ferriss',
+                       'author': 'Tim Ferriss',
+                       'text': "Once these things sell, they're generally off the market forever.",
+                       'tip': "Once these things sell, they're generally off the market forever.",
+                       'timestamp': 8854,
+                       'timestamp_seconds': 8854,
+                       'timestamp_label': '[02:27:34]',
+                       'url': 'https://www.youtube.com/watch?v=ApCGeST90RA&t=8854s',
+                       'markdown': '[02:27:34](https://www.youtube.com/watch?v=ApCGeST90RA&t=8854s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd1VjM9-Tyig',
+                       'title': 'S2 E8 The $500 Domain Investing Challenge: Who’s Winning & What We’ve '
+                                'Learned So Far',
+                       'channel': 'GoDaddy Domain Academy',
+                       'author': 'GoDaddy Domain Academy',
+                       'text': 'And I think that I left money on the table by, you know, pricing '
+                               'everything too low.',
+                       'tip': 'And I think that I left money on the table by, you know, pricing everything '
+                              'too low.',
+                       'timestamp': 2709,
+                       'timestamp_seconds': 2709,
+                       'timestamp_label': '[00:45:09]',
+                       'url': 'https://www.youtube.com/watch?v=d1VjM9-Tyig&t=2709s',
+                       'markdown': '[00:45:09](https://www.youtube.com/watch?v=d1VjM9-Tyig&t=2709s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AiootzfgBRM',
+                       'title': 'How to start a $1500 domain investment business in Nigeria | How to make '
+                                'money online',
+                       'channel': 'TheMaskedFreelancer😷',
+                       'author': 'TheMaskedFreelancer😷',
+                       'text': 'So, I put my benchmark for at least 10 monthly search volume.',
+                       'tip': 'So, I put my benchmark for at least 10 monthly search volume.',
+                       'timestamp': 2654,
+                       'timestamp_seconds': 2654,
+                       'timestamp_label': '[00:44:14]',
+                       'url': 'https://www.youtube.com/watch?v=AiootzfgBRM&t=2654s',
+                       'markdown': '[00:44:14](https://www.youtube.com/watch?v=AiootzfgBRM&t=2654s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n2nzWV5BL3M',
+                       'title': "S1E6 A Chat with the Boss GoDaddy's VP of Domain Investing Paul Nicks",
+                       'channel': 'GoDaddy Domain Academy',
+                       'author': 'GoDaddy Domain Academy',
+                       'text': 'It gives them more of a steady revenue stream rather than a very spiky '
+                               'revenue stream.',
+                       'tip': 'It gives them more of a steady revenue stream rather than a very spiky '
+                              'revenue stream.',
+                       'timestamp': 628,
+                       'timestamp_seconds': 628,
+                       'timestamp_label': '[00:10:28]',
+                       'url': 'https://www.youtube.com/watch?v=n2nzWV5BL3M&t=628s',
+                       'markdown': '[00:10:28](https://www.youtube.com/watch?v=n2nzWV5BL3M&t=628s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S9SNhuYObsA',
+                       'title': 'Domain Name Investing 101 with Peter Askew - Founder of Deep South '
+                                'Ventures',
+                       'channel': 'POWERS Pod',
+                       'author': 'POWERS Pod',
+                       'text': 'The first thing I need to do, I need your domain name, because if I own '
+                               'the domain name I own everything.',
+                       'tip': 'The first thing I need to do, I need your domain name, because if I own the '
+                              'domain name I own everything.',
+                       'timestamp': 643,
+                       'timestamp_seconds': 643,
+                       'timestamp_label': '[00:10:43]',
+                       'url': 'https://www.youtube.com/watch?v=S9SNhuYObsA&t=643s',
+                       'markdown': '[00:10:43](https://www.youtube.com/watch?v=S9SNhuYObsA&t=643s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rMXyBJCRlDQ',
+                       'title': 'How I Made $10 Million Trading Domains',
+                       'channel': 'Manic Millionaire',
+                       'author': 'Manic Millionaire',
+                       'text': 'If you focus on the buyers, everything else takes care of itself.',
+                       'tip': 'If you focus on the buyers, everything else takes care of itself.',
+                       'timestamp': 899,
+                       'timestamp_seconds': 899,
+                       'timestamp_label': '[00:14:59]',
+                       'url': 'https://www.youtube.com/watch?v=rMXyBJCRlDQ&t=899s',
+                       'markdown': '[00:14:59](https://www.youtube.com/watch?v=rMXyBJCRlDQ&t=899s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E4jnQONuo6E',
+                       'title': 'My domain investing year so far - DNW Podcast #602',
+                       'channel': 'Andrew Allemann',
+                       'author': 'Andrew Allemann',
+                       'text': "Eight of my 25 sales so far this year have been LTO's.",
+                       'tip': "Eight of my 25 sales so far this year have been LTO's.",
+                       'timestamp': 1099,
+                       'timestamp_seconds': 1099,
+                       'timestamp_label': '[00:18:19]',
+                       'url': 'https://www.youtube.com/watch?v=E4jnQONuo6E&t=1099s',
+                       'markdown': '[00:18:19](https://www.youtube.com/watch?v=E4jnQONuo6E&t=1099s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xPtTNJU_OGE',
+                       'title': 'The Reality of Owning a Domain Flipping Business',
+                       'channel': 'Ownerly',
+                       'author': 'Ownerly',
+                       'text': 'It is a lottery ticket business with a holding cost.',
+                       'tip': 'It is a lottery ticket business with a holding cost.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=xPtTNJU_OGE&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=xPtTNJU_OGE&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WtkHxzirORM',
+                       'title': "The Truth About Raising Capital In Africa (That Investors Won't Tell You)",
+                       'channel': 'Eunice Ajim',
+                       'author': 'Eunice Ajim',
+                       'text': 'What I do not look past is dishonesty.',
+                       'tip': 'What I do not look past is dishonesty.',
+                       'timestamp': 619,
+                       'timestamp_seconds': 619,
+                       'timestamp_label': '[00:10:19]',
+                       'url': 'https://www.youtube.com/watch?v=WtkHxzirORM&t=619s',
+                       'markdown': '[00:10:19](https://www.youtube.com/watch?v=WtkHxzirORM&t=619s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aba_NmtzK1I',
+                       'title': '15 Years of Domain Name Investing Knowledge in 15 Mins',
+                       'channel': 'Chris Koerner on The Koerner Office Podcast',
+                       'author': 'Chris Koerner on The Koerner Office Podcast',
+                       'text': 'Ignore the Dynadot appraisal, because I have seen names sell at 99% below '
+                               'it.',
+                       'tip': 'Ignore the Dynadot appraisal, because I have seen names sell at 99% below '
+                              'it.',
+                       'timestamp': 487,
+                       'timestamp_seconds': 487,
+                       'timestamp_label': '[00:08:07]',
+                       'url': 'https://www.youtube.com/watch?v=aba_NmtzK1I&t=487s',
+                       'markdown': '[00:08:07](https://www.youtube.com/watch?v=aba_NmtzK1I&t=487s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nOLgURAW0ns',
+                       'title': '$2k Domain Flipping Update',
+                       'channel': 'Brooks Conkle // Build Income Streams',
+                       'author': 'Brooks Conkle // Build Income Streams',
+                       'text': 'My renewal is about $1,500 for all of those names.',
+                       'tip': 'My renewal is about $1,500 for all of those names.',
+                       'timestamp': 434,
+                       'timestamp_seconds': 434,
+                       'timestamp_label': '[00:07:14]',
+                       'url': 'https://www.youtube.com/watch?v=nOLgURAW0ns&t=434s',
+                       'markdown': '[00:07:14](https://www.youtube.com/watch?v=nOLgURAW0ns&t=434s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xVfENzSxmO0',
+                       'title': "The Power of Margin: How I'm Supercharging My Investments| Robin Fire Ep "
+                                '41',
+                       'channel': 'The Dividend Domain',
+                       'author': 'The Dividend Domain',
+                       'text': 'My margin buffer sits at 59%, and my target is 60 to 65%.',
+                       'tip': 'My margin buffer sits at 59%, and my target is 60 to 65%.',
+                       'timestamp': 752,
+                       'timestamp_seconds': 752,
+                       'timestamp_label': '[00:12:32]',
+                       'url': 'https://www.youtube.com/watch?v=xVfENzSxmO0&t=752s',
+                       'markdown': '[00:12:32](https://www.youtube.com/watch?v=xVfENzSxmO0&t=752s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l5aojx7kWb8',
+                       'title': 'How My $55,000 Portfolio Generates $757 Every Month Using Margin',
+                       'channel': 'The Dividend Domain',
+                       'author': 'The Dividend Domain',
+                       'text': 'I get concerned below a 55% buffer, and I avoid going under 50%.',
+                       'tip': 'I get concerned below a 55% buffer, and I avoid going under 50%.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=l5aojx7kWb8&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=l5aojx7kWb8&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bdb3z0S5ybA',
+                       'title': '$50K Portfolio While Using Margin to Pay My Bills',
+                       'channel': 'The Dividend Domain',
+                       'author': 'The Dividend Domain',
+                       'text': 'My loan-to-value is 37%, and my max drawdown is 8%.',
+                       'tip': 'My loan-to-value is 37%, and my max drawdown is 8%.',
+                       'timestamp': 988,
+                       'timestamp_seconds': 988,
+                       'timestamp_label': '[00:16:28]',
+                       'url': 'https://www.youtube.com/watch?v=bdb3z0S5ybA&t=988s',
+                       'markdown': '[00:16:28](https://www.youtube.com/watch?v=bdb3z0S5ybA&t=988s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OKekYzcUFsg',
+                       'title': 'Building a Domain Portfolio - How to Invest in Domains | The Journey',
+                       'channel': 'GoDaddy',
+                       'author': 'GoDaddy',
+                       'text': "Don't pay more for a domain than you think it's worth, and always keep an "
+                               'eye out for domains that are undervalued.',
+                       'tip': "Don't pay more for a domain than you think it's worth, and always keep an "
+                              'eye out for domains that are undervalued.',
+                       'timestamp': 253,
+                       'timestamp_seconds': 253,
+                       'timestamp_label': '[00:04:13]',
+                       'url': 'https://www.youtube.com/watch?v=OKekYzcUFsg&t=253s',
+                       'markdown': '[00:04:13](https://www.youtube.com/watch?v=OKekYzcUFsg&t=253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VV0hxi5TUu4',
+                       'title': "How I'm Balancing Growth, Income & Margin Risk to Retire Early",
+                       'channel': 'The Dividend Domain',
+                       'author': 'The Dividend Domain',
+                       'text': 'Understand your budget first.',
+                       'tip': 'Understand your budget first.',
+                       'timestamp': 297,
+                       'timestamp_seconds': 297,
+                       'timestamp_label': '[00:04:57]',
+                       'url': 'https://www.youtube.com/watch?v=VV0hxi5TUu4&t=297s',
+                       'markdown': '[00:04:57](https://www.youtube.com/watch?v=VV0hxi5TUu4&t=297s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

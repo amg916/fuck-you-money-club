@@ -1,786 +1,853 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in judgment recovery, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "PACER Stay Checks, Lien Waterfalls, Recovery-Fee Reversals, Lawful Data Access & Capital Circuit-Breakers",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #8, Judgment Recovery, ranks #28 with a 79/100 Money-to-Manpower "
-        "Score across a portfolio of 15 mapped plays. Its attractive fee economics "
-        "collapse when operators buy face value instead of collectible priority, "
-        "mistake client receipts for revenue, or enforce through bankruptcy and "
-        "exemption defects. Canonical annual owner profit is $12,000 Conservative, "
-        "$84,000 Base, and $200,000 Scaled; these outcomes require disciplined "
-        "cost containment, not aggressive promises. This chapter isolates fatal "
-        "intake defects, cash reversals, vendor-access failures, and misleading "
-        "adjacent opportunities. Use docket evidence, dated asset waterfalls, "
-        "transaction-level reconciliation, and explicit stop thresholds to protect "
-        "capital. The question's 80% framing is rhetorical; no measured newcomer "
-        "failure rate is asserted."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees; client principal excluded",
-            "note": "20% net margin; $12,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$280,000",
-            "context": "Annual recognized service fees; client principal excluded",
-            "note": "30.0% net margin; $84,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$500,000",
-            "context": "Annual recognized service fees; client principal excluded",
-            "note": "40% net margin; $200,000 owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Underwrite Collectible Priority Before Buying a Judgment Story",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal trap is pricing the judgment's face amount instead "
-                    "of the debtor's reachable equity. A $500,000 judgment against an "
-                    "empty operating company is not a $500,000 asset pipeline. Begin "
-                    "with the certified judgment, service history, appellate posture, "
-                    "renewal calendar, recorded assignments, and exact debtor identity. "
-                    "Match the entity through Secretary of State records, including "
-                    "mergers and dissolved predecessors; an officer's address does not "
-                    "make that officer personally liable. Search the relevant county "
-                    "recorder, UCC filing office, and court dockets, then build an "
-                    "asset-specific distribution waterfall. Illustratively, a $300,000 "
-                    "realization less $210,000 senior secured debt, $30,000 sale expense, "
-                    "and $40,000 applicable protected value leaves $20,000 before junior "
-                    "claims and collection expense. A hypothetical 30% recovery fee "
-                    "produces $6,000 service revenue, not $300,000. Spending $8,000 to "
-                    "reach that result destroys contribution even if enforcement "
-                    "succeeds. Treat this as screening arithmetic, not a legal priority "
-                    "opinion: attachment, perfection, statutory liens, homestead rules, "
-                    "ownership interests, and sale procedures can change the waterfall. "
-                    "Require local counsel to validate the enforceable route before "
-                    "committing nonrecoverable expense. Record each valuation's date "
-                    "and evidence source so a stale broker estimate cannot silently "
-                    "become today's collectible-equity assumption."
-                ),
-                (
-                    "The next traps are procedural rather than commercial: defective "
-                    "service, broken assignment chains, expired enforcement periods, "
-                    "unrecorded liens, stayed judgments, and an assumed right to act "
-                    "as counsel. A purchase agreement does not automatically authorize "
-                    "a recovery company to represent another party, appear through "
-                    "a nonlawyer, or bypass collection-agency licensing. Route filings, "
-                    "debtor examinations, garnishments, and contested priority issues "
-                    "through appropriately admitted counsel wherever required. Have "
-                    "that counsel identify whether the proposed assignment genuinely "
-                    "transfers ownership and which activities remain regulated. "
-                    "Contractor labels do not change the underlying activity. Keep "
-                    "separate dates for judgment entry, lien creation, lien expiration, "
-                    "renewal eligibility, service completion, and the next enforceable "
-                    "step; a single generic deadline field hides fatal differences. "
-                    "An Airtable or SQLite register can surface missing evidence, "
-                    "but the official docket and recorded instruments control. For "
-                    "every material date, store the jurisdiction, triggering event, "
-                    "rule citation, source document, and reviewer. Set internal "
-                    "reminders at 180, 90, and 30 days before verified deadlines, "
-                    "without treating those reminders as statutory periods. Reject "
-                    "intake when standing or service remains unresolved after the "
-                    "fixed diligence budget. Cheap defective paper becomes expensive "
-                    "only after someone starts spending against it."
-                ),
-                (
-                    "Consumer-debt misclassification and identity shortcuts create "
-                    "another asymmetry: a small possible fee can expose the entire "
-                    "operation. Determine the underlying transaction's purpose rather "
-                    "than assuming every judgment against a company owner is commercial. "
-                    "The federal Fair Debt Collection Practices Act defines covered "
-                    "debt by personal, family, or household purpose under 15 U.S.C. "
-                    "1692a(5); state collection statutes can reach different activities "
-                    "or broader categories. A personal guaranty of business borrowing "
-                    "is not automatically consumer debt, but its label alone is "
-                    "insufficient evidence. Separate transaction classification from "
-                    "the operator's collector status and licensing footprint. Likewise, "
-                    "a judgment does not authorize unrestricted credit-report access, "
-                    "motor-vehicle searches, impersonation, or account sharing. Document "
-                    "a transaction-specific permissible purpose before using a consumer "
-                    "report, and validate separate restrictions for other datasets. "
-                    "Use public-record sources first, then licensed vendor products "
-                    "only within the contracted purpose. Never use stolen credentials, "
-                    "invented employment relationships, or a relative's identity to "
-                    "obtain debtor information. Suspend a matter immediately after "
-                    "an identity mismatch or unsupported access purpose. Those events "
-                    "are not ordinary research friction: they undermine evidence "
-                    "quality, invite vendor termination, and can create statutory "
-                    "exposure that dwarfs the expected recovery fee."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Fatal Intake Traps and Their Evidence-Based Circuit-Breakers",
-                "headers": [
-                    "Fatal operating assumption",
-                    "Evidence that exposes the defect",
-                    "Economic or procedural failure mechanism",
-                    "Mandatory containment and next action",
-                ],
-                "rows": [
-                    [
-                        "Face amount equals the debtor's collectible equity",
-                        "Asset waterfall includes senior claims and liquidation costs",
-                        "Large judgment balances conceal negligible reachable recovery proceeds",
-                        "Price expected fee contribution after counsel validates priority",
-                    ],
-                    [
-                        "Corporate officers automatically owe the entity's judgment",
-                        "Judgment caption and liability findings identify actual obligors",
-                        "Wrong-party enforcement generates expense without an enforceable obligation",
-                        "Require a supported liability theory before targeting individuals",
-                    ],
-                    [
-                        "A purchased judgment always conveys enforceable standing",
-                        "Executed assignment chain connects every transfer without gaps",
-                        "Missing ownership evidence defeats motions and delays collections",
-                        "Resolve chain defects before paying acquisition consideration irrevocably",
-                    ],
-                    [
-                        "Default judgments prove that service was effective",
-                        "Service returns and docket challenges reveal procedural weaknesses",
-                        "Vacatur risk erases leverage after enforcement costs accrue",
-                        "Obtain counsel review before funding contested default enforcement",
-                    ],
-                    [
-                        "Judgment life and lien duration are identical",
-                        "Separate statutory calendars track judgment and lien expiration",
-                        "Expired lien rights destroy priority despite surviving indebtedness",
-                        "Maintain distinct verified deadlines with accountable human reviewers",
-                    ],
-                    [
-                        "Any visible asset is available for levy",
-                        "Ownership records and exemption analysis identify protected interests",
-                        "Exempt or third-party property produces objections and liability",
-                        "Exclude unsupported targets until ownership and exemptions resolve",
-                    ],
-                    [
-                        "A recorder search establishes every competing claim",
-                        "County records, UCC searches, and statutory claims reconcile",
-                        "Unseen senior claims consume proceeds expected for juniors",
-                        "Refresh jurisdiction-specific priority searches before irreversible enforcement spending",
-                    ],
-                    [
-                        "Commercial branding removes all collection licensing obligations",
-                        "Activity and jurisdiction matrix identifies applicable licensing requirements",
-                        "Unlicensed work can interrupt collections and invalidate economics",
-                        "Restrict activities until required licensing arrangements are verified",
-                    ],
-                    [
-                        "Assignments eliminate restrictions on practicing law locally",
-                        "Local representation rules distinguish ownership from permitted advocacy",
-                        "Unauthorized representation jeopardizes filings and exposes the operator",
-                        "Use admitted counsel for work requiring legal representation",
-                    ],
-                    [
-                        "Every judgment supports unrestricted consumer report access",
-                        "Documented purpose connects the request to lawful authority",
-                        "Unsupported access creates statutory exposure and vendor suspension",
-                        "Block restricted searches until the applicable purpose clears",
-                    ],
-                    [
-                        "Old asset screenshots support current collection spending",
-                        "Dated source records show intervening transfers and encumbrances",
-                        "Stale equity assumptions overstate the expected recovery fee",
-                        "Refresh material evidence before increasing the matter budget",
-                    ],
-                    [
-                        "A large debtor portfolio solves weak individual underwriting",
-                        "Cohort contribution reports expose repeated negative case economics",
-                        "Correlated defects multiply losses rather than diversify them",
-                        "Stop acquisition when matched cohorts breach contribution thresholds",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Irrecoverable Spending",
-                "body": (
-                    "A failed check blocks spending on the affected matter; it does "
-                    "not become a note buried beneath the recovery forecast."
-                ),
-                "items": [
-                    "Verify the debtor, enforceable judgment, service record, assignment chain, and any required local representation using linked source documents.",
-                    "Refresh bankruptcy, appellate-stay, renewal, and lien-priority checks immediately before the proposed enforcement action.",
-                    "Approve an asset-specific recovery waterfall that includes exemptions, senior claims, sale friction, counsel expense, and the operator's actual fee share.",
-                    "Confirm licensing coverage, lawful dataset access, signed fee terms, authorized expense limits, and the exact account routing for client proceeds.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Treat Bankruptcy, Reversals, and Client Money as Separate Ledgers",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Bankruptcy is not merely a slower collection channel. Under "
-                    "11 U.S.C. 362, a petition generally triggers an automatic stay "
-                    "covering specified collection and enforcement acts, subject to "
-                    "statutory exceptions. Do not wait for a mailed notice if reliable "
-                    "information indicates a filing. Check PACER and the relevant "
-                    "bankruptcy docket at intake, before each enforcement instruction, "
-                    "and whenever a debtor, attorney, or payment processor reports "
-                    "insolvency activity. A same-day check is an internal freshness "
-                    "standard, not protection against a petition filed moments later. "
-                    "Any credible filing signal pauses new collection activity pending "
-                    "counsel review. Counsel determines the debtor identity, case "
-                    "status, stay scope, applicable exceptions, and whether relief "
-                    "is needed. Section 362(k) provides damages for qualifying injured "
-                    "individuals after willful violations; other remedies may also "
-                    "matter. Separately, discharge under 11 U.S.C. 524 can bar "
-                    "collection of discharged personal liability even after the "
-                    "bankruptcy case closes. Surviving liens require their own "
-                    "analysis. Do not treat a closed docket, an existing writ, "
-                    "or a debtor's informal permission as blanket authority to "
-                    "resume. Record who reviewed the issue and exactly which "
-                    "action may proceed before restarting automated reminders or "
-                    "sending further instructions to enforcement personnel."
-                ),
-                (
-                    "A cleared payment can still carry avoidance or restitution "
-                    "risk. Section 547 of the Bankruptcy Code permits avoidance "
-                    "of qualifying preferential transfers, generally examining a "
-                    "90-day prepetition period and, for certain insider transfers, "
-                    "a longer period. That timing alone does not establish liability: "
-                    "the elements, defenses, creditor status, and transaction facts "
-                    "matter. Sections 548 and 550 address other avoidance and "
-                    "recovery questions, while section 546 limits particular avoidance "
-                    "actions. Never reduce these provisions to a universal refund "
-                    "deadline. A garnishment, settlement, or lien-related receipt "
-                    "needs counsel's transaction-specific analysis when bankruptcy "
-                    "emerges. Judgment vacatur, mistaken identity, duplicate payment, "
-                    "and settlement rescission can create additional return demands "
-                    "outside bankruptcy. Track gross receipts, beneficiary ownership, "
-                    "earned fee allocation, unresolved disputes, and potential reversal "
-                    "exposure separately. A contractual indemnity against an insolvent "
-                    "client is weak protection; insurance exclusions and coverage "
-                    "conditions need actual policy review. Set a documented cash "
-                    "buffer based on identified exposure and available liquidity, "
-                    "rather than assuming every distributed dollar is permanently "
-                    "earned. A buffer is a cash-management decision, not automatically "
-                    "an expense or a reduction of recognized revenue. Have the "
-                    "accountant distinguish restricted cash, client liabilities, fee "
-                    "recognition, and any supported loss provision."
-                ),
-                (
-                    "The canonical cases use recognized service fees, never client "
-                    "principal: $60,000 revenue less $48,000 costs yields $12,000 "
-                    "owner profit; $280,000 less $196,000 yields $84,000; and "
-                    "$500,000 less $300,000 yields $200,000. Margins are respectively "
-                    "20%, 30.0%, and 40%. Team counts remain 1 FT plus 3 "
-                    "contractors, 1 FT plus 3 contractors, and 2 FT plus "
-                    "4 contractors; contractor counts are not full-time equivalents. "
-                    "Illustratively, $1,000,000 of collected client principal at a "
-                    "28% earned fee generates the Base case's $280,000 revenue "
-                    "and a $720,000 client allocation before separately authorized "
-                    "adjustments. That collection volume is an explanatory bridge, "
-                    "not an additional scorecard assumption. Match bank receipts "
-                    "to matter, payer, settlement terms, earned fee, client payable, "
-                    "and distribution record. Use the applicable attorney trust "
-                    "account or other legally required segregated arrangement; "
-                    "never fund payroll from client allocations. In a stress "
-                    "test against Base, an additional $12,000 failed-enforcement "
-                    "expense, an $8,400 recognized-fee reversal, and $15,000 additional "
-                    "defense expense reduce profit to $48,600. This is sensitivity "
-                    "analysis, not a replacement scenario. The control objective "
-                    "is to catch those departures before distributions and spending "
-                    "make an otherwise manageable reversal impossible to absorb."
-                ),
-            ],
-            "table": {
-                "caption": "Receipt, Reversal, and Bankruptcy Exposure Reconciliation Matrix",
-                "headers": [
-                    "Receipt or event requiring review",
-                    "Evidence preserved with the matter",
-                    "Ledger and liquidity treatment required",
-                    "Circuit-breaker before the next action",
-                ],
-                "rows": [
-                    [
-                        "Credible bankruptcy filing signal arrives during active enforcement",
-                        "Petition identity and docket timestamp establish review context",
-                        "Identify related receipts without assuming automatic fee entitlement",
-                        "Pause enforcement instructions until counsel resolves stay scope",
-                    ],
-                    [
-                        "Prepetition payment falls within a potential preference window",
-                        "Transfer date and transaction facts support counsel's analysis",
-                        "Track disputed exposure separately from unrestricted operating liquidity",
-                        "Escalate before distributing cash implicated by identified exposure",
-                    ],
-                    [
-                        "Settlement receipt contains both fees and client principal",
-                        "Signed terms specify ownership and authorized expense deductions",
-                        "Separate client liabilities from earned operator fee revenue",
-                        "Require matched allocation before releasing any beneficiary distribution",
-                    ],
-                    [
-                        "Court later vacates the judgment supporting prior recovery",
-                        "Order text and restitution demands establish the dispute",
-                        "Assess fee reversal and repayment obligations with advisers",
-                        "Freeze affected distributions while counsel determines return obligations",
-                    ],
-                    [
-                        "Payer disputes a duplicate or misdirected incoming transfer",
-                        "Bank reference and matter identifier expose allocation errors",
-                        "Hold unmatched funds outside the earned fee balance",
-                        "Resolve identity and entitlement before issuing further distributions",
-                    ],
-                    [
-                        "An insolvency notice follows an earlier client distribution",
-                        "Distribution trail records each recipient and transfer amount",
-                        "Model return exposure without assuming indemnity is collectible",
-                        "Coordinate counsel and insurer notices under actual deadlines",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Contain the affected matter",
-                    "action": "Pause collection instructions and affected distributions immediately.",
-                    "detail": (
-                        "Preserve the triggering notice, docket references, payment "
-                        "identifiers, and action history; do not delete evidence or "
-                        "attempt an improvised transfer to another account."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Establish the controlling facts",
-                    "action": "Have counsel verify the order, debtor, transfer, and applicable restrictions.",
-                    "detail": (
-                        "Distinguish stay issues, discharge issues, avoidance demands, "
-                        "vacatur, and ordinary reconciliation errors because their "
-                        "remedies and response deadlines differ."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile exposure and available cash",
-                    "action": "Match every implicated receipt to fees, client liabilities, and distributions.",
-                    "detail": (
-                        "Prepare a recipient-level transfer schedule and a liquidity "
-                        "forecast; ask the accountant to classify any required "
-                        "adjustment without treating client money as operating capital."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Resume only the documented permitted work",
-                    "action": "Record counsel's action-specific direction and assign the next review date.",
-                    "detail": (
-                        "Update the docket register, vendor work queues, payment "
-                        "instructions, and responsible reviewer before restarting "
-                        "any previously paused activity."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "3. Install Telemetry That Stops Margin Leaks and Access Failures",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Measure the denominator that actually drives profit. A recovery "
-                    "rate calculated against judgments purchased this month mixes "
-                    "fresh inventory with old receipts and produces false confidence. "
-                    "Build intake cohorts by month, jurisdiction, debtor type, "
-                    "enforcement route, and counsel; track cumulative realized fees "
-                    "against cumulative direct costs for the same matters. Keep "
-                    "open-case forecasts separate from realized contribution. Define "
-                    "direct contribution as recognized fees less attributable counsel, "
-                    "research, filing, service, investigator, and enforcement expenses. "
-                    "Do not call it owner profit because shared payroll and "
-                    "overhead remain. Illustratively, twelve matters producing $36,000 "
-                    "fees against $24,000 direct costs contribute $12,000 before "
-                    "overhead; a thirteenth matter consuming $5,000 without recovery "
-                    "cuts that contribution to $7,000. Use internal tripwires: review "
-                    "a mature cohort below 40% direct contribution margin, and "
-                    "stop new intake in that route after two consecutive mature "
-                    "cohorts fall below 25%. These are management thresholds, not "
-                    "industry benchmarks or scorecard promises. Define maturity "
-                    "before launch using the expected collection cycle, and "
-                    "retain censored open matters in the dashboard. Otherwise, "
-                    "closing bad files early while leaving optimistic files open "
-                    "manufactures an attractive success rate without improving "
-                    "cash generation or the quality of acquisition decisions."
-                ),
-                (
-                    "Translate weak signals into bounded spending decisions. At "
-                    "intake, estimate reachable proceeds, contractual fee share, "
-                    "remaining direct expense, collection probability, and elapsed "
-                    "time; show the assumptions rather than only a blended score. "
-                    "A $20,000 reachable recovery at a 30% fee and a "
-                    "50% collection probability produces $3,000 expected gross fees. "
-                    "If another $4,000 is required before receipt, reject the "
-                    "proposed step unless new evidence changes the inputs. Sunk "
-                    "cost is not a reason to continue. Trigger human review "
-                    "when cumulative matter spending reaches 75% of its authorized "
-                    "budget, and require renewed authorization before exceeding "
-                    "100%. Flag asset evidence older than 30 days before a "
-                    "material new commitment, while using shorter intervals for "
-                    "volatile assets. Track verified-action latency, not merely "
-                    "emails sent: thirty days without a documented asset, docket, "
-                    "or settlement development should trigger a case review. "
-                    "The volume's $10,000–$75,000 startup capital, $2,000–$12,000 "
-                    "monthly operating expense, and 6–24 months to first deal "
-                    "can conflict sharply. Six months at $12,000 consumes $72,000 "
-                    "before exceptional enforcement spending. Maintain a rolling "
-                    "thirteen-week cash forecast and a longer runway model; stop "
-                    "discretionary intake below three months of committed operating "
-                    "cash unless funding is already secured."
-                ),
-                (
-                    "Platform bans usually start with purpose drift, credential "
-                    "sharing, prohibited automation, or ignored warnings rather "
-                    "than an exotic technical failure. PACER, court portals, "
-                    "LexisNexis Risk Solutions, and TransUnion products have "
-                    "different access terms and permitted uses; a subscription "
-                    "does not authorize every workflow. Store the vendor product, "
-                    "named user, approved purpose, matter identifier, and access "
-                    "event in an auditable log without retaining unnecessary "
-                    "sensitive payloads. Use official exports or permitted "
-                    "interfaces, rate limits, individual accounts, and prompt "
-                    "offboarding. Never respond to suspension by rotating accounts, "
-                    "borrowing a lawyer's login, masking request origins, or "
-                    "buying leaked records. Stop the affected connector after "
-                    "one authorization warning, one unexplained identity mismatch, "
-                    "or repeated access-denied responses; obtain vendor clarification "
-                    "before resuming. Deadline tracking must also fail visibly. "
-                    "If a docket import fails, mark the affected calendar "
-                    "unverified and assign a manual source check rather than "
-                    "showing yesterday's green status. Reconcile each business "
-                    "day's receipts by the next business day, and investigate "
-                    "any unexplained client-balance difference immediately. Automate "
-                    "exception detection, not legal conclusions. The operator "
-                    "should see who owns each exception, what evidence resolves "
-                    "it, and whether spending, communication, or distribution "
-                    "remains blocked while the issue is open."
-                ),
-            ],
-            "table": {
-                "caption": "Internal Early-Warning Thresholds for Costs, Evidence, Cash, and Access",
-                "headers": [
-                    "Metric and precise measurement basis",
-                    "Internal warning or stop threshold",
-                    "Failure mode the threshold exposes",
-                    "Required operator response and evidence",
-                ],
-                "rows": [
-                    [
-                        "Mature cohort contribution equals fees less attributable costs",
-                        "Review below forty percent; pause after repeated sub-quarter margins",
-                        "Aggregate receipts conceal structurally expensive enforcement routes",
-                        "Audit matched cohorts and suspend the defective route",
-                    ],
-                    [
-                        "Matter spending divided by its currently authorized budget",
-                        "Review at seventy-five percent; renew authority before exceeding budget",
-                        "Incremental requests turn weak cases into sunk-cost commitments",
-                        "Recalculate expected fees and document the next spending decision",
-                    ],
-                    [
-                        "Elapsed days since the last material asset verification",
-                        "Refresh evidence beyond thirty days before material commitments",
-                        "Stale ownership or lien information overstates reachable proceeds",
-                        "Obtain current source evidence and rebuild the asset waterfall",
-                    ],
-                    [
-                        "Unexplained difference between receipts and beneficiary-level ledger allocations",
-                        "Investigate any difference; reconcile by next business day",
-                        "Client principal becomes accidentally available for operating expenditure",
-                        "Block affected distributions until records and balances agree",
-                    ],
-                    [
-                        "Vendor authorization warnings and unexplained identity mismatch events",
-                        "One credible warning immediately pauses the affected connector",
-                        "Purpose drift or credential misuse threatens continued access",
-                        "Preserve logs and obtain documented vendor clarification first",
-                    ],
-                    [
-                        "Unrestricted cash divided by committed monthly operating expenditure",
-                        "Pause discretionary intake below three months without secured funding",
-                        "Long collection cycles exhaust capital before earned fees arrive",
-                        "Update cash forecast and reduce uncommitted spending immediately",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Veteran Habits That Preserve Optionality",
-                "body": (
-                    "Experienced operators buy evidence in stages and keep every "
-                    "stage cheap enough to abandon when priority or authority fails."
-                ),
-                "items": [
-                    "Commission a narrow lien-and-ownership review before a broad investigator package; stop if the waterfall cannot support the next dollar of enforcement expense.",
-                    "Require counsel invoices to identify matter, task, and result so failed service attempts and repeated motion drafting cannot disappear inside aggregate billing.",
-                    "Keep bankruptcy notices and assignment documents beside the receipt ledger; reversal analysis becomes faster when ownership and transfer history are already linked.",
-                    "Negotiate milestone-based research scopes with explicit stop instructions; a useful negative finding should end spending rather than trigger a larger automatic package.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Quarantine Adjacent Plays Before They Import New Liabilities",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The mapped play unclaimed_property_escheatment_arbitrage, "
-                    "State Treasury Escheatment & Unclaimed Corporate Warrant "
-                    "Recovery, uses TRACK_1 intake rather than ordinary judgment "
-                    "enforcement. Ingest state controller or treasury ledgers and "
-                    "municipal or corporate uncashed-warrant registries for items "
-                    "above $25,000, using authorized downloads and source terms. "
-                    "Cross-match corporate officers through Secretary of State "
-                    "filings, but require documentary authority from the actual "
-                    "owner or lawful successor before signing recovery agreements. "
-                    "An officer match is a lead, not proof of entitlement. "
-                    "The play's 10–25% contingent finder-fee range is subordinate "
-                    "to each state's statutory limits and timing restrictions. "
-                    "California Code of Civil Procedure section 1582, for "
-                    "example, imposes a 10% compensation ceiling and restricts "
-                    "agreement timing. For an eligible $40,000 claim at a "
-                    "permitted 10% fee, service revenue is $4,000; $1,200 "
-                    "document and processing expense leaves $2,800 direct "
-                    "contribution before overhead. The $40,000 asset never becomes "
-                    "operator revenue. State clearly that owners may claim "
-                    "directly for free. If the permitted fee is insufficient "
-                    "or the agreement falls within a restricted period, defer "
-                    "or decline rather than disguise compensation as document "
-                    "charges. Uncashed warrants may require separate issuer "
-                    "reissuance procedures before any escheat claim exists."
-                ),
-                (
-                    "The second mapped play, "
-                    "state_film_historic_brownfield_tax_credit_brokerage, State Film, "
-                    "Historic Rehabilitation (HTC) & Brownfield Transferable Tax "
-                    "Credit Placement, also belongs to TRACK_1. Its danger is "
-                    "mistaking a certificate for an immediately usable transferable "
-                    "asset. Match only certified state credits whose program "
-                    "permits the contemplated transfer, and verify the buyer's "
-                    "tax position, permitted tax type, usage year, carryforward "
-                    "rules, transfer limits, filing steps, and potential recapture. "
-                    "State transferability does not establish that federal historic "
-                    "rehabilitation credits under 26 U.S.C. 47 can be sold "
-                    "outright. For an illustrative eligible state credit with "
-                    "$100,000 face value, a $92,000 negotiated purchase price "
-                    "and separately disclosed $3,000 placement fee yield $3,000 "
-                    "operator revenue, not $95,000 or $100,000. At $1,000 "
-                    "direct diligence expense, contribution is $2,000 before "
-                    "overhead; the buyer's initial total outlay is $95,000, "
-                    "subject to the agreed transaction structure. These figures "
-                    "are transaction assumptions, not market quotes or promised "
-                    "tax savings. If eligibility, certification, or transfer "
-                    "evidence fails, suspend settlement under written diligence "
-                    "contingencies. Rematch only verified eligible credits and "
-                    "taxpayers. Do not forward disputed certificates to new "
-                    "buyers, imply agency endorsement, or treat escrowed purchase "
-                    "funds as earned placement revenue."
-                ),
-                (
-                    "Keep both adjacent plays outside the judgment collection "
-                    "ledger until their entitlement, statutory terms, and fee "
-                    "recognition conditions are established. They are two of "
-                    "the volume's 15 mapped plays, not evidence that every "
-                    "recovery method shares one license, contract, or settlement "
-                    "workflow. An unclaimed-property claimant may own an asset "
-                    "without owing the operator anything; a tax-credit buyer "
-                    "may pay a discount yet lack usable tax capacity. "
-                    "The same screening discipline applies across all three "
-                    "lanes: identify the actual rights holder, verify the "
-                    "transferable or enforceable right, calculate recognized "
-                    "fees, and cap the next irreversible expense. Illustratively, "
-                    "ten completed $40,000 property claims at lawful 10% "
-                    "fees produce $40,000 service revenue, while ten completed "
-                    "credit placements at $3,000 produce $30,000. Neither "
-                    "figure includes the underlying $400,000 property value "
-                    "or $1,000,000 credit face amount. These examples do "
-                    "not add revenue to the canonical scenarios without "
-                    "replacing another modeled fee source and accounting for "
-                    "incremental costs. Build separate contracts, evidence "
-                    "checklists, and reversal registers before expanding. If "
-                    "a new lane needs unfamiliar licensing, entitlement "
-                    "proof, or tax analysis, use qualified specialists and "
-                    "a small capped pilot rather than subsidizing uncertainty "
-                    "with client money from the core recovery business."
-                ),
-            ],
-            "table": {
-                "caption": "Adjacent-Play Entitlement, Fee, and Settlement Failure Matrix",
-                "headers": [
-                    "Mapped lane and concrete failure",
-                    "Required entitlement or usability evidence",
-                    "Illustrative fee economics and exposure",
-                    "Fallback that limits irreversible capital",
-                ],
-                "rows": [
-                    [
-                        "Unclaimed property lead names an obsolete corporate officer",
-                        "Current filings and succession documents establish claimant authority",
-                        "Officer matching alone creates no collectible operator fee",
-                        "Contact the verified rights holder through authorized channels",
-                    ],
-                    [
-                        "Finder agreement exceeds the governing state's compensation limit",
-                        "Current statutory text and signed terms establish permitted compensation",
-                        "Forty-thousand-dollar claim at ten percent earns four thousand",
-                        "Apply lawful caps and disclose free direct claiming",
-                    ],
-                    [
-                        "Finder agreement falls within a statutory restricted period",
-                        "Property delivery history and agreement dates resolve timing",
-                        "Premature contracting jeopardizes collection of the contingent fee",
-                        "Defer execution until the applicable statutory timing permits",
-                    ],
-                    [
-                        "Uncashed warrant requires issuer reissuance rather than escheatment",
-                        "Issuer confirmation establishes status and claimant documentation requirements",
-                        "Registry face value remains owner property throughout processing",
-                        "Use the issuer's documented procedure before pursuing treasury recovery",
-                    ],
-                    [
-                        "State tax credit lacks verified transferability or buyer usability",
-                        "Program certification and buyer tax review support contemplated transfer",
-                        "Three-thousand-dollar placement fee depends on agreed earned-fee conditions",
-                        "Suspend settlement and rematch only verified eligible participants",
-                    ],
-                    [
-                        "Placement model assumes federal historic credits transfer outright",
-                        "Program-specific statutory review separates federal and state treatment",
-                        "Unsupported transfer assumptions erase expected placement contribution entirely",
-                        "Exclude unsupported structures and obtain specialist transaction review",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Buy verified collection rights, spend against reachable equity, and never "
-        "mistake someone else's money for your margin."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a matter register linking debtor identity, service evidence, assignment chain, judgment deadlines, lien deadlines, and the responsible local attorney.",
-        "Complete an asset-specific priority waterfall before authorizing research, acquisition, service, or enforcement expense beyond the initial diligence budget.",
-        "Install event-driven bankruptcy checks and a documented pause procedure covering collection instructions, communications, and affected distributions.",
-        "Reconcile receipts to earned fees and client liabilities daily, preserving recipient-level transfer records and identifying potential reversal exposure.",
-        "Publish cohort contribution, budget utilization, evidence freshness, vendor warnings, and unrestricted-cash runway with named exception owners.",
-        "Separate unclaimed-property and tax-credit intake, verify statutory limits and entitlement, and exclude underlying asset values from recognized service revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "11 U.S.C. 362 — Automatic stay",
-            "url": "https://www.law.cornell.edu/uscode/text/11/362",
-            "relevance": (
-                "Defines stayed acts, exceptions, relief procedures, and remedies "
-                "relevant to pausing post-judgment enforcement after a bankruptcy filing."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 524 — Effect of discharge",
-            "url": "https://www.law.cornell.edu/uscode/text/11/524",
-            "relevance": (
-                "Requires separate analysis of discharged personal liability rather "
-                "than treating closure of a bankruptcy case as permission to collect."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 547 — Preferences",
-            "url": "https://www.law.cornell.edu/uscode/text/11/547",
-            "relevance": (
-                "Supplies preference elements, lookback provisions, and defenses "
-                "for reviewing qualifying prepetition collection receipts."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 548 — Fraudulent transfers and obligations",
-            "url": "https://www.law.cornell.edu/uscode/text/11/548",
-            "relevance": (
-                "Identifies additional avoidance grounds requiring transaction-specific "
-                "review when collected or transferred funds become disputed."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 550 — Liability of transferee of avoided transfer",
-            "url": "https://www.law.cornell.edu/uscode/text/11/550",
-            "relevance": (
-                "Addresses recovery from specified transferees and related defenses, "
-                "supporting recipient-level payment records rather than blanket "
-                "assumptions about who must repay."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 546 — Limitations on avoiding powers",
-            "url": "https://www.law.cornell.edu/uscode/text/11/546",
-            "relevance": (
-                "Provides limitations relevant to avoidance litigation; it does "
-                "not create a universal deadline for every possible payment reversal."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1692a — FDCPA definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1692a",
-            "relevance": (
-                "Defines covered consumer debt and collector status, requiring "
-                "classification of the underlying transaction and operator activity."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": (
-                "Requires an applicable permissible purpose for consumer-report "
-                "access; possession of a judgment is not unrestricted search authority."
-            ),
-        },
-        {
-            "title": "18 U.S.C. 2721 — Motor vehicle record privacy",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
-            "relevance": (
-                "Restricts disclosure and use of personal information from motor "
-                "vehicle records subject to enumerated permitted uses."
-            ),
-        },
-        {
-            "title": "California Code of Civil Procedure section 1582 — Recovery agreements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1582.&lawCode=CCP",
-            "relevance": (
-                "Sets compensation, timing, and agreement requirements for covered "
-                "unclaimed-property recovery arrangements, including a 10% ceiling."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 47 — Rehabilitation credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/47",
-            "relevance": (
-                "Governs the federal rehabilitation credit, which must be analyzed "
-                "separately from state programs permitting particular credit transfers."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 50 — Other special rules",
-            "url": "https://www.law.cornell.edu/uscode/text/26/50",
-            "relevance": (
-                "Provides investment-credit recapture and related rules relevant "
-                "when reviewing federal rehabilitation-credit structures."
-            ),
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'wage-garnishments-bank-levies-writs-of-execution',
+ 'question_prompt': 'How do wage garnishments, bank levies, and writs of execution actually pull money '
+                    'from a debtor, and how do debtors try to stop them?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Wage Garnishments, Bank Levies, and Writs of Execution',
+ 'subtitle': 'Bank levy vs. wage garnishment mechanics, California bank levies, multi-bank levy strategy '
+             'against businesses, Georgia garnishment limits, small-claims wage garnishment, what follows '
+             'a writ of execution, and debtor countermeasures including exemptions, appeals, bankruptcy, '
+             'and IRS levy relief',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Judgment-recovery practitioners agree the judgment is only a license to hunt. The '
+                      "creditor has to locate a job or a bank account and fire the state's collection "
+                      'machinery personally. Wage garnishment is the ongoing workhorse, running check '
+                      'after check under an order of continuing lien. A bank levy is a one-shot freeze '
+                      'that needs a fresh writ to repeat. The numbers swing by state: 25% of wages in '
+                      'Knoxville and Georgia practice, 10% of net in Arizona, and a federal ceiling tied '
+                      'to 30 times minimum wage. Operators widen the net. Mr. Grey levies four major banks '
+                      'at once, Maryland creditors request writs for every bank in a region, and creditors '
+                      'pressure debtors through subpoenas and asset disclosure. The friction points are '
+                      "that exemptions are reactive and debtor-claimed, Arizona's 10% cap can lose to 30% "
+                      'interest, and a bankruptcy filing freezes everything instantly.',
+ 'key_metrics': [{'label': 'Wage garnishment take per paycheck',
+                  'metric': 'Wage garnishment take per paycheck',
+                  'value': 'Up to 25 percent of wages',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Jed McKeehan says the court's garnishment tells the employer to start taking "
+                             'up to 25 percent of wages and send it through the court for as long as the '
+                             'debtor keeps the job.',
+                  'source': 'Jedidiah “Jed” McKeehan ([0Kq_0NfOnMo @ 00:01:13])'},
+                 {'label': 'Arizona wage garnishment cap',
+                  'metric': 'Arizona wage garnishment cap',
+                  'value': '10% of net wages (down from 25% a few years ago)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'John Skiba reports Arizona creditors can now take only 10% of net wages, '
+                             'leaving 90% protected. Judgments accruing at a contract rate of roughly 28 '
+                             'to 30% can outrun that payment.',
+                  'source': 'Consumer Warrior ([YmCEqLCbD3s @ 00:02:53])'},
+                 {'label': 'Simultaneous bank levies',
+                  'metric': 'Simultaneous bank levies',
+                  'value': '4 major banks at once',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mr. Grey runs a four-bank levy strategy. Overage goes back to the debtor '
+                             'when the banks take too much, and an American Airlines levy ended with the '
+                             "call 'your money's coming.'",
+                  'source': 'Mr. Grey Judgment Enforcement ([CLxNTh8V1qQ @ 00:00:01])'},
+                 {'label': 'Garnishee bank response window (California)',
+                  'metric': 'Garnishee bank response window (California)',
+                  'value': '10 statutory days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Bobby Benjy says the levied bank gets ten statutory days to determine how '
+                             "much it held in the debtor's name as of the levy date before freezing funds "
+                             'up to the writ amount.',
+                  'source': 'Bobby Benjy ([a13Ojjc6ruw @ 00:03:26])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner starts from the same hard truth: the judgment is a '
+                              'hunting license, not a check. Knoxville attorney Jed McKeehan screens every '
+                              'would-be plaintiff with one question: does this person have any money they '
+                              'can actually pay, or will you win a judgment and never collect a dime? A '
+                              "defendant with no cash but a steady job is 'something I can work with' "
+                              '[0Kq_0NfOnMo @ 00:00:22]. There is no $10,000 waiting in the back of the '
+                              "courtroom. It is the creditor's responsibility to go get the money when the "
+                              'defendant does not pay voluntarily, which happens often [0Kq_0NfOnMo @ '
+                              '00:00:56]. John Skiba of Consumer Warrior puts the gate in numbers. In '
+                              'roughly 99% of circumstances, a private creditor needs a court judgment '
+                              'before it can obtain a writ of garnishment. The carve-outs belong to '
+                              'government collectors on taxes and certain student loans, who run '
+                              'administrative wage garnishment without suing first [YmCEqLCbD3s @ '
+                              '00:01:19]. The Verdict breakdown explains why the judgment is worth '
+                              'chasing. Once entered, it fixes the amount owed, starts interest running, '
+                              "and can become a lien on real estate. It also hands the winner the state's "
+                              'collection machinery, which the winner can use mostly without asking a '
+                              "judge's permission each time [aWnv0AR52jY @ 00:02:47].",
+                              'The second point of agreement is that wage garnishment and the bank levy '
+                              'are the two workhorse tools, and they behave very differently. McKeehan '
+                              'calls them the two simplest ways to collect, especially on judgments under '
+                              "a few thousand dollars. If the debtor keeps the job, the court's "
+                              'garnishment tells the employer to take up to 25 percent of wages and route '
+                              'it through the court, automatically, check after check. The bank levy, by '
+                              'contrast, is a one-time hit. The bank sends whatever sits in the account up '
+                              'to the amount owed, and if the balance is thin, part of the judgment stays '
+                              'uncovered [0Kq_0NfOnMo @ 00:02:06]. Skiba confirms the same split under '
+                              "Arizona practice. After the debtor's 10-day objection window closes, the "
+                              'court issues an order of continuing lien, and the employer keeps '
+                              'withholding every paycheck without renewal until the judgment is paid in '
+                              'full [YmCEqLCbD3s @ 00:04:17]. A bank writ gives the creditor one shot, and '
+                              'trying again requires a fresh writ [YmCEqLCbD3s @ 00:08:23]. County Portal '
+                              "Law describes the same division from the sheriff's side. The bank must "
+                              'freeze immediately up to the debt, and the employer must deduct a portion '
+                              'each pay period [Nl9nVJJo6Xs @ 00:00:34].',
+                              'Third, every practitioner agrees that exemptions do not stop the first '
+                              'strike. They only claw money back if the debtor moves fast. Mike Ziegler of '
+                              'Debt Fighters calls Florida protections like Social Security and '
+                              "head-of-household status 'reactive.' The creditor garnishes first and the "
+                              'wages or account get frozen. Only then does the burden shift to the debtor '
+                              'to file a claim of exemption and go through a hearing [_XHjLiGTAYw @ '
+                              '00:04:15]. The Verdict breakdown adds that an unclaimed exemption can be '
+                              'lost outright, since in many cases the claim must be made in writing on a '
+                              'deadline after the levy [aWnv0AR52jY @ 00:18:45]. County Portal Law warns '
+                              'that a debtor who does not file on time may lose even basic exempt property '
+                              '[Nl9nVJJo6Xs @ 00:01:43]. The one weapon that beats the whole machine is '
+                              'bankruptcy. Eric Steiner of Steiner Law Group says a bank garnishment stops '
+                              'when a bankruptcy case is filed, and the creditor and bank must then '
+                              'unfreeze the account [RAT4YjdyfEo @ 00:02:52]. For a creditor, that '
+                              'consensus sets the operating rhythm. Strike before the debtor organizes, '
+                              "and treat exemption claims as the debtor's burden to raise. Price in the "
+                              'risk that a cornered debtor files and freezes everything at once.'],
+               'table': {'caption': 'Where the enforcement practitioners line up',
+                         'headers': ['Consensus Point', 'What Practitioners Report', 'Expert Source'],
+                         'rows': [['Judgment comes before any garnishment',
+                                   'Private creditors need a court judgment in roughly 99% of '
+                                   'circumstances before a writ of garnishment can issue against wages',
+                                   'Consumer Warrior ([YmCEqLCbD3s @ 00:01:19])'],
+                                  ['Government collectors skip the courthouse entirely',
+                                   'Government agencies and the IRS can use administrative garnishment on '
+                                   'wages without first obtaining a court order',
+                                   'Thomson Reuters ([hAq3ZiEtqk0 @ 00:04:52])'],
+                                  ['Collectability screen comes before suing',
+                                   'Ask whether the defendant has money or a job before filing, or the '
+                                   'judgment may never collect a dime',
+                                   'Jedidiah “Jed” McKeehan ([0Kq_0NfOnMo @ 00:00:22])'],
+                                  ['Wage garnishment is an ongoing collection stream',
+                                   'The employer keeps withholding each paycheck and sending it through '
+                                   'the court for as long as the debtor holds that job',
+                                   'Jedidiah “Jed” McKeehan ([0Kq_0NfOnMo @ 00:01:30])'],
+                                  ['Bank levy is a one-shot strike',
+                                   'A bank writ gives the creditor one attempt; collecting again requires '
+                                   'going back to court for another writ of garnishment',
+                                   'Consumer Warrior ([YmCEqLCbD3s @ 00:08:23])'],
+                                  ['Exemptions are reactive, not automatic shields',
+                                   'The creditor garnishes first; the debtor then carries the burden to '
+                                   'file a claim of exemption and attend a hearing',
+                                   'Ziegler Diamond Law: Debt Fighters ([_XHjLiGTAYw @ 00:04:15])'],
+                                  ['Bankruptcy filing stops the entire machine',
+                                   'The automatic stay halts bank garnishments, and the creditor and '
+                                   'financial institution must unfreeze frozen accounts upon filing',
+                                   'Steiner Law Group, LLC ([RAT4YjdyfEo @ 00:02:52])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Los Angeles collections attorney Bobby Benjy lays out the bank-levy '
+                              'pipeline step by step. After judgment, the creditor applies for a writ of '
+                              'execution. It is a one- or two-page document bearing the court seal and the '
+                              "deputy clerk's signature. It certifies the judgment, states the amount due "
+                              'as of a date certain, names the debtor, and is directed to a county sheriff '
+                              "[a13Ojjc6ruw @ 00:01:34]. The creditor's attorney sends the original writ "
+                              'to the sheriff with written instructions, and the sheriff opens a file. '
+                              'Notices of levy plus a memorandum of garnishee then go to the bank, such as '
+                              'Wells Fargo. The bank gets ten statutory days to determine what it held in '
+                              "the debtor's name on the levy date. Benjy says three kinds of accounts can "
+                              "all be levied if the creditor crosses the T's and dots the i's: accounts "
+                              "held solely by the debtor, accounts in the name of the debtor's spouse, and "
+                              'accounts held jointly with a non-debtor third party [a13Ojjc6ruw @ '
+                              '00:04:01]. Safe deposit boxes get shut down, drilled, and auctioned at a '
+                              "sheriff's execution sale [a13Ojjc6ruw @ 00:06:00]. County Portal Law adds "
+                              'that the sheriff keeps a small fee. When no assets turn up, the writ comes '
+                              'back unsatisfied and the creditor must try again later [Nl9nVJJo6Xs @ '
+                              '00:01:59].',
+                              'Finding the money is the real skill. Skiba says creditors pull employment '
+                              "data from the personal section of the debtor's credit report, even when it "
+                              'is stale. They locate banks by checking how the debtor paid past creditors, '
+                              'whether by check or automatic debit [YmCEqLCbD3s @ 00:06:03]. Eric Steiner '
+                              'reports that Maryland creditors often request writs of garnishment other '
+                              'than wages for every bank in a geographic area, to cast the widest possible '
+                              'net. Many banks freeze accounts on mere notice that such a writ has been '
+                              'requested [RAT4YjdyfEo @ 00:02:32]. Mr. Grey Judgment Enforcement runs a '
+                              'four-bank levy strategy, hitting four major banks at once. Overage gets '
+                              'sent back to the debtor when the banks take too much. The American Airlines '
+                              'legal department in Texas called to complain about one of these levies. Mr. '
+                              'Grey asked which section of the California Code of Civil Procedure barred '
+                              'levying more than one bank at a time. Mr. Grey also pointed out that CT '
+                              "Corp, the company's agent for service of process, had been served on a "
+                              'seven-year-old judgment, so the company had sat on its rights. Mr. Grey '
+                              'then threatened to sue if local counsel dragged the matter into court. The '
+                              "next call was 'your money's coming' [CLxNTh8V1qQ @ 00:00:01].",
+                              'On wages, the numbers vary sharply by state. Jeffrey Kelly says Georgia '
+                              'creditors can take up to 25% of net wages, which is $250 out of a $1,000 '
+                              'week. An employer who botches the withholding by even a small amount can '
+                              'become liable for the entire debt. An associate who used to work for a '
+                              'collection company told Kelly it happened all the time [cHsptp1ujiI @ '
+                              '00:02:35]. Skiba warns of a different trap in Arizona, where the cap is 10% '
+                              'of net wages. Defaulted credit-card judgments accrue at a contract rate of '
+                              'roughly 28 to 30%. The 10% often fails to cover that interest, producing an '
+                              'indefinite garnishment while the balance grows [YmCEqLCbD3s @ 00:04:40]. '
+                              'Discovery is the pressure lever. Mike Ziegler says Florida judgment debtors '
+                              'must complete the Form 1.977 financial disclosure and may face a deposition '
+                              'in aid of execution. Refusing can, in extreme cases, bring a writ of bodily '
+                              'attachment, which is effectively an arrest warrant [_XHjLiGTAYw @ '
+                              "00:02:41]. Mr. Grey spotted a debtor's new management job in Facebook "
+                              'wedding photos. Mr. Grey then filed wage garnishments, subpoenaed the '
+                              'debtor, and floated subpoenaing the newly employed spouse. The debtor '
+                              'begged off, agreed not to bother with a motion to vacate, and said there '
+                              'was extra money to pay [DYAsqrLyB-c @ 00:00:49].'],
+               'table': {'caption': 'Enforcement mechanics and hard numbers by practitioner',
+                         'headers': ['Mechanic / Number', 'Street Detail', 'Expert Source'],
+                         'rows': [['Writ of execution format and routing',
+                                   'One or two pages with court seal and deputy clerk signature, amount '
+                                   'due as of a date certain, directed to county sheriff',
+                                   'Bobby Benjy ([a13Ojjc6ruw @ 00:01:34])'],
+                                  ['Bank answer window in California levies',
+                                   'The garnishee bank gets ten statutory days to determine funds held in '
+                                   "the debtor's name on the levy date",
+                                   'Bobby Benjy ([a13Ojjc6ruw @ 00:03:26])'],
+                                  ['Bank answer window in Maryland garnishments',
+                                   'The financial institution has 30 days to answer the writ; the debtor '
+                                   'has only 30 days to claim an exemption',
+                                   'Steiner Law Group, LLC ([RAT4YjdyfEo @ 00:01:52])'],
+                                  ['Federal consumer-debt wage cap formula',
+                                   'Lesser of 25% of weekly disposable income or the excess over 30 times '
+                                   'federal minimum wage; full 25% at $290 weekly',
+                                   'Thomson Reuters ([hAq3ZiEtqk0 @ 00:02:09])'],
+                                  ['Georgia wage take and employer exposure',
+                                   'Up to 25% of net wages, meaning $250 from a $1,000 weekly paycheck in '
+                                   'a typical Georgia case',
+                                   'Law Office of Jeffrey B. Kelly ([cHsptp1ujiI @ 00:00:01])'],
+                                  ['Arizona bank account exemption for 2026',
+                                   'Roughly $5,600 protected in one checking or savings account, adjusted '
+                                   'annually, and doubled for married couples',
+                                   'Consumer Warrior ([YmCEqLCbD3s @ 00:07:23])'],
+                                  ['Automatic federal benefits bank shield',
+                                   'Banks must automatically protect two months of directly deposited '
+                                   'Social Security, SSI, and veterans benefits without any filing',
+                                   'Verdict ([aWnv0AR52jY @ 00:17:03])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Where the Money Actually Gets Found',
+                           'body': 'Working collectors win by widening the target list and hitting '
+                                   "accounts the debtor does not expect, then letting the garnishee's own "
+                                   'liability do the pressure work [Mr. Grey Judgment Enforcement — '
+                                   'CLxNTh8V1qQ @ 00:00:01].',
+                           'items': ['Levy several banks at once instead of gambling on one account. Mr. '
+                                     'Grey runs a four-bank levy and lets any overage flow back to the '
+                                     'debtor [Mr. Grey Judgment Enforcement — CLxNTh8V1qQ @ 00:00:01]',
+                                     'Mine the credit report and the old payment trail. Employment data '
+                                     'sits in the personal section of the credit report, and past payments '
+                                     'by check or auto-debit reveal the bank [Consumer Warrior — '
+                                     'YmCEqLCbD3s @ 00:06:03]',
+                                     'Levy the spouse-name and joint accounts too. Accounts in the '
+                                     "spouse's name or held jointly with a non-debtor third party can be "
+                                     'levied if the paperwork is clean [Bobby Benjy — a13Ojjc6ruw @ '
+                                     '00:04:01]',
+                                     'Count on garnishee liability to keep employers careful. In Georgia, '
+                                     'an employer that withholds the wrong amount can become liable for '
+                                     'the entire debt [Law Office of Jeffrey B. Kelly — cHsptp1ujiI @ '
+                                     '00:02:35]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen collectability before suing',
+                              'action': 'Confirm the defendant has reachable money or a job before '
+                                        'investing in a judgment.',
+                              'detail': 'Ask whether the person has money to pay you or a job you can '
+                                        'garnish. Without either, the judgment may never collect a dime '
+                                        '[Jedidiah “Jed” McKeehan — 0Kq_0NfOnMo @ 00:00:22]'},
+                             {'step': 2,
+                              'title': 'Pull the writ and route it to the sheriff',
+                              'action': 'Apply for a writ of execution and deliver the original to the '
+                                        'county sheriff with written levy instructions.',
+                              'detail': "The creditor's attorney sends the writ to the sheriff with "
+                                        'instructions. The sheriff opens a file and follows them within '
+                                        'statutory limits [Bobby Benjy — a13Ojjc6ruw @ 00:02:07]'},
+                             {'step': 3,
+                              'title': 'Serve every garnishee in reach',
+                              'action': 'Serve the employer and request writs against every bank in the '
+                                        "debtor's area at once.",
+                              'detail': 'Creditors often request writs of garnishment other than wages for '
+                                        'all bank accounts in a geographic area to make sure they find at '
+                                        'least one account [Steiner Law Group, LLC — RAT4YjdyfEo @ '
+                                        '00:02:11]'},
+                             {'step': 4,
+                              'title': 'Apply funds and file the satisfaction',
+                              'action': 'Credit turned-over funds against the judgment and file a partial '
+                                        'or full satisfaction.',
+                              'detail': 'The bank turns funds over to the sheriff, who passes them to the '
+                                        'creditor. The creditor applies the money to the judgment and '
+                                        'issues a partial or full satisfaction [Bobby Benjy — a13Ojjc6ruw '
+                                        '@ 00:05:11]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fight is over how deep the paycheck cut goes, and the '
+                              'practitioners quote different ceilings depending on where they stand. Jed '
+                              'McKeehan frames the wage garnishment as an order telling the employer to '
+                              'start taking up to 25 percent of wages and send it through the court for as '
+                              'long as the debtor keeps that job [0Kq_0NfOnMo @ 00:01:13]. Jeffrey B. '
+                              'Kelly says Georgia is rough: up to 25 percent of net wages, so a $1,000 '
+                              'weekly earner loses $250, and creditors do not care about the rent '
+                              '[cHsptp1ujiI @ 00:00:01]. John Skiba of Consumer Warrior reports Arizona '
+                              'dropped from 25 percent to 10 percent of net wages, leaving 90 percent '
+                              'protected, and names Texas and Florida as states with no wage garnishment '
+                              'at all [YmCEqLCbD3s @ 00:03:09]. Verdict draws the map differently: the '
+                              'federal cap is the lesser of 25 percent of disposable earnings or the '
+                              'excess over 30 times the federal minimum wage, California caps at 20 '
+                              'percent, Illinois at 15 percent of gross, New York at 10 percent of gross, '
+                              'and the effective consumer-debt bans are Texas, Pennsylvania, North '
+                              'Carolina, and South Carolina, while Florida shields a head of household '
+                              '[aWnv0AR52jY @ 00:15:39]. Pull the local cap before pricing any garnishment '
+                              'file.',
+                              'On bank levies, the split is between targeted hits and the wide net. Skiba '
+                              'says creditors find the bank through the credit report or by checking how '
+                              'past bills were paid, by check or automatic debit, then serve that one '
+                              'institution [YmCEqLCbD3s @ 00:06:03]. Eric Steiner of Steiner Law Group '
+                              'describes the Maryland alternative: creditors request writs of garnishment '
+                              'other than wages for all bank accounts in a geographical area to cast as '
+                              'wide a net as possible and make sure they find at least one account '
+                              '[RAT4YjdyfEo @ 00:02:11]. Mr. Grey runs a business-collection version, a '
+                              'four-bank levy strategy against four major banks at once, and reports that '
+                              'every time, money is sent back to the judgment debtor because the levy took '
+                              'too much. When the American Airlines legal department in Texas called to '
+                              'say it could not be done, Mr. Grey demanded the section of the California '
+                              'Code of Civil Procedure that bars levying more than one bank at a time '
+                              '[CLxNTh8V1qQ @ 00:00:01]. The multi-bank play compensates for a hard limit: '
+                              'Jed McKeehan calls the levy a one-time thing where you do not know the '
+                              'balance ahead of time [0Kq_0NfOnMo @ 00:02:06], and Skiba adds that a '
+                              'second shot requires a fresh writ.',
+                              'Once collection lands, the playbooks fork. Kelly calls bankruptcy the '
+                              'fastest fix because the automatic stay lets the firm serve the employer and '
+                              'the garnishing creditor immediately, and warns that a counter lawsuit costs '
+                              'a lot of money with low odds if the debt is actually owed [cHsptp1ujiI @ '
+                              '00:06:43]. Brandon Weaver pushes the opposite: show up, fight, demand '
+                              'proof, contracts, data storage, and a state collection license, hire a '
+                              'lawyer even at roughly $1,000, and attack a default within 6 months where '
+                              'the defendant was not personally served [iHnRz6R1jS8 @ 00:03:34]. Mike '
+                              'Ziegler of Ziegler Diamond Law lays out four exits, set aside, pay in full, '
+                              'settle, or bankruptcy, and argues judgment holders discount because time is '
+                              'money and a bird in hand is worth two in the bush [_XHjLiGTAYw @ 00:06:04]. '
+                              'On the IRS track, Mike Sullivan, a former IRS agent, says a single phone '
+                              'call interrupts the automated CP14, CP501, CP503, CP504, and 1058 notice '
+                              'cycle, after which the agency takes a 433F or 433A and lands the case in '
+                              'currently non-collectible status or a payment agreement [wSIheT1KrFw @ '
+                              '00:01:32]. The collector reading: debtors who call, fight, or file each '
+                              'break a different link.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on garnishment and '
+                                    'levy execution',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How much of each paycheck the garnishment takes',
+                                   'Georgia allows up to 25 percent of net wages, so $250 comes out of a '
+                                   '$1,000 week',
+                                   'Arizona now caps the take at 10 percent of net wages, down from 25 '
+                                   'percent a few years ago',
+                                   'Law Office of Jeffrey B. Kelly ([cHsptp1ujiI @ 00:00:01]); Consumer '
+                                   'Warrior ([YmCEqLCbD3s @ 00:03:09])'],
+                                  ['How the creditor picks which bank to hit',
+                                   "Locate one bank through the credit report or the debtor's past payment "
+                                   'method, then serve it',
+                                   'Request writs for all banks in a geographical area, or levy four major '
+                                   'banks at the same time',
+                                   'Consumer Warrior ([YmCEqLCbD3s @ 00:06:03]); Steiner Law Group, LLC '
+                                   '([RAT4YjdyfEo @ 00:02:11]); Mr. Grey Judgment Enforcement '
+                                   '([CLxNTh8V1qQ @ 00:00:01])'],
+                                  ['Who screens exempt money before it gets frozen',
+                                   'The bank should check for Social Security deposits and answer that the '
+                                   'account is exempt',
+                                   'Protections are reactive: the creditor freezes first and the debtor '
+                                   'carries the burden to claim exemption',
+                                   'Consumer Warrior ([YmCEqLCbD3s @ 00:06:43]); Ziegler Diamond Law: Debt '
+                                   'Fighters ([_XHjLiGTAYw @ 00:04:15])'],
+                                  ['How a debtor stops an active wage garnishment',
+                                   'File Chapter 7 or Chapter 13 and serve the automatic stay on the '
+                                   'employer right away',
+                                   'Show up, demand proof and verification, and attack defaults within 6 '
+                                   'months for lack of personal service',
+                                   'Law Office of Jeffrey B. Kelly ([cHsptp1ujiI @ 00:06:11]); Brandon '
+                                   'Weaver ([iHnRz6R1jS8 @ 00:03:34])'],
+                                  ['How the judgment gets resolved without a bankruptcy filing',
+                                   'Settle at a discount because judgment holders know time is money and '
+                                   'certainty beats waiting',
+                                   'Negotiate a payment plan, lump sum, or hardship relief before the '
+                                   'garnishment ever begins',
+                                   'Ziegler Diamond Law: Debt Fighters ([_XHjLiGTAYw @ 00:06:04]); The '
+                                   'DeVries Law Firm ([lfTu39ygsSI @ 00:07:13])'],
+                                  ['How an IRS levy or garnishment gets interrupted',
+                                   'Call the IRS to break the automated notice cycle and submit a 433F or '
+                                   '433A statement',
+                                   'Respond within 30 days of the certified Notice of Intent to Levy with '
+                                   'Fresh Start or an Offer in Compromise',
+                                   'Former IRS Agent Representation   4.2M Views ([wSIheT1KrFw @ '
+                                   '00:01:32]); Revermann Law ([74MBbfTO3Po @ 00:00:16])'],
+                                  ['How long the creditor can keep the judgment alive',
+                                   'Georgia fi fa renewals cost a very small amount and can in theory '
+                                   'continue forever',
+                                   'California enforces for 10 years, renewable, with accrued interest '
+                                   'folded into the new principal',
+                                   'Law Office of Jeffrey B. Kelly ([cHsptp1ujiI @ 00:05:37]); Verdict '
+                                   '([aWnv0AR52jY @ 00:21:10])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The ugliest economics check is interest outrunning the garnishment. Skiba '
+                              'reports that judgments on defaulted credit cards often carry contract '
+                              'interest around 28 to 30 percent, so a 10 percent net-wage garnishment can '
+                              'fail to cover the monthly interest, creating an indefinite garnishment '
+                              'where the balance grows each month; Skiba has watched people pay that way '
+                              'for years before realizing they need a lump-sum settlement or a bankruptcy '
+                              "[YmCEqLCbD3s @ 00:04:40]. Verdict runs the same math at California's 10 "
+                              'percent simple rate, where an unpaid judgment doubles in 10 years without '
+                              'the creditor doing anything, and flags that renewal folds accrued interest '
+                              'into the new principal [aWnv0AR52jY @ 00:07:40]. The O.J. Simpson file is '
+                              'the cautionary ceiling: a $33.5 million 1997 judgment, an estate claim over '
+                              '$117 million after 27 years, a claim accepted at just under $58 million, '
+                              'and estate assets of roughly half a million to a million dollars, because '
+                              'pension and Florida homestead protections kept the bulk out of reach '
+                              '[aWnv0AR52jY @ 00:23:08]. Kelly adds that Georgia judgments can be renewed '
+                              'with a fi fa for a very small amount of money, in theory forever '
+                              '[cHsptp1ujiI @ 00:05:54]. Size of the number means nothing next to the '
+                              'exemption map.',
+                              'Process friction kills timelines on both sides. The Westgate Law attorney, '
+                              'who reports more than 3,000 bankruptcy cases, says the sheriff is usually '
+                              "the problem: after the lender's attorney forwards the bankruptcy notice, "
+                              'getting the sheriff to notify the employer or bank can take weeks or even '
+                              'months, so the debtor has to keep calling and sometimes go down to the '
+                              'Sheriff Department, and money taken from a levy before filing may never '
+                              'come back [Nb1quOaLNWk @ 00:01:37]. Kelly flags a Georgia trap that cuts '
+                              'against employers: if an employer messes up the garnishment by any small '
+                              'amount, it can become liable for the entire debt, and an associate who used '
+                              'to work for a collection company says small employers goofed it up all the '
+                              'time [cHsptp1ujiI @ 00:02:54]. Thomson Reuters confirms liability for '
+                              "failing to comply with a garnishment order falls on the employer's "
+                              'shoulders [hAq3ZiEtqk0 @ 00:05:09]. On notice, Steiner says mailing the '
+                              'writ to a last known address satisfies Maryland law even when the creditor '
+                              'has no current address, which is why debtors first learn of the freeze when '
+                              "the debit card fails [RAT4YjdyfEo @ 00:01:32]. Kelly's roommate scenario "
+                              'completes the sneak attack: service on any adult in the home.',
+                              'The last group of traps rewards the operator who moves first. Verdict cites '
+                              'Pew research that more than 70 percent of debt collection lawsuits end in '
+                              'default judgments, reaching 82 percent in some state data, and warns that '
+                              'appealing does not stop collection: without a bond, typically covering the '
+                              'full judgment plus interest and costs, the winner may garnish and levy '
+                              'while the appeal is pending [aWnv0AR52jY @ 00:14:00]. Ziegler says a debtor '
+                              'who fails to complete the Florida 1.977 form can, in extreme circumstances, '
+                              'face a writ of bodily attachment, which is in fact an arrest warrant '
+                              '[_XHjLiGTAYw @ 00:02:41]. Mr. Grey turned that discovery pressure into '
+                              "payment: after spotting the debtor's new job and new spouse through wedding "
+                              'pictures on Facebook, Mr. Grey issued a subpoena and wage garnishments and '
+                              'floated subpoenaing the spouse, and the debtor begged, dropped any motion '
+                              'to vacate, and said they had extra money to pay [DYAsqrLyB-c @ 00:00:25]. '
+                              'Bobby Benjy supplies the auction warning: a safe deposit box holding '
+                              "$50,000 to $100,000 in diamonds can sell at a sheriff's execution sale for "
+                              'whatever the highest bidder offers, even $1,000 against a $10,000 judgment '
+                              '[a13Ojjc6ruw @ 00:06:17]. County Portal Law adds that a writ can come back '
+                              'unsatisfied when the sheriff finds no assets, forcing the creditor to try '
+                              'again later.'],
+               'table': {'caption': 'Firsthand failure modes, bottlenecks, and the economics behind each '
+                                    'one',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Interest outruns a 10 percent wage garnishment',
+                                   'Contract interest of 28 to 30 percent keeps the balance growing while '
+                                   'the debtor pays for years',
+                                   'Read the judgment copy and check whether the 10 percent actually pays '
+                                   'the judgment down',
+                                   'Consumer Warrior ([YmCEqLCbD3s @ 00:05:09])'],
+                                  ['Bank levy lands on a thin account',
+                                   'The creditor does not know the balance ahead of time, so the levy may '
+                                   'not cover the judgment',
+                                   'A levy is one shot; trying again means going back to get another writ '
+                                   'issued',
+                                   'Jedidiah “Jed” McKeehan ([0Kq_0NfOnMo @ 00:02:06]); Consumer Warrior '
+                                   '([YmCEqLCbD3s @ 00:08:37])'],
+                                  ['Safe deposit contents sell at a fire-sale price',
+                                   'Diamonds worth $50,000 to $100,000 can go to the highest bidder at a '
+                                   "sheriff's execution sale",
+                                   'If the top bid is $1,000, only $1,000 gets credited against a $10,000 '
+                                   'judgment',
+                                   'Bobby Benjy ([a13Ojjc6ruw @ 00:06:17])'],
+                                  ['Sheriff lag after a bankruptcy filing',
+                                   'Getting the sheriff to notify the employer or bank can take weeks or '
+                                   'even months',
+                                   'Money taken after filing comes back but slowly; pre-filing levy money '
+                                   'may not return at all',
+                                   'Westgate Law ([Nb1quOaLNWk @ 00:01:52])'],
+                                  ['Employer botches the garnishment withholding amount',
+                                   'Small Georgia employers goof the amount and become liable for the '
+                                   'entire debt owed',
+                                   'Compliance liability sits on the employer, giving the creditor a '
+                                   'second party to collect from',
+                                   'Law Office of Jeffrey B. Kelly ([cHsptp1ujiI @ 00:02:54]); Thomson '
+                                   'Reuters ([hAq3ZiEtqk0 @ 00:05:09])'],
+                                  ['Corporate legal department pushes back on a multi-bank levy',
+                                   'American Airlines legal said it could not be done; the seven-year-old '
+                                   'judgment had been served on CT Corp',
+                                   'Mr. Grey held firm, said they sat on their rights, threatened suit, '
+                                   'and got the call that the money was coming',
+                                   'Mr. Grey Judgment Enforcement ([CLxNTh8V1qQ @ 00:01:01])'],
+                                  ['Debtor overcommits to an IRS payment agreement',
+                                   'A caller got stuck with a $2,000 a month IRS payment agreement with '
+                                   'nowhere to find the money',
+                                   'IRS National Standards for food, housing, and car costs decide '
+                                   "affordability, not the taxpayer's own estimate",
+                                   'Former IRS Agent Representation   4.2M Views ([wSIheT1KrFw @ '
+                                   '00:02:52])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Levy Operator Gate',
+                           'body': 'Run these four checks before committing filing fees and sheriff time '
+                                   'to a garnishment or levy, because each one is a place the '
+                                   'practitioners watched collections stall or reverse.',
+                           'items': ['Run the interest math before relying on a 10 percent garnishment; at '
+                                     '28 to 30 percent contract interest the balance can grow every month '
+                                     'and the garnishment never ends [Consumer Warrior — YmCEqLCbD3s @ '
+                                     '00:04:40].',
+                                     'Confirm the employer computes the withholding correctly; in Georgia '
+                                     'a botched amount by any small sum can make the employer liable for '
+                                     'the entire debt [Law Office of Jeffrey B. Kelly — cHsptp1ujiI @ '
+                                     '00:02:54].',
+                                     'Expect exemption fights right after the freeze: all-Social Security '
+                                     'accounts, the Arizona roughly $5,600 single-account exemption that '
+                                     'doubles for married couples, and joint accounts holding an adult '
+                                     "child's money [Consumer Warrior — YmCEqLCbD3s @ 00:07:38].",
+                                     'Once a bankruptcy notice lands, enforcement must stop and any money '
+                                     'taken from the account after filing goes back to the debtor, so '
+                                     'track the sheriff and the bank [Westgate Law — Nb1quOaLNWk @ '
+                                     '00:02:19].']}}],
+ 'pull_quote': '"To be precise, nobody can jail you for owing the money. People get jailed for ignoring '
+               'the court\'s orders." — Verdict (aWnv0AR52jY @ 00:18:27).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ["Confirm the judgment is entered, then pull the debtor's employer from the personal "
+                      'section of the credit report before applying for the writ of garnishment [Consumer '
+                      'Warrior — YmCEqLCbD3s @ 00:02:00].',
+                      'Apply for the writ of execution, then deliver the original to the sheriff with '
+                      'written instructions so a levy file gets opened [Bobby Benjy — a13Ojjc6ruw @ '
+                      '00:02:07].',
+                      'Levy several banks at once, four major banks or every bank in the geographical '
+                      'area, so at least one account gets caught [Mr. Grey Judgment Enforcement — '
+                      'CLxNTh8V1qQ @ 00:00:01].',
+                      'Force financial disclosure through the Florida 1.977 form and a deposition in aid '
+                      'of execution to map assets, income, and where they sit [Ziegler Diamond Law: Debt '
+                      'Fighters — _XHjLiGTAYw @ 00:01:40].',
+                      'Check social media for a new job or spouse, then pair a debtor subpoena with wage '
+                      'garnishments to bring the debtor to the table [Mr. Grey Judgment Enforcement — '
+                      'DYAsqrLyB-c @ 00:00:25].',
+                      'Apply every recovery to the balance and file a partial or full satisfaction of '
+                      'judgment with the court after each payout [Bobby Benjy — a13Ojjc6ruw @ 00:05:11].'],
+ 'statutory_citations': [{'title': "Mr. Grey Judgment Enforcement — Mr  Grey's bank levy strategy - How to "
+                                   'collect a judgment from a business [00:00:01]',
+                          'url': 'https://www.youtube.com/watch?v=CLxNTh8V1qQ&t=1s',
+                          'relevance': 'Primary practitioner testimony on the four-bank simultaneous levy '
+                                       'and handling corporate legal pushback.'},
+                         {'title': "Consumer Warrior — Bank Levy vs. Wage Garnishment... What's the "
+                                   'Difference? [00:04:40]',
+                          'url': 'https://www.youtube.com/watch?v=YmCEqLCbD3s&t=280s',
+                          'relevance': 'Primary practitioner testimony on the 10 percent Arizona cap, '
+                                       'contract interest, and indefinite garnishment.'},
+                         {'title': 'Bobby Benjy — California Money Judgment Enforcement Series - Part 5: '
+                                   'Bank Levies [00:01:17]',
+                          'url': 'https://www.youtube.com/watch?v=a13Ojjc6ruw&t=77s',
+                          'relevance': 'Primary practitioner testimony on the writ of execution, sheriff '
+                                       'levy workflow, and safe deposit box sales.'},
+                         {'title': 'Verdict — # What Happens If You Lose a Civil Lawsuit? Judgment & '
+                                   'Garnishment Explained [00:15:39]',
+                          'url': 'https://www.youtube.com/watch?v=aWnv0AR52jY&t=939s',
+                          'relevance': 'Primary practitioner testimony on state-by-state garnishment caps '
+                                       'and the four collection machines.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '0Kq_0NfOnMo',
+                       'title': 'Collecting Money After A Judgment - Wage Garnishment And Bank Levy',
+                       'channel': 'Jedidiah “Jed” McKeehan',
+                       'author': 'Jedidiah “Jed” McKeehan',
+                       'text': "Bank levy is a one-time thing; it's not an ongoing collection effort like "
+                               'a wage garnishment is.',
+                       'tip': "Bank levy is a one-time thing; it's not an ongoing collection effort like a "
+                              'wage garnishment is.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=0Kq_0NfOnMo&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=0Kq_0NfOnMo&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YmCEqLCbD3s',
+                       'title': "Bank Levy vs. Wage Garnishment... What's the Difference?",
+                       'channel': 'Consumer Warrior',
+                       'author': 'Consumer Warrior',
+                       'text': 'Many of these judgments have interest at the contract rate of interest, '
+                               "and with a defaulted credit card, that's usually right around 28 to 30%.",
+                       'tip': 'Many of these judgments have interest at the contract rate of interest, and '
+                              "with a defaulted credit card, that's usually right around 28 to 30%.",
+                       'timestamp': 280,
+                       'timestamp_seconds': 280,
+                       'timestamp_label': '[00:04:40]',
+                       'url': 'https://www.youtube.com/watch?v=YmCEqLCbD3s&t=280s',
+                       'markdown': '[00:04:40](https://www.youtube.com/watch?v=YmCEqLCbD3s&t=280s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YmCEqLCbD3s',
+                       'title': "Bank Levy vs. Wage Garnishment... What's the Difference?",
+                       'channel': 'Consumer Warrior',
+                       'author': 'Consumer Warrior',
+                       'text': 'In Arizona, at least in the year 2026, there is a bank account exemption '
+                               'that protects roughly $5,600 in your checking account or savings account.',
+                       'tip': 'In Arizona, at least in the year 2026, there is a bank account exemption '
+                              'that protects roughly $5,600 in your checking account or savings account.',
+                       'timestamp': 443,
+                       'timestamp_seconds': 443,
+                       'timestamp_label': '[00:07:23]',
+                       'url': 'https://www.youtube.com/watch?v=YmCEqLCbD3s&t=443s',
+                       'markdown': '[00:07:23](https://www.youtube.com/watch?v=YmCEqLCbD3s&t=443s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aWnv0AR52jY',
+                       'title': '# What Happens If You Lose a Civil Lawsuit? Judgment & Garnishment '
+                                'Explained',
+                       'channel': 'Verdict',
+                       'author': 'Verdict',
+                       'text': 'Under a federal regulation, when a bank receives a garnishment order, it '
+                               'must protect two months worth of directly deposited federal benefits '
+                               'without you filing anything.',
+                       'tip': 'Under a federal regulation, when a bank receives a garnishment order, it '
+                              'must protect two months worth of directly deposited federal benefits '
+                              'without you filing anything.',
+                       'timestamp': 1023,
+                       'timestamp_seconds': 1023,
+                       'timestamp_label': '[00:17:03]',
+                       'url': 'https://www.youtube.com/watch?v=aWnv0AR52jY&t=1023s',
+                       'markdown': '[00:17:03](https://www.youtube.com/watch?v=aWnv0AR52jY&t=1023s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a13Ojjc6ruw',
+                       'title': 'California Money Judgment Enforcement Series - Part 5: Bank Levies',
+                       'channel': 'Bobby Benjy',
+                       'author': 'Bobby Benjy',
+                       'text': "It could be an account in the name of the judgment debtor's spouse, or in "
+                               'the name of the judgment debtor plus some third party, and any one of '
+                               'those can successfully be levied upon.',
+                       'tip': "It could be an account in the name of the judgment debtor's spouse, or in "
+                              'the name of the judgment debtor plus some third party, and any one of those '
+                              'can successfully be levied upon.',
+                       'timestamp': 241,
+                       'timestamp_seconds': 241,
+                       'timestamp_label': '[00:04:01]',
+                       'url': 'https://www.youtube.com/watch?v=a13Ojjc6ruw&t=241s',
+                       'markdown': '[00:04:01](https://www.youtube.com/watch?v=a13Ojjc6ruw&t=241s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cHsptp1ujiI',
+                       'title': 'Wage Garnishment in Georgia - How Much Can They Take and How Do You Stop '
+                                'It?',
+                       'channel': 'Law Office of Jeffrey B. Kelly',
+                       'author': 'Law Office of Jeffrey B. Kelly',
+                       'text': 'If your employer messes up this garnishment at all by any small amount of '
+                               'money, they can become liable for the entire amount of the debt owed.',
+                       'tip': 'If your employer messes up this garnishment at all by any small amount of '
+                              'money, they can become liable for the entire amount of the debt owed.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=cHsptp1ujiI&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=cHsptp1ujiI&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CLxNTh8V1qQ',
+                       'title': "Mr  Grey's bank levy strategy - How to collect a judgment from a business",
+                       'channel': 'Mr. Grey Judgment Enforcement',
+                       'author': 'Mr. Grey Judgment Enforcement',
+                       'text': 'I have a four bank levy strategy, this is four major banks, and every time '
+                               'we do that money is sent back to the judgment debtor because we took too '
+                               'much.',
+                       'tip': 'I have a four bank levy strategy, this is four major banks, and every time '
+                              'we do that money is sent back to the judgment debtor because we took too '
+                              'much.',
+                       'timestamp': 1,
+                       'timestamp_seconds': 1,
+                       'timestamp_label': '[00:00:01]',
+                       'url': 'https://www.youtube.com/watch?v=CLxNTh8V1qQ&t=1s',
+                       'markdown': '[00:00:01](https://www.youtube.com/watch?v=CLxNTh8V1qQ&t=1s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CLxNTh8V1qQ',
+                       'title': "Mr  Grey's bank levy strategy - How to collect a judgment from a business",
+                       'channel': 'Mr. Grey Judgment Enforcement',
+                       'author': 'Mr. Grey Judgment Enforcement',
+                       'text': "Here's what happened: I get a call yesterday, your money's coming.",
+                       'tip': "Here's what happened: I get a call yesterday, your money's coming.",
+                       'timestamp': 106,
+                       'timestamp_seconds': 106,
+                       'timestamp_label': '[00:01:46]',
+                       'url': 'https://www.youtube.com/watch?v=CLxNTh8V1qQ&t=106s',
+                       'markdown': '[00:01:46](https://www.youtube.com/watch?v=CLxNTh8V1qQ&t=106s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iHnRz6R1jS8',
+                       'title': 'Stop Wage Garnishment? Appeal Judgments? || Live Debt Free || Good Credit '
+                                'Good Life',
+                       'channel': 'Brandon Weaver',
+                       'author': 'Brandon Weaver',
+                       'text': 'You have 6 months to appeal default judgments where the defendant was not '
+                               'personally served.',
+                       'tip': 'You have 6 months to appeal default judgments where the defendant was not '
+                              'personally served.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=iHnRz6R1jS8&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=iHnRz6R1jS8&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lfTu39ygsSI',
+                       'title': 'How To Stop Wage Garnishment Immediately',
+                       'channel': 'The DeVries Law Firm',
+                       'author': 'The DeVries Law Firm',
+                       'text': 'If you default on a federal student loan, the Department of Education can '
+                               'garnish up to 15% of your disposable income without going to court.',
+                       'tip': 'If you default on a federal student loan, the Department of Education can '
+                              'garnish up to 15% of your disposable income without going to court.',
+                       'timestamp': 269,
+                       'timestamp_seconds': 269,
+                       'timestamp_label': '[00:04:29]',
+                       'url': 'https://www.youtube.com/watch?v=lfTu39ygsSI&t=269s',
+                       'markdown': '[00:04:29](https://www.youtube.com/watch?v=lfTu39ygsSI&t=269s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RAT4YjdyfEo',
+                       'title': 'Bank Account Garnishments',
+                       'channel': 'Steiner Law Group, LLC',
+                       'author': 'Steiner Law Group, LLC',
+                       'text': 'Creditors often will request writs of garnishment other than wages for all '
+                               'bank accounts in a geographical area to cast as wide a net as possible.',
+                       'tip': 'Creditors often will request writs of garnishment other than wages for all '
+                              'bank accounts in a geographical area to cast as wide a net as possible.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=RAT4YjdyfEo&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=RAT4YjdyfEo&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Nb1quOaLNWk',
+                       'title': 'How To Stop Wage Garnishments and Bank Levies | Bankruptcy Law',
+                       'channel': 'Westgate Law',
+                       'author': 'Westgate Law',
+                       'text': 'Getting the sheriff to notify your employer or notify the bank can '
+                               'sometimes take weeks or even months.',
+                       'tip': 'Getting the sheriff to notify your employer or notify the bank can '
+                              'sometimes take weeks or even months.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=Nb1quOaLNWk&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=Nb1quOaLNWk&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wSIheT1KrFw',
+                       'title': 'Preventing IRS Bank Levy and Wage Garnishment: Tips to Halt Enforcement '
+                                'Actions Immediately',
+                       'channel': 'Former IRS Agent Representation   4.2M Views',
+                       'author': 'Former IRS Agent Representation   4.2M Views',
+                       'text': "When you call, what you think you're paying and what IRS is going to allow "
+                               'you to pay are going to be two different things.',
+                       'tip': "When you call, what you think you're paying and what IRS is going to allow "
+                              'you to pay are going to be two different things.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=wSIheT1KrFw&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=wSIheT1KrFw&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Nl9nVJJo6Xs',
+                       'title': 'What Happens After A Writ Of Execution?',
+                       'channel': 'County Portal Law',
+                       'author': 'County Portal Law',
+                       'text': 'Sometimes, the sheriff cannot find any assets and the writ is returned '
+                               'unsatisfied; if this happens, the creditor must try again later.',
+                       'tip': 'Sometimes, the sheriff cannot find any assets and the writ is returned '
+                              'unsatisfied; if this happens, the creditor must try again later.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=Nl9nVJJo6Xs&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=Nl9nVJJo6Xs&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hAq3ZiEtqk0',
+                       'title': 'Financial Literacy: Understanding and Managing Debt–Segment 7: '
+                                'Garnishments, Liens, & Judgements',
+                       'channel': 'Thomson Reuters',
+                       'author': 'Thomson Reuters',
+                       'text': 'Liability for failure to comply with a garnishment order falls on the '
+                               "employer's shoulders.",
+                       'tip': 'Liability for failure to comply with a garnishment order falls on the '
+                              "employer's shoulders.",
+                       'timestamp': 309,
+                       'timestamp_seconds': 309,
+                       'timestamp_label': '[00:05:09]',
+                       'url': 'https://www.youtube.com/watch?v=hAq3ZiEtqk0&t=309s',
+                       'markdown': '[00:05:09](https://www.youtube.com/watch?v=hAq3ZiEtqk0&t=309s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_XHjLiGTAYw',
+                       'title': 'What happens After a Judgement is Entered?',
+                       'channel': 'Ziegler Diamond Law: Debt Fighters',
+                       'author': 'Ziegler Diamond Law: Debt Fighters',
+                       'text': 'The company that has the judgment usually will first execute on the '
+                               'garnishment, and after those assets have been frozen the burden is on the '
+                               'judgment debtor to file a claim of exemption.',
+                       'tip': 'The company that has the judgment usually will first execute on the '
+                              'garnishment, and after those assets have been frozen the burden is on the '
+                              'judgment debtor to file a claim of exemption.',
+                       'timestamp': 255,
+                       'timestamp_seconds': 255,
+                       'timestamp_label': '[00:04:15]',
+                       'url': 'https://www.youtube.com/watch?v=_XHjLiGTAYw&t=255s',
+                       'markdown': '[00:04:15](https://www.youtube.com/watch?v=_XHjLiGTAYw&t=255s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '74MBbfTO3Po',
+                       'title': 'How to stop a bank levy or wage garnishment?',
+                       'channel': 'Revermann Law',
+                       'author': 'Revermann Law',
+                       'text': "They send what's called a Notice of Intent to Levy by certified mail, and "
+                               'once 30 days goes by, they have the right to go to your bank or to your '
+                               'employer.',
+                       'tip': "They send what's called a Notice of Intent to Levy by certified mail, and "
+                              'once 30 days goes by, they have the right to go to your bank or to your '
+                              'employer.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=74MBbfTO3Po&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=74MBbfTO3Po&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DYAsqrLyB-c',
+                       'title': 'Judgment enforcement with wage garnishments | how do you collect on a '
+                                'small claims judgement order!',
+                       'channel': 'Mr. Grey Judgment Enforcement',
+                       'author': 'Mr. Grey Judgment Enforcement',
+                       'text': 'I subpoenaed [the debtor] to come and answer questions and I also did '
+                               "what's called wage garnishments.",
+                       'tip': 'I subpoenaed [the debtor] to come and answer questions and I also did '
+                              "what's called wage garnishments.",
+                       'timestamp': 25,
+                       'timestamp_seconds': 25,
+                       'timestamp_label': '[00:00:25]',
+                       'url': 'https://www.youtube.com/watch?v=DYAsqrLyB-c&t=25s',
+                       'markdown': '[00:00:25](https://www.youtube.com/watch?v=DYAsqrLyB-c&t=25s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

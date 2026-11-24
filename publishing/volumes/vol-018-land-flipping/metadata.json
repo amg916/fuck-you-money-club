@@ -8,49 +8,49 @@
       "FLIPPING"
     ],
     "deck": [
-      "PRICE BY GIS DATA. VERIFY LEGAL ACCESS.",
-      "SUBDIVIDE FOR SPREAD."
+      "BUY VACANT PARCELS FROM APATHETIC OWNERS AT A DEEP DISCOUNT AND RESELL NEAR MARKET",
+      "SCRUBBED COUNTY LISTS, HAND-COMPED OFFERS, AND MAIL, TEXT, AND CALL VOLUME THAT CLOSES DEALS"
     ],
-    "lead": "Data-Driven Vacant & Infill Land Acquisitions, FEMA/Perc/Easement Underwriting & Fast Cash or Compliant Note Dispositions",
-    "summary": "Eliminate landlocked and wetland traps before closing, buy below market via ranged mailers, and unlock margin through minor splits.",
+    "lead": "Land flippers buy vacant parcels from apathetic, free-and-clear owners at a deep discount, verify perc, access, and flood risk, and resell to builders, investors, or retail buyers, with texting and direct mail feeding the pipeline at a reported 3x to 23x return on ad spend.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies covering the full land flipping cycle, from market selection and list building through due diligence, subdividing, title, selling, and alternative land uses. Every metric, pro-tip, operator gate, and quote carries timestamped inline attribution to the practitioner channel and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The Land Flipping Business Model",
+      "Direct Mail Campaigns for Vacant Land",
+      "Cold Calling, Texting, and Multichannel Deal Acquisition",
+      "Data Tools and List Building",
+      "Comping and Pricing Vacant Land",
+      "Due Diligence: Perc Tests, Septic, and Site Checks",
+      "Access, Easements, and Flood Zones",
+      "Subdividing Land for Profit",
+      "Approvals, Restrictions, and Encumbrances",
+      "Offers, Double Closing, and Title",
+      "Selling Land: Buyers, Seller Financing, and Drone Media",
+      "Alternative Land Uses: RV Parks, Solar, and Battery Storage"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "PICK THE COUNTY",
+        "Target counties with at least 200 land sales a year, days on market under 90 to 120, and fewer active listings than sold listings."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "BUILD AND SCRUB THE LIST",
+        "Pull free-and-clear, inherited, or absentee owners, then strip the 40% to 50% of parcels with wetlands, flood, slope, or bad access and the garbage records."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "PRICE THE OFFERS",
+        "Hand-comp acreage bands from median price per acre minus agent, closing, and lender costs, and never let software auto-price the offers."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "RUN OUTREACH",
+        "Send priced mailers at roughly 58 to 69 cents a piece, short texts near 100 characters, and cold calls, then remail and keep working stale leads."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "VERIFY THE PARCEL",
+        "Confirm soil and septic where there is no city sewer, legal deeded access, and flood status, extending inspection 30 to 45 days before earnest money goes hard."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "EXIT THE DEAL",
+        "Resell to builders, investors, or retail buyers, or subdivide to manufacture margin, because the deal picks the exit."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "LAND FLIPPING",
-  "subtitle": "The Complete Playbook for $200,000–$1,500,000 USD in Annual Land Sales: Launch with 1 FT + 3 C (4 People), Scale to 2 FT + 4 C",
+  "subtitle": "Buy Deep, Scrub Hard, Sell on Terms: Practitioner Playbooks for Priced Mail and Texting, Per-Acre Comping, Perc and Access Checks, Subdivides and Double Closes, Seller Financing, and RV and Energy Land Plays",
   "chapter_count": 12,
-  "total_word_count": 77700,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 72342,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

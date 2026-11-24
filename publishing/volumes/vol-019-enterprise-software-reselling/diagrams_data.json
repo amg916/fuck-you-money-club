@@ -1,338 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-authorized-resale-workflow",
-      "chart_type": "process_flow",
-      "title": "From Vendor Authorization to Collected Renewal",
-      "subtitle": "Five operating stages for license resale and implementation delivery.",
+      "diagram_id": "diag-01-var-launch-sequence",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "The scorecard uses gross license resale and service billings, with vendor costs included in margin. Customer cloud consumption outside the reseller contract is excluded. For actual reporting, assess principal-versus-agent treatment separately; a commission-only arrangement cannot inherit gross resale revenue merely because the reseller helped arrange the purchase.",
-      "caption": "Maintain one linked evidence trail across vendor authorization, registered opportunity, customer order, entitlement delivery, vendor settlement, and renewal ownership.",
+      "chart_type": "process_flow",
+      "title": "Launching a VAR Motion That Pays",
+      "subtitle": "License as entry ticket, services as the profit layer",
+      "caption": "Operators sequence a VAR motion from proven direct sales through published implementation ballparks, a full license stack, transparent quoting and go-live tracking.",
+      "assumptions_note": "Step order follows the operator gates in Chapter Q1. No durations or margins are added beyond those stated by the cited practitioners.",
+      "note": "Sources: Phil Morettini [L1YsH5QkIus @ 00:02:18]; Channel Marketing Academy [vLO0gA3TgxE @ 00:01:38]; Stuart Sutton [yasPH-UlTQo @ 00:08:10]; Ben Fox of TC2 via Staying Connected [BJPNVL1CIiM @ 00:04:10]; Summer Zaldivar [4qYKEjVIAjc @ 00:00:36].",
       "stages": [
         {
-          "label": "Authorize",
-          "value": "Document program rights before offering licenses",
-          "numeric_value": 1.0,
-          "detail": "Confirm vendor territory, products, customer eligibility, deal-registration rules, and resale rights. Distinguish AWS Marketplace CPPO selling authorization from Microsoft CSP direct-bill or indirect-reseller responsibilities."
+          "step": "01",
+          "label": "Prove direct sales first",
+          "value": "Step 1",
+          "detail": "Phil Morettini: no one can sell your product if you cannot, and VARs will not create demand for a vendor."
         },
         {
-          "label": "Qualify",
-          "value": "Validate buyer authority and renewal timing",
-          "numeric_value": 2.0,
-          "detail": "Use Salesforce or HubSpot to record the procurement owner, incumbent contract, renewal date, seat inventory, budget evidence, and competitive channel position."
+          "step": "02",
+          "label": "Publish implementation ballparks",
+          "value": "Step 2",
+          "detail": "Entry, medium and heavy ballparks such as a month and a half, six months and two years; a $50,000 surprise on a $5,000 buyer embarrasses the VAR."
         },
         {
-          "label": "Quote",
-          "value": "Lock vendor economics and implementation scope",
-          "numeric_value": 3.0,
-          "detail": "Generate a versioned quote from current vendor pricing; separate license charges, deployment fees, marketplace charges, payment dates, and change-order rates."
+          "step": "03",
+          "label": "Stack setup, minimum and usage fees",
+          "value": "Step 3",
+          "detail": "Stuart Sutton layers setup fees, monthly minimums, usage pricing and per-hour customization; the minimum covers subscribers whose usage falls below the cost of cutting an invoice."
         },
         {
-          "label": "Deliver",
-          "value": "Reconcile purchased licenses against accepted delivery",
-          "numeric_value": 4.0,
-          "detail": "Verify customer tenant identifiers, assign entitlements, complete the implementation checklist, and capture acceptance without retaining unnecessary privileged access."
+          "step": "04",
+          "label": "Break out markup and tax lines",
+          "value": "Step 4",
+          "detail": "Ben Fox has seen a 60 percent OEM discount passed through as 58 percent, and customs and import fees disguised as taxes."
         },
         {
-          "label": "Collect and renew",
-          "value": "Match settlements and activate renewal alerts",
-          "numeric_value": 5.0,
-          "detail": "Reconcile customer receipts, marketplace remittances, vendor invoices, and credits. Schedule 120-, 90-, and 60-day renewal alerts with named account ownership."
+          "step": "05",
+          "label": "Track go-live and active users",
+          "value": "Step 5",
+          "detail": "Summer Zaldivar: of 20 at-risk high-volume customers, eight were remediated via premier support, saving over 250,000 and lifting renewal rate by 5 percent."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-enterprise-opportunity-funnel",
-      "chart_type": "funnel",
-      "title": "A Nested Annual Enterprise Sales Cohort",
-      "subtitle": "100 target accounts narrow to seven collected customer contracts.",
+      "diagram_id": "diag-02-csp-commitment-funnel",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative mature-year cohort, not an observed conversion benchmark. Each stage is a subset of the preceding stage. Seven contracts averaging $200,000 in gross license and service billings produce the $1,400,000 Base-Case revenue. Assume delivery, billing, and collection occur within the modeled year.",
-      "caption": "Track conversion and elapsed days separately: the canonical time to first deal is 3–9 months, so these annual results are not a first-month sales commitment.",
+      "chart_type": "funnel",
+      "title": "Microsoft CSP Commitment Ladder",
+      "subtitle": "Direct-bill costs narrowing down to the indirect floor",
+      "caption": "Direct bill now demands a $1 million trailing revenue bar, a billing marketplace and a paid support plan, while indirect resellers stay authorized on $1,000 a year.",
+      "assumptions_note": "Stages are ordered by dollar commitment, not by customer conversion. Conversion text quotes practitioner commentary and adds no computed rates.",
+      "note": "Sources: Jeff Edwards and Scott May of Stratos Cloud Alliance [rV-Q2IVur6I @ 00:03:12, 00:08:45, 00:12:14]; Pax8 APAC [Xywyds1IfvM @ 00:05:09]; David Bujaider of Manage Protect [Je2jbg9tm0Q @ 00:09:37].",
       "stages": [
         {
-          "label": "Target accounts",
-          "value": "100 named enterprise accounts with channel fit",
-          "numeric_value": 100.0,
-          "detail": "Create a deduplicated account cohort with a compatible software estate, supported geography, identifiable buyer, and documented renewal or deployment trigger."
+          "label": "Direct-bill CSP revenue bar",
+          "value": 1000000,
+          "display": "$1,000,000 trailing CSP revenue",
+          "conversion": "Up from $300,000; Pax8 expects upwards of two-thirds of direct partners to move indirect",
+          "detail": "Also requires a solutions partner designation and a heavier security score."
         },
         {
-          "label": "Qualified discovery",
-          "value": "40 accounts; 40% of the initial cohort",
-          "numeric_value": 40.0,
-          "detail": "Confirm a reachable procurement owner, real purchasing timeline, vendor eligibility, and a problem that can be solved within the pod's delivery capacity."
+          "label": "Direct-bill billing marketplace build",
+          "value": 100000,
+          "display": "Upwards of $100,000",
+          "conversion": "Initial investment, then maintained in-house",
+          "detail": "Scott May: direct-bill partners build and run the transacting marketplace with their own people and money."
         },
         {
-          "label": "Validated opportunities",
-          "value": "20 accounts; 50% of qualified discovery",
-          "numeric_value": 20.0,
-          "detail": "Verify license quantities, budget ownership, technical fit, and the applicable deal-registration position before investing in detailed solution design."
+          "label": "Premier support plan spend",
+          "value": 50000,
+          "display": "About $50,000 annually",
+          "conversion": "Basic plan at least 15k if not more",
+          "detail": "A premier or advanced support plan becomes mandatory for direct bill."
         },
         {
-          "label": "Executable proposals",
-          "value": "10 accounts; 50% of validated opportunities",
-          "numeric_value": 10.0,
-          "detail": "Issue customer-specific quotes or private offers with confirmed vendor pricing, purchasing route, implementation scope, acceptance terms, and collection exposure."
+          "label": "Indirect rebate threshold",
+          "value": 25000,
+          "display": "$25,000 to chase rebates",
+          "conversion": "Stratos: indirect resellers earn the exact same back-end incentives as direct sellers",
+          "detail": "Rebate eligibility for indirect resellers."
         },
         {
-          "label": "Collected contracts",
-          "value": "7 accounts; 70% of executable proposals",
-          "numeric_value": 7.0,
-          "detail": "Seven times $200,000 equals $1,400,000 in gross annual resale and service billings. Vendor acquisition costs remain expenses rather than additional revenue."
+          "label": "Indirect authorization floor",
+          "value": 1000,
+          "display": "$1,000 USD (about $1,500 AUD) per rolling 12 months",
+          "conversion": "Minimum to stay an authorized CSP",
+          "detail": "Confirm the Partner Center legal entity, address and current contact, then have a global admin accept the MPA."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-base-case-profit-waterfall",
-      "chart_type": "waterfall",
-      "title": "Base-Case Gross Billings to 14.0% Owner Net",
-      "subtitle": "$1,400,000 gross revenue less $1,204,000 costs equals $196,000.",
+      "diagram_id": "diag-03-partner-mix-waterfall",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Six bars: the first is an opening total, the middle four are signed deductions, and the last is a closing total rather than another additive movement. Cost allocations are illustrative; the canonical revenue, margin, and owner net are fixed. All operating charges are contained in the four expense buckets; owner-level personal taxes are outside this model.",
-      "caption": "Vendor costs consume 70.0% of gross revenue; delivery, staffing, and overhead consume another 16.0%. The remaining 14.0% is the canonical $196,000 annual owner net profit.",
-      "stages": [
+      "chart_type": "waterfall",
+      "title": "From Boxes to Services",
+      "subtitle": "Partner revenue mix and a UK partner's services delivery split",
+      "caption": "Hardware is down to 16 percent of partner revenue, and a large UK services-led partner outsources 60 percent of services delivery to 300+ providers.",
+      "assumptions_note": "Two percentage waterfalls share one chart, each starting from a 100 percent base implied by the reported shares. Deduction values are magnitudes; kind sets direction.",
+      "note": "Sources: Jay McBain of Canalys via Channel Partners Events [SwebwmaZR2I @ 00:02:55]; Sophia of TD SYNNEX [2qmTwyQCa_o @ 00:02:25, 00:02:45].",
+      "bars": [
         {
-          "label": "Gross revenue",
-          "value": "$1,400,000 annual license resale and service billings",
-          "numeric_value": 1400000.0,
-          "detail": "Opening total includes only the reseller's modeled license and service sales, excluding unrelated customer cloud spend and sales taxes collected for remittance."
+          "label": "Partner revenue mix",
+          "value": 100,
+          "display": "100%",
+          "kind": "total"
         },
         {
-          "label": "Vendor acquisition",
-          "value": "Subtract $980,000; 70.0% of gross revenue",
-          "numeric_value": -980000.0,
-          "detail": "Illustrative software acquisition and distributor charges leave $420,000 before delivery and operating expenses. Do not count prospective vendor rebates before earned."
+          "label": "Hardware share",
+          "value": 16,
+          "display": "-16%",
+          "kind": "deduction"
         },
         {
-          "label": "Contract delivery",
-          "value": "Subtract $84,000; 6.0% of gross revenue",
-          "numeric_value": -84000.0,
-          "detail": "Three contractor seats share $84,000 in annual engagement spend for scoped implementation, license reconciliation, and specialist support; seats are not full-time equivalents."
+          "label": "Software and services share",
+          "value": 84,
+          "display": "84%",
+          "kind": "result"
         },
         {
-          "label": "Full-time staffing",
-          "value": "Subtract $98,000; 7.0% of gross revenue",
-          "numeric_value": -98000.0,
-          "detail": "Two full-time seats share an illustrative loaded annual staffing budget of $98,000. Higher local compensation requires additional contribution or reduces owner net."
+          "label": "UK partner services delivered",
+          "value": 100,
+          "display": "100%",
+          "kind": "total"
         },
         {
-          "label": "Operating overhead",
-          "value": "Subtract $42,000; 3.0% of gross revenue",
-          "numeric_value": -42000.0,
-          "detail": "Illustrative overhead includes marketplace charges not already in vendor costs, CRM, insurance, professional services, collection losses, and other operating charges."
+          "label": "Outsourced to 300+ UK providers",
+          "value": 60,
+          "display": "-60%",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net",
-          "value": "$196,000 retained; exactly 14.0% net margin",
-          "numeric_value": 196000.0,
-          "detail": "$1,400,000 minus $980,000 minus $84,000 minus $98,000 minus $42,000 equals $196,000. Non-vendor operating costs average $18,666.67 monthly, within the canonical range."
+          "label": "Delivered in-house",
+          "value": 40,
+          "display": "40%",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-channel-contribution-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Five Channel and Service Offers",
-      "subtitle": "Illustrative contribution yields after vendor and direct delivery costs.",
+      "diagram_id": "diag-04-partner-margin-bands",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Bars show contribution as a percentage of each offer's gross billings, before shared staffing and overhead; they are not net margins or vendor-published discounts. Each example uses $100,000 gross billings. These independent examples are not a weighted portfolio forecast.",
-      "caption": "Canonical annual outcomes remain Conservative: $300,000 at 8% equals $24,000; Base: $1,400,000 at 14.0% equals $196,000; Scaled: $2,500,000 at 20% equals $500,000. The first two use 2 FT + 3 C; Scaled uses 3 FT + 4 C.",
-      "stages": [
+      "chart_type": "horizontal_bars",
+      "title": "Reseller Margin Bands in Practice",
+      "subtitle": "Where operators set, and dispute, partner economics",
+      "unit": "percent",
+      "caption": "Ted Finch's tier template runs 10/20/30 percent, Luasai puts the combined distributor and VAR take at 5 to 10 percent, and Viktor's guest says 20 to 30 percent usually is not enough.",
+      "assumptions_note": "Single stated values repeat across min, max and typical. For stated ranges without a typical figure, typical equals the stated lower bound.",
+      "note": "Sources: Ted Finch tier template (Chapter Q2 summary); Luasai [9ijiF4Aas8o @ 00:14:38]; Viktor from Sales guest [6Z4v3jibmMw @ 00:07:14].",
+      "bars": [
         {
-          "label": "CSP seat renewals",
-          "value": "18% contribution after directly attributable costs",
-          "numeric_value": 18.0,
-          "detail": "$100,000 gross billings less $82,000 vendor and direct support costs leaves $18,000. Verify renewal pricing, cancellation windows, and responsibility for unpaid seats."
+          "label": "Distributor plus VAR combined take",
+          "min": 5,
+          "max": 10,
+          "typical": 5,
+          "display": "5%, maximum 10% (Luasai)"
         },
         {
-          "label": "CPPO license offers",
-          "value": "24% contribution after directly attributable costs",
-          "numeric_value": 24.0,
-          "detail": "$100,000 gross billings less $76,000 vendor, marketplace, and direct execution costs leaves $24,000. Confirm the selling authorization and actual settlement calendar."
+          "label": "Authorized tier margin",
+          "min": 10,
+          "max": 10,
+          "typical": 10,
+          "display": "10% (Ted Finch template)"
         },
         {
-          "label": "Security software deployments",
-          "value": "30% contribution after directly attributable costs",
-          "numeric_value": 30.0,
-          "detail": "$100,000 gross billings less $70,000 license and deployment costs leaves $30,000. Price integrations explicitly and separate customer acceptance from open-ended remediation."
+          "label": "Gold tier margin",
+          "min": 20,
+          "max": 20,
+          "typical": 20,
+          "display": "20% (Ted Finch template)"
         },
         {
-          "label": "Data-platform migrations",
-          "value": "35% contribution after directly attributable costs",
-          "numeric_value": 35.0,
-          "detail": "$100,000 gross billings less $65,000 vendor and migration costs leaves $35,000. Meter migration effort and exclude customer infrastructure consumption outside the contract."
+          "label": "Platinum tier margin",
+          "min": 30,
+          "max": 30,
+          "typical": 30,
+          "display": "30% with a $250K quota (Ted Finch template)"
         },
         {
-          "label": "Workflow application implementations",
-          "value": "42% contribution after directly attributable costs",
-          "numeric_value": 42.0,
-          "detail": "$100,000 gross billings less $58,000 license and delivery costs leaves $42,000. Limit custom connectors, document acceptance tests, and charge separately for scope changes."
+          "label": "Band called insufficient",
+          "min": 20,
+          "max": 30,
+          "typical": 20,
+          "display": "20-30% usually is not going to be enough (Viktor's guest)"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-resale-preflight-decisions",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before a Binding Customer Offer",
-      "subtitle": "Pass each applicable branch; resolve failures before committing spend.",
+      "diagram_id": "diag-05-cppo-readiness-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Apply checks to the actual product, buyer, geography, procurement route, and data access. Reseller authorization is a contractual requirement; statutory duties depend on the transaction. The numbered stages are sequential decision nodes, not risk scores.",
-      "caption": "Store the supporting evidence and decision owner with the opportunity record; a vendor discount alone does not resolve license rights, procurement duties, data access, or collection risk.",
-      "stages": [
+      "chart_type": "decision_tree",
+      "title": "Channel Partner Private Offer Readiness",
+      "subtitle": "Four gates before an AWS CPPO goes to the buyer",
+      "caption": "AWS walks resellers through listing eligibility, resale authorization, buyer targeting and cash forecasting before a CPPO is sent.",
+      "assumptions_note": "Gate order mirrors the Chapter Q5 operator gates. Payment timing uses only the 25-day average lag and the 7th-10th disbursement window reported by AWS.",
+      "note": "Sources: Amazon Web Services [PkznZxwv3eg @ 00:01:43, 00:08:13, 00:12:57]; Amazon Web Services [pOUxsKDRzvM @ 00:02:26]; Amazon Web Services [vKzo7FINzss @ 00:02:42].",
+      "nodes": [
         {
-          "label": "Distribution rights",
-          "value": "Authorized product, territory, customer, and license use?",
-          "numeric_value": 1.0,
-          "detail": "Yes: attach current vendor authorization and license terms. No: obtain permission or remove the product. 17 U.S.C. 106 governs exclusive rights; do not assume 17 U.S.C. 109 authorizes transfers of cloud subscriptions or every licensed software arrangement."
+          "gate": "G1",
+          "question": "Does the ISV have a paid listing, and are you a registered AWS Marketplace seller?",
+          "pass_next": "G2",
+          "fail_action": "Do not quote; BYOL and free products are excluded from CPPO."
         },
         {
-          "label": "Procurement and payment",
-          "value": "Valid purchasing route with financeable collection exposure?",
-          "numeric_value": 2.0,
-          "detail": "Yes: verify buyer authority, order documents, vendor due dates, and cash coverage. No: revise terms or decline unfunded exposure. For federal purchases, apply FAR 12.212, applicable award clauses such as FAR 52.212-4, and FAR 4.1102 registration requirements and exceptions."
+          "gate": "G2",
+          "question": "Have you accepted the seller's reseller agreement, and is the resale authorization inside its validity window?",
+          "pass_next": "G3",
+          "fail_action": "Hold the offer build; push the ISV for a recurring authorization instead of a one-time discount."
         },
         {
-          "label": "Data-processing duties",
-          "value": "Documented access scope and applicable processing terms?",
-          "numeric_value": 3.0,
-          "detail": "Yes: use least-privilege access and a removal checklist. No: complete required contracts before accessing customer data. California Civil Code 1798.100(d) applies to specified disclosures by covered businesses; 16 CFR 314.4(f) addresses covered financial institutions' service-provider oversight."
+          "gate": "G3",
+          "question": "Will the buyer receive both the private offer link and the targeted AWS account ID?",
+          "pass_next": "G4",
+          "fail_action": "Put the account ID next to the link in the offer email; the buyer must be logged into that exact account."
         },
         {
-          "label": "Export and channel exposure",
-          "value": "Permitted destination and stable documented vendor economics?",
-          "numeric_value": 4.0,
-          "detail": "Yes: retain product classification, customer screening evidence, quote expiry, and vendor price protection. No: resolve restrictions or decline the transaction. Assess EAR scope under 15 CFR 734.3 and applicable restrictions under parts 744 and 746; escalate applicable OFAC restrictions before fulfillment."
+          "gate": "G4",
+          "question": "Does the forecast pad for the 25-day average payment lag and any net 30, 45 or 60 terms?",
+          "pass_next": "Send the offer; cash lands between the 7th and 10th of the month after invoicing.",
+          "fail_action": "Pad the revenue forecast before committing numbers."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-five-to-seven-person-pod",
-      "chart_type": "org_architecture",
-      "title": "Five Core Seats, Two Explicit Scale Additions",
-      "subtitle": "Conservative and Base: 2 FT + 3 C; Scaled: 3 FT + 4 C.",
+      "diagram_id": "diag-06-public-sector-desk",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each stage represents one person, with numeric_value equal to one seat. The first five seats form the active core pod; the last two are conditional scale additions. Contractor seats represent retained people, not full-time labor commitments.",
-      "caption": "Keep commercial ownership and operational control in the two core full-time seats. Add the third full-time seat and fourth contractor only when workload and funded economics support them.",
-      "stages": [
+      "chart_type": "org_architecture",
+      "title": "Public Sector Reseller Desk",
+      "subtitle": "Contract vehicles at the center, risk controls on every spoke",
+      "caption": "Public sector resellers win on contract vehicles, not relationships, and pair schedule and marketplace roles with pricing and vendor-risk controls.",
+      "assumptions_note": "Roles are grouped from the Chapter Q11 mechanics; no practitioner stated a headcount, so none is given.",
+      "note": "Sources: Clovity [fwAcWt5Q8oA @ 00:06:37]; GSA trainer [NVfgGOTkm4Q @ 00:02:34, 00:10:16]; How To Sell To & Win Federal Government Contracts [p3DsAuDE32c @ 00:12:11]; AWS Public Sector [F4gkR0s1Blw @ 00:02:10]; SecureOps with Ayden Connor [fOUGaSjlTBY @ 00:00:17]; Leegality [DeATzRK3azc @ 00:03:22].",
+      "center": {
+        "role": "Public sector reseller lead",
+        "headcount": "Not stated in practitioner testimony",
+        "focus": "Efficiency through contract vehicles; GSA schedule buys run about 10 days versus about 270 on the open market"
+      },
+      "spokes": [
         {
-          "label": "Channel principal",
-          "value": "Core seat one: full-time commercial owner",
-          "numeric_value": 1.0,
-          "detail": "Own vendor relationships, deal registration, pricing exceptions, strategic accounts, and contribution review. Check channel conflict before promising exclusivity."
+          "role": "GSA schedule manager",
+          "type": "Contract vehicle",
+          "kpi": "0.75% IFF reported under the correct SIN; $25,000 annual sales minimum; avoid the 60%+ zero-sales group"
         },
         {
-          "label": "Revenue operations lead",
-          "value": "Core seat two: full-time operating owner",
-          "numeric_value": 1.0,
-          "detail": "Own quote generation, CRM hygiene, purchase-order matching, license reconciliation, receivables aging, and automated renewal alerts tied to verified contract dates."
+          "role": "AWS private offer lead",
+          "type": "Marketplace channel",
+          "kpi": "1-60 month terms, up to 60 payments, naso or bid terms replacing commercial terms"
         },
         {
-          "label": "Implementation architect",
-          "value": "Core seat three: scoped delivery contractor",
-          "numeric_value": 1.0,
-          "detail": "Translate discovery into a bounded deployment plan, estimate integrations, define acceptance tests, and prevent unpaid implementation work from absorbing spread."
+          "role": "Pricing analyst",
+          "type": "Rate governance",
+          "kpi": "No commercial quote below the GSA rate; CALC benchmarking; counteroffer reply by close of business tomorrow"
         },
         {
-          "label": "License operations specialist",
-          "value": "Core seat four: entitlement reconciliation contractor",
-          "numeric_value": 1.0,
-          "detail": "Match ordered products to customer tenants and active seats, investigate vendor invoice discrepancies, and produce evidence for renewal quantity decisions."
-        },
-        {
-          "label": "Technical support specialist",
-          "value": "Core seat five: scheduled support contractor",
-          "numeric_value": 1.0,
-          "detail": "Handle defined support windows, document recurring incidents, escalate product defects to the vendor, and keep unsupported customizations outside standard scope."
-        },
-        {
-          "label": "Expansion account manager",
-          "value": "Scaled addition: third full-time operating seat",
-          "numeric_value": 1.0,
-          "detail": "Activate for the seven-person model to own expansion and renewal negotiations. Measure contribution retained and overdue balances, not merely booked contract value."
-        },
-        {
-          "label": "Migration delivery specialist",
-          "value": "Scaled addition: fourth retained contractor seat",
-          "numeric_value": 1.0,
-          "detail": "Activate when signed implementation backlog exceeds the core delivery bench. Use project-specific statements of work and maintain independent acceptance evidence."
+          "role": "Vendor risk controller",
+          "type": "Payment and obligation control",
+          "kpi": "Bank-detail changes confirmed on a known number; every cancellation window tracked after a 75 percent remaining-contract liability case"
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-45000-reference",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate a $45,000 Startup Plan Without Hiding Vendor Float",
-      "subtitle": "Four buckets total $45,000 within the $15,000–$75,000 USD range.",
+      "diagram_id": "diag-07-private-offer-economics",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "numeric_value encodes the $45,000 central/reference startup allocation. Matching lean allocations total $15,000 and expanded allocations total $75,000, as detailed in each bucket. All amounts are USD. These are startup capital envelopes, not the Conservative, Base, and Scaled annual revenue scenarios. Displayed percentages are rounded to one decimal place.",
-      "caption": "The $45,000 reference plan separates vendor settlement float from operating reserves and setup spending; startup cash is not revenue. First deals may take 3–9 months, so recalculate runway against actual spending and vendor terms rather than assuming any envelope funds the entire wait.",
-      "stages": [
+      "chart_type": "stacked_comparison",
+      "title": "Where a $100 Private Offer Lands",
+      "subtitle": "AWS worked example of discount, listing fee and ISV net",
+      "total_range": "$100 list price to $72 ISV net revenue",
+      "caption": "A 20 percent private offer discount takes a $100 list to $80, and a 10 percent listing fee leaves the ISV $72.",
+      "assumptions_note": "The list price bucket is the reference total; the other three buckets decompose it. The $8 listing fee is 10 percent of the $80 customer price, as stated in the example.",
+      "note": "Source: Amazon Web Services worked example [qWl-wamuA-Q @ 00:10:25].",
+      "buckets": [
         {
-          "label": "Vendor settlement float",
-          "value": "$18,000 reference allocation; 40.0% of startup cash",
-          "numeric_value": 18000.0,
-          "detail": "Lean envelope: $6,000; expanded envelope: $30,000. Cover the gap between vendor payment and customer settlement. Do not accept orders whose uncovered exposure exceeds available cash and confirmed credit capacity."
+          "label": "List price reference",
+          "low": 100,
+          "high": 100,
+          "notes": "Starting list price in the AWS example"
         },
         {
-          "label": "Operating cash reserve",
-          "value": "$12,000 reference allocation; 26.7% of startup cash",
-          "numeric_value": 12000.0,
-          "detail": "Lean envelope: $4,000; expanded envelope: $20,000. At the canonical $5,000–$25,000 monthly operating range, this $12,000 reserve covers 2.4 to 0.48 months before receipts, excluding separately allocated vendor float."
+          "label": "Private offer discount",
+          "low": 20,
+          "high": 20,
+          "notes": "20 percent discount; AWS charges the customer $80"
         },
         {
-          "label": "Vendor enablement and delivery",
-          "value": "$9,000 reference allocation; 20.0% of startup cash",
-          "numeric_value": 9000.0,
-          "detail": "Lean envelope: $3,000; expanded envelope: $15,000. Fund required certifications, documented demonstration environments, deployment runbooks, and limited specialist preparation for the chosen product family."
+          "label": "AWS listing fee",
+          "low": 8,
+          "high": 8,
+          "notes": "10 percent listing fee on the $80 price"
         },
         {
-          "label": "Commercial systems and setup",
-          "value": "$6,000 reference allocation; 13.3% of startup cash",
-          "numeric_value": 6000.0,
-          "detail": "Lean envelope: $2,000; expanded envelope: $10,000. Establish CRM, quote templates, accounting integration, insurance, contract review, and focused account research without committing to broad paid acquisition."
+          "label": "ISV net revenue",
+          "low": 72,
+          "high": 72,
+          "notes": "AWS invoices, collects and disburses $72 to the ISV"
         }
       ]
     },
     {
-      "diagram_id": "diag-08-thirty-day-launch-roadmap",
-      "chart_type": "timeline_roadmap",
-      "title": "A Thirty-Day Sprint to a Ready Sales Operation",
-      "subtitle": "Build evidence, economics, and repeatable execution before scaling outreach.",
+      "diagram_id": "diag-08-audit-negotiation-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Milestones represent Days 1–7, 8–14, 15–21, and 22–30; numeric_value records each milestone's ending day. This sprint prepares the operating system and early pipeline. Canonical time to first deal remains 3–9 months.",
-      "caption": "Finish the month with a narrow product thesis, reconciled economics, a tested delivery workflow, and accountable prospect follow-up rather than an assumed closed sale.",
-      "stages": [
+      "chart_type": "timeline_roadmap",
+      "title": "Audit Defense and Negotiation Roadmap",
+      "subtitle": "Leverage exists before signature",
+      "caption": "Lock auditor terms, close license gaps, harden contract escalators and negotiate with a credible walk-away.",
+      "assumptions_note": "Weekly grouping is a sequencing frame only; practitioners cited 30-day respond and settle deadlines but no weekly schedule.",
+      "note": "Sources: SAMexpert TV [7shzxv1SUFc @ 00:10:22, 00:18:31, 00:54:49, 01:09:04, 01:15:49]; SAMexpert TV [S-D4c7b8-94 @ 00:14:57]; Virtualization Options LLC [xP4R2F8hbBw @ 00:06:54]; Virtualization Options LLC [fTqBORy9ePo @ 00:03:00, 00:05:39]; Heartland Business Systems [jqaG0NHe-0c @ 00:00:57].",
+      "weeks": [
         {
-          "label": "Days 1–7",
-          "value": "Choose one product family and verify channel access",
-          "numeric_value": 7.0,
-          "detail": "Select a buyer segment, request vendor authorization, map CPPO or CSP participation requirements, identify required certifications, and document unresolved eligibility items before making customer-facing resale claims."
+          "week": "Week 1",
+          "title": "Lock auditor kickoff terms",
+          "deliverable": "Direct NDA signed with the auditor; nothing handed over, not even the org structure",
+          "gate": "Written protocol of disagreement opened"
         },
         {
-          "label": "Days 8–14",
-          "value": "Build quote economics and settlement controls",
-          "numeric_value": 14.0,
-          "detail": "Create a versioned quote template and vendor-cost ledger. Reconcile $1,400,000 gross billings to $196,000 owner net in the Base model; stress-test delayed collections against the startup cash allocation."
+          "week": "Week 2",
+          "title": "Close compliance gaps",
+          "deliverable": "Per-user SPLA counts include everyone authorized through VNC, Guacamole or TeamViewer",
+          "gate": "Non-compliance below 5 percent, avoiding licenses at 125 percent of the discounted price list plus $27k-$40k in audit fees"
         },
         {
-          "label": "Days 15–21",
-          "value": "Test implementation and automate recurring account work",
-          "numeric_value": 21.0,
-          "detail": "Use an authorized demonstration tenant to test entitlement reconciliation, acceptance evidence, access removal, quote generation, and renewal alerts. Obtain contractor scopes with explicit effort limits and change-order pricing."
+          "week": "Week 3",
+          "title": "Harden contract terms",
+          "deliverable": "3-5 percent annual escalator cap against 15-25 percent uncapped drift over three years",
+          "gate": "Costed exit pilot complete, with discount sequenced last"
         },
         {
-          "label": "Days 22–30",
-          "value": "Launch targeted discovery and review operating evidence",
-          "numeric_value": 30.0,
-          "detail": "Research the initial 100-account cohort, begin relevant outreach, and record actual stage movement without assuming the annual funnel converts this month. Review authorization status, cash exposure, delivery readiness, and each opportunity's next dated action."
+          "week": "Week 4",
+          "title": "Negotiate or switch partner",
+          "deliverable": "Microsoft talks timed to its June year-end; midterm CSP transfer tool ready if the partner offers no renewal help",
+          "gate": "Walk-away position credible to the vendor"
         }
       ]
     }

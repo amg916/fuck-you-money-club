@@ -1,694 +1,838 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-first-probate-real-estate-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in probate real estate, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (4–18 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "County Dockets, Executor Authority, Municipal Distress Signals, Attorney Referrals, and Retained-Commission Pipeline Economics",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
-        "Score. This chapter turns 11 mapped plays into an authority-first sourcing "
-        "system: docket intelligence, property distress signals, professional referrals, "
-        "and executor service demand become verified conversations rather than indiscriminate "
-        "mailing lists. Start with one county, establish lawful contact routes, and measure "
-        "each transition from matched estate to collected commission. The first 3-to-10 "
-        "closed wins belong inside a 4–18 month planning window, with court delays and "
-        "family disputes explicitly tracked. Canonical annual owner profits are $24,000 "
-        "Conservative, $140,250 Base, and $315,000 Scaled. Revenue means retained brokerage "
-        "commissions after brokerage splits, never property sale proceeds, acquisition "
-        "principal, or contractor invoices."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$510,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine estate-property intersections instead of buying bereavement lists",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start in one county where your supervising broker can support probate "
-                    "listings and local title counsel can explain the sale path. Build a "
-                    "daily work queue from the superior court probate index, assessor parcel "
-                    "records, recorder instruments, and municipal enforcement portals. A "
-                    "petition identifies a possible estate, not an authorized seller; an "
-                    "assessor mailing address identifies a tax destination, not necessarily "
-                    "the owner or personal representative. Join records through parcel "
-                    "number, vesting name, property address, and case number, retaining each "
-                    "source URL and retrieval date. Require a human check before merging "
-                    "common names or contacting anybody. Exclude sealed records and avoid "
-                    "republishing family allegations or sensitive docket attachments. Use "
-                    "Airtable or a protected SQLite database for normalized records, with "
-                    "separate tables for estates, parcels, authority documents, contacts, and "
-                    "activities. One estate can own several parcels, while one parcel can "
-                    "involve multiple proceedings; forcing everything into a single lead "
-                    "row produces duplicate outreach and mistaken authority assumptions. "
-                    "Prefer permitted docket alerts and bulk downloads over fragile "
-                    "scraping. Record access limits, source refresh intervals, and suppression "
-                    "decisions so another operator can reproduce the shortlist without "
-                    "reconstructing a researcher's memory."
-                ),
-                (
-                    "The highest-value signal is usually a solvable coordination problem "
-                    "attached to a marketable asset: an appointed representative living "
-                    "elsewhere, an unsecured vacant home, an unresolved permit, or carrying "
-                    "costs consuming estate liquidity. None proves distress pricing or "
-                    "permission to sell. Implement municipal_code_violation_trigger_arbitrage "
-                    "by checking permitted municipal building portals and county recorder "
-                    "dockets daily for failed structural or fire inspections, expired "
-                    "permits, code citations, and newly filed mechanic's liens. Cross-match "
-                    "those events against verified estate parcels, then determine whether "
-                    "the estate wants contractor or construction-attorney assistance. A "
-                    "filed lien is a claim requiring investigation, not an adjudicated "
-                    "debt. Route an authorized introduction exclusively to one suitable "
-                    "provider for a documented response window; share only necessary "
-                    "details and never imply municipal endorsement. Illustratively, 40 "
-                    "alerts at eight review minutes consume 320 minutes; at $30 per "
-                    "research hour, screening costs $160 before software and supervision. "
-                    "If six events match estates and two produce requested introductions, "
-                    "research cost is $80 per introduction. Book no contractor invoice "
-                    "as brokerage revenue. When daily access is unavailable, use "
-                    "low-frequency scheduled API or bulk exports and identify every "
-                    "outreach as private commercial contractor or remediation assistance."
-                ),
-                (
-                    "Operate the 11 mapped plays below as complementary entry points into "
-                    "one estate pipeline, not eleven independent businesses or eleven "
-                    "revenue forecasts. New appointments establish authority candidates; "
-                    "attorney relationships reduce documentation friction; executor "
-                    "education captures voluntary demand; condition signals identify "
-                    "specific work somebody must coordinate. Every record receives one "
-                    "primary acquisition source and optional supporting signals, preventing "
-                    "a permit notice, lawyer introduction, and webinar registration from "
-                    "becoming three credited opportunities. Distinguish a brokerage "
-                    "prospect from an acquisition prospect before discussing price. If "
-                    "your business might purchase the property, disclose that role and "
-                    "associated conflicts, obtain independent valuation support, and "
-                    "follow the jurisdiction's fiduciary and brokerage requirements. "
-                    "Do not present your own offer as independent market advice. "
-                    "Underwriting must separately identify purchase principal, repair "
-                    "capital, financing expense, and resale exposure; none belongs in "
-                    "this volume's retained-commission scorecard. For the initial launch, "
-                    "favor brokerage and executor coordination over speculative inventory. "
-                    "Review source quality weekly using documented authority, reachable "
-                    "decision-makers, and achievable sale timing rather than raw lead "
-                    "counts. Suspend a source that repeatedly creates mistaken identities "
-                    "or unwanted contact, even when its apparent cost per record looks low."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven Mapped Probate Sourcing Plays: Signals, Test Economics, and Failure Fallbacks",
-                "headers": [
-                    "Mapped play and operating entry point",
-                    "Evidence that earns further investigation",
-                    "Illustrative unit math for a bounded test",
-                    "Failure mode and specific operating fallback",
-                ],
-                "rows": [
-                    [
-                        "New-appointment docket mining for verified estate-property matches",
-                        "Compare appointment orders and issued letters against recorder vesting",
-                        "Review 100 cases at six minutes each: ten research hours",
-                        "Petitions lack authority; wait for appointment evidence before qualification",
-                    ],
-                    [
-                        "Probate-attorney referral flywheel through documented property-status briefs",
-                        "Counsel requests help with valuation, access, or sale execution",
-                        "Twelve tailored meetings yielding three introductions means four meetings each",
-                        "Avoid paid legal referrals; offer useful documentation without reciprocal obligations",
-                    ],
-                    [
-                        "Out-of-area executor concierge through secure property coordination",
-                        "Representative confirms travel constraints and requests local operating support",
-                        "Eight consultations yielding two mandates means four consultations per mandate",
-                        "Distance proves no urgency; offer scheduled reporting instead of pressure",
-                    ],
-                    [
-                        "Vacancy and carrying-cost triage for authorized estate representatives",
-                        "Verified vacancy combines with insurance questions and recurring estate expenses",
-                        "Three months at $2,200 carrying costs exposes $6,600 estate expense",
-                        "Occupancy remains uncertain; obtain authorized inspection before proposing access",
-                    ],
-                    [
-                        "municipal_code_violation_trigger_arbitrage: verified estate remediation and construction-attorney introductions",
-                        "Failed structural or fire inspections, expired permits, citations, new mechanic's liens",
-                        "Forty eight-minute reviews cost $160 at $30 per research hour",
-                        "Use scheduled API or bulk exports; identify private commercial assistance",
-                    ],
-                    [
-                        "Title-curative triage for recorder discrepancies and blocked transfers",
-                        "Title professional identifies vesting, release, or ownership defects requiring resolution",
-                        "Six screened parcels producing two viable files means three screens each",
-                        "Do not interpret ownership conclusively; route defects to qualified counsel",
-                    ],
-                    [
-                        "Expired probate-listing recovery through broker-approved representation checks",
-                        "Listing expired and authorized representative confirms no conflicting exclusive engagement",
-                        "Twenty researched expirations yielding four conversations means five records each",
-                        "Honor active representation; defer solicitation until broker verifies availability",
-                    ],
-                    [
-                        "Executor education inbound through county-specific sale-process resources",
-                        "Visitor requests a consultation about authority documents and sale preparation",
-                        "Two hundred relevant visits yielding eight requests implies four percent conversion",
-                        "Low-intent traffic wastes time; narrow pages to local procedural questions",
-                    ],
-                    [
-                        "Estate cleanout and remediation partner introductions after executor permission",
-                        "Provider encounters requested sale coordination beyond their contracted service scope",
-                        "Ten partner conversations yielding two introductions means five conversations each",
-                        "No undisclosed referral payments; use documented, permission-based introductions",
-                    ],
-                    [
-                        "Court-sale calendar monitoring for properly funded probate buyers",
-                        "Published hearing or sale notice identifies terms requiring independent verification",
-                        "Six buyer briefings yielding two qualified attendees means three briefings each",
-                        "Overbid and deposit rules vary; verify court-specific requirements before attendance",
-                    ],
-                    [
-                        "Stalled-estate reactivation through requested milestone-based follow-up",
-                        "Representative previously deferred sale pending appointment, dispute resolution, or title work",
-                        "Thirty permitted follow-ups yielding three consultations implies ten percent conversion",
-                        "Respect opt-outs and unresolved disputes; pause until an agreed milestone",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that separate useful intelligence from noisy lists",
-                "body": (
-                    "Prioritize verified estate work and preserve the source trail; "
-                    "the competitive advantage is accurate coordination, not intrusive volume."
-                ),
-                "items": [
-                    "Save the appointment document reference separately from the petition; the filing date does not establish the representative's powers.",
-                    "Ask title staff which recorder defects repeatedly delay local probate closings, then add those document checks before pricing appointments.",
-                    "Offer attorneys a one-page property-status brief covering authority evidence, access, title questions, carrying costs, and next responsibility.",
-                    "Give a remediation provider one authorized response window, then return control to the executor instead of broadcasting the estate's details.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Qualify authority, economics, and readiness before spending acquisition money",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a 100-point qualification scorecard, but separate ranking from "
-                    "permission. Award up to 25 points for documented authority, 20 for "
-                    "a verified estate-property ownership connection, 15 for a stated "
-                    "service need, 15 for feasible net proceeds, 15 for a realistic "
-                    "decision timeline, and 10 for an appropriate contact route. A high "
-                    "total never cures missing authority or a prohibited contact method. "
-                    "Records scoring 75 or more can receive an appointment request only "
-                    "after those prerequisites are satisfied; scores from 50 through 74 "
-                    "receive missing-evidence tasks; lower scores remain research records "
-                    "or are closed with a reason. These thresholds are internal workflow "
-                    "choices, not externally validated predictors. Request current letters, "
-                    "the appointment order, relevant restrictions, and the representative's "
-                    "preferred counsel contact. In California, distinguish full from "
-                    "limited authority under the Independent Administration of Estates "
-                    "Act; Probate Code section 10501 addresses transactions requiring "
-                    "court supervision, including real-property sales under limited "
-                    "authority. Proposed-action notice procedures may apply under sections "
-                    "10580 and following. Have counsel establish the applicable procedure "
-                    "before promising a signing or closing date. A beneficiary's "
-                    "enthusiasm is useful context, but it does not substitute for "
-                    "the representative's verified powers."
-                ),
-                (
-                    "Build a property economics sheet before recommending repairs or "
-                    "promising an attractive net. Obtain a broker price opinion or "
-                    "comparative market analysis, request title review through the proper "
-                    "channel, and identify mortgage payoff requirements, recorded liens, "
-                    "taxes, occupancy, insurance, utilities, and probable sale expenses. "
-                    "Separate recorded amounts from current payoff figures and preliminary "
-                    "estimates from written quotes. For illustration, a $750,000 sale "
-                    "less $310,000 mortgage payoff, $18,000 other verified obligations, "
-                    "$45,000 selling expenses, and $12,000 approved property work leaves "
-                    "$365,000 before other estate liabilities and distributions. That "
-                    "figure is a property-level planning estimate, not the brokerage's "
-                    "revenue or the beneficiaries' assured distribution. Compare as-is "
-                    "and repair paths using incremental net proceeds and time, not "
-                    "photographic appeal. If $20,000 of work supports only $25,000 of "
-                    "additional proceeds before another $6,000 of carrying expense, "
-                    "the repair path loses $1,000 before execution risk. Ask the "
-                    "representative and counsel who can authorize spending, sign vendor "
-                    "contracts, and approve access. Do not advance substantial repair "
-                    "money casually; reimbursement, security, conflicts, and estate "
-                    "liquidity need explicit treatment. Preserve vendor estimates and "
-                    "version every revised net sheet."
-                ),
-                (
-                    "Translate qualification into a service proposition with clear "
-                    "boundaries: establish the sale route, document condition, present "
-                    "pricing options, coordinate authorized vendors, and report progress. "
-                    "Avoid selling speed where the bottleneck is a hearing, objection, "
-                    "or contested appointment. During discovery, ask what must happen "
-                    "before a sale decision, who advises the representative, whether "
-                    "anybody occupies the property, and which expenses are already "
-                    "uncomfortable. Do not ask a newly contacted family to recount "
-                    "personal circumstances merely to improve a sales script. A useful "
-                    "first deliverable is a two-page readiness brief with an evidence "
-                    "list, unresolved questions, estimated work sequence, and three "
-                    "pricing alternatives supported by comparable sales. If the family "
-                    "disagrees, stop framing consensus as a marketing objection and "
-                    "return decision authority and dispute management to counsel. If "
-                    "the property is occupied, require a lawful access plan rather "
-                    "than assuming probate permits immediate possession. If title is "
-                    "unclear, do not solicit a binding price commitment before the "
-                    "appropriate professionals resolve the issue. Assign every blocking "
-                    "question a responsible person and next review date. This makes "
-                    "your pipeline operationally useful even when the correct immediate "
-                    "answer is to wait."
-                ),
-            ],
-            "table": {
-                "caption": "Authority-First Qualification Scorecard and Evidence Requirements",
-                "headers": [
-                    "Qualification dimension and maximum available points",
-                    "Evidence required for the strongest rating",
-                    "Partial-credit condition requiring further operator work",
-                    "Stop condition and assigned resolution route",
-                ],
-                "rows": [
-                    [
-                        "Documented representative authority contributes up to twenty-five points",
-                        "Current letters and appointment order support the contemplated transaction",
-                        "Appointment established but sale restrictions still require counsel review",
-                        "Unappointed petitioner cannot authorize listing; await verified representative authority",
-                    ],
-                    [
-                        "Verified estate-property connection contributes up to twenty points",
-                        "Recorder vesting and estate documentation reconcile with parcel identifiers",
-                        "Name matches but ownership chain requires title professional investigation",
-                        "Conflicting ownership evidence pauses outreach claims about estate control",
-                    ],
-                    [
-                        "Expressed service need contributes up to fifteen points",
-                        "Representative requests valuation, preparation, access coordination, or sale execution",
-                        "Public signal suggests work but representative has expressed no need",
-                        "Explicit refusal triggers suppression rather than escalating sales pressure",
-                    ],
-                    [
-                        "Feasible property net proceeds contribute up to fifteen points",
-                        "Supported pricing and documented obligations indicate a workable sale path",
-                        "Preliminary equity appears positive but payoff information remains incomplete",
-                        "Likely shortfall requires lender and counsel strategy before promises",
-                    ],
-                    [
-                        "Realistic transaction timing contributes up to fifteen points",
-                        "Decision milestones and court procedure support an actionable work sequence",
-                        "Sale is contemplated after a specific unresolved estate milestone",
-                        "Active dispute pauses forecasts until counsel provides updated direction",
-                    ],
-                    [
-                        "Appropriate reachable contact route contributes up to ten points",
-                        "Verified representative provides contact preferences and necessary channel permissions",
-                        "Only a permitted postal route has been independently verified",
-                        "Suppression or channel restrictions prevent the proposed contact method",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four prerequisites before soliciting a signed mandate",
-                "body": (
-                    "Qualification scores prioritize work; these checks determine "
-                    "whether the next proposed action is appropriate."
-                ),
-                "items": [
-                    "Match parcel vesting to estate evidence and verify current letters, appointment restrictions, and the actual signing representative.",
-                    "Confirm broker supervision, licensing coverage, existing representation, and any principal-buyer conflict before presenting your role.",
-                    "Document the applicable court-supervised or independent-administration sale procedure with counsel, including notice and objection handling.",
-                    "Check source access permissions, contact suppression, channel-specific requirements, and the representative's preferred communication route.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a restrained multichannel cadence that earns the first appointment",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Design a 45-day initial cadence around usefulness and contact "
-                    "permissions, not escalating pressure. On day one, send a plain "
-                    "postal letter when that route is appropriate: identify your "
-                    "licensed brokerage, explain the property coordination service, "
-                    "and offer a short readiness checklist. Do not print probate "
-                    "details on the envelope or imply court affiliation. On day "
-                    "ten, make a manual call only after applicable federal and "
-                    "state solicitation rules, suppression lists, and calling hours "
-                    "have been checked. Publication of a telephone number does not "
-                    "itself authorize marketing calls or texts. On day twenty-one, "
-                    "send one substantive follow-up by a permitted route, such as "
-                    "an explanation of valuation versus an investor offer. On day "
-                    "forty-five, ask whether they want milestone-based follow-up; "
-                    "without a response, stop the initial sequence rather than "
-                    "silently enrolling them in indefinite pursuit. Use requested "
-                    "email for the checklist and appointment logistics, while "
-                    "applying CAN-SPAM requirements to commercial email. Do not "
-                    "launch automated calls, prerecorded messages, or marketing "
-                    "texts merely because a CRM supports them. Configure channel "
-                    "eligibility and suppression before importing records into "
-                    "HubSpot, Pipedrive, or another CRM."
-                ),
-                (
-                    "Make professional outreach more specific than asking lawyers "
-                    "to send deals. Identify twelve local probate practices and "
-                    "offer a sample property-status brief, a description of broker "
-                    "coverage, and a reliable response standard for requested "
-                    "valuation work. Ask which property problems consume their "
-                    "staff's time and show how your deliverable reduces that "
-                    "work without trespassing into legal representation. Track "
-                    "meetings, requested follow-ups, introductions, and completed "
-                    "assignments separately. Do not exchange settlement-service "
-                    "referrals for things of value where RESPA section 8 applies; "
-                    "also assess state brokerage and professional-conduct rules. "
-                    "A cleanout contractor's invoice and an attorney's fee remain "
-                    "their revenue, not yours. For inbound demand, publish a "
-                    "county-specific executor property checklist, a page explaining "
-                    "your brokerage service, and an accessible consultation form "
-                    "that requests only necessary information. Google Business "
-                    "Profile and Search Console can identify whether local "
-                    "searchers find the pages and request appointments. Avoid "
-                    "publishing identifiable case studies without permission. "
-                    "Offer educational events through libraries or professional "
-                    "groups when invited, and distinguish general process "
-                    "education from a proposed engagement. Measure qualified "
-                    "consultations per staff hour rather than page views alone; "
-                    "a small audience with actual authority can outperform a "
-                    "large audience of curious researchers."
-                ),
-                (
-                    "Handle objections by resolving the underlying uncertainty, "
-                    "not by defeating the speaker. When a representative says "
-                    "their attorney handles everything, ask whether counsel "
-                    "would find a concise property-status brief useful; accept "
-                    "a refusal immediately. When they prefer an investor, "
-                    "compare a documented cash offer with a supported brokerage "
-                    "net sheet using identical carrying-cost assumptions and "
-                    "clearly disclosed roles. When they fear repair costs, "
-                    "present an as-is route alongside a bounded vendor scope; "
-                    "never manufacture safety assurances about an uninspected "
-                    "property. When relatives disagree, explain that you can "
-                    "document pricing alternatives while counsel addresses "
-                    "authority and disputes. After a useful conversation, "
-                    "request one modest next action: a document review, an "
-                    "authorized walkthrough, or a scheduled pricing meeting. "
-                    "Send a written recap stating who supplies each document "
-                    "and what you will deliver next. The appointment should "
-                    "end with an explicit decision: signed brokerage engagement, "
-                    "a defined follow-up milestone, or a respectful close. "
-                    "Do not classify a conversation, free valuation, or "
-                    "unsigned proposal as a win. Record objections as "
-                    "structured reasons so the next month's messaging answers "
-                    "actual questions rather than repeating a script that "
-                    "failed the previous cohort."
-                ),
-            ],
-            "table": {
-                "caption": "Probate Outreach Cadence and Objection-to-Action Conversion Matrix",
-                "headers": [
-                    "Contact moment or stated prospect objection",
-                    "Specific message or diagnostic response to use",
-                    "Small next commitment worth requesting explicitly",
-                    "Boundary that prevents avoidable relationship damage",
-                ],
-                "rows": [
-                    [
-                        "Day-one postal introduction to an appropriately verified representative",
-                        "Identify the brokerage and offer a practical property-readiness checklist",
-                        "Request their preferred route for receiving the optional checklist",
-                        "Keep sensitive estate details off the exterior mailing envelope",
-                    ],
-                    [
-                        "Day-ten manual call after applicable solicitation checks",
-                        "Ask whether local property coordination would resolve an existing task",
-                        "Offer a fifteen-minute discussion focused on one property problem",
-                        "Honor refusal and suppression immediately across every connected campaign",
-                    ],
-                    [
-                        "Day-twenty-one follow-up addressing valuation versus a principal offer",
-                        "Explain that comparable-sales analysis differs from your own purchase bid",
-                        "Request permission to prepare clearly labeled sale-route comparisons",
-                        "Disclose principal interests and avoid claiming independent buyer-side neutrality",
-                    ],
-                    [
-                        "Representative says their attorney already handles estate decisions",
-                        "Offer a concise property brief for counsel if they want one",
-                        "Request permission before making a coordinated introduction to counsel",
-                        "Do not suggest replacing counsel or bypassing existing representation",
-                    ],
-                    [
-                        "Representative fears repairs or prefers an immediate investor sale",
-                        "Compare as-is brokerage and documented cash-offer nets consistently",
-                        "Schedule authorized access to resolve only material pricing uncertainties",
-                        "Never promise repair returns or omit additional holding expenses",
-                    ],
-                    [
-                        "Day-forty-five closeout or unresolved family disagreement",
-                        "Offer milestone-based follow-up and acknowledge counsel's dispute-management role",
-                        "Record a requested review date or close the prospect respectfully",
-                        "Stop repeated solicitation and avoid mediating contested legal authority",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build and verify the county queue",
-                    "action": "Deduplicate estate-property matches and preserve source evidence.",
-                    "detail": "Check appointment status, parcel ownership, existing representation, and source-use restrictions before any outreach task is released.",
-                },
-                {
-                    "step": 2,
-                    "title": "Assign qualification and contact eligibility",
-                    "action": "Score six dimensions and separately verify channel prerequisites.",
-                    "detail": "Place missing documents with a named owner; keep suppressed contacts out of every active campaign regardless of their score.",
-                },
-                {
-                    "step": 3,
-                    "title": "Deliver the readiness consultation",
-                    "action": "Offer one practical next step through the permitted cadence.",
-                    "detail": "Produce an evidence-backed brief, discuss sale routes and costs, and confirm what the representative wants done next.",
-                },
-                {
-                    "step": 4,
-                    "title": "Convert and instrument the mandate",
-                    "action": "Obtain the broker-approved engagement and open the transaction checklist.",
-                    "detail": "Record signing authority, negotiated compensation, notice or court requirements, source attribution, and the expected collection milestone.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Measure closed wins, collected commissions, and the economics of patience",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use a bounded cohort model to plan the first "
-                    "3-to-10 closed wins over 4–18 months; the following "
-                    "conversion rates are test assumptions, not published market "
-                    "benchmarks. Suppose 600 deduplicated estate-property matches "
-                    "produce 240 verified authority candidates, of which 120 "
-                    "receive an appropriate, deliverable outreach attempt. Thirty-six "
-                    "hold substantive conversations, eighteen attend consultations, "
-                    "ten sign mandates, and six eventually close. The "
-                    "conditional stage rates are 40%, 50%, 30%, 50%, "
-                    "55.6%, and 60%, respectively; raw-record-to-close yield is "
-                    "1%. At unchanged performance, three closings require "
-                    "about 300 initial matches and ten require about "
-                    "1,000, but county supply and court capacity can "
-                    "invalidate that linear scaling. Track elapsed days "
-                    "between stages and retain open files in their "
-                    "actual stages rather than counting them as losses "
-                    "or successes prematurely. Separate no-contact outcomes "
-                    "from disqualification, rejected proposals, and delayed "
-                    "closings. Six closings at an illustrative $15,000 "
-                    "retained commission each produce $90,000 for that "
-                    "cohort when earned under the engagement; this "
-                    "is neither an annual forecast nor a replacement "
-                    "for the canonical scenarios. Track collection separately "
-                    "from recognition so cash planning reflects actual receipts."
-                ),
-                (
-                    "Reconcile every annual plan to retained brokerage commissions "
-                    "after brokerage splits. One illustrative unit is a "
-                    "$750,000 completed sale with a separately negotiated 2.5% "
-                    "side commission and 80% brokerage retention: $750,000 "
-                    "multiplied by 2.5% multiplied by 80% equals $15,000. "
-                    "These inputs are modeling choices, not a customary "
-                    "or prescribed commission rate. Eight such closings "
-                    "produce the Conservative $120,000 revenue; subtract "
-                    "$96,000 of total modeled operating costs to "
-                    "leave $24,000 owner profit at 20%. Thirty-four "
-                    "produce Base revenue of $510,000; $369,750 of "
-                    "costs leaves $140,250 at 27.5%. Sixty produce "
-                    "Scaled revenue of $900,000; $585,000 of costs "
-                    "leaves $315,000 at 35%. The corresponding teams "
-                    "remain 2 FT plus 3 C, 2 FT "
-                    "plus 3 C, and 3 FT plus 4 C. "
-                    "The underlying sale values are $6,000,000, "
-                    "$25,500,000, and $45,000,000, respectively, and "
-                    "never become operator revenue. Treat the stated "
-                    "$3,000–$18,000 monthly opex range as a planning "
-                    "input whose covered categories must be identified, "
-                    "not automatically the complete annual cost envelope. "
-                    "Payroll, contractors, marketing, and transaction costs "
-                    "must reconcile to the canonical total without "
-                    "double-counting amounts already removed in brokerage splits."
-                ),
-                (
-                    "Instrument the first cohort before increasing spend. "
-                    "If its acquisition work costs $12,000 across "
-                    "research, mail, content, and attributable labor, "
-                    "six collected closings imply $2,000 acquisition "
-                    "cost per closed client. If only three "
-                    "close, that rises to $4,000; spending "
-                    "the same money does not preserve the "
-                    "original efficiency. Include acquisition costs inside, "
-                    "not in addition to, the annual scenario's "
-                    "expense total. Review the funnel monthly "
-                    "and the legal or title blockers weekly. "
-                    "Poor authority yield suggests a record-matching "
-                    "problem; strong conversations but weak mandates "
-                    "suggest an unclear service proposition; signed "
-                    "mandates stalled before closing suggest transaction "
-                    "execution or court timing rather than insufficient "
-                    "marketing. Allocate the $15,000–$100,000 startup "
-                    "capital range through a dated cash schedule "
-                    "that includes licensing, insurance, systems, research, "
-                    "marketing, and runway. A $15,000 balance "
-                    "against $3,000 monthly outflow lasts five "
-                    "months before setup costs, making an "
-                    "eighteen-month first closing untenable without "
-                    "additional funding or lower burn. Use "
-                    "docket alerts and transaction checklists to "
-                    "reduce missed work, not to remove "
-                    "professional judgment. Expand only after a "
-                    "mature cohort demonstrates repeatable sourcing, "
-                    "service delivery, and collected commission economics."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Cohort Benchmarks with Explicit Denominators and Repair Actions",
-                "headers": [
-                    "Measured transition within the pilot cohort",
-                    "Numerator, denominator, and conditional conversion assumption",
-                    "Evidence required before advancing the CRM stage",
-                    "Diagnostic response when the transition underperforms",
-                ],
-                "rows": [
-                    [
-                        "Deduplicated estate-property match becomes verified authority candidate",
-                        "240 candidates from 600 initial matches equals forty percent",
-                        "Appointment evidence and parcel connection survive a human review",
-                        "Inspect joins, stale dockets, and misleading petitioner-only records",
-                    ],
-                    [
-                        "Verified authority candidate receives appropriate deliverable outreach",
-                        "120 delivered attempts from 240 candidates equals fifty percent",
-                        "Permitted contact route and delivery record support the outreach entry",
-                        "Improve address verification without bypassing suppression or channel restrictions",
-                    ],
-                    [
-                        "Delivered outreach produces a substantive two-way service conversation",
-                        "36 conversations from 120 delivered attempts equals thirty percent",
-                        "Representative discusses a genuine property task and preferred next action",
-                        "Test clearer service relevance rather than increasing contact pressure",
-                    ],
-                    [
-                        "Substantive conversation becomes an attended property-readiness consultation",
-                        "18 attended consultations from 36 conversations equals fifty percent",
-                        "Meeting occurs and produces documented questions, evidence, and responsibilities",
-                        "Reduce scheduling friction and clarify the consultation's practical deliverable",
-                    ],
-                    [
-                        "Attended consultation converts into an authorized signed brokerage mandate",
-                        "10 signed mandates from 18 consultations equals approximately 55.6 percent",
-                        "Broker-approved agreement identifies authorized parties and negotiated compensation",
-                        "Examine role confusion, weak pricing evidence, and competing representation",
-                    ],
-                    [
-                        "Signed brokerage mandate closes with commission collection tracked separately",
-                        "6 closings from 10 mandates equals sixty percent eventually",
-                        "Closing evidence supports earned commission and accounting tracks actual receipt",
-                        "Separate court delay, title blockage, cancellation, and collection lag",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "The best probate lead is a verified decision-maker with a solvable property "
-        "problem, not a name attached to a death."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Select one county and document permitted court, assessor, recorder, and municipal data access before building the estate-property queue.",
-        "Implement the six-dimension qualification scorecard while keeping authority, representation, and contact eligibility as separate prerequisites.",
-        "Launch the 11 mapped plays with primary-source attribution, bounded test budgets, and explicit fallbacks for inaccessible or misleading records.",
-        "Configure the 45-day permitted-contact cadence, suppression controls, attorney briefing template, and executor readiness deliverable.",
-        "Track a deduplicated cohort from raw matches through signed mandates, closed sales, and collected retained commissions without annualizing immature results.",
-        "Reconcile annual revenue, full operating costs, team counts, and owner profit to the three canonical scenarios before expanding spend or geography.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Business and Professions Code section 10130",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": "Establishes the licensing requirement for acting as a real estate broker or salesperson in California, subject to statutory exceptions.",
-        },
-        {
-            "title": "California Probate Code section 10501",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10501.",
-            "relevance": "Identifies actions requiring court supervision under independent administration, including real-property sales when the representative has limited authority.",
-        },
-        {
-            "title": "California Probate Code section 10580",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10580.",
-            "relevance": "Addresses proposed-action notice requirements for specified independent-administration actions, subject to applicable statutory exceptions.",
-        },
-        {
-            "title": "California Probate Code section 10308",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10308.",
-            "relevance": "Governs qualifying increased offers at hearings for confirmation of real-property sales; court-sale buyer preparation must reflect the applicable procedure.",
-        },
-        {
-            "title": "12 U.S.C. section 2607 — RESPA section 8",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": "Restricts referral fees, kickbacks, and unearned fee arrangements involving settlement services for federally related mortgage loans.",
-        },
-        {
-            "title": "47 CFR section 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Sets federal requirements affecting telephone solicitation, automated and prerecorded communications, consent, and do-not-call practices.",
-        },
-        {
-            "title": "15 U.S.C. section 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes requirements for commercial email, including accurate transmission information, nondeceptive subject lines, postal identification, and opt-out handling.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'probate-listing-playbook-for-agents',
+ 'question_prompt': 'How does a real estate agent use probate process knowledge, courthouse research, and '
+                    'multiple sale paths to win probate listings?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Probate Listing Playbook for Agents',
+ 'subtitle': "12-step probate process for agents, Probate 101 for Realtors, courthouse 'gun and bullets' "
+             'research, court visits, MLS limited-authority listings, targeting economic shifts, competing '
+             'in crowded markets, and real specialist deal examples',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Probate specialists working the listing side agree on one core truth: estates in '
+                      'probate produce listing inventory that does not care about rates, and the agent who '
+                      'learns the process wins it. Carolynn Castillo reports counties throwing 20 to 40 '
+                      'leads a week and about 70% of probate leads selling; The Aaron Novello Podcast '
+                      'claims 20% of 2025 California sales were probate. The street mechanics are blunt: '
+                      'control the lead at the courthouse or buy it, skip trace the personal '
+                      'representative, call before you mail, and turn put-offs into permission to send '
+                      "resources. Probate Mastery's backward math needs 480 pipeline people for 24 "
+                      'closings, budgets $61 per resistant PR over 6 to 8 months, and warns three touches '
+                      'fail. Practitioners split on courthouse versus vendor data, mail-heavy versus '
+                      'call-forward models, and signing listing agreements before letters issue.',
+ 'key_metrics': [{'label': 'Weekly county probate lead flow',
+                  'metric': 'Weekly county probate lead flow',
+                  'value': '20 to 40 leads a week per county, about 1 to 2 hours of calling',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Castillo's estimate of what most counties produce in probate leads each week "
+                             'and the dialing time needed to work them.',
+                  'source': 'Carolynn Castillo ([RR9l10XmnC4 @ 00:16:12])'},
+                 {'label': 'Backward pipeline math for 24 closings',
+                  'metric': 'Backward pipeline math for 24 closings',
+                  'value': '480 pipeline people a year at a 20% or better conversion rate',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Goal of 24 closings worked backward, assuming every pipeline person comes '
+                             'from the list with zero attorney referrals.',
+                  'source': 'Probate Mastery ([dzqHqDnAl_E @ 00:01:53])'},
+                 {'label': 'Follow-up budget per resistant PR',
+                  'metric': 'Follow-up budget per resistant PR',
+                  'value': '$61 per resistant PR over 6 to 8 months (about 8 pieces)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bruce's nurture spend on personal representatives who hold the agent off on "
+                             'the first conversation.',
+                  'source': 'Probate Mastery ([kvSTArlGoMU @ 00:54:45])'},
+                 {'label': 'Florida probate filers selling real estate by year',
+                  'metric': 'Florida probate filers selling real estate by year',
+                  'value': '25% in year 1, 45% cumulative by year 2, about 10% more in each of years 3 and '
+                           '4',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Share of Florida probate filers who sell the real estate, used to justify '
+                             'multi-year lead prioritization and follow-up.',
+                  'source': 'Probate Mastery ([7xCfSyqYEys @ 01:25:19])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator in this circle sells the same thesis: probate is a listings '
+                              'business driven by a life event, not by the rate cycle. Carolynn Castillo '
+                              'calls the niche listings only and points to one probate listing that pulled '
+                              'over 30 offers in 24 to 48 hours after the house was prepped and put in '
+                              'front of buyers [RR9l10XmnC4 @ 00:06:42]. Castillo also reports being the '
+                              'only probate realtor in the room, a lane far less saturated than FSBOs and '
+                              'expireds where every agent in the office is already fighting [RR9l10XmnC4 @ '
+                              '00:09:20]. The Aaron Novello Podcast pushes the same point from the macro '
+                              'side: rates moving from 3% to 7% for three years thinned out the four '
+                              'horsemen of expireds, cancels, FSBOs and just listed/just sold, while '
+                              'probate is claimed to be 20% of all 2025 California sales and untied to '
+                              'rates, market conditions or administrations [44RbpWBPcbI @ 00:01:15]. The '
+                              'proof offered is Connor, who took 5 probate listings in one month for $50K '
+                              'in commissions and now regularly takes 3 to 5 [44RbpWBPcbI @ 00:01:41]. The '
+                              'shared baseline is simple: the filings keep arriving every week regardless '
+                              'of the market, and the agent standing closest to the personal '
+                              'representative when the property finally has to move is the one who takes '
+                              'the listing.',
+                              'The second point of agreement is hard and procedural: nothing moves until '
+                              'the court hands someone authority. Castillo walks the sequence: the '
+                              'attorney files a petition naming the PR, and the family cannot sell yet; '
+                              'only Letters of Administration, called Letters Testamentary in some states, '
+                              'let the PR sign a listing agreement and close a sale [ewbkVPWFtKM @ '
+                              "00:07:40]. Castillo's first warning is to confirm Letters before listing or "
+                              'eat title-company problems at the closing table [ewbkVPWFtKM @ 00:17:34]. '
+                              'Justin Stivers, a Miami probate attorney working about 17 Florida counties, '
+                              'is blunter: being named in a will is not good enough, the PR must be '
+                              'court-appointed, and no MLS entry, yard sign or door hanger goes out before '
+                              'that appointment, because the realtor risks trouble or a different PR gets '
+                              'appointed and hires someone else [Owbx6t3ocjM @ 00:10:10]. Bruce at Probate '
+                              "Mastery reduces it to one line, 'You have to get your authority from the "
+                              "court,' and stresses that heirs have input but no legal authority "
+                              '[7xCfSyqYEys @ 01:26:47]. The operating consequence is that the person to '
+                              'win is the personal representative, not the loudest heir, and the first job '
+                              'on any lead is confirming who actually holds signing power and whether the '
+                              'letters carry bond requirements or restrictions.',
+                              'The third consensus is about time. Probate Mastery opens its '
+                              "business-building talk by warning that people quit because they 'didn't get "
+                              "a closing fast enough,' and that one month of work will not produce "
+                              'predictable deals, so expectations have to be reset before the first dial '
+                              '[dzqHqDnAl_E @ 00:00:00]. The same channel calls out the industry norm '
+                              'directly: the average agent or investor in the niche touches a lead three '
+                              "times, and 'That doesn't do it,' so its own marketing and follow-up runs "
+                              'six to eight months on every pipeline lead, defined narrowly as someone '
+                              'already spoken with who is believed likely to sell [dzqHqDnAl_E @ '
+                              '00:06:02]. The All The Leads mastermind backs the timing with the decision '
+                              'curve: many families do not decide until month five, six or seven, and '
+                              'dropping out on month two with mail gives them months to forget who you are '
+                              "[9tTK_fAGgNE @ 00:20:59]. Probate Mastery's five-model breakdown closes the "
+                              'loop with a blunt filter: if you need a deal next month, probate may not '
+                              'suit you, so plan a 6-month runway before judging results [Xt7XgZo03Nw @ '
+                              '00:37:36]. Every serious operator here builds the business as a long '
+                              'pipeline of nurtured personal representatives, never as a one-call close on '
+                              'a grieving family.'],
+               'table': {'caption': 'Where probate listing practitioners line up on the fundamentals',
+                         'headers': ['Consensus Principle',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Probate is a listings-only niche with real buyer demand',
+                                   'One probate listing drew over 30 offers in 24 to 48 hours',
+                                   'Build the business around listing inventory, not around chasing buyers',
+                                   'Carolynn Castillo ([RR9l10XmnC4 @ 00:06:04])'],
+                                  ['Probate is a life-event source independent of rate cycles',
+                                   'Claimed 20% of 2025 California sales were probate, untied to rates',
+                                   'Shift prospecting hours away from the four horsemen toward probate '
+                                   'filings',
+                                   'The Aaron Novello Podcast ([44RbpWBPcbI @ 00:01:15])'],
+                                  ['Court appointment of the PR comes before any marketing',
+                                   'No MLS, yard signs or door hangers before the PR is appointed',
+                                   'Confirm the order appointing personal representative before spending a '
+                                   'marketing dollar',
+                                   'Justin Stivers ([Owbx6t3ocjM @ 00:10:10])'],
+                                  ['A will does not keep a house out of probate',
+                                   'Called the biggest misconception families and agents carry into '
+                                   'probate',
+                                   'Treat will-holding families as probate prospects and explain the court '
+                                   'step',
+                                   'Bill Gross, the LA Probate Expert ([Gyb24k08sGk @ 00:02:37])'],
+                                  ['Three touches fail; follow-up runs six to eight months',
+                                   'Average niche agent touches a lead three times, which does not work',
+                                   'Budget a multi-month nurture sequence for every pipeline personal '
+                                   'representative',
+                                   'Probate Mastery ([dzqHqDnAl_E @ 00:06:02])'],
+                                  ['Lead with empathy, never with a cash-buyer pitch',
+                                   'A normal hey-we-have-cash-buyers opener is not the best approach after '
+                                   'a death',
+                                   'Open with the estate and the family situation before mentioning the '
+                                   'property',
+                                   'Justin Stivers ([Owbx6t3ocjM @ 00:36:25])'],
+                                  ['Route legal questions to the estate attorney every time',
+                                   'Answering legal questions creates risk while routing them builds the '
+                                   'attorney relationship',
+                                   'Use every legal question as a reason to call and feed the attorney',
+                                   'Carolynn Castillo ([ewbkVPWFtKM @ 00:18:26])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Lead acquisition splits into two routes, and the operators price both. The '
+                              "Aaron Novello Podcast's courthouse rule is 'whoever controls the lead "
+                              "controls how much it costs': pulling filings yourself fixes your cost, gets "
+                              "fresh data instead of the monthly vendor drop that investors 'beat it up "
+                              "with mailings,' and includes beneficiaries, which won listings through "
+                              'siblings when the executor was unreachable [H-CW9uu5s-I @ 00:00:43]. At 60 '
+                              'transactions a year that operation had three people at three courthouses, '
+                              'documented the pull as a Loom-video SOP, paid a helper $2 per lead, ran '
+                              'single contact lookups through forewarn and loaded every record into Follow '
+                              'Up Boss [H-CW9uu5s-I @ 00:04:02]. Castillo buys instead: a prior vendor '
+                              'sent about 100 leads, many with no real estate, yielding only 1 to 2 '
+                              'listings a month, while Foreclosures Daily sends about 25 leads a week per '
+                              'county, all with real estate, a feed Castillo has run for 2.5 years '
+                              '[XN-9ankgVNk @ 00:13:05]. Probate Mastery prices purchased data at $400 to '
+                              '$500 for about 150 records and warns that a single mailer to that list '
+                              'wastes money unless it is hyper-aggressive and real-estate focused '
+                              '[Xt7XgZo03Nw @ 00:11:13]. The vendor trade-off named on the courthouse side '
+                              'is no price control, often monthly delivery and frequently no '
+                              'beneficiaries.',
+                              'Calling is the spine of the system. Castillo runs CallTools as the dialer, '
+                              'ClearSkip to skip trace PRs and relatives, and KV Core through eXp for '
+                              'follow-up across four counties, and calls the PR rather than the attorney '
+                              "[XN-9ankgVNk @ 00:33:09]. The opener is direct, 'calling regarding your "
+                              "pending probate case... considering selling the property,' and the goal is "
+                              'a booked consultation rather than a first-call close, with both a cash '
+                              'offer and a listing option put on the table [XN-9ankgVNk @ 00:55:51]. '
+                              'Probate Mastery softens the ask: when a PR puts the agent off, the script '
+                              "converts it into permission to market with 'let me shoot you some "
+                              "resources,' then asks whether, once probate is over, the real estate is "
+                              'something they are thinking about selling or it is just too early to say '
+                              '[dzqHqDnAl_E @ 00:03:24]. On cadence, the Probate Mastery host calls each '
+                              'lead 10 to 12 times a month, expects 1 to 3 deals per 100 leads monthly at '
+                              'roughly 40 hours a month, and in the combo model reports a 40 to 60% answer '
+                              'rate across 12 calls, mailing only the roughly 50 non-answerers '
+                              '[Xt7XgZo03Nw @ 00:15:54]. The phone builds the relationship; the mail only '
+                              'covers the people the phone could not reach.',
+                              'The nurture budget is explicit. Bruce at Probate Mastery spends $61 per '
+                              'resistant PR over 6 to 8 months on about 8 pieces, a few of them '
+                              "'bombshell,' emails only people already spoken with, and deliberately gives "
+                              'the PR the satisfaction of holding the agent off on the first conversation '
+                              '[kvSTArlGoMU @ 00:54:45]. The All The Leads mastermind sequences the '
+                              'letters: letter one sells concierge services, letter two adds a real-estate '
+                              'PS, letters three and four lead with real estate and carry a services PS, '
+                              'with Chuck preferring a trifold as the first touch [9tTK_fAGgNE @ '
+                              '00:44:54]. Scaling runs through ISAs: the Probate Mastery host hired about '
+                              '10 to find one good one, pays a low base near $300 plus roughly $500 per '
+                              'deal so ISAs earn $2,500 to $3,000 against a Philippine norm near $1,000, '
+                              'keeps them calling about 4 hours a day, and hands off only a PR who answers '
+                              'and accepts resources [Xt7XgZo03Nw @ 00:29:00]. In the automated model, '
+                              'engaged leads get about $50 of high-value mail and non-engaged leads about '
+                              "$7, and the host's marketing spend fell from $30-50K a month to $3-4K a "
+                              'month for a couple of deals [Xt7XgZo03Nw @ 00:18:27]. Heavy users of the '
+                              'free concierge vendor network get listed at 4% instead of 3%.'],
+               'table': {'caption': 'Probate listing machine: tools, prices and unit economics as '
+                                    'operators run them',
+                         'headers': ['Mechanic / Tool',
+                                     'Exact Numbers or Script',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Foreclosures Daily probate list subscription',
+                                   '$999 per list for 6 months paid upfront, buy-one-get-one county offer',
+                                   'About 25 real-estate-only leads a week per county fed straight to the '
+                                   'dialer',
+                                   'Carolynn Castillo ([XN-9ankgVNk @ 01:05:13])'],
+                                  ['Courthouse data pull with a paid helper',
+                                   '$2 per lead, Loom-video SOP, forewarn single lookups, Follow Up Boss',
+                                   'Helper pulls filings with beneficiaries so siblings can be worked when '
+                                   'executors go silent',
+                                   'The Aaron Novello Podcast ([H-CW9uu5s-I @ 00:04:02])'],
+                                  ['Dialer, skip trace and CRM stack',
+                                   'CallTools dialer, ClearSkip skip trace, KV Core through eXp',
+                                   'Skip trace PRs and relatives, call the PR directly, follow up for a '
+                                   'full year',
+                                   'Carolynn Castillo ([XN-9ankgVNk @ 00:33:09])'],
+                                  ['Backward pipeline math from a closing goal',
+                                   '24 closings at a 20% or better conversion requires 480 pipeline people',
+                                   'Count only people spoken with and believed likely to sell as pipeline',
+                                   'Probate Mastery ([dzqHqDnAl_E @ 00:01:53])'],
+                                  ['Resistant-PR nurture campaign',
+                                   '$61 per PR over 6 to 8 months, about 8 pieces including bombshells',
+                                   'Mail and email together, emailing only people already reached by phone',
+                                   'Probate Mastery ([kvSTArlGoMU @ 00:54:45])'],
+                                  ['Offshore ISA compensation and handoff rule',
+                                   'About $300 base plus roughly $500 per deal, $2,500 to $3,000 monthly '
+                                   'earnings',
+                                   'ISAs dial about 4 hours a day and hand off PRs who accept resources',
+                                   'Probate Mastery ([Xt7XgZo03Nw @ 00:29:00])'],
+                                  ['Distance-based lead ranking tool built with Claude',
+                                   'PRs living more than 50 miles from the decedent ranked first',
+                                   'Call distant PRs first, then nearby separate households, then '
+                                   'co-resident PRs last',
+                                   'Probate Mastery ([7xCfSyqYEys @ 01:32:41])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small edges the top probate listers actually use',
+                           'body': 'These are the low-cost moves operators credit with winning the PR '
+                                   'conversation before competing agents and investors even get a '
+                                   'callback.',
+                           'items': ['Rank the call list by distance: PRs living more than 50 miles from '
+                                     "the decedent's house go first, because managing the property from "
+                                     'that far away is a hassle [Probate Mastery — 7xCfSyqYEys @ 01:32:41]',
+                                     'Pull beneficiaries with every filing; listings were won through '
+                                     'siblings when the named executor could not be reached [The Aaron '
+                                     'Novello Podcast — H-CW9uu5s-I @ 00:01:59]',
+                                     'Market help with the estate inventory as an alternative to a $600 '
+                                     'attorney fee, turning paperwork into the hook for the listing '
+                                     'conversation [Probate Mastery — 7xCfSyqYEys @ 00:22:52]',
+                                     'Never mention leads and never mention third-party companies when '
+                                     'explaining how you found the family [All The Leads — 9tTK_fAGgNE @ '
+                                     '00:57:18]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the weekly data feed',
+                              'action': 'Pull probate filings weekly from the courthouse with a paid '
+                                        'helper, or subscribe to a county list that includes real estate.',
+                              'detail': 'Pay a helper $2 per lead under a Loom-video SOP, run forewarn '
+                                        'lookups and load records into Follow Up Boss; at high volume run '
+                                        'three people at three courthouses [The Aaron Novello Podcast — '
+                                        'H-CW9uu5s-I @ 00:04:02]'},
+                             {'step': 2,
+                              'title': 'Skip trace and dial the PR',
+                              'action': 'Skip trace the personal representative and relatives, then call '
+                                        'the PR directly rather than the attorney.',
+                              'detail': 'Run CallTools with ClearSkip and KV Core, open with the pending '
+                                        'probate case, and book a consultation offering both a cash offer '
+                                        'and a listing option [Carolynn Castillo — XN-9ankgVNk @ '
+                                        '00:53:12]'},
+                             {'step': 3,
+                              'title': 'Turn the put-off into permission',
+                              'action': 'When the PR says it is too early, ask permission to send '
+                                        'resources and confirm sale intent after probate closes.',
+                              'detail': "Use 'let me shoot you some resources' and the "
+                                        'once-probate-is-over question to move the contact into the '
+                                        'pipeline as a likely seller [Probate Mastery — dzqHqDnAl_E @ '
+                                        '00:03:10]'},
+                             {'step': 4,
+                              'title': 'Run the 6 to 8 month nurture',
+                              'action': 'Fund a multi-piece mail and email sequence for every resistant PR '
+                                        'instead of stopping at three touches.',
+                              'detail': 'Budget about $61 per resistant PR across roughly 8 pieces over 6 '
+                                        'to 8 months, emailing only people already reached by phone '
+                                        '[Probate Mastery — kvSTArlGoMU @ 00:54:45]'}]},
+              {'number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Phone versus mail is the loudest split. Carolynn Castillo calls cold '
+                              'calling the quickest, fastest way into the niche, with counties producing '
+                              '20 to 40 leads a week that take one to two hours to dial [RR9l10XmnC4 @ '
+                              "00:15:14]. Probate Mastery's host splits the field into five models and "
+                              'calls an exclusively mail-driven business very inconsistent, swinging from '
+                              'eight dead months to a burst of three or four calls; the call-forward '
+                              'version dials each lead 10 to 12 times a month and expects one to three '
+                              'deals per 100 leads, which can eat roughly 40 hours a month [Xt7XgZo03Nw @ '
+                              "00:15:54]. The same host's verdict on half-measures is blunt: the middle "
+                              'ground is the kiss of death, so a single mailer must be hyper-aggressive '
+                              'and real-estate focused, while a multi-piece run of five to seven pieces '
+                              'leads with concierge instead. The data fight runs parallel. The Aaron '
+                              'Novello Podcast insists whoever controls the lead controls its cost, pulls '
+                              'courthouse records weekly, and warns that vendor files like all the leads '
+                              'and US probate leads arrive monthly, often without beneficiaries '
+                              '[H-CW9uu5s-I @ 00:00:43]. Bruce at Probate Mastery takes the opposite trade '
+                              'and buys lists from alltheleads.com just for the sake of time [kvSTArlGoMU '
+                              '@ 00:49:14].',
+                              'Timing the signature splits the same panel. Justin Stivers, a Miami probate '
+                              'attorney, draws a hard line: no MLS entry, yard sign or door hanger until '
+                              'the court appoints the personal representative, because a different PR can '
+                              'get appointed and hire someone else [Owbx6t3ocjM @ 00:10:10]. Castillo '
+                              'backs that line from the listing chair, telling agents to confirm Letters '
+                              'before listing or eat title-company problems at closing [ewbkVPWFtKM @ '
+                              '00:17:34]. Bruce plays it differently. Bruce signs pre-letters agreements '
+                              'knowing they are not binding, purely to lock in emotional commitment, and '
+                              'openly admits there is no way to hold the family to anything; David Cordero '
+                              'only does it with one uncontested heir and the listing marked contingent '
+                              'upon the probate court hearing, accepting that marketing spend is lost if '
+                              "the client walks [d-rZkDYaJhQ @ 00:50:21]. On the creditor window, Bruce's "
+                              'North Carolina playbook says you can list and sign contracts inside it, but '
+                              'closing usually waits three to four months after the first ad, and most of '
+                              'the time you are just not allowed to close during it [7xCfSyqYEys @ '
+                              '01:29:23]. Bruce also rejects an attorney who told a client to wait until '
+                              'probate closes before selling, calling that position not correct, which '
+                              'puts listing agents squarely at odds with slow-walking counsel.',
+                              'Who to chase is contested too. Castillo calls the personal representative, '
+                              'not the attorney [XN-9ankgVNk @ 00:53:12], while David at Probate Mastery '
+                              'spent about a year and a half reaching seven attorneys and aims for 20, the '
+                              'point where chasing PRs stops being necessary [d-rZkDYaJhQ @ 00:08:36]. On '
+                              'heirs, mastermind regular Chuck argues the best file is simply a smooth one '
+                              'and the economics are not tied to heir count; Bruce counters that a single '
+                              'decision-maker is easiest, yet multiple-heir files produced 13 to 14 '
+                              'transactions and one cash-hungry heir helps pricing [9tTK_fAGgNE @ '
+                              '00:16:16]. Licensed auctioneer John Rogers offers an outright alternative '
+                              'to the listing: a no-commission, as-is auction using the exact title payoff '
+                              'as the reserve, 45 days of marketing and a 15-day close once the reserve is '
+                              'met, while paying referring agents a full three percent. Asked how common '
+                              "auctions are versus agent listings, Rogers put it at 'might be 80 20,' with "
+                              'the ratio shifting as the economy turns [9eNkvtVoeao @ 00:04:43]. Even '
+                              'conversion benchmarks diverge: David converts about half of a 46-person '
+                              'pipeline while the host calls 20 percent realistic, and David Cordero '
+                              'reports roughly one in 30 warm contacts ready to list.'],
+               'table': {'caption': 'Competing probate listing playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Primary outreach channel for fresh probate filings each week',
+                                   'Cold call daily; 20 to 40 county leads a week take one to two hours of '
+                                   'dialing',
+                                   'Mail-heavy five to seven piece concierge campaign over six months with '
+                                   'spiky, inconsistent results',
+                                   'Carolynn Castillo ([RR9l10XmnC4 @ 00:16:12]); Probate Mastery '
+                                   '([Xt7XgZo03Nw @ 00:11:13])'],
+                                  ['Where the lead data comes from and who controls cost',
+                                   'Pull courthouse records weekly with a trained helper paid two dollars '
+                                   'per lead',
+                                   'Buy vendor lists from alltheleads.com purely to save time on gathering '
+                                   'data',
+                                   'The Aaron Novello Podcast ([H-CW9uu5s-I @ 00:04:02]); Probate Mastery '
+                                   '([kvSTArlGoMU @ 00:49:14])'],
+                                  ['Signing a listing agreement before Letters are issued',
+                                   'No MLS, yard signs or door hangers until the court appoints the PR',
+                                   "Sign a non-binding pre-letters agreement purely for the family's "
+                                   'emotional commitment',
+                                   'Justin Stivers ([Owbx6t3ocjM @ 00:10:10]); Probate Mastery '
+                                   '([d-rZkDYaJhQ @ 00:50:21])'],
+                                  ['What the first mailed touch should actually say',
+                                   'Letter one sells concierge services; real estate leads only by letters '
+                                   'three and four',
+                                   'Pre-probate mail goes aggressive and real-estate focused under a team '
+                                   'member or partner name',
+                                   'All The Leads ([9tTK_fAGgNE @ 00:44:54]); Probate Mastery '
+                                   '([QU_nb_NyIhU @ 00:46:38])'],
+                                  ['Primary target for the listing conversation in each estate',
+                                   'Call the personal representative directly and skip the attorney on '
+                                   'first contact',
+                                   'Build roughly 20 attorney relationships until chasing PRs stops being '
+                                   'necessary at all',
+                                   'Carolynn Castillo ([XN-9ankgVNk @ 00:53:12]); Probate Mastery '
+                                   '([d-rZkDYaJhQ @ 00:08:36])'],
+                                  ['Whether a high heir count helps or hurts the deal',
+                                   'Chuck: the best file is a smooth one, economics are not tied to heir '
+                                   'count',
+                                   'Bruce: single decision-maker is easiest, but multiple heirs produced '
+                                   '13 to 14 transactions',
+                                   'All The Leads ([9tTK_fAGgNE @ 00:16:16])'],
+                                  ['Disposition vehicle for distressed or court-supervised estate property',
+                                   'Buyer agents hunt MLS limited-authority confirmation listings '
+                                   'expecting roughly a ten percent discount',
+                                   'No-commission as-is auction using the title payoff as reserve with a '
+                                   '15-day close',
+                                   'Bill Gross, the LA Probate Expert ([Gyb24k08sGk @ 00:09:16]); All The '
+                                   'Leads ([9eNkvtVoeao @ 00:04:43])']]}},
+              {'number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest losses in this niche are paperwork losses. Justin Stivers '
+                              'watched a realtor waste four months marketing a tenants-in-common property '
+                              'before title flagged that probate was required, and now tells agents to '
+                              "order a title report first [Owbx6t3ocjM @ 00:17:02]. Michelle's amended "
+                              'concession, raised from $8,000 to $10,000, never reached the court papers; '
+                              "the buyer's lender caught it and the deal ate a two-week re-hearing, so the "
+                              'lesson was to treat attorneys as transaction coordinators and get seller '
+                              'permission to contact the lender [kvSTArlGoMU @ 00:25:30]. Bill Gross '
+                              'reports that in Los Angeles about one in four court confirmations gets '
+                              "confirmed while three of four get continued because attorneys don't do the "
+                              'paperwork properly, and adds that 95 percent of probate cases are handled '
+                              'by an attorney who has done one probate or less in the last year '
+                              "[Gyb24k08sGk @ 00:07:59]. Bruce's North Carolina files add three more "
+                              'traps: heirs aged 8 and 11 with a non-heir representative got a closing '
+                              'blocked by the court, an attorney who titled a house to the estate froze '
+                              'sale proceeds at closing, and a family that inventoried a $400k tax value '
+                              'then sold at $600k created a $200k taxable gain [7xCfSyqYEys @ 00:49:08].',
+                              'People problems kill deals as reliably as paperwork. Carolynn Castillo '
+                              'names family dynamics the biggest challenge, citing a file with eight or '
+                              'nine beneficiaries, two of them minors [XN-9ankgVNk @ 00:24:29]. David '
+                              "Cordero's Hawaii escrow stalled when the court set the formal-probate date "
+                              "for the wrong year; after David got the judge's chambers to reset it, the "
+                              'solo attorney ghosted everyone over an $800 balance the client owed. '
+                              "Bruce's fix was to offer to be the attorney's gopher or paralegal, a move "
+                              'that fed Bruce referrals for years [kvSTArlGoMU @ 00:10:55]. The All The '
+                              "Leads mastermind logs harsher reversals: a ten-day overbid on Bruce's "
+                              'double-ended, full-price deal ended with their own buyer outbid, and a '
+                              'short-sale seller was jailed for 30 days, twice, for contempt [9tTK_fAGgNE '
+                              '@ 00:28:26]. The front desk is a trap too. Probate Mastery reports that '
+                              'agents who tell clerks they want to list inherited properties meet '
+                              'resistance, and clerks will look at you like you have two heads; in most '
+                              "states they cannot deny access, but that does not mean they won't if you "
+                              'approach it the wrong way [Mash-3wq9zY @ 00:05:09]. Even Richie, who got a '
+                              '20-to-30-minute heir-lookup tutorial from a Northern Virginia clerk, had '
+                              'reached no one yet off those names.',
+                              "Run the math before the money. Probate Mastery's backward plan says 24 "
+                              'closings at a 20 percent or better conversion means finding 480 pipeline '
+                              "people a year, and warns that people quit because they didn't get a closing "
+                              'fast enough [dzqHqDnAl_E @ 00:01:53]. The growth-model host puts the runway '
+                              'at six months, telling anyone who needs a deal next month that probate may '
+                              'not suit them, and admits marketing spend once ran $30K to $50K a month '
+                              'before dropping to $3K to $4K for a couple of deals; leads cost $400 to '
+                              '$500 for about 150 records [Xt7XgZo03Nw @ 00:37:36]. The urgent slice is '
+                              'crowded: only 10 to 15 percent of filings must sell for financial reasons, '
+                              'and in 100-lead markets about 10 other investors or agents mail and call '
+                              'those same people, while a 1,000-note-a-month handwritten pre-probate '
+                              "campaign converts to about one deal [QU_nb_NyIhU @ 00:04:28]. Bruce's own "
+                              "branding experiment, a '29 days or free' radio ad, burned $25,000 over five "
+                              'months before the first client arrived, and the lesson stuck: never go a '
+                              'year without contacting a referral source [d-rZkDYaJhQ @ 00:33:35]. '
+                              "Castillo's previous vendor sent about 100 leads, many with no real estate, "
+                              'yielding only one to two listings a month.'],
+               'table': {'caption': 'Firsthand probate listing failures and the operating fix each '
+                                    'practitioner applied',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Or Operating Fix',
+                                     'Expert Source'],
+                         'rows': [['Tenants-in-common title surprise discovered after marketing began',
+                                   'A realtor wasted four months marketing before title flagged that '
+                                   'probate was required',
+                                   'Order a title report before a single marketing dollar goes out the '
+                                   'door',
+                                   'Justin Stivers ([Owbx6t3ocjM @ 00:17:02])'],
+                                  ['Amended seller concession never reached the court papers',
+                                   'An $8,000 to $10,000 change was caught by the lender, forcing a '
+                                   'two-week re-hearing',
+                                   'Treat attorneys as transaction coordinators and get seller permission '
+                                   'to contact the lender',
+                                   'Probate Mastery ([kvSTArlGoMU @ 00:25:30])'],
+                                  ['Court confirmation continued over attorney paperwork errors',
+                                   'About three of four Los Angeles confirmations get continued because '
+                                   'paperwork is done improperly',
+                                   'Get in first and profit from the difficulty that scares off other '
+                                   'agents',
+                                   'Bill Gross, the LA Probate Expert ([Gyb24k08sGk @ 00:07:59])'],
+                                  ['Minor heirs paired with a non-heir personal representative',
+                                   'Heirs aged 8 and 11 with an outside representative got the closing '
+                                   'blocked by court',
+                                   'Check the Letters for bond requirements and restrictions before '
+                                   'writing any contract',
+                                   'Probate Mastery ([7xCfSyqYEys @ 00:49:08])'],
+                                  ['Disowned sibling still named in the will',
+                                   'An estranged brother named in the will still had to sign for a primary '
+                                   'residence',
+                                   'Get every single beneficiary on board before the listing goes live '
+                                   'anywhere',
+                                   'Carolynn Castillo ([ewbkVPWFtKM @ 00:19:42])'],
+                                  ['Executor who does not actually want to sell',
+                                   'Jim in Florida calls an unwilling executor a hard road with poor odds',
+                                   'Stop burning calls on that estate and move on to the next lead',
+                                   'All The Leads ([9eNkvtVoeao @ 00:27:18])'],
+                                  ['Advancing prep costs on a listing that changes hands',
+                                   "The host reimbursed a rival agent's dumpster and that agent was still "
+                                   'furious',
+                                   'Advance lawn, cleaning and locks only after a signed agreement at 4 to '
+                                   '7 percent',
+                                   'Probate Mastery ([Xt7XgZo03Nw @ 00:52:07])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches Before You Spend On A Probate Listing',
+                           'body': 'Every item below is a loss a practitioner ate firsthand. Clear all '
+                                   'four before marketing money, prep costs or your calendar go into an '
+                                   'estate.',
+                           'items': ['Confirm the court-appointed personal representative and issued '
+                                     'Letters before any MLS entry, sign or door hanger, because a '
+                                     'different PR can get appointed and hire someone else [Justin Stivers '
+                                     '— Owbx6t3ocjM @ 00:10:10].',
+                                     'Read every amendment against the court papers and get seller '
+                                     "permission to call the buyer's lender, or a missed concession change "
+                                     'can force a two-week re-hearing [Probate Mastery — kvSTArlGoMU @ '
+                                     '00:25:30].',
+                                     'Fund at least a six-month runway before launching; if you need a '
+                                     'deal next month, probate may not suit your business [Probate Mastery '
+                                     '— Xt7XgZo03Nw @ 00:37:36].',
+                                     'Map every beneficiary, including minors and estranged siblings, '
+                                     'before pricing or listing, since family dynamics are the biggest '
+                                     'challenge in the file [Carolynn Castillo — XN-9ankgVNk @ '
+                                     '00:24:29].']}}],
+ 'pull_quote': '"The fact that it\'s difficult is where I make my money." — attributed to Bill Gross, the '
+               'LA Probate Expert (Gyb24k08sGk @ 00:08:53).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Document courthouse data pulls as an SOP with Loom videos, pay a helper $2 per '
+                      'lead, run contacts through Forewarn and load records into Follow Up Boss [The Aaron '
+                      'Novello Podcast — H-CW9uu5s-I @ 00:04:02].',
+                      'Rank new leads so PRs living more than 50 miles from the decedent get called first, '
+                      'then nearby PRs who lived separately, then PRs who lived with the decedent [Probate '
+                      'Mastery — 7xCfSyqYEys @ 01:32:41].',
+                      'Open the call by saying you are calling regarding the pending probate case and '
+                      'asking whether they are considering selling the property, then book a consultation '
+                      'instead of closing on the first call [Carolynn Castillo — XN-9ankgVNk @ 00:55:51].',
+                      'When a PR puts you off, ask whether the real estate is something they are thinking '
+                      'about selling once probate is over and offer to shoot them some resources [Probate '
+                      'Mastery — dzqHqDnAl_E @ 00:03:24].',
+                      'Budget about $61 per resistant PR for roughly eight pieces of email and mail over '
+                      'six to eight months, emailing only people you have spoken with [Probate Mastery — '
+                      'kvSTArlGoMU @ 00:54:45].',
+                      'Stop by target attorney offices every month and a half to two months with lunches, '
+                      'coffee and gift cards to earn a spot in their referral rotation [Probate Mastery — '
+                      'QU_nb_NyIhU @ 00:56:56].'],
+ 'statutory_citations': [{'title': 'Bill Gross, the LA Probate Expert — How to Leverage MLS Limited '
+                                   'Authority for Probate Leads [00:07:59]',
+                          'url': 'https://www.youtube.com/watch?v=Gyb24k08sGk&t=479s',
+                          'relevance': 'Primary practitioner testimony on court confirmation continuances '
+                                       'caused by attorney paperwork errors.'},
+                         {'title': 'Justin Stivers — Probate 101 for Realtors [00:10:10]',
+                          'url': 'https://www.youtube.com/watch?v=Owbx6t3ocjM&t=610s',
+                          'relevance': 'Primary practitioner testimony on waiting for personal '
+                                       'representative appointment before any marketing.'},
+                         {'title': 'Probate Mastery — Probate Process for Real Estate Agents & Investors: '
+                                   '12 Steps From Filing to Sale [01:29:23]',
+                          'url': 'https://www.youtube.com/watch?v=7xCfSyqYEys&t=5363s',
+                          'relevance': 'Primary practitioner testimony on listing during the creditor '
+                                       'window while closing must wait.'},
+                         {'title': 'Probate Mastery — Become a Probate Real Estate Specialist & Close More '
+                                   'Deals (Real Examples Inside!) [00:50:21]',
+                          'url': 'https://www.youtube.com/watch?v=d-rZkDYaJhQ&t=3021s',
+                          'relevance': 'Primary practitioner testimony on non-binding pre-letters listing '
+                                       'agreements and their risks.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'XN-9ankgVNk',
+                       'title': 'Mastering Probate Real Estate: A Comprehensive Training Guide',
+                       'channel': 'Carolynn Castillo',
+                       'author': 'Carolynn Castillo',
+                       'text': 'Foreclosures Daily sends about 25 leads a week per county, and every one '
+                               'of them has real estate.',
+                       'tip': 'Foreclosures Daily sends about 25 leads a week per county, and every one of '
+                              'them has real estate.',
+                       'timestamp': 785,
+                       'timestamp_seconds': 785,
+                       'timestamp_label': '[00:13:05]',
+                       'url': 'https://www.youtube.com/watch?v=XN-9ankgVNk&t=785s',
+                       'markdown': '[00:13:05](https://www.youtube.com/watch?v=XN-9ankgVNk&t=785s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ewbkVPWFtKM',
+                       'title': 'What Is the Probate Process? A Step-by-Step Breakdown for Realtors',
+                       'channel': 'Carolynn Castillo',
+                       'author': 'Carolynn Castillo',
+                       'text': 'Now, in Florida, our creditor timeline is 90 days.',
+                       'tip': 'Now, in Florida, our creditor timeline is 90 days.',
+                       'timestamp': 538,
+                       'timestamp_seconds': 538,
+                       'timestamp_label': '[00:08:58]',
+                       'url': 'https://www.youtube.com/watch?v=ewbkVPWFtKM&t=538s',
+                       'markdown': '[00:08:58](https://www.youtube.com/watch?v=ewbkVPWFtKM&t=538s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RR9l10XmnC4',
+                       'title': 'Unlocking the Gold Rush of Probate Real Estate for 2026! 🎉',
+                       'channel': 'Carolynn Castillo',
+                       'author': 'Carolynn Castillo',
+                       'text': 'Most probate, most counties when you get probate leads is probably about '
+                               'anywhere from 20 to 40 leads a week.',
+                       'tip': 'Most probate, most counties when you get probate leads is probably about '
+                              'anywhere from 20 to 40 leads a week.',
+                       'timestamp': 972,
+                       'timestamp_seconds': 972,
+                       'timestamp_label': '[00:16:12]',
+                       'url': 'https://www.youtube.com/watch?v=RR9l10XmnC4&t=972s',
+                       'markdown': '[00:16:12](https://www.youtube.com/watch?v=RR9l10XmnC4&t=972s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '44RbpWBPcbI',
+                       'title': 'The Probate Lead Strategy That Made This Real Estate Agent $50K',
+                       'channel': 'The Aaron Novello Podcast',
+                       'author': 'The Aaron Novello Podcast',
+                       'text': 'He last month took five probate listings.',
+                       'tip': 'He last month took five probate listings.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=44RbpWBPcbI&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=44RbpWBPcbI&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dzqHqDnAl_E',
+                       'title': 'How to Build a Successful Probate Real Estate Business & Generate '
+                                'Consistent Leads (2025)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "I do that because I know that my average agent or investor that's in the "
+                               'probate niche is going to follow up three times or touch a lead three '
+                               "times. That doesn't do it.",
+                       'tip': "I do that because I know that my average agent or investor that's in the "
+                              'probate niche is going to follow up three times or touch a lead three '
+                              "times. That doesn't do it.",
+                       'timestamp': 362,
+                       'timestamp_seconds': 362,
+                       'timestamp_label': '[00:06:02]',
+                       'url': 'https://www.youtube.com/watch?v=dzqHqDnAl_E&t=362s',
+                       'markdown': '[00:06:02](https://www.youtube.com/watch?v=dzqHqDnAl_E&t=362s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd-rZkDYaJhQ',
+                       'title': 'Become a Probate Real Estate Specialist & Close More Deals (Real Examples '
+                                'Inside!)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "I can't hold them to anything if we've signed our agreement before their "
+                               'letters come out.',
+                       'tip': "I can't hold them to anything if we've signed our agreement before their "
+                              'letters come out.',
+                       'timestamp': 3082,
+                       'timestamp_seconds': 3082,
+                       'timestamp_label': '[00:51:22]',
+                       'url': 'https://www.youtube.com/watch?v=d-rZkDYaJhQ&t=3082s',
+                       'markdown': '[00:51:22](https://www.youtube.com/watch?v=d-rZkDYaJhQ&t=3082s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kvSTArlGoMU',
+                       'title': 'How Probate Real Estate Specialists Find Leads,  Real Life Court Visits & '
+                                'Atty Referral Strategies',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'So, I give them the satisfaction of holding me off in the first '
+                               'conversation.',
+                       'tip': 'So, I give them the satisfaction of holding me off in the first '
+                              'conversation.',
+                       'timestamp': 3307,
+                       'timestamp_seconds': 3307,
+                       'timestamp_label': '[00:55:07]',
+                       'url': 'https://www.youtube.com/watch?v=kvSTArlGoMU&t=3307s',
+                       'markdown': '[00:55:07](https://www.youtube.com/watch?v=kvSTArlGoMU&t=3307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QU_nb_NyIhU',
+                       'title': 'Probate Real Estate Specialist Guide: How Realtors & Investors Build '
+                                'Predictable Income',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "So 10 to 15%, you get 100 probate leads, there's probably going to be 10 "
+                               'in there that have to go.',
+                       'tip': "So 10 to 15%, you get 100 probate leads, there's probably going to be 10 in "
+                              'there that have to go.',
+                       'timestamp': 250,
+                       'timestamp_seconds': 250,
+                       'timestamp_label': '[00:04:10]',
+                       'url': 'https://www.youtube.com/watch?v=QU_nb_NyIhU&t=250s',
+                       'markdown': '[00:04:10](https://www.youtube.com/watch?v=QU_nb_NyIhU&t=250s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xt7XgZo03Nw',
+                       'title': '5 Proven Ways to Grow Your Probate Real Estate Business (and Never Run '
+                                'Out of Leads)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "So it's one of those things where the middle ground is kind of the kiss of "
+                               'death to your probate business.',
+                       'tip': "So it's one of those things where the middle ground is kind of the kiss of "
+                              'death to your probate business.',
+                       'timestamp': 720,
+                       'timestamp_seconds': 720,
+                       'timestamp_label': '[00:12:00]',
+                       'url': 'https://www.youtube.com/watch?v=Xt7XgZo03Nw&t=720s',
+                       'markdown': '[00:12:00](https://www.youtube.com/watch?v=Xt7XgZo03Nw&t=720s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xt7XgZo03Nw',
+                       'title': '5 Proven Ways to Grow Your Probate Real Estate Business (and Never Run '
+                                'Out of Leads)',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "It's very inconsistent with where that business and when that business is "
+                               "going to come in when you're running exclusively a mailing campaign.",
+                       'tip': "It's very inconsistent with where that business and when that business is "
+                              "going to come in when you're running exclusively a mailing campaign.",
+                       'timestamp': 906,
+                       'timestamp_seconds': 906,
+                       'timestamp_label': '[00:15:06]',
+                       'url': 'https://www.youtube.com/watch?v=Xt7XgZo03Nw&t=906s',
+                       'markdown': '[00:15:06](https://www.youtube.com/watch?v=Xt7XgZo03Nw&t=906s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H-CW9uu5s-I',
+                       'title': 'How to Get Probate Real Estate Listings (The "Courthouse" Strategy)',
+                       'channel': 'The Aaron Novello Podcast',
+                       'author': 'The Aaron Novello Podcast',
+                       'text': 'Whoever controls the lead controls how much it costs; you should burn that '
+                               'into your brain.',
+                       'tip': 'Whoever controls the lead controls how much it costs; you should burn that '
+                              'into your brain.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=H-CW9uu5s-I&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=H-CW9uu5s-I&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Mash-3wq9zY',
+                       'title': 'Winning Probate Leads: Know the Process, Serve Your Market',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "In most states, they can't deny you access. But just cuz they're not "
+                               "supposed to doesn't mean that they don't if you approach it the wrong way.",
+                       'tip': "In most states, they can't deny you access. But just cuz they're not "
+                              "supposed to doesn't mean that they don't if you approach it the wrong way.",
+                       'timestamp': 340,
+                       'timestamp_seconds': 340,
+                       'timestamp_label': '[00:05:40]',
+                       'url': 'https://www.youtube.com/watch?v=Mash-3wq9zY&t=340s',
+                       'markdown': '[00:05:40](https://www.youtube.com/watch?v=Mash-3wq9zY&t=340s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Gyb24k08sGk',
+                       'title': 'How to Leverage MLS Limited Authority for Probate Leads',
+                       'channel': 'Bill Gross, the LA Probate Expert',
+                       'author': 'Bill Gross, the LA Probate Expert',
+                       'text': 'About one in four get confirmed, then three out of four get continued '
+                               "because the estate attorneys don't do the paperwork properly.",
+                       'tip': 'About one in four get confirmed, then three out of four get continued '
+                              "because the estate attorneys don't do the paperwork properly.",
+                       'timestamp': 479,
+                       'timestamp_seconds': 479,
+                       'timestamp_label': '[00:07:59]',
+                       'url': 'https://www.youtube.com/watch?v=Gyb24k08sGk&t=479s',
+                       'markdown': '[00:07:59](https://www.youtube.com/watch?v=Gyb24k08sGk&t=479s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9tTK_fAGgNE',
+                       'title': 'Success in Probate Deals, Inheritance, and Property Clean Out | Probate '
+                                'Mastermind #426',
+                       'channel': 'All The Leads',
+                       'author': 'All The Leads',
+                       'text': "A lot of people don't make those decisions until month five, six, seven "
+                               "sometimes, and if you drop out on month two with mail, they're gonna have "
+                               'months to forget who you are.',
+                       'tip': "A lot of people don't make those decisions until month five, six, seven "
+                              "sometimes, and if you drop out on month two with mail, they're gonna have "
+                              'months to forget who you are.',
+                       'timestamp': 1259,
+                       'timestamp_seconds': 1259,
+                       'timestamp_label': '[00:20:59]',
+                       'url': 'https://www.youtube.com/watch?v=9tTK_fAGgNE&t=1259s',
+                       'markdown': '[00:20:59](https://www.youtube.com/watch?v=9tTK_fAGgNE&t=1259s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9eNkvtVoeao',
+                       'title': 'Navigating the Competitive Probate Real Estate Market | Probate '
+                                'Mastermind #422',
+                       'channel': 'All The Leads',
+                       'author': 'All The Leads',
+                       'text': 'What we do is if somebody refers a property to us we pay a full three '
+                               'percent back to that referring agent.',
+                       'tip': 'What we do is if somebody refers a property to us we pay a full three '
+                              'percent back to that referring agent.',
+                       'timestamp': 422,
+                       'timestamp_seconds': 422,
+                       'timestamp_label': '[00:07:02]',
+                       'url': 'https://www.youtube.com/watch?v=9eNkvtVoeao&t=422s',
+                       'markdown': '[00:07:02](https://www.youtube.com/watch?v=9eNkvtVoeao&t=422s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Owbx6t3ocjM',
+                       'title': 'Probate 101 for Realtors',
+                       'channel': 'Justin Stivers',
+                       'author': 'Justin Stivers',
+                       'text': "You can't do anything until that person becomes the personal "
+                               'representative.',
+                       'tip': "You can't do anything until that person becomes the personal "
+                              'representative.',
+                       'timestamp': 610,
+                       'timestamp_seconds': 610,
+                       'timestamp_label': '[00:10:10]',
+                       'url': 'https://www.youtube.com/watch?v=Owbx6t3ocjM&t=610s',
+                       'markdown': '[00:10:10](https://www.youtube.com/watch?v=Owbx6t3ocjM&t=610s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7xCfSyqYEys',
+                       'title': 'Probate Process for Real Estate Agents & Investors: 12 Steps From Filing '
+                                'to Sale',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': "Most of the time, you're just not allowed to close during the creditor "
+                               'window.',
+                       'tip': "Most of the time, you're just not allowed to close during the creditor "
+                              'window.',
+                       'timestamp': 6102,
+                       'timestamp_seconds': 6102,
+                       'timestamp_label': '[01:41:42]',
+                       'url': 'https://www.youtube.com/watch?v=7xCfSyqYEys&t=6102s',
+                       'markdown': '[01:41:42](https://www.youtube.com/watch?v=7xCfSyqYEys&t=6102s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

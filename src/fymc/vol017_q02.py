@@ -1,648 +1,860 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-domain-investing-payment-rails",
-    "question_prompt": "Who writes the check in domain investing, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Budget Owners, Eight Settlement Structures, Registrar Custody, ACPA Exposure, and Evidence-Based Domain Upgrade Offers",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #16, Domain Investing, holds Rank #22 with a 83/100 "
-        "Money-to-Manpower Score. Buyers pay for launch readiness, memorable positioning, "
-        "search relevance, and reduced customer confusion; a trademark concern does not "
-        "create an obligation to buy. This chapter maps eight plays: NRD diagnostic "
-        "triggers, brandable launches, exact-match acquisitions, expired-authority purchases, "
-        "drop-catch resale, outbound upgrades, portfolio bundles, and installment sales. "
-        "Separate the executive sponsor from the person authorized to fund escrow, then "
-        "link verified funds to documented registrar control. Canonical annual owner net "
-        "profit is $3,000 Conservative, $44,000 Base, and $120,000 Scaled, measured against "
-        "gross domain sale proceeds rather than buyer business volume. Protect contribution "
-        "through title diligence, written fee allocation, screened counterparties, and "
-        "explicit release evidence."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$20,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewals included in margin",
-            "note": "15% net margin; $3,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Base",
-            "value": "$160,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewals included in margin",
-            "note": "27.5% net margin; $44,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$300,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewals included in margin",
-            "note": "40% net margin; $120,000 annual owner net profit; 2 FT + 2 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Find the budget owner and sell a measurable business decision",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with the buyer's operating event, not an appraisal certificate. "
-                    "A founder approaching launch buys a brandable name because changing "
-                    "packaging, email addresses, and investor materials later creates avoidable "
-                    "work. A marketing director considering an exact-match name needs a "
-                    "credible acquisition hypothesis, not a promise of search rankings. "
-                    "An established merchant considering an upgrade wants fewer mistyped "
-                    "visits and a cleaner spoken address; their chief executive may sponsor "
-                    "the purchase while a controller controls the wire. Identify all three "
-                    "roles: economic beneficiary, contract signatory, and funding operator. "
-                    "Ask which entity will own the registration, which entity will pay, "
-                    "whether procurement requires a purchase order, and whether the registrar "
-                    "account already exists. A sponsored proposal without a funding owner "
-                    "is still a lead. For a $10,000 upgrade, a buyer estimating $2,000 "
-                    "monthly incremental contribution has a five-month simple payback before "
-                    "migration costs, but the assumptions belong to the buyer and require "
-                    "testing. Compare that estimate with keeping the existing name, buying "
-                    "another available name, or postponing the launch. These alternatives "
-                    "explain price resistance more reliably than the seller's historical "
-                    "acquisition cost or an automated valuation."
-                ),
-                (
-                    "The chapter's eight mapped plays describe distinct purchasing motives; "
-                    "they are not eight additive revenue forecasts. Brandable launches "
-                    "sell naming fit, exact-match acquisitions sell descriptive relevance, "
-                    "expired-authority purchases sell an asset requiring historical diligence, "
-                    "and drop-catch resale sells scarce availability after deletion. Outbound "
-                    "upgrades address an existing business's naming friction. Portfolio "
-                    "bundles reduce fragmented negotiations, while installment sales exchange "
-                    "immediate ownership for scheduled access and collection risk. The "
-                    "eighth purchasing pathway, newly_registered_domain_trigger_arbitrage, "
-                    "uses observable launch defects to open a diagnostic conversation. "
-                    "None authorizes manufacturing statutory pressure. Under 15 U.S.C. "
-                    "1125(d), bad-faith intent to profit from another party's protected "
-                    "mark can create serious exposure; 15 U.S.C. 1117(d) provides elected "
-                    "statutory damages of $1,000 to $100,000 per domain for covered "
-                    "violations. A trademark owner may pursue recovery rather than buy "
-                    "the name. Screen marks before acquisition, document independent "
-                    "selection reasons, and stop outreach when the proposed pitch depends "
-                    "on exploiting confusion. A threatened dispute is a reason to preserve "
-                    "records and obtain case-specific review, not a reason to increase "
-                    "the asking price. Search USPTO records, relevant commercial use, "
-                    "and the name's historical content before committing capital."
-                ),
-                (
-                    "Build the NRD pathway from permitted data, not assumptions about "
-                    "private registrants. Download available ICANN CZDS zone files under "
-                    "their access terms and compare daily snapshots; an added delegation "
-                    "is a candidate signal, not conclusive proof of a new registration. "
-                    "CZDS does not cover every top-level domain. For .us, use registry "
-                    "or registrar RDAP responses and any expressly permitted feed; do "
-                    "not assume a universal unredacted bulk service exists. Cross-match "
-                    "domain tokens with Secretary of State LLC records to identify a "
-                    "plausible business mailing address, then verify the match before "
-                    "contact. An LLC name match does not establish registrant identity. "
-                    "Run low-rate DNS and HTTP observations across 72 hours, recording "
-                    "timestamps, response codes, sitemap discovery, SPF, and DMARC. An "
-                    "inaccessible sitemap.xml is not proof that no sitemap exists, and "
-                    "public search results cannot prove zero indexed Google pages. Request "
-                    "owner-authorized Search Console evidence where indexing matters. Send "
-                    "a clearly private technical diagnostic with specific fixes and a "
-                    "separate optional domain offer. Missing SPF or DMARC does not force "
-                    "a purchase. If data access or identity confidence fails, fall back "
-                    "to permitted CZDS snapshots and verified LLC addresses, not aggressive "
-                    "WHOIS scraping."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Mapped Plays: Buyer Motive, Illustrative Unit Contribution, and Risk Fallback",
-                "headers": [
-                    "Mapped play and accountable purchasing role",
-                    "Business reason supporting a purchase decision",
-                    "Illustrative unit math before shared overhead",
-                    "Specific fallback when the thesis breaks",
-                ],
-                "rows": [
-                    [
-                        "NRD diagnostic triggers sold to verified launching business founders",
-                        "Separate documented technical repairs from an optional naming upgrade",
-                        "$5,000 price less $500 fees, $1,000 acquisition, $200 carrying, and $500 outreach leaves $2,800",
-                        "Use permitted zone snapshots and verified LLC addresses; sell no supposed statutory cure",
-                    ],
-                    [
-                        "Brandable launches sold to founders with approved naming budgets",
-                        "Secure a pronounceable identity before packaging and launch production",
-                        "$12,000 price less $1,200 fees, $2,500 acquisition, and $300 carrying leaves $8,000",
-                        "Offer alternative owned names when trademark screening blocks the favorite",
-                    ],
-                    [
-                        "Exact-match acquisitions sold to accountable category marketing directors",
-                        "Test descriptive positioning against existing paid acquisition economics",
-                        "$18,000 price less $1,800 fees, $6,000 acquisition, and $200 carrying leaves $10,000",
-                        "Price without assumed ranking benefits when traffic evidence fails",
-                    ],
-                    [
-                        "Expired-authority purchases sold to experienced digital property operators",
-                        "Acquire a relevant name after inspecting historical use independently",
-                        "$8,000 price less $800 fees, $2,500 acquisition, and $300 carrying leaves $4,400",
-                        "Reject contaminated histories rather than promising inherited search authority",
-                    ],
-                    [
-                        "Drop-catch resale sold to buyers seeking newly available names",
-                        "Obtain scarce inventory without personally managing competing auction services",
-                        "$6,000 price less $600 fees, $1,800 acquisition, and $200 carrying leaves $3,400",
-                        "Stop bidding at the contribution ceiling and pursue substitutes",
-                    ],
-                    [
-                        "Outbound upgrades sold to established merchants and executive sponsors",
-                        "Reduce address friction while preserving an orderly migration plan",
-                        "$10,000 price less $1,000 fees, $3,000 acquisition, $200 carrying, and $400 outreach leaves $5,400",
-                        "Retain inventory when migration economics cannot support the price",
-                    ],
-                    [
-                        "Portfolio bundles sold to acquisition leads with consolidated authority",
-                        "Replace separate negotiations with one documented multi-domain closing",
-                        "$25,000 price less $2,500 fees, $9,000 acquisition, and $1,000 carrying leaves $12,500",
-                        "Use domain-level price allocations and exclude disputed assets individually",
-                    ],
-                    [
-                        "Installment sales sold to buyers with constrained immediate liquidity",
-                        "Match scheduled payments to launch cash while delaying ownership",
-                        "Twelve $500 payments less $600 fees, $1,800 acquisition, and $200 carrying leave $3,400",
-                        "Suspend contractually permitted access after default without assuming full collection",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Turn domain signals into credible buying conversations",
-                "body": "Use evidence to qualify demand without confusing a technical observation with a purchase obligation.",
-                "items": [
-                    "Record zone snapshot dates separately from registration dates; delegation changes can otherwise create false launch triggers.",
-                    "Include one reproducible DNS finding and its actual repair instructions in each diagnostic mailer before presenting an optional name.",
-                    "Ask the controller for purchase-order requirements before negotiating a final price with the executive sponsor.",
-                    "Keep comparable sales grouped by extension, length, buyer context, and sale date; isolated premium transactions distort ordinary inventory pricing.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose the settlement structure before releasing registrar control",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate payment transport from transaction protection. A wire moves "
-                    "money between bank accounts; escrow defines when a third party "
-                    "may release money; marketplace checkout combines payment collection "
-                    "with contractual transfer procedures. These are different layers, "
-                    "and a transaction may use several simultaneously. For a direct "
-                    "$15,000 sale, the parties might sign a domain purchase agreement, "
-                    "fund an Escrow.com transaction by wire, transfer the registration, "
-                    "and release proceeds after the agreed inspection event. Verify "
-                    "current provider eligibility, supported jurisdictions, identity checks, "
-                    "fees, and dispute handling before promising that sequence. Screenshots "
-                    "of bank instructions or pending transfers are not funding evidence. "
-                    "Use the provider's authenticated dashboard and independently sourced "
-                    "support channels. Confirm bank-detail changes through a previously "
-                    "verified contact rather than replying to the message containing "
-                    "the change. A seller should know whether the provider requires "
-                    "cleared funds, merely received funds, or an additional review before "
-                    "authorizing transfer. Wire payments reduce some collection risks "
-                    "but remain exposed to fraud investigations and attempted recalls. "
-                    "Do not describe any rail as absolutely irreversible. When the "
-                    "buyer cannot pass onboarding, pause the closing rather than redirecting "
-                    "money through an unrelated personal account."
-                ),
-                (
-                    "Define delivery as control of the specific registration, not merely "
-                    "a working website. A registrar push changes accounts within one "
-                    "registrar; an inter-registrar transfer changes the sponsoring registrar "
-                    "and may face policy restrictions, authentication requirements, or "
-                    "locks. ICANN transfer rules and provider practices can restrict "
-                    "recent registrations, recent transfers, or changes of registrant; "
-                    "check the actual domain before committing to a closing date. "
-                    "Never disable protective controls simply because a stranger requests "
-                    "a faster deal. Identify the receiving account, exact domain spelling, "
-                    "expiration date, DNS continuity requirements, and evidence acceptable "
-                    "to the settlement provider. Public RDAP data may be redacted "
-                    "or delayed, so combine registrar confirmation with buyer acknowledgement "
-                    "rather than relying on one public lookup. Deliver authorization "
-                    "codes only through the agreed secure channel after the provider "
-                    "authorizes that step. Keep the domain, associated website, email "
-                    "mailboxes, content copyrights, and historical customer data separate "
-                    "in the agreement; selling a domain does not automatically transfer "
-                    "those assets. For a bundle, specify whether each successful transfer "
-                    "releases its allocated proceeds or whether all transfers must complete. "
-                    "Ambiguous delivery language turns minor registrar delays into disputes "
-                    "over the entire purchase price."
-                ),
-                (
-                    "Use installment structures only when the collection economics survive "
-                    "default. Twelve $500 payments create $6,000 of scheduled consideration, "
-                    "not $6,000 of cash on signing. If only three payments arrive, "
-                    "collections are $1,500 before fees, renewals, enforcement expense, "
-                    "and any recovery work. A domain lease or lease-to-own arrangement "
-                    "needs explicit custody, DNS permissions, prohibited uses, renewal "
-                    "responsibility, cure periods, and the event that finally transfers "
-                    "ownership. Do not give uncontrolled registrar access while assuming "
-                    "the name remains recoverable. Retainers serve a different purpose: "
-                    "a buyer may prepay a broker for defined search or negotiation "
-                    "work, but that service receipt is not automatically the owned-domain "
-                    "sale revenue modeled here. Factoring is also different; a factor "
-                    "purchases an eligible receivable, often with reserves and recourse, "
-                    "and cannot make an unsigned prospect into collectible revenue. "
-                    "Statutory disbursement is an exceptional legal process, not a "
-                    "marketing label for escrow. Where money has actually been deposited "
-                    "with a federal court, 28 U.S.C. 2042 governs withdrawal by "
-                    "court order. A normal domain purchase does not qualify merely "
-                    "because the parties mention a dispute. Match the structure to "
-                    "the asset, counterparty, and enforceable release conditions."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Structures: Funding Evidence, Release Conditions, and Exposure",
-                "headers": [
-                    "Rail or contractual settlement structure",
-                    "Authority and evidence required before proceeding",
-                    "Release mechanics and allocation of charges",
-                    "Residual risk and practical operating response",
-                ],
-                "rows": [
-                    [
-                        "Bank wire directly between verified business account holders",
-                        "Authorized payer matches the agreement and bank confirms receipt",
-                        "Transfer only under agreed conditions after independent funding verification",
-                        "Misdirected instructions and fraud remain possible; verify changes independently",
-                    ],
-                    [
-                        "Third-party escrow funded through an accepted payment method",
-                        "Provider completes identity checks and expressly authorizes asset delivery",
-                        "Written inspection conditions determine release and allocate escrow charges",
-                        "Disputed delivery can freeze proceeds; preserve registrar evidence carefully",
-                    ],
-                    [
-                        "ACH collection through a provider supporting this transaction",
-                        "Confirm authorization, account validation, settlement timing, and return exposure",
-                        "Delay ownership delivery according to provider rules and contract",
-                        "Returns and unauthorized-payment claims require reserves and careful screening",
-                    ],
-                    [
-                        "Service retainer for separately contracted domain acquisition assistance",
-                        "Buyer signs a scope specifying earned fees and cancellation",
-                        "Recognize service obligations separately from owned-domain purchase consideration",
-                        "Unclear scope invites refunds; itemize work and separate asset deposits",
-                    ],
-                    [
-                        "Statutory disbursement following an applicable court-directed deposit process",
-                        "Actual court order and authorized disbursing officer control payment",
-                        "Release follows the governing order rather than commercial preference",
-                        "Ordinary sales lack this mechanism; use commercial escrow instead",
-                    ],
-                    [
-                        "Marketplace checkout through a provider such as Sedo",
-                        "Confirm listing ownership, payout identity, and supported transfer workflow",
-                        "Platform deducts contracted charges and releases under current terms",
-                        "Off-platform diversion can breach terms and remove settlement protections",
-                    ],
-                    [
-                        "Factoring of an accepted and eligible business receivable",
-                        "Factor verifies debtor credit, assignment restrictions, and underlying delivery",
-                        "Advance less reserves and fees is financing, not additional sales",
-                        "Recourse can return losses to seller; reject unsuitable receivables",
-                    ],
-                    [
-                        "Milestone holds within a documented multi-domain escrow transaction",
-                        "Each domain has allocated value and objectively verifiable delivery",
-                        "Provider releases allocated amounts only after specified evidence arrives",
-                        "Vague milestones prolong holds; define failed-transfer treatment before funding",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Bind the parties and the asset",
-                    "action": "Execute terms naming buyer, seller, exact domain, price, charges, and delivery method.",
-                    "detail": "Confirm signatory authority and receiving registrar account; identify any separately excluded website assets.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify funding through the provider",
-                    "action": "Wait for authenticated confirmation that the agreed delivery step is authorized.",
-                    "detail": "Reject payment screenshots as evidence and independently verify any changed beneficiary instructions.",
-                },
-                {
-                    "step": 3,
-                    "title": "Deliver with a timestamped control record",
-                    "action": "Complete the agreed registrar push or transfer using a secure channel.",
-                    "detail": "Retain account confirmation, registrar notices, buyer acknowledgement, and any documented DNS continuity checks.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release and reconcile the actual proceeds",
-                    "action": "Match the settlement statement to the purchase agreement and bank receipt.",
-                    "detail": "Record gross sale proceeds, separately classified charges, inventory cost, and any continuing holdback.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Screen counterparties and protect fees without coercive tactics",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Counterparty screening should answer whether the buyer exists, can "
-                    "commit the named entity, and can fund the chosen structure. "
-                    "Check the relevant Secretary of State record, business website, "
-                    "business email domain, and independently verified telephone contact. "
-                    "Entity registration establishes a filing, not solvency or authority. "
-                    "For a material corporate purchase, request confirmation that the "
-                    "signatory can bind the entity and that accounts payable accepts "
-                    "the supplier documentation. For an installment buyer, obtain proportionate, "
-                    "permissioned business credit evidence, trade references, or a larger "
-                    "initial payment; do not collect unrelated personal records simply "
-                    "because a form permits it. A buyer refusing basic identity "
-                    "checks while demanding immediate transfer is unsuitable for unsecured "
-                    "terms. Screen relevant parties against applicable sanctions restrictions "
-                    "using current official resources, and route potential matches through "
-                    "the provider's process rather than assuming a similar name proves "
-                    "a prohibition. Keep only the records needed for the transaction "
-                    "and restrict access. If a buyer insists that an unrelated "
-                    "entity will fund the purchase, document the relationship and obtain "
-                    "provider acceptance before payment. Unexplained third-party funding creates "
-                    "refund, ownership, and fraud questions that a persuasive sales story "
-                    "does not resolve."
-                ),
-                (
-                    "Protect fees through a written mandate and an auditable introduction "
-                    "trail, not through hiding important facts from either party. For "
-                    "brokered work, identify the client, covered domains, commission base, "
-                    "earning event, payment date, expenses, and any narrowly defined "
-                    "post-termination introduction period. A buyer-facing acquisition retainer "
-                    "should specify whether it is credited against a success fee "
-                    "and which deliverables earn it. For owned inventory, marketplace "
-                    "commissions are selling costs, not a separate service revenue "
-                    "stream. Record inquiry timestamps, introduction emails, offer versions, "
-                    "and the buyer's acknowledged entity name. If a lead arrived "
-                    "through Afternic or Sedo, examine the current listing and referral "
-                    "terms before proposing another checkout route. Moving a transaction "
-                    "outside the platform solely to avoid an owed commission can "
-                    "create a contractual dispute and remove useful settlement support. "
-                    "Use the provider's permitted workflow or negotiate a documented "
-                    "release. Avoid dual compensation that neither principal understands. "
-                    "Where the escrow provider supports commission instructions, have "
-                    "the parties authorize the allocation before funding; a private "
-                    "broker invoice does not automatically bind the provider. If "
-                    "the fee cannot be secured, choose whether to accept that "
-                    "credit exposure before doing the work."
-                ),
-                (
-                    "Build an evidence packet for the name as carefully as "
-                    "the packet for the buyer. Preserve acquisition invoices, registrar "
-                    "history available to the seller, renewal receipts, historical website "
-                    "captures, and the rationale for selecting the name. Search USPTO "
-                    "Trademark Search, ordinary commercial uses, and relevant dispute "
-                    "decisions; a clean exact-word search does not eliminate confusing "
-                    "similarity or common-law claims. For expired-authority inventory, inspect "
-                    "Wayback Machine captures and backlink samples using tools such "
-                    "as Ahrefs or Majestic, but distinguish historical observations "
-                    "from transferable performance. Do not sell scraped personal data "
-                    "or imply that old customer relationships accompany the registration. "
-                    "Under the UDRP, a complainant must establish its policy elements, "
-                    "including confusing similarity, absence of rights or legitimate "
-                    "interests, and bad-faith registration and use; outcomes depend on "
-                    "facts, not a seller's preferred disclaimer. Commercial email outreach "
-                    "also requires attention to 15 U.S.C. 7704, including truthful "
-                    "routing and subject information, a valid postal address, and "
-                    "a functioning opt-out mechanism where applicable. Postal diagnostic "
-                    "mailers should identify the actual sender and avoid resembling "
-                    "government invoices, registrar renewal notices, or mandatory assessments. "
-                    "Accuracy protects both response quality and the eventual closing "
-                    "record."
-                ),
-            ],
-            "table": {
-                "caption": "Counterparty and Asset Forensics Before Extending Credit or Transferring Control",
-                "headers": [
-                    "Screening question that changes the decision",
-                    "Evidence collected from a dependable source",
-                    "Failure pattern requiring a different structure",
-                    "Concrete operator response before further exposure",
-                ],
-                "rows": [
-                    [
-                        "Does the purchasing entity exist as represented?",
-                        "Current registry filing plus independently verified business contact details",
-                        "Entity spelling differs across contract, invoice, and payment request",
-                        "Resolve discrepancies and obtain one consistent contracting identity",
-                    ],
-                    [
-                        "Can this individual bind the purchasing entity?",
-                        "Signed authority confirmation and procurement contact for material purchases",
-                        "Enthusiastic employee cannot identify the controller or authorized signatory",
-                        "Keep discussion preliminary until an authorized purchaser joins",
-                    ],
-                    [
-                        "Can the buyer support the proposed payment schedule?",
-                        "Permissioned business credit information and verified relevant trade references",
-                        "Buyer requests long unsecured terms without credible operating evidence",
-                        "Require funded escrow or reduce exposure through controlled custody",
-                    ],
-                    [
-                        "Does the funding account match the documented transaction?",
-                        "Provider identity verification and accepted explanation for related-party payment",
-                        "Unrelated payer seeks immediate transfer followed by refund changes",
-                        "Pause delivery and resolve funding through the provider",
-                    ],
-                    [
-                        "Does the seller control a defensible transferable asset?",
-                        "Registrar control evidence, acquisition records, and documented trademark review",
-                        "Dispute notice or registrar lock contradicts promised immediate delivery",
-                        "Resolve restrictions before accepting a fixed closing deadline",
-                    ],
-                    [
-                        "Are introduction fees and platform obligations documented clearly?",
-                        "Executed mandate, platform terms, and timestamped introduction correspondence",
-                        "Buyer requests side payment that bypasses an earned commission",
-                        "Use authorized settlement instructions or decline the proposed diversion",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before funds or domain control move",
-                "body": "Proceed only when identity, asset status, payment authority, and release evidence agree.",
-                "items": [
-                    "Verify buyer entity, signatory authority, funding relationship, and provider acceptance before treating the offer as executable.",
-                    "Confirm registrar control, transfer eligibility, expiration runway, and absence of unresolved restrictions before promising delivery.",
-                    "Execute price, fee allocation, inspection criteria, cancellation treatment, and installment custody terms before accepting funds.",
-                    "Obtain authenticated funding authorization and define registrar evidence before sharing transfer credentials or pushing the domain.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile proceeds, carrying costs, and settlement exceptions",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Anchor the operating plan to the canonical scorecard rather "
-                    "than extrapolating from a memorable premium sale. Conservative "
-                    "revenue is $20,000 with a 15% margin and $3,000 annual "
-                    "owner net profit; Base revenue is $160,000 with a 27.5% "
-                    "margin and $44,000 profit; Scaled revenue is $300,000 with "
-                    "a 40% margin and $120,000 profit. Teams are respectively "
-                    "1 FT plus 1 C, 1 FT plus 1 C, "
-                    "and 2 FT plus 2 C. One illustrative sales mix "
-                    "is four $5,000 closings, sixteen $10,000 closings, and twenty "
-                    "$15,000 closings. These mixes explain arithmetic, not predicted "
-                    "sell-through. Total annual costs must therefore equal $17,000, "
-                    "$116,000, and $180,000. A reconciled illustrative allocation assigns "
-                    "acquisition cost, renewals, transaction charges, and other operating "
-                    "costs respectively as $8,000/$3,000/$2,000/$4,000 Conservative; "
-                    "$55,000/$12,000/$16,000/$33,000 Base; and "
-                    "$75,000/$15,000/$30,000/$60,000 Scaled. The transaction-charge "
-                    "allowance is a modeling input, not a quoted provider "
-                    "rate. Other operating costs include the scenario's staffing "
-                    "and administrative burden; actual compensation choices must fit "
-                    "that envelope. Buyer merchant sales, website turnover, and "
-                    "uncollected offers never enlarge domain sale proceeds."
-                ),
-                (
-                    "Keep the settlement ledger separate from the acquisition pipeline. "
-                    "For a $10,000 completed sale with a seller-paid $1,000 "
-                    "selling charge, the bank may receive $9,000 while the "
-                    "owned-domain sale record shows $10,000 gross proceeds and "
-                    "$1,000 expense under the applicable accounting treatment. Acquisition "
-                    "and renewal costs still reduce the modeled margin; do "
-                    "not call the payout profit. A buyer deposit held "
-                    "subject to completion is not automatically earned revenue, "
-                    "and an installment contract's face value is not current "
-                    "cash. Set recognition rules with the accountant for actual "
-                    "contract terms and distinguish inventory purchases from the cost "
-                    "assigned to sold domains. The illustrative annual allocations "
-                    "represent costs charged to the modeled year, not permission "
-                    "to expense every unsold acquisition indiscriminately. Reconcile each "
-                    "closing to the agreement, provider statement, bank entry, "
-                    "domain delivery record, and any holdback schedule. Renewals "
-                    "continue while negotiations stall: 500 names at an assumed "
-                    "$12 annual renewal consume $6,000 before premium renewals "
-                    "or other costs. That would exceed the Conservative "
-                    "renewal allocation by $3,000, requiring a smaller portfolio "
-                    "or a revised operating plan rather than quietly preserving "
-                    "the published profit."
-                ),
-                (
-                    "Manage exceptions with prewritten branches instead of improvising "
-                    "under buyer pressure. If funds arrive but a transfer "
-                    "lock prevents delivery, use the agreed extension or refund "
-                    "process; do not substitute a different domain without written "
-                    "agreement. If the buyer disputes delivery, preserve provider "
-                    "messages and registrar records while following the contractual "
-                    "resolution process. If a payer requests a refund to "
-                    "another account, refer the request to the original collection "
-                    "provider rather than creating a second outbound payment. "
-                    "For installment defaults, apply the stated notice and cure "
-                    "terms, document any permitted DNS changes, and keep renewal "
-                    "protection active while custody is unresolved. Review aging "
-                    "inventory monthly using comparable-sale monitoring, inquiry routing, "
-                    "and renewal tracking; automation should expose carrying cost, "
-                    "not manufacture demand. The stated startup capital range "
-                    "is $8,000 to $60,000, monthly operating expense range "
-                    "$500 to $5,000, and first-deal window three to "
-                    "twenty-four months. Those ranges are planning inputs rather "
-                    "than a second set of annual profit equations. Maintain "
-                    "a cash calendar that survives delayed closings, reserved "
-                    "proceeds, and renewals. Reject a deal when its collection "
-                    "risk consumes the contribution, even if accepting it "
-                    "would make the revenue dashboard look stronger."
-                ),
-            ],
-            "table": {
-                "caption": "Settlement Exceptions and Ledger Controls That Preserve the Canonical Margin",
-                "headers": [
-                    "Operating event requiring a defined response",
-                    "Ledger or evidence treatment during review",
-                    "Immediate action assigned to the operator",
-                    "Condition permitting closure of the exception",
-                ],
-                "rows": [
-                    [
-                        "Marketplace deducts selling charges before paying the seller",
-                        "Record gross proceeds and separately classified seller transaction charges",
-                        "Match the statement against contractual commission and fee allocation",
-                        "Bank receipt plus documented charges equals the completed sale",
-                    ],
-                    [
-                        "Buyer deposits money before contractual delivery is complete",
-                        "Track restricted or conditional funds separately from completed sales",
-                        "Monitor delivery conditions without treating the deposit as profit",
-                        "Recognition follows actual terms and the adopted accounting policy",
-                    ],
-                    [
-                        "Registrar restriction delays a previously scheduled domain transfer",
-                        "Preserve lock details, provider messages, and agreed delivery deadlines",
-                        "Invoke the written extension or cancellation process with both parties",
-                        "Transfer completes or the authorized provider finishes the refund",
-                    ],
-                    [
-                        "Installment buyer misses a scheduled payment after receiving access",
-                        "Track collected cash separately from the unpaid contract balance",
-                        "Issue contractual notice and preserve custody through the cure period",
-                        "Payment cures default or documented termination procedures are completed",
-                    ],
-                    [
-                        "Renewal obligations approach while several potential buyers remain undecided",
-                        "Assign renewal dates and costs to individual inventory records",
-                        "Renew defensible holdings and retire weak inventory under documented criteria",
-                        "Portfolio carrying costs remain inside the approved scenario allocation",
-                    ],
-                    [
-                        "Buyer disputes domain delivery after registrar control has changed",
-                        "Preserve immutable copies of confirmations and provider correspondence",
-                        "Follow settlement dispute procedures without issuing an independent duplicate refund",
-                        "Provider decision and ledger adjustment reconcile all cash movements",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A domain sale closes when verified money and documented registration control meet, not when a buyer says yes.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Map each qualified buyer to an economic sponsor, authorized signatory, funding operator, and verified receiving registrar account.",
-        "Document all eight play hypotheses with acquisition basis, renewal exposure, assumed selling charges, and a specific failure fallback.",
-        "Build the NRD workflow from permitted zone snapshots, verified business matches, low-rate diagnostics, and clearly private technical mailers.",
-        "Select the payment structure and execute delivery, inspection, fee allocation, default, and refund terms before requesting funding.",
-        "Complete trademark, historical-use, counterparty, funding-identity, and transfer-eligibility checks before releasing registrar credentials.",
-        "Reconcile completed gross proceeds and annual costs to $3,000, $44,000, or $120,000 owner net profit without counting buyer business volume.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 1125(d) — Anticybersquatting consumer protection",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Assess bad-faith intent, protected marks, and domain-specific liability before acquisition, pricing, or outreach.",
-        },
-        {
-            "title": "15 U.S.C. 1117(d) — Statutory damages for covered domain violations",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1117",
-            "relevance": "Covered plaintiffs may elect statutory damages from $1,000 to $100,000 per domain, making trademark exposure material to inventory decisions.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Structure commercial domain outreach around accurate transmission information, appropriate identification, postal address requirements, and functioning opt-out handling.",
-        },
-        {
-            "title": "28 U.S.C. 2042 — Withdrawal of money deposited with a federal court",
-            "url": "https://www.law.cornell.edu/uscode/text/28/2042",
-            "relevance": "Distinguish actual court-directed disbursement from ordinary commercial escrow; withdrawal of covered deposited money requires court authorization.",
-        },
-        {
-            "title": "15 U.S.C. 45(a) — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Keep diagnostic mailers, traffic representations, sender identity, and purchase-pressure claims accurate rather than implying official authority or compulsory payment.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'registrars-dns-infrastructure-domain-portfolio',
+ 'question_prompt': 'Which registrar should a domain investor use, and how do you connect domains to '
+                    'Cloudflare DNS?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Registrars and DNS Infrastructure for the Domain Portfolio',
+ 'subtitle': 'Porkbun vs Cloudflare vs Dynadot vs Namecheap comparisons (free privacy, SSL, refunds, '
+             'renewals), reseller margins (GoDaddy vs Domain Name API), Cloudflare caveats, nameserver and '
+             'DNS record setup, and BigRock fast-transfer for Afternic/Sedo',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree on three rules for a domain portfolio: register at a dedicated '
+                      'registrar rather than a host, require free WHOIS privacy, and price every name on '
+                      'its renewal rate instead of first-year bait. The cheapest published .com figures '
+                      "sit close together: Cloudflare Registrar at $11.17 (Utke's cart showed $10.46), "
+                      'Porkbun at $11.81, Dynadot at $10.88, and Spaceship at $8.88 renewing at $9.98. '
+                      "Namecheap's Beast Mode handles bulk searches of up to 5,000 names. Cloudflare's "
+                      'free plan is the default DNS layer. The workflow is to quick-scan records, swap in '
+                      'two nameservers, disable DNSSEC at the old registrar first, set MX and TXT records '
+                      'to gray-cloud, and wait anywhere from minutes to 48 hours. The disagreements are '
+                      'sharp. Cloudflare is non-refundable and locks nameservers. One reviewer reports a '
+                      '4-day Porkbun refund window and another reports none. Luka Knows has demoted both '
+                      'Porkbun and Dynadot over support problems and domain-snatching reports.',
+ 'key_metrics': [{'label': 'Cloudflare Registrar .com At-Cost Price',
+                  'metric': 'Cloudflare Registrar .com At-Cost Price',
+                  'value': '$11.17 to register, renew, or transfer in',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Design Guy's published-price comparison put Cloudflare 64 cents under "
+                             "Porkbun's $11.81 on all three .com price rounds.",
+                  'source': 'Design Guy ([mMGvtO-bkPI @ 00:00:59])'},
+                 {'label': 'Porkbun .com Flat Registration and Renewal',
+                  'metric': 'Porkbun .com Flat Registration and Renewal',
+                  'value': 'Approximately $11.81 per year including the ICANN fee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'SEARCHLIGHT HQ reported that registration and renewal are generally the same '
+                             'price, so there is no jump after year one.',
+                  'source': 'SEARCHLIGHT HQ ([RClpPcLHviU @ 00:00:30])'},
+                 {'label': 'Spaceship .com Register vs Renew',
+                  'metric': 'Spaceship .com Register vs Renew',
+                  'value': '$8.88 to register, $9.98 to renew',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "David Utke's live cart check on Spaceship, the Namecheap-run brand, with "
+                             'WHOIS protection included.',
+                  'source': 'David Utke ([UkMYRY9wDN0 @ 00:10:42])'},
+                 {'label': 'Reseller Margin Scaling Example',
+                  'metric': 'Reseller Margin Scaling Example',
+                  'value': '$5 gross margin x 10,000 registrations = $50,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "The Domain Reseller channel's hypothetical volume math, stated as figures "
+                             'before taxes, payment fees, and operating costs.',
+                  'source': 'Domain Reseller ([72rBKTbIECI @ 00:03:27])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who covered registrar selection starts from the same rule. '
+                              'The registrar, the DNS layer, and the web host are three separate jobs, and '
+                              'the domain should never be held hostage by the host. David Utke tells '
+                              'viewers in every long-form tutorial to register at a dedicated domain '
+                              'registrar rather than at a web host or site builder. Those platforms have '
+                              'to mark the name up to make a profit, while registrars compete hard to keep '
+                              'costs low [UkMYRY9wDN0 @ 00:00:30]. Luka Knows goes further and puts '
+                              'Hostinger and web hosting providers on a never-use list for domains. '
+                              'Bundling creates a single point of failure: if the host goes down, the '
+                              'domain goes down with it. Bundles also still charge for WHOIS privacy and '
+                              'make migrating away far harder [oi-pZAGrrhQ @ 00:05:17]. Craylor draws the '
+                              'same line from the DNS side, warning that Cloudflare is not web hosting. '
+                              'The domain points to Cloudflare, Cloudflare manages the records and sends '
+                              'visitors on, and a real server still has to sit at the end of that chain '
+                              '[IXpvUD5SDzA @ 00:00:12]. Create a Pro Website frames it for people who '
+                              'just want to sit on a name. A domain is the address, not the house, so '
+                              'owning one does not mean you own a website. Anyone who only wants to secure '
+                              'a URL can simply search, add it to the cart, and check out [08Ekqe45IH0 @ '
+                              '00:03:31].',
+                              'The second hard line is free WHOIS privacy, and nobody in the lineup treats '
+                              'it as optional. David Utke calls domain privacy non-negotiable because '
+                              'registration forces you to submit your name, email, address, and phone '
+                              'number. Utke lists GoDaddy, Hover, Hostinger, Bluehost, Network Solutions, '
+                              'Squarespace, and Shopify as too expensive, partly because some of them sell '
+                              'privacy as an upsell [UkMYRY9wDN0 @ 00:14:00]. Luka Knows flags domain.com '
+                              'for charging extra for WHOIS privacy and calls it a complete red flag in '
+                              '2026 and beyond. Without it, scammers pull your contact details from the '
+                              'public database for automated outreach, non-stop calls, and resale of your '
+                              'data [oi-pZAGrrhQ @ 00:03:01]. Design Guy notes that some registrars charge '
+                              'an extra $10 or $12 just to keep that spam inbox quiet. Cloudflare '
+                              'Registrar and Dynadot both include redaction or privacy at zero dollars '
+                              "with no upsell [chataozFYGw @ 00:01:46]. Jake's Tech Lab built an entire "
+                              'five-way ranking on the same baseline: free privacy, free SSL, free email '
+                              'forwarding, and built-in DNSSEC. The channel cut Ionos simply because the '
+                              'company does not publish whether privacy is free [ul52eFQneY0 @ 00:01:07]. '
+                              'For a portfolio, a registrar that bills privacy per name is disqualified on '
+                              'that point alone, because the charge repeats on every domain every year.',
+                              'The third consensus point is that the first-year sticker is bait and the '
+                              'renewal line is the real price. Luka Knows opens with the classic trap: a '
+                              '1-cent GoDaddy deal, followed a year later by a renewal bill. According to '
+                              'Luka Knows, GoDaddy often runs two or three times the cost of competitors '
+                              'and hides that behind flashy first-year promos and promo pricing '
+                              '[oi-pZAGrrhQ @ 00:01:46]. Create a Pro Website describes the same headache '
+                              "from the buyer's seat: registrars advertise a 1-cent domain and then "
+                              'quietly charge $40 [08Ekqe45IH0 @ 00:00:00]. SEARCHLIGHT HQ singles out '
+                              'Porkbun precisely because registration and renewal for a .com both run at '
+                              'roughly $11.81, including the ICANN fee. That keeps budgeting predictable '
+                              'because there is no price spike after year one [RClpPcLHviU @ 00:00:48]. '
+                              'The Domain Reseller channel applies the same discipline at wholesale. Do '
+                              'not compare first-year prices; compare renewal costs, fixed program fees, '
+                              'integration costs, and lifetime value. A program fee lands every year '
+                              'regardless of sales volume [72rBKTbIECI @ 00:04:03]. For anyone carrying a '
+                              'portfolio, the renewal rate is the cost that compounds every year. A cheap '
+                              'entry price on a registrar with an inflated renewal will cost more over '
+                              'time than a flat at-cost rate from day one.'],
+               'table': {'caption': 'Baseline rules every practitioner applies before choosing where '
+                                    'portfolio names live',
+                         'headers': ['Consensus Rule',
+                                     'What The Practitioner Reports',
+                                     'Portfolio Operator Move',
+                                     'Expert Source'],
+                         'rows': [['Register domains at a dedicated registrar, not a host',
+                                   'Web hosts and site builders must mark domain names up to profit, while '
+                                   'registrars keep costs low',
+                                   'Buy every portfolio name at a pure registrar and keep it off hosting '
+                                   'accounts',
+                                   'David Utke ([UkMYRY9wDN0 @ 00:00:30])'],
+                                  ['Bundling domain and host creates a single point of failure',
+                                   'If the host has problems the domain goes down too, and migrating away '
+                                   'becomes far harder',
+                                   'Hold domains and hosting at separate companies because it is cheaper '
+                                   'and safer',
+                                   'Luka Knows ([oi-pZAGrrhQ @ 00:05:37])'],
+                                  ['Free WHOIS privacy is non-negotiable on every registration',
+                                   'Registration requires your name, email, address, and phone number, so '
+                                   'privacy must be included free forever',
+                                   'Reject any registrar that sells privacy as a per-domain upsell at '
+                                   'checkout',
+                                   'David Utke ([UkMYRY9wDN0 @ 00:04:17])'],
+                                  ['Judge registrars on renewal rates, never on first-year promos',
+                                   "GoDaddy often runs two or three times competitors' cost, hidden behind "
+                                   'flashy first-year promotional deals',
+                                   'Model every name on its long-term renewal cost before adding it to the '
+                                   'cart',
+                                   'Luka Knows ([oi-pZAGrrhQ @ 00:01:46])'],
+                                  ['Cloudflare manages DNS records but is not web hosting',
+                                   'The domain points to Cloudflare, which manages DNS and sends visitors '
+                                   'to the final destination',
+                                   'Treat Cloudflare as the DNS and CDN layer that sits in front of a real '
+                                   'server',
+                                   'Craylor ([IXpvUD5SDzA @ 00:00:26])'],
+                                  ['Privacy, SSL, forwarding, and DNSSEC should come free',
+                                   'These extras are free at some registrars but paid add-ons at others, '
+                                   'which gets frustrating fast',
+                                   'Shortlist only registrars that publish all four extras as included at '
+                                   'zero cost',
+                                   "Jake's Tech Lab ([ul52eFQneY0 @ 00:00:00])"],
+                                  ['The Cloudflare free plan is enough for most operators',
+                                   'Paid plans target advanced and enterprise users, and most users get no '
+                                   'advantage from upgrading',
+                                   'Scroll past the paid columns during signup and select the free plan '
+                                   'box',
+                                   'Craylor ([IXpvUD5SDzA @ 00:01:54])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The Cloudflare onboarding sequence is the same in every walkthrough. '
+                              "Easytorial's version: log in, click Add a Site or Onboard a Domain, enter "
+                              'the real domain, and pick a plan, which for most people is the free one. '
+                              'Cloudflare then scans for existing A, CNAME, and MX records so nothing gets '
+                              'lost in a migration. Review every imported record before touching the '
+                              'nameservers, especially the root record pointing to the server IP and the '
+                              'www CNAME [sx83eEm6nk4 @ 00:00:34]. George Basics runs the same flow from '
+                              'Account Home. Choose the recommended quick scan for DNS records, pick the '
+                              'free plan, scroll down to Continue to Activation, and copy the two assigned '
+                              'nameservers. At Dynadot, go to Manage Domains, open the domain, then DNS '
+                              'Settings and Name Servers, and select enter new or existing name servers. '
+                              'Paste both, then click Save Name Servers [aeqNGnkQgbA @ 00:01:06]. Porkbun '
+                              'is shorter still: open Domain Management, click the NS button under the '
+                              'domain, paste both nameservers, click Submit, and wait a few hours while '
+                              'Cloudflare checks them [OuQbsdwFTA0 @ 00:01:13]. PMN Online adds a step '
+                              'most tutorials skip. Turn DNSSEC off at the registrar before the swap, '
+                              'because it can cause DNS failures during the nameserver transition '
+                              "[AKtcv_vFlSY @ 00:01:13]. Easytorial's assigned nameservers looked like "
+                              'alice and bob under ns.cloudflare.com, and Cloudflare emails you when the '
+                              'domain goes live.',
+                              'Inside the DNS tab, every record is built from the same five fields. PMN '
+                              'Online lays them out. Type is A, AAAA, CNAME, MX, or TXT. Name is the @ '
+                              'symbol for the root or a subdomain like www or mail. Content is an IP '
+                              'address, a hostname, or a verification value. TTL is left on Auto. Proxy '
+                              'status applies only to A, AAAA, and CNAME records [piq0yLKq_SE @ 00:02:05]. '
+                              'The proxy toggle is where setups break. Easytorial explains that the orange '
+                              'cloud routes traffic through Cloudflare for performance and attack '
+                              'protection and should be on for most web traffic. MX and verification '
+                              'records must be switched to the gray DNS-only cloud, or those services will '
+                              'not work correctly [sx83eEm6nk4 @ 00:03:23]. Craylor recommends proxying A '
+                              'records and CNAMEs in most cases. Craylor cites a network in over 300 '
+                              'cities that serves cached files from the node closest to each visitor, and '
+                              'notes that Cloudflare shows a CAPTCHA to traffic from IP addresses it '
+                              'already knows belong to bad actors [IXpvUD5SDzA @ 00:03:35]. Craylor also '
+                              'uses Cloudflare to avoid paying for SSL certificates entirely. Craylor '
+                              "reports Cloudflare's email forwarding as instant, after other forwarders "
+                              'held mail for an extra hour or two. Propagation estimates run from a few '
+                              'minutes up to 48 hours worldwide, so check back rather than panic '
+                              '[AKtcv_vFlSY @ 00:03:03].',
+                              'The per-name price gaps are small, but they add up across a portfolio. '
+                              'Design Guy compared published .com pricing. Cloudflare Registrar charges '
+                              '$11.17 to register, renew, or transfer in, and Porkbun charges $11.81 for '
+                              'all three. That 64-cent gap per name gave Cloudflare a clean sweep of the '
+                              "three price rounds [mMGvtO-bkPI @ 00:01:54]. David Utke's live cart checks "
+                              'came in as follows. Namecheap was $6.49 for the first year for new '
+                              'customers, or $9.98 for existing customers, renewing at $14.98. Porkbun was '
+                              '$11 flat. Dynadot was $10.88 flat with a free one-page site. Spaceship was '
+                              '$8.88, renewing at $9.98. Cloudflare was $10.46 flat. Namecheap, Porkbun, '
+                              'and Cloudflare all allow registrations of up to 10 years [UkMYRY9wDN0 @ '
+                              "00:10:42]. For bulk work, Utke points domainers to Namecheap's Beast Mode, "
+                              'which searches up to 5,000 domains or keywords at once [UkMYRY9wDN0 @ '
+                              '00:03:23]. On the wholesale side, the Domain Reseller channel prices '
+                              "GoDaddy's Basic reseller plan (up to 25 customers) at $53.88 for the first "
+                              'year, renewing at $107.88. The Pro plan is $89.88, renewing at $179.88. '
+                              'Domain Name API has no activation fee and sells a .com at $11.99 to '
+                              "register and $12.29 to renew. The channel's volume math: a $5 margin across "
+                              '10,000 registrations is $50,000 gross [72rBKTbIECI @ 00:03:27].'],
+               'table': {'caption': 'Stated .com economics and bundled terms by registrar and reseller '
+                                    'program',
+                         'headers': ['Registrar Or Program',
+                                     'Stated .com Economics',
+                                     'Bundled Extras And Terms',
+                                     'Expert Source'],
+                         'rows': [['Cloudflare Registrar, sold at cost to pull buyers into its ecosystem',
+                                   '$11.17 to register, renew, or transfer a standard .com',
+                                   'Free WHOIS redaction and SSL, but new registrations are strictly '
+                                   'non-refundable with zero window',
+                                   'Design Guy ([mMGvtO-bkPI @ 00:03:17])'],
+                                  ['Porkbun, known for transparent flat pricing on a standard .com',
+                                   'Approximately $11.81 to register and renew, including the ICANN fee',
+                                   'Free WHOIS privacy, SSL, DNS management, URL forwarding, and up to 20 '
+                                   'email forwards',
+                                   'SEARCHLIGHT HQ ([RClpPcLHviU @ 00:01:02])'],
+                                  ['Spaceship, the sleeker budget brand run by Namecheap',
+                                   '$8.88 to register and $9.98 to renew on a live cart check',
+                                   'WHOIS protection included, plus Beast Mode bulk search just like the '
+                                   'parent Namecheap',
+                                   'David Utke ([UkMYRY9wDN0 @ 00:10:42])'],
+                                  ["Namecheap, the main registrar used and recommended in Utke's tutorials",
+                                   '$6.49 first year for new customers; $9.98 for existing customers, '
+                                   'renewing at $14.98',
+                                   'Privacy free forever, light upsells you can ignore, and registrations '
+                                   'of up to 10 years',
+                                   'David Utke ([UkMYRY9wDN0 @ 00:02:41])'],
+                                  ['Dynadot, a registrar focused squarely on domain names and domain '
+                                   'services',
+                                   '$10.88 to register and $10.88 to renew per year',
+                                   'Free privacy plus a free one-page site usable as a coming-soon or '
+                                   'buy-this-domain page',
+                                   'David Utke ([UkMYRY9wDN0 @ 00:09:27])'],
+                                  ['GoDaddy Reseller, a hosted white-label storefront program',
+                                   'Basic $53.88 first year, renewing at $107.88; Pro $89.88, renewing at '
+                                   '$179.88',
+                                   'Up to 20 percent off retail on Basic and up to 40 percent on Pro; API '
+                                   'access requires calling their team',
+                                   'Domain Reseller ([72rBKTbIECI @ 00:01:08])'],
+                                  ['Domain Name API, an ICANN-accredited reseller platform with a REST API',
+                                   '$11.99 to register and $12.29 to renew a .com at the reseller tier',
+                                   'No activation fee, minimum deposit, or monthly cost, with wholesale '
+                                   'pricing on more than 800 extensions',
+                                   'Domain Reseller ([72rBKTbIECI @ 00:02:11])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Notes From The Nameserver Swap',
+                           'body': 'These are the small operational details that decide whether a '
+                                   'portfolio domain resolves on the first try or goes dark during '
+                                   'migration.',
+                           'items': ['Turn off DNSSEC at the current registrar before pasting in the '
+                                     'Cloudflare nameservers. Leaving it on risks DNS failures and '
+                                     'downtime mid-transition [PMN Online — AKtcv_vFlSY @ 00:01:13].',
+                                     'Never proxy MX or TXT verification records. Set them to the gray '
+                                     'DNS-only cloud, or email and verification services will not work '
+                                     'correctly [Easytorial — sx83eEm6nk4 @ 00:03:23].',
+                                     'Domains registered at Cloudflare cannot have their nameservers '
+                                     'changed. Utke calls this a dealbreaker with dedicated shared hosts '
+                                     'but a perfect match for Amazon AWS [David Utke — UkMYRY9wDN0 @ '
+                                     '00:13:15].',
+                                     "Register at Spaceship for the full 10 years to lock in today's price "
+                                     'for a decade, for what two years would cost at a host like '
+                                     'SiteGround [Luka Knows — oi-pZAGrrhQ @ 00:13:45].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Onboard the domain in Cloudflare',
+                              'action': 'From Account Home, enter the domain, choose the quick scan for '
+                                        'DNS records, select the free plan, and click Continue to '
+                                        'Activation.',
+                              'detail': 'Quick scan is the option Cloudflare itself recommends. The free '
+                                        'plan sits below the paid columns, so scroll all the way down '
+                                        'before continuing [George Basics — OuQbsdwFTA0 @ 00:00:37].'},
+                             {'step': 2,
+                              'title': 'Audit imported records, then swap nameservers',
+                              'action': 'Check the root record and the www CNAME against the real server, '
+                                        'disable DNSSEC at the registrar, and replace the old nameservers '
+                                        "with Cloudflare's two.",
+                              'detail': 'Do not just click through the imported records. Double-check the '
+                                        'root A record and the www CNAME like the shipping address on a '
+                                        'critical package, then hand DNS control from the registrar to '
+                                        'Cloudflare [Easytorial — sx83eEm6nk4 @ 00:01:08].'},
+                             {'step': 3,
+                              'title': 'Build the record set',
+                              'action': 'Add the A or CNAME records for the root (@) and www, set TTL to '
+                                        'Auto, keep web records orange-clouded, and set MX and TXT records '
+                                        'to gray.',
+                              'detail': 'Fill in Type, Name, Content, TTL, and proxy status for each '
+                                        'record, then save. Allow a few minutes for propagation and verify '
+                                        'accuracy before saving [PMN Online — piq0yLKq_SE @ 00:02:05].'},
+                             {'step': 4,
+                              'title': 'Opt sellable names into marketplace fast transfer',
+                              'action': 'At BigRock, go to Manage, click Revert to Old Look, then Manage '
+                                        'Orders, Fast Transfer, and Opt In, and confirm with the emailed '
+                                        'verification code.',
+                              'detail': 'If the code has not arrived, resend it. After you click Confirm '
+                                        'Opt In, select Afternic or Sedo to enable the domain listing for '
+                                        'fast transfer [PG Tech Help — 0QCYIFcFO7A @ 00:00:33].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Porkbun is the sharpest split in this registrar field. The Lone Crater '
+                              'pitches it as incredibly competitive and transparent on price, with free '
+                              'Whois privacy on all registrations, a remarkably user-friendly interface, '
+                              'and customer support that often receives five-star reviews [hdvK17zvRgk @ '
+                              '00:01:11]. Luka Knows tells the opposite story from his own testing: '
+                              'Porkbun used to be one of his top recommendations, but he now calls the '
+                              'experience dated, says connecting a domain to a website takes way longer '
+                              'than it should, labels support unreliable, and reports that one of '
+                              "Porkbun's own suggested help questions failed when he tried it [oi-pZAGrrhQ "
+                              '@ 00:10:52]. The refund question is contested just as hard. Design Guy '
+                              "reads Porkbun's published terms as a four-day, 96-hour refund window on new "
+                              'registrations and hands Porkbun that round outright against Cloudflare '
+                              'Registrar, calling it breathing room for an honest typo [mMGvtO-bkPI @ '
+                              '00:03:01]. David Utke states the reverse on camera: Porkbun does not offer '
+                              'refunds on domain registration, all sales are final, and support is a '
+                              'ticket queue answered within 24 hours instead of a round-the-clock desk '
+                              '[UkMYRY9wDN0 @ 00:06:26]. Design Guy himself tells buyers to double check '
+                              'both sites before purchasing, because prices and plans move.',
+                              "Cloudflare Registrar draws the widest spread of verdicts. Jake's Tech Lab "
+                              'ranks it the cleanest overall winner for free extras, citing free WHOIS '
+                              'redaction, free SSL, free email routing, and one-click DNSSEC without a '
+                              'single nickel in upsells [ul52eFQneY0 @ 00:01:22]. Design Guy backs the '
+                              'price case with published numbers: $11.17 for a .com registration, renewal, '
+                              "and transfer against Porkbun's $11.81, a 64-cent gap that hands Cloudflare "
+                              'a three-round sweep on raw cost [mMGvtO-bkPI @ 00:01:36]. David Utke likes '
+                              'the at-cost model and quotes $10.46 to register and renew, but calls one '
+                              'catch a dealbreaker for him: you cannot change the name servers of a domain '
+                              'registered with Cloudflare, which he says turns pairing it with a dedicated '
+                              'shared web host into a hassle, even though it is a perfect match for '
+                              'something like Amazon AWS [UkMYRY9wDN0 @ 00:13:15]. Luka Knows reserves '
+                              'Cloudflare for complete professionals buying for clients or big '
+                              'organizations who need to save every cent, rates it the least '
+                              'beginner-friendly option on his entire list, notes that everything is '
+                              'manual, and argues the savings over his best budget pick are negligible '
+                              'anyway [oi-pZAGrrhQ @ 00:12:44]. Builders chasing the lowest recurring cost '
+                              'and holders who need free name-server control land on opposite sides.',
+                              'The question of where to park a portfolio splits into three camps. David '
+                              'Utke and Luka Knows both crown Namecheap: Utke uses it in every long-form '
+                              'tutorial and quotes $6.49 first year for new customers, or $9.98 first year '
+                              'renewing at $14.98 for existing accounts, plus Beast Mode for domainers '
+                              'searching up to 5,000 names at once [UkMYRY9wDN0 @ 00:02:41]; Luka keeps '
+                              'all his most important domains there and names its sister brand Spaceship '
+                              'the budget pick, with .com renewal under $10 and ten-year registration that '
+                              "locks today's price for a decade [oi-pZAGrrhQ @ 00:13:23]. Create a Pro "
+                              'Website runs a different playbook for builders, sending domain-only buyers '
+                              'to Namecheap but steering site builders to Hostinger, where the '
+                              '12-to-48-month plans include a free custom domain and hosting starts at as '
+                              'little as $3 a month [08Ekqe45IH0 @ 00:04:43]. Luka rejects that bundle '
+                              'outright, calling hosting-plus-domain a single point of failure that tends '
+                              'to cost more, still charges for WHOIS privacy, and makes migration far '
+                              "harder. On the resale side, Domain Reseller contrasts GoDaddy's annual-fee "
+                              "white-label storefront with Domain Name API's model of no activation fee, "
+                              'no minimum deposit, no monthly cost, and wholesale pricing across more than '
+                              '800 extensions [72rBKTbIECI @ 00:01:40].'],
+               'table': {'caption': 'Registrar and DNS playbooks where named practitioners take opposite '
+                                    'positions',
+                         'headers': ['Battleground', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Porkbun refund policy on brand new registrations',
+                                   'Design Guy reads a four-day, 96-hour refund window covering honest '
+                                   'typos',
+                                   'David Utke says Porkbun offers no registration refunds and all sales '
+                                   'are final',
+                                   'Design Guy ([mMGvtO-bkPI @ 00:03:01]); David Utke ([UkMYRY9wDN0 @ '
+                                   '00:06:26])'],
+                                  ['Porkbun usability and support quality for daily management',
+                                   'The Lone Crater calls the interface remarkably user-friendly with '
+                                   'five-star support reviews',
+                                   'Luka Knows calls it dated, slow to connect, unreliable on support, not '
+                                   'beginner-friendly',
+                                   'The Lone Crater ([hdvK17zvRgk @ 00:01:11]); Luka Knows ([oi-pZAGrrhQ @ '
+                                   '00:10:52])'],
+                                  ['Cloudflare Registrar as the home for a portfolio',
+                                   "Jake's Tech Lab ranks it cleanest overall winner on free privacy, SSL, "
+                                   'routing, DNSSEC',
+                                   'David Utke calls locked name servers a dealbreaker when using a shared '
+                                   'web host',
+                                   "Jake's Tech Lab ([ul52eFQneY0 @ 00:01:22]); David Utke ([UkMYRY9wDN0 @ "
+                                   '00:13:15])'],
+                                  ['Dynadot risk profile for buying and holding names',
+                                   'Design Guy credits a five-day grace deletion refunded as account '
+                                   'credit, not cash',
+                                   'Luka Knows flags pricier TLDs like .ai and an online domain snatching '
+                                   'report he has not personally experienced',
+                                   'Design Guy ([chataozFYGw @ 00:01:15]); Luka Knows ([oi-pZAGrrhQ @ '
+                                   '00:09:33])'],
+                                  ['Buying the domain bundled together with web hosting',
+                                   'Create a Pro Website pushes Hostinger 12-to-48-month plans that '
+                                   'include a free custom domain',
+                                   'Luka Knows calls bundling a single point of failure that makes '
+                                   'migration far harder',
+                                   'Create a Pro Website ([08Ekqe45IH0 @ 00:04:43]); Luka Knows '
+                                   '([oi-pZAGrrhQ @ 00:05:17])'],
+                                  ['Cloudflare proxy status across different record types',
+                                   'Craylor recommends enabling the orange-cloud proxy on A records and '
+                                   'CNAMEs in most cases',
+                                   'Easytorial switches MX and verification records to grey-cloud DNS only '
+                                   'or they break',
+                                   'Craylor ([IXpvUD5SDzA @ 00:03:20]); Easytorial ([sx83eEm6nk4 @ '
+                                   '00:03:23])'],
+                                  ['Reseller model for selling domains under your own brand',
+                                   'GoDaddy storefront hosts the store and payments but charges an annual '
+                                   'program fee every year',
+                                   'Domain Name API charges no activation fee, no minimum deposit, and no '
+                                   'monthly cost',
+                                   'Domain Reseller ([72rBKTbIECI @ 00:00:46]); Domain Reseller '
+                                   '([72rBKTbIECI @ 00:01:40])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first-year sticker is where most buyers get burned. Create a Pro '
+                              'Website opens with the classic trap of a registrar advertising a domain at '
+                              '1 cent and then secretly charging $40 [08Ekqe45IH0 @ 00:00:14], and Luka '
+                              'Knows describes the same pattern from the buyer side: grab a 1-cent GoDaddy '
+                              'deal, then open the account a year later and find the renewal bill. Luka '
+                              'puts GoDaddy at often two or three times more expensive than competitors '
+                              'behind flashy first-year promos, says he has seen a basic Hover .com '
+                              'renewal run $50 plus for one year after the intro period expires, and warns '
+                              'that domain.com stuffs the cart with three trials by default, where an '
+                              'email add-on can quietly cost $36 a year once its trial ends and compound '
+                              'into hundreds of dollars on a domain held for years [oi-pZAGrrhQ @ '
+                              '00:04:56]. David Utke lists GoDaddy, Hover, Hostinger, Blue Host, Network '
+                              'Solutions, Squarespace, and Shopify as too expensive, citing high markups, '
+                              'higher renewal rates, and WHOIS protection sold as an upsell [UkMYRY9wDN0 @ '
+                              '00:13:45]. SEARCHLIGHT HQ shows the same cliff on hosting sold by a '
+                              "registrar: Porkbun's starter WordPress plan is $30 for the first year and "
+                              'renews at $120 per year [RClpPcLHviU @ 00:01:40].',
+                              'The nameserver cutover is the operational bottleneck where practitioners '
+                              'report breakage. PMN Online warns that DNSSEC must be turned off at the '
+                              "registrar before swapping in Cloudflare's two name servers, because leaving "
+                              'it on during the transition risks DNS failures and disruptions to site '
+                              'availability, and puts worldwide propagation at up to 48 hours [AKtcv_vFlSY '
+                              '@ 00:01:13]. Easytorial tells operators not to just click through '
+                              "Cloudflare's automated record import: review every record, especially the "
+                              'root record pointing at the server IP and the www CNAME, and flip MX and '
+                              'verification records to the grey-cloud DNS-only setting, otherwise those '
+                              'services will not work correctly [sx83eEm6nk4 @ 00:03:23]. Luka Knows '
+                              "reports that GoDaddy's built-in integrations with platforms like Google "
+                              'Sites break constantly and may have already partially imported records '
+                              'without telling you, forcing manual cleanup that frustrates beginners '
+                              '[oi-pZAGrrhQ @ 00:02:25]. Craylor adds two beginner traps: Cloudflare is '
+                              'not web hosting, so you still need a server for it to point at, and the '
+                              'free plan box sits underneath the paid columns, which makes new users '
+                              'message him thinking Cloudflare expects $20 a month; he also admits '
+                              'first-timers may make mistakes and need troubleshooting before everything '
+                              'works [IXpvUD5SDzA @ 00:01:25].',
+                              'Irreversible purchases and fixed overhead are the economics checks. Design '
+                              'Guy is blunt that new Cloudflare Registrar registrations are completely '
+                              "non-refundable, so a mistyped name means the fee is gone, whereas Dynadot's "
+                              'five-day grace deletion returns money only as account credit rather than '
+                              'cash [chataozFYGw @ 00:01:15]. Domain Reseller warns that a reseller '
+                              'program fee is paid every year regardless of sales volume, lays out '
+                              "GoDaddy's Basic plan at $53.88 the first year renewing at $107.88 for up to "
+                              '25 customers and Pro at $89.88 renewing at $179.88, and runs a hypothetical '
+                              '$5 gross margin where 1,000 registrations yields $5,000 before taxes, '
+                              'payment fees, and operating costs [72rBKTbIECI @ 00:03:47]. Luka Knows '
+                              'flags the information trap behind every recommendation: creators earn '
+                              'bigger affiliate commissions on pricier products, so cheap, high-quality '
+                              'registrars like Spaceship get pushed less by reviewers [oi-pZAGrrhQ @ '
+                              '00:06:13]. On the exit side, PG Tech Help shows that selling through '
+                              'Afternic or Sedo from BigRock requires reverting to the old dashboard look, '
+                              'opting into Fast Transfer under manage orders, and entering an emailed '
+                              'verification code, with a resend option if it never arrived, and the '
+                              'verification code for such domains must be submitted [0QCYIFcFO7A @ '
+                              '00:00:16].'],
+               'table': {'caption': 'Firsthand traps, what broke, and the counter-move practitioners use',
+                         'headers': ['Trap',
+                                     'What Practitioners Reported',
+                                     'Counter-Move Taught',
+                                     'Expert Source'],
+                         'rows': [['One-cent introductory domain pricing',
+                                   'An advertised 1-cent domain secretly carries a $40 charge at checkout',
+                                   'Compare renewal costs, fixed fees, and lifetime value instead of '
+                                   'first-year prices',
+                                   'Create a Pro Website ([08Ekqe45IH0 @ 00:00:14]); Domain Reseller '
+                                   '([72rBKTbIECI @ 00:04:03])'],
+                                  ['Default trial add-ons stuffed into the cart',
+                                   'domain.com loads three trials by default and an email add-on later '
+                                   'costs $36 a year',
+                                   'Inspect the cart before checkout and strip every trial you did not ask '
+                                   'for',
+                                   'Luka Knows ([oi-pZAGrrhQ @ 00:04:56])'],
+                                  ['DNSSEC left enabled during the nameserver switch',
+                                   'Leaving DNSSEC on at the registrar risks DNS failures and site '
+                                   'availability disruptions',
+                                   'Turn DNSSEC off at the registrar before pasting in Cloudflare name '
+                                   'servers',
+                                   'PMN Online ([AKtcv_vFlSY @ 00:01:13])'],
+                                  ['Mail and verification records left proxied',
+                                   'MX and verification records behind the orange cloud stop working '
+                                   'correctly',
+                                   'Switch those records to grey-cloud DNS only and keep web records '
+                                   'proxied',
+                                   'Easytorial ([sx83eEm6nk4 @ 00:03:23])'],
+                                  ['Locked name servers on Cloudflare-registered domains',
+                                   'Name servers cannot be changed, creating friction with dedicated '
+                                   'shared web hosts',
+                                   'Use Cloudflare Registrar with setups like Amazon AWS, register '
+                                   'elsewhere for shared hosting',
+                                   'David Utke ([UkMYRY9wDN0 @ 00:13:15])'],
+                                  ['Typo on a non-refundable registration',
+                                   'Cloudflare Registrar gives zero grace period, so a mistyped name burns '
+                                   'the fee',
+                                   'Double check spelling, or use Dynadot for its five-day grace deletion '
+                                   'as credit',
+                                   'Design Guy ([chataozFYGw @ 00:01:00])'],
+                                  ['Slow third-party email forwarding services',
+                                   'Craylor saw forwarded emails stuck for an extra hour or two with other '
+                                   'services',
+                                   'Run forwarding through Cloudflare, where he reports emails are '
+                                   'forwarded instantly',
+                                   'Craylor ([IXpvUD5SDzA @ 00:05:06])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Checkout and Pre-Cutover Gate',
+                           'body': 'Clear all four checks before buying, moving, or repointing a single '
+                                   'name in the portfolio.',
+                           'items': ["Turn DNSSEC off at the registrar before pasting Cloudflare's two "
+                                     'name servers, and allow up to 48 hours for worldwide propagation '
+                                     '[PMN Online — AKtcv_vFlSY @ 00:01:13].',
+                                     'Review every record Cloudflare imports, especially the root A record '
+                                     'and the www CNAME, and keep MX and verification records on '
+                                     'grey-cloud DNS only [Easytorial — sx83eEm6nk4 @ 00:01:08].',
+                                     'Confirm the exact spelling before buying at Cloudflare Registrar, '
+                                     'because new registrations are completely non-refundable with no '
+                                     'grace period [Design Guy — chataozFYGw @ 00:01:00].',
+                                     'Walk away from any registrar that charges for WHOIS privacy, which '
+                                     'David Utke calls non-negotiable and Luka Knows calls a complete red '
+                                     'flag [David Utke — UkMYRY9wDN0 @ 00:04:17].']}}],
+ 'pull_quote': '"The best practice in this space is always keep your web hosting and domain name separate. '
+               'It is cheaper and also safer." — Luka Knows (oi-pZAGrrhQ @ 00:05:37).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Register portfolio names at a dedicated registrar rather than a web host, keeping '
+                      'hosting and domains separate to avoid a single point of failure [Luka Knows — '
+                      'oi-pZAGrrhQ @ 00:05:37].',
+                      'Onboard each domain in Cloudflare through Account Home, choose quick scan for DNS '
+                      'records, pick the free plan, and click continue to activation [George Basics — '
+                      'aeqNGnkQgbA @ 00:00:34].',
+                      'At Dynadot, open the domain, go to DNS settings, select name servers, tick enter '
+                      'new or existing name servers, paste both Cloudflare name servers, and click save '
+                      'name servers [George Basics — aeqNGnkQgbA @ 00:01:06].',
+                      'At Porkbun, click the NS button under the domain, paste the first and second '
+                      'Cloudflare name servers, click submit, then return to Cloudflare and wait a few '
+                      'hours [George Basics — OuQbsdwFTA0 @ 00:01:13].',
+                      'Add each record by choosing the type, setting the name to @ for the root or www for '
+                      'a subdomain, entering the content destination, leaving TTL on auto, and setting '
+                      'proxy status [PMN Online — piq0yLKq_SE @ 00:02:05].',
+                      'Before listing a BigRock domain on Afternic or Sedo, revert to the old look, open '
+                      'manage orders, opt in to Fast Transfer, and enter the emailed verification code [PG '
+                      'Tech Help — 0QCYIFcFO7A @ 00:00:16].'],
+ 'statutory_citations': [{'title': 'David Utke — The 5 BEST Domain Registrars in 2026: Where to Buy Your '
+                                   'Domain Name [00:13:15]',
+                          'url': 'https://www.youtube.com/watch?v=UkMYRY9wDN0&t=795s',
+                          'relevance': 'Primary practitioner testimony on the locked name server catch at '
+                                       'Cloudflare Registrar and registrar pricing benchmarks.'},
+                         {'title': 'Design Guy — Porkbun or Cloudflare Registrar? Domain Registration '
+                                   'Service Compared for 2026 [00:03:01]',
+                          'url': 'https://www.youtube.com/watch?v=mMGvtO-bkPI&t=181s',
+                          'relevance': 'Primary practitioner testimony on refund windows, renewal pricing, '
+                                       'and transfer costs between Porkbun and Cloudflare Registrar.'},
+                         {'title': 'PMN Online — How to Set Cloudflare DNS Easily 2026 [00:01:13]',
+                          'url': 'https://www.youtube.com/watch?v=AKtcv_vFlSY&t=73s',
+                          'relevance': 'Primary practitioner testimony on disabling DNSSEC before a '
+                                       'nameserver switch and propagation timing.'},
+                         {'title': "Luka Knows — Where to Buy a Domain in 2026? (Don't choose WRONG!) "
+                                   '[00:05:17]',
+                          'url': 'https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=317s',
+                          'relevance': 'Primary practitioner testimony on bundling risk, renewal traps, '
+                                       'and registrar tiering.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'IXpvUD5SDzA',
+                       'title': '5 Things to Know BEFORE Using Cloudflare!',
+                       'channel': 'Craylor',
+                       'author': 'Craylor',
+                       'text': 'You still need a hosting account with a provider of your choice to get '
+                               'started with Cloudflare.',
+                       'tip': 'You still need a hosting account with a provider of your choice to get '
+                              'started with Cloudflare.',
+                       'timestamp': 85,
+                       'timestamp_seconds': 85,
+                       'timestamp_label': '[00:01:25]',
+                       'url': 'https://www.youtube.com/watch?v=IXpvUD5SDzA&t=85s',
+                       'markdown': '[00:01:25](https://www.youtube.com/watch?v=IXpvUD5SDzA&t=85s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'piq0yLKq_SE',
+                       'title': 'How to Add DNS Records on Cloudflare Easily 2026',
+                       'channel': 'PMN Online',
+                       'author': 'PMN Online',
+                       'text': "Here you decide whether to enable Cloudflare's proxy feature, which is "
+                               'denoted by an orange cloud, or to set it as DNS only, indicated by a gray '
+                               'cloud.',
+                       'tip': "Here you decide whether to enable Cloudflare's proxy feature, which is "
+                              'denoted by an orange cloud, or to set it as DNS only, indicated by a gray '
+                              'cloud.',
+                       'timestamp': 174,
+                       'timestamp_seconds': 174,
+                       'timestamp_label': '[00:02:54]',
+                       'url': 'https://www.youtube.com/watch?v=piq0yLKq_SE&t=174s',
+                       'markdown': '[00:02:54](https://www.youtube.com/watch?v=piq0yLKq_SE&t=174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RClpPcLHviU',
+                       'title': 'Porkbun Review 2026 | Is Porkbun Worth It for Domain Registration?',
+                       'channel': 'SEARCHLIGHT HQ',
+                       'author': 'SEARCHLIGHT HQ',
+                       'text': 'Instead of relying heavily on extremely cheap introductory offers followed '
+                               'by expensive renewals, Porkbun aims to keep domain prices competitive and '
+                               'transparent.',
+                       'tip': 'Instead of relying heavily on extremely cheap introductory offers followed '
+                              'by expensive renewals, Porkbun aims to keep domain prices competitive and '
+                              'transparent.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=RClpPcLHviU&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=RClpPcLHviU&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ul52eFQneY0',
+                       'title': 'Best Domain Registrars for Free Extras: 5 Compared on the Specs That '
+                                'Matter',
+                       'channel': "Jake's Tech Lab",
+                       'author': "Jake's Tech Lab",
+                       'text': 'At number one, your cleanest overall winner is Cloudflare Registrar.',
+                       'tip': 'At number one, your cleanest overall winner is Cloudflare Registrar.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=ul52eFQneY0&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=ul52eFQneY0&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sx83eEm6nk4',
+                       'title': 'How to Set Up and Manage Domain and DNS on Cloudflare [In 3 steps]',
+                       'channel': 'Easytorial',
+                       'author': 'Easytorial',
+                       'text': "If you're setting up records for email like MX or verification values, "
+                               "switch to DNS only grey cloud. Otherwise, those services won't work "
+                               'correctly.',
+                       'tip': "If you're setting up records for email like MX or verification values, "
+                              "switch to DNS only grey cloud. Otherwise, those services won't work "
+                              'correctly.',
+                       'timestamp': 203,
+                       'timestamp_seconds': 203,
+                       'timestamp_label': '[00:03:23]',
+                       'url': 'https://www.youtube.com/watch?v=sx83eEm6nk4&t=203s',
+                       'markdown': '[00:03:23](https://www.youtube.com/watch?v=sx83eEm6nk4&t=203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '08Ekqe45IH0',
+                       'title': "Don't Buy a Domain Until You Watch This! (Best Domain Name Registrars "
+                                '2026)',
+                       'channel': 'Create a Pro Website',
+                       'author': 'Create a Pro Website',
+                       'text': 'They say that the domain name costs 1 cent, but they secretly charge $40.',
+                       'tip': 'They say that the domain name costs 1 cent, but they secretly charge $40.',
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=08Ekqe45IH0&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=08Ekqe45IH0&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oi-pZAGrrhQ',
+                       'title': "Where to Buy a Domain in 2026? (Don't choose WRONG!)",
+                       'channel': 'Luka Knows',
+                       'author': 'Luka Knows',
+                       'text': 'The best practice in this space is always keep your web hosting and domain '
+                               'name separate. It is cheaper and also safer.',
+                       'tip': 'The best practice in this space is always keep your web hosting and domain '
+                              'name separate. It is cheaper and also safer.',
+                       'timestamp': 337,
+                       'timestamp_seconds': 337,
+                       'timestamp_label': '[00:05:37]',
+                       'url': 'https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=337s',
+                       'markdown': '[00:05:37](https://www.youtube.com/watch?v=oi-pZAGrrhQ&t=337s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '72rBKTbIECI',
+                       'title': 'Stop Overpaying for Domain Reselling! GoDaddy vs. Domain Name API',
+                       'channel': 'Domain Reseller',
+                       'author': 'Domain Reseller',
+                       'text': 'A program fee is something you pay every year, whatever your sales volume.',
+                       'tip': 'A program fee is something you pay every year, whatever your sales volume.',
+                       'timestamp': 227,
+                       'timestamp_seconds': 227,
+                       'timestamp_label': '[00:03:47]',
+                       'url': 'https://www.youtube.com/watch?v=72rBKTbIECI&t=227s',
+                       'markdown': '[00:03:47](https://www.youtube.com/watch?v=72rBKTbIECI&t=227s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mMGvtO-bkPI',
+                       'title': 'Porkbun or Cloudflare Registrar? Domain Registration Service Compared for '
+                                '2026',
+                       'channel': 'Design Guy',
+                       'author': 'Design Guy',
+                       'text': 'Pork Bun officially gives you a refund window of 4 days, that is 96 hours '
+                               'on a new registration.',
+                       'tip': 'Pork Bun officially gives you a refund window of 4 days, that is 96 hours '
+                              'on a new registration.',
+                       'timestamp': 181,
+                       'timestamp_seconds': 181,
+                       'timestamp_label': '[00:03:01]',
+                       'url': 'https://www.youtube.com/watch?v=mMGvtO-bkPI&t=181s',
+                       'markdown': '[00:03:01](https://www.youtube.com/watch?v=mMGvtO-bkPI&t=181s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AKtcv_vFlSY',
+                       'title': 'How to Set Cloudflare DNS Easily 2026',
+                       'channel': 'PMN Online',
+                       'author': 'PMN Online',
+                       'text': 'You must ensure that DNSSEC, which stands for Domain Name System Security '
+                               'Extensions, is turned off at your registrar.',
+                       'tip': 'You must ensure that DNSSEC, which stands for Domain Name System Security '
+                              'Extensions, is turned off at your registrar.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=AKtcv_vFlSY&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=AKtcv_vFlSY&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aeqNGnkQgbA',
+                       'title': 'How To Setup Cloudflare With Dynadot Domain - Full Guide',
+                       'channel': 'George Basics',
+                       'author': 'George Basics',
+                       'text': 'Paste the first name server we just copied from Cloudflare. Then copy the '
+                               'second one and paste it in the second row. Then click save name servers.',
+                       'tip': 'Paste the first name server we just copied from Cloudflare. Then copy the '
+                              'second one and paste it in the second row. Then click save name servers.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=aeqNGnkQgbA&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=aeqNGnkQgbA&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OuQbsdwFTA0',
+                       'title': 'How To Setup Cloudflare With Porkbun Domain (Step By Step)',
+                       'channel': 'George Basics',
+                       'author': 'George Basics',
+                       'text': 'You need to click on it and we need to paste our name servers right here. '
+                               "First one and then the second one. Click submit and that's all.",
+                       'tip': 'You need to click on it and we need to paste our name servers right here. '
+                              "First one and then the second one. Click submit and that's all.",
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=OuQbsdwFTA0&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=OuQbsdwFTA0&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hdvK17zvRgk',
+                       'title': 'Cloudflare vs Porkbun Domain - 2025 Comparison',
+                       'channel': 'The Lone Crater',
+                       'author': 'The Lone Crater',
+                       'text': 'Opt for Porkbun if your main focus is cost-effective domain registration, '
+                               'a vast array of unique domain extensions, and a straightforward, '
+                               'user-friendly management experience.',
+                       'tip': 'Opt for Porkbun if your main focus is cost-effective domain registration, a '
+                              'vast array of unique domain extensions, and a straightforward, '
+                              'user-friendly management experience.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=hdvK17zvRgk&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=hdvK17zvRgk&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UkMYRY9wDN0',
+                       'title': 'The 5 BEST Domain Registrars in 2026: Where to Buy Your Domain Name',
+                       'channel': 'David Utke',
+                       'author': 'David Utke',
+                       'text': 'The catch is that you cannot change the name servers of a domain name '
+                               'registered with Cloudflare.',
+                       'tip': 'The catch is that you cannot change the name servers of a domain name '
+                              'registered with Cloudflare.',
+                       'timestamp': 795,
+                       'timestamp_seconds': 795,
+                       'timestamp_label': '[00:13:15]',
+                       'url': 'https://www.youtube.com/watch?v=UkMYRY9wDN0&t=795s',
+                       'markdown': '[00:13:15](https://www.youtube.com/watch?v=UkMYRY9wDN0&t=795s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UkMYRY9wDN0',
+                       'title': 'The 5 BEST Domain Registrars in 2026: Where to Buy Your Domain Name',
+                       'channel': 'David Utke',
+                       'author': 'David Utke',
+                       'text': "Then you get domain name privacy included and it's free forever. And you "
+                               'need domain name privacy. This is non-negotiable.',
+                       'tip': "Then you get domain name privacy included and it's free forever. And you "
+                              'need domain name privacy. This is non-negotiable.',
+                       'timestamp': 257,
+                       'timestamp_seconds': 257,
+                       'timestamp_label': '[00:04:17]',
+                       'url': 'https://www.youtube.com/watch?v=UkMYRY9wDN0&t=257s',
+                       'markdown': '[00:04:17](https://www.youtube.com/watch?v=UkMYRY9wDN0&t=257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'chataozFYGw',
+                       'title': 'Cloudflare Registrar vs Dynadot — Which Wins for Domain Registration in '
+                                '2026?',
+                       'channel': 'Design Guy',
+                       'author': 'Design Guy',
+                       'text': 'With Cloudflare registrar, the policy is absolute. Brand new domain '
+                               'registrations are completely non-refundable.',
+                       'tip': 'With Cloudflare registrar, the policy is absolute. Brand new domain '
+                              'registrations are completely non-refundable.',
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=chataozFYGw&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=chataozFYGw&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0QCYIFcFO7A',
+                       'title': 'How To Enable Fast Transfer In BigRock and Sell Your Domain To Afternic '
+                                'or Sedo?',
+                       'channel': 'PG Tech Help',
+                       'author': 'PG Tech Help',
+                       'text': 'Click on manage orders and then you need to click on fast transfer and '
+                               'click on opt in option.',
+                       'tip': 'Click on manage orders and then you need to click on fast transfer and '
+                              'click on opt in option.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=0QCYIFcFO7A&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=0QCYIFcFO7A&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

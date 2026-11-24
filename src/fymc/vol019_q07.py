@@ -1,1073 +1,819 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "enterprise-software-reselling-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute enterprise software reselling end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "AWS CPPO, Microsoft CSP, Deal Registration, SQLite Evidence Controls, and Cash-to-Ledger Reconciliation",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #23, Enterprise Software Reselling, ranks #14 with a 87/100 "
-        "Money-to-Manpower Score. This chapter connects nine mapped plays to one "
-        "controlled operating system: qualify demand, establish channel rights, price "
-        "vendor obligations, deliver accepted scope, and reconcile collected cash. Eight "
-        "chapter-defined channel plays accompany the supplied customs integration play; "
-        "customer tariff savings never become reseller revenue automatically. The "
-        "canonical annual owner profits are $24,000 Conservative, $196,000 Base, and "
-        "$500,000 Scaled. A six-module SQLite reference separates evidence, offer "
-        "dispatch, and balanced postings. A worked mature-pipeline quarter produces "
-        "$350,000 gross resale and service revenue, $49,000 owner profit, and $24,000 "
-        "operating cash generation, explicitly bridging the Base annual run rate without "
-        "pretending a new reseller closes immediately."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$300,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "8% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,400,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "14.0% net margin; $196,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross license resale and service billings; vendor costs included",
-            "note": "20% net margin; $500,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Convert nine mapped plays into authorized, collectible orders",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with the commercial relationship, not the quotation screen. "
-                    "Record the customer legal entity, tenant identifier, procurement "
-                    "contact, beneficial contracting party, renewal date, product edition, "
-                    "seat count, and deployment geography in Salesforce or HubSpot. Attach "
-                    "the current distributor agreement and the vendor's authorization "
-                    "record before representing a resale right. For AWS Marketplace "
-                    "channel partner private offers, distinguish the independent software "
-                    "vendor's selling authorization from the customer's acceptance of "
-                    "your private offer. For Microsoft CSP, distinguish direct billing "
-                    "from an indirect provider relationship and record the applicable "
-                    "subscription cancellation window. Neither a registered opportunity "
-                    "nor a generated quote proves entitlement. Score demand using "
-                    "documented authority, delivery feasibility, collection risk, and "
-                    "contribution after vendor commitments. An attractive percentage "
-                    "spread can conceal a disastrous payment mismatch: a $100,000 annual "
-                    "license with $82,000 due upstream immediately requires substantial "
-                    "working capital when the customer pays after sixty days. Capture "
-                    "that exposure before assigning a probability-weighted pipeline "
-                    "value. The first full-time operator owns commercial evidence; the "
-                    "second owns delivery and reconciliation. Contractors receive "
-                    "bounded implementation work, never uncontrolled permission to "
-                    "change price, payee details, or customer licensing. Keep approvals "
-                    "and artifact versions attached to the same immutable deal reference."
-                ),
-                (
-                    "The nine-play map below is an operating taxonomy, not an assertion "
-                    "that nine external catalog identifiers were supplied. Eight "
-                    "chapter-defined channel plays cover intake, registration, CPPO, "
-                    "CSP, implementation, renewal, entitlement reconciliation, and "
-                    "collections. The ninth preserves the supplied "
-                    "customs_first_sale_rule_valuation_arbitrage identifier as an "
-                    "adjacent customer integration opportunity. Every play must end "
-                    "with a priced deliverable, a cost owner, and a documented fallback. "
-                    "A $100,000 resale with an $82,000 vendor charge creates $18,000 "
-                    "before implementation, marketplace charges, credit losses, and "
-                    "overhead; it does not create $100,000 of profit. Likewise, a "
-                    "$20,000 migration performed with $12,000 of contractor effort "
-                    "creates an $8,000 delivery contribution before shared costs. "
-                    "Maintain separate quote lines for licenses, services, support, "
-                    "taxes, and customer-specific pass-through amounts. The scorecard "
-                    "uses gross license resale and service billings with vendor costs "
-                    "inside margin. Actual reporting still requires a principal-versus-agent "
-                    "assessment under the applicable accounting framework; an agent "
-                    "arrangement cannot simply adopt gross presentation because the "
-                    "scorecard does. Compare like arrangements when measuring progress "
-                    "against the Base case. Keep the example ticket economics separate "
-                    "from the quarter model rather than silently blending their cost "
-                    "ratios into its results."
-                ),
-                (
-                    "For the customs adjacency, sell secure document integration and "
-                    "workflow configuration, not a promised tariff outcome. Under "
-                    "19 U.S.C. 1401a and 19 CFR 152.103, qualifying transaction value "
-                    "depends on the underlying sale and required additions. Nissho "
-                    "Iwai American Corp. v. United States, 982 F.2d 505, describes "
-                    "conditions relevant to using an earlier sale, including clear "
-                    "destination and arm's-length evidence; a cheaper invoice alone "
-                    "does not establish eligibility. At one million units, $18 per "
-                    "unit produces $18 million of importer invoices while $8 produces "
-                    "$8 million of factory value. At an illustrative uniform 10% "
-                    "duty, the arithmetic difference is $1 million, or 55.6% of "
-                    "the original $1.8 million duty. Assists, royalties, freight "
-                    "treatment, product classifications, and other duties can change "
-                    "that result; a 35–55% sales claim is not an operating assumption. "
-                    "Use an encrypted customs-broker evidence vault, preserve CBP "
-                    "access, and require a transaction-specific customs-counsel "
-                    "opinion before supporting the customer's filing workflow. The "
-                    "buyer need not receive unrestricted factory invoices merely "
-                    "because the integration accesses them. If evidence fails, retain "
-                    "the supported valuation method and pause the savings claim. "
-                    "A separately contracted $15,000 integration remains reseller "
-                    "service revenue; the customer's duty reduction remains theirs."
-                ),
-            ],
-            "table": {
-                "caption": "Nine Mapped Plays: Contracted Output, Unit Economics, and Risk Fallback",
-                "headers": [
-                    "Mapped play and operating boundary",
-                    "Specific deliverable and supporting evidence",
-                    "Illustrative unit economics before shared overhead",
-                    "Failure response and accountable operating owner",
-                ],
-                "rows": [
-                    [
-                        "Chapter-defined play: qualify authorized enterprise software demand",
-                        "Archive buyer authority, tenant identity, and procurement timetable",
-                        "Twenty screened accounts at $150 each consume $3,000",
-                        "Commercial owner stops outreach where contracting authority fails",
-                    ],
-                    [
-                        "Chapter-defined play: register vendor opportunities before discounting",
-                        "Store registration identifier, expiration date, and eligible products",
-                        "Three discount points on $100,000 preserve $3,000 contribution",
-                        "Reprice against written distributor terms when registration expires",
-                    ],
-                    [
-                        "Chapter-defined play: execute AWS CPPO private offers",
-                        "Match selling authorization, buyer account, and accepted offer",
-                        "$100,000 customer billing less $82,000 vendor obligation leaves $18,000",
-                        "Commercial owner withdraws stale offers before repricing exposure",
-                    ],
-                    [
-                        "Chapter-defined play: reconcile Microsoft CSP subscription commitments",
-                        "Capture term, seat quantity, provider charge, and cancellation window",
-                        "One hundred seats at $30 monthly create $36,000 annual billings",
-                        "Suspend unsupported changes and obtain written provider confirmation",
-                    ],
-                    [
-                        "Chapter-defined play: sell bounded implementation work packages",
-                        "Attach migration scope, acceptance tests, and contractor deliverables",
-                        "$20,000 service billing less $12,000 delivery creates $8,000 contribution",
-                        "Delivery owner prices scope changes before additional work",
-                    ],
-                    [
-                        "Chapter-defined play: manage evidence-backed renewal expansion campaigns",
-                        "Reconfirm usage, notice deadlines, procurement budget, and renewal authority",
-                        "$120,000 renewal at 15% spread creates $18,000 contribution",
-                        "Remove dormant seats before proposing unsupported expansion claims",
-                    ],
-                    [
-                        "Chapter-defined play: reconcile ordered and provisioned license entitlements",
-                        "Compare approved order, vendor entitlement export, and customer inventory",
-                        "Ten excess seats at $30 monthly expose $3,600 annually",
-                        "Freeze disputed seat additions and recover documented billing errors",
-                    ],
-                    [
-                        "Chapter-defined play: collect and reconcile contracted customer cash",
-                        "Match remittance reference, bank transaction, invoice, and credit memo",
-                        "Collecting $40,000 receivables releases $40,000 previously tied-up cash",
-                        "Collections owner resolves disputed acceptance before escalating reminders",
-                    ],
-                    [
-                        "customs_first_sale_rule_valuation_arbitrage: broker-controlled customs integration adjacency",
-                        "Encrypted factory invoices, destination evidence, and customs-counsel opinion",
-                        "$15,000 integration less $9,000 delivery creates $6,000 contribution",
-                        "Retain supported valuation when broker evidence cannot sustain treatment",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread before chasing the signature",
-                "body": (
-                    "Experienced channel operators preserve evidence and working capital "
-                    "before counting a signed order as a successful deal."
-                ),
-                "items": [
-                    "Set quote expiration earlier than the earliest vendor price, currency, or deal-registration expiration; an accepted customer price must not outlive its supply economics.",
-                    "For CPPO, retain the selling authorization identifier alongside the accepted offer identifier; those records prove different commercial facts.",
-                    "For CSP, export subscription terms and quantities before each change request, then compare the provider's resulting charge rather than trusting the interface preview.",
-                    "Keep factory invoices inside the broker-controlled vault; sell the integration milestone and never invoice the customer's modeled tariff savings as license revenue.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build the evidence ledger and serialize irreversible transitions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The six modules below form a compact SQLite reference, supplied "
-                    "as executable source strings in execution order. Save each code "
-                    "cell into one local script, or concatenate them in order, and "
-                    "run with Python 3.9 or later. They use only standard-library "
-                    "components and create a local ledger.sqlite3 database. This "
-                    "reference has not been executed in this chapter. Test it against "
-                    "a disposable database before adapting it to production. SQLite "
-                    "runs on a local persistent disk with one connection per worker, "
-                    "foreign keys enabled, and explicit write transactions. Every "
-                    "read-modify-write operation obtains BEGIN IMMEDIATE before "
-                    "examining mutable state. Concurrent writers therefore serialize "
-                    "or receive a bounded lock error; callers retry the whole "
-                    "transaction with the same business key, never a partial write. "
-                    "Unique constraints provide a second defense against duplicated "
-                    "intake, state transitions, commands, and ledger postings. Hashes "
-                    "detect request substitution, not document authenticity. Store "
-                    "actual contracts in an encrypted, access-controlled object store "
-                    "such as Amazon S3 with versioning and retention configured "
-                    "for the engagement. Keep its immutable version reference and "
-                    "content digest in the evidence record. Do not place credentials, "
-                    "factory invoices, or customer personal records inside quote "
-                    "payloads or application logs."
-                ),
-                (
-                    "The state machine separates intake, verified authority, "
-                    "evidence-ready status, queued offer, booked acceptance, and "
-                    "reconciled cash. The evidence-ready state is the workflow's "
-                    "escrow checkpoint: protected documents are available to "
-                    "authorized reviewers, not customer funds held by the reseller. "
-                    "An authorized reviewer checks the source artifacts before "
-                    "recording each evidence reference. The example intake score "
-                    "merely prioritizes cases; its Boolean fields do not authenticate "
-                    "a vendor authorization. Transitions use an expected prior state "
-                    "and return harmlessly only when the same completed transition "
-                    "carries the same evidence. Different evidence on a reused "
-                    "transition produces an error for investigation. The outbox "
-                    "reserves a command and marks it sending before any external "
-                    "request. A second worker cannot claim that command. A crash "
-                    "after reservation intentionally leaves work unresolved rather "
-                    "than assuming that no offer was created. An operator or adapter "
-                    "must look up the external result using the stable request "
-                    "reference. Where a vendor endpoint supports documented "
-                    "idempotency, pass that key; where it does not, do not "
-                    "automatically resubmit an ambiguous request. Local serialization "
-                    "eliminates local check-then-act races, but cannot manufacture "
-                    "an exactly-once guarantee across an uncooperative remote service."
-                ),
-                (
-                    "The accounting representation uses transfers with equal debit "
-                    "and credit amounts, so every stored row balances by construction. "
-                    "A single posting batch is atomic, amounts are positive integer "
-                    "cents, and each source reference has an immutable payload. "
-                    "Book earned gross billings as a receivable debit and revenue "
-                    "credit; book vendor expense against payables when the obligation "
-                    "is incurred. Customer receipts debit cash and credit receivables. "
-                    "Vendor payments debit payables and credit cash. Contractor "
-                    "delivery and operating expenses remain separate accounts, "
-                    "allowing the cohort's contribution and owner-profit bridge to "
-                    "be reproduced without a spreadsheet override. Post corrections "
-                    "as new reversing transfers, never edits to earlier rows. "
-                    "The view exposes signed account balances by deal and calendar "
-                    "month; collection closure additionally requires invoice totals "
-                    "to match the accepted quote and receivables to reach zero. "
-                    "A bank evidence reference still requires human or authenticated "
-                    "feed verification outside this reference. Restrict production "
-                    "database writes to the service account, back up the database "
-                    "with SQLite's backup API, and test restoration. Triggers guard "
-                    "against accidental mutation, not a privileged administrator. "
-                    "Archive reviewed bank statements independently so database "
-                    "integrity and cash existence have separate evidence sources."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and exact execution order",
-                    "Copy-pasteable Python and embedded SQLite source",
-                    "Concurrency and evidence control implemented",
-                    "Operator boundary before production deployment",
-                ],
-                "rows": [
-                    [
-                        "Module one: initialize schema and transaction ownership",
-                        '''import contextlib
-import datetime
-import hashlib
-import json
-import sqlite3
-
-db = sqlite3.connect(
-    "ledger.sqlite3", timeout=30, isolation_level=None
-)
-db.row_factory = sqlite3.Row
-db.execute("PRAGMA foreign_keys = ON")
-db.execute("PRAGMA journal_mode = WAL")
-db.execute("PRAGMA synchronous = FULL")
-
-db.executescript("""
-CREATE TABLE IF NOT EXISTS deals (
-    id INTEGER PRIMARY KEY,
-    tenant TEXT NOT NULL,
-    external_ref TEXT NOT NULL,
-    payload_hash TEXT NOT NULL,
-    gross_cents INTEGER NOT NULL CHECK(gross_cents > 0),
-    vendor_cents INTEGER NOT NULL CHECK(
-        vendor_cents >= 0 AND vendor_cents <= gross_cents
-    ),
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL DEFAULT 'intake' CHECK(state IN (
-        'intake', 'verified', 'evidence_ready',
-        'offer_queued', 'booked', 'cash_reconciled'
-    )),
-    UNIQUE(tenant, external_ref)
-);
-CREATE TABLE IF NOT EXISTS state_events (
-    id INTEGER PRIMARY KEY,
-    deal_id INTEGER NOT NULL REFERENCES deals(id),
-    target TEXT NOT NULL,
-    evidence_ref TEXT NOT NULL CHECK(length(evidence_ref) > 0),
-    UNIQUE(deal_id, target)
-);
-CREATE TABLE IF NOT EXISTS outbox (
-    id INTEGER PRIMARY KEY,
-    deal_id INTEGER NOT NULL REFERENCES deals(id),
-    command_kind TEXT NOT NULL CHECK(command_kind = 'create_offer'),
-    request_key TEXT NOT NULL UNIQUE,
-    payload TEXT NOT NULL,
-    state TEXT NOT NULL CHECK(state IN ('ready', 'sending', 'done')),
-    vendor_receipt TEXT UNIQUE,
-    UNIQUE(deal_id, command_kind)
-);
-CREATE TABLE IF NOT EXISTS accounts (
-    name TEXT PRIMARY KEY
-);
-INSERT OR IGNORE INTO accounts(name) VALUES
-    ('cash'), ('receivable'), ('revenue'), ('vendor_expense'),
-    ('delivery_expense'), ('opex'), ('payable'), ('equity');
-CREATE TABLE IF NOT EXISTS transfers (
-    id INTEGER PRIMARY KEY,
-    source_ref TEXT NOT NULL UNIQUE,
-    deal_id INTEGER REFERENCES deals(id),
-    booked_on TEXT NOT NULL,
-    debit TEXT NOT NULL REFERENCES accounts(name),
-    credit TEXT NOT NULL REFERENCES accounts(name),
-    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0),
-    evidence_ref TEXT NOT NULL CHECK(length(evidence_ref) > 0),
-    CHECK(debit <> credit)
-);
-CREATE TRIGGER IF NOT EXISTS transfers_no_update
-BEFORE UPDATE ON transfers BEGIN
-    SELECT RAISE(ABORT, 'post a reversal instead');
-END;
-CREATE TRIGGER IF NOT EXISTS transfers_no_delete
-BEFORE DELETE ON transfers BEGIN
-    SELECT RAISE(ABORT, 'retain original posting');
-END;
-CREATE TRIGGER IF NOT EXISTS events_no_update
-BEFORE UPDATE ON state_events BEGIN
-    SELECT RAISE(ABORT, 'retain original evidence');
-END;
-CREATE TRIGGER IF NOT EXISTS events_no_delete
-BEFORE DELETE ON state_events BEGIN
-    SELECT RAISE(ABORT, 'retain original evidence');
-END;
-""")
-
-@contextlib.contextmanager
-def transaction():
-    db.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        db.execute("COMMIT")
-    except BaseException:
-        if db.in_transaction:
-            db.execute("ROLLBACK")
-        raise
-
-def canonical(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"))
-
-def digest(value):
-    return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()
-
-def text(value):
-    if not isinstance(value, str) or not value.strip():
-        raise ValueError("nonempty text required")
-    return value
-''',
-                        "Write locks precede mutable reads; unique keys reject duplicates",
-                        "Run on local disk with separately controlled service credentials",
-                    ],
-                    [
-                        "Module two: validate intake and calculate review priority",
-                        '''def intake(packet):
-    required = {
-        "tenant", "external_ref", "gross_cents", "vendor_cents",
-        "authorized", "buyer_verified", "evidence_ref"
-    }
-    if set(packet) != required:
-        raise ValueError("intake fields must match the contract")
-    for key in ("tenant", "external_ref", "evidence_ref"):
-        text(packet[key])
-    for key in ("authorized", "buyer_verified"):
-        if type(packet[key]) is not bool:
-            raise ValueError("review flags must be Boolean")
-    gross = packet["gross_cents"]
-    vendor = packet["vendor_cents"]
-    if type(gross) is not int or type(vendor) is not int:
-        raise ValueError("amounts must be integer cents")
-    if gross <= 0 or vendor < 0 or vendor > gross:
-        raise ValueError("invalid intake economics")
-    score = (
-        40 * int(packet["authorized"])
-        + 40 * int(packet["buyer_verified"])
-        + 20 * int((gross - vendor) * 100 >= gross * 15)
-    )
-    fingerprint = digest(packet)
-    with transaction():
-        old = db.execute(
-            "SELECT * FROM deals WHERE tenant=? AND external_ref=?",
-            (packet["tenant"], packet["external_ref"])
-        ).fetchone()
-        if old:
-            if old["payload_hash"] != fingerprint:
-                raise ValueError("business key reused with changed intake")
-            return old["id"]
-        cursor = db.execute(
-            """INSERT INTO deals(
-                tenant, external_ref, payload_hash,
-                gross_cents, vendor_cents, score
-            ) VALUES (?, ?, ?, ?, ?, ?)""",
-            (
-                packet["tenant"], packet["external_ref"],
-                fingerprint, gross, vendor, score
-            )
-        )
-        return cursor.lastrowid
-''',
-                        "Canonical payload comparison prevents silent business-key substitution",
-                        "Reviewer authenticates source authority before trusting intake flags",
-                    ],
-                    [
-                        "Module three: verify documents and advance evidence escrow states",
-                        '''def transition_locked(deal_id, expected, target, evidence_ref):
-    text(evidence_ref)
-    old = db.execute(
-        "SELECT evidence_ref FROM state_events WHERE deal_id=? AND target=?",
-        (deal_id, target)
-    ).fetchone()
-    if old:
-        if old["evidence_ref"] != evidence_ref:
-            raise ValueError("transition evidence changed")
-        return
-    changed = db.execute(
-        "UPDATE deals SET state=? WHERE id=? AND state=?",
-        (target, deal_id, expected)
-    ).rowcount
-    if changed != 1:
-        raise ValueError("state precondition failed")
-    db.execute(
-        "INSERT INTO state_events(deal_id, target, evidence_ref) VALUES (?, ?, ?)",
-        (deal_id, target, evidence_ref)
-    )
-
-def verify_authority(deal_id, evidence_ref):
-    with transaction():
-        transition_locked(deal_id, "intake", "verified", evidence_ref)
-
-def release_evidence(deal_id, evidence_ref):
-    with transaction():
-        transition_locked(
-            deal_id, "verified", "evidence_ready", evidence_ref
-        )
-
-def accept_order(deal_id, acceptance_ref):
-    with transaction():
-        sent = db.execute(
-            "SELECT state FROM outbox WHERE deal_id=? AND command_kind='create_offer'",
-            (deal_id,)
-        ).fetchone()
-        if sent is None or sent["state"] != "done":
-            raise ValueError("confirmed offer receipt required")
-        transition_locked(
-            deal_id, "offer_queued", "booked", acceptance_ref
-        )
-''',
-                        "Conditional updates and evidence uniqueness serialize each state transition",
-                        "Restrict verification functions to authenticated reviewers with document access",
-                    ],
-                    [
-                        "Module four: reserve offers without duplicate external dispatch",
-                        '''def queue_offer(deal_id):
-    with transaction():
-        deal = db.execute(
-            "SELECT * FROM deals WHERE id=?", (deal_id,)
-        ).fetchone()
-        if deal is None:
-            raise ValueError("deal does not exist")
-        existing = db.execute(
-            "SELECT request_key FROM outbox WHERE deal_id=?",
-            (deal_id,)
-        ).fetchone()
-        if existing:
-            return existing["request_key"]
-        key = digest([deal["tenant"], deal["external_ref"], "create_offer"])
-        payload = canonical({
-            "tenant": deal["tenant"],
-            "external_ref": deal["external_ref"],
-            "gross_cents": deal["gross_cents"]
-        })
-        transition_locked(
-            deal_id, "evidence_ready", "offer_queued", key
-        )
-        db.execute(
-            """INSERT INTO outbox(
-                deal_id, command_kind, request_key, payload, state
-            ) VALUES (?, 'create_offer', ?, ?, 'ready')""",
-            (deal_id, key, payload)
-        )
-        return key
-
-def claim_offer():
-    with transaction():
-        row = db.execute(
-            "SELECT * FROM outbox WHERE state='ready' ORDER BY id LIMIT 1"
-        ).fetchone()
-        if row is None:
-            return None
-        changed = db.execute(
-            "UPDATE outbox SET state='sending' WHERE id=? AND state='ready'",
-            (row["id"],)
-        ).rowcount
-        if changed != 1:
-            raise ValueError("offer claim failed")
-        result = dict(row)
-        result["state"] = "sending"
-        return result
-
-def confirm_offer(request_key, vendor_receipt):
-    text(vendor_receipt)
-    with transaction():
-        row = db.execute(
-            "SELECT * FROM outbox WHERE request_key=?", (request_key,)
-        ).fetchone()
-        if row is None:
-            raise ValueError("offer request does not exist")
-        if row["state"] == "done":
-            if row["vendor_receipt"] != vendor_receipt:
-                raise ValueError("vendor receipt changed")
-            return
-        if row["state"] != "sending":
-            raise ValueError("offer must be reserved before confirmation")
-        db.execute(
-            "UPDATE outbox SET state='done', vendor_receipt=? WHERE id=?",
-            (vendor_receipt, row["id"])
-        )
-''',
-                        "One worker claims each command; ambiguous sends remain reserved",
-                        "Adapter verifies remote receipts and never blindly retries sending commands",
-                    ],
-                    [
-                        "Module five: post balanced transfers and expose reconciliation views",
-                        '''db.executescript("""
-CREATE VIEW IF NOT EXISTS ledger_lines AS
-SELECT deal_id, booked_on, debit AS account, cents AS signed_cents
-FROM transfers
-UNION ALL
-SELECT deal_id, booked_on, credit AS account, -cents AS signed_cents
-FROM transfers;
-CREATE VIEW IF NOT EXISTS reconciliation AS
-SELECT deal_id, substr(booked_on, 1, 7) AS period,
-       account, SUM(signed_cents) AS balance_cents
-FROM ledger_lines
-GROUP BY deal_id, substr(booked_on, 1, 7), account;
-""")
-
-def account_balance(account, deal_id=None):
-    if deal_id is None:
-        row = db.execute(
-            "SELECT COALESCE(SUM(signed_cents), 0) FROM ledger_lines WHERE account=?",
-            (account,)
-        ).fetchone()
-    else:
-        row = db.execute(
-            """SELECT COALESCE(SUM(signed_cents), 0)
-            FROM ledger_lines WHERE account=? AND deal_id=?""",
-            (account, deal_id)
-        ).fetchone()
-    return row[0]
-
-def post_batch(rows):
-    fields = (
-        "source_ref", "deal_id", "booked_on",
-        "debit", "credit", "cents", "evidence_ref"
-    )
-    with transaction():
-        for row in rows:
-            if set(row) != set(fields):
-                raise ValueError("posting fields must match the contract")
-            for key in ("source_ref", "debit", "credit", "evidence_ref"):
-                text(row[key])
-            day = datetime.date.fromisoformat(row["booked_on"])
-            if day.isoformat() != row["booked_on"]:
-                raise ValueError("use ISO calendar dates")
-            if type(row["cents"]) is not int or row["cents"] <= 0:
-                raise ValueError("positive integer cents required")
-            values = tuple(row[key] for key in fields)
-            old = db.execute(
-                "SELECT * FROM transfers WHERE source_ref=?",
-                (row["source_ref"],)
-            ).fetchone()
-            if old:
-                if tuple(old[key] for key in fields) != values:
-                    raise ValueError("posting key reused with changed values")
-                continue
-            if row["deal_id"] is not None:
-                deal = db.execute(
-                    "SELECT state FROM deals WHERE id=?", (row["deal_id"],)
-                ).fetchone()
-                if deal is None or deal["state"] != "booked":
-                    raise ValueError("new deal postings require booked state")
-            db.execute(
-                """INSERT INTO transfers(
-                    source_ref, deal_id, booked_on,
-                    debit, credit, cents, evidence_ref
-                ) VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                values
-            )
-
-def close_collection(deal_id, bank_evidence_ref):
-    with transaction():
-        deal = db.execute(
-            "SELECT gross_cents FROM deals WHERE id=?", (deal_id,)
-        ).fetchone()
-        if deal is None:
-            raise ValueError("deal does not exist")
-        if account_balance("receivable", deal_id) != 0:
-            raise ValueError("receivable remains open")
-        if -account_balance("revenue", deal_id) != deal["gross_cents"]:
-            raise ValueError("recognized billings differ from accepted quote")
-        transition_locked(
-            deal_id, "booked", "cash_reconciled", bank_evidence_ref
-        )
-''',
-                        "Atomic posting batches balance every row and reject altered retries",
-                        "Use reviewed earned billings; add controlled reopening before later adjustments",
-                    ],
-                    [
-                        "Module six: run structural checks and inspect unresolved work",
-                        '''def run_qa():
-    integrity = db.execute("PRAGMA integrity_check").fetchall()
-    if [row[0] for row in integrity] != ["ok"]:
-        raise RuntimeError("database integrity check failed")
-    if db.execute("PRAGMA foreign_key_check").fetchone() is not None:
-        raise RuntimeError("foreign key check failed")
-    with transaction():
-        total = db.execute(
-            "SELECT COALESCE(SUM(signed_cents), 0) FROM ledger_lines"
-        ).fetchone()[0]
-        if total != 0:
-            raise RuntimeError("ledger does not balance")
-        closed = db.execute(
-            "SELECT id, gross_cents FROM deals WHERE state='cash_reconciled'"
-        ).fetchall()
-        for deal in closed:
-            if account_balance("receivable", deal["id"]) != 0:
-                raise RuntimeError("closed collection has open receivable")
-            if -account_balance("revenue", deal["id"]) != deal["gross_cents"]:
-                raise RuntimeError("closed collection has incorrect revenue")
-        unresolved = db.execute(
-            """SELECT request_key, deal_id
-            FROM outbox WHERE state='sending' ORDER BY id"""
-        ).fetchall()
-        return {
-            "balanced": True,
-            "unresolved_offers": [dict(row) for row in unresolved],
-            "cash_cents": account_balance("cash"),
-            "receivable_cents": account_balance("receivable"),
-            "payable_cents": -account_balance("payable")
-        }
-
-if __name__ == "__main__":
-    print(canonical(run_qa()))
-''',
-                        "Consistent locked inspection detects broken balances and unresolved sends",
-                        "Also test crashes, concurrent processes, restores, and external evidence matching",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the first live offer",
-                "body": (
-                    "The reference intentionally stops short of live vendor calls. "
-                    "Complete these checks before connecting an authorized adapter."
-                ),
-                "items": [
-                    "Confirm current reseller authorization, distributor payment terms, product geography, customer tenant, and the specific buyer's contracting authority.",
-                    "Run two separate worker processes against the same disposable database; verify one intake row, one outbox reservation, and one posting per source reference.",
-                    "Kill a worker immediately after offer reservation and after the remote response; demonstrate lookup-based recovery without resetting a sending command to ready.",
-                    "Restore a backup, compare ledger balances to independent bank evidence, and prove the operator can retrieve each encrypted contract version without exposing another customer's records.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Walk a mature pipeline through ninety days of profit and cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Worked 90-Day Cohort Walk models a quarter from an "
-                    "established, authorized reseller with an already mature pipeline. "
-                    "It is not a claim that cold leads routinely become enterprise "
-                    "cash inside ninety days. The canonical time to first deal is "
-                    "three to twelve months, so a new operator uses this period "
-                    "to establish authorization, evidence controls, relationships, "
-                    "and implementation capability while funding a longer sales "
-                    "cycle. The walk opens with $75,000 cash contributed by the "
-                    "owner, within the $15,000–$75,000 startup range, and zero "
-                    "receivables or vendor payables. That contribution credits "
-                    "equity, not revenue. Month 1 processes forty opportunities: "
-                    "eight are scrubbed for eligibility, twenty are lost, four "
-                    "become accepted deals, and eight remain open. Month 2 processes "
-                    "fifty distinct opportunities with ten scrubs, twenty-four "
-                    "losses, six accepted deals, and ten open. Month 3 processes "
-                    "sixty with twelve scrubs, thirty losses, seven accepted deals, "
-                    "and eleven open. These are separate intake cohorts, so open "
-                    "opportunities are not counted again as fresh leads. Their "
-                    "future value is excluded from the quarter's recognized "
-                    "revenue. A scrub means evidence or fit failed before booking; "
-                    "a loss means an eligible opportunity did not close."
-                ),
-                (
-                    "Accepted and earned gross billings are $80,000, $120,000, and "
-                    "$150,000 by month. Month 1 has four $20,000 tickets, Month 2 "
-                    "has six, and Month 3 has six $20,000 tickets plus one $30,000 "
-                    "ticket. For this example, each accepted package satisfies its "
-                    "applicable recognition conditions in its booking month; "
-                    "unperformed future services would instead require a different "
-                    "schedule. License and cloud resale contribute $280,000 of "
-                    "quarter revenue and accepted implementation services contribute "
-                    "$70,000. Vendor expense totals $245,000, contractor delivery "
-                    "expense $21,000, and operating expense $35,000. Operating "
-                    "expense covers the modeled two full-time roles and shared "
-                    "systems; three contractors are part-time capacity whose billed "
-                    "delivery is already in contractor expense. Do not count their "
-                    "hours again in overhead. Monthly operating expense is $11,000, "
-                    "$12,000, and $12,000, inside the canonical $5,000–$25,000 "
-                    "range. Monthly owner profit is consequently $8,200, $16,800, "
-                    "and $24,000. The quarter produces exactly $49,000 on $350,000 "
-                    "gross revenue, a 14.0% margin. Annualizing the whole quarter "
-                    "by four yields $1,400,000 revenue and $196,000 owner profit; "
-                    "annualizing the strongest month would misrepresent the Base "
-                    "case and should not appear in the dashboard."
-                ),
-                (
-                    "Cash follows a different timetable. Collect $60,000 of Month "
-                    "1 invoices during Month 1. During Month 2 collect the remaining "
-                    "$20,000 from that cohort and $80,000 from Month 2 invoices. "
-                    "During Month 3 collect Month 2's remaining $40,000 and "
-                    "$110,000 from Month 3 invoices. Quarter receipts therefore "
-                    "equal $310,000, with $40,000 still receivable. Vendor "
-                    "obligations accrue at $56,000, $84,000, and $105,000, but "
-                    "cash payments are $40,000, $80,000, and $110,000. Clear "
-                    "the oldest vendor invoices first, leaving $15,000 payable "
-                    "at quarter end. Pay delivery expense and overhead within "
-                    "each month. Operating cash generation becomes $4,200, "
-                    "$800, and $19,000; cumulative operating cash is $24,000. "
-                    "The independent bridge is $49,000 profit minus the $40,000 "
-                    "receivables increase plus the $15,000 payables increase. "
-                    "Closing cash is $99,000 after the opening equity contribution. "
-                    "No sales taxes, financing charges, owner distributions, "
-                    "refunds, or unearned customer advances are assumed; adding "
-                    "any requires additional postings and a revised bridge. "
-                    "If vendor terms require earlier payment, change the cash "
-                    "schedule immediately rather than preserving the model by "
-                    "overdue payments. Maintain a reserve against the actual "
-                    "upstream commitments, not merely the next payroll date."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort or reconciliation checkpoint",
-                    "Demand, booking, and earned gross revenue",
-                    "Expense recognition and owner-profit arithmetic",
-                    "Cash timing, balances, and cumulative operating cash",
-                ],
-                "rows": [
-                    [
-                        "Opening position: mature pipeline and owner-funded working capital",
-                        "No opening revenue, receivables, or previously booked customer invoices",
-                        "No opening vendor payable or accrued delivery expense",
-                        "$75,000 equity funding establishes cash; cumulative operating cash starts at $0",
-                    ],
-                    [
-                        "Month 1 cohort: forty distinct enterprise software opportunities",
-                        "Eight scrubbed; twenty lost; four won; eight open; revenue $80,000",
-                        "$56,000 vendor + $4,800 delivery + $11,000 opex leaves $8,200 profit",
-                        "$60,000 receipts less $55,800 payments; cash $79,200; cumulative operating cash $4,200",
-                    ],
-                    [
-                        "Month 2 cohort: fifty additional distinct enterprise opportunities",
-                        "Ten scrubbed; twenty-four lost; six won; ten open; revenue $120,000",
-                        "$84,000 vendor + $7,200 delivery + $12,000 opex leaves $16,800 profit",
-                        "$100,000 receipts less $99,200 payments; cash $80,000; cumulative operating cash $5,000",
-                    ],
-                    [
-                        "Month 3 cohort: sixty additional distinct enterprise opportunities",
-                        "Twelve scrubbed; thirty lost; seven won; eleven open; revenue $150,000",
-                        "$105,000 vendor + $9,000 delivery + $12,000 opex leaves $24,000 profit",
-                        "$150,000 receipts less $131,000 payments; cash $99,000; cumulative operating cash $24,000",
-                    ],
-                    [
-                        "Quarter close: reconcile seventeen accepted and earned deals",
-                        "$280,000 resale plus $70,000 services equals $350,000 gross revenue",
-                        "$245,000 vendor + $21,000 delivery + $35,000 opex leaves $49,000 profit",
-                        "$310,000 receipts; $286,000 payments; $40,000 receivable; $15,000 payable; $99,000 cash",
-                    ],
-                    [
-                        "Base run-rate bridge: annualize the complete quarter only",
-                        "$350,000 quarterly gross revenue multiplied by four equals $1,400,000",
-                        "$49,000 quarterly owner profit multiplied by four equals $196,000 at 14.0%",
-                        "$49,000 profit minus $40,000 receivables plus $15,000 payables yields $24,000 operating cash",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Days 1–15: establish opening evidence and cohort boundaries",
-                    "action": "Reconcile the $75,000 equity contribution and freeze the initial opportunity roster.",
-                    "detail": "Assign immutable cohort identifiers, verify upstream authorization, and exclude open pipeline value from recognized revenue.",
-                },
-                {
-                    "step": 2,
-                    "title": "Days 16–30: close the first accepted delivery batch",
-                    "action": "Match four earned $20,000 tickets to acceptance evidence and collect $60,000.",
-                    "detail": "Post $56,000 vendor expense, $4,800 delivery, $11,000 opex, and $40,000 vendor cash payments; confirm $79,200 closing cash.",
-                },
-                {
-                    "step": 3,
-                    "title": "Days 31–60: collect prior invoices before increasing exposure",
-                    "action": "Collect $20,000 prior-cohort cash plus $80,000 current-cohort cash.",
-                    "detail": "Recognize $120,000 earned billings, pay $80,000 upstream, and confirm $40,000 receivables and $20,000 payables at Month 2 close.",
-                },
-                {
-                    "step": 4,
-                    "title": "Days 61–90: prove the profit-to-cash bridge",
-                    "action": "Close seven earned tickets and reconcile $99,000 cash to independent bank evidence.",
-                    "detail": "Verify $350,000 quarterly revenue, $49,000 profit, $40,000 ending receivables, $15,000 ending payables, and $24,000 cumulative operating cash.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Operate exception queues, statutory duties, and controlled scaling",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run a daily exception review from records, not optimistic "
-                    "sales commentary. The commercial operator examines expiring "
-                    "registrations, authorization changes, unaccepted offers, "
-                    "procurement holds, and overdue receivables. The delivery "
-                    "operator examines tenant mismatches, missing entitlement "
-                    "exports, unsigned acceptance tests, contractor overruns, and "
-                    "unresolved sending commands. Each exception receives an "
-                    "owner, monetary exposure, next action, and due date. A "
-                    "license reconciliation exception might expose ten unwanted "
-                    "seats at $30 per month; that is $300 of monthly exposure, "
-                    "not a reason to invent a completed customer cancellation. "
-                    "A vendor policy change can invalidate a previously sound "
-                    "quote, so suspend new offers for the affected product "
-                    "while preserving already accepted contractual obligations. "
-                    "For collections, distinguish an administrative purchase-order "
-                    "problem from a disputed delivery milestone before sending "
-                    "reminders. Use bank-provided remittance evidence, not a "
-                    "customer's email screenshot, to clear cash. Separate the "
-                    "person changing payee bank details from the person releasing "
-                    "vendor payment. Confirm changes through a previously "
-                    "established contact channel. The two-person core team can "
-                    "support that separation if duties are scheduled explicitly "
-                    "and contractor access remains limited to assigned delivery "
-                    "artifacts rather than unrestricted billing or treasury functions."
-                ),
-                (
-                    "Apply statutory requirements to the actual transaction. "
-                    "For federal commercial-product purchases, FAR 12.212 "
-                    "addresses commercial computer software licensing, while "
-                    "FAR 52.212-4 supplies contract terms when incorporated "
-                    "into the award. Capture the actual order's acceptance, "
-                    "invoice, payment, and modification requirements instead "
-                    "of assuming that a private-sector statement of work "
-                    "controls. The Electronic Signatures in Global and "
-                    "National Commerce Act, 15 U.S.C. 7001, generally prevents "
-                    "denying legal effect solely because a signature or "
-                    "record is electronic; it does not establish that "
-                    "the signer had procurement authority. Preserve the "
-                    "identity evidence, signed version, timestamps, and "
-                    "retrievable record. Where California Civil Code "
-                    "1798.100(d) applies to a covered business's disclosure "
-                    "to a service provider or contractor, the contract "
-                    "must include the required purpose restrictions and "
-                    "protection obligations. Map those duties to ticket "
-                    "access, retention, deletion, and subcontractor permissions. "
-                    "For customs integrations, preserve records required "
-                    "by 19 CFR Part 163 and route valuation decisions "
-                    "through the importer and authorized broker. These "
-                    "are distinct responsibilities: software access does "
-                    "not confer customs filing authority, and a reseller "
-                    "authorization does not confer permission to process "
-                    "every category of customer data. Resolve the specific "
-                    "scope before provisioning production access."
-                ),
-                (
-                    "Scale only after the exception workload and cash "
-                    "conversion support the next commitment. The Conservative "
-                    "case is $300,000 annual gross revenue at 8%, leaving "
-                    "$24,000 owner profit with two full-time people and "
-                    "three contractors. The Base case is $1,400,000 at "
-                    "14.0%, leaving $196,000 with that same headcount "
-                    "structure. The Scaled case is $2,500,000 at 20%, "
-                    "leaving $500,000 with three full-time people and "
-                    "four contractors. These are separate canonical "
-                    "outcomes, not evidence that adding seats automatically "
-                    "improves economics. The Scaled cost envelope is "
-                    "$2,000,000, compared with $1,204,000 at Base and "
-                    "$276,000 Conservative. Require an explicit vendor, "
-                    "delivery, and overhead budget before claiming that "
-                    "envelope is attainable. Automate renewal alerts, quote "
-                    "generation, and license reconciliation first because "
-                    "each reduces recurring clerical work without "
-                    "transferring contracting judgment to a script. Track "
-                    "quote corrections, unmatched entitlements, disputed "
-                    "acceptances, overdue cash, and manual recovery time. "
-                    "If the team cannot close the books and resolve "
-                    "exceptions within its staffed capacity, narrow "
-                    "product breadth before hiring around broken "
-                    "processes. Keep the quarter model as a reproducible "
-                    "test fixture: a pricing change, new payment term, "
-                    "or contractor rate change must flow through both "
-                    "owner profit and working-capital calculations."
-                ),
-            ],
-            "table": {
-                "caption": "Forensic Exception Matrix: Evidence, Accountable Response, and Release Condition",
-                "headers": [
-                    "Exception with specific monetary or contractual exposure",
-                    "Primary evidence the assigned operator retrieves",
-                    "Immediate containment and documented corrective action",
-                    "Evidence required before resuming ordinary processing",
-                ],
-                "rows": [
-                    [
-                        "Expired vendor registration removes three points from quoted spread",
-                        "Registration expiration record and current distributor price confirmation",
-                        "Commercial owner pauses unsent offers and recalculates contribution",
-                        "Fresh written authorization supports the customer-facing replacement quote",
-                    ],
-                    [
-                        "Offer request remains sending after worker process terminates",
-                        "Stable request key, adapter trace, and vendor-side offer lookup",
-                        "Delivery owner investigates remote outcome without automatic resubmission",
-                        "Authenticated vendor result identifies created offer or proves absence",
-                    ],
-                    [
-                        "Customer remittance references invoices across two different tenants",
-                        "Bank transaction, remittance allocation, and customer legal-entity records",
-                        "Collections owner leaves disputed allocations outside closed-deal status",
-                        "Verified allocation reconciles bank amount to authorized invoice owners",
-                    ],
-                    [
-                        "Contractor claims completion while customer rejects migration acceptance",
-                        "Signed scope, acceptance test output, and recorded defect list",
-                        "Delivery owner separates remediation effort from additional requested scope",
-                        "Documented acceptance supports earned service billing and payment release",
-                    ],
-                    [
-                        "Factory invoice access exceeds broker-approved customs evidence permissions",
-                        "Vault access history, broker authorization, and object permission versions",
-                        "Security owner removes excessive access and preserves investigation evidence",
-                        "Reviewed access rules retain authorized broker and CBP evidence availability",
-                    ],
-                    [
-                        "Federal buyer requests terms inconsistent with proposed vendor license",
-                        "Actual award clauses, FAR references, and proposed software license",
-                        "Commercial owner resolves contractual conflicts before provisioning production",
-                        "Authorized contract record identifies accepted terms and invoice requirements",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A signed offer earns attention; reconciled entitlement, accepted delivery, and collected cash earn the spread.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Create one immutable deal reference linking buyer authority, reseller authorization, vendor pricing, tenant identity, acceptance evidence, and bank allocation.",
-        "Deploy the six reference modules first against a disposable local database, then test duplicate requests, concurrent workers, crash recovery, and backup restoration.",
-        "Require remote-result lookup for every ambiguous offer dispatch; never automatically reset a sending command without establishing the external outcome.",
-        "Reproduce the ninety-day model with $350,000 revenue, $49,000 owner profit, $24,000 operating cash generation, and $99,000 closing cash.",
-        "Separate customs integration service fees from customer merchandise value and duty savings, with encrypted broker evidence and transaction-specific counsel review.",
-        "Review the nine-play exception queue weekly and expand staffing only against a documented cost envelope, collection timetable, and contractor capacity plan.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. 1401a — Valuation of merchandise",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1401a",
-            "relevance": (
-                "Defines transaction value and required additions relevant to supported "
-                "customs valuation; customer duty economics remain separate from reseller revenue."
-            ),
-        },
-        {
-            "title": "19 CFR 152.103 — Transaction value",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-152/subpart-E/section-152.103",
-            "relevance": (
-                "Supplies transaction-value rules for evaluating an earlier sale; "
-                "a factory invoice alone does not establish qualifying treatment."
-            ),
-        },
-        {
-            "title": "19 CFR 163.4 — Record retention period",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-163/section-163.4",
-            "relevance": (
-                "Establishes customs record-retention periods, generally five years "
-                "subject to specified exceptions, for broker evidence-vault design."
-            ),
-        },
-        {
-            "title": "FAR 12.212 — Computer software",
-            "url": "https://www.acquisition.gov/far/12.212",
-            "relevance": (
-                "Addresses federal acquisition of commercial computer software and "
-                "licenses, requiring the reseller to examine the actual government transaction."
-            ),
-        },
-        {
-            "title": "FAR 52.212-4 — Contract Terms and Conditions—Commercial Products and Commercial Services",
-            "url": "https://www.acquisition.gov/far/52.212-4",
-            "relevance": (
-                "Provides incorporated federal commercial-contract requirements "
-                "covering inspection, acceptance, invoicing, payment, and other operating terms."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7001 — General rule of validity",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7001",
-            "relevance": (
-                "Supports electronic records and signatures while preserving the "
-                "need to establish signer authority and retain retrievable contract evidence."
-            ),
-        },
-        {
-            "title": "California Civil Code 1798.100(d) — Contract requirements for personal information disclosures",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": (
-                "Requires specified contractual protections for covered disclosures "
-                "to service providers, contractors, and third parties; informs access and processing boundaries."
-            ),
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'finops-for-saas-and-licensing',
+ 'question_prompt': 'How do enterprises apply FinOps to SaaS and licensing spend, and what does that mean '
+                    'for the vendors and resellers who sell to them?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'FinOps for SaaS and Licensing',
+ 'subtitle': 'FinOps fundamentals and scopes, SaaS spend at Priceline and Danske Bank, ITAM/SAM '
+             'intersections, Microsoft 365 license optimization, ServiceNow SaaS license management, '
+             'AI-assisted SaaS cost modules, Datadog cloud cost optimization, and State of FinOps trends',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from Priceline, Danske Bank, Roku, Under Armour and Avala treat SaaS '
+                      "and licensing as a second cloud bill carrying the same waste rate. Gartner's "
+                      'up-to-30% figure is quoted repeatedly, and SaaS now sits inside 90% of FinOps '
+                      'scopes. The consensus mechanics are to build one central vendor list, rank it by '
+                      'spend, focus on the top 20 to 25 vendors, and use identity and SSO data to reclaim '
+                      "inactive seats on 30- or 90-day thresholds. Street numbers include Danske's 3,000 "
+                      'discovered apps against a 600-800 target, a concurrent-license cut from 50 seats to '
+                      "20 after peak use of 15, Mason's $100K shortfall example on a $1M commit, and soft "
+                      'caps giving 20% free overage. Disagreements center on headline waste stats (Danske '
+                      'rejects the 50% figure), on central versus business-unit ownership, and on whether '
+                      'a tool or Excel comes first.',
+ 'key_metrics': [{'label': 'SaaS spend lost to waste',
+                  'metric': 'SaaS spend lost to waste',
+                  'value': 'Up to 30% of SaaS spend',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Chris Reed of Priceline cites Gartner: up to 30% of SaaS spend is waste, the '
+                             'same figure quoted for cloud.',
+                  'source': 'FinOps Foundation ([hQDjTANIaTo @ 00:04:01])'},
+                 {'label': 'Danske Bank application sprawl',
+                  'metric': 'Danske Bank application sprawl',
+                  'value': '3,000 apps found over two years; target estate of 600-800',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Scott Beasley reports what near-real-time discovery surfaced at a bank of '
+                             'about 22,000 employees, with about 100 new apps appearing per month.',
+                  'source': 'FinOps Foundation ([F-5GIklN_Ps @ 00:04:28])'},
+                 {'label': 'Concurrent license right-size',
+                  'metric': 'Concurrent license right-size',
+                  'value': 'Peak use of 15 of 50 seats; contract cut to 20',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Peter Greenshaw used a manually built heat map to size concurrent licenses '
+                             'to actual peak demand.',
+                  'source': 'FinOps Weekly ([sqpO85TKjEI @ 00:11:09])'},
+                 {'label': 'Commitment shortfall exposure',
+                  'metric': 'Commitment shortfall exposure',
+                  'value': '$100K owed on a $1M 12-month commit with $900K spent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Derer Mason of Roku explains that a mini business case committing $1.2M may '
+                             'get the shortfall forgiven.',
+                  'source': 'FinOps Foundation ([LF1AK1WypX0 @ 00:14:06])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator on this circuit treats SaaS and licensing as a second cloud '
+                              'bill hiding in plain sight. Chris Reed runs IT finance inside the Priceline '
+                              'CTO org and owns the full tech budget. Reed ranks software as the '
+                              'number-two spend after cloud and repeats the Gartner line that up to 30% of '
+                              'SaaS spend is waste, the same ratio quoted for cloud [hQDjTANIaTo @ '
+                              '00:04:01]. Eddy Says Hi goes further, arguing that software spend can be '
+                              "'as big, if not bigger' than infrastructure and using a mortgage analogy to "
+                              'land the point [sIJo4dVD-jc @ 00:01:02]. At the Applying the FinOps '
+                              'Framework session, Amy Ashby of Under Armour and Lindberg, director of cost '
+                              'optimization at Avala, stacked the waste figures. More than 30% of desktop, '
+                              'software and SaaS spend is wasted, 50% of installed software sits unused, '
+                              'and SaaS overspend is projected at 25% [iIwpcQbBkmM @ 00:01:29]. The State '
+                              'of FinOps 2026 numbers presented by Steve Trasch show the mandate has '
+                              'already landed. SaaS now sits inside 90% of FinOps scopes, and nearly half '
+                              'of practices also manage data center spend [O3FqsxJScI4 @ 00:10:51]. The '
+                              'operating conclusion is blunt: a FinOps practice that stops at the cloud '
+                              'invoice is ignoring a cost pool of comparable size carrying the same waste '
+                              'rate.',
+                              'The second point of agreement is that visibility comes before any '
+                              'negotiation, and that it starts crude. Peter Greenshaw, interviewed by '
+                              'FinOps Weekly, lays out the order: build one central vendor list, rank it '
+                              'by spend, deep-dive the contracts at the top, and run the cycle year-round '
+                              'instead of only at budget season [sqpO85TKjEI @ 00:05:26]. Scott Beasley at '
+                              'Danske Bank, roughly 22,000 employees, shows what that list looks like once '
+                              'discovery is switched on. Over two years, 3,000 applications surfaced, the '
+                              'target estate is 600 to 800, and about 100 new apps appear every month '
+                              'through near-real-time discovery [F-5GIklN_Ps @ 00:04:28]. Reed starts from '
+                              'the P&L and pulls the highest software categories. Each one is classified '
+                              'as usage-based or license-based, and then vendors are asked for monthly '
+                              "utilization reports, a request vendors answered with 'no one has ever asked "
+                              "us' [hQDjTANIaTo @ 00:13:11]. The 2026 trends podcast on Eddy Says Hi names "
+                              "the control point those lists hang from: 'Identity is rapidly becoming the "
+                              "primary control plane for SAS cost management' [byD2FJ-NF0M @ 00:12:17]. "
+                              'That is why SSO and identity data feed nearly every reclaim workflow in the '
+                              'mechanics below. Nobody on the circuit waits for a perfect tool before '
+                              'starting this inventory; the first pass is a list, not a platform.',
+                              'Third, the practitioners agree on ownership and on where to aim limited '
+                              'hours. Derer Mason runs a three-person Cloud CoE at Roku and insists on '
+                              'being the single commercial point of contact for every vendor. At the same '
+                              "time, Mason acts as 'a facilitator, not the owner' of each contract and "
+                              'keeps the whole function centralized [LF1AK1WypX0 @ 00:20:47]. On '
+                              "accountability, Reed pulled costs out of a single 'core Tech' bucket and "
+                              'pushed them into product cost centers covering hotels, rental cars, flights '
+                              'and packages. Reed then published showback with named owners, explicitly '
+                              'framed as not a name-and-shame exercise [hQDjTANIaTo @ 00:14:54]. Reed also '
+                              'applies the 80/20 cut hard: the top 20 vendors carry roughly 80% of spend, '
+                              'so the long tail is simply ignored during audits [hQDjTANIaTo @ 00:33:09]. '
+                              'Lindberg lands in the same place with about 25 focus vendors, the top 20% '
+                              "of the base. Lindberg's reasoning is that the same hour of optimization "
+                              'work returns far more on a $1M vendor than on a $10K one [iIwpcQbBkmM @ '
+                              '00:15:37]. The combined rule is simple: one central commercial desk, named '
+                              'budget owners who can see their own numbers, and scarce analyst hours '
+                              'concentrated on the handful of vendors that actually move the total.'],
+               'table': {'caption': 'Where the practitioners line up: the baseline SaaS and licensing '
+                                    'FinOps operating rules',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Actually Do',
+                                     'Why It Pays',
+                                     'Expert Source'],
+                         'rows': [['SaaS waste mirrors cloud waste levels',
+                                   'Treat software as the second-largest tech line after cloud spend',
+                                   'Gartner figure cited: up to 30% of SaaS spend is waste',
+                                   'FinOps Foundation ([hQDjTANIaTo @ 00:04:01])'],
+                                  ['A central vendor list comes first',
+                                   'Build one list, rank vendors by spend, deep-dive top contracts',
+                                   'Turns a once-a-year budget scramble into a year-round cycle',
+                                   'FinOps Weekly ([sqpO85TKjEI @ 00:05:26])'],
+                                  ['Discovery exposes far more apps than expected',
+                                   'Run near-real-time discovery and set a rationalization target estate',
+                                   'Danske found 3,000 apps and now targets 600 to 800',
+                                   'FinOps Foundation ([F-5GIklN_Ps @ 00:04:28])'],
+                                  ['Roles must be split cleanly, not siloed',
+                                   'FinOps orchestrates, ITAM/SAM license, procurement negotiates, '
+                                   'engineering tags resources',
+                                   'Gives FinOps the orchestration seat across licensing, buying and '
+                                   'tagging work',
+                                   'Eddy Says Hi #EddySaysHi ([sIJo4dVD-jc @ 00:03:41])'],
+                                  ['Identity data is the cost control plane',
+                                   'Drive license right-sizing off SSO and identity usage signals directly',
+                                   'Entitlements get matched to real usage instead of contract assumptions',
+                                   'Eddy Says Hi #EddySaysHi ([byD2FJ-NF0M @ 00:12:17])'],
+                                  ['Concentrate effort on the biggest vendors',
+                                   'Focus optimization on roughly 25 vendors, the top 20% by spend',
+                                   'The same analyst hour returns more on a $1M vendor than on a $10K one',
+                                   'FinOps Foundation ([iIwpcQbBkmM @ 00:15:37])'],
+                                  ['One commercial point of contact wins',
+                                   'Central team fronts every vendor conversation as the single commercial '
+                                   'contact',
+                                   "Mason's rule: 'make sure you're the single point of contact' with "
+                                   'vendors',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:20:47])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['License harvesting is where the hard money gets clawed back, and the '
+                              'mechanics are already scripted. Michelle Campos of the ServiceNow Community '
+                              'ranks integrations by strength: direct vendor integration first, SSO '
+                              'through Azure or Okta second, and custom open API last. The Salesforce '
+                              'playbook then auto-builds a software model and a reclaim rule with a 30-day '
+                              'inactivity threshold. Campos recommends reviewing that threshold and '
+                              'possibly stretching it to 90 days [8mJc7j3DW28 @ 00:03:48]. In the live '
+                              'demo that rule surfaced 572 reclaim candidates, which can be reclaimed one '
+                              'at a time, all at once, or on full automation [8mJc7j3DW28 @ 00:05:14]. '
+                              'Scogo AI ran the same play against Microsoft 365 with a natural-language '
+                              'prompt in Cira CLI, stripping Business Premium licenses from disabled and '
+                              'never-signed-in users. Out of 25 licenses, the available count jumped from '
+                              '21 to 24. That is three seats reclaimed, including one the presenter had '
+                              'missed, confirmed in the admin portal [hkNjUpPIx6M @ 00:02:27]. Procure '
+                              "IT's module hooks the same identity providers (Azure Entra, Okta or G "
+                              'Suite) to split power users from light users. The renewal conversation '
+                              'therefore starts with a list of who does not need a seat [_PyR6G51QW4 @ '
+                              '00:01:11]. Every one of these workflows runs on the same two inputs: an '
+                              'identity signal and an inactivity threshold.',
+                              'The contract math is where these practitioners get brutally specific. Mason '
+                              'walks through the commitment shortfall at Roku. Commit $1M over 12 months, '
+                              'spend only $900K, and you owe the vendor $100K. The escape hatch is a mini '
+                              'business case committing to $1.2M, which may get the shortfall forgiven '
+                              '[LF1AK1WypX0 @ 00:14:06]. The opposite failure bites too. Burn through '
+                              'prepaid funds at month nine and the discount ends, forcing an early '
+                              'renewal, which matters because some of those Roku discounts run over 90% '
+                              '[LF1AK1WypX0 @ 00:15:42]. At the negotiating table, Mason asks for '
+                              'discounted overages, free training and support, and an at-will termination '
+                              "clause carrying 30, 60 or 90 days' notice [LF1AK1WypX0 @ 00:25:11]. Reed "
+                              'bakes soft caps into a standard tech-contract framework originally built at '
+                              'UBS, complete with reporting clauses. Usage up to 20% over the cap is free '
+                              'in year one, and in year two the customer pays 50% of the delta '
+                              '[hQDjTANIaTo @ 00:29:33]. That clause structure converts a surprise true-up '
+                              'into a negotiated, predictable ramp. Together these levers turn every '
+                              'renewal from a vendor-driven event into a buyer-scheduled one, with the '
+                              'shortfall, overage and exit terms written in well before anyone signs.',
+                              'Rate versus usage is the sharpest piece of street math on the board, and it '
+                              "is where most negotiated wins quietly evaporate. Lindberg's worked example "
+                              'is to buy 1,000 licenses up front and watch the rollout take a full year. '
+                              'Every gap between contracted and active licenses is pure waste. The '
+                              'effective rate, contract cost divided by actual usage, can equal or exceed '
+                              'on-demand pricing, so procurement needs to hear that its recorded savings '
+                              'are not real [iIwpcQbBkmM @ 00:11:03]. The fix is to buy in steps rather '
+                              'than full-year upfront; it annoys accounts payable but saves '
+                              "'thousands…hundreds of thousands' [iIwpcQbBkmM @ 00:16:36]. Greenshaw "
+                              "attacks the tier mix instead: 'I bet 90% of your organization is just "
+                              "updating PDFs and signing them,' so most Adobe users move to cheaper PDF "
+                              'tools while creatives keep full licenses [sqpO85TKjEI @ 00:09:41]. On '
+                              'concurrent licensing, Greenshaw found peak use of 15 seats against 50 '
+                              'purchased and cut to 20. The heat map behind that cut had to be built by '
+                              'hand [sqpO85TKjEI @ 00:11:09]. The pattern across all three plays is the '
+                              'same: measure actual peak usage first, then buy to that line plus a little '
+                              'headroom rather than to whatever volume the vendor proposes.'],
+               'table': {'caption': 'Street-level levers with the exact numbers and tools the '
+                                    'practitioners reported',
+                         'headers': ['Lever',
+                                     'Exact Mechanic or Number',
+                                     'Tool or Channel Used',
+                                     'Expert Source'],
+                         'rows': [['Inactive-seat reclaim rule',
+                                   'Default 30-day inactivity threshold; review it and consider moving to '
+                                   '90 days',
+                                   'ServiceNow SaaS License Management Salesforce playbook with automated '
+                                   'reclaim',
+                                   'ServiceNow Community ([8mJc7j3DW28 @ 00:03:48])'],
+                                  ['M365 premium license strip',
+                                   '25 Business Premium licenses; available count rose from 21 to 24',
+                                   'Natural-language prompt in Cira CLI, verified in the admin portal',
+                                   'Scogo AI ([hkNjUpPIx6M @ 00:02:27])'],
+                                  ['Concurrent license right-size',
+                                   'Peak usage of 15 of 50 seats; contract cut down to 20',
+                                   'Manually built usage heat map because the analysis has no native '
+                                   'tooling',
+                                   'FinOps Weekly ([sqpO85TKjEI @ 00:11:09])'],
+                                  ['Commitment shortfall exposure',
+                                   '$1M commit, $900K spent, $100K owed unless a $1.2M case forgives it',
+                                   'Mini business case presented to the vendor during negotiation',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:14:06])'],
+                                  ['Soft-cap overage clause',
+                                   '20% over the cap is free in year one; 50% of the delta in year two',
+                                   'Standard tech-contract framework with reporting clauses, first built '
+                                   'at UBS',
+                                   'FinOps Foundation ([hQDjTANIaTo @ 00:29:33])'],
+                                  ['Discount benchmark at renewal',
+                                   '10, 20 or 30% is typical; 5% means not working hard enough',
+                                   'Renewal negotiation measured against typical vendor discount bands',
+                                   'FinOps Foundation ([iIwpcQbBkmM @ 00:10:20])'],
+                                  ['Consumption SKU burn tracking',
+                                   'SKU E at 67% of its limit with 42% of the contract elapsed, trend '
+                                   'dropping',
+                                   'Custom SKU-level report combining contract, usage and billing data',
+                                   'FinOps Foundation ([iIwpcQbBkmM @ 00:30:15])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the operators actually run',
+                           'body': 'Small, specific plays that the speakers report returning money or '
+                                   'leverage at renewal time.',
+                           'items': ["Time the negotiation to the vendor's fiscal year-end (April in "
+                                     "Mason's worked example), when the vendor needs to close [FinOps "
+                                     'Foundation — LF1AK1WypX0 @ 00:24:28].',
+                                     'On unmetered enterprise SKUs, Amy Ashby hounded a vendor for months '
+                                     'to get a usage extract, found a calculation error, and got a credit '
+                                     'back [FinOps Foundation — iIwpcQbBkmM @ 00:41:34].',
+                                     'At every renewal, strip out auto-uplifts or drop to a lower tier '
+                                     'instead of rolling the contract forward as-is [FinOps Weekly — '
+                                     'sqpO85TKjEI @ 00:05:26].',
+                                     'Clean up seats before a self-attestation audit, and budget for '
+                                     '10-20% organic growth in seat counts [FinOps Foundation — '
+                                     'LF1AK1WypX0 @ 00:41:17].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the central list and rank by spend',
+                              'action': 'Pull every SaaS and license vendor into one list, rank them by '
+                                        'spend, and deep-dive the top contracts.',
+                              'detail': "Greenshaw's sequence is a central list, a spend ranking, and a "
+                                        'contract deep-dive, repeated year-round rather than only at '
+                                        'budget time [FinOps Weekly — sqpO85TKjEI @ 00:05:26].'},
+                             {'step': 2,
+                              'title': 'Wire identity data into a reclaim rule',
+                              'action': 'Connect direct integrations or SSO, set an inactivity threshold, '
+                                        'and reclaim seats in bulk or on automation.',
+                              'detail': 'Campos runs the Salesforce playbook with a 30-day inactivity rule '
+                                        'and suggests reviewing it and possibly moving it to 90 days '
+                                        'before automating reclaim [ServiceNow Community — 8mJc7j3DW28 @ '
+                                        '00:03:48].'},
+                             {'step': 3,
+                              'title': 'Run a renewal calendar with 90-day events',
+                              'action': 'Put every renewal on a shared calendar with a 90-day lead event '
+                                        'so no contract renews at current usage by default.',
+                              'detail': 'Mason uses a renewal calendar with 90-day events to stay ahead of '
+                                        'a renewal almost every week [FinOps Foundation — LF1AK1WypX0 @ '
+                                        '00:38:33].'},
+                             {'step': 4,
+                              'title': 'Forecast demand before contacting the vendor',
+                              'action': 'Size real demand from utilization data first, then open the '
+                                        'negotiation on usage before rate.',
+                              'detail': 'Lindberg forecasts demand before sending the first email to the '
+                                        'vendor, so the negotiation starts from usage rather than the '
+                                        "vendor's proposed volume [FinOps Foundation — iIwpcQbBkmM @ "
+                                        '00:14:16].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is who owns the SaaS book. Amy Ashby runs FinOps at Under '
+                              'Armour with no central team at all: business units own their SaaS, and '
+                              'there is no central tool or process beyond purchasing [iIwpcQbBkmM @ '
+                              "00:04:23]. Lindberg's shop at Avala went the opposite direction, recently "
+                              'folding IT software into the cost-optimization program so roughly 60% of '
+                              'software spend is now managed by one organization [iIwpcQbBkmM @ 00:05:27]. '
+                              'Derer Mason at Roku backs centralization from the commercial side and is '
+                              "blunt about it: 'make sure you're the single point of contact,' with every "
+                              'vendor conversation routed through one desk instead of scattered across '
+                              'requesters [LF1AK1WypX0 @ 00:20:47]. Yet Mason draws a line that pure '
+                              "centralizers skip, telling operators to be 'a facilitator, not the owner' "
+                              'of the contract itself [LF1AK1WypX0 @ 00:37:12]. That distinction is the '
+                              "real fork in the road. Ashby's model keeps decisions close to the business "
+                              'units that consume the tools but leaves purchasing as the only shared '
+                              'checkpoint. The Avala and Roku models concentrate leverage and visibility '
+                              "in one function, and Mason's facilitator rule keeps the business owner "
+                              'carrying the decision. The operator move: if the org chart will not '
+                              'centralize, centralize the vendor contact point and the spend data first, '
+                              'then let owners keep the call.',
+                              'The second fight is rate versus usage. Derer Mason plays commitment as the '
+                              "weapon and reports bluntly that 'some of our discounts are over 90%' "
+                              '[LF1AK1WypX0 @ 00:15:42]. Lindberg pushes back on rate obsession. Typical '
+                              "vendor discounts land at 10, 20 or 30%, and 'if you're getting 5%' you are "
+                              "'not working hard enough' [iIwpcQbBkmM @ 00:10:20]. But Lindberg's core "
+                              "warning is that the headline number can lie: 'that best rate you negotiated "
+                              "actually may cost you more because of underutilization,' so the ladder is "
+                              'to optimize usage rather than rate [iIwpcQbBkmM @ 00:13:59]. Chris Reed at '
+                              'Priceline takes a third path and writes elasticity into the paper itself, '
+                              'with a soft cap where usage 20% over the cap is free in year one, then 50% '
+                              'of the delta is paid in year two [hQDjTANIaTo @ 00:29:33]. That gives '
+                              'operators three distinct playbooks: deep commit for discount, usage first '
+                              'and rate second, or cap the overage inside the contract. They are not '
+                              "mutually exclusive, but they create opposite instincts at renewal. Mason's "
+                              "approach leans toward a bigger committed number to unlock price, Lindberg's "
+                              'approach leans toward proving utilization before any number reaches the '
+                              "vendor, and Reed's approach buys room to be wrong on the forecast.",
+                              'The third split is how big the problem really is and what it takes to see '
+                              'it. Chris Reed cites Gartner that up to 30% of SaaS spend is waste, the '
+                              'same figure Gartner gives for cloud [hQDjTANIaTo @ 00:04:01]. Scott '
+                              'Beasley, running ITAM at a 22,000-employee bank in the middle of an AWS '
+                              "migration, refuses to accept the popular '50% not being utilized' figure "
+                              'for Danske [F-5GIklN_Ps @ 00:06:02]. On tooling, Peter Greenshaw says '
+                              "flatly that no tool 'scrapes all of that SaaS data natively' into a single "
+                              "pane, and the field's single source of truth is still mostly spreadsheets "
+                              '[sqpO85TKjEI @ 00:01:28]. Michelle Campos at ServiceNow shows the opposite '
+                              'end of the spectrum, letting the platform surface reclaim candidates, 572 '
+                              'of them in one demo, to be reclaimed one at a time, all at once, or fully '
+                              'automated [8mJc7j3DW28 @ 00:05:14]. The spreadsheet camp and the platform '
+                              'camp are not arguing about whether reclaim works; both assume it does. They '
+                              'are arguing about when the tooling pays for itself. The operator read: get '
+                              'the first utilization report out of whatever data you already have, then '
+                              'automate once the reclaim queue runs into the hundreds.'],
+               'table': {'caption': 'Competing SaaS FinOps playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who owns SaaS spend across the business',
+                                   'Business units own SaaS with no central FinOps team, tool or process '
+                                   'beyond purchasing',
+                                   'Centralize under one organization so roughly 60% of software spend '
+                                   'sits in one cost-optimization program',
+                                   'FinOps Foundation ([iIwpcQbBkmM @ 00:04:23]); FinOps Foundation '
+                                   '([iIwpcQbBkmM @ 00:05:27])'],
+                                  ['Commercial control over vendor conversations and renewals',
+                                   'Be the single commercial point of contact for every vendor '
+                                   'conversation and renewal',
+                                   'Act as a facilitator, not the owner, so the business owner still holds '
+                                   'the contract',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:20:47]); FinOps Foundation '
+                                   '([LF1AK1WypX0 @ 00:37:12])'],
+                                  ['Rate versus usage as the primary savings lever',
+                                   'Push commitment hard for deep discounts, with some Roku discounts '
+                                   'running over 90%',
+                                   'Optimize usage before rate, because the best negotiated rate can cost '
+                                   'more through underutilization',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:15:42]); FinOps Foundation '
+                                   '([iIwpcQbBkmM @ 00:13:59])'],
+                                  ['Sizing the SaaS waste baseline for the business case',
+                                   'Accept the Gartner figure that up to 30% of SaaS spend is waste, same '
+                                   'as cloud',
+                                   'Reject the popular 50% not-utilized figure when it does not match what '
+                                   'your own estate shows',
+                                   'FinOps Foundation ([hQDjTANIaTo @ 00:04:01]); FinOps Foundation '
+                                   '([F-5GIklN_Ps @ 00:06:02])'],
+                                  ['Tooling for the first utilization report',
+                                   'Download the monthly user list into Excel and treat that as the '
+                                   'utilization report',
+                                   'Let a platform surface reclaim candidates, 572 in one demo, and '
+                                   'reclaim them in bulk or automatically',
+                                   'FinOps Foundation ([iIwpcQbBkmM @ 00:15:19]); ServiceNow Community '
+                                   '([8mJc7j3DW28 @ 00:05:14])'],
+                                  ['Whose paper the software contract is written on',
+                                   'Bring your own standard tech-contract framework with reporting clauses '
+                                   'built in from day one',
+                                   "Sign on vendor paper instead; Reed's live poll split roughly 50/50 "
+                                   'between the two approaches',
+                                   'FinOps Foundation ([hQDjTANIaTo @ 00:27:48])'],
+                                  ['The future role of ITAM next to FinOps',
+                                   'FinOps acts as the overlayer across ITAM, SAM and ITFM, since ITAM '
+                                   'carries no cost component',
+                                   'ITAM evolves into a strategic partner to FinOps rather than being '
+                                   'replaced by it',
+                                   'FinOps Foundation ([hQDjTANIaTo @ 00:36:14]); Eddy Says Hi #EddySaysHi '
+                                   '([byD2FJ-NF0M @ 00:05:38])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive surprises arrive at contract end. The Eddy Says Hi '
+                              'true-up example is the cleanest: licensed for 100 CPUs, spike to 120, and '
+                              "'the vendor can true up your bill to that 120 rate for the entire year,' "
+                              'with no true down when usage falls back [sIJo4dVD-jc @ 00:02:38]. Chris '
+                              'Reed warns the same mechanic scales up badly, with a three-year '
+                              'over-license recoup landing at contract end [hQDjTANIaTo @ 00:23:09]. Derer '
+                              'Mason runs the opposite failure, the shortfall: commit $1M over 12 months, '
+                              "spend only $900K, and you owe $100K anyway. Mason's escape hatch is a mini "
+                              'business case committing $1.2M, which may get the shortfall forgiven '
+                              '[LF1AK1WypX0 @ 00:14:06]. Amy Ashby maps how differently vendors punish '
+                              'overage: some bill overages at a higher rate, some cut features off, and '
+                              'some force a true-up or a higher contract at the end [iIwpcQbBkmM @ '
+                              '00:19:57]. Each trap is set at signing and sprung months later. '
+                              'Under-forecast and you pay the true-up at the spike rate; over-forecast and '
+                              'you pay for the gap you never consumed. Either way, the contract terms '
+                              'drive the bill as much as usage does, so read the overage, shortfall and '
+                              'true-up clauses before the price line.',
+                              'The second failure family is spend nobody signed off on. Chris Reed found '
+                              'recurring corporate-card charges still billing after employees left: '
+                              "'$5,000 a month, that's 60k a year,' multiplied by 20, plus a $300 charge "
+                              'multiplied across 800 other engineers [hQDjTANIaTo @ 00:09:23]. Lindberg '
+                              'reports a vendor that allowed overage and then threatened a cutoff at '
+                              "renewal, with 'millions of dollars' on the table [iIwpcQbBkmM @ 00:34:27]. "
+                              "Derer Mason's version is pure usage velocity: an intern's logging change "
+                              'cost $30,000 a day, which is the argument for near-real-time monitoring '
+                              'rather than waiting on the invoice [LF1AK1WypX0 @ 00:27:49]. Amy Ashby '
+                              "flags load tests as the recurring spike trigger: 'people kicking off load "
+                              "tests and then I'm seeing all these SAS products spiked because they're all "
+                              "tightly integrated,' and questions whether dev environments even need log "
+                              'shipping and advanced analytics [iIwpcQbBkmM @ 00:37:31]. None of these '
+                              'losses came from a bad negotiation. They came from usage and purchasing '
+                              'that happened outside the renewal conversation, where nobody was watching '
+                              'the meter. The economics check is simple: a monthly review catches the '
+                              '$5,000 card charge, but only a threshold alert catches a $30,000-a-day '
+                              'logging change before it compounds across a billing cycle.',
+                              'The third trap is data you cannot get and paper you did not check. Peter '
+                              'Greenshaw asked every vendor to adopt FOCUS and roughly one agreed '
+                              '[sqpO85TKjEI @ 00:02:00]. Amy Ashby confirms the gap from the consumption '
+                              'side: consumption SaaS often lacks APIs, overage data is rarer still, and '
+                              'SAM and ITAM tools show only contract-level data [iIwpcQbBkmM @ 00:23:37]. '
+                              'The payoff for pushing anyway is real. Ashby hounded one vendor for months '
+                              'to get an extract on an unmetered enterprise SKU, found a calculation '
+                              "error, and received a credit [iIwpcQbBkmM @ 00:41:34]. Derer Mason's paper "
+                              'trap is the marketplace: the EULA must match the signed contract, because '
+                              "'you don't want the vendor to have the option to choose' which terms apply "
+                              '[LF1AK1WypX0 @ 00:33:07]. Each of these failures is quiet. No alert fires '
+                              'when a vendor declines a data format, when a SKU calculation is wrong, or '
+                              'when a marketplace click-through carries different terms than the '
+                              'negotiated agreement. The economics check: put data delivery into the '
+                              'contract ask, reconcile vendor extracts against your own usage at least '
+                              'once per term, and match every marketplace EULA to the signed agreement '
+                              'before the first invoice lands.'],
+               'table': {'caption': 'Firsthand SaaS and licensing traps with the economics behind them',
+                         'headers': ['Trap', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['CPU true-up with no true down',
+                                   'Licensed for 100 CPUs, a spike to 120 gets billed at 120 for the '
+                                   'entire year',
+                                   'One spike sets the annual bill, and usage dropping back earns no '
+                                   'refund at all',
+                                   'Eddy Says Hi #EddySaysHi ([sIJo4dVD-jc @ 00:02:38])'],
+                                  ['Commitment shortfall at term end',
+                                   'Committed $1M over 12 months, spent only $900K, and still owed the '
+                                   '$100K gap',
+                                   'A mini business case committing $1.2M may get the shortfall forgiven '
+                                   'by the vendor',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:14:06])'],
+                                  ['Running out of committed funds early',
+                                   'Committed funds exhausted at month nine end the discount and force an '
+                                   'early renewal',
+                                   'Forecast drawdown monthly so the negotiated discount does not lapse '
+                                   'before the term ends',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:15:42])'],
+                                  ['Zombie corporate-card subscriptions after offboarding',
+                                   'Recurring charges kept billing after employees left, at $5,000 a month '
+                                   'per charge',
+                                   '$5,000 a month is 60k a year, and Reed saw that multiplied by 20',
+                                   'FinOps Foundation ([hQDjTANIaTo @ 00:09:23])'],
+                                  ['Discount illusion on a slow license rollout',
+                                   'Bought 1,000 licenses that took a full year to deploy across actual '
+                                   'users',
+                                   'Contract cost divided by actual usage can match or exceed the '
+                                   'on-demand price',
+                                   'FinOps Foundation ([iIwpcQbBkmM @ 00:10:43]); FinOps Foundation '
+                                   '([iIwpcQbBkmM @ 00:11:03])'],
+                                  ['Uncontrolled usage spike from one small change',
+                                   "An intern's logging change ran up $30,000 a day in vendor charges",
+                                   'Near-real-time usage monitoring catches spikes that waiting on the '
+                                   'monthly invoice misses',
+                                   'FinOps Foundation ([LF1AK1WypX0 @ 00:27:49])'],
+                                  ['Engineering around a price that can move',
+                                   'Made code availability-zone aware and cut cross-AZ charges by 66',
+                                   'About a week later AWS dropped the price to zero, and the code was '
+                                   'reverted',
+                                   'Datadog ([hmqskc5iaNc @ 00:24:03]); Datadog ([hmqskc5iaNc @ '
+                                   '00:24:25])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any renewal or commitment is signed',
+                           'body': 'Each check below comes from a loss or near-miss a practitioner '
+                                   'reported firsthand. Clear all four before money moves.',
+                           'items': ['Model the shortfall before committing: $1M committed against $900K '
+                                     'spent still owes $100K unless a $1.2M mini business case gets it '
+                                     'forgiven [FinOps Foundation — LF1AK1WypX0 @ 00:14:06].',
+                                     'Recompute the effective rate as contract cost divided by actual '
+                                     'usage, and tell procurement the recorded savings are not real if it '
+                                     'meets or exceeds on-demand [FinOps Foundation — iIwpcQbBkmM @ '
+                                     '00:11:03].',
+                                     'Clean up seats before any self-attestation audit, and plan for 10 to '
+                                     '20% organic growth in the count [FinOps Foundation — LF1AK1WypX0 @ '
+                                     '00:41:17].',
+                                     'Protect telemetry rights in the contract before signing, the top '
+                                     'priority call for the 2026 licensing shift [Eddy Says Hi #EddySaysHi '
+                                     '— byD2FJ-NF0M @ 00:14:12].']}}],
+ 'pull_quote': '"That best rate you negotiated actually may cost you more because of underutilization." — '
+               'FinOps Foundation (iIwpcQbBkmM @ 00:13:59).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Build a central vendor list, rank vendors by spend, deep-dive their contracts, and '
+                      'repeat year-round while removing auto-uplifts or lowering tiers at renewal (FinOps '
+                      'Weekly, sqpO85TKjEI @ 00:05:26).',
+                      'Ask each vendor for a user list and the last time each user logged on, then map '
+                      'those users to cost centers (FinOps Foundation, iIwpcQbBkmM @ 00:42:52).',
+                      "Review the auto-created reclaim rule's 30-day inactivity threshold and consider "
+                      'moving it to 90 days before reclaiming at scale (ServiceNow Community, 8mJc7j3DW28 '
+                      '@ 00:03:48).',
+                      'Run a weekly procurement, tech and finance triad that reviews renewals 3, 6 and 9 '
+                      'months out and requires a competitor review (FinOps Foundation, hQDjTANIaTo @ '
+                      '00:34:46).',
+                      'Ask for discounted overages, free training and support, and an at-will termination '
+                      'clause with 30, 60 or 90-day notice (FinOps Foundation, LF1AK1WypX0 @ 00:25:11).',
+                      'Strip premium Microsoft 365 licenses from disabled and never-signed-in users, then '
+                      'verify the reclaimed count in the admin portal (Scogo AI, hkNjUpPIx6M @ 00:01:34).'],
+ 'statutory_citations': [{'title': 'FinOps Foundation — Applying the FinOps Framework to SaaS at Scale '
+                                   '[00:11:03]',
+                          'url': 'https://www.youtube.com/watch?v=iIwpcQbBkmM&t=663s',
+                          'relevance': 'Primary practitioner testimony on effective-rate math and why '
+                                       'negotiated SaaS discounts can mask underutilization.'},
+                         {'title': 'FinOps Foundation — Licensing and SaaS at Scale: Cloud+ FinOps Scopes '
+                                   'Intersecting with ITAM & SAM [00:14:06]',
+                          'url': 'https://www.youtube.com/watch?v=LF1AK1WypX0&t=846s',
+                          'relevance': 'Primary practitioner testimony on commitment shortfalls, '
+                                       'forgiveness business cases and renewal timing.'},
+                         {'title': 'FinOps Foundation — Mastering FinOps for SaaS Optimization [00:09:23]',
+                          'url': 'https://www.youtube.com/watch?v=hQDjTANIaTo&t=563s',
+                          'relevance': 'Primary practitioner testimony on shadow corporate-card '
+                                       'subscriptions and over-license true-up exposure.'},
+                         {'title': 'Eddy Says Hi #EddySaysHi — SaaS & Licensing in FinOps [00:02:38]',
+                          'url': 'https://www.youtube.com/watch?v=sIJo4dVD-jc&t=158s',
+                          'relevance': 'Primary practitioner testimony on true-up billing with no true '
+                                       'down.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'hQDjTANIaTo',
+                       'title': 'Mastering FinOps for SaaS Optimization',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': 'Recurring corporate-card charges kept billing after employees left, $5,000 '
+                               "a month, that's 60k a year.",
+                       'tip': 'Recurring corporate-card charges kept billing after employees left, $5,000 '
+                              "a month, that's 60k a year.",
+                       'timestamp': 563,
+                       'timestamp_seconds': 563,
+                       'timestamp_label': '[00:09:23]',
+                       'url': 'https://www.youtube.com/watch?v=hQDjTANIaTo&t=563s',
+                       'markdown': '[00:09:23](https://www.youtube.com/watch?v=hQDjTANIaTo&t=563s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sIJo4dVD-jc',
+                       'title': 'SaaS & Licensing in FinOps',
+                       'channel': 'Eddy Says Hi #EddySaysHi',
+                       'author': 'Eddy Says Hi #EddySaysHi',
+                       'text': 'Well, the vendor can true up your bill to that 120 rate for the entire '
+                               'year.',
+                       'tip': 'Well, the vendor can true up your bill to that 120 rate for the entire '
+                              'year.',
+                       'timestamp': 158,
+                       'timestamp_seconds': 158,
+                       'timestamp_label': '[00:02:38]',
+                       'url': 'https://www.youtube.com/watch?v=sIJo4dVD-jc&t=158s',
+                       'markdown': '[00:02:38](https://www.youtube.com/watch?v=sIJo4dVD-jc&t=158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'F-5GIklN_Ps',
+                       'title': 'FinOps for SaaS: Realities of Managing SaaS Value at Danske Bank',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': 'Over two years, we found 3,000 applications.',
+                       'tip': 'Over two years, we found 3,000 applications.',
+                       'timestamp': 268,
+                       'timestamp_seconds': 268,
+                       'timestamp_label': '[00:04:28]',
+                       'url': 'https://www.youtube.com/watch?v=F-5GIklN_Ps&t=268s',
+                       'markdown': '[00:04:28](https://www.youtube.com/watch?v=F-5GIklN_Ps&t=268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '472D_UGqdxA',
+                       'title': 'FinOps Explained: Master Cloud Cost Management & Optimization for '
+                                'Beginners',
+                       'channel': 'CodeLucky',
+                       'author': 'CodeLucky',
+                       'text': 'Reserved instances can save 30 to 70% compared with on-demand pricing.',
+                       'tip': 'Reserved instances can save 30 to 70% compared with on-demand pricing.',
+                       'timestamp': 277,
+                       'timestamp_seconds': 277,
+                       'timestamp_label': '[00:04:37]',
+                       'url': 'https://www.youtube.com/watch?v=472D_UGqdxA&t=277s',
+                       'markdown': '[00:04:37](https://www.youtube.com/watch?v=472D_UGqdxA&t=277s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hkNjUpPIx6M',
+                       'title': 'Advanced FinOps License Optimization in Microsoft 365',
+                       'channel': 'Scogo AI',
+                       'author': 'Scogo AI',
+                       'text': 'Companies waste millions of premium paid licenses that are assigned to '
+                               'deactivated employees or even to users who have never been onboarded.',
+                       'tip': 'Companies waste millions of premium paid licenses that are assigned to '
+                              'deactivated employees or even to users who have never been onboarded.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=hkNjUpPIx6M&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=hkNjUpPIx6M&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8mJc7j3DW28',
+                       'title': 'How To: SaaS License Management to reduce and optimize spend',
+                       'channel': 'ServiceNow Community',
+                       'author': 'ServiceNow Community',
+                       'text': 'The playbook creates a reclaim rule with a 30-day inactivity threshold, so '
+                               'review it and consider changing it to 90 days.',
+                       'tip': 'The playbook creates a reclaim rule with a 30-day inactivity threshold, so '
+                              'review it and consider changing it to 90 days.',
+                       'timestamp': 228,
+                       'timestamp_seconds': 228,
+                       'timestamp_label': '[00:03:48]',
+                       'url': 'https://www.youtube.com/watch?v=8mJc7j3DW28&t=228s',
+                       'markdown': '[00:03:48](https://www.youtube.com/watch?v=8mJc7j3DW28&t=228s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'byD2FJ-NF0M',
+                       'title': '(Podcast) Preparing for 2026: Software Licensing, ITAM and FinOps Trends',
+                       'channel': 'Eddy Says Hi #EddySaysHi',
+                       'author': 'Eddy Says Hi #EddySaysHi',
+                       'text': 'Identity is rapidly becoming the primary control plane for SaaS cost '
+                               'management.',
+                       'tip': 'Identity is rapidly becoming the primary control plane for SaaS cost '
+                              'management.',
+                       'timestamp': 737,
+                       'timestamp_seconds': 737,
+                       'timestamp_label': '[00:12:17]',
+                       'url': 'https://www.youtube.com/watch?v=byD2FJ-NF0M&t=737s',
+                       'markdown': '[00:12:17](https://www.youtube.com/watch?v=byD2FJ-NF0M&t=737s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gWDTRf_kGHI',
+                       'title': 'FinOps Explained in 5 Minutes | What is FinOps?',
+                       'channel': 'Anglepoint',
+                       'author': 'Anglepoint',
+                       'text': 'Crawl, walk, run maturity is assessed per capability, and few companies '
+                               'are fully run.',
+                       'tip': 'Crawl, walk, run maturity is assessed per capability, and few companies are '
+                              'fully run.',
+                       'timestamp': 264,
+                       'timestamp_seconds': 264,
+                       'timestamp_label': '[00:04:24]',
+                       'url': 'https://www.youtube.com/watch?v=gWDTRf_kGHI&t=264s',
+                       'markdown': '[00:04:24](https://www.youtube.com/watch?v=gWDTRf_kGHI&t=264s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sqpO85TKjEI',
+                       'title': 'The Complete SaaS FinOps Playbook Explained in 17 Minutes | FinOps X '
+                                'Interview',
+                       'channel': 'FinOps Weekly',
+                       'author': 'FinOps Weekly',
+                       'text': 'If you query what they do with Adobe, I bet 90% of your organization is '
+                               'just updating PDFs and signing them.',
+                       'tip': 'If you query what they do with Adobe, I bet 90% of your organization is '
+                              'just updating PDFs and signing them.',
+                       'timestamp': 581,
+                       'timestamp_seconds': 581,
+                       'timestamp_label': '[00:09:41]',
+                       'url': 'https://www.youtube.com/watch?v=sqpO85TKjEI&t=581s',
+                       'markdown': '[00:09:41](https://www.youtube.com/watch?v=sqpO85TKjEI&t=581s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ryko_HHYy18',
+                       'title': 'What Is a FinOps Scope? How FinOps Frames SaaS, Licensing, AI, Data '
+                                'Center, and Other Cost and Usage',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': 'Informed ignoring of capabilities is acceptable.',
+                       'tip': 'Informed ignoring of capabilities is acceptable.',
+                       'timestamp': 340,
+                       'timestamp_seconds': 340,
+                       'timestamp_label': '[00:05:40]',
+                       'url': 'https://www.youtube.com/watch?v=ryko_HHYy18&t=340s',
+                       'markdown': '[00:05:40](https://www.youtube.com/watch?v=ryko_HHYy18&t=340s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SdoLFHhMm1Q',
+                       'title': '02: A FinOps Case Study',
+                       'channel': 'Forest Lin',
+                       'author': 'Forest Lin',
+                       'text': 'Costs are up 45% in two years.',
+                       'tip': 'Costs are up 45% in two years.',
+                       'timestamp': 460,
+                       'timestamp_seconds': 460,
+                       'timestamp_label': '[00:07:40]',
+                       'url': 'https://www.youtube.com/watch?v=SdoLFHhMm1Q&t=460s',
+                       'markdown': '[00:07:40](https://www.youtube.com/watch?v=SdoLFHhMm1Q&t=460s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LF1AK1WypX0',
+                       'title': 'Licensing and SaaS at Scale: Cloud+ FinOps Scopes Intersecting with ITAM '
+                                '& SAM',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': "So, make sure you're the single point of contact.",
+                       'tip': "So, make sure you're the single point of contact.",
+                       'timestamp': 1247,
+                       'timestamp_seconds': 1247,
+                       'timestamp_label': '[00:20:47]',
+                       'url': 'https://www.youtube.com/watch?v=LF1AK1WypX0&t=1247s',
+                       'markdown': '[00:20:47](https://www.youtube.com/watch?v=LF1AK1WypX0&t=1247s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LF1AK1WypX0',
+                       'title': 'Licensing and SaaS at Scale: Cloud+ FinOps Scopes Intersecting with ITAM '
+                                '& SAM',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': "And you don't want the vendor to have the option to choose.",
+                       'tip': "And you don't want the vendor to have the option to choose.",
+                       'timestamp': 1987,
+                       'timestamp_seconds': 1987,
+                       'timestamp_label': '[00:33:07]',
+                       'url': 'https://www.youtube.com/watch?v=LF1AK1WypX0&t=1987s',
+                       'markdown': '[00:33:07](https://www.youtube.com/watch?v=LF1AK1WypX0&t=1987s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hmqskc5iaNc',
+                       'title': 'FinOps and Cloud Cost Optimization',
+                       'channel': 'Datadog',
+                       'author': 'Datadog',
+                       'text': 'We deployed that we saw a uh actually uh 66 price reduction in our cross '
+                               'availability Zone charges which was very very nice.',
+                       'tip': 'We deployed that we saw a uh actually uh 66 price reduction in our cross '
+                              'availability Zone charges which was very very nice.',
+                       'timestamp': 1443,
+                       'timestamp_seconds': 1443,
+                       'timestamp_label': '[00:24:03]',
+                       'url': 'https://www.youtube.com/watch?v=hmqskc5iaNc&t=1443s',
+                       'markdown': '[00:24:03](https://www.youtube.com/watch?v=hmqskc5iaNc&t=1443s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O3FqsxJScI4',
+                       'title': 'FinOps Forward 2026: FinOps Foundation Keynote',
+                       'channel': 'Flexera | ITAM, FinOps & SaaS Management',
+                       'author': 'Flexera | ITAM, FinOps & SaaS Management',
+                       'text': "You don't need a team to do FinOps.",
+                       'tip': "You don't need a team to do FinOps.",
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=O3FqsxJScI4&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=O3FqsxJScI4&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_PyR6G51QW4',
+                       'title': 'SaaS FinOps Module: Taking Control of SaaS Costs and User Data with AI',
+                       'channel': 'Procure IT',
+                       'author': 'Procure IT',
+                       'text': 'So that we can see and tackle the inactive users and remove them from the '
+                               'system as it deemed appropriate.',
+                       'tip': 'So that we can see and tackle the inactive users and remove them from the '
+                              'system as it deemed appropriate.',
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=_PyR6G51QW4&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=_PyR6G51QW4&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iIwpcQbBkmM',
+                       'title': 'Applying the FinOps Framework to SaaS at Scale',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': "So often times we're focused on optimizing rate right negotiating the best "
+                               'rate but I just showed you that that best rate you negotiated actually may '
+                               'cost you more because of underutilization.',
+                       'tip': "So often times we're focused on optimizing rate right negotiating the best "
+                              'rate but I just showed you that that best rate you negotiated actually may '
+                              'cost you more because of underutilization.',
+                       'timestamp': 839,
+                       'timestamp_seconds': 839,
+                       'timestamp_label': '[00:13:59]',
+                       'url': 'https://www.youtube.com/watch?v=iIwpcQbBkmM&t=839s',
+                       'markdown': '[00:13:59](https://www.youtube.com/watch?v=iIwpcQbBkmM&t=839s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iIwpcQbBkmM',
+                       'title': 'Applying the FinOps Framework to SaaS at Scale',
+                       'channel': 'FinOps Foundation',
+                       'author': 'FinOps Foundation',
+                       'text': 'What I usually ask for is just a user list the two things I ask for is a '
+                               'user list and the last time they logged on.',
+                       'tip': 'What I usually ask for is just a user list the two things I ask for is a '
+                              'user list and the last time they logged on.',
+                       'timestamp': 2572,
+                       'timestamp_seconds': 2572,
+                       'timestamp_label': '[00:42:52]',
+                       'url': 'https://www.youtube.com/watch?v=iIwpcQbBkmM&t=2572s',
+                       'markdown': '[00:42:52](https://www.youtube.com/watch?v=iIwpcQbBkmM&t=2572s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

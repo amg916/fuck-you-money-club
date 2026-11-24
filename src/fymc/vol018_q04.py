@@ -1,679 +1,824 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$75,000 USD) and configure a lean, low-opex ($3,000–$15,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Parcel Buying, QGIS Underwriting, Title-Controlled Closings, and Recorded Easement Economics",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #6, Land Flipping, ranks #15 with a 86/100 Money-to-Manpower Score: "
-        "a elite small-team cash machine, not an excuse to accumulate stranded acreage. "
-        "Allocate 60% of opening capital to working-capital reserves, then buy evidence before inventory. "
-        "This chapter maps six operating plays: vacant-parcel cash resale, infill buildability screening, "
-        "legal-access verification, minor-subdivision sequencing, title-insured disposition, and "
-        "cell_tower_billboard_easement_strip_out. A twelve-layer stack separates free screening from "
-        "paid professional conclusions, while segregated banking and parcel-level ledgers expose carrying costs. "
-        "Canonical annual owner profits are $24,000 Conservative, $157,250 Base, and $375,000 Scaled. "
-        "Those profits derive from gross parcel sale proceeds after acquisition and operating costs; "
-        "reserve balances, buyer deposits, and borrowed principal are not revenue."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect the Reserve Before Funding the First Parcel",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with three opening-capital envelopes: $50,000, $200,000, and $400,000. "
-                    "They are deployment illustrations, not automatic assignments to the Conservative, Base, "
-                    "and Scaled outcomes. In each envelope, place 60% in a separate working-capital reserve, "
-                    "20% in initial acquisition capacity, 6% in diligence, 4% in transaction costs, 2% in "
-                    "stack setup, 4% in seller acquisition, and 4% in entity and insurance setup. These "
-                    "buckets total exactly 100%; unused setup money returns to reserve rather than becoming "
-                    "permission to upgrade subscriptions. Reserve cash must remain liquid and unencumbered: "
-                    "a parcel offered for resale, an expected easement payment, and a refundable deposit "
-                    "do not satisfy the reserve test. At monthly operating plans of $3,000, $7,500, and "
-                    "$15,000, the opening reserves cover ten, sixteen, and sixteen months respectively, "
-                    "before deal-specific spending or distributions. The stated three-to-twelve-month first-deal "
-                    "window makes that distinction material. A $50,000 launch cannot carry $15,000 monthly "
-                    "overhead while waiting for a sale. Adopt the smallest operating plan first, keep the "
-                    "owner's household runway outside this business budget, and authorize increases only "
-                    "against collected proceeds and documented workload. Document every transfer between "
-                    "buckets so an optimistic purchase cannot silently consume the next tax payment."
-                ),
-                (
-                    "The reserve is working capital, but it is not an unrestricted bidding account. Set a "
-                    "six-month operating floor plus separately identified property taxes, insurance renewals, "
-                    "contractual commitments, and closing obligations. Under the three operating plans, the "
-                    "basic floors are $18,000, $45,000, and $90,000 before those additions. A written release "
-                    "worksheet must show bank cash after purchase, committed checks, the next expected receipt, "
-                    "and a ninety-day delay case. Do not count a buyer's promise as that receipt. For a "
-                    "$50,000 launch, an $8,000 purchase might leave $2,000 of the initial acquisition envelope "
-                    "available; a $1,500 diligence engagement belongs in its own $3,000 bucket. That does not "
-                    "mean the remaining reserve can fund several similar parcels simultaneously. Calculate "
-                    "the combined carrying burden and stressed exit date first. Earnest money stays an asset "
-                    "until applied, returned, or forfeited, while the purchase price becomes parcel inventory "
-                    "rather than a recurring software expense. Maintain a thirteen-week cash forecast and a "
-                    "twelve-month holding schedule by parcel. If the downside breaches the floor, reduce the "
-                    "offer, extend a properly drafted inspection period, obtain additional committed capital, "
-                    "or pass. Cheap acreage purchased with survival cash is still an expensive operating error."
-                ),
-                (
-                    "Reconcile profitability independently from opening capital. The canonical Conservative "
-                    "case is $200,000 in gross parcel sale proceeds less $176,000 in total costs, leaving "
-                    "$24,000 at 12%. Base is $850,000 less $692,750, leaving $157,250 at 18.5%; Scaled is "
-                    "$1,500,000 less $1,125,000, leaving $375,000 at 25%. An illustrative bridge uses annual "
-                    "overhead of $36,000, $90,000, and $180,000, leaving $140,000, $602,750, and $945,000 "
-                    "respectively for acquisition and all other included costs. Ten sales averaging $20,000, "
-                    "twenty-five averaging $34,000, and thirty averaging $50,000 reproduce the revenue cases. "
-                    "The associated non-overhead cost allowances average $14,000, $24,110, and $31,500 per "
-                    "sale; they are blended ceilings, not suggested offers. Staff counts remain 1 FT + 3 C, "
-                    "1 FT + 3 C, and 2 FT + 4 C. Contractors are distinct service relationships, not assumed "
-                    "full-time salaries. Test actual compensation, travel, title charges, and insurance against "
-                    "the bridge before adopting it. Inventory must turn or additional capital must arrive; "
-                    "annual proceeds are not all available on launch day. Owner distributions reduce cash "
-                    "without creating another operating expense, and tax treatment must follow the entity's "
-                    "actual books rather than a spreadsheet label. Track both realized margin and capital-days "
-                    "committed so slow inventory cannot hide behind attractive percentage returns."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Opening Budget Across Three Independent Capital Envelopes",
-                "headers": [
-                    "Capital allocation and operating purpose",
-                    "Opening capital of fifty thousand dollars",
-                    "Opening capital of two hundred thousand dollars",
-                    "Opening capital of four hundred thousand dollars",
-                ],
-                "rows": [
-                    [
-                        "Working-capital reserve receives sixty percent before purchase commitments",
-                        "$30,000 remains liquid, segregated, and available for operating survival",
-                        "$120,000 remains liquid, segregated, and available for operating survival",
-                        "$240,000 remains liquid, segregated, and available for operating survival",
-                    ],
-                    [
-                        "Initial acquisition capacity receives twenty percent for owned inventory",
-                        "$10,000 supports initial purchases without automatically invading protected reserves",
-                        "$40,000 supports initial purchases without automatically invading protected reserves",
-                        "$80,000 supports initial purchases without automatically invading protected reserves",
-                    ],
-                    [
-                        "Diligence receives six percent for parcel-specific professional evidence",
-                        "$3,000 funds targeted surveys, title review, and environmental scoping",
-                        "$12,000 funds targeted surveys, title review, and environmental scoping",
-                        "$24,000 funds targeted surveys, title review, and environmental scoping",
-                    ],
-                    [
-                        "Transaction costs receive four percent for initial closing expenses",
-                        "$2,000 covers negotiated escrow, recording, and initial closing charges",
-                        "$8,000 covers negotiated escrow, recording, and initial closing charges",
-                        "$16,000 covers negotiated escrow, recording, and initial closing charges",
-                    ],
-                    [
-                        "Stack setup receives two percent without mandating equivalent spending",
-                        "$1,000 caps initial equipment, configuration, and necessary subscription commitments",
-                        "$4,000 caps initial equipment, configuration, and necessary subscription commitments",
-                        "$8,000 caps initial equipment, configuration, and necessary subscription commitments",
-                    ],
-                    [
-                        "Seller acquisition receives four percent for measurable outreach experiments",
-                        "$2,000 buys controlled mailing tests and attributable seller responses",
-                        "$8,000 buys controlled mailing tests and attributable seller responses",
-                        "$16,000 buys controlled mailing tests and attributable seller responses",
-                    ],
-                    [
-                        "Entity and insurance setup receive four percent before trading",
-                        "$2,000 funds formation work, initial premiums, and accounting setup",
-                        "$8,000 funds formation work, initial premiums, and accounting setup",
-                        "$16,000 funds formation work, initial premiums, and accounting setup",
-                    ],
-                    [
-                        "Total opening allocation equals one hundred percent of capital",
-                        "$50,000 totals every bucket without treating reserves as expenses",
-                        "$200,000 totals every bucket without treating reserves as expenses",
-                        "$400,000 totals every bucket without treating reserves as expenses",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Keep Cash Mobile While Evidence Gets Specific",
-                "body": (
-                    "Spend small amounts to disprove a parcel thesis before committing large amounts "
-                    "to improve it. Treat every reserve release as a documented investment decision."
-                ),
-                "items": [
-                    "Ask the title officer for the actual recorded access instrument before paying for a full marketing package; a road drawn on GIS proves neither public maintenance nor enforceable passage.",
-                    "Give the surveyor the title exception documents with the scope request; resolving an easement location during fieldwork is cheaper than commissioning a second visit.",
-                    "Buy one county's outreach data first and measure cost per qualified owner conversation; expand only after duplicate ownership records and undeliverable addresses are removed.",
-                    "Request vacant-land coverage using the actual parcel schedule, public access conditions, and intended work; confirm in writing whether contractors, dumping, and recreational use change coverage.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build Twelve Layers Around Evidence, Not Subscription Count",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Configure one parcel identifier as the spine of the production stack: county identifier, "
-                    "assessor parcel number, and the acquisition entity. Preserve the assessor's original "
-                    "format as a separate field because leading zeros and punctuation can matter during "
-                    "document matching. Airtable holds the working queue; Google Drive holds source documents; "
-                    "QGIS holds spatial analysis; the accounting ledger holds money. None replaces the others. "
-                    "A parcel record should expose owner name, mailing address, asking price, acquisition "
-                    "basis, inspection deadline, title status, access evidence, zoning district, flood flags, "
-                    "utilities, comparable sales, expected carrying cost, and next action. Store source URL, "
-                    "retrieval date, and confidence alongside each imported conclusion. County GIS boundaries "
-                    "are screening geometry, not a boundary survey. Regrid and Google Earth Pro accelerate "
-                    "triage, but neither establishes ownership, legal access, or buildability. FEMA mapping "
-                    "shows mapped flood hazards, not every drainage problem. USFWS IPaC supplies resource "
-                    "screening, not a universal construction authorization. Route material exceptions to the "
-                    "surveyor, title officer, planner, or environmental professional who can resolve them. "
-                    "Automation should attach evidence and flag missing fields; it should never silently "
-                    "convert a blank access field into a clean acquisition recommendation. Export the complete "
-                    "queue weekly so the business can change vendors without rebuilding its operating history."
-                ),
-                (
-                    "The twelve-layer matrix uses explicit procurement assumptions rather than pretending "
-                    "that vendor tariffs were checked live. Google Workspace Business Starter is budgeted "
-                    "at $7 per user monthly on an annual commitment, and Backblaze Computer Backup at $9 "
-                    "per computer monthly; verify checkout terms, taxes, eligibility, and renewal prices "
-                    "before purchase. The remaining listed entry tiers carry a $0 subscription assumption "
-                    "within their published free scope. One user and one protected computer therefore imply "
-                    "$16 monthly in these listed paid layers, not a complete technology or operating budget. "
-                    "Domains, hardware, connectivity, professional reports, data exports, payment processing, "
-                    "and closing services remain separate. Free CRM, signature, and database tiers have "
-                    "capacity and feature limits; record the limits actually offered during setup rather "
-                    "than building the process around remembered quotas. Use a business bank's external "
-                    "account feed only after confirming permissions and supported connections. Keep a manual "
-                    "CSV reconciliation route available. Upgrade a product when a measured bottleneck exceeds "
-                    "its price, not when a vendor demonstration looks polished. For example, saving two "
-                    "verified administrative hours monthly at a $40 replacement cost supports an $80 ceiling "
-                    "before switching costs. A new subscription that merely duplicates the parcel register "
-                    "has no demonstrated return."
-                ),
-                (
-                    "Comparable-sale tracking deserves more discipline than another listing subscription. "
-                    "Capture sale date, verified consideration where available, acreage, access type, utility "
-                    "status, zoning, topography, and the evidence behind any adjustment. Separate recorded "
-                    "closed transactions from asking prices and from transfers whose consideration cannot "
-                    "support a market comparison. Use public recorder and assessor sources first; obtain "
-                    "licensed broker assistance when appropriate, respecting data-use terms. An automation "
-                    "can flag a newly recorded deed or stale asking price, but a person must decide whether "
-                    "the parcel is actually comparable. Restrict contractor access to assigned folders, "
-                    "require multifactor authentication, and keep recovery codes outside the daily computer. "
-                    "Bitwarden's individual free tier suits a solo credential vault; it does not justify "
-                    "sharing one login among the whole team. Add a properly licensed shared-vault product "
-                    "when collaboration requires it. Back up local working files and separately export "
-                    "cloud records; computer backup alone does not preserve every cloud-native object. "
-                    "Test one restore before the first acquisition. For closing wires, use a previously "
-                    "verified telephone number to confirm instructions with escrow, never a replacement "
-                    "number embedded in a last-minute email. A $16 software baseline is useful only if "
-                    "document integrity and payment controls survive actual production."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack With Explicit Planning Tiers and Lean Substitutes",
-                "headers": [
-                    "Infrastructure layer and accountable operating role",
-                    "Named product tier and subscription assumption",
-                    "Production use and material operating boundary",
-                    "Cheap alternative and specific upgrade trigger",
-                ],
-                "rows": [
-                    [
-                        "Business identity and document custody under the acquisition entity",
-                        "Google Workspace Business Starter: $7 per user monthly, annual commitment",
-                        "Use branded email and controlled folders; verify current checkout pricing",
-                        "Existing business email plus encrypted folders avoids immediate platform migration",
-                    ],
-                    [
-                        "Parcel queue and inspection deadlines owned by the operator",
-                        "Airtable Free: $0 monthly within the offered free-tier limits",
-                        "Track parcel evidence and next actions without embedding accounting authority",
-                        "LibreOffice Calc remains adequate until concurrency creates measurable record conflicts",
-                    ],
-                    [
-                        "Spatial underwriting and reproducible parcel screening owned by the analyst",
-                        "QGIS desktop: $0 software license under its open-source distribution",
-                        "Overlay parcel, road, slope, and hazard layers with dated sources",
-                        "County GIS viewer suffices when manual screening volume remains modest",
-                    ],
-                    [
-                        "Ownership and parcel context used for initial sourcing research",
-                        "Regrid free property map: $0 subscription for available public browsing",
-                        "Inspect parcel context while confirming material records with county sources",
-                        "County assessor searches avoid paid exports during the first sourcing test",
-                    ],
-                    [
-                        "Flood-hazard screening linked to each candidate parcel evidence folder",
-                        "FEMA Map Service Center public access: $0 subscription for map searches",
-                        "Save effective map references and investigate floodway or drainage concerns",
-                        "County floodplain administrator supplies local interpretation when mapped boundaries conflict",
-                    ],
-                    [
-                        "Protected-resource screening before disturbance or subdivision spending becomes committed",
-                        "USFWS IPaC public planning access: $0 subscription for screening use",
-                        "Archive resource results without treating them as completed permitting determinations",
-                        "Agency field-office consultation resolves project-specific questions beyond desktop screening",
-                    ],
-                    [
-                        "Historical imagery review for dumping, access patterns, and prior uses",
-                        "Google Earth Pro desktop: $0 software subscription for available imagery",
-                        "Inspect dated images while acknowledging capture dates and interpretation limits",
-                        "County orthophotography provides local imagery when global coverage lacks detail",
-                    ],
-                    [
-                        "Seller conversation tracking with permission-controlled owner contact history records",
-                        "HubSpot Free CRM tools: $0 subscription within available free functionality",
-                        "Record conversations and follow-ups without purchasing unnecessary outbound automation packages",
-                        "Airtable contact records suffice until separate sales activity reporting matters",
-                    ],
-                    [
-                        "Credential custody and account recovery for the solo operator",
-                        "Bitwarden Free individual account: $0 subscription for personal vault functionality",
-                        "Use unique credentials and multifactor authentication without shared individual logins",
-                        "Device password manager suffices initially; team sharing requires appropriate licensing",
-                    ],
-                    [
-                        "Bookkeeping and parcel cost coding under the bookkeeper's reconciliation process",
-                        "Wave Starter: $0 subscription for available core bookkeeping functionality",
-                        "Use eligible regional offering; payment services and additional features cost separately",
-                        "Structured ledger exports plus bookkeeper review work before automated feeds",
-                    ],
-                    [
-                        "Routine document signatures outside instruments requiring closing-specific execution formalities",
-                        "SignWell Free: $0 subscription within currently offered document usage limits",
-                        "Sign routine agreements; use escrow-directed execution for recordable property instruments",
-                        "Wet signatures and scanned copies work where counterparties accept that method",
-                    ],
-                    [
-                        "Endpoint backup and tested restoration of downloaded transaction evidence",
-                        "Backblaze Computer Backup: $9 per computer monthly as planning assumption",
-                        "Protect local files while separately exporting cloud-native records and attachments",
-                        "Encrypted external backups reduce subscription spending but require disciplined rotation",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Map Six Plays Without Confusing Screening With Saleable Rights",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use five descriptive chapter-level plays alongside the specified easement play; these "
-                    "labels organize deployment rather than assert additional catalog identifiers. Vacant-parcel "
-                    "cash resale starts with an $8,000 purchase, $2,000 of diligence and closing costs, "
-                    "$1,000 of carrying costs, and a $15,000 sale: $4,000 remains before allocated overhead. "
-                    "Infill buildability screening might spend $1,200 to test a $25,000 purchase and $40,000 "
-                    "exit thesis; with another $5,800 of direct costs, the spread is $8,000 before overhead. "
-                    "Neither example belongs automatically inside a canonical case. Legal-access verification "
-                    "is a separate capital-protection play: paying $900 for instrument review can prevent "
-                    "an otherwise attractive $12,000 landlocked purchase. Its avoided loss is not revenue. "
-                    "Title-insured disposition might add $1,500 in seller-paid title and escrow costs to "
-                    "achieve a $30,000 closing; record $30,000 as gross proceeds and the charge separately. "
-                    "For each play, evidence precedes the offer increase. If buildability fails, reprice "
-                    "to supported nonbuilding use or withdraw during the contractual inspection period. "
-                    "If access cannot be established, do not market an apparent dirt track as a legal "
-                    "road. If title exceptions defeat the buyer's intended use, cure them or abandon "
-                    "that exit thesis rather than promise insurance the insurer has not agreed to issue."
-                ),
-                (
-                    "Minor-subdivision sequencing converts a land thesis into a sequence of priced decisions. "
-                    "Suppose a tract costs $70,000, survey and engineering consume $12,000, application and "
-                    "recording charges total $3,000, and carrying plus selling costs reach $10,000. Two "
-                    "lawfully created lots selling for $60,000 each produce $120,000 gross proceeds and "
-                    "$25,000 before allocated overhead. If required road or utility work adds $30,000, "
-                    "that same plan loses $5,000 before overhead. Obtain the governing jurisdiction's "
-                    "written process, lot standards, frontage rules, utility requirements, and review sequence "
-                    "before valuing hypothetical lots as existing inventory. Texas Local Government Code "
-                    "Sections 212.004 and 232.001 illustrate why municipal and county platting rules require "
-                    "separate jurisdiction checks; exceptions and territorial authority matter. A minor "
-                    "division is not automatically exempt from infrastructure conditions. Purchase only if "
-                    "the intact-tract fallback has credible buyers at an acceptable basis, or structure "
-                    "contractual contingencies around the necessary determinations. Keep engineering payments "
-                    "milestone-based, retain deliverables the entity can reuse, and distinguish preliminary "
-                    "staff comments from an effective recorded plat. Market separate lots only when the "
-                    "applicable sale and platting requirements permit doing so. This play warrants larger "
-                    "diligence capacity, not a larger office lease or a speculative assumption that approvals "
-                    "will arrive on the first submission."
-                ),
-                (
-                    "The specified TRACK_1 play, cell_tower_billboard_easement_strip_out, separates transferable "
-                    "site-access and rent rights from the underlying real estate for specialist buyers. "
-                    "Underwrite the Cell-Tower, Rooftop & Billboard Perpetual Easement Strip-Out Arbitrage "
-                    "from the executed lease, amendments, recorded instruments, and tenant payment history. "
-                    "Illustratively, $24,000 annual rent at an eight-times purchase multiple produces "
-                    "$192,000 of rights-sale proceeds. Against a $220,000 property purchase, $17,500 of "
-                    "rights-transaction costs, a $120,000 residual-property sale, and $15,000 of residual "
-                    "sale and holding costs, the combined spread is $59,500 before allocated overhead. "
-                    "At six times rent, rights proceeds fall to $144,000 and the spread contracts to "
-                    "$11,500. These are separate illustrative economics, not additions to the scorecard. "
-                    "Price tenant termination rights, renewal options, rent abatements, assignment restrictions, "
-                    "lender releases, access width, utilities, maintenance, exclusivity, and any purchase "
-                    "rights. The residual valuation must already reflect the permanent burden; using an "
-                    "unencumbered comparable without adjustment double counts value. Confirm that the seller "
-                    "actually owns each right and that the specialist buyer accepts the instrument. A "
-                    "perpetual burden paired with terminable rent can destroy the apparent arbitrage. When "
-                    "transferability or pricing fails, retain the lease or negotiate a narrower term-limited "
-                    "assignment with all required approvals, supported by cash sufficient to hold the property."
-                ),
-            ],
-            "table": {
-                "caption": "Six Mapped Operating Plays: Unit Economics, Evidence Purchases, and Cash-Preserving Fallbacks",
-                "headers": [
-                    "Mapped play and capital deployment objective",
-                    "Concrete illustrative unit math before overhead",
-                    "Evidence required before committing additional cash",
-                    "Failure fallback preserving the remaining capital",
-                ],
-                "rows": [
-                    [
-                        "Vacant-parcel cash resale with a deliberately small initial basis",
-                        "$15,000 sale less $11,000 combined direct costs leaves $4,000",
-                        "Verify sold comparables, ownership, taxes, and recorded access before closing",
-                        "Withdraw during inspection or reduce basis when verified resale demand weakens",
-                    ],
-                    [
-                        "Infill buildability screening before paying a residential-lot acquisition premium",
-                        "$40,000 sale less $25,000 purchase and $7,000 costs leaves $8,000",
-                        "Obtain zoning, utility, setback, drainage, and practical access evidence first",
-                        "Reprice for supported nonbuilding use or terminate under negotiated inspection rights",
-                    ],
-                    [
-                        "Legal-access verification as an acquisition loss-prevention operating play",
-                        "$900 instrument review tests a proposed $12,000 parcel purchase commitment",
-                        "Review recorded grants, dominant-estate identity, width, maintenance, and insurer treatment",
-                        "Reject landlocked inventory when enforceable access cannot support the intended exit",
-                    ],
-                    [
-                        "Minor-subdivision sequencing with an intact-tract resale alternative retained",
-                        "$120,000 lot proceeds less $95,000 direct costs leaves $25,000",
-                        "Price jurisdiction-specific platting, engineering, frontage, utilities, and recording requirements first",
-                        "Sell intact only when original basis supports that independently verified market",
-                    ],
-                    [
-                        "Title-insured disposition with closing charges recognized separately from proceeds",
-                        "$30,000 gross sale includes a separate $1,500 seller closing expense",
-                        "Confirm insurer willingness, exception treatment, vesting, signing authority, and releases",
-                        "Cure material exceptions or abandon the unsupported buyer-use proposition entirely",
-                    ],
-                    [
-                        "cell_tower_billboard_easement_strip_out: specialist rights sale with residual-property burden explicitly priced",
-                        "$192,000 rights proceeds plus $120,000 residual proceeds yield $59,500 spread",
-                        "Verify rent durability, transfer permissions, lender releases, and residual burden valuation",
-                        "Retain lease or negotiate narrower term-limited assignment with required approvals",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Make Entity, Banking, Insurance, and Closing Readiness Observable",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Form the acquisition entity before it signs purchase contracts, obtain its tax identifier, "
-                    "document signing authority, and open dedicated operating and reserve accounts. If a "
-                    "contract already exists personally, have the closing team address assignment and vesting "
-                    "rather than changing the buyer name casually. Keep owner contributions, loans, reimbursements, "
-                    "and distributions separately coded. Reconcile every bank account monthly and tie each "
-                    "parcel's acquisition statement to its inventory ledger. Title or escrow should handle "
-                    "buyer deposits under the applicable transaction arrangement; do not treat deposits as "
-                    "spendable operating receipts. Use written contractor scopes specifying deliverables, "
-                    "fee triggers, ownership of work product, and insurance evidence where appropriate. "
-                    "A title insurer, surveyor, and licensed broker can supply the three specialist contractor "
-                    "relationships in a lean model, but actual engagements depend on market and transaction "
-                    "needs. Owning land for resale does not confer authority to broker another owner's "
-                    "property. California Business and Professions Code Sections 10130 and 10131 illustrate "
-                    "the distinction between licensed brokerage activity and principal transactions; check "
-                    "the governing state's requirements. For federal income-tax classification, 26 U.S.C. "
-                    "1221(a)(1) excludes property held primarily for sale to customers in the ordinary course "
-                    "of business from capital-asset treatment. Do not assume every land resale produces "
-                    "the same tax character as a long-held personal investment."
-                ),
-                (
-                    "Insurance starts with the actual parcel conditions and activities. Request vacant-land "
-                    "liability terms, exclusions, named insureds, limits, deductibles, and treatment of roads, "
-                    "water features, recreational access, dumping, and hired contractors. Title insurance "
-                    "addresses covered title risks subject to its policy terms; it does not establish "
-                    "soil capacity, zoning permission, or absence of contamination. Environmental diligence "
-                    "requires its own scope. CERCLA, 42 U.S.C. 9607, can impose liability connected to "
-                    "contaminated property, while relevant landowner protections have specific statutory "
-                    "conditions. Where that protection is part of the acquisition strategy, engage a qualified "
-                    "environmental professional to address all appropriate inquiries under 40 CFR Part 312 "
-                    "before acquisition, with the required timing and continuing obligations evaluated for "
-                    "the transaction. A desktop flag or seller statement is not an interchangeable substitute. "
-                    "Likewise, mapped wetlands alone neither establish nor eliminate federal jurisdiction. "
-                    "Proposed discharges of dredged or fill material into jurisdictional waters can require "
-                    "authorization under 33 U.S.C. 1344; other federal, state, and local requirements may "
-                    "also apply. Stop grading and dumping until the project-specific path is established. "
-                    "Price the investigation and potential delay before increasing the offer. If a difficult "
-                    "environmental condition consumes the contingency or eliminates the fallback use, reject "
-                    "the parcel instead of burying the issue inside a wider expected-margin range."
-                ),
-                (
-                    "Run a dry closing before the first live acquisition. Create a sample parcel folder, "
-                    "load a title commitment, reconcile a mock settlement statement, recover a backed-up "
-                    "document, and walk through wire verification using previously authenticated contacts. "
-                    "Assign each unresolved item a person, deadline, cost, and consequence. A lender, tenant, "
-                    "seller, or planner saying they expect to resolve an issue is not the same as the "
-                    "recorded release or written determination the exit requires. Before funding, the operator "
-                    "must see the legal description, vesting, access instruments, exception disposition, "
-                    "contract deadlines, acquisition authority, insurance status, and post-close cash forecast. "
-                    "Then replay the ninety-day delay case and confirm the six-month operating floor remains "
-                    "intact after known obligations. Maintain a separate evidence register for the marketing "
-                    "claims: acreage, utilities, permissible use, access, subdivision status, and any income "
-                    "rights. Publish only claims supported by the file and required seller disclosures. "
-                    "During the first quarter, review cash weekly, parcel aging weekly, and vendor spending "
-                    "monthly. Freeze new acquisitions when reserve coverage falls below policy or repeated "
-                    "title exceptions invalidate the sourcing thesis. The production stack is ready when "
-                    "another authorized person can follow the evidence from bank balance to recorded deed "
-                    "without relying on the founder's memory."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Readiness Tests With Assigned Evidence and Explicit Stop Conditions",
-                "headers": [
-                    "Readiness control and responsible operating participant",
-                    "Evidence required inside the transaction folder",
-                    "Practical verification before releasing acquisition funds",
-                    "Stop condition and corrective operating action",
-                ],
-                "rows": [
-                    [
-                        "Entity authority and banking segregation owned by the operator",
-                        "Formation records, tax identifier, authority documentation, and dedicated account records",
-                        "Match contract buyer, insured entity, account owner, and intended deed vesting",
-                        "Resolve mismatched ownership or authority before signing irreversible closing instructions",
-                    ],
-                    [
-                        "Reserve coverage and settlement reconciliation owned by the bookkeeper",
-                        "Thirteen-week forecast, carrying schedule, bank reconciliation, and proposed settlement statement",
-                        "Recalculate post-close liquidity with a ninety-day receipt delay applied",
-                        "Reduce commitment or defer acquisition when protected operating cash becomes insufficient",
-                    ],
-                    [
-                        "Access and title evidence coordinated with title officer and surveyor",
-                        "Recorded instruments, legal description, title commitment, survey scope, and exception decisions",
-                        "Trace intended access rights to the actual parcel and proposed use",
-                        "Obtain a viable cure or reject an unsupported access-dependent purchase",
-                    ],
-                    [
-                        "Buildability and environmental scope coordinated with qualified local specialists",
-                        "Written zoning findings, utility responses, hazard screening, and scoped professional reports",
-                        "Confirm required permissions, investigation timing, and priced fallback land use",
-                        "Stop site work and reprice or withdraw when required evidence fails",
-                    ],
-                    [
-                        "Insurance placement and contractor scope administered by the operator",
-                        "Bound coverage evidence, relevant exclusions, written scopes, and contractor credentials",
-                        "Confirm actual parcel conditions and planned activities match disclosed insurance risks",
-                        "Bind suitable coverage or change activities before taking uncovered operating exposure",
-                    ],
-                    [
-                        "Payment security and record recovery tested with escrow and operator",
-                        "Verified contact directory, payment checklist, successful restore record, and closing archive",
-                        "Perform independent wire callback and retrieve an exported parcel evidence package",
-                        "Pause transfer when instructions change unexpectedly or verification cannot be completed",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before the First Dollar Leaves Escrow",
-                "body": (
-                    "Use documented pass or stop decisions. An attractive asking-price discount does "
-                    "not substitute for any required transaction evidence."
-                ),
-                "items": [
-                    "Verify that unencumbered cash after closing exceeds six months of planned operating spending plus separately scheduled property and contractual obligations.",
-                    "Verify vesting, recorded access, title exceptions, intended use, and any required rights-transfer permissions against source documents reviewed by the appropriate specialists.",
-                    "Verify entity authority, dedicated banking, bound insurance where required by the operating plan, and a parcel ledger that reconciles exactly to the settlement statement.",
-                    "Verify escrow wiring instructions through an independently established contact and demonstrate recovery of the complete parcel evidence folder from an export or backup.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Allocate and segregate opening cash",
-                    "action": "Fund the reserve account with sixty percent of available startup capital.",
-                    "detail": (
-                        "Record the remaining six budget envelopes, establish the six-month operating "
-                        "floor, and schedule known property and contractual obligations separately."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Configure the evidence spine",
-                    "action": "Create one parcel register and a matching controlled document folder structure.",
-                    "detail": (
-                        "Assign county and assessor identifiers, source timestamps, inspection deadlines, "
-                        "responsible people, and mandatory access, title, zoning, and cost fields."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Test one complete underwriting packet",
-                    "action": "Run a candidate parcel through screening, specialist scoping, and downside economics.",
-                    "detail": (
-                        "Separate verified facts from estimates, reconcile costs without duplicate charges, "
-                        "and document the fallback exit before authorizing nonrefundable diligence."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Rehearse and authorize the closing",
-                    "action": "Complete the four pre-flight verifications and reconcile the proposed settlement.",
-                    "detail": (
-                        "Use independently verified escrow contacts, confirm post-close reserve coverage, "
-                        "and preserve signed instructions and final evidence in the parcel archive."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy evidence before acreage, and never let a parcel spend the cash that keeps you patient.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Place sixty percent of opening capital into a segregated liquid reserve and document the release worksheet, six-month floor, and known additional obligations.",
-        "Build a thirteen-week cash forecast and parcel-level carrying schedule that survive a ninety-day delay without counting buyer promises or inventory as cash.",
-        "Configure the twelve-layer stack using verified checkout terms, unique credentials, controlled folders, weekly exports, and a demonstrated document restore.",
-        "Obtain entity authority records, dedicated banking, scoped contractor engagements, and insurance terms reflecting actual parcel conditions and planned activities.",
-        "Underwrite one parcel and one fallback exit using recorded access evidence, title exceptions, zoning requirements, sold comparables, and complete direct-cost estimates.",
-        "Reconcile the settlement statement, independently verify escrow instructions, and document all four pre-flight decisions before releasing purchase funds.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "26 U.S.C. 1221(a)(1) — Property Excluded From Capital-Asset Treatment",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1221",
-            "relevance": (
-                "Property held primarily for sale to customers in the ordinary course of business "
-                "is excluded from the statutory capital-asset definition; land-trading books must "
-                "support the actual classification."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 9607 — CERCLA Liability",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Contaminated-property exposure can overwhelm an apparent acquisition discount; "
-                "evaluate applicable liability provisions and statutory protections before purchase."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and Practices for All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Establishes inquiry standards relevant to specified CERCLA landowner protections, "
-                "including professional qualifications, required components, and timing."
-            ),
-        },
-        {
-            "title": "33 U.S.C. 1344 — Permits for Dredged or Fill Material",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": (
-                "Proposed discharges of dredged or fill material into jurisdictional waters may "
-                "require authorization; desktop wetland screening does not replace project-specific review."
-            ),
-        },
-        {
-            "title": "Texas Local Government Code 212.004 — Municipal Plat Requirements",
-            "url": "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.212.htm#212.004",
-            "relevance": (
-                "Provides a concrete municipal platting authority to examine when underwriting "
-                "Texas subdivisions, subject to the section's scope, exceptions, and related provisions."
-            ),
-        },
-        {
-            "title": "Texas Local Government Code 232.001 — County Plat Requirements",
-            "url": "https://statutes.capitol.texas.gov/Docs/LG/htm/LG.232.htm#232.001",
-            "relevance": (
-                "Requires jurisdiction-specific review of county subdivision requirements before "
-                "pricing proposed lots as separately saleable inventory."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 10130 — Real Estate License Requirement",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10130.&lawCode=BPC",
-            "relevance": (
-                "Establishes California's licensing requirement for covered real estate brokerage "
-                "activity; principal land trading does not authorize representing others."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 10131 — Real Estate Broker Activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10131.&lawCode=BPC",
-            "relevance": (
-                "Defines covered activities performed for another for compensation or expected "
-                "compensation, supporting a clear boundary between owned inventory and brokerage services."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'vol018-q04-data-tools-and-list-building',
+ 'question_prompt': 'Where do I get landowner data, and how do I build and filter the right list before I '
+                    'market?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Data Tools and List Building',
+ 'subtitle': 'DataTree, TitlePro, and RealQuest Pro compared, parcel tagging, PRYCD process flow, list '
+             'upload, and out-of-county owner maps, PropStream for land, county GIS and parcel viewers, '
+             'public-record data basics, SiteFact reports, and pulling tax-delinquent and off-market lists',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land and wholesale operators converge on one rule: build the list by stacking cheap '
+                      'public-record filters until only unlisted, long-held, absentee owners remain, then '
+                      'price and verify every parcel before a dollar goes to mail. DataTree, PropStream, '
+                      'RealQuest, TitlePro, PRYCD and free county GIS all draw on the same county tax-roll '
+                      'backbone keyed to the APN. The street mechanics are numeric. Setting improvement '
+                      'value to zero isolates raw land. DataTree records run 10 cents each, and PRYCD '
+                      'priced 300 records for $24. PropStream cut 82,328 Lehigh Acres lots to 1,250, and '
+                      'vacant-land mail pulls 2-5% response at $0.79 a piece. Operators split on equity '
+                      'filters (none to 99%), hold periods (2 to 10-plus years), RealQuest versus '
+                      'DataTree, texting versus mail, and whether niche lists are too small to work.',
+ 'key_metrics': [{'label': 'Vacant Land Direct Mail Response Rate',
+                  'metric': 'Vacant Land Direct Mail Response Rate',
+                  'value': '2-5% for vacant land versus 0.5-1% for residential, commercial and multifamily',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Matt reports these response rates from hundreds of deals sourced through '
+                             'direct mail alone, so 2,000 letters at 1% equals 20 owners.',
+                  'source': 'MS Partners LLC ([hemWETr8VGg @ 00:00:34])'},
+                 {'label': 'DataTree Per-Record Export Cost',
+                  'metric': 'DataTree Per-Record Export Cost',
+                  'value': '$0.10 per record with membership',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ron pays this rate for Boulder County raw-land exports, and removing '
+                             'duplicate owners lowers the charge.',
+                  'source': 'Apke Brothers ([tZnXE47jWp4 @ 00:06:34])'},
+                 {'label': 'PRYCD Priced-List Cost',
+                  'metric': 'PRYCD Priced-List Cost',
+                  'value': '300 records for $24',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Max Edson's analysis-page purchase includes the offer price at a 25% default "
+                             'slider, with counter-offer increments from 5-95%.',
+                  'source': 'PRYCD ([7jGQIvwqBwc @ 00:20:36])'},
+                 {'label': 'Cold Call Lead-to-Deal KPI',
+                  'metric': 'Cold Call Lead-to-Deal KPI',
+                  'value': '1,000 calls = about 1 lead; 30 leads = about 1 deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Dier uses this ratio to justify pulling 10,000 records and calling each '
+                             'three times on a 14-line dialer.',
+                  'source': 'Maximilian Dier ([KmEcpx-t8YM @ 00:01:55])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every paid list tool in this chapter is a front end on the same raw '
+                              'material: the county tax roll. DataTree by First American lays out the '
+                              'backbone. Each of 3,144 counties produces a tax roll, and the APN works '
+                              'like a Social Security number for the parcel. It carries land use, zoning, '
+                              'acreage, frontage and depth, utilities, ownership, vesting, five types of '
+                              'value, and tax fields down to the delinquent year [EmWzMGDpkTY @ 00:01:13]. '
+                              'Stephen Jack Butala and Jill DeWit of Land Academy, licensed on DataTree, '
+                              'TitlePro and RealQuest Pro, say all three serve the same purpose and now '
+                              'all deliver decades of deeds and mortgages [CbpqiGq5E5Y @ 00:09:33]. That '
+                              'is why the free layer matters too. Luke Harris of The Farm Finders, '
+                              'featured by Country Land Sellers, searches county GIS by tax account number '
+                              "for tax history, balance and boundary coordinates. To find any county's "
+                              'map, Harris Googles the county, state and GIS, then tries portal, tax lot '
+                              'finder or zoning map [6qNh515jvww @ 00:06:16]. Joséphine Saffert works the '
+                              "same way on Metro Nashville's parcel viewer. Saffert searches by address or "
+                              'owner, then reads frontage, overlays, floodplain and contours before a deal '
+                              'moves [_kxaCpUojPw @ 00:00:42]. The consensus is that paid tools buy speed, '
+                              'bulk export and mapping, not a different underlying truth about the parcel '
+                              'or its owner.',
+                              'The second point of agreement is the target owner. Across land and house '
+                              'lists, operators strip out anything listed, anything corporate and anyone '
+                              "who bought recently, then lean into distance and tenure. Great Lands LLC's "
+                              'PropStream walk-through insists on unlisted property. It then filters for '
+                              'individual owners who have held at least 10 years, people who have owned '
+                              'land a long time and are tired of it, followed by out-of-state absentee '
+                              'owners [Mdkx15sX_XM @ 00:05:19]. Max Edson of PRYCD builds a whole '
+                              'county-level map on the same theory. Out-of-county owner records are '
+                              'divided by total county parcels, because distant owners sell more readily, '
+                              'and the map is filtered to counties at 40% or higher [mhHvzO1O8To @ '
+                              '00:00:52]. On the house side, Lauren Hardy of The Well Entrepreneur drops '
+                              'owner-occupants because they ride it out. Hardy keeps individuals and '
+                              'trusts only, the mom and pops, and cuts LLCs [p_LcZVcrC3U @ 00:04:31]. '
+                              "Maximilian Dier's core Dallas pull is single-family, absentee, individual "
+                              "owner, seven-plus years owned, 30% equity and built 2010 or earlier. Dier's "
+                              'reasoning is that absentee owners are inherited, out-of-state or tired '
+                              'landlords [KmEcpx-t8YM @ 00:00:41]. The filters differ in degree, but the '
+                              'profile is the same: an owner who is far away, has held for years, and is '
+                              'not already working with an agent or listing the parcel.',
+                              'The third consensus is that list building is a numbers game backed by hard '
+                              'verification. Matt of MS Partners LLC reports hundreds of deals from direct '
+                              'mail alone. Matt puts residential, commercial and multifamily response at '
+                              '0.5-1% and vacant land at 2-5%, so 2,000 letters at 1% yields 20 owners. '
+                              'The secret is consistency: do not quit after 200 letters [hemWETr8VGg @ '
+                              '00:01:14]. Maximilian Dier runs the same math on phones. Usually 1,000 '
+                              'calls produce one lead and 30 leads produce one deal, so the play is to '
+                              'pull 10,000 records, call each three times, and treat skip-trace quality as '
+                              'critical [KmEcpx-t8YM @ 00:01:55]. Volume only pays if the parcel survives '
+                              'scrutiny. Don Healy, speaking with Seth on the REtipster podcast, frames '
+                              'land as a war of due diligence. Whatever the end buyer will find that could '
+                              'trip the deal, the investor wants to know first [IS6mrT0hkGw @ 00:09:56]. '
+                              "Healy's two always-check items are zoning for intended use and soils plus "
+                              'slope. On zoning, Healy points to EFU land carrying an 80-acre minimum lot '
+                              'size [IS6mrT0hkGw @ 00:34:49]. Healy adds that a confirmed no is almost as '
+                              'valuable as a yes, because it kills a bad offer before money moves and '
+                              'before a buyer discovers the problem [IS6mrT0hkGw @ 00:33:41].'],
+               'table': {'caption': 'Where the list-building practitioners agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Actually Do',
+                                     'Why It Matters To The Operator',
+                                     'Expert Source'],
+                         'rows': [['All list tools sit on county tax rolls',
+                                   'Pull APN-keyed records covering land use, zoning, acreage, ownership '
+                                   'and delinquent tax year',
+                                   'Every paid platform resells the same 3,144-county public record '
+                                   'backbone',
+                                   'DataTree by First American ([EmWzMGDpkTY @ 00:01:13])'],
+                                  ['DataTree, TitlePro and RealQuest serve one purpose',
+                                   'Licensed providers use all three to pull deeds, mortgages and owner '
+                                   'data',
+                                   'Tool choice comes down to format and features, not unique data access',
+                                   'Land Academy ([CbpqiGq5E5Y @ 00:09:33])'],
+                                  ['Raw land means zero assessed improvement value',
+                                   'Set assessed improvement value to zero after the acreage filter is '
+                                   'applied',
+                                   'The Boulder County 5-5.5 acre pull dropped from 714 results to 309',
+                                   'Apke Brothers ([tZnXE47jWp4 @ 00:02:39])'],
+                                  ['Target unlisted, long-held, out-of-state individual owners first',
+                                   'Filter off-market, individual owners holding ten years, then '
+                                   'out-of-state absentee owners',
+                                   'Owners who have held land a long time are tired of it',
+                                   'Great Lands LLC ([Mdkx15sX_XM @ 00:05:19])'],
+                                  ['Owner distance from the parcel predicts willingness to sell',
+                                   'Map out-of-county owners divided by total parcels and keep counties at '
+                                   '40%+',
+                                   'Darker counties on the map carry more absentee owners worth mailing',
+                                   'PRYCD ([mhHvzO1O8To @ 00:00:52])'],
+                                  ['Free county GIS verifies every parcel before an offer',
+                                   'Search by tax account number, then check tax balance, boundaries, '
+                                   'neighbors and road access',
+                                   'One parcel that looked fine on paper lacked real road access on '
+                                   'aerials',
+                                   'Country Land Sellers ([6qNh515jvww @ 00:03:48])'],
+                                  ['Consistency beats any single campaign result in direct mail',
+                                   'Mail repeatedly to the same list and do not quit after 200 letters',
+                                   'Vacant land mail returns 2-5% while residential returns only 0.5-1%',
+                                   'MS Partners LLC ([hemWETr8VGg @ 00:00:34])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The Apke Brothers' DataTree demo runs Boulder County, Colorado. A lot "
+                              'acreage filter of 5 to 5.5 returns 714 results, including houses. Setting '
+                              'assessed improvement value to zero strips that to 309 raw-land parcels '
+                              '[tZnXE47jWp4 @ 00:02:39]. Under 1,000 results, the set displays on the map '
+                              'with parcel, terrain, owner-name and APN layers. MLS recently-sold and '
+                              'for-sale neighbors also show, including one listed at $1.4 million '
+                              '[tZnXE47jWp4 @ 00:03:18]. Records cost 10 cents each with membership. '
+                              'Removing duplicate owners lowers the charge, though the deduped count is '
+                              'not shown before you pay [tZnXE47jWp4 @ 00:07:14]. Land Academy credits '
+                              'DataTree with mapping and book-and-page documents on top of the core record '
+                              'pull [CbpqiGq5E5Y @ 00:10:39]. For narrow, hand-picked targets, Seth of '
+                              'REtipster skips Advanced Search and uses parcel tagging. The sequence is '
+                              'More Map, the pencil icon, Freehand, mark each parcel, then Apply, Less Map '
+                              "and Export [oJpqcR4iFy8 @ 00:01:48]. Seth's example was 5-plus-acre "
+                              'self-storage sites in Millington, Michigan. Seth is willing to offer high '
+                              'there because the plan is to entitle or rezone. A small town produces 20 to '
+                              '40 properties, which then get skip traced for texting or calling '
+                              '[oJpqcR4iFy8 @ 00:03:29]. The same tagging works for lakes, mountainsides '
+                              'or specific roads [oJpqcR4iFy8 @ 00:04:47].',
+                              "PRYCD turns the pull into a priced offer file. Max Edson's process starts "
+                              'on the research page, which holds 1M-plus comps from Zillow, LandWatch, '
+                              'Lands of America and LandFlip. Counties are ranked by sold-to-for-sale '
+                              'ratio and parcels-on-market. In Colorado, filtering to population under 20 '
+                              'per square mile and parcels-on-market under .05 left six counties '
+                              "[7jGQIvwqBwc @ 00:05:19]. On the search page, Costilla County's 39,785 "
+                              'records get a 20-100 acre range, with the top typed as 100.01 to avoid '
+                              'rounding to 99.99. Residential codes require improvement value of zero. '
+                              'Corporate and do-not-mail owners are excluded, and flood codes and active '
+                              'or pending listings are dropped. The result is 1,930 records [7jGQIvwqBwc @ '
+                              '00:12:32]. The offer slider defaults to 25% and can be overridden manually, '
+                              'and 300 records cost $24. The raw file carries 240-plus columns, and scrub '
+                              'filters remove on average 0.5% churches and 4.4% government owners. Five '
+                              'files then arrive, and the scrub file is the one that gets mailed '
+                              '[7jGQIvwqBwc @ 00:20:36]. Outside lists plug in too. Edson uploaded 1,359 '
+                              'records, smart-tagged county, state and acreage, and changed the default '
+                              '30% discount to 25%. The output added five columns feeding a blind-offer '
+                              'letter, plus a Google Earth KML of owners and comps [3kN1hBRUqVU @ '
+                              '00:02:51].',
+                              'PropStream is the house tool that land operators bend to fit. Great Lands '
+                              'LLC ran a Lehigh Acres, Florida funnel in steps. Residential vacant land '
+                              'returned 82,328 records, and not on market left about 80,000. Individual '
+                              'owners holding 10-plus years left about 44,000, and out-of-state absentee '
+                              'owners about 20,000. Assessed value at or under $5,000 cut it to 17,000, '
+                              '99% equity to 16,000, and last sale at or under $5,000 to 1,250 '
+                              '[Mdkx15sX_XM @ 00:10:07]. Comps get narrowed to a quarter mile with houses '
+                              'removed. The offer rule is double your money: a lot bought for $3,000 in '
+                              '2004 gets a $1,500 offer, $2,000 max, and deed documents cost $5 '
+                              "[Mdkx15sX_XM @ 00:12:48]. Lauren Hardy cut Albuquerque's 12,000 "
+                              "tax-delinquent records to a 565-record final list. Hardy's plan is 10,000 "
+                              'records a month for $99, then export to BatchLeads [p_LcZVcrC3U @ '
+                              '00:06:30]. Zach Ginn, with 1,000-plus wholesale deals, gets the '
+                              'tax-delinquent list free from the county clerk, appraiser or assessor. Ginn '
+                              'files a FOIA request if refused and asks for Excel to dodge page fees. '
+                              'TruePeopleSearch is the free skip-trace option [3VKazhO11yk @ 00:04:37]. '
+                              'For delivery, Matt pays Land of Enchantment Direct Mail $0.79 per piece, '
+                              'including letter, envelope and postage [hemWETr8VGg @ 00:01:50].'],
+               'table': {'caption': 'Exact filters, settings and costs reported on the street',
+                         'headers': ['Tool Or Step',
+                                     'Exact Setting Or Number',
+                                     'Operator Result Reported',
+                                     'Expert Source'],
+                         'rows': [['DataTree raw-land acreage filter in Boulder County',
+                                   'Lot acreage 5 to 5.5 plus improvement value set to zero',
+                                   '714 mixed results cut to 309 raw-land parcels on the map',
+                                   'Apke Brothers ([tZnXE47jWp4 @ 00:02:39])'],
+                                  ['DataTree parcel tagging for hand-picked small-town lists',
+                                   'More Map, pencil, Freehand, mark parcels, Apply, Less Map, Export',
+                                   '20 to 40 properties per small town, then skip traced',
+                                   'REtipster ([oJpqcR4iFy8 @ 00:04:00])'],
+                                  ['PRYCD county search with acreage and exclusion filters',
+                                   '20 to 100.01 acres with corporate, do-not-mail, flood and listed '
+                                   'parcels excluded',
+                                   "Costilla County's 39,785 records reduced to 1,930 mailable records",
+                                   'PRYCD ([7jGQIvwqBwc @ 00:12:32])'],
+                                  ['PRYCD analysis pricing and scrub before mailing the file',
+                                   'Offer slider at 25 percent, with 300 records priced for $24',
+                                   'Scrub removes roughly 0.5% churches and 4.4% government owners',
+                                   'PRYCD ([7jGQIvwqBwc @ 00:23:01])'],
+                                  ['PropStream vacant land funnel in Lehigh Acres, Florida',
+                                   'Unlisted, individual, 10+ years, out-of-state, with assessed value and '
+                                   'last sale under $5,000',
+                                   '82,328 vacant lots narrowed to 1,250 targeted owner records',
+                                   'Great Lands LLC ([Mdkx15sX_XM @ 00:10:07])'],
+                                  ['Free county tax-delinquent list requested from county staff',
+                                   'Private citizen research line, FOIA if refused, and an Excel copy '
+                                   'requested',
+                                   'Free digital list instead of paying per-page printing fees',
+                                   'Zach Ginn ([3VKazhO11yk @ 00:04:37])'],
+                                  ['Direct mail fulfillment cost per vacant land piece',
+                                   '$0.79 including letter, envelope and postage via Land of Enchantment',
+                                   'Vacant land mail pulls 2-5% response versus 0.5-1% for residential',
+                                   'MS Partners LLC ([hemWETr8VGg @ 00:01:50])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small settings that change list quality and cost',
+                           'body': 'These are the keystroke-level moves practitioners use to keep records '
+                                   'clean and spend down before the first letter drops.',
+                           'items': ['Type 100.01 rather than 100 as the top of an acreage range so the '
+                                     'filter does not round to 99.99 and drop parcels [PRYCD — 7jGQIvwqBwc '
+                                     '@ 00:07:50].',
+                                     'Dedupe owners on DataTree before buying to lower the per-record '
+                                     'charge, knowing the deduped count is not shown in advance [Apke '
+                                     'Brothers — tZnXE47jWp4 @ 00:07:14].',
+                                     'When a county clerk resists, say you are a private tax-paying '
+                                     'citizen doing private independent research, and request the file in '
+                                     'Excel [Zach Ginn — 3VKazhO11yk @ 00:04:24].',
+                                     "Skip PropStream's improvement-value and estimated-value filters on "
+                                     'land pulls, because Great Lands found them poorly populated or '
+                                     'broken [Great Lands LLC — Mdkx15sX_XM @ 00:08:52].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the county',
+                              'action': 'Screen counties by absentee ratio and market velocity before '
+                                        'pulling a single record.',
+                              'detail': 'Use the out-of-county owner ratio map and keep counties at 40% or '
+                                        'higher [PRYCD — mhHvzO1O8To @ 00:00:52]. Then filter the research '
+                                        'page to population under 20 per square mile and parcels-on-market '
+                                        'under .05, which left six Colorado counties [PRYCD — 7jGQIvwqBwc '
+                                        '@ 00:05:19].'},
+                             {'step': 2,
+                              'title': 'Pull raw land owners',
+                              'action': 'Stack acreage, zero improvement value, unlisted status, tenure '
+                                        'and absentee filters.',
+                              'detail': 'Set acreage, then set improvement value to zero to isolate raw '
+                                        'land, as Boulder County went from 714 to 309 [Apke Brothers — '
+                                        'tZnXE47jWp4 @ 00:02:39]. Then require unlisted, individual owners '
+                                        'holding 10+ years and out-of-state, as in Lehigh Acres going from '
+                                        '82,328 to 1,250 [Great Lands LLC — Mdkx15sX_XM @ 00:10:07].'},
+                             {'step': 3,
+                              'title': 'Price the list',
+                              'action': 'Upload the export, map county, state and acreage, and set the '
+                                        'discount.',
+                              'detail': 'Upload any DataTree, RealQuest Pro or assessor list and change '
+                                        'the default 30% discount to 25%. This appends market price, '
+                                        'market price per acre, offer price, offer price per acre and '
+                                        'source columns for a blind-offer letter [PRYCD — 3kN1hBRUqVU @ '
+                                        '00:01:50].'},
+                             {'step': 4,
+                              'title': 'Verify and mail',
+                              'action': 'Check GIS access and tax balance, then mail consistently at a '
+                                        'known per-piece cost.',
+                              'detail': 'Confirm tax balance, boundaries and real road access on county '
+                                        'GIS aerials and Street View [Country Land Sellers — 6qNh515jvww @ '
+                                        '00:03:48]. Then mail at $0.79 per piece and keep mailing past the '
+                                        'first 200 letters [MS Partners LLC — hemWETr8VGg @ 00:01:14].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["Land Academy's Jill DeWit and Stephen Jack Butala hold licenses for "
+                              'DataTree, TitlePro, and RealQuest, and they still split on which one '
+                              "belongs in a land operator's stack. Jack rarely touches RealQuest and calls "
+                              'DataTree the 21st century answer to pulling land and house data and then '
+                              'visually seeing it. Jill calls RealQuest best for land because its export '
+                              'format stays consistent, while DataTree columns shift county by county and '
+                              'break a multi-county mailer merge [CbpqiGq5E5Y @ 00:11:10]. The Apke '
+                              "Brothers lean into DataTree's map side: once a raw-land search drops below "
+                              '1,000 results, the whole list plots on the map with parcel, terrain, '
+                              'owner-name, and APN layers stacked on top [tZnXE47jWp4 @ 00:03:18]. Great '
+                              'Lands LLC runs land through PropStream instead, conceding the platform is '
+                              'specialized in houses but arguing that the land data and built-in comps '
+                              "carry the workflow [Mdkx15sX_XM @ 00:01:45]. PRYCD's Max Edson sidesteps "
+                              'the platform fight entirely: pull a list from DataTree, RealQuest Pro, or a '
+                              'county assessor file, then upload it so PRYCD appends market price, offer '
+                              'price, and a campaign map regardless of where the records came from '
+                              '[3kN1hBRUqVU @ 00:00:14]. The real split is format consistency versus '
+                              'visual mapping versus pricing layered on top of any source.',
+                              'Filter depth is where the list builders openly contradict each other. '
+                              'Maximilian Dier stacks absentee, individual owner, seven-plus years owned, '
+                              'and equity, calling 30% the magic number and reasoning that people sell '
+                              'every 7 to 10 years [KmEcpx-t8YM @ 00:04:58]. Great Lands LLC goes far '
+                              'harder on land in Lehigh Acres: individual owners holding at least 10 years '
+                              'to reach people tired of the lot, then 99% equity, then last sale at or '
+                              'under $5,000, shrinking 82,328 residential vacant parcels down to 1,250 '
+                              '[Mdkx15sX_XM @ 00:10:07]. Lauren Hardy refuses the equity filter outright '
+                              'because it is often wrong, sets ownership at four years, keeps individuals '
+                              'and trusts only to reach the mom and pops, and warns that stacking vacant '
+                              'on top of tax delinquent collapses Albuquerque to 269 records [p_LcZVcrC3U '
+                              '@ 00:02:04]. Ryan Dossey runs the loosest version for agents: equity of '
+                              'only 10 to 15% versus the 35 to 100% investors use, ownership of just two '
+                              'years, and a trust-owned filter that landed 3,361 West Jordan homes before '
+                              "trimming to roughly 300 actually mailed [1VVAkFWqVKE @ 00:02:42]. Hardy's "
+                              'tiebreaker is blunt: when in doubt, a bigger list beats a smaller list, '
+                              'because over-stacking makes the list tiny.',
+                              'The outreach channel and list size arguments run in parallel. Zach Ginn '
+                              'works tax-delinquent lists by call, text, and mail but gives texting a '
+                              'slight edge over cold calling, and the script never mentions the taxes, '
+                              'leading instead with the me-and-my-partner-are-buying-in-the-area line '
+                              '[3VKazhO11yk @ 00:06:41]. Matt at MS Partners LLC built hundreds of deals '
+                              'on direct mail alone, quoting 0.5 to 1% response on residential, '
+                              'commercial, and multifamily versus 2 to 5% on vacant land, and pointing to '
+                              'the physical piece that some owners hold onto and call about a year later '
+                              '[hemWETr8VGg @ 00:00:34]. Dier pushes pure volume from the other direction: '
+                              'niche lists like 11 zombie properties or 608 tax delinquent records are too '
+                              'small to feed a dialer, so pull 10,000 records and call each one three '
+                              "times [KmEcpx-t8YM @ 00:01:39]. REtipster's Seth runs the opposite play, "
+                              'skipping Advanced Search and freehand-tagging 20 to 40 parcels in a small '
+                              'Michigan town for 5-plus acre self-storage sites, willing to offer high '
+                              'because the exit is entitlement or rezoning [oJpqcR4iFy8 @ 00:02:47]. '
+                              'Volume callers need thousands of dials; hand-taggers need conviction on a '
+                              'handful of parcels, then a skip trace to text or call each owner directly.'],
+               'table': {'caption': 'Competing list-building playbooks reported by land and wholesale '
+                                    'practitioners',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which data platform should feed a multi-county land mailer',
+                                   'Jill DeWit picks RealQuest because its export format stays consistent '
+                                   'across counties',
+                                   'DataTree adds mapping and book and page documents, but its columns '
+                                   'vary by county',
+                                   'Land Academy ([CbpqiGq5E5Y @ 00:11:10])'],
+                                  ['How narrow the target box should be for niche exits',
+                                   'Seth freehand-tags 20 to 40 parcels in one small town for self-storage '
+                                   'sites',
+                                   'Advanced Search filters pull broad county lists when the target box is '
+                                   'not that narrow',
+                                   'REtipster ([oJpqcR4iFy8 @ 00:00:23])'],
+                                  ['Whether to stack an equity filter on the list at all',
+                                   'Maximilian Dier requires at least 30% equity and calls it the magic '
+                                   'number',
+                                   'Lauren Hardy skips the equity filter entirely because the field is '
+                                   'often wrong',
+                                   'Maximilian Dier ([KmEcpx-t8YM @ 00:04:58])'],
+                                  ['Minimum years of ownership before an owner gets marketed',
+                                   'Great Lands LLC sets at least 10 years to reach owners tired of their '
+                                   'land',
+                                   'Ryan Dossey uses only two years owned on an agent listing mail '
+                                   'campaign',
+                                   'Great Lands LLC ([Mdkx15sX_XM @ 00:05:19])'],
+                                  ['Primary outreach channel for a fresh distressed owner list',
+                                   'Zach Ginn gives texting a slight edge over cold calling tax-delinquent '
+                                   'owners',
+                                   'Matt at MS Partners LLC reports 2 to 5% direct mail response on vacant '
+                                   'land',
+                                   'Zach Ginn ([3VKazhO11yk @ 00:06:41])'],
+                                  ['How deep to discount the blind offer price on each parcel',
+                                   'PRYCD analysis slider defaults to 25% with a manual override to exact '
+                                   'figures',
+                                   'Great Lands LLC doubles its money, offering $1,500 with a $2,000 '
+                                   'maximum on a lot',
+                                   'PRYCD ([7jGQIvwqBwc @ 00:17:40])'],
+                                  ['Big volume list versus small niche list for the first campaign',
+                                   'Lauren Hardy would rather have a bigger list than a smaller list when '
+                                   'in doubt',
+                                   'Dier calls niche lists too small yet still says pre-foreclosures are '
+                                   'the way',
+                                   'The Well Entrepreneur ([p_LcZVcrC3U @ 00:05:09])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common self-inflicted loss is trusting a data field that was never '
+                              "populated correctly. Great Lands LLC tested PropStream's improvement-value "
+                              'and estimated-value filters live and found them poorly populated or flatly '
+                              'broken, so the raw-land screen had to lean on assessed value of $5,000 or '
+                              'less and last sale price instead [Mdkx15sX_XM @ 00:08:52]. Lauren Hardy '
+                              'calls the data tricky: MLS and pre-foreclosure filters come from '
+                              'data-mining firms, East Coast records are error-prone, and equity gets '
+                              'skipped because it is so often wrong, even though Hardy later calls the '
+                              'remaining data super accurate [p_LcZVcrC3U @ 00:03:36]. Country Land '
+                              'Sellers flags timing rot on the county side: GIS ownership lags roughly a '
+                              'month, the Recorder is the most current source, and the Assessor updates '
+                              'only afterward, so an owner name on the map may already be stale when the '
+                              'letter prints [6qNh515jvww @ 00:04:53]. Don Healy sees the same problem at '
+                              'scale, with CoreLogic and Regrid data packages dated enough that recent '
+                              'partitions do not match the ground, and jurisdiction PDFs sometimes '
+                              'contradicting the GIS layers they are supposed to back up [IS6mrT0hkGw @ '
+                              '00:27:32]. Every field that drives a filter or a price needs a second '
+                              'source behind it before money goes out the door.',
+                              'The expensive failures arrive after the contract, when a lot that looked '
+                              'clean turns out to be hobbled. Don Healy warns that a county saying '
+                              'buildable may mean buildable only under a conditional use, that utilities '
+                              'available can mean a 300-foot mainline extension, and that resource zones '
+                              'once imposed 100-foot setbacks on three sides, leaving a lot darn near '
+                              'unbuildable; Seth no longer calls listings buildable at all [IS6mrT0hkGw @ '
+                              "00:15:38]. Healy's landslide case carried a clean seller disclosure, yet "
+                              'the assessor code read unbuildable and a title note pointed to a slide, '
+                              'forcing helical piles and a geotech review before anything could go up '
+                              '[IS6mrT0hkGw @ 00:17:57]. Luke Harris used the aerial basemap and Street '
+                              'View to catch a parcel that had no real road access, the kind of flaw that '
+                              'never shows on a spreadsheet export [6qNh515jvww @ 00:03:48]. Joséphine '
+                              'Saffert reads floodplain layers and contour lines on a Nashville lot, '
+                              'tracking roughly a 10-foot drop from 524 to 502 and circling the low '
+                              'drainage point before ever touring in person [_kxaCpUojPw @ 00:04:03]. '
+                              "Healy's pricing rule follows directly: an 18-month, $40,000 approval "
+                              "process has to come out of the offer, and a listing that says buyer's due "
+                              'diligence is a red flag.',
+                              'The unit economics punish anyone who quits early or misreads the bill. '
+                              "Dier's cold-calling math runs 1,000 calls to one lead and 30 leads to one "
+                              'deal, which is why Dier pulls 10,000 records, calls each three times, and '
+                              'runs Enzo Dialer on 14 lines at about 2,000 calls a day [KmEcpx-t8YM @ '
+                              '00:01:55]. Matt prices mail at $0.79 per piece through Land of Enchantment '
+                              'Direct Mail, with letter, envelope, and postage included, and says the '
+                              'secret is consistency because it is a numbers game: operators who quit '
+                              'after 200 letters never see the response math play out [hemWETr8VGg @ '
+                              '00:01:14]. The Apke Brothers flag a billing trap inside DataTree: records '
+                              'cost 10 cents each with membership, and removing duplicate owners lowers '
+                              'the charge, but the deduplicated count is not shown before purchase, so the '
+                              "true bill stays hidden until checkout [tZnXE47jWp4 @ 00:07:14]. PRYCD's Max "
+                              'Edson reminds operators that the analysis rank reflects pricing confidence, '
+                              'not the best place to mail, that the scrub file strips church and '
+                              'government owners at averages of 0.5% and 4.4%, and that 300 priced records '
+                              'cost $24 before a single stamp is bought [7jGQIvwqBwc @ 00:13:45].'],
+               'table': {'caption': 'Firsthand data, buildability, and cost traps with the practitioner '
+                                    'fix',
+                         'headers': ['Trap', 'What Went Wrong', 'Operator Check', 'Expert Source'],
+                         'rows': [['PropStream improvement and estimated value filters returning bad '
+                                   'counts',
+                                   'Great Lands LLC found both fields poorly populated or broken '
+                                   'mid-search',
+                                   'Screen raw land with assessed value at or under $5,000 and last sale '
+                                   'price',
+                                   'Great Lands LLC ([Mdkx15sX_XM @ 00:08:52])'],
+                                  ['County staff calling a parcel buildable over the phone',
+                                   'Buildable meant buildable only under a conditional use on that parcel',
+                                   'Send the county template questions because different staff give '
+                                   'different answers',
+                                   'REtipster ([IS6mrT0hkGw @ 00:15:38])'],
+                                  ['Trusting county GIS owner names for a fresh mailing',
+                                   'County GIS ownership updates lag roughly a month behind recorded deeds',
+                                   'Check the Recorder first because the Assessor only updates afterward',
+                                   'Country Land Sellers ([6qNh515jvww @ 00:01:47])'],
+                                  ['Paying DataTree for duplicate owner records on an export',
+                                   'The deduplicated owner count is not shown before the export charge '
+                                   'posts',
+                                   'Remove duplicate owners every time since it lowers the 10 cent per '
+                                   'record charge',
+                                   'Apke Brothers ([tZnXE47jWp4 @ 00:07:14])'],
+                                  ['Over-stacking distress filters into a tiny unusable list',
+                                   'Vacant plus tax delinquent shrank Albuquerque from 12,000 down to 269 '
+                                   'records',
+                                   'Target roughly 6,000 records and keep the 269 stacked list for '
+                                   'door-knocking',
+                                   'The Well Entrepreneur ([p_LcZVcrC3U @ 00:02:04])'],
+                                  ['Title work stalling the closing calendar on land deals',
+                                   'Closings stretched from 10 days to 15 to 20 days on title plant '
+                                   'backlog',
+                                   'Call twice a week, agree a date, repeat it in every email, and send '
+                                   'treats',
+                                   'Land Academy ([CbpqiGq5E5Y @ 00:01:55])'],
+                                  ['Reading the PRYCD county rank as a mailing priority',
+                                   'Rank reflects pricing confidence in the model, not the best place to '
+                                   'mail',
+                                   'Use rank only to gauge pricing confidence and apply city pricing '
+                                   'explicitly',
+                                   'PRYCD ([7jGQIvwqBwc @ 00:13:45])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Spend Data and Buildability Gate',
+                           'body': 'Clear these four checks before paying for records, mailing a list, or '
+                                   'signing a purchase contract on raw land.',
+                           'items': ['Confirm the raw-land screen actually works on your platform: '
+                                     'residential land-use codes need improvement value set to 0, and '
+                                     "PropStream's improvement-value field may be poorly populated [PRYCD "
+                                     '— 7jGQIvwqBwc @ 00:09:40].',
+                                     'Verify zoning for the intended use plus soils and slope on every '
+                                     'parcel, since EFU land carries an 80-acre minimum lot size '
+                                     '[REtipster — IS6mrT0hkGw @ 00:34:49].',
+                                     'Pull ownership from the Recorder rather than the Assessor or GIS '
+                                     'layer, which update later and can be stale [Country Land Sellers — '
+                                     '6qNh515jvww @ 00:04:53].',
+                                     'Budget for volume before launching: 1,000 calls per lead and 30 '
+                                     'leads per deal, with each record dialed three times [Maximilian Dier '
+                                     '— KmEcpx-t8YM @ 00:01:55].']}}],
+ 'pull_quote': '"But a confirmed no is almost as valuable as a yes." — Don Healy on REtipster (IS6mrT0hkGw '
+               '@ 00:33:41).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Shortlist counties on the PRYCD research page by filtering population under 20 per '
+                      'square mile, then parcels-on-market under .05 [PRYCD — 7jGQIvwqBwc @ 00:04:32].',
+                      'Isolate raw land in DataTree by setting assessed improvement value to 0, then keep '
+                      'the result under 1,000 so it plots on the map [Apke Brothers — tZnXE47jWp4 @ '
+                      '00:02:39].',
+                      'Exclude corporate and do-not-mail owners, filter flood codes, and drop active and '
+                      'pending listings before pricing the list [PRYCD — 7jGQIvwqBwc @ 00:10:09].',
+                      'Request the tax-delinquent list free from the county as a private citizen doing '
+                      'independent research, file a FOIA if refused, and ask for Excel to avoid page fees '
+                      '[Zach Ginn — 3VKazhO11yk @ 00:04:37].',
+                      'Upload the list to PRYCD, map county, state, and acreage, and set the offer '
+                      'discount, for example from the 30% default to 25% [PRYCD — 3kN1hBRUqVU @ 00:01:50].',
+                      'Order the Site Facts report at the start of a 30-day due diligence period on lots '
+                      'above roughly $50K, especially builder exits [REtipster — IS6mrT0hkGw @ 00:10:08].'],
+ 'statutory_citations': [{'title': 'REtipster — The Report That Gives Land Investors an Unfair Advantage '
+                                   'w/ Don Healy | REtipster Podcast 258 [00:09:56]',
+                          'url': 'https://www.youtube.com/watch?v=IS6mrT0hkGw&t=596s',
+                          'relevance': 'Primary practitioner testimony on early-stage buildability due '
+                                       'diligence and the deal-killing traps in county and listing data.'},
+                         {'title': 'Land Academy — DataTree vs TitlePro vs RealQuest Pro (LA 1422) '
+                                   '[00:11:10]',
+                          'url': 'https://www.youtube.com/watch?v=CbpqiGq5E5Y&t=670s',
+                          'relevance': 'Primary practitioner testimony on choosing between DataTree, '
+                                       'TitlePro, and RealQuest for multi-county land mailers.'},
+                         {'title': 'PRYCD — PRYCD Land Step-By-Step Process Flow [00:04:32]',
+                          'url': 'https://www.youtube.com/watch?v=7jGQIvwqBwc&t=272s',
+                          'relevance': 'Primary practitioner testimony on county selection, list '
+                                       'filtering, offer pricing, and scrub files.'},
+                         {'title': 'Great Lands LLC — Propstream for Land Investors [00:03:14]',
+                          'url': 'https://www.youtube.com/watch?v=Mdkx15sX_XM&t=194s',
+                          'relevance': 'Primary practitioner testimony on a PropStream vacant-land filter '
+                                       'funnel, broken value fields, and comp-based offers.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'IS6mrT0hkGw',
+                       'title': 'The Report That Gives Land Investors an Unfair Advantage w/ Don Healy | '
+                                'REtipster Podcast 258',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'But a confirmed no is almost as valuable as a yes, if that makes sense.',
+                       'tip': 'But a confirmed no is almost as valuable as a yes, if that makes sense.',
+                       'timestamp': 2021,
+                       'timestamp_seconds': 2021,
+                       'timestamp_label': '[00:33:41]',
+                       'url': 'https://www.youtube.com/watch?v=IS6mrT0hkGw&t=2021s',
+                       'markdown': '[00:33:41](https://www.youtube.com/watch?v=IS6mrT0hkGw&t=2021s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IS6mrT0hkGw',
+                       'title': 'The Report That Gives Land Investors an Unfair Advantage w/ Don Healy | '
+                                'REtipster Podcast 258',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "You want to have the better due diligence to make sure that if there's "
+                               "something that buyer is going to find that's going to trip your whole deal "
+                               'up, you want to be aware of that before you get there.',
+                       'tip': "You want to have the better due diligence to make sure that if there's "
+                              "something that buyer is going to find that's going to trip your whole deal "
+                              'up, you want to be aware of that before you get there.',
+                       'timestamp': 596,
+                       'timestamp_seconds': 596,
+                       'timestamp_label': '[00:09:56]',
+                       'url': 'https://www.youtube.com/watch?v=IS6mrT0hkGw&t=596s',
+                       'markdown': '[00:09:56](https://www.youtube.com/watch?v=IS6mrT0hkGw&t=596s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tZnXE47jWp4',
+                       'title': 'Is Data Tree the Best Data Tool for Land Investing? (Review & Tutorial)',
+                       'channel': 'Apke Brothers',
+                       'author': 'Apke Brothers',
+                       'text': "I'm gonna hit zero so that's basically saying there's no improvements to "
+                               "the land, it's raw land.",
+                       'tip': "I'm gonna hit zero so that's basically saying there's no improvements to "
+                              "the land, it's raw land.",
+                       'timestamp': 159,
+                       'timestamp_seconds': 159,
+                       'timestamp_label': '[00:02:39]',
+                       'url': 'https://www.youtube.com/watch?v=tZnXE47jWp4&t=159s',
+                       'markdown': '[00:02:39](https://www.youtube.com/watch?v=tZnXE47jWp4&t=159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6qNh515jvww',
+                       'title': 'The Secret to researching land easily with County GIS!',
+                       'channel': 'Country Land Sellers',
+                       'author': 'Country Land Sellers',
+                       'text': "So the ownership information like I said isn't always super accurate and "
+                               'up to date on this system.',
+                       'tip': "So the ownership information like I said isn't always super accurate and up "
+                              'to date on this system.',
+                       'timestamp': 314,
+                       'timestamp_seconds': 314,
+                       'timestamp_label': '[00:05:14]',
+                       'url': 'https://www.youtube.com/watch?v=6qNh515jvww&t=314s',
+                       'markdown': '[00:05:14](https://www.youtube.com/watch?v=6qNh515jvww&t=314s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CbpqiGq5E5Y',
+                       'title': 'DataTree vs TitlePro vs RealQuest Pro (LA 1422)',
+                       'channel': 'Land Academy',
+                       'author': 'Land Academy',
+                       'text': 'Data tree is the 21st century answer to pulling land and house data, '
+                               'really any type of real estate data, and then visually seeing it.',
+                       'tip': 'Data tree is the 21st century answer to pulling land and house data, really '
+                              'any type of real estate data, and then visually seeing it.',
+                       'timestamp': 619,
+                       'timestamp_seconds': 619,
+                       'timestamp_label': '[00:10:19]',
+                       'url': 'https://www.youtube.com/watch?v=CbpqiGq5E5Y&t=619s',
+                       'markdown': '[00:10:19](https://www.youtube.com/watch?v=CbpqiGq5E5Y&t=619s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oJpqcR4iFy8',
+                       'title': 'How to Build a Hand-Picked List of Properties by “Parcel Tagging” on '
+                                'DataTree',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'Apply the tags, switch to Less Map, and export, which gives about 20 to 40 '
+                               'properties for a small town.',
+                       'tip': 'Apply the tags, switch to Less Map, and export, which gives about 20 to 40 '
+                              'properties for a small town.',
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=oJpqcR4iFy8&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=oJpqcR4iFy8&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mhHvzO1O8To',
+                       'title': 'PRYCD Out of County Owner to Total Parcel Ratio Map Example',
+                       'channel': 'PRYCD',
+                       'author': 'PRYCD',
+                       'text': 'Filter the map to counties where the out of county owner to total parcel '
+                               'ratio is 40% or higher.',
+                       'tip': 'Filter the map to counties where the out of county owner to total parcel '
+                              'ratio is 40% or higher.',
+                       'timestamp': 52,
+                       'timestamp_seconds': 52,
+                       'timestamp_label': '[00:00:52]',
+                       'url': 'https://www.youtube.com/watch?v=mhHvzO1O8To&t=52s',
+                       'markdown': '[00:00:52](https://www.youtube.com/watch?v=mhHvzO1O8To&t=52s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EmWzMGDpkTY',
+                       'title': 'Public Records Property Data: Data 101 Series | DataTree by First '
+                                'American',
+                       'channel': 'DataTree by First American',
+                       'author': 'DataTree by First American',
+                       'text': 'The APN works like a Social Security number for each parcel on the county '
+                               'tax roll.',
+                       'tip': 'The APN works like a Social Security number for each parcel on the county '
+                              'tax roll.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=EmWzMGDpkTY&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=EmWzMGDpkTY&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7jGQIvwqBwc',
+                       'title': 'PRYCD Land Step-By-Step Process Flow',
+                       'channel': 'PRYCD',
+                       'author': 'PRYCD',
+                       'text': 'The rank reflects confidence in the pricing, not the best place to mail.',
+                       'tip': 'The rank reflects confidence in the pricing, not the best place to mail.',
+                       'timestamp': 825,
+                       'timestamp_seconds': 825,
+                       'timestamp_label': '[00:13:45]',
+                       'url': 'https://www.youtube.com/watch?v=7jGQIvwqBwc&t=825s',
+                       'markdown': '[00:13:45](https://www.youtube.com/watch?v=7jGQIvwqBwc&t=825s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7jGQIvwqBwc',
+                       'title': 'PRYCD Land Step-By-Step Process Flow',
+                       'channel': 'PRYCD',
+                       'author': 'PRYCD',
+                       'text': 'The scrub filters remove on average about 0.5% church owners and 4.4% '
+                               'government owners.',
+                       'tip': 'The scrub filters remove on average about 0.5% church owners and 4.4% '
+                              'government owners.',
+                       'timestamp': 1381,
+                       'timestamp_seconds': 1381,
+                       'timestamp_label': '[00:23:01]',
+                       'url': 'https://www.youtube.com/watch?v=7jGQIvwqBwc&t=1381s',
+                       'markdown': '[00:23:01](https://www.youtube.com/watch?v=7jGQIvwqBwc&t=1381s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_kxaCpUojPw',
+                       'title': 'Parcel Viewer Tutorial: How To Find Land Deals Fast',
+                       'channel': 'Joséphine Saffert',
+                       'author': 'Joséphine Saffert',
+                       'text': 'Some tools are better than others. This one here is pretty good.',
+                       'tip': 'Some tools are better than others. This one here is pretty good.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=_kxaCpUojPw&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=_kxaCpUojPw&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Mdkx15sX_XM',
+                       'title': 'Propstream for Land Investors',
+                       'channel': 'Great Lands LLC',
+                       'author': 'Great Lands LLC',
+                       'text': 'So it sounds like this part is not well populated.',
+                       'tip': 'So it sounds like this part is not well populated.',
+                       'timestamp': 532,
+                       'timestamp_seconds': 532,
+                       'timestamp_label': '[00:08:52]',
+                       'url': 'https://www.youtube.com/watch?v=Mdkx15sX_XM&t=532s',
+                       'markdown': '[00:08:52](https://www.youtube.com/watch?v=Mdkx15sX_XM&t=532s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3kN1hBRUqVU',
+                       'title': 'PRYCD List Upload Example Video',
+                       'channel': 'PRYCD',
+                       'author': 'PRYCD',
+                       'text': "You can see that we've priced and mapped 1,359 out of 1,359, so this was a "
+                               'good pull.',
+                       'tip': "You can see that we've priced and mapped 1,359 out of 1,359, so this was a "
+                              'good pull.',
+                       'timestamp': 138,
+                       'timestamp_seconds': 138,
+                       'timestamp_label': '[00:02:18]',
+                       'url': 'https://www.youtube.com/watch?v=3kN1hBRUqVU&t=138s',
+                       'markdown': '[00:02:18](https://www.youtube.com/watch?v=3kN1hBRUqVU&t=138s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1VVAkFWqVKE',
+                       'title': 'How I Got 2 Listings from 1 Direct Mail Campaign (Step-by-Step Guide for '
+                                'Realtors)',
+                       'channel': 'Ryan Dossey',
+                       'author': 'Ryan Dossey',
+                       'text': "Now just setting proper expectations, it doesn't always happen that fast.",
+                       'tip': "Now just setting proper expectations, it doesn't always happen that fast.",
+                       'timestamp': 507,
+                       'timestamp_seconds': 507,
+                       'timestamp_label': '[00:08:27]',
+                       'url': 'https://www.youtube.com/watch?v=1VVAkFWqVKE&t=507s',
+                       'markdown': '[00:08:27](https://www.youtube.com/watch?v=1VVAkFWqVKE&t=507s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3VKazhO11yk',
+                       'title': 'Wholesaling Tax Delinquent Properties (Step by Step)',
+                       'channel': 'Zach Ginn',
+                       'author': 'Zach Ginn',
+                       'text': 'You might get better results texting than cold calling, but just a slight.',
+                       'tip': 'You might get better results texting than cold calling, but just a slight.',
+                       'timestamp': 401,
+                       'timestamp_seconds': 401,
+                       'timestamp_label': '[00:06:41]',
+                       'url': 'https://www.youtube.com/watch?v=3VKazhO11yk&t=401s',
+                       'markdown': '[00:06:41](https://www.youtube.com/watch?v=3VKazhO11yk&t=401s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p_LcZVcrC3U',
+                       'title': 'How To Get A Cold Call List - Tax Delinquent List',
+                       'channel': 'The Well Entrepreneur',
+                       'author': 'The Well Entrepreneur',
+                       'text': "So when in doubt I'd rather have a bigger list than a smaller list.",
+                       'tip': "So when in doubt I'd rather have a bigger list than a smaller list.",
+                       'timestamp': 309,
+                       'timestamp_seconds': 309,
+                       'timestamp_label': '[00:05:09]',
+                       'url': 'https://www.youtube.com/watch?v=p_LcZVcrC3U&t=309s',
+                       'markdown': '[00:05:09](https://www.youtube.com/watch?v=p_LcZVcrC3U&t=309s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KmEcpx-t8YM',
+                       'title': 'How to Pull The BEST Wholesale List For Cold Calling & Texting',
+                       'channel': 'Maximilian Dier',
+                       'author': 'Maximilian Dier',
+                       'text': 'When cold calling, every 1,000 calls is usually one lead. And it takes on '
+                               'average 30 leads to get one deal.',
+                       'tip': 'When cold calling, every 1,000 calls is usually one lead. And it takes on '
+                              'average 30 leads to get one deal.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=KmEcpx-t8YM&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=KmEcpx-t8YM&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hemWETr8VGg',
+                       'title': 'How to Find Off-Market Real Estate Deals Using Direct Mail | MS Partners '
+                                'LLC',
+                       'channel': 'MS Partners LLC',
+                       'author': 'MS Partners LLC',
+                       'text': "But here's the secret, consistency. As with any sales, it's a numbers "
+                               'game.',
+                       'tip': "But here's the secret, consistency. As with any sales, it's a numbers game.",
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=hemWETr8VGg&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=hemWETr8VGg&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

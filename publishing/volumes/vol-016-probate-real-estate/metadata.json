@@ -9,49 +9,49 @@
       "ESTATE"
     ],
     "deck": [
-      "SERVE THE EXECUTOR. SOLVE ESTATE FRICTION.",
-      "EARN REPEAT REFERRALS."
+      "COURT LETTERS, FULL VS. LIMITED AUTHORITY, AND CONFIRMATION OVERBIDS BEFORE ANY ESTATE SALE",
+      "ATTORNEY REFERRALS, SKIP-TRACED DIRECT MAIL, LEAD CALLING, AND WHOLESALE EXITS FOR PROBATE SPECIALISTS"
     ],
-    "lead": "Licensed Probate Brokerage, Independent-Administration vs Court-Confirmation Sales & Estate-Attorney Concierge Partnerships",
-    "summary": "Build a referral-compounding probate real estate desk around docket intelligence, estate cleanout coordination, and fiduciary transparency.",
+    "lead": "Probate practitioners converge on one hard rule, that nothing moves on an estate property until the court issues letters, and this volume maps every step from petition and letters through court confirmation, heir decisions, and the specialist business built around them.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies from realtors, estate attorneys, and probate software operators, with timestamped inline attribution on every quote, metric, pro-tip, and operator gate. Coverage runs from filing and letters through court confirmation and overbids, inherited-house decisions, cleanouts, agent listing playbooks, attorney referrals, lead data, calling, wholesaling, and senior transitions.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Probate From Filing to Letters: The Legal Roadmap Behind Every Estate Property",
+      "Court Confirmation and Overbids: Selling Probate Property Under Limited vs. Full Authority",
+      "The Inherited House: Executor and Heir Decisions Before the Sale",
+      "Before and Beyond the Will: Estate Planning, Medicaid Recovery, Reverse Mortgages, and Heirs' Property",
+      "Estate Cleanouts, Estate Sales, and Property Preservation",
+      "The Probate Listing Playbook for Agents",
+      "Building a Probate Specialist Business: The Probate Mastery Methodology",
+      "Attorney Referral Partnerships",
+      "Probate Lead Data, Skip Tracing, and Direct Mail",
+      "Calling and Converting Probate Leads",
+      "Wholesaling Probate Properties",
+      "Senior Transitions, Assisted Living, and Real Estate Economics"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "FILE THE PETITION",
+        "File in the decedent's county of domicile with the original will, certified death certificate, petition and fee, listing every heir and relative, including disinherited ones."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "NOTIFY AND PUBLISH",
+        "Notify heirs and publish, have a non-party mail the DE121 notice with proof filed, and clear the hearing."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "SECURE LETTERS",
+        "Request full IAEA authority, order at least 5 to 10 certified copies of letters, and treat the letters date as the earliest listing date."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "OPEN THE ESTATE ACCOUNT",
+        "Obtain an EIN, run all estate money through a dedicated estate account, and pay debts in statutory priority order."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "CLEAR TITLE AND HEIRS",
+        "Order a preliminary title report as soon as full-authority letters issue, and confirm every heir and heir's spouse can sign before any contract."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "CONFIRM OR CLOSE",
+        "Full-authority sales close in 18 to 30 days like regular listings. Limited-authority sales go to a confirmation hearing, where overbids open at the price plus 10 percent of the first $10,000 and 5 percent of the balance."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "PROBATE REAL ESTATE",
-  "subtitle": "The Complete Playbook for Probate Real Estate: $120,000–$900,000 USD in Annual Retained Brokerage Revenue, Starting with a 2 FT + 3 C Five-Person Pod",
+  "subtitle": "Letters before listings, overbid-ready court confirmations, step-up appraisals, Medicaid claim checks, call-first probate pipelines, attorney referral runways, and pre-completion wholesale contracts",
   "chapter_count": 12,
-  "total_word_count": 78084,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 75408,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T20:46:12Z"
 }

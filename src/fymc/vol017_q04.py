@@ -1,705 +1,847 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($8,000–$60,000 USD) and configure a lean, low-opex ($500–$5,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Domain Budgets, Porkbun and Cloudflare Rails, Escrow Settlement, and ACPA-Screened Asset Transfers",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #16, Domain Investing, ranks #22 with a 83/100 Money-to-Manpower "
-        "Score. The production advantage is patient capital, controlled renewals, "
-        "and defensible ownership—not a sprawling subscription stack. Allocate "
-        "60% of opening capital to working reserves, separate inventory from "
-        "operating expense, and activate twelve infrastructure layers using free "
-        "tiers wherever controls remain adequate. This chapter maps eight operating "
-        "plays: generic brandables, exact-match commercial names, outbound upgrades, "
-        "expired-authority assets, drop-catching, portfolio purchases, installment "
-        "sales, and authorized podcast-domain/RSS acquisitions. Annual owner net "
-        "profit remains $3,000 Conservative, $44,000 Base, and $120,000 Scaled; "
-        "the corresponding revenue is gross domain sale proceeds. Vendor prices "
-        "are purchasing assumptions to verify, while reserve floors, transfer "
-        "evidence, and trademark screening are executable pre-flight requirements."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$20,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "15% margin; $3,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Base",
-            "value": "$160,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "27.5% margin; $44,000 annual owner net profit; 1 FT + 1 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$300,000",
-            "context": "Annual gross domain sale proceeds; acquisition and renewal costs included in margin",
-            "note": "40% margin; $120,000 annual owner net profit; 2 FT + 2 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence runway before bidding on the first name",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the opening balance sheet around cash survival, not the "
-                    "number of domains displayed in a marketplace account. At "
-                    "$10,000, allocate $6,000 to working-capital float, $2,000 to "
-                    "inventory, $1,000 to formation and security setup, and $1,000 "
-                    "to bounded experiments. At $50,000, the corresponding buckets "
-                    "are $30,000, $12,000, $3,000, and $5,000. At $150,000, use "
-                    "$90,000, $40,000, $8,000, and $12,000. Each plan begins with "
-                    "60% cash reserve, exceeding the 50% minimum without treating "
-                    "unsold inventory as spendable liquidity. Experimental money "
-                    "is a ceiling, not a requirement to spend; unused balances "
-                    "remain cash. Keep reserve money in a separate business bank "
-                    "account or clearly segregated ledger account, and exclude "
-                    "pending escrow receipts until released funds actually settle. "
-                    "Before each acquisition, recalculate unrestricted cash after "
-                    "the bid, fees, and committed obligations. Suspend discretionary "
-                    "purchases if the transaction would take available reserves "
-                    "below 50% of opening capital. Operating drawdowns can eventually "
-                    "cross that line, but they trigger a purchasing freeze and a "
-                    "runway review rather than permission to raid renewal money. "
-                    "An auction countdown never changes the liquidity calculation."
-                ),
-                (
-                    "Convert the reserve into an explicit calendar of obligations. "
-                    "Using a $15 annual renewal planning allowance, twenty domains "
-                    "require $300, 120 require $1,800, and 400 require $6,000; "
-                    "replace these allowances with actual extension-specific "
-                    "checkout quotes before purchase. With those amounts earmarked, "
-                    "the three opening reserves leave $5,700, $28,200, and $84,000 "
-                    "for other cash needs. At monthly operating caps of $500, "
-                    "$2,000, and $5,000, that represents 11.4, 14.1, and 16.8 "
-                    "months of overhead respectively, before additional acquisitions "
-                    "or unexpected costs. The stated three-to-twenty-four-month "
-                    "first-deal window therefore exceeds every example's funded "
-                    "runway at its spending cap. Close that gap by spending below "
-                    "the cap, adding committed capital, or shrinking inventory "
-                    "before renewals become compulsory. A $500 monthly ceiling "
-                    "might allocate $25 to software, $100 to research contractors, "
-                    "$100 to bookkeeping and administration, $75 to insurance, "
-                    "$100 to selling experiments, and $100 to contingency. These "
-                    "are budget allowances, not vendor quotations. Schedule renewals "
-                    "by month instead of dividing annual totals evenly and assuming "
-                    "the bank balance will cooperate. Avoid premium-renewal extensions "
-                    "unless their recurring carrying cost is separately funded "
-                    "through the intended holding period."
-                ),
-                (
-                    "Reconcile operating plans to the canonical scorecard before "
-                    "presenting attractive unit economics. Conservative revenue of "
-                    "$20,000 less $17,000 of total modeled costs produces $3,000 "
-                    "owner net profit, or 15%. Base revenue of $160,000 less "
-                    "$116,000 produces $44,000, or 27.5%. Scaled revenue of "
-                    "$300,000 less $180,000 produces $120,000, or 40%. If the "
-                    "illustrative monthly overhead caps are fully spent, annual "
-                    "overhead consumes $6,000, $24,000, and $60,000; the remaining "
-                    "cost envelopes are $11,000, $92,000, and $120,000 for "
-                    "recognized acquisition costs, renewals, selling fees, and other "
-                    "costs outside overhead. These residuals are constraints, not "
-                    "evidence that the proposed portfolio will achieve those sales. "
-                    "Keep inventory cash purchases distinct from the acquisition "
-                    "cost assigned to completed sales, and reconcile the two "
-                    "through the inventory roll-forward. Do not deduct a sold "
-                    "domain's cost twice or count opening capital as revenue. "
-                    "The teams remain one full-time operator plus one contractor "
-                    "in Conservative and Base, and two full-time operators plus "
-                    "two contractors in Scaled. Define compensation treatment "
-                    "explicitly; the scorecard does not supply wage assumptions. "
-                    "If actual wages exceed the cost envelope, the scenario fails "
-                    "rather than silently borrowing from owner profit."
-                ),
-            ],
-            "table": {
-                "caption": "Opening Capital and Canonical Earnings Reconciliation",
-                "headers": [
-                    "Operating decision",
-                    "Conservative planning case",
-                    "Base planning case",
-                    "Scaled planning case",
-                ],
-                "rows": [
-                    [
-                        "Opening capital allocations are illustrative, not mandated scenario inputs",
-                        "$10,000 opening cash funds four separately tracked spending buckets",
-                        "$50,000 opening cash funds four separately tracked spending buckets",
-                        "$150,000 opening cash funds four separately tracked spending buckets",
-                    ],
-                    [
-                        "Protected working reserves begin above the minimum cash floor",
-                        "$6,000 reserve preserves sixty percent of opening business capital",
-                        "$30,000 reserve preserves sixty percent of opening business capital",
-                        "$90,000 reserve preserves sixty percent of opening business capital",
-                    ],
-                    [
-                        "Inventory, setup, and experiments consume only explicitly allocated capital",
-                        "$2,000 inventory plus $1,000 setup plus $1,000 experiments",
-                        "$12,000 inventory plus $3,000 setup plus $5,000 experiments",
-                        "$40,000 inventory plus $8,000 setup plus $12,000 experiments",
-                    ],
-                    [
-                        "Monthly overhead ceilings must remain distinct from inventory purchases",
-                        "$500 monthly overhead creates $6,000 annual recurring operating expense",
-                        "$2,000 monthly overhead creates $24,000 annual recurring operating expense",
-                        "$5,000 monthly overhead creates $60,000 annual recurring operating expense",
-                    ],
-                    [
-                        "Canonical recognized costs reconcile gross proceeds to owner profit",
-                        "$20,000 proceeds minus $17,000 costs equals $3,000 owner profit",
-                        "$160,000 proceeds minus $116,000 costs equals $44,000 owner profit",
-                        "$300,000 proceeds minus $180,000 costs equals $120,000 owner profit",
-                    ],
-                    [
-                        "Residual cost capacity follows deduction of illustrated annual overhead",
-                        "$11,000 remains for recognized inventory costs, renewals, and selling costs",
-                        "$92,000 remains for recognized inventory costs, renewals, and selling costs",
-                        "$120,000 remains for recognized inventory costs, renewals, and selling costs",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy renewal capacity before buying optionality",
-                "body": "Experienced domain operators manage calendar exposure and settlement friction before expanding the acquisition list.",
-                "items": [
-                    "Export the registrar renewal schedule before every auction session; price each bid against the next twelve months of carrying costs.",
-                    "Disable automatic auction bidding after a reserve-floor breach; pending buyer payments do not restore purchasing capacity.",
-                    "Ask the seller to document ordinary and premium renewal charges separately; a cheap purchase can conceal an expensive extension.",
-                    "Negotiate portfolio purchases using name-by-name liquidation estimates, then reject names that merely inflate the advertised asset count.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Configure twelve lean layers without buying a subscription collection",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the stack as twelve responsibilities rather than twelve "
-                    "paid subscriptions. The matrix specifies named tiers and "
-                    "recurring prices used for purchasing decisions; these are "
-                    "reference assumptions, not a live price audit. Recheck regional "
-                    "eligibility, taxes, billing commitments, limits, and checkout "
-                    "terms before enrollment. Free account pricing never includes "
-                    "domain registrations, premium names, transfers, auction bids, "
-                    "or transaction fees. Start with one primary registrar and "
-                    "one recovery option, rather than scattering twenty names "
-                    "across six dashboards to save pennies. Porkbun can hold the "
-                    "initial portfolio; Cloudflare Registrar is an alternate for "
-                    "supported extensions where its nameserver requirements fit "
-                    "the operating plan. Use Cloudflare DNS only where compatible "
-                    "with the chosen marketplace's verification and landing-page "
-                    "requirements. Keep a durable registrar inventory containing "
-                    "domain, account owner, expiration date, renewal quote, transfer "
-                    "status, nameservers, purchase evidence, and disposition decision. "
-                    "Google Sheets handles this at small scale without a custom "
-                    "application. Give contractors filtered exports instead of "
-                    "registrar credentials. A second dashboard is justified only "
-                    "when it reduces a documented risk or removes more recurring "
-                    "labor than its complete cost. Paying for visibility that "
-                    "duplicates an existing export is usually overhead disguised "
-                    "as operational sophistication."
-                ),
-                (
-                    "Implement renewal tracking, comparable-sale monitoring, and "
-                    "inbound inquiry routing before any advanced automation. A "
-                    "daily registrar export or supported API pull should create "
-                    "ninety-, sixty-, thirty-, and seven-day renewal reminders, "
-                    "with one named owner and a second notification destination. "
-                    "Do not assume auto-renew is protection against an expired "
-                    "card, registry exception, or suspended account. Maintain a "
-                    "weekly exception report for names lacking current quotes "
-                    "or a retain-versus-drop decision. Comparable-sale monitoring "
-                    "should preserve source URL, sale date, venue, extension, "
-                    "length, and apparent buyer context; a reported sale is "
-                    "evidence, not an appraisal for an unrelated asset. Ahrefs "
-                    "Webmaster Tools is useful for eligible verified properties, "
-                    "not unrestricted research into every auction candidate. "
-                    "Request dated seller exports or fund limited research "
-                    "only when the evidence could change a bid. Route inquiries "
-                    "through a simple Tally form or marketplace mailbox, label "
-                    "the domain automatically, and record response time and "
-                    "proposed terms. Never let a form submission trigger a "
-                    "transfer or release an authorization code. Reconcile "
-                    "automation output against registrar records every week "
-                    "so silent integration failures cannot become portfolio "
-                    "losses. Keep manual exports as the recovery path whenever "
-                    "an API quota or account permission changes."
-                ),
-                (
-                    "Security spending should protect ownership and recovery, not "
-                    "decorate a dashboard. Use unique registrar passwords, supported "
-                    "hardware-backed authentication, offline recovery codes, and "
-                    "a recovery mailbox on a domain that is never offered for "
-                    "sale. Bitwarden Free supports an individual starting workflow; "
-                    "do not turn that into an informal shared vault when the "
-                    "team grows. Price proper organizational access before adding "
-                    "staff who need secrets. Keep registrar locks enabled except "
-                    "during scheduled transfers and investigate registry-lock "
-                    "availability for unusually valuable assets. Store purchase "
-                    "agreements, settlement statements, renewal invoices, and "
-                    "evidence snapshots in restricted folders, then use restic "
-                    "to create encrypted backups on separately controlled "
-                    "storage. Software can be free while backup media and "
-                    "restoration testing still require money and time. One "
-                    "Google Workspace Business Starter seat at the $7 monthly "
-                    "annual-commitment reference rate implies $84 yearly before "
-                    "tax; a $8.40 flexible monthly reference rate avoids that "
-                    "annual commitment. Verify both offers at purchase. Add "
-                    "staff seats only when the person actually needs an account. "
-                    "Retain basic mailbox authentication records, monitor delivery "
-                    "failures, and test recovery from a clean device. A documented "
-                    "recovery drill is more valuable than another analytics tool "
-                    "that cannot restore control of a locked registrar account."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack: Reference Tiers, Roles, and Lean Substitutes",
-                "headers": [
-                    "Infrastructure layer",
-                    "Named tier and recurring price",
-                    "Production responsibility",
-                    "Cheap alternative and operating constraint",
-                ],
-                "rows": [
-                    [
-                        "Business banking separates working reserves from acquisition spending",
-                        "Mercury standard business account: $0 monthly base account fee",
-                        "Segregate reserve balances and reconcile completed escrow settlement deposits",
-                        "Use an eligible local credit-union account after comparing account fees",
-                    ],
-                    [
-                        "Bookkeeping records inventory purchases and completed domain sale proceeds",
-                        "Wave Starter: $0 monthly base subscription for eligible businesses",
-                        "Record invoices, transaction expenses, and monthly bank reconciliation evidence",
-                        "Use a structured spreadsheet plus periodic accountant-reviewed reconciliations",
-                    ],
-                    [
-                        "Primary registrar holds transferable inventory under controlled ownership",
-                        "Porkbun standard account: $0 monthly account subscription before domain charges",
-                        "Track acquisition receipts, renewal prices, locks, and transfer status",
-                        "Consolidate existing registrar accounts before paying extra transfer costs",
-                    ],
-                    [
-                        "Alternate registrar provides a tested second custody destination",
-                        "Cloudflare Registrar account: $0 monthly subscription before domain charges",
-                        "Accept supported transfers when nameserver requirements match portfolio needs",
-                        "Maintain a second eligible registrar account without speculative transfers",
-                    ],
-                    [
-                        "Authoritative DNS supports verification and deliberately configured sale pages",
-                        "Cloudflare Free DNS plan: $0 monthly base plan price",
-                        "Maintain records, export zone configuration, and document intended routing",
-                        "Use registrar-included DNS when marketplace instructions make that simpler",
-                    ],
-                    [
-                        "Credential storage protects individual administrator access and recovery secrets",
-                        "Bitwarden Free individual plan: $0 monthly base subscription price",
-                        "Store unique account credentials without distributing shared administrator passwords",
-                        "Use operating-system password storage with separately protected recovery records",
-                    ],
-                    [
-                        "Business email receives buyer inquiries and authenticated account notifications",
-                        "Google Workspace Business Starter: $7 monthly per seat, annual commitment",
-                        "Operate a stable noninventory mailbox with documented account recovery",
-                        "Use $8.40 flexible monthly reference pricing; verify checkout terms first",
-                    ],
-                    [
-                        "Inventory tracking coordinates renewals, cost basis, and disposition decisions",
-                        "Google Sheets personal tier: $0 monthly standalone subscription charge",
-                        "Maintain protected fields and scheduled exports for portfolio reconciliation",
-                        "Use LibreOffice Calc locally with encrypted versioned backup copies",
-                    ],
-                    [
-                        "Owned-property diagnostics support backlink evidence and technical investigation",
-                        "Ahrefs Webmaster Tools: $0 monthly tier for eligible verified properties",
-                        "Inspect owned-property signals without assuming unrestricted candidate research access",
-                        "Use Search Console and seller evidence; reject unsupported authority claims",
-                    ],
-                    [
-                        "Inbound inquiry collection captures buyer intent without transfer authority",
-                        "Tally Free plan: $0 monthly base form subscription price",
-                        "Capture domain identifiers, buyer contact details, and proposed transaction terms",
-                        "Use a dedicated mailbox with structured subject lines instead",
-                    ],
-                    [
-                        "Asset document storage preserves agreements and settlement evidence securely",
-                        "Google Drive personal tier: $0 monthly with 15 GB shared storage",
-                        "Restrict folders and preserve signed agreements alongside transaction statements",
-                        "Use an encrypted local folder when remote sharing is unnecessary",
-                    ],
-                    [
-                        "Encrypted backup preserves recoverable copies outside primary account control",
-                        "restic open-source software: $0 license and monthly software subscription",
-                        "Back up portfolio exports and verify restoration from separate storage",
-                        "Use encrypted rotating drives; budget hardware and test restoration monthly",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund eight operating plays with explicit downside limits",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Map eight operating plays to the capital ledger, but do "
-                    "not mistake diversification of labels for diversification "
-                    "of demand. Seven mappings below are descriptive chapter "
-                    "categories; the podcast mapping retains its supplied play "
-                    "identifier. Generic brandables earn a test allocation only "
-                    "when spelling, pronunciation, and plausible commercial uses "
-                    "support several unrelated buyers. An illustrative $100 "
-                    "purchase sold for $2,000 with a 15% selling fee and $15 "
-                    "renewal leaves $1,585 contribution before overhead. Exact-match "
-                    "commercial names require independently verified business "
-                    "demand rather than search-volume screenshots alone. A $300 "
-                    "purchase sold for $3,000 under the same fee and renewal "
-                    "assumptions contributes $2,235. Outbound upgrades start with "
-                    "a generic improvement to an established buyer's naming "
-                    "problem, not a registration designed around that buyer's "
-                    "protected mark. A $150 purchase, $1,500 sale, $225 fee, "
-                    "$15 renewal, and $60 research allowance leaves $1,050. "
-                    "The fee rate is an illustrative underwriting assumption, "
-                    "not a quoted marketplace tariff. Put each assumption into "
-                    "the asset record and replace it with the selected venue's "
-                    "actual terms before listing. If the thesis depends on "
-                    "one identifiable trademark owner, reject the acquisition "
-                    "instead of treating that owner's legal exposure as bargaining "
-                    "leverage."
-                ),
-                (
-                    "Expired-authority investing and drop-catching need separate "
-                    "evidence because an auction win proves neither transferable "
-                    "goodwill nor durable rankings. For expired-authority assets, "
-                    "inspect historical pages, anchor text, referring URLs, spam "
-                    "patterns, and trademark use before setting a ceiling. A "
-                    "$400 purchase, $2,500 sale, $375 selling fee, and $15 "
-                    "renewal leaves $1,710 before overhead, but only if a "
-                    "real buyer accepts the asset's documented limitations. "
-                    "Do not promise that old backlinks will preserve traffic "
-                    "after ownership or content changes. For drop-catching, "
-                    "include every committed backorder, auction fee, and initial "
-                    "registration charge in the acquisition basis. A $700 "
-                    "all-in acquisition sold for $3,000 less $450 fees and "
-                    "$15 subsequent renewal contributes $1,835. Portfolio "
-                    "purchases require name-level cost allocation: paying $2,000 "
-                    "for twenty names is $100 average cost, but three $1,500 "
-                    "sales generate only $3,525 cash after $675 selling fees "
-                    "and $300 portfolio renewals, before recovering the original "
-                    "purchase. That leaves $1,525 acquisition-adjusted cash, "
-                    "not the final lifetime profit of seventeen unsold names. "
-                    "Installment sales likewise separate price from collection: "
-                    "a $3,000 contract paid over twelve months schedules $250 "
-                    "monthly receipts, while custody terms and buyer default "
-                    "determine when control transfers and which amounts are "
-                    "actually earned."
-                ),
-                (
-                    "The eighth mapping, expired_podcast_rss_redirect_arbitrage, "
-                    "must operate as an authorized asset purchase, not appropriation "
-                    "of a retired host's audience or accounts. Require evidence "
-                    "of claimed DR 85+ referring domains and live source links "
-                    "from Apple Podcasts, Spotify, iHeartRadio, or trade show-notes; "
-                    "do not assume every platform or link qualifies. DR describes "
-                    "a third-party metric, not link endorsement, traffic, or sale "
-                    "value. Never bid until source URLs, redirects, and ownership "
-                    "history are inspected. The clean fallback is a $500–$5,000 "
-                    "asset-purchase agreement transferring the RSS feed, brand, "
-                    "recordings, artwork, and necessary advertising rights from "
-                    "a retired host who actually controls them. Without those "
-                    "rights, use only a generic non-trademarked expired domain "
-                    "with a new, clearly identified property. Do not intercept "
-                    "former-owner mail or reset platform accounts. For authorized "
-                    "back-catalog monetization, 10,000 eligible monthly downloads "
-                    "at $20 CPM and 60% fill produce $120 advertiser spend; "
-                    "a 70% publisher share yields $84 before hosting and "
-                    "production costs. Even a $500 purchase takes almost six "
-                    "months to recover at that contribution before additional "
-                    "expenses. At $5,000, recovery approaches sixty months. "
-                    "Keep sponsorship income in a separate ancillary ledger; "
-                    "it cannot inflate the canonical domain-sale revenue cases."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Chapter Mappings: Unit Economics, Evidence, and Risk Fallbacks",
-                "headers": [
-                    "Operating play",
-                    "Illustrative unit math",
-                    "Evidence required before capital release",
-                    "Risk fallback that preserves capital",
-                ],
-                "rows": [
-                    [
-                        "Generic brandable inventory serving multiple unrelated potential business buyers",
-                        "$2,000 sale less $100 cost, $300 fee, $15 renewal yields $1,585",
-                        "Document pronunciation, spelling clarity, trademark screening, and several buyer categories",
-                        "Reduce exposure when the name depends on one speculative buyer",
-                    ],
-                    [
-                        "Exact-match commercial domains tied to independently verified service demand",
-                        "$3,000 sale less $300 cost, $450 fee, $15 renewal yields $2,235",
-                        "Inspect actual businesses, commercial intent, extension fit, and historical use",
-                        "Prefer cheaper generic alternatives when comparable evidence remains thin",
-                    ],
-                    [
-                        "Outbound upgrades offering generic naming improvements to qualified businesses",
-                        "$1,500 less $150 acquisition, $225 fee, $15 renewal, $60 research yields $1,050",
-                        "Document a noninfringing improvement and a factual individualized contact rationale",
-                        "Stop outreach when recipient objections expose a flawed acquisition thesis",
-                    ],
-                    [
-                        "Expired-authority assets supported by inspected historical content and backlinks",
-                        "$2,500 sale less $400 cost, $375 fee, $15 renewal yields $1,710",
-                        "Inspect live referring pages, historical identity, anchor patterns, and ownership changes",
-                        "Value as an ordinary domain if claimed authority cannot survive inspection",
-                    ],
-                    [
-                        "Drop-catch acquisitions priced with every committed capture and auction charge",
-                        "$3,000 sale less $700 all-in cost, $450 fee, $15 renewal yields $1,835",
-                        "Confirm platform settlement terms, transfer restrictions, and final acquisition basis",
-                        "Cancel optional backorders before deadlines when combined exposure exceeds limits",
-                    ],
-                    [
-                        "Small portfolio purchases underwritten using name-level liquidation and renewal estimates",
-                        "$4,500 receipts less $675 fees, $300 renewals, $2,000 purchase leaves $1,525 cash",
-                        "Allocate purchase basis and inspect every included name before settlement",
-                        "Exclude weak names instead of paying for inflated portfolio size",
-                    ],
-                    [
-                        "Installment domain sales retaining documented custody until agreed payment milestones",
-                        "$3,000 divided across twelve months schedules $250 monthly buyer receipts",
-                        "Separate scheduled payments, collected cash, earned proceeds, and custody conditions",
-                        "Use written default terms and avoid spending uncollected installments",
-                    ],
-                    [
-                        "expired_podcast_rss_redirect_arbitrage through authorized podcast asset and RSS rights acquisition",
-                        "10,000 downloads times $20 CPM times 60% fill times 70% share yields $84",
-                        "Verify seller rights, source backlinks, eligible downloads, and advertising permissions",
-                        "Buy clean rights for $500–$5,000 or choose generic non-trademarked domains",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove ownership, settlement, and recovery before opening for buyers",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Entity, banking, and insurance hygiene should reduce specific "
-                    "failure modes without consuming the acquisition budget. "
-                    "Choose an entity structure with an accountant and attorney "
-                    "based on ownership, tax treatment, and expected transaction "
-                    "activity; obtain an EIN directly through the IRS when "
-                    "eligible rather than paying a form reseller. Record state "
-                    "filing fees, annual reporting dates, registered-agent terms, "
-                    "and beneficial-ownership reporting obligations applicable "
-                    "to the actual entity and current rules. Do not hard-code "
-                    "a universal filing requirement into an operating checklist. "
-                    "Open business banking using matching entity documents and "
-                    "record the beneficial owners requested by the institution. "
-                    "Keep personal purchases outside the inventory ledger and "
-                    "retain a signed explanation for owner contributions or "
-                    "withdrawals. Ask an insurance broker to quote coverage "
-                    "against the actual activity: domain trading, online sales, "
-                    "contractor access, and any podcast publishing. Review "
-                    "cybercrime, social-engineering, media liability, intellectual "
-                    "property exclusions, deductibles, and retroactive dates "
-                    "rather than assuming a generic business policy covers "
-                    "a disputed name. Compare limits against plausible losses "
-                    "and premiums against the operating ceiling. If adequate "
-                    "coverage is unavailable at the budgeted price, reduce "
-                    "the exposed activity instead of recording imaginary "
-                    "protection in the readiness file."
-                ),
-                (
-                    "Apply legal screening to acquisition intent and actual "
-                    "use, not merely an exact-string trademark search. The "
-                    "Anti-cybersquatting Consumer Protection Act, 15 U.S.C. "
-                    "1125(d), addresses specified registrations, trafficking, "
-                    "or use involving bad-faith intent to profit and protected "
-                    "marks. Review USPTO records, ordinary web use, historical "
-                    "content, relevant jurisdictions, and confusing similarity "
-                    "before bidding. A generic word can still create risk "
-                    "when its intended use targets an existing brand. Under "
-                    "the UDRP, analyze confusing similarity, rights or legitimate "
-                    "interests, and registration and use in bad faith; preserve "
-                    "the contemporaneous acquisition rationale and recognize "
-                    "that panel decisions turn on facts. UDRP is a contractual "
-                    "dispute policy, not a statute. For purchased podcast "
-                    "catalogs, 17 U.S.C. 204(a) generally requires a signed "
-                    "writing for copyright ownership transfers other than "
-                    "by operation of law, while 17 U.S.C. 106 identifies "
-                    "the exclusive rights that audio exploitation can implicate. "
-                    "A domain transfer alone conveys neither recordings nor "
-                    "guest releases, music licenses, advertising rights, or "
-                    "platform accounts. Obtain an asset schedule and chain "
-                    "of title, and exclude unsupported material. Avoid "
-                    "accessing a prior owner's communications; 18 U.S.C. "
-                    "2701 addresses unauthorized access to specified stored "
-                    "electronic communications."
-                ),
-                (
-                    "Run a complete transaction rehearsal before publishing "
-                    "inventory. Create a test inquiry, route it to the correct "
-                    "asset owner, generate a draft purchase agreement, and "
-                    "walk through the proposed escrow instructions without "
-                    "moving a valuable name. Escrow.com or another selected "
-                    "provider must support the transaction's parties, geography, "
-                    "currency, asset type, and custody arrangement; obtain "
-                    "a transaction-specific fee quote rather than using a "
-                    "generic percentage as its actual charge. Verify payment "
-                    "and release instructions inside the authenticated provider "
-                    "account, not from an emailed screenshot. Check registrar "
-                    "and registry restrictions, including applicable new-registration "
-                    "and inter-registrar transfer locks, before promising a "
-                    "delivery date. An internal account push may have different "
-                    "conditions and is not automatically a substitute. Match "
-                    "the agreement's inspection period, transfer milestone, "
-                    "and release event to the provider's documented workflow. "
-                    "Require a second person to verify destination details "
-                    "when transaction value exceeds a written threshold. "
-                    "Rehearse a lost-device recovery, restore the portfolio "
-                    "ledger, and reconcile one sample renewal invoice. Launch "
-                    "only after the operator can demonstrate ownership, "
-                    "cash coverage, transfer eligibility, and evidence recovery. "
-                    "Unresolved exceptions remain on a dated action list "
-                    "with an owner and a specific remedy, not buried in "
-                    "a narrative progress report."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Matrix for Entity, Custody, Rights, and Settlement",
-                "headers": [
-                    "Verification area",
-                    "Evidence the operator must retain",
-                    "Failure that stops the affected activity",
-                    "Concrete corrective action before resuming",
-                ],
-                "rows": [
-                    [
-                        "Entity identity matches banking, registrar, and contracting records consistently",
-                        "Retain formation records, applicable filings, banking confirmation, and signing authority",
-                        "Seller identity or contracting authority conflicts with payment instructions",
-                        "Resolve ownership records and verify revised instructions through authenticated channels",
-                    ],
-                    [
-                        "Reserve coverage survives proposed acquisitions and the renewal calendar",
-                        "Retain current balances, outstanding commitments, renewal quotes, and runway calculations",
-                        "Proposed purchase breaches the documented fifty-percent opening-capital reserve floor",
-                        "Cancel discretionary bids or add settled capital before new purchases",
-                    ],
-                    [
-                        "Trademark and historical-use evidence supports an independent acquisition rationale",
-                        "Retain search records, dated historical captures, and written generic-use reasoning",
-                        "Demand thesis depends on pressure against an identifiable protected brand",
-                        "Reject the asset and source a defensible generic substitute",
-                    ],
-                    [
-                        "Podcast copyright and platform authority match the proposed exploitation",
-                        "Retain signed rights schedules, seller authority, licenses, and transfer permissions",
-                        "Seller cannot convey recordings, RSS control, or essential advertising rights",
-                        "Remove unsupported assets or decline the proposed catalog purchase",
-                    ],
-                    [
-                        "Escrow instructions and domain transfer eligibility align with contracted milestones",
-                        "Retain provider terms, fee quote, registrar status, and verified destination",
-                        "Payment evidence is unauthenticated or a transfer lock prevents promised delivery",
-                        "Reverify settlement status and amend timing before releasing transfer credentials",
-                    ],
-                    [
-                        "Account recovery and encrypted backups work without the primary device",
-                        "Retain a dated restoration record and independently protected recovery materials",
-                        "A single lost device prevents registrar access or portfolio reconstruction",
-                        "Repair recovery access and repeat the drill before opening sales",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four demonstrations required before the first public listing",
-                "body": "Verify the controls with records and rehearsals; a checked box without evidence does not establish readiness.",
-                "items": [
-                    "Demonstrate at least 50% of opening capital remains available as working reserves after proposed bids and committed obligations.",
-                    "Produce registrar ownership evidence, current renewal pricing, transfer status, and a trademark-screening record for every listed name.",
-                    "Complete a test inquiry and settlement walkthrough using authenticated provider instructions and a documented release milestone.",
-                    "Restore the inventory ledger from encrypted backup and recover registrar access without relying on the primary device.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Fund segregated capital buckets",
-                    "action": "Record opening capital and assign reserve, inventory, setup, and experiment balances.",
-                    "detail": "Start reserves at 60%, calculate the 50% purchasing floor, and attach the next twelve months of renewal obligations.",
-                },
-                {
-                    "step": 2,
-                    "title": "Activate the minimum production stack",
-                    "action": "Configure banking, registrar custody, DNS, credentials, mailbox, inventory, and encrypted backups.",
-                    "detail": "Verify each selected tier at checkout; record recurring charges separately from registrations, transfers, and transaction costs.",
-                },
-                {
-                    "step": 3,
-                    "title": "Underwrite a bounded acquisition batch",
-                    "action": "Apply name-level cost ceilings, rights checks, trademark screening, and current renewal quotes.",
-                    "detail": "Release only the approved inventory allocation; preserve evidence supporting each of the eight mapped operating approaches used.",
-                },
-                {
-                    "step": 4,
-                    "title": "Rehearse sale, settlement, and recovery",
-                    "action": "Run a test inquiry, verify escrow milestones, inspect transfer restrictions, and restore the ledger.",
-                    "detail": "Open listings only after the four pre-flight demonstrations pass; retain dated exceptions with owners and corrective actions.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A domain portfolio is only as strong as the cash, rights, and recovery controls that let its owner wait.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate opening capital into four buckets with 60% reserved for working float and a documented 50% acquisition floor.",
-        "Export every domain's expiration date, actual renewal quote, registrar lock status, ownership record, and disposition decision.",
-        "Configure the twelve-layer stack using verified purchasing terms, individual credentials, stable recovery email, and encrypted backups.",
-        "Underwrite each acquisition with a named operating play, all-in cost ceiling, evidence file, and cash-preserving fallback.",
-        "Reconcile the three canonical profit cases to gross domain sale proceeds, recognized inventory costs, overhead, renewals, and selling fees.",
-        "Complete the ownership, reserve, settlement, and recovery demonstrations before publishing inventory or committing to buyer delivery dates.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 1125(d) — Cyberpiracy prevention",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Screen acquisition intent, protected marks, confusing similarity, and bad-faith factors before registering, purchasing, or marketing domains.",
-        },
-        {
-            "title": "17 U.S.C. 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Obtain signed copyright transfer instruments for acquired podcast recordings and other covered assets rather than relying on domain custody alone.",
-        },
-        {
-            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": "Identify the rights needed to reproduce, distribute, adapt, and otherwise exploit acquired audio and associated creative assets.",
-        },
-        {
-            "title": "18 U.S.C. 2701 — Unlawful access to stored communications",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2701",
-            "relevance": "Keep expired-domain acquisition separate from unauthorized access to a former owner's stored communications or linked service accounts.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Configure commercial outbound upgrade campaigns with accurate routing information, required identification and address details, and functioning opt-out handling.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'aged-domain-due-diligence-backlink-audits-wayback-history',
+ 'question_prompt': "How do you vet an expired or aged domain's backlinks and history before buying or "
+                    'rebuilding it?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Due Diligence on Aged Domains: Backlink Audits and Wayback History',
+ 'subtitle': 'Backlink checkers (Ahrefs, Semrush, Ubersuggest, OpenSEO, free tools), toxic and spam link '
+             'detection, link audits, safe use of expired-domain links, Archive.org analysis, archive vs '
+             'WHOIS birth year, and Wayback content restoration for PBN rebuilds',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Aged-domain operators agree on one gate: domain scores mislead, and page-level and '
+                      'history-level evidence decides the bid. SearchGAPMethod found 44 of 49 entries on a '
+                      'top-ranking free backlinks list passed DR, but only 15 passed six live link checks, '
+                      'a 31% pass rate. Frey Chu passed on a DR59 magpress.com after spotting zero-traffic '
+                      'best links and referring domains doubling from 1,900 to 4,000 in under a year. '
+                      'Affiliate Credo, Shawna Newman and SERPSUPPORT treat Wayback history as a hard '
+                      'filter: no archive index, hidden redirects, or casino and pharma anchors kill the '
+                      'deal. Street tooling runs from Ahrefs and Semrush to expireddomains.com ABY/WBY '
+                      "columns and Abbas Ravji's Wayback Machine Downloader. The split: Ravji restores old "
+                      'content verbatim to mask the ownership change, while SERPSUPPORT says rebuilding '
+                      "for links breaks Google's expired domain abuse policy.",
+ 'key_metrics': [{'label': 'Free Backlink List Live Pass Rate',
+                  'metric': 'Free Backlink List Live Pass Rate',
+                  'value': '31% (15 of 49 entries passed all six checks; 44 of 49 passed DR)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'SearchGAPMethod ran status, pricing, indexed profile page, rel attribute, '
+                             'robots meta and traffic checks on every entry of the number one Google '
+                             'result for free backlinks: 15 pass, 29 fail, 5 unverified behind bot walls.',
+                  'source': 'SearchGAPMethod ([UXycltw74Bw @ 00:05:05])'},
+                 {'label': 'Referring Domain Spike Red Flag',
+                  'metric': 'Referring Domain Spike Red Flag',
+                  'value': '1,900 to 4,000 referring domains in roughly 9-10 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Frey Chu read the Ahrefs referring-domain line on magpress.com from June '
+                             '2015 to spring 2016, followed by a traffic spike and crash, and passed on '
+                             'the DR59 expired domain.',
+                  'source': 'Frey Chu ([mHkLfhpVYqc @ 00:09:08])'},
+                 {'label': 'Cross-Tool Backlink Count Spread',
+                  'metric': 'Cross-Tool Backlink Count Spread',
+                  'value': '14.9K (SE Ranking) to 65.62K (SEO Review Tools), roughly a 4x multiplier',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Edvido ran the same site through 11 free backlink checkers on one afternoon; '
+                             'Majestic showed about 21.8K and Ahrefs 35K for the identical URL.',
+                  'source': 'Edvido ([XjoQwN4FcDU @ 00:01:32])'},
+                 {'label': 'Purchased Backlinks Still Live',
+                  'metric': 'Purchased Backlinks Still Live',
+                  'value': '54% of 650 rechecked backlinks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Ajit Sahane's team rechecked 650 of their own backlinks from Google Search "
+                             'Console and found only 54% still live, with the rest removed, nofollowed, or '
+                             'sitting on unindexed pages.',
+                  'source': 'Ajit Sahane | AI SEO, Backlinks & Websites ([4HSXReKgl4o @ 00:00:40])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who actually opened the linking pages landed on the same '
+                              'verdict: a domain-level score tells you almost nothing about the link you '
+                              'are buying into. SearchGAPMethod ran the number one Google result for free '
+                              'backlinks through live checks and put it bluntly: DR measures the domain '
+                              'and says nothing about the page your link lands on, so 44 of 49 entries '
+                              'passed the DR test while only 15 passed the page [UXycltw74Bw @ 00:01:33]. '
+                              "Arvow's AI SEO Tips made the same cut on a publisher showing roughly 20,000 "
+                              'estimated monthly visits and DR 28, calling both numbers screening signals '
+                              'that never reveal where your link would actually sit [zNPRVbbrEL0 @ '
+                              '00:00:28]. Frey Chu hit the identical wall while vetting magpress.com: a '
+                              'referring domain pulling almost a million monthly visitors at DR64 hosted '
+                              'the link on an MP3-converter page with no traffic, which Chu called a shell '
+                              'of a backlink [mHkLfhpVYqc @ 00:07:04]. Edvido adds the cross-tool trap on '
+                              'top: one site scored DR 62 in Ahrefs, DA 29 in Moz and Ubersuggest, '
+                              'Authority Score 37 in Semrush and Domain Trust 83 in SE Ranking, so the '
+                              "golden rule is never to set one tool's score beside another's [XjoQwN4FcDU "
+                              '@ 00:04:31]. The operator baseline is page-level traffic, page-level follow '
+                              'status, and one consistent tool tracked over time.',
+                              'The second point of agreement is that no aged domain gets a bid until its '
+                              'Wayback history has been walked. Affiliate Credo calls archive analysis the '
+                              'most important step before buying at auction and sets hard rules: never buy '
+                              'a domain without an archive index, avoid domains sitting in 301 redirects '
+                              'during their last year, and skip anything that expired years ago because it '
+                              'loses links like crazy while dormant [S8e33kDoWhQ @ 00:03:54]. Shawna '
+                              "Newman took under a minute on a consulting client's Otis Global pick to "
+                              'spot a scan gap from 2019 to late 2021, opened the 2019 captures, found '
+                              'green redirect markers pointing to a 30minuteprep.com site that later '
+                              'forwarded to a spammy page, and called the domain probably toxic '
+                              '[wkwOl5VePMM @ 00:01:41]. SERPSUPPORT runs the same gate: open the domain '
+                              'in the Wayback Machine, read the backlink anchors, and walk away the moment '
+                              'casino, pharma, or foreign-language spam appears [_rpmkLdcJvc @ 00:04:42]. '
+                              'Newman spot-checks each scanned year rather than every snapshot to catch a '
+                              'past PBN repurpose, and Frey Chu uses the same pass to confirm which niche '
+                              'the site was known for [mHkLfhpVYqc @ 00:13:00]. The shared filter is a '
+                              'clean, continuous history.',
+                              'Topical continuity is the third consensus pillar. Abbas Ravji lays out how '
+                              'Google reads a repositioned expired domain: inbound anchors about fast '
+                              'cars, BMW, Mercedes and Audi pointing at a site that now publishes '
+                              'weight-loss content, and that links out with weight loss, LCD TV and '
+                              'dog-training anchors, tells Google the historical data is no longer '
+                              'reliable [gtVEsaXqXHo @ 00:04:40]. SERPSUPPORT reaches the same line from '
+                              'the redirect side: when an expired domain changes hands and suddenly points '
+                              'somewhere unrelated, the old signals can simply be ignored, so a bakery '
+                              'domain redirected to a software site buys nothing, or worse, imports spammy '
+                              'links [_rpmkLdcJvc @ 00:02:44]. Frey Chu applies it at purchase: rebuild '
+                              'inside the niche the site was known for or slightly adjacent under the same '
+                              'umbrella, never magpress.com flipped into a camping website [mHkLfhpVYqc @ '
+                              '00:13:13]. Link velocity is the other shared red flag. Craig Campbell '
+                              'showed their own site absorbing 305 backlinks in a single day of automated '
+                              'Chinese and Japanese spam, called it obviously unnatural, and routed it to '
+                              'a Semrush disavow file [v_e7GOstIuc @ 00:04:11]. Before any bid, the old '
+                              'anchors, the archived topic, the planned build, and the link acquisition '
+                              'curve must all tell one consistent, human-looking story.'],
+               'table': {'caption': 'Consensus due-diligence gates for aged and expired domains',
+                         'headers': ['Consensus Check',
+                                     'How Practitioners Run It',
+                                     'Pass Or Kill Signal',
+                                     'Expert Source'],
+                         'rows': [['Domain score versus the actual linking page',
+                                   'Ignore headline DR and inspect the exact page where the link sits',
+                                   'Pass only when that specific page is indexed, followed, and genuinely '
+                                   'used',
+                                   'SearchGAPMethod ([UXycltw74Bw @ 00:01:33])'],
+                                  ['Page-level traffic on the strongest referring links',
+                                   'Open Best links in Ahrefs and sort the list by page traffic',
+                                   'Zero-traffic referring pages are shell backlinks and count as a red '
+                                   'flag',
+                                   'Frey Chu ([mHkLfhpVYqc @ 00:06:21])'],
+                                  ['Existence of any archive index for the domain',
+                                   'Look up the domain on Archive.org before placing any auction bid',
+                                   'No archive index at all means the domain is never bought',
+                                   'Affiliate Credo ([S8e33kDoWhQ @ 00:03:54])'],
+                                  ['Scan gaps hiding redirects in the Wayback calendar',
+                                   'Open captures from the gap years and look for green redirect markers',
+                                   'A redirect to an unrelated or spammy domain kills the purchase '
+                                   'outright',
+                                   'Shawna Newman (Skipblast) ([wkwOl5VePMM @ 00:01:41])'],
+                                  ["Spam anchors in the dropped domain's backlink profile",
+                                   'Read the anchor text of the backlinks before building anything on it',
+                                   'Casino, pharma, or foreign-language spam anchors mean walk away '
+                                   'immediately',
+                                   'SERPSUPPORT ([_rpmkLdcJvc @ 00:04:42])'],
+                                  ['Topic match between old anchors and planned content',
+                                   "Compare historical anchors and rankings against the new site's content "
+                                   'and outbound anchors',
+                                   'A topic switch tells Google the historical data is no longer reliable',
+                                   'Abbas Ravji ([gtVEsaXqXHo @ 00:04:40])'],
+                                  ['Link velocity and sudden bursts of new backlinks',
+                                   'Check new backlinks per day and grouped similar links in Ahrefs',
+                                   '305 automated spam backlinks in one day is obviously unnatural and '
+                                   'gets disavowed',
+                                   'Craig Campbell SEO ([v_e7GOstIuc @ 00:04:11])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Frey Chu's run on magpress.com, bid to $300 on Namecheap while neighboring "
+                              'names sat around $15, is the cleanest street workflow. Paste the domain '
+                              'into Ahrefs Site Explorer, read DR 59 against 422,000 live backlinks and '
+                              'the 27 million peak, then check the traffic chart; magpress peaked around '
+                              'January 2017 and never recovered [mHkLfhpVYqc @ 00:03:30]. Open Best links, '
+                              'sort by page traffic, and discount trophy links: a GitHub repository '
+                              'mention turned out to be nofollow, so no equity flowed. Then read the '
+                              'referring-domain line: magpress jumped from 1,900 to 4,000 referring '
+                              'domains between June 2015 and spring 2016, a pace Chu called incredibly '
+                              'fast and not typical, and Chu passed on the domain [mHkLfhpVYqc @ '
+                              '00:09:24]. Craig Campbell runs every audit through both Semrush and Ahrefs '
+                              "to cross-check the data, treating Semrush's green, orange and red toxicity "
+                              'buckets as a guide rather than gospel because money-term anchors can get '
+                              'flagged [v_e7GOstIuc @ 00:01:36]. MMX shows the Semrush cleanup lane: a '
+                              'referring site at authority score 2 and toxicity 79 out of 100 gets '
+                              'batch-checked into the Remove list, auto-emailed to the owner through the '
+                              'send flow, then disavowed if the link stays [oSf_C1HUEVA @ 00:01:01].',
+                              'History tooling splits into screening and extraction. Affiliate Credo '
+                              'screens in Spamzilla first, filtering and sorting for trustworthy '
+                              'candidates and reading every SZ Score tab including the Archive snippets, '
+                              'then runs link analysis in Majestic before opening Archive.org directly, '
+                              'since the Spamzilla archive sample is modest and only sometimes current '
+                              '[S8e33kDoWhQ @ 00:01:14]. Jacob Hanley of Expired Domains points to two '
+                              'free columns on expireddomains.com: ABY, the earliest year the domain had '
+                              'an archived website, and WBY, its WHOIS registration age; old on both is '
+                              'the ideal, while old Wayback with new WHOIS means the name dropped and was '
+                              're-registered [5nQIZvvcgfY @ 00:02:30]. The live example: spend.com slipped '
+                              "out of Amazon's hands in 2025 and went through Drop Catch to auction at "
+                              '$82,000. For extraction, Abbas Ravji runs the free Wayback Machine '
+                              'Downloader from GitHub inside a Ruby command prompt at 8 threads, because '
+                              '10 threads sometimes missed pages [gtVEsaXqXHo @ 00:12:15]. A from-only '
+                              'timestamp pulled 75 files mixing the original Ruby framework site with the '
+                              'later payday-loan takeover; adding a to timestamp cut it to 9 clean files, '
+                              'and the list flag previewed 155 snapshots narrowed to 13 [gtVEsaXqXHo @ '
+                              '00:17:23]. Each folder lands with its own index.html, so the restore needs '
+                              'no database.',
+                              "For link-level proof, SearchGAPMethod's run is the most granular script. "
+                              'Claude Code pulls every recommended domain into a one-per-line file, '
+                              'requests each homepage with a browser user agent, and logs status; a 403 is '
+                              'a bot wall, not a dead site, and 12 of 49 were [UXycltw74Bw @ 00:02:05]. '
+                              'Then search the page type, not the domain: a bare site: query passed 47 of '
+                              '49 and proved nothing, so pair it with inurl:profile, user or member, open '
+                              "a real user page, print the rel attribute on the user's own link, and read "
+                              'the robots meta tag, because a page-level robots nofollow cancels every '
+                              'link even when the anchor carries no rel [UXycltw74Bw @ 00:03:39]. One '
+                              'DataForSEO batch call priced traffic for all 49 domains at 1.8 cents, '
+                              'against a personal bar of 1,000 estimated US visits a month. Ajit Sahane '
+                              'built the same logic into a scanner where each link gets Passed, Warning, '
+                              'Failed or Unverified, with rel type, anchor, robots meta, X-Robots-Tag, '
+                              'robots.txt, canonical and HTTP status shown per link [4HSXReKgl4o @ '
+                              "00:02:18]. Edvido's free monthly stack starts with Search Console exports "
+                              'because when tools disagree, Google wins [XjoQwN4FcDU @ 00:08:19].'],
+               'table': {'caption': 'Street tooling, settings and numbers for aged-domain vetting',
+                         'headers': ['Tool Or Step',
+                                     'Exact Setting Or Number',
+                                     'Operator Use',
+                                     'Expert Source'],
+                         'rows': [['Ahrefs Site Explorer on the expired domain candidate',
+                                   'DR 59, 422,000 live backlinks versus a 27 million peak',
+                                   'Read live links against the peak and look for a traffic crash',
+                                   'Frey Chu ([mHkLfhpVYqc @ 00:03:30])'],
+                                  ['Wayback Machine Downloader from GitHub run through Ruby',
+                                   '8 threads; from plus to timestamps cut 75 files down to 9',
+                                   'Restore the exact pre-takeover snapshot with an index.html in each '
+                                   'folder',
+                                   'Abbas Ravji ([gtVEsaXqXHo @ 00:17:23])'],
+                                  ['Expireddomains.com ABY and WBY age columns for free',
+                                   'Archive birth year compared directly against the WHOIS birth year',
+                                   'Old on both is ideal; old Wayback with new WHOIS means dropped',
+                                   'Expired Domains ([5nQIZvvcgfY @ 00:00:38])'],
+                                  ['Spamzilla SZ Score tabs followed by Majestic link analysis',
+                                   'Archive tab snippets are a modest sample, only sometimes up to date',
+                                   'Pre-screen candidates before opening Archive.org directly for the full '
+                                   'history',
+                                   'Affiliate Credo ([S8e33kDoWhQ @ 00:01:14])'],
+                                  ['DataForSEO organic traffic estimate in one batch call',
+                                   '1.8 cents for all 49 domains against a 1,000 US visits bar',
+                                   'Fail any linking platform that falls under the monthly traffic '
+                                   'threshold',
+                                   'SearchGAPMethod ([UXycltw74Bw @ 00:00:55])'],
+                                  ['Semrush toxic referring domains and the Remove tab workflow',
+                                   'Authority score 2 with a toxicity score of 79 out of 100',
+                                   'Batch to the Remove list, auto-email the owner, then disavow leftovers',
+                                   'MMX ([oSf_C1HUEVA @ 00:01:01])'],
+                                  ['Free bad backlink checker plus the Google disavow tool',
+                                   'Flags linking sites with page and domain authority below five, CSV '
+                                   'export',
+                                   'Request link removal first, then upload the bad list to disavow',
+                                   'HowToWebmaster ([nBNA5_Ty8Jc @ 00:01:34])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small checks that flip a verdict',
+                           'body': 'Operator-level habits the practitioners use to avoid false passes and '
+                                   'false kills when vetting aged domains and their links.',
+                           'items': ['Sample three user pages before calling a platform followed or '
+                                     'nofollow; on Zomato two profiles had followed website links and one '
+                                     'was nofollow, so write down which three you read [SearchGAPMethod — '
+                                     'UXycltw74Bw @ 00:07:31].',
+                                     'Run one search pattern per query; a single long OR chain across all '
+                                     '49 domains came back empty and briefly looked like the whole list '
+                                     'had been dropped from Google [SearchGAPMethod — UXycltw74Bw @ '
+                                     '00:07:47].',
+                                     'Ignore 302 redirects in the archive history because they are '
+                                     'temporary and do not move link juice, but treat a 301 held during '
+                                     "the domain's last year as a reason to skip [Affiliate Credo — "
+                                     'S8e33kDoWhQ @ 00:04:00].',
+                                     'Before reposting archived content, search a phrase in quotes on '
+                                     'Google or run Spamzilla Duplicate Checker or Copyscape so you are '
+                                     'not publishing duplicates [Affiliate Credo — S8e33kDoWhQ @ '
+                                     '00:03:18].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen candidates by age profile',
+                              'action': 'Filter auction and dropped lists for domains with old Wayback age '
+                                        'and old WHOIS age, and flag old-Wayback, new-WHOIS names as '
+                                        'dropped and re-registered.',
+                              'detail': 'Use the free ABY and WBY columns on expireddomains.com; old on '
+                                        'both is the ideal combo, while the reborn pattern demands asking '
+                                        'why the name dropped [Expired Domains — 5nQIZvvcgfY @ 00:01:24].'},
+                             {'step': 2,
+                              'title': 'Audit the backlink profile in Ahrefs',
+                              'action': 'Open Best links, filter by page traffic, check follow status, '
+                                        'then read the referring-domain growth line for unnatural spikes.',
+                              'detail': 'Page traffic is the metric Frey Chu weights most; zero-traffic '
+                                        'best links and a 1,900-to-4,000 referring domain jump were enough '
+                                        'to pass on a DR59 domain [Frey Chu — mHkLfhpVYqc @ 00:07:46].'},
+                             {'step': 3,
+                              'title': 'Walk the Wayback history year by year',
+                              'action': 'Spot-check captures in every scanned year, then open any gap '
+                                        'years to look for redirects, PBN repurposing, or spam takeovers.',
+                              'detail': 'You do not need every snapshot; spot-check each year and reject '
+                                        'the domain on redirects or a PBN repurpose [Shawna Newman '
+                                        '(Skipblast) — wkwOl5VePMM @ 00:03:30].'},
+                             {'step': 4,
+                              'title': 'Isolate the clean snapshot for any rebuild',
+                              'action': 'Copy the timestamp from the chosen capture and run Wayback '
+                                        'Machine Downloader with both from and to values, previewing with '
+                                        'the list flag first.',
+                              'detail': 'A from-only pull dragged in the later payday-loan takeover pages; '
+                                        'bounding it with a to timestamp isolated the original site [Abbas '
+                                        'Ravji — gtVEsaXqXHo @ 00:16:19].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Cleanup is the loudest split, and it decides how much a spammed aged domain '
+                              'is really worth to the next owner. MMX runs the heavy routine: tick every '
+                              'high-toxicity domain in Semrush, move the group to the remove list, fire '
+                              'templated removal emails from inside the tool one domain at a time, and '
+                              'only then upload a disavow text file telling Google you do not know or '
+                              'trust those sites [oSf_C1HUEVA @ 00:02:35]. Craig Campbell SEO also '
+                              'disavows the Chinese spam slamming their own site, but warns that Semrush '
+                              'toxicity is by no means set in stone, because the tool flags money-term '
+                              'anchors as potentially toxic, so the score is a guide to cross-check '
+                              "against Ahrefs [v_e7GOstIuc @ 00:01:36]. Campbell's point is that the spam "
+                              'never disappears, since Semrush has no access to delete it; the disavow '
+                              'file simply tells Google those links are not yours. The opposite camp calls '
+                              'most of this wasted motion. Edvido found junk spam anchors in Ubersuggest '
+                              'that it never built and concluded Google ignores most of it automatically; '
+                              'the real job is watching the trend for a targeted negative SEO attack '
+                              "[XjoQwN4FcDU @ 00:07:47]. SearchGAPMethod lands in the same camp: Google's "
+                              'link spam updates talk about nullifying junk links rather than sinking the '
+                              'whole site, so the real loss is the hours, not the rankings [UXycltw74Bw @ '
+                              '00:06:38].',
+                              'The rebuild question splits three ways. Abbas Ravji restores the old site '
+                              'from archive.org page for page, arguing that when topic, anchors and '
+                              'rankings stay consistent, Google sees no change and keeps trusting the '
+                              'historical signals; the bonus is skipping content-generation costs, and '
+                              'outbound links go to on-topic buffer properties like Tumblr or Google Sites '
+                              'rather than straight to the money site [gtVEsaXqXHo @ 00:06:21]. theseogeek '
+                              'did exactly that for years, copy-pasting old content into WordPress and '
+                              'wrapping the link in one relevant sentence, then switched around the first '
+                              'Panda to fully rewriting the page that carries the link, and reports those '
+                              'rewritten pages pass more juice and move rankings harder than lazy rebuilds '
+                              'with a dropped-in link [13GEx8eLqzo @ 00:03:48]. Affiliate Credo sits in '
+                              "between: old content can be a trigger for Google to retain the domain's "
+                              "original purpose, but check phrases in quotes on Google, Spamzilla's "
+                              'Duplicate Checker or Copyscape before republishing so you are not shipping '
+                              'duplicates [S8e33kDoWhQ @ 00:03:18]. SERPSUPPORT rejects the whole play: '
+                              'since March 2024 Google lists expired domain abuse in its spam policies, '
+                              'and stacking rebuilt sites into a network can wipe out the money sites it '
+                              'links to, so their preferred use of a dead domain is as a map of broken '
+                              'links to reclaim through short, helpful outreach [_rpmkLdcJvc @ 00:03:24].',
+                              'Practitioners also disagree on which number to trust and who should be '
+                              'bidding at all. SearchGAPMethod says DR measures the domain and says '
+                              'nothing about the page your link lands on; 44 of 49 entries on a top-ranked '
+                              'free backlinks list passed DR, but only 15 passed the page-level checks '
+                              '[UXycltw74Bw @ 00:05:44]. Edvido shows why cross-tool comparisons collapse: '
+                              'the same site scored DR 62 in Ahrefs, DA 29 in Moz and Ubersuggest, 37 in '
+                              'Semrush and 83 domain trust in SE Ranking, so pick one tool, track your own '
+                              'trend line, and let Google Search Console win any dispute [XjoQwN4FcDU @ '
+                              '00:04:31]. Jacob Hanley of Expired Domains ranks age combinations: old '
+                              'Wayback age plus old Whois age is the ideal continuous history, while the '
+                              'reborn domain with an old archive and a fresh Whois date is a mixed bag to '
+                              'research rather than write off, pointing to spend.com drawing an $82,000 '
+                              'Drop Catch auction after Amazon let it slip [5nQIZvvcgfY @ 00:02:30]. Frey '
+                              'Chu splits by operator profile: first-time builders should just build the '
+                              'thing instead of waiting on a drop, while experienced operators entering '
+                              'slow, competitive markets like finance, legal and healthcare are the ones '
+                              'for whom vetted expired domains actually make sense [mHkLfhpVYqc @ '
+                              '00:00:51].'],
+               'table': {'caption': 'Competing playbooks for vetting and using aged and expired domains',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Handling toxic links found in the audit',
+                                   'Move toxic domains to the Semrush remove list, email owners, then '
+                                   'upload a disavow file',
+                                   'Assume Google ignores most spam automatically and simply watch the '
+                                   'monthly anchor trend',
+                                   'MMX ([oSf_C1HUEVA @ 00:02:35]); Edvido ([XjoQwN4FcDU @ 00:07:47])'],
+                                  ['How far to trust a toxicity score',
+                                   'Treat authority score 2 with toxicity 79 out of 100 as a removal '
+                                   'trigger',
+                                   'Use Semrush toxicity only as a guide because it flags money-term '
+                                   'anchors too',
+                                   'MMX ([oSf_C1HUEVA @ 00:01:01]); Craig Campbell SEO ([v_e7GOstIuc @ '
+                                   '00:01:36])'],
+                                  ['Content on a rebuilt expired domain',
+                                   'Restore archive.org content page for page so Google sees no topic or '
+                                   'anchor mismatch',
+                                   'Rewrite the entire page carrying your link because rewritten pages '
+                                   'passed more juice',
+                                   'Abbas Ravji ([gtVEsaXqXHo @ 00:06:21]); theseogeek ([13GEx8eLqzo @ '
+                                   '00:03:48])'],
+                                  ['Whether to rebuild or redirect at all',
+                                   'Rebuild into a network and link out through on-topic buffer sites to '
+                                   'the money site',
+                                   'Skip rebuilds after the March 2024 expired domain abuse policy and '
+                                   'mine broken links for outreach',
+                                   'Abbas Ravji ([gtVEsaXqXHo @ 00:07:05]); SERPSUPPORT ([_rpmkLdcJvc @ '
+                                   '00:03:24])'],
+                                  ['Redirects showing in the domain history',
+                                   'Ignore 302s as temporary but avoid domains sitting in 301s during '
+                                   'their final year',
+                                   'Treat any redirect inside a Wayback scan gap as enough to walk away '
+                                   'from the domain',
+                                   'Affiliate Credo ([S8e33kDoWhQ @ 00:04:00]); Shawna Newman (Skipblast) '
+                                   '([wkwOl5VePMM @ 00:02:58])'],
+                                  ['Domains that dropped and were re-registered',
+                                   'Treat old Wayback with new Whois as a reborn mixed bag needing extra '
+                                   'research',
+                                   'Prefer freshly dropped domains because they still look original and '
+                                   'Google loves them',
+                                   'Expired Domains ([5nQIZvvcgfY @ 00:02:30]); Affiliate Credo '
+                                   '([S8e33kDoWhQ @ 00:04:18])'],
+                                  ['Who should be buying expired domains',
+                                   'Beginners should build the project fresh instead of waiting on the '
+                                   'perfect drop',
+                                   'Experienced operators entering finance, legal or healthcare can '
+                                   'justify the slow vetting work',
+                                   'Frey Chu ([mHkLfhpVYqc @ 00:00:51])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The first trap is believing your own tooling. SearchGAPMethod's script "
+                              'reported 12 dead sites that were really 403 bot walls; the fix was opening '
+                              'each one in a real browser and logging stubborn ones as unverified, never '
+                              'as dead and never as a pass [UXycltw74Bw @ 00:06:56]. Their first automated '
+                              'pass ran one long OR query for profile pages across all 49 domains and came '
+                              'back empty, which looked like the whole list had been dropped from Google '
+                              'until they realized the search API returns nothing on long OR chains; one '
+                              'pattern per query fixed it [UXycltw74Bw @ 00:07:47]. Reading the wrong link '
+                              'is the next failure: platform sponsor links can be followed while user '
+                              'links are not, and on Zomato two profiles had followed website links while '
+                              'a third was nofollow, so sample three user pages and write down which ones '
+                              'you read. Ajit Sahane rechecked 650 of their own backlinks from Google '
+                              'Search Console and found only 54 percent still live, the rest removed, '
+                              'flipped to nofollow, or sitting on pages Google never indexed, which is why '
+                              'their checker sorts every link into passed, warning, failed or unverified '
+                              "[4HSXReKgl4o @ 00:00:40]. Edvido's test applies to any seller's report: "
+                              'eleven free tools on one afternoon returned counts from just under 15,000 '
+                              'to over 65,000 for the same site [XjoQwN4FcDU @ 00:01:01].',
+                              "Wayback misreads cost real money. Shawna Newman's consulting student found "
+                              'an aged domain on Otis Global, looked in the Wayback Machine, saw nothing '
+                              'out of the ordinary, and paid for a second opinion; it took Newman less '
+                              'than a minute to spot that scans stopped in 2019 and only resumed at the '
+                              'end of 2021 [wkwOl5VePMM @ 00:00:53]. The green calendar days in that gap '
+                              'were redirects pointing to a 30minuteprep.com site that later redirected to '
+                              'a spammy page full of Asian characters, and the redirect alone was enough '
+                              'to kill the purchase as probably toxic [wkwOl5VePMM @ 00:02:58]. Newman '
+                              'does not read every snapshot; they spot-check each scanned year for signs '
+                              "the site was repurposed as a PBN. Abbas Ravji's team says they did not "
+                              'catch the transition on revact.org, a trusted Ruby framework site that a '
+                              'PBN owner took over and repositioned to payday advance loans packed with '
+                              "outbound links [gtVEsaXqXHo @ 00:08:34]. Affiliate Credo's hard lines: "
+                              'refuse instantly if the last months show spam followed by a fresh WordPress '
+                              'site with Viagra content, never buy a domain without any archive index, '
+                              'avoid domains sitting in 301 redirects during their last year, and never '
+                              'buy domains that expired years ago because they lose links like crazy while '
+                              'dropped [S8e33kDoWhQ @ 00:03:54].',
+                              'Economics checks kill most deals before the bid. Frey Chu took '
+                              'magpress.com, bid up to $300 on NameCheap while neighbors sat near $15, and '
+                              'ran it through Ahrefs: DR 59 and 422,000 backlinks looked strong, but the '
+                              'profile once peaked at 27 million, traffic crashed after January 2017, and '
+                              'none of the best links sent any page traffic [mHkLfhpVYqc @ 00:03:30]. The '
+                              'kill shot was referring domains doubling from 1,900 to 4,000 between June '
+                              '2015 and spring 2016, roughly 2,000 in nine to ten months, followed by a '
+                              'traffic spike and crash that Chu read as a possible penalty; the verdict '
+                              'was pass [mHkLfhpVYqc @ 00:09:24]. Chu also names the arbitrage others run: '
+                              'a reseller could sling backlinks on that domain for $100 a pop because '
+                              'buyers judge on DR alone and ignore that no real traffic reaches the pages. '
+                              'Even the restoration step has bottlenecks. Abbas Ravji found the Wayback '
+                              'Machine Downloader misses pages at 10 threads, so run fewer, and a '
+                              'from-only timestamp pulled 75 files mixing the old Ruby site with later '
+                              'payday spam; adding a to timestamp cut the pull to nine clean files, and '
+                              'the list flag narrowed 155 candidate snapshots down to 13 [gtVEsaXqXHo @ '
+                              '00:17:23].'],
+               'table': {'caption': 'Firsthand failures, what broke, and the fix or kill rule '
+                                    'practitioners adopted',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Fix Or Kill Rule',
+                                     'Expert Source'],
+                         'rows': [['Script marks live sites as dead',
+                                   'Twelve home pages returned 403 because bot walls blocked the scripted '
+                                   'request',
+                                   'Open each 403 in a real browser and log refusals as unverified, not '
+                                   'dead',
+                                   'SearchGAPMethod ([UXycltw74Bw @ 00:06:56])'],
+                                  ['Empty results from a combined query',
+                                   'One long OR query for profile pages returned nothing across all 49 '
+                                   'domains',
+                                   'Run one URL pattern per query because the search API fails on long OR '
+                                   'chains',
+                                   'SearchGAPMethod ([UXycltw74Bw @ 00:07:47])'],
+                                  ['Judging a platform from one profile',
+                                   'On Zomato two profiles carried followed website links while a third '
+                                   'was nofollow',
+                                   'Sample three user pages before any verdict and record exactly which '
+                                   'three you read',
+                                   'SearchGAPMethod ([UXycltw74Bw @ 00:07:31])'],
+                                  ['Links that look followed but are cancelled',
+                                   'Profile links carried no rel attribute yet the page head said robots '
+                                   'nofollow',
+                                   'Read the robots meta tag and pass only when missing or set to index '
+                                   'follow',
+                                   'SearchGAPMethod ([UXycltw74Bw @ 00:03:39])'],
+                                  ['Missing a redirect hidden in a scan gap',
+                                   'A student saw nothing odd while 2019 to 2021 scans showed green '
+                                   'redirect days',
+                                   'Open the gap years, follow the redirect target, and walk if it points '
+                                   'somewhere spammy',
+                                   'Shawna Newman (Skipblast) ([wkwOl5VePMM @ 00:01:08])'],
+                                  ['Restoring the wrong version of the site',
+                                   'A from-only timestamp downloaded later payday spam pages alongside the '
+                                   'original Ruby site',
+                                   'Pin both from and to timestamps and preview snapshots with the list '
+                                   'flag first',
+                                   'Abbas Ravji ([gtVEsaXqXHo @ 00:15:36])'],
+                                  ['Paying for link reports nobody verified',
+                                   'Only 54 percent of 650 rechecked backlinks from Search Console were '
+                                   'still live',
+                                   'Crawl every linking URL for live status, rel type, robots, canonical '
+                                   'and indexability',
+                                   'Ajit Sahane | AI SEO, Backlinks & Websites ([4HSXReKgl4o @ '
+                                   '00:00:40])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill Rules Before You Bid',
+                           'body': 'Run these four checks on every aged domain before money moves; any '
+                                   'single failure is a walk-away signal the practitioners act on.',
+                           'items': ['Open every 403 in a real browser and log unreachable sites as '
+                                     'unverified, never as dead and never as a pass [SearchGAPMethod — '
+                                     'UXycltw74Bw @ 00:06:56].',
+                                     'Walk away from any aged domain whose Wayback calendar shows green '
+                                     'redirect days inside a scan gap pointing to a third-party or spammy '
+                                     'site [Shawna Newman (Skipblast) — wkwOl5VePMM @ 00:02:11].',
+                                     'Pass on profiles that doubled referring domains in under a year and '
+                                     'then spiked and crashed in traffic, regardless of DR [Frey Chu — '
+                                     'mHkLfhpVYqc @ 00:09:24].',
+                                     'Refuse domains with no archive index, a 301 redirect in the final '
+                                     'year, or spam content in the last months before the drop [Affiliate '
+                                     'Credo — S8e33kDoWhQ @ 00:03:54].']}}],
+ 'pull_quote': '"DR measures the domain. It says nothing about the page your link lands on. The domain is '
+               'strong. Your link on it usually isn\'t." — SearchGAPMethod (UXycltw74Bw @ 00:01:33).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Drop the candidate into Ahrefs Site Explorer, open best links, sort by page '
+                      'traffic, and treat zero-traffic pages and nofollow placements as shells, not assets '
+                      '[Frey Chu — mHkLfhpVYqc @ 00:06:21].',
+                      'Pull the Wayback Machine calendar, spot-check every scanned year, and open any gap '
+                      'years to see whether the domain was redirected or repurposed as a PBN [Shawna '
+                      'Newman (Skipblast) — wkwOl5VePMM @ 00:03:30].',
+                      'Compare Wayback birth year against Whois birth year on expireddomains.com and flag '
+                      'reborn domains with old archives and fresh registrations for deeper research '
+                      '[Expired Domains — 5nQIZvvcgfY @ 00:00:38].',
+                      'Scan the backlink anchor text and walk away on casino, pharma, or foreign-language '
+                      'spam, then confirm the linking sites are still live and indexed [SERPSUPPORT — '
+                      '_rpmkLdcJvc @ 00:04:42].',
+                      'Find the last month the site showed its original look, check for 301 or 302 '
+                      'redirects in that final stretch, and refuse anything showing spammer ownership '
+                      '[Affiliate Credo — S8e33kDoWhQ @ 00:02:35].',
+                      'Before paying for any placement, demand the exact page, the proposed paragraph, the '
+                      "destination URL, and the link wording, plus terms if the link is removed [Arvow's "
+                      'AI SEO Tips — zNPRVbbrEL0 @ 00:01:31].'],
+ 'statutory_citations': [{'title': 'Frey Chu — How I Find Expired Domains with Backlink Goldmines (and '
+                                   'When They’re Worth It) [00:09:24]',
+                          'url': 'https://www.youtube.com/watch?v=mHkLfhpVYqc&t=564s',
+                          'relevance': 'Primary practitioner testimony on killing an expired domain bid '
+                                       'after spotting unnatural referring-domain growth.'},
+                         {'title': 'Shawna Newman (Skipblast) — How To Use The Wayback Machine To Do Due '
+                                   'Diligence On Aged Domains [00:01:08]',
+                          'url': 'https://www.youtube.com/watch?v=wkwOl5VePMM&t=68s',
+                          'relevance': 'Primary practitioner testimony on reading Wayback scan gaps and '
+                                       'redirects before buying an aged domain.'},
+                         {'title': 'Affiliate Credo — 📰How to Use Archive.Org to Analyze Expired Domains '
+                                   '[00:03:54]',
+                          'url': 'https://www.youtube.com/watch?v=S8e33kDoWhQ&t=234s',
+                          'relevance': 'Primary practitioner testimony on archive-index, redirect, and '
+                                       'expiry-age kill rules for auction domains.'},
+                         {'title': "SearchGAPMethod — I Audited Every Link on Google's #1 Free Backlinks "
+                                   "List and You're Still Using It [00:01:33]",
+                          'url': 'https://www.youtube.com/watch?v=UXycltw74Bw&t=93s',
+                          'relevance': 'Primary practitioner testimony on page-level link checks '
+                                       'overriding domain-level DR.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'UXycltw74Bw',
+                       'title': "I Audited Every Link on Google's #1 Free Backlinks List and You're Still "
+                                'Using It',
+                       'channel': 'SearchGAPMethod',
+                       'author': 'SearchGAPMethod',
+                       'text': 'It says nothing about the page your link lands on. The domain is strong. '
+                               "Your link on it usually isn't.",
+                       'tip': 'It says nothing about the page your link lands on. The domain is strong. '
+                              "Your link on it usually isn't.",
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=UXycltw74Bw&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=UXycltw74Bw&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w83CsN7RD1Y',
+                       'title': 'How To Do Backlink Audit With Ubersuggest',
+                       'channel': 'Tutorials With Trevor',
+                       'author': 'Tutorials With Trevor',
+                       'text': "If you find any of these, it's advisable to consider disavowing them to "
+                               "protect your site's ranking.",
+                       'tip': "If you find any of these, it's advisable to consider disavowing them to "
+                              "protect your site's ranking.",
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=w83CsN7RD1Y&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=w83CsN7RD1Y&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oSf_C1HUEVA',
+                       'title': 'How to Remove Toxic Backlinks in Semrush to Boost Your SEO',
+                       'channel': 'MMX',
+                       'author': 'MMX',
+                       'text': 'You can see that the site has an authority score of two and a toxicity '
+                               'score of 79 out of a possible score of 100.',
+                       'tip': 'You can see that the site has an authority score of two and a toxicity '
+                              'score of 79 out of a possible score of 100.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=oSf_C1HUEVA&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=oSf_C1HUEVA&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XjoQwN4FcDU',
+                       'title': 'Best Free Backlink Checkers Tested (15K vs 65K Links?!) | Real SEO Case '
+                                'Study | Edvido',
+                       'channel': 'Edvido',
+                       'author': 'Edvido',
+                       'text': 'Because when third party tools and Google disagree, Google always wins.',
+                       'tip': 'Because when third party tools and Google disagree, Google always wins.',
+                       'timestamp': 499,
+                       'timestamp_seconds': 499,
+                       'timestamp_label': '[00:08:19]',
+                       'url': 'https://www.youtube.com/watch?v=XjoQwN4FcDU&t=499s',
+                       'markdown': '[00:08:19](https://www.youtube.com/watch?v=XjoQwN4FcDU&t=499s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CDKhSTwWeN8',
+                       'title': 'How to Check Backlinks with OpenSEO',
+                       'channel': 'OpenSEO',
+                       'author': 'OpenSEO',
+                       'text': "Below that, you'll see the full list of backlinks from Open SEO's data "
+                               "provider with the backlinks above the tool's spam score threshold filtered "
+                               'out automatically.',
+                       'tip': "Below that, you'll see the full list of backlinks from Open SEO's data "
+                              "provider with the backlinks above the tool's spam score threshold filtered "
+                              'out automatically.',
+                       'timestamp': 117,
+                       'timestamp_seconds': 117,
+                       'timestamp_label': '[00:01:57]',
+                       'url': 'https://www.youtube.com/watch?v=CDKhSTwWeN8&t=117s',
+                       'markdown': '[00:01:57](https://www.youtube.com/watch?v=CDKhSTwWeN8&t=117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zNPRVbbrEL0',
+                       'title': 'Backlink Audit: How to Check a Website Before Buying Backlinks',
+                       'channel': "Arvow's AI SEO Tips",
+                       'author': "Arvow's AI SEO Tips",
+                       'text': 'Before paying for any placement, ask for the exact page, the proposed '
+                               'paragraph, the destination URL, and the link wording.',
+                       'tip': 'Before paying for any placement, ask for the exact page, the proposed '
+                              'paragraph, the destination URL, and the link wording.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=zNPRVbbrEL0&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=zNPRVbbrEL0&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4HSXReKgl4o',
+                       'title': 'Backlink Checker Tool Demo: Check if Your Backlinks Are Live, Dofollow & '
+                                'Indexed (Free)',
+                       'channel': 'Ajit Sahane | AI SEO, Backlinks & Websites',
+                       'author': 'Ajit Sahane | AI SEO, Backlinks & Websites',
+                       'text': 'When we rechecked six hundred fifty of our own backlinks from Google '
+                               'Search Console only fifty four percent were still live.',
+                       'tip': 'When we rechecked six hundred fifty of our own backlinks from Google Search '
+                              'Console only fifty four percent were still live.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=4HSXReKgl4o&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=4HSXReKgl4o&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nBNA5_Ty8Jc',
+                       'title': 'Detect Bad-Spam Backlinks to Your Website Hurting Your SEO',
+                       'channel': 'HowToWebmaster',
+                       'author': 'HowToWebmaster',
+                       'text': 'Domain authority below five, so these are a lot of low quality backlinks '
+                               'to my site, so what you can do is reach out to them and request to remove '
+                               'your links.',
+                       'tip': 'Domain authority below five, so these are a lot of low quality backlinks to '
+                              'my site, so what you can do is reach out to them and request to remove your '
+                              'links.',
+                       'timestamp': 94,
+                       'timestamp_seconds': 94,
+                       'timestamp_label': '[00:01:34]',
+                       'url': 'https://www.youtube.com/watch?v=nBNA5_Ty8Jc&t=94s',
+                       'markdown': '[00:01:34](https://www.youtube.com/watch?v=nBNA5_Ty8Jc&t=94s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v_e7GOstIuc',
+                       'title': 'How to do a Link Audit, Auditing your Backlinks',
+                       'channel': 'Craig Campbell SEO',
+                       'author': 'Craig Campbell SEO',
+                       'text': "It's by no means set in stone that Semrush always gets this right; simply "
+                               'use it as a guide.',
+                       'tip': "It's by no means set in stone that Semrush always gets this right; simply "
+                              'use it as a guide.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=v_e7GOstIuc&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=v_e7GOstIuc&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_rpmkLdcJvc',
+                       'title': 'Backlinks from Expired Domains: The Safe Way (and the Trap Most SEOs Fall '
+                                'Into)',
+                       'channel': 'SERPSUPPORT',
+                       'author': 'SERPSUPPORT',
+                       'text': 'Open it in the Wayback Machine and look at what the site actually was. '
+                               'Check the anchor text of its backlinks. If you see casino, pharma, or '
+                               'foreign language spam, walk away.',
+                       'tip': 'Open it in the Wayback Machine and look at what the site actually was. '
+                              'Check the anchor text of its backlinks. If you see casino, pharma, or '
+                              'foreign language spam, walk away.',
+                       'timestamp': 282,
+                       'timestamp_seconds': 282,
+                       'timestamp_label': '[00:04:42]',
+                       'url': 'https://www.youtube.com/watch?v=_rpmkLdcJvc&t=282s',
+                       'markdown': '[00:04:42](https://www.youtube.com/watch?v=_rpmkLdcJvc&t=282s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gtVEsaXqXHo',
+                       'title': 'How To recreate Expired Domains For your PBN using Free Tools (wayback '
+                                'Machine Restorer)',
+                       'channel': 'Abbas Ravji',
+                       'author': 'Abbas Ravji',
+                       'text': 'When working with 10 threads it seems to miss some pages sometimes; when '
+                               'working with fewer threads it gets them all.',
+                       'tip': 'When working with 10 threads it seems to miss some pages sometimes; when '
+                              'working with fewer threads it gets them all.',
+                       'timestamp': 735,
+                       'timestamp_seconds': 735,
+                       'timestamp_label': '[00:12:15]',
+                       'url': 'https://www.youtube.com/watch?v=gtVEsaXqXHo&t=735s',
+                       'markdown': '[00:12:15](https://www.youtube.com/watch?v=gtVEsaXqXHo&t=735s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S8e33kDoWhQ',
+                       'title': '📰How to Use Archive.Org to Analyze Expired Domains',
+                       'channel': 'Affiliate Credo',
+                       'author': 'Affiliate Credo',
+                       'text': 'I never buy domains without any archive index, I never buy websites that '
+                               "expired a few years ago because it loses links like crazy while it's "
+                               'expired.',
+                       'tip': 'I never buy domains without any archive index, I never buy websites that '
+                              "expired a few years ago because it loses links like crazy while it's "
+                              'expired.',
+                       'timestamp': 234,
+                       'timestamp_seconds': 234,
+                       'timestamp_label': '[00:03:54]',
+                       'url': 'https://www.youtube.com/watch?v=S8e33kDoWhQ&t=234s',
+                       'markdown': '[00:03:54](https://www.youtube.com/watch?v=S8e33kDoWhQ&t=234s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5nQIZvvcgfY',
+                       'title': 'Archive Birth Year vs Whois Birth Year - Explained & Why They Matter For '
+                                'Your Next Domain Investment',
+                       'channel': 'Expired Domains',
+                       'author': 'Expired Domains',
+                       'text': 'Since it drops, you have to ask why. Good domains and great domains rarely '
+                               'ever drop unless something went wrong.',
+                       'tip': 'Since it drops, you have to ask why. Good domains and great domains rarely '
+                              'ever drop unless something went wrong.',
+                       'timestamp': 166,
+                       'timestamp_seconds': 166,
+                       'timestamp_label': '[00:02:46]',
+                       'url': 'https://www.youtube.com/watch?v=5nQIZvvcgfY&t=166s',
+                       'markdown': '[00:02:46](https://www.youtube.com/watch?v=5nQIZvvcgfY&t=166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wkwOl5VePMM',
+                       'title': 'How To Use The Wayback Machine To Do Due Diligence On Aged Domains',
+                       'channel': 'Shawna Newman (Skipblast)',
+                       'author': 'Shawna Newman (Skipblast)',
+                       'text': 'Just seeing that this domain was being redirected is enough for me to say '
+                               "I don't want to buy this aged domain because it's probably a toxic domain.",
+                       'tip': 'Just seeing that this domain was being redirected is enough for me to say I '
+                              "don't want to buy this aged domain because it's probably a toxic domain.",
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=wkwOl5VePMM&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=wkwOl5VePMM&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '13GEx8eLqzo',
+                       'title': 'Content When Rebuilding Expired and Auction Domains from Wayback Machine',
+                       'channel': 'theseogeek',
+                       'author': 'theseogeek',
+                       'text': "Where I've totally rewritten the whole page that my link's going on, "
+                               'compared to just a rebuild with just the link, that rewritten content '
+                               "expired domain is passing more juice or it's having better results on my "
+                               'rankings.',
+                       'tip': "Where I've totally rewritten the whole page that my link's going on, "
+                              'compared to just a rebuild with just the link, that rewritten content '
+                              "expired domain is passing more juice or it's having better results on my "
+                              'rankings.',
+                       'timestamp': 228,
+                       'timestamp_seconds': 228,
+                       'timestamp_label': '[00:03:48]',
+                       'url': 'https://www.youtube.com/watch?v=13GEx8eLqzo&t=228s',
+                       'markdown': '[00:03:48](https://www.youtube.com/watch?v=13GEx8eLqzo&t=228s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mHkLfhpVYqc',
+                       'title': 'How I Find Expired Domains with Backlink Goldmines (and When They’re '
+                                'Worth It)',
+                       'channel': 'Frey Chu',
+                       'author': 'Frey Chu',
+                       'text': 'Getting 2,000 referring domains in the span of 9 to 10 months is '
+                               'incredibly fast and not typical.',
+                       'tip': 'Getting 2,000 referring domains in the span of 9 to 10 months is incredibly '
+                              'fast and not typical.',
+                       'timestamp': 564,
+                       'timestamp_seconds': 564,
+                       'timestamp_label': '[00:09:24]',
+                       'url': 'https://www.youtube.com/watch?v=mHkLfhpVYqc&t=564s',
+                       'markdown': '[00:09:24](https://www.youtube.com/watch?v=mHkLfhpVYqc&t=564s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mHkLfhpVYqc',
+                       'title': 'How I Find Expired Domains with Backlink Goldmines (and When They’re '
+                                'Worth It)',
+                       'channel': 'Frey Chu',
+                       'author': 'Frey Chu',
+                       'text': 'I personally would pass. I think the suspicious activity of having '
+                               'referring domains grow very significantly in 2015 to 2016 is a red flag.',
+                       'tip': 'I personally would pass. I think the suspicious activity of having '
+                              'referring domains grow very significantly in 2015 to 2016 is a red flag.',
+                       'timestamp': 634,
+                       'timestamp_seconds': 634,
+                       'timestamp_label': '[00:10:34]',
+                       'url': 'https://www.youtube.com/watch?v=mHkLfhpVYqc&t=634s',
+                       'markdown': '[00:10:34](https://www.youtube.com/watch?v=mHkLfhpVYqc&t=634s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

@@ -1,739 +1,895 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$100,000 USD) and configure a lean, low-opex ($3,000–$18,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Probate Brokerage: Segregated Banking, Court Authority, Twelve Lean Software Layers, and Closing-Based Cash Controls",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #9, Probate Real Estate, holds Rank #26 with a Money-to-Manpower "
-        "Score of 80/100. Across the volume's 11 mapped plays, capital discipline "
-        "starts with retained brokerage commissions, never property sale values. "
-        "This chapter separates operating reserves from estate funds, budgets "
-        "a twelve-layer production stack, and tests the supplied "
-        "identity_graph_pixel_arbitrage play against consent, attribution, and "
-        "cash economics. Keep at least half of startup capital liquid, because "
-        "first deals can take 4–18 months. The canonical annual owner profit "
-        "cases remain $24,000 Conservative, $140,250 Base, and $315,000 Scaled. "
-        "Use broker-approved transaction systems, documented representative "
-        "authority, and measured direct-mail cohorts before adding subscriptions "
-        "or employees. A functioning intake pipeline is valuable only when "
-        "the business can survive delayed court proceedings and failed closings."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$510,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect the Cash Runway Before Buying a Pipeline",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Allocate startup capital around the time between spending money and "
-                    "receiving a cleared commission, not around an attractive annual revenue "
-                    "target. The three budgets below reserve $9,000 of $15,000, $32,000 of "
-                    "$50,000, and $65,000 of $100,000: respectively 60%, 64%, and 65%. "
-                    "These are unrestricted business reserves, separate from earnest money, "
-                    "estate proceeds, and acquisition deposits. Release the remaining capital "
-                    "against invoices for licensing, insurance, equipment, and measured launch "
-                    "work. A representative can sign a listing before title defects, creditor "
-                    "claims, occupancy problems, or family disputes become visible. That "
-                    "signature creates workload rather than spendable cash. At illustrative "
-                    "monthly fixed burns of $3,000, $9,000, and $18,000, the respective "
-                    "reserves cover only 3.00, 3.56, and 3.61 months. None fully covers even "
-                    "a four-month first-deal interval. Four months requires $12,000, $36,000, "
-                    "or $72,000 before closing-specific costs, leaving shortfalls of $3,000, "
-                    "$4,000, and $7,000. At eighteen months, the corresponding requirements "
-                    "reach $54,000, $162,000, and $324,000. Close those gaps with documented "
-                    "outside income, additional committed capital, or lower actual burn. "
-                    "Do not treat a hoped-for commission, unsigned credit line, or estate "
-                    "reimbursement request as an available reserve."
-                ),
-                (
-                    "Reconcile the operating plan to the scorecard before choosing headcount. "
-                    "Conservative revenue of $120,000 less $96,000 of total modeled expenses "
-                    "produces $24,000 owner profit. Base revenue of $510,000 less $369,750 "
-                    "produces $140,250; Scaled revenue of $900,000 less $585,000 produces "
-                    "$315,000. These are retained commissions after brokerage splits, not "
-                    "gross property consideration. One illustrative bridge is fifteen closings "
-                    "at $400,000, a negotiated 2.5% brokerage commission on the represented "
-                    "side, and an 80% retention rate: $8,000 retained per closing and "
-                    "$120,000 annually. Sixty closings at $425,000 under the same assumptions "
-                    "yield $8,500 each and $510,000 annually. Ninety closings at $500,000 "
-                    "yield $10,000 each and $900,000 annually. Commission rates and splits "
-                    "are negotiated assumptions, never prescribed market rates. Annual fixed "
-                    "overhead of $36,000, $108,000, or $216,000 leaves $60,000, $261,750, "
-                    "or $369,000 for all remaining modeled expenses. Assign every expense "
-                    "once, including payroll, contractors, acquisition marketing, travel, and "
-                    "transaction support. The canonical teams remain 2 FT + 3 C, 2 FT + "
-                    "3 C, and 3 FT + 4 C. Those staffing counts describe operating capacity; "
-                    "they do not establish that local wages fit the budget."
-                ),
-                (
-                    "Keep owner distributions subordinate to reserve coverage and signed "
-                    "obligations. If the owner fills one full-time role, identify whether "
-                    "their cash compensation is an expense or the residual profit; never "
-                    "silently count the same dollars twice. Obtain actual wage, payroll-tax, "
-                    "benefit, and contractor quotes before committing to the canonical "
-                    "staffing footprint. The Conservative case can become uneconomic when "
-                    "two full-time market salaries are required from launch. Stage hiring "
-                    "against files that genuinely need coordination, rather than buying "
-                    "capacity because a spreadsheet labels the business high leverage. "
-                    "Maintain a rolling thirteen-week cash schedule with opening unrestricted "
-                    "cash, contractual payments, probability-weighted collections, and a "
-                    "separate zero-closing stress case. A transaction coordinator can quote "
-                    "per-file work, but define payment triggers when a sale falls through. "
-                    "Estate cleanouts, locksmiths, utilities, and emergency repairs should "
-                    "normally be contracted and paid by the authorized estate representative. "
-                    "If the brokerage advances any amount, record written authority, a "
-                    "reimbursement ceiling, and the collection risk before disbursement. "
-                    "Principal acquisition requires its own capital model and account "
-                    "structure; a purchase deposit cannot also serve as brokerage payroll "
-                    "runway. Reforecast weekly when a hearing moves, an heir contests "
-                    "authority, or a buyer loses funding."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocations Across Three Capital Envelopes",
-                "headers": [
-                    "Capital destination and release rule",
-                    "$15,000 lean launch allocation",
-                    "$50,000 measured launch allocation",
-                    "$100,000 expanded launch allocation",
-                ],
-                "rows": [
-                    [
-                        "Unrestricted working reserve protected from discretionary purchasing",
-                        "$9,000 reserved; supports three months at $3,000 fixed burn",
-                        "$32,000 reserved; supports 3.56 months at $9,000 fixed burn",
-                        "$65,000 reserved; supports 3.61 months at $18,000 fixed burn",
-                    ],
-                    [
-                        "Entity, licensing, and brokerage onboarding against actual invoices",
-                        "$1,500 allowance; prioritize required registration and broker onboarding",
-                        "$3,000 allowance; fund local licensing and documented entity setup",
-                        "$5,000 allowance; absorb broader licensing and broker onboarding costs",
-                    ],
-                    [
-                        "Insurance deposits after reviewing exclusions and required endorsements",
-                        "$750 allowance; obtain binding quotes before committing remaining cash",
-                        "$2,000 allowance; cover quoted brokerage and cyber policy deposits",
-                        "$4,000 allowance; fund quoted expanded limits and applicable endorsements",
-                    ],
-                    [
-                        "Managed devices, secure access, and tested recovery equipment",
-                        "$1,000 allowance; reuse suitable hardware after security configuration",
-                        "$2,500 allowance; equip two operators with controlled business devices",
-                        "$4,000 allowance; equip expanded staff without purchasing redundant hardware",
-                    ],
-                    [
-                        "Docket research and bounded direct-mail acquisition experiments",
-                        "$1,000 allowance; run small verified-address mailing cohorts first",
-                        "$4,000 allowance; stagger mail cohorts against measured response quality",
-                        "$10,000 allowance; expand only cohorts producing attributable retained commissions",
-                    ],
-                    [
-                        "Website and software setup with annual commitments separately tracked",
-                        "$750 allowance; deploy one landing page and essential subscriptions",
-                        "$1,500 allowance; configure intake routing and broker-approved document workflows",
-                        "$3,000 allowance; add tested integrations only after manual validation",
-                    ],
-                    [
-                        "Specialist process design and transaction workflow rehearsal",
-                        "$1,000 allowance; purchase targeted accounting and local procedure review",
-                        "$5,000 allowance; document representative authority and exception handling procedures",
-                        "$9,000 allowance; rehearse multi-county operations with qualified local specialists",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Fund the Delay, Not the Appearance of Scale",
-                "body": (
-                    "Probate operators preserve cash by buying verified information and "
-                    "bounded execution capacity before buying broad lead volume."
-                ),
-                "items": [
-                    "Order a preliminary title review before paying for photography on a disputed estate; unreleased liens can make the launch calendar fictional.",
-                    "Ask the broker which transaction platform, forms library, and electronic signatures are already included before purchasing duplicate subscriptions.",
-                    "Quote cleanout and occupancy work directly to the authorized representative; separate estate expenditures from brokerage customer-acquisition costs.",
-                    "Track court continuances as cash events: move expected commission receipts immediately while leaving committed payroll and insurance payments unchanged.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble Twelve Infrastructure Layers Without Twelve Paid Contracts",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the stack around a case identifier, a responsible operator, and "
-                    "one authoritative transaction record. A probate matter should carry "
-                    "the court case number, county, property parcel, representative contact, "
-                    "authority status, next required action, and source-document link. Keep "
-                    "sensitive attachments inside the broker-approved repository instead of "
-                    "replicating them through every marketing application. The matrix uses "
-                    "named public tiers as procurement planning references, not verified "
-                    "current offers. Confirm each checkout price, renewal term, seat minimum, "
-                    "usage cap, tax, and broker requirement before purchase. For two operators, "
-                    "the illustrated paid configuration is Google Workspace Business Starter "
-                    "at $14 monthly equivalent, Bitwarden Teams at $8, Backblaze Computer "
-                    "Backup at $18, and one Docusign Personal seat at $10. That totals "
-                    "$50 monthly equivalent, or $600 annually, excluding domain registration, "
-                    "hosting, court charges, postal spending, and transaction-system fees. "
-                    "Workspace, Bitwarden, and Docusign prices here assume annual billing; "
-                    "their combined illustrated annual commitment is $384. Cheap software "
-                    "does not make a $3,000 operating budget unrealistic or unnecessary: "
-                    "labor, licensing, insurance, transportation, and marketing dominate "
-                    "the cash requirement. Replace the signature tier when its envelope "
-                    "limit becomes restrictive, rather than quietly relying on unpaid workarounds."
-                ),
-                (
-                    "CourtListener is a useful free research layer, but probate is "
-                    "predominantly a state-court workflow and its coverage cannot be assumed. "
-                    "Use the county clerk's official docket and alert service as the "
-                    "authoritative source wherever available. Test coverage with twenty "
-                    "known matters across the target counties, record missed events, and "
-                    "assign a human review cadence where automated alerts are incomplete. "
-                    "An Airtable checklist can schedule follow-up, but it cannot establish "
-                    "that letters remain effective or interpret the legal consequence of "
-                    "a contested petition. Likewise, HubSpot can record relationship history "
-                    "without becoming the storage location for identification documents, "
-                    "death certificates, estate account statements, or unredacted court "
-                    "attachments. Separate public property facts from restricted client "
-                    "documents and grant contractors access only to assigned work. Establish "
-                    "an export routine before importing the first live contact. A free "
-                    "tier that cannot produce usable exports, assign appropriate access, "
-                    "or meet the broker's retention requirements is expensive operational "
-                    "debt. Test one closed-file export containing its signed agreement, "
-                    "communications, authority evidence, deadline history, and commission "
-                    "reconciliation. Searchability and recoverability matter more than "
-                    "the number of automations advertised on a pricing page."
-                ),
-                (
-                    "Procure software in stages rather than annually prepaying an imagined "
-                    "team. Start with a shared mailbox convention, a single intake form, "
-                    "manual docket verification, and a weekly exception report. Add automated "
-                    "notifications only after the manual workflow has a named owner and "
-                    "a written response deadline. Protect Workspace and the password vault "
-                    "with strong multifactor authentication; use separate administrator "
-                    "accounts and recovery methods stored outside the primary laptop. "
-                    "Backblaze protects supported endpoints, not every cloud application's "
-                    "records, so schedule separate exports and test restoration of the "
-                    "transaction repository. Prohibit payment-instruction changes solely "
-                    "through email. Call a previously verified number before acting on "
-                    "new escrow wiring details, even when the message appears inside a "
-                    "real transaction thread. Reconcile subscription charges monthly against "
-                    "an owner, a purpose, and an observable usage measure. Remove departed "
-                    "contractors promptly, transfer file ownership, and revoke active "
-                    "sessions where supported. Before purchasing an integration, calculate "
-                    "its actual value: saving two hours monthly at $40 per hour creates "
-                    "$80 of capacity, not permission to buy a $150 connector. Keep the "
-                    "manual procedure available for clerk outages, vendor failures, and "
-                    "expired payment cards. Reliability comes from tested recovery, not "
-                    "a longer list of applications."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Procurement Matrix: Reference Tiers, Roles, and Lean Substitutes",
-                "headers": [
-                    "Infrastructure layer and named vendor",
-                    "Exact reference tier and pricing basis",
-                    "Probate operating role and purchase condition",
-                    "Cheaper operating alternative or bounded fallback",
-                ],
-                "rows": [
-                    [
-                        "01 — Business identity and correspondence through Google Workspace",
-                        "Business Starter: $7 per user monthly equivalent, annual commitment",
-                        "Use controlled business email and restricted client-document folders",
-                        "Use existing broker-managed accounts when separation and exports suffice",
-                    ],
-                    [
-                        "02 — Domain protection and routing through Cloudflare",
-                        "Free plan: $0 recurring platform charge; domain registration separate",
-                        "Manage DNS and basic website protection without identity enrichment",
-                        "Use registrar DNS when existing hosting already supplies protection",
-                    ],
-                    [
-                        "03 — Public intake website through self-hosted WordPress.org",
-                        "Open-source software: $0 license charge; hosting and domain separate",
-                        "Publish service scope and a minimal voluntary inquiry form",
-                        "Use the broker's existing profile page and approved intake form",
-                    ],
-                    [
-                        "04 — Relationship tracking through HubSpot free CRM",
-                        "Free Tools tier: $0 subscription within applicable account limits",
-                        "Record attorney relationships, inquiry permission, and next follow-up dates",
-                        "Use a restricted spreadsheet until permissions or capacity require migration",
-                    ],
-                    [
-                        "05 — Case checklist coordination through Airtable",
-                        "Free plan: $0 subscription within applicable record and automation limits",
-                        "Track authority checks, court milestones, and responsible task owners",
-                        "Use broker-approved spreadsheet checklists with scheduled human review",
-                    ],
-                    [
-                        "06 — Supplemental docket research through CourtListener",
-                        "Free website access: $0; paid services and court charges separate",
-                        "Research available records while verifying state probate coverage independently",
-                        "Use official county clerk searches and manual calendar checks",
-                    ],
-                    [
-                        "07 — Appointment scheduling through Calendly",
-                        "Free tier: $0 subscription with limited scheduling functionality",
-                        "Offer one controlled intake meeting type without collecting sensitive documents",
-                        "Schedule directly through existing email and shared calendar tools",
-                    ],
-                    [
-                        "08 — Electronic signatures through Docusign",
-                        "Personal: $10 monthly equivalent billed annually; five envelopes monthly",
-                        "Use only when broker-approved forms and envelope volume fit",
-                        "Use included brokerage signatures before buying a separate seat",
-                    ],
-                    [
-                        "09 — Operating bookkeeping through Wave",
-                        "Starter: $0 subscription; payment processing and optional services separate",
-                        "Classify retained commissions and operating expenses without mixing trust funds",
-                        "Use accountant-controlled ledgers when brokerage accounting already covers operations",
-                    ],
-                    [
-                        "10 — Shared credential management through Bitwarden",
-                        "Teams: $4 per user monthly equivalent with annual billing",
-                        "Assign controlled shared credentials and remove access after contractor departure",
-                        "Use an existing broker-managed vault with equivalent access controls",
-                    ],
-                    [
-                        "11 — Endpoint recovery through Backblaze",
-                        "Computer Backup: $9 per computer monthly on monthly billing",
-                        "Recover supported workstation files while separately protecting cloud records",
-                        "Use encrypted offline backups with documented rotation and restore tests",
-                    ],
-                    [
-                        "12 — Aggregate website measurement through Google Analytics",
-                        "Analytics Standard: $0 subscription; implementation and specialist labor separate",
-                        "Measure permitted aggregate conversion events without sending personal identifiers",
-                        "Use coarse server-side counts and manually attributed inquiry records",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Separate Brokerage Authority, Estate Money, and Acquisition Economics",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Create the entity and bank structure around the licensed activity "
-                    "actually being performed. An LLC registration and an EIN do not "
-                    "authorize real estate brokerage; confirm the individual license, "
-                    "supervising broker relationship, business-name permissions, and any "
-                    "required entity license in the operating jurisdiction. California "
-                    "Business and Professions Code section 10130, for example, prohibits "
-                    "acting as a real estate broker or salesperson without the required "
-                    "license. Maintain a business operating account and a separately "
-                    "identified reserve account. Client money belongs in the permitted "
-                    "escrow or trust arrangement, never in the working-capital pool. "
-                    "California section 10145 and title 10, section 2831 of the California "
-                    "Code of Regulations provide concrete handling and recordkeeping rules "
-                    "for broker trust funds. Assign bookkeeping responsibility, reconciliation "
-                    "frequency, and escalation ownership before receiving any deposit. "
-                    "If the brokerage never holds trust money, document the escrow routing "
-                    "and prohibit staff from accepting checks outside that process. Obtain "
-                    "errors-and-omissions, general liability, cyber, and employment-related "
-                    "coverage appropriate to actual exposures. Review exclusions for "
-                    "principal-owned properties, property management, referral arrangements, "
-                    "and wire fraud. A certificate of insurance establishes evidence "
-                    "of coverage; it does not resolve exclusions or replace policy review."
-                ),
-                (
-                    "Verify the representative's present authority instead of treating an "
-                    "obituary, will, or family introduction as permission to sell. Obtain "
-                    "current letters, relevant orders, ownership records, and the listing "
-                    "signer's identity through approved channels. In California, Probate "
-                    "Code section 10501 distinguishes transactions requiring court supervision "
-                    "under limited authority, including real-property sales. Section 10580 "
-                    "addresses notice of proposed action, subject to statutory exceptions. "
-                    "When court confirmation applies, section 10309 addresses the relationship "
-                    "between sale price and appraised value, while section 10311 supplies "
-                    "the initial increased-bid rule. These are jurisdiction-specific workflow "
-                    "inputs, not rules to copy into every state's checklist. Ask the "
-                    "estate's attorney to identify the controlling procedure and deadlines "
-                    "for the actual matter. Record whether occupants, co-owners, surviving "
-                    "spouses, liens, or litigation create additional constraints. Attorney "
-                    "relationships should develop through useful case execution rather than "
-                    "unreviewed payments for referrals. Where a transaction involves a "
-                    "federally related mortgage loan, 12 U.S.C. 2607 restricts settlement-service "
-                    "referral fees and unearned fee splits. A marketing invoice does not "
-                    "automatically convert a referral payment into a permissible service "
-                    "expense. Require a defined service, evidence of performance, and "
-                    "review of both federal and applicable state restrictions."
-                ),
-                (
-                    "Underwrite executor concierge work as a distinct service with explicit "
-                    "scope, pricing, and authorization. Coordinating a locksmith, arranging "
-                    "photographs, or obtaining cleanout estimates does not authorize staff "
-                    "to dispose of personal property, negotiate estate debts, or decide "
-                    "which beneficiary receives an asset. Use written work orders identifying "
-                    "who selects the vendor, who contracts, who pays, and who can approve "
-                    "changes. A $600 coordination fee against six hours of work at $45 "
-                    "per hour and $80 of direct costs leaves $250 before overhead. "
-                    "That example explains unit economics; it does not add concierge "
-                    "revenue to the canonical retained-commission scorecard. Treat property "
-                    "acquisitions similarly. A $300,000 purchase and $40,000 rehabilitation "
-                    "budget represent principal deployment and project costs, not brokerage "
-                    "revenue. If the operator becomes a buyer, disclose the capacity "
-                    "change and follow applicable fiduciary, brokerage, and court requirements. "
-                    "Keep acquisition underwriting, deposits, and carrying costs outside "
-                    "the brokerage reserve ledger. Do not use an estate relationship "
-                    "to obtain undisclosed advantages over represented parties. When "
-                    "authority or incentives become disputed, suspend the affected action, "
-                    "preserve the chronology, and route the issue to the supervising "
-                    "broker and estate counsel before spending more cash."
-                ),
-            ],
-            "table": {
-                "caption": "Authority, Banking, and Insurance Evidence Required Before Live Transactions",
-                "headers": [
-                    "Operating exposure requiring explicit ownership",
-                    "Evidence retained in the controlled case record",
-                    "Concrete verification and accounting procedure",
-                    "Failure response protecting clients and reserves",
-                ],
-                "rows": [
-                    [
-                        "Licensed brokerage activity and permitted business identity",
-                        "Current license evidence, broker agreement, and applicable entity permissions",
-                        "Confirm jurisdiction and license status before accepting representation duties",
-                        "Route activity through authorized supervision or postpone the engagement",
-                    ],
-                    [
-                        "Representative authority and transaction-specific court procedure",
-                        "Current letters, relevant orders, and attorney-confirmed sale procedure",
-                        "Record authority scope and identify notices or confirmation requirements",
-                        "Suspend affected transaction steps until authority evidence is resolved",
-                    ],
-                    [
-                        "Estate deposits and client funds entering transaction workflows",
-                        "Escrow instructions, trust procedures, and designated reconciliation ownership",
-                        "Trace every receipt to its authorized destination and ledger",
-                        "Reject operating-account deposits and escalate routing discrepancies immediately",
-                    ],
-                    [
-                        "Insurance responding to the actual operating activities",
-                        "Bound policies, exclusions, endorsements, and deductible funding provisions",
-                        "Compare brokerage, concierge, acquisition, and cyber exposures against coverage",
-                        "Remove uncovered activity or obtain suitable coverage before execution",
-                    ],
-                    [
-                        "Attorney relationships and paid settlement-service introductions",
-                        "Written service scope, delivered work, and referral-arrangement review",
-                        "Evaluate federal mortgage nexus and applicable state restrictions first",
-                        "Stop payments tied to prohibited referral or unearned-fee arrangements",
-                    ],
-                    [
-                        "Principal acquisitions competing with brokerage reserve requirements",
-                        "Separate acquisition underwriting, funding commitments, and capacity disclosures",
-                        "Exclude purchase principal and project receipts from commission revenue",
-                        "Decline acquisition commitments that consume protected brokerage operating reserves",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Test Acquisition Claims and Rehearse the Entire Closing Path",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat identity_graph_pixel_arbitrage as a procurement claim requiring "
-                    "rejection or redesign, not as a ready-made probate acquisition engine. "
-                    "The proposed 35–55% anonymous-visitor identification rate is unverified; "
-                    "neither a first-party CNAME nor a hashed identifier establishes "
-                    "permission to identify people or reuse their information. Do not "
-                    "implement covert matching of anonymous visitors to names, personal "
-                    "emails, profiles, or residential addresses. Probate-related browsing "
-                    "can expose highly sensitive family circumstances. Substitute explicit "
-                    "inquiry forms, permissioned relationship records, contextual advertising, "
-                    "and properly reviewed public-record mailing workflows. For a purely "
-                    "illustrative 1,000-visit cohort, a vendor's claimed match rate would "
-                    "produce 350–550 claimed matches, not 350–550 qualified sellers. A "
-                    "permission-based funnel with a 4% inquiry rate creates forty inquiries; "
-                    "a 25% qualification rate produces ten appointments; a 20% listing "
-                    "conversion produces two listings; and a 50% eventual closing rate "
-                    "produces one closing. At the Base illustration's $8,500 retained "
-                    "commission, that is $8,500 before acquisition spending and delivery "
-                    "costs, potentially many months after the initial visit. Require "
-                    "observed cohort evidence before substituting any of these assumptions "
-                    "into a hiring decision or reserve forecast."
-                ),
-                (
-                    "Evaluate the fallback channels with the same discipline. Do not "
-                    "cold-email unconsented consumer Gmail addresses from the primary "
-                    "business domain, and do not evade that restriction through disposable "
-                    "domains. Physical mail is outside CAN-SPAM's commercial-email framework, "
-                    "but that does not exempt it from deceptive-advertising rules or "
-                    "applicable state privacy requirements. A SHA-256 audience identifier "
-                    "also remains linkable information; upload audiences only when the "
-                    "collection, permission, platform terms, and applicable rules support "
-                    "that use. United States edge filtering can reduce irrelevant traffic "
-                    "but does not establish residence, erase state obligations, or supply "
-                    "permission. Test a reviewed mailing cohort independently: 500 letters "
-                    "at an assumed $1.25 fully loaded cost require $625. At a 2% response "
-                    "rate, ten responses cost $62.50 each; two appointments cost $312.50 "
-                    "each. If one listing ultimately closes, the postage-and-production "
-                    "cost per closing is $625, excluding research, labor, follow-up, "
-                    "and failed cohorts. Validate representative addresses rather than "
-                    "automatically mailing the decedent's vacant property. Suppress objections "
-                    "and duplicate households, identify the brokerage plainly, and never "
-                    "imitate a court notice. If no closing occurs, record the full "
-                    "cohort loss instead of assigning value to speculative pipeline."
-                ),
-                (
-                    "Before launch, run one synthetic matter from first inquiry through "
-                    "commission reconciliation, using invented test records rather than "
-                    "a real family's documents. Confirm intake permissions, case assignment, "
-                    "authority review, listing preparation, court milestones, escrow routing, "
-                    "and archive export. Then inject four failures: an expired representative "
-                    "appointment, a hearing continued sixty days, changed wire instructions, "
-                    "and a contractor account that must be removed immediately. Every "
-                    "failure needs a named decision owner, an observable stop condition, "
-                    "and a documented recovery path. Recompute cash after the sixty-day "
-                    "delay; at $9,000 monthly fixed burn, the added requirement is $18,000 "
-                    "before transaction-specific spending. That single event consumes more "
-                    "than half the Base launch's $32,000 reserve. Keep launch spending "
-                    "bounded until the team demonstrates that records survive an outage, "
-                    "client money never enters operating accounts, and a listing cannot "
-                    "advance without documented authority. Review actual versus planned "
-                    "spending weekly for the first ninety days. Expand a county, mailing "
-                    "cohort, or contractor assignment only when the existing workflow "
-                    "has measured capacity and funded downside. The practical production "
-                    "stack is the combination of people, records, cash, and verified "
-                    "handoffs; subscription count is merely a purchasing detail."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Acceptance Tests and Measurable Cash Consequences",
-                "headers": [
-                    "Test event and accountable operating owner",
-                    "Evidence required for a passing result",
-                    "Unit economics or objective acceptance threshold",
-                    "Fallback when the test exposes weakness",
-                ],
-                "rows": [
-                    [
-                        "Owner tests four-month runway before releasing launch spending",
-                        "Cash schedule excludes estate funds and unsigned credit commitments",
-                        "Fund shortfalls of $3,000, $4,000, or $7,000 respectively",
-                        "Lower fixed burn or secure additional committed outside capital",
-                    ],
-                    [
-                        "Coordinator verifies twenty known matters against official dockets",
-                        "Coverage log records each missed event and correction owner",
-                        "Every missed event receives a documented manual review cadence",
-                        "Use clerk searches until automated coverage demonstrates adequate reliability",
-                    ],
-                    [
-                        "Marketing owner measures permission-based inquiry conversion by cohort",
-                        "Source records connect visits, appointments, listings, and cleared commissions",
-                        "Illustrative thousand-visit funnel produces one closing under stated assumptions",
-                        "Reduce acquisition spending when observed appointments cannot support costs",
-                    ],
-                    [
-                        "Mail owner audits a five-hundred-letter public-record campaign",
-                        "Address verification, suppression records, and actual production invoices retained",
-                        "$625 illustrative campaign cost precedes research and staff expenses",
-                        "Stop weak cohorts and revise addressing before buying volume",
-                    ],
-                    [
-                        "Transaction owner rehearses sixty-day court postponement and wire change",
-                        "Revised cash forecast and independently verified payment instructions documented",
-                        "Base fixed burn requires another $18,000 across two months",
-                        "Freeze discretionary expansion and reject unverified payment-routing changes",
-                    ],
-                    [
-                        "System owner restores records and removes contractor access",
-                        "Usable file export and access-removal evidence pass independent review",
-                        "All critical documents remain accessible to authorized replacement staff",
-                        "Repair recovery procedures before admitting additional live client matters",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Accepting Live Volume",
-                "body": (
-                    "Launch only the activities supported by verified authority, funded "
-                    "downside, controlled records, and a reproducible transaction process."
-                ),
-                "items": [
-                    "Verify unrestricted reserves remain at least 50% of initial capital and separately fund the modeled first-deal cash shortfall.",
-                    "Verify licenses, broker supervision, insurance, account separation, and local representative-authority procedures against actual documents.",
-                    "Verify lead-source permissions and mailing provenance; exclude covert identity matching and unsupported personal-data audience uploads.",
-                    "Verify the synthetic case passes docket failure, court delay, payment-change verification, record restoration, and contractor offboarding tests.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Lock the capital envelope",
-                    "action": "Transfer the protected reserve and document permitted launch expenditures.",
-                    "detail": (
-                        "Assign each invoice to the seven-row budget, forecast zero closings "
-                        "through the first-deal stress horizon, and identify committed gap funding."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Configure the minimum production record",
-                    "action": "Create one case identifier, restricted repository, and named task owner.",
-                    "detail": (
-                        "Record the clerk source, authority evidence, next deadline, document "
-                        "location, contact permissions, and export procedure before adding integrations."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Run bounded acquisition experiments",
-                    "action": "Launch a small permission-based inquiry test or reviewed mailing cohort.",
-                    "detail": (
-                        "Capture actual spending and conversion dates; measure retained commission "
-                        "receipts separately from responses, appointments, listings, and property values."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Rehearse exceptions and authorize capacity",
-                    "action": "Complete the synthetic transaction and resolve every failed control.",
-                    "detail": (
-                        "Reforecast a sixty-day delay, verify payment instructions independently, "
-                        "restore the archive, remove test contractor access, and release only funded capacity."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "A probate pipeline becomes a business only when its cash survives the court calendar."
-    ),
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate $9,000, $32,000, or $65,000 to protected operating reserves and document additional funding required by the first-deal timeline.",
-        "Reconcile retained commissions to $120,000, $510,000, and $900,000 of annual revenue without counting property values or acquisition principal.",
-        "Confirm current vendor prices and broker-provided tools before purchasing the twelve-layer stack; record annual prepayments separately from monthly expense equivalents.",
-        "Establish licensed supervision, segregated banking, applicable insurance, and an attorney-confirmed representative-authority checklist for each operating jurisdiction.",
-        "Replace anonymous-person identification with permission-based inquiries and reviewed public-record mail; calculate acquisition cost through cleared commissions.",
-        "Pass the synthetic transaction, sixty-day delay, payment-change verification, archive restoration, and contractor offboarding tests before expanding live volume.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Business and Professions Code § 10130 — Real Estate Licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": (
-                "Requires the appropriate license for covered brokerage activity; entity "
-                "formation alone does not authorize representation."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code § 10145 — Broker Trust Funds",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10145.",
-            "relevance": (
-                "Governs handling of funds received for others and supports separating "
-                "client money from operating reserves."
-            ),
-        },
-        {
-            "title": "10 CCR § 2831 — Trust Fund Records",
-            "url": "https://www.law.cornell.edu/regulations/california/10-CCR-2831",
-            "relevance": (
-                "Specifies broker trust-fund recordkeeping requirements used to design "
-                "receipt tracking and reconciliation responsibilities."
-            ),
-        },
-        {
-            "title": "California Probate Code § 10501 — Limited Independent Administration Authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10501.",
-            "relevance": (
-                "Identifies actions requiring court supervision under limited authority, "
-                "including real-property sales."
-            ),
-        },
-        {
-            "title": "California Probate Code § 10580 — Notice of Proposed Action",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10580.",
-            "relevance": (
-                "Establishes the notice framework for proposed actions, subject to "
-                "statutory exceptions, affecting transaction sequencing."
-            ),
-        },
-        {
-            "title": "California Probate Code § 10309 — Appraisal and Sale-Price Conditions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10309.",
-            "relevance": (
-                "Provides appraisal and sale-price conditions relevant to applicable "
-                "court-confirmed real-property sales."
-            ),
-        },
-        {
-            "title": "California Probate Code § 10311 — Increased Bids at Confirmation",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10311.",
-            "relevance": (
-                "Sets the initial increased-bid framework that can affect buyer "
-                "expectations and confirmation-stage closing risk."
-            ),
-        },
-        {
-            "title": "12 U.S.C. § 2607 — Settlement-Service Referral Fees and Fee Splits",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": (
-                "Restricts covered referral fees and unearned fee splits in transactions "
-                "involving federally related mortgage loans."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial Electronic Mail Requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs covered commercial email; physical mail sits outside this "
-                "email statute but remains subject to other applicable rules."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 45 — Unfair or Deceptive Acts or Practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Supports truthful marketing claims, accurate data-use representations, "
-                "and avoidance of misleading court-like solicitations."
-            ),
-        },
-        {
-            "title": "California Civil Code § 1798.100 — Personal Information Collection Duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": (
-                "For covered businesses, establishes collection-related duties relevant "
-                "to intake notices, purpose limits, and personal-information handling."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'estate-planning-medicaid-recovery-reverse-mortgage-heirs-property',
+ 'question_prompt': "How do estate planning gaps, Medicaid estate recovery, reverse mortgages, and heirs' "
+                    'property create or prevent probate real estate situations?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': "Before and Beyond the Will: Estate Planning, Medicaid Recovery, Reverse Mortgages, and Heirs' "
+          'Property',
+ 'subtitle': 'Estate planning basics and myths, attorney client-acquisition and firm-building, wealth '
+             'protection for families and business owners, Medicaid estate recovery and Lady Bird/TOD '
+             "deeds, reverse mortgage eligibility and what happens at death, and the heirs' property trap",
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Probate operators working Medicaid-encumbered, reverse-mortgaged, and '
+                      'fractured-title houses get a consistent playbook from these practitioners. The '
+                      'consensus: states recover long-term care costs from the estates of recipients 55 '
+                      'and older after death, the paid-off house is the target, and a surviving spouse, a '
+                      'minor or disabled child, a two-year caregiver child, or an undue hardship waiver '
+                      'can stop or delay the claim. Street mechanics include demanding an itemized claim '
+                      'statement before pricing a house, filing hardship waivers inside 30-to-60-day '
+                      'windows, building 24-month caregiver proof files, Lady Bird and transfer on death '
+                      'deeds, and the HECM four-checkpoint screen. Disagreements center on deed strategy: '
+                      'Lady Bird deeds versus irrevocable trusts, DIY deeds versus attorney-drafted ones, '
+                      'and whether title changes even escape recovery in broader-estate states like '
+                      'Virginia.',
+ 'key_metrics': [{'label': 'Hardship Waiver Response Window',
+                  'metric': 'Hardship Waiver Response Window',
+                  'value': '30 to 60 days after the recovery notice lands',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Walter Hayes reports that in many states the undue hardship waiver window '
+                             'closes 30 to 60 days after the recovery notice, and silence is read as '
+                             'consent so the claim stands.',
+                  'source': 'นพดล เกิดยิ้ม ([X-vkv-PR3pY @ 00:12:21])'},
+                 {'label': 'Long-Term Care Medicaid Home Equity Cap From January 1, 2028',
+                  'metric': 'Long-Term Care Medicaid Home Equity Cap From January 1, 2028',
+                  'value': '$1 million with no inflation increases (today $752,000 in Maryland and '
+                           'Virginia, $1.13 million in DC)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Marc Cormier reports home equity must sit under the limit to qualify for '
+                             'long-term care Medicaid unless a spouse or minor or disabled child lives '
+                             "there; DC's limit drops under the 2028 cap.",
+                  'source': 'MarcCormier ([t0-A8dVrr1o @ 00:05:09])'},
+                 {'label': 'Florida Minimum Probate Spend',
+                  'metric': 'Florida Minimum Probate Spend',
+                  'value': '$3,500 to $4,500 minimum; same assets quoted at $5,000 or $30,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Matt Rosenthal quotes Florida clients a probate floor of $3,500 to $4,500, '
+                             'notes the percentage statute drives the higher $30,000 figure, and says '
+                             'probate takes six months to a year minimum.',
+                  'source': 'National Referral Network ([pryGLjB9I8k @ 00:04:00])'},
+                 {'label': 'Heirs Property Partition Buy-In',
+                  'metric': 'Heirs Property Partition Buy-In',
+                  'value': 'A 2% share bought for a few hundred dollars',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The Accidental Executor reports investors locate a distant heir, buy a 2% '
+                             'share for a few hundred dollars, then file partition to force an auction '
+                             'sale of land worth hundreds of thousands.',
+                  'source': 'The Accidental Executor ([JsLnTFCaOUQ @ 00:01:50])'}],
+ 'sections': [{'section': 1,
+               'title': 'The Practitioner Consensus: The Paid-Off House Is the Target, and Paper Decides '
+                        'Who Keeps It',
+               'paragraphs': ['Every Medicaid practitioner lands on the same mechanic: the state does not '
+                              'take the house while the owner is alive, it comes for the house after '
+                              'death. Sam Brooks of Community Legal Services of Philadelphia says the most '
+                              'common caller question is whether they must sign the house over to get '
+                              'care, and the answer is always no; recovery happens only after the '
+                              'recipient passes and DPW then requests the probate inventory, where the '
+                              'home is usually the only asset left [306n65tYnxQ @ 00:02:27]. Marc Cormier, '
+                              'a Berkshire Hathaway HomeServices agent who sells probate homes across '
+                              'Maryland, Virginia, and DC, frames the trigger the same way: anyone who '
+                              'received long-term care Medicaid at 55 or older faces a mandatory recovery '
+                              'attempt, and a paid-off house is pure equity, often the only real asset mom '
+                              'had [t0-A8dVrr1o @ 00:01:48]. Walter Hayes names the machine MERP under '
+                              'OBRA 1993 and prices it: long-term care runs six or seven thousand dollars '
+                              'a month, so a two-year stay pushes the claim past $100,000 [X-vkv-PR3pY @ '
+                              '00:02:52]. Carol Benning reports a viewer family hit with a demand over '
+                              '$100,000 and told they had two months to settle or face a public auction '
+                              '[ZUxMEt0kKoU @ 00:00:38]. For a probate buyer, that claim sits ahead of '
+                              'every heir at settlement.',
+                              'The exemption map is consistent across speakers. A surviving spouse, a '
+                              'child under 21, and a blind or disabled child stop or delay recovery, and a '
+                              'caregiver child who lived in the home at least two years and kept the '
+                              'parent out of a facility can keep the house [ZUxMEt0kKoU @ 00:13:25]. '
+                              "Brooks adds Pennsylvania specifics: recovery against a minor's home is "
+                              'postponed until that child turns 21, a disabled adult child postpones it '
+                              "until that child's death, and DPW permanently waives recovery for a "
+                              'resident who gave two years of care and owns no other home [306n65tYnxQ @ '
+                              '00:06:44]. Hayes draws the line operators miss: spousal protection is '
+                              'deferred, not erased, and in many states the pause ends the day the second '
+                              'spouse dies, when the state can file a claim or place a lien [X-vkv-PR3pY @ '
+                              '00:04:14]. The equally firm consensus is that the do-it-yourself deed to '
+                              'the kids is the worst move. Cormier gives two reasons: a gift within five '
+                              'years of applying can trigger a penalty, and the kids lose the stepped-up '
+                              'basis, which can mean a big capital gains bill on resale [t0-A8dVrr1o @ '
+                              '00:04:34]. Brooks warns that removing or adding a name on the deed likely '
+                              'affects eligibility for Medicaid-funded care.',
+                              'Outside Medicaid, the estate planners agree on two hard truths. A will does '
+                              "not avoid probate: Kendra O'Toole of Legacy Legal Planning says a home in "
+                              'one name still goes through probate even with a perfect will, and only '
+                              'titling, beneficiary designations, joint ownership, or a trust keep it out '
+                              '[WJr4n3V_2aY @ 00:02:12]. Alina Nuñez of Nuñez Estate Law and Title repeats '
+                              'it flatly and calls the will-is-enough belief one of the big misconceptions '
+                              '[7cYFXxbOdbc @ 00:08:35]. The second truth is that untitled family land '
+                              'rots into heirs property. The Accidental Executor describes the pattern: a '
+                              'parent dies without probate, heirs take as tenants in common, and after two '
+                              'or three generations there can be 30 or 40 owners, every one of whom must '
+                              'sign to sell, mortgage, or sometimes even insure [JsLnTFCaOUQ @ 00:01:12]. '
+                              'Greg McIntyre adds that heirs who never draft a new deed hit title problems '
+                              'when they try to sell, and disputes over taxes and maintenance can push the '
+                              'property into foreclosure [T42HfbxscSQ @ 00:00:52]. McIntyre ties it to '
+                              'North Carolina intestate succession, where the state picks the heirs and '
+                              'relatives who do not get along can devalue the parcel. The Accidental '
+                              "Executor is blunter: banks won't lend on it and buyers won't touch it."],
+               'table': {'caption': 'Practitioner consensus on Medicaid recovery, title, and probate '
+                                    'exposure',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Report',
+                                     'Why It Matters On A Probate Deal',
+                                     'Expert Source'],
+                         'rows': [['Recovery hits after death, never during life',
+                                   'No one signs the house over to get care; DPW contacts family and '
+                                   'requests the probate inventory after death',
+                                   'The claim surfaces after the funeral, often while heirs are already '
+                                   'preparing to sell',
+                                   'Community Legal Services of Philadelphia ([306n65tYnxQ @ 00:02:27])'],
+                                  ['Long-term care Medicaid at 55 or older triggers recovery',
+                                   'Federal law requires every state to seek repayment for long-term care '
+                                   'Medicaid received at 55 or older',
+                                   'Any inherited house where the decedent used nursing home Medicaid '
+                                   'needs claim screening first',
+                                   'MarcCormier ([t0-A8dVrr1o @ 00:01:10])'],
+                                  ['Spousal protection is deferred, not erased',
+                                   'Recovery pauses while a spouse lives; in many states the pause ends at '
+                                   "the second spouse's death",
+                                   'A surviving-spouse house can still carry a claim or lien when the '
+                                   'second owner dies',
+                                   'นพดล เกิดยิ้ม ([X-vkv-PR3pY @ 00:04:14])'],
+                                  ['Caregiver child exemption needs two years plus proof',
+                                   'A child who lived there two years and kept the parent out of a '
+                                   'facility can keep the house',
+                                   'Families with a documented caregiver child may keep the house instead '
+                                   'of selling it',
+                                   'Carol Benning ([ZUxMEt0kKoU @ 00:09:33])'],
+                                  ['Deeding the house to the kids backfires',
+                                   'A gift within five years of applying triggers a penalty and the kids '
+                                   'lose the stepped-up tax basis',
+                                   'Pre-death family transfers can stack a Medicaid penalty on top of a '
+                                   'large capital gains bill',
+                                   'MarcCormier ([t0-A8dVrr1o @ 00:04:34])'],
+                                  ['A will alone does not avoid probate',
+                                   'Homes titled in one name go through probate even with a perfect will; '
+                                   'titling and trusts control',
+                                   'Will-only estates still route the house through court before any sale '
+                                   'can close',
+                                   'Legacy Legal Planning, LLC | MA Estate Planning ([WJr4n3V_2aY @ '
+                                   '00:02:12])'],
+                                  ['Untitled family land fractures into heirs property',
+                                   'After two or three generations, 30 or 40 co-owners may each need to '
+                                   'sign any sale or mortgage',
+                                   'Banks will not lend and buyers will not touch it until title is '
+                                   'consolidated',
+                                   'The Accidental Executor ([JsLnTFCaOUQ @ 00:01:12])']]}},
+              {'section': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers: Claim Math, Proof Files, Deeds, and Exit '
+                        'Paths',
+               'paragraphs': ['Cormier runs a five-step drill whenever a recovery letter lands on an '
+                              'inherited house: do not ignore it because probate and the waiver both run '
+                              'on deadlines, do not pay before demanding an itemized statement of what '
+                              'Medicaid actually paid, check for a surviving spouse, a child under 21, or '
+                              'a blind or disabled child, ask about the hardship waiver with the deadline '
+                              'in writing, and know the claim amount before pricing the house or accepting '
+                              'an offer, since the claim is paid from the sale [t0-A8dVrr1o @ 00:03:41]. '
+                              'In the Linda file, the itemized statement matched, no exemption fit, and '
+                              'the state was paid at settlement before the siblings split the rest. Hayes '
+                              'compresses the hardship play into one rule: if the heir lives in the home '
+                              'and it is their sole asset, or their income is below the state threshold, '
+                              'recovery can be waived outright, and on a roughly $220,000 paid-off home '
+                              'that one written request inside the window decides the whole house '
+                              '[X-vkv-PR3pY @ 00:13:38]. Benning supplies the transfer penalty math: '
+                              "uncompensated value divided by the state's average monthly nursing home "
+                              'cost equals months of ineligibility [ZUxMEt0kKoU @ 00:20:58]. Brooks notes '
+                              'transfers to a spouse, a minor child, or a disabled adult child carry no '
+                              'penalty [306n65tYnxQ @ 00:09:49].',
+                              'The caregiver-child exemption is won or lost on paper. Hayes says no '
+                              'caseworker mails the proof form; the family builds it by hand: the move-in '
+                              'date, a dated log of meals, medications, and appointment driving, and a '
+                              "doctor's letter stating the care is why the parent stayed out of a "
+                              'facility, laid out month by month for 24 straight months [X-vkv-PR3pY @ '
+                              '00:07:38]. Benning tells families to confirm the child lived there the full '
+                              'two years before any transfer and to keep medical notes or witness '
+                              'statements proving the care prevented institutionalization [ZUxMEt0kKoU @ '
+                              '00:11:10]. Brooks reports DPW wants the caregiver to show they own no other '
+                              "home and to produce a letter from the decedent's doctor, as in the John "
+                              'Smith example where a niece living there five years gets a permanent waiver '
+                              'by proving both [306n65tYnxQ @ 00:08:21]. For pre-death planning, the '
+                              'Medicare Family attorney pushes Lady Bird deeds, available only in Florida, '
+                              'Michigan, Texas, Vermont, and West Virginia, or transfer on death deeds '
+                              'elsewhere: the owner keeps 100 percent control until death, the house skips '
+                              "probate, and the beneficiary's creditors and ex-spouse cannot reach it; the "
+                              'speaker recommends paying an attorney a couple hundred dollars rather than '
+                              'drafting it yourself [hvl2NRPSVTE @ 00:04:10].',
+                              'On reverse mortgages, Tim Oddo runs the heir math plainly: parents stay on '
+                              'title, the home passes to the estate, and on a $600,000 house with $300,000 '
+                              'owed the heir sells, pays off the lien, and walks with about $300,000, or '
+                              "refinances the balance into the heir's own name and moves in [R4eJOKRQISs @ "
+                              '00:00:53]. David Todd, the Retirement Loan Guy, screens HECM eligibility '
+                              'through four checkpoints: borrower 62 or older living there as primary '
+                              'residence with enough equity to clear any mortgage, an eligible home type '
+                              'including post-June 1976 manufactured homes on a permanent foundation and '
+                              "FHA-approved condos, title in the owner's name or a reviewed living trust "
+                              'but not an LLC, and an FHA appraisal for safe, sound, secure condition, '
+                              'with repairs often funded through a repair set-aside [T3KZz5kBYZ4 @ '
+                              '00:04:09]. For fractured heirs title, The Accidental Executor lays out the '
+                              'fix: map the family tree from the last person on the deed with death '
+                              'certificates, open probate or record affidavits of heirship for each death, '
+                              'then have everyone sign deeds consolidating shares into one owner, a family '
+                              'trust, or an LLC, with quiet title as the expensive fallback when heirs are '
+                              'missing or refuse [JsLnTFCaOUQ @ 00:03:00].'],
+               'table': {'caption': 'Street mechanics and numbers practitioners use on recovery claims, '
+                                    'title, and exits',
+                         'headers': ['Mechanic Or Tool',
+                                     'Exact Number Or Spec Stated',
+                                     'How The Practitioner Deploys It',
+                                     'Expert Source'],
+                         'rows': [['Undue hardship waiver response window',
+                                   '30 to 60 days after the recovery notice in many states; silence counts '
+                                   'as consent',
+                                   'Call the estate recovery unit, request the application by name, and '
+                                   'write down the deadline',
+                                   'นพดล เกิดยิ้ม ([X-vkv-PR3pY @ 00:12:21])'],
+                                  ['Home equity limit for long-term care Medicaid',
+                                   '$752,000 in Maryland and Virginia, $1.13 million in DC, capped at $1 '
+                                   'million from January 1, 2028',
+                                   'Check paid-off homes against the limit before assuming the owner '
+                                   'qualifies for long-term care Medicaid',
+                                   'MarcCormier ([t0-A8dVrr1o @ 00:05:09])'],
+                                  ['Transfer penalty formula',
+                                   'Uncompensated value divided by average monthly nursing home cost '
+                                   'equals penalty months',
+                                   'Shows why gifting the house close to applying delays access to needed '
+                                   'care',
+                                   'Carol Benning ([ZUxMEt0kKoU @ 00:20:58])'],
+                                  ['Lady Bird deed and transfer on death deed',
+                                   'Lady Bird only in Florida, Michigan, Texas, Vermont, West Virginia; '
+                                   'attorney fee a couple hundred dollars',
+                                   'Owner keeps full control until death while the house avoids probate '
+                                   'and estate recovery grabs',
+                                   'The Medicare Family ([hvl2NRPSVTE @ 00:02:44])'],
+                                  ['Reverse mortgage heir payoff math',
+                                   '$600,000 home with $300,000 owed leaves roughly $300,000 net equity to '
+                                   'the heir',
+                                   'Heir sells and pays off the lien, or refinances into their own name '
+                                   'and moves in',
+                                   'Reverse Mortgages by Tim Oddo ([R4eJOKRQISs @ 00:00:53])'],
+                                  ['Florida probate cost and timeline',
+                                   'Minimum about $3,500 to $4,500; same estate quoted $5,000 or $30,000; '
+                                   'six months to a year',
+                                   'Prices the cost of letting a house or business run through court '
+                                   'instead of planning ahead',
+                                   'National Referral Network ([pryGLjB9I8k @ 00:04:19])'],
+                                  ['Partition buyout tactic on heirs property',
+                                   'Investors buy a 2% share for a few hundred dollars, then force a sale '
+                                   'of the whole property',
+                                   'About 20 states adopted the Uniform Partition of Heirs Property Act '
+                                   'giving families a first buyout right',
+                                   'The Accidental Executor ([JsLnTFCaOUQ @ 00:01:50])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Paper Beats Panic',
+                           'body': 'The practitioners repeat one edge: the family or operator who gets '
+                                   'terms, vesting, and proof in writing before the deadline keeps the '
+                                   'equity.',
+                           'items': ['Request the spousal deferral and the current lien status on paper '
+                                     'with a date, never over the phone; a promise nobody wrote down is a '
+                                     'promise nobody has to keep [นพดล เกิดยิ้ม — X-vkv-PR3pY @ 00:04:28].',
+                                     'Read the deed vesting first: tenancy by the entireties or joint '
+                                     'tenancy with right of survivorship keeps the home out of the probate '
+                                     "estate, and if the recipient's name is not on the deed at all, DPW "
+                                     'has no claim [Community Legal Services of Philadelphia — 306n65tYnxQ '
+                                     '@ 00:05:16].',
+                                     'Long-term care partnership protection is capped at what was actually '
+                                     'paid into an eligible policy, so keep a record of every premium '
+                                     'dollar and confirm the state participates [Carol Benning — '
+                                     'ZUxMEt0kKoU @ 00:16:43].',
+                                     'List every fractional land interest down to 0.25 percent in the will '
+                                     'or trust and name the specific heir who takes it, so the executor or '
+                                     'trustee can find and clear it [The Family Land Lawyer — Y515EhC17RU '
+                                     '@ 00:02:54].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull the deed and the claim',
+                              'action': 'Confirm vesting at the county recorder and demand an itemized '
+                                        'Medicaid statement.',
+                              'detail': "A deed still in a decedent's name with no probate or affidavit of "
+                                        'heirship recorded signals heirs property [The Accidental Executor '
+                                        '— JsLnTFCaOUQ @ 00:02:26]. Do not pay any recovery claim until an '
+                                        'itemized statement of what Medicaid actually paid is checked '
+                                        '[MarcCormier — t0-A8dVrr1o @ 00:03:41].'},
+                             {'step': 2,
+                              'title': 'Screen exemptions and file inside the window',
+                              'action': 'Call the state estate recovery unit and request the undue '
+                                        'hardship waiver application and exact deadline by name.',
+                              'detail': "Hayes's three moves: request the hardship waiver and its day "
+                                        'count, confirm any spousal deferral and lien status in writing, '
+                                        'and assemble proof before it is needed [นพดล เกิดยิ้ม — '
+                                        'X-vkv-PR3pY @ 00:15:15].'},
+                             {'step': 3,
+                              'title': 'Build the caregiver proof file',
+                              'action': 'Document move-in date, a dated care log, and doctor letters '
+                                        'covering 24 straight months.',
+                              'detail': "A wall calendar of two years of crossed-off days plus a doctor's "
+                                        'letter is what keeps the house [นพดล เกิดยิ้ม — X-vkv-PR3pY @ '
+                                        '00:07:56]; DPW also wants proof the caregiver owns no other home '
+                                        '[Community Legal Services of Philadelphia — 306n65tYnxQ @ '
+                                        '00:08:21].'},
+                             {'step': 4,
+                              'title': 'Price net of the claim and pick the exit',
+                              'action': 'Set list price or offer only after the claim amount is known, '
+                                        'then choose sale or refinance.',
+                              'detail': 'The claim is paid from the sale, so it changes what the family '
+                                        'walks away with [MarcCormier — t0-A8dVrr1o @ 00:04:01]; on a '
+                                        'reverse mortgage the heir either sells and pays off the lien or '
+                                        'refinances into their own name [Reverse Mortgages by Tim Oddo — '
+                                        'R4eJOKRQISs @ 00:01:09].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The deed fight splits into two camps. The Medicare Family attorney sells '
+                              'the Lady Bird and transfer-on-death deed as the cheap bypass. The owner '
+                              'keeps 100 percent control until death, the house jumps probate and lands '
+                              "with the named heir, and the heir's creditors and ex-spouse cannot touch it "
+                              'in the meantime. Lady Bird deeds run only in Florida, Michigan, Texas, '
+                              'Vermont and West Virginia, and the presenter admits a homeowner can draft, '
+                              'notarize and record a deed solo while still pushing a couple hundred '
+                              'dollars for an attorney [hvl2NRPSVTE @ 00:04:10]. Community Legal Services '
+                              'of Philadelphia takes the opposite stance on solo moves. '
+                              'Tenancy-by-the-entireties or joint-tenancy-with-right-of-survivorship '
+                              'language keeps the house out of the probate estate, but taking a name off '
+                              'or adding a name before talking to a lawyer can blow Medicaid eligibility '
+                              'and trigger a penalty for transferring below fair market value [306n65tYnxQ '
+                              '@ 00:09:29]. Mark Cormier warns that retitling is not a universal shield, '
+                              'because states may reach joint ownership, life estates and living trusts, '
+                              "and Virginia's broader estate definition can reach past probate "
+                              '[t0-A8dVrr1o @ 00:02:47]. Carol Benning adds that a joint deed can expose '
+                              'the home to creditors or read as a gift inside the 60-month look-back '
+                              '[ZUxMEt0kKoU @ 00:05:14].',
+                              'Practitioners also split on how permanent the family protections really '
+                              'are. Carol Benning frames the spousal rule as a hard wall: Medicaid cannot '
+                              'recover from the home while a surviving spouse lives there, so the equity '
+                              'is protected from recovery for now [ZUxMEt0kKoU @ 00:03:17]. Walter Hayes '
+                              'calls that same protection deferred, not erased. In a lot of states the '
+                              'pause ends the day the second spouse dies, the claim can still be filed, '
+                              'and a lien can still land on the house. His counter-move is a written '
+                              'request for the spousal deferral plus a written answer on whether a lien '
+                              'already exists [X-vkv-PR3pY @ 00:04:14]. On children, Hayes says a blind or '
+                              'disabled child keeps the door open with no clock. Community Legal Services '
+                              'of Philadelphia instead describes Pennsylvania as postponing recovery until '
+                              'a minor turns 21 and until the death of a disabled adult child [306n65tYnxQ '
+                              '@ 00:06:44]. The caregiver lane differs by speaker too. Hayes and Benning '
+                              'describe a son or daughter with two years under the roof. The Philadelphia '
+                              'attorneys describe a hardship waiver for anyone, including a niece named '
+                              'Brenda, who lived in the home, gave two years of care during waiver '
+                              'services, owns no other home, and gets a letter from the doctor '
+                              '[306n65tYnxQ @ 00:08:21].',
+                              'For the attorneys building the practices that feed this pipeline, the '
+                              'client-acquisition playbooks pull in different directions. Laura Cowan '
+                              'ranks workshops, seminars and webinars as the big one because the attorney '
+                              'controls that channel, with no dependence on other people sending business '
+                              'or on luck. Referral partners and a weekly BNI chapter rank second and '
+                              'third; BNI produced a lot of early business after the 2016 launch, plus a '
+                              "Super Lawyers nomination from the group's business law attorney "
+                              '[qquf8lhULDs @ 00:02:37]. Darcel Lobo leans on a reciprocal referral hub of '
+                              'CPAs, financial planners, insurance agents and real estate agents. Lobo '
+                              "states plainly, 'I give far more referrals than I receive,' and credits "
+                              'that giving with 17 years of a ringing phone [wQcPBrtGgYY @ 00:04:38]. '
+                              'Alina Nunez bets on volume video content to stay top of mind, plus '
+                              "sponsoring the Walk to End Alzheimer's. Eric Rosen dismisses card-shoving "
+                              'networking events and credits multi-million dollar cases to a young lawyers '
+                              'board seat [7cYFXxbOdbc @ 00:04:46]. Lobo also splits from software-heavy '
+                              'shops. Beginners doing simple plans can run Word templates with the '
+                              'customizable text only on the first and last pages, saving Wealth '
+                              'Counsel-type software for complex tax, special needs and Medicaid work '
+                              '[wQcPBrtGgYY @ 00:12:08].'],
+               'table': {'caption': 'Side-by-side playbooks: where named practitioners take different '
+                                    'routes on deeds, protections, trusts, reverse mortgages and firm '
+                                    'growth',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Playbook B / Counterpoint',
+                                     'Expert Source'],
+                         'rows': [['Who drafts the Lady Bird or transfer-on-death deed',
+                                   'The Medicare Family attorney says a homeowner can draft, notarize and '
+                                   'record the deed solo, but recommends paying an attorney a couple '
+                                   'hundred dollars',
+                                   'Community Legal Services of Philadelphia says take no action on any '
+                                   'deed interest before talking with an attorney because transfers can '
+                                   'kill eligibility',
+                                   'The Medicare Family ([hvl2NRPSVTE @ 00:04:10]); Community Legal '
+                                   'Services of Philadelphia ([306n65tYnxQ @ 00:09:07])'],
+                                  ['Whether a surviving spouse permanently protects the family home',
+                                   'Carol Benning says Medicaid cannot recover costs from the home while a '
+                                   'surviving spouse is still living there',
+                                   'Walter Hayes says the protection is deferred not erased, and in many '
+                                   'states the pause ends when the second spouse dies',
+                                   'Carol Benning ([ZUxMEt0kKoU @ 00:03:17]); นพดล เกิดยิ้ม ([X-vkv-PR3pY '
+                                   '@ 00:03:56])'],
+                                  ['Which probate bypass tool should hold the house',
+                                   'Alina Nunez says a trust is the ideal vehicle, and Florida ladybird '
+                                   'deeds avoid probate but carry real limitations',
+                                   'The Medicare Family says outside the five Lady Bird states, hire an '
+                                   'elder law attorney for an irrevocable trust and own nothing for five '
+                                   'years',
+                                   'Rosen Injury Law ([7cYFXxbOdbc @ 00:10:48]); The Medicare Family '
+                                   '([hvl2NRPSVTE @ 00:05:02])'],
+                                  ['Whether a will alone keeps the home out of court',
+                                   "Kendra O'Toole says a Massachusetts will does not avoid probate, the "
+                                   'state bars beneficiary transfer of a home, and estates over $2 million '
+                                   'face estate tax',
+                                   'The Medicare Family says transfer-on-death deeds in permitting states '
+                                   'move the house at death all the way around probate',
+                                   'Legacy Legal Planning, LLC | MA Estate Planning ([WJr4n3V_2aY @ '
+                                   '00:02:40]); The Medicare Family ([hvl2NRPSVTE @ 00:01:35])'],
+                                  ['What heirs do with a reverse mortgage house after both borrowers die',
+                                   'Tim Oddo says the home still goes to the kids: sell at $600,000, pay '
+                                   'off the $300,000 lien and walk with roughly $300,000, or refinance '
+                                   'into their own name',
+                                   'David Todd says the HECM is non-recourse so heirs never owe more than '
+                                   'the home is worth, but the growing balance leaves less equity for '
+                                   'heirs',
+                                   'Reverse Mortgages by Tim Oddo ([R4eJOKRQISs @ 00:00:53]); The '
+                                   'Retirement Loan Guy ([T3KZz5kBYZ4 @ 00:03:07]); The Retirement Loan '
+                                   'Guy ([T3KZz5kBYZ4 @ 00:07:38])'],
+                                  ['Best client-acquisition channel for a new estate planning attorney',
+                                   'Laura Cowan says workshops, seminars and webinars are the one channel '
+                                   'the attorney controls without depending on luck or referrals',
+                                   'Darcel Lobo builds a reciprocal referral hub and gives far more '
+                                   'referrals than received, while Alina Nunez pushes high-volume video to '
+                                   'stay top of mind',
+                                   'Laura Cowan, Esq. ([qquf8lhULDs @ 00:02:37]); Darcel Lobo '
+                                   '([wQcPBrtGgYY @ 00:04:38]); Rosen Injury Law ([7cYFXxbOdbc @ '
+                                   '00:00:39])'],
+                                  ["Protecting an inheritance from a child's spouse or vices",
+                                   'Jeff on National Referral Network sets up asset management trusts with '
+                                   'a separate trustee who buys the dream house into the trust',
+                                   "Alina Nunez uses a trustee who pays the gambling son's bills first and "
+                                   'releases controlled money instead of handing over $2 million',
+                                   'National Referral Network ([22eVzYFh7is @ 00:04:10]); Rosen Injury Law '
+                                   '([7cYFXxbOdbc @ 00:12:10])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated firsthand failure is the claim letter that lands after '
+                              "the funeral. Mark Cormier's client Linda inherited a mom's house that had "
+                              'been paid off in 2009. After three years of nursing-home Medicaid, the '
+                              "state's letter showed up two months after the funeral. The itemized "
+                              'statement matched, no spouse, minor or disabled child existed, the hardship '
+                              'waiver did not fit, and the state was paid at settlement before Linda and a '
+                              'brother split a smaller remainder than hoped [t0-A8dVrr1o @ 00:05:50]. '
+                              "Carol Benning reports a viewer's family hit with a demand of over $100,000 "
+                              'and told they had two months to settle or risk losing the property at '
+                              'public auction [ZUxMEt0kKoU @ 00:00:38]. Walter Hayes supplies the clock '
+                              'math. Long-term care runs six or seven thousand dollars a month, so a '
+                              'two-year stay climbs well past $100,000. Many states then give only 30 to '
+                              '60 days after the notice to request the undue hardship waiver, and after '
+                              'that window silence counts as consent [X-vkv-PR3pY @ 00:12:35]. In the Ruth '
+                              'example, the widow qualified, read the notice as a decision already made, '
+                              'did nothing, and lost a paid-off home Hayes values at about $220,000 over a '
+                              'form nobody mailed [X-vkv-PR3pY @ 00:13:38].',
+                              'The do-it-yourself planning moves fail in predictable ways. Mark Cormier '
+                              'calls deeding the house to the kids the worst move, for two reasons. A gift '
+                              'within five years of applying for Medicaid can trigger a penalty, and the '
+                              'kids lose the stepped-up tax basis they get by inheriting, which can mean a '
+                              'big capital gains bill when they sell [t0-A8dVrr1o @ 00:04:16]. Carol '
+                              "Benning's Susan story shows the caregiver version of the same mistake. "
+                              'David moved in and managed medications and meals for over two years, but if '
+                              'Susan signs the deed over the moment Medicaid looks necessary, the state '
+                              'can read it as a gift and David can lose the home he spent years protecting '
+                              "[ZUxMEt0kKoU @ 00:10:31]. Benning's Elina paid long-term care premiums for "
+                              'years and assumed the house was safe. The policy had to meet partnership '
+                              'criteria, and protection was capped strictly at what was actually paid in, '
+                              'leaving any excess care cost recoverable from the estate [ZUxMEt0kKoU @ '
+                              "00:16:24]. George's home appreciated above the state equity cap over 40 "
+                              'years, and after death the state sold it, leaving the children with '
+                              "nothing. Benning's penalty formula divides the uncompensated transfer value "
+                              "by the state's average monthly nursing-home cost [ZUxMEt0kKoU @ 00:20:58].",
+                              "Heirs' property breaks families through years of silence on title. The "
+                              'Accidental Executor lays out the mechanics: no will or an unprobated will, '
+                              'kids paying the taxes for 20 or 30 years, then a sale or loan attempt '
+                              'reveals 30 or 40 fractional owners. Every co-owner has to sign, banks will '
+                              "not lend, buyers will not touch it, and investors buy a distant heir's 2% "
+                              'share for a few hundred dollars and file a partition action to force an '
+                              'auction of land worth hundreds of thousands [JsLnTFCaOUQ @ 00:01:50]. '
+                              "Veronica McLendon reports two near-misses from her own clients. A father's "
+                              'will listed the house, other properties and bank accounts but omitted the '
+                              'fractional family land, so the family probating the will never understood '
+                              'that interest existed. Another client nearly walked out of an estate '
+                              'planning meeting without mentioning family land because it was not 100% '
+                              "theirs [Y515EhC17RU @ 00:01:04]. McLendon also traced a 25-acre 'less and "
+                              "except' parcel that got sucked into a larger tract over successive resales "
+                              '[Y515EhC17RU @ 00:05:06]. Greg McIntyre adds the carrying-cost failure. '
+                              'When intestate heirs cannot agree who pays property taxes and maintenance, '
+                              'the property devalues, can go into foreclosure and may never pass to the '
+                              'heirs, while buyers balk without clear title [T42HfbxscSQ @ 00:00:52].'],
+               'table': {'caption': 'Firsthand traps, the losses practitioners reported, and the numbers '
+                                    'or fixes they taught',
+                         'headers': ['Trap',
+                                     'What Went Wrong Firsthand',
+                                     'Numbers / Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Pricing an inherited house blind to the Medicaid claim',
+                                   "Linda's mom's paid-off house went through probate and the state claim "
+                                   'was paid at settlement before anyone inherited a dollar',
+                                   'Ask for an itemized statement, check for a spouse, under-21 or '
+                                   'disabled child, and know the claim before pricing or accepting offers',
+                                   'MarcCormier ([t0-A8dVrr1o @ 00:03:22])'],
+                                  ['Letting the undue hardship waiver window lapse',
+                                   'Ruth qualified for the waiver, assumed the state letter was a final '
+                                   'decision, did nothing, and the claim stood',
+                                   'Many states allow only 30 to 60 days; on a $220,000 paid-off home one '
+                                   'written request decides kept or gone',
+                                   'นพดล เกิดยิ้ม ([X-vkv-PR3pY @ 00:13:08])'],
+                                  ['Caregiver child with no paper trail assembled',
+                                   "Denise moved in for a father's last two years and kept him home, but "
+                                   'with no dated record the house dropped into the estate',
+                                   'The same caregiver holding a dated care record and two doctor letters '
+                                   'keeps the house; build the 24-month calendar now',
+                                   'นพดล เกิดยิ้ม ([X-vkv-PR3pY @ 00:08:25])'],
+                                  ['Long-term care policy that never qualified for partnership protection',
+                                   'Elina paid premiums for years believing the house was walled off, but '
+                                   'the policy missed the partnership criteria',
+                                   'Protection equals dollars actually paid in premiums; verify state '
+                                   'participation and keep meticulous records of every premium dollar',
+                                   'Carol Benning ([ZUxMEt0kKoU @ 00:17:01])'],
+                                  ['Fractional heir share sold to an outside investor',
+                                   "Investors buy a distant heir's 2% share for a few hundred dollars and "
+                                   'force a partition auction of the entire property',
+                                   'About 20 states adopted the Uniform Partition of Heirs Property Act, '
+                                   'giving the family a buyout right and fair market sale',
+                                   'The Accidental Executor ([JsLnTFCaOUQ @ 00:02:07])'],
+                                  ["Business left out of the owner's estate plan",
+                                   'Matt Rosenthal says a sole-owner business stuck in Florida probate six '
+                                   'months to a year loses payroll access, employees leave, and it fails',
+                                   'Florida probate starts around $3,500 to $4,500 minimum, and identical '
+                                   'assets can cost $5,000 or $30,000 depending on the attorney',
+                                   'National Referral Network ([pryGLjB9I8k @ 00:04:00]); National '
+                                   'Referral Network ([pryGLjB9I8k @ 00:05:56])'],
+                                  ['Inheritance comingled into a marital house purchase',
+                                   'Heirs paid cash for a dream house titled tenancy by the entirety, then '
+                                   'a divorce put half the house on the table',
+                                   'Joint accounts, joint IRAs and joint purchases comingle the money; '
+                                   'keep big purchases inside an asset management trust',
+                                   'National Referral Network ([22eVzYFh7is @ 00:02:00])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-Ship Checks Before Pricing, Deeding, or Closing',
+                           'body': 'Each gate below comes from a loss or near-loss the practitioners '
+                                   'reported firsthand; clear all four before an inherited or at-risk '
+                                   'house moves.',
+                           'items': ['Claim number on paper before list price: get the itemized Medicaid '
+                                     'statement and the claim amount before pricing the house or accepting '
+                                     'an offer, because the claim is paid from the sale [MarcCormier — '
+                                     't0-A8dVrr1o @ 00:04:01].',
+                                     'Waiver clock logged: request the undue hardship waiver application '
+                                     'by name and write down the exact number of days, since silence '
+                                     'inside a 30-to-60-day window counts as consent [นพดล เกิดยิ้ม — '
+                                     'X-vkv-PR3pY @ 00:15:15].',
+                                     'No deed edits without counsel: removing or adding a name or '
+                                     'transferring below fair market value triggers an ineligibility '
+                                     'penalty, and only transfers to a spouse, a child under 21 or a '
+                                     'disabled adult child escape it [Community Legal Services of '
+                                     'Philadelphia — 306n65tYnxQ @ 00:09:49].',
+                                     'Title chain verified: pull the deed from the county recorder, '
+                                     "because a dead owner's name with no probate or affidavit of heirship "
+                                     'recorded means heirs property and every co-owner must sign [The '
+                                     'Accidental Executor — JsLnTFCaOUQ @ 00:02:26].']}}],
+ 'pull_quote': '"Being legally entitled and actually getting paid are two completely different things." — '
+               'Walter Hayes, attributed to นพดล เกิดยิ้ม (X-vkv-PR3pY @ 00:08:12).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['When a recovery letter lands, do not ignore it and do not pay it unchecked: demand '
+                      'an itemized statement of what Medicaid actually paid and lock in the claim amount '
+                      'before pricing the house [MarcCormier — t0-A8dVrr1o @ 00:04:01].',
+                      'Call the state Medicaid Estate Recovery Unit, ask by name for the undue hardship '
+                      'waiver application and its exact deadline, and write the number of days down [นพดล '
+                      'เกิดยิ้ม — X-vkv-PR3pY @ 00:15:15].',
+                      'Start the caregiver proof file while everyone is alive: move-in date, a simple '
+                      'dated care log, and a conversation with the doctor about a letter [นพดล เกิดยิ้ม — '
+                      'X-vkv-PR3pY @ 00:10:00].',
+                      'Read the vesting language on the deed for tenants by the entireties or joint '
+                      'tenancy with right of survivorship, which keeps the house out of the probate estate '
+                      '[Community Legal Services of Philadelphia — 306n65tYnxQ @ 00:05:16].',
+                      'On heirs property, map the family tree from the last person on the deed, record '
+                      'affidavits of heirship or open probate, consolidate deeds, and run a quiet title '
+                      'action if heirs refuse [The Accidental Executor — JsLnTFCaOUQ @ 00:03:00].',
+                      'Before spending on a reverse mortgage, run the four checkpoints: age 62 and primary '
+                      'residence, FHA-approved condo list or post-June-1976 manufactured home on a '
+                      'permanent foundation, trust review with no LLC ownership, and a safe, sound '
+                      'appraisal [The Retirement Loan Guy — T3KZz5kBYZ4 @ 00:03:54].'],
+ 'statutory_citations': [{'title': 'MarcCormier — Can Medicaid Take Your Parents’ House After They Die? '
+                                   '[00:04:01]',
+                          'url': 'https://www.youtube.com/watch?v=t0-A8dVrr1o&t=241s',
+                          'relevance': 'Primary practitioner testimony on the five-step response to a '
+                                       'Medicaid estate recovery claim against an inherited probate '
+                                       'house.'},
+                         {'title': 'นพดล เกิดยิ้ม — State Just Changed 3 Medicaid Estate Recovery Rules: '
+                                   "Here's What Every Homeowner Must Do [00:11:18]",
+                          'url': 'https://www.youtube.com/watch?v=X-vkv-PR3pY&t=678s',
+                          'relevance': 'Primary practitioner testimony on the undue hardship waiver, its '
+                                       '30-to-60-day window, and silence counting as consent.'},
+                         {'title': 'Community Legal Services of Philadelphia — Medicaid Estate Recovery: A '
+                                   'Primer [00:07:05]',
+                          'url': 'https://www.youtube.com/watch?v=306n65tYnxQ&t=425s',
+                          'relevance': 'Primary practitioner testimony on Pennsylvania DPW hardship '
+                                       'waivers for a resident caregiver with two years of documented '
+                                       'care.'},
+                         {'title': "The Accidental Executor — Heirs' Property: The Trap That Costs "
+                                   'Families Their Land [00:01:50]',
+                          'url': 'https://www.youtube.com/watch?v=JsLnTFCaOUQ&t=110s',
+                          'relevance': 'Primary practitioner testimony on partition actions by investors '
+                                       'buying small fractional heir shares.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'qquf8lhULDs',
+                       'title': 'Top 3 Ways To Get Estate Planning Clients',
+                       'channel': 'Laura Cowan, Esq.',
+                       'author': 'Laura Cowan, Esq.',
+                       'text': "Hosting workshops, webinars, seminars, that's the big one; this is the one "
+                               "that you have control over, you're not depending on people sending you "
+                               "business and you're not depending on luck.",
+                       'tip': "Hosting workshops, webinars, seminars, that's the big one; this is the one "
+                              "that you have control over, you're not depending on people sending you "
+                              "business and you're not depending on luck.",
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=qquf8lhULDs&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=qquf8lhULDs&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WJr4n3V_2aY',
+                       'title': "What Is Estate Planning? A Beginner's Guide for Massachusetts Residents",
+                       'channel': 'Legacy Legal Planning, LLC | MA Estate Planning',
+                       'author': 'Legacy Legal Planning, LLC | MA Estate Planning',
+                       'text': 'A will does not avoid probate. That is one of the biggest misconceptions '
+                               'that we hear from Massachusetts families.',
+                       'tip': 'A will does not avoid probate. That is one of the biggest misconceptions '
+                              'that we hear from Massachusetts families.',
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=WJr4n3V_2aY&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=WJr4n3V_2aY&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't0-A8dVrr1o',
+                       'title': 'Can Medicaid Take Your Parents’ House After They Die?',
+                       'channel': 'MarcCormier',
+                       'author': 'MarcCormier',
+                       'text': 'Know the claim amount before you price the house or accept an offer. The '
+                               'claim is paid from the sale, so it changes what the family actually walks '
+                               'away with.',
+                       'tip': 'Know the claim amount before you price the house or accept an offer. The '
+                              'claim is paid from the sale, so it changes what the family actually walks '
+                              'away with.',
+                       'timestamp': 241,
+                       'timestamp_seconds': 241,
+                       'timestamp_label': '[00:04:01]',
+                       'url': 'https://www.youtube.com/watch?v=t0-A8dVrr1o&t=241s',
+                       'markdown': '[00:04:01](https://www.youtube.com/watch?v=t0-A8dVrr1o&t=241s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZUxMEt0kKoU',
+                       'title': 'Medicaid Estate Recovery: 7 Ways to Protect Your Family Home Before 2027',
+                       'channel': 'Carol Benning',
+                       'author': 'Carol Benning',
+                       'text': 'Any uncompensated transfer gift made within the 5 years before applying '
+                               'for Medicaid will result in a penalty, calculated by dividing the '
+                               'uncompensated value by the average monthly cost of nursing home care in '
+                               'the state.',
+                       'tip': 'Any uncompensated transfer gift made within the 5 years before applying for '
+                              'Medicaid will result in a penalty, calculated by dividing the uncompensated '
+                              'value by the average monthly cost of nursing home care in the state.',
+                       'timestamp': 1258,
+                       'timestamp_seconds': 1258,
+                       'timestamp_label': '[00:20:58]',
+                       'url': 'https://www.youtube.com/watch?v=ZUxMEt0kKoU&t=1258s',
+                       'markdown': '[00:20:58](https://www.youtube.com/watch?v=ZUxMEt0kKoU&t=1258s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X-vkv-PR3pY',
+                       'title': "State Just Changed 3 Medicaid Estate Recovery Rules: Here's What Every "
+                                'Homeowner Must Do',
+                       'channel': 'นพดล เกิดยิ้ม',
+                       'author': 'นพดล เกิดยิ้ม',
+                       'text': "The state doesn't read your silence as I need more time, it reads it as "
+                               'agreement. Silence counts as consent.',
+                       'tip': "The state doesn't read your silence as I need more time, it reads it as "
+                              'agreement. Silence counts as consent.',
+                       'timestamp': 755,
+                       'timestamp_seconds': 755,
+                       'timestamp_label': '[00:12:35]',
+                       'url': 'https://www.youtube.com/watch?v=X-vkv-PR3pY&t=755s',
+                       'markdown': '[00:12:35](https://www.youtube.com/watch?v=X-vkv-PR3pY&t=755s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'T3KZz5kBYZ4',
+                       'title': 'Will My Home Even Qualify for a Reverse Mortgage? Condo, Trust, '
+                                'Manufactured Home',
+                       'channel': 'The Retirement Loan Guy',
+                       'author': 'The Retirement Loan Guy',
+                       'text': "If it's in a living trust that you control, that's very common, and many "
+                               'trusts work, although the lender will review the trust documents to make '
+                               'sure they meet the guidelines.',
+                       'tip': "If it's in a living trust that you control, that's very common, and many "
+                              'trusts work, although the lender will review the trust documents to make '
+                              'sure they meet the guidelines.',
+                       'timestamp': 266,
+                       'timestamp_seconds': 266,
+                       'timestamp_label': '[00:04:26]',
+                       'url': 'https://www.youtube.com/watch?v=T3KZz5kBYZ4&t=266s',
+                       'markdown': '[00:04:26](https://www.youtube.com/watch?v=T3KZz5kBYZ4&t=266s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '306n65tYnxQ',
+                       'title': 'Medicaid Estate Recovery: A Primer',
+                       'channel': 'Community Legal Services of Philadelphia',
+                       'author': 'Community Legal Services of Philadelphia',
+                       'text': 'It is very very important that you take no action to transfer any interest '
+                               'you may have in your home before talking with an attorney.',
+                       'tip': 'It is very very important that you take no action to transfer any interest '
+                              'you may have in your home before talking with an attorney.',
+                       'timestamp': 547,
+                       'timestamp_seconds': 547,
+                       'timestamp_label': '[00:09:07]',
+                       'url': 'https://www.youtube.com/watch?v=306n65tYnxQ&t=547s',
+                       'markdown': '[00:09:07](https://www.youtube.com/watch?v=306n65tYnxQ&t=547s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hvl2NRPSVTE',
+                       'title': 'How To Save Your House From Medicaid Recovery (Lady Bird Deeds Explained)',
+                       'channel': 'The Medicare Family',
+                       'author': 'The Medicare Family',
+                       'text': "Go down to your courthouse and record it. I don't recommend you do that. I "
+                               'recommend you pay an attorney a couple hundred dollars to do it.',
+                       'tip': "Go down to your courthouse and record it. I don't recommend you do that. I "
+                              'recommend you pay an attorney a couple hundred dollars to do it.',
+                       'timestamp': 250,
+                       'timestamp_seconds': 250,
+                       'timestamp_label': '[00:04:10]',
+                       'url': 'https://www.youtube.com/watch?v=hvl2NRPSVTE&t=250s',
+                       'markdown': '[00:04:10](https://www.youtube.com/watch?v=hvl2NRPSVTE&t=250s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R4eJOKRQISs',
+                       'title': 'What Happens to a Reverse Mortgage When the Homeowner Dies?',
+                       'channel': 'Reverse Mortgages by Tim Oddo',
+                       'author': 'Reverse Mortgages by Tim Oddo',
+                       'text': "I would sell it for 600,000, I'd go and pay off the 300,000 reverse "
+                               'mortgage because that needs to be paid off as a lien on title.',
+                       'tip': "I would sell it for 600,000, I'd go and pay off the 300,000 reverse "
+                              'mortgage because that needs to be paid off as a lien on title.',
+                       'timestamp': 53,
+                       'timestamp_seconds': 53,
+                       'timestamp_label': '[00:00:53]',
+                       'url': 'https://www.youtube.com/watch?v=R4eJOKRQISs&t=53s',
+                       'markdown': '[00:00:53](https://www.youtube.com/watch?v=R4eJOKRQISs&t=53s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JsLnTFCaOUQ',
+                       'title': "Heirs' Property: The Trap That Costs Families Their Land",
+                       'channel': 'The Accidental Executor',
+                       'author': 'The Accidental Executor',
+                       'text': 'Investors know this. They find a distant heir who owns a 2% share, buy '
+                               'that share for a few hundred dollars, and then force a sale of the entire '
+                               'property at auction.',
+                       'tip': 'Investors know this. They find a distant heir who owns a 2% share, buy that '
+                              'share for a few hundred dollars, and then force a sale of the entire '
+                              'property at auction.',
+                       'timestamp': 110,
+                       'timestamp_seconds': 110,
+                       'timestamp_label': '[00:01:50]',
+                       'url': 'https://www.youtube.com/watch?v=JsLnTFCaOUQ&t=110s',
+                       'markdown': '[00:01:50](https://www.youtube.com/watch?v=JsLnTFCaOUQ&t=110s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y515EhC17RU',
+                       'title': "Shocked that more heirs property owners aren't doing this!",
+                       'channel': 'The Family Land Lawyer',
+                       'author': 'The Family Land Lawyer',
+                       'text': 'If you own anything like land, house, if you own 100%, if you own 10%, I '
+                               'want you to put that in your will, put that in your trust, include it in '
+                               'your estate plan.',
+                       'tip': 'If you own anything like land, house, if you own 100%, if you own 10%, I '
+                              'want you to put that in your will, put that in your trust, include it in '
+                              'your estate plan.',
+                       'timestamp': 133,
+                       'timestamp_seconds': 133,
+                       'timestamp_label': '[00:02:13]',
+                       'url': 'https://www.youtube.com/watch?v=Y515EhC17RU&t=133s',
+                       'markdown': '[00:02:13](https://www.youtube.com/watch?v=Y515EhC17RU&t=133s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'T42HfbxscSQ',
+                       'title': 'What is Heir Property?',
+                       'channel': 'Lawyer Greg McIntyre',
+                       'author': 'Lawyer Greg McIntyre',
+                       'text': "Maybe no one can agree who's going to pay the property taxes, who's going "
+                               'to pay the maintenance on that property, and that property can go into '
+                               'foreclosure.',
+                       'tip': "Maybe no one can agree who's going to pay the property taxes, who's going "
+                              'to pay the maintenance on that property, and that property can go into '
+                              'foreclosure.',
+                       'timestamp': 52,
+                       'timestamp_seconds': 52,
+                       'timestamp_label': '[00:00:52]',
+                       'url': 'https://www.youtube.com/watch?v=T42HfbxscSQ&t=52s',
+                       'markdown': '[00:00:52](https://www.youtube.com/watch?v=T42HfbxscSQ&t=52s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7cYFXxbOdbc',
+                       'title': 'Estate Planning Myths & Law Firm Growth with Alina Nuñez | Eric Rosen '
+                                'Podcast',
+                       'channel': 'Rosen Injury Law',
+                       'author': 'Rosen Injury Law',
+                       'text': "That's one of the big misconceptions, that having a will, you're fine. "
+                               'Wrong. A will does not avoid probate.',
+                       'tip': "That's one of the big misconceptions, that having a will, you're fine. "
+                              'Wrong. A will does not avoid probate.',
+                       'timestamp': 515,
+                       'timestamp_seconds': 515,
+                       'timestamp_label': '[00:08:35]',
+                       'url': 'https://www.youtube.com/watch?v=7cYFXxbOdbc&t=515s',
+                       'markdown': '[00:08:35](https://www.youtube.com/watch?v=7cYFXxbOdbc&t=515s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wQcPBrtGgYY',
+                       'title': 'How to Start an Estate Planning Law Firm: What Lawyers Need To Know',
+                       'channel': 'Darcel Lobo',
+                       'author': 'Darcel Lobo',
+                       'text': 'I give far more referrals than I receive. But I know that that is what has '
+                               'served me so well over these 17 years and keeps my phone ringing.',
+                       'tip': 'I give far more referrals than I receive. But I know that that is what has '
+                              'served me so well over these 17 years and keeps my phone ringing.',
+                       'timestamp': 278,
+                       'timestamp_seconds': 278,
+                       'timestamp_label': '[00:04:38]',
+                       'url': 'https://www.youtube.com/watch?v=wQcPBrtGgYY&t=278s',
+                       'markdown': '[00:04:38](https://www.youtube.com/watch?v=wQcPBrtGgYY&t=278s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '22eVzYFh7is',
+                       'title': 'Estate Planning Mastery: Keeping Your Wealth in the Family and Out of '
+                                "In-Laws' Reach",
+                       'channel': 'National Referral Network',
+                       'author': 'National Referral Network',
+                       'text': 'The important thing is that you do have to have a separate trustee; you '
+                               'cannot have your child be the trustee over their own trust and expect to '
+                               'have that type of protection.',
+                       'tip': 'The important thing is that you do have to have a separate trustee; you '
+                              'cannot have your child be the trustee over their own trust and expect to '
+                              'have that type of protection.',
+                       'timestamp': 331,
+                       'timestamp_seconds': 331,
+                       'timestamp_label': '[00:05:31]',
+                       'url': 'https://www.youtube.com/watch?v=22eVzYFh7is&t=331s',
+                       'markdown': '[00:05:31](https://www.youtube.com/watch?v=22eVzYFh7is&t=331s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pryGLjB9I8k',
+                       'title': 'Effective Estate Planning for Business Owners',
+                       'channel': 'National Referral Network',
+                       'author': 'National Referral Network',
+                       'text': 'Here in Florida it can take minimum six months to a year just before '
+                               'anything actually happens, and during that time the business fails because '
+                               'nobody is authorized to access those bank accounts to pay your employees.',
+                       'tip': 'Here in Florida it can take minimum six months to a year just before '
+                              'anything actually happens, and during that time the business fails because '
+                              'nobody is authorized to access those bank accounts to pay your employees.',
+                       'timestamp': 339,
+                       'timestamp_seconds': 339,
+                       'timestamp_label': '[00:05:39]',
+                       'url': 'https://www.youtube.com/watch?v=pryGLjB9I8k&t=339s',
+                       'markdown': '[00:05:39](https://www.youtube.com/watch?v=pryGLjB9I8k&t=339s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

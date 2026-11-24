@@ -1,646 +1,826 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-land-flipping",
-    "question_prompt": "What exactly is land flipping, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Land Flipping?",
-    "subtitle": "Vacant-Land Inventory, GIS Underwriting, Recorded Easements, Minor Subdivisions, and Title-Insured Exits",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Land flipping turns purchased parcel inventory into completed sales, not paper appreciation or client transaction volume. "
-        "Candidate #6 ranks #15 with a Money-to-Manpower Score of 86/100: a elite small-team cash machine requiring patient capital "
-        "and parcel-level evidence. This chapter maps six plays: access-easement assemblage, rural cash resale, buildable infill, "
-        "adjoining-owner assemblage, minor subdivision, and title-cleanup resale. Canonical annual owner profits are $24,000 "
-        "Conservative, $157,250 Base, and $375,000 Scaled. Gross parcel sale proceeds are revenue; acquisition costs remain "
-        "inside the net-margin calculation. Durable operators convert title, access, zoning, survey, and buyer research into "
-        "repeatable decisions. Fragile operators mistake cheap acreage, automated valuations, and advertised roads for transferable "
-        "land with a verified buyer."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin.",
-            "note": "12% net margin; $24,000 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin.",
-            "note": "18.5% net margin; $157,250 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross parcel sale proceeds; acquisition costs included in net margin.",
-            "note": "25% net margin; $375,000 annual owner net profit; 2 FT + 4 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the inventory business before buying a discount",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Land flipping is the purchase and resale of real property held as trading inventory, usually without constructing "
-                    "a building. The operator earns a spread by buying below a supportable exit price, resolving a specific impediment, "
-                    "or packaging a parcel for a better matched buyer. Vacant rural acreage, urban infill, surplus strips, and small "
-                    "approved divisions are different products, not interchangeable acreage. A tract suitable for recreation may have "
-                    "little value to a homebuilder if it lacks wastewater capacity, practical access, or a usable building envelope. "
-                    "The transaction starts with a documented acquisition thesis and ends with a completed disposition, not an accepted "
-                    "offer or an attractive listing. County GIS, QGIS, Regrid, and assessor records identify candidates; recorded "
-                    "instruments, field evidence, and buyer interviews establish whether those candidates deserve capital. The five "
-                    "archetypes below describe operating postures, while the six plays in the next section describe transaction "
-                    "mechanics. A solo principal can use several mechanics, but should initially standardize one county, one parcel "
-                    "type, and one buyer segment. Every deviation introduces another pricing model, diligence checklist, and sales "
-                    "cycle. Cheap land becomes inventory only when the operator can explain who buys it, what that buyer can do "
-                    "with it, and which documents support those claims."
-                ),
-                (
-                    "Revenue follows the operator's actual role. When the business acquires and controls a parcel as principal, "
-                    "gross parcel sale proceeds are the scorecard revenue basis; acquisition cost is an inventory cost that enters "
-                    "the profit calculation when the parcel sells. A $40,000 sale of land purchased for $22,000 creates $40,000 "
-                    "of gross sale revenue, not $18,000 of revenue. The $18,000 difference is merely the starting spread before "
-                    "closing, diligence, holding, selling, and overhead costs. For ordinary land inventory, the accounting policy "
-                    "should address ASC 606 contract criteria, transfer of control, collectibility, and any remaining obligations; "
-                    "the date money reaches escrow alone does not settle recognition. A refundable buyer deposit is a liability, "
-                    "and an unsold parcel is not revenue. If the operator only markets another owner's $400,000 property for an "
-                    "earned $20,000 service fee, the relevant operator revenue is that fee, subject to the applicable accounting "
-                    "and licensing treatment. The owner's sale price is underlying client transaction volume. Similarly, a "
-                    "contract assignment requires analysis of the assigned rights and the actual fee earned, rather than automatic "
-                    "recognition of the entire parcel price. Seller-credit collections also require separating principal recovery "
-                    "from interest, without recording the original sale repeatedly."
-                ),
-                (
-                    "A durable moat is a better evidence loop, not a mailing template. Maintain parcel identifiers across assessor "
-                    "exports, recorder searches, CRM records, title files, and sale outcomes; county identifiers can change after "
-                    "splits, so preserve instrument references and parent-child relationships. Record why offers failed and why "
-                    "buyers withdrew. That history produces a county-specific map of septic failures, seasonal access problems, "
-                    "utility extension costs, and misleading comparable sales. Airtable or a carefully controlled spreadsheet can "
-                    "hold the workflow, while QGIS supplies reproducible spatial screening and saved overlays. Neither replaces "
-                    "a surveyor's boundary work or a title examiner's interpretation of recorded interests. The scorecard's 72 "
-                    "points comprise revenue potential 23, margin potential 23, team efficiency 18, startup accessibility 11, and automation potential 11. Those numbers describe a disciplined specialist business rather than "
-                    "effortless passive income. The working envelope is $15,000 to $75,000 of startup capital, $3,000 to "
-                    "$15,000 of monthly operating expense, and three to twelve months to the first deal. Budget that runway "
-                    "before assuming inventory turnover. One principal coordinates specialist capacity; contractors still require "
-                    "scheduling, review, and payment. Automation improves parcel screening and comparable-sale tracking most "
-                    "reliably when humans resolve exceptions before any purchase commitment."
-                ),
-            ],
-            "table": {
-                "caption": "Five Land-Flipping Operator Archetypes and Their Evidence-Based Advantages",
-                "headers": [
-                    "Operator archetype and target inventory",
-                    "Revenue mechanic and buyer proposition",
-                    "Repeatable evidence advantage to build",
-                    "Capital-loss mechanism to control",
-                ],
-                "rows": [
-                    [
-                        "Rural inventory merchant buying small recreational acreage",
-                        "Resell owned parcels for gross cash sale proceeds",
-                        "Maintain verified access routes and local recreational comparables",
-                        "Illiquid acreage consumes carrying cash beyond planned seasons",
-                    ],
-                    [
-                        "Infill specialist sourcing existing lots near established services",
-                        "Sell buildable inventory to builders with documented specifications",
-                        "Archive setbacks, service quotations, and builder purchase criteria",
-                        "Utility extensions eliminate spreads despite attractive neighborhood prices",
-                    ],
-                    [
-                        "Access and assemblage specialist coordinating voluntary neighboring transactions",
-                        "Sell improved owned property or separately contracted access services",
-                        "Connect surveyed geometry with recorded rights and cooperative owners",
-                        "Recorded restrictions prevent the intended transferable access improvement",
-                    ],
-                    [
-                        "Minor subdivision operator dividing suitable parent parcel inventory",
-                        "Sell approved child parcels after allocated acquisition costs",
-                        "Standardize survey, infrastructure, recording, and local review sequencing",
-                        "Required road improvements exceed combined child parcel value",
-                    ],
-                    [
-                        "Title-resolution specialist purchasing curable distressed ownership situations",
-                        "Resell owned inventory after documented ownership defects resolve",
-                        "Develop responsive title, probate, and recording specialist relationships",
-                        "Unresolved heirs or superior liens prevent insurable conveyance",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the missing evidence before buying the land",
-                "body": (
-                    "Experienced operators spend small amounts on decisive facts before committing large amounts to inventory."
-                ),
-                "items": [
-                    "Ask the title company which recorded easement instrument benefits the exact parcel, then obtain that instrument rather than accepting a GIS road overlay.",
-                    "Give three active local builders the same dimensioned infill sketch and record their maximum acquisition prices with utility assumptions attached.",
-                    "Inspect rural access after meaningful rainfall when possible; record culvert condition, maintenance responsibility, and the location of every locked crossing.",
-                    "Track rejected parcels alongside purchased parcels so automated screening learns from septic, access, and title failures instead of only successful exits.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Map six plays to unit economics and reversible commitments",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The first mapped play is gis_landlocked_parcel_easement_assemblage: combine GIS geometry with recorded rights "
-                    "to identify overlooked strips and negotiate voluntary access improvements. A mapped road is not proof of "
-                    "legal access, and ownership of a narrow strip is not permission to obstruct an existing right. For an "
-                    "illustrative option, pay $1,000 credited toward an $8,000 purchase, then budget $4,000 for survey and "
-                    "recording work plus $3,000 for closing and selling. A $24,000 disposition leaves $9,000 before annual "
-                    "overhead and tax treatment; the option payment is not counted twice. Obtain agreement on easement scope, "
-                    "benefited land, maintenance, and transferability before exercise. If rights cannot be documented, exercise "
-                    "available diligence contingencies and offer survey-backed voluntary access services under a separate, permitted "
-                    "service arrangement instead. The second play, rural cash resale, might purchase at $12,000, spend $2,000 "
-                    "on diligence and closing, incur $1,000 holding cost and $3,000 selling cost, then sell for $25,000: "
-                    "$7,000 contribution before overhead. Its fallback is a prepriced neighboring-owner exit, not an assumption "
-                    "that advertising will manufacture demand. Both examples are transaction illustrations, not extra scorecard "
-                    "forecasts. Options must expressly address diligence access, expiration, extension pricing, and which payments "
-                    "remain at risk if the operator walks away."
-                ),
-                (
-                    "The third play, buildable infill resale, sells certainty about a usable lot rather than generic urban "
-                    "acreage. Illustratively, $45,000 acquisition plus $7,000 for survey, service verification, and closing, "
-                    "$3,000 holding expense, and $5,000 selling expense creates a $60,000 cost basis for contribution "
-                    "analysis. An $80,000 exit leaves $20,000 before overhead. A water main across the street does not "
-                    "establish an affordable connection; obtain the serving utility's written capacity and extension response. "
-                    "If the building envelope fails, terminate under the applicable contingency or offer a documented side-yard "
-                    "use at a price that still meets the revised purchase ceiling. The fourth play, adjoining-owner assemblage, "
-                    "combines consenting ownership interests into a parcel a specific buyer can use. Two $15,000 acquisitions "
-                    "plus $6,000 of legal, survey, and closing work and $4,000 of carrying and selling costs total "
-                    "$40,000; a $55,000 disposition leaves $15,000 contribution. Tie acquisition timing to both owners' "
-                    "performance so one failed closing does not strand an unusable fragment. If assembly fails, release "
-                    "unexercised options or retain only a parcel whose independent exit was underwritten. Never treat a "
-                    "prospective neighbor's interest as contracted demand. Obtain the buyer's actual dimensional requirements "
-                    "and distinguish a boundary adjustment from a subdivision requiring separate local review."
-                ),
-                (
-                    "The fifth play, minor subdivision, creates saleable child parcels through the jurisdiction's actual land "
-                    "division process. Assume a $90,000 parent acquisition, $30,000 of survey, review, access, and site work, "
-                    "and $20,000 of holding, closing, and selling expense. Four completed sales at $45,000 produce "
-                    "$180,000 of gross proceeds and $40,000 contribution before overhead. Allocate parent cost and shared "
-                    "improvements across children using a documented method; selling the first child does not erase the remaining "
-                    "inventory's cost. The fallback is an independently priced whole-tract disposition or termination before "
-                    "acquisition if required improvements defeat the economics. The sixth play, title-cleanup resale, might "
-                    "combine a $20,000 acquisition with $8,000 of counsel, curative instruments, title, and closing expense "
-                    "plus $4,000 carrying and selling expense. A $45,000 exit leaves $13,000 contribution. Require the "
-                    "title company to identify acceptable curative evidence before purchase; a quiet-title action has uncertain "
-                    "duration and cannot be treated as routine paperwork. If the defect cannot be resolved within the "
-                    "contract's deadlines, use the contingency rather than pass the defect silently to a retail buyer. Across "
-                    "all six plays, the comparison matrix identifies real sourcing channels and fee mechanics without assuming "
-                    "that any platform verifies buildability, title, or the operator's projected exit."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen Land Sub-Verticals: Named Channels, Fee Mechanics, Moats, and Failure Triggers",
-                "headers": [
-                    "Sub-vertical and named operating channel",
-                    "Actual fee structure to underwrite",
-                    "Evidence moat that supports the spread",
-                    "Clawback, cancellation, or capital-loss trigger",
-                ],
-                "rows": [
-                    [
-                        "Landlocked access strips screened through QGIS and Regrid",
-                        "QGIS has no license charge; Regrid subscriptions vary",
-                        "Link surveyed strips to recorded transferable access rights",
-                        "Unrecorded permission disappears when the neighboring owner sells",
-                    ],
-                    [
-                        "Rural recreational acreage marketed through LandWatch listing packages",
-                        "Budget contracted advertising charges plus negotiated closing costs",
-                        "Verify seasonal access and comparable completed recreational purchases",
-                        "Buyer terminates after discovering impassable wet-season road conditions",
-                    ],
-                    [
-                        "Desert recreational parcels researched with county GIS portals",
-                        "Public map access may be free; document copies vary",
-                        "Confirm physical access, water strategy, and actual buyer depth",
-                        "Listed dirt tracks cross private land without enforceable rights",
-                    ],
-                    [
-                        "Urban infill lots sourced through local MLS participants",
-                        "Broker compensation and MLS access follow negotiated arrangements",
-                        "Match builder dimensions with setbacks and utility capacity",
-                        "Utility connection quotation exceeds the buyer's residual land budget",
-                    ],
-                    [
-                        "Builder-ready lots marketed through Zillow and local brokers",
-                        "Listing access and broker compensation depend on selected channel",
-                        "Package survey evidence with written builder acquisition criteria",
-                        "Advertised buildability fails when required setbacks are applied",
-                    ],
-                    [
-                        "Voluntary side-yard assemblages researched using county recorder systems",
-                        "Pay document retrieval, survey, recording, and negotiated closing charges",
-                        "Obtain neighbor demand before purchasing independently weak fragments",
-                        "Required owner refuses conveyance after another fragment closes",
-                    ],
-                    [
-                        "Minor residential splits designed with QGIS and licensed surveyors",
-                        "Budget survey proposals, application charges, and required infrastructure",
-                        "Repeat local plat sequencing across comparable parent tract types",
-                        "Road dedication or drainage conditions erase child parcel spreads",
-                    ],
-                    [
-                        "Small commercial pads advertised through LoopNet listing products",
-                        "Advertising packages and broker compensation require current written quotations",
-                        "Document access permits, utility capacity, and purchaser site criteria",
-                        "Driveway permit denial defeats the intended commercial circulation plan",
-                    ],
-                    [
-                        "Industrial infill screened with EPA environmental data resources",
-                        "Public screening data is accessible; professional investigations cost separately",
-                        "Resolve historic uses before committing to sensitive redevelopment assumptions",
-                        "Contamination response obligations exceed the projected resale value",
-                    ],
-                    [
-                        "Flood-adjacent tracts reviewed with FEMA National Flood Hazard Layer",
-                        "Federal map access is free; elevation surveys cost separately",
-                        "Separate mapped hazards from verified usable building envelope evidence",
-                        "Floodway restrictions or drainage costs remove economically usable area",
-                    ],
-                    [
-                        "Wetland-sensitive acreage screened with USFWS National Wetlands Inventory",
-                        "Public screening maps are free; delineation and permitting cost separately",
-                        "Obtain field-supported constraints before pricing developable acreage claims",
-                        "Jurisdictional waters or mitigation expense defeat intended land disturbance",
-                    ],
-                    [
-                        "Tax-sale sourced parcels located through Bid4Assets auction listings",
-                        "Auction-specific deposits, premiums, and settlement charges vary by listing",
-                        "Resolve sale terms, redemption rules, and insurable ownership timing",
-                        "Sale challenge or redemption prevents the planned resale schedule",
-                    ],
-                    [
-                        "Probate-related vacant parcels researched through county court records",
-                        "Budget court copies, counsel, title work, and authorized conveyance",
-                        "Verify representative authority and all required ownership interests",
-                        "Missing authority or an omitted heir blocks insurable conveyance",
-                    ],
-                    [
-                        "Title-curative inventory examined through county recorder document indexes",
-                        "Document fees, counsel charges, and title premiums follow local terms",
-                        "Obtain title-company acceptance criteria before funding curative work",
-                        "Superior liens survive the proposed corrective deed or release",
-                    ],
-                    [
-                        "Exurban homesites screened with USDA Web Soil Survey",
-                        "Public soil mapping is free; site wastewater testing costs separately",
-                        "Pair preliminary soils with approved local wastewater suitability evidence",
-                        "Failed site testing prevents the buyer's intended residential use",
-                    ],
-                    [
-                        "Timbered recreational tracts marketed through Land.com network products",
-                        "Listing packages, forestry work, and brokerage require separate quotations",
-                        "Verify timber ownership, harvest history, access, and buyer preferences",
-                        "Reserved timber rights or recent harvest invalidate advertised value",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile the three profit cases without inflating revenue",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Conservative case is exactly $200,000 of annual gross parcel sale proceeds at a 12% net margin, "
-                    "yielding $24,000 of annual owner net profit with 1 FT plus 3 C. An illustrative decomposition is "
-                    "twenty completed sales averaging $10,000, not twenty leads, options, or signed contracts awaiting closing. "
-                    "Total recognized costs must therefore equal $176,000. One internally consistent bridge uses $110,000 "
-                    "of sold-parcel acquisition cost, $14,000 of diligence and closing costs, $10,000 of direct carrying "
-                    "and selling costs, and $42,000 of annual operating overhead. The resulting $3,500 monthly overhead "
-                    "sits within the specified operating range. These allocations illustrate the canonical total rather than "
-                    "claiming an additional historical dataset. Keep unsold purchases on the inventory schedule instead of "
-                    "charging their full price against completed sales without the applicable accounting basis. Conversely, "
-                    "do not omit a sold parcel's acquisition cost because the purchase occurred in a prior year. The three "
-                    "contractors represent limited external capacity, not three full-time salaries concealed inside a lean "
-                    "budget. Define their expected engagements and route invoices to the appropriate cost category. A few "
-                    "slow exits can consume much of the $24,000 profit, so this case demands purchase discipline rather "
-                    "than confidence that every discounted parcel eventually sells."
-                ),
-                (
-                    "The Base case is $850,000 of annual gross parcel sale proceeds at an 18.5% net margin, producing "
-                    "$157,250 of annual owner net profit with the same 1 FT plus 3 C team. Twenty-five sales averaging "
-                    "$34,000 provide a useful operating decomposition. An illustrative cost bridge is $500,000 of sold "
-                    "inventory acquisition cost, $45,000 of diligence and closing costs, $51,750 of direct carrying and "
-                    "selling costs, and $96,000 of annual overhead. Those amounts total $692,750, leaving precisely "
-                    "$157,250. Monthly overhead is $8,000. Do not confuse the $850,000 revenue figure with acquisition "
-                    "capital requirements: purchase cash is deployed before collections and can remain tied up across reporting "
-                    "periods. At twenty-five closings per year and a six-month average inventory holding period, steady "
-                    "throughput implies roughly 12.5 parcels in inventory. At the illustrative $20,000 average acquisition "
-                    "cost, that represents about $250,000 of purchase capital before work in progress and cash reserves. "
-                    "Actual seasonal batching can raise the peak substantially. A parcel-level cash calendar should show "
-                    "deposits, purchase settlements, specialist invoices, property taxes, and expected sale collections separately. "
-                    "Use that calendar to size commitments; an annual profit statement cannot tell the owner whether sufficient "
-                    "cash will exist when several acquisitions close during the same week."
-                ),
-                (
-                    "The Scaled case is exactly $1,500,000 of annual gross parcel sale proceeds at a 25% net margin, "
-                    "or $375,000 annual owner net profit, supported by 2 FT plus 4 C: six people in the capacity "
-                    "model. Thirty sales averaging $50,000 reconcile revenue. Illustrative costs of $780,000 for sold "
-                    "inventory acquisition, $75,000 for diligence and closing, $90,000 for direct carrying and selling, "
-                    "and $180,000 for annual overhead total $1,125,000. Monthly overhead reaches the specified $15,000 "
-                    "upper bound. Higher margin is a canonical scenario assumption, not an automatic consequence of hiring "
-                    "another employee. The operating explanation must be better purchases, higher-value parcels, fewer broken "
-                    "contracts, or more efficient specialist deployment. Test each explanation using completed transactions. "
-                    "For sensitivity, a 10% reduction in the Base case's sale proceeds removes $85,000 of revenue; "
-                    "holding its modeled costs constant reduces owner profit to $72,250. Any associated selling-cost "
-                    "changes require their own calculation. Additional holding periods also add expense and delay capital "
-                    "recovery. Keep those stress results separate from the three canonical cases. Treat owner net profit "
-                    "as the supplied business-model output; distributions, owner compensation policy, debt structure, and "
-                    "personal taxes require explicit treatment rather than silent assumptions about spendable household cash."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Revenue and Profit Bridge with Explicit Illustrative Cost Allocations",
-                "headers": [
-                    "Case or ledger control being tested",
-                    "Revenue and cost arithmetic to preserve",
-                    "Capacity or cash interpretation for operators",
-                    "Evidence required to accept the reported result",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case with twenty illustrative completed parcel sales",
-                        "$200,000 proceeds less $176,000 costs equals $24,000 profit",
-                        "12% net margin supports one full-time operator plus three contractors",
-                        "Reconcile closing statements and sold-inventory costs to ledger totals",
-                    ],
-                    [
-                        "Base annual case with twenty-five illustrative completed parcel sales",
-                        "$850,000 proceeds less $692,750 costs equals $157,250 profit",
-                        "18.5% net margin supports one full-time operator plus three contractors",
-                        "Verify all direct costs and $96,000 annual overhead allocation",
-                    ],
-                    [
-                        "Scaled annual case with thirty illustrative completed parcel sales",
-                        "$1,500,000 proceeds less $1,125,000 costs equals $375,000 profit",
-                        "25% net margin supports two full-time operators plus four contractors",
-                        "Confirm six-person capacity and all $180,000 annual overhead costs",
-                    ],
-                    [
-                        "Principal-owned parcel sale contrasted with another owner's property transaction",
-                        "Owned sale recognizes proceeds; earned service arrangement recognizes applicable fees",
-                        "Client transaction volume never substitutes for the operator's earned revenue",
-                        "Inspect ownership documents, contracts, performance obligations, and settlement statements",
-                    ],
-                    [
-                        "Unsold inventory purchases separated from current completed-sale acquisition costs",
-                        "Carry applicable inventory costs until recognition under the accounting policy",
-                        "Cash deployed into inventory can exceed current-period recognized expenses",
-                        "Reconcile parcel cost schedules with purchases, dispositions, and remaining inventory",
-                    ],
-                    [
-                        "Seller-credit sale collections separated from original transaction revenue recognition",
-                        "Separate principal recovery, interest income, and applicable impairment accounting",
-                        "A receivable can create accounting profit before equivalent cash collection",
-                        "Match servicing statements to contracts and the adopted recognition policy",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build a title-to-buyer evidence chain that survives exceptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start each acquisition file with the legal description, current vesting, purchase terms, and intended buyer "
-                    "use. Order a title commitment early enough to investigate exceptions before diligence expires. Read the "
-                    "referenced easements, restrictions, reservations, and lien instruments; a commitment is not a promise "
-                    "that every operational assumption is covered. Obtain a survey appropriate to the intended transaction "
-                    "and ask the title provider what access coverage or endorsements are actually available. Legal access, "
-                    "physical access, utility access, and permitted driveway access are separate questions. A recorded "
-                    "pedestrian easement may not serve a house, and an existing gravel track may cross land without "
-                    "transferable rights. Use written municipal or county responses to test zoning, lot dimensions, setback "
-                    "effects, and division requirements. North Carolina's N.C. Gen. Stat. 160D-802 illustrates why operators "
-                    "must examine statutory subdivision definitions and exclusions alongside local regulations rather than "
-                    "assuming every small split qualifies for simplified treatment. Obtain utility capacity and extension "
-                    "pricing from the actual provider. For onsite wastewater, use the responsible authority's process "
-                    "and qualified field work. A county tax designation, postal address, or neighboring house is useful "
-                    "context but does not establish that the subject parcel can support the buyer's intended development."
-                ),
-                (
-                    "Environmental screening must match the property's history and proposed use. EPA databases, historical "
-                    "aerials, FEMA mapping, and the USFWS National Wetlands Inventory are screening inputs, not substitutes "
-                    "for site-specific investigation. Where the acquisition strategy relies on CERCLA bona fide prospective "
-                    "purchaser protections, evaluate the conditions in 42 U.S.C. 9601(40) and 9607(r), including qualifying "
-                    "pre-acquisition inquiry and continuing obligations. The all appropriate inquiries framework appears in "
-                    "40 CFR Part 312; scope the environmental professional's work before purchase, not after contamination "
-                    "appears during resale. Work affecting jurisdictional waters may require authorization under Clean Water "
-                    "Act Section 404, codified at 33 U.S.C. 1344. State and local restrictions can apply independently. "
-                    "A map showing no wetland polygon does not resolve those questions. Land division also requires "
-                    "attention to sales practices: the Interstate Land Sales Full Disclosure Act, including 15 U.S.C. "
-                    "1703 and the exemptions in 1702, can affect subdivision marketing and contracts when applicable. "
-                    "Document the actual project facts rather than assuming a small current release answers the "
-                    "aggregation analysis. For repeated inventory sales, 26 U.S.C. 1221(a)(1) also matters because "
-                    "property held primarily for sale to customers is excluded from the statutory capital-asset definition."
-                ),
-                (
-                    "Close the evidence chain by giving buyers a consistent parcel packet: recorded description, survey, "
-                    "access instruments, relevant title exceptions, documented utility responses, known constraints, and a "
-                    "clearly bounded account of completed investigations. Title insurance addresses covered title risks "
-                    "under its terms and exclusions; it does not certify buildability, soils, market value, or future "
-                    "permit issuance. Describe limitations concretely instead of labeling a parcel ready for a use that "
-                    "has not been established. If the business begins representing other owners, evaluate the applicable "
-                    "broker licensing rules before collecting transaction-based compensation. Florida's 475.011(2), for "
-                    "example, contains an owner exemption with limitations; ownership is not a universal permission slip "
-                    "for every related service arrangement. Assign one person to maintain the source documents and "
-                    "another qualified reviewer to resolve material contradictions where staffing permits. Log the precise "
-                    "reason a parcel advances, pauses, or exits the pipeline. The four-step SOP below creates a repeatable "
-                    "handoff from screening to closing without pretending that automation can adjudicate property rights. "
-                    "Scale only after closed-sale records demonstrate repeatable acquisition spreads, contained exception "
-                    "costs, and manageable holding periods. If a required fact remains unresolved, preserve cash through "
-                    "the negotiated contingency rather than converting an unanswered question into expensive owned inventory."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Purchase Evidence Matrix for Title-Insured Vacant and Infill Land Dispositions",
-                "headers": [
-                    "Decision requiring parcel-specific proof",
-                    "Primary evidence and responsible specialist",
-                    "Concrete acceptance criterion before commitment",
-                    "Fallback when the evidence fails",
-                ],
-                "rows": [
-                    [
-                        "Seller authority and exact ownership interests being conveyed",
-                        "Recorded vesting, entity authority, probate documents, and title examination",
-                        "All required parties can execute an insurable conveyance",
-                        "Extend documented diligence or terminate under available contract rights",
-                    ],
-                    [
-                        "Transferable access adequate for the intended buyer use",
-                        "Recorded easement instruments, survey, title review, and field inspection",
-                        "Rights, route, permitted use, and maintenance obligations align",
-                        "Negotiate voluntary documented rights or abandon the acquisition thesis",
-                    ],
-                    [
-                        "Practical building envelope and lawful intended land use",
-                        "Local regulations, written agency responses, survey, and qualified site analysis",
-                        "Required dimensions and constraints leave a viable proposed use",
-                        "Reprice for verified alternative use or exercise negotiated contingency",
-                    ],
-                    [
-                        "Water, wastewater, power, and access improvement cost exposure",
-                        "Serving utility quotations, local wastewater determinations, and contractor proposals",
-                        "Documented connection and improvement costs fit the purchase ceiling",
-                        "Reduce price or reject assumptions requiring unpriced infrastructure work",
-                    ],
-                    [
-                        "Environmental conditions relevant to ownership and proposed disturbance",
-                        "Qualified environmental review, historical records, and site-specific constraint investigations",
-                        "Identified obligations and usable area support the priced transaction",
-                        "Terminate or restructure only after specialist-defined scope and costs",
-                    ],
-                    [
-                        "Exit demand and complete economic recognition of the disposition",
-                        "Completed comparable sales, buyer feedback, contracts, and settlement accounting",
-                        "Buyer fit and net spread survive documented downside assumptions",
-                        "Use prepriced alternate exit or preserve capital before purchase",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before acquisition cash leaves escrow",
-                "body": (
-                    "Advance only when the acquisition file contains evidence matching the intended resale use and the funded cost ceiling."
-                ),
-                "items": [
-                    "Verify seller authority, legal description, required signatures, and the title company's written requirements for the proposed insured conveyance.",
-                    "Verify recorded access scope against the survey and physical route, including any separate driveway authorization and maintenance obligation.",
-                    "Verify zoning, division requirements, utilities, wastewater suitability, and environmental constraints using the responsible agencies and qualified specialists.",
-                    "Verify the purchase ceiling against documented exit evidence, all acquisition and selling costs, holding reserves, and an executable fallback.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Screen one defined parcel cohort",
-                    "action": (
-                        "Filter county GIS or Regrid records in QGIS using a saved parcel-type and buyer-use specification."
-                    ),
-                    "detail": (
-                        "Preserve parcel identifiers, source dates, parent references, and exclusion reasons; do not convert spatial proximity into a legal-access conclusion."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Contract for evidence and an exit",
-                    "action": (
-                        "Negotiate a documented option or purchase agreement with diligence rights, access permission, deadlines, and defined payment exposure."
-                    ),
-                    "detail": (
-                        "Request title, survey, agency, utility, and specialist evidence early enough to use the actual contractual remedies if the thesis fails."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Underwrite the parcel cash cycle",
-                    "action": (
-                        "Build a parcel ledger covering purchase price, direct work, carrying costs, selling costs, expected collections, and fallback proceeds."
-                    ),
-                    "detail": (
-                        "Separate transaction contribution from annual owner profit, track inventory funding, and compare the proposed commitment with cash already reserved."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close, reconcile, and update the evidence loop",
-                    "action": (
-                        "Deliver the buyer packet, complete the agreed title-insured disposition, and reconcile the settlement to inventory and revenue records."
-                    ),
-                    "detail": (
-                        "Record actual holding days, exception costs, buyer objections, and realized contribution; feed those outcomes into the next screening and pricing cycle."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The durable land spread comes from buying unresolved evidence cheaply and selling documented usefulness clearly.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Choose one county, one parcel archetype, and one buyer segment; record their access, dimensions, utility, and price requirements.",
-        "Build a parcel evidence register linking GIS identifiers to recorded instruments, title exceptions, surveys, specialist findings, and buyer responses.",
-        "Model one of the six plays with acquisition, diligence, closing, carrying, selling, and overhead costs separated and a priced fallback attached.",
-        "Reconcile planned annual proceeds and costs to the exact Conservative, Base, or Scaled scorecard before describing expected owner profit.",
-        "Use written diligence terms to verify title, access, usable area, utilities, and environmental constraints before committing acquisition cash.",
-        "Create a completed-sale review that updates comparable prices, actual holding periods, failed assumptions, contractor costs, and future purchase ceilings.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "26 U.S.C. 1221(a)(1) — Property excluded from capital-asset treatment",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1221",
-            "relevance": (
-                "Property held primarily for sale to customers in the ordinary course of business is excluded from the statutory capital-asset definition; inventory trading requires its own tax analysis."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 9601(40) — Bona fide prospective purchaser definition",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9601",
-            "relevance": (
-                "Defines conditions relevant to purchasers seeking CERCLA protections, including pre-acquisition inquiry and specified continuing obligations."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 9607(r) — Bona fide prospective purchaser liability provisions",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Connects qualifying purchaser status with liability protections and addresses potential federal liens; acquisition diligence must evaluate the actual conditions."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and practices for all appropriate inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Establishes the federal inquiry framework relevant to specified CERCLA landowner protections, including professional review and timing requirements."
-            ),
-        },
-        {
-            "title": "33 U.S.C. 1344 — Permits for dredged or fill material",
-            "url": "https://www.law.cornell.edu/uscode/text/33/1344",
-            "relevance": (
-                "Governs the federal permitting framework for covered discharges of dredged or fill material into jurisdictional waters; intended site work requires parcel-specific review."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1703 — Interstate land sales prohibitions and purchaser protections",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1703",
-            "relevance": (
-                "Contains requirements and prohibited practices affecting covered subdivision sales, with purchaser remedies that can disrupt assumed completed-sale economics."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1702 — Interstate land sales exemptions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1702",
-            "relevance": (
-                "Provides exemptions with different scopes and conditions; operators must evaluate actual project and sales facts rather than presume every small division is excluded."
-            ),
-        },
-        {
-            "title": "N.C. Gen. Stat. 160D-802 — Subdivision definition and statutory exclusions",
-            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_160D/GS_160D-802.html",
-            "relevance": (
-                "Illustrates state-level subdivision definitions and exclusions that must be read with applicable local land development regulations before underwriting child parcel sales."
-            ),
-        },
-        {
-            "title": "Florida Statutes 475.011(2) — Owner exemption and limitations",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0475/Sections/0475.011.html",
-            "relevance": (
-                "Addresses an exemption for specified dealings involving an owner's property and its limitations; representing others requires a separate licensing assessment."
-            ),
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'land-flipping-business-model',
+ 'question_prompt': 'How does the land flipping business model actually work end to end, and what does it '
+                    'take to build it into a real business?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Land Flipping Business Model',
+ 'subtitle': 'Buying below value and reselling near market, the land flipping life cycle and 7-step '
+             'process, first-year profit breakdowns, full A-to-Z blueprints, why land is not passive, '
+             'practitioner lessons from Seth Williams and Alex Reese, replacing a W-2, land acquisition '
+             'fundamentals, and where the industry is heading',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Land flippers agree on the core trade: buy vacant parcels from apathetic, '
+                      'free-and-clear owners, often inherited or absentee, at a deep discount and resell '
+                      "to builders, investors, or retail buyers. REtipster's Seth Williams teaches buying "
+                      'at 5% to 30% of value, while Clayton Hepler offers 50% to 55% and Ron Apke now buys '
+                      'near 80% and manufactures margin by subdividing. The street mechanics are numeric: '
+                      'counties with at least 200 land sales a year, days on market under 90 to 120, '
+                      'parcels scrubbed of the 40% to 50% with wetlands, flood, slope, or bad access, and '
+                      'offers built from median price per acre minus agent, closing, and lender costs. '
+                      'Texting beats mail for Landon Bleau, roughly 9x versus 3x return on ad spend. '
+                      'Disagreements remain over mail versus texting and over assigning contracts versus '
+                      'taking title.',
+ 'key_metrics': [{'label': 'First-Year Land Flipping Profit',
+                  'metric': 'First-Year Land Flipping Profit',
+                  'value': 'About $700K profit in year one',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ron Apke and their brother started the land company in 2020, cleared about '
+                             '$700K in year one, then scaled to 50, 75, or 100 deals per year.',
+                  'source': 'Real Estate Pros Show ([Z_ZynszdCFo @ 00:02:02])'},
+                 {'label': 'Texting vs Mail Return on Ad Spend',
+                  'metric': 'Texting vs Mail Return on Ad Spend',
+                  'value': 'About 9x for texting, about 3x for mail',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Landon Bleau runs about 50K texts a week plus 10K to 20K handwritten mailers '
+                             'a month; texting produces 60% to 70% of deals.',
+                  'source': 'REtipster ([Uaqe67xWZN0 @ 00:38:55])'},
+                 {'label': 'Marketing Volume Per Deal',
+                  'metric': 'Marketing Volume Per Deal',
+                  'value': '6,000 to 8,000 mailers or 30,000 to 40,000 texts per deal, about $25K average '
+                           'profit',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Clayton Hepler's benchmarks per closed deal, with cold calls at about 6 "
+                             'weeks per deal and a 5 to 10x return on ad spend.',
+                  'source': 'DealMachine Podcast ([HE45qWS8txg @ 00:09:38])'},
+                 {'label': 'Minimum County Land Sales',
+                  'metric': 'Minimum County Land Sales',
+                  'value': 'At least 200 land sales per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Thomas only pulls lists in counties with at least 200 land sales a year and '
+                             'fewer active listings than sold listings.',
+                  'source': 'Thomas | Land Flipping ([ZfyoS572Kbk @ 00:52:56])'}],
+ 'sections': [{'id': 'section-1',
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator in this lane runs the same core arbitrage: buy dirt from an '
+                              'owner who no longer cares about it, at a price far below what a retail '
+                              'buyer or builder will pay, then resell fast. Seth Williams of REtipster '
+                              'frames the classic spread as offering 5% to 30% of market value and '
+                              "reselling at 50% to 80%, a 'win-win-win' where sellers who refuse that "
+                              "range are 'probably not the right person' [Zu8LEqQ-L0w @ 00:01:15]. At "
+                              'REWBCON, Williams widens the buy band to 10% to 40%, arguing the property '
+                              'is worth more the day you buy it [pBstDNy9IuM @ 00:08:18]. The spread has '
+                              'compressed as the market matured. Clayton Hepler on the DealMachine Podcast '
+                              'offers 50% to 55% of expected sale price on flips and 65% to 70% on double '
+                              'closes, with a $25K minimum, aiming to double the money [HE45qWS8txg @ '
+                              '00:13:00]. Ron Apke has pushed further into a project model, buying around '
+                              '80% of market value and manufacturing the margin by subdividing or adding a '
+                              'mobile home before selling above market [Z_ZynszdCFo @ 00:02:33]. The '
+                              'consensus is not one fixed percentage; it is that the margin lives in the '
+                              "gap between an apathetic seller's price and a motivated buyer's, and the "
+                              "operator's job is to sit in that gap.",
+                              'The practitioners agree on who sells and why the asset class still works. '
+                              'Williams points out that banks rarely finance vacant lots, so most owners '
+                              'hold free and clear with no lender forcing a price, and that only about 6% '
+                              'of US land is developed [pBstDNy9IuM @ 00:06:52]. On Launch Control, '
+                              "Williams describes the 'seasoned' owner: someone who bought a dream parcel "
+                              '20 to 30 years ago, inherited it, or is tired of paying the taxes, and who '
+                              "'just don't care about it anymore' [4xzZ7rKlL4E @ 00:06:50]. Thomas, who "
+                              'reports a $63,000 month, describes the same seller as an inherited or '
+                              'absentee owner paying roughly $600 a year in taxes, someone who trades '
+                              'price for speed and certainty the way a driver accepts $5k from a dealer '
+                              'instead of $8k selling privately [ZfyoS572Kbk @ 01:25:05]. Hidden Money '
+                              'flags the identical signals for list building: delinquent taxes, '
+                              'out-of-state owners, decades of ownership, and estates [hWcjM0400as @ '
+                              '00:00:52]. Thomas adds that land sellers carry less emotion and sign '
+                              'simpler contracts than house sellers, and puts the competition gap bluntly: '
+                              "'for every 99 household sellers, there's one land flipper,' and most of "
+                              'those flippers only use the builder exit.',
+                              "None of these operators sells land as passive income. REtipster's short "
+                              "take is blunt: 'This is not a passive process at all,' because acquisitions "
+                              'demand zoning, title, survey, and environmental work, many sellers decline '
+                              'deep discounts, and even owned lots need mowing, drainage fixes, and '
+                              "trespasser control, though it stays '10 times easier' than houses "
+                              '[WmRK4kG81e4 @ 00:00:47]. Ron Apke tells operators to plan for five years, '
+                              'not six months, to distrust 30-day promises, and to treat the business as a '
+                              "plan executed with consistency, since 'if you turn off your marketing, your "
+                              "leads are going to get turned off as well' [Z_ZynszdCFo @ 00:06:09]. Hepler "
+                              "dates the shift: the 2020 to 2022 market 'forgave bad underwriting,' and "
+                              'now operations and capital stacks decide who survives, with weak operators '
+                              'selling below what they underwrote [HE45qWS8txg @ 00:04:15]. Thomas lists '
+                              "who should stay out: anyone who won't pick up the phone, needs money within "
+                              'two weeks, avoids volume, or wants to get rich quick, and calls the role '
+                              "being 'an operator of a machine' that must run at least five days a week "
+                              '[ZfyoS572Kbk @ 00:33:03]. The shared baseline is a disciplined, '
+                              'volume-driven acquisitions machine, not a side bet.'],
+               'table': {'caption': 'Where the land flipping practitioners line up on the core business '
+                                    'model',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Buy at a deep discount from apathetic owners',
+                                   'Offer 5% to 30% of market value and resell at 50% to 80% of market '
+                                   'value',
+                                   'Sellers refusing deep offers are treated as the wrong prospect, not a '
+                                   'problem to fix',
+                                   'REtipster ([Zu8LEqQ-L0w @ 00:01:15])'],
+                                  ['Spreads have compressed and shifted toward land projects',
+                                   'Buy near 80% of market value, then subdivide or add a mobile home '
+                                   'before selling above market',
+                                   'Margin now gets manufactured through highest-and-best use, not only '
+                                   'bought cheap upfront',
+                                   'Real Estate Pros Show ([Z_ZynszdCFo @ 00:02:33])'],
+                                  ['Free-and-clear owners hold most vacant land parcels',
+                                   'Banks rarely finance vacant lots, so no lender pressure dictates the '
+                                   "owner's asking price",
+                                   'Expect apathetic owners who negotiate on convenience rather than on a '
+                                   'loan payoff number',
+                                   'REtipster ([pBstDNy9IuM @ 00:06:52])'],
+                                  ['Inherited and absentee owners trade price for speed',
+                                   'Typical sellers pay roughly $600 a year in taxes and value certainty '
+                                   'over top dollar',
+                                   'Pitch speed and a clean close instead of arguing with sellers over '
+                                   'retail value',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 01:25:05])'],
+                                  ['The business is operational work, never passive income',
+                                   'Acquisitions need zoning, title, and survey work, and owned lots still '
+                                   'need mowing and trespasser control',
+                                   'Budget real weekly hours for research, outreach, property maintenance, '
+                                   'and active selling',
+                                   'REtipster ([WmRK4kG81e4 @ 00:00:47])'],
+                                  ['Consistent marketing drives deal flow over multiple years',
+                                   'Plan for five years, not six months; shutting marketing off shuts the '
+                                   'leads off too',
+                                   'Run outreach every single week and judge results on long horizons, not '
+                                   'single campaigns',
+                                   'Real Estate Pros Show ([Z_ZynszdCFo @ 00:06:09])'],
+                                  ['Underwriting and operations now decide who survives',
+                                   'The 2020 to 2022 market forgave bad underwriting; weak operators now '
+                                   'sell below their numbers',
+                                   'Build intake, underwriting, and capital stacks before scaling up '
+                                   'marketing spend',
+                                   'DealMachine Podcast ([HE45qWS8txg @ 00:04:15])']]}},
+              {'id': 'section-2',
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Market selection is the first gate, and the screens are numeric. Apke goes '
+                              'rural, two to three counties outside a metro, and wants real transactions, '
+                              'days on market under about 120, a healthy sell-through rate, limited '
+                              'inventory, and county population density under 500 [Z_ZynszdCFo @ '
+                              '00:04:04]. Hepler runs the same play on Zillow: sell-through above 100% a '
+                              'year within an acreage band, 25 to 250 or 300 active listings, tight '
+                              'pricing, and days on market under 90 rated good, 90 to 120 middling, and '
+                              'over 120 slow; 30 listings with one sale is unhealthy [HE45qWS8txg @ '
+                              '00:07:59]. Thomas ignores days on market entirely because agents post lazy '
+                              'land listings, and instead demands at least 200 land sales a year, fewer '
+                              'actives than solds, and a sell-through target of 60% at six months and '
+                              'about 120% at one year [ZfyoS572Kbk @ 01:56:40]. Pitt County, NC, at 172 '
+                              "active versus 272 sold with reasonable price per acre, is 'absolutely' a "
+                              'market to spend in, while Harris County at 2,700 active versus 800 sold and '
+                              "Wake County's savvy, builder-saturated owners get rejected; median price "
+                              'per acre typically runs $10k to $50k [ZfyoS572Kbk @ 02:01:22]. Thin data '
+                              'lies: one Georgia county hit its sell-through targets on just eight sales '
+                              'and was still cut.',
+                              'List quality is where land splits from house wholesaling. Thomas pulls 0.2 '
+                              'to 100 acres, 10-plus years of ownership, no corporate owners, no '
+                              'landlocked parcels, a minimum of roughly 30 feet of road frontage, plus '
+                              'wetland and flood limits, inside a land-specific tool like Land Insights or '
+                              "Land Portal, warning that skip tracing at 'less than a penny' buys junk "
+                              'data [ZfyoS572Kbk @ 02:05:04]. Hepler expects 40% to 50% of raw parcels to '
+                              'be bad, wetlands, flood plain, slope, flag lots, and scrubs them first; '
+                              'benchmarks run 6,000 to 8,000 mailers, about six weeks of cold calls, or '
+                              '30,000 to 40,000 texts per deal at roughly $25K average profit and 5 to 10x '
+                              'return on ad spend [HE45qWS8txg @ 00:09:38]. Landon Bleau sends about '
+                              '50,000 texts a week and 10,000 to 20,000 handwritten blind-offer mailers a '
+                              'month; texting produces 60% to 70% of deals at roughly 9x return versus '
+                              "about 3x for mail [Uaqe67xWZN0 @ 00:38:55]. Thomas's own funnel: 20,000 "
+                              'texts a month yields 57 offers and one to three qualified leads a week, '
+                              'about 10% of which close within 30 days, run through Smarter Contact with a '
+                              "simple 'Are you open to an offer?' opener [ZfyoS572Kbk @ 04:32:27].",
+                              'The offer math is explicit. Thomas comps by median price per acre within '
+                              'acreage bands: a 5.7-acre sale at $61k gives $10,700 an acre, times 8.8 '
+                              'acres is $94,500, discounted about 10% to an $85k resale; after a 7% agent '
+                              'fee, $2,500 closing, and a $950 transactional lender, a 70% offer of $59k '
+                              'leaves roughly a $16k spread, and the seller gets texted a range near 60% '
+                              'to 65% [ZfyoS572Kbk @ 02:41:01]. Exit choice follows the deal: assign to a '
+                              'builder when the spread is thin, like $100k in and $105k out on a Nashville '
+                              'lot, or double close same day through a transactional lender on MLS deals '
+                              'and fat spreads, since the lender fee kills a $2k to $3k margin '
+                              "[ZfyoS572Kbk @ 01:07:08]. Hepler's two-call close targets doubling the "
+                              'money, offering 50% to 55% of expected sale for a flip, so a $60K property '
+                              'gets a $31K offer, after checking acreage band, proximity, characteristics, '
+                              'price, utilities, survey, deeded access, and buildability [HE45qWS8txg @ '
+                              "00:13:00]. Hidden Money's beginner version: offer $6K cash on $15K land, "
+                              'budget $500 to $1,000 for title, close in about two weeks, and list '
+                              'slightly below market at $12,999 [hWcjM0400as @ 00:02:46].'],
+               'table': {'caption': 'Street-level screens, channel economics, and offer math the land '
+                                    'operators actually run',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Tool',
+                                     'How It Gets Used',
+                                     'Expert Source'],
+                         'rows': [['County screen for land sales velocity',
+                                   'At least 200 land sales a year with fewer active listings than sold '
+                                   'listings',
+                                   'Reject thin or oversupplied counties before spending a dollar on '
+                                   'outreach',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 00:52:56])'],
+                                  ['Days on market and sell-through screen',
+                                   'Under 90 days is good, 90 to 120 days middling, over 120 days slow',
+                                   'Pair it with sell-through above 100% a year inside one acreage band',
+                                   'DealMachine Podcast ([HE45qWS8txg @ 00:07:59])'],
+                                  ['Parcel scrub before any marketing spend',
+                                   'Strip the 40% to 50% of parcels with wetlands, flood plain, slope, or '
+                                   'flag lots',
+                                   'Scrub first so marketing dollars only hit buildable, accessible land '
+                                   'parcels',
+                                   'DealMachine Podcast ([HE45qWS8txg @ 00:09:38])'],
+                                  ['Texting versus handwritten mail channel economics',
+                                   'Texting returns about 9x on ad spend while mail returns about 3x',
+                                   'Weight budget toward texts, with mail landing roughly one deal per '
+                                   '10,000 pieces',
+                                   'REtipster ([Uaqe67xWZN0 @ 00:38:55])'],
+                                  ['Price-per-acre comp and offer calculation',
+                                   '$10,700 per acre times 8.8 acres equals $94,500, discounted 10% to '
+                                   '$85k',
+                                   'Subtract agent, closing, and lender costs, then offer near 70% for a '
+                                   '$16k spread',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 02:41:01])'],
+                                  ['MLS retail exit price floor',
+                                   'Resale must clear at least $15k, ideally about $20k, after a 10% agent '
+                                   'fee',
+                                   'Below that floor, only builder assignments make the spread worth '
+                                   'working at all',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 04:38:26])'],
+                                  ['Beginner closing cost and timeline',
+                                   'Title company runs $500 to $1,000 and cash deals close in about two '
+                                   'weeks',
+                                   'Price title and closing costs into every offer before the seller signs '
+                                   'anything',
+                                   'Hidden Money ([hWcjM0400as @ 00:02:46])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Tweaks the Operators Say Move Conversion',
+                           'body': 'Wording, list size, buyer intel, and template tracking are where these '
+                                   'operators find extra deals without extra spend.',
+                           'items': ["Cut outbound texts to roughly 100 characters; Landon Bleau's reply "
+                                     'rate climbed from 13% to 15% up to nearly 20% [REtipster — '
+                                     'Uaqe67xWZN0 @ 00:43:33]',
+                                     'If a county list comes out under 1,000 texts, bundle it with '
+                                     'neighboring counties so the campaign does not burn out fast [Thomas '
+                                     '| Land Flipping — ZfyoS572Kbk @ 02:01:35]',
+                                     'Keep owner names visible on sold comps to spot LLC builders; Perfect '
+                                     "Deed Homes LLC paid $30k per lot in Ocala, and the buyer's agent can "
+                                     'be paid about 3% to bring them in [Thomas | Land Flipping — '
+                                     'ZfyoS572Kbk @ 03:26:43]',
+                                     'Stamp each mailer template with a reference number, track '
+                                     'conversations had and cash collected per template, and double down '
+                                     'on the winner [Olufemi Ajose — tF_EbilAGj4 @ 00:14:48]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the County',
+                              'action': 'Pull active listings, sold listings, and median price per acre '
+                                        'for each candidate county.',
+                              'detail': 'Require at least 200 land sales a year, fewer actives than solds, '
+                                        'and sell-through near 60% at six months and about 120% at one '
+                                        'year, with median price per acre roughly $10k to $50k [Thomas | '
+                                        'Land Flipping — ZfyoS572Kbk @ 01:56:40]'},
+                             {'step': 2,
+                              'title': 'Pull and Scrub the List',
+                              'action': 'Filter parcels inside a land-specific data tool, scrub the junk, '
+                                        'then skip trace.',
+                              'detail': 'Use 0.2 to 100 acres, 10-plus years owned, no corporate owners, '
+                                        'no landlocked parcels, about 30 feet of frontage, and wetland and '
+                                        'flood limits; expect to scrub 40% to 50% of raw parcels [Thomas | '
+                                        'Land Flipping — ZfyoS572Kbk @ 02:05:04] [DealMachine Podcast — '
+                                        'HE45qWS8txg @ 00:09:38]'},
+                             {'step': 3,
+                              'title': 'Run Volume Outreach',
+                              'action': 'Send short opener texts at volume, tag every no, and comp only '
+                                        'the hand-raisers.',
+                              'detail': "Open with 'Are you open to an offer?', tag no replies for later "
+                                        'follow-up, and treat it as a funnel; texting runs about 9x return '
+                                        'on ad spend versus about 3x for mail [Thomas | Land Flipping — '
+                                        'ZfyoS572Kbk @ 02:15:37] [REtipster — Uaqe67xWZN0 @ 00:38:55]'},
+                             {'step': 4,
+                              'title': 'Comp, Offer, Contract, Exit',
+                              'action': 'Price by median price per acre, back out costs, sign a protected '
+                                        'contract, and let the deal pick the exit.',
+                              'detail': 'Comp in acreage bands, subtract agent, closing, and lender costs, '
+                                        'offer 60% to 70%, sign with $100 to $500 earnest money held by '
+                                        'title and fully refundable through the inspection period, then '
+                                        'choose assignment or double close [Thomas | Land Flipping — '
+                                        'ZfyoS572Kbk @ 03:03:27]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Practitioners split hardest on how deep to buy. Ron Apke has moved to a '
+                              'project model, buying at about 80% of market value and then manufacturing '
+                              'the margin by subdividing or adding a mobile home before selling above '
+                              'market [Z_ZynszdCFo @ 00:02:33]. Clayton Hepler runs a tighter flip '
+                              'formula: offer 50% to 55% of expected sale price for a straight flip and '
+                              '65% to 70% when a double close covers the spread, with a $25K profit floor, '
+                              'so a $60K property gets a $31K offer [HE45qWS8txg @ 00:13:00]. Seth '
+                              'Williams sits at the opposite pole, teaching offers at 5% to 30% of market '
+                              'value and resale at 50% to 80%, and stating that sellers who refuse that '
+                              'range are probably not the right person [Zu8LEqQ-L0w @ 00:01:15]. Landon '
+                              'Bleau shows how the number drifts with the market: offers ran 40% to 45% of '
+                              'value in 2024 and now climb to 70% on subdividable land, while average '
+                              'gross profit per deal rose from $18K to $28K and the minimum purchase sits '
+                              'around $30K to $40K [Uaqe67xWZN0 @ 00:35:47]. The practical read: '
+                              'deep-discount offers fit small, fast cash flips, while high-percentage '
+                              'offers only work when the operator adds value through splits, entitlements, '
+                              'or a double-close spread.',
+                              'The lead-channel fight is just as sharp. Thomas runs a text-first machine '
+                              'and says flatly, "I don\'t mess with any direct mail," pushing beginners to '
+                              'SMS because "money loves speed" and reporting roughly 120,000 texts across '
+                              '61 lists in Smarter Contact [ZfyoS572Kbk @ 01:47:02]. Landon Bleau still '
+                              'mails 10,000 to 20,000 handwritten blind offers a month, but the scoreboard '
+                              'favors phones: about 9x return on ad spend from texting versus about 3x '
+                              'from mail, with texting producing 60% to 70% of deals [Uaqe67xWZN0 @ '
+                              '00:38:55]. Olufemi Ajose builds the opposite case, crediting $1M in profit '
+                              'to direct mail and arguing that branded envelopes, a logo, QR code, '
+                              'headshot, and investment-firm copy aimed at lawyers, doctors, and portfolio '
+                              'holders unlock six-figure spreads; the rule is to mail weekly for 6 to 8 '
+                              'months instead of blasting 12,000 to 15,000 pieces once [tF_EbilAGj4 @ '
+                              '00:15:19]. Seth Williams lands in the middle, calling direct mail the most '
+                              'competitive and expensive channel while listing texting, cold calling, '
+                              'ringless voicemail, and email as cheaper alternatives [4xzZ7rKlL4E @ '
+                              "00:14:34]. The split tracks deal size: Ajose's mail hunts big-asset owners, "
+                              'while Thomas and Bleau chase volume and speed.',
+                              'Exit structure and sourcing draw a third set of disagreements. Thomas '
+                              'treats assignment and same-day double close as interchangeable tools, using '
+                              'transactional funding for MLS deals or large spreads such as a $50K buy '
+                              'against a $120K sale, and insisting that the deal picks the exit '
+                              '[ZfyoS572Kbk @ 01:05:23]. Alex Reese prefers to take title outright, '
+                              'warning that assignments are time-intensive and get more fragile the longer '
+                              'they run [iC5tSNnegIw @ 01:14:34]. On listed land, Thomas calls lowballing '
+                              'on-market and FSBO sellers a low return on time, while Reese fires high '
+                              'volumes of informal text offers at overpriced listings and put an $85K '
+                              'listing under contract at $20K on land worth about $45K [iC5tSNnegIw @ '
+                              '01:29:07]. Clayton Hepler dismisses the builder infill lane Thomas started '
+                              'in, calling roughly $2,500 per deal the worst way to run the business '
+                              '[HE45qWS8txg @ 00:07:26]. Valuation splits too: Thomas comps by median '
+                              'price per acre inside acreage bands, while Reese says price per acre is '
+                              'irrelevant for residential land, where location, neighborhood home values, '
+                              'zoning, topography, and soil set the number. Even the market screen '
+                              'differs, with Hepler wanting under 90 days on market and Thomas ignoring '
+                              'days on market because agents post lazy land listings.'],
+               'table': {'caption': 'Competing playbooks: where named land operators take opposite '
+                                    'positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Purchase price as a share of market value',
+                                   'Ron Apke buys near 80% of value and adds value through subdivides or '
+                                   'mobile homes',
+                                   'Seth Williams offers 5% to 30% of value and resells at 50% to 80%',
+                                   'Real Estate Pros Show ([Z_ZynszdCFo @ 00:02:33]); REtipster '
+                                   '([Zu8LEqQ-L0w @ 00:01:15])'],
+                                  ['Primary lead generation channel for sellers',
+                                   'Thomas runs SMS only and refuses to touch any direct mail at all',
+                                   'Olufemi Ajose mails branded investment-firm letters weekly for 6 to 8 '
+                                   'months',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 01:47:02]); Olufemi Ajose '
+                                   '([tF_EbilAGj4 @ 00:15:19])'],
+                                  ['Exit structure once the seller signs a contract',
+                                   'Assign or double close the same day, letting the deal pick the exit',
+                                   'Alex Reese takes title because long-running assignments get fragile '
+                                   'and time-intensive',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 01:46:02]); REtipster '
+                                   '([iC5tSNnegIw @ 01:14:34])'],
+                                  ['Days on market as a county screening metric',
+                                   'Clayton Hepler wants under 90 days, calls 90 to 120 middling and over '
+                                   '120 slow',
+                                   'Thomas ignores days on market because agents post lazy, overpriced '
+                                   'land listings',
+                                   'DealMachine Podcast ([HE45qWS8txg @ 00:07:59]); Thomas | Land Flipping '
+                                   '([ZfyoS572Kbk @ 01:59:58])'],
+                                  ['Making offers on land already listed for sale',
+                                   'Thomas works off-market only and calls lowballing listings a low ROI '
+                                   'on time',
+                                   'Alex Reese texts volume offers to overpriced listings to find the real '
+                                   'sellers',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 01:00:42]); REtipster '
+                                   '([iC5tSNnegIw @ 01:29:07])'],
+                                  ['Valuation method for pricing offers and resale',
+                                   'Median price per acre comped inside acreage bands from 2 to 80+ acres',
+                                   'Price per acre is irrelevant for residential lots; location, zoning, '
+                                   'topography and soil drive value',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 01:19:28]); REtipster '
+                                   '([iC5tSNnegIw @ 00:45:13])'],
+                                  ['Funding the first deals and marketing budget',
+                                   'Landon Bleau ran $45K to $50K of credit card debt, then said partner '
+                                   '50/50 instead',
+                                   'Seth Williams says keep $10K to $20K ready, or near zero with '
+                                   'profit-splitting land funders',
+                                   'REtipster ([Uaqe67xWZN0 @ 00:13:08]); Launch Control ([4xzZ7rKlL4E @ '
+                                   '00:18:28])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The dirt itself kills more deals than any negotiation. Ron Apke names soil '
+                              'as the main fallout point: with no city sewer or water, a property needs '
+                              'well and septic, and about 5% of deals die when the land fails the '
+                              'percolation test [Z_ZynszdCFo @ 00:05:02]. Thomas says soils have "killed '
+                              'more of my deals than anything," after paying about $600 per test, and now '
+                              'pushes that verification onto the buyer during the inspection period '
+                              '[ZfyoS572Kbk @ 01:37:27]. Landon Bleau ran an 18% fallout rate in 2024 '
+                              'while skipping perc tests, surveys, and title commitments, a shortcut that '
+                              'only held while properties were going under contract within 48 hours '
+                              "[Uaqe67xWZN0 @ 00:23:09]. Zoning text is the quieter trap. Alex Reese's "
+                              'worst deal was seven non-conforming lots in Bladen County bought for about '
+                              '$36K, all-in about $40K, where a contiguity clause in the zoning ordinance '
+                              'allowed only 3 homes; the land sold for about $47K and netted roughly $300 '
+                              '[iC5tSNnegIw @ 00:55:20]. Wetlands, floodways, slope, and access that only '
+                              'looks real round out the list, and the operators still standing treat every '
+                              'cheap parcel as guilty until the soil, the ordinance, and the road frontage '
+                              'clear.',
+                              'Capital and hold time form the second failure cluster. Landon Bleau '
+                              'self-funded purchases expecting four-week resales and watched them take '
+                              'four months, locking up cash until moving to 4 lenders with $800K to $1M in '
+                              'liquidity [Uaqe67xWZN0 @ 00:53:04]. Bleau also admits to doubling mail and '
+                              'texting while adding cold calling and PPC in a single month, having '
+                              '"optimized for gross profit, which was really stupid," and reports a $25K '
+                              'haircut when a $100K listing sold at $75K. Alex Reese warns that roughly '
+                              '$20K of monthly overhead in payroll and mail can lose $15K to $20K in slow '
+                              'months, and tells newcomers to expect break-even only after about a year '
+                              "[iC5tSNnegIw @ 00:09:45]. Seth Williams's Alabama deal, bought at $4,587 "
+                              'and sold at $20,000, still dragged for 15 months with panic price cuts '
+                              'along the way [pBstDNy9IuM @ 00:10:47]. Thomas self-funded a Nevada desert '
+                              'parcel about 45 minutes from Las Vegas instead of using a transactional '
+                              'lender, cleared about $8K, and judged the hassle not worth it [ZfyoS572Kbk '
+                              '@ 04:00:56]. The economics check is blunt: a paper margin means nothing '
+                              'when capital is frozen and overhead keeps billing every month.',
+                              'Process failures quietly bleed the rest. Thomas ranks failing to follow up '
+                              'as the number one mistake, noting that someone who says no in April can '
+                              'turn around and sell in June, and warns that 72-hour expiring contracts '
+                              'backfire because owners paying around $300 a year in taxes feel no urgency '
+                              "[ZfyoS572Kbk @ 03:09:08]. Ron Apke's biggest margin regret was missing "
+                              'highest-and-best use: subdividing could have produced 4x instead of a '
+                              'double, though chasing every $10,000 margin stalls investors who should '
+                              'still favor quick projects [Z_ZynszdCFo @ 00:07:02]. Seller financing '
+                              'carries a hidden default bill; Seth Williams puts the odds at 40% or 50% '
+                              'that loosely approved buyers default, calls it a huge hassle, and dropped '
+                              'no-pulse approvals in favor of underwriting and large down payments '
+                              '[4xzZ7rKlL4E @ 00:27:38]. Hiring can be the most expensive mistake of all: '
+                              'Landon Bleau says a poorly trained US-based acquisition manager cost $200K '
+                              'to $300K, and year-one skip tracing alone ran about $60K [Uaqe67xWZN0 @ '
+                              '00:58:07]. Closing carries its own trap, with seller-impersonation scams '
+                              'forcing extra verification on web leads. Thomas also reports that nine out '
+                              'of every 10 deals hit some issue at closing, which makes an '
+                              'investor-friendly closer that has handled same-day double closes a '
+                              'requirement rather than a luxury.'],
+               'table': {'caption': 'Firsthand losses, reversals and the economics check each operator now '
+                                    'runs',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Parcel fails the percolation test on septic land',
+                                   'About 5% of deals fall out at the soil phase with no city sewer',
+                                   'Confirm perc before relying on a buildable resale price',
+                                   'Real Estate Pros Show ([Z_ZynszdCFo @ 00:05:02])'],
+                                  ['Skipping perc tests, surveys and title commitments',
+                                   'Landon Bleau ran an 18% fallout rate across 2024 deals',
+                                   'Budget diligence costs into every offer instead of gambling on speed',
+                                   'REtipster ([Uaqe67xWZN0 @ 00:23:09])'],
+                                  ['Zoning contiguity clause on non-conforming lots',
+                                   'Seven lots bought all-in near $40K allowed only 3 homes, netting about '
+                                   '$300',
+                                   'Read the zoning ordinance before counting buildable lots in the resale '
+                                   'math',
+                                   'REtipster ([iC5tSNnegIw @ 00:55:20])'],
+                                  ['Self-funding purchases with expected four-week resales',
+                                   'Deals took four months and froze working capital for marketing',
+                                   'Line up lenders first; Bleau now runs 4 with $800K to $1M liquidity',
+                                   'REtipster ([Uaqe67xWZN0 @ 00:53:04])'],
+                                  ['Resale drags while price cuts pile up',
+                                   'Alabama deal bought at $4,587 took 15 months with panic price cuts',
+                                   'Price to the market early instead of chasing the top comp',
+                                   'REtipster ([pBstDNy9IuM @ 00:10:47])'],
+                                  ['Loose seller-financing approvals with no underwriting',
+                                   'Seth Williams estimates a 40% or 50% chance buyers default early',
+                                   'Underwrite buyers and size the down payment to recover your cost basis',
+                                   'Launch Control ([4xzZ7rKlL4E @ 00:27:38])'],
+                                  ['Cheap skip tracing and house-wholesaling data on land',
+                                   'Thomas calls sub-penny skip traces bad data and PropStream weak for '
+                                   'land',
+                                   'Pay for land-focused data in Land Insights, Land Portal or Kind Skip',
+                                   'Thomas | Land Flipping ([ZfyoS572Kbk @ 02:07:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before money goes hard',
+                           'body': 'Each gate below comes straight from a loss or near-miss an operator '
+                                   'reported. Clear all four before earnest money goes non-refundable or '
+                                   'capital leaves the account.',
+                           'items': ['Soil and septic verified on any parcel without city sewer; Thomas '
+                                     'paid about $600 per test and now has the buyer verify inside the '
+                                     'inspection period [Thomas | Land Flipping — ZfyoS572Kbk @ 01:37:27].',
+                                     'Legal, deeded access confirmed, because sometimes it looks like you '
+                                     "have access, but you don't [DealMachine Podcast — HE45qWS8txg @ "
+                                     '00:12:30].',
+                                     'Funding lined up before scaling purchases, since self-funded deals '
+                                     'expected to sell in 4 weeks took 4 months [REtipster — Uaqe67xWZN0 @ '
+                                     '00:53:04].',
+                                     'Earnest money never goes hard on an unsold deal; amend to extend '
+                                     'closing and inspection by 30 to 45 days and sign the amendment first '
+                                     '[Thomas | Land Flipping — ZfyoS572Kbk @ 04:16:16].']}}],
+ 'pull_quote': '"The deal picks the exit." — Thomas | Land Flipping (ZfyoS572Kbk @ 04:56:20).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Screen counties for at least 200 land sales per year with fewer active listings '
+                      'than sold, and bundle nearby counties until each campaign reaches at least 1,000 '
+                      'texts [Thomas | Land Flipping — ZfyoS572Kbk @ 00:52:56].',
+                      'Scrub the 40% to 50% of bad parcels from every list before marketing: wetlands, '
+                      'flood plain, slope, and flag lots [DealMachine Podcast — HE45qWS8txg @ 00:09:22].',
+                      "Cut opening texts to roughly 100 characters, which lifted Landon Bleau's reply rate "
+                      'from 13% to 15% up to nearly 20% [REtipster — Uaqe67xWZN0 @ 00:43:33].',
+                      'Comp by price per acre inside acreage bands of 2-5, 5-10, 10-20, 20-40, 40-80 and '
+                      '80+ acres, then discount about 10% before backing into the offer [Thomas | Land '
+                      'Flipping — ZfyoS572Kbk @ 02:39:30].',
+                      'Write contracts with $100 to $500 earnest money held by title or an attorney, fully '
+                      'refundable for any reason inside the inspection period [Thomas | Land Flipping — '
+                      'ZfyoS572Kbk @ 03:03:27].',
+                      'Follow up with every non-closing lead on a 1, 3 or 6 month cadence instead of '
+                      'treating offers as lottery tickets [REtipster — bFiThXyiz7c @ 00:13:20].'],
+ 'statutory_citations': [{'title': 'Thomas | Land Flipping — leaking my $63k/month land flipping blueprint '
+                                   '(Full Breakdown) [04:56:20]',
+                          'url': 'https://www.youtube.com/watch?v=ZfyoS572Kbk&t=17780s',
+                          'relevance': 'Primary practitioner testimony on SMS-driven acquisitions, '
+                                       'assignment versus double-close exits, and the seven common '
+                                       'mistakes.'},
+                         {'title': "DealMachine Podcast — He Makes MILLIONS Flipping Vacant Land (Here's "
+                                   'How) [00:10:42]',
+                          'url': 'https://www.youtube.com/watch?v=HE45qWS8txg&t=642s',
+                          'relevance': 'Primary practitioner testimony on the profit ladder, market '
+                                       'screens, and 50% to 70% offer underwriting.'},
+                         {'title': 'REtipster — Before Your Next Land Deal: 7 Things to Know - REWBCON '
+                                   '2022 with Seth Williams [00:05:06]',
+                          'url': 'https://www.youtube.com/watch?v=pBstDNy9IuM&t=306s',
+                          'relevance': 'Primary practitioner testimony on deep-discount offers, deal '
+                                       'history, and slow-resale losses.'},
+                         {'title': 'REtipster — The Land Strategy That Replaced His W-2 w/ Landon Bleau | '
+                                   'REtipster Podcast 291 [00:38:55]',
+                          'url': 'https://www.youtube.com/watch?v=Uaqe67xWZN0&t=2335s',
+                          'relevance': 'Primary practitioner testimony on texting versus mail ROAS, '
+                                       'subdivides, and capital and hiring failures.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Z_ZynszdCFo',
+                       'title': 'How Ron Apke Made $700K Profit in His First Year Flipping Vacant Land | '
+                                'Land Investing Explained',
+                       'channel': 'Real Estate Pros Show',
+                       'author': 'Real Estate Pros Show',
+                       'text': "It's not common, maybe 5% of properties fall out of that phase, but it's "
+                               'definitely something that can kill the value of land if it does not pass a '
+                               'percolation test.',
+                       'tip': "It's not common, maybe 5% of properties fall out of that phase, but it's "
+                              'definitely something that can kill the value of land if it does not pass a '
+                              'percolation test.',
+                       'timestamp': 302,
+                       'timestamp_seconds': 302,
+                       'timestamp_label': '[00:05:02]',
+                       'url': 'https://www.youtube.com/watch?v=Z_ZynszdCFo&t=302s',
+                       'markdown': '[00:05:02](https://www.youtube.com/watch?v=Z_ZynszdCFo&t=302s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tF_EbilAGj4',
+                       'title': '$1M flipping vacant land with direct mail | The exact system',
+                       'channel': 'Olufemi Ajose',
+                       'author': 'Olufemi Ajose',
+                       'text': "So I'm always tracking conversations had and cash collected from different "
+                               'mailer templates.',
+                       'tip': "So I'm always tracking conversations had and cash collected from different "
+                              'mailer templates.',
+                       'timestamp': 904,
+                       'timestamp_seconds': 904,
+                       'timestamp_label': '[00:15:04]',
+                       'url': 'https://www.youtube.com/watch?v=tF_EbilAGj4&t=904s',
+                       'markdown': '[00:15:04](https://www.youtube.com/watch?v=tF_EbilAGj4&t=904s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HE45qWS8txg',
+                       'title': "He Makes MILLIONS Flipping Vacant Land (Here's How)",
+                       'channel': 'DealMachine Podcast',
+                       'author': 'DealMachine Podcast',
+                       'text': "Cuz sometimes it looks like you have access, but you don't.",
+                       'tip': "Cuz sometimes it looks like you have access, but you don't.",
+                       'timestamp': 750,
+                       'timestamp_seconds': 750,
+                       'timestamp_label': '[00:12:30]',
+                       'url': 'https://www.youtube.com/watch?v=HE45qWS8txg&t=750s',
+                       'markdown': '[00:12:30](https://www.youtube.com/watch?v=HE45qWS8txg&t=750s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hWcjM0400as',
+                       'title': 'How to Flip Vacant Land for Profit | The Land Flipping Business Explained',
+                       'channel': 'Hidden Money',
+                       'author': 'Hidden Money',
+                       'text': 'Ignoring taxes is the fastest way to lose your profits.',
+                       'tip': 'Ignoring taxes is the fastest way to lose your profits.',
+                       'timestamp': 343,
+                       'timestamp_seconds': 343,
+                       'timestamp_label': '[00:05:43]',
+                       'url': 'https://www.youtube.com/watch?v=hWcjM0400as&t=343s',
+                       'markdown': '[00:05:43](https://www.youtube.com/watch?v=hWcjM0400as&t=343s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZfyoS572Kbk',
+                       'title': 'leaking my $63k/month land flipping blueprint (Full Breakdown)',
+                       'channel': 'Thomas | Land Flipping',
+                       'author': 'Thomas | Land Flipping',
+                       'text': 'The deal picks the exit.',
+                       'tip': 'The deal picks the exit.',
+                       'timestamp': 17780,
+                       'timestamp_seconds': 17780,
+                       'timestamp_label': '[04:56:20]',
+                       'url': 'https://www.youtube.com/watch?v=ZfyoS572Kbk&t=17780s',
+                       'markdown': '[04:56:20](https://www.youtube.com/watch?v=ZfyoS572Kbk&t=17780s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZfyoS572Kbk',
+                       'title': 'leaking my $63k/month land flipping blueprint (Full Breakdown)',
+                       'channel': 'Thomas | Land Flipping',
+                       'author': 'Thomas | Land Flipping',
+                       'text': 'Someone who says no in April can turn around and sell in June.',
+                       'tip': 'Someone who says no in April can turn around and sell in June.',
+                       'timestamp': 11431,
+                       'timestamp_seconds': 11431,
+                       'timestamp_label': '[03:10:31]',
+                       'url': 'https://www.youtube.com/watch?v=ZfyoS572Kbk&t=11431s',
+                       'markdown': '[03:10:31](https://www.youtube.com/watch?v=ZfyoS572Kbk&t=11431s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'abgGG4YJgLw',
+                       'title': 'Land Investors Review by Seth Williams of ReTipster (CFFL 424)',
+                       'channel': 'Land Academy',
+                       'author': 'Land Academy',
+                       'text': "Limited power of attorney to get a cashier's check and then that's it, "
+                               "that's the real answer.",
+                       'tip': "Limited power of attorney to get a cashier's check and then that's it, "
+                              "that's the real answer.",
+                       'timestamp': 243,
+                       'timestamp_seconds': 243,
+                       'timestamp_label': '[00:04:03]',
+                       'url': 'https://www.youtube.com/watch?v=abgGG4YJgLw&t=243s',
+                       'markdown': '[00:04:03](https://www.youtube.com/watch?v=abgGG4YJgLw&t=243s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pBstDNy9IuM',
+                       'title': 'Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth '
+                                'Williams',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'I bought this one for $4,587 and I sold it for $20,000.',
+                       'tip': 'I bought this one for $4,587 and I sold it for $20,000.',
+                       'timestamp': 647,
+                       'timestamp_seconds': 647,
+                       'timestamp_label': '[00:10:47]',
+                       'url': 'https://www.youtube.com/watch?v=pBstDNy9IuM&t=647s',
+                       'markdown': '[00:10:47](https://www.youtube.com/watch?v=pBstDNy9IuM&t=647s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iC5tSNnegIw',
+                       'title': 'The Best Advice I Never Got About Land Investing',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'The reason you make a volume of offers is to find out who the real sellers '
+                               'are.',
+                       'tip': 'The reason you make a volume of offers is to find out who the real sellers '
+                              'are.',
+                       'timestamp': 5390,
+                       'timestamp_seconds': 5390,
+                       'timestamp_label': '[01:29:50]',
+                       'url': 'https://www.youtube.com/watch?v=iC5tSNnegIw&t=5390s',
+                       'markdown': '[01:29:50](https://www.youtube.com/watch?v=iC5tSNnegIw&t=5390s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Zu8LEqQ-L0w',
+                       'title': 'Land Investing 101 (Beginners Guide): Learn the Land Flipping Business '
+                                'Model in 20 Minutes',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "But it's also important not to confuse simplicity with ease.",
+                       'tip': "But it's also important not to confuse simplicity with ease.",
+                       'timestamp': 123,
+                       'timestamp_seconds': 123,
+                       'timestamp_label': '[00:02:03]',
+                       'url': 'https://www.youtube.com/watch?v=Zu8LEqQ-L0w&t=123s',
+                       'markdown': '[00:02:03](https://www.youtube.com/watch?v=Zu8LEqQ-L0w&t=123s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NoB05d5Eap4',
+                       'title': 'REtipster Review - Seth Williams Land Investing Course (Cost Are Crazy!)',
+                       'channel': 'Content Marketing Course Reviews by Ippei',
+                       'author': 'Content Marketing Course Reviews by Ippei',
+                       'text': 'Williams himself acknowledges having experienced failed campaigns '
+                               'resulting in thousands of dollars in losses.',
+                       'tip': 'Williams himself acknowledges having experienced failed campaigns resulting '
+                              'in thousands of dollars in losses.',
+                       'timestamp': 322,
+                       'timestamp_seconds': 322,
+                       'timestamp_label': '[00:05:22]',
+                       'url': 'https://www.youtube.com/watch?v=NoB05d5Eap4&t=322s',
+                       'markdown': '[00:05:22](https://www.youtube.com/watch?v=NoB05d5Eap4&t=322s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Uaqe67xWZN0',
+                       'title': 'The Land Strategy That Replaced His W-2 w/ Landon Bleau | REtipster '
+                                'Podcast 291',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'So, I had optimized for gross profit, which was really stupid.',
+                       'tip': 'So, I had optimized for gross profit, which was really stupid.',
+                       'timestamp': 3010,
+                       'timestamp_seconds': 3010,
+                       'timestamp_label': '[00:50:10]',
+                       'url': 'https://www.youtube.com/watch?v=Uaqe67xWZN0&t=3010s',
+                       'markdown': '[00:50:10](https://www.youtube.com/watch?v=Uaqe67xWZN0&t=3010s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Uaqe67xWZN0',
+                       'title': 'The Land Strategy That Replaced His W-2 w/ Landon Bleau | REtipster '
+                                'Podcast 291',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "Texting for sure because texting for us, we're getting about a nine ROAS, "
+                               "and then mail we're hitting about a three.",
+                       'tip': "Texting for sure because texting for us, we're getting about a nine ROAS, "
+                              "and then mail we're hitting about a three.",
+                       'timestamp': 2335,
+                       'timestamp_seconds': 2335,
+                       'timestamp_label': '[00:38:55]',
+                       'url': 'https://www.youtube.com/watch?v=Uaqe67xWZN0&t=2335s',
+                       'markdown': '[00:38:55](https://www.youtube.com/watch?v=Uaqe67xWZN0&t=2335s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bFiThXyiz7c',
+                       'title': 'Land Flipping for Beginners: The Full 7-Step Process',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'Losses almost always trace back to lazy due diligence.',
+                       'tip': 'Losses almost always trace back to lazy due diligence.',
+                       'timestamp': 920,
+                       'timestamp_seconds': 920,
+                       'timestamp_label': '[00:15:20]',
+                       'url': 'https://www.youtube.com/watch?v=bFiThXyiz7c&t=920s',
+                       'markdown': '[00:15:20](https://www.youtube.com/watch?v=bFiThXyiz7c&t=920s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WmRK4kG81e4',
+                       'title': 'Land Flipping is NOT a Passive Investment Strategy',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'This is not a passive process at all.',
+                       'tip': 'This is not a passive process at all.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=WmRK4kG81e4&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=WmRK4kG81e4&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q830bJqxC1Q',
+                       'title': 'The Future of Land Investing Is Here | REtipster Podcast',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "That seller was motivated for about 48 hours and you weren't there when "
+                               'they needed you.',
+                       'tip': "That seller was motivated for about 48 hours and you weren't there when "
+                              'they needed you.',
+                       'timestamp': 219,
+                       'timestamp_seconds': 219,
+                       'timestamp_label': '[00:03:39]',
+                       'url': 'https://www.youtube.com/watch?v=Q830bJqxC1Q&t=219s',
+                       'markdown': '[00:03:39](https://www.youtube.com/watch?v=Q830bJqxC1Q&t=219s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V0GF_nQKkTU',
+                       'title': 'Land Acquisition 101 - 5 Things You Must Know | VestRight',
+                       'channel': 'VestRight',
+                       'author': 'VestRight',
+                       'text': "If you don't have public right-of-way access then the property, as "
+                               "beautiful as it may be, you're not going to be able to develop it.",
+                       'tip': "If you don't have public right-of-way access then the property, as "
+                              "beautiful as it may be, you're not going to be able to develop it.",
+                       'timestamp': 203,
+                       'timestamp_seconds': 203,
+                       'timestamp_label': '[00:03:23]',
+                       'url': 'https://www.youtube.com/watch?v=V0GF_nQKkTU&t=203s',
+                       'markdown': '[00:03:23](https://www.youtube.com/watch?v=V0GF_nQKkTU&t=203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4xzZ7rKlL4E',
+                       'title': 'Lessons from the Land Investor Everyone Listens To - Seth Williams',
+                       'channel': 'Launch Control',
+                       'author': 'Launch Control',
+                       'text': "The land business, it's a hamster wheel and it pays really well but it's "
+                               'still a hamster wheel.',
+                       'tip': "The land business, it's a hamster wheel and it pays really well but it's "
+                              'still a hamster wheel.',
+                       'timestamp': 2287,
+                       'timestamp_seconds': 2287,
+                       'timestamp_label': '[00:38:07]',
+                       'url': 'https://www.youtube.com/watch?v=4xzZ7rKlL4E&t=2287s',
+                       'markdown': '[00:38:07](https://www.youtube.com/watch?v=4xzZ7rKlL4E&t=2287s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

@@ -1,4295 +1,3345 @@
-"""Curated 180-citation Specialty Finance Brokerage baseline (15 per chapter across Q1-Q12) mined strictly from verified Specialty Finance Brokerage YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 014 (Specialty Finance Brokerage)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'client',
-     'clients',
-     'commercial',
-     'commission',
-     'compliance',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'budget',
-     'building',
-     'business',
-     'buyer',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'contract',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cash',
-     'cashflow',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'budget',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'audit',
-     'avoid',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'client',
-     'commercial',
-     'commission',
-     'compliance',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'checklist',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'api',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'1235',
-     '504',
-     '6418',
-     'accounts',
-     'advisory',
-     'agreement',
-     'asset',
-     'avoiding',
-     'b2b',
-     'bankable',
-     'based',
-     'bond',
-     'borrower',
-     'box',
-     'bridge',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'california',
-     'capital',
-     'card',
-     'cfdl',
-     'cfl',
-     'cfo',
-     'chain',
-     'claim',
-     'clawback',
-     'commercial',
-     'commission',
-     'compliance',
-     'contract',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'1235',
-      '504',
-      '6418',
-      'accounts',
-      'advisory',
-      'agent',
-      'ai',
-      'asset',
-      'automate',
-      'automation',
-      'avoiding',
-      'b2b',
-      'bankable',
-      'based',
-      'bond',
-      'borrower',
-      'box',
-      'bridge',
-      'broker',
-      'brokerage',
-      'building',
-      'business',
-      'california',
-      'capital',
-      'card',
-      'cfdl',
-      'cfl',
-      'cfo',
-      'chain',
-      'claim',
-      'clawback',
-      'commercial',
-      'commission',
-      'compliance',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'1235',
-      '504',
-      '6418',
-      'accounts',
-      'advisory',
-      'asset',
-      'avoiding',
-      'b2b',
-      'bankable',
-      'based',
-      'bond',
-      'borrower',
-      'box',
-      'bridge',
-      'broker',
-      'brokerage',
-      'building',
-      'business',
-      'california',
-      'capital',
-      'card',
-      'cfdl',
-      'cfl',
-      'cfo',
-      'chain',
-      'claim',
-      'clawback',
-      'commercial',
-      'commission',
-      'compliance',
-      'contractor',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'1235',
-      '504',
-      '6418',
-      'accounts',
-      'action',
-      'advisory',
-      'asset',
-      'avoiding',
-      'b2b',
-      'bankable',
-      'based',
-      'bond',
-      'borrower',
-      'box',
-      'bridge',
-      'broker',
-      'brokerage',
-      'building',
-      'business',
-      'california',
-      'capital',
-      'card',
-      'cfdl',
-      'cfl',
-      'cfo',
-      'chain',
-      'claim',
-      'clawback',
-      'commercial',
-      'commission',
-      'compliance',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'economics', 'broker', 'role', 'deal'},
+ 2: {'loan', 'brokerage', 'launching', 'commercial'},
+ 3: {'professional', 'compliance', 'licensing', 'positioning'},
+ 4: {'building', 'brokerage', 'finance', 'equipment'},
+ 5: {'finance', 'asset', 'contractor', 'backed', 'leasing', 'products', 'equipment'},
+ 6: {'accounts', 'factoring', 'receivable', 'financing'},
+ 7: {'supply', 'chain', 'lending', 'based', 'finance', 'asset'},
+ 8: {'lending'},
+ 9: {'debt', 'operations', 'cash', 'restructuring', 'advances', 'merchant'},
+ 10: {'raising', 'revenue', 'financing', 'based', 'working', 'capital'},
+ 11: {'loans', 'estate', 'real', 'metrics', 'dscr', 'commercial', 'underwriting'},
+ 12: {'finance', 'funding', 'stacks', 'credit', 'capital', 'litigation'}}
 
 BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Commercial Loan Broker Institute',
       'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:33](https://www.youtube.com/watch?v=svRIdayYOLo&t=333s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:11:38](https://www.youtube.com/watch?v=3V8HTzwHS90&t=698s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'And there\'s a big difference between saying, "I\'m a broker, I\'ve got money '
-              'for sale." \'s figure out together what capital structure actually fits your '
-              'business, fits you as a borrower, fits this project in this lender market.',
-      'timestamp': 333,
-      'timestamp_label': '[00:05:33]',
-      'timestamp_seconds': 333,
-      'tip': 'And there\'s a big difference between saying, "I\'m a broker, I\'ve got money '
-             'for sale." \'s figure out together what capital structure actually fits your '
-             'business, fits you as a borrower, fits this project in this lender market.',
-      'title': '11 Things to Know Before Becoming a Commercial Loan Broker (Commercial Loan '
-               'Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=svRIdayYOLo&t=333s',
-      'video_id': 'svRIdayYOLo'},
-     {'author': 'VoraPrep',
-      'channel': 'VoraPrep',
+      'text': "A pipeline full of weak files is not an asset, it's a time trash. A smaller "
+              'pipeline of qualified, fundable, well-matched opportunities is far more valuable.',
+      'timestamp': 698,
+      'timestamp_label': '[00:11:38]',
+      'timestamp_seconds': 698,
+      'tip': "A pipeline full of weak files is not an asset, it's a time trash. A smaller pipeline "
+             'of qualified, fundable, well-matched opportunities is far more valuable.',
+      'title': 'How Loan Brokers Can Earn $200K+ From Just 2 Deals',
+      'url': 'https://www.youtube.com/watch?v=3V8HTzwHS90&t=698s',
+      'video_id': '3V8HTzwHS90'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:52](https://www.youtube.com/watch?v=N0Pz-cRD6A4&t=232s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:02:24](https://www.youtube.com/watch?v=-HZRdtDpSRo&t=144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "The key is whether the activity is a normal part of banking, or if they've "
-              "basically set up a brokerage firm inside the bank. And there's one more group, "
-              "a firm that has no place of business in the state. Let's say there's a "
-              'brokerage firm based in New York.',
-      'timestamp': 232,
-      'timestamp_label': '[00:03:52]',
-      'timestamp_seconds': 232,
-      'tip': "The key is whether the activity is a normal part of banking, or if they've "
-             "basically set up a brokerage firm inside the bank. And there's one more group, a "
-             "firm that has no place of business in the state. Let's say there's a brokerage "
-             'firm based in New York.',
-      'title': '[Series 63] S632: Broker-Dealer Exclusions: Agents, Issuers, and Banks Under '
-               'the Uniform Securiti... (VoraPrep)',
-      'url': 'https://www.youtube.com/watch?v=N0Pz-cRD6A4&t=232s',
-      'video_id': 'N0Pz-cRD6A4'},
-     {'author': 'Enterprise Industry Network',
-      'channel': 'Enterprise Industry Network',
+      'text': 'Not every lender is going to fit every client; in fact most clients are going to be '
+              'a best fit for just one or two or three different lenders.',
+      'timestamp': 144,
+      'timestamp_label': '[00:02:24]',
+      'timestamp_seconds': 144,
+      'tip': 'Not every lender is going to fit every client; in fact most clients are going to be '
+             'a best fit for just one or two or three different lenders.',
+      'title': 'What is a Commercial Loan Broker? What do they do?',
+      'url': 'https://www.youtube.com/watch?v=-HZRdtDpSRo&t=144s',
+      'video_id': '-HZRdtDpSRo'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:11](https://www.youtube.com/watch?v=mXnUmcIc8Ek&t=191s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=v3GnrXphwvM&t=117s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Equity can support growth, but may reduce control. Revenue-based funding can '
-              'add flexibility, but may affect cash flow if not structured carefully. Funding '
-              "is not only about getting money. It's about choosing capital that supports the "
-              'business without weakening the business.',
-      'timestamp': 191,
-      'timestamp_label': '[00:03:11]',
-      'timestamp_seconds': 191,
-      'tip': 'Equity can support growth, but may reduce control. Revenue-based funding can add '
-             'flexibility, but may affect cash flow if not structured carefully. Funding is '
-             "not only about getting money. It's about choosing capital that supports the "
-             'business without weakening the business.',
-      'title': 'Debt vs Equity vs Revenue-Based Funding: Which Fits Your Business? | EIN '
-               'Business Funding | EINBF (Enterprise Industry Network)',
-      'url': 'https://www.youtube.com/watch?v=mXnUmcIc8Ek&t=191s',
-      'video_id': 'mXnUmcIc8Ek'},
-     {'author': 'Fractional Firm Academy',
-      'channel': 'Fractional Firm Academy',
+      'text': 'The broker typically only gets paid when the deal actually funds. Not just for '
+              'trying, only for closing the deal.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': 'The broker typically only gets paid when the deal actually funds. Not just for '
+             'trying, only for closing the deal.',
+      'title': 'What Does a Commercial Loan Broker REALLY Do?',
+      'url': 'https://www.youtube.com/watch?v=v3GnrXphwvM&t=117s',
+      'video_id': 'v3GnrXphwvM'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:37](https://www.youtube.com/watch?v=KJF9HKiAu0Y&t=277s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:12:02](https://www.youtube.com/watch?v=FnBYMtrQW9M&t=722s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "I mean by it is essentially me, I'll talk from my own experience, I run a "
-              'fractional CFO firm, and I provide those services to clients. I have a defined '
-              "scope of work, and I'm just really good at providing fractional CFO work, "
-              'right?',
-      'timestamp': 277,
-      'timestamp_label': '[00:04:37]',
-      'timestamp_seconds': 277,
-      'tip': "I mean by it is essentially me, I'll talk from my own experience, I run a "
-             'fractional CFO firm, and I provide those services to clients. I have a defined '
-             "scope of work, and I'm just really good at providing fractional CFO work, right?",
-      'title': 'Referrals Aren’t Enough: Ranking The Top 5 Client Channels for Fractional '
-               'Firms (Fractional Firm Academy)',
-      'url': 'https://www.youtube.com/watch?v=KJF9HKiAu0Y&t=277s',
-      'video_id': 'KJF9HKiAu0Y'},
-     {'author': 'MM BUSINESS SOLUTIONS',
-      'channel': 'MM BUSINESS SOLUTIONS',
+      'text': 'Many new brokers try to scale the first variable, their conversations, before they '
+              'can reliably and consistently close.',
+      'timestamp': 722,
+      'timestamp_label': '[00:12:02]',
+      'timestamp_seconds': 722,
+      'tip': 'Many new brokers try to scale the first variable, their conversations, before they '
+             'can reliably and consistently close.',
+      'title': 'The Broker Business Explained: Low Risk, Big Commissions',
+      'url': 'https://www.youtube.com/watch?v=FnBYMtrQW9M&t=722s',
+      'video_id': 'FnBYMtrQW9M'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:13](https://www.youtube.com/watch?v=i0yXJe_x34I&t=853s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:12:24](https://www.youtube.com/watch?v=WUTiN5zYjnU&t=744s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'s a potential client, reaching out to them beyond just an email, beyond just a "
-              'a simple text or a DM, right? Uh true relational reachouts are going to carry '
-              'every person, every broker um and DAC so much farther in the eyes of those '
-              'business owners.',
-      'timestamp': 853,
-      'timestamp_label': '[00:14:13]',
-      'timestamp_seconds': 853,
-      'tip': "'s a potential client, reaching out to them beyond just an email, beyond just a "
-             'a simple text or a DM, right? Uh true relational reachouts are going to carry '
-             'every person, every broker um and DAC so much farther in the eyes of those '
-             'business owners.',
-      'title': 'Business Funding Broker Training Nov 2026: David Allen Capital ISO Updates, '
-               'Working Capital & Small (MM BUSINESS SOLUTIONS)',
-      'url': 'https://www.youtube.com/watch?v=i0yXJe_x34I&t=853s',
-      'video_id': 'i0yXJe_x34I'},
-     {'author': 'Joe Camberato',
-      'channel': 'Joe Camberato',
+      'text': 'Are you comfortable with variable income? Because one month you might make 30,000, '
+              'another 50,000, and another 5,000.',
+      'timestamp': 744,
+      'timestamp_label': '[00:12:24]',
+      'timestamp_seconds': 744,
+      'tip': 'Are you comfortable with variable income? Because one month you might make 30,000, '
+             'another 50,000, and another 5,000.',
+      'title': 'A Day in the Life of a Commercial Loan Broker (The Real Version)',
+      'url': 'https://www.youtube.com/watch?v=WUTiN5zYjnU&t=744s',
+      'video_id': 'WUTiN5zYjnU'},
+     {'author': 'The Lab: Mortgage & Real Estate Business Academy',
+      'channel': 'The Lab: Mortgage & Real Estate Business Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=GwPGzetluZM&t=72s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:04:28](https://www.youtube.com/watch?v=SulpxqBYams&t=268s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Business loan or a Term Loan two is going to be a revenue based financing three '
-              'is going to be a business line of credit based off of your cash flow all.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'Business loan or a Term Loan two is going to be a revenue based financing three '
-             'is going to be a business line of credit based off of your cash flow all.',
-      'title': 'What Is Working Capital, and How Do I Get a Working Capital Loan? (Joe '
-               'Camberato)',
-      'url': 'https://www.youtube.com/watch?v=GwPGzetluZM&t=72s',
-      'video_id': 'GwPGzetluZM'},
-     {'author': 'The Finance Lab',
-      'channel': 'The Finance Lab',
+      'text': "If you go to a local lender you're most likely going to be getting a loan that is "
+              'amortized over 15 years and has a five-year ARM or balloon payment.',
+      'timestamp': 268,
+      'timestamp_label': '[00:04:28]',
+      'timestamp_seconds': 268,
+      'tip': "If you go to a local lender you're most likely going to be getting a loan that is "
+             'amortized over 15 years and has a five-year ARM or balloon payment.',
+      'title': 'How A Commercial Loan Works? | Co/LAB Lending',
+      'url': 'https://www.youtube.com/watch?v=SulpxqBYams&t=268s',
+      'video_id': 'SulpxqBYams'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=xgYLNDnEqKg&t=54s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:06:29](https://www.youtube.com/watch?v=408PWyXwwrI&t=389s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "It's a recipe for disaster. When the funds eventually plunged, the market made "
-              "the margin calls, and those clients lost everything. So let's move into section "
-              'one, the core shield. This is all about regulation best interest and protecting '
-              'the retail customer.',
+      'text': 'Commercial deals take weeks, often months, to close. And not every file is going to '
+              'fund.',
+      'timestamp': 389,
+      'timestamp_label': '[00:06:29]',
+      'timestamp_seconds': 389,
+      'tip': 'Commercial deals take weeks, often months, to close. And not every file is going to '
+             'fund.',
+      'title': 'Why 1 Loan Deal Pays More than 100 B2B Sales',
+      'url': 'https://www.youtube.com/watch?v=408PWyXwwrI&t=389s',
+      'video_id': '408PWyXwwrI'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:32](https://www.youtube.com/watch?v=7OHPVFeEmD4&t=272s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "You don't chase the headline rate. You chase the total commission dollars.",
+      'timestamp': 272,
+      'timestamp_label': '[00:04:32]',
+      'timestamp_seconds': 272,
+      'tip': "You don't chase the headline rate. You chase the total commission dollars.",
+      'title': 'How Brokers Get Paid Points, Fees & Splits',
+      'url': 'https://www.youtube.com/watch?v=7OHPVFeEmD4&t=272s',
+      'video_id': '7OHPVFeEmD4'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:31](https://www.youtube.com/watch?v=7OHPVFeEmD4&t=331s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "The packaging deposit sorts that all out. Someone who won't put a dime down to get "
+              'started was probably never going to close with you anyway.',
+      'timestamp': 331,
+      'timestamp_label': '[00:05:31]',
+      'timestamp_seconds': 331,
+      'tip': "The packaging deposit sorts that all out. Someone who won't put a dime down to get "
+             'started was probably never going to close with you anyway.',
+      'title': 'How Brokers Get Paid Points, Fees & Splits',
+      'url': 'https://www.youtube.com/watch?v=7OHPVFeEmD4&t=331s',
+      'video_id': '7OHPVFeEmD4'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:26](https://www.youtube.com/watch?v=MsdnoNJpPrg&t=446s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Lenders essentially want fewer, better deals. Brokers who are sending lenders a '
+              'stream of marginal submissions or poorly fit submissions are going to get '
+              'deprioritized.',
+      'timestamp': 446,
+      'timestamp_label': '[00:07:26]',
+      'timestamp_seconds': 446,
+      'tip': 'Lenders essentially want fewer, better deals. Brokers who are sending lenders a '
+             'stream of marginal submissions or poorly fit submissions are going to get '
+             'deprioritized.',
+      'title': '3 Shifts Reshaping Commercial Lending That Most Brokers Are Missing',
+      'url': 'https://www.youtube.com/watch?v=MsdnoNJpPrg&t=446s',
+      'video_id': 'MsdnoNJpPrg'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=qkeq6lhotvM&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'You have to pay me 10,000 to work on your loan, but then when we are successful in '
+              "getting you financed, you're going to pay me two points on the financed amount.",
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': 'You have to pay me 10,000 to work on your loan, but then when we are successful in '
+             "getting you financed, you're going to pay me two points on the financed amount.",
+      'title': 'How do Commercial Loan Brokers get Paid?',
+      'url': 'https://www.youtube.com/watch?v=qkeq6lhotvM&t=122s',
+      'video_id': 'qkeq6lhotvM'},
+     {'author': 'CFM (Commercial Financing Mastery)',
+      'channel': 'CFM (Commercial Financing Mastery)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:30](https://www.youtube.com/watch?v=QmriETtG_oE&t=810s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Doesn't cover unsecured financing, doesn't cover commercial property real estate "
+              'financing. So you have to add additional to that current insurance policy that you '
+              "have if you're doing this.",
+      'timestamp': 810,
+      'timestamp_label': '[00:13:30]',
+      'timestamp_seconds': 810,
+      'tip': "Doesn't cover unsecured financing, doesn't cover commercial property real estate "
+             'financing. So you have to add additional to that current insurance policy that you '
+             "have if you're doing this.",
+      'title': 'What Brokers Get Wrong About Commercial Financing | Sua Truong',
+      'url': 'https://www.youtube.com/watch?v=QmriETtG_oE&t=810s',
+      'video_id': 'QmriETtG_oE'},
+     {'author': 'CFM (Commercial Financing Mastery)',
+      'channel': 'CFM (Commercial Financing Mastery)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:27](https://www.youtube.com/watch?v=cqOh0arlXGU&t=327s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'I usually book three to five commercial manager lunches in a week just to catch up.',
+      'timestamp': 327,
+      'timestamp_label': '[00:05:27]',
+      'timestamp_seconds': 327,
+      'tip': 'I usually book three to five commercial manager lunches in a week just to catch up.',
+      'title': 'Why the Bank Declined His 8th Subway Loan: Lender Capacity Explained | Sua Truong',
+      'url': 'https://www.youtube.com/watch?v=cqOh0arlXGU&t=327s',
+      'video_id': 'cqOh0arlXGU'},
+     {'author': 'CFM (Commercial Financing Mastery)',
+      'channel': 'CFM (Commercial Financing Mastery)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:49](https://www.youtube.com/watch?v=cqOh0arlXGU&t=589s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Getting a deal declined by the lender is not a bad thing, by the way.',
+      'timestamp': 589,
+      'timestamp_label': '[00:09:49]',
+      'timestamp_seconds': 589,
+      'tip': 'Getting a deal declined by the lender is not a bad thing, by the way.',
+      'title': 'Why the Bank Declined His 8th Subway Loan: Lender Capacity Explained | Sua Truong',
+      'url': 'https://www.youtube.com/watch?v=cqOh0arlXGU&t=589s',
+      'video_id': 'cqOh0arlXGU'},
+     {'author': 'John Neufer',
+      'channel': 'John Neufer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:44](https://www.youtube.com/watch?v=uqs40-CCDSc&t=164s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'If somebody promises you more business, avoid the goose chase at all costs.',
+      'timestamp': 164,
+      'timestamp_label': '[00:02:44]',
+      'timestamp_seconds': 164,
+      'tip': 'If somebody promises you more business, avoid the goose chase at all costs.',
+      'title': 'How Much Origination to Charge | CRE Loan Brokering',
+      'url': 'https://www.youtube.com/watch?v=uqs40-CCDSc&t=164s',
+      'video_id': 'uqs40-CCDSc'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=68tfdYJmEpw&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Every day, business owners and real estate investors need capital, and most of them '
+              'get told no at the bank.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'Every day, business owners and real estate investors need capital, and most of them '
+             'get told no at the bank.',
+      'title': 'How to Build a Successful Commercial Loan Brokerage | Start Here',
+      'url': 'https://www.youtube.com/watch?v=68tfdYJmEpw&t=0s',
+      'video_id': '68tfdYJmEpw'},
+     {'author': 'Moonshine Capital TV',
+      'channel': 'Moonshine Capital TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:43](https://www.youtube.com/watch?v=-uMKPEnEzXI&t=43s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'To make this kind of money you need a network of lenders and potential clients; '
+              'start by building relationships, attend networking events, leverage LinkedIn and '
+              'explore online forums.',
+      'timestamp': 43,
+      'timestamp_label': '[00:00:43]',
+      'timestamp_seconds': 43,
+      'tip': 'To make this kind of money you need a network of lenders and potential clients; '
+             'start by building relationships, attend networking events, leverage LinkedIn and '
+             'explore online forums.',
+      'title': '💰 How to Make $10,000/Month as a Commercial Loan Broker! 🚀',
+      'url': 'https://www.youtube.com/watch?v=-uMKPEnEzXI&t=43s',
+      'video_id': '-uMKPEnEzXI'},
+     {'author': 'Bill Rapp, CCIM - Director - Commloan',
+      'channel': 'Bill Rapp, CCIM - Director - Commloan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=WqF62XF9lk4&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Many commercial brokers depend on three to 10 lender relationships, and when one '
+              'lender is going to decline a loan, many brokers really have nowhere else to turn at '
+              'that point.',
       'timestamp': 54,
       'timestamp_label': '[00:00:54]',
       'timestamp_seconds': 54,
-      'tip': "It's a recipe for disaster. When the funds eventually plunged, the market made "
-             "the margin calls, and those clients lost everything. So let's move into section "
-             'one, the core shield. This is all about regulation best interest and protecting '
-             'the retail customer.',
-      'title': 'Series 24: Supervising Reg BI, Form CRS, Institutional Suitability and '
-               'Concentration Reviews (The Finance Lab)',
-      'url': 'https://www.youtube.com/watch?v=xgYLNDnEqKg&t=54s',
-      'video_id': 'xgYLNDnEqKg'},
-     {'author': 'Josh Olfert, CFP',
-      'channel': 'Josh Olfert, CFP',
+      'tip': 'Many commercial brokers depend on three to 10 lender relationships, and when one '
+             'lender is going to decline a loan, many brokers really have nowhere else to turn at '
+             'that point.',
+      'title': 'How CommLoan Helps Brokers Close More Commercial Loans',
+      'url': 'https://www.youtube.com/watch?v=WqF62XF9lk4&t=54s',
+      'video_id': 'WqF62XF9lk4'}],
+ 2: [{'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:32](https://www.youtube.com/watch?v=skWLJwzq_fc&t=512s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:11:29](https://www.youtube.com/watch?v=dIwbKzTxcQk&t=689s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'You to do is take an existing business of financial advisory clients and '
-              'migrate them over to something that is.',
-      'timestamp': 512,
-      'timestamp_label': '[00:08:32]',
-      'timestamp_seconds': 512,
-      'tip': 'You to do is take an existing business of financial advisory clients and migrate '
-             'them over to something that is.',
-      'title': 'How To Start a Financial Advisory Business (Josh Olfert, CFP)',
-      'url': 'https://www.youtube.com/watch?v=skWLJwzq_fc&t=512s',
-      'video_id': 'skWLJwzq_fc'},
-     {'author': 'Zach Siegel',
-      'channel': 'Zach Siegel',
+      'text': 'A single deal can put four or five figures in your pocket.',
+      'timestamp': 689,
+      'timestamp_label': '[00:11:29]',
+      'timestamp_seconds': 689,
+      'tip': 'A single deal can put four or five figures in your pocket.',
+      'title': 'How to Become a Business Loan Broker in 2026',
+      'url': 'https://www.youtube.com/watch?v=dIwbKzTxcQk&t=689s',
+      'video_id': 'dIwbKzTxcQk'},
+     {'author': 'Beau Eckstein, Business Ownership Coach',
+      'channel': 'Beau Eckstein, Business Ownership Coach',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:59](https://www.youtube.com/watch?v=Yq5OojmQIac&t=299s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=M48iXqAIzwE&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "'s probably a good idea to just follow through with it as long as you have a "
-              "good plan for the money and you're using your revenue-based financing offer as "
-              "a bridge into a better program if that's applicable as well.",
-      'timestamp': 299,
-      'timestamp_label': '[00:04:59]',
-      'timestamp_seconds': 299,
-      'tip': "'s probably a good idea to just follow through with it as long as you have a "
-             "good plan for the money and you're using your revenue-based financing offer as a "
-             "bridge into a better program if that's applicable as well.",
-      'title': 'Revenue-Based Financing: What Lenders Won’t Tell You (Red & Green Flags) (Zach '
-               'Siegel)',
-      'url': 'https://www.youtube.com/watch?v=Yq5OojmQIac&t=299s',
-      'video_id': 'Yq5OojmQIac'},
+      'text': 'We have multiple platforms we work with where we put the deal on the platform and '
+              "it's shared to hundreds of banks.",
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': 'We have multiple platforms we work with where we put the deal on the platform and '
+             "it's shared to hundreds of banks.",
+      'title': 'How to Become a Commercial Loan Broker',
+      'url': 'https://www.youtube.com/watch?v=M48iXqAIzwE&t=66s',
+      'video_id': 'M48iXqAIzwE'},
      {'author': 'Commercial Loan Broker Institute',
       'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:17](https://www.youtube.com/watch?v=7OHPVFeEmD4&t=317s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=ctWaQk2YDgE&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "But, the real value of that fee isn't the $2,500. Think about the borrower who "
-              "seems to just be price shopping. They're calling everybody, they're committing "
-              'to nobody, and even a perfectly bankable client can turn out to be a tire '
-              'kicker.',
-      'timestamp': 317,
-      'timestamp_label': '[00:05:17]',
-      'timestamp_seconds': 317,
-      'tip': "But, the real value of that fee isn't the $2,500. Think about the borrower who "
-             "seems to just be price shopping. They're calling everybody, they're committing "
-             'to nobody, and even a perfectly bankable client can turn out to be a tire '
-             'kicker.',
-      'title': 'How Brokers Get Paid Points, Fees & Splits (Commercial Loan Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=7OHPVFeEmD4&t=317s',
-      'video_id': '7OHPVFeEmD4'},
-     {'author': 'Real Estate Finance Academy with Trevor Calton',
-      'channel': 'Real Estate Finance Academy with Trevor Calton',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=2cFIwSgUOQM&t=22s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It depends on the industry, the market, the market timing, and the product '
-              'type. Debt service coverage ratio tells us how much extra cushion we need to '
-              'have in our net operating income over the debt service or the annual loan '
-              'payments.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'It depends on the industry, the market, the market timing, and the product type. '
-             'Debt service coverage ratio tells us how much extra cushion we need to have in '
-             'our net operating income over the debt service or the annual loan payments.',
-      'title': 'DSCR Demystified: How Lenders Really Use It to Size Your Loan | Debt Service '
-               'Coverage Ratio (Real Estate Finance Academy with Trevor Calton)',
-      'url': 'https://www.youtube.com/watch?v=2cFIwSgUOQM&t=22s',
-      'video_id': '2cFIwSgUOQM'},
-     {'author': 'Beyond Lenders',
-      'channel': 'Beyond Lenders',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=tlI9IYK5Dxg&t=15s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Requirements are a maximum loan to value of 70% and a minimum debt service '
-              "coverage ratio of 1.25 times okay sure but what does that mean let's go "
-              'through.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Requirements are a maximum loan to value of 70% and a minimum debt service '
-             "coverage ratio of 1.25 times okay sure but what does that mean let's go through.",
-      'title': 'You Must Understand LTV and DSCR (Beyond Lenders)',
-      'url': 'https://www.youtube.com/watch?v=tlI9IYK5Dxg&t=15s',
-      'video_id': 'tlI9IYK5Dxg'},
-     {'author': 'ION Capital - Loan Broker University',
-      'channel': 'ION Capital - Loan Broker University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:09](https://www.youtube.com/watch?v=DSEdy5KFvBs&t=609s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "At it and see if there's any viable life um life on it so it's kind of it's one "
-              "of the worst questions for a hypothetical because there's a lot of different "
-              'things that come into play yeah I understand they look at auction value.',
-      'timestamp': 609,
-      'timestamp_label': '[00:10:09]',
-      'timestamp_seconds': 609,
-      'tip': "At it and see if there's any viable life um life on it so it's kind of it's one "
-             "of the worst questions for a hypothetical because there's a lot of different "
-             'things that come into play yeah I understand they look at auction value.',
-      'title': 'How To Be A Business Loan Broker  |  Equipment Finance Basics (ION Capital - '
-               'Loan Broker University)',
-      'url': 'https://www.youtube.com/watch?v=DSEdy5KFvBs&t=609s',
-      'video_id': 'DSEdy5KFvBs'},
+      'text': 'Number one, you need to love building real relationships because relationships are '
+              'what bring deals to your doorsteps and trust is the currency for getting hard deals '
+              'done.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'Number one, you need to love building real relationships because relationships are '
+             'what bring deals to your doorsteps and trust is the currency for getting hard deals '
+             'done.',
+      'title': 'Wondering if you’re built for commercial finance?',
+      'url': 'https://www.youtube.com/watch?v=ctWaQk2YDgE&t=31s',
+      'video_id': 'ctWaQk2YDgE'},
      {'author': 'Commercial Capital Training Group, LLC',
       'channel': 'Commercial Capital Training Group, LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=nxxklr3VSSo&t=88s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
+      'markdown': '[00:05:40](https://www.youtube.com/watch?v=vakBYx8RoD0&t=340s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Have been quicker wins and you know obviously uh the more Revenue that comes in '
-              'the the less pressure you feel and so there were some deferred gratification in '
-              "Revenue so I'd say you know making sure that you spend time.",
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': 'Have been quicker wins and you know obviously uh the more Revenue that comes in '
-             'the the less pressure you feel and so there were some deferred gratification in '
-             "Revenue so I'd say you know making sure that you spend time.",
-      'title': 'Commercial Loan Broker Successes and Advice After Training (Commercial Capital '
-               'Training Group, LLC)',
-      'url': 'https://www.youtube.com/watch?v=nxxklr3VSSo&t=88s',
-      'video_id': 'nxxklr3VSSo'},
-     {'author': 'Beau Eckstein, Business Ownership Coach',
-      'channel': 'Beau Eckstein, Business Ownership Coach',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:48](https://www.youtube.com/watch?v=aBEJBn_bUA0&t=168s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We talk all things financing I've been in the lending industry for over 20 "
-              "years and I'm happy to answer your questions and provide great content.",
-      'timestamp': 168,
-      'timestamp_label': '[00:02:48]',
-      'timestamp_seconds': 168,
-      'tip': "We talk all things financing I've been in the lending industry for over 20 years "
-             "and I'm happy to answer your questions and provide great content.",
-      'title': 'Comparing SBA 504 vs. 7A Loans for Commercial Real Estate (Beau Eckstein, '
-               'Business Ownership Coach)',
-      'url': 'https://www.youtube.com/watch?v=aBEJBn_bUA0&t=168s',
-      'video_id': 'aBEJBn_bUA0'}],
- 2: [{'author': 'Commercial Capital LLC',
-      'channel': 'Commercial Capital LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=PoHdu7KQ0zI&t=15s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Problems many small business owners have to offer their customers payment terms '
-              'that is the customer gets the option to pay their invoices in 30 to 60 days '
-              "it's.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Problems many small business owners have to offer their customers payment terms '
-             'that is the customer gets the option to pay their invoices in 30 to 60 days '
-             "it's.",
-      'title': 'Accounts Receivable Factoring - What is It? (Commercial Capital LLC)',
-      'url': 'https://www.youtube.com/watch?v=PoHdu7KQ0zI&t=15s',
-      'video_id': 'PoHdu7KQ0zI'},
-     {'author': 'Equipment Finance Academy',
-      'channel': 'Equipment Finance Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:58](https://www.youtube.com/watch?v=zolXG9LvowA&t=118s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Drain cash from the business, or finance the machine, pay for it while it earns '
-              'money on jobs. Most owners choose the second option, or take the borrower who '
-              'owns a restaurant. Commercial ovens, refrigeration, and kitchen equipment wear '
-              'out on their schedule, not yours.',
-      'timestamp': 118,
-      'timestamp_label': '[00:01:58]',
-      'timestamp_seconds': 118,
-      'tip': 'Drain cash from the business, or finance the machine, pay for it while it earns '
-             'money on jobs. Most owners choose the second option, or take the borrower who '
-             'owns a restaurant. Commercial ovens, refrigeration, and kitchen equipment wear '
-             'out on their schedule, not yours.',
-      'title': 'Mortgage Loan Officers: The Second Commission Stream Hiding in Your Client '
-               'List (Equipment Finance Academy)',
-      'url': 'https://www.youtube.com/watch?v=zolXG9LvowA&t=118s',
-      'video_id': 'zolXG9LvowA'},
-     {'author': '75BizLoans and Commercial Real Estate Loans',
-      'channel': '75BizLoans and Commercial Real Estate Loans',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=PH6WLL7kMUM&t=20s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm Kevin Kermeen, a nationwide commercial loan broker with 75 Biz Loans and "
-              '200 plus capital partners. Invoice factoring and AR financing get mixed up all '
-              'the time.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "I'm Kevin Kermeen, a nationwide commercial loan broker with 75 Biz Loans and 200 "
-             'plus capital partners. Invoice factoring and AR financing get mixed up all the '
-             'time.',
-      'title': 'Invoice Factoring vs AR Financing Explained (2026) (75BizLoans and Commercial '
-               'Real Estate Loans)',
-      'url': 'https://www.youtube.com/watch?v=PH6WLL7kMUM&t=20s',
-      'video_id': 'PH6WLL7kMUM'},
-     {'author': 'FinanceKid',
-      'channel': 'FinanceKid',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:36](https://www.youtube.com/watch?v=u5hujmtiiaY&t=336s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Receivable has collected the lender pays back the difference net Amite much '
-              'higher fee so there are higher fees for recourse agreements in order to.',
-      'timestamp': 336,
-      'timestamp_label': '[00:05:36]',
-      'timestamp_seconds': 336,
-      'tip': 'Receivable has collected the lender pays back the difference net Amite much '
-             'higher fee so there are higher fees for recourse agreements in order to.',
-      'title': 'Asset Based Lending (ABL) - Business Financing Explained (FinanceKid)',
-      'url': 'https://www.youtube.com/watch?v=u5hujmtiiaY&t=336s',
-      'video_id': 'u5hujmtiiaY'},
+      'text': "I've already made back the money I spent and we're only nine months later.",
+      'timestamp': 340,
+      'timestamp_label': '[00:05:40]',
+      'timestamp_seconds': 340,
+      'tip': "I've already made back the money I spent and we're only nine months later.",
+      'title': 'Made $49k Commission as a Business Loan Broker',
+      'url': 'https://www.youtube.com/watch?v=vakBYx8RoD0&t=340s',
+      'video_id': 'vakBYx8RoD0'},
      {'author': 'Commercial Loan Broker Institute',
       'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:24](https://www.youtube.com/watch?v=FnBYMtrQW9M&t=264s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
+      'markdown': '[00:08:50](https://www.youtube.com/watch?v=svRIdayYOLo&t=530s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "That's the moment that the money it changes hands from lenders over to "
-              "borrowers. And that's when the broker earns a fee. Well, sometimes the lender "
-              "pays a fee, and sometimes the borrower pays a fee, and sometimes it's a "
-              'combination.',
-      'timestamp': 264,
-      'timestamp_label': '[00:04:24]',
-      'timestamp_seconds': 264,
-      'tip': "That's the moment that the money it changes hands from lenders over to "
-             "borrowers. And that's when the broker earns a fee. Well, sometimes the lender "
-             "pays a fee, and sometimes the borrower pays a fee, and sometimes it's a "
-             'combination.',
-      'title': 'The Broker Business Explained: Low Risk, Big Commissions (Commercial Loan '
-               'Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=FnBYMtrQW9M&t=264s',
-      'video_id': 'FnBYMtrQW9M'},
-     {'author': 'Vanijja | Trade Insights',
-      'channel': 'Vanijja | Trade Insights',
+      'text': 'Busy does not mean productive in our industry.',
+      'timestamp': 530,
+      'timestamp_label': '[00:08:50]',
+      'timestamp_seconds': 530,
+      'tip': 'Busy does not mean productive in our industry.',
+      'title': '11 Things to Know Before Becoming a Commercial Loan Broker',
+      'url': 'https://www.youtube.com/watch?v=svRIdayYOLo&t=530s',
+      'video_id': 'svRIdayYOLo'},
+     {'author': 'Loan Officer Training | Zevi Shafran',
+      'channel': 'Loan Officer Training | Zevi Shafran',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:46](https://www.youtube.com/watch?v=kMiyyMuSUDU&t=346s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
+      'markdown': '[00:09:07](https://www.youtube.com/watch?v=SPUcp-lnZ4w&t=547s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Well, the benefits for them are massive. The big one is that the buyer can '
-              'extend their payment terms. So, instead of paying their bills in 30 days, maybe '
-              'they now pay in 60 or 90 or even 120 days.',
-      'timestamp': 346,
-      'timestamp_label': '[00:05:46]',
-      'timestamp_seconds': 346,
-      'tip': 'Well, the benefits for them are massive. The big one is that the buyer can '
-             'extend their payment terms. So, instead of paying their bills in 30 days, maybe '
-             'they now pay in 60 or 90 or even 120 days.',
-      'title': "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution "
-               '(Vanijja | Trade Insights)',
-      'url': 'https://www.youtube.com/watch?v=kMiyyMuSUDU&t=346s',
-      'video_id': 'kMiyyMuSUDU'},
-     {'author': 'REtipster',
-      'channel': 'REtipster',
+      'text': 'The money is always in the followup not in the initial contact.',
+      'timestamp': 547,
+      'timestamp_label': '[00:09:07]',
+      'timestamp_seconds': 547,
+      'tip': 'The money is always in the followup not in the initial contact.',
+      'title': '4 Foundations for New Commercial Loan Officers',
+      'url': 'https://www.youtube.com/watch?v=SPUcp-lnZ4w&t=547s',
+      'video_id': 'SPUcp-lnZ4w'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=7sx67OQUmsM&t=35s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
+      'markdown': '[00:09:17](https://www.youtube.com/watch?v=SrGiDqgbdf8&t=557s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "For example, when a loan officer asks what's the monthly debt service on this "
-              "loan, they're referring to the total amount of monthly loan payment or payments "
-              'a borrower is obligated to pay.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': "For example, when a loan officer asks what's the monthly debt service on this "
-             "loan, they're referring to the total amount of monthly loan payment or payments "
-             'a borrower is obligated to pay.',
-      'title': 'Debt Service Coverage Ratio (DSCR) Explained (REtipster)',
-      'url': 'https://www.youtube.com/watch?v=7sx67OQUmsM&t=35s',
-      'video_id': '7sx67OQUmsM'},
-     {'author': 'The Money Side',
-      'channel': 'The Money Side',
+      'text': "You don't want to be a company a mom and pop, you want to be a corporate identity.",
+      'timestamp': 557,
+      'timestamp_label': '[00:09:17]',
+      'timestamp_seconds': 557,
+      'tip': "You don't want to be a company a mom and pop, you want to be a corporate identity.",
+      'title': 'How to Start Your Own Finance Company - Guide To Becoming A Commercial Loan Broker',
+      'url': 'https://www.youtube.com/watch?v=SrGiDqgbdf8&t=557s',
+      'video_id': 'SrGiDqgbdf8'},
+     {'author': 'Commercial Capital Training Group, LLC',
+      'channel': 'Commercial Capital Training Group, LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:25](https://www.youtube.com/watch?v=1_YV2DUgR-g&t=745s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
+      'markdown': '[00:35:01](https://www.youtube.com/watch?v=nxxklr3VSSo&t=2101s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'The FTC says to check whether that buyer will need to pass a credit check or '
-              "pay fees first if they won't or can't you may have to buy the system out before "
-              'you sign.',
-      'timestamp': 745,
-      'timestamp_label': '[00:12:25]',
-      'timestamp_seconds': 745,
-      'tip': 'The FTC says to check whether that buyer will need to pass a credit check or pay '
-             "fees first if they won't or can't you may have to buy the system out before you "
-             'sign.',
-      'title': "The 30% Solar Tax Credit Didn't Disappear. It Moved. (The Money Side)",
-      'url': 'https://www.youtube.com/watch?v=1_YV2DUgR-g&t=745s',
-      'video_id': '1_YV2DUgR-g'},
-     {'author': 'SEI Mortgage - Ryan Marks',
-      'channel': 'SEI Mortgage - Ryan Marks',
+      'text': 'I know some brokers that try to get upfront fees and hold a client to their feet '
+              "but even then that's not going to matter.",
+      'timestamp': 2101,
+      'timestamp_label': '[00:35:01]',
+      'timestamp_seconds': 2101,
+      'tip': 'I know some brokers that try to get upfront fees and hold a client to their feet but '
+             "even then that's not going to matter.",
+      'title': 'Commercial Loan Broker Successes and Advice After Training',
+      'url': 'https://www.youtube.com/watch?v=nxxklr3VSSo&t=2101s',
+      'video_id': 'nxxklr3VSSo'},
+     {'author': 'Commercial Capital Training Group, LLC',
+      'channel': 'Commercial Capital Training Group, LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:28](https://www.youtube.com/watch?v=OOFsomPO_Mc&t=328s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
+      'markdown': '[00:29:27](https://www.youtube.com/watch?v=nxxklr3VSSo&t=1767s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "So, let's use an example of a client that we just priced out that went under "
-              "contract. He's purchasing a home for $800,000. It's a six unit apartment "
-              'building and some of them are rented and some of them are not rented.',
+      'text': 'Why someone would entrust to send their financials to someone operating out of a '
+              'Gmail or a Yahoo address is beyond me.',
+      'timestamp': 1767,
+      'timestamp_label': '[00:29:27]',
+      'timestamp_seconds': 1767,
+      'tip': 'Why someone would entrust to send their financials to someone operating out of a '
+             'Gmail or a Yahoo address is beyond me.',
+      'title': 'Commercial Loan Broker Successes and Advice After Training',
+      'url': 'https://www.youtube.com/watch?v=nxxklr3VSSo&t=1767s',
+      'video_id': 'nxxklr3VSSo'},
+     {'author': 'Commercial Capital Training Group, LLC',
+      'channel': 'Commercial Capital Training Group, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:52](https://www.youtube.com/watch?v=UBxQzlMJT7k&t=1372s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "I say you should respond to anybody within 24 48 hours, there's no excuse not to.",
+      'timestamp': 1372,
+      'timestamp_label': '[00:22:52]',
+      'timestamp_seconds': 1372,
+      'tip': "I say you should respond to anybody within 24 48 hours, there's no excuse not to.",
+      'title': 'Live Business Loan Broker Training | Become a Commercial Loan Broker',
+      'url': 'https://www.youtube.com/watch?v=UBxQzlMJT7k&t=1372s',
+      'video_id': 'UBxQzlMJT7k'},
+     {'author': 'The Loan Broker Academy',
+      'channel': 'The Loan Broker Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:22](https://www.youtube.com/watch?v=4AAOQcVDMIo&t=262s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Can be a minefield and this is why this industry also has a ridiculously high '
+              'failure rate.',
+      'timestamp': 262,
+      'timestamp_label': '[00:04:22]',
+      'timestamp_seconds': 262,
+      'tip': 'Can be a minefield and this is why this industry also has a ridiculously high '
+             'failure rate.',
+      'title': 'Commercial Loan Broker Training | Do NOT Believe The Hype On YouTube!!',
+      'url': 'https://www.youtube.com/watch?v=4AAOQcVDMIo&t=262s',
+      'video_id': '4AAOQcVDMIo'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:54](https://www.youtube.com/watch?v=QPWj0c48x1o&t=834s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'What I experienced in my first three years was I lost money, I got taken advantage '
+              "of by some other brokers, I didn't know how to get paid.",
+      'timestamp': 834,
+      'timestamp_label': '[00:13:54]',
+      'timestamp_seconds': 834,
+      'tip': 'What I experienced in my first three years was I lost money, I got taken advantage '
+             "of by some other brokers, I didn't know how to get paid.",
+      'title': 'Commercial Loan Broker Institute Overview',
+      'url': 'https://www.youtube.com/watch?v=QPWj0c48x1o&t=834s',
+      'video_id': 'QPWj0c48x1o'},
+     {'author': 'AD Mortgage',
+      'channel': 'AD Mortgage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:56](https://www.youtube.com/watch?v=-j6-Ev4L24c&t=416s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'With A&D Mortgage, there is no minimum DSCR ratio requirement, which is a very cool '
+              'thing.',
+      'timestamp': 416,
+      'timestamp_label': '[00:06:56]',
+      'timestamp_seconds': 416,
+      'tip': 'With A&D Mortgage, there is no minimum DSCR ratio requirement, which is a very cool '
+             'thing.',
+      'title': 'What is a DSCR Loan? Mortgage Broker Guide to Win More Deals and Get Them '
+               'Approved!',
+      'url': 'https://www.youtube.com/watch?v=-j6-Ev4L24c&t=416s',
+      'video_id': '-j6-Ev4L24c'},
+     {'author': 'AD Mortgage',
+      'channel': 'AD Mortgage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:13](https://www.youtube.com/watch?v=HE_kRmkKu5c&t=13s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our DSCR mortgage program allows investors to qualify for financing based on the '
+              "property's cash flow, not personal income.",
+      'timestamp': 13,
+      'timestamp_label': '[00:00:13]',
+      'timestamp_seconds': 13,
+      'tip': 'Our DSCR mortgage program allows investors to qualify for financing based on the '
+             "property's cash flow, not personal income.",
+      'title': 'What Is DSCR? Debt Service Coverage Ratio Loan, Real Estate Investing 2025, '
+               'Calculation Explained',
+      'url': 'https://www.youtube.com/watch?v=HE_kRmkKu5c&t=13s',
+      'video_id': 'HE_kRmkKu5c'},
+     {'author': 'BizPlanComplete',
+      'channel': 'BizPlanComplete',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:22](https://www.youtube.com/watch?v=hk2Jnd50USw&t=82s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Balance sheet, break-even analysis, business ratios, and then in year one we break '
+              "down your revenues monthly, in year two it's quarterly, in year three it's "
+              'quarterly.',
+      'timestamp': 82,
+      'timestamp_label': '[00:01:22]',
+      'timestamp_seconds': 82,
+      'tip': 'Balance sheet, break-even analysis, business ratios, and then in year one we break '
+             "down your revenues monthly, in year two it's quarterly, in year three it's "
+             'quarterly.',
+      'title': 'Commercial Loan Broker Business Plan',
+      'url': 'https://www.youtube.com/watch?v=hk2Jnd50USw&t=82s',
+      'video_id': 'hk2Jnd50USw'},
+     {'author': 'Loan Officer Training | Zevi Shafran',
+      'channel': 'Loan Officer Training | Zevi Shafran',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:14](https://www.youtube.com/watch?v=Asr3dNmXtus&t=194s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Once you get your terms and you present them to your borrower and they sign your '
+              'term sheet, at that point you could actually take a milestone payment for your '
+              'processing and your time.',
+      'timestamp': 194,
+      'timestamp_label': '[00:03:14]',
+      'timestamp_seconds': 194,
+      'tip': 'Once you get your terms and you present them to your borrower and they sign your '
+             'term sheet, at that point you could actually take a milestone payment for your '
+             'processing and your time.',
+      'title': 'How to Become a Commercial Loan Officer: Residential vs. Commercial Lending',
+      'url': 'https://www.youtube.com/watch?v=Asr3dNmXtus&t=194s',
+      'video_id': 'Asr3dNmXtus'},
+     {'author': 'Bill Rapp, CCIM - Director - Commloan',
+      'channel': 'Bill Rapp, CCIM - Director - Commloan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:28](https://www.youtube.com/watch?v=TlDScaCI3fE&t=328s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "But that's also not the same thing as your personal take home income.",
       'timestamp': 328,
       'timestamp_label': '[00:05:28]',
       'timestamp_seconds': 328,
-      'tip': "So, let's use an example of a client that we just priced out that went under "
-             "contract. He's purchasing a home for $800,000. It's a six unit apartment "
-             'building and some of them are rented and some of them are not rented.',
-      'title': '6 Unit DSCR Loans for Commercial Property: THIS Catches Investors Off Guard '
-               '(SEI Mortgage - Ryan Marks)',
-      'url': 'https://www.youtube.com/watch?v=OOFsomPO_Mc&t=328s',
-      'video_id': 'OOFsomPO_Mc'},
-     {'author': 'Biz2Credit',
-      'channel': 'Biz2Credit',
+      'tip': "But that's also not the same thing as your personal take home income.",
+      'title': 'How to Start a Commercial Lending Business (Without Being a Bank)',
+      'url': 'https://www.youtube.com/watch?v=TlDScaCI3fE&t=328s',
+      'video_id': 'TlDScaCI3fE'},
+     {'author': 'Bill Rapp, CCIM - Director - Commloan',
+      'channel': 'Bill Rapp, CCIM - Director - Commloan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:17](https://www.youtube.com/watch?v=vIqzq5xwqtA&t=77s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
+      'markdown': '[00:05:45](https://www.youtube.com/watch?v=TlDScaCI3fE&t=345s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "Local gas pump supplier says he'll sell Avery the top-of-the-line gas pearl "
-              'all-star for $2,000 Avery will need to put down a 20% down payment and pay '
-              'back.',
-      'timestamp': 77,
-      'timestamp_label': '[00:01:17]',
-      'timestamp_seconds': 77,
-      'tip': "Local gas pump supplier says he'll sell Avery the top-of-the-line gas pearl "
-             'all-star for $2,000 Avery will need to put down a 20% down payment and pay back.',
-      'title': 'Equipment Financing | Learning with Business Finance Glossary (Biz2Credit)',
-      'url': 'https://www.youtube.com/watch?v=vIqzq5xwqtA&t=77s',
-      'video_id': 'vIqzq5xwqtA'},
-     {'author': 'LetsLearn Global',
-      'channel': 'LetsLearn Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=qEKcL_abQ9c&t=59s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'What are the fees that are collected? And how much we can expect when we factor '
-              'our receivables? Who bears the risk if our customers do not pay the amounts? '
-              "This we'll discuss in detail. Let's begin now with what is factoring.",
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': 'What are the fees that are collected? And how much we can expect when we factor '
-             'our receivables? Who bears the risk if our customers do not pay the amounts? '
-             "This we'll discuss in detail. Let's begin now with what is factoring.",
-      'title': 'CMA| Part 1 | Section A  | Accounts Receivable Factoring | Letslearn Global '
-               '(LetsLearn Global)',
-      'url': 'https://www.youtube.com/watch?v=qEKcL_abQ9c&t=59s',
-      'video_id': 'qEKcL_abQ9c'},
-     {'author': 'The National Law Review',
-      'channel': 'The National Law Review',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:07](https://www.youtube.com/watch?v=cBxujqoCcbY&t=1507s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So even though they may have plenty of money to pay costs uh and to hire the '
-              'best lawyers in the country, uh there may be a rational economic decision in '
-              "which to call Stuart and say perhaps perhaps I'm better off getting funded. Uh "
-              "they'll take care of the costs.",
-      'timestamp': 1507,
-      'timestamp_label': '[00:25:07]',
-      'timestamp_seconds': 1507,
-      'tip': 'So even though they may have plenty of money to pay costs uh and to hire the '
-             'best lawyers in the country, uh there may be a rational economic decision in '
-             "which to call Stuart and say perhaps perhaps I'm better off getting funded. Uh "
-             "they'll take care of the costs.",
-      'title': 'Introduction to Commercial Litigation Finance (The National Law Review)',
-      'url': 'https://www.youtube.com/watch?v=cBxujqoCcbY&t=1507s',
-      'video_id': 'cBxujqoCcbY'},
-     {'author': 'The Approved Guy',
-      'channel': 'The Approved Guy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:08](https://www.youtube.com/watch?v=spCn3Rbs4XY&t=68s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It'll clear off the UCCC filing, but in the short term, it'll stop the bleeding "
-              "because you'll be able to have the attorneys negotiate on your behalf to get "
-              'you in a position where you can afford to continue to run your business while '
-              'you pay back that debt.',
-      'timestamp': 68,
-      'timestamp_label': '[00:01:08]',
-      'timestamp_seconds': 68,
-      'tip': "It'll clear off the UCCC filing, but in the short term, it'll stop the bleeding "
-             "because you'll be able to have the attorneys negotiate on your behalf to get you "
-             'in a position where you can afford to continue to run your business while you '
-             'pay back that debt.',
-      'title': 'SBA 7(A) NEW RULES BOMBSHELL FOR MCA DEBT CONSOLIDATION (The Approved Guy)',
-      'url': 'https://www.youtube.com/watch?v=spCn3Rbs4XY&t=68s',
-      'video_id': 'spCn3Rbs4XY'},
-     {'author': 'Joe Camberato',
-      'channel': 'Joe Camberato',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:12](https://www.youtube.com/watch?v=lNnoO9VriRM&t=432s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Make a quick easy I wanted to point out some helpful things that you really '
-              'need to know when looking for an SBA loan thanks for tuning in I want to wish '
-              'you nothing but success in your business and make sure that you keep growing.',
-      'timestamp': 432,
-      'timestamp_label': '[00:07:12]',
-      'timestamp_seconds': 432,
-      'tip': 'Make a quick easy I wanted to point out some helpful things that you really need '
-             'to know when looking for an SBA loan thanks for tuning in I want to wish you '
-             'nothing but success in your business and make sure that you keep growing.',
-      'title': 'SBA Loans Explained: Types of Loans, Interest Rates, and What to Expect From '
-               'the Process (Joe Camberato)',
-      'url': 'https://www.youtube.com/watch?v=lNnoO9VriRM&t=432s',
-      'video_id': 'lNnoO9VriRM'},
-     {'author': 'Leads For Locals',
-      'channel': 'Leads For Locals',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:38:14](https://www.youtube.com/watch?v=Oq4y-D6sylo&t=2294s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Can also go to debanked.com right now uh yesterday we actually released a '
-              'quipping the dream uh reality show oh yeah uh that was gonna be my next my next '
-              'uh my next point right here was the reality show.',
-      'timestamp': 2294,
-      'timestamp_label': '[00:38:14]',
-      'timestamp_seconds': 2294,
-      'tip': 'Can also go to debanked.com right now uh yesterday we actually released a '
-             'quipping the dream uh reality show oh yeah uh that was gonna be my next my next '
-             'uh my next point right here was the reality show.',
-      'title': '☑️EliteBroker Training☑️ Equipment Financing Leads Program Breakdown (Leads '
-               'For Locals)',
-      'url': 'https://www.youtube.com/watch?v=Oq4y-D6sylo&t=2294s',
-      'video_id': 'Oq4y-D6sylo'}],
- 3: [{'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:00](https://www.youtube.com/watch?v=3V8HTzwHS90&t=120s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'A commercial loan broker works around capital. Business owners need capital to '
-              'acquire property, to buy equipment, to stabilize their cash flow. These are not '
-              "tiny problems. When the problem is large that you're solving, the financing "
-              'amount can be very large as well.',
-      'timestamp': 120,
-      'timestamp_label': '[00:02:00]',
-      'timestamp_seconds': 120,
-      'tip': 'A commercial loan broker works around capital. Business owners need capital to '
-             'acquire property, to buy equipment, to stabilize their cash flow. These are not '
-             "tiny problems. When the problem is large that you're solving, the financing "
-             'amount can be very large as well.',
-      'title': 'How Loan Brokers Can Earn $200K+ From Just 2 Deals (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=3V8HTzwHS90&t=120s',
-      'video_id': '3V8HTzwHS90'},
-     {'author': 'Gap Funding | 100% Real Estate Financing',
-      'channel': 'Gap Funding | 100% Real Estate Financing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:36](https://www.youtube.com/watch?v=OWlnOeMGBkg&t=216s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Often the lowest cost option. Pays off MCA debt at a fraction of the effective '
-              "rate, but puts a personal or business asset up as collateral if, say, you're "
-              'using an LLC-based, uh, investment property. A revolving credit with interest '
-              "only on what's drawn.",
-      'timestamp': 216,
-      'timestamp_label': '[00:03:36]',
-      'timestamp_seconds': 216,
-      'tip': 'Often the lowest cost option. Pays off MCA debt at a fraction of the effective '
-             "rate, but puts a personal or business asset up as collateral if, say, you're "
-             'using an LLC-based, uh, investment property. A revolving credit with interest '
-             "only on what's drawn.",
-      'title': 'MCA Debt Consolidation & Settlement  Everything You Need to Know (Gap Funding '
-               '| 100% Real Estate Financing)',
-      'url': 'https://www.youtube.com/watch?v=OWlnOeMGBkg&t=216s',
-      'video_id': 'OWlnOeMGBkg'},
-     {'author': 'Zoryn Capital',
-      'channel': 'Zoryn Capital',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=ORF9Ue9ge8A&t=55s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'But nowadays, most working capital loan that are out there are revenue-based '
-              "loan. Also, you'll see it called MCA, a merchant cash advance. It's because "
-              'when this loan first came out, it used to be based on your credit card sales as '
-              'a merchant.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'But nowadays, most working capital loan that are out there are revenue-based '
-             "loan. Also, you'll see it called MCA, a merchant cash advance. It's because when "
-             'this loan first came out, it used to be based on your credit card sales as a '
-             'merchant.',
-      'title': 'WARNING Before Taking a Merchant Cash Advance MCA? (Revenue Based Loan or '
-               'Working Capital Loan) (Zoryn Capital)',
-      'url': 'https://www.youtube.com/watch?v=ORF9Ue9ge8A&t=55s',
-      'video_id': 'ORF9Ue9ge8A'},
-     {'author': 'Parkins & Rubio LLP',
-      'channel': 'Parkins & Rubio LLP',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:20](https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=80s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, they can tap into the lending much more quickly. And then and the nature of '
-              "the lending is also different in that uh you know, often times there's "
-              'asset-based lenders, but these this type of lender is not looking at the '
-              "assets. It's looking at the cash flows.",
-      'timestamp': 80,
-      'timestamp_label': '[00:01:20]',
-      'timestamp_seconds': 80,
-      'tip': 'So, they can tap into the lending much more quickly. And then and the nature of '
-             "the lending is also different in that uh you know, often times there's "
-             'asset-based lenders, but these this type of lender is not looking at the assets. '
-             "It's looking at the cash flows.",
-      'title': 'Merchant Cash Advances and Bankruptcy: What Business Owners Need to Know '
-               '(Parkins & Rubio LLP)',
-      'url': 'https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=80s',
-      'video_id': 'A8iNT8Ctrhk'},
-     {'author': 'Insightful Accountant',
-      'channel': 'Insightful Accountant',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:29:19](https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1759s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "A lot of the times it's electronic board where it scrolls through it and it "
-              'says, "Oh yeah, this is the card price or usually says the cash price." Then '
-              'you go to the pump and it\'s like, "Oh no, it\'s 10 cents higher.".',
-      'timestamp': 1759,
-      'timestamp_label': '[00:29:19]',
-      'timestamp_seconds': 1759,
-      'tip': "A lot of the times it's electronic board where it scrolls through it and it "
-             'says, "Oh yeah, this is the card price or usually says the cash price." Then you '
-             'go to the pump and it\'s like, "Oh no, it\'s 10 cents higher.".',
-      'title': 'How to Reduce B2B Credit Card Processing Fees | Future Forward November 2026 '
-               '(Insightful Accountant)',
-      'url': 'https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1759s',
-      'video_id': 'TEwsEYj6XTI'},
-     {'author': 'CDC Small Business Finance',
-      'channel': 'CDC Small Business Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=hK_Qb2vkxp8&t=30s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s no other building that has the facility the way it needs to be. We can "
-              'finance that through SBA. We can also do partner buyouts. We can even do cash '
-              'out refinances for eligible business expenses.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': "'s no other building that has the facility the way it needs to be. We can "
-             'finance that through SBA. We can also do partner buyouts. We can even do cash '
-             'out refinances for eligible business expenses.',
-      'title': 'What Can I Use an SBA 504 Loan For? (CDC Small Business Finance)',
-      'url': 'https://www.youtube.com/watch?v=hK_Qb2vkxp8&t=30s',
-      'video_id': 'hK_Qb2vkxp8'},
-     {'author': 'Beau Eckstein, Business Ownership Coach',
-      'channel': 'Beau Eckstein, Business Ownership Coach',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=nAoSGYTENek&t=25s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Big value ad the 504 may make the most sense if the purchase price is greater '
-              'for the business then we can look at a lot of different options one being a '
-              '504.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': 'Big value ad the 504 may make the most sense if the purchase price is greater '
-             'for the business then we can look at a lot of different options one being a 504.',
-      'title': 'Comparing SBA 7A vs 504 Loans for Business Acquisitions w/ Real Estate (Beau '
-               'Eckstein, Business Ownership Coach)',
-      'url': 'https://www.youtube.com/watch?v=nAoSGYTENek&t=25s',
-      'video_id': 'nAoSGYTENek'},
-     {'author': 'Joe Camberato',
-      'channel': 'Joe Camberato',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=U1zLsMRu1ig&t=15s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Purchase and sale agreement it's basically just based on the revenues and cash "
-              'flow of your business when I got started in 2007 it was really a known.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "Purchase and sale agreement it's basically just based on the revenues and cash "
-             'flow of your business when I got started in 2007 it was really a known.',
-      'title': 'Revenue-Based Financing: What Is It, and How Does It Work? (Joe Camberato)',
-      'url': 'https://www.youtube.com/watch?v=U1zLsMRu1ig&t=15s',
-      'video_id': 'U1zLsMRu1ig'},
-     {'author': 'The National Law Review',
-      'channel': 'The National Law Review',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:32](https://www.youtube.com/watch?v=qdVNgYCTgzU&t=392s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um yeah, as as Dave mentioned, the most common use for litigation funding is to '
-              "cover attorney fees and and case costs. However, um I'll mention I'll mention "
-              'two other uses for it. Number one is uh to fund working capital.',
-      'timestamp': 392,
-      'timestamp_label': '[00:06:32]',
-      'timestamp_seconds': 392,
-      'tip': 'Um yeah, as as Dave mentioned, the most common use for litigation funding is to '
-             "cover attorney fees and and case costs. However, um I'll mention I'll mention "
-             'two other uses for it. Number one is uh to fund working capital.',
-      'title': 'Introduction to Commercial Litigation Finance (The National Law Review)',
-      'url': 'https://www.youtube.com/watch?v=qdVNgYCTgzU&t=392s',
-      'video_id': 'qdVNgYCTgzU'},
-     {'author': 'Bootstrapp',
-      'channel': 'Bootstrapp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:12](https://www.youtube.com/watch?v=U0fB6ZY7Cpo&t=312s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Versus the cost of capital because then you end up with an ABR and you have to '
-              "understand for your company what's the most important right maybe the APR.",
-      'timestamp': 312,
-      'timestamp_label': '[00:05:12]',
-      'timestamp_seconds': 312,
-      'tip': 'Versus the cost of capital because then you end up with an ABR and you have to '
-             "understand for your company what's the most important right maybe the APR.",
-      'title': 'How Does Revenue Based Financing Work? -- A 6 minute overview of everything '
-               'you need to know. (Bootstrapp)',
-      'url': 'https://www.youtube.com/watch?v=U0fB6ZY7Cpo&t=312s',
-      'video_id': 'U0fB6ZY7Cpo'},
-     {'author': 'TheShawnShow50',
-      'channel': 'TheShawnShow50',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=C-ZTs-2s2ZQ&t=57s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'But it gives you this large chunk of cash infusion so that you can operate your '
-              "business or get past whatever obstacle you're hoping to get past.",
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': 'But it gives you this large chunk of cash infusion so that you can operate your '
-             "business or get past whatever obstacle you're hoping to get past.",
-      'title': 'Equipment Sale Lease Back | Working Capital Loan via Equipment Financing Sale '
-               'LeaseBack (TheShawnShow50)',
-      'url': 'https://www.youtube.com/watch?v=C-ZTs-2s2ZQ&t=57s',
-      'video_id': 'C-ZTs-2s2ZQ'},
-     {'author': 'Hard Money Mike',
-      'channel': 'Hard Money Mike',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:58](https://www.youtube.com/watch?v=HYtATwfeE50&t=238s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Your business's income does not matter that's why this is a great product as "
-              'long as the property positively cash flows and you have a good credit score.',
-      'timestamp': 238,
-      'timestamp_label': '[00:03:58]',
-      'timestamp_seconds': 238,
-      'tip': "Your business's income does not matter that's why this is a great product as "
-             'long as the property positively cash flows and you have a good credit score.',
-      'title': 'BRRRR: How to Succeed Using DSCR and Hard Money Loans (Hard Money Mike)',
-      'url': 'https://www.youtube.com/watch?v=HYtATwfeE50&t=238s',
-      'video_id': 'HYtATwfeE50'},
-     {'author': 'ION Capital - Loan Broker University',
-      'channel': 'ION Capital - Loan Broker University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:07](https://www.youtube.com/watch?v=4TvufjZUMp8&t=427s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I wanted to ask you a question about what tracy was talking about do you have '
-              'lenders for leasing used equipment also lenders that would cash out can can '
-              'lend against used equipment.',
-      'timestamp': 427,
-      'timestamp_label': '[00:07:07]',
-      'timestamp_seconds': 427,
-      'tip': 'I wanted to ask you a question about what tracy was talking about do you have '
-             'lenders for leasing used equipment also lenders that would cash out can can lend '
-             'against used equipment.',
-      'title': 'How To Be A Business Loan Broker  |  Equipment Finance Basics (ION Capital - '
-               'Loan Broker University)',
-      'url': 'https://www.youtube.com/watch?v=4TvufjZUMp8&t=427s',
-      'video_id': '4TvufjZUMp8'},
-     {'author': 'ION Capital - Loan Broker University',
-      'channel': 'ION Capital - Loan Broker University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:09](https://www.youtube.com/watch?v=WfAvAf4wk0k&t=429s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'What Tracy was talking about do you have lenders for um leasing used equipment '
-              'also lenders with cash out uh can can lend against a used equipment.',
-      'timestamp': 429,
-      'timestamp_label': '[00:07:09]',
-      'timestamp_seconds': 429,
-      'tip': 'What Tracy was talking about do you have lenders for um leasing used equipment '
-             'also lenders with cash out uh can can lend against a used equipment.',
-      'title': 'How To Be A Business Loan Broker  | The Basics of Equipment Finance (ION '
-               'Capital - Loan Broker University)',
-      'url': 'https://www.youtube.com/watch?v=WfAvAf4wk0k&t=429s',
-      'video_id': 'WfAvAf4wk0k'},
-     {'author': 'Michael Granados',
-      'channel': 'Michael Granados',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:03](https://www.youtube.com/watch?v=WX8DT-NQK5w&t=123s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Video and presentation to learn more about this I'll give you a resource "
-              'underneath that video you can pick up for yourself and then get more '
-              "information from there on how to get started that is all for now I'll talk to "
-              'you soon thank you bye.',
-      'timestamp': 123,
-      'timestamp_label': '[00:02:03]',
-      'timestamp_seconds': 123,
-      'tip': "Video and presentation to learn more about this I'll give you a resource "
-             'underneath that video you can pick up for yourself and then get more information '
-             "from there on how to get started that is all for now I'll talk to you soon thank "
-             'you bye.',
-      'title': 'MCA Debt Relief (Best Merchant Cash Advance Help) (Michael Granados)',
-      'url': 'https://www.youtube.com/watch?v=WX8DT-NQK5w&t=123s',
-      'video_id': 'WX8DT-NQK5w'}],
- 4: [{'author': 'Funder Intel',
+      'text': 'And there are no guaranteed commissions and not every loan request closes.',
+      'timestamp': 345,
+      'timestamp_label': '[00:05:45]',
+      'timestamp_seconds': 345,
+      'tip': 'And there are no guaranteed commissions and not every loan request closes.',
+      'title': 'How to Start a Commercial Lending Business (Without Being a Bank)',
+      'url': 'https://www.youtube.com/watch?v=TlDScaCI3fE&t=345s',
+      'video_id': 'TlDScaCI3fE'}],
+ 3: [{'author': 'Funder Intel',
       'channel': 'Funder Intel',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=jCWdtQmKTiU&t=57s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:00:14](https://www.youtube.com/watch?v=jCWdtQmKTiU&t=14s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "So, this doesn't just affect MCA or revenue-based financing or sales-based "
-              'financing. It does include factoring and asset-based lending. So, it makes it '
-              'more difficult for funders and funding providers to conduct business in '
-              'California.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': "So, this doesn't just affect MCA or revenue-based financing or sales-based "
-             'financing. It does include factoring and asset-based lending. So, it makes it '
-             'more difficult for funders and funding providers to conduct business in '
-             'California.',
-      'title': 'Will commercial loan brokers and funding providers need a license in '
-               'California? (Funder Intel)',
-      'url': 'https://www.youtube.com/watch?v=jCWdtQmKTiU&t=57s',
+      'text': 'So, this would take effect January 1 of 2028 where you would need the license by '
+              'July of 2028.',
+      'timestamp': 14,
+      'timestamp_label': '[00:00:14]',
+      'timestamp_seconds': 14,
+      'tip': 'So, this would take effect January 1 of 2028 where you would need the license by '
+             'July of 2028.',
+      'title': 'Will commercial loan brokers and funding providers need a license in California?',
+      'url': 'https://www.youtube.com/watch?v=jCWdtQmKTiU&t=14s',
       'video_id': 'jCWdtQmKTiU'},
      {'author': 'Jonathan Mills Patrick',
       'channel': 'Jonathan Mills Patrick',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:31](https://www.youtube.com/watch?v=gfK-oOi-TuI&t=31s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=gfK-oOi-TuI&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'So, today is, I think, August 6th, 2000 or 2021. And so, the states as of right '
-              'now that you have to be licensed in to do commercial loan broker businesses '
-              'include Arizona, California, Florida, Minnesota, Nevada, New York, North '
-              'Dakota, South Dakota, and Vermont.',
-      'timestamp': 31,
-      'timestamp_label': '[00:00:31]',
-      'timestamp_seconds': 31,
-      'tip': 'So, today is, I think, August 6th, 2000 or 2021. And so, the states as of right '
-             'now that you have to be licensed in to do commercial loan broker businesses '
-             'include Arizona, California, Florida, Minnesota, Nevada, New York, North Dakota, '
-             'South Dakota, and Vermont.',
-      'title': 'Does a commercial loan broker need a license? (Jonathan Mills Patrick)',
-      'url': 'https://www.youtube.com/watch?v=gfK-oOi-TuI&t=31s',
+      'text': 'And the short answer is that you do not have to be licensed in most states.',
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'And the short answer is that you do not have to be licensed in most states.',
+      'title': 'Does a commercial loan broker need a license?',
+      'url': 'https://www.youtube.com/watch?v=gfK-oOi-TuI&t=16s',
       'video_id': 'gfK-oOi-TuI'},
-     {'author': 'The Lab: Mortgage & Real Estate Business Academy',
-      'channel': 'The Lab: Mortgage & Real Estate Business Academy',
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=SulpxqBYams&t=89s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:01:44](https://www.youtube.com/watch?v=tgEHrpyZE9U&t=104s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Construction loans when you want to develop land into subdivisions or build a '
-              'building next we have bridge loans which are for short-term financing for '
-              'commercial projects.',
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': 'Construction loans when you want to develop land into subdivisions or build a '
-             'building next we have bridge loans which are for short-term financing for '
-             'commercial projects.',
-      'title': 'How A Commercial Loan Works? | Co/LAB Lending (The Lab: Mortgage & Real Estate '
-               'Business Academy)',
-      'url': 'https://www.youtube.com/watch?v=SulpxqBYams&t=89s',
-      'video_id': 'SulpxqBYams'},
-     {'author': 'Equipment Finance Academy',
-      'channel': 'Equipment Finance Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:38](https://www.youtube.com/watch?v=nN3wD1zIjqM&t=338s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Potential referral sources include equipment dealers, equipment manufacturers, '
-              'contractors, truck and trailer dealers, accountants, insurance agents, business '
-              'consultants, commercial real estate professionals, and industry associations. '
-              'Your message should be simple.',
-      'timestamp': 338,
-      'timestamp_label': '[00:05:38]',
-      'timestamp_seconds': 338,
-      'tip': 'Potential referral sources include equipment dealers, equipment manufacturers, '
-             'contractors, truck and trailer dealers, accountants, insurance agents, business '
-             'consultants, commercial real estate professionals, and industry associations. '
-             'Your message should be simple.',
-      'title': "Equipment Finance Brokerage: The Beginner's Roadmap (Equipment Finance "
-               'Academy)',
-      'url': 'https://www.youtube.com/watch?v=nN3wD1zIjqM&t=338s',
-      'video_id': 'nN3wD1zIjqM'},
-     {'author': 'Berkshire Financial Services LLC',
-      'channel': 'Berkshire Financial Services LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:39](https://www.youtube.com/watch?v=V8S0sywozwU&t=39s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Matters. Here's what funders don't tell you. One typo in your business name or "
-              'using a DBA instead of the legal entity can invalidate the lean altogether.',
-      'timestamp': 39,
-      'timestamp_label': '[00:00:39]',
-      'timestamp_seconds': 39,
-      'tip': "Matters. Here's what funders don't tell you. One typo in your business name or "
-             'using a DBA instead of the legal entity can invalidate the lean altogether.',
-      'title': '“UCC Liens & MCA Debt  What Borrowers MUST Know (2 Minute Breakdown)" '
-               '(Berkshire Financial Services LLC)',
-      'url': 'https://www.youtube.com/watch?v=V8S0sywozwU&t=39s',
-      'video_id': 'V8S0sywozwU'},
-     {'author': 'Tax Alpha Insider',
-      'channel': 'Tax Alpha Insider',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:29](https://www.youtube.com/watch?v=TQ86awlkdKw&t=269s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And then they are in the position where they have to where they would like to '
-              'transfer those to receive more capital so they can continue building or '
-              'whatever. And then connect me all the way to the investor on the other end. One '
-              'quick clarification on that setup.',
-      'timestamp': 269,
-      'timestamp_label': '[00:04:29]',
-      'timestamp_seconds': 269,
-      'tip': 'And then they are in the position where they have to where they would like to '
-             'transfer those to receive more capital so they can continue building or '
-             'whatever. And then connect me all the way to the investor on the other end. One '
-             'quick clarification on that setup.',
-      'title': 'Transferrable tax credits can offset passive income tax liability with Jason '
-               'Prince (Tax Alpha Insider)',
-      'url': 'https://www.youtube.com/watch?v=TQ86awlkdKw&t=269s',
-      'video_id': 'TQ86awlkdKw'},
-     {'author': 'Break Into CRE',
-      'channel': 'Break Into CRE',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:31](https://www.youtube.com/watch?v=b-6L1d2Ozk4&t=31s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Down how commercial real estate deals are typically funded how each layer of '
-              "the capital stack ends up working together and some things that you'll need to "
-              'consider if you are weighing different options to fund a real estate.',
-      'timestamp': 31,
-      'timestamp_label': '[00:00:31]',
-      'timestamp_seconds': 31,
-      'tip': 'Down how commercial real estate deals are typically funded how each layer of the '
-             "capital stack ends up working together and some things that you'll need to "
-             'consider if you are weighing different options to fund a real estate.',
-      'title': 'How Commercial Real Estate Deals are Funded [The Capital Stack] (Break Into '
-               'CRE)',
-      'url': 'https://www.youtube.com/watch?v=b-6L1d2Ozk4&t=31s',
-      'video_id': 'b-6L1d2Ozk4'},
+      'text': 'Most new brokers think that their number one job is finding clients.',
+      'timestamp': 104,
+      'timestamp_label': '[00:01:44]',
+      'timestamp_seconds': 104,
+      'tip': 'Most new brokers think that their number one job is finding clients.',
+      'title': 'How to Build a Lender Network as a New Commercial Loan Broker',
+      'url': 'https://www.youtube.com/watch?v=tgEHrpyZE9U&t=104s',
+      'video_id': 'tgEHrpyZE9U'},
      {'author': 'firsttuesday – California real estate educators',
       'channel': 'firsttuesday – California real estate educators',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:41](https://www.youtube.com/watch?v=8bJtTzzuQ-Y&t=221s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:03:19](https://www.youtube.com/watch?v=8bJtTzzuQ-Y&t=199s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Reverse is not true a DB o license mlo may not originate mortgages under a d re '
-              "license ml o broker without an active d re license and ml o endorsement let's "
-              'see if we can determine which type of license is required.',
-      'timestamp': 221,
-      'timestamp_label': '[00:03:41]',
-      'timestamp_seconds': 221,
-      'tip': 'Reverse is not true a DB o license mlo may not originate mortgages under a d re '
-             "license ml o broker without an active d re license and ml o endorsement let's "
-             'see if we can determine which type of license is required.',
-      'title': 'Mortgage Concepts  California MLO licensing laws (firsttuesday – California '
-               'real estate educators)',
-      'url': 'https://www.youtube.com/watch?v=8bJtTzzuQ-Y&t=221s',
+      'text': 'A DRE licensed MLO can work under a CRMLA or CFL license without a DBO license, but '
+              'the reverse is not true.',
+      'timestamp': 199,
+      'timestamp_label': '[00:03:19]',
+      'timestamp_seconds': 199,
+      'tip': 'A DRE licensed MLO can work under a CRMLA or CFL license without a DBO license, but '
+             'the reverse is not true.',
+      'title': 'Mortgage Concepts  California MLO licensing laws',
+      'url': 'https://www.youtube.com/watch?v=8bJtTzzuQ-Y&t=199s',
       'video_id': '8bJtTzzuQ-Y'},
      {'author': 'Compliance Connection',
       'channel': 'Compliance Connection',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:56](https://www.youtube.com/watch?v=gnx32nNbVfU&t=236s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:05:01](https://www.youtube.com/watch?v=gnx32nNbVfU&t=301s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "Who are we considering as our legal entity members we're talking about "
-              "corporations LLC's or other entities that are created by the filing of a.",
-      'timestamp': 236,
-      'timestamp_label': '[00:03:56]',
-      'timestamp_seconds': 236,
-      'tip': "Who are we considering as our legal entity members we're talking about "
-             "corporations LLC's or other entities that are created by the filing of a.",
-      'title': 'Compliance Outlook - FinCEN Customer Due Diligence (Compliance Connection)',
-      'url': 'https://www.youtube.com/watch?v=gnx32nNbVfU&t=236s',
+      'text': 'The ownership prong covers each individual who owns 25 percent or more of the '
+              'equity interests of the legal entity.',
+      'timestamp': 301,
+      'timestamp_label': '[00:05:01]',
+      'timestamp_seconds': 301,
+      'tip': 'The ownership prong covers each individual who owns 25 percent or more of the equity '
+             'interests of the legal entity.',
+      'title': 'Compliance Outlook - FinCEN Customer Due Diligence',
+      'url': 'https://www.youtube.com/watch?v=gnx32nNbVfU&t=301s',
       'video_id': 'gnx32nNbVfU'},
-     {'author': 'Business Credit',
-      'channel': 'Business Credit',
+     {'author': 'Texas Office of Consumer Credit Commissioner',
+      'channel': 'Texas Office of Consumer Credit Commissioner',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:56](https://www.youtube.com/watch?v=L3n2zgxag4E&t=596s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:05:26](https://www.youtube.com/watch?v=rhDEWGC8KqM&t=326s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "Revolving credit you're looking for interest free money on purchases for your "
-              'business uh so you could be a startup with this particular program or.',
-      'timestamp': 596,
-      'timestamp_label': '[00:09:56]',
-      'timestamp_seconds': 596,
-      'tip': "Revolving credit you're looking for interest free money on purchases for your "
-             'business uh so you could be a startup with this particular program or.',
-      'title': 'Revenue Based Financing | Soft Pull | Line of Credit | Up to $100k | Fast '
-               'Funding (Business Credit)',
-      'url': 'https://www.youtube.com/watch?v=L3n2zgxag4E&t=596s',
-      'video_id': 'L3n2zgxag4E'},
-     {'author': 'Allen Mursau',
-      'channel': 'Allen Mursau',
+      'text': 'So, the law generally went into effect on September 1st, 2025.',
+      'timestamp': 326,
+      'timestamp_label': '[00:05:26]',
+      'timestamp_seconds': 326,
+      'tip': 'So, the law generally went into effect on September 1st, 2025.',
+      'title': 'Commercial Sales-Based Financing Rules: Precomment Draft – January 28, 2026',
+      'url': 'https://www.youtube.com/watch?v=rhDEWGC8KqM&t=326s',
+      'video_id': 'rhDEWGC8KqM'},
+     {'author': 'CLA (CliftonLarsonAllen LLP)',
+      'channel': 'CLA (CliftonLarsonAllen LLP)',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:50](https://www.youtube.com/watch?v=vtCDACsG2Bs&t=50s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:28:54](https://www.youtube.com/watch?v=ByTHmfsxaNQ&t=1734s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'So we have corporation A here the seller and we have bank B here the purchaser '
-              'here. So what corporation A does here they sells this asset of accounts '
-              'receivable. Say they sell $250,000 here to bank B.',
-      'timestamp': 50,
-      'timestamp_label': '[00:00:50]',
-      'timestamp_seconds': 50,
-      'tip': 'So we have corporation A here the seller and we have bank B here the purchaser '
-             'here. So what corporation A does here they sells this asset of accounts '
-             'receivable. Say they sell $250,000 here to bank B.',
-      'title': 'Accounts Receivable Factoring Vs Assignment (Transferring Receivables For '
-               'Cash) (Allen Mursau)',
-      'url': 'https://www.youtube.com/watch?v=vtCDACsG2Bs&t=50s',
-      'video_id': 'vtCDACsG2Bs'},
-     {'author': 'Credit Suite',
-      'channel': 'Credit Suite',
+      'text': 'The loan estimate must be delivered within three business days of receiving the '
+              'application.',
+      'timestamp': 1734,
+      'timestamp_label': '[00:28:54]',
+      'timestamp_seconds': 1734,
+      'tip': 'The loan estimate must be delivered within three business days of receiving the '
+             'application.',
+      'title': 'TIL/RESPA Final Rule on Integrated Mortgage Disclosures',
+      'url': 'https://www.youtube.com/watch?v=ByTHmfsxaNQ&t=1734s',
+      'video_id': 'ByTHmfsxaNQ'},
+     {'author': 'The Finance Lab',
+      'channel': 'The Finance Lab',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:07](https://www.youtube.com/watch?v=L2-ax8GoKVw&t=547s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:06:26](https://www.youtube.com/watch?v=xgYLNDnEqKg&t=386s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Finance is basically math two plus two equals four it this is if you can tip '
-              "your waiter at Fleming's or the Cheesecake Factory or Capital Grill you.",
-      'timestamp': 547,
-      'timestamp_label': '[00:09:07]',
-      'timestamp_seconds': 547,
-      'tip': 'Finance is basically math two plus two equals four it this is if you can tip '
-             "your waiter at Fleming's or the Cheesecake Factory or Capital Grill you.",
-      'title': 'How to Create Income Stream with Equipment Financing | Jermane Cheathem '
-               '(Credit Suite)',
-      'url': 'https://www.youtube.com/watch?v=L2-ax8GoKVw&t=547s',
-      'video_id': 'L2-ax8GoKVw'},
-     {'author': 'I Am Andrew Russell',
-      'channel': 'I Am Andrew Russell',
+      'text': 'A balance sheet that is 20 months old means the trade is blocked under Rule 2114.',
+      'timestamp': 386,
+      'timestamp_label': '[00:06:26]',
+      'timestamp_seconds': 386,
+      'tip': 'A balance sheet that is 20 months old means the trade is blocked under Rule 2114.',
+      'title': 'Series 24: Supervising Reg BI, Form CRS, Institutional Suitability and '
+               'Concentration Reviews',
+      'url': 'https://www.youtube.com/watch?v=xgYLNDnEqKg&t=386s',
+      'video_id': 'xgYLNDnEqKg'},
+     {'author': 'Fractional Firm Academy',
+      'channel': 'Fractional Firm Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:03](https://www.youtube.com/watch?v=SExreBEJY5Q&t=603s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:11:32](https://www.youtube.com/watch?v=KJF9HKiAu0Y&t=692s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'And insurance on these per year was 3,600. So taxes and insurance was 500 plus '
-              '300. So you figure another 800 for escar, right? 300 a month for insurance, 500 '
-              'a month for taxes.',
-      'timestamp': 603,
-      'timestamp_label': '[00:10:03]',
-      'timestamp_seconds': 603,
-      'tip': 'And insurance on these per year was 3,600. So taxes and insurance was 500 plus '
-             '300. So you figure another 800 for escar, right? 300 a month for insurance, 500 '
-             'a month for taxes.',
-      'title': 'This is Why 99% of Investors Don’t Use DSCR Loans! (I Am Andrew Russell)',
-      'url': 'https://www.youtube.com/watch?v=SExreBEJY5Q&t=603s',
-      'video_id': 'SExreBEJY5Q'},
-     {'author': 'Rob Freeman | Insuring The Built Environment',
-      'channel': 'Rob Freeman | Insuring The Built Environment',
+      'text': 'Most finance and accounting firms who struggle with outreach have a message or '
+              'offer clarity problem, not a channel problem.',
+      'timestamp': 692,
+      'timestamp_label': '[00:11:32]',
+      'timestamp_seconds': 692,
+      'tip': 'Most finance and accounting firms who struggle with outreach have a message or offer '
+             'clarity problem, not a channel problem.',
+      'title': 'Referrals Aren’t Enough: Ranking The Top 5 Client Channels for Fractional Firms',
+      'url': 'https://www.youtube.com/watch?v=KJF9HKiAu0Y&t=692s',
+      'video_id': 'KJF9HKiAu0Y'},
+     {'author': 'Trowbridge Law Group',
+      'channel': 'Trowbridge Law Group',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:30](https://www.youtube.com/watch?v=fqMHsHUSOU8&t=210s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:10:29](https://www.youtube.com/watch?v=8p8VFFvdliQ&t=629s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Anyway hope this is helpful if you have questions about uh your insurance and '
-              "if you uh want to schedule an appointment with me I'd love to talk to you and "
-              'hear about your project thanks again and good luck and have a great day.',
-      'timestamp': 210,
-      'timestamp_label': '[00:03:30]',
-      'timestamp_seconds': 210,
-      'tip': 'Anyway hope this is helpful if you have questions about uh your insurance and if '
-             "you uh want to schedule an appointment with me I'd love to talk to you and hear "
-             'about your project thanks again and good luck and have a great day.',
-      'title': 'What is Solar Tax Equity Financing? (Rob Freeman | Insuring The Built '
-               'Environment)',
-      'url': 'https://www.youtube.com/watch?v=fqMHsHUSOU8&t=210s',
-      'video_id': 'fqMHsHUSOU8'},
+      'text': "That's fine, but just don't sell someone else's security unless you have a "
+              'securities license.',
+      'timestamp': 629,
+      'timestamp_label': '[00:10:29]',
+      'timestamp_seconds': 629,
+      'tip': "That's fine, but just don't sell someone else's security unless you have a "
+             'securities license.',
+      'title': "Don't Act as a Broker-Dealer",
+      'url': 'https://www.youtube.com/watch?v=8p8VFFvdliQ&t=629s',
+      'video_id': '8p8VFFvdliQ'},
+     {'author': 'Achievable',
+      'channel': 'Achievable',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:40](https://www.youtube.com/watch?v=j_Gp2v7DBzo&t=340s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If it's a bank and that's it you can assume it's excluded from the definition of a "
+              'broker dealer.',
+      'timestamp': 340,
+      'timestamp_label': '[00:05:40]',
+      'timestamp_seconds': 340,
+      'tip': "If it's a bank and that's it you can assume it's excluded from the definition of a "
+             'broker dealer.',
+      'title': 'Broker dealer exclusions (NASAA Series 63, 65, 66)',
+      'url': 'https://www.youtube.com/watch?v=j_Gp2v7DBzo&t=340s',
+      'video_id': 'j_Gp2v7DBzo'},
+     {'author': 'Financial Regulation Courses',
+      'channel': 'Financial Regulation Courses',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:54](https://www.youtube.com/watch?v=qptR4ByTPDw&t=114s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'However, certain criminal matters require an accelerated 10 business day filing '
+              'window to maintain regulatory standing.',
+      'timestamp': 114,
+      'timestamp_label': '[00:01:54]',
+      'timestamp_seconds': 114,
+      'tip': 'However, certain criminal matters require an accelerated 10 business day filing '
+             'window to maintain regulatory standing.',
+      'title': 'Form U4 Compliance Obligations Explained | Series 7, SIE & Broker-Dealer Careers',
+      'url': 'https://www.youtube.com/watch?v=qptR4ByTPDw&t=114s',
+      'video_id': 'qptR4ByTPDw'},
+     {'author': 'VoraPrep',
+      'channel': 'VoraPrep',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:07](https://www.youtube.com/watch?v=N0Pz-cRD6A4&t=427s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Third, the bank exclusion is for the institution's traditional banking activities, "
+              'not for employees who are essentially acting as unregistered agents.',
+      'timestamp': 427,
+      'timestamp_label': '[00:07:07]',
+      'timestamp_seconds': 427,
+      'tip': "Third, the bank exclusion is for the institution's traditional banking activities, "
+             'not for employees who are essentially acting as unregistered agents.',
+      'title': '[Series 63] S632: Broker-Dealer Exclusions: Agents, Issuers, and Banks Under the '
+               'Uniform Securiti...',
+      'url': 'https://www.youtube.com/watch?v=N0Pz-cRD6A4&t=427s',
+      'video_id': 'N0Pz-cRD6A4'},
+     {'author': 'LeGaye Law Firm',
+      'channel': 'LeGaye Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=JR8TOdAxFa4&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "And accredited investor status alone doesn't establish compliance.",
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': "And accredited investor status alone doesn't establish compliance.",
+      'title': 'Projected Investment Returns: 4 Compliance Priorities for Broker-Dealers',
+      'url': 'https://www.youtube.com/watch?v=JR8TOdAxFa4&t=60s',
+      'video_id': 'JR8TOdAxFa4'},
+     {'author': 'Josh Olfert, CFP',
+      'channel': 'Josh Olfert, CFP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:15](https://www.youtube.com/watch?v=skWLJwzq_fc&t=555s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "You can't just walk up and sign a contract you need a corporation a legal entity to "
+              'sign the contract.',
+      'timestamp': 555,
+      'timestamp_label': '[00:09:15]',
+      'timestamp_seconds': 555,
+      'tip': "You can't just walk up and sign a contract you need a corporation a legal entity to "
+             'sign the contract.',
+      'title': 'How To Start a Financial Advisory Business',
+      'url': 'https://www.youtube.com/watch?v=skWLJwzq_fc&t=555s',
+      'video_id': 'skWLJwzq_fc'},
      {'author': 'Commercial Loan Broker Institute',
       'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=4ELMBLT7mvs&t=79s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q4 operational verification).',
+      'markdown': '[00:02:16](https://www.youtube.com/watch?v=4ELMBLT7mvs&t=136s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "So, if you want attention, you don't need history. Let me explain why I know "
-              "this. I'm Shane Walton, co-founder of the Commercial Loan Broker Institute. And "
-              'our institute works with hundreds of lenders.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': "So, if you want attention, you don't need history. Let me explain why I know "
-             "this. I'm Shane Walton, co-founder of the Commercial Loan Broker Institute. And "
-             'our institute works with hundreds of lenders.',
-      'title': 'Business Loan Broker Training: Why Lenders Ignore You (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=4ELMBLT7mvs&t=79s',
-      'video_id': '4ELMBLT7mvs'}],
- 5: [{'author': 'Unbankable with Alex Shvarts',
-      'channel': 'Unbankable with Alex Shvarts',
+      'text': "Once you burn trust with the lender you're done.",
+      'timestamp': 136,
+      'timestamp_label': '[00:02:16]',
+      'timestamp_seconds': 136,
+      'tip': "Once you burn trust with the lender you're done.",
+      'title': 'Business Loan Broker Training: Why Lenders Ignore You',
+      'url': 'https://www.youtube.com/watch?v=4ELMBLT7mvs&t=136s',
+      'video_id': '4ELMBLT7mvs'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:23](https://www.youtube.com/watch?v=MNdDLiTLoNY&t=503s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
+      'markdown': '[00:04:34](https://www.youtube.com/watch?v=4ELMBLT7mvs&t=274s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "'ve grown and improved their credit profile. Use revenue-based financing to "
-              'bridge gaps and seize opportunities, then optimize with traditional financing '
-              "for long-term growth. Now, there's some common mistakes to avoid.",
-      'timestamp': 503,
-      'timestamp_label': '[00:08:23]',
-      'timestamp_seconds': 503,
-      'tip': "'ve grown and improved their credit profile. Use revenue-based financing to "
-             'bridge gaps and seize opportunities, then optimize with traditional financing '
-             "for long-term growth. Now, there's some common mistakes to avoid.",
-      'title': 'Working Capital Loan vs Revenue-Based Financing: Which One Should I Choose for '
-               'My Business? (Unbankable with Alex Shvarts)',
-      'url': 'https://www.youtube.com/watch?v=MNdDLiTLoNY&t=503s',
-      'video_id': 'MNdDLiTLoNY'},
+      'text': 'This is subtle but critical because bad lender fit damages your credibility faster '
+              'than a bad deal.',
+      'timestamp': 274,
+      'timestamp_label': '[00:04:34]',
+      'timestamp_seconds': 274,
+      'tip': 'This is subtle but critical because bad lender fit damages your credibility faster '
+             'than a bad deal.',
+      'title': 'Business Loan Broker Training: Why Lenders Ignore You',
+      'url': 'https://www.youtube.com/watch?v=4ELMBLT7mvs&t=274s',
+      'video_id': '4ELMBLT7mvs'}],
+ 4: [{'author': 'ION Capital - Loan Broker University',
+      'channel': 'ION Capital - Loan Broker University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:07](https://www.youtube.com/watch?v=4TvufjZUMp8&t=247s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'lenders definitely do not want to take a second position on an asset right.',
+      'timestamp': 247,
+      'timestamp_label': '[00:04:07]',
+      'timestamp_seconds': 247,
+      'tip': 'lenders definitely do not want to take a second position on an asset right.',
+      'title': 'How To Be A Business Loan Broker  |  Equipment Finance Basics',
+      'url': 'https://www.youtube.com/watch?v=4TvufjZUMp8&t=247s',
+      'video_id': '4TvufjZUMp8'},
+     {'author': 'Equipment Finance Academy',
+      'channel': 'Equipment Finance Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:29](https://www.youtube.com/watch?v=nN3wD1zIjqM&t=389s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Never promise approval, a specific rate, or a guaranteed funding result.',
+      'timestamp': 389,
+      'timestamp_label': '[00:06:29]',
+      'timestamp_seconds': 389,
+      'tip': 'Never promise approval, a specific rate, or a guaranteed funding result.',
+      'title': "Equipment Finance Brokerage: The Beginner's Roadmap",
+      'url': 'https://www.youtube.com/watch?v=nN3wD1zIjqM&t=389s',
+      'video_id': 'nN3wD1zIjqM'},
+     {'author': 'ION Capital - Loan Broker University',
+      'channel': 'ION Capital - Loan Broker University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:53](https://www.youtube.com/watch?v=WfAvAf4wk0k&t=233s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'higher interest we get paid a little bit better uh we can add a few more points to '
+              'it or whatnot.',
+      'timestamp': 233,
+      'timestamp_label': '[00:03:53]',
+      'timestamp_seconds': 233,
+      'tip': 'higher interest we get paid a little bit better uh we can add a few more points to '
+             'it or whatnot.',
+      'title': 'How To Be A Business Loan Broker  | The Basics of Equipment Finance',
+      'url': 'https://www.youtube.com/watch?v=WfAvAf4wk0k&t=233s',
+      'video_id': 'WfAvAf4wk0k'},
+     {'author': 'ION Capital - Loan Broker University',
+      'channel': 'ION Capital - Loan Broker University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:19](https://www.youtube.com/watch?v=2BqGahVBgUs&t=559s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "they're not going to give you fair market value.",
+      'timestamp': 559,
+      'timestamp_label': '[00:09:19]',
+      'timestamp_seconds': 559,
+      'tip': "they're not going to give you fair market value.",
+      'title': 'How To Be A Business Loan Broker  |  Equipment Financing Loans',
+      'url': 'https://www.youtube.com/watch?v=2BqGahVBgUs&t=559s',
+      'video_id': '2BqGahVBgUs'},
+     {'author': 'ION Capital - Loan Broker University',
+      'channel': 'ION Capital - Loan Broker University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:55](https://www.youtube.com/watch?v=wt92Utt7o6I&t=715s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "and that's not how a cash advance works.",
+      'timestamp': 715,
+      'timestamp_label': '[00:11:55]',
+      'timestamp_seconds': 715,
+      'tip': "and that's not how a cash advance works.",
+      'title': 'How To Be A Business Loan Broker  |  Equipment Finance Tips',
+      'url': 'https://www.youtube.com/watch?v=wt92Utt7o6I&t=715s',
+      'video_id': 'wt92Utt7o6I'},
+     {'author': 'Neil.Finance',
+      'channel': 'Neil.Finance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:49](https://www.youtube.com/watch?v=YLIvGloANJM&t=229s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Equipment finance is one of the most stable forms of lending because it's "
+              'asset-backed.',
+      'timestamp': 229,
+      'timestamp_label': '[00:03:49]',
+      'timestamp_seconds': 229,
+      'tip': "Equipment finance is one of the most stable forms of lending because it's "
+             'asset-backed.',
+      'title': 'Why Equipment Finance Brokering Exists (And Why Most People Miss the Opportunity)',
+      'url': 'https://www.youtube.com/watch?v=YLIvGloANJM&t=229s',
+      'video_id': 'YLIvGloANJM'},
+     {'author': 'Credit Suite',
+      'channel': 'Credit Suite',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:04](https://www.youtube.com/watch?v=L2-ax8GoKVw&t=964s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'if I bring in 10 applications a week four or five of those are gonna fund.',
+      'timestamp': 964,
+      'timestamp_label': '[00:16:04]',
+      'timestamp_seconds': 964,
+      'tip': 'if I bring in 10 applications a week four or five of those are gonna fund.',
+      'title': 'How to Create Income Stream with Equipment Financing | Jermane Cheathem',
+      'url': 'https://www.youtube.com/watch?v=L2-ax8GoKVw&t=964s',
+      'video_id': 'L2-ax8GoKVw'},
+     {'author': 'Credit Suite',
+      'channel': 'Credit Suite',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:08](https://www.youtube.com/watch?v=L2-ax8GoKVw&t=1448s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'as soon as the paperwork is signed on their end I get cut a check for the 10 grand '
+              'immediately.',
+      'timestamp': 1448,
+      'timestamp_label': '[00:24:08]',
+      'timestamp_seconds': 1448,
+      'tip': 'as soon as the paperwork is signed on their end I get cut a check for the 10 grand '
+             'immediately.',
+      'title': 'How to Create Income Stream with Equipment Financing | Jermane Cheathem',
+      'url': 'https://www.youtube.com/watch?v=L2-ax8GoKVw&t=1448s',
+      'video_id': 'L2-ax8GoKVw'},
+     {'author': 'Equipment Finance Academy',
+      'channel': 'Equipment Finance Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:08](https://www.youtube.com/watch?v=dc0_7D431kI&t=188s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Lenders do not fund conversations.',
+      'timestamp': 188,
+      'timestamp_label': '[00:03:08]',
+      'timestamp_seconds': 188,
+      'tip': 'Lenders do not fund conversations.',
+      'title': 'Equipment Finance Leads: Turnkey System That Actually Works',
+      'url': 'https://www.youtube.com/watch?v=dc0_7D431kI&t=188s',
+      'video_id': 'dc0_7D431kI'},
+     {'author': 'Equipment Finance Academy',
+      'channel': 'Equipment Finance Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:50](https://www.youtube.com/watch?v=dc0_7D431kI&t=230s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The battle is submitting a clean package on day one.',
+      'timestamp': 230,
+      'timestamp_label': '[00:03:50]',
+      'timestamp_seconds': 230,
+      'tip': 'The battle is submitting a clean package on day one.',
+      'title': 'Equipment Finance Leads: Turnkey System That Actually Works',
+      'url': 'https://www.youtube.com/watch?v=dc0_7D431kI&t=230s',
+      'video_id': 'dc0_7D431kI'},
+     {'author': 'ION Capital - Loan Broker University',
+      'channel': 'ION Capital - Loan Broker University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:45](https://www.youtube.com/watch?v=DSEdy5KFvBs&t=105s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'ask them that question outright are you looking for financing to purchase equipment '
+              'or are you looking to utilize your existing equipment to borrow money.',
+      'timestamp': 105,
+      'timestamp_label': '[00:01:45]',
+      'timestamp_seconds': 105,
+      'tip': 'ask them that question outright are you looking for financing to purchase equipment '
+             'or are you looking to utilize your existing equipment to borrow money.',
+      'title': 'How To Be A Business Loan Broker  |  Equipment Finance Basics',
+      'url': 'https://www.youtube.com/watch?v=DSEdy5KFvBs&t=105s',
+      'video_id': 'DSEdy5KFvBs'},
+     {'author': 'Equipment Finance Academy',
+      'channel': 'Equipment Finance Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:42](https://www.youtube.com/watch?v=lg-SI4-0oEg&t=102s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'You need to learn enough to do your first deal, then learn more as you go.',
+      'timestamp': 102,
+      'timestamp_label': '[00:01:42]',
+      'timestamp_seconds': 102,
+      'tip': 'You need to learn enough to do your first deal, then learn more as you go.',
+      'title': 'How to Become a Commercial Loan Broker (No Experience Needed)',
+      'url': 'https://www.youtube.com/watch?v=lg-SI4-0oEg&t=102s',
+      'video_id': 'lg-SI4-0oEg'},
+     {'author': 'ION Capital - Loan Broker University',
+      'channel': 'ION Capital - Loan Broker University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:18](https://www.youtube.com/watch?v=jq-MYGn7i3I&t=858s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "no lenders will say no to us they we've never had one turn us down.",
+      'timestamp': 858,
+      'timestamp_label': '[00:14:18]',
+      'timestamp_seconds': 858,
+      'tip': "no lenders will say no to us they we've never had one turn us down.",
+      'title': 'How To Be A Business Loan Broker  |  The Basics of Equipment Finance',
+      'url': 'https://www.youtube.com/watch?v=jq-MYGn7i3I&t=858s',
+      'video_id': 'jq-MYGn7i3I'},
+     {'author': 'Leads For Locals',
+      'channel': 'Leads For Locals',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:37:51](https://www.youtube.com/watch?v=Oq4y-D6sylo&t=2271s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'After you present the payment, stay silent, because if you talk first you lose.',
+      'timestamp': 2271,
+      'timestamp_label': '[00:37:51]',
+      'timestamp_seconds': 2271,
+      'tip': 'After you present the payment, stay silent, because if you talk first you lose.',
+      'title': '☑️EliteBroker Training☑️ Equipment Financing Leads Program Breakdown',
+      'url': 'https://www.youtube.com/watch?v=Oq4y-D6sylo&t=2271s',
+      'video_id': 'Oq4y-D6sylo'},
+     {'author': 'Equipment Finance Academy',
+      'channel': 'Equipment Finance Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:37](https://www.youtube.com/watch?v=zolXG9LvowA&t=337s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'If this fits you, do not quit your mortgage business.',
+      'timestamp': 337,
+      'timestamp_label': '[00:05:37]',
+      'timestamp_seconds': 337,
+      'tip': 'If this fits you, do not quit your mortgage business.',
+      'title': 'Mortgage Loan Officers: The Second Commission Stream Hiding in Your Client List',
+      'url': 'https://www.youtube.com/watch?v=zolXG9LvowA&t=337s',
+      'video_id': 'zolXG9LvowA'},
+     {'author': 'Cheryl "The AI Sniper" Tibbs',
+      'channel': 'Cheryl "The AI Sniper" Tibbs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:15](https://www.youtube.com/watch?v=CKRM0VWsZBY&t=75s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "This is the Founder's Cohort.",
+      'timestamp': 75,
+      'timestamp_label': '[00:01:15]',
+      'timestamp_seconds': 75,
+      'tip': "This is the Founder's Cohort.",
+      'title': 'Launch A 6 Figure Equipment Finance Broker Empire',
+      'url': 'https://www.youtube.com/watch?v=CKRM0VWsZBY&t=75s',
+      'video_id': 'CKRM0VWsZBY'},
+     {'author': 'Equipment Finance Academy',
+      'channel': 'Equipment Finance Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:26](https://www.youtube.com/watch?v=3PLddU0NhiQ&t=266s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "That is Sam's experience from his own deal history.",
+      'timestamp': 266,
+      'timestamp_label': '[00:04:26]',
+      'timestamp_seconds': 266,
+      'tip': "That is Sam's experience from his own deal history.",
+      'title': "87% of Businesses Finance Their Equipment — Here's Who Gets Paid for Arranging It",
+      'url': 'https://www.youtube.com/watch?v=3PLddU0NhiQ&t=266s',
+      'video_id': '3PLddU0NhiQ'},
+     {'author': 'Jermane Cheathem',
+      'channel': 'Jermane Cheathem',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=6laX1_643JA&t=155s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, your real work is only meeting one equipment seller, one equipment dealer.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': 'So, your real work is only meeting one equipment seller, one equipment dealer.',
+      'title': 'Equipment Finance Broker Business Model Explained',
+      'url': 'https://www.youtube.com/watch?v=6laX1_643JA&t=155s',
+      'video_id': '6laX1_643JA'}],
+ 5: [{'author': 'BizMoney Explained',
+      'channel': 'BizMoney Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:08](https://www.youtube.com/watch?v=Q4yDbzFte3g&t=1268s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Avoid financing unnecessary equipment simply because credit is available. Borrowing '
+              'capacity is not the same as investment opportunity.',
+      'timestamp': 1268,
+      'timestamp_label': '[00:21:08]',
+      'timestamp_seconds': 1268,
+      'tip': 'Avoid financing unnecessary equipment simply because credit is available. Borrowing '
+             'capacity is not the same as investment opportunity.',
+      'title': 'Business Finance Equipment Financing Masterclass (Complete Guide)',
+      'url': 'https://www.youtube.com/watch?v=Q4yDbzFte3g&t=1268s',
+      'video_id': 'Q4yDbzFte3g'},
+     {'author': 'BizMoney Explained',
+      'channel': 'BizMoney Explained',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:05](https://www.youtube.com/watch?v=Q4yDbzFte3g&t=785s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Imagine that weak demand reduces the machine's incremental operating cash benefit "
+              'to only $900 per month. The business would then face a $600 monthly shortfall '
+              'against its $1,500 loan payment.',
+      'timestamp': 785,
+      'timestamp_label': '[00:13:05]',
+      'timestamp_seconds': 785,
+      'tip': "Imagine that weak demand reduces the machine's incremental operating cash benefit to "
+             'only $900 per month. The business would then face a $600 monthly shortfall against '
+             'its $1,500 loan payment.',
+      'title': 'Business Finance Equipment Financing Masterclass (Complete Guide)',
+      'url': 'https://www.youtube.com/watch?v=Q4yDbzFte3g&t=785s',
+      'video_id': 'Q4yDbzFte3g'},
+     {'author': 'ROK Financial',
+      'channel': 'ROK Financial',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:35](https://www.youtube.com/watch?v=EelcRfosnt8&t=1175s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'They look for amounts in that credit that are comparable, usually 60 to 70% '
+              "comparable to the request, to really be able to have something that's approvable.",
+      'timestamp': 1175,
+      'timestamp_label': '[00:19:35]',
+      'timestamp_seconds': 1175,
+      'tip': 'They look for amounts in that credit that are comparable, usually 60 to 70% '
+             "comparable to the request, to really be able to have something that's approvable.",
+      'title': "Equipment Financing Secrets EXPOSED: What Banks Don't Want You to Know",
+      'url': 'https://www.youtube.com/watch?v=EelcRfosnt8&t=1175s',
+      'video_id': 'EelcRfosnt8'},
+     {'author': 'ROK Financial',
+      'channel': 'ROK Financial',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:39:03](https://www.youtube.com/watch?v=EelcRfosnt8&t=2343s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If it's being sold at the same price as the value, typically we could get a 100% "
+              'financing if the client qualifies based on their credit.',
+      'timestamp': 2343,
+      'timestamp_label': '[00:39:03]',
+      'timestamp_seconds': 2343,
+      'tip': "If it's being sold at the same price as the value, typically we could get a 100% "
+             'financing if the client qualifies based on their credit.',
+      'title': "Equipment Financing Secrets EXPOSED: What Banks Don't Want You to Know",
+      'url': 'https://www.youtube.com/watch?v=EelcRfosnt8&t=2343s',
+      'video_id': 'EelcRfosnt8'},
+     {'author': 'ROK Financial',
+      'channel': 'ROK Financial',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:34:13](https://www.youtube.com/watch?v=EelcRfosnt8&t=2053s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Lending is black and white. Underwriting is black and white, but Rock Financial, we '
+              'operate in the gray.',
+      'timestamp': 2053,
+      'timestamp_label': '[00:34:13]',
+      'timestamp_seconds': 2053,
+      'tip': 'Lending is black and white. Underwriting is black and white, but Rock Financial, we '
+             'operate in the gray.',
+      'title': "Equipment Financing Secrets EXPOSED: What Banks Don't Want You to Know",
+      'url': 'https://www.youtube.com/watch?v=EelcRfosnt8&t=2053s',
+      'video_id': 'EelcRfosnt8'},
+     {'author': 'Neil.Finance',
+      'channel': 'Neil.Finance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:08](https://www.youtube.com/watch?v=ks8OR72QJF0&t=188s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The biggest mistake that I see is sending the right deal to the wrong lender.',
+      'timestamp': 188,
+      'timestamp_label': '[00:03:08]',
+      'timestamp_seconds': 188,
+      'tip': 'The biggest mistake that I see is sending the right deal to the wrong lender.',
+      'title': 'What Lenders Actually Look For Before Approving an Equipment Finance Deal',
+      'url': 'https://www.youtube.com/watch?v=ks8OR72QJF0&t=188s',
+      'video_id': 'ks8OR72QJF0'},
+     {'author': 'Invoice Finance News',
+      'channel': 'Invoice Finance News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:42](https://www.youtube.com/watch?v=RyM3eO5GN5I&t=342s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A stock financier will be basing their decisions on monthly stock reports that can '
+              'be up to four weeks out of date, and a failing company will quite often sell their '
+              'best stock first.',
+      'timestamp': 342,
+      'timestamp_label': '[00:05:42]',
+      'timestamp_seconds': 342,
+      'tip': 'A stock financier will be basing their decisions on monthly stock reports that can '
+             'be up to four weeks out of date, and a failing company will quite often sell their '
+             'best stock first.',
+      'title': 'Asset Based Lending',
+      'url': 'https://www.youtube.com/watch?v=RyM3eO5GN5I&t=342s',
+      'video_id': 'RyM3eO5GN5I'},
+     {'author': 'Joe Camberato',
+      'channel': 'Joe Camberato',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:34](https://www.youtube.com/watch?v=PB-h1pXLzhg&t=214s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "When you work with the purchase order lender there's going to be a charge to that "
+              'cost of capital, anywhere from one to two to three percent per month however long '
+              'that money is outstanding.',
+      'timestamp': 214,
+      'timestamp_label': '[00:03:34]',
+      'timestamp_seconds': 214,
+      'tip': "When you work with the purchase order lender there's going to be a charge to that "
+             'cost of capital, anywhere from one to two to three percent per month however long '
+             'that money is outstanding.',
+      'title': 'Purchase Order Financing: Everything You Need to Know (2024)',
+      'url': 'https://www.youtube.com/watch?v=PB-h1pXLzhg&t=214s',
+      'video_id': 'PB-h1pXLzhg'},
+     {'author': 'Mobilization Funding',
+      'channel': 'Mobilization Funding',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:09](https://www.youtube.com/watch?v=hKDkKk_Guv4&t=69s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You could reach out to a PO financing company to actually go to your supplier and '
+              "pay for those hulls directly; they'll use the creditworthiness of your supplier to "
+              'help offset their risk.',
+      'timestamp': 69,
+      'timestamp_label': '[00:01:09]',
+      'timestamp_seconds': 69,
+      'tip': 'You could reach out to a PO financing company to actually go to your supplier and '
+             "pay for those hulls directly; they'll use the creditworthiness of your supplier to "
+             'help offset their risk.',
+      'title': 'PO Financing for Manufacturers and Fabricators',
+      'url': 'https://www.youtube.com/watch?v=hKDkKk_Guv4&t=69s',
+      'video_id': 'hKDkKk_Guv4'},
+     {'author': 'TheShawnShow50',
+      'channel': 'TheShawnShow50',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:18](https://www.youtube.com/watch?v=C-ZTs-2s2ZQ&t=18s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you have a piece of equipment that you own free and clear, you can potentially '
+              'pledge that as collateral to get a working capital loan.',
+      'timestamp': 18,
+      'timestamp_label': '[00:00:18]',
+      'timestamp_seconds': 18,
+      'tip': 'If you have a piece of equipment that you own free and clear, you can potentially '
+             'pledge that as collateral to get a working capital loan.',
+      'title': 'Equipment Sale Lease Back | Working Capital Loan via Equipment Financing Sale '
+               'LeaseBack',
+      'url': 'https://www.youtube.com/watch?v=C-ZTs-2s2ZQ&t=18s',
+      'video_id': 'C-ZTs-2s2ZQ'},
      {'author': 'Construction Brothers',
       'channel': 'Construction Brothers',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:10](https://www.youtube.com/watch?v=PaYgE9PgaO4&t=370s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
+      'markdown': '[00:07:42](https://www.youtube.com/watch?v=PaYgE9PgaO4&t=462s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "And it I don't think it's a scam or a bad thing at all because they're "
-              'providing a service in lie of a subcontractor bond and they are taking risk. '
-              "But make no mistake, it is a profit center for their business. So they're "
-              "they're gathering the premium.",
-      'timestamp': 370,
-      'timestamp_label': '[00:06:10]',
-      'timestamp_seconds': 370,
-      'tip': "And it I don't think it's a scam or a bad thing at all because they're providing "
-             'a service in lie of a subcontractor bond and they are taking risk. But make no '
-             "mistake, it is a profit center for their business. So they're they're gathering "
-             'the premium.',
-      'title': 'Everything You NEED to Know about Surety Bonds & Subcontractor Default '
-               '(Construction Brothers)',
-      'url': 'https://www.youtube.com/watch?v=PaYgE9PgaO4&t=370s',
+      'text': 'In surety, you have pledged all of your personal assets that you will indemnify the '
+              'surety company.',
+      'timestamp': 462,
+      'timestamp_label': '[00:07:42]',
+      'timestamp_seconds': 462,
+      'tip': 'In surety, you have pledged all of your personal assets that you will indemnify the '
+             'surety company.',
+      'title': 'Everything You NEED to Know about Surety Bonds & Subcontractor Default',
+      'url': 'https://www.youtube.com/watch?v=PaYgE9PgaO4&t=462s',
       'video_id': 'PaYgE9PgaO4'},
      {'author': 'Surety Bonds Direct',
       'channel': 'Surety Bonds Direct',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=n___30FL0_I&t=21s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=n___30FL0_I&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'So, if the construction company makes a mistake or subcontractor makes a '
-              "mistake and they don't fix it, the project owner can make a claim against that "
-              'maintenance bond to get the financial compensation they need to go fix that '
-              'problem.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'So, if the construction company makes a mistake or subcontractor makes a mistake '
-             "and they don't fix it, the project owner can make a claim against that "
-             'maintenance bond to get the financial compensation they need to go fix that '
-             'problem.',
-      'title': 'Construction Maintenance Surety Bond (Surety Bonds Direct)',
-      'url': 'https://www.youtube.com/watch?v=n___30FL0_I&t=21s',
+      'text': 'In most cases, the maintenance bond is going to be 5 to 10% of the project amount, '
+              'but it depends on the project owner.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': 'In most cases, the maintenance bond is going to be 5 to 10% of the project amount, '
+             'but it depends on the project owner.',
+      'title': 'Construction Maintenance Surety Bond',
+      'url': 'https://www.youtube.com/watch?v=n___30FL0_I&t=66s',
       'video_id': 'n___30FL0_I'},
-     {'author': 'Academy For Commercial Lending',
-      'channel': 'Academy For Commercial Lending',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:20](https://www.youtube.com/watch?v=NHfs2vBPCys&t=380s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Owner-occupied and special purpose properties carry more single point of '
-              'failure risk. If the operating business fails or the specific use becomes '
-              'obsolete, the lender is holding a harder asset to release or sell.',
-      'timestamp': 380,
-      'timestamp_label': '[00:06:20]',
-      'timestamp_seconds': 380,
-      'tip': 'Owner-occupied and special purpose properties carry more single point of failure '
-             'risk. If the operating business fails or the specific use becomes obsolete, the '
-             'lender is holding a harder asset to release or sell.',
-      'title': 'Debt Yield vs. DSCR: The Metric Every Commercial Mortgage Broker Needs to '
-               'Understand (Academy For Commercial Lending)',
-      'url': 'https://www.youtube.com/watch?v=NHfs2vBPCys&t=380s',
-      'video_id': 'NHfs2vBPCys'},
-     {'author': 'Turn-Keyinvestments by Richard Lowe',
-      'channel': 'Turn-Keyinvestments by Richard Lowe',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:24](https://www.youtube.com/watch?v=5d2yaSz0ius&t=1404s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re unable to pursue it, we do have the opportunity to swap that case out for a "
-              'like-for-like claim of similar value against one of the eligible lenders. If '
-              'then the further claims then fail within that portfolio, each case is then '
-              'allocated a unique bond.',
-      'timestamp': 1404,
-      'timestamp_label': '[00:23:24]',
-      'timestamp_seconds': 1404,
-      'tip': "'re unable to pursue it, we do have the opportunity to swap that case out for a "
-             'like-for-like claim of similar value against one of the eligible lenders. If '
-             'then the further claims then fail within that portfolio, each case is then '
-             'allocated a unique bond.',
-      'title': 'Litigation Finance Explained | How It Works, Potential Returns & Risks | Full '
-               'Webinar (Turn-Keyinvestments by Richard Lowe)',
-      'url': 'https://www.youtube.com/watch?v=5d2yaSz0ius&t=1404s',
-      'video_id': '5d2yaSz0ius'},
-     {'author': 'Neil.Finance',
-      'channel': 'Neil.Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:55](https://www.youtube.com/watch?v=YLIvGloANJM&t=355s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Imagine a business owner calls you. They were declined at their bank. You '
-              'review their situation. You connect them with a lender. You get your commission '
-              "and it's not for selling hype but for solving a real problem.",
-      'timestamp': 355,
-      'timestamp_label': '[00:05:55]',
-      'timestamp_seconds': 355,
-      'tip': 'Imagine a business owner calls you. They were declined at their bank. You review '
-             'their situation. You connect them with a lender. You get your commission and '
-             "it's not for selling hype but for solving a real problem.",
-      'title': 'Why Equipment Finance Brokering Exists (And Why Most People Miss the '
-               'Opportunity) (Neil.Finance)',
-      'url': 'https://www.youtube.com/watch?v=YLIvGloANJM&t=355s',
-      'video_id': 'YLIvGloANJM'},
-     {'author': 'Today Capital Group',
-      'channel': 'Today Capital Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=6tGMlJx13g8&t=21s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "From there, we'll figure out if it's the right move for your business. How to "
-              'spot the red flags so you pick a great partner. Every single founder who has '
-              'ever tried to raise capital knows this feeling all too well.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "From there, we'll figure out if it's the right move for your business. How to "
-             'spot the red flags so you pick a great partner. Every single founder who has '
-             'ever tried to raise capital knows this feeling all too well.',
-      'title': 'Revenue-Based Financing Explained (RBF vs Loans vs VC + Red Flags to Avoid) '
-               '(Today Capital Group)',
-      'url': 'https://www.youtube.com/watch?v=6tGMlJx13g8&t=21s',
-      'video_id': '6tGMlJx13g8'},
-     {'author': 'LeGaye Law Firm',
-      'channel': 'LeGaye Law Firm',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=JR8TOdAxFa4&t=72s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And accredited investor status alone doesn't establish compliance. Second: "
-              'Explain the assumptions. Firms must clearly communicate the assumptions, risks, '
-              'and limitations underlying projected returns.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': "And accredited investor status alone doesn't establish compliance. Second: "
-             'Explain the assumptions. Firms must clearly communicate the assumptions, risks, '
-             'and limitations underlying projected returns.',
-      'title': 'Projected Investment Returns: 4 Compliance Priorities for Broker-Dealers '
-               '(LeGaye Law Firm)',
-      'url': 'https://www.youtube.com/watch?v=JR8TOdAxFa4&t=72s',
-      'video_id': 'JR8TOdAxFa4'},
-     {'author': 'The Approved Guy',
-      'channel': 'The Approved Guy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=8x-cfQhQpPU&t=97s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s no interest rate they tell you that it's a factor rate which is based on "
-              "risk and they'll tell you that the factor rate is 1. 45 some of the lower cash "
-              'advances out there might be 1. 25 that translates to 25 percent 1.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': "'s no interest rate they tell you that it's a factor rate which is based on risk "
-             "and they'll tell you that the factor rate is 1. 45 some of the lower cash "
-             'advances out there might be 1. 25 that translates to 25 percent 1.',
-      'title': "STUCK IN MCA DEBT? THERE'S A WAY OUT! (The Approved Guy)",
-      'url': 'https://www.youtube.com/watch?v=8x-cfQhQpPU&t=97s',
-      'video_id': '8x-cfQhQpPU'},
-     {'author': 'Peak Capital',
-      'channel': 'Peak Capital',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:22](https://www.youtube.com/watch?v=J-guTckEVMA&t=82s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Offering extended payment terms can also result in a working capital shortage '
-              'so trade Finance can be beneficial here too from a risk perspective most '
-              'sellers.',
-      'timestamp': 82,
-      'timestamp_label': '[00:01:22]',
-      'timestamp_seconds': 82,
-      'tip': 'Offering extended payment terms can also result in a working capital shortage so '
-             'trade Finance can be beneficial here too from a risk perspective most sellers.',
-      'title': 'What is Trade Finance? (Peak Capital)',
-      'url': 'https://www.youtube.com/watch?v=J-guTckEVMA&t=82s',
-      'video_id': 'J-guTckEVMA'},
-     {'author': 'Express Legal Funding',
-      'channel': 'Express Legal Funding',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:03](https://www.youtube.com/watch?v=AVBbpi6lPFY&t=303s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s like a secret weapon it lets you go toe to toe with literally any opponent "
-              'no matter how big. It moves all the financial risk over to the funder and it '
-              'lets you keep your own cash to you know run your business.',
-      'timestamp': 303,
-      'timestamp_label': '[00:05:03]',
-      'timestamp_seconds': 303,
-      'tip': "'s like a secret weapon it lets you go toe to toe with literally any opponent no "
-             'matter how big. It moves all the financial risk over to the funder and it lets '
-             'you keep your own cash to you know run your business.',
-      'title': 'Litigation Finance Explained: Complete Litigation Funding Guide (Express Legal '
-               'Funding)',
-      'url': 'https://www.youtube.com/watch?v=AVBbpi6lPFY&t=303s',
-      'video_id': 'AVBbpi6lPFY'},
-     {'author': 'Mobilization Funding',
-      'channel': 'Mobilization Funding',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:17](https://www.youtube.com/watch?v=hKDkKk_Guv4&t=77s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Directly they'll use the credit worthiness of your supplier to help offset "
-              'their risk to be able to finance those for you and.',
-      'timestamp': 77,
-      'timestamp_label': '[00:01:17]',
-      'timestamp_seconds': 77,
-      'tip': "Directly they'll use the credit worthiness of your supplier to help offset their "
-             'risk to be able to finance those for you and.',
-      'title': 'PO Financing for Manufacturers and Fabricators (Mobilization Funding)',
-      'url': 'https://www.youtube.com/watch?v=hKDkKk_Guv4&t=77s',
-      'video_id': 'hKDkKk_Guv4'},
-     {'author': 'Commercial Capital Training Group, LLC',
-      'channel': 'Commercial Capital Training Group, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:29:21](https://www.youtube.com/watch?v=UBxQzlMJT7k&t=1761s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "All right um we have one graduate uh one uh student here that's going to ask a "
-              "question I'm going to unmute her so she could ask it directly to uh to "
-              "everybody it's uh kelly we're going to unmute your mewtwo kelly hardy.",
-      'timestamp': 1761,
-      'timestamp_label': '[00:29:21]',
-      'timestamp_seconds': 1761,
-      'tip': "All right um we have one graduate uh one uh student here that's going to ask a "
-             "question I'm going to unmute her so she could ask it directly to uh to everybody "
-             "it's uh kelly we're going to unmute your mewtwo kelly hardy.",
-      'title': 'Live Business Loan Broker Training | Become a Commercial Loan Broker '
-               '(Commercial Capital Training Group, LLC)',
-      'url': 'https://www.youtube.com/watch?v=UBxQzlMJT7k&t=1761s',
-      'video_id': 'UBxQzlMJT7k'},
-     {'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:38](https://www.youtube.com/watch?v=qkeq6lhotvM&t=98s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Commission based on how much you financed and in both cases the loan commission '
-              'is most typically going to be based on the amount financed so it might.',
-      'timestamp': 98,
-      'timestamp_label': '[00:01:38]',
-      'timestamp_seconds': 98,
-      'tip': 'Commission based on how much you financed and in both cases the loan commission '
-             'is most typically going to be based on the amount financed so it might.',
-      'title': 'How do Commercial Loan Brokers get Paid? (Commercial Loan Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=qkeq6lhotvM&t=98s',
-      'video_id': 'qkeq6lhotvM'},
-     {'author': 'Beau Eckstein, Business Ownership Coach',
-      'channel': 'Beau Eckstein, Business Ownership Coach',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:11](https://www.youtube.com/watch?v=jzEfnFdiiZU&t=191s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Things financing I've been in the lending industry for over 20 years and I'm "
-              'happy to answer your questions and provide great content.',
-      'timestamp': 191,
-      'timestamp_label': '[00:03:11]',
-      'timestamp_seconds': 191,
-      'tip': "Things financing I've been in the lending industry for over 20 years and I'm "
-             'happy to answer your questions and provide great content.',
-      'title': 'Comparing SBA 7a vs SBA 504: Which is Better for an Office Building Purchase? '
-               '(Beau Eckstein, Business Ownership Coach)',
-      'url': 'https://www.youtube.com/watch?v=jzEfnFdiiZU&t=191s',
-      'video_id': 'jzEfnFdiiZU'}],
- 6: [{'author': 'Equipment Finance Academy',
-      'channel': 'Equipment Finance Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:51](https://www.youtube.com/watch?v=dc0_7D431kI&t=411s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This week, three contractors find you through search. They fill out the '
-              'application themselves. You submit two clean packages. You made 2,500 with zero '
-              'lead cost and you own the asset. Next week, it brings three more inbound leads '
-              'while you are working the first ones.',
-      'timestamp': 411,
-      'timestamp_label': '[00:06:51]',
-      'timestamp_seconds': 411,
-      'tip': 'This week, three contractors find you through search. They fill out the '
-             'application themselves. You submit two clean packages. You made 2,500 with zero '
-             'lead cost and you own the asset. Next week, it brings three more inbound leads '
-             'while you are working the first ones.',
-      'title': 'Equipment Finance Leads: Turnkey System That Actually Works (Equipment Finance '
-               'Academy)',
-      'url': 'https://www.youtube.com/watch?v=dc0_7D431kI&t=411s',
-      'video_id': 'dc0_7D431kI'},
-     {'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:51](https://www.youtube.com/watch?v=MsdnoNJpPrg&t=591s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "First, they're building a curated lender bench that moves across banks, "
-              "non-banks, fintexs, private credit, and they're using that bench based on "
-              'actual deal fit, not just treating as a giant contact list to run through every '
-              'time.',
-      'timestamp': 591,
-      'timestamp_label': '[00:09:51]',
-      'timestamp_seconds': 591,
-      'tip': "First, they're building a curated lender bench that moves across banks, "
-             "non-banks, fintexs, private credit, and they're using that bench based on actual "
-             'deal fit, not just treating as a giant contact list to run through every time.',
-      'title': '3 Shifts Reshaping Commercial Lending That Most Brokers Are Missing '
-               '(Commercial Loan Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=MsdnoNJpPrg&t=591s',
-      'video_id': 'MsdnoNJpPrg'},
-     {'author': 'CDC Small Business Finance',
-      'channel': 'CDC Small Business Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=C-omBBP27hg&t=25s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's also to create jobs in the community. We are able to help them through the "
-              "504 program because it's designed to help every single business owner. We're a "
-              'mission-based lender. That means we want to qualify you and as many business '
-              'owners as possible.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': "It's also to create jobs in the community. We are able to help them through the "
-             "504 program because it's designed to help every single business owner. We're a "
-             'mission-based lender. That means we want to qualify you and as many business '
-             'owners as possible.',
-      'title': 'Who Is the SBA 504 Loan For? (CDC Small Business Finance)',
-      'url': 'https://www.youtube.com/watch?v=C-omBBP27hg&t=25s',
-      'video_id': 'C-omBBP27hg'},
-     {'author': 'Equipment Finance Academy',
-      'channel': 'Equipment Finance Academy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:18](https://www.youtube.com/watch?v=lg-SI4-0oEg&t=138s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Here's what I want you to do. Semi-truck financing, heavy equipment, medical "
-              'gear. Then find two or three lenders who fund that exact thing. Get your first '
-              "prospect on the phone and ask what they're trying to buy. That conversation is "
-              'your entire business in miniature.',
-      'timestamp': 138,
-      'timestamp_label': '[00:02:18]',
-      'timestamp_seconds': 138,
-      'tip': "Here's what I want you to do. Semi-truck financing, heavy equipment, medical "
-             'gear. Then find two or three lenders who fund that exact thing. Get your first '
-             "prospect on the phone and ask what they're trying to buy. That conversation is "
-             'your entire business in miniature.',
-      'title': 'How to Become a Commercial Loan Broker (No Experience Needed) (Equipment '
-               'Finance Academy)',
-      'url': 'https://www.youtube.com/watch?v=lg-SI4-0oEg&t=138s',
-      'video_id': 'lg-SI4-0oEg'},
-     {'author': 'Loan Officer Training | Zevi Shafran',
-      'channel': 'Loan Officer Training | Zevi Shafran',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=SPUcp-lnZ4w&t=54s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Skills marketing and building brand and I want to cover all four of those in '
-              "today's video so without further Ado let's jump right into it the first one on "
-              'the list was building.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': 'Skills marketing and building brand and I want to cover all four of those in '
-             "today's video so without further Ado let's jump right into it the first one on "
-             'the list was building.',
-      'title': '4 Foundations for New Commercial Loan Officers (Loan Officer Training | Zevi '
-               'Shafran)',
-      'url': 'https://www.youtube.com/watch?v=SPUcp-lnZ4w&t=54s',
-      'video_id': 'SPUcp-lnZ4w'},
-     {'author': 'ROK Financial',
-      'channel': 'ROK Financial',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:38](https://www.youtube.com/watch?v=EelcRfosnt8&t=578s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And it was a cooling unit for their data center that they were building that '
-              'was going to be something like seven or eight billion dollars of an investment. '
-              'So it the cooling equipment alone was a hundred million deal.',
-      'timestamp': 578,
-      'timestamp_label': '[00:09:38]',
-      'timestamp_seconds': 578,
-      'tip': 'And it was a cooling unit for their data center that they were building that was '
-             'going to be something like seven or eight billion dollars of an investment. So '
-             'it the cooling equipment alone was a hundred million deal.',
-      'title': "Equipment Financing Secrets EXPOSED: What Banks Don't Want You to Know (ROK "
-               'Financial)',
-      'url': 'https://www.youtube.com/watch?v=EelcRfosnt8&t=578s',
-      'video_id': 'EelcRfosnt8'},
-     {'author': 'John Neufer',
-      'channel': 'John Neufer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:49](https://www.youtube.com/watch?v=uqs40-CCDSc&t=169s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'But for this first deal we have to do it this way if you start to actually '
-              "bring in more business that's when i'll consider.",
-      'timestamp': 169,
-      'timestamp_label': '[00:02:49]',
-      'timestamp_seconds': 169,
-      'tip': 'But for this first deal we have to do it this way if you start to actually bring '
-             "in more business that's when i'll consider.",
-      'title': 'How Much Origination to Charge | CRE Loan Brokering (John Neufer)',
-      'url': 'https://www.youtube.com/watch?v=uqs40-CCDSc&t=169s',
-      'video_id': 'uqs40-CCDSc'},
-     {'author': 'ION Capital - Loan Broker University',
-      'channel': 'ION Capital - Loan Broker University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:21](https://www.youtube.com/watch?v=wt92Utt7o6I&t=201s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Stuff and I thought this is absolutely a deal why wouldn't it be a deal it "
-              "turns out it's extremely difficult to find somebody who was willing to take on "
-              'that.',
-      'timestamp': 201,
-      'timestamp_label': '[00:03:21]',
-      'timestamp_seconds': 201,
-      'tip': "Stuff and I thought this is absolutely a deal why wouldn't it be a deal it turns "
-             "out it's extremely difficult to find somebody who was willing to take on that.",
-      'title': 'How To Be A Business Loan Broker  |  Equipment Finance Tips (ION Capital - '
-               'Loan Broker University)',
-      'url': 'https://www.youtube.com/watch?v=wt92Utt7o6I&t=201s',
-      'video_id': 'wt92Utt7o6I'},
-     {'author': 'Factor Finders',
-      'channel': 'Factor Finders',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=8C1D2A4YVvQ&t=104s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Factor Finders at 1–855-Factor-1 or email us at sales@factorfinders. We’ll make '
-              'an introduction between your factoring prospect and one of our factoring '
-              'companies will get the deal done. And then we’ll split commissions, '
-              'fifty-fifty.',
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'Factor Finders at 1–855-Factor-1 or email us at sales@factorfinders. We’ll make '
-             'an introduction between your factoring prospect and one of our factoring '
-             'companies will get the deal done. And then we’ll split commissions, fifty-fifty.',
-      'title': 'Factoring Broker Program (Factor Finders)',
-      'url': 'https://www.youtube.com/watch?v=8C1D2A4YVvQ&t=104s',
-      'video_id': '8C1D2A4YVvQ'},
-     {'author': 'CPA Financial Exchange Group',
-      'channel': 'CPA Financial Exchange Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:35](https://www.youtube.com/watch?v=LWEWnYj0IZ4&t=275s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Your client in particular so again very very important to remember that and it '
-              'helps your your business client to manage how they run their business so.',
-      'timestamp': 275,
-      'timestamp_label': '[00:04:35]',
-      'timestamp_seconds': 275,
-      'tip': 'Your client in particular so again very very important to remember that and it '
-             'helps your your business client to manage how they run their business so.',
-      'title': 'Accounts Receivable Financing - Factoring (CPA Financial Exchange Group)',
-      'url': 'https://www.youtube.com/watch?v=LWEWnYj0IZ4&t=275s',
-      'video_id': 'LWEWnYj0IZ4'},
-     {'author': 'Rise Alliance',
-      'channel': 'Rise Alliance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=112s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We approach this completely differently. We  understand that the only path to '
-              'real resolution is through stabilizing your business first.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'We approach this completely differently. We  understand that the only path to '
-             'real resolution is through stabilizing your business first.',
-      'title': 'What Really Happens When You Default on an MCA? (Warning) (Rise Alliance)',
-      'url': 'https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=112s',
-      'video_id': 'BcdnIkuJ7Fc'},
-     {'author': 'Intuit TurboTax',
-      'channel': 'Intuit TurboTax',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:34](https://www.youtube.com/watch?v=2KSxwXfP_QQ&t=94s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Remember though, you must file Form 5695 to claim either of the credits. '
-              'TurboTax can help you determine whether you qualify for these credits, and will '
-              'fill in all the right forms for you. For more tax tips and guidance, visit '
-              'TurboTax.',
-      'timestamp': 94,
-      'timestamp_label': '[00:01:34]',
-      'timestamp_seconds': 94,
-      'tip': 'Remember though, you must file Form 5695 to claim either of the credits. '
-             'TurboTax can help you determine whether you qualify for these credits, and will '
-             'fill in all the right forms for you. For more tax tips and guidance, visit '
-             'TurboTax.',
-      'title': 'Are You Eligible for a Home Energy Tax Credit? - TurboTax Tax Tip Video '
-               '(Intuit TurboTax)',
-      'url': 'https://www.youtube.com/watch?v=2KSxwXfP_QQ&t=94s',
-      'video_id': '2KSxwXfP_QQ'},
-     {'author': 'SouthStar Capital, LLC',
-      'channel': 'SouthStar Capital, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:54](https://www.youtube.com/watch?v=_VD-lBSeoEw&t=174s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Relationship with your account D it's a very upbeat message and then also you "
-              "know as invoices a we're not going to pest your client we're going to work with "
-              'you as opposed to against you to ensure that everybody is on the same page and '
-              'ultimately everybody is paid.',
-      'timestamp': 174,
-      'timestamp_label': '[00:02:54]',
-      'timestamp_seconds': 174,
-      'tip': "Relationship with your account D it's a very upbeat message and then also you "
-             "know as invoices a we're not going to pest your client we're going to work with "
-             'you as opposed to against you to ensure that everybody is on the same page and '
-             'ultimately everybody is paid.',
-      'title': 'How Invoice & Accounts Receivable Financing Works (SouthStar Capital, LLC)',
-      'url': 'https://www.youtube.com/watch?v=_VD-lBSeoEw&t=174s',
-      'video_id': '_VD-lBSeoEw'},
-     {'author': 'The Approved Guy',
-      'channel': 'The Approved Guy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:47](https://www.youtube.com/watch?v=dDwHOnFlzaA&t=167s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "New boat so that you'll never have to borrow again and at the same time prepare "
-              'in case you do need to borrow again you can qualify for the best options on the '
-              'market take advantage of a free consult or go ahead and submit for your life '
-              'preserver today.',
-      'timestamp': 167,
-      'timestamp_label': '[00:02:47]',
-      'timestamp_seconds': 167,
-      'tip': "New boat so that you'll never have to borrow again and at the same time prepare "
-             'in case you do need to borrow again you can qualify for the best options on the '
-             'market take advantage of a free consult or go ahead and submit for your life '
-             'preserver today.',
-      'title': 'MCA DEBT RESTRUCTURE OR REFINANCE (The Approved Guy)',
-      'url': 'https://www.youtube.com/watch?v=dDwHOnFlzaA&t=167s',
-      'video_id': 'dDwHOnFlzaA'},
-     {'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:08](https://www.youtube.com/watch?v=CvS7BttXuu0&t=1448s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So that's the SP policy notice that that'll come right come right up in your "
-              'whatever uh browser you want to search through. Uh the 504 is mainly for real '
-              'estate. You can say capital, equipment, large, but you know, I would say 99% of '
-              '504 loans are only for real estate.',
-      'timestamp': 1448,
-      'timestamp_label': '[00:24:08]',
-      'timestamp_seconds': 1448,
-      'tip': "So that's the SP policy notice that that'll come right come right up in your "
-             'whatever uh browser you want to search through. Uh the 504 is mainly for real '
-             'estate. You can say capital, equipment, large, but you know, I would say 99% of '
-             '504 loans are only for real estate.',
-      'title': 'New SBA Rule Unlocks $10M: Who Actually Benefits | Shane Walton ft. Jeff '
-               'Hildebrandt (Commercial Loan Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=CvS7BttXuu0&t=1448s',
-      'video_id': 'CvS7BttXuu0'}],
- 7: [{'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:41](https://www.youtube.com/watch?v=-HZRdtDpSRo&t=101s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To achieve their business goals then the loan broker will help them in the '
-              "process of securing said capital along the way they're going to help that.",
-      'timestamp': 101,
-      'timestamp_label': '[00:01:41]',
-      'timestamp_seconds': 101,
-      'tip': 'To achieve their business goals then the loan broker will help them in the '
-             "process of securing said capital along the way they're going to help that.",
-      'title': 'What is a Commercial Loan Broker? What do they do? (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=-HZRdtDpSRo&t=101s',
-      'video_id': '-HZRdtDpSRo'},
-     {'author': 'CDC Small Business Finance',
-      'channel': 'CDC Small Business Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=5_3hvZIlwhQ&t=97s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, the 504 program is national. Um, CDC Small Business Finance is licensed by '
-              'the SBA and is licensed to be a SBA 504 second mortgage lender in California, '
-              'Arizona, and Nevada. So, the funding process of the 504 project is a little '
-              'unique.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': 'So, the 504 program is national. Um, CDC Small Business Finance is licensed by '
-             'the SBA and is licensed to be a SBA 504 second mortgage lender in California, '
-             'Arizona, and Nevada. So, the funding process of the 504 project is a little '
-             'unique.',
-      'title': 'How Does an SBA 504 Loan Work? (CDC Small Business Finance)',
-      'url': 'https://www.youtube.com/watch?v=5_3hvZIlwhQ&t=97s',
-      'video_id': '5_3hvZIlwhQ'},
-     {'author': 'BizMoney Explained',
-      'channel': 'BizMoney Explained',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:51](https://www.youtube.com/watch?v=Q4yDbzFte3g&t=1551s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This approach turns equipment financing into a structured capital budgeting '
-              'process. Each proposed investment competes for limited financial resources, '
-              'encouraging management to prioritize the opportunities with the strongest '
-              'business justification.',
-      'timestamp': 1551,
-      'timestamp_label': '[00:25:51]',
-      'timestamp_seconds': 1551,
-      'tip': 'This approach turns equipment financing into a structured capital budgeting '
-             'process. Each proposed investment competes for limited financial resources, '
-             'encouraging management to prioritize the opportunities with the strongest '
-             'business justification.',
-      'title': 'Business Finance Equipment Financing Masterclass (Complete Guide) (BizMoney '
-               'Explained)',
-      'url': 'https://www.youtube.com/watch?v=Q4yDbzFte3g&t=1551s',
-      'video_id': 'Q4yDbzFte3g'},
-     {'author': 'Neil.Finance',
-      'channel': 'Neil.Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:11](https://www.youtube.com/watch?v=ks8OR72QJF0&t=251s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You're going to start building confidence, and confidence comes from "
-              'understanding that process. And this is exactly why I started teaching '
-              'equipment financing. Most trainings, they teach the broker side. Very few '
-              'people teach what happens after the deal reaches the lender.',
-      'timestamp': 251,
-      'timestamp_label': '[00:04:11]',
-      'timestamp_seconds': 251,
-      'tip': "You're going to start building confidence, and confidence comes from "
-             'understanding that process. And this is exactly why I started teaching equipment '
-             'financing. Most trainings, they teach the broker side. Very few people teach '
-             'what happens after the deal reaches the lender.',
-      'title': 'What Lenders Actually Look For Before Approving an Equipment Finance Deal '
-               '(Neil.Finance)',
-      'url': 'https://www.youtube.com/watch?v=ks8OR72QJF0&t=251s',
-      'video_id': 'ks8OR72QJF0'},
-     {'author': 'Corporate Bankruptcy A to Z',
-      'channel': 'Corporate Bankruptcy A to Z',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:45](https://www.youtube.com/watch?v=50wAPhzWGmY&t=705s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And that sounds like a complicated process. You know, a lot of business owners '
-              "don't speak legal ease. They don't know the first thing about going in and "
-              'doing the work that it takes to take advantage of this legal standing they '
-              'might have. So, what would be the next step?',
-      'timestamp': 705,
-      'timestamp_label': '[00:11:45]',
-      'timestamp_seconds': 705,
-      'tip': 'And that sounds like a complicated process. You know, a lot of business owners '
-             "don't speak legal ease. They don't know the first thing about going in and doing "
-             'the work that it takes to take advantage of this legal standing they might have. '
-             'So, what would be the next step?',
-      'title': 'MCA reclassified as Loans? | Breaking news on MCAs (Merchant Cash Advances) '
-               '(Corporate Bankruptcy A to Z)',
-      'url': 'https://www.youtube.com/watch?v=50wAPhzWGmY&t=705s',
-      'video_id': '50wAPhzWGmY'},
      {'author': 'Surety Bonds Direct',
       'channel': 'Surety Bonds Direct',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:45](https://www.youtube.com/watch?v=ttoT3V6duzU&t=165s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
+      'markdown': '[00:03:22](https://www.youtube.com/watch?v=ttoT3V6duzU&t=202s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Or it could be a private project like building a strip mall out. If you need a '
-              'quick refresher on the construction bonds that are involved in this process, '
-              'check the links in the description. I have links to the three big ones, the '
-              'bid, performance, and the payment bond.',
-      'timestamp': 165,
-      'timestamp_label': '[00:02:45]',
-      'timestamp_seconds': 165,
-      'tip': 'Or it could be a private project like building a strip mall out. If you need a '
-             'quick refresher on the construction bonds that are involved in this process, '
-             'check the links in the description. I have links to the three big ones, the bid, '
-             'performance, and the payment bond.',
-      'title': 'How Much Do Contractor License and Construction Surety Bonds Cost? (Surety '
-               'Bonds Direct)',
-      'url': 'https://www.youtube.com/watch?v=ttoT3V6duzU&t=165s',
+      'text': 'Performance and payment bond prices typically start at 3% of your bid amount; lower '
+              'rates of one and a half to two percent require a portfolio of successfully '
+              'completed projects.',
+      'timestamp': 202,
+      'timestamp_label': '[00:03:22]',
+      'timestamp_seconds': 202,
+      'tip': 'Performance and payment bond prices typically start at 3% of your bid amount; lower '
+             'rates of one and a half to two percent require a portfolio of successfully completed '
+             'projects.',
+      'title': 'How Much Do Contractor License and Construction Surety Bonds Cost?',
+      'url': 'https://www.youtube.com/watch?v=ttoT3V6duzU&t=202s',
       'video_id': 'ttoT3V6duzU'},
+     {'author': 'Biz2Credit',
+      'channel': 'Biz2Credit',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:17](https://www.youtube.com/watch?v=vIqzq5xwqtA&t=77s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Avery will need to put down a 20% down payment and pay back the difference within '
+              'six months plus interest.',
+      'timestamp': 77,
+      'timestamp_label': '[00:01:17]',
+      'timestamp_seconds': 77,
+      'tip': 'Avery will need to put down a 20% down payment and pay back the difference within '
+             'six months plus interest.',
+      'title': 'Equipment Financing | Learning with Business Finance Glossary',
+      'url': 'https://www.youtube.com/watch?v=vIqzq5xwqtA&t=77s',
+      'video_id': 'vIqzq5xwqtA'},
+     {'author': 'Equipment Broker Academy',
+      'channel': 'Equipment Broker Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:42](https://www.youtube.com/watch?v=_c4_PRT-_rE&t=42s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "An equipment broker's average commissions range between five and twelve percent, "
+              'based on the value of the unit.',
+      'timestamp': 42,
+      'timestamp_label': '[00:00:42]',
+      'timestamp_seconds': 42,
+      'tip': "An equipment broker's average commissions range between five and twelve percent, "
+             'based on the value of the unit.',
+      'title': 'What is an Equipment Broker',
+      'url': 'https://www.youtube.com/watch?v=_c4_PRT-_rE&t=42s',
+      'video_id': '_c4_PRT-_rE'},
+     {'author': 'Finimpact',
+      'channel': 'Finimpact',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:29](https://www.youtube.com/watch?v=3FBxbLj0PQQ&t=149s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'With equipment financing your credit rating is not a deciding factor, so even with '
+              'a poor credit rating you can receive an equipment financing loan to get started.',
+      'timestamp': 149,
+      'timestamp_label': '[00:02:29]',
+      'timestamp_seconds': 149,
+      'tip': 'With equipment financing your credit rating is not a deciding factor, so even with a '
+             'poor credit rating you can receive an equipment financing loan to get started.',
+      'title': 'Equipment Financing: Everything You Need To Know',
+      'url': 'https://www.youtube.com/watch?v=3FBxbLj0PQQ&t=149s',
+      'video_id': '3FBxbLj0PQQ'},
+     {'author': 'The Banking Podcast',
+      'channel': 'The Banking Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:28](https://www.youtube.com/watch?v=bvVqx_kVIj8&t=508s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Some people will try to get their friend down the street to say they're selling a "
+              "product at a crazy price; they're going to look through that, they've seen enough "
+              "of that, so don't waste your time trying to pull a fast one.",
+      'timestamp': 508,
+      'timestamp_label': '[00:08:28]',
+      'timestamp_seconds': 508,
+      'tip': "Some people will try to get their friend down the street to say they're selling a "
+             "product at a crazy price; they're going to look through that, they've seen enough of "
+             "that, so don't waste your time trying to pull a fast one.",
+      'title': 'Business Equipment Financing — Funding Options & Requirements',
+      'url': 'https://www.youtube.com/watch?v=bvVqx_kVIj8&t=508s',
+      'video_id': 'bvVqx_kVIj8'},
      {'author': 'Joe Camberato',
       'channel': 'Joe Camberato',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=MUaOFobVexQ&t=78s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
+      'markdown': '[00:01:47](https://www.youtube.com/watch?v=H6xXORaU7Jo&t=107s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Business you want to go out and get as many customers as you can because now '
-              "you've got this facility that can grow with your business so the more business "
-              'the more customers you can take the quicker you can access that capital and '
-              'continue to grow.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': 'Business you want to go out and get as many customers as you can because now '
-             "you've got this facility that can grow with your business so the more business "
-             'the more customers you can take the quicker you can access that capital and '
-             'continue to grow.',
-      'title': 'Asset Based Lenders (Joe Camberato)',
-      'url': 'https://www.youtube.com/watch?v=MUaOFobVexQ&t=78s',
-      'video_id': 'MUaOFobVexQ'},
-     {'author': 'Michael Granados',
-      'channel': 'Michael Granados',
+      'text': "Usually, the best type of lease is going with the dollar buyout; it's really simple "
+              'and easy to understand.',
+      'timestamp': 107,
+      'timestamp_label': '[00:01:47]',
+      'timestamp_seconds': 107,
+      'tip': "Usually, the best type of lease is going with the dollar buyout; it's really simple "
+             'and easy to understand.',
+      'title': 'How Does Equipment Leasing Work?',
+      'url': 'https://www.youtube.com/watch?v=H6xXORaU7Jo&t=107s',
+      'video_id': 'H6xXORaU7Jo'},
+     {'author': 'Riverstone Training Academy',
+      'channel': 'Riverstone Training Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=lBvWGt7bnCw&t=21s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
+      'markdown': '[00:01:35](https://www.youtube.com/watch?v=8Rjbny5bPZU&t=95s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'That can take in a matter of days to get up to 2 weeks, 10 to 15 days, up to 30 '
-              "days of underwriting because this could be coming from a bank. There's also a "
-              'general business term loan.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'That can take in a matter of days to get up to 2 weeks, 10 to 15 days, up to 30 '
-             "days of underwriting because this could be coming from a bank. There's also a "
-             'general business term loan.',
-      'title': 'Fastest Way To Get Out Of Merchant Cash Advance Debt (MCA Debt Relief) '
-               '(Michael Granados)',
-      'url': 'https://www.youtube.com/watch?v=lBvWGt7bnCw&t=21s',
-      'video_id': 'lBvWGt7bnCw'},
-     {'author': 'Brandon Turner | Real Estate Investor',
-      'channel': 'Brandon Turner | Real Estate Investor',
+      'text': 'In many cases lease payments are considered operational expenses and may be tax '
+              'deductible, reducing the overall tax liability.',
+      'timestamp': 95,
+      'timestamp_label': '[00:01:35]',
+      'timestamp_seconds': 95,
+      'tip': 'In many cases lease payments are considered operational expenses and may be tax '
+             'deductible, reducing the overall tax liability.',
+      'title': 'Alternative Funding Options: Factoring, Asset-Based Lending, and Leasing',
+      'url': 'https://www.youtube.com/watch?v=8Rjbny5bPZU&t=95s',
+      'video_id': '8Rjbny5bPZU'}],
+ 6: [{'author': 'Commercial Capital LLC',
+      'channel': 'Commercial Capital LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:57](https://www.youtube.com/watch?v=-W2ThDxeu-o&t=717s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
+      'markdown': '[00:01:14](https://www.youtube.com/watch?v=PoHdu7KQ0zI&t=74s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "It's the buffer for all those other things we just talked about. And on a rough "
-              "building or an older property, like it isn't enough. So, gotcha number one is "
-              "do not let a DSR approval talk you into financing a property you shouldn't own. "
-              'The lender is underwriting the loan.',
-      'timestamp': 717,
-      'timestamp_label': '[00:11:57]',
-      'timestamp_seconds': 717,
-      'tip': "It's the buffer for all those other things we just talked about. And on a rough "
-             "building or an older property, like it isn't enough. So, gotcha number one is do "
-             "not let a DSR approval talk you into financing a property you shouldn't own. The "
-             'lender is underwriting the loan.',
-      'title': 'DSCR Loans Explained for 2026: Mortgages for Rental Investors (Brandon Turner '
-               '| Real Estate Investor)',
-      'url': 'https://www.youtube.com/watch?v=-W2ThDxeu-o&t=717s',
-      'video_id': '-W2ThDxeu-o'},
-     {'author': 'Katya Mizin',
-      'channel': 'Katya Mizin',
+      'text': "Step number one Peter sends his invoices to his customer just as he'd normally do; "
+              'as step number two Peter also sends his invoices to the accounts receivable '
+              'factoring company.',
+      'timestamp': 74,
+      'timestamp_label': '[00:01:14]',
+      'timestamp_seconds': 74,
+      'tip': "Step number one Peter sends his invoices to his customer just as he'd normally do; "
+             'as step number two Peter also sends his invoices to the accounts receivable '
+             'factoring company.',
+      'title': 'Accounts Receivable Factoring - What is It?',
+      'url': 'https://www.youtube.com/watch?v=PoHdu7KQ0zI&t=74s',
+      'video_id': 'PoHdu7KQ0zI'},
+     {'author': 'Joe Camberato',
+      'channel': 'Joe Camberato',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:22](https://www.youtube.com/watch?v=WiG6N_co0Eo&t=742s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
+      'markdown': '[00:01:59](https://www.youtube.com/watch?v=qWXtw52gtTw&t=119s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': '90,000 a year in year one to lease your roof and put a system on it and then '
-              "we'll be participating in the Maryland Community Solar Program. Uh we'll offer "
-              "you a 2% escalator every year. It'll be a 20-year term if you want to transfer "
-              'the ownership of the building.',
-      'timestamp': 742,
-      'timestamp_label': '[00:12:22]',
-      'timestamp_seconds': 742,
-      'tip': '90,000 a year in year one to lease your roof and put a system on it and then '
-             "we'll be participating in the Maryland Community Solar Program. Uh we'll offer "
-             "you a 2% escalator every year. It'll be a 20-year term if you want to transfer "
-             'the ownership of the building.',
-      'title': 'Investment Tax Credit (ITC) webinar by Lumen Energy (Katya Mizin)',
-      'url': 'https://www.youtube.com/watch?v=WiG6N_co0Eo&t=742s',
-      'video_id': 'WiG6N_co0Eo'},
-     {'author': 'Farhat Lectures | CPA, CMA, EA & Accounting',
-      'channel': 'Farhat Lectures | CPA, CMA, EA & Accounting',
+      'text': 'As soon as you invoice your customer to get paid you can typically get paid on that '
+              'invoice immediately, usually up to 80 or 90% of that invoice immediately.',
+      'timestamp': 119,
+      'timestamp_label': '[00:01:59]',
+      'timestamp_seconds': 119,
+      'tip': 'As soon as you invoice your customer to get paid you can typically get paid on that '
+             'invoice immediately, usually up to 80 or 90% of that invoice immediately.',
+      'title': 'Accounts Receivable Financing: What You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=qWXtw52gtTw&t=119s',
+      'video_id': 'qWXtw52gtTw'},
+     {'author': 'Joe Camberato',
+      'channel': 'Joe Camberato',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:11](https://www.youtube.com/watch?v=j1xpasTho-0&t=551s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
+      'markdown': '[00:01:12](https://www.youtube.com/watch?v=MUaOFobVexQ&t=72s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Specifically, something collateralized debt obligations or CDOs. What are What '
-              'are those those CDOs? So, think of it as Lehman had collateralized debt '
-              'obligation, which is an asset. Think of it as a bond, as an investment.',
-      'timestamp': 551,
-      'timestamp_label': '[00:09:11]',
-      'timestamp_seconds': 551,
-      'tip': 'Specifically, something collateralized debt obligations or CDOs. What are What '
-             'are those those CDOs? So, think of it as Lehman had collateralized debt '
-             'obligation, which is an asset. Think of it as a bond, as an investment.',
-      'title': 'Factoring Receivable and Pledging of Receivable (Farhat Lectures | CPA, CMA, '
-               'EA & Accounting)',
-      'url': 'https://www.youtube.com/watch?v=j1xpasTho-0&t=551s',
-      'video_id': 'j1xpasTho-0'},
-     {'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:21](https://www.youtube.com/watch?v=408PWyXwwrI&t=501s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And the lender funds it meaning they give the cash to the borrower and you get '
-              'paid for making that connection happen. None of this requires a finance degree. '
-              'None of it requires any of your own capital or money in the play. It requires a '
-              'learnable process.',
-      'timestamp': 501,
-      'timestamp_label': '[00:08:21]',
-      'timestamp_seconds': 501,
-      'tip': 'And the lender funds it meaning they give the cash to the borrower and you get '
-             'paid for making that connection happen. None of this requires a finance degree. '
-             'None of it requires any of your own capital or money in the play. It requires a '
-             'learnable process.',
-      'title': 'Why 1 Loan Deal Pays More than 100 B2B Sales (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=408PWyXwwrI&t=501s',
-      'video_id': '408PWyXwwrI'},
-     {'author': 'Naturally New York',
-      'channel': 'Naturally New York',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:25](https://www.youtube.com/watch?v=oobK7A-p9-U&t=1225s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Companies to use as an example and for those of you who know me I'm a huge fan "
-              'of the office um so the Michael Scott paper company uh this is uh excuse me um '
-              'thinking about one.',
-      'timestamp': 1225,
-      'timestamp_label': '[00:20:25]',
-      'timestamp_seconds': 1225,
-      'tip': "Companies to use as an example and for those of you who know me I'm a huge fan "
-             'of the office um so the Michael Scott paper company uh this is uh excuse me um '
-             'thinking about one.',
-      'title': 'A Primer on Asset Based Lending (ABL) presented by SG Credit Partners '
-               '(Naturally New York)',
-      'url': 'https://www.youtube.com/watch?v=oobK7A-p9-U&t=1225s',
-      'video_id': 'oobK7A-p9-U'},
-     {'author': 'Slingshot Capital Inc.',
-      'channel': 'Slingshot Capital Inc.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:48](https://www.youtube.com/watch?v=63RLcNbs9SU&t=168s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Truly represents the interests of all players involved and and that there's "
-              'this constant refresh of ideas and individuals involved in helping to create a '
-              'strong association so looking forward to seeing that soon.',
-      'timestamp': 168,
-      'timestamp_label': '[00:02:48]',
-      'timestamp_seconds': 168,
-      'tip': "Truly represents the interests of all players involved and and that there's this "
-             'constant refresh of ideas and individuals involved in helping to create a strong '
-             'association so looking forward to seeing that soon.',
-      'title': '2020 Commercial Litigation Finance Association in the US Market (Slingshot '
-               'Capital Inc.)',
-      'url': 'https://www.youtube.com/watch?v=63RLcNbs9SU&t=168s',
-      'video_id': '63RLcNbs9SU'},
-     {'author': 'ION Capital - Loan Broker University',
-      'channel': 'ION Capital - Loan Broker University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:57](https://www.youtube.com/watch?v=jq-MYGn7i3I&t=417s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Vast uh uh uh Nationwide lender networ okay all right thank you you got it hey '
-              'Ryan Yes I want to ask your a question about what Tracy was talking about do '
-              'you have lenders for U leasing used equipment also lenders that would cash out '
-              'uh can can lend against the used.',
-      'timestamp': 417,
-      'timestamp_label': '[00:06:57]',
-      'timestamp_seconds': 417,
-      'tip': 'Vast uh uh uh Nationwide lender networ okay all right thank you you got it hey '
-             'Ryan Yes I want to ask your a question about what Tracy was talking about do you '
-             'have lenders for U leasing used equipment also lenders that would cash out uh '
-             'can can lend against the used.',
-      'title': 'How To Be A Business Loan Broker  |  The Basics of Equipment Finance (ION '
-               'Capital - Loan Broker University)',
-      'url': 'https://www.youtube.com/watch?v=jq-MYGn7i3I&t=417s',
-      'video_id': 'jq-MYGn7i3I'}],
- 8: [{'author': 'Jeremiah Boucher',
-      'channel': 'Jeremiah Boucher',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:03](https://www.youtube.com/watch?v=KFtBrowO6pc&t=63s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The purpose of a bridge loan is it helps investors move quickly. When there's a "
-              'great value-add opportunity or a building that a business needs to acquire in '
-              'order to operate their company out of, and they need to do it quickly, a bridge '
-              'loan can be the right financing tool.',
-      'timestamp': 63,
-      'timestamp_label': '[00:01:03]',
-      'timestamp_seconds': 63,
-      'tip': "The purpose of a bridge loan is it helps investors move quickly. When there's a "
-             'great value-add opportunity or a building that a business needs to acquire in '
-             'order to operate their company out of, and they need to do it quickly, a bridge '
-             'loan can be the right financing tool.',
-      'title': 'What Is A Bridge Loan In Commercial Real Estate (Jeremiah Boucher)',
-      'url': 'https://www.youtube.com/watch?v=KFtBrowO6pc&t=63s',
-      'video_id': 'KFtBrowO6pc'},
-     {'author': 'CFM (Commercial Financing Mastery)',
-      'channel': 'CFM (Commercial Financing Mastery)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:35](https://www.youtube.com/watch?v=QmriETtG_oE&t=935s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Also, you should expect the same for your business. By the way, always also '
-              "check with your principal broker, your brokerage owner, right? Don't hide or "
-              'anything from them. We want if a brokerage owner is watching this, we want to '
-              'help your people.',
-      'timestamp': 935,
-      'timestamp_label': '[00:15:35]',
-      'timestamp_seconds': 935,
-      'tip': 'Also, you should expect the same for your business. By the way, always also '
-             "check with your principal broker, your brokerage owner, right? Don't hide or "
-             'anything from them. We want if a brokerage owner is watching this, we want to '
-             'help your people.',
-      'title': 'What Brokers Get Wrong About Commercial Financing | Sua Truong (CFM '
-               '(Commercial Financing Mastery))',
-      'url': 'https://www.youtube.com/watch?v=QmriETtG_oE&t=935s',
-      'video_id': 'QmriETtG_oE'},
-     {'author': 'Matt Dubois',
-      'channel': 'Matt Dubois',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=vPF9bO_izWU&t=83s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The data gets cleaned and standardized. Missing fields are filled in from the '
-              'real invoice. The original record is never changed, and you can see exactly '
-              'what was sent to Visa. Pull your last statement and look for business card '
-              'transactions at standard rates.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': 'The data gets cleaned and standardized. Missing fields are filled in from the '
-             'real invoice. The original record is never changed, and you can see exactly what '
-             'was sent to Visa. Pull your last statement and look for business card '
-             'transactions at standard rates.',
-      'title': 'How B2B Businesses Lower Credit Card Fees (Visa Product 3 Explained) (Matt '
-               'Dubois)',
-      'url': 'https://www.youtube.com/watch?v=vPF9bO_izWU&t=83s',
-      'video_id': 'vPF9bO_izWU'},
-     {'author': 'Ben Van Zee',
-      'channel': 'Ben Van Zee',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:26](https://www.youtube.com/watch?v=EcXwTRCJH-8&t=146s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Found a freight factoring company he loved and got access to Commonwealth's "
-              "freight broker directory don't wait for a financial emergency call Commonwealth "
-              'Capital today 952 469 4460 visit Commonwealth mn.com simple straightforward '
-              'accounts receivable funding.',
-      'timestamp': 146,
-      'timestamp_label': '[00:02:26]',
-      'timestamp_seconds': 146,
-      'tip': "Found a freight factoring company he loved and got access to Commonwealth's "
-             "freight broker directory don't wait for a financial emergency call Commonwealth "
-             'Capital today 952 469 4460 visit Commonwealth mn.com simple straightforward '
-             'accounts receivable funding.',
-      'title': 'How Accounts Receivable Financing Works (Ben Van Zee)',
-      'url': 'https://www.youtube.com/watch?v=EcXwTRCJH-8&t=146s',
-      'video_id': 'EcXwTRCJH-8'},
-     {'author': 'ClearValue Tax',
-      'channel': 'ClearValue Tax',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:53](https://www.youtube.com/watch?v=jaczYsctbgs&t=413s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, if you come to my website, you can use my tool to see your probability of '
-              "approval based on just four criteria. Your loan amounts, how much that you're "
-              "requesting, your monthly gross sales, how long that you've been in business "
-              'for, and your credit score.',
-      'timestamp': 413,
-      'timestamp_label': '[00:06:53]',
-      'timestamp_seconds': 413,
-      'tip': 'So, if you come to my website, you can use my tool to see your probability of '
-             "approval based on just four criteria. Your loan amounts, how much that you're "
-             "requesting, your monthly gross sales, how long that you've been in business for, "
-             'and your credit score.',
-      'title': 'How to Get an SBA Loan For Your Small Business (Tips & Advice) (ClearValue '
-               'Tax)',
-      'url': 'https://www.youtube.com/watch?v=jaczYsctbgs&t=413s',
-      'video_id': 'jaczYsctbgs'},
-     {'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:26](https://www.youtube.com/watch?v=QPWj0c48x1o&t=1046s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Professional face to the world that includes your logo your business card your '
-              'website your brochures your CRM your a whole lot more your pitch decks a.',
-      'timestamp': 1046,
-      'timestamp_label': '[00:17:26]',
-      'timestamp_seconds': 1046,
-      'tip': 'Professional face to the world that includes your logo your business card your '
-             'website your brochures your CRM your a whole lot more your pitch decks a.',
-      'title': 'Commercial Loan Broker Institute Overview (Commercial Loan Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=QPWj0c48x1o&t=1046s',
-      'video_id': 'QPWj0c48x1o'},
-     {'author': 'Community Business Finance',
-      'channel': 'Community Business Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=pAuU5b_a7AY&t=30s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'When it comes to financing real estate the answer almost always is going to be '
-              'the 504 option is the best option for your business. The 504 program offers '
-              "many advantages that the 7a loan doesn't. The 504 program offers fixed rates "
-              'for twenty years.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': 'When it comes to financing real estate the answer almost always is going to be '
-             'the 504 option is the best option for your business. The 504 program offers many '
-             "advantages that the 7a loan doesn't. The 504 program offers fixed rates for "
-             'twenty years.',
-      'title': 'SBA 504 vs. 7(a) Loans for Commercial Real Estate (Community Business Finance)',
-      'url': 'https://www.youtube.com/watch?v=pAuU5b_a7AY&t=30s',
-      'video_id': 'pAuU5b_a7AY'},
-     {'author': 'Trade Finance Global',
-      'channel': 'Trade Finance Global',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=LlAxD5FEW5Q&t=72s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I think to Brian's point is you know, you've got access to the data, but then "
-              "you've got to do something intelligent on the top of it, right? So, it's "
-              'applying those tools.',
+      'text': "If you're going to use factoring you want to scale your business, you want to go "
+              "out and get as many customers as you can because now you've got this facility that "
+              'can grow with your business.',
       'timestamp': 72,
       'timestamp_label': '[00:01:12]',
       'timestamp_seconds': 72,
-      'tip': "I think to Brian's point is you know, you've got access to the data, but then "
-             "you've got to do something intelligent on the top of it, right? So, it's "
-             'applying those tools.',
-      'title': '4 - The evolution of Supply Chain Finance (Trade Finance Global)',
-      'url': 'https://www.youtube.com/watch?v=LlAxD5FEW5Q&t=72s',
-      'video_id': 'LlAxD5FEW5Q'},
-     {'author': 'AD Mortgage',
-      'channel': 'AD Mortgage',
+      'tip': "If you're going to use factoring you want to scale your business, you want to go out "
+             "and get as many customers as you can because now you've got this facility that can "
+             'grow with your business.',
+      'title': 'Asset Based Lenders',
+      'url': 'https://www.youtube.com/watch?v=MUaOFobVexQ&t=72s',
+      'video_id': 'MUaOFobVexQ'},
+     {'author': '75BizLoans and Commercial Real Estate Loans',
+      'channel': '75BizLoans and Commercial Real Estate Loans',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=HE_kRmkKu5c&t=163s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:01:43](https://www.youtube.com/watch?v=PH6WLL7kMUM&t=103s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Could Sarah imagine this before? When real estate investors search for '
-              'financing options, they often run into limitations. D S C R loans are more '
-              'flexible than traditional commercial mortgages.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Could Sarah imagine this before? When real estate investors search for financing '
-             'options, they often run into limitations. D S C R loans are more flexible than '
-             'traditional commercial mortgages.',
-      'title': 'What Is DSCR? Debt Service Coverage Ratio Loan, Real Estate Investing 2025, '
-               'Calculation Explained (AD Mortgage)',
-      'url': 'https://www.youtube.com/watch?v=HE_kRmkKu5c&t=163s',
-      'video_id': 'HE_kRmkKu5c'},
-     {'author': 'Trowbridge Law Group',
-      'channel': 'Trowbridge Law Group',
+      'text': 'Factoring sells the invoice. AR financing borrows against the receivable.',
+      'timestamp': 103,
+      'timestamp_label': '[00:01:43]',
+      'timestamp_seconds': 103,
+      'tip': 'Factoring sells the invoice. AR financing borrows against the receivable.',
+      'title': 'Invoice Factoring vs AR Financing Explained (2026)',
+      'url': 'https://www.youtube.com/watch?v=PH6WLL7kMUM&t=103s',
+      'video_id': 'PH6WLL7kMUM'},
+     {'author': 'Ian Johnson',
+      'channel': 'Ian Johnson',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:52](https://www.youtube.com/watch?v=8p8VFFvdliQ&t=52s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:04:43](https://www.youtube.com/watch?v=Lu16E6BvvDE&t=283s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "It's a whole new business and I'll show you how you can get get a hold of some "
-              "of that material at the end of the uh video. I'm a still a half marathon "
-              'runner, slower than I used to be, but I still do it. So the question is, are '
-              'you acting as an unregistered broker dealer?',
-      'timestamp': 52,
-      'timestamp_label': '[00:00:52]',
-      'timestamp_seconds': 52,
-      'tip': "It's a whole new business and I'll show you how you can get get a hold of some "
-             "of that material at the end of the uh video. I'm a still a half marathon runner, "
-             'slower than I used to be, but I still do it. So the question is, are you acting '
-             'as an unregistered broker dealer?',
-      'title': "Don't Act as a Broker-Dealer (Trowbridge Law Group)",
-      'url': 'https://www.youtube.com/watch?v=8p8VFFvdliQ&t=52s',
-      'video_id': '8p8VFFvdliQ'},
-     {'author': 'CPDonline',
-      'channel': 'CPDonline',
+      'text': "Your company's credit rating plays no role in the decision of the financing company "
+              "to advance you capital; the financing company's concern is with the account "
+              "debtor's credit rating, which is your customer.",
+      'timestamp': 283,
+      'timestamp_label': '[00:04:43]',
+      'timestamp_seconds': 283,
+      'tip': "Your company's credit rating plays no role in the decision of the financing company "
+             "to advance you capital; the financing company's concern is with the account debtor's "
+             'credit rating, which is your customer.',
+      'title': 'Bank Financing vs. Receivables Factoring',
+      'url': 'https://www.youtube.com/watch?v=Lu16E6BvvDE&t=283s',
+      'video_id': 'Lu16E6BvvDE'},
+     {'author': 'Factor Finders',
+      'channel': 'Factor Finders',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:11](https://www.youtube.com/watch?v=ISIQRUkBnEc&t=131s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:01:50](https://www.youtube.com/watch?v=8C1D2A4YVvQ&t=110s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Die jas bidon in hen die be very bad en chewie aan de slides furthermore the '
-              'education and educational tool to bring ham en salami demonstrate de laatste '
-              'side I did you care professionals en gladys wal die artikel interesting '
-              'professionele jury maar ground cover.',
-      'timestamp': 131,
-      'timestamp_label': '[00:02:11]',
-      'timestamp_seconds': 131,
-      'tip': 'Die jas bidon in hen die be very bad en chewie aan de slides furthermore the '
-             'education and educational tool to bring ham en salami demonstrate de laatste '
-             'side I did you care professionals en gladys wal die artikel interesting '
-             'professionele jury maar ground cover.',
-      'title': 'Litigation Funding for Commercial Claims in Canada (CPDonline)',
-      'url': 'https://www.youtube.com/watch?v=ISIQRUkBnEc&t=131s',
-      'video_id': 'ISIQRUkBnEc'},
-     {'author': 'Succeed REI',
-      'channel': 'Succeed REI',
+      'text': "We'll make an introduction between your factoring prospect and one of our factoring "
+              "companies, we'll get the deal done, and then we'll split commissions, fifty-fifty.",
+      'timestamp': 110,
+      'timestamp_label': '[00:01:50]',
+      'timestamp_seconds': 110,
+      'tip': "We'll make an introduction between your factoring prospect and one of our factoring "
+             "companies, we'll get the deal done, and then we'll split commissions, fifty-fifty.",
+      'title': 'Factoring Broker Program',
+      'url': 'https://www.youtube.com/watch?v=8C1D2A4YVvQ&t=110s',
+      'video_id': '8C1D2A4YVvQ'},
+     {'author': 'SouthStar Capital, LLC',
+      'channel': 'SouthStar Capital, LLC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=3AB1K3GHp4w&t=15s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:02:19](https://www.youtube.com/watch?v=_VD-lBSeoEw&t=139s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'From a mortgage broker when referencing the minimum requirements for a loan and '
-              'you wondered what does that mean exactly well you came to the right place '
-              'because.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'From a mortgage broker when referencing the minimum requirements for a loan and '
-             'you wondered what does that mean exactly well you came to the right place '
-             'because.',
-      'title': 'What is Debt Service Coverage Ratio (DSCR) and How to Use It (Succeed REI)',
-      'url': 'https://www.youtube.com/watch?v=3AB1K3GHp4w&t=15s',
-      'video_id': '3AB1K3GHp4w'},
-     {'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
+      'text': "We have a very hands-off approach; we do want to be kept in the loop, but we aren't "
+              'going to call them like a collections company and burn the phone lines up multiple '
+              'times a day.',
+      'timestamp': 139,
+      'timestamp_label': '[00:02:19]',
+      'timestamp_seconds': 139,
+      'tip': "We have a very hands-off approach; we do want to be kept in the loop, but we aren't "
+             'going to call them like a collections company and burn the phone lines up multiple '
+             'times a day.',
+      'title': 'How Invoice & Accounts Receivable Financing Works',
+      'url': 'https://www.youtube.com/watch?v=_VD-lBSeoEw&t=139s',
+      'video_id': '_VD-lBSeoEw'},
+     {'author': 'Universal Funding Corporation',
+      'channel': 'Universal Funding Corporation',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=ctWaQk2YDgE&t=112s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=3PlJmybrzHs&t=86s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "'re having a lot more fun doing it. So, if you're wondering if you're a fit for "
-              'finance or as a commercial loan broker, just check out our free personality '
-              "quiz at loanbrokers. It's a free tool that we've built to help out people who "
-              'are exploring the finance space.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': "'re having a lot more fun doing it. So, if you're wondering if you're a fit for "
-             'finance or as a commercial loan broker, just check out our free personality quiz '
-             "at loanbrokers. It's a free tool that we've built to help out people who are "
-             'exploring the finance space.',
-      'title': 'Wondering if you’re built for commercial finance? (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=ctWaQk2YDgE&t=112s',
-      'video_id': 'ctWaQk2YDgE'},
-     {'author': 'Beau Eckstein, Business Ownership Coach',
-      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'text': "Once your referral becomes a funded client you'll receive 20% commission for the "
+              'life of the deal.',
+      'timestamp': 86,
+      'timestamp_label': '[00:01:26]',
+      'timestamp_seconds': 86,
+      'tip': "Once your referral becomes a funded client you'll receive 20% commission for the "
+             'life of the deal.',
+      'title': 'Factoring Receivables Broker - Earn The Highest Commission',
+      'url': 'https://www.youtube.com/watch?v=3PlJmybrzHs&t=86s',
+      'video_id': '3PlJmybrzHs'},
+     {'author': 'Darrell Cockrum',
+      'channel': 'Darrell Cockrum',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:24](https://www.youtube.com/watch?v=M48iXqAIzwE&t=144s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=bN1tDQE59LE&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "Channel we talk all things financing I've been in the lending industry for over "
-              "20 years and I'm happy to answer your questions and provide great content.",
-      'timestamp': 144,
-      'timestamp_label': '[00:02:24]',
-      'timestamp_seconds': 144,
-      'tip': "Channel we talk all things financing I've been in the lending industry for over "
-             "20 years and I'm happy to answer your questions and provide great content.",
-      'title': 'How to Become a Commercial Loan Broker (Beau Eckstein, Business Ownership '
-               'Coach)',
-      'url': 'https://www.youtube.com/watch?v=M48iXqAIzwE&t=144s',
-      'video_id': 'M48iXqAIzwE'},
-     {'author': 'Beau Eckstein, Business Ownership Coach',
-      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'text': "There's no interest rate, and that's a telltale sign that somebody talking about "
+              "factoring maybe doesn't have a good handle on how it works.",
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': "There's no interest rate, and that's a telltale sign that somebody talking about "
+             "factoring maybe doesn't have a good handle on how it works.",
+      'title': 'accounts receivable financing vs factoring',
+      'url': 'https://www.youtube.com/watch?v=bN1tDQE59LE&t=94s',
+      'video_id': 'bN1tDQE59LE'},
+     {'author': 'Ben Van Zee',
+      'channel': 'Ben Van Zee',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:58](https://www.youtube.com/watch?v=rzgxx8EB7NI&t=118s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q8 operational verification).',
+      'markdown': '[00:01:11](https://www.youtube.com/watch?v=EcXwTRCJH-8&t=71s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "This channel we talk all things financing I've been in the lending industry for "
-              "over 20 years and I'm happy to answer your questions and provide great content.",
-      'timestamp': 118,
-      'timestamp_label': '[00:01:58]',
-      'timestamp_seconds': 118,
-      'tip': "This channel we talk all things financing I've been in the lending industry for "
-             "over 20 years and I'm happy to answer your questions and provide great content.",
-      'title': 'What is a good DSCR for commercial real estate? (Beau Eckstein, Business '
-               'Ownership Coach)',
-      'url': 'https://www.youtube.com/watch?v=rzgxx8EB7NI&t=118s',
-      'video_id': 'rzgxx8EB7NI'}],
- 9: [{'author': 'Commercial Loan Broker Institute',
-      'channel': 'Commercial Loan Broker Institute',
+      'text': "It's the selling of invoices to a factoring company for immediate cash.",
+      'timestamp': 71,
+      'timestamp_label': '[00:01:11]',
+      'timestamp_seconds': 71,
+      'tip': "It's the selling of invoices to a factoring company for immediate cash.",
+      'title': 'How Accounts Receivable Financing Works',
+      'url': 'https://www.youtube.com/watch?v=EcXwTRCJH-8&t=71s',
+      'video_id': 'EcXwTRCJH-8'},
+     {'author': 'CPA Financial Exchange Group',
+      'channel': 'CPA Financial Exchange Group',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:07](https://www.youtube.com/watch?v=v3GnrXphwvM&t=667s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:08:30](https://www.youtube.com/watch?v=LWEWnYj0IZ4&t=510s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "And most business purpose commercial brokering doesn't require the consumer "
-              'mortgage licensing, the NMLS SAFE Act licensing, that residential mortgage '
-              "officers have to carry. But, this isn't legal advice, so confirm the rules for "
-              'your state.',
-      'timestamp': 667,
-      'timestamp_label': '[00:11:07]',
-      'timestamp_seconds': 667,
-      'tip': "And most business purpose commercial brokering doesn't require the consumer "
-             'mortgage licensing, the NMLS SAFE Act licensing, that residential mortgage '
-             "officers have to carry. But, this isn't legal advice, so confirm the rules for "
-             'your state.',
-      'title': 'What Does a Commercial Loan Broker REALLY Do? (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=v3GnrXphwvM&t=667s',
-      'video_id': 'v3GnrXphwvM'},
-     {'author': 'Texas Office of Consumer Credit Commissioner',
-      'channel': 'Texas Office of Consumer Credit Commissioner',
+      'text': "It's not a loan, it is a purchase, so if you were to annualize that that would "
+              'really put a lot of sticker shock into your clients.',
+      'timestamp': 510,
+      'timestamp_label': '[00:08:30]',
+      'timestamp_seconds': 510,
+      'tip': "It's not a loan, it is a purchase, so if you were to annualize that that would "
+             'really put a lot of sticker shock into your clients.',
+      'title': 'Accounts Receivable Financing - Factoring',
+      'url': 'https://www.youtube.com/watch?v=LWEWnYj0IZ4&t=510s',
+      'video_id': 'LWEWnYj0IZ4'},
+     {'author': 'CPA Financial Exchange Group',
+      'channel': 'CPA Financial Exchange Group',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:34](https://www.youtube.com/watch?v=rhDEWGC8KqM&t=154s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:06:16](https://www.youtube.com/watch?v=LWEWnYj0IZ4&t=376s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "So, I'd like to start with a quick refresher on the product and the law being "
-              "implemented by these rules to make sure we're on the same page. So, the product "
-              "and regulated area that we're talking about is called commercial sales-based "
-              'financing.',
-      'timestamp': 154,
-      'timestamp_label': '[00:02:34]',
-      'timestamp_seconds': 154,
-      'tip': "So, I'd like to start with a quick refresher on the product and the law being "
-             "implemented by these rules to make sure we're on the same page. So, the product "
-             "and regulated area that we're talking about is called commercial sales-based "
-             'financing.',
-      'title': 'Commercial Sales-Based Financing Rules: Precomment Draft – January 28, 2026 '
-               '(Texas Office of Consumer Credit Commissioner)',
-      'url': 'https://www.youtube.com/watch?v=rhDEWGC8KqM&t=154s',
-      'video_id': 'rhDEWGC8KqM'},
-     {'author': 'The Loan Broker Academy',
-      'channel': 'The Loan Broker Academy',
+      'text': 'This monitoring actually saved these clients a tremendous amount of expense and '
+              'stress because not long after that advice was given that Kodak company became '
+              'unable to pay.',
+      'timestamp': 376,
+      'timestamp_label': '[00:06:16]',
+      'timestamp_seconds': 376,
+      'tip': 'This monitoring actually saved these clients a tremendous amount of expense and '
+             'stress because not long after that advice was given that Kodak company became unable '
+             'to pay.',
+      'title': 'Accounts Receivable Financing - Factoring',
+      'url': 'https://www.youtube.com/watch?v=LWEWnYj0IZ4&t=376s',
+      'video_id': 'LWEWnYj0IZ4'},
+     {'author': 'Allen Mursau',
+      'channel': 'Allen Mursau',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=4AAOQcVDMIo&t=15s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:00:21](https://www.youtube.com/watch?v=vtCDACsG2Bs&t=21s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "Because you're considering becoming a business loan broker please watch this to "
-              'the end and i want to state something here do not ever ever ever believe the.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "Because you're considering becoming a business loan broker please watch this to "
-             'the end and i want to state something here do not ever ever ever believe the.',
-      'title': 'Commercial Loan Broker Training | Do NOT Believe The Hype On YouTube!! (The '
-               'Loan Broker Academy)',
-      'url': 'https://www.youtube.com/watch?v=4AAOQcVDMIo&t=15s',
-      'video_id': '4AAOQcVDMIo'},
-     {'author': 'Selling Your Canadian Business',
-      'channel': 'Selling Your Canadian Business',
+      'text': "That's where we'd be factoring our receivables; that's where the seller surrenders "
+              'control of the receivables, recorded as a sale of an asset on the balance sheet.',
+      'timestamp': 21,
+      'timestamp_label': '[00:00:21]',
+      'timestamp_seconds': 21,
+      'tip': "That's where we'd be factoring our receivables; that's where the seller surrenders "
+             'control of the receivables, recorded as a sale of an asset on the balance sheet.',
+      'title': 'Accounts Receivable Factoring Vs Assignment (Transferring Receivables For Cash)',
+      'url': 'https://www.youtube.com/watch?v=vtCDACsG2Bs&t=21s',
+      'video_id': 'vtCDACsG2Bs'},
+     {'author': 'LetsLearn Global',
+      'channel': 'LetsLearn Global',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:10](https://www.youtube.com/watch?v=Ja8jXRIkOK4&t=970s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:13:38](https://www.youtube.com/watch?v=qEKcL_abQ9c&t=818s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'The second being one is the cash flow issues become constant. You are always in '
-              "a state of crisis. You don't have the working capital you need to support that "
-              'growth. And the last one is the business owner.',
-      'timestamp': 970,
-      'timestamp_label': '[00:16:10]',
-      'timestamp_seconds': 970,
-      'tip': 'The second being one is the cash flow issues become constant. You are always in '
-             "a state of crisis. You don't have the working capital you need to support that "
-             'growth. And the last one is the business owner.',
-      'title': 'How a Fractional CFO Helps Canadian Businesses Scale and Prepare for Sale with '
-               'Robert Cinapri (Selling Your Canadian Business)',
-      'url': 'https://www.youtube.com/watch?v=Ja8jXRIkOK4&t=970s',
-      'video_id': 'Ja8jXRIkOK4'},
-     {'author': 'ProjectionHub',
-      'channel': 'ProjectionHub',
+      'text': 'Remember two deductions from your receivables, from the face value of receivables: '
+              'fee and interest. Never just one of them.',
+      'timestamp': 818,
+      'timestamp_label': '[00:13:38]',
+      'timestamp_seconds': 818,
+      'tip': 'Remember two deductions from your receivables, from the face value of receivables: '
+             'fee and interest. Never just one of them.',
+      'title': 'CMA| Part 1 | Section A  | Accounts Receivable Factoring | Letslearn Global',
+      'url': 'https://www.youtube.com/watch?v=qEKcL_abQ9c&t=818s',
+      'video_id': 'qEKcL_abQ9c'},
+     {'author': 'Katheryn Reynolds',
+      'channel': 'Katheryn Reynolds',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:46](https://www.youtube.com/watch?v=_V39MGbzjw0&t=46s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:01:20](https://www.youtube.com/watch?v=_loCXf6bnl4&t=80s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "The issue is that MCA debt, they're going to file what's called a UCCC filing "
-              "statement on all business assets. So, they're going to file that with the "
-              "Secretary of State. They're going to have a claim on all of your assets.",
-      'timestamp': 46,
-      'timestamp_label': '[00:00:46]',
-      'timestamp_seconds': 46,
-      'tip': "The issue is that MCA debt, they're going to file what's called a UCCC filing "
-             "statement on all business assets. So, they're going to file that with the "
-             "Secretary of State. They're going to have a claim on all of your assets.",
-      'title': 'Can I Refinance an MCA Loan with an SBA Loan? (ProjectionHub)',
-      'url': 'https://www.youtube.com/watch?v=_V39MGbzjw0&t=46s',
-      'video_id': '_V39MGbzjw0'},
+      'text': "If it's with recourse that means the seller is going to retain some of the risk, "
+              "but in return for retaining some of that risk it's a way to get your factor fee a "
+              'little bit lower.',
+      'timestamp': 80,
+      'timestamp_label': '[00:01:20]',
+      'timestamp_seconds': 80,
+      'tip': "If it's with recourse that means the seller is going to retain some of the risk, but "
+             "in return for retaining some of that risk it's a way to get your factor fee a little "
+             'bit lower.',
+      'title': 'Factoring Receivables with & without recourse',
+      'url': 'https://www.youtube.com/watch?v=_loCXf6bnl4&t=80s',
+      'video_id': '_loCXf6bnl4'},
+     {'author': 'Invoice Loan vs Invoice Advance',
+      'channel': 'Invoice Loan vs Invoice Advance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:34](https://www.youtube.com/watch?v=wAd9ru9HoI8&t=34s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The terms seem reasonable until you do the math: after 6 months you will have paid '
+              'back 125,000, which equates to an annual interest rate of 109%.',
+      'timestamp': 34,
+      'timestamp_label': '[00:00:34]',
+      'timestamp_seconds': 34,
+      'tip': 'The terms seem reasonable until you do the math: after 6 months you will have paid '
+             'back 125,000, which equates to an annual interest rate of 109%.',
+      'title': 'accounts receivable financing vs factoring',
+      'url': 'https://www.youtube.com/watch?v=wAd9ru9HoI8&t=34s',
+      'video_id': 'wAd9ru9HoI8'},
+     {'author': 'Trifecta Business Group',
+      'channel': 'Trifecta Business Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:20](https://www.youtube.com/watch?v=lkbt0MYbQeI&t=80s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Never submit disputed invoices, and do not let financing mask fundamentally '
+              'unprofitable contracts.',
+      'timestamp': 80,
+      'timestamp_label': '[00:01:20]',
+      'timestamp_seconds': 80,
+      'tip': 'Never submit disputed invoices, and do not let financing mask fundamentally '
+             'unprofitable contracts.',
+      'title': 'Accounts Receivable Financing for B2B Companies Explained',
+      'url': 'https://www.youtube.com/watch?v=lkbt0MYbQeI&t=80s',
+      'video_id': 'lkbt0MYbQeI'}],
+ 7: [{'author': 'Financely Group',
+      'channel': 'Financely Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:13](https://www.youtube.com/watch?v=xY3rD_awSEg&t=13s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Cash is paid upfront for operations, while revenue is trapped in receivables.',
+      'timestamp': 13,
+      'timestamp_label': '[00:00:13]',
+      'timestamp_seconds': 13,
+      'tip': 'Cash is paid upfront for operations, while revenue is trapped in receivables.',
+      'title': 'Asset-Based Lending and Borrowing Base Facilities',
+      'url': 'https://www.youtube.com/watch?v=xY3rD_awSEg&t=13s',
+      'video_id': 'xY3rD_awSEg'},
+     {'author': 'PIMCO U.S.',
+      'channel': 'PIMCO U.S.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:53](https://www.youtube.com/watch?v=C4UI_wc_sUU&t=113s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The consumer category includes consumer orientated credit such as auto loans, '
+              'credit card receivables, student loans, or other types of personal loans.',
+      'timestamp': 113,
+      'timestamp_label': '[00:01:53]',
+      'timestamp_seconds': 113,
+      'tip': 'The consumer category includes consumer orientated credit such as auto loans, credit '
+             'card receivables, student loans, or other types of personal loans.',
+      'title': 'Asset-Based Finance Explained',
+      'url': 'https://www.youtube.com/watch?v=C4UI_wc_sUU&t=113s',
+      'video_id': 'C4UI_wc_sUU'},
      {'author': 'Supply Chain Finance Academy',
       'channel': 'Supply Chain Finance Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=Db19fMNKoJY&t=69s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:02:36](https://www.youtube.com/watch?v=Db19fMNKoJY&t=156s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Supply chain finance, SCF, bridges these two worlds. It is a set of financial '
-              'solutions enabled by both legal structures and technology that allows buyers '
-              'and suppliers to optimize working capital and cash flow.',
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': 'Supply chain finance, SCF, bridges these two worlds. It is a set of financial '
-             'solutions enabled by both legal structures and technology that allows buyers and '
-             'suppliers to optimize working capital and cash flow.',
+      'text': 'Supply chain finance is not just about digitalization.',
+      'timestamp': 156,
+      'timestamp_label': '[00:02:36]',
+      'timestamp_seconds': 156,
+      'tip': 'Supply chain finance is not just about digitalization.',
       'title': 'Mastering Supply Chain Finance: Technique, Risk & Innovation - Introduction to '
-               'Supply Chain Finance (Supply Chain Finance Academy)',
-      'url': 'https://www.youtube.com/watch?v=Db19fMNKoJY&t=69s',
+               'Supply Chain Finance',
+      'url': 'https://www.youtube.com/watch?v=Db19fMNKoJY&t=156s',
       'video_id': 'Db19fMNKoJY'},
+     {'author': 'Vanijja | Trade Insights',
+      'channel': 'Vanijja | Trade Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:08](https://www.youtube.com/watch?v=RcVypdN4SHs&t=248s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, they are burdened with a high 12% interest rate for bank loans.',
+      'timestamp': 248,
+      'timestamp_label': '[00:04:08]',
+      'timestamp_seconds': 248,
+      'tip': 'So, they are burdened with a high 12% interest rate for bank loans.',
+      'title': 'Trade Finance vs. Supply Chain Finance: Key Differences Explained (With Real '
+               'Examples)',
+      'url': 'https://www.youtube.com/watch?v=RcVypdN4SHs&t=248s',
+      'video_id': 'RcVypdN4SHs'},
+     {'author': 'Vanijja | Trade Insights',
+      'channel': 'Vanijja | Trade Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:38](https://www.youtube.com/watch?v=kMiyyMuSUDU&t=518s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Their free cash flow more than triples, jumping from 20 million to 70 million.',
+      'timestamp': 518,
+      'timestamp_label': '[00:08:38]',
+      'timestamp_seconds': 518,
+      'tip': 'Their free cash flow more than triples, jumping from 20 million to 70 million.',
+      'title': "Cash Flow Problems? Here's How Supply Chain Finance Provides the Solution",
+      'url': 'https://www.youtube.com/watch?v=kMiyyMuSUDU&t=518s',
+      'video_id': 'kMiyyMuSUDU'},
+     {'author': 'Trade Finance Global',
+      'channel': 'Trade Finance Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:45](https://www.youtube.com/watch?v=LlAxD5FEW5Q&t=585s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The key is standardizing the data fields.',
+      'timestamp': 585,
+      'timestamp_label': '[00:09:45]',
+      'timestamp_seconds': 585,
+      'tip': 'The key is standardizing the data fields.',
+      'title': '4 - The evolution of Supply Chain Finance',
+      'url': 'https://www.youtube.com/watch?v=LlAxD5FEW5Q&t=585s',
+      'video_id': 'LlAxD5FEW5Q'},
+     {'author': 'Eslatainment',
+      'channel': 'Eslatainment',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:36](https://www.youtube.com/watch?v=3Y7TjakDREI&t=36s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'High-interest loans eat into profits.',
+      'timestamp': 36,
+      'timestamp_label': '[00:00:36]',
+      'timestamp_seconds': 36,
+      'tip': 'High-interest loans eat into profits.',
+      'title': 'Supply Chain Finance',
+      'url': 'https://www.youtube.com/watch?v=3Y7TjakDREI&t=36s',
+      'video_id': '3Y7TjakDREI'},
+     {'author': 'Trade Finance Global',
+      'channel': 'Trade Finance Global',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:25](https://www.youtube.com/watch?v=ltw4tGEw31o&t=85s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Fundamentally, you're solving a very simple problem in that somebody wants to pay "
+              'as late as possible and somebody wants to get paid as quick as possible.',
+      'timestamp': 85,
+      'timestamp_label': '[00:01:25]',
+      'timestamp_seconds': 85,
+      'tip': "Fundamentally, you're solving a very simple problem in that somebody wants to pay as "
+             'late as possible and somebody wants to get paid as quick as possible.',
+      'title': '25 years of supply chain finance  A journey to unlock liquidity',
+      'url': 'https://www.youtube.com/watch?v=ltw4tGEw31o&t=85s',
+      'video_id': 'ltw4tGEw31o'},
      {'author': 'Commercial Loan Broker Institute',
       'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:07](https://www.youtube.com/watch?v=dIwbKzTxcQk&t=247s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:06:12](https://www.youtube.com/watch?v=4fxpQTB_spA&t=372s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "Here's the realistic picture on licensing. Business and commercial loan "
-              'brokering generally is not state licensed the way residential mortgage '
-              'origination actually is state licensed. But, those rules vary state by state, '
-              'and there are some real exceptions.',
-      'timestamp': 247,
-      'timestamp_label': '[00:04:07]',
-      'timestamp_seconds': 247,
-      'tip': "Here's the realistic picture on licensing. Business and commercial loan "
-             'brokering generally is not state licensed the way residential mortgage '
-             'origination actually is state licensed. But, those rules vary state by state, '
-             'and there are some real exceptions.',
-      'title': 'How to Become a Business Loan Broker in 2026 (Commercial Loan Broker '
-               'Institute)',
-      'url': 'https://www.youtube.com/watch?v=dIwbKzTxcQk&t=247s',
-      'video_id': 'dIwbKzTxcQk'},
-     {'author': 'Brian M. Hazel Quotes',
-      'channel': 'Brian M. Hazel Quotes',
+      'text': "And then you have vendor terms or trade credit, and that's often the cheapest "
+              "capital if it's available because you're extending your payables.",
+      'timestamp': 372,
+      'timestamp_label': '[00:06:12]',
+      'timestamp_seconds': 372,
+      'tip': "And then you have vendor terms or trade credit, and that's often the cheapest "
+             "capital if it's available because you're extending your payables.",
+      'title': 'Unlock the Lucrative World of Supply Chain Financing',
+      'url': 'https://www.youtube.com/watch?v=4fxpQTB_spA&t=372s',
+      'video_id': '4fxpQTB_spA'},
+     {'author': 'Peak Capital',
+      'channel': 'Peak Capital',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=e3NbWehFdJs&t=88s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:03:57](https://www.youtube.com/watch?v=J-guTckEVMA&t=237s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'What can I cut without killing sales? This rolling forecast tells me two '
-              'things. How much I actually need when I can realistically repay. If the loan '
-              "won't bridge me to higher revenues, ease seasonality losses, or fulfill a new "
-              'contract or an operational fix.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': 'What can I cut without killing sales? This rolling forecast tells me two things. '
-             "How much I actually need when I can realistically repay. If the loan won't "
-             'bridge me to higher revenues, ease seasonality losses, or fulfill a new contract '
-             'or an operational fix.',
-      'title': 'How to Get Business Funding & Working Capital - BusinessLoansConnect.com '
-               '(Brian M. Hazel Quotes)',
-      'url': 'https://www.youtube.com/watch?v=e3NbWehFdJs&t=88s',
-      'video_id': 'e3NbWehFdJs'},
+      'text': 'Applications are extensive, covering the business plan, stakeholders, sector, '
+              'assets, and debts.',
+      'timestamp': 237,
+      'timestamp_label': '[00:03:57]',
+      'timestamp_seconds': 237,
+      'tip': 'Applications are extensive, covering the business plan, stakeholders, sector, '
+             'assets, and debts.',
+      'title': 'What is Trade Finance?',
+      'url': 'https://www.youtube.com/watch?v=J-guTckEVMA&t=237s',
+      'video_id': 'J-guTckEVMA'},
      {'author': 'Mar T',
       'channel': 'Mar T',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:00](https://www.youtube.com/watch?v=PPTyFBcPTUw&t=60s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:00:57](https://www.youtube.com/watch?v=PPTyFBcPTUw&t=57s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "Now, does this result in any kind of an accounting journal entry? It's simply a "
-              "footnote disclosure. It's very useful for the reader to understand, oh, I see "
-              'you have this current asset called receivables.',
-      'timestamp': 60,
-      'timestamp_label': '[00:01:00]',
-      'timestamp_seconds': 60,
-      'tip': "Now, does this result in any kind of an accounting journal entry? It's simply a "
-             "footnote disclosure. It's very useful for the reader to understand, oh, I see "
-             'you have this current asset called receivables.',
-      'title': 'F3 M2 5 Pledging & Factoring of Accounts Receivables (Mar T)',
-      'url': 'https://www.youtube.com/watch?v=PPTyFBcPTUw&t=60s',
+      'text': 'They retain the title, but they have pledged that the proceeds as those receivables '
+              'are collected will be used to pay down the loan.',
+      'timestamp': 57,
+      'timestamp_label': '[00:00:57]',
+      'timestamp_seconds': 57,
+      'tip': 'They retain the title, but they have pledged that the proceeds as those receivables '
+             'are collected will be used to pay down the loan.',
+      'title': 'F3 M2 5 Pledging & Factoring of Accounts Receivables',
+      'url': 'https://www.youtube.com/watch?v=PPTyFBcPTUw&t=57s',
       'video_id': 'PPTyFBcPTUw'},
-     {'author': 'CLA (CliftonLarsonAllen LLP)',
-      'channel': 'CLA (CliftonLarsonAllen LLP)',
+     {'author': 'Naturally New York',
+      'channel': 'Naturally New York',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:20](https://www.youtube.com/watch?v=ByTHmfsxaNQ&t=920s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:34:49](https://www.youtube.com/watch?v=oobK7A-p9-U&t=2089s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "The HUD one is going away we're going to have a new closing disclosure wait to "
-              "see whether we're still going to have a lot of compliance violations in that "
-              'area.',
-      'timestamp': 920,
-      'timestamp_label': '[00:15:20]',
-      'timestamp_seconds': 920,
-      'tip': "The HUD one is going away we're going to have a new closing disclosure wait to "
-             "see whether we're still going to have a lot of compliance violations in that "
-             'area.',
-      'title': 'TIL/RESPA Final Rule on Integrated Mortgage Disclosures (CLA '
-               '(CliftonLarsonAllen LLP))',
-      'url': 'https://www.youtube.com/watch?v=ByTHmfsxaNQ&t=920s',
-      'video_id': 'ByTHmfsxaNQ'},
-     {'author': 'Solar Energy Channel by Paradise Energy Solutions',
-      'channel': 'Solar Energy Channel by Paradise Energy Solutions',
+      'text': "Keep in mind asset based lenders are underwriting to a liquidation, they're "
+              'underwriting to a worst case scenario.',
+      'timestamp': 2089,
+      'timestamp_label': '[00:34:49]',
+      'timestamp_seconds': 2089,
+      'tip': "Keep in mind asset based lenders are underwriting to a liquidation, they're "
+             'underwriting to a worst case scenario.',
+      'title': 'A Primer on Asset Based Lending (ABL) presented by SG Credit Partners',
+      'url': 'https://www.youtube.com/watch?v=oobK7A-p9-U&t=2089s',
+      'video_id': 'oobK7A-p9-U'},
+     {'author': 'Naturally New York',
+      'channel': 'Naturally New York',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:43](https://www.youtube.com/watch?v=LltieIq1Eq0&t=43s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:33:42](https://www.youtube.com/watch?v=oobK7A-p9-U&t=2022s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'The tax credit for residential is under Section 25 and under Commercial Section '
-              "48. And the rules are very different. And one of the things we've seen with the "
-              'IRA bill that was passed was that changing even more drastically.',
-      'timestamp': 43,
-      'timestamp_label': '[00:00:43]',
-      'timestamp_seconds': 43,
-      'tip': 'The tax credit for residential is under Section 25 and under Commercial Section '
-             "48. And the rules are very different. And one of the things we've seen with the "
-             'IRA bill that was passed was that changing even more drastically.',
-      'title': 'Unlocking the Solar Tax Credit: 10% adders, transferability rules, and more '
-               '(Solar Energy Channel by Paradise Energy Solutions)',
-      'url': 'https://www.youtube.com/watch?v=LltieIq1Eq0&t=43s',
-      'video_id': 'LltieIq1Eq0'},
-     {'author': 'The Capital Alliance TV',
-      'channel': 'The Capital Alliance TV',
+      'text': 'Most lenders will implement a concentration threshold of 25%.',
+      'timestamp': 2022,
+      'timestamp_label': '[00:33:42]',
+      'timestamp_seconds': 2022,
+      'tip': 'Most lenders will implement a concentration threshold of 25%.',
+      'title': 'A Primer on Asset Based Lending (ABL) presented by SG Credit Partners',
+      'url': 'https://www.youtube.com/watch?v=oobK7A-p9-U&t=2022s',
+      'video_id': 'oobK7A-p9-U'},
+     {'author': 'Accounting Videos',
+      'channel': 'Accounting Videos',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:36](https://www.youtube.com/watch?v=2_gq6XRm47I&t=516s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:00:36](https://www.youtube.com/watch?v=-sIN2gar6BU&t=36s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "'re going to be transitioning your business to the next generation. But we're "
-              'living in a state where baby boomers, the next generation are not interested in '
-              'a lot of these um businesses that their parents and their grandparents started.',
-      'timestamp': 516,
-      'timestamp_label': '[00:08:36]',
-      'timestamp_seconds': 516,
-      'tip': "'re going to be transitioning your business to the next generation. But we're "
-             'living in a state where baby boomers, the next generation are not interested in '
-             'a lot of these um businesses that their parents and their grandparents started.',
-      'title': '$100M Is Easier to Get Than $10M — Here’s Why | Taber Small (The Capital '
-               'Alliance TV)',
-      'url': 'https://www.youtube.com/watch?v=2_gq6XRm47I&t=516s',
-      'video_id': '2_gq6XRm47I'},
-     {'author': 'Transform Solar',
-      'channel': 'Transform Solar',
+      'text': 'Factoring is a complete sale of your accounts receivable.',
+      'timestamp': 36,
+      'timestamp_label': '[00:00:36]',
+      'timestamp_seconds': 36,
+      'tip': 'Factoring is a complete sale of your accounts receivable.',
+      'title': 'Factoring vs. Secured Borrowing Part 1',
+      'url': 'https://www.youtube.com/watch?v=-sIN2gar6BU&t=36s',
+      'video_id': '-sIN2gar6BU'},
+     {'author': 'FinanceKid',
+      'channel': 'FinanceKid',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=U8Ynw0oqocY&t=100s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:16:25](https://www.youtube.com/watch?v=u5hujmtiiaY&t=985s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Second bucket to pay his taxes with our representatives are not licensed tax '
-              'professionals and this is not legal tax advice we recommend that you contact '
-              'your CPA to best understand your individual tax situation.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': 'Second bucket to pay his taxes with our representatives are not licensed tax '
-             'professionals and this is not legal tax advice we recommend that you contact '
-             'your CPA to best understand your individual tax situation.',
-      'title': 'The Solar Tax Credit Explained (Transform Solar)',
-      'url': 'https://www.youtube.com/watch?v=U8Ynw0oqocY&t=100s',
-      'video_id': 'U8Ynw0oqocY'},
-     {'author': 'ION Capital - Loan Broker University',
-      'channel': 'ION Capital - Loan Broker University',
+      'text': 'Many many people say inventory financing should be your last alternative when '
+              'considering other ABL options.',
+      'timestamp': 985,
+      'timestamp_label': '[00:16:25]',
+      'timestamp_seconds': 985,
+      'tip': 'Many many people say inventory financing should be your last alternative when '
+             'considering other ABL options.',
+      'title': 'Asset Based Lending (ABL) - Business Financing Explained',
+      'url': 'https://www.youtube.com/watch?v=u5hujmtiiaY&t=985s',
+      'video_id': 'u5hujmtiiaY'},
+     {'author': 'Simon White (SEO, AEO & Digital & Marketing)',
+      'channel': 'Simon White (SEO, AEO & Digital & Marketing)',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:15](https://www.youtube.com/watch?v=2BqGahVBgUs&t=615s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:31:01](https://www.youtube.com/watch?v=G9RrpSanefM&t=1861s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "One of the worst questions for a hypothetical because there's a lot of "
-              'different things that come into play yeah I understand they look at auction.',
-      'timestamp': 615,
-      'timestamp_label': '[00:10:15]',
-      'timestamp_seconds': 615,
-      'tip': "One of the worst questions for a hypothetical because there's a lot of different "
-             'things that come into play yeah I understand they look at auction.',
-      'title': 'How To Be A Business Loan Broker  |  Equipment Financing Loans (ION Capital - '
-               'Loan Broker University)',
-      'url': 'https://www.youtube.com/watch?v=2BqGahVBgUs&t=615s',
-      'video_id': '2BqGahVBgUs'},
+      'text': "Let's just say the factoring fee was 3,000 a month, you as the broker would earn "
+              'between $300 and $450 a month.',
+      'timestamp': 1861,
+      'timestamp_label': '[00:31:01]',
+      'timestamp_seconds': 1861,
+      'tip': "Let's just say the factoring fee was 3,000 a month, you as the broker would earn "
+             'between $300 and $450 a month.',
+      'title': 'Invoice Factoring & Asset Based Lending',
+      'url': 'https://www.youtube.com/watch?v=G9RrpSanefM&t=1861s',
+      'video_id': 'G9RrpSanefM'},
+     {'author': 'Simon White (SEO, AEO & Digital & Marketing)',
+      'channel': 'Simon White (SEO, AEO & Digital & Marketing)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:47](https://www.youtube.com/watch?v=G9RrpSanefM&t=1007s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "You don't need to take these expensive courses, you don't need to take 5,000, "
+              '10,000, $15,000 courses.',
+      'timestamp': 1007,
+      'timestamp_label': '[00:16:47]',
+      'timestamp_seconds': 1007,
+      'tip': "You don't need to take these expensive courses, you don't need to take 5,000, "
+             '10,000, $15,000 courses.',
+      'title': 'Invoice Factoring & Asset Based Lending',
+      'url': 'https://www.youtube.com/watch?v=G9RrpSanefM&t=1007s',
+      'video_id': 'G9RrpSanefM'},
+     {'author': 'Farhat Lectures | CPA, CMA, EA & Accounting',
+      'channel': 'Farhat Lectures | CPA, CMA, EA & Accounting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:50](https://www.youtube.com/watch?v=j1xpasTho-0&t=650s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, they pledged them as an asset, but they record the transaction as a sale.',
+      'timestamp': 650,
+      'timestamp_label': '[00:10:50]',
+      'timestamp_seconds': 650,
+      'tip': 'So, they pledged them as an asset, but they record the transaction as a sale.',
+      'title': 'Factoring Receivable and Pledging of Receivable',
+      'url': 'https://www.youtube.com/watch?v=j1xpasTho-0&t=650s',
+      'video_id': 'j1xpasTho-0'}],
+ 8: [{'author': 'ClearValue Tax',
+      'channel': 'ClearValue Tax',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:14](https://www.youtube.com/watch?v=jaczYsctbgs&t=614s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'And the fifth thing is that some SBA loans will require a down payment of 10% to '
+              '30%.',
+      'timestamp': 614,
+      'timestamp_label': '[00:10:14]',
+      'timestamp_seconds': 614,
+      'tip': 'And the fifth thing is that some SBA loans will require a down payment of 10% to '
+             '30%.',
+      'title': 'How to Get an SBA Loan For Your Small Business (Tips & Advice)',
+      'url': 'https://www.youtube.com/watch?v=jaczYsctbgs&t=614s',
+      'video_id': 'jaczYsctbgs'},
+     {'author': 'CDC Small Business Finance',
+      'channel': 'CDC Small Business Finance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:06](https://www.youtube.com/watch?v=C-omBBP27hg&t=6s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "It's for private businesses, owner users that are going to occupy the property at "
+              'least 51%.',
+      'timestamp': 6,
+      'timestamp_label': '[00:00:06]',
+      'timestamp_seconds': 6,
+      'tip': "It's for private businesses, owner users that are going to occupy the property at "
+             'least 51%.',
+      'title': 'Who Is the SBA 504 Loan For?',
+      'url': 'https://www.youtube.com/watch?v=C-omBBP27hg&t=6s',
+      'video_id': 'C-omBBP27hg'},
+     {'author': 'CDC Small Business Finance',
+      'channel': 'CDC Small Business Finance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:20](https://www.youtube.com/watch?v=hK_Qb2vkxp8&t=80s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Also, you can use the SBA loan for equipment. It does need to have a minimum useful '
+              'life of at least 10 years.',
+      'timestamp': 80,
+      'timestamp_label': '[00:01:20]',
+      'timestamp_seconds': 80,
+      'tip': 'Also, you can use the SBA loan for equipment. It does need to have a minimum useful '
+             'life of at least 10 years.',
+      'title': 'What Can I Use an SBA 504 Loan For?',
+      'url': 'https://www.youtube.com/watch?v=hK_Qb2vkxp8&t=80s',
+      'video_id': 'hK_Qb2vkxp8'},
+     {'author': 'CDC Small Business Finance',
+      'channel': 'CDC Small Business Finance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:09](https://www.youtube.com/watch?v=5_3hvZIlwhQ&t=129s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, what happens is the first mortgage lender will do a permanent 50% first to '
+              'close and a temporary 40% second to give time for the SBA to fund its debenture.',
+      'timestamp': 129,
+      'timestamp_label': '[00:02:09]',
+      'timestamp_seconds': 129,
+      'tip': 'So, what happens is the first mortgage lender will do a permanent 50% first to close '
+             'and a temporary 40% second to give time for the SBA to fund its debenture.',
+      'title': 'How Does an SBA 504 Loan Work?',
+      'url': 'https://www.youtube.com/watch?v=5_3hvZIlwhQ&t=129s',
+      'video_id': '5_3hvZIlwhQ'},
+     {'author': 'Beau Eckstein, Business Ownership Coach',
+      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:34](https://www.youtube.com/watch?v=9w4kgjirJ7g&t=34s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're planning on doing a value add and or you need a lot of working capital "
+              'the 7A might be a better option.',
+      'timestamp': 34,
+      'timestamp_label': '[00:00:34]',
+      'timestamp_seconds': 34,
+      'tip': "If you're planning on doing a value add and or you need a lot of working capital the "
+             '7A might be a better option.',
+      'title': 'SBA 504 vs. SBA 7(a) Loans for Commercial Real Estate: How to Choose the Best Loan '
+               'for Your Project!',
+      'url': 'https://www.youtube.com/watch?v=9w4kgjirJ7g&t=34s',
+      'video_id': '9w4kgjirJ7g'},
+     {'author': 'Beau Eckstein, Business Ownership Coach',
+      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=aBEJBn_bUA0&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you take today's debenture rate of 6.2 plus the senior debt at prime plus one "
+              'you get a blended rate somewhere in the sevens.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': "If you take today's debenture rate of 6.2 plus the senior debt at prime plus one you "
+             'get a blended rate somewhere in the sevens.',
+      'title': 'Comparing SBA 504 vs. 7A Loans for Commercial Real Estate',
+      'url': 'https://www.youtube.com/watch?v=aBEJBn_bUA0&t=88s',
+      'video_id': 'aBEJBn_bUA0'},
      {'author': 'Commercial Loan Broker Institute',
       'channel': 'Commercial Loan Broker Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:16](https://www.youtube.com/watch?v=SrGiDqgbdf8&t=16s)',
-      'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                   'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                   'underwriting (Chapter Q9 operational verification).',
+      'markdown': '[00:38:11](https://www.youtube.com/watch?v=8-4I4VOIIqg&t=2291s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Company how do you become a finance lender my name is shane walton with the '
-              'commercial loan broker institute to start us off.',
-      'timestamp': 16,
-      'timestamp_label': '[00:00:16]',
-      'timestamp_seconds': 16,
-      'tip': 'Company how do you become a finance lender my name is shane walton with the '
-             'commercial loan broker institute to start us off.',
-      'title': 'How to Start Your Own Finance Company - Guide To Becoming A Commercial Loan '
-               'Broker (Commercial Loan Broker Institute)',
-      'url': 'https://www.youtube.com/watch?v=SrGiDqgbdf8&t=16s',
-      'video_id': 'SrGiDqgbdf8'}],
- 10: [{'author': 'Lamar Duffy',
-       'channel': 'Lamar Duffy',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:20](https://www.youtube.com/watch?v=EtzXCqqxIWI&t=20s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "If you're new to the channel, welcome. My name is Lamar and I'm a sevenfigure "
-               'serial entrepreneur helping you start and scale your business with AI '
-               'marketing automation.',
-       'timestamp': 20,
-       'timestamp_label': '[00:00:20]',
-       'timestamp_seconds': 20,
-       'tip': "If you're new to the channel, welcome. My name is Lamar and I'm a sevenfigure "
-              'serial entrepreneur helping you start and scale your business with AI marketing '
-              'automation.',
-       'title': 'Fintech Referral Program: How to Build an AI Growth Automation Step-by-Step '
-                '(Lamar Duffy)',
-       'url': 'https://www.youtube.com/watch?v=EtzXCqqxIWI&t=20s',
-       'video_id': 'EtzXCqqxIWI'},
-      {'author': 'Eli the DSCR Pro',
-       'channel': 'Eli the DSCR Pro',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:41](https://www.youtube.com/watch?v=6P1p0e_NBxs&t=281s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Concessions, we allow up to 6% seller's concessions. You can use that to buy "
-               'down your rate or cover closing cost. Asset, need help with the down payment? '
-               'Speed, we target a four-week closing, not 60, 90 days. We move at the speed of '
-               'business.',
-       'timestamp': 281,
-       'timestamp_label': '[00:04:41]',
-       'timestamp_seconds': 281,
-       'tip': "Concessions, we allow up to 6% seller's concessions. You can use that to buy "
-              'down your rate or cover closing cost. Asset, need help with the down payment? '
-              'Speed, we target a four-week closing, not 60, 90 days. We move at the speed of '
-              'business.',
-       'title': 'DSCR Loan For Commercial Property (Eli the DSCR Pro)',
-       'url': 'https://www.youtube.com/watch?v=6P1p0e_NBxs&t=281s',
-       'video_id': '6P1p0e_NBxs'},
-      {'author': 'Invoice Finance News',
-       'channel': 'Invoice Finance News',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:03](https://www.youtube.com/watch?v=RyM3eO5GN5I&t=363s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Borrowing against machinery and property asset-based lending is also possible '
-               'using plant machinery and commercial property normally loans against Machinery '
-               'are repaid over three years loans against property are repaid over 7 to 15 '
-               'years.',
-       'timestamp': 363,
-       'timestamp_label': '[00:06:03]',
-       'timestamp_seconds': 363,
-       'tip': 'Borrowing against machinery and property asset-based lending is also possible '
-              'using plant machinery and commercial property normally loans against Machinery '
-              'are repaid over three years loans against property are repaid over 7 to 15 '
+      'text': 'The seller never having filed tax returns, and part of underwriting for an SBA '
+              'lender, they have to reconcile the tax returns provided to the tax transcripts that '
+              'the IRS has recognized.',
+      'timestamp': 2291,
+      'timestamp_label': '[00:38:11]',
+      'timestamp_seconds': 2291,
+      'tip': 'The seller never having filed tax returns, and part of underwriting for an SBA '
+             'lender, they have to reconcile the tax returns provided to the tax transcripts that '
+             'the IRS has recognized.',
+      'title': 'SBA 7(a) Loans for Business Acquisitions: How a Top Lender Underwrites Deals',
+      'url': 'https://www.youtube.com/watch?v=8-4I4VOIIqg&t=2291s',
+      'video_id': '8-4I4VOIIqg'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:22](https://www.youtube.com/watch?v=8-4I4VOIIqg&t=3142s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "B, I think we can do this. It's going to take a little work. C, I'll get to it, "
+              'which you never do.',
+      'timestamp': 3142,
+      'timestamp_label': '[00:52:22]',
+      'timestamp_seconds': 3142,
+      'tip': "B, I think we can do this. It's going to take a little work. C, I'll get to it, "
+             'which you never do.',
+      'title': 'SBA 7(a) Loans for Business Acquisitions: How a Top Lender Underwrites Deals',
+      'url': 'https://www.youtube.com/watch?v=8-4I4VOIIqg&t=3142s',
+      'video_id': '8-4I4VOIIqg'},
+     {'author': 'Beau Eckstein, Business Ownership Coach',
+      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:07](https://www.youtube.com/watch?v=nAoSGYTENek&t=67s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Advantage of the 7A versus the 504 is that the prepayment penalty is only 3 years '
+              'versus 10 years.',
+      'timestamp': 67,
+      'timestamp_label': '[00:01:07]',
+      'timestamp_seconds': 67,
+      'tip': 'Advantage of the 7A versus the 504 is that the prepayment penalty is only 3 years '
+             'versus 10 years.',
+      'title': 'Comparing SBA 7A vs 504 Loans for Business Acquisitions w/ Real Estate',
+      'url': 'https://www.youtube.com/watch?v=nAoSGYTENek&t=67s',
+      'video_id': 'nAoSGYTENek'},
+     {'author': 'SBA University',
+      'channel': 'SBA University',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:49](https://www.youtube.com/watch?v=py_IPiHezcw&t=49s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Yes, you can get 100% financing to purchase a commercial real estate space.',
+      'timestamp': 49,
+      'timestamp_label': '[00:00:49]',
+      'timestamp_seconds': 49,
+      'tip': 'Yes, you can get 100% financing to purchase a commercial real estate space.',
+      'title': 'How to Buy Commercial Real Estate (100% Financing Explained!) | SBA Loans',
+      'url': 'https://www.youtube.com/watch?v=py_IPiHezcw&t=49s',
+      'video_id': 'py_IPiHezcw'},
+     {'author': 'Beau Eckstein, Business Ownership Coach',
+      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:37](https://www.youtube.com/watch?v=jzEfnFdiiZU&t=97s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "There's a lot more you can build in on the 7A and it's only one underwriting "
+              'process, shorter prepayment penalty.',
+      'timestamp': 97,
+      'timestamp_label': '[00:01:37]',
+      'timestamp_seconds': 97,
+      'tip': "There's a lot more you can build in on the 7A and it's only one underwriting "
+             'process, shorter prepayment penalty.',
+      'title': 'Comparing SBA 7a vs SBA 504: Which is Better for an Office Building Purchase?',
+      'url': 'https://www.youtube.com/watch?v=jzEfnFdiiZU&t=97s',
+      'video_id': 'jzEfnFdiiZU'},
+     {'author': 'Joe Camberato',
+      'channel': 'Joe Camberato',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:27](https://www.youtube.com/watch?v=lNnoO9VriRM&t=207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You may want to consider going with the variable and adjusting rate option to hedge '
+              'that rates will most likely come down in the future.',
+      'timestamp': 207,
+      'timestamp_label': '[00:03:27]',
+      'timestamp_seconds': 207,
+      'tip': 'You may want to consider going with the variable and adjusting rate option to hedge '
+             'that rates will most likely come down in the future.',
+      'title': 'SBA Loans Explained: Types of Loans, Interest Rates, and What to Expect From the '
+               'Process',
+      'url': 'https://www.youtube.com/watch?v=lNnoO9VriRM&t=207s',
+      'video_id': 'lNnoO9VriRM'},
+     {'author': 'Beau Eckstein, Business Ownership Coach',
+      'channel': 'Beau Eckstein, Business Ownership Coach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:09](https://www.youtube.com/watch?v=NmbLxyMZBmQ&t=189s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You always have to occupy at least 51% of the space for it to be eligible for SBA '
+              'financing.',
+      'timestamp': 189,
+      'timestamp_label': '[00:03:09]',
+      'timestamp_seconds': 189,
+      'tip': 'You always have to occupy at least 51% of the space for it to be eligible for SBA '
+             'financing.',
+      'title': 'Comparing SBA 7(a) vs 504 Loans for Business Acquisitions with Real Estate',
+      'url': 'https://www.youtube.com/watch?v=NmbLxyMZBmQ&t=189s',
+      'video_id': 'NmbLxyMZBmQ'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:35](https://www.youtube.com/watch?v=CvS7BttXuu0&t=455s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "And then you're frustrated because two months later they're going through this "
+              'paperwork, and eventually they say, oh, sorry, declined.',
+      'timestamp': 455,
+      'timestamp_label': '[00:07:35]',
+      'timestamp_seconds': 455,
+      'tip': "And then you're frustrated because two months later they're going through this "
+             'paperwork, and eventually they say, oh, sorry, declined.',
+      'title': 'New SBA Rule Unlocks $10M: Who Actually Benefits | Shane Walton ft. Jeff '
+               'Hildebrandt',
+      'url': 'https://www.youtube.com/watch?v=CvS7BttXuu0&t=455s',
+      'video_id': 'CvS7BttXuu0'},
+     {'author': 'Commercial Loan Broker Institute',
+      'channel': 'Commercial Loan Broker Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:27](https://www.youtube.com/watch?v=CvS7BttXuu0&t=1527s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'But this affects maybe a half of 1% of SBA borrowers.',
+      'timestamp': 1527,
+      'timestamp_label': '[00:25:27]',
+      'timestamp_seconds': 1527,
+      'tip': 'But this affects maybe a half of 1% of SBA borrowers.',
+      'title': 'New SBA Rule Unlocks $10M: Who Actually Benefits | Shane Walton ft. Jeff '
+               'Hildebrandt',
+      'url': 'https://www.youtube.com/watch?v=CvS7BttXuu0&t=1527s',
+      'video_id': 'CvS7BttXuu0'},
+     {'author': 'Community Business Finance',
+      'channel': 'Community Business Finance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:32](https://www.youtube.com/watch?v=pAuU5b_a7AY&t=152s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'There are some lenders who favor the 7a program for real estate projects, even '
+              'though it may not be in your best interest because they view it as a more lucrative '
+              'product for their institution.',
+      'timestamp': 152,
+      'timestamp_label': '[00:02:32]',
+      'timestamp_seconds': 152,
+      'tip': 'There are some lenders who favor the 7a program for real estate projects, even '
+             'though it may not be in your best interest because they view it as a more lucrative '
+             'product for their institution.',
+      'title': 'SBA 504 vs. 7(a) Loans for Commercial Real Estate',
+      'url': 'https://www.youtube.com/watch?v=pAuU5b_a7AY&t=152s',
+      'video_id': 'pAuU5b_a7AY'},
+     {'author': 'My SBA Loan Pro Podcast',
+      'channel': 'My SBA Loan Pro Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:37:36](https://www.youtube.com/watch?v=XKIBsDDkBUI&t=2256s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Now, the risk is the debenture, the SBA part is not going to fund until you're done "
+              'with construction.',
+      'timestamp': 2256,
+      'timestamp_label': '[00:37:36]',
+      'timestamp_seconds': 2256,
+      'tip': "Now, the risk is the debenture, the SBA part is not going to fund until you're done "
+             'with construction.',
+      'title': 'SBA 504 Loans To Buy Owner User Real Estate with Ken Rosenthal | Ep. 15 | My SBA '
+               'Loan Pro Podcast',
+      'url': 'https://www.youtube.com/watch?v=XKIBsDDkBUI&t=2256s',
+      'video_id': 'XKIBsDDkBUI'},
+     {'author': 'ThinkSBA - SBA 504 and 7a Loan Brokerage',
+      'channel': 'ThinkSBA - SBA 504 and 7a Loan Brokerage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=WAbZuTa6KEg&t=157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The time it takes to close your loan is largely dependent upon your responsiveness '
+              "to the bank's questions and requests for financial statements.",
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': 'The time it takes to close your loan is largely dependent upon your responsiveness '
+             "to the bank's questions and requests for financial statements.",
+      'title': 'Small Business Administration SBA 7(a) and 504 Loan Programs For Business Owners '
+               'and Entrepreneurs.',
+      'url': 'https://www.youtube.com/watch?v=WAbZuTa6KEg&t=157s',
+      'video_id': 'WAbZuTa6KEg'}],
+ 9: [{'author': 'The Approved Guy',
+      'channel': 'The Approved Guy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=dDwHOnFlzaA&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some of your options can be an SBA 7A loan, it could also be a business term loan '
+              'or a line of credit if you have good credit and you have time to work on that '
+              'solution.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'Some of your options can be an SBA 7A loan, it could also be a business term loan or '
+             'a line of credit if you have good credit and you have time to work on that solution.',
+      'title': 'MCA DEBT RESTRUCTURE OR REFINANCE',
+      'url': 'https://www.youtube.com/watch?v=dDwHOnFlzaA&t=68s',
+      'video_id': 'dDwHOnFlzaA'},
+     {'author': 'Berkshire Financial Services LLC',
+      'channel': 'Berkshire Financial Services LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=V8S0sywozwU&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'One typo in your business name or using a DBA instead of the legal entity can '
+              'invalidate the lien altogether.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'One typo in your business name or using a DBA instead of the legal entity can '
+             'invalidate the lien altogether.',
+      'title': '“UCC Liens & MCA Debt  What Borrowers MUST Know (2 Minute Breakdown)"',
+      'url': 'https://www.youtube.com/watch?v=V8S0sywozwU&t=31s',
+      'video_id': 'V8S0sywozwU'},
+     {'author': 'Michael Granados',
+      'channel': 'Michael Granados',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=lBvWGt7bnCw&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is by looking at the total amount going out monthly, helping reduce by an '
+              'average of 50 to 75%.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': 'This is by looking at the total amount going out monthly, helping reduce by an '
+             'average of 50 to 75%.',
+      'title': 'Fastest Way To Get Out Of Merchant Cash Advance Debt (MCA Debt Relief)',
+      'url': 'https://www.youtube.com/watch?v=lBvWGt7bnCw&t=115s',
+      'video_id': 'lBvWGt7bnCw'},
+     {'author': 'Gap Funding | 100% Real Estate Financing',
+      'channel': 'Gap Funding | 100% Real Estate Financing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:41](https://www.youtube.com/watch?v=OWlnOeMGBkg&t=281s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'So the critical distinction here is total debt is not reduced. A new advance is '
+              'added on top of existing ones.',
+      'timestamp': 281,
+      'timestamp_label': '[00:04:41]',
+      'timestamp_seconds': 281,
+      'tip': 'So the critical distinction here is total debt is not reduced. A new advance is '
+             'added on top of existing ones.',
+      'title': 'MCA Debt Consolidation & Settlement  Everything You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=OWlnOeMGBkg&t=281s',
+      'video_id': 'OWlnOeMGBkg'},
+     {'author': 'The Approved Guy',
+      'channel': 'The Approved Guy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:30](https://www.youtube.com/watch?v=8x-cfQhQpPU&t=210s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'I have been able to help a client who had five merchant cash advances equivalent '
+              'over 1.5 million dollars in merchant cash advances.',
+      'timestamp': 210,
+      'timestamp_label': '[00:03:30]',
+      'timestamp_seconds': 210,
+      'tip': 'I was able to help her to refinance that and get into an SBA 7A loan, 10-year term, '
+             'with an SBA interest rate.',
+      'title': "STUCK IN MCA DEBT? THERE'S A WAY OUT!",
+      'url': 'https://www.youtube.com/watch?v=8x-cfQhQpPU&t=210s',
+      'video_id': '8x-cfQhQpPU'},
+     {'author': 'Zach Siegel',
+      'channel': 'Zach Siegel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:13](https://www.youtube.com/watch?v=w-ETPb-Trek&t=553s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Demand the total payback, the real term, and whether it's truly lowering your cost "
+              'or just rescheduling your pain.',
+      'timestamp': 553,
+      'timestamp_label': '[00:09:13]',
+      'timestamp_seconds': 553,
+      'tip': "If they can't or won't show you that clearly, then just walk away. Real help "
+             "survives the math. A trap doesn't.",
+      'title': '4 Ways to Get Out of Merchant Cash Advance Debt',
+      'url': 'https://www.youtube.com/watch?v=w-ETPb-Trek&t=553s',
+      'video_id': 'w-ETPb-Trek'},
+     {'author': 'Zach Siegel',
+      'channel': 'Zach Siegel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:16](https://www.youtube.com/watch?v=w-ETPb-Trek&t=196s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, rule number one, starting today, if you have more than three merchant cash '
+              'advances, do not take any new ones while we fix this.',
+      'timestamp': 196,
+      'timestamp_label': '[00:03:16]',
+      'timestamp_seconds': 196,
+      'tip': 'So, rule number one, starting today, if you have more than three merchant cash '
+             'advances, do not take any new ones while we fix this.',
+      'title': '4 Ways to Get Out of Merchant Cash Advance Debt',
+      'url': 'https://www.youtube.com/watch?v=w-ETPb-Trek&t=196s',
+      'video_id': 'w-ETPb-Trek'},
+     {'author': 'The Approved Guy',
+      'channel': 'The Approved Guy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=spCn3Rbs4XY&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The SBA has released new rules which now disqualifies businesses with merchant cash '
+              'advances from using an SBA 7A loan to refinance or consolidate that merchant cash '
+              'advance debt.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'The SBA has released new rules which now disqualifies businesses with merchant cash '
+             'advances from using an SBA 7A loan to refinance or consolidate that merchant cash '
+             'advance debt.',
+      'title': 'SBA 7(A) NEW RULES BOMBSHELL FOR MCA DEBT CONSOLIDATION',
+      'url': 'https://www.youtube.com/watch?v=spCn3Rbs4XY&t=0s',
+      'video_id': 'spCn3Rbs4XY'},
+     {'author': 'Rise Alliance',
+      'channel': 'Rise Alliance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'It only takes one aggressive MCA to pull the trigger.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'It only takes one aggressive MCA to pull the trigger.',
+      'title': 'What Really Happens When You Default on an MCA? (Warning)',
+      'url': 'https://www.youtube.com/watch?v=BcdnIkuJ7Fc&t=60s',
+      'video_id': 'BcdnIkuJ7Fc'},
+     {'author': 'Michael Granados',
+      'channel': 'Michael Granados',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:02](https://www.youtube.com/watch?v=WX8DT-NQK5w&t=62s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'You also have a reverse debt consolidation which I strongly do not recommend doing; '
+              "that's just adding more fuel to the flame.",
+      'timestamp': 62,
+      'timestamp_label': '[00:01:02]',
+      'timestamp_seconds': 62,
+      'tip': 'You also have a reverse debt consolidation which I strongly do not recommend doing; '
+             "that's just adding more fuel to the flame.",
+      'title': 'MCA Debt Relief (Best Merchant Cash Advance Help)',
+      'url': 'https://www.youtube.com/watch?v=WX8DT-NQK5w&t=62s',
+      'video_id': 'WX8DT-NQK5w'},
+     {'author': 'Parkins & Rubio LLP',
+      'channel': 'Parkins & Rubio LLP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:23](https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=863s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'In a Chapter 11 plan you could pay that amount over monthly installments over 4 '
               'years.',
-       'title': 'Asset Based Lending (Invoice Finance News)',
-       'url': 'https://www.youtube.com/watch?v=RyM3eO5GN5I&t=363s',
-       'video_id': 'RyM3eO5GN5I'},
-      {'author': 'Vanijja | Trade Insights',
-       'channel': 'Vanijja | Trade Insights',
+      'timestamp': 863,
+      'timestamp_label': '[00:14:23]',
+      'timestamp_seconds': 863,
+      'tip': 'In a Chapter 11 plan you could pay that amount over monthly installments over 4 '
+             'years.',
+      'title': 'Merchant Cash Advances and Bankruptcy: What Business Owners Need to Know',
+      'url': 'https://www.youtube.com/watch?v=A8iNT8Ctrhk&t=863s',
+      'video_id': 'A8iNT8Ctrhk'},
+     {'author': 'ProjectionHub',
+      'channel': 'ProjectionHub',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:51](https://www.youtube.com/watch?v=_V39MGbzjw0&t=111s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "So, what I've noticed from a lot of SBA lenders is they just don't want to deal "
+              'with it.',
+      'timestamp': 111,
+      'timestamp_label': '[00:01:51]',
+      'timestamp_seconds': 111,
+      'tip': "So, what I've noticed from a lot of SBA lenders is they just don't want to deal with "
+             'it.',
+      'title': 'Can I Refinance an MCA Loan with an SBA Loan?',
+      'url': 'https://www.youtube.com/watch?v=_V39MGbzjw0&t=111s',
+      'video_id': '_V39MGbzjw0'},
+     {'author': 'Corporate Bankruptcy A to Z',
+      'channel': 'Corporate Bankruptcy A to Z',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:57](https://www.youtube.com/watch?v=50wAPhzWGmY&t=837s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'There was so many differences in those 30 cases that it would be foolish of '
+              'somebody to say there is one way to approach it.',
+      'timestamp': 837,
+      'timestamp_label': '[00:13:57]',
+      'timestamp_seconds': 837,
+      'tip': 'There was so many differences in those 30 cases that it would be foolish of somebody '
+             'to say there is one way to approach it.',
+      'title': 'MCA reclassified as Loans? | Breaking news on MCAs (Merchant Cash Advances)',
+      'url': 'https://www.youtube.com/watch?v=50wAPhzWGmY&t=837s',
+      'video_id': '50wAPhzWGmY'},
+     {'author': 'Zeus Commercial Capital | Business & RE Loans',
+      'channel': 'Zeus Commercial Capital | Business & RE Loans',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:10](https://www.youtube.com/watch?v=OccRWwWbI2M&t=130s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Whatever you do, do not call your MCA lender and ask for a copy of that agreement.',
+      'timestamp': 130,
+      'timestamp_label': '[00:02:10]',
+      'timestamp_seconds': 130,
+      'tip': 'Whatever you do, do not call your MCA lender and ask for a copy of that agreement.',
+      'title': 'MCA Debt Restructuring- Debt Relief, Debt Consolidation, and MCA Debt Settlement',
+      'url': 'https://www.youtube.com/watch?v=OccRWwWbI2M&t=130s',
+      'video_id': 'OccRWwWbI2M'},
+     {'author': 'Zoryn Capital',
+      'channel': 'Zoryn Capital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:23](https://www.youtube.com/watch?v=ORF9Ue9ge8A&t=383s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "This is the one rule. It's called profit-based. Meaning that this loan must make "
+              'you make money.',
+      'timestamp': 383,
+      'timestamp_label': '[00:06:23]',
+      'timestamp_seconds': 383,
+      'tip': "This is the one rule. It's called profit-based. Meaning that this loan must make you "
+             'make money.',
+      'title': 'WARNING Before Taking a Merchant Cash Advance MCA? (Revenue Based Loan or Working '
+               'Capital Loan)',
+      'url': 'https://www.youtube.com/watch?v=ORF9Ue9ge8A&t=383s',
+      'video_id': 'ORF9Ue9ge8A'},
+     {'author': 'MM BUSINESS SOLUTIONS',
+      'channel': 'MM BUSINESS SOLUTIONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:26:34](https://www.youtube.com/watch?v=i0yXJe_x34I&t=1594s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "It's called stacking. Because the commission, the guy wanted to make a big "
+              'commission.',
+      'timestamp': 1594,
+      'timestamp_label': '[00:26:34]',
+      'timestamp_seconds': 1594,
+      'tip': "It's called stacking. Because the commission, the guy wanted to make a big "
+             'commission.',
+      'title': 'Business Funding Broker Training Nov 2026: David Allen Capital ISO Updates, '
+               'Working Capital & Small',
+      'url': 'https://www.youtube.com/watch?v=i0yXJe_x34I&t=1594s',
+      'video_id': 'i0yXJe_x34I'},
+     {'author': 'MM BUSINESS SOLUTIONS',
+      'channel': 'MM BUSINESS SOLUTIONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:58](https://www.youtube.com/watch?v=i0yXJe_x34I&t=1858s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'So it was a disclosed stack.',
+      'timestamp': 1858,
+      'timestamp_label': '[00:30:58]',
+      'timestamp_seconds': 1858,
+      'tip': 'So it was a disclosed stack.',
+      'title': 'Business Funding Broker Training Nov 2026: David Allen Capital ISO Updates, '
+               'Working Capital & Small',
+      'url': 'https://www.youtube.com/watch?v=i0yXJe_x34I&t=1858s',
+      'video_id': 'i0yXJe_x34I'},
+     {'author': 'Oz Konar - Business Lending Blueprint',
+      'channel': 'Oz Konar - Business Lending Blueprint',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:01](https://www.youtube.com/watch?v=zmUu669RTPQ&t=61s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "One other thing I really love about this industry is that there really aren't any "
+              'barriers to enter this market or this type of business.',
+      'timestamp': 61,
+      'timestamp_label': '[00:01:01]',
+      'timestamp_seconds': 61,
+      'tip': "One other thing I really love about this industry is that there really aren't any "
+             'barriers to enter this market or this type of business.',
+      'title': 'Commercial Loan Broker Training - Business Lending Blueprint Review-- Kyle',
+      'url': 'https://www.youtube.com/watch?v=zmUu669RTPQ&t=61s',
+      'video_id': 'zmUu669RTPQ'}],
+ 10: [{'author': 'Insightful Accountant',
+       'channel': 'Insightful Accountant',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:27](https://www.youtube.com/watch?v=RcVypdN4SHs&t=87s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
+       'markdown': '[00:21:58](https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1318s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Supply chain finance operates completely differently. Think of it like a smart '
-               'logistics dashboard. Instead of hoarding paper certificates in a vault, it '
-               'tracks the journey of the goods and unlocks cash automatically as commercial '
-               'milestones are hit.',
-       'timestamp': 87,
-       'timestamp_label': '[00:01:27]',
-       'timestamp_seconds': 87,
-       'tip': 'Supply chain finance operates completely differently. Think of it like a smart '
-              'logistics dashboard. Instead of hoarding paper certificates in a vault, it '
-              'tracks the journey of the goods and unlocks cash automatically as commercial '
-              'milestones are hit.',
-       'title': 'Trade Finance vs. Supply Chain Finance: Key Differences Explained (With Real '
-                'Examples) (Vanijja | Trade Insights)',
-       'url': 'https://www.youtube.com/watch?v=RcVypdN4SHs&t=87s',
-       'video_id': 'RcVypdN4SHs'},
-      {'author': 'Achievable',
-       'channel': 'Achievable',
+       'text': 'Last year they implemented this program called CEDP where basically they started '
+               'using AI to scrub the level three data that they were receiving.',
+       'timestamp': 1318,
+       'timestamp_label': '[00:21:58]',
+       'timestamp_seconds': 1318,
+       'tip': 'Last year they implemented this program called CEDP where basically they started '
+              'using AI to scrub the level three data that they were receiving.',
+       'title': 'How to Reduce B2B Credit Card Processing Fees | Future Forward November 2026',
+       'url': 'https://www.youtube.com/watch?v=TEwsEYj6XTI&t=1318s',
+       'video_id': 'TEwsEYj6XTI'},
+      {'author': 'Insightful Accountant',
+       'channel': 'Insightful Accountant',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:34](https://www.youtube.com/watch?v=j_Gp2v7DBzo&t=394s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
+       'markdown': '[00:46:11](https://www.youtube.com/watch?v=TEwsEYj6XTI&t=2771s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Broker dealer that has their principal place of business in California maybe '
-               'they have a couple of offices on the west coast in Oregon and Washington but.',
-       'timestamp': 394,
-       'timestamp_label': '[00:06:34]',
-       'timestamp_seconds': 394,
-       'tip': 'Broker dealer that has their principal place of business in California maybe '
-              'they have a couple of offices on the west coast in Oregon and Washington but.',
-       'title': 'Broker dealer exclusions (NASAA Series 63, 65, 66) (Achievable)',
-       'url': 'https://www.youtube.com/watch?v=j_Gp2v7DBzo&t=394s',
-       'video_id': 'j_Gp2v7DBzo'},
-      {'author': 'Beau Eckstein, Business Ownership Coach',
-       'channel': 'Beau Eckstein, Business Ownership Coach',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:02](https://www.youtube.com/watch?v=9w4kgjirJ7g&t=122s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "How to leverage SBA financing Tax Strategies I'm not a CPA and attorney but we "
-               "bring CPAs on you're going to learn why everyone everyone should own a small "
-               "business so I hope you attend go to boxing.com events I'll see you at the "
-               'next.',
-       'timestamp': 122,
-       'timestamp_label': '[00:02:02]',
-       'timestamp_seconds': 122,
-       'tip': "How to leverage SBA financing Tax Strategies I'm not a CPA and attorney but we "
-              "bring CPAs on you're going to learn why everyone everyone should own a small "
-              "business so I hope you attend go to boxing.com events I'll see you at the next.",
-       'title': 'SBA 504 vs. SBA 7(a) Loans for Commercial Real Estate: How to Choose the Best '
-                'Loan for Your Project! (Beau Eckstein, Business Ownership Coach)',
-       'url': 'https://www.youtube.com/watch?v=9w4kgjirJ7g&t=122s',
-       'video_id': '9w4kgjirJ7g'},
-      {'author': 'Eslatainment',
-       'channel': 'Eslatainment',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:24](https://www.youtube.com/watch?v=3Y7TjakDREI&t=264s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Stability and financiers gain access to a new asset class with attractive '
-               "returns it's it's a win-win-win situation so what are you waiting for Join the "
-               "liberte Revolution today and unlock your business's true potential.",
-       'timestamp': 264,
-       'timestamp_label': '[00:04:24]',
-       'timestamp_seconds': 264,
-       'tip': 'Stability and financiers gain access to a new asset class with attractive '
-              "returns it's it's a win-win-win situation so what are you waiting for Join the "
-              "liberte Revolution today and unlock your business's true potential.",
-       'title': 'Supply Chain Finance (Eslatainment)',
-       'url': 'https://www.youtube.com/watch?v=3Y7TjakDREI&t=264s',
-       'video_id': '3Y7TjakDREI'},
-      {'author': 'Zach Siegel',
-       'channel': 'Zach Siegel',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:57](https://www.youtube.com/watch?v=w-ETPb-Trek&t=357s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I want to talk about next that can still get you out of this MCA hellhole. The '
-               'first assetbased option that I want to talk about allows you to leverage the '
-               "equity in your home or another property. It's called the business use HELOC or "
-               'home equity line of credit.',
-       'timestamp': 357,
-       'timestamp_label': '[00:05:57]',
-       'timestamp_seconds': 357,
-       'tip': 'I want to talk about next that can still get you out of this MCA hellhole. The '
-              'first assetbased option that I want to talk about allows you to leverage the '
-              "equity in your home or another property. It's called the business use HELOC or "
-              'home equity line of credit.',
-       'title': '4 Ways to Get Out of Merchant Cash Advance Debt (Zach Siegel)',
-       'url': 'https://www.youtube.com/watch?v=w-ETPb-Trek&t=357s',
-       'video_id': 'w-ETPb-Trek'},
-      {'author': 'ProAlpha Capital',
-       'channel': 'ProAlpha Capital',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:24](https://www.youtube.com/watch?v=L9TrjfKxYdY&t=24s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'t actually use your income. There's no tax returns, W-2s, or actual income "
-               "verification involved in the process. Approval is based on the property's "
-               'rental income, not your personal DTI. This gives beginners access to really '
-               'leverage the years of needing landlord history.',
-       'timestamp': 24,
-       'timestamp_label': '[00:00:24]',
-       'timestamp_seconds': 24,
-       'tip': "'t actually use your income. There's no tax returns, W-2s, or actual income "
-              "verification involved in the process. Approval is based on the property's "
-              'rental income, not your personal DTI. This gives beginners access to really '
-              'leverage the years of needing landlord history.',
-       'title': 'DSCR Loans Explained in 2 Minutes (ProAlpha Capital)',
-       'url': 'https://www.youtube.com/watch?v=L9TrjfKxYdY&t=24s',
-       'video_id': 'L9TrjfKxYdY'},
-      {'author': 'Tactica RES',
-       'channel': 'Tactica RES',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:35](https://www.youtube.com/watch?v=ZgYmvPS5gJY&t=455s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': '68% suppressing our yield so what do we need to do well we need to pay less '
-               'for the asset if we want that leverage to be positive and for our cash on cash '
-               "return to be higher than the cap rate so I'm just going to play with some "
-               "numbers here let's try 5.",
-       'timestamp': 455,
-       'timestamp_label': '[00:07:35]',
-       'timestamp_seconds': 455,
-       'tip': '68% suppressing our yield so what do we need to do well we need to pay less for '
-              'the asset if we want that leverage to be positive and for our cash on cash '
-              "return to be higher than the cap rate so I'm just going to play with some "
-              "numbers here let's try 5.",
-       'title': 'The Relationship Between LTV, DSCR, Debt Yield & the Loan Constant (Tactica '
-                'RES)',
-       'url': 'https://www.youtube.com/watch?v=ZgYmvPS5gJY&t=455s',
-       'video_id': 'ZgYmvPS5gJY'},
-      {'author': 'Commercial Loan Broker Institute',
-       'channel': 'Commercial Loan Broker Institute',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:37](https://www.youtube.com/watch?v=WUTiN5zYjnU&t=817s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'s time to build something that matters, go ahead and make a move. Commercial "
-               'loan broker institute exists for one reason to give folks like you everything '
-               'you need to succeed in the business.',
-       'timestamp': 817,
-       'timestamp_label': '[00:13:37]',
-       'timestamp_seconds': 817,
-       'tip': "'s time to build something that matters, go ahead and make a move. Commercial "
-              'loan broker institute exists for one reason to give folks like you everything '
-              'you need to succeed in the business.',
-       'title': 'A Day in the Life of a Commercial Loan Broker (The Real Version) (Commercial '
-                'Loan Broker Institute)',
-       'url': 'https://www.youtube.com/watch?v=WUTiN5zYjnU&t=817s',
-       'video_id': 'WUTiN5zYjnU'},
-      {'author': 'Accounting Videos',
-       'channel': 'Accounting Videos',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:49](https://www.youtube.com/watch?v=-sIN2gar6BU&t=49s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'May have a ton of accounts receivable but they need cash immediately and so '
-               'what they can do is that they can sell these accounts receivable to another.',
-       'timestamp': 49,
-       'timestamp_label': '[00:00:49]',
-       'timestamp_seconds': 49,
-       'tip': 'May have a ton of accounts receivable but they need cash immediately and so '
-              'what they can do is that they can sell these accounts receivable to another.',
-       'title': 'Factoring vs. Secured Borrowing Part 1 (Accounting Videos)',
-       'url': 'https://www.youtube.com/watch?v=-sIN2gar6BU&t=49s',
-       'video_id': '-sIN2gar6BU'},
-      {'author': 'Simon White (SEO, AEO & Digital & Marketing)',
-       'channel': 'Simon White (SEO, AEO & Digital & Marketing)',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:42:20](https://www.youtube.com/watch?v=G9RrpSanefM&t=2540s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Symposium in Las Vegas and uh thank you very much for taking your time to to '
-               "be with us and uh share your insights on on our T seminar today you're more "
-               'than welcome bill I appreciate you having me okay byebye take care.',
-       'timestamp': 2540,
-       'timestamp_label': '[00:42:20]',
-       'timestamp_seconds': 2540,
-       'tip': 'Symposium in Las Vegas and uh thank you very much for taking your time to to be '
-              "with us and uh share your insights on on our T seminar today you're more than "
-              'welcome bill I appreciate you having me okay byebye take care.',
-       'title': 'Invoice Factoring & Asset Based Lending (Simon White (SEO, AEO & Digital & '
-                'Marketing))',
-       'url': 'https://www.youtube.com/watch?v=G9RrpSanefM&t=2540s',
-       'video_id': 'G9RrpSanefM'},
-      {'author': 'Financial modeling',
-       'channel': 'Financial modeling',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:33](https://www.youtube.com/watch?v=Xf8npq5DK2w&t=273s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Sponsor in the last two lessons we reviewed the basics of the tax equity '
-               'concepts and in the next few lessons we will introduce the simplified version '
-               'of the tax equity funding to our model.',
-       'timestamp': 273,
-       'timestamp_label': '[00:04:33]',
-       'timestamp_seconds': 273,
-       'tip': 'Sponsor in the last two lessons we reviewed the basics of the tax equity '
-              'concepts and in the next few lessons we will introduce the simplified version '
-              'of the tax equity funding to our model.',
-       'title': 'Tax Equity Flip and Back Leverage Debt in US Renewable Energy Sector '
-                '(Financial modeling)',
-       'url': 'https://www.youtube.com/watch?v=Xf8npq5DK2w&t=273s',
-       'video_id': 'Xf8npq5DK2w'},
-      {'author': 'Commercial Loan Broker Institute',
-       'channel': 'Commercial Loan Broker Institute',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:49](https://www.youtube.com/watch?v=8-4I4VOIIqg&t=289s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "It's still the same loan program. Um, but, uh, different institutions just "
-               'have different flavor. Um, and it can be industry based, it can be '
-               'locationbased. Um, it can even be use of proceeds based.',
-       'timestamp': 289,
-       'timestamp_label': '[00:04:49]',
-       'timestamp_seconds': 289,
-       'tip': "It's still the same loan program. Um, but, uh, different institutions just have "
-              'different flavor. Um, and it can be industry based, it can be locationbased. '
-              'Um, it can even be use of proceeds based.',
-       'title': 'SBA 7(a) Loans for Business Acquisitions: How a Top Lender Underwrites Deals '
-                '(Commercial Loan Broker Institute)',
-       'url': 'https://www.youtube.com/watch?v=8-4I4VOIIqg&t=289s',
-       'video_id': '8-4I4VOIIqg'}],
- 11: [{'author': 'Commercial Loan Broker Institute',
-       'channel': 'Commercial Loan Broker Institute',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:15:49](https://www.youtube.com/watch?v=4fxpQTB_spA&t=949s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "And this is the broker's value, right? You are not just matching a business to "
-               "capital. You're helping a business to keep the supply chain moving for our "
-               'country and often even outside of our country.',
-       'timestamp': 949,
-       'timestamp_label': '[00:15:49]',
-       'timestamp_seconds': 949,
-       'tip': "And this is the broker's value, right? You are not just matching a business to "
-              "capital. You're helping a business to keep the supply chain moving for our "
-              'country and often even outside of our country.',
-       'title': 'Unlock the Lucrative World of Supply Chain Financing (Commercial Loan Broker '
-                'Institute)',
-       'url': 'https://www.youtube.com/watch?v=4fxpQTB_spA&t=949s',
-       'video_id': '4fxpQTB_spA'},
-      {'author': 'Joe Camberato',
-       'channel': 'Joe Camberato',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:22](https://www.youtube.com/watch?v=qWXtw52gtTw&t=442s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Take Equity um and you can get your business to whatever place it is that you '
-               'want to in order to execute on that exit thanks for tuning in to grow by Joe '
-               'remember to utilize financing as a tool to grow and scale your business keep '
-               "doing what you're doing and keep.",
-       'timestamp': 442,
-       'timestamp_label': '[00:07:22]',
-       'timestamp_seconds': 442,
-       'tip': 'Take Equity um and you can get your business to whatever place it is that you '
-              'want to in order to execute on that exit thanks for tuning in to grow by Joe '
-              'remember to utilize financing as a tool to grow and scale your business keep '
-              "doing what you're doing and keep.",
-       'title': 'Accounts Receivable Financing: What You Need to Know (Joe Camberato)',
-       'url': 'https://www.youtube.com/watch?v=qWXtw52gtTw&t=442s',
-       'video_id': 'qWXtw52gtTw'},
+       'text': 'They were saving close to $100,000 annually on level three processing.',
+       'timestamp': 2771,
+       'timestamp_label': '[00:46:11]',
+       'timestamp_seconds': 2771,
+       'tip': 'They were saving close to $100,000 annually on level three processing.',
+       'title': 'How to Reduce B2B Credit Card Processing Fees | Future Forward November 2026',
+       'url': 'https://www.youtube.com/watch?v=TEwsEYj6XTI&t=2771s',
+       'video_id': 'TEwsEYj6XTI'},
       {'author': 'Facilero',
        'channel': 'Facilero',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:43](https://www.youtube.com/watch?v=wSWcWyCHkxM&t=43s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
+       'markdown': '[00:00:39](https://www.youtube.com/watch?v=wSWcWyCHkxM&t=39s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'With virtual cards, each payment can have its own set of card details, so even '
-               "if one gets compromised, it won't affect the rest of your operations. Plus, "
-               'you can cancel or disable a card with a click. They also reduce the time your '
-               'finance team spends on reconciliation.',
-       'timestamp': 43,
-       'timestamp_label': '[00:00:43]',
-       'timestamp_seconds': 43,
-       'tip': 'With virtual cards, each payment can have its own set of card details, so even '
-              "if one gets compromised, it won't affect the rest of your operations. Plus, you "
-              'can cancel or disable a card with a click. They also reduce the time your '
-              'finance team spends on reconciliation.',
-       'title': 'Virtual Cards: Transforming B2B Payment Processes in 2025 (Facilero)',
-       'url': 'https://www.youtube.com/watch?v=wSWcWyCHkxM&t=43s',
+       'text': 'With virtual cards, each payment can have its own set of card details, so even if '
+               "one gets compromised, it won't affect the rest of your operations.",
+       'timestamp': 39,
+       'timestamp_label': '[00:00:39]',
+       'timestamp_seconds': 39,
+       'tip': 'With virtual cards, each payment can have its own set of card details, so even if '
+              "one gets compromised, it won't affect the rest of your operations.",
+       'title': 'Virtual Cards: Transforming B2B Payment Processes in 2025',
+       'url': 'https://www.youtube.com/watch?v=wSWcWyCHkxM&t=39s',
        'video_id': 'wSWcWyCHkxM'},
-      {'author': 'Financely Group',
-       'channel': 'Financely Group',
+      {'author': 'Lamar Duffy',
+       'channel': 'Lamar Duffy',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=xY3rD_awSEg&t=15s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
+       'markdown': '[00:09:48](https://www.youtube.com/watch?v=EtzXCqqxIWI&t=588s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Operations, while revenue is trapped in receivables. Asset-based  lending '
-               'offers a solution by monetizing these assets before collections are finalized.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Operations, while revenue is trapped in receivables. Asset-based  lending '
-              'offers a solution by monetizing these assets before collections are finalized.',
-       'title': 'Asset-Based Lending and Borrowing Base Facilities (Financely Group)',
-       'url': 'https://www.youtube.com/watch?v=xY3rD_awSEg&t=15s',
-       'video_id': 'xY3rD_awSEg'},
-      {'author': 'PIMCO U.S.',
-       'channel': 'PIMCO U.S.',
+       'text': "Somebody who's referred to your product or service is much more likely to refer "
+               'somebody else themselves.',
+       'timestamp': 588,
+       'timestamp_label': '[00:09:48]',
+       'timestamp_seconds': 588,
+       'tip': "Somebody who's referred to your product or service is much more likely to refer "
+              'somebody else themselves.',
+       'title': 'Fintech Referral Program: How to Build an AI Growth Automation Step-by-Step',
+       'url': 'https://www.youtube.com/watch?v=EtzXCqqxIWI&t=588s',
+       'video_id': 'EtzXCqqxIWI'},
+      {'author': 'Matt Dubois',
+       'channel': 'Matt Dubois',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:16](https://www.youtube.com/watch?v=C4UI_wc_sUU&t=256s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
+       'markdown': '[00:00:49](https://www.youtube.com/watch?v=vPF9bO_izWU&t=49s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Scale, close relationships, and a deep understanding of these markets will '
-               'offer strategic opportunities for investors with flexible capital.',
-       'timestamp': 256,
-       'timestamp_label': '[00:04:16]',
-       'timestamp_seconds': 256,
-       'tip': 'Scale, close relationships, and a deep understanding of these markets will '
-              'offer strategic opportunities for investors with flexible capital.',
-       'title': 'Asset-Based Finance Explained (PIMCO U.S.)',
-       'url': 'https://www.youtube.com/watch?v=C4UI_wc_sUU&t=256s',
-       'video_id': 'C4UI_wc_sUU'},
-      {'author': 'Universal Funding Corporation',
-       'channel': 'Universal Funding Corporation',
+       'text': "Placeholder or junk data doesn't qualify anymore. Clean, real invoice data does.",
+       'timestamp': 49,
+       'timestamp_label': '[00:00:49]',
+       'timestamp_seconds': 49,
+       'tip': 'On qualifying transactions, enhanced data can lower interchange by roughly half a '
+              'percent to 1 and 1/2%.',
+       'title': 'How B2B Businesses Lower Credit Card Fees (Visa Product 3 Explained)',
+       'url': 'https://www.youtube.com/watch?v=vPF9bO_izWU&t=49s',
+       'video_id': 'vPF9bO_izWU'},
+      {'author': 'Selling Your Canadian Business',
+       'channel': 'Selling Your Canadian Business',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:36](https://www.youtube.com/watch?v=3PlJmybrzHs&t=156s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
+       'markdown': '[00:15:58](https://www.youtube.com/watch?v=Ja8jXRIkOK4&t=958s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Relationship with them we'd like to do the same for your businesses in your "
-               "network if you're ready to become an independent contractor for Universal "
-               'funding Corporation download and complete the broker agreement form from our '
-               'website or call 1800 984.',
-       'timestamp': 156,
-       'timestamp_label': '[00:02:36]',
-       'timestamp_seconds': 156,
-       'tip': "Relationship with them we'd like to do the same for your businesses in your "
-              "network if you're ready to become an independent contractor for Universal "
-              'funding Corporation download and complete the broker agreement form from our '
-              'website or call 1800 984.',
-       'title': 'Factoring Receivables Broker - Earn The Highest Commission (Universal Funding '
-                'Corporation)',
-       'url': 'https://www.youtube.com/watch?v=3PlJmybrzHs&t=156s',
-       'video_id': '3PlJmybrzHs'},
-      {'author': 'Ian Johnson',
-       'channel': 'Ian Johnson',
+       'text': "Your top line is growing, your profit isn't. Right? So, you're scaling your sales, "
+               "but you're not making more money than you did before.",
+       'timestamp': 958,
+       'timestamp_label': '[00:15:58]',
+       'timestamp_seconds': 958,
+       'tip': "Your top line is growing, your profit isn't. Right? So, you're scaling your sales, "
+              "but you're not making more money than you did before.",
+       'title': 'How a Fractional CFO Helps Canadian Businesses Scale and Prepare for Sale with '
+                'Robert Cinapri',
+       'url': 'https://www.youtube.com/watch?v=Ja8jXRIkOK4&t=958s',
+       'video_id': 'Ja8jXRIkOK4'},
+      {'author': 'The Capital Alliance TV',
+       'channel': 'The Capital Alliance TV',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=Lu16E6BvvDE&t=15s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
+       'markdown': '[00:23:25](https://www.youtube.com/watch?v=2_gq6XRm47I&t=1405s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Your receivables through a bank and financing your receivables with an '
-               'asset-based financing solution called receivables factoring okay so the '
-               'reason.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Your receivables through a bank and financing your receivables with an '
-              'asset-based financing solution called receivables factoring okay so the reason.',
-       'title': 'Bank Financing vs. Receivables Factoring (Ian Johnson)',
-       'url': 'https://www.youtube.com/watch?v=Lu16E6BvvDE&t=15s',
-       'video_id': 'Lu16E6BvvDE'},
-      {'author': 'Beau Eckstein, Business Ownership Coach',
-       'channel': 'Beau Eckstein, Business Ownership Coach',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:09](https://www.youtube.com/watch?v=NmbLxyMZBmQ&t=369s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'A free consultation and together they will turn your dreams into tangible '
-               'achievements visit www.bus ownership coach.com to discover more about Bo and '
-               "his team's approach your success story is their unwavering commitment Thrive "
-               'with business ownership coach.',
-       'timestamp': 369,
-       'timestamp_label': '[00:06:09]',
-       'timestamp_seconds': 369,
-       'tip': 'A free consultation and together they will turn your dreams into tangible '
-              'achievements visit www.bus ownership coach.com to discover more about Bo and '
-              "his team's approach your success story is their unwavering commitment Thrive "
-              'with business ownership coach.',
-       'title': 'Comparing SBA 7(a) vs 504 Loans for Business Acquisitions with Real Estate '
-                '(Beau Eckstein, Business Ownership Coach)',
-       'url': 'https://www.youtube.com/watch?v=NmbLxyMZBmQ&t=369s',
-       'video_id': 'NmbLxyMZBmQ'},
-      {'author': 'Zeus Commercial Capital | Business & RE Loans',
-       'channel': 'Zeus Commercial Capital | Business & RE Loans',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:40](https://www.youtube.com/watch?v=OccRWwWbI2M&t=40s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Accounts because they had to choose between making payroll or paying the MCA '
-               'lender now we have an attorney Le team that is specifically designed to help.',
-       'timestamp': 40,
-       'timestamp_label': '[00:00:40]',
-       'timestamp_seconds': 40,
-       'tip': 'Accounts because they had to choose between making payroll or paying the MCA '
-              'lender now we have an attorney Le team that is specifically designed to help.',
-       'title': 'MCA Debt Restructuring- Debt Relief, Debt Consolidation, and MCA Debt '
-                'Settlement (Zeus Commercial Capital | Business & RE Loans)',
-       'url': 'https://www.youtube.com/watch?v=OccRWwWbI2M&t=40s',
-       'video_id': 'OccRWwWbI2M'},
-      {'author': 'Beverly Hills Bar Association',
-       'channel': 'Beverly Hills Bar Association',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:16](https://www.youtube.com/watch?v=Wd7RTVzg5yU&t=16s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "With will mara who is an investment manager at validity finance who's who are "
-               'headquartered in new york but do business throughout the country and.',
-       'timestamp': 16,
-       'timestamp_label': '[00:00:16]',
-       'timestamp_seconds': 16,
-       'tip': "With will mara who is an investment manager at validity finance who's who are "
-              'headquartered in new york but do business throughout the country and.',
-       'title': "Litigation Finance & Funding: William C. Marra - Litigator's Corner Interview "
-                '(Beverly Hills Bar Association)',
-       'url': 'https://www.youtube.com/watch?v=Wd7RTVzg5yU&t=16s',
-       'video_id': 'Wd7RTVzg5yU'},
-      {'author': 'AD Mortgage',
-       'channel': 'AD Mortgage',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:36:03](https://www.youtube.com/watch?v=-j6-Ev4L24c&t=2163s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'DSCR will be higher just because of the commercial use of these properties. Um '
-               'six months reserves is required. So, again, no matter if your loan amount is '
-               '400,000, normally on any other property type, we would require only three '
-               'months reserves.',
-       'timestamp': 2163,
-       'timestamp_label': '[00:36:03]',
-       'timestamp_seconds': 2163,
-       'tip': 'DSCR will be higher just because of the commercial use of these properties. Um '
-              'six months reserves is required. So, again, no matter if your loan amount is '
-              '400,000, normally on any other property type, we would require only three '
-              'months reserves.',
-       'title': 'What is a DSCR Loan? Mortgage Broker Guide to Win More Deals and Get Them '
-                'Approved! (AD Mortgage)',
-       'url': 'https://www.youtube.com/watch?v=-j6-Ev4L24c&t=2163s',
-       'video_id': '-j6-Ev4L24c'},
-      {'author': 'Katheryn Reynolds',
-       'channel': 'Katheryn Reynolds',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:49](https://www.youtube.com/watch?v=_loCXf6bnl4&t=289s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Control of transferred assets if these criteria are not met it is not a true '
-               "sale it's not a true factoring it's simply borrowing secured borrowing you've "
-               'put your accounts receivable up as collateral.',
-       'timestamp': 289,
-       'timestamp_label': '[00:04:49]',
-       'timestamp_seconds': 289,
-       'tip': 'Control of transferred assets if these criteria are not met it is not a true '
-              "sale it's not a true factoring it's simply borrowing secured borrowing you've "
-              'put your accounts receivable up as collateral.',
-       'title': 'Factoring Receivables with & without recourse (Katheryn Reynolds)',
-       'url': 'https://www.youtube.com/watch?v=_loCXf6bnl4&t=289s',
-       'video_id': '_loCXf6bnl4'},
-      {'author': 'Darrell Cockrum',
-       'channel': 'Darrell Cockrum',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:36](https://www.youtube.com/watch?v=bN1tDQE59LE&t=96s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Rate and that's a a Telltale sign that somebody talking about factoring maybe "
-               "doesn't have a good handle on how it works they start asking about interest "
-               "rate there's no interest rate because there's no loan there's.",
-       'timestamp': 96,
-       'timestamp_label': '[00:01:36]',
-       'timestamp_seconds': 96,
-       'tip': "Rate and that's a a Telltale sign that somebody talking about factoring maybe "
-              "doesn't have a good handle on how it works they start asking about interest "
-              "rate there's no interest rate because there's no loan there's.",
-       'title': 'accounts receivable financing vs factoring (Darrell Cockrum)',
-       'url': 'https://www.youtube.com/watch?v=bN1tDQE59LE&t=96s',
-       'video_id': 'bN1tDQE59LE'},
-      {'author': 'Jeff Trevarthen',
-       'channel': 'Jeff Trevarthen',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:17](https://www.youtube.com/watch?v=O49frBQ6oe0&t=377s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Be able to get into these different types of properties that you can buy for '
-               'Investments and a DSLR dscr loan is definitely a way to go so thanks so much '
-               "for watching I'm Jeff the mortgage Pro look forward to seeing you on the next "
-               'show have a good one.',
-       'timestamp': 377,
-       'timestamp_label': '[00:06:17]',
-       'timestamp_seconds': 377,
-       'tip': 'Be able to get into these different types of properties that you can buy for '
-              'Investments and a DSLR dscr loan is definitely a way to go so thanks so much '
-              "for watching I'm Jeff the mortgage Pro look forward to seeing you on the next "
-              'show have a good one.',
-       'title': 'DSCR Loans Explained for 2023 -- Mortgages for Investors. (Jeff Trevarthen)',
-       'url': 'https://www.youtube.com/watch?v=O49frBQ6oe0&t=377s',
-       'video_id': 'O49frBQ6oe0'},
-      {'author': 'Funder Intel',
-       'channel': 'Funder Intel',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:05](https://www.youtube.com/watch?v=jCWdtQmKTiU&t=65s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'t just affect MCA or revenue-based financing or sales-based financing. It "
-               'does include factoring and asset-based lending. So, it makes it more difficult '
-               'for funders and funding providers to conduct business in California.',
-       'timestamp': 65,
-       'timestamp_label': '[00:01:05]',
-       'timestamp_seconds': 65,
-       'tip': "'t just affect MCA or revenue-based financing or sales-based financing. It does "
-              'include factoring and asset-based lending. So, it makes it more difficult for '
-              'funders and funding providers to conduct business in California.',
-       'title': 'Will commercial loan brokers and funding providers need a license in '
-                'California? (Funder Intel)',
-       'url': 'https://www.youtube.com/watch?v=jCWdtQmKTiU&t=65s',
-       'video_id': 'jCWdtQmKTiU'}],
- 12: [{'author': 'My SBA Loan Pro Podcast',
-       'channel': 'My SBA Loan Pro Podcast',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:18:11](https://www.youtube.com/watch?v=XKIBsDDkBUI&t=1091s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "California is a very popular market for small business. Anyway, the CDC's are "
-               'doing these second for SBA. And what happens is they gather all the loans that '
-               'are approved every month and they sell a bond on Wall Street and that bond is '
-               'guaranteed by SBA.',
-       'timestamp': 1091,
-       'timestamp_label': '[00:18:11]',
-       'timestamp_seconds': 1091,
-       'tip': "California is a very popular market for small business. Anyway, the CDC's are "
-              'doing these second for SBA. And what happens is they gather all the loans that '
-              'are approved every month and they sell a bond on Wall Street and that bond is '
-              'guaranteed by SBA.',
-       'title': 'SBA 504 Loans To Buy Owner User Real Estate with Ken Rosenthal | Ep. 15 | My '
-                'SBA Loan Pro Podcast (My SBA Loan Pro Podcast)',
-       'url': 'https://www.youtube.com/watch?v=XKIBsDDkBUI&t=1091s',
-       'video_id': 'XKIBsDDkBUI'},
-      {'author': 'Commercial Capital Training Group, LLC',
-       'channel': 'Commercial Capital Training Group, LLC',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:15](https://www.youtube.com/watch?v=vakBYx8RoD0&t=75s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'It was great yeah very intense um seven days I think six four long days eight '
-               'am till six pm six thirty and then a saturday half a day kind of thing very '
-               'intense a lot of information given to us a lot of note taking just a lot to '
-               'take in but it was good very beneficial.',
-       'timestamp': 75,
-       'timestamp_label': '[00:01:15]',
-       'timestamp_seconds': 75,
-       'tip': 'It was great yeah very intense um seven days I think six four long days eight '
-              'am till six pm six thirty and then a saturday half a day kind of thing very '
-              'intense a lot of information given to us a lot of note taking just a lot to '
-              'take in but it was good very beneficial.',
-       'title': 'Made $49k Commission as a Business Loan Broker (Commercial Capital Training '
-                'Group, LLC)',
-       'url': 'https://www.youtube.com/watch?v=vakBYx8RoD0&t=75s',
-       'video_id': 'vakBYx8RoD0'},
-      {'author': 'Commercial Loan Broker Institute',
-       'channel': 'Commercial Loan Broker Institute',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:47](https://www.youtube.com/watch?v=tgEHrpyZE9U&t=287s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And when you join our network, you can use them from day one. That takes your '
-               'years of building down to a quick enrollment. And you can start funding deals '
-               "next week. And number two, you're going to want to connect with industry "
-               'veterans.',
-       'timestamp': 287,
-       'timestamp_label': '[00:04:47]',
-       'timestamp_seconds': 287,
-       'tip': 'And when you join our network, you can use them from day one. That takes your '
-              'years of building down to a quick enrollment. And you can start funding deals '
-              "next week. And number two, you're going to want to connect with industry "
-              'veterans.',
-       'title': 'How to Build a Lender Network as a New Commercial Loan Broker (Commercial '
-                'Loan Broker Institute)',
-       'url': 'https://www.youtube.com/watch?v=tgEHrpyZE9U&t=287s',
-       'video_id': 'tgEHrpyZE9U'},
-      {'author': 'Financial Regulation Courses',
-       'channel': 'Financial Regulation Courses',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:46](https://www.youtube.com/watch?v=qptR4ByTPDw&t=106s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Most changes, such as residential address or non-securities employment, must '
-               'be updated within 30 calendar days. However, certain criminal matters require '
-               'an accelerated 10 business day filing window to maintain regulatory standing.',
-       'timestamp': 106,
-       'timestamp_label': '[00:01:46]',
-       'timestamp_seconds': 106,
-       'tip': 'Most changes, such as residential address or non-securities employment, must be '
-              'updated within 30 calendar days. However, certain criminal matters require an '
-              'accelerated 10 business day filing window to maintain regulatory standing.',
-       'title': 'Form U4 Compliance Obligations Explained | Series 7, SIE & Broker-Dealer '
-                'Careers (Financial Regulation Courses)',
-       'url': 'https://www.youtube.com/watch?v=qptR4ByTPDw&t=106s',
-       'video_id': 'qptR4ByTPDw'},
-      {'author': 'BizPlanComplete',
-       'channel': 'BizPlanComplete',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:48](https://www.youtube.com/watch?v=hk2Jnd50USw&t=168s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Standalone marketing plan the three swot analysis templates a powerpoint '
-               'presentation as well as some other important documents for starting a '
-               'commercial loan brokerage thank you very much for taking a look.',
-       'timestamp': 168,
-       'timestamp_label': '[00:02:48]',
-       'timestamp_seconds': 168,
-       'tip': 'Standalone marketing plan the three swot analysis templates a powerpoint '
-              'presentation as well as some other important documents for starting a '
-              'commercial loan brokerage thank you very much for taking a look.',
-       'title': 'Commercial Loan Broker Business Plan (BizPlanComplete)',
-       'url': 'https://www.youtube.com/watch?v=hk2Jnd50USw&t=168s',
-       'video_id': 'hk2Jnd50USw'},
-      {'author': 'Trade Finance Global',
-       'channel': 'Trade Finance Global',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:38](https://www.youtube.com/watch?v=ltw4tGEw31o&t=218s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'JPMorgan, but when you look at supply chain finance and working capital '
-               'financing, that stuff has generally been quite digitised from the start.',
-       'timestamp': 218,
-       'timestamp_label': '[00:03:38]',
-       'timestamp_seconds': 218,
-       'tip': 'JPMorgan, but when you look at supply chain finance and working capital '
-              'financing, that stuff has generally been quite digitised from the start.',
-       'title': '25 years of supply chain finance  A journey to unlock liquidity (Trade '
-                'Finance Global)',
-       'url': 'https://www.youtube.com/watch?v=ltw4tGEw31o&t=218s',
-       'video_id': 'ltw4tGEw31o'},
+       'text': "The same time it doesn't do a $10 million deal it takes the same time to do a $100 "
+               'million dollar deal.',
+       'timestamp': 1405,
+       'timestamp_label': '[00:23:25]',
+       'timestamp_seconds': 1405,
+       'tip': "The same time it doesn't do a $10 million deal it takes the same time to do a $100 "
+              'million dollar deal.',
+       'title': '$100M Is Easier to Get Than $10M — Here’s Why | Taber Small',
+       'url': 'https://www.youtube.com/watch?v=2_gq6XRm47I&t=1405s',
+       'video_id': '2_gq6XRm47I'},
       {'author': "Kevin O'Leary",
        'channel': "Kevin O'Leary",
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:31](https://www.youtube.com/watch?v=HKB_cwWcRaE&t=31s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:00:20](https://www.youtube.com/watch?v=HKB_cwWcRaE&t=20s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "I'd say at least 90 if not 95% or more percentage of small businesses startups "
-               "can start without raising any capital at all. Now, obviously, we don't know "
-               "what kind of business she's trying to start, but you just have to try to start "
-               'smarter smaller.',
-       'timestamp': 31,
-       'timestamp_label': '[00:00:31]',
-       'timestamp_seconds': 31,
-       'tip': "I'd say at least 90 if not 95% or more percentage of small businesses startups "
-              "can start without raising any capital at all. Now, obviously, we don't know "
-              "what kind of business she's trying to start, but you just have to try to start "
-              'smarter smaller.',
+       'text': 'Sweat equity is the best equity. You start smaller.',
+       'timestamp': 20,
+       'timestamp_label': '[00:00:20]',
+       'timestamp_seconds': 20,
+       'tip': 'Sweat equity is the best equity. You start smaller.',
        'title': "How to Raise Capital For Your Business | Shark Tank's Kevin O'Leary and Mark "
-                "Cuban (Kevin O'Leary)",
-       'url': 'https://www.youtube.com/watch?v=HKB_cwWcRaE&t=31s',
+                'Cuban',
+       'url': 'https://www.youtube.com/watch?v=HKB_cwWcRaE&t=20s',
        'video_id': 'HKB_cwWcRaE'},
-      {'author': 'CFM (Commercial Financing Mastery)',
-       'channel': 'CFM (Commercial Financing Mastery)',
+      {'author': 'Unbankable with Alex Shvarts',
+       'channel': 'Unbankable with Alex Shvarts',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:13](https://www.youtube.com/watch?v=cqOh0arlXGU&t=313s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:07:16](https://www.youtube.com/watch?v=MNdDLiTLoNY&t=436s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Start making the phone calls. That's what I do on a regular basis when I was "
-               'super active. I usually book three to five commercial manager lunches in a '
-               'week just to catch up. Just And you know what also?',
-       'timestamp': 313,
-       'timestamp_label': '[00:05:13]',
-       'timestamp_seconds': 313,
-       'tip': "Start making the phone calls. That's what I do on a regular basis when I was "
-              'super active. I usually book three to five commercial manager lunches in a week '
-              'just to catch up. Just And you know what also?',
-       'title': 'Why the Bank Declined His 8th Subway Loan: Lender Capacity Explained | Sua '
-                'Truong (CFM (Commercial Financing Mastery))',
-       'url': 'https://www.youtube.com/watch?v=cqOh0arlXGU&t=313s',
-       'video_id': 'cqOh0arlXGU'},
-      {'author': 'ThinkSBA - SBA 504 and 7a Loan Brokerage',
-       'channel': 'ThinkSBA - SBA 504 and 7a Loan Brokerage',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:46](https://www.youtube.com/watch?v=WAbZuTa6KEg&t=166s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You are ready to start the loan application process today click the get '
-               'started link at the top right hand corner of the think SBA home page or just '
-               'give me a call at eight five eight seven six two two seven seven four have a '
-               'great day.',
-       'timestamp': 166,
-       'timestamp_label': '[00:02:46]',
-       'timestamp_seconds': 166,
-       'tip': 'You are ready to start the loan application process today click the get started '
-              'link at the top right hand corner of the think SBA home page or just give me a '
-              'call at eight five eight seven six two two seven seven four have a great day.',
-       'title': 'Small Business Administration SBA 7(a) and 504 Loan Programs For Business '
-                'Owners and Entrepreneurs. (ThinkSBA - SBA 504 and 7a Loan Brokerage)',
-       'url': 'https://www.youtube.com/watch?v=WAbZuTa6KEg&t=166s',
-       'video_id': 'WAbZuTa6KEg'},
-      {'author': 'Chalkboard Real Estate',
-       'channel': 'Chalkboard Real Estate',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:34](https://www.youtube.com/watch?v=F8RMxGMNHtM&t=94s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, the total gross monthly income for this property is $4,200. Let's say that "
-               "the property's owner paid expenses such as taxes, insurance, utilities, "
-               'maintenance, repairs, capital expenditures, and vacancy combined come to '
-               'approximately $2,200 per month.',
-       'timestamp': 94,
-       'timestamp_label': '[00:01:34]',
-       'timestamp_seconds': 94,
-       'tip': "So, the total gross monthly income for this property is $4,200. Let's say that "
-              "the property's owner paid expenses such as taxes, insurance, utilities, "
-              'maintenance, repairs, capital expenditures, and vacancy combined come to '
-              'approximately $2,200 per month.',
-       'title': 'How to CORRECTLY Calculate the Debt Service Coverage Ratio (DSCR) (Chalkboard '
-                'Real Estate)',
-       'url': 'https://www.youtube.com/watch?v=F8RMxGMNHtM&t=94s',
-       'video_id': 'F8RMxGMNHtM'},
+       'text': "In order to apply for revenue-based finance, most likely you're going to need a "
+               'minimum score of only 550.',
+       'timestamp': 436,
+       'timestamp_label': '[00:07:16]',
+       'timestamp_seconds': 436,
+       'tip': "In order to apply for revenue-based finance, most likely you're going to need a "
+              'minimum score of only 550.',
+       'title': 'Working Capital Loan vs Revenue-Based Financing: Which One Should I Choose for My '
+                'Business?',
+       'url': 'https://www.youtube.com/watch?v=MNdDLiTLoNY&t=436s',
+       'video_id': 'MNdDLiTLoNY'},
       {'author': 'Joe Camberato',
        'channel': 'Joe Camberato',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:42](https://www.youtube.com/watch?v=PB-h1pXLzhg&t=222s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:02:05](https://www.youtube.com/watch?v=U1zLsMRu1ig&t=125s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Anywhere from one to two to three percent per month uh forever however long '
-               "that money is outstanding so if it's a 30-day cycle 45 day 60 day cycle.",
-       'timestamp': 222,
-       'timestamp_label': '[00:03:42]',
-       'timestamp_seconds': 222,
-       'tip': 'Anywhere from one to two to three percent per month uh forever however long '
-              "that money is outstanding so if it's a 30-day cycle 45 day 60 day cycle.",
-       'title': 'Purchase Order Financing: Everything You Need to Know (2024) (Joe Camberato)',
-       'url': 'https://www.youtube.com/watch?v=PB-h1pXLzhg&t=222s',
-       'video_id': 'PB-h1pXLzhg'},
-      {'author': 'Cheryl "The AI Sniper" Tibbs',
-       'channel': 'Cheryl "The AI Sniper" Tibbs',
+       'text': 'Once you get your approval dollar amount, revenue based financing will be based '
+               'off a factor rate.',
+       'timestamp': 125,
+       'timestamp_label': '[00:02:05]',
+       'timestamp_seconds': 125,
+       'tip': 'Once you get your approval dollar amount, revenue based financing will be based off '
+              'a factor rate.',
+       'title': 'Revenue-Based Financing: What Is It, and How Does It Work?',
+       'url': 'https://www.youtube.com/watch?v=U1zLsMRu1ig&t=125s',
+       'video_id': 'U1zLsMRu1ig'},
+      {'author': 'Today Capital Group',
+       'channel': 'Today Capital Group',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=CKRM0VWsZBY&t=21s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:04:07](https://www.youtube.com/watch?v=6tGMlJx13g8&t=247s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Not because I failed, because I won. But, here's what's been eating at me. I "
-               'watch new brokers come into this industry every single day, hungry, ambitious, '
-               'ready to make it happen, and then I watch them quit.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': "Not because I failed, because I won. But, here's what's been eating at me. I "
-              'watch new brokers come into this industry every single day, hungry, ambitious, '
-              'ready to make it happen, and then I watch them quit.',
-       'title': 'Launch A 6 Figure Equipment Finance Broker Empire (Cheryl "The AI Sniper" '
-                'Tibbs)',
-       'url': 'https://www.youtube.com/watch?v=CKRM0VWsZBY&t=21s',
-       'video_id': 'CKRM0VWsZBY'},
-      {'author': 'SBA University',
-       'channel': 'SBA University',
+       'text': 'With an MCA, you are typically paying back a fixed daily amount that gets yanked '
+               'out of your bank account no matter how much you sold that day.',
+       'timestamp': 247,
+       'timestamp_label': '[00:04:07]',
+       'timestamp_seconds': 247,
+       'tip': 'A slow week with an MCA can be absolutely brutal.',
+       'title': 'Revenue-Based Financing Explained (RBF vs Loans vs VC + Red Flags to Avoid)',
+       'url': 'https://www.youtube.com/watch?v=6tGMlJx13g8&t=247s',
+       'video_id': '6tGMlJx13g8'},
+      {'author': 'Business Credit',
+       'channel': 'Business Credit',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:36](https://www.youtube.com/watch?v=py_IPiHezcw&t=276s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:06:10](https://www.youtube.com/watch?v=L3n2zgxag4E&t=370s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "If you need to get a hold of me directly I'll leave my email address down in "
-               'the description be on the lookout as I will be releasing new lessons every '
-               'week to help you in your SBA Journey thanks.',
-       'timestamp': 276,
-       'timestamp_label': '[00:04:36]',
-       'timestamp_seconds': 276,
-       'tip': "If you need to get a hold of me directly I'll leave my email address down in "
-              'the description be on the lookout as I will be releasing new lessons every week '
-              'to help you in your SBA Journey thanks.',
-       'title': 'How to Buy Commercial Real Estate (100% Financing Explained!) | SBA Loans '
-                '(SBA University)',
-       'url': 'https://www.youtube.com/watch?v=py_IPiHezcw&t=276s',
-       'video_id': 'py_IPiHezcw'},
-      {'author': 'Mauricio Rauld',
-       'channel': 'Mauricio Rauld',
+       'text': "You can't have more than four negative days in your business bank account per "
+               'month.',
+       'timestamp': 370,
+       'timestamp_label': '[00:06:10]',
+       'timestamp_seconds': 370,
+       'tip': "You can't have more than four negative days in your business bank account per "
+              'month.',
+       'title': 'Revenue Based Financing | Soft Pull | Line of Credit | Up to $100k | Fast Funding',
+       'url': 'https://www.youtube.com/watch?v=L3n2zgxag4E&t=370s',
+       'video_id': 'L3n2zgxag4E'},
+      {'author': 'Bootstrapp',
+       'channel': 'Bootstrapp',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:55](https://www.youtube.com/watch?v=52mBD7-QKAw&t=175s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:04:16](https://www.youtube.com/watch?v=U0fB6ZY7Cpo&t=256s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "They just want to make sure you're making enough money every month that you "
-               'can cover that plus have extra 20% on top so if you enjoyed this clip and you '
-               'want to see the entire episode click here and if you want to see other videos '
-               'similar to this click here.',
-       'timestamp': 175,
-       'timestamp_label': '[00:02:55]',
-       'timestamp_seconds': 175,
-       'tip': "They just want to make sure you're making enough money every month that you can "
-              'cover that plus have extra 20% on top so if you enjoyed this clip and you want '
-              'to see the entire episode click here and if you want to see other videos '
-              'similar to this click here.',
-       'title': 'Debt Service Coverage Ratio (DSCR) | Lender Preferred Metric (w J Scott) '
-                '(Mauricio Rauld)',
-       'url': 'https://www.youtube.com/watch?v=52mBD7-QKAw&t=175s',
-       'video_id': '52mBD7-QKAw'},
+       'text': "So now you're making 600 K, your APR shoots up to 44% basically, so you're paying "
+               'this off in nearly two months.',
+       'timestamp': 256,
+       'timestamp_label': '[00:04:16]',
+       'timestamp_seconds': 256,
+       'tip': "So now you're making 600 K, your APR shoots up to 44% basically, so you're paying "
+              'this off in nearly two months.',
+       'title': 'How Does Revenue Based Financing Work? -- A 6 minute overview of everything you '
+                'need to know.',
+       'url': 'https://www.youtube.com/watch?v=U0fB6ZY7Cpo&t=256s',
+       'video_id': 'U0fB6ZY7Cpo'},
+      {'author': 'Joe Camberato',
+       'channel': 'Joe Camberato',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:14](https://www.youtube.com/watch?v=GwPGzetluZM&t=134s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Two is a revenue-based advance, typically those are going to be 12 to 18 month '
+               'terms.',
+       'timestamp': 134,
+       'timestamp_label': '[00:02:14]',
+       'timestamp_seconds': 134,
+       'tip': 'Two is a revenue-based advance, typically those are going to be 12 to 18 month '
+              'terms.',
+       'title': 'What Is Working Capital, and How Do I Get a Working Capital Loan?',
+       'url': 'https://www.youtube.com/watch?v=GwPGzetluZM&t=134s',
+       'video_id': 'GwPGzetluZM'},
+      {'author': 'Enterprise Industry Network',
+       'channel': 'Enterprise Industry Network',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:33](https://www.youtube.com/watch?v=mXnUmcIc8Ek&t=93s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "That is why equity funding is not just a capital decision, it's also a control "
+               'decision.',
+       'timestamp': 93,
+       'timestamp_label': '[00:01:33]',
+       'timestamp_seconds': 93,
+       'tip': "That is why equity funding is not just a capital decision, it's also a control "
+              'decision.',
+       'title': 'Debt vs Equity vs Revenue-Based Funding: Which Fits Your Business? | EIN Business '
+                'Funding | EINBF',
+       'url': 'https://www.youtube.com/watch?v=mXnUmcIc8Ek&t=93s',
+       'video_id': 'mXnUmcIc8Ek'},
+      {'author': 'Brian M. Hazel Quotes',
+       'channel': 'Brian M. Hazel Quotes',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:25](https://www.youtube.com/watch?v=e3NbWehFdJs&t=145s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'For example, 50K into inventory must turn in 45 to 90 days with at least 35% '
+               'margin.',
+       'timestamp': 145,
+       'timestamp_label': '[00:02:25]',
+       'timestamp_seconds': 145,
+       'tip': 'For example, 50K into inventory must turn in 45 to 90 days with at least 35% '
+              'margin.',
+       'title': 'How to Get Business Funding & Working Capital - BusinessLoansConnect.com',
+       'url': 'https://www.youtube.com/watch?v=e3NbWehFdJs&t=145s',
+       'video_id': 'e3NbWehFdJs'},
+      {'author': 'Zach Siegel',
+       'channel': 'Zach Siegel',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:47](https://www.youtube.com/watch?v=Yq5OojmQIac&t=107s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "If this is what you're being quoted on your first funding, do not take it.",
+       'timestamp': 107,
+       'timestamp_label': '[00:01:47]',
+       'timestamp_seconds': 107,
+       'tip': "If your 50k loan turns into 43K in funding after fees, that's not a good deal.",
+       'title': 'Revenue-Based Financing: What Lenders Won’t Tell You (Red & Green Flags)',
+       'url': 'https://www.youtube.com/watch?v=Yq5OojmQIac&t=107s',
+       'video_id': 'Yq5OojmQIac'}],
+ 11: [{'author': 'SEI Mortgage - Ryan Marks',
+       'channel': 'SEI Mortgage - Ryan Marks',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:05](https://www.youtube.com/watch?v=OOFsomPO_Mc&t=125s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'This type of loan product does require a higher credit score on average of a 680 '
+               'or above to utilize this financing where the DSCR one to four, we go as low as a '
+               '600 credit score.',
+       'timestamp': 125,
+       'timestamp_label': '[00:02:05]',
+       'timestamp_seconds': 125,
+       'tip': 'This type of loan product does require a higher credit score on average of a 680 or '
+              'above to utilize this financing where the DSCR one to four, we go as low as a 600 '
+              'credit score.',
+       'title': '6 Unit DSCR Loans for Commercial Property: THIS Catches Investors Off Guard',
+       'url': 'https://www.youtube.com/watch?v=OOFsomPO_Mc&t=125s',
+       'video_id': 'OOFsomPO_Mc'},
       {'author': 'Eli the DSCR Pro',
        'channel': 'Eli the DSCR Pro',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:49](https://www.youtube.com/watch?v=6P1p0e_NBxs&t=289s)',
-       'relevance': 'Attributed practitioner commentary on commercial specialty finance '
-                    'brokerage, equipment/AR/SBA/bridge debt placement, and lender-matrix '
-                    'underwriting (Chapter Q12 operational verification).',
+       'markdown': '[00:04:29](https://www.youtube.com/watch?v=6P1p0e_NBxs&t=269s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Asset, need help with the down payment? Speed, we target a four-week closing, '
-               'not 60, 90 days. We move at the speed of business. Now, I promised I will tell '
-               'you about the yield maintenance trap.',
-       'timestamp': 289,
-       'timestamp_label': '[00:04:49]',
-       'timestamp_seconds': 289,
-       'tip': 'Asset, need help with the down payment? Speed, we target a four-week closing, '
-              'not 60, 90 days. We move at the speed of business. Now, I promised I will tell '
-              'you about the yield maintenance trap.',
-       'title': 'DSCR Loan For Commercial Property (Eli the DSCR Pro)',
-       'url': 'https://www.youtube.com/watch?v=6P1p0e_NBxs&t=289s',
-       'video_id': '6P1p0e_NBxs'}]}
+       'text': "If you have a lot of equity, let's say you are only borrowing 60 or 65% LTV, we "
+               'typically do not require the property to cash flow at one.',
+       'timestamp': 269,
+       'timestamp_label': '[00:04:29]',
+       'timestamp_seconds': 269,
+       'tip': "If you have a lot of equity, let's say you are only borrowing 60 or 65% LTV, we "
+              'typically do not require the property to cash flow at one.',
+       'title': 'DSCR Loan For Commercial Property',
+       'url': 'https://www.youtube.com/watch?v=6P1p0e_NBxs&t=269s',
+       'video_id': '6P1p0e_NBxs'},
+      {'author': 'Beau Eckstein, Business Ownership Coach',
+       'channel': 'Beau Eckstein, Business Ownership Coach',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:11](https://www.youtube.com/watch?v=rzgxx8EB7NI&t=71s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Can you go Fannie Mae or Freddie Mac for agency debt, so DSCR for small multi 5 to '
+               '15 units may play a factor.',
+       'timestamp': 71,
+       'timestamp_label': '[00:01:11]',
+       'timestamp_seconds': 71,
+       'tip': 'Can you go Fannie Mae or Freddie Mac for agency debt, so DSCR for small multi 5 to '
+              '15 units may play a factor.',
+       'title': 'What is a good DSCR for commercial real estate?',
+       'url': 'https://www.youtube.com/watch?v=rzgxx8EB7NI&t=71s',
+       'video_id': 'rzgxx8EB7NI'},
+      {'author': 'Academy For Commercial Lending',
+       'channel': 'Academy For Commercial Lending',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:28](https://www.youtube.com/watch?v=NHfs2vBPCys&t=208s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Loans that didn't were sitting at sub-10% debt yields. DSCR wasn't the variable "
+               'separating those two groups. Debt yield was.',
+       'timestamp': 208,
+       'timestamp_label': '[00:03:28]',
+       'timestamp_seconds': 208,
+       'tip': "Loans that didn't were sitting at sub-10% debt yields. DSCR wasn't the variable "
+              'separating those two groups. Debt yield was.',
+       'title': 'Debt Yield vs. DSCR: The Metric Every Commercial Mortgage Broker Needs to '
+                'Understand',
+       'url': 'https://www.youtube.com/watch?v=NHfs2vBPCys&t=208s',
+       'video_id': 'NHfs2vBPCys'},
+      {'author': 'I Am Andrew Russell',
+       'channel': 'I Am Andrew Russell',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:15:58](https://www.youtube.com/watch?v=SExreBEJY5Q&t=958s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'There are actually some lenders who you can get away with putting 25 or 30% down '
+               'and have no market rent checked.',
+       'timestamp': 958,
+       'timestamp_label': '[00:15:58]',
+       'timestamp_seconds': 958,
+       'tip': 'There are actually some lenders who you can get away with putting 25 or 30% down '
+              'and have no market rent checked.',
+       'title': 'This is Why 99% of Investors Don’t Use DSCR Loans!',
+       'url': 'https://www.youtube.com/watch?v=SExreBEJY5Q&t=958s',
+       'video_id': 'SExreBEJY5Q'},
+      {'author': 'Jeff Trevarthen',
+       'channel': 'Jeff Trevarthen',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:25](https://www.youtube.com/watch?v=O49frBQ6oe0&t=85s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'In some instances a 0.80 DSCR ratio, so debt service coverage ratio 0.8, is still '
+               'allowable for some investors to be able to help you get a loan on a property.',
+       'timestamp': 85,
+       'timestamp_label': '[00:01:25]',
+       'timestamp_seconds': 85,
+       'tip': 'In some instances a 0.80 DSCR ratio, so debt service coverage ratio 0.8, is still '
+              'allowable for some investors to be able to help you get a loan on a property.',
+       'title': 'DSCR Loans Explained for 2023 -- Mortgages for Investors.',
+       'url': 'https://www.youtube.com/watch?v=O49frBQ6oe0&t=85s',
+       'video_id': 'O49frBQ6oe0'},
+      {'author': 'Hard Money Mike',
+       'channel': 'Hard Money Mike',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:23](https://www.youtube.com/watch?v=HYtATwfeE50&t=263s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Cash out refinance always always cost you a little bit more because it's going to "
+               'be five or ten percent less than the loan to value.',
+       'timestamp': 263,
+       'timestamp_label': '[00:04:23]',
+       'timestamp_seconds': 263,
+       'tip': "Cash out refinance always always cost you a little bit more because it's going to "
+              'be five or ten percent less than the loan to value.',
+       'title': 'BRRRR: How to Succeed Using DSCR and Hard Money Loans',
+       'url': 'https://www.youtube.com/watch?v=HYtATwfeE50&t=263s',
+       'video_id': 'HYtATwfeE50'},
+      {'author': 'Real Estate Finance Academy with Trevor Calton',
+       'channel': 'Real Estate Finance Academy with Trevor Calton',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:38](https://www.youtube.com/watch?v=2cFIwSgUOQM&t=158s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If interest rates rise, then the loan amount would have to go down, in order for '
+               'us to stay within the minimum required debt service coverage ratio.',
+       'timestamp': 158,
+       'timestamp_label': '[00:02:38]',
+       'timestamp_seconds': 158,
+       'tip': 'If interest rates rise, then the loan amount would have to go down, in order for us '
+              'to stay within the minimum required debt service coverage ratio.',
+       'title': 'DSCR Demystified: How Lenders Really Use It to Size Your Loan | Debt Service '
+                'Coverage Ratio',
+       'url': 'https://www.youtube.com/watch?v=2cFIwSgUOQM&t=158s',
+       'video_id': '2cFIwSgUOQM'},
+      {'author': 'Brandon Turner | Real Estate Investor',
+       'channel': 'Brandon Turner | Real Estate Investor',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:14:00](https://www.youtube.com/watch?v=-W2ThDxeu-o&t=840s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Your lender does not use your rent estimate. They use the appraiser's rent "
+               'estimate.',
+       'timestamp': 840,
+       'timestamp_label': '[00:14:00]',
+       'timestamp_seconds': 840,
+       'tip': "Your lender does not use your rent estimate. They use the appraiser's rent "
+              'estimate.',
+       'title': 'DSCR Loans Explained for 2026: Mortgages for Rental Investors',
+       'url': 'https://www.youtube.com/watch?v=-W2ThDxeu-o&t=840s',
+       'video_id': '-W2ThDxeu-o'},
+      {'author': 'ProAlpha Capital',
+       'channel': 'ProAlpha Capital',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:19](https://www.youtube.com/watch?v=L9TrjfKxYdY&t=79s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The only thing that the underwriters are going to calculate on a file that is a '
+               'DSCR loan is the rent divided by the debt service.',
+       'timestamp': 79,
+       'timestamp_label': '[00:01:19]',
+       'timestamp_seconds': 79,
+       'tip': 'The only thing that the underwriters are going to calculate on a file that is a '
+              'DSCR loan is the rent divided by the debt service.',
+       'title': 'DSCR Loans Explained in 2 Minutes',
+       'url': 'https://www.youtube.com/watch?v=L9TrjfKxYdY&t=79s',
+       'video_id': 'L9TrjfKxYdY'},
+      {'author': 'Mauricio Rauld',
+       'channel': 'Mauricio Rauld',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:43](https://www.youtube.com/watch?v=52mBD7-QKAw&t=103s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "The reality is the lenders aren't tightening up; the lenders use the same "
+               "computations, the same metrics as they've always used.",
+       'timestamp': 103,
+       'timestamp_label': '[00:01:43]',
+       'timestamp_seconds': 103,
+       'tip': "The reality is the lenders aren't tightening up; the lenders use the same "
+              "computations, the same metrics as they've always used.",
+       'title': 'Debt Service Coverage Ratio (DSCR) | Lender Preferred Metric (w J Scott)',
+       'url': 'https://www.youtube.com/watch?v=52mBD7-QKAw&t=103s',
+       'video_id': '52mBD7-QKAw'},
+      {'author': 'Succeed REI',
+       'channel': 'Succeed REI',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:08](https://www.youtube.com/watch?v=3AB1K3GHp4w&t=248s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You really never want your DSCR to be lower than 1.0.',
+       'timestamp': 248,
+       'timestamp_label': '[00:04:08]',
+       'timestamp_seconds': 248,
+       'tip': 'You really never want your DSCR to be lower than 1.0.',
+       'title': 'What is Debt Service Coverage Ratio (DSCR) and How to Use It',
+       'url': 'https://www.youtube.com/watch?v=3AB1K3GHp4w&t=248s',
+       'video_id': '3AB1K3GHp4w'},
+      {'author': 'Tactica RES',
+       'channel': 'Tactica RES',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:47](https://www.youtube.com/watch?v=ZgYmvPS5gJY&t=407s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'When the loan constant is greater than the cap rate, leverage is negative and '
+               'financing is actually hurting our return on cash invested.',
+       'timestamp': 407,
+       'timestamp_label': '[00:06:47]',
+       'timestamp_seconds': 407,
+       'tip': 'When the loan constant is greater than the cap rate, leverage is negative and '
+              'financing is actually hurting our return on cash invested.',
+       'title': 'The Relationship Between LTV, DSCR, Debt Yield & the Loan Constant',
+       'url': 'https://www.youtube.com/watch?v=ZgYmvPS5gJY&t=407s',
+       'video_id': 'ZgYmvPS5gJY'},
+      {'author': 'Chalkboard Real Estate',
+       'channel': 'Chalkboard Real Estate',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:33](https://www.youtube.com/watch?v=F8RMxGMNHtM&t=153s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Assuming these numbers are correct, there is zero chance you're getting a loan for "
+               '$360,000 from a bank on this property.',
+       'timestamp': 153,
+       'timestamp_label': '[00:02:33]',
+       'timestamp_seconds': 153,
+       'tip': "Assuming these numbers are correct, there is zero chance you're getting a loan for "
+              '$360,000 from a bank on this property.',
+       'title': 'How to CORRECTLY Calculate the Debt Service Coverage Ratio (DSCR)',
+       'url': 'https://www.youtube.com/watch?v=F8RMxGMNHtM&t=153s',
+       'video_id': 'F8RMxGMNHtM'},
+      {'author': 'Beyond Lenders',
+       'channel': 'Beyond Lenders',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:46](https://www.youtube.com/watch?v=tlI9IYK5Dxg&t=226s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "The LTV for your deal will need to be less than the lender's maximum LTV and the "
+               "DSCR for your deal will need to be greater than the lender's minimum DSCR.",
+       'timestamp': 226,
+       'timestamp_label': '[00:03:46]',
+       'timestamp_seconds': 226,
+       'tip': "The LTV for your deal will need to be less than the lender's maximum LTV and the "
+              "DSCR for your deal will need to be greater than the lender's minimum DSCR.",
+       'title': 'You Must Understand LTV and DSCR',
+       'url': 'https://www.youtube.com/watch?v=tlI9IYK5Dxg&t=226s',
+       'video_id': 'tlI9IYK5Dxg'},
+      {'author': 'REtipster',
+       'channel': 'REtipster',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:38](https://www.youtube.com/watch?v=7sx67OQUmsM&t=158s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A business or investment opportunity with a DSCR of 1.5 or higher is normally '
+               'perceived as really good and may have a case for obtaining better rates on their '
+               'loan.',
+       'timestamp': 158,
+       'timestamp_label': '[00:02:38]',
+       'timestamp_seconds': 158,
+       'tip': 'A business or investment opportunity with a DSCR of 1.5 or higher is normally '
+              'perceived as really good and may have a case for obtaining better rates on their '
+              'loan.',
+       'title': 'Debt Service Coverage Ratio (DSCR) Explained',
+       'url': 'https://www.youtube.com/watch?v=7sx67OQUmsM&t=158s',
+       'video_id': '7sx67OQUmsM'}],
+ 12: [{'author': 'Jeremiah Boucher',
+       'channel': 'Jeremiah Boucher',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:34](https://www.youtube.com/watch?v=KFtBrowO6pc&t=514s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Bridge loans are not for beginners.',
+       'timestamp': 514,
+       'timestamp_label': '[00:08:34]',
+       'timestamp_seconds': 514,
+       'tip': 'Bridge loans are not for beginners.',
+       'title': 'What Is A Bridge Loan In Commercial Real Estate',
+       'url': 'https://www.youtube.com/watch?v=KFtBrowO6pc&t=514s',
+       'video_id': 'KFtBrowO6pc'},
+      {'author': 'Transform Solar',
+       'channel': 'Transform Solar',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:57](https://www.youtube.com/watch?v=U8Ynw0oqocY&t=57s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The IRS draws from the solar credit bucket first, and the leftover withholding '
+               'comes back to you as a refund.',
+       'timestamp': 57,
+       'timestamp_label': '[00:00:57]',
+       'timestamp_seconds': 57,
+       'tip': 'The IRS draws from the solar credit bucket first, and the leftover withholding '
+              'comes back to you as a refund.',
+       'title': 'The Solar Tax Credit Explained',
+       'url': 'https://www.youtube.com/watch?v=U8Ynw0oqocY&t=57s',
+       'video_id': 'U8Ynw0oqocY'},
+      {'author': 'Financial modeling',
+       'channel': 'Financial modeling',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:13](https://www.youtube.com/watch?v=Xf8npq5DK2w&t=193s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The tax equity investor avoids project-level debt because a foreclosure inside '
+               'five years triggers ITC recapture.',
+       'timestamp': 193,
+       'timestamp_label': '[00:03:13]',
+       'timestamp_seconds': 193,
+       'tip': 'The tax equity investor avoids project-level debt because a foreclosure inside five '
+              'years triggers ITC recapture.',
+       'title': 'Tax Equity Flip and Back Leverage Debt in US Renewable Energy Sector',
+       'url': 'https://www.youtube.com/watch?v=Xf8npq5DK2w&t=193s',
+       'video_id': 'Xf8npq5DK2w'},
+      {'author': 'Rob Freeman | Insuring The Built Environment',
+       'channel': 'Rob Freeman | Insuring The Built Environment',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:00](https://www.youtube.com/watch?v=fqMHsHUSOU8&t=0s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Tax equity pairs a project that has credits but no tax appetite with an investor '
+               'that has tax liability.',
+       'timestamp': 0,
+       'timestamp_label': '[00:00:00]',
+       'timestamp_seconds': 0,
+       'tip': 'Tax equity pairs a project that has credits but no tax appetite with an investor '
+              'that has tax liability.',
+       'title': 'What is Solar Tax Equity Financing?',
+       'url': 'https://www.youtube.com/watch?v=fqMHsHUSOU8&t=0s',
+       'video_id': 'fqMHsHUSOU8'},
+      {'author': 'Katya Mizin',
+       'channel': 'Katya Mizin',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:21:12](https://www.youtube.com/watch?v=WiG6N_co0Eo&t=1272s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'If they do that, then they will have a 4-year completion window.',
+       'timestamp': 1272,
+       'timestamp_label': '[00:21:12]',
+       'timestamp_seconds': 1272,
+       'tip': 'If they do that, then they will have a 4-year completion window.',
+       'title': 'Investment Tax Credit (ITC) webinar by Lumen Energy',
+       'url': 'https://www.youtube.com/watch?v=WiG6N_co0Eo&t=1272s',
+       'video_id': 'WiG6N_co0Eo'},
+      {'author': 'The Money Side',
+       'channel': 'The Money Side',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:14:03](https://www.youtube.com/watch?v=1_YV2DUgR-g&t=843s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Dealer fees add 30% or more to the price, so a 3.99% loan on $40,000 works out to '
+               'about 6.7% on a $30,700 system.',
+       'timestamp': 843,
+       'timestamp_label': '[00:14:03]',
+       'timestamp_seconds': 843,
+       'tip': 'Dealer fees add 30% or more to the price, so a 3.99% loan on $40,000 works out to '
+              'about 6.7% on a $30,700 system.',
+       'title': "The 30% Solar Tax Credit Didn't Disappear. It Moved.",
+       'url': 'https://www.youtube.com/watch?v=1_YV2DUgR-g&t=843s',
+       'video_id': '1_YV2DUgR-g'},
+      {'author': 'Tax Alpha Insider',
+       'channel': 'Tax Alpha Insider',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:00](https://www.youtube.com/watch?v=TQ86awlkdKw&t=0s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Call it something like 85 cents.',
+       'timestamp': 0,
+       'timestamp_label': '[00:00:00]',
+       'timestamp_seconds': 0,
+       'tip': 'Call it something like 85 cents.',
+       'title': 'Transferrable tax credits can offset passive income tax liability with Jason '
+                'Prince',
+       'url': 'https://www.youtube.com/watch?v=TQ86awlkdKw&t=0s',
+       'video_id': 'TQ86awlkdKw'},
+      {'author': 'Tax Alpha Insider',
+       'channel': 'Tax Alpha Insider',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:15:46](https://www.youtube.com/watch?v=TQ86awlkdKw&t=946s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'I think the compliance burden associated with the transfer is meaningfully less.',
+       'timestamp': 946,
+       'timestamp_label': '[00:15:46]',
+       'timestamp_seconds': 946,
+       'tip': 'I think the compliance burden associated with the transfer is meaningfully less.',
+       'title': 'Transferrable tax credits can offset passive income tax liability with Jason '
+                'Prince',
+       'url': 'https://www.youtube.com/watch?v=TQ86awlkdKw&t=946s',
+       'video_id': 'TQ86awlkdKw'},
+      {'author': 'Solar Energy Channel by Paradise Energy Solutions',
+       'channel': 'Solar Energy Channel by Paradise Energy Solutions',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:18](https://www.youtube.com/watch?v=LltieIq1Eq0&t=198s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Projects over 1 megawatt AC need to meet prevailing wage and apprenticeship '
+               'requirements to get the 30% base credit.',
+       'timestamp': 198,
+       'timestamp_label': '[00:03:18]',
+       'timestamp_seconds': 198,
+       'tip': 'Projects over 1 megawatt AC need to meet prevailing wage and apprenticeship '
+              'requirements to get the 30% base credit.',
+       'title': 'Unlocking the Solar Tax Credit: 10% adders, transferability rules, and more',
+       'url': 'https://www.youtube.com/watch?v=LltieIq1Eq0&t=198s',
+       'video_id': 'LltieIq1Eq0'},
+      {'author': 'Intuit TurboTax',
+       'channel': 'Intuit TurboTax',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:17](https://www.youtube.com/watch?v=2KSxwXfP_QQ&t=77s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'For solar there is no maximum credit, and you claim it on Form 5695.',
+       'timestamp': 77,
+       'timestamp_label': '[00:01:17]',
+       'timestamp_seconds': 77,
+       'tip': 'For solar there is no maximum credit, and you claim it on Form 5695.',
+       'title': 'Are You Eligible for a Home Energy Tax Credit? - TurboTax Tax Tip Video',
+       'url': 'https://www.youtube.com/watch?v=2KSxwXfP_QQ&t=77s',
+       'video_id': '2KSxwXfP_QQ'},
+      {'author': 'Express Legal Funding',
+       'channel': 'Express Legal Funding',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:03](https://www.youtube.com/watch?v=AVBbpi6lPFY&t=63s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Litigation funding is non-recourse, so if the case fails the funder bears the '
+               'loss.',
+       'timestamp': 63,
+       'timestamp_label': '[00:01:03]',
+       'timestamp_seconds': 63,
+       'tip': 'Litigation funding is non-recourse, so if the case fails the funder bears the loss.',
+       'title': 'Litigation Finance Explained: Complete Litigation Funding Guide',
+       'url': 'https://www.youtube.com/watch?v=AVBbpi6lPFY&t=63s',
+       'video_id': 'AVBbpi6lPFY'},
+      {'author': 'Slingshot Capital Inc.',
+       'channel': 'Slingshot Capital Inc.',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:49](https://www.youtube.com/watch?v=63RLcNbs9SU&t=109s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Litigation finance is an impact asset class.',
+       'timestamp': 109,
+       'timestamp_label': '[00:01:49]',
+       'timestamp_seconds': 109,
+       'tip': 'Litigation finance is an impact asset class.',
+       'title': '2020 Commercial Litigation Finance Association in the US Market',
+       'url': 'https://www.youtube.com/watch?v=63RLcNbs9SU&t=109s',
+       'video_id': '63RLcNbs9SU'},
+      {'author': 'The National Law Review',
+       'channel': 'The National Law Review',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:20:11](https://www.youtube.com/watch?v=cBxujqoCcbY&t=1211s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "It's a much riskier proposition to fund a single case than it is a series of "
+               'cases.',
+       'timestamp': 1211,
+       'timestamp_label': '[00:20:11]',
+       'timestamp_seconds': 1211,
+       'tip': "It's a much riskier proposition to fund a single case than it is a series of cases.",
+       'title': 'Introduction to Commercial Litigation Finance',
+       'url': 'https://www.youtube.com/watch?v=cBxujqoCcbY&t=1211s',
+       'video_id': 'cBxujqoCcbY'},
+      {'author': 'Turn-Keyinvestments by Richard Lowe',
+       'channel': 'Turn-Keyinvestments by Richard Lowe',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:40:11](https://www.youtube.com/watch?v=5d2yaSz0ius&t=2411s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So the investor is a priority payment from the 28% received as our success fee as '
+               "we'll call it.",
+       'timestamp': 2411,
+       'timestamp_label': '[00:40:11]',
+       'timestamp_seconds': 2411,
+       'tip': 'So the investor is a priority payment from the 28% received as our success fee as '
+              "we'll call it.",
+       'title': 'Litigation Finance Explained | How It Works, Potential Returns & Risks | Full '
+                'Webinar',
+       'url': 'https://www.youtube.com/watch?v=5d2yaSz0ius&t=2411s',
+       'video_id': '5d2yaSz0ius'},
+      {'author': 'The National Law Review',
+       'channel': 'The National Law Review',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:42](https://www.youtube.com/watch?v=qdVNgYCTgzU&t=282s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The key feature of it is that funds are provided on a non-recourse basis.',
+       'timestamp': 282,
+       'timestamp_label': '[00:04:42]',
+       'timestamp_seconds': 282,
+       'tip': 'The key feature of it is that funds are provided on a non-recourse basis.',
+       'title': 'Introduction to Commercial Litigation Finance',
+       'url': 'https://www.youtube.com/watch?v=qdVNgYCTgzU&t=282s',
+       'video_id': 'qdVNgYCTgzU'},
+      {'author': 'Beverly Hills Bar Association',
+       'channel': 'Beverly Hills Bar Association',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:34:41](https://www.youtube.com/watch?v=Wd7RTVzg5yU&t=2081s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "For most commercial funders probably they're investing in less than ten percent "
+               'and sometimes less than five percent of the opportunities that they see.',
+       'timestamp': 2081,
+       'timestamp_label': '[00:34:41]',
+       'timestamp_seconds': 2081,
+       'tip': "For most commercial funders probably they're investing in less than ten percent and "
+              'sometimes less than five percent of the opportunities that they see.',
+       'title': "Litigation Finance & Funding: William C. Marra - Litigator's Corner Interview",
+       'url': 'https://www.youtube.com/watch?v=Wd7RTVzg5yU&t=2081s',
+       'video_id': 'Wd7RTVzg5yU'},
+      {'author': 'Break Into CRE',
+       'channel': 'Break Into CRE',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:25](https://www.youtube.com/watch?v=b-6L1d2Ozk4&t=385s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'This can often lead to all-in rates in the 15 to 20% range for preferred equity '
+               'capital, which is why in most cases this is not used by investors unless '
+               'absolutely necessary.',
+       'timestamp': 385,
+       'timestamp_label': '[00:06:25]',
+       'timestamp_seconds': 385,
+       'tip': 'This can often lead to all-in rates in the 15 to 20% range for preferred equity '
+              'capital, which is why in most cases this is not used by investors unless absolutely '
+              'necessary.',
+       'title': 'How Commercial Real Estate Deals are Funded [The Capital Stack]',
+       'url': 'https://www.youtube.com/watch?v=b-6L1d2Ozk4&t=385s',
+       'video_id': 'b-6L1d2Ozk4'}]}

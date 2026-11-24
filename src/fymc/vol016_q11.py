@@ -1,726 +1,789 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
-    "question_prompt": "How do you structure a lean 2 FT + 3 C (5 people) -> 3 FT + 4 C (7 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Probate Brokerage Seats, Court-Delay Cohorts, Contractor SLAs, Signed IP Transfers, and Buyer-Tested Owner Earnings",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #9, Probate Real Estate, ranks #26 with a 80/100 Money-to-Manpower "
-        "Score. Its 11 mapped operator plays become transferable only when executor "
-        "relationships, court-sale controls, and retained commissions survive the "
-        "founder's absence. This chapter assigns those plays to a five-person pod "
-        "and specifies the seven-person expansion, contractor acceptance standards, "
-        "weekly exception reviews, and concentration limits. Canonical annual owner "
-        "profits remain $24,000 Conservative, $140,250 Base, and $315,000 Scaled; "
-        "property sale proceeds never become brokerage revenue. Build separate "
-        "earned-revenue and cash views, preserve signed intellectual-property "
-        "assignments, and test valuation against documented replacement costs. "
-        "The objective is a defensible earnings stream that can support a buyer "
-        "or fund a durable owner-operated business without disguising unpaid work."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "20% net margin; $24,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$510,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "27.5% net margin; $140,250 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual retained brokerage commissions after brokerage splits",
-            "note": "35% net margin; $315,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign eleven plays to five seats before buying more capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Translate Candidate #9's eleven-play scope into an explicit operating "
-                    "map rather than eleven departments. For this chapter, the work packages "
-                    "are docket discovery, representative-authority verification, attorney "
-                    "referral development, executor intake, title and occupancy triage, "
-                    "valuation and acquisition screening, listing preparation, property "
-                    "readiness coordination, court-sale execution, closing and commission "
-                    "collection, and executor aftercare. These labels organize the eleven "
-                    "plays; they do not create additional revenue categories. FT1 is the "
-                    "producing licensed broker or appropriately supervised licensee, owning "
-                    "relationships, pricing, negotiations, and brokerage decisions. FT2 is "
-                    "the transaction and executor-service lead, owning intake, calendars, "
-                    "documents, vendor coordination, and collection reconciliation. C1 "
-                    "provides docket research and administrative enrichment, C2 supplies "
-                    "property-condition documentation and readiness coordination, and C3 "
-                    "provides specialist transaction administration. Count each contractor "
-                    "as a seat, not an unlimited labor pool. The representative retains "
-                    "estate decisions; counsel supplies legal interpretation; the broker "
-                    "retains licensed supervision. Write an accountable owner, backup, "
-                    "required evidence, and next action into every work package. This "
-                    "prevents the familiar failure where everyone assumes someone else "
-                    "checked whether the person signing actually holds current authority. "
-                    "Review the map whenever a jurisdiction, service, or contractor changes."
-                ),
-                (
-                    "The seven-person version adds FT3, a licensed associate dedicated to "
-                    "listing execution and relationship coverage, plus C4, a contract "
-                    "bookkeeper handling reconciliations and cohort reporting. FT1 then "
-                    "spends protected time developing attorney relationships and coaching "
-                    "exception handling rather than becoming the universal document "
-                    "chaser. FT2 remains the operating owner; adding a bookkeeper does "
-                    "not transfer responsibility for transaction completeness. Introduce "
-                    "these seats only after a rolling thirteen-week workload forecast "
-                    "shows persistent service failures or economically attractive unmet "
-                    "demand. Record available hours, accepted files, court-dependent "
-                    "files, and rework hours separately. An illustrative capacity model "
-                    "might budget eight administrative hours per new listing and three "
-                    "hours per active file monthly, then replace those assumptions with "
-                    "six weeks of measured activity. Court delays consume monitoring "
-                    "capacity without generating a new commission. Contractor businesses "
-                    "may serve other clients, so contracted availability must be "
-                    "documented instead of assumed. Outside counsel, escrow, title "
-                    "officers, and estate-paid trades are counterparties, not invisible "
-                    "extra pod members. If coordination needs exceed the five-seat or "
-                    "seven-seat budget, reduce simultaneous intake or explicitly price "
-                    "additional service capacity. Do not preserve an attractive staffing "
-                    "ratio by moving real operating work outside the headcount narrative."
-                ),
-                (
-                    "Pay contractors for accepted deliverables with stated scope, not "
-                    "for unlicensed brokerage outcomes. Illustrative purchasing budgets "
-                    "are $35 per verified docket packet for C1, $225 per documented "
-                    "property-readiness inspection for C2, and $450 per accepted "
-                    "administrative transaction file for C3. These are planning "
-                    "assumptions, not market quotes, and require workload validation. "
-                    "For C4, test an $800 monthly bookkeeping retainer covering named "
-                    "reconciliations and a fixed close deadline. Define revision "
-                    "allowances, exception charges, access restrictions, invoicing "
-                    "evidence, and termination assistance in each agreement. Reject "
-                    "pay-per-attorney-referral arrangements and percentage commissions "
-                    "to unlicensed administrators; California Business and Professions "
-                    "Code sections 10130 and 10137 illustrate licensing and compensation "
-                    "boundaries that require state-specific implementation. Contractor "
-                    "classification follows actual working conditions and applicable "
-                    "tests, including relevant exceptions, rather than the contract "
-                    "heading. Output standards do not justify treating a controlled "
-                    "full-time employee as an independent business. Require contractor "
-                    "cure of documented defects under the agreement without imposing "
-                    "improper wage deductions. Before launch, compare the complete "
-                    "labor plan with the canonical expense envelope: the Conservative "
-                    "case is a stress case, and its two full-time seats may be "
-                    "uneconomic at local lawful wages and required owner compensation."
-                ),
-            ],
-            "table": {
-                "caption": "Five-Seat Ownership and Seven-Seat Expansion Across Eleven Probate Plays",
-                "headers": [
-                    "Accountable seat and deployment",
-                    "Mapped work and decision boundaries",
-                    "Accepted output and service standard",
-                    "Compensation basis and escalation trigger",
-                ],
-                "rows": [
-                    [
-                        "FT1 produces and supervises the five-person brokerage pod",
-                        "Own attorney development, valuation screening, and licensed listing decisions",
-                        "Document pricing rationale and verify authority before representation proceeds",
-                        "Budget employment costs; escalate conflicts before presenting acquisition offers",
-                    ],
-                    [
-                        "FT2 runs executor service and transaction administration daily",
-                        "Own executor intake, authority evidence collection, and closing coordination",
-                        "Maintain complete file index and next action for every estate",
-                        "Budget employment costs; escalate missing authority documents the same day",
-                    ],
-                    [
-                        "C1 supplies independently scoped docket research and enrichment",
-                        "Own docket discovery and prepare evidence for authority verification",
-                        "Deliver source-linked packets within two business days of assignment",
-                        "Illustrative thirty-five-dollar packet price requires documented acceptance and cure",
-                    ],
-                    [
-                        "C2 coordinates independently scoped property documentation and readiness",
-                        "Support occupancy triage, listing preparation, and property readiness coordination",
-                        "Return dated photos and scope exceptions within two business days",
-                        "Illustrative inspection price excludes trades, materials, and estate disbursements",
-                    ],
-                    [
-                        "C3 provides specialist administrative transaction support by file",
-                        "Support court-sale checklists, closing evidence, and executor aftercare preparation",
-                        "Deliver indexed documents without negotiating or interpreting legal authority",
-                        "Illustrative file fee excludes licensed acts and referral compensation",
-                    ],
-                    [
-                        "FT3 joins only when the seven-person expansion earns support",
-                        "Take licensed listing execution and secondary attorney relationship coverage",
-                        "Maintain broker-supervised decisions and named coverage for active listings",
-                        "Budget employment costs against demonstrated retained-commission capacity and backlog",
-                    ],
-                    [
-                        "C4 joins the seven-person pod as contract bookkeeper",
-                        "Reconcile retained commissions and report cohort-level earned revenue monthly",
-                        "Close reconciliations by business day ten with documented exceptions",
-                        "Illustrative monthly retainer covers reconciliations rather than transaction referrals",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Preserve the evidence that disappears during handoffs",
-                "body": "Probate-specific transferability comes from source records, relationship depth, and calendar discipline rather than a larger contact database.",
-                "items": [
-                    "Store the court case number, representative documents, source URL, and retrieval date together; refresh authority when the docket records a replacement or restriction.",
-                    "Have the executor identify the property-access decision maker and occupant before scheduling photography; possession assumptions routinely destroy vendor schedules.",
-                    "Give every productive attorney relationship a second licensed contact and a documented service history, without buying introductions.",
-                    "Separate court-waiting files from staff-waiting files so contractor productivity is neither inflated nor punished by judicial calendars.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Run a weekly evidence review with contractor acceptance and concentration limits",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run the weekly operator review from a frozen Friday snapshot, not "
-                    "from whatever the CRM displays during Monday's meeting. Use "
-                    "Airtable or a comparable database for estate identifiers and "
-                    "relationships, a brokerage transaction system such as "
-                    "Lone Wolf Transactions for controlled documents, and the "
-                    "accounting ledger for earned commissions. Docket alerts initiate "
-                    "review; they do not prove authority or replace the court record. "
-                    "Each of the eleven plays needs an entry condition, completion "
-                    "evidence, accountable seat, and timestamp. Measure verified "
-                    "packets, qualified executor conversations, documented authority, "
-                    "signed listings, readiness completion, accepted offers, completed "
-                    "court milestones, closings, and collected retained commissions. "
-                    "Use denominators that match the event: accepted packets divided "
-                    "by submitted packets measures contractor quality, while signed "
-                    "listings divided by qualified consultations measures conversion. "
-                    "An illustrative target is at least 98% first-pass acceptance for "
-                    "administrative packets, with every authority defect treated as "
-                    "critical regardless of the aggregate percentage. Review "
-                    "unanswered executor requests older than one business day and "
-                    "internal tasks overdue more than two business days. Publish "
-                    "counts beside rates so a two-file week cannot masquerade as "
-                    "reliable statistical improvement. Keep closed cohorts immutable "
-                    "except for logged corrections with named reviewers."
-                ),
-                (
-                    "Score contractor performance on accepted quality, responsiveness, "
-                    "and controllable elapsed time. Start the service clock only when "
-                    "the required inputs and authorized access are available; record "
-                    "the missing input rather than silently pausing work. A C1 packet "
-                    "must match the property, case, representative, and source record. "
-                    "A C2 inspection must include dated images, access authorization, "
-                    "observed hazards, and explicit limits on what was inspected. "
-                    "C3 must reconcile names, signatures, document versions, and "
-                    "calendar events without supplying legal conclusions. FT2 samples "
-                    "five completed contractor outputs weekly, or every output when "
-                    "volume is lower, and reviews every authority, money, or "
-                    "confidentiality exception. A routine defect gets a one-business-day "
-                    "correction request; a critical defect suspends use of the affected "
-                    "output immediately and alerts FT1. Track rework hours and "
-                    "repeat-defect categories alongside nominal unit price. A cheaper "
-                    "packet that consumes broker time is not cheaper delivered "
-                    "capacity. Pay accepted invoices on the contractual schedule, "
-                    "resolve disputed line items with evidence, and avoid using "
-                    "payment delays as informal discipline. The weekly meeting ends "
-                    "with named corrective actions and due dates, not a color-coded "
-                    "dashboard that leaves the same defects unresolved."
-                ),
-                (
-                    "Set a concentration policy of no more than 25% from any single "
-                    "estate customer, referring attorney firm, or material dependency "
-                    "counterparty. Calculate customer and referral shares using "
-                    "trailing-twelve-month retained commissions, with a separate "
-                    "forward view of contracted pipeline. Aggregate related estates "
-                    "or firms where common control creates the same dependency. "
-                    "Measure contractor dependence using spend and the share of "
-                    "critical workflow capacity, documenting approved backup capacity "
-                    "without pretending additional vendors are staffed pod seats. "
-                    "A new brokerage may breach the revenue cap after its first "
-                    "closing; report that breach honestly and place it on a "
-                    "diversification plan rather than altering the denominator. "
-                    "Use 20% as an early-warning threshold, reduce discretionary "
-                    "relationship-development concentration, and build coverage through "
-                    "other probate firms and direct executor education. Never "
-                    "reject fiduciary obligations on existing engagements merely "
-                    "to repair a metric. Track the dependency separately when "
-                    "the supervising brokerage itself dominates access or revenue "
-                    "rights; a principal brokerage relationship cannot be made "
-                    "diversified by renaming it. Buyers should see both actual "
-                    "concentration and the remediation history. The target is "
-                    "a resilient book, not statistical cosmetics or an incentive "
-                    "to pay for referrals."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Probate Operator Scorecard With Explicit Denominators and Responses",
-                "headers": [
-                    "Metric and measurement population",
-                    "Operating target or diagnostic threshold",
-                    "Evidence owner and review source",
-                    "Required response when performance deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Packet acceptance uses accepted outputs divided by submitted outputs",
-                        "Target at least ninety-eight percent first-pass administrative acceptance weekly",
-                        "FT2 checks sampled packets against original docket source records",
-                        "C1 corrects defects and updates the recurring-error prevention checklist",
-                    ],
-                    [
-                        "Authority completeness covers every file approaching a representation decision",
-                        "Require current authority evidence before relying on representative signatures",
-                        "FT1 reviews documents with counsel when interpretation is required",
-                        "Suspend affected decisions until authority and restrictions are resolved",
-                    ],
-                    [
-                        "Executor responsiveness measures unanswered requests by business-day aging",
-                        "Escalate every request unanswered beyond one full business day",
-                        "FT2 reviews shared inbox timestamps and assigned service owners",
-                        "Assign backup coverage and record the promised response deadline",
-                    ],
-                    [
-                        "Court delay separates external waiting from internal overdue tasks",
-                        "Flag internal tasks exceeding two business days beyond deadline",
-                        "C3 maintains court milestones with supporting notices and orders",
-                        "Reassign internal blockers while preserving accurate external-delay classifications",
-                    ],
-                    [
-                        "Collection aging begins when retained commission becomes contractually payable",
-                        "Review every overdue receivable against its specific payment terms",
-                        "FT2 reconciles settlement statements, brokerage disbursements, and bank deposits",
-                        "Resolve missing documentation before forecasting commission cash as available",
-                    ],
-                    [
-                        "Revenue concentration aggregates estate customers and referring attorney firms",
-                        "Cap each group at twenty-five percent of retained commissions",
-                        "FT1 reviews trailing receipts, earned revenue, and contracted pipeline",
-                        "Trigger diversification at twenty percent and document actual breaches",
-                    ],
-                    [
-                        "Counterparty dependence measures spend and critical service capacity separately",
-                        "Cap material vendor reliance at twenty-five percent where feasible",
-                        "FT2 records vendor exposure and tests documented replacement procedures",
-                        "Flag structural exceptions and disclose unresolved dependency to buyers",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the weekly evidence set",
-                    "action": "Export Friday pipeline, contractor acceptance, calendar, and ledger snapshots.",
-                    "detail": "Preserve estate identifiers and report timestamps; retain corrected versions with an explanation rather than overwriting the evidence.",
-                },
-                {
-                    "step": 2,
-                    "title": "Resolve critical exceptions first",
-                    "action": "Review authority, funds, access, confidentiality, and court-deadline exceptions before production metrics.",
-                    "detail": "FT1 owns brokerage decisions; FT2 assigns administrative cures; counsel resolves legal interpretation within the engagement.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rebalance the existing pod",
-                    "action": "Assign workload using measured hours and contracted availability across the five or seven seats.",
-                    "detail": "Do not add hidden assistants or count title, escrow, and estate-paid trades as free internal labor.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish commitments and verify closure",
-                    "action": "Issue a one-page scorecard with action owners, deadlines, concentration breaches, and cash exceptions.",
-                    "detail": "Start the next review with unresolved commitments and record evidence of correction before marking them complete.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile retained commissions, cohort economics, and staffing feasibility",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep the canonical scenarios intact: Conservative revenue is "
-                    "$120,000 with a 20% margin and $24,000 owner net profit; Base "
-                    "revenue is $510,000 with a 27.5% margin and $140,250 profit; "
-                    "Scaled revenue is $900,000 with a 35% margin and $315,000 "
-                    "profit. Revenue means retained brokerage commissions after "
-                    "brokerage splits, never the property's sale price, estate "
-                    "assets, escrow balances, or acquisition principal. The "
-                    "corresponding total expense envelopes are $96,000, $369,750, "
-                    "and $585,000. At an illustrative $7,500 retained commission "
-                    "per closing, the cases require 16, 68, and 120 annual "
-                    "closings; this is a throughput illustration, not a prescribed "
-                    "commission rate. Prices remain negotiated under the actual "
-                    "brokerage engagement. Base requires roughly 5.7 closings "
-                    "monthly, while Scaled requires ten. The additional $390,000 "
-                    "of revenue supports $215,250 of incremental expenses and "
-                    "$174,750 of incremental owner profit. That bridge must "
-                    "fund FT3, C4, and all other growth costs rather than "
-                    "treating their work as free. Separately model the "
-                    "Conservative staffing feasibility problem: two full-time "
-                    "seats plus three contractors may exceed its expense "
-                    "envelope, making that case a runway warning rather "
-                    "than evidence of a sustainable local wage structure."
-                ),
-                (
-                    "Maintain one estate-level subledger with distinct dates for "
-                    "intake, authority verification, engagement, listing, accepted "
-                    "offer, court milestone, closing, earned commission, and "
-                    "cash receipt. Use QuickBooks Online or an equivalent "
-                    "ledger with an estate identifier carried through invoices, "
-                    "vendor bills, and supporting settlement statements. Recognize "
-                    "revenue when earned under the brokerage contract and "
-                    "applicable accounting policy, ordinarily around completed "
-                    "closing rather than at a speculative offer. Accrue "
-                    "accepted contractor work in the service period, even "
-                    "when the invoice arrives later. Record brokerage "
-                    "splits consistently so the chapter's management revenue "
-                    "remains the retained amount; reconcile any different "
-                    "statutory presentation through an explicit bridge. "
-                    "Estate-funded repairs and acquisition funds need separate "
-                    "treatment based on the actual arrangement, not automatic "
-                    "inclusion in commission revenue. Client trust money "
-                    "never becomes operating cash merely because the "
-                    "brokerage can see the balance. Reconcile the bank, "
-                    "commission receivable, vendor accruals, and relevant "
-                    "trust records monthly. Preserve a cash collection "
-                    "report beside the accrual income statement so delayed "
-                    "court sales cannot hide a payroll problem. The "
-                    "bookkeeper prepares evidence, while the accountable "
-                    "broker reviews unresolved differences and signs the "
-                    "monthly close checklist."
-                ),
-                (
-                    "Analyze performance by both engagement-start cohort and "
-                    "closing-month cohort. The first shows conversion, elapsed "
-                    "time, abandonment, and acquisition cost; the second "
-                    "explains recognized revenue and delivered margin. Charge "
-                    "research costs from unsuccessful estates to the relevant "
-                    "origination cohort rather than assigning costs only "
-                    "to winners. Allocate shared pod costs through a "
-                    "documented driver such as measured service hours, "
-                    "and show contribution before allocation separately "
-                    "from owner profit after all expenses. An acquisition "
-                    "screening play can route a property to an investment "
-                    "entity, but principal, resale proceeds, financing, "
-                    "and investment gains belong in a separate schedule. "
-                    "Disclose conflicts and obtain the required transaction "
-                    "permissions; do not improve the brokerage scorecard "
-                    "by mixing investment economics into retained commissions. "
-                    "The stated $3,000–$18,000 monthly operating range "
-                    "cannot represent every expense at every scenario: "
-                    "even its upper annualized value is below Base "
-                    "total expenses. Define which overhead categories "
-                    "that range covers and reconcile labor and other "
-                    "delivery costs separately. With $15,000–$100,000 "
-                    "startup capital and four to eighteen months "
-                    "to the first deal, test runway through a "
-                    "thirteen-week cash forecast and longer monthly "
-                    "stress case. Never finance payroll from estate "
-                    "funds or assumed future closings."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scenario Bridge and Probate Cohort Accounting Controls",
-                "headers": [
-                    "Scenario or accounting control",
-                    "Revenue basis and supporting operating math",
-                    "Expense treatment and staffing implication",
-                    "Required reconciliation or forensic evidence",
-                ],
-                "rows": [
-                    [
-                        "Conservative case retains the five-person staffing configuration exactly",
-                        "$120,000 retained commissions imply sixteen illustrative $7,500 completed closings",
-                        "$96,000 total expenses leave $24,000 profit at twenty percent",
-                        "Test lawful local staffing costs before assuming operational feasibility",
-                    ],
-                    [
-                        "Base case retains two full-time and three contractor seats",
-                        "$510,000 retained commissions imply sixty-eight illustrative $7,500 completed closings",
-                        "$369,750 total expenses leave $140,250 profit at 27.5 percent",
-                        "Reconcile closing evidence, brokerage splits, and delivered service costs",
-                    ],
-                    [
-                        "Scaled case adds one full-time and one contractor seat",
-                        "$900,000 retained commissions imply 120 illustrative $7,500 completed closings",
-                        "$585,000 total expenses leave $315,000 profit at thirty-five percent",
-                        "Verify added seats and every growth cost fit this envelope",
-                    ],
-                    [
-                        "Growth bridge compares Scaled economics directly against Base economics",
-                        "$390,000 additional retained revenue requires demonstrably greater closing capacity",
-                        "$215,250 additional expenses support $174,750 additional annual owner profit",
-                        "Document hiring costs, contractor costs, and expanded delivery overhead",
-                    ],
-                    [
-                        "Engagement cohorts include unsuccessful estates and delayed court files",
-                        "Track conversion and retained revenue by original engagement month",
-                        "Assign failed research costs before presenting acquisition efficiency metrics",
-                        "Preserve abandonment reasons and distinguish external delays from rework",
-                    ],
-                    [
-                        "Earned revenue and collected cash remain separately visible monthly",
-                        "Commission receivables follow contractual earning and payment conditions consistently",
-                        "Accrue accepted contractor work in its actual service period",
-                        "Match settlement statements, brokerage disbursements, receivables, and bank deposits",
-                    ],
-                    [
-                        "Investment activity stays outside the canonical brokerage revenue schedule",
-                        "Acquisition principal and property resale proceeds are separate economics",
-                        "Allocate shared costs transparently without shifting losses into estates",
-                        "Retain conflict disclosures and transaction-specific authorization supporting separate records",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build an assignable operating book and price only transferable earnings",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "A transferable probate book is a repeatable service system, "
-                    "not ownership of grieving families or an unrestricted "
-                    "right to attorney referrals. Estate engagements end; "
-                    "referral relationships depend on confidence and continued "
-                    "performance. Build the asset around documented workflows, "
-                    "clean records, trained backup coverage, permitted "
-                    "relationship introductions, and contracts whose transfer "
-                    "terms are understood. Review brokerage affiliation, "
-                    "listing agreements, vendor arrangements, software "
-                    "subscriptions, domains, and telephone numbers for "
-                    "assignment, termination, and change-of-control provisions. "
-                    "Licenses and court authority do not automatically "
-                    "transfer with a business sale. California Probate "
-                    "Code section 10538 illustrates notice requirements "
-                    "under independent administration; section 10308 "
-                    "addresses court confirmation in the supervised "
-                    "sale framework. Document the applicable route "
-                    "for each estate instead of copying one state's "
-                    "workflow nationwide. Maintain signed contractor "
-                    "copyright assignments for original templates, "
-                    "training materials, photographs, and software "
-                    "where ownership is intended; 17 U.S.C. "
-                    "section 204(a) requires a signed writing "
-                    "for a copyright ownership transfer. A "
-                    "paid invoice alone does not establish "
-                    "that transfer. Separate preexisting contractor "
-                    "materials and third-party licenses from "
-                    "assigned work. Keep sensitive estate "
-                    "documents out of unrestricted sale materials "
-                    "and disclose identifiable records only through "
-                    "an appropriately authorized, access-controlled "
-                    "diligence process."
-                ),
-                (
-                    "Value the operation using a buyer-tested earnings "
-                    "definition before discussing a multiple. For a "
-                    "small owner-operated brokerage, an illustrative "
-                    "negotiation range of two to three times "
-                    "normalized seller's discretionary earnings is "
-                    "a useful sensitivity, not a sourced market "
-                    "comparable. A three-to-three-and-a-half-times "
-                    "stretch case requires unusually strong evidence "
-                    "of transferability, diversification, clean records, "
-                    "and limited founder dependence. Canonical "
-                    "owner net profit is not automatically "
-                    "seller's discretionary earnings or EBITDA. "
-                    "Bridge recorded owner compensation, supported "
-                    "one-time items, continuing expenses, and "
-                    "replacement labor to the selected buyer "
-                    "metric without double counting. If diligence "
-                    "supports $140,250 as normalized Base "
-                    "owner-operator earnings, two to three "
-                    "times implies $280,500–$420,750 of "
-                    "illustrative operating-business value. Using "
-                    "$315,000 on the same conditional "
-                    "basis implies $630,000–$945,000. A "
-                    "passive buyer must instead deduct "
-                    "any incremental replacement cost for "
-                    "unpaid owner functions before pricing "
-                    "managed cash flow. Debt, excess "
-                    "cash, working-capital adjustments, taxes, "
-                    "and transaction costs affect proceeds "
-                    "separately. Do not apply an earnings "
-                    "multiple to estate property values, "
-                    "gross commissions before splits, or "
-                    "unsigned pipeline. Require buyer feedback "
-                    "to support any claimed premium "
-                    "rather than presenting it as "
-                    "an entitlement earned by documentation "
-                    "alone."
-                ),
-                (
-                    "Test transferability through a thirty-day founder-absence "
-                    "exercise while preserving required licensed "
-                    "supervision. FT3 covers licensed execution "
-                    "in the seven-person pod; a five-person "
-                    "pod cannot assume C3 may replace "
-                    "its only licensed producer. Where "
-                    "backup licensed coverage is unavailable, "
-                    "report that dependency and its "
-                    "replacement cost. Track missed deadlines, "
-                    "executor escalations, attorney relationship "
-                    "requests, and commissions dependent on "
-                    "personal founder intervention. Build "
-                    "a diligence room containing three "
-                    "years of available monthly accounts, "
-                    "a complete operating history when "
-                    "younger, cohort schedules, contractor "
-                    "agreements, IP assignments, concentration "
-                    "reports, litigation summaries, and "
-                    "documented supervisory procedures. Redact "
-                    "unnecessary personal information and "
-                    "log access. For seller financing "
-                    "or earnouts, define retained "
-                    "commission revenue, allowed deductions, "
-                    "collection timing, audit rights, "
-                    "and dispute procedures precisely. "
-                    "Do not structure attorney "
-                    "introductions as disguised settlement-service "
-                    "referral payments; 12 U.S.C. "
-                    "section 2607 requires transaction-specific "
-                    "analysis where covered settlement "
-                    "services are involved. If "
-                    "sale offers undervalue durable "
-                    "cash flow, retain the "
-                    "business and distribute only "
-                    "cash exceeding payroll, operating "
-                    "reserves, and documented obligations. "
-                    "The same controls support "
-                    "either outcome: an honest "
-                    "earnings bridge, transferable work "
-                    "products, diversified relationships, and "
-                    "a pod that completes "
-                    "its eleven plays without "
-                    "unrecorded founder rescue."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Diligence Tests, Conditional Multiples, and Durable Cash Ownership",
-                "headers": [
-                    "Value driver or diligence issue",
-                    "Evidence that supports transferable operating value",
-                    "Failure mode that reduces buyer confidence",
-                    "Pricing or operating response required",
-                ],
-                "rows": [
-                    [
-                        "Normalized earnings require a documented owner-compensation and replacement bridge",
-                        "Provide ledger-backed adjustments with clearly identified continuing operating costs",
-                        "Owner profit gets mislabeled as discretionary earnings without reconciliation",
-                        "Price the reconciled metric rather than the headline profit figure",
-                    ],
-                    [
-                        "Base sensitivity uses conditionally supported $140,250 owner-operator normalized earnings",
-                        "Two-to-three-times illustrative sensitivity produces $280,500–$420,750 operating-business value before adjustments",
-                        "Buyer must replace unpaid founder work absent from expenses",
-                        "Deduct incremental replacement costs before valuing passive ownership cash flow",
-                    ],
-                    [
-                        "Scaled sensitivity uses conditionally supported $315,000 owner-operator normalized earnings",
-                        "Two-to-three-times illustrative sensitivity produces $630,000–$945,000 operating-business value before adjustments",
-                        "Added management costs or concentrated referrals weaken transferable earnings",
-                        "Reprice using verified earnings and buyer-supported risk assumptions only",
-                    ],
-                    [
-                        "Premium sensitivity requires stronger evidence than ordinary owner-dependent production",
-                        "Three-to-three-and-a-half-times illustration requires buyer validation and demonstrably durable systems",
-                        "Founder relationships disappear despite polished manuals and organized files",
-                        "Reject automatic premiums and test retention through supervised absence",
-                    ],
-                    [
-                        "Copyright ownership covers original materials created by contract contributors",
-                        "Retain signed assignments and distinguish licensed preexisting contractor materials",
-                        "Payment receipts exist but copyright transfers were never executed",
-                        "Obtain appropriate signed instruments before representing ownership to buyers",
-                    ],
-                    [
-                        "Relationship durability requires actual diversification and licensed backup coverage",
-                        "Show concentration history, second contacts, and documented service continuity",
-                        "One attorney firm or supervising brokerage controls essential economics",
-                        "Disclose dependencies and negotiate price against realistic retention evidence",
-                    ],
-                    [
-                        "Cash ownership alternative preserves reserves before making owner distributions",
-                        "Use reconciled collections, forward payroll commitments, and documented reserve policy",
-                        "Accounting profit masks receivables delayed by courts or disputes",
-                        "Distribute available operating cash without touching client trust balances",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before expansion or buyer diligence",
-                "body": "Require documentary evidence for each condition; an attractive pipeline does not substitute for authority, cash, ownership, or coverage.",
-                "items": [
-                    "Confirm every active estate's representative authority, applicable sale procedure, listing status, and supervising license coverage before increasing intake.",
-                    "Reconcile retained commissions, vendor accruals, bank balances, and the canonical scenario bridge; test new seats against the actual expense envelope.",
-                    "Verify signed IP assignments, software transfer terms, contract assignment requirements, and authorized handling of estate records before opening buyer access.",
-                    "Review every customer, referral-firm, and material counterparty exposure against the 25% policy; disclose breaches and demonstrate tested backup coverage.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A buyer pays for retained earnings that survive your absence, not for a probate pipeline that requires your rescue.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Map all eleven probate work packages to FT1, FT2, C1, C2, and C3, with named evidence owners, backup coverage, and licensed decision boundaries.",
-        "Execute contractor scopes with deliverable prices, acceptance tests, correction deadlines, confidentiality terms, and signed assignments for intended copyright transfers.",
-        "Publish a frozen weekly scorecard covering first-pass quality, executor responsiveness, court versus internal delay, commission collection, and concentration.",
-        "Build estate-level accrual and cash schedules that reconcile $120,000, $510,000, and $900,000 retained-commission revenue to the canonical profit cases.",
-        "Authorize FT3 and C4 only after measured workload, lawful staffing costs, and the $215,250 incremental expense envelope support the seven-person pod.",
-        "Run a supervised founder-absence test and prepare an earnings bridge before comparing buyer offers with continued cash ownership.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "A copyright ownership transfer generally requires a written instrument signed by the owner or authorized agent; obtain appropriate assignments for original contractor-created work.",
-        },
-        {
-            "title": "California Business and Professions Code section 10130 — Real estate licensing requirement",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "relevance": "Separate administrative contractor tasks from activities requiring a real estate license when operating in California.",
-        },
-        {
-            "title": "California Business and Professions Code section 10137 — Compensation and licensed supervision",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10137.",
-            "relevance": "Evaluate compensation and supervision arrangements before paying contractors for conduct that constitutes licensed brokerage activity.",
-        },
-        {
-            "title": "California Probate Code section 10538 — Notice of proposed action for real property transactions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10538.",
-            "relevance": "Identify applicable notice requirements in independent-administration transactions and preserve the supporting procedural evidence.",
-        },
-        {
-            "title": "California Probate Code section 10308 — Court confirmation of real property sales",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=10308.",
-            "relevance": "Distinguish sales subject to the court-confirmation framework from transactions proceeding under applicable independent-administration authority.",
-        },
-        {
-            "title": "12 U.S.C. section 2607 — Prohibition against kickbacks and unearned fees",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": "Review referral compensation and settlement-service arrangements within the statute's transaction coverage and applicable exceptions.",
-        },
-        {
-            "title": "California Labor Code section 2775 — Employee classification framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775.",
-            "relevance": "Evaluate actual contractor working conditions under the applicable classification framework and any relevant statutory exceptions rather than relying on contract labels.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'vol016-q11-wholesaling-probate-properties',
+ 'question_prompt': 'How do investors wholesale probate properties from list to assignment, and what '
+                    'mistakes and ethical issues should they watch for?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Wholesaling Probate Properties',
+ 'subtitle': 'Step-by-step probate wholesaling, buying probate property cheap, wholesaling on the MLS, '
+             "Rick Ginn's courses and $50K/month model, the biggest wholesaling mistakes, whether probate "
+             'suits beginners, fast cash offers and wholesaling ethics, and subject-to strategies with '
+             'probate foreclosures',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Probate wholesalers converge on one play: reach the personal representative within '
+                      '30 days of the court filing, before inheritance-list buyers arrive, and contract to '
+                      'buy the house before probate completes. Flip With Rick reports 300-plus '
+                      'pre-completion sales and an average probate profit near $47,000, while Rick Ginn '
+                      'pegs probate spreads at 3 to 3.5 times a normal assignment. The street mechanics '
+                      'are cheap: courthouse or XLeads pulls, a hand-addressed letter at about a dollar '
+                      'each, warm calls run at 80/20 or 90/10 listening, no price on the first call, and a '
+                      'price-deposit-terms anchor locked with the PR before any lawyer sees a '
+                      'state-approved contract. The fault lines are sharp: Flip With Rick bypasses probate '
+                      'attorneys as billable-hour blockers, attorney Al Nicoletti treats them as closing '
+                      'partners, and Virtual Wholesaling Made Simple calls probate one of the worst first '
+                      'lists.',
+ 'key_metrics': [{'label': 'Average Probate Wholesale Profit',
+                  'metric': 'Average Probate Wholesale Profit',
+                  'value': 'About $47,000 per probate deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Stated average profit across 200-plus probate deals bought before probate '
+                             "completion; the speaker calls $50k a month 'a joke'.",
+                  'source': 'Flip With Rick ([4-UlN2iP-_c @ 00:19:48])'},
+                 {'label': 'Probate Spread vs. Normal Assignment',
+                  'metric': 'Probate Spread vs. Normal Assignment',
+                  'value': '3 to 3.5 times a normal assignment; about $36k average on small homes',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Average probate deal size on small homes compared against a standard '
+                             'assignment contract.',
+                  'source': 'Rick Ginn ([WU_DwL7k5ZE @ 00:57:30])'},
+                 {'label': 'Direct-Mail Response Rate',
+                  'metric': 'Direct-Mail Response Rate',
+                  'value': '1 to 2 calls per 100 pieces mailed',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Expected inbound call rate on probate letters; 3 to 4 months without a deal '
+                             'is described as normal and most people quit at 45 days.',
+                  'source': 'Rick Ginn ([WU_DwL7k5ZE @ 00:38:32])'},
+                 {'label': 'Pre-Completion Probate Sales Executed',
+                  'metric': 'Pre-Completion Probate Sales Executed',
+                  'value': '300-plus sales before probate completed',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Count of probate properties sold prior to the probate being complete via a '
+                             'motion to liquidate.',
+                  'source': 'Flip With Rick ([e3YN7RJaj6U @ 02:05:09])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator in this lane agrees the race is won at the courthouse '
+                              'filing, not at the closing table. Rick Ginn pulls only the last 30 days of '
+                              'probate filings and states flatly that fresh probates are a must '
+                              '[LqNx0dBk2f8 @ 00:32:46]. The logic is first-mover leverage: in the 2024 '
+                              'edition of the same masterclass, Rick Ginn reports that whoever makes first '
+                              'contact with the family earns a first right of refusal, because people like '
+                              'to honor their word [WU_DwL7k5ZE @ 00:20:49]. Maximilian Dier breaks the '
+                              'timeline into three outreach windows and ranks the moment right after the '
+                              'probate application as the best one, ahead of the stage when heirs can '
+                              'legally sell, which is exactly when most wholesalers finally show up, and '
+                              'ahead of the post-transfer stage that land records reveal [LeQ9QiM4CLo @ '
+                              '00:07:51]. Inheritance lists sit on the wrong side of that clock. Flip With '
+                              'Rick calls the inheritance list the afterparty, prices those lists at $300 '
+                              'to $3,000, says everyone buys them, and claims nine times out of ten the '
+                              'owners on them were already worked during probate [_VFauJR1UAw @ 00:10:50]. '
+                              'The best way to beat the competition, in that framing, is simply to get '
+                              'there before them.',
+                              'Practitioners also agree that the probate house itself is engineered for a '
+                              'wholesale exit. Rick Ginn lays out the profile: mostly vacant, heavy '
+                              'deferred maintenance with 20-to-30-year-old kitchens, a personal '
+                              'representative who usually lives out of state, and a flexible closing date '
+                              'that can be pushed faster or stretched longer depending on what the buyer '
+                              'needs [C9alsmfSoC4 @ 00:04:09]. Flip With Rick quantifies the condition '
+                              'problem, saying almost 90% of these houses carry deferred maintenance, and '
+                              'lists the other structural advantages as out-of-state PRs, a lockbox that '
+                              'allows unlimited buyer showings, adjustable timing, and large spreads '
+                              '[e3YN7RJaj6U @ 00:21:17]. The spread is where the agreement gets loud. In '
+                              'the step-by-step series, Flip With Rick says most probate wholesale deals '
+                              'land at two and a half to three times the average assignment of contract, '
+                              'pegs the timeline at 45 to 180 days averaging under 90, and says a first '
+                              'deal can pay $30,000 to $40,000 [_VFauJR1UAw @ 00:24:58]. Maximilian Dier '
+                              'says probates are not $10,000, $15,000 or $20,000 deals and that it is not '
+                              'uncommon to hit $50,000 deals, while conceding in the same breath that the '
+                              'list pays the most precisely because it is complex [LeQ9QiM4CLo @ '
+                              '00:24:29].',
+                              'The deal itself rests on a shared legal premise: contract with the personal '
+                              'representative and sell before probate completes. Flip With Rick says 99 of '
+                              '100 realtors would wrongly insist nothing can happen until probate is done, '
+                              'then counters that the PR has the legal ability to enter into any type of '
+                              'contract they want [4-UlN2iP-_c @ 00:09:50]. Michael Franke reaches the '
+                              'same destination by a more formal road: get an early contract and a '
+                              'commitment from the heir even before the court grants authority, then sign '
+                              'a new contract or amendment re-dated after letters of administration issue, '
+                              'which is what makes it enforceable [iJVCVwX-rmA @ 00:12:47]. Rick Ginn '
+                              'turns the pre-completion sale into the opening hook, scripting the line '
+                              'about selling the property prior to the probate being completed and '
+                              'reporting that nine of ten PRs say yes to it [C9alsmfSoC4 @ 00:17:12]. The '
+                              'other universal rule is pacing. Rick Ginn never makes an offer on the first '
+                              'call, expects five to six conversations before landing on a price, and '
+                              'explains why: these families do not rush decisions, they rush to work with '
+                              'the people they trust most [LqNx0dBk2f8 @ 00:42:02]. Speed of contact wins '
+                              'the lead; patience on the phone wins the contract.'],
+               'table': {'caption': 'Where probate wholesalers line up: the non-negotiable baseline',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Do',
+                                     'Why It Works on Probate Leads',
+                                     'Expert Source'],
+                         'rows': [['Work only fresh court filings',
+                                   'Pull the last 30 days of filings and never go back more than 90 days',
+                                   'Older leads get picked over and inheritance-list buyers arrive months '
+                                   'late',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 00:59:35])'],
+                                  ['Target the personal representative directly',
+                                   'Market to the PR, while heirs only sign the contract and deed at title',
+                                   'One decision-maker avoids chasing every heir across the family tree',
+                                   'Rick Ginn ([C9alsmfSoC4 @ 00:02:35])'],
+                                  ['Send letters, never postcards',
+                                   'Mail a sealed letter, skip-trace in XLeads, then place a warm call',
+                                   'Grieving PRs do not respond to postcards according to Rick Ginn',
+                                   'Rick Ginn ([C9alsmfSoC4 @ 00:14:00])'],
+                                  ['Never price on the first call',
+                                   'Expect five to six conversations before any number gets discussed',
+                                   'Families rush to work with the people they trust the most',
+                                   'Rick Ginn ([LqNx0dBk2f8 @ 00:42:02])'],
+                                  ['Sell before probate is completed',
+                                   'Pitch the PR on closing prior to the probate being complete',
+                                   'Reported 300-plus pre-completion sales show the court path is '
+                                   'repeatable',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 02:05:09])'],
+                                  ['Make the title company your teammate',
+                                   'Lean on title for roughly 80 to 90 percent of the answers',
+                                   'Rick Ginn calls title the biggest part of the whole team',
+                                   'Rick Ginn ([C9alsmfSoC4 @ 00:07:50])'],
+                                  ['Expect outsized spreads for the patience',
+                                   'Budget for fees around 2.5 to 3 times a standard assignment',
+                                   'Vacant, dated, out-of-state properties leave room for large margins',
+                                   'Flip With Rick ([_VFauJR1UAw @ 00:24:58])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Lead generation starts at the county courthouse and gets automated from '
+                              'there. Rick Ginn ranks the clerk of court in person as the top source: walk '
+                              'in, ask for help, build rapport with the staff, and if anyone asks what the '
+                              'records are for, the cover line is statistical information [WU_DwL7k5ZE @ '
+                              '00:11:10]. Maximilian Dier rejects one-record-at-a-time search sites and '
+                              'runs wildcard queries instead, typing PR-26* to pull every 2026 Dallas '
+                              'probate in one sweep, then using the Claude browser extension to parse each '
+                              'filing for the property address and the named heirs [LeQ9QiM4CLo @ '
+                              '00:10:26]. For operators who cannot reach a courthouse, Flip With Rick runs '
+                              'XLeads through filters, then lien information, then deceased and probates, '
+                              'available on a basic account and running roughly 30 days behind the court, '
+                              'which is what makes probate scalable for virtual wholesalers [4-UlN2iP-_c @ '
+                              '00:02:36]. Every pull gets scrubbed before a dollar of postage goes out. '
+                              'Flip With Rick says about half of decedents own no real estate at all, so '
+                              'each name is verified against the parcel ID or property appraiser site, '
+                              'condos are skipped, and a spouse serving as PR is treated as a 50/50 chance '
+                              'of keeping the house [e3YN7RJaj6U @ 00:45:08].',
+                              'Outreach is a letter followed by a warm call, never a blast. Flip With Rick '
+                              'prices direct mail at about a dollar a letter and builds it to look '
+                              'personal: hand-addressed envelope, signature in blue ink, 14-point font, '
+                              'one letter plus an optional rewritten second letter 30 days later, with the '
+                              'hook that the house can be sold before probate completes [e3YN7RJaj6U @ '
+                              "01:22:18]. When the PR is unknown, Rick Ginn mails 'Estate of John Doe' at "
+                              'the property address, hand-addressed with a return address [WU_DwL7k5ZE @ '
+                              '00:52:06]. Stanley, working roughly 300 probate leads a month on Probate '
+                              'Mastery, tracked the first 12,000 pieces of mail and found no measurable '
+                              'difference between a letter sequence and the same options letter sent three '
+                              'times, so all three get sent on day one without scrubbing [AAF69oF79DU @ '
+                              '00:14:32]. The phone work is slow by design. Rick Ginn says the biggest '
+                              'mistake is qualifying a probate caller like a FSBO cold call, when only '
+                              'three to four probate calls arrive a month and each one is gold; let them '
+                              'talk on the 80/20 rule, expect 30 to 40 minutes, give condolences without '
+                              "overdoing it, and deflect early price questions with 'I want to do the best "
+                              "thing I can for you' [OMiXHCnv8tU @ 00:02:41].",
+                              'Contracting runs on what Flip With Rick calls the Anchor Technique. Before '
+                              'any lawyer sees paper, three points get locked with the PR: price, for '
+                              'example $200,000; an earnest money deposit of at least $500 instead of the '
+                              "lawyer's 1 to 2% or $5,000, leaving $199,500 due at closing; and terms to "
+                              'sell before probate completes, since lawyers take two to three weeks just '
+                              'to review [e3YN7RJaj6U @ 02:21:35]. The paper itself is a state-approved '
+                              'realtor contract, not a two-page wholesale form, because lawyers read the '
+                              'first two pages and the last; the assignability checkbox stays ticked '
+                              '[4-UlN2iP-_c @ 00:12:05]. Once signed, the estate files for what Rick Ginn '
+                              'calls a court permission slip to liquidate, coordinated by the title '
+                              'company; the fastest close on that path took 32 days, with proceeds parked '
+                              'in an estate escrow [WU_DwL7k5ZE @ 00:34:33]. Probate costs get folded into '
+                              "the offer. Al Nicoletti, a Florida probate attorney on Brent Daniels' show, "
+                              'quotes $2,500 to $3,000 for a straightforward three- or four-kid probate '
+                              'and scripts the offer as $110,000 with the investor paying for the probate '
+                              'attorney, which anchors the seller to the deal [wmbh_a5UnqI @ 00:34:53].'],
+               'table': {'caption': 'Probate wholesaling unit economics and operating numbers',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Monthly marketing spend',
+                                   '$50 to $75 per month; two to three leads per county is enough',
+                                   'Cheap enough to run a full year without pay-per-click spend',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 00:03:10])'],
+                                  ['Annual letter budget',
+                                   'About $500 per year, roughly 50 to 60 letters per month',
+                                   'Small, steady mail volume that most competitors abandon within 90 days',
+                                   'Rick Ginn ([LqNx0dBk2f8 @ 01:07:36])'],
+                                  ['Lead volume per county',
+                                   '50 to 60 filings, about a quarter own property, 15 to 25 leads',
+                                   'Sets realistic mailing counts before expanding into another county',
+                                   'Rick Ginn ([WU_DwL7k5ZE @ 00:30:05])'],
+                                  ['Follow-up letter cadence',
+                                   'First letter, second letter at 45 to 60 days, then postcard catch-all',
+                                   'Keeps the PR warm across the five to six touches needed',
+                                   'Rick Ginn ([WU_DwL7k5ZE @ 00:45:43])'],
+                                  ['Disposition window',
+                                   'Title grants 45 days, which really means probably 60; target 30',
+                                   'No buyer in 30 days on a vacant lockbox house means wrong price',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 02:49:26])'],
+                                  ['Probate legal costs',
+                                   'Court fees under $400; attorney $3,000 to $3,500 simple, $6,000 to '
+                                   '$10,000 complicated',
+                                   'Huge spread absorbs fees; decent spread fronts them and gets '
+                                   'reimbursed at closing',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 03:12:27])'],
+                                  ['Curative-deal offer formula',
+                                   '$150,000 as-is times 50% equals $75,000, minus $5,000 closing',
+                                   'Produces a $70,000 offer on foreclosure, tax, or code-problem probates',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 03:09:40])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small moves that separate closers from mailers',
+                           'body': 'Field-tested edges the practitioners use to control access, timing, '
+                                   'and contract terms on probate deals.',
+                           'items': ['Rekey the vacant house through a locksmith for $50 to $75, then '
+                                     'install a lockbox so cash buyers can tour without coordinating with '
+                                     'an out-of-state PR [Flip With Rick — e3YN7RJaj6U @ 02:40:26].',
+                                     'Sell speed to the buyer: a buyer may pay $10,000 more for a faster '
+                                     'close, with proceeds going to the estate account [Rick Ginn — '
+                                     'LqNx0dBk2f8 @ 00:51:04].',
+                                     'Write the long timeline into the paper: 6-month validity, a 10-day '
+                                     'inspection once the property is through probate and 30 days before '
+                                     'clear-to-close, with EMD due only at clear-to-close [Flipping '
+                                     'Mastery TV — K_L_G6jbyAE @ 00:12:08].',
+                                     'Mail through the holidays: December lead counts drop about 38% and '
+                                     "competition goes idle from Thanksgiving to New Year's [Probate "
+                                     'Mastery — AAF69oF79DU @ 00:02:29].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull and scrub fresh filings',
+                              'action': 'Pull only the last 30 days of probate filings, capture the '
+                                        'deceased and the PR, and cross-check ownership.',
+                              'detail': 'Pull the county courthouse records for the last 30 days, capture '
+                                        "the deceased's name and the PR, and verify against the property "
+                                        'appraiser site because about half the list owns no property; it '
+                                        'took 7 courthouse visits to land the first probate [Rick Ginn — '
+                                        'C9alsmfSoC4 @ 00:12:01].'},
+                             {'step': 2,
+                              'title': 'Mail a letter and warm call the PR',
+                              'action': 'Send a letter, not a postcard, possibly twice, and call the '
+                                        'number from the legal filing.',
+                              'detail': 'Get the phone number from the legal filing and warm call; send '
+                                        'one letter under the company name and one under a personal name, '
+                                        "the McDonald's/Burger King approach, and chase intention over "
+                                        'price [Flip With Rick — 4-UlN2iP-_c @ 00:05:14].'},
+                             {'step': 3,
+                              'title': 'Anchor and paper the deal',
+                              'action': 'Anchor price, deposit, and terms with the PR on a long '
+                                        'state-approved realtor contract.',
+                              'detail': 'Use a 4-to-5-page realtor contract because two pages gets kicked '
+                                        'out, anchor the price, a deposit such as $500, and terms with the '
+                                        'PR, and double close if the assignment clause is struck [Rick '
+                                        'Ginn — LqNx0dBk2f8 @ 00:27:34].'},
+                             {'step': 4,
+                              'title': 'Liquidate and dispose to cash buyers',
+                              'action': 'Have the title company drive the motion to liquidate while you '
+                                        'line up cash buyers.',
+                              'detail': 'The title company knows the exact motion to file for financial '
+                                        'concerns, proceeds are held in the estate, and closing can be '
+                                        'pushed 2 to 3 months while cutting total time 70 to 80% [Flip '
+                                        'With Rick — 4-UlN2iP-_c @ 00:15:08].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over the probate attorney. Flip With Rick runs a '
+                              'straight-line method that goes directly to the personal representative, '
+                              'arguing that lawyers like to be in control, bill lots of hours, and push '
+                              'full appraisals or wait-for-completion claims that Rick calls mostly a lie '
+                              '[_VFauJR1UAw @ 00:15:00]. In the full course Rick tells operators never to '
+                              'talk to the probate attorney directly and to anchor price, deposit, and '
+                              'terms with the PR before any lawyer sees paper [e3YN7RJaj6U @ 02:54:13]. '
+                              "Florida probate attorney Al Nicoletti, on Brent Daniels' channel, plays the "
+                              'opposite hand: both Brent and Al use attorneys paid at closing, vet them by '
+                              'asking what share of their work is with investors (70/30), and look for '
+                              'title knowledge plus a close-the-deal mindset [wmbh_a5UnqI @ 00:09:56]. '
+                              'Michael Franke lands in between, introducing the heir to a probate attorney '
+                              'on a three-way call and noting the investor may pay for the process while '
+                              'that attorney still represents the heir, not the investor [iJVCVwX-rmA @ '
+                              '00:08:06]. The split is operational, not cosmetic: Rick treats the lawyer '
+                              'as defense to be routed around with a long state-approved contract, while '
+                              'Al treats the right attorney as the engine behind probates that close in '
+                              'four to six weeks.',
+                              'Whether a rookie should touch probate at all splits the room. Virtual '
+                              'Wholesaling Made Simple calls probate one of the worst lists for a first '
+                              'wholesale deal, because beginners need momentum and formal administration '
+                              'can run six months or longer; that host would rather work tired landlords '
+                              'filtered by 10-15+ years of ownership plus a current vacancy, who may also '
+                              'turn out to be cash buyers [gUS4TsLhgiY @ 00:00:00]. Flip With Rick says '
+                              'the opposite, that probate is fine for beginners who build a team of title '
+                              'company, lawyer and agent, and that probate deals pay 2.5 to 3 times the '
+                              "average assignment fee [_VFauJR1UAw @ 00:22:03]. Rick's own counter to the "
+                              'slow-closing objection is that deals average under 90 days, across a '
+                              '45-to-180-day range. Maximilian Dier lines up with Rick on access, arguing '
+                              'code violations need a dialer or text blaster while probates need only a '
+                              'phone and a laptop, but concedes probates pay the most because they are '
+                              'complex [LeQ9QiM4CLo @ 00:44:01]. Even inside the Rick camp the scale story '
+                              'wobbles: one video sells fifty thousand dollars a month off the probate '
+                              'list, while the 2024 masterclass warns that probate is not really a '
+                              'scalable event and advises mastering one county and reviewing results at 12 '
+                              'months [WU_DwL7k5ZE @ 00:54:05].',
+                              'Outreach mechanics split along channel lines. Flip With Rick bans texting, '
+                              'postcards, and ringless voicemail for probates, calling RVM pretty much '
+                              "illegal and insisting texting doesn't work, and runs one hand-addressed "
+                              'letter with an optional changed second letter 30 days later [e3YN7RJaj6U @ '
+                              '01:39:12]. Maximilian Dier runs a CRM pipeline at 10 leads a day by call, '
+                              'text, and Facebook, and messages heirs on Facebook when skip tracing the '
+                              'filing addresses fails [LeQ9QiM4CLo @ 00:22:50]. On mail cadence, Stanley '
+                              'on Probate Mastery tested 12,000 pieces and found no measurable difference '
+                              'between a letter sequence and the same options letter sent three times, so '
+                              'all three go out on day one without scrubbing, a direct contrast to Rick '
+                              "Ginn's one letter then a second at 45 to 60 days [AAF69oF79DU @ 00:14:32]. "
+                              'A fourth playbook skips direct-to-seller paper entirely: Barbara J Barnes '
+                              'of Academy of Probate lists the probate property on the MLS at market '
+                              'value, and when an as-is investor buyer wants it, the agent collects a '
+                              'bonus from that buyer with seller permission rather than a wholesale fee, '
+                              'keeping the cash-buyer relationship even if the seller refuses the bonus '
+                              '[b7b8x4Jqz6c @ 00:12:26]. Barnes stresses the bonus never comes out of '
+                              'seller proceeds.'],
+               'table': {'caption': 'Competing probate wholesaling playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [["How to handle the estate's probate attorney",
+                                   'Bypass the lawyer and contract straight with the PR using the '
+                                   'straight-line method',
+                                   'Partner with an investor-friendly attorney paid at closing who turns '
+                                   'probates in four to six weeks',
+                                   'Flip With Rick ([_VFauJR1UAw @ 00:15:00]); Brent Daniels - Wholesaling '
+                                   'Inc ([wmbh_a5UnqI @ 00:25:10])'],
+                                  ["Whether probate belongs on a beginner's first list",
+                                   'Avoid it as a primary source and start with tired landlords owning '
+                                   '10-15+ years',
+                                   'Fine for beginners who build a title, lawyer and agent team first',
+                                   'Virtual Wholesaling Made Simple ([gUS4TsLhgiY @ 00:07:37]); Flip With '
+                                   'Rick ([_VFauJR1UAw @ 00:22:03])'],
+                                  ['Texting and social outreach to heirs and executors',
+                                   'Never text probates; letters plus warm calls only because texting '
+                                   "doesn't work",
+                                   'Call, text and message heirs on Facebook toward 10 leads a day',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 01:39:12]); Maximilian Dier '
+                                   '([LeQ9QiM4CLo @ 00:22:50])'],
+                                  ['Direct mail cadence for each new probate lead',
+                                   'One letter, then a second at 45-60 days, then the postcard catch-all',
+                                   'Send the same options letter three times on day one without scrubbing '
+                                   'the list',
+                                   'Rick Ginn ([WU_DwL7k5ZE @ 00:45:43]); Probate Mastery ([AAF69oF79DU @ '
+                                   '00:15:20])'],
+                                  ['How the deal maker gets paid on an investor sale',
+                                   'Listing agent takes a buyer-paid bonus with seller permission, not a '
+                                   'wholesale fee',
+                                   'Wholesaler sells contract rights to fix-and-flip cash buyers for '
+                                   '$10K-$30K fees',
+                                   'Academy of Probate ([b7b8x4Jqz6c @ 00:12:26]); Real Estate Skills '
+                                   '([M9iyZc2j_uQ @ 00:00:32])'],
+                                  ['Subject-to on seasoned probate mortgages with no balloon',
+                                   'Probate gold to hold, but assigning subject-to deals is called '
+                                   'reckless',
+                                   'Take it subject-to with $10K to the caretaker and an equity share via '
+                                   'land trust',
+                                   'Rick Ginn ([LqNx0dBk2f8 @ 00:59:44]); Probate Mastery ([uJxayMyF-i4 @ '
+                                   '00:38:21])'],
+                                  ['Where to pull fresh probate filings each month',
+                                   'Clerk of court in person, building rapport, beats dated third-party VA '
+                                   'lists',
+                                   'Online court wildcard search like PR-26* pulls multiple states in 30 '
+                                   'minutes',
+                                   'Rick Ginn ([WU_DwL7k5ZE @ 00:11:10]); Maximilian Dier ([LeQ9QiM4CLo @ '
+                                   '00:10:26])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common firsthand failure is running out of patience before the '
+                              "pipeline matures. Flip With Rick's own first two months of probate mail "
+                              'produced zero leads, then three, then six, then zero again, and Rick warns '
+                              'against quitting at 30 or 90 days because direct mail needs three months '
+                              'and probates need a full year [e3YN7RJaj6U @ 01:52:06]. Rick Ginn puts the '
+                              'normal response at one to two calls per 100 pieces, calls three to four '
+                              'months without a deal normal, and says most people quit at 45 days '
+                              '[WU_DwL7k5ZE @ 00:38:32]. The flip side of slow marketing is slow closings: '
+                              "the saying on Brent Daniels' channel, voiced alongside Al Nicoletti, is "
+                              'that time kills all deals, and six-month escrows invite competing mail, '
+                              'calls and agents onto the same property [wmbh_a5UnqI @ 00:23:51]. Gerry '
+                              'Norton of Flipping Mastery TV reports an early deal that took about six '
+                              'months to close, and warns that executors often start marketing the '
+                              'property before it can be sold, so the operator has to locate exactly where '
+                              'the file sits in the ten-step probate sequence before writing terms '
+                              '[K_L_G6jbyAE @ 00:11:25]. Rick also logs a South Carolina basic probate '
+                              'that dragged 2.5 years because the lawyer took 90 days to respond.',
+                              'Paper is where probate deals get killed. Rick Ginn says a two-page contract '
+                              'gets kicked out, so the fix is a long realtor contract of four to five '
+                              'pages, and if a lawyer strikes the assignment clause the fallback is a '
+                              'double close [LqNx0dBk2f8 @ 00:46:04]. Flip With Rick reports lawyers '
+                              'stripping assignability or demanding a $10,000 deposit, and says that '
+                              'without price anchoring lawyers push appraisals or BPOs and some have '
+                              "bought deals behind Rick's back; the counter is anchoring a price like "
+                              '$239,000, a $500 escrow deposit, a lockbox and lawn care with the PR first '
+                              "[4-UlN2iP-_c @ 00:10:57]. Rick's minimum anchor deposit is $500 against the "
+                              "lawyer's usual ask of 1 to 2 percent or $5,000. The full course adds a "
+                              'sequencing trap: share the motion-to-liquidate strategy only after a signed '
+                              'contract, or the attorney will block it [e3YN7RJaj6U @ 02:06:53]. On '
+                              'authority, Michael Franke warns investors lose probate deals by '
+                              'misunderstanding who can sign; an early contract before letters is not yet '
+                              'enforceable, so the operator must sign a new contract or an amendment '
+                              're-dated after letters of administration issue [iJVCVwX-rmA @ 00:22:01]. '
+                              'Skip that re-paper step and the commitment rests on a document nobody had '
+                              'authority to sign.',
+                              'Economics checks separate a real probate spread from a slow loss. Rick '
+                              "Ginn's carrying-cost math has the estate losing $25,000 to $40,000 while "
+                              'probate stays open, for example $2,000 a month on the mortgage, which is '
+                              'the pressure behind the motion to liquidate [LqNx0dBk2f8 @ 00:23:01]. '
+                              'Probate cost itself has to fit the spread: Flip With Rick prices a simple '
+                              'probate at $3,000 to $3,500 in attorney fees and $6,000 to $10,000 for a '
+                              'complicated one, absorbs fees on huge-profit deals, fronts and gets '
+                              'reimbursed on decent ones, and makes the seller pay on tight ones, calling '
+                              'it risk money you have to pay [e3YN7RJaj6U @ 03:12:27]. In the same course, '
+                              'a vacant lockbox house with no buyer inside 30 days means the price is '
+                              'wrong. The creative-finance trap is the steepest. Rick claims 75 percent of '
+                              'subject-to buyers get their butt kicked and cites a Florida seller with 64 '
+                              "properties now in foreclosure [e3YN7RJaj6U @ 03:17:51]. Rick's own cure for "
+                              'subject-to default risk is a land-trust reversion clause instead of a '
+                              'foreclosure that costs about $10,000 and a year. Chad on Probate Mastery '
+                              'pushes the other direction, saying most of the houses Chad wholesaled '
+                              'should have become piggybanks, since wholesale fees are taxed as earned '
+                              'income [AAF69oF79DU @ 00:22:36].'],
+               'table': {'caption': 'Firsthand probate wholesaling traps and the fixes practitioners use',
+                         'headers': ['Trap', 'What Practitioners Hit', 'Operator Fix', 'Expert Source'],
+                         'rows': [['Quitting probate mail before the pipeline matures',
+                                   'First two months produced zero leads, then three, then six, then zero',
+                                   'Budget a full year of mail because probates need 12 months',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 01:52:06])'],
+                                  ['Treating probate callers like FSBO cold calls',
+                                   'Only three to four probate calls a month, so each call is gold',
+                                   'Listen on the 80/20 rule and never discuss price on the first call',
+                                   'Rick Ginn ([OMiXHCnv8tU @ 00:02:04])'],
+                                  ['Letting the estate lawyer see unanchored paper',
+                                   'Lawyers strip assignability, demand $10,000 deposits, push appraisals, '
+                                   'and buy deals behind backs',
+                                   'Anchor price, a $500 deposit and terms with the PR on a state-approved '
+                                   'contract',
+                                   'Flip With Rick ([4-UlN2iP-_c @ 00:10:57])'],
+                                  ['Relying on an early purchase agreement signed before letters',
+                                   'Investors lose probate deals by misunderstanding who holds authority '
+                                   'to sign',
+                                   'Sign a new contract or amendment re-dated after letters of '
+                                   'administration',
+                                   'Michael Franke ([iJVCVwX-rmA @ 00:12:47])'],
+                                  ['Financed retail buyer backs out of the probate contract',
+                                   'FHA appraisal stays with the property six months, blocking a free '
+                                   'reappraisal',
+                                   'Line up as-is cash buyers who can close in 7-10 days',
+                                   'Academy of Probate ([b7b8x4Jqz6c @ 00:10:18])'],
+                                  ['Overleveraged or assigned subject-to probate deals',
+                                   '75 percent of subject-to buyers get their butt kicked; one seller has '
+                                   '64 properties in foreclosure',
+                                   'Never borrow for down payments and use a land-trust reversion clause',
+                                   'Flip With Rick ([e3YN7RJaj6U @ 03:17:51])'],
+                                  ['Showing up without a ready cash number for the heirs',
+                                   'Deals lost for lack of a quick, safe offer figure on the spot',
+                                   'Aim low or call a landlord for a safe number; PropStream runs '
+                                   '$99/month',
+                                   'Probate Mastery ([uJxayMyF-i4 @ 00:51:10])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a probate deal gets a dollar of marketing or a '
+                                    'signature',
+                           'body': 'Each gate comes straight from a loss, delay, or blown deal the '
+                                   'practitioners lived through. Clear all four before mailing, offering, '
+                                   'or assigning.',
+                           'items': ['Pull only probate filings from the last 30 days and never go back '
+                                     'more than 90; inheritance lists cost thousands and are picked to '
+                                     'death [Flip With Rick — e3YN7RJaj6U @ 00:59:35].',
+                                     'Confirm the PR holds letters of administration and re-paper the '
+                                     'contract with a new date after they issue before treating it as '
+                                     'enforceable [Michael Franke — iJVCVwX-rmA @ 00:12:47].',
+                                     'Anchor price, an EMD of at least $500, and the '
+                                     'sell-before-probate-completes terms with the PR before any lawyer '
+                                     'reviews it, and keep the assignability box ticked [Flip With Rick — '
+                                     'e3YN7RJaj6U @ 02:21:35].',
+                                     'Verify the sale process in order through the state probate-court '
+                                     'website, the title company, then a real estate attorney before '
+                                     'accepting appraisal or BPO demands [Rick Ginn — OMiXHCnv8tU @ '
+                                     '00:07:36].']}}],
+ 'pull_quote': '"Certainty is what is my most profitable thing I sell when it comes to wholesaling any '
+               'wholesale deal." — Flip With Rick (e3YN7RJaj6U @ 02:09:10).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ["Pull the last 30 days of probate filings at the courthouse, capture the deceased's "
+                      'name and the PR, and cross-check the property appraiser site because about half the '
+                      'list owns no property (Rick Ginn, C9alsmfSoC4 @ 00:13:04).',
+                      'Skip trace the PR and warm call, backed by an 8.5x11 letter rather than a postcard '
+                      '(Rick Ginn, LqNx0dBk2f8 @ 00:34:43).',
+                      'Lead with the hook that the property can be sold prior to the probate being '
+                      'completed, which Rick reports gets a yes from 9 of 10 (Rick Ginn, C9alsmfSoC4 @ '
+                      '00:17:12).',
+                      'Never discuss price on the first call and plan on 5-6 calls to reach a contract '
+                      '(Rick Ginn, OMiXHCnv8tU @ 00:03:05).',
+                      'Build the probate attorney fee into the offer, for example $110,000 with the '
+                      'investor paying the probate attorney, to anchor the seller to the deal (Brent '
+                      'Daniels - Wholesaling Inc, wmbh_a5UnqI @ 00:34:53).',
+                      'Have a locksmith rekey the house for $50-75, install a lockbox, and run cash buyers '
+                      'through it to close in about 30 days (Flip With Rick, e3YN7RJaj6U @ 02:40:26).'],
+ 'statutory_citations': [{'title': 'Flip With Rick — How to Wholesale Probates (Full Course) 4 Hours '
+                                   '[02:05:09]',
+                          'url': 'https://www.youtube.com/watch?v=e3YN7RJaj6U&t=7509s',
+                          'relevance': 'Primary practitioner testimony on selling probate property before '
+                                       'completion, the anchor technique, and carrying-cost and subject-to '
+                                       'failure modes.'},
+                         {'title': 'Brent Daniels - Wholesaling Inc — Real Estate Wholesale Properties in '
+                                   'Probate - A Conversation w/ Al Nicoletti [00:23:51]',
+                          'url': 'https://www.youtube.com/watch?v=wmbh_a5UnqI&t=1431s',
+                          'relevance': 'Primary practitioner testimony on the attorney-partner model, '
+                                       'probate timelines, and why time kills all deals.'},
+                         {'title': 'Virtual Wholesaling Made Simple — PROBATE IS DEAD (FOR BEGINNERS) '
+                                   '[00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=gUS4TsLhgiY&t=0s',
+                          'relevance': 'Primary practitioner testimony on why probate is a poor first list '
+                                       'and the tired-landlord alternative.'},
+                         {'title': 'Michael Franke — Probate for Real Estate Investors (Step-by-Step '
+                                   'Beginner Guide) [00:12:47]',
+                          'url': 'https://www.youtube.com/watch?v=iJVCVwX-rmA&t=767s',
+                          'relevance': 'Primary practitioner testimony on authority, early contracts, and '
+                                       're-papering after letters of administration.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'b7b8x4Jqz6c',
+                       'title': 'Unlocking  How to Wholesale MLS Property Probate Real Estate',
+                       'channel': 'Academy of Probate',
+                       'author': 'Academy of Probate',
+                       'text': "You don't get a wholesale fee, you get a bonus.",
+                       'tip': "You don't get a wholesale fee, you get a bonus.",
+                       'timestamp': 746,
+                       'timestamp_seconds': 746,
+                       'timestamp_label': '[00:12:26]',
+                       'url': 'https://www.youtube.com/watch?v=b7b8x4Jqz6c&t=746s',
+                       'markdown': '[00:12:26](https://www.youtube.com/watch?v=b7b8x4Jqz6c&t=746s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iJVCVwX-rmA',
+                       'title': 'Probate for Real Estate Investors (Step-by-Step Beginner Guide)',
+                       'channel': 'Michael Franke',
+                       'author': 'Michael Franke',
+                       'text': 'Now you may be paying for the process, you may be assisting with the '
+                               'process, but that attorney represents them, not you.',
+                       'tip': 'Now you may be paying for the process, you may be assisting with the '
+                              'process, but that attorney represents them, not you.',
+                       'timestamp': 486,
+                       'timestamp_seconds': 486,
+                       'timestamp_label': '[00:08:06]',
+                       'url': 'https://www.youtube.com/watch?v=iJVCVwX-rmA&t=486s',
+                       'markdown': '[00:08:06](https://www.youtube.com/watch?v=iJVCVwX-rmA&t=486s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LqNx0dBk2f8',
+                       'title': 'Mastering Probate Wholesaling: Your Ultimate Guide to Real Estate Success '
+                                'in 2026',
+                       'channel': 'Rick Ginn',
+                       'author': 'Rick Ginn',
+                       'text': 'Fresh probates is a must.',
+                       'tip': 'Fresh probates is a must.',
+                       'timestamp': 1966,
+                       'timestamp_seconds': 1966,
+                       'timestamp_label': '[00:32:46]',
+                       'url': 'https://www.youtube.com/watch?v=LqNx0dBk2f8&t=1966s',
+                       'markdown': '[00:32:46](https://www.youtube.com/watch?v=LqNx0dBk2f8&t=1966s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'C9alsmfSoC4',
+                       'title': 'Wholesaling Probate Properties Start to Finish - Part 1',
+                       'channel': 'Rick Ginn',
+                       'author': 'Rick Ginn',
+                       'text': 'They do not respond to postcard.',
+                       'tip': 'They do not respond to postcard.',
+                       'timestamp': 840,
+                       'timestamp_seconds': 840,
+                       'timestamp_label': '[00:14:00]',
+                       'url': 'https://www.youtube.com/watch?v=C9alsmfSoC4&t=840s',
+                       'markdown': '[00:14:00](https://www.youtube.com/watch?v=C9alsmfSoC4&t=840s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WU_DwL7k5ZE',
+                       'title': 'Mastering Probate Wholesaling: Your Ultimate Guide to Real Estate Success '
+                                'in 2024',
+                       'channel': 'Rick Ginn',
+                       'author': 'Rick Ginn',
+                       'text': 'The attorney will kill your wholesale deal right off the bat.',
+                       'tip': 'The attorney will kill your wholesale deal right off the bat.',
+                       'timestamp': 2215,
+                       'timestamp_seconds': 2215,
+                       'timestamp_label': '[00:36:55]',
+                       'url': 'https://www.youtube.com/watch?v=WU_DwL7k5ZE&t=2215s',
+                       'markdown': '[00:36:55](https://www.youtube.com/watch?v=WU_DwL7k5ZE&t=2215s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M9iyZc2j_uQ',
+                       'title': 'How To Start Wholesale Real Estate In 2027 (15hrs/wk)!',
+                       'channel': 'Real Estate Skills',
+                       'author': 'Real Estate Skills',
+                       'text': 'Remember, 15 offers is gonna get you one deal.',
+                       'tip': 'Remember, 15 offers is gonna get you one deal.',
+                       'timestamp': 4740,
+                       'timestamp_seconds': 4740,
+                       'timestamp_label': '[01:19:00]',
+                       'url': 'https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=4740s',
+                       'markdown': '[01:19:00](https://www.youtube.com/watch?v=M9iyZc2j_uQ&t=4740s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K_L_G6jbyAE',
+                       'title': 'How To Buy Probate Real Estate Cheap!',
+                       'channel': 'Flipping Mastery TV',
+                       'author': 'Flipping Mastery TV',
+                       'text': "It's not uncommon for the executor to prematurely start marketing the "
+                               'property and looking for a buyer before the property is able to be sold.',
+                       'tip': "It's not uncommon for the executor to prematurely start marketing the "
+                              'property and looking for a buyer before the property is able to be sold.',
+                       'timestamp': 685,
+                       'timestamp_seconds': 685,
+                       'timestamp_label': '[00:11:25]',
+                       'url': 'https://www.youtube.com/watch?v=K_L_G6jbyAE&t=685s',
+                       'markdown': '[00:11:25](https://www.youtube.com/watch?v=K_L_G6jbyAE&t=685s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wmbh_a5UnqI',
+                       'title': 'Real Estate Wholesale Properties in Probate - A Conversation w/ Al '
+                                'Nicoletti',
+                       'channel': 'Brent Daniels - Wholesaling Inc',
+                       'author': 'Brent Daniels - Wholesaling Inc',
+                       'text': 'We have a saying on the podcast that time kills all deals.',
+                       'tip': 'We have a saying on the podcast that time kills all deals.',
+                       'timestamp': 1431,
+                       'timestamp_seconds': 1431,
+                       'timestamp_label': '[00:23:51]',
+                       'url': 'https://www.youtube.com/watch?v=wmbh_a5UnqI&t=1431s',
+                       'markdown': '[00:23:51](https://www.youtube.com/watch?v=wmbh_a5UnqI&t=1431s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_VFauJR1UAw',
+                       'title': 'Wholesaling Probate Real Estate STEP BY STEP [Part 1]',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': "Once you have a deal a lawyer can not unwind that unless you've broken "
+                               "some sort of law or you're not following the process; this is 100% legal.",
+                       'tip': "Once you have a deal a lawyer can not unwind that unless you've broken some "
+                              "sort of law or you're not following the process; this is 100% legal.",
+                       'timestamp': 1193,
+                       'timestamp_seconds': 1193,
+                       'timestamp_label': '[00:19:53]',
+                       'url': 'https://www.youtube.com/watch?v=_VFauJR1UAw&t=1193s',
+                       'markdown': '[00:19:53](https://www.youtube.com/watch?v=_VFauJR1UAw&t=1193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gUS4TsLhgiY',
+                       'title': 'PROBATE IS DEAD (FOR BEGINNERS)',
+                       'channel': 'Virtual Wholesaling Made Simple',
+                       'author': 'Virtual Wholesaling Made Simple',
+                       'text': "Probate is one of the worst lists I'd recommend to somebody trying to get "
+                               'their first wholesale deal.',
+                       'tip': "Probate is one of the worst lists I'd recommend to somebody trying to get "
+                              'their first wholesale deal.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=gUS4TsLhgiY&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=gUS4TsLhgiY&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4-UlN2iP-_c',
+                       'title': 'How to Make $50,000 Per Month Wholesaling the Probate List',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': 'My average probate profits about $47,000.',
+                       'tip': 'My average probate profits about $47,000.',
+                       'timestamp': 1188,
+                       'timestamp_seconds': 1188,
+                       'timestamp_label': '[00:19:48]',
+                       'url': 'https://www.youtube.com/watch?v=4-UlN2iP-_c&t=1188s',
+                       'markdown': '[00:19:48](https://www.youtube.com/watch?v=4-UlN2iP-_c&t=1188s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LeQ9QiM4CLo',
+                       'title': 'How to Wholesale Probate Properties (Step by Step) 💀',
+                       'channel': 'Maximilian Dier',
+                       'author': 'Maximilian Dier',
+                       'text': 'We love probates, guys, because they pay the most, but they are complex.',
+                       'tip': 'We love probates, guys, because they pay the most, but they are complex.',
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=LeQ9QiM4CLo&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=LeQ9QiM4CLo&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e3YN7RJaj6U',
+                       'title': 'How to Wholesale Probates (Full Course) 4 Hours',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': "My first two months I did marketing on probate, I didn't even get a deal.",
+                       'tip': "My first two months I did marketing on probate, I didn't even get a deal.",
+                       'timestamp': 6726,
+                       'timestamp_seconds': 6726,
+                       'timestamp_label': '[01:52:06]',
+                       'url': 'https://www.youtube.com/watch?v=e3YN7RJaj6U&t=6726s',
+                       'markdown': '[01:52:06](https://www.youtube.com/watch?v=e3YN7RJaj6U&t=6726s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e3YN7RJaj6U',
+                       'title': 'How to Wholesale Probates (Full Course) 4 Hours',
+                       'channel': 'Flip With Rick',
+                       'author': 'Flip With Rick',
+                       'text': 'Certainty is what is my most profitable thing I sell when it comes to '
+                               'wholesaling any wholesale deal.',
+                       'tip': 'Certainty is what is my most profitable thing I sell when it comes to '
+                              'wholesaling any wholesale deal.',
+                       'timestamp': 7750,
+                       'timestamp_seconds': 7750,
+                       'timestamp_label': '[02:09:10]',
+                       'url': 'https://www.youtube.com/watch?v=e3YN7RJaj6U&t=7750s',
+                       'markdown': '[02:09:10](https://www.youtube.com/watch?v=e3YN7RJaj6U&t=7750s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OMiXHCnv8tU',
+                       'title': 'The Biggest Mistake People Make Wholesaling Probate Properties',
+                       'channel': 'Rick Ginn',
+                       'author': 'Rick Ginn',
+                       'text': 'Let them talk, 80/20 rule, you do 80 of listening, 20.',
+                       'tip': 'Let them talk, 80/20 rule, you do 80 of listening, 20.',
+                       'timestamp': 161,
+                       'timestamp_seconds': 161,
+                       'timestamp_label': '[00:02:41]',
+                       'url': 'https://www.youtube.com/watch?v=OMiXHCnv8tU&t=161s',
+                       'markdown': '[00:02:41](https://www.youtube.com/watch?v=OMiXHCnv8tU&t=161s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uJxayMyF-i4',
+                       'title': 'Making cash offers fast, solving problems with probate real estate deals, '
+                                'and wholesaling ethics',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'Just disclose, disclose, disclose early often.',
+                       'tip': 'Just disclose, disclose, disclose early often.',
+                       'timestamp': 1066,
+                       'timestamp_seconds': 1066,
+                       'timestamp_label': '[00:17:46]',
+                       'url': 'https://www.youtube.com/watch?v=uJxayMyF-i4&t=1066s',
+                       'markdown': '[00:17:46](https://www.youtube.com/watch?v=uJxayMyF-i4&t=1066s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AAF69oF79DU',
+                       'title': 'Sub-to strategy for probate investing | Probate foreclosures | Probate '
+                                'real estate marketing tips',
+                       'channel': 'Probate Mastery',
+                       'author': 'Probate Mastery',
+                       'text': 'Most of the houses I wholesaled, I regret I should have turned them into '
+                               'piggybanks.',
+                       'tip': 'Most of the houses I wholesaled, I regret I should have turned them into '
+                              'piggybanks.',
+                       'timestamp': 1356,
+                       'timestamp_seconds': 1356,
+                       'timestamp_label': '[00:22:36]',
+                       'url': 'https://www.youtube.com/watch?v=AAF69oF79DU&t=1356s',
+                       'markdown': '[00:22:36](https://www.youtube.com/watch?v=AAF69oF79DU&t=1356s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

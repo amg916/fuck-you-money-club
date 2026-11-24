@@ -1,332 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-placement-workflow",
-      "chart_type": "process_flow",
-      "title": "From Borrower File to Retained Brokerage Fee",
-      "subtitle": "Five operating stages; loan principal never enters brokerage revenue.",
+      "diagram_id": "diag-01-broker-deal-path",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "The brokerage arranges commercial financing rather than funding loans. Revenue consists only of retained origination or referral fees earned under the applicable agreement. First-deal planning remains 3–9 months; stage numbers indicate sequence, not duration.",
-      "caption": "A signed term sheet is neither a closing nor earned cash. Track failed closings and commission-reversal exposure separately.",
+      "chart_type": "process_flow",
+      "title": "From Qualified File to Funded Commission",
+      "subtitle": "The five-step commercial broker path practitioners describe",
+      "caption": "The broker lends no money, scores and packages the file, places it with the lender whose credit box fits, and is paid only when the deal funds.",
+      "assumptions_note": "Step order combines operator gates from separate speakers. The $30,000 figure is Shane Walton's worked example of a $2 million loan at 1.5 points.",
+      "note": "Sources are John Neufer, CFM (Commercial Financing Mastery) with Sua Truong, and Shane Walton of the Commercial Loan Broker Institute.",
       "stages": [
         {
-          "label": "Qualify the mandate",
-          "value": "1 | Scope and eligibility",
-          "numeric_value": 1.0,
-          "detail": "Record borrower jurisdiction, business purpose, financing amount, collateral, and requested timing in HubSpot. Confirm the brokerage can perform the proposed activity before accepting a fee-bearing engagement."
+          "step": "01",
+          "label": "Score the file before quoting points",
+          "value": "Step 1",
+          "detail": "Neufer weighs deal size, deal type, borrower constraints and time pressure, sets the hair clause up front, and targets $5,000 to $10,000 per deal."
         },
         {
-          "label": "Assemble the credit file",
-          "value": "2 | Evidence and permissions",
-          "numeric_value": 2.0,
-          "detail": "Collect financial statements, bank records, debt schedules, equipment invoices or receivables aging, and authorized contact details. Use a restricted document portal rather than forwarding borrower files through shared inboxes."
+          "step": "02",
+          "label": "Confirm lender appetite this week",
+          "value": "Step 2",
+          "detail": "Truong calls bank commercial managers on Monday or Tuesday to ask where the money is going, because portfolios fill up by asset type."
         },
         {
-          "label": "Match the lender matrix",
-          "value": "3 | Credit fit before submission",
-          "numeric_value": 3.0,
-          "detail": "Filter Airtable lender records by geography, ticket size, industry, collateral, leverage, and lender-defined coverage requirements. Record each decline reason and permission to share the file with each selected lender."
+          "step": "03",
+          "label": "Take a packaging deposit",
+          "value": "Step 3",
+          "detail": "Walton takes a deposit as small as $250 with a 45-day LOI refund clause before the heavy lifting begins."
         },
         {
-          "label": "Coordinate credit and closing",
-          "value": "4 | Conditions and fee evidence",
-          "numeric_value": 4.0,
-          "detail": "Maintain a closing-condition checklist and reconcile borrower-facing fees with lender agreements. The lender owns underwriting and funding; the broker verifies compensation terms, payor identity, and reversal triggers."
+          "step": "04",
+          "label": "Place with the lender that fits",
+          "value": "Step 4",
+          "detail": "Most clients are a best fit for just one, two or three lenders, so the file goes where the credit box matches."
         },
         {
-          "label": "Reconcile and service",
-          "value": "5 | Retained fees and renewals",
-          "numeric_value": 5.0,
-          "detail": "Match the earned-fee record to the lender settlement statement and bank receipt. Separate contingent amounts, track clawback windows, and schedule renewal outreach without representing loan principal as operator sales."
+          "step": "05",
+          "label": "Collect points when the deal funds",
+          "value": "Step 5",
+          "detail": "Funded amount times points, with most products paying 1% to 6%. A $2 million loan at 1.5 points pays $30,000."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-annual-placement-funnel",
-      "chart_type": "funnel",
-      "title": "Forty Funded Placements Support the Base Case",
-      "subtitle": "One annual borrower cohort; every downstream count is a subset.",
+      "diagram_id": "diag-02-factoring-invoice-funnel",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative steady-state annual cohort, not a first-month forecast. Count each financing opportunity once and exclude duplicate lender submissions. Forty funded, fee-retaining placements at $14,000 average retained compensation produce $560,000 operator gross revenue.",
-      "caption": "Stage conversion rates are 60.0%, 50.0%, 53.3%, and 62.5%; overall conversion is 10.0%. The $14,000 fee is a modeled average, not a market quotation.",
+      "chart_type": "funnel",
+      "title": "What an Invoice Turns Into on Day One",
+      "subtitle": "Advance and discount levels as a percent of invoice face value",
+      "caption": "A B2B invoice for delivered work is sold to a factor, which advances most of the face value immediately and charges a discount per batch.",
+      "assumptions_note": "All values are percent of invoice face value. Advance levels come from Joe Camberato and Ian Johnson; discount levels come from CPA Financial Exchange Group and are quoted per batch, never annualized.",
+      "note": "Sources are Joe Camberato, Ian Johnson, CPA Financial Exchange Group, and Universal Funding Corporation.",
       "stages": [
         {
-          "label": "Permissioned opportunities",
-          "value": "400 annual opportunities",
-          "numeric_value": 400.0,
-          "detail": "Source documented borrower introductions through accountants, equipment dealers, and existing relationships. Deduplicate financing requests before measuring acquisition cost or assigning the relationship manager."
+          "label": "Invoice face value",
+          "value": 100,
+          "display": "100% of invoice",
+          "conversion": "Invoice sent to the customer and to the factor",
+          "detail": "Underwriting rests on the account debtor's credit rating, not the client's, per Ian Johnson."
         },
         {
-          "label": "Qualified financing requests",
-          "value": "240 | 60.0% of prior stage",
-          "numeric_value": 240.0,
-          "detail": "Retain borrowers whose business purpose, geography, financing size, and timing fit the desk's permitted scope and at least one current lender appetite."
+          "label": "Day-one advance ceiling",
+          "value": 90,
+          "display": "Up to 90%",
+          "conversion": "Paid immediately on invoicing",
+          "detail": "Camberato quotes advances of 80 to 90 percent on day one."
         },
         {
-          "label": "Complete lender-ready files",
-          "value": "120 | 50.0% of prior stage",
-          "numeric_value": 120.0,
-          "detail": "Require current financial evidence, a reconciled debt schedule, appropriate collateral documentation, and authorized distribution before counting a file as complete."
+          "label": "Modeled advance",
+          "value": 80,
+          "display": "80%",
+          "conversion": "Johnson's worksheet advance",
+          "detail": "Johnson models an 80 percent advance plus a typical 1 percent administration fee."
         },
         {
-          "label": "Accepted conditional terms",
-          "value": "64 | 53.3% of prior stage",
-          "numeric_value": 64.0,
-          "detail": "Count borrower-accepted lender terms with remaining closing conditions logged. Do not recognize brokerage fees merely because an indicative offer was issued."
+          "label": "Industry-average discount ceiling",
+          "value": 4.5,
+          "display": "Up to 4.5% per batch",
+          "conversion": "Industry average 3% to 4.5%",
+          "detail": "Per batch of receivables purchased, not annualized."
         },
         {
-          "label": "Funded and fee-retaining placements",
-          "value": "40 | 62.5% of prior stage",
-          "numeric_value": 40.0,
-          "detail": "Reconcile 40 placements times $14,000 to $560,000 retained annual fee revenue. Exclude failed closings and amounts reversed or unearned; maintain a separate contingent-compensation exposure register."
+          "label": "Typical first-30-day discount",
+          "value": 3,
+          "display": "3% first 30 days",
+          "conversion": "Plus 1% for each additional period",
+          "detail": "Referral brokers earn 20 percent for the life of the deal through Universal Funding Corporation."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-base-case-profit-waterfall",
-      "chart_type": "waterfall",
-      "title": "$560,000 Retained Fees to $196,000 Owner Net",
-      "subtitle": "Four expense deductions reconcile exactly to a 35.0% net margin.",
+      "diagram_id": "diag-03-licensing-exposure-waterfall",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "All values are annual USD. First and last bars are totals; the four intervening bars are negative expense movements. Cost allocations are illustrative, while revenue, profit, and margin match the canonical Base Case. The published $4,000–$18,000 monthly operating range is not an all-in annual expense ceiling: this model requires $364,000 total annual expenses, averaging $30,333.33 monthly. Do not infer that the published range funds every modeled expense.",
-      "caption": "$560,000 − $156,000 − $60,000 − $84,000 − $64,000 = $196,000; $196,000 / $560,000 = 35.0%. Retained fees exclude loan principal and already reflect fee reversals for the modeled cohort.",
-      "stages": [
+      "chart_type": "waterfall",
+      "title": "The Same $25,000, Licensed Versus Unlicensed",
+      "subtitle": "California licensing cost against securities rescission exposure",
+      "caption": "Meeting California's commercial finance license costs a fee of $500 to $1,000 against a $25,000 net-worth floor, while selling another sponsor's security without a license can turn a $25,000 fee into a $1 million judgment.",
+      "assumptions_note": "Two separate scenarios sit side by side. Bars one to three use Funder Intel's California figures at the high end of the fee range; bars four to six use Trowbridge Law Group's rescission example. Result bars are plain arithmetic.",
+      "note": "Sources are Funder Intel and Trowbridge Law Group.",
+      "bars": [
         {
-          "label": "Retained brokerage revenue",
-          "value": "$560,000 gross operator revenue",
-          "numeric_value": 560000.0,
-          "detail": "Opening total equals retained origination and referral fees across 40 funded placements. Borrower loan proceeds and lender-funded principal remain outside this revenue bar."
+          "label": "California net-worth floor",
+          "value": 25000,
+          "display": "$25,000",
+          "kind": "total"
         },
         {
-          "label": "Pod delivery compensation",
-          "value": "−$156,000 annual expense",
-          "numeric_value": -156000.0,
-          "detail": "Illustrative compensation and employment-cost envelope for two full-time seats and two part-time contractor seats. Validate local hiring costs and owner compensation treatment before adopting this staffing budget."
+          "label": "License fee at the high end",
+          "value": -1000,
+          "display": "-$1,000 (range $500 to $1,000)",
+          "kind": "deduction"
         },
         {
-          "label": "Recurring operating infrastructure",
-          "value": "−$60,000 annual expense",
-          "numeric_value": -60000.0,
-          "detail": "Budget $5,000 monthly for CRM, secure document handling, insurance, accounting, office services, and baseline professional support. Keep transaction-dependent costs outside this recurring infrastructure subtotal."
+          "label": "Net worth after the license fee",
+          "value": 24000,
+          "display": "$24,000",
+          "kind": "result"
         },
         {
-          "label": "Acquisition and relationship development",
-          "value": "−$84,000 annual expense",
-          "numeric_value": -84000.0,
-          "detail": "Allocate $2,100 per funded placement across 40 outcomes for industry outreach, events, content, and relationship development. Any compensated referral requires a separate activity, licensing, and fee-permissibility assessment."
+          "label": "Fee for selling a $1M raise unlicensed",
+          "value": 25000,
+          "display": "$25,000",
+          "kind": "total"
         },
         {
-          "label": "Transaction and exception handling",
-          "value": "−$64,000 annual expense",
-          "numeric_value": -64000.0,
-          "detail": "Allocate $1,600 per funded outcome across the whole pipeline for specialized file review, transaction counsel, verification, and failed-file work. Exclude costs already charged to staffing, infrastructure, or acquisition."
+          "label": "Rescission judgment",
+          "value": -1000000,
+          "display": "-$1,000,000",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net profit",
-          "value": "$196,000 | 35.0% net margin",
-          "numeric_value": 196000.0,
-          "detail": "Closing total matches the canonical Base Case after all four expense deductions. Treat this bar as the resulting total rather than an additional positive movement in the waterfall."
+          "label": "Net exposure after rescission",
+          "value": -975000,
+          "display": "-$975,000",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-specialty-placement-fee-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Retained Fees, Not Financed Principal",
-      "subtitle": "Illustrative retained USD per $1,000,000 funded placement.",
+      "diagram_id": "diag-04-broker-point-ranges",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Each bar uses an identical illustrative $1,000,000 financed amount. Values are retained brokerage fees, not lender yields or quoted market rates. Eight placements in each of five categories produce 40 closings, $40,000,000 underlying principal, and $560,000 operator revenue. Fees require transaction-specific permissibility, agreement, disclosure, and retention.",
-      "caption": "Eight times ($15,000 + $10,000 + $10,000 + $20,000 + $15,000) equals $560,000. The equal-weight average is $14,000 retained fees per funded placement.",
-      "stages": [
+      "chart_type": "horizontal_bars",
+      "title": "Broker Point Ranges by Product",
+      "subtitle": "Stated ranges and worked examples from practitioners",
+      "unit": "broker points (% of funded amount)",
+      "caption": "Points vary sharply by product, from a single point on USDA B&I loans to double-digit points on some equipment deals.",
+      "assumptions_note": "Typical values are the worked examples each speaker gave. The Equipment Finance Academy bar borrows Walton's $500k equipment example at 4% as its typical marker.",
+      "note": "Sources are Shane Walton of the Commercial Loan Broker Institute, Eric Johnson of North Avenue Capital via Commercial Capital Training Group, Josh Feinberg of Leads For Locals, and Equipment Finance Academy.",
+      "bars": [
         {
-          "label": "Equipment acquisition debt",
-          "value": "$15,000 retained | 1.50%",
-          "numeric_value": 15000.0,
-          "detail": "Model eight placements producing $120,000 retained fees. Verify equipment invoices, asset identification, useful life, advance rate, and lien position before sending the collateral package to lenders."
+          "label": "Most financing products (Walton)",
+          "min": 1,
+          "max": 6,
+          "typical": 1.5,
+          "display": "1% to 6%, outliers to 15%; $2M at 1.5 points pays $30,000"
         },
         {
-          "label": "Receivables-backed facilities",
-          "value": "$10,000 retained | 1.00%",
-          "numeric_value": 10000.0,
-          "detail": "Model eight placements producing $80,000 retained fees. Review dilution, debtor concentration, eligibility exclusions, and borrowing-base reporting; model no recurring residual compensation unless contractually earned."
+          "label": "Broker point range (Walton)",
+          "min": 1,
+          "max": 10,
+          "typical": 1,
+          "display": "1 to 10 points; $2M at 1% pays $20,000"
         },
         {
-          "label": "SBA-backed business loans",
-          "value": "$10,000 retained | 1.00%",
-          "numeric_value": 10000.0,
-          "detail": "Model eight placements producing $80,000 retained fees. This percentage is an arithmetic assumption, not an authorized tariff; apply 13 CFR 103.5, current program requirements, and Form 159 where required."
+          "label": "USDA B&I loans (Johnson)",
+          "min": 1,
+          "max": 2,
+          "typical": 1,
+          "display": "Lender charges 2, usually passes 1; 1 point on $4-5M = $70,000-$80,000"
         },
         {
-          "label": "Commercial bridge debt",
-          "value": "$20,000 retained | 2.00%",
-          "numeric_value": 20000.0,
-          "detail": "Model eight placements producing $160,000 retained fees. Verify repayment exit, maturity, collateral valuation, and extension terms; resolve real-estate broker licensing requirements when collateral triggers them."
+          "label": "Equipment deals (Feinberg)",
+          "min": 3,
+          "max": 15,
+          "typical": 7.5,
+          "display": "3 to 15 points, 7.5-8% average across 10 years"
         },
         {
-          "label": "Purchase-order working capital",
-          "value": "$15,000 retained | 1.50%",
-          "numeric_value": 15000.0,
-          "detail": "Model eight placements producing $120,000 retained fees. Confirm purchase-order authenticity, supplier performance, customer acceptance conditions, and control of proceeds before selecting an appropriate funding structure."
+          "label": "Equipment deals (Equipment Finance Academy)",
+          "min": 1,
+          "max": 5,
+          "typical": 4,
+          "display": "1% to 5%, $2,000 to $5,000 per deal"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-statutory-risk-preflight",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before a Live Financing Submission",
-      "subtitle": "Advance on documented fit; unresolved branches stop the affected activity.",
+      "diagram_id": "diag-05-equipment-approval-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "These are sequential checks, not a universal licensing determination. Jurisdiction, collateral, product, compensation, and the broker's actual conduct control applicability. Numeric values identify check order rather than risk scores.",
-      "caption": "Keep the legal-scope record beside the lender matrix. A lender relationship does not itself authorize brokerage activity, fee collection, or securities placement.",
-      "stages": [
+      "chart_type": "decision_tree",
+      "title": "Four Gates Before an Equipment File Goes Out",
+      "subtitle": "Collateral, vendor, credit, and payment checks",
+      "caption": "The machine secures its own deal, so the asset, the vendor, the borrower's credit and the payment math each get screened before submission.",
+      "assumptions_note": "Gate order is an operating sequence assembled from separate practitioners; thresholds are as each speaker stated them.",
+      "note": "Sources are ION Capital - Loan Broker University, The Banking Podcast, ROK Financial with Ryan Vehey, Joe Camberato, and BizMoney Explained.",
+      "nodes": [
         {
-          "label": "Activity and licensing",
-          "value": "1 | Proceed or resolve scope",
-          "numeric_value": 1.0,
-          "detail": "Map borrower, broker, and collateral jurisdictions. California Financial Code Section 22100 requires licensing for covered finance-lender or broker activity, subject to applicable exceptions and scope. Analyze real-estate brokerage separately. Securities activity requires analysis under 15 U.S.C. 78o(a)(1); stop that activity until the required registration path is resolved."
+          "gate": "G1",
+          "question": "Can the lender resell every listed asset, with no existing UCC filing on the equipment?",
+          "pass_next": "G2",
+          "fail_action": "Stop; lenders will not take second position on an asset and want recent units they can resell."
         },
         {
-          "label": "Compensation and disclosure",
-          "value": "2 | Document or revise fees",
-          "numeric_value": 2.0,
-          "detail": "Identify each payor, service, fee amount, earning event, and clawback trigger before engagement. For covered SBA agent services, apply 13 CFR 103.5 and required Form 159 disclosures. Assess state commercial-financing disclosure duties by role and product; revise unsupported or impermissible compensation arrangements before proceeding."
+          "gate": "G2",
+          "question": "Are the seller and the invoice price verified as a real vendor sale?",
+          "pass_next": "G3",
+          "fail_action": "Fix before submission; underwriters catch the friend-down-the-street invoice every time."
         },
         {
-          "label": "Fair lending and file security",
-          "value": "3 | Evidence or remediate controls",
-          "numeric_value": 3.0,
-          "detail": "Use documented credit-fit criteria under ECOA, 15 U.S.C. 1691, and Regulation B, 12 CFR part 1002. Determine creditor status and allocate notice duties without erasing statutory responsibility. For covered institutions, implement 16 CFR part 314 safeguards; use MFA, restricted access, and documented data handling."
+          "gate": "G3",
+          "question": "Does credit fit the program, such as 620-plus for application-only leases to about $150,000, or 700-plus with comparable past debt for startups?",
+          "pass_next": "G4",
+          "fail_action": "Screen out very high revolving utilization, active collections and auction-house purchases; push files under 50 percent utilization."
         },
         {
-          "label": "Collateral and closing exposure",
-          "value": "4 | Submit or reduce exposure",
-          "numeric_value": 4.0,
-          "detail": "Confirm who verifies attachment and perfection under UCC 9-203 and 9-310, including applicable exceptions. Check lender concentration, closing conditions, and commission reversal terms. Use an internal 35% single-lender retained-revenue review threshold; excess concentration triggers diversification planning, not a claimed statute."
+          "gate": "G4",
+          "question": "Does the payment survive weak demand, where $900 of incremental cash against a $1,500 payment leaves a $600 monthly shortfall?",
+          "pass_next": "Submit to the matched lender",
+          "fail_action": "Restructure the term or walk away."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-four-to-six-person-pod",
-      "chart_type": "org_architecture",
-      "title": "Four Core Seats, Two Scale Seats",
-      "subtitle": "Base and Conservative: 2 FT + 2 C; Scaled: 3 FT + 3 C.",
+      "diagram_id": "diag-06-dscr-underwriting-desk",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each stage represents one person; contractor seats are part-time engagements, not full-time equivalents. Numeric values represent one person each. First four seats form the core pod; final two are scale additions. Compensation is scenario-specific and must be tested against actual hiring costs.",
-      "caption": "Conservative: $120,000 revenue and $30,000 owner net at 25%. Base: $560,000 and $196,000 at 35%. Scaled: $1,000,000 and $450,000 at 45%; the scaled scenario uses six people.",
-      "stages": [
+      "chart_type": "org_architecture",
+      "title": "Who Sets the Bar on a DSCR or CRE File",
+      "subtitle": "The broker at the center of four underwriting tests",
+      "caption": "DSCR is the gatekeeper metric, but the bar moves with the lender, the appraiser's rent schedule, and the debt-yield test.",
+      "assumptions_note": "Spokes group practitioners by the test they apply; thresholds are quoted as stated and differ by asset class and lender.",
+      "note": "Sources are SEI Mortgage - Ryan Marks, Real Estate Finance Academy with Trevor Calton, Brandon Turner, Academy For Commercial Lending, and Tactica RES.",
+      "center": {
+        "role": "Commercial and DSCR loan broker",
+        "headcount": "Broker of record",
+        "focus": "Run DSCR at the broker's rent and at market rent, check debt yield, and back into the maximum loan before offering."
+      },
+      "spokes": [
         {
-          "label": "Principal and relationship lead",
-          "value": "Core seat | 1 FT",
-          "numeric_value": 1.0,
-          "detail": "Own borrower qualification, lender relationships, engagement terms, concentration reviews, and fee disputes. The owner occupies this operating seat rather than appearing as an uncounted fifth core team member."
+          "role": "Small-balance DSCR lender",
+          "type": "One-to-four and five-plus unit rentals (Ryan Marks)",
+          "kpi": "600 credit floor on one-to-four; 680 credit, 25% down, 6 months reserves and 1.0 DSCR once past four units"
         },
         {
-          "label": "Credit operations lead",
-          "value": "Core seat | 1 FT",
-          "numeric_value": 1.0,
-          "detail": "Own application checklists, lender-matrix freshness, submission quality, closing conditions, and CRM accuracy. Use Airtable and HubSpot automation to surface missing documents without automating lender credit decisions."
+          "role": "Commercial underwriter",
+          "type": "NOI-based sizing (Trevor Calton)",
+          "kpi": "$100,000 NOI over 1.25x caps debt service at $80,000 a year"
         },
         {
-          "label": "File analysis specialist",
-          "value": "Core seat | 1 C",
-          "numeric_value": 1.0,
-          "detail": "Reconcile financial statements, receivables aging, equipment schedules, and borrower debt. Work from restricted assignments and escalate unexplained balance differences before the operations lead releases submissions."
+          "role": "Appraiser rent schedule",
+          "type": "Market rent the lender actually uses (Brandon Turner)",
+          "kpi": "$11 per unit separated 1.19 from a 1.2 target on his duplex"
         },
         {
-          "label": "Transaction controls specialist",
-          "value": "Core seat | 1 C",
-          "numeric_value": 1.0,
-          "detail": "Maintain fee evidence, renewal tracking, access reviews, and exception records. Coordinate outside counsel on licensing or securities questions without representing this contractor as a substitute for required expertise."
-        },
-        {
-          "label": "Additional relationship manager",
-          "value": "Scale addition | 1 FT",
-          "numeric_value": 1.0,
-          "detail": "Expand qualified borrower coverage and lender depth when sustained pipeline demand supports a third full-time seat. Measure funded retained fees and closing quality rather than raw submission volume."
-        },
-        {
-          "label": "Closing and renewal coordinator",
-          "value": "Scale addition | 1 C",
-          "numeric_value": 1.0,
-          "detail": "Absorb closing-condition follow-up, settlement matching, and renewal scheduling at scaled throughput. Add capacity only after the core pod demonstrates reliable fee collection and bounded exception backlogs."
+          "role": "Debt-yield test",
+          "type": "Refinance survivability (Academy For Commercial Lending, Tactica RES)",
+          "kpi": "Paid CMBS sat at 13.3% to 14.4% versus sub-10% failures; one deal needed 60% LTV to clear a 10.5% bar"
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate Startup Cash Before Chasing Closings",
-      "subtitle": "Four buckets across $20,000, $60,000, and $100,000 launch budgets.",
+      "diagram_id": "diag-07-equipment-lead-source-yield",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are middle-budget USD components and sum to $60,000. Each stage's value and detail also specify lean and upper-budget components; those columns sum to $20,000 and $100,000. These are capital plans, not revenue scenarios. Launch spending and reserve balances must not be counted twice.",
-      "caption": "The middle plan allocates $12,000 + $8,000 + $10,000 + $30,000 = $60,000. A reserve cannot erase the 3–9 month first-deal interval or fund unlimited failed-closing work.",
-      "stages": [
+      "chart_type": "stacked_comparison",
+      "title": "Funding Yield by Equipment Lead Source",
+      "subtitle": "Percent of applications or leads that fund or close",
+      "total_range": "Near 0% to 50% funded or closed, depending on the source",
+      "caption": "Dealer partnerships fund a far larger share of applications than bought leads or broad ad campaigns.",
+      "assumptions_note": "Percentages are converted directly from stated ratios. The dealer figure is 4-5 of 10; the shared-lead high end is one deal on 20 leads; the ad-campaign figure is the 'not even .01' Cheathem quoted.",
+      "note": "Sources are Jermane Cheathem via Credit Suite, Josh Feinberg of Leads For Locals, and Equipment Finance Academy.",
+      "buckets": [
         {
-          "label": "Licensing and professional setup",
-          "value": "Lean $4,000 | Middle $12,000 | Upper $20,000",
-          "numeric_value": 12000.0,
-          "detail": "Fund jurisdiction-specific licensing analysis, filings where required, engagement drafting, insurance setup, and compensation review. Restrict launch geography when available capital cannot support the required scope."
+          "label": "Dealer partnerships",
+          "low": 40,
+          "high": 50,
+          "notes": "4-5 funded out of 10 weekly dealer applications (Cheathem)"
         },
         {
-          "label": "Secure operating infrastructure",
-          "value": "Lean $3,000 | Middle $8,000 | Upper $12,000",
-          "numeric_value": 8000.0,
-          "detail": "Configure HubSpot, Airtable, Microsoft 365, secure document access, MFA, and backup procedures. Distinguish implementation spending and prepaid subscriptions from later monthly operating expenses."
+          "label": "Exclusive bought leads",
+          "low": 3,
+          "high": 5,
+          "notes": "$50 per lead, 30-lead minimum at $1,500 a month (Feinberg)"
         },
         {
-          "label": "Lender and referral development",
-          "value": "Lean $3,000 | Middle $10,000 | Upper $18,000",
-          "numeric_value": 10000.0,
-          "detail": "Build lender coverage, attend targeted industry events, and develop borrower education materials. Validate permitted referral arrangements before paying anyone for financing introductions or transaction outcomes."
+          "label": "Shared bought leads",
+          "low": 0,
+          "high": 5,
+          "notes": "$40-80 per lead; $800 for 20 leads might close one deal"
         },
         {
-          "label": "Uncommitted operating reserve",
-          "value": "Lean $10,000 | Middle $30,000 | Upper $50,000",
-          "numeric_value": 30000.0,
-          "detail": "Preserve cash for collection delays and failed files. The middle reserve covers 7.5 months at $4,000 monthly cash burn but only 1.67 months at $18,000; nine months at $18,000 requires $162,000 before setup costs."
+          "label": "Broad ad campaign",
+          "low": 0,
+          "high": 0.01,
+          "notes": "100 applications a day funded 'not even .01' (Cheathem's partner)"
         }
       ]
     },
     {
-      "diagram_id": "diag-08-first-thirty-days",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to an Evidence-Ready Brokerage Desk",
-      "subtitle": "Build scope, systems, lender fit, and pipeline discipline before forecasting fees.",
+      "diagram_id": "diag-08-capital-stack-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Four milestones cover Days 1–30 inclusively. Numeric values are milestone end days. This sprint prepares operations; the canonical first-deal expectation remains 3–9 months. Any unresolved licensing requirement prevents affected live activity.",
-      "caption": "Finish the month with a functioning lender matrix, tested application checklist, renewal fields, and a funded runway plan rather than an invented first-month closing target.",
-      "stages": [
+      "chart_type": "timeline_roadmap",
+      "title": "Layering the Stack From Cheapest Money to Risk Capital",
+      "subtitle": "Senior debt, bridge, tax credits, and litigation funding",
+      "caption": "Cheapest senior money goes in first; expensive risk capital is rented only where the gap demands it.",
+      "assumptions_note": "The week-by-week sequence is an organizing order, not a timeline any speaker prescribed; every rate, price and ratio is as stated by the cited source.",
+      "note": "Sources are Break Into CRE, Jeremiah Boucher of Patriot Holdings, Jason Prince via Tax Alpha Insider, and Statera Capital via The National Law Review.",
+      "weeks": [
         {
-          "label": "Define the permitted desk",
-          "value": "Days 1–7 | Scope and economics",
-          "numeric_value": 7.0,
-          "detail": "Choose two initial financing products and launch jurisdictions. Document licensing and fee requirements, assign the four core seats, and reconcile the $120,000, $560,000, and $1,000,000 retained-fee scenarios to their respective margins and team sizes."
+          "week": "Week 1",
+          "title": "Map the capital stack",
+          "deliverable": "Senior debt at 50-65% of cost, with mezzanine and preferred equity priced at 15-20% all-in (Break Into CRE)",
+          "gate": "Senior capacity sized before any risk capital is sought"
         },
         {
-          "label": "Build the evidence system",
-          "value": "Days 8–14 | Checklists and security",
-          "numeric_value": 14.0,
-          "detail": "Configure HubSpot stages, Airtable lender fields, document permissions, MFA, and missing-file reminders. Test three synthetic borrower files covering equipment, receivables, and bridge use cases; resolve access and arithmetic defects before loading live records."
+          "week": "Week 2",
+          "title": "Price the bridge loan",
+          "deliverable": "7-12% rate, 65-80% LTV, 1% up to 3-4% origination, close in 5-60 days, with capex funding and a 12-month interest reserve requested",
+          "gate": "Exit mapped and default provisions redlined by an attorney"
         },
         {
-          "label": "Validate lender fit",
-          "value": "Days 15–21 | Coverage and terms",
-          "numeric_value": 21.0,
-          "detail": "Research eight candidate lenders and obtain documented appetite confirmation from at least four. Record ticket size, geography, collateral, exclusions, fee terms, clawbacks, and contacts. Keep unconfirmed lenders outside automated matching recommendations."
+          "week": "Week 3",
+          "title": "Place transferable tax credits",
+          "deliverable": "About 85 cents on the dollar, about 92 cents with insurance, parent guarantees and Big-4 memos, about 80 cents for risk-takers",
+          "gate": "Prevailing wage and apprenticeship records verified before paying above the 80-cent tier"
         },
         {
-          "label": "Run the controlled pipeline",
-          "value": "Days 22–30 | Outreach and operating review",
-          "numeric_value": 30.0,
-          "detail": "After required permissions are in place, conduct ten qualified referral conversations and request three complete borrower packages. Treat these as activity targets, not promised conversions. Review cash runway, concentration, file defects, and next-month ownership."
+          "week": "Week 4",
+          "title": "Approach litigation funders",
+          "deliverable": "Targeted pitch aiming at 2-4x returns, with realistic case value near 10x the commitment",
+          "gate": "NDA, budget, timeline and case outline in hand; only 3-5% of cases are accepted"
         }
       ]
     }
